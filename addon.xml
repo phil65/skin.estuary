@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.estuary" version="0.0.1" name="Estuary" provider-name="phil65">
+        <requires></requires>
+        <extension point="xbmc.gui.skin" debugging="false">
+                <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary lang="en">-</summary>
+                <description lang="en">-</description>
+                <disclaimer lang="en">-</disclaimer>
+                <platform>all</platform>
+                <license>CCACC BY-NC-SA 3.0</license>
+                <forum>-</forum>
+                <source>-</source>
+        </extension>
+</addon>

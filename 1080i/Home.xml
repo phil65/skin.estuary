@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <backgroundcolor>0</backgroundcolor>
+    <controls>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>special://skin/extras/backgrounds/01.jpg</texture>
+        </control>
+        <control type="image">
+            <posx>100</posx>
+            <posy>0</posy>
+            <aspectratio>keep</aspectratio>
+            <width>350</width>
+            <height>200</height>
+            <texture>logo.png</texture>
+        </control>
+        <control type="image">
+            <description>List Panel</description>
+            <posx>100</posx>
+            <posy>237</posy>
+            <width>350</width>
+            <height>604</height>
+            <texture>views/list/panel/panel.png</texture>
+        </control>
+        <control type="list" id="9000">
+            <posx>102</posx>
+            <posy>240</posy>
+            <width>348</width>
+            <height>600</height>
+            <pagecontrol>70</pagecontrol>
+            <onright>2000</onright>
+            <onup>52</onup>
+            <ondown>52</ondown>
+            <scrolltime tween="cubic" easing="out">500</scrolltime>
+            <focusedlayout height="60">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>348</width>
+                    <height>61</height>
+                    <texture border="90,3,90,3">views/list/other/separator.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>348</width>
+                    <height>59</height>
+                    <texture border="150,1,150,1">views/other/focus.png</texture>
+                    <include>listfocusanim</include>
+                    <include>visiblehidefadeinfo</include>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
+                </control>
+                <control type="label">
+                    <posx>70</posx>
+                    <posy>0</posy>
+                    <height>60</height>
+                    <width>560</width>
+                    <align>left</align>
+                    <font>font16</font>
+                    <label>$INFO[ListItem.Label]</label>
+                    <selectedcolor>SelectedGreen</selectedcolor>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                </control>
+            </focusedlayout>
+            <itemlayout height="60">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>348</width>
+                    <height>61</height>
+                    <texture border="90,3,90,3">views/list/other/separator.png</texture>
+                </control>
+                <control type="label">
+                    <posx>70</posx>
+                    <posy>0</posy>
+                    <height>60</height>
+                    <width>560</width>
+                    <font>font16</font>
+                    <label>$INFO[ListItem.Label]</label>
+                    <selectedcolor>SelectedGreen</selectedcolor>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                    <scroll>false</scroll>
+                </control>
+                <control type="label">
+                    <posx>70</posx>
+                    <posy>0</posy>
+                    <height>58</height>
+                    <width>560</width>
+                    <font>font16</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                    <selectedcolor>SelectedGreen</selectedcolor>
+                    <align>right</align>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>22000000</shadowcolor>
+                    <scroll>false</scroll>
+                </control>
+            </itemlayout>
+            <content>
+                <item id="10">
+                    <label>31954</label>
+                    <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
+                </item>
+                <item id="11">
+                    <label>31955</label>
+                    <onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
+                </item>
+                <item id="3">
+                    <label>31956</label>
+                    <onclick>ActivateWindow(Music)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+                </item>
+                <item id="1">
+                    <label>31957</label>
+                    <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+                    <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+                </item>
+                <item id="7">
+                    <label>31950</label>
+                    <onclick>ActivateWindow(Weather)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
+                </item>
+                <item id="4">
+                    <label>31951</label>
+                    <onclick>ActivateWindow(Pictures)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
+                </item>
+                <item id="13">
+                    <label>31960</label>
+                    <onclick>ActivateWindow(RadioChannels)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>PVR.HasRadioChannels</visible>
+                </item>
+                <item id="12">
+                    <label>31952</label>
+                    <onclick>ActivateWindow(TVChannels)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>PVR.HasTVChannels</visible>
+                </item>
+                <item id="2">
+                    <label>31953</label>
+                    <onclick condition="StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos)</onclick>
+                    <onclick condition="!StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
+                </item>
+                <item id="6">
+                    <label>31958</label>
+                    <onclick>PlayDVD()</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>System.HasMediaDVD</visible>
+                </item>
+                <item id="5">
+                    <label>31959</label>
+                    <onclick>ActivateWindow(Settings)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                </item>
+            </content>
+        </control>
+        <control type="group" id="2000">
+            <control type="group" id="5000">
+                <visible>Container(9000).HasFocus(10)</visible>
+                <control type="textbox">
+                    <posy>40</posy>
+                    <posx>1330</posx>
+                    <align>right</align>
+                    <width>500</width>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <label>Total: $INFO[Window(home).Property(movies.Count)][CR]Total: $INFO[Window(home).Property(movies.watched)][CR]Total: $INFO[Window(home).Property(movies.inprogress)]</label>
+                    <font>font30</font>
+                </control>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <control type="grouplist" id="5000">
+                    <orientation>vertical</orientation>
+                    <posy>240</posy>
+                    <height>730</height>
+                    <include name="WidgetListMovies">
+                        <param name="content_path" value="videodb://recentlyaddedmovies/"/>
+                        <param name="list_id" value="5100"/>
+                        <param name="onup_id" value="5300"/>
+                        <param name="ondown_id" value="5200"/>
+                    </include>
+                    <include name="WidgetListMovies">
+                        <param name="content_path" value="videodb://recentlyaddedmovies/"/>
+                        <param name="list_id" value="5200"/>
+                        <param name="onup_id" value="5100"/>
+                        <param name="ondown_id" value="5300"/>
+                    </include>
+                    <include name="WidgetListMovies">
+                        <param name="content_path" value="videodb://recentlyaddedmovies/"/>
+                        <param name="list_id" value="5300"/>
+                        <param name="onup_id" value="5200"/>
+                        <param name="ondown_id" value="5100"/>
+                    </include>
+                </control>
+            </control>
+            <control type="grouplist" id="6000">
+                <orientation>vertical</orientation>
+                <posy>240</posy>
+                <height>730</height>
+                <visible>Container(9000).HasFocus(11)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="WidgetListEpisodes">
+                    <param name="content_path" value="videodb://recentlyaddedepisodes/"/>
+                    <param name="list_id" value="6100"/>
+                    <param name="onup_id" value="6300"/>
+                    <param name="ondown_id" value="6200"/>
+                </include>
+                <include name="WidgetListEpisodes">
+                    <param name="content_path" value="videodb://recentlyaddedepisodes/"/>
+                    <param name="list_id" value="6200"/>
+                    <param name="onup_id" value="6100"/>
+                    <param name="ondown_id" value="6300"/>
+                </include>
+                <include name="WidgetListEpisodes">
+                    <param name="content_path" value="videodb://recentlyaddedepisodes/"/>
+                    <param name="list_id" value="6300"/>
+                    <param name="onup_id" value="6200"/>
+                    <param name="ondown_id" value="6100"/>
+                </include>
+            </control>
+            <control type="grouplist" id="7000">
+                <orientation>vertical</orientation>
+                <posy>240</posy>
+                <height>730</height>
+                <visible>Container(9000).HasFocus(3)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="special://skin/playlists/recentalbums.xsp"/>
+                    <param name="list_id" value="7100"/>
+                    <param name="onup_id" value="7300"/>
+                    <param name="ondown_id" value="7200"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="special://skin/playlists/recentalbums.xsp"/>
+                    <param name="list_id" value="7200"/>
+                    <param name="onup_id" value="7100"/>
+                    <param name="ondown_id" value="7300"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="special://skin/playlists/recentalbums.xsp"/>
+                    <param name="list_id" value="7300"/>
+                    <param name="onup_id" value="7200"/>
+                    <param name="ondown_id" value="7100"/>
+                </include>
+            </control>
+            <control type="grouplist" id="8000">
+                <orientation>vertical</orientation>
+                <posy>240</posy>
+                <height>730</height>
+                <visible>Container(9000).HasFocus(1)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/executable/"/>
+                    <param name="list_id" value="8100"/>
+                    <param name="onup_id" value="8300"/>
+                    <param name="ondown_id" value="8200"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/video/"/>
+                    <param name="list_id" value="8200"/>
+                    <param name="onup_id" value="8100"/>
+                    <param name="ondown_id" value="8300"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/audio/"/>
+                    <param name="list_id" value="8300"/>
+                    <param name="onup_id" value="8200"/>
+                    <param name="ondown_id" value="8400"/>
+                </include>
+            </control>
+            <control type="grouplist" id="4000">
+                <orientation>vertical</orientation>
+                <posy>240</posy>
+                <height>730</height>
+                <visible>Container(9000).HasFocus(4)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/image/"/>
+                    <param name="list_id" value="4100"/>
+                    <param name="onup_id" value="4100"/>
+                    <param name="ondown_id" value="4100"/>
+                </include>
+            </control>
+        </control>
+        <control type="rss">
+            <posx>0</posx>
+            <posy>1050</posy>
+            <height>30</height>
+            <width>1920</width>
+            <font>Font-Condensed-S28</font>
+            <urlset>1</urlset>
+            <textcolor>77FFFFFF</textcolor>
+            <titlecolor>77FFFFFF</titlecolor>
+            <shadowcolor>22000000</shadowcolor>
+            <headlinecolor>77FFFFFF</headlinecolor>
+        </control>
+    </controls>
+</window>
