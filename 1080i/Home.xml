@@ -25,7 +25,7 @@
             <posy>237</posy>
             <width>350</width>
             <height>604</height>
-            <texture>views/list/panel/panel.png</texture>
+            <texture>lists/panel.png</texture>
         </control>
         <control type="list" id="9000">
             <posx>102</posx>
@@ -43,14 +43,14 @@
                     <posy>0</posy>
                     <width>348</width>
                     <height>61</height>
-                    <texture border="90,3,90,3">views/list/other/separator.png</texture>
+                    <texture border="90,3,90,3">lists/separator.png</texture>
                 </control>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>348</width>
                     <height>59</height>
-                    <texture border="150,1,150,1">views/other/focus.png</texture>
+                    <texture border="150,1,150,1">lists/focus.png</texture>
                     <include>listfocusanim</include>
                     <include>visiblehidefadeinfo</include>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
@@ -67,6 +67,21 @@
                     <textcolor>white</textcolor>
                     <shadowcolor>22000000</shadowcolor>
                 </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>-3</posy>
+                    <width>60</width>
+                    <height>60</height>
+                    <texture>lists/star_nofo.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>-3</posy>
+                    <width>60</width>
+                    <height>60</height>
+                    <texture>lists/star_fo.png</texture>
+                    <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+                </control>
             </focusedlayout>
             <itemlayout height="60">
                 <control type="image">
@@ -74,7 +89,7 @@
                     <posy>0</posy>
                     <width>348</width>
                     <height>61</height>
-                    <texture border="90,3,90,3">views/list/other/separator.png</texture>
+                    <texture border="90,3,90,3">lists/separator.png</texture>
                 </control>
                 <control type="label">
                     <posx>70</posx>
@@ -100,6 +115,13 @@
                     <textcolor>white</textcolor>
                     <shadowcolor>22000000</shadowcolor>
                     <scroll>false</scroll>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>-3</posy>
+                    <width>60</width>
+                    <height>60</height>
+                    <texture>lists/star_nofo.png</texture>
                 </control>
             </itemlayout>
             <content>
@@ -187,12 +209,12 @@
             <control type="group" id="5000">
                 <visible>Container(9000).HasFocus(10)</visible>
                 <control type="textbox">
-                    <posy>40</posy>
+                    <posy>50</posy>
                     <posx>1330</posx>
                     <align>right</align>
                     <width>500</width>
                     <textcolor>FFFFFFFF</textcolor>
-                    <label>Total: $INFO[Window(home).Property(movies.Count)][CR]Total: $INFO[Window(home).Property(movies.watched)][CR]Total: $INFO[Window(home).Property(movies.inprogress)]</label>
+                    <label>Total movies: $INFO[Window(home).Property(movies.Count)][CR]Watched: $INFO[Window(home).Property(movies.watched)]</label>
                     <font>font30</font>
                 </control>
                 <animation type="Visible">
@@ -206,7 +228,8 @@
                 <control type="grouplist" id="5000">
                     <orientation>vertical</orientation>
                     <posy>240</posy>
-                    <height>730</height>
+                    <height>720</height>
+                    <itemgap>0</itemgap>
                     <include name="WidgetListMovies">
                         <param name="content_path" value="videodb://recentlyaddedmovies/"/>
                         <param name="list_id" value="5100"/>
@@ -226,6 +249,26 @@
                         <param name="ondown_id" value="5100"/>
                     </include>
                 </control>
+                <!-- <control type="image">
+                     <posx>1125</posx>
+                     <posy>970</posy>
+                     <width>80</width>
+                     <height>25</height>
+                     <texture>overlays/arrowdown.png</texture>
+                     <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+                     <animation effect="slide" start="0,150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                     <visible>Container(5000).HasNext</visible>
+                     </control>
+                     <control type="image">
+                     <posx>1125</posx>
+                     <posy>180</posy>
+                     <width>80</width>
+                     <height>25</height>
+                     <texture flipy="true">overlays/arrowdown.png</texture>
+                     <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+                     <animation effect="slide" start="0,-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                     <visible>Container(5000).HasPrevious</visible>
+                     </control> -->
             </control>
             <control type="grouplist" id="6000">
                 <orientation>vertical</orientation>
