@@ -38,6 +38,7 @@
                 <onright>$PARAM[list_id]</onright>
                 <onup>$PARAM[onup_id]</onup>
                 <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
                 <preloaditems>2</preloaditems>
                 <animation type="WindowOpen">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
@@ -170,6 +171,7 @@
                 <onright>$PARAM[list_id]</onright>
                 <onup>$PARAM[onup_id]</onup>
                 <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
                 <preloaditems>2</preloaditems>
                 <animation type="WindowOpen">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
@@ -302,6 +304,7 @@
                 <onright>$PARAM[list_id]</onright>
                 <onup>$PARAM[onup_id]</onup>
                 <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
                 <preloaditems>2</preloaditems>
                 <animation type="WindowOpen">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
