@@ -4,6 +4,20 @@
     <allowoverlay>yes</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <controls>
+        <control type="button" id="20000">
+            <include>HiddenObject</include>
+            <animation effect="fade" time="300" start="100" end="0">Focus</animation>
+            <onfocus>SetFocus(2000)</onfocus>
+            <onclick>noop</onclick>
+            <visible allowhiddenfocus="true">Control.HasFocus(20000)</visible>
+        </control>
+        <control type="button" id="20001">
+            <include>HiddenObject</include>
+            <animation effect="fade" time="300" start="100" end="0">Focus</animation>
+            <onfocus>SetFocus(2000)</onfocus>
+            <onclick>noop</onclick>
+            <visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
+        </control>
         <control type="image">
             <posx>0</posx>
             <posy>0</posy>
@@ -199,13 +213,21 @@
                 </item>
                 <item id="5">
                     <label>31959</label>
-                    <onclick>ActivateWindow(Settings)</onclick>
+                    <onclick>ActivateWindow(appearancesettings)</onclick>
                     <icon>-</icon>
                     <thumb>-</thumb>
                 </item>
             </content>
         </control>
         <control type="group" id="2000">
+            <animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
+                <effect type="slide" end="0,-20" time="60" tween="sine" />
+                <effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
+            </animation>
+            <animation type="Conditional" condition="Control.IsVisible(20001)" reversible="false">
+                <effect type="slide" end="0,20" time="60" tween="sine" />
+                <effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
+            </animation>
             <control type="group" id="5000">
                 <visible>Container(9000).HasFocus(10)</visible>
                 <control type="textbox">
@@ -233,7 +255,7 @@
                     <include name="WidgetListMovies">
                         <param name="content_path" value="videodb://recentlyaddedmovies/"/>
                         <param name="list_id" value="5100"/>
-                        <param name="onup_id" value="5300"/>
+                        <param name="onup_id" value="20000"/>
                         <param name="ondown_id" value="5200"/>
                     </include>
                     <include name="WidgetListMovies">
@@ -246,7 +268,7 @@
                         <param name="content_path" value="videodb://recentlyaddedmovies/"/>
                         <param name="list_id" value="5300"/>
                         <param name="onup_id" value="5200"/>
-                        <param name="ondown_id" value="5100"/>
+                        <param name="ondown_id" value="20001"/>
                     </include>
                 </control>
                 <!-- <control type="image">
