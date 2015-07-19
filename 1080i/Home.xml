@@ -24,27 +24,80 @@
             <width>1920</width>
             <height>1080</height>
             <texture>special://skin/extras/backgrounds/01.jpg</texture>
+        </control>     
+        <control type="image">
+            <description>List Panel</description>
+            <posx>0</posx>
+            <posy>-10</posy>
+            <width>400</width>
+            <height>1100</height>
+            <texture>lists/panel.png</texture>
         </control>
         <control type="image">
-            <posx>100</posx>
-            <posy>0</posy>
+            <description>List Panel</description>
+            <posx>0</posx>
+            <posy>960</posy>
+            <width>400</width>
+            <height>120</height>
+            <texture>lists/panel.png</texture>
+        </control>        
+        <control type="image">
+            <description>Logo Panel</description>
+            <posx>0</posx>
+            <posy>-10</posy>
+            <width>400</width>
+            <height>150</height>
+            <texture>lists/panel.png</texture>
+        </control>      
+        <control type="image">
+            <description>Logo</description>
+            <posx>45</posx>
+            <posy>-30</posy>
             <aspectratio>keep</aspectratio>
-            <width>350</width>
+            <width>280</width>
             <height>200</height>
             <texture>logo.png</texture>
         </control>
         <control type="image">
-            <description>List Panel</description>
-            <posx>100</posx>
-            <posy>237</posy>
-            <width>350</width>
-            <height>604</height>
+            <description>InfoBar Panel</description>
+            <posx>393</posx>
+            <posy>-10</posy>
+            <width>1533</width>
+            <height>100</height>
             <texture>lists/panel.png</texture>
         </control>
+        <!-- Fake notification -->
+        <control type="image">
+            <description>InfoBar Panel</description>
+            <posx>1550</posx>
+            <posy>-10</posy>
+            <width>370</width>
+            <height>100</height>
+            <texture>lists/panel.png</texture>
+        </control>
+        <control type="label">
+            <posx>1790</posx>
+            <posy>-8</posy>
+            <height>100</height>
+            <width>200</width>
+            <align>right</align>
+            <font>font16</font>
+            <label>Fake Notification</label>
+            <textcolor>white</textcolor>
+            <shadowcolor>22000000</shadowcolor>
+        </control>
+        <control type="image">
+            <description>Info Notification</description>
+            <posx>1820</posx>
+            <posy>12</posy>
+            <width>59</width>
+            <height>59</height>
+            <texture>kaitoast/info.png</texture>
+        </control>                
         <control type="list" id="9000">
-            <posx>102</posx>
-            <posy>240</posy>
-            <width>348</width>
+            <posx>0</posx>
+            <posy>140</posy>
+            <width>400</width>
             <height>600</height>
             <pagecontrol>70</pagecontrol>
             <onright>2000</onright>
@@ -55,14 +108,14 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>348</width>
+                    <width>400</width>
                     <height>61</height>
                     <texture border="90,3,90,3">lists/separator.png</texture>
                 </control>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>348</width>
+                    <width>400</width>
                     <height>59</height>
                     <texture border="150,1,150,1">lists/focus.png</texture>
                     <include>listfocusanim</include>
@@ -101,7 +154,7 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>348</width>
+                    <width>400</width>
                     <height>61</height>
                     <texture border="90,3,90,3">lists/separator.png</texture>
                 </control>
@@ -231,13 +284,13 @@
             <control type="group" id="5000">
                 <visible>Container(9000).HasFocus(10)</visible>
                 <control type="textbox">
-                    <posy>50</posy>
+                    <posy>160</posy>
                     <posx>1330</posx>
                     <align>right</align>
                     <width>500</width>
                     <textcolor>FFFFFFFF</textcolor>
                     <label>Total movies: $INFO[Window(home).Property(movies.Count)][CR]Watched: $INFO[Window(home).Property(movies.watched)]</label>
-                    <font>font30</font>
+                    <font>font16</font>
                 </control>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
@@ -271,26 +324,6 @@
                         <param name="ondown_id" value="20001"/>
                     </include>
                 </control>
-                <!-- <control type="image">
-                     <posx>1125</posx>
-                     <posy>970</posy>
-                     <width>80</width>
-                     <height>25</height>
-                     <texture>overlays/arrowdown.png</texture>
-                     <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
-                     <animation effect="slide" start="0,150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                     <visible>Container(5000).HasNext</visible>
-                     </control>
-                     <control type="image">
-                     <posx>1125</posx>
-                     <posy>180</posy>
-                     <width>80</width>
-                     <height>25</height>
-                     <texture flipy="true">overlays/arrowdown.png</texture>
-                     <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
-                     <animation effect="slide" start="0,-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                     <visible>Container(5000).HasPrevious</visible>
-                     </control> -->
             </control>
             <control type="grouplist" id="6000">
                 <orientation>vertical</orientation>
@@ -410,10 +443,10 @@
             </control>
         </control>
         <control type="rss">
-            <posx>0</posx>
+            <posx>440</posx>
             <posy>1050</posy>
             <height>30</height>
-            <width>1920</width>
+            <width>1480</width>
             <font>Font-Condensed-S28</font>
             <urlset>1</urlset>
             <textcolor>77FFFFFF</textcolor>
