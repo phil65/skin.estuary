@@ -320,7 +320,7 @@
             <control type="grouplist" id="6000">
                 <orientation>vertical</orientation>
                 <posy>180</posy>
-                <height>730</height>
+                <height>800</height>
                 <visible>Container(9000).HasFocus(11)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
@@ -355,7 +355,7 @@
             <control type="grouplist" id="7000">
                 <orientation>vertical</orientation>
                 <posy>180</posy>
-                <height>730</height>
+                <height>800</height>
                 <visible>Container(9000).HasFocus(3)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
@@ -390,7 +390,7 @@
             <control type="grouplist" id="8000">
                 <orientation>vertical</orientation>
                 <posy>180</posy>
-                <height>730</height>
+                <height>800</height>
                 <visible>Container(9000).HasFocus(1)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
@@ -402,18 +402,21 @@
                 </animation>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/executable/"/>
+                    <param name="widget_header" value="Program add-ons"/>
                     <param name="list_id" value="8100"/>
                     <param name="onup_id" value="20000"/>
                     <param name="ondown_id" value="8200"/>
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/video/"/>
+                    <param name="widget_header" value="Video add-ons"/>
                     <param name="list_id" value="8200"/>
                     <param name="onup_id" value="8100"/>
                     <param name="ondown_id" value="8300"/>
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/audio/"/>
+                    <param name="widget_header" value="Audio add-ons"/>
                     <param name="list_id" value="8300"/>
                     <param name="onup_id" value="8200"/>
                     <param name="ondown_id" value="20001"/>
@@ -422,7 +425,7 @@
             <control type="grouplist" id="4000">
                 <orientation>vertical</orientation>
                 <posy>180</posy>
-                <height>730</height>
+                <height>800</height>
                 <visible>Container(9000).HasFocus(4)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
@@ -434,6 +437,7 @@
                 </animation>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/image/"/>
+                    <param name="widget_header" value="Image add-ons"/>
                     <param name="list_id" value="4100"/>
                     <param name="onup_id" value="20000"/>
                     <param name="ondown_id" value="20001"/>
