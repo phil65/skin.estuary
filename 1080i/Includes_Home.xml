@@ -141,7 +141,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <content limit="10">$PARAM[content_path]</content>
+                <content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
             </control>
         </control>
     </include>
@@ -286,7 +286,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <content limit="10">$PARAM[content_path]</content>
+                <content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
             </control>
         </control>
     </include>
@@ -431,7 +431,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <content limit="10">$PARAM[content_path]</content>
+                <content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
             </control>
         </control>
     </include>
