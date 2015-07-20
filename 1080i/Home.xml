@@ -76,24 +76,18 @@
             <texture>lists/panel.png</texture>
         </control>
         <control type="label">
-            <posx>1790</posx>
+            <posx>1890</posx>
             <posy>-8</posy>
             <height>100</height>
             <width>200</width>
             <align>right</align>
-            <font>font12</font>
-            <label>Fake Notification</label>
+            <font>font30</font>
+            <label>$INFO[System.Time]</label>
             <textcolor>white</textcolor>
             <shadowcolor>22000000</shadowcolor>
+            <visible>!Window.IsActive(infodialog)</visible>
         </control>
-        <control type="image">
-            <description>Info Notification</description>
-            <posx>1820</posx>
-            <posy>12</posy>
-            <width>59</width>
-            <height>59</height>
-            <texture>kaitoast/info.png</texture>
-        </control>
+
         <control type="list" id="9000">
             <posx>0</posx>
             <posy>140</posy>
