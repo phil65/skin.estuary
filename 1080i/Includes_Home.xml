@@ -42,16 +42,14 @@
                 <posy>60</posy>
                 <width>1400</width>
                 <height>400</height>
-                <pagecontrol>70</pagecontrol>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>horizontal</orientation>
-                <viewtype label="42226">list</viewtype>
                 <onleft>9000</onleft>
                 <onright>$PARAM[list_id]</onright>
                 <onup>$PARAM[onup_id]</onup>
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
-                <preloaditems>2</preloaditems>
+                <preloaditems>1</preloaditems>
                 <animation type="WindowOpen">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
                     <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
@@ -187,16 +185,14 @@
                 <posy>60</posy>
                 <width>1401</width>
                 <height>400</height>
-                <pagecontrol>70</pagecontrol>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>horizontal</orientation>
-                <viewtype label="42226">list</viewtype>
                 <onleft>9000</onleft>
                 <onright>$PARAM[list_id]</onright>
                 <onup>$PARAM[onup_id]</onup>
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
-                <preloaditems>2</preloaditems>
+                <preloaditems>1</preloaditems>
                 <animation type="WindowOpen">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
                     <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
@@ -268,7 +264,7 @@
                                 <posx>20</posx>
                                 <posy>265</posy>
                                 <width>360</width>
-                                <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]$VAR[LandscapeHDSD3DLabel]</label>
+                                <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]</label>
                                 <font>font12</font>
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
@@ -332,16 +328,14 @@
                 <posy>60</posy>
                 <width>1400</width>
                 <height>400</height>
-                <pagecontrol>70</pagecontrol>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>horizontal</orientation>
-                <viewtype label="42226">list</viewtype>
                 <onleft>9000</onleft>
                 <onright>$PARAM[list_id]</onright>
                 <onup>$PARAM[onup_id]</onup>
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
-                <preloaditems>2</preloaditems>
+                <preloaditems>1</preloaditems>
                 <animation type="WindowOpen">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
                     <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
@@ -402,7 +396,7 @@
                                 <posx>20</posx>
                                 <posy>240</posy>
                                 <width>260</width>
-                                <label>$INFO[ListItem.Label] - $INFO[ListItem.Year]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, - ]</label>
                                 <font>font15</font>
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
