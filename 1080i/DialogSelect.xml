@@ -18,7 +18,7 @@
                 <top>0</top>
                 <width>850</width>
                 <height>550</height>
-                <texture border="40">$VAR[SelectBack]</texture>
+                <texture border="40">lists/panel.png</texture>
                 <visible>[Control.IsVisible(3) + IntegerGreaterThan(Container(3).NumItems,8)] | [Control.IsVisible(6) + IntegerGreaterThan(Container(6).NumItems,4)]</visible>
             </control>
             <control type="image">
@@ -27,7 +27,7 @@
                 <top>0</top>
                 <width>850</width>
                 <height>458</height>
-                <texture border="40">$VAR[SelectBack]</texture>
+                <texture border="40">lists/panel.png</texture>
                 <visible>[Control.IsVisible(3) + IntegerGreaterThan(Container(3).NumItems,6) + !IntegerGreaterThan(Container(3).NumItems,8)] | [Control.IsVisible(6) + IntegerGreaterThan(Container(6).NumItems,3) + !IntegerGreaterThan(Container(6).NumItems,4)]</visible>
             </control>
             <control type="image">
@@ -36,7 +36,7 @@
                 <top>0</top>
                 <width>850</width>
                 <height>366</height>
-                <texture border="40">$VAR[SelectBack]</texture>
+                <texture border="40">lists/panel.png</texture>
                 <visible>[Control.IsVisible(3) + IntegerGreaterThan(Container(3).NumItems,4) + !IntegerGreaterThan(Container(3).NumItems,6)] | [Control.IsVisible(6) + IntegerGreaterThan(Container(6).NumItems,2) + !IntegerGreaterThan(Container(6).NumItems,3)]</visible>
             </control>
             <control type="image">
@@ -45,7 +45,7 @@
                 <top>0</top>
                 <width>850</width>
                 <height>274</height>
-                <texture border="40">$VAR[SelectBack]</texture>
+                <texture border="40">lists/panel.png</texture>
                 <visible>[Control.IsVisible(3) + !IntegerGreaterThan(Container(3).NumItems,4)] | [Control.IsVisible(6) + !IntegerGreaterThan(Container(6).NumItems,2)]</visible>
             </control>
             <control type="image">

@@ -20,5 +20,52 @@
         <width>1920</width>
         <height>1080</height>
     </include>
-
+    <include name="DialogBackgroundCommons">
+        <control type="image">
+            <description>background image</description>
+            <left>0</left>
+            <top>0</top>
+            <width>$PARAM[DialogBackgroundWidth]</width>
+            <height>$PARAM[DialogBackgroundHeight]</height>
+            <texture border="40">lists/panel.png</texture>
+        </control>
+        <control type="image">
+            <description>Dialog Header image</description>
+            <left>40</left>
+            <top>16</top>
+            <width>$PARAM[DialogHeaderWidth]</width>
+            <height>40</height>
+            <texture>lists/panel.png</texture>
+        </control>
+        <control type="label" id="$PARAM[DialogHeaderId]">
+            <description>header label</description>
+            <left>40</left>
+            <top>20</top>
+            <width>$PARAM[DialogHeaderWidth]</width>
+            <height>30</height>
+            <font>font13_title</font>
+            <label>$PARAM[DialogHeaderLabel]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textcolor>selected</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control>
+        <control type="button">
+            <description>Close Window button</description>
+            <left>$PARAM[CloseButtonLeft]</left>
+            <top>15</top>
+            <width>64</width>
+            <height>32</height>
+            <label>-</label>
+            <font>-</font>
+            <onclick>PreviousMenu</onclick>
+            <texturefocus>DialogCloseButton-focus.png</texturefocus>
+            <texturenofocus>DialogCloseButton.png</texturenofocus>
+            <onleft>$PARAM[CloseButtonNav]</onleft>
+            <onright>$PARAM[CloseButtonNav]</onright>
+            <onup>$PARAM[CloseButtonNav]</onup>
+            <ondown>$PARAM[CloseButtonNav]</ondown>
+            <visible>system.getbool(input.enablemouse)</visible>
+        </control>
+    </include>
     </includes>
