@@ -77,10 +77,10 @@
                 <focusedlayout width="280">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="110,150" />
+                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,150" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="110,150" />
+                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,150" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
@@ -109,7 +109,7 @@
                                 <texture>colors/black.png</texture>
                             </control>
                             <control type="label">
-                                <posx>20</posx>
+                                <posx>110</posx>
                                 <posy>270</posy>
                                 <width>180</width>
                                 <label>$INFO[ListItem.Label]</label>
@@ -117,18 +117,18 @@
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <align>left</align>
+                                <align>center</align>
                             </control>
                             <control type="label">
-                                <posx>20</posx>
+                                <posx>110</posx>
                                 <posy>294</posy>
                                 <width>180</width>
-                                <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]$VAR[LandscapeHDSD3DLabel]</label>
+                                <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
                                 <font>font10</font>
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <align>left</align>
+                                <align>center</align>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -254,7 +254,7 @@
                                 <texture>colors/black.png</texture>
                             </control>
                             <control type="label">
-                                <posx>20</posx>
+                                <posx>200</posx>
                                 <posy>240</posy>
                                 <width>360</width>
                                 <label>$INFO[ListItem.Label]</label>
@@ -262,18 +262,18 @@
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <align>left</align>
+                                <align>center</align>
                             </control>
                             <control type="label">
-                                <posx>20</posx>
-                                <posy>265</posy>
+                                <posx>200</posx>
+                                <posy>264</posy>
                                 <width>360</width>
-                                <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]$INFO[ListItem.Duration,[COLOR=44FFFFFF]/[/COLOR] , $LOCALIZE[12391]]</label>
+                                <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
                                 <font>font10</font>
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <align>left</align>
+                                <align>center</align>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -367,10 +367,10 @@
                 <focusedlayout width="350">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="110,150" />
+                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,150" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="110,150" />
+                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,150" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
@@ -399,7 +399,7 @@
                                 <texture>colors/black.png</texture>
                             </control>
                             <control type="label">
-                                <posx>20</posx>
+                                <posx>150</posx>
                                 <posy>240</posy>
                                 <width>260</width>
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Year, - ]</label>
@@ -407,18 +407,18 @@
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <align>left</align>
+                                <align>center</align>
                             </control>
                             <control type="label">
-                                <posx>20</posx>
-                                <posy>265</posy>
+                                <posx>150</posx>
+                                <posy>264</posy>
                                 <width>260</width>
                                 <label>$INFO[ListItem.Artist]</label>
                                 <font>font10</font>
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
-                                <align>left</align>
+                                <align>center</align>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
