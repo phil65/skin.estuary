@@ -413,7 +413,7 @@
                                 <posx>150</posx>
                                 <posy>264</posy>
                                 <width>260</width>
-                                <label>$INFO[ListItem.Artist]</label>
+                                <label>$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version)]</label>
                                 <font>font10</font>
                                 <textcolor>white</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
