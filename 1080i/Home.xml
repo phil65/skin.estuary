@@ -81,7 +81,7 @@
             <height>100</height>
             <width>200</width>
             <align>right</align>
-            <font>font16</font>
+            <font>font12</font>
             <label>Fake Notification</label>
             <textcolor>white</textcolor>
             <shadowcolor>22000000</shadowcolor>
@@ -129,7 +129,7 @@
                     <width>560</width>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>font30</font>
+                    <font>font14</font>
                     <label>$INFO[ListItem.Label]</label>
                     <selectedcolor>SelectedGreen</selectedcolor>
                     <textcolor>white</textcolor>
@@ -165,7 +165,7 @@
                     <height>70</height>
                     <width>560</width>
                     <aligny>center</aligny>
-                    <font>font30</font>
+                    <font>font14</font>
                     <label>$INFO[ListItem.Label]</label>
                     <selectedcolor>SelectedGreen</selectedcolor>
                     <textcolor>white</textcolor>
@@ -279,7 +279,7 @@
                     <width>500</width>
                     <textcolor>FFFFFFFF</textcolor>
                     <label>Total movies: $INFO[Window(home).Property(movies.Count)][CR]Watched: $INFO[Window(home).Property(movies.watched)]</label>
-                    <font>font16</font>
+                    <font>font12</font>
                 </control>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
@@ -462,7 +462,7 @@
             <posy>1050</posy>
             <height>30</height>
             <width>1520</width>
-            <font>Font-Condensed-S28</font>
+            <font>font10</font>
             <urlset>1</urlset>
             <textcolor>77FFFFFF</textcolor>
             <titlecolor>77FFFFFF</titlecolor>
