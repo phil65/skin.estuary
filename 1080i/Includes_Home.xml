@@ -48,7 +48,9 @@
                 <orientation>horizontal</orientation>
                 <onleft>9000</onleft>
                 <onright>$PARAM[list_id]</onright>
+                <onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
                 <onup>$PARAM[onup_id]</onup>
+                <ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
@@ -193,7 +195,9 @@
                 <orientation>horizontal</orientation>
                 <onleft>9000</onleft>
                 <onright>$PARAM[list_id]</onright>
+                <onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
                 <onup>$PARAM[onup_id]</onup>
+                <ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
@@ -338,7 +342,9 @@
                 <orientation>horizontal</orientation>
                 <onleft>9000</onleft>
                 <onright>$PARAM[list_id]</onright>
+                <onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
                 <onup>$PARAM[onup_id]</onup>
+                <ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
