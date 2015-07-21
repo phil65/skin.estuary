@@ -25,7 +25,273 @@
             <height>1080</height>
             <texture>special://skin/extras/backgrounds/01.jpg</texture>
         </control>
-        <control type="image">
+        <control type="group" id="2000">
+            <animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
+                <effect type="slide" end="0,-20" time="60" tween="sine" />
+                <effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
+            </animation>
+            <animation type="Conditional" condition="Control.IsVisible(20001)" reversible="false">
+                <effect type="slide" end="0,20" time="60" tween="sine" />
+                <effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
+            </animation>
+            <control type="group" id="5000">
+                <visible>Container(9000).HasFocus(10)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <control type="grouplist" id="5000">
+                    <orientation>vertical</orientation>
+                    <posy>90</posy>
+                    <height>910</height>
+                    <itemgap>0</itemgap>
+                    <include name="SubMenu">
+                        <param name="list_id" value="5900"/>
+                        <param name="ondown_id" value="5100"/>
+                        <param name="item1_id" value="5901" />
+                        <param name="item1_onclick" value="ActivateWindow(videos)" />
+                        <param name="item1_label" value="$LOCALIZE[652]" />
+                        <param name="item2_id" value="5902" />
+                        <param name="item2_onclick" value="ActivateWindow(videos)" />
+                        <param name="item2_label" value="$LOCALIZE[20434]" />
+                        <param name="item3_id" value="5903" />
+                        <param name="item3_onclick" value="ActivateWindow(videos)" />
+                        <param name="item3_label" value="$LOCALIZE[344]" />
+                        <param name="item4_id" value="5904" />
+                        <param name="item4_onclick" value="ActivateWindow(videos)" />
+                        <param name="item4_label" value="$LOCALIZE[135]" />
+                        <param name="item5_id" value="5905" />
+                        <param name="item5_onclick" value="ActivateWindow(videos)" />
+                        <param name="item5_label" value="$LOCALIZE[135]" />
+                    </include>
+                    <include name="WidgetListMovies">
+                        <param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
+                        <param name="widget_header" value="In-progress movies"/>
+                        <param name="widget_target" value="videos"/>
+                        <param name="list_id" value="5100"/>
+                        <param name="onup_id" value="5900"/>
+                        <param name="ondown_id" value="5200"/>
+                    </include>
+                    <include name="WidgetListMovies">
+                        <param name="content_path" value="videodb://recentlyaddedmovies/"/>
+                        <param name="widget_header" value="Recently added movies"/>
+                        <param name="widget_target" value="videos"/>
+                        <param name="list_id" value="5200"/>
+                        <param name="onup_id" value="5100"/>
+                        <param name="ondown_id" value="5300"/>
+                    </include>
+                    <include name="WidgetListMovies">
+                        <param name="content_path" value="special://skin/playlists/random_movies.xsp"/>
+                        <param name="widget_header" value="Random movies"/>
+                        <param name="widget_target" value="videos"/>
+                        <param name="list_id" value="5300"/>
+                        <param name="onup_id" value="5200"/>
+                        <param name="ondown_id" value="20001"/>
+                    </include>
+                </control>
+            </control>
+            <control type="grouplist" id="6000">
+                <orientation>vertical</orientation>
+                <posy>90</posy>
+                <height>910</height>
+                <visible>Container(9000).HasFocus(11)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="SubMenu">
+                    <param name="list_id" value="6900"/>
+                    <param name="ondown_id" value="6100"/>
+                    <param name="item1_id" value="5901" />
+                    <param name="item1_onclick" value="ActivateWindow(videos)" />
+                    <param name="item1_label" value="$LOCALIZE[652]" />
+                    <param name="item2_id" value="5902" />
+                    <param name="item2_onclick" value="ActivateWindow(videos)" />
+                    <param name="item2_label" value="$LOCALIZE[20434]" />
+                    <param name="item3_id" value="5903" />
+                    <param name="item3_onclick" value="ActivateWindow(videos)" />
+                    <param name="item3_label" value="$LOCALIZE[344]" />
+                    <param name="item4_id" value="5904" />
+                    <param name="item4_onclick" value="ActivateWindow(videos)" />
+                    <param name="item4_label" value="$LOCALIZE[135]" />
+                    <param name="item5_id" value="5905" />
+                    <param name="item5_onclick" value="ActivateWindow(videos)" />
+                    <param name="item5_label" value="$LOCALIZE[135]" />
+                </include>
+                <include name="WidgetListEpisodes">
+                    <param name="content_path" value="special://skin/playlists/inprogress_episodes.xsp"/>
+                    <param name="widget_header" value="In-progress episodes"/>
+                    <param name="widget_target" value="videos"/>
+                    <param name="list_id" value="6100"/>
+                    <param name="onup_id" value="6900"/>
+                    <param name="ondown_id" value="6200"/>
+                </include>
+                <include name="WidgetListEpisodes">
+                    <param name="content_path" value="videodb://recentlyaddedepisodes/"/>
+                    <param name="widget_header" value="Recently added episodes"/>
+                    <param name="widget_target" value="videos"/>
+                    <param name="list_id" value="6200"/>
+                    <param name="onup_id" value="6100"/>
+                    <param name="ondown_id" value="6300"/>
+                </include>
+                <include name="WidgetListEpisodes">
+                    <param name="content_path" value="special://skin/playlists/random_episodes.xsp"/>
+                    <param name="widget_header" value="Random episodes"/>
+                    <param name="widget_target" value="videos"/>
+                    <param name="list_id" value="6300"/>
+                    <param name="onup_id" value="6200"/>
+                    <param name="ondown_id" value="20001"/>
+                </include>
+            </control>
+            <control type="grouplist" id="7000">
+                <orientation>vertical</orientation>
+                <posy>90</posy>
+                <height>910</height>
+                <visible>Container(9000).HasFocus(3)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="SubMenu">
+                    <param name="list_id" value="7900"/>
+                    <param name="ondown_id" value="7100"/>
+                    <param name="item1_id" value="5901" />
+                    <param name="item1_onclick" value="ActivateWindow(videos)" />
+                    <param name="item1_label" value="$LOCALIZE[652]" />
+                    <param name="item2_id" value="5902" />
+                    <param name="item2_onclick" value="ActivateWindow(videos)" />
+                    <param name="item2_label" value="$LOCALIZE[20434]" />
+                    <param name="item3_id" value="5903" />
+                    <param name="item3_onclick" value="ActivateWindow(videos)" />
+                    <param name="item3_label" value="$LOCALIZE[344]" />
+                    <param name="item4_id" value="5904" />
+                    <param name="item4_onclick" value="ActivateWindow(videos)" />
+                    <param name="item4_label" value="$LOCALIZE[135]" />
+                    <param name="item5_id" value="5905" />
+                    <param name="item5_onclick" value="ActivateWindow(videos)" />
+                    <param name="item5_label" value="$LOCALIZE[135]" />
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
+                    <param name="widget_header" value="Most played albums"/>
+                    <param name="widget_target" value="music"/>
+                    <param name="list_id" value="7100"/>
+                    <param name="onup_id" value="7900"/>
+                    <param name="ondown_id" value="7200"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="musicdb://recentlyaddedalbums/"/>
+                    <param name="widget_header" value="Recently added albums"/>
+                    <param name="widget_target" value="music"/>
+                    <param name="list_id" value="7200"/>
+                    <param name="onup_id" value="7100"/>
+                    <param name="ondown_id" value="7300"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="special://skin/playlists/random_albums.xsp"/>
+                    <param name="widget_header" value="Random albums"/>
+                    <param name="widget_target" value="music"/>
+                    <param name="list_id" value="7300"/>
+                    <param name="onup_id" value="7200"/>
+                    <param name="ondown_id" value="20001"/>
+                </include>
+            </control>
+            <control type="grouplist" id="8000">
+                <orientation>vertical</orientation>
+                <posy>90</posy>
+                <height>910</height>
+                <visible>Container(9000).HasFocus(1)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/executable/"/>
+                    <param name="widget_header" value="Program add-ons"/>
+                    <param name="widget_target" value="programs"/>
+                    <param name="list_id" value="8100"/>
+                    <param name="onup_id" value="20000"/>
+                    <param name="ondown_id" value="8200"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/video/"/>
+                    <param name="widget_header" value="Video add-ons"/>
+                    <param name="widget_target" value="videos"/>
+                    <param name="list_id" value="8200"/>
+                    <param name="onup_id" value="8100"/>
+                    <param name="ondown_id" value="8300"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/audio/"/>
+                    <param name="widget_header" value="Audio add-ons"/>
+                    <param name="widget_target" value="music"/>
+                    <param name="list_id" value="8300"/>
+                    <param name="onup_id" value="8200"/>
+                    <param name="ondown_id" value="20001"/>
+                </include>
+            </control>
+            <control type="grouplist" id="4000">
+                <orientation>vertical</orientation>
+                <posy>90</posy>
+                <height>910</height>
+                <visible>Container(9000).HasFocus(4)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/image/"/>
+                    <param name="widget_header" value="Image add-ons"/>
+                    <param name="widget_target" value="pictures"/>
+                    <param name="list_id" value="4100"/>
+                    <param name="onup_id" value="20000"/>
+                    <param name="ondown_id" value="20001"/>
+                </include>
+            </control>
+            <control type="grouplist" id="11000">
+                <orientation>vertical</orientation>
+                <posy>90</posy>
+                <height>910</height>
+                <visible>Container(9000).HasFocus(2)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="sources://video/"/>
+                    <param name="widget_header" value="Sources"/>
+                    <param name="widget_target" value="files"/>
+                    <param name="list_id" value="11100"/>
+                    <param name="onup_id" value="20000"/>
+                    <param name="ondown_id" value="20001"/>
+                </include>
+            </control>
+        </control>
+     <control type="image">
             <description>List Panel</description>
             <posx>0</posx>
             <posy>-10</posy>
@@ -96,6 +362,18 @@
             <label>Total movies: $INFO[Window(home).Property(movies.Count)][CR]Watched: $INFO[Window(home).Property(movies.watched)]</label>
             <font>font12</font>
             <visible>Container(9000).HasFocus(10)</visible>
+        </control>
+        <control type="rss">
+            <posx>400</posx>
+            <posy>1050</posy>
+            <height>30</height>
+            <width>1520</width>
+            <font>font10</font>
+            <urlset>1</urlset>
+            <textcolor>77FFFFFF</textcolor>
+            <titlecolor>77FFFFFF</titlecolor>
+            <shadowcolor>22000000</shadowcolor>
+            <headlinecolor>77FFFFFF</headlinecolor>
         </control>
         <control type="list" id="9000">
             <posx>0</posx>
@@ -334,299 +612,6 @@
                 <textureradioofffocus>icons/poweroff.png</textureradioofffocus>
                 <textureradiooffnofocus>icons/poweroff.png</textureradiooffnofocus>
             </control>
-        </control>
-        <control type="group" id="2000">
-            <animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
-                <effect type="slide" end="0,-20" time="60" tween="sine" />
-                <effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
-            </animation>
-            <animation type="Conditional" condition="Control.IsVisible(20001)" reversible="false">
-                <effect type="slide" end="0,20" time="60" tween="sine" />
-                <effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
-            </animation>
-            <control type="group" id="5000">
-                <visible>Container(9000).HasFocus(10)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
-                </animation>
-                <control type="grouplist" id="5000">
-                    <orientation>vertical</orientation>
-                    <posy>90</posy>
-                    <height>910</height>
-                    <itemgap>0</itemgap>
-                    <include name="SubMenu">
-                        <param name="list_id" value="5900"/>
-                        <param name="ondown_id" value="5100"/>
-                        <param name="item1_id" value="5901" />
-                        <param name="item1_icon" value="icons/calendar.png" />
-                        <param name="item1_onclick" value="ActivateWindow(videos)" />
-                        <param name="item1_label" value="$LOCALIZE[652]" />
-                        <param name="item2_id" value="5902" />
-                        <param name="item2_icon" value="icons/collection.png" />
-                        <param name="item2_onclick" value="ActivateWindow(videos)" />
-                        <param name="item2_label" value="$LOCALIZE[20434]" />
-                        <param name="item3_id" value="5903" />
-                        <param name="item3_icon" value="icons/person.png" />
-                        <param name="item3_onclick" value="ActivateWindow(videos)" />
-                        <param name="item3_label" value="$LOCALIZE[344]" />
-                        <param name="item4_id" value="5904" />
-                        <param name="item4_icon" value="icons/movieclap.png" />
-                        <param name="item4_onclick" value="ActivateWindow(videos)" />
-                        <param name="item4_label" value="$LOCALIZE[135]" />
-                        <param name="item5_id" value="5905" />
-                        <param name="item5_icon" value="icons/movieclap.png" />
-                        <param name="item5_onclick" value="ActivateWindow(videos)" />
-                        <param name="item5_label" value="$LOCALIZE[135]" />
-                    </include>
-                    <include name="WidgetListMovies">
-                        <param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
-                        <param name="widget_header" value="In-progress movies"/>
-                        <param name="widget_target" value="videos"/>
-                        <param name="list_id" value="5100"/>
-                        <param name="onup_id" value="5900"/>
-                        <param name="ondown_id" value="5200"/>
-                    </include>
-                    <include name="WidgetListMovies">
-                        <param name="content_path" value="videodb://recentlyaddedmovies/"/>
-                        <param name="widget_header" value="Recently added movies"/>
-                        <param name="widget_target" value="videos"/>
-                        <param name="list_id" value="5200"/>
-                        <param name="onup_id" value="5100"/>
-                        <param name="ondown_id" value="5300"/>
-                    </include>
-                    <include name="WidgetListMovies">
-                        <param name="content_path" value="special://skin/playlists/random_movies.xsp"/>
-                        <param name="widget_header" value="Random movies"/>
-                        <param name="widget_target" value="videos"/>
-                        <param name="list_id" value="5300"/>
-                        <param name="onup_id" value="5200"/>
-                        <param name="ondown_id" value="20001"/>
-                    </include>
-                </control>
-            </control>
-            <control type="grouplist" id="6000">
-                <orientation>vertical</orientation>
-                <posy>90</posy>
-                <height>910</height>
-                <visible>Container(9000).HasFocus(11)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
-                </animation>
-                <include name="SubMenu">
-                    <param name="list_id" value="6900"/>
-                    <param name="ondown_id" value="6100"/>
-                    <param name="item1_id" value="5901" />
-                    <param name="item1_icon" value="icons/calendar.png" />
-                    <param name="item1_onclick" value="ActivateWindow(videos)" />
-                    <param name="item1_label" value="$LOCALIZE[652]" />
-                    <param name="item2_id" value="5902" />
-                    <param name="item2_icon" value="icons/collection.png" />
-                    <param name="item2_onclick" value="ActivateWindow(videos)" />
-                    <param name="item2_label" value="$LOCALIZE[20434]" />
-                    <param name="item3_id" value="5903" />
-                    <param name="item3_icon" value="icons/person.png" />
-                    <param name="item3_onclick" value="ActivateWindow(videos)" />
-                    <param name="item3_label" value="$LOCALIZE[344]" />
-                    <param name="item4_id" value="5904" />
-                    <param name="item4_icon" value="icons/movieclap.png" />
-                    <param name="item4_onclick" value="ActivateWindow(videos)" />
-                    <param name="item4_label" value="$LOCALIZE[135]" />
-                    <param name="item5_id" value="5905" />
-                    <param name="item5_icon" value="icons/movieclap.png" />
-                    <param name="item5_onclick" value="ActivateWindow(videos)" />
-                    <param name="item5_label" value="$LOCALIZE[135]" />
-                </include>
-                <include name="WidgetListEpisodes">
-                    <param name="content_path" value="special://skin/playlists/inprogress_episodes.xsp"/>
-                    <param name="widget_header" value="In-progress episodes"/>
-                    <param name="widget_target" value="videos"/>
-                    <param name="list_id" value="6100"/>
-                    <param name="onup_id" value="6900"/>
-                    <param name="ondown_id" value="6200"/>
-                </include>
-                <include name="WidgetListEpisodes">
-                    <param name="content_path" value="videodb://recentlyaddedepisodes/"/>
-                    <param name="widget_header" value="Recently added episodes"/>
-                    <param name="widget_target" value="videos"/>
-                    <param name="list_id" value="6200"/>
-                    <param name="onup_id" value="6100"/>
-                    <param name="ondown_id" value="6300"/>
-                </include>
-                <include name="WidgetListEpisodes">
-                    <param name="content_path" value="special://skin/playlists/random_episodes.xsp"/>
-                    <param name="widget_header" value="Random episodes"/>
-                    <param name="widget_target" value="videos"/>
-                    <param name="list_id" value="6300"/>
-                    <param name="onup_id" value="6200"/>
-                    <param name="ondown_id" value="20001"/>
-                </include>
-            </control>
-            <control type="grouplist" id="7000">
-                <orientation>vertical</orientation>
-                <posy>90</posy>
-                <height>910</height>
-                <visible>Container(9000).HasFocus(3)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
-                </animation>
-                <include name="SubMenu">
-                    <param name="list_id" value="7900"/>
-                    <param name="ondown_id" value="7100"/>
-                    <param name="item1_id" value="5901" />
-                    <param name="item1_icon" value="icons/calendar.png" />
-                    <param name="item1_onclick" value="ActivateWindow(videos)" />
-                    <param name="item1_label" value="$LOCALIZE[652]" />
-                    <param name="item2_id" value="5902" />
-                    <param name="item2_icon" value="icons/collection.png" />
-                    <param name="item2_onclick" value="ActivateWindow(videos)" />
-                    <param name="item2_label" value="$LOCALIZE[20434]" />
-                    <param name="item3_id" value="5903" />
-                    <param name="item3_icon" value="icons/person.png" />
-                    <param name="item3_onclick" value="ActivateWindow(videos)" />
-                    <param name="item3_label" value="$LOCALIZE[344]" />
-                    <param name="item4_id" value="5904" />
-                    <param name="item4_icon" value="icons/movieclap.png" />
-                    <param name="item4_onclick" value="ActivateWindow(videos)" />
-                    <param name="item4_label" value="$LOCALIZE[135]" />
-                    <param name="item5_id" value="5905" />
-                    <param name="item5_icon" value="icons/movieclap.png" />
-                    <param name="item5_onclick" value="ActivateWindow(videos)" />
-                    <param name="item5_label" value="$LOCALIZE[135]" />
-                </include>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
-                    <param name="widget_header" value="Most played albums"/>
-                    <param name="widget_target" value="music"/>
-                    <param name="list_id" value="7100"/>
-                    <param name="onup_id" value="7900"/>
-                    <param name="ondown_id" value="7200"/>
-                </include>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="musicdb://recentlyaddedalbums/"/>
-                    <param name="widget_header" value="Recently added albums"/>
-                    <param name="widget_target" value="music"/>
-                    <param name="list_id" value="7200"/>
-                    <param name="onup_id" value="7100"/>
-                    <param name="ondown_id" value="7300"/>
-                </include>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="special://skin/playlists/random_albums.xsp"/>
-                    <param name="widget_header" value="Random albums"/>
-                    <param name="widget_target" value="music"/>
-                    <param name="list_id" value="7300"/>
-                    <param name="onup_id" value="7200"/>
-                    <param name="ondown_id" value="20001"/>
-                </include>
-            </control>
-            <control type="grouplist" id="8000">
-                <orientation>vertical</orientation>
-                <posy>90</posy>
-                <height>910</height>
-                <visible>Container(9000).HasFocus(1)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
-                </animation>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/executable/"/>
-                    <param name="widget_header" value="Program add-ons"/>
-                    <param name="widget_target" value="programs"/>
-                    <param name="list_id" value="8100"/>
-                    <param name="onup_id" value="20000"/>
-                    <param name="ondown_id" value="8200"/>
-                </include>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/video/"/>
-                    <param name="widget_header" value="Video add-ons"/>
-                    <param name="widget_target" value="videos"/>
-                    <param name="list_id" value="8200"/>
-                    <param name="onup_id" value="8100"/>
-                    <param name="ondown_id" value="8300"/>
-                </include>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/audio/"/>
-                    <param name="widget_header" value="Audio add-ons"/>
-                    <param name="widget_target" value="music"/>
-                    <param name="list_id" value="8300"/>
-                    <param name="onup_id" value="8200"/>
-                    <param name="ondown_id" value="20001"/>
-                </include>
-            </control>
-            <control type="grouplist" id="4000">
-                <orientation>vertical</orientation>
-                <posy>90</posy>
-                <height>910</height>
-                <visible>Container(9000).HasFocus(4)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
-                </animation>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/image/"/>
-                    <param name="widget_header" value="Image add-ons"/>
-                    <param name="widget_target" value="pictures"/>
-                    <param name="list_id" value="4100"/>
-                    <param name="onup_id" value="20000"/>
-                    <param name="ondown_id" value="20001"/>
-                </include>
-            </control>
-            <control type="grouplist" id="11000">
-                <orientation>vertical</orientation>
-                <posy>90</posy>
-                <height>910</height>
-                <visible>Container(9000).HasFocus(2)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
-                </animation>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="sources://video/"/>
-                    <param name="widget_header" value="Sources"/>
-                    <param name="widget_target" value="files"/>
-                    <param name="list_id" value="11100"/>
-                    <param name="onup_id" value="20000"/>
-                    <param name="ondown_id" value="20001"/>
-                </include>
-            </control>
-        </control>
-        <control type="rss">
-            <posx>400</posx>
-            <posy>1050</posy>
-            <height>30</height>
-            <width>1520</width>
-            <font>font10</font>
-            <urlset>1</urlset>
-            <textcolor>77FFFFFF</textcolor>
-            <titlecolor>77FFFFFF</titlecolor>
-            <shadowcolor>22000000</shadowcolor>
-            <headlinecolor>77FFFFFF</headlinecolor>
         </control>
     </controls>
 </window>
