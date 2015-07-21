@@ -46,7 +46,7 @@
                 </animation>
                 <control type="grouplist" id="5000">
                     <orientation>vertical</orientation>
-                    <posy>90</posy>
+                    <posy>76</posy>
                     <height>910</height>
                     <itemgap>0</itemgap>
                     <include name="SubMenu">
@@ -96,7 +96,7 @@
             </control>
             <control type="grouplist" id="6000">
                 <orientation>vertical</orientation>
-                <posy>90</posy>
+                <posy>76</posy>
                 <height>910</height>
                 <visible>Container(9000).HasFocus(11)</visible>
                 <animation type="Visible">
@@ -153,7 +153,7 @@
             </control>
             <control type="grouplist" id="7000">
                 <orientation>vertical</orientation>
-                <posy>90</posy>
+                <posy>76</posy>
                 <height>910</height>
                 <visible>Container(9000).HasFocus(3)</visible>
                 <animation type="Visible">
@@ -210,7 +210,7 @@
             </control>
             <control type="grouplist" id="8000">
                 <orientation>vertical</orientation>
-                <posy>90</posy>
+                <posy>76</posy>
                 <height>910</height>
                 <visible>Container(9000).HasFocus(1)</visible>
                 <animation type="Visible">
@@ -248,7 +248,7 @@
             </control>
             <control type="grouplist" id="4000">
                 <orientation>vertical</orientation>
-                <posy>90</posy>
+                <posy>76</posy>
                 <height>910</height>
                 <visible>Container(9000).HasFocus(4)</visible>
                 <animation type="Visible">
@@ -270,7 +270,7 @@
             </control>
             <control type="grouplist" id="11000">
                 <orientation>vertical</orientation>
-                <posy>90</posy>
+                <posy>76</posy>
                 <height>910</height>
                 <visible>Container(9000).HasFocus(2)</visible>
                 <animation type="Visible">
@@ -291,83 +291,66 @@
                 </include>
             </control>
         </control>
+    <control type="image">
+            <description>InfoBarTop</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>80</height>
+            <texture>frame/InfoBarTop.png</texture>
+    </control>
      <control type="image">
-            <description>List Panel</description>
+            <description>Menu Panel</description>
             <posx>0</posx>
-            <posy>-10</posy>
+            <posy>80</posy>
             <width>400</width>
-            <height>1100</height>
+            <height>920</height>
             <texture>lists/panel.png</texture>
         </control>
         <control type="image">
             <description>List Panel</description>
             <posx>0</posx>
-            <posy>960</posy>
-            <width>400</width>
-            <height>120</height>
-            <texture>lists/panel.png</texture>
-        </control>
-        <control type="image">
-            <description>Logo Panel</description>
-            <posx>0</posx>
-            <posy>-10</posy>
-            <width>400</width>
-            <height>150</height>
-            <texture>lists/panel.png</texture>
+            <posy>1000</posy>
+            <width>1920</width>
+            <height>80</height>
+            <texture>frame/InfoBarBottom.png</texture>
         </control>
         <control type="image">
             <description>Logo</description>
-            <posx>45</posx>
-            <posy>-30</posy>
+            <posx>20</posx>
+            <posy>10</posy>
             <aspectratio>keep</aspectratio>
-            <width>280</width>
-            <height>200</height>
+            <width>192</width>
+            <height>56</height>
             <texture>logo.png</texture>
-        </control>
-        <control type="image">
-            <description>InfoBar Panel</description>
-            <posx>393</posx>
-            <posy>-10</posy>
-            <width>1533</width>
-            <height>100</height>
-            <texture>lists/panel.png</texture>
-        </control>
-        <!-- Fake notification -->
-        <control type="image">
-            <description>InfoBar Panel</description>
-            <posx>1550</posx>
-            <posy>-10</posy>
-            <width>370</width>
-            <height>100</height>
-            <texture>lists/panel.png</texture>
-        </control>
+        </control> 
         <control type="label">
-            <posx>1890</posx>
-            <posy>-8</posy>
-            <height>100</height>
+            <posx>1860</posx>
+            <posy>9</posy>
+            <height>100</height> 
             <width>200</width>
             <align>right</align>
-            <font>font30</font>
+            <font>font16</font>
             <label>$INFO[System.Time]</label>
             <textcolor>white</textcolor>
             <shadowcolor>22000000</shadowcolor>
             <visible>!Window.IsActive(infodialog)</visible>
-        </control>
+        </control> 
         <control type="textbox">
-            <posy>8</posy>
-            <posx>1030</posx>
+            <posy>1010</posy>
+            <posx>1340</posx>
             <align>right</align>
             <width>500</width>
             <textcolor>FFFFFFFF</textcolor>
-            <label>Total movies: $INFO[Window(home).Property(movies.Count)][CR]Watched: $INFO[Window(home).Property(movies.watched)]</label>
+            <label>Total movies: $INFO[Window(home).Property(movies.Count),, •] Watched: $INFO[Window(home).Property(movies.watched)]</label>
             <font>font12</font>
             <visible>Container(9000).HasFocus(10)</visible>
         </control>
         <control type="rss">
-            <posx>400</posx>
+            <posx>0</posx>
             <posy>1050</posy>
             <height>30</height>
-            <width>1520</width>
+            <width>1920</width>
             <font>font10</font>
             <urlset>1</urlset>
             <textcolor>77FFFFFF</textcolor>
@@ -377,9 +360,9 @@
         </control>
         <control type="list" id="9000">
             <posx>0</posx>
-            <posy>140</posy>
+            <posy>80</posy>
             <width>400</width>
-            <height>600</height>
+            <height>800</height>
             <pagecontrol>70</pagecontrol>
             <onright>2000</onright>
             <onup>700</onup>
@@ -402,7 +385,7 @@
                     <include>listfocusanim</include>
                     <include>visiblehidefadeinfo</include>
                     <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
-                </control>
+                </control> 
                 <control type="label">
                     <posx>70</posx>
                     <posy>0</posy>
@@ -532,8 +515,8 @@
         <control type="grouplist" id="700">
             <orientation>horizontal</orientation>
             <itemgap>-10</itemgap>
-            <posx>10</posx>
-            <posy>950</posy>
+            <posx>12</posx>
+            <posy>900</posy>
             <onup>9000</onup>
             <ondown>9000</ondown>
             <control type="radiobutton" id="800">
