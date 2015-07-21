@@ -66,7 +66,7 @@
                         <param name="item4_label" value="$LOCALIZE[135]" />
                         <param name="item5_id" value="5905" />
                         <param name="item5_onclick" value="ActivateWindow(videos)" />
-                        <param name="item5_label" value="$LOCALIZE[135]" />
+                        <param name="item5_label" value="Really long label. auto-width ftw." />
                     </include>
                     <include name="WidgetListMovies">
                         <param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
@@ -124,7 +124,7 @@
                     <param name="item4_label" value="$LOCALIZE[135]" />
                     <param name="item5_id" value="5905" />
                     <param name="item5_onclick" value="ActivateWindow(videos)" />
-                    <param name="item5_label" value="$LOCALIZE[135]" />
+                    <param name="item5_label" value="Really long label. auto-width ftw." />
                 </include>
                 <include name="WidgetListEpisodes">
                     <param name="content_path" value="special://skin/playlists/inprogress_episodes.xsp"/>
@@ -181,7 +181,7 @@
                     <param name="item4_label" value="$LOCALIZE[135]" />
                     <param name="item5_id" value="5905" />
                     <param name="item5_onclick" value="ActivateWindow(videos)" />
-                    <param name="item5_label" value="$LOCALIZE[135]" />
+                    <param name="item5_label" value="Really long label. auto-width ftw." />
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
@@ -323,11 +323,11 @@
             <width>192</width>
             <height>56</height>
             <texture>logo.png</texture>
-        </control> 
+        </control>
         <control type="label">
             <posx>1860</posx>
             <posy>9</posy>
-            <height>100</height> 
+            <height>100</height>
             <width>200</width>
             <align>right</align>
             <font>font16</font>
@@ -335,7 +335,7 @@
             <textcolor>white</textcolor>
             <shadowcolor>22000000</shadowcolor>
             <visible>!Window.IsActive(infodialog)</visible>
-        </control> 
+        </control>
         <control type="textbox">
             <posy>1010</posy>
             <posx>1340</posx>
@@ -385,7 +385,7 @@
                     <include>listfocusanim</include>
                     <include>visiblehidefadeinfo</include>
                     <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
-                </control> 
+                </control>
                 <control type="label">
                     <posx>70</posx>
                     <posy>0</posy>

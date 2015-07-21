@@ -2,7 +2,7 @@
 <includes>
     <include name="SubMenuItemsCommon">
         <width>auto</width>
-        <height>84</height>
+        <height>94</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>font12</font>
@@ -13,14 +13,14 @@
         <radiowidth>34</radiowidth>
         <radioheight>34</radioheight>
     </include>
-    <include name="SubMenu"> 
+    <include name="SubMenu">
         <control type="group">
-            <height>100</height> 
+            <height>90</height>
             <control type="grouplist" id="$PARAM[list_id]">
                 <orientation>horizontal</orientation>
                 <itemgap>10</itemgap>
                 <onleft>9000</onleft>
-                <posx>200</posx>
+                <posx>300</posx>
                 <posy>0</posy>
                 <align>right</align>
                 <height>90</height>
@@ -30,27 +30,27 @@
                 <control type="button" id="$PARAM[item1_id]">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item1_onclick]</onclick>
-                    <label>    $PARAM[item1_label]    </label>
+                    <label>     $PARAM[item1_label]     </label>
                 </control>
                 <control type="button" id="$PARAM[item2_id]">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item2_onclick]</onclick>
-                    <label>    $PARAM[item2_label]    </label>
+                    <label>     $PARAM[item2_label]     </label>
                 </control>
                 <control type="button" id="$PARAM[item3_id]">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item3_onclick]</onclick>
-                    <label>    $PARAM[item3_label]    </label>
+                    <label>     $PARAM[item3_label]     </label>
                 </control>
                 <control type="button" id="$PARAM[item4_id]">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item4_onclick]</onclick>
-                    <label>    $PARAM[item4_label]    </label>
+                    <label>     $PARAM[item4_label]     </label>
                 </control>
                 <control type="button" id="$PARAM[item5_id]">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item5_onclick]</onclick>
-                    <label>    $PARAM[item5_label]    </label>
+                    <label>     $PARAM[item5_label]     </label>
                 </control>
             </control>
         </control>
@@ -64,7 +64,7 @@
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
                 <posx>460</posx>
-                <posy>200</posy>
+                <posy>210</posy>
                 <width>28</width>
                 <height>28</height>
                 <texture flipx="true">overlays/arrowright.png</texture>
@@ -74,7 +74,7 @@
             </control>
             <control type="image">
                 <posx>1860</posx>
-                <posy>200</posy>
+                <posy>210</posy>
                 <width>28</width>
                 <height>28</height>
                 <texture>overlays/arrowright.png</texture>
@@ -84,7 +84,7 @@
             </control>
             <control type="label">
                 <posx>500</posx>
-                <posy>0</posy>
+                <posy>10</posy>
                 <width>600</width>
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
@@ -96,7 +96,7 @@
             </control>
             <control type="list" id="$PARAM[list_id]">
                 <posx>500</posx>
-                <posy>60</posy>
+                <posy>70</posy>
                 <width>1400</width>
                 <height>400</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -358,7 +358,7 @@
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
                 <posx>460</posx>
-                <posy>210</posy>
+                <posy>200</posy>
                 <width>28</width>
                 <height>28</height>
                 <texture flipx="true">overlays/arrowright.png</texture>
@@ -368,7 +368,7 @@
             </control>
             <control type="image">
                 <posx>1860</posx>
-                <posy>210</posy>
+                <posy>200</posy>
                 <width>28</width>
                 <height>28</height>
                 <texture>overlays/arrowright.png</texture>
@@ -378,7 +378,7 @@
             </control>
             <control type="label">
                 <posx>500</posx>
-                <posy>0</posy>
+                <posy>10</posy>
                 <width>600</width>
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
@@ -390,7 +390,7 @@
             </control>
             <control type="list" id="$PARAM[list_id]">
                 <posx>500</posx>
-                <posy>60</posy>
+                <posy>70</posy>
                 <width>1400</width>
                 <height>400</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
