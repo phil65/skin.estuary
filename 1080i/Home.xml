@@ -93,6 +93,14 @@
                         <param name="widget_target" value="videos"/>
                         <param name="list_id" value="5300"/>
                         <param name="onup_id" value="5200"/>
+                        <param name="ondown_id" value="5400"/>
+                    </include>
+                    <include name="WidgetListMovies">
+                        <param name="content_path" value="special://skin/playlists/random_movies.xsp"/>
+                        <param name="widget_header" value="Unwatched movies"/>
+                        <param name="widget_target" value="videos"/>
+                        <param name="list_id" value="5400"/>
+                        <param name="onup_id" value="5300"/>
                         <param name="ondown_id" value="20001"/>
                     </include>
                 </control>
