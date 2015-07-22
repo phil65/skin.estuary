@@ -429,7 +429,7 @@
                     <param name="widget_target" value="files"/>
                     <param name="list_id" value="12200"/>
                     <param name="onup_id" value="12100"/>
-                    <param name="ondown_id" value="12300"/>
+                    <param name="ondown_id" value="20001"/>
                 </include>
             </control>
             <control type="grouplist" id="13000">
@@ -449,19 +449,19 @@
                     <param name="list_id" value="13900"/>
                     <param name="ondown_id" value="13100"/>
                     <param name="item1_id" value="13901" />
-                    <param name="item1_onclick" value="ActivateWindow(TVChannels)" />
+                    <param name="item1_onclick" value="ActivateWindow(RadioChannels)" />
                     <param name="item1_label" value="$LOCALIZE[19019]" />
                     <param name="item2_id" value="13902" />
-                    <param name="item2_onclick" value="ActivateWindow(TVGuide)" />
+                    <param name="item2_onclick" value="ActivateWindow(RadioGuide)" />
                     <param name="item2_label" value="$LOCALIZE[22020]" />
                     <param name="item3_id" value="13903" />
-                    <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
+                    <param name="item3_onclick" value="ActivateWindow(RadioRecordings)" />
                     <param name="item3_label" value="$LOCALIZE[19163]" />
                     <param name="item4_id" value="13904" />
-                    <param name="item4_onclick" value="ActivateWindow(TVTimers)" />
+                    <param name="item4_onclick" value="ActivateWindow(RadioTimers)" />
                     <param name="item4_label" value="$LOCALIZE[19040]" />
                     <param name="item5_id" value="13905" />
-                    <param name="item5_onclick" value="ActivateWindow(TVSearch)" />
+                    <param name="item5_onclick" value="ActivateWindow(RadioSearch)" />
                     <param name="item5_label" value="$LOCALIZE[137]" />
                     <param name="item6_vis" value="False" />
                     <param name="item7_vis" value="False" />
@@ -480,19 +480,19 @@
                     <param name="widget_target" value="files"/>
                     <param name="list_id" value="13200"/>
                     <param name="onup_id" value="13100"/>
-                    <param name="ondown_id" value="13300"/>
+                    <param name="ondown_id" value="20001"/>
                 </include>
             </control>
         </control>
-    <control type="image">
+        <control type="image">
             <description>InfoBarTop</description>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
             <height>80</height>
             <texture>frame/InfoBarTop.png</texture>
-    </control>
-     <control type="image">
+        </control>
+        <control type="image">
             <description>Menu Panel</description>
             <posx>0</posx>
             <posy>80</posy>
