@@ -38,11 +38,11 @@
                 <visible>Container(9000).HasFocus(10)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
                 </animation>
                 <animation type="Hidden">
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
                 </animation>
                 <control type="grouplist" id="5000">
                     <orientation>vertical</orientation>
@@ -104,11 +104,11 @@
                 <visible>Container(9000).HasFocus(11)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
                 </animation>
                 <animation type="Hidden">
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
                 </animation>
                 <include name="SubMenu">
                     <param name="list_id" value="6900"/>
@@ -164,11 +164,11 @@
                 <visible>Container(9000).HasFocus(3)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
                 </animation>
                 <animation type="Hidden">
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
                 </animation>
                 <include name="SubMenu">
                     <param name="list_id" value="7900"/>
@@ -224,11 +224,11 @@
                 <visible>Container(9000).HasFocus(1)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
                 </animation>
                 <animation type="Hidden">
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
                 </animation>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/executable/"/>
@@ -262,11 +262,11 @@
                 <visible>Container(9000).HasFocus(4)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
                 </animation>
                 <animation type="Hidden">
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
                 </animation>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/image/"/>
@@ -284,11 +284,11 @@
                 <visible>Container(9000).HasFocus(2)</visible>
                 <animation type="Visible">
                     <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
                 </animation>
                 <animation type="Hidden">
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
                 </animation>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="sources://video/"/>
