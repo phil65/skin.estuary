@@ -92,12 +92,12 @@
     <default type="radiobutton">
         <width>300</width>
         <height>42</height>
-        <radiowidth>24</radiowidth>
-        <radioheight>24</radioheight>
-        <textureradioonfocus>radiobutton-focus.png</textureradioonfocus>
-        <textureradioonnofocus>radiobutton-focus.png</textureradioonnofocus>
-        <textureradioofffocus>radiobutton-nofocus.png</textureradioofffocus>
-        <textureradiooffnofocus>radiobutton-nofocus.png</textureradiooffnofocus>
+        <radiowidth>120</radiowidth>
+        <radioheight>76</radioheight>
+        <textureradioonfocus>buttons/radio-button-fo.png</textureradioonfocus>
+        <textureradioonnofocus>buttons/radio-button-fo.png</textureradioonnofocus>
+        <textureradioofffocus>buttons/radio-button-nf.png</textureradioofffocus>
+        <textureradiooffnofocus>buttons/radio-button-nf.png</textureradiooffnofocus>
         <texturefocus border="5">button-focus.png</texturefocus>
         <texturenofocus border="5">button-nofocus.png</texturenofocus>
         <label>215</label>
