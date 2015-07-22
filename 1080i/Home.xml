@@ -316,23 +316,21 @@
                     <param name="list_id" value="12900"/>
                     <param name="ondown_id" value="12100"/>
                     <param name="item1_id" value="12901" />
-                    <param name="item1_onclick" value="ActivateWindow(MusicLibrary,Artists,return)" />
-                    <param name="item1_label" value="$LOCALIZE[133]" />
+                    <param name="item1_onclick" value="ActivateWindow(TVChannels)" />
+                    <param name="item1_label" value="$LOCALIZE[19019]" />
                     <param name="item2_id" value="12902" />
-                    <param name="item2_onclick" value="ActivateWindow(MusicLibrary,Albums,return)" />
-                    <param name="item2_label" value="$LOCALIZE[132]" />
+                    <param name="item2_onclick" value="ActivateWindow(TVGuide)" />
+                    <param name="item2_label" value="$LOCALIZE[22020]" />
                     <param name="item3_id" value="12903" />
-                    <param name="item3_onclick" value="ActivateWindow(MusicLibrary,Songs,return)" />
-                    <param name="item3_label" value="$LOCALIZE[134]" />
+                    <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
+                    <param name="item3_label" value="$LOCALIZE[19163]" />
                     <param name="item4_id" value="12904" />
-                    <param name="item4_onclick" value="ActivateWindow(MusicFiles)" />
-                    <param name="item4_label" value="$LOCALIZE[744]" />
+                    <param name="item4_onclick" value="ActivateWindow(TVTimers)" />
+                    <param name="item4_label" value="$LOCALIZE[19040]" />
                     <param name="item5_id" value="12905" />
-                    <param name="item5_onclick" value="ActivateWindow(MusicFiles,Addons,return)" />
-                    <param name="item5_label" value="$LOCALIZE[24001]" />
-                    <param name="item6_id" value="12906" />
-                    <param name="item6_onclick" value="ActivateWindow(MusicLibrary,root)" />
-                    <param name="item6_label" value="$LOCALIZE[14022]" />
+                    <param name="item5_onclick" value="ActivateWindow(TVSearch)" />
+                    <param name="item5_label" value="$LOCALIZE[137]" />
+                    <param name="item6_vis" value="False" />
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="pvr://channels/tv/All channels/"/>
@@ -351,7 +349,56 @@
                     <param name="ondown_id" value="12300"/>
                 </include>
             </control>
-
+            <control type="grouplist" id="13000">
+                <orientation>vertical</orientation>
+                <posy>76</posy>
+                <height>925</height>
+                <visible>Container(9000).HasFocus(13)</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
+                </animation>
+                <include name="SubMenu">
+                    <param name="list_id" value="13900"/>
+                    <param name="ondown_id" value="13100"/>
+                    <param name="item1_id" value="13901" />
+                    <param name="item1_onclick" value="ActivateWindow(TVChannels)" />
+                    <param name="item1_label" value="$LOCALIZE[19019]" />
+                    <param name="item2_id" value="13902" />
+                    <param name="item2_onclick" value="ActivateWindow(TVGuide)" />
+                    <param name="item2_label" value="$LOCALIZE[22020]" />
+                    <param name="item3_id" value="13903" />
+                    <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
+                    <param name="item3_label" value="$LOCALIZE[19163]" />
+                    <param name="item4_id" value="13904" />
+                    <param name="item4_onclick" value="ActivateWindow(TVTimers)" />
+                    <param name="item4_label" value="$LOCALIZE[19040]" />
+                    <param name="item5_id" value="13905" />
+                    <param name="item5_onclick" value="ActivateWindow(TVSearch)" />
+                    <param name="item5_label" value="$LOCALIZE[137]" />
+                    <param name="item6_vis" value="False" />
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="pvr://channels/radio/All channels/"/>
+                    <param name="widget_header" value="Recent recordings"/>
+                    <param name="widget_target" value="files"/>
+                    <param name="list_id" value="13100"/>
+                    <param name="onup_id" value="13900"/>
+                    <param name="ondown_id" value="13200"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="pvr://channels/radio/All channels/"/>
+                    <param name="widget_header" value="Favourite channels"/>
+                    <param name="widget_target" value="files"/>
+                    <param name="list_id" value="13200"/>
+                    <param name="onup_id" value="13100"/>
+                    <param name="ondown_id" value="13300"/>
+                </include>
+            </control>
         </control>
     <control type="image">
             <description>InfoBarTop</description>
