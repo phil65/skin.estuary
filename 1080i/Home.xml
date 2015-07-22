@@ -594,81 +594,81 @@
                     <posy>-4</posy>
                     <width>70</width>
                     <height>70</height>
-                    <texture>lists/star_nofo.png</texture>
+                    <texture>$INFO[ListItem.Property(nofocus)]</texture>
                 </control>
             </itemlayout>
             <content>
                 <item id="14">
-                    <label>Now playing...</label>
+                    <label>[B][COLOR button_focus]Now playing...[/B][/COLOR]</label>
                     <onclick condition="Player.HasVideo">ActivateWindow(Fullscreen)</onclick>
                     <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
 <!--                     <visible>Player.HasMedia</visible>
  -->                </item>
                 <item id="10">
                     <label>31954</label>
                     <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
                 </item>
                 <item id="11">
                     <label>31955</label>
                     <onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
                 </item>
                 <item id="3">
                     <label>31956</label>
                     <onclick>ActivateWindow(Music)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
                 </item>
                 <item id="12">
                     <label>31952</label>
                     <onclick>ActivateWindow(TVChannels)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>PVR.HasTVChannels</visible>
                 </item>
                 <item id="13">
                     <label>31960</label>
                     <onclick>ActivateWindow(RadioChannels)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>PVR.HasRadioChannels</visible>
                 </item>
                 <item id="1">
                     <label>31957</label>
                     <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
                     <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
                 </item>
                 <item id="4">
                     <label>31951</label>
                     <onclick>ActivateWindow(Pictures)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
                 </item>
                 <item id="2">
                     <label>31953</label>
                     <onclick condition="StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos)</onclick>
                     <onclick condition="!StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
                 </item>
                 <item id="7">
                     <label>31950</label>
                     <onclick>ActivateWindow(Weather)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
+                    <property name="nofocus">lists/star_nofo.png</property>
+                    <property name="focus">lists/star_fo.png</property>
                     <visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
                 </item>
             </content>
