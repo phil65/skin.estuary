@@ -85,7 +85,7 @@
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>460</posx>
+                <posx>443</posx>
                 <posy>210</posy>
                 <width>28</width>
                 <height>28</height>
@@ -250,7 +250,7 @@
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>460</posx>
+                <posx>443</posx>
                 <posy>210</posy>
                 <width>28</width>
                 <height>28</height>
@@ -321,10 +321,10 @@
                 <focusedlayout width="467">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="233,120" />
+                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="233,120" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="233,120" />
+                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="233,120" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
@@ -400,7 +400,7 @@
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>460</posx>
+                <posx>443</posx>
                 <posy>200</posy>
                 <width>28</width>
                 <height>28</height>
