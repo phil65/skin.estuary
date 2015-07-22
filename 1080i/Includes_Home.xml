@@ -86,7 +86,7 @@
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
                 <posx>443</posx>
-                <posy>210</posy>
+                <posy>221</posy>
                 <width>28</width>
                 <height>28</height>
                 <texture flipx="true">overlays/arrowright.png</texture>
@@ -96,7 +96,7 @@
             </control>
             <control type="image">
                 <posx>1860</posx>
-                <posy>210</posy>
+                <posy>221</posy>
                 <width>28</width>
                 <height>28</height>
                 <texture>overlays/arrowright.png</texture>
