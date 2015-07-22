@@ -356,7 +356,10 @@
                     <param name="item3_id" value="11903" />
                     <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
                     <param name="item3_label" value="Add source..." />
-                    <param name="item4_vis" value="False" />
+                    <param name="item4_id" value="11903" />
+                    <param name="item4_onclick" value="PlayDVD" />
+                    <param name="item4_label" value="$LOCALIZE[31958]" />
+                    <param name="item4_vis" value="System.HasMediadvd" />
                     <param name="item5_vis" value="False" />
                     <param name="item6_vis" value="False" />
                     <param name="item7_vis" value="False" />
@@ -656,27 +659,12 @@
                     <thumb>-</thumb>
                     <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
                 </item>
-                <item id="1">
-                    <label>31957</label>
-                    <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
-                    <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+                <item id="12">
+                    <label>31952</label>
+                    <onclick>ActivateWindow(TVChannels)</onclick>
                     <icon>-</icon>
                     <thumb>-</thumb>
-                    <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
-                </item>
-                <item id="7">
-                    <label>31950</label>
-                    <onclick>ActivateWindow(Weather)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
-                    <visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
-                </item>
-                <item id="4">
-                    <label>31951</label>
-                    <onclick>ActivateWindow(Pictures)</onclick>
-                    <icon>-</icon>
-                    <thumb>-</thumb>
-                    <visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
+                    <visible>PVR.HasTVChannels</visible>
                 </item>
                 <item id="13">
                     <label>31960</label>
@@ -685,12 +673,20 @@
                     <thumb>-</thumb>
                     <visible>PVR.HasRadioChannels</visible>
                 </item>
-                <item id="12">
-                    <label>31952</label>
-                    <onclick>ActivateWindow(TVChannels)</onclick>
+                <item id="1">
+                    <label>31957</label>
+                    <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+                    <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
                     <icon>-</icon>
                     <thumb>-</thumb>
-                    <visible>PVR.HasTVChannels</visible>
+                    <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+                </item>
+                <item id="4">
+                    <label>31951</label>
+                    <onclick>ActivateWindow(Pictures)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
                 </item>
                 <item id="2">
                     <label>31953</label>
@@ -699,6 +695,13 @@
                     <icon>-</icon>
                     <thumb>-</thumb>
                     <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
+                </item>
+                <item id="7">
+                    <label>31950</label>
+                    <onclick>ActivateWindow(Weather)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+                    <visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
                 </item>
             </content>
         </control>
