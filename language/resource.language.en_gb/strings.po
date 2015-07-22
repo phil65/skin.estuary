@@ -10,25 +10,15 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
 "Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/kodi-main/language/en_GB/)\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#[Consistency] Make terms, settings names, brands and other minutiae, consistent throughout file.
-#[Capitalization] Avoid capitalizing every second word. See http://grammarist.com/capitalization/
-#For example, prefer wording as "This new string" instead of "This New String".
-#[Referencing] If a suitable string already exists, reuse it, making a note of where it's used!
-#[Description / location] For example, "#. Description of some setting" used on "#: xbmc/addons/guidialogaddoninfo.cpp"
-#When writing a description or setting, refer to a setting name in quotes. See existing entries for guidance.
-#For example, "Press \"OK\" for \"All seasons\"" instead of "Press OK for All seasons" after first word.
 
 msgctxt "#31000"
 msgid "Change your"
 msgstr ""
-
-#empty strings from id 31001 to 31002
 
 msgctxt "#31003"
 msgid "Power options"
@@ -46,8 +36,6 @@ msgctxt "#31006"
 msgid "View options"
 msgstr ""
 
-#empty string with id 31007
-
 msgctxt "#31008"
 msgid "Full screen"
 msgstr ""
@@ -55,8 +43,6 @@ msgstr ""
 msgctxt "#31009"
 msgid "Total duration"
 msgstr ""
-
-#empty strings from id 31010 to 31021
 
 msgctxt "#31022"
 msgid "Music - Files"
@@ -82,8 +68,6 @@ msgctxt "#31027"
 msgid "Location"
 msgstr ""
 
-#View Type labels
-
 msgctxt "#31028"
 msgid "Poster wrap"
 msgstr ""
@@ -91,8 +75,6 @@ msgstr ""
 msgctxt "#31029"
 msgid "Fanart"
 msgstr ""
-
-#empty string with id 31030
 
 msgctxt "#31031"
 msgid "Pic thumbs"
@@ -106,19 +88,13 @@ msgctxt "#31033"
 msgid "Info"
 msgstr ""
 
-#empty strings from id 31034 to 31038
-
 msgctxt "#31039"
 msgid "Actions"
 msgstr ""
 
-#Extra labels
-
 msgctxt "#31040"
 msgid "Now playing"
 msgstr ""
-
-#empty string with id 31041
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -140,8 +116,6 @@ msgctxt "#31046"
 msgid "SEEKING"
 msgstr ""
 
-#empty string with id 31047
-
 msgctxt "#31048"
 msgid "Visualisation presets"
 msgstr ""
@@ -157,9 +131,6 @@ msgstr ""
 msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr ""
-
-#empty strings from id 31052 to 31054
-#Playlist Editor labels
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -189,9 +160,6 @@ msgctxt "#31061"
 msgid "Current selected"
 msgstr ""
 
-#empty strings from id 31062 to 31100
-#Skin Settings labels
-
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr ""
@@ -205,17 +173,19 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr ""
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid ""
+"Play trailers in a window [COLOR=grey3](Video information dialogue "
+"only)[/COLOR]"
 msgstr ""
-
-#empty string with id 31105
 
 msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr ""
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-"
+"DVD)[/COLOR]"
 msgstr ""
 
 msgctxt "#31108"
@@ -238,8 +208,6 @@ msgctxt "#31112"
 msgid "Options"
 msgstr ""
 
-#empty strings from id 31113 to 31115
-
 msgctxt "#31116"
 msgid "Show recently added albums"
 msgstr ""
@@ -256,8 +224,6 @@ msgstr ""
 msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr ""
-
-#empty strings from id 31120 to 31123
 
 msgctxt "#31124"
 msgid "Show background \"Now playing\" video"
@@ -283,13 +249,9 @@ msgctxt "#31129"
 msgid "Hide fanart in full screen visualisation"
 msgstr ""
 
-#empty strings from id 31130 to 31131
-
 msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr ""
-
-#empty string with id 31133
 
 #. In main language strings its used as submenu
 msgctxt "#31134"
@@ -304,8 +266,6 @@ msgctxt "#31136"
 msgid "Home page \"Pictures\" submenu"
 msgstr ""
 
-#empty strings from id 31137 to 31139
-
 msgctxt "#31140"
 msgid "Music OSD"
 msgstr ""
@@ -318,20 +278,13 @@ msgctxt "#31142"
 msgid "Settings level"
 msgstr ""
 
-#empty strings from id 31143 to 31199
-#Script labels
-
 msgctxt "#31200"
 msgid "Shortcuts"
 msgstr ""
 
-#empty strings from id 31201 to 31202
-
 msgctxt "#31203"
 msgid "Choose your song"
 msgstr ""
-
-#empty string with id 31204
 
 msgctxt "#31205"
 msgid "Lyrics source"
@@ -349,9 +302,6 @@ msgctxt "#31208"
 msgid "Upcoming episodes"
 msgstr ""
 
-#empty strings from id 31209 to 31299
-#Extra labels
-
 msgctxt "#31300"
 msgid "Current temperature"
 msgstr ""
@@ -360,13 +310,9 @@ msgctxt "#31301"
 msgid "Last updated"
 msgstr ""
 
-#empty string with id 31302
-
 msgctxt "#31303"
 msgid "Data provider"
 msgstr ""
-
-#empty strings from id 31304 to 31306
 
 msgctxt "#31307"
 msgid "Hide fanart"
@@ -400,13 +346,9 @@ msgctxt "#31314"
 msgid "Content scanning options"
 msgstr ""
 
-#empty strings from id 31315 to 31316
-
 msgctxt "#31317"
 msgid "Set fanart path"
 msgstr ""
-
-#empty string with id 31318
 
 msgctxt "#31319"
 msgid "Selected profile"
@@ -423,8 +365,6 @@ msgstr ""
 msgctxt "#31322"
 msgid "Aired"
 msgstr ""
-
-#empty strings from id 31323 to 31324
 
 msgctxt "#31325"
 msgid "Playlist options"
@@ -454,9 +394,6 @@ msgctxt "#31331"
 msgid "Album details"
 msgstr ""
 
-#empty strings from id 31332 to 31350
-#Video and Music OSD Labels
-
 msgctxt "#31351"
 msgid "Pause"
 msgstr ""
@@ -481,8 +418,6 @@ msgctxt "#31356"
 msgid "Download subtitles"
 msgstr ""
 
-#empty strings from id 31357 to 31359
-
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
@@ -496,8 +431,6 @@ msgctxt "#31362"
 msgid "Enabled"
 msgstr ""
 
-#empty strings from id 31363 to 31389
-
 msgctxt "#31390"
 msgid "Skin default"
 msgstr ""
@@ -510,47 +443,60 @@ msgctxt "#31392"
 msgid "Arial based"
 msgstr ""
 
-#empty strings from id 31393 to 31399
-#Description Labels
-
 msgctxt "#31400"
-msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
+msgid ""
+"[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language "
+"and region · Change file listing options[CR]Set up a screensaver"
 msgstr ""
 
 msgctxt "#31401"
-msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
+msgid ""
+"[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video"
+" playback options · Change video listing options[CR]Set subtitle fonts"
 msgstr ""
 
 msgctxt "#31402"
-msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
+msgid ""
+"[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music"
+" playback options · Change music listing options[CR]Setup song submission · "
+"Set karaoke options"
 msgstr ""
 
 msgctxt "#31403"
-msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshow"
+msgid ""
+"[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · "
+"Configure slideshow"
 msgstr ""
 
 msgctxt "#31404"
-msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set various cities to collect weather information"
+msgid ""
+"[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set various cities to collect "
+"weather information"
 msgstr ""
-
-#empty string with id 31405
 
 msgctxt "#31406"
-msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
+msgid ""
+"[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · "
+"Configure audio output · Setup remote controls[CR]Set power saving options ·"
+" Enable debugging · Setup master lock"
 msgstr ""
 
-#empty string with id 31407
-
 msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed add-ons · Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
+msgid ""
+"[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed add-ons · Browse for "
+"and install add-ons from kodi.tv[CR]Modify add-on settings"
 msgstr ""
 
 msgctxt "#31409"
-msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change full screen info · Manage EPG data settings"
+msgid ""
+"[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change full screen info · Manage EPG "
+"data settings"
 msgstr ""
 
 msgctxt "#31410"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgid ""
+"[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and "
+"HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
 msgstr ""
 
 msgctxt "#31411"
@@ -558,14 +504,17 @@ msgid "First run help..."
 msgstr ""
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section. To access the menu, navigate to the"
+" left with your remote control or keyboard or place your mouse pointer over "
+"the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear "
+"again."
 msgstr ""
 
 msgctxt "#31413"
 msgid "Local subtitle available"
 msgstr ""
-
-#empty strings from id 31414 to 31419
 
 msgctxt "#31420"
 msgid "Login"
@@ -580,10 +529,10 @@ msgid "Show or hide the login screen at startup."
 msgstr ""
 
 msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgid ""
+"Select the profile that will be used at startup when the login screen is "
+"disabled."
 msgstr ""
-
-#empty strings from id 31424 to 31500
 
 msgctxt "#31501"
 msgid "Scheduled time"
@@ -609,8 +558,6 @@ msgctxt "#31506"
 msgid "Available[CR]Groups"
 msgstr ""
 
-#empty strings from id 31507 to 31508
-
 msgctxt "#31509"
 msgid "Channel group"
 msgstr ""
@@ -622,9 +569,6 @@ msgstr ""
 msgctxt "#31511"
 msgid "Channel options"
 msgstr ""
-
-#empty strings from id 31512 to 31900
-#Weather plugin
 
 msgctxt "#31901"
 msgid "36-hour forecast"
@@ -646,8 +590,6 @@ msgctxt "#31905"
 msgid "Forecast"
 msgstr ""
 
-#empty strings from id 31906 to 31907
-
 msgctxt "#31908"
 msgid "Chance of precipitation"
 msgstr ""
@@ -659,8 +601,6 @@ msgstr ""
 msgctxt "#31910"
 msgid "Maps"
 msgstr ""
-
-#empty strings from id 31911 to 31949
 
 msgctxt "#31950"
 msgid "Weather"
@@ -694,6 +634,7 @@ msgctxt "#31957"
 msgid "Programs"
 msgstr ""
 
+#: \1080i\Home.xml:361
 msgctxt "#31958"
 msgid "Play disc"
 msgstr ""
