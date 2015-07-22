@@ -263,12 +263,25 @@
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                     <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
                 </animation>
+                <include name="SubMenu">
+                    <param name="list_id" value="8900"/>
+                    <param name="ondown_id" value="8100"/>
+                    <param name="item1_id" value="8901" />
+                    <param name="item1_onclick" value="ActivateWindow(addonbrowser)" />
+                    <param name="item1_label" value="Add-on manager" />
+                    <param name="item2_vis" value="False" />
+                    <param name="item3_vis" value="False" />
+                    <param name="item4_vis" value="False" />
+                    <param name="item5_vis" value="False" />
+                    <param name="item6_vis" value="False" />
+                    <param name="item7_vis" value="False" />
+                </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/executable/"/>
                     <param name="widget_header" value="$LOCALIZE[1043]"/>
                     <param name="widget_target" value="programs"/>
                     <param name="list_id" value="8100"/>
-                    <param name="onup_id" value="20000"/>
+                    <param name="onup_id" value="8900"/>
                     <param name="ondown_id" value="8200"/>
                 </include>
                 <include name="WidgetListSquare">
