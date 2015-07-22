@@ -465,9 +465,18 @@
             <height>56</height>
             <texture>logo.png</texture>
         </control>
+        <control type="image">
+            <description>System Time Clock</description>
+            <posx>1868</posx>
+            <posy>24</posy>
+            <height>32</height>
+            <width>32</width>
+            <texture>frame/clock.png</texture>
+            <visible>!Window.IsActive(infodialog)</visible>
+        </control>
         <control type="label">
-            <posx>1860</posx>
-            <posy>9</posy>
+            <posx>1851</posx>
+            <posy>12</posy>
             <height>100</height>
             <width>200</width>
             <align>right</align>
