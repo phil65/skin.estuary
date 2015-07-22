@@ -47,9 +47,9 @@
         <font>font13</font>
     </default>
     <default type="progress">
-        <texturebg border="6,0,6,0">OSDProgressBack.png</texturebg>
+        <texturebg border="3">progress/texturebg_border_white.png</texturebg>
+        <midtexture>progress/texturebg_white.png</midtexture>
         <lefttexture>-</lefttexture>
-        <midtexture border="6,0,6,0">OSDProgressMid.png</midtexture>
         <righttexture>-</righttexture>
         <overlaytexture>-</overlaytexture>
     </default>
