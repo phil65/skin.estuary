@@ -477,16 +477,27 @@
             <shadowcolor>text_shadow</shadowcolor>
             <visible>!Window.IsActive(infodialog)</visible>
         </control>
-        <control type="textbox">
+        <control type="label">
             <posy>1010</posy>
-            <posx>1340</posx>
+            <posx>1840</posx>
             <align>right</align>
-            <width>500</width>
+            <width>700</width>
             <textcolor>FFFFFFFF</textcolor>
             <label>Total movies: $INFO[Window(home).Property(movies.Count),, •] Watched: $INFO[Window(home).Property(movies.watched)]</label>
             <font>font12</font>
             <include>Vis_FadeSlide_Right</include>
             <visible>Container(9000).HasFocus(10)</visible>
+        </control>
+        <control type="label">
+            <posy>1010</posy>
+            <posx>1840</posx>
+            <align>right</align>
+            <width>700</width>
+            <textcolor>FFFFFFFF</textcolor>
+            <label>Total tvshows: $INFO[Window(home).Property(tvshows.Count),, •] Total episodes: $INFO[Window(home).Property(episodes.Count),, •] watched: $INFO[Window(home).Property(episodes.watched)]</label>
+            <font>font12</font>
+            <include>Vis_FadeSlide_Right</include>
+            <visible>Container(9000).HasFocus(11)</visible>
         </control>
         <control type="rss">
             <posx>0</posx>
