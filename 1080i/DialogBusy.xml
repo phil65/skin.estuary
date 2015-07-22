@@ -1,52 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
-	<animation effect="fade" time="75">WindowOpen</animation>
-	<animation effect="fade" time="150">WindowClose</animation>
-	<coordinates>
-		<system>1</system>
-		<left>0</left>
-		<top>0</top>
-	</coordinates>
-	<controls>
-		<control type="group">
-			<left>1070</left>
-			<top>640</top>
-			<control type="image">
-				<description>background image</description>
-				<left>0</left>
-				<top>0</top>
-				<width>200</width>
-				<height>70</height>
-				<texture border="20">OverlayDialogBackground.png</texture>
-			</control>
-			<control type="image">
-				<description>Busy animation</description>
-				<left>20</left>
-				<top>20</top>
-				<width>32</width>
-				<height>32</height>
-				<texture>busy.png</texture>
-				<aspectratio>keep</aspectratio>
-				<animation effect="rotate" start="0" end="360" center="36,36" time="900" loop="true" condition="true">conditional</animation>
-			</control>
-			<control type="label">
-				<description>Busy label</description>
-				<left>60</left>
-				<top>20</top>
-				<width>120</width>
-				<height>32</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$LOCALIZE[31004]</label>
-				<font>font12</font>
-			</control>
-			<control type="progress" id="10">
-				<description>Progressbar</description>
-				<left>20</left>
-				<top>53</top>
-				<width>160</width>
-				<height>8</height>
-			</control>
-		</control>
-	</controls>
+    <coordinates>
+        <posx>0</posx>
+        <posy>0</posy>
+        <system>1</system>
+    </coordinates>
+    <animation type="WindowOpen" reversible="false">
+        <effect type="zoom" start="80" end="100" center="960,540" tween="back" time="240" />
+        <effect type="fade" end="100" time="240" />
+    </animation>
+    <animation type="WindowClose" reversible="false">
+        <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240" />
+        <effect type="fade" start="100" end="0" time="240" />
+    </animation>
+    <controls>
+        <control type="group">
+            <animation type="Visible" reversible="false">
+                <effect type="zoom" start="80" end="100" center="960,540" tween="back" time="240" />
+                <effect type="fade" end="100" time="240" />
+            </animation>
+            <animation type="Hidden" reversible="false">
+                <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240" />
+                <effect type="fade" start="100" end="0" time="240" />
+            </animation>
+            <visible>!Window.IsActive(startup)</visible>
+        <control type="image">
+            <texture>colors/black.png</texture>
+            <include>FullscreenDimensions</include>
+            <animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
+            <animation effect="fade" end="100" time="560">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="240">WindowClose</animation>
+        </control>
+            <control type="image">
+                <posx>910</posx>
+                <posy>503</posy>
+                <width>100</width>
+                <height>100</height>
+                <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="true">Conditional</animation>
+                <texture colordiffuse="button_focus">spinner.png</texture>
+                <animation effect="fade" start="70" time="1200" condition="true" pulse="true">Conditional</animation>
+            </control>
+            <control type="image">
+                <posx>925</posx>
+                <posy>518</posy>
+                <width>70</width>
+                <height>70</height>
+                <animation effect="rotate" end="360" center="auto" time="2000" loop="true" reversible="false" condition="true">Conditional</animation>
+                <texture flipx="true" colordiffuse="button_focus">spinner.png</texture>
+                <animation effect="fade" start="70" time="1200" condition="true" pulse="true">Conditional</animation>
+            </control>
+        </control>
+    </controls>
 </window>
