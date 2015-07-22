@@ -36,14 +36,7 @@
             </animation>
             <control type="group" id="5000">
                 <visible>Container(9000).HasFocus(10)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
-                </animation>
+                <include>Vis_FadeSlide_Right</include>
                 <control type="grouplist" id="5000">
                     <orientation>vertical</orientation>
                     <posy>76</posy>
@@ -79,6 +72,7 @@
                         <param name="widget_header" value="In-progress movies"/>
                         <param name="widget_target" value="videos"/>
                         <param name="list_id" value="5100"/>
+                        <param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5100).ListItem.Dbid])"/>
                         <param name="onup_id" value="5900"/>
                         <param name="ondown_id" value="5200"/>
                     </include>
@@ -87,6 +81,7 @@
                         <param name="widget_header" value="Recently added movies"/>
                         <param name="widget_target" value="videos"/>
                         <param name="list_id" value="5200"/>
+                        <param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5200).ListItem.Dbid])"/>
                         <param name="onup_id" value="5100"/>
                         <param name="ondown_id" value="5300"/>
                     </include>
@@ -95,6 +90,7 @@
                         <param name="widget_header" value="Random movies"/>
                         <param name="widget_target" value="videos"/>
                         <param name="list_id" value="5300"/>
+                        <param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5300).ListItem.Dbid])"/>
                         <param name="onup_id" value="5200"/>
                         <param name="ondown_id" value="5400"/>
                     </include>
@@ -103,6 +99,7 @@
                         <param name="widget_header" value="Unwatched movies"/>
                         <param name="widget_target" value="videos"/>
                         <param name="list_id" value="5400"/>
+                        <param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5400).ListItem.Dbid])"/>
                         <param name="onup_id" value="5300"/>
                         <param name="ondown_id" value="20001"/>
                     </include>
@@ -113,14 +110,7 @@
                 <posy>76</posy>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(11)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
-                </animation>
+                <include>Vis_FadeSlide_Right</include>
                 <include name="SubMenu">
                     <param name="list_id" value="6900"/>
                     <param name="ondown_id" value="6100"/>
@@ -176,14 +166,7 @@
                 <posy>76</posy>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(3)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
-                </animation>
+                <include>Vis_FadeSlide_Right</include>
                 <include name="SubMenu">
                     <param name="list_id" value="7900"/>
                     <param name="ondown_id" value="7100"/>
@@ -255,14 +238,7 @@
                 <posy>76</posy>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(1)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
-                </animation>
+                <include>Vis_FadeSlide_Right</include>
                 <include name="SubMenu">
                     <param name="list_id" value="8900"/>
                     <param name="ondown_id" value="8100"/>
@@ -314,14 +290,7 @@
                 <posy>76</posy>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(4)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
-                </animation>
+                <include>Vis_FadeSlide_Right</include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/image/"/>
                     <param name="widget_header" value="Image add-ons"/>
@@ -336,14 +305,7 @@
                 <posy>76</posy>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(2)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
-                </animation>
+                <include>Vis_FadeSlide_Right</include>
                 <include name="SubMenu">
                     <param name="list_id" value="11900"/>
                     <param name="ondown_id" value="11100"/>
@@ -386,14 +348,7 @@
                 <posy>76</posy>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(12)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
-                </animation>
+                <include>Vis_FadeSlide_Right</include>
                 <include name="SubMenu">
                     <param name="list_id" value="12900"/>
                     <param name="ondown_id" value="12100"/>
@@ -437,14 +392,7 @@
                 <posy>76</posy>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(13)</visible>
-                <animation type="Visible">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                    <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
-                </animation>
+                <include>Vis_FadeSlide_Right</include>
                 <include name="SubMenu">
                     <param name="list_id" value="13900"/>
                     <param name="ondown_id" value="13100"/>
@@ -537,6 +485,7 @@
             <textcolor>FFFFFFFF</textcolor>
             <label>Total movies: $INFO[Window(home).Property(movies.Count),, •] Watched: $INFO[Window(home).Property(movies.watched)]</label>
             <font>font12</font>
+            <include>Vis_FadeSlide_Right</include>
             <visible>Container(9000).HasFocus(10)</visible>
         </control>
         <control type="rss">
