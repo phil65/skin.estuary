@@ -85,7 +85,7 @@
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>443</posx>
+                <posx>445</posx>
                 <posy>221</posy>
                 <width>28</width>
                 <height>28</height>
@@ -250,7 +250,7 @@
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>443</posx>
+                <posx>445</posx>
                 <posy>210</posy>
                 <width>28</width>
                 <height>28</height>
@@ -400,7 +400,7 @@
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>443</posx>
+                <posx>445</posx>
                 <posy>200</posy>
                 <width>28</width>
                 <height>28</height>
