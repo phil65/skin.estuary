@@ -67,6 +67,9 @@
                         <param name="item5_id" value="5905" />
                         <param name="item5_onclick" value="ActivateWindow(videos)" />
                         <param name="item5_label" value="Really long label. auto-width ftw." />
+                        <param name="item6_id" value="5906" />
+                        <param name="item6_onclick" value="ActivateWindow(videos)" />
+                        <param name="item6_label" value="Really long label. auto-width ftw." />
                     </include>
                     <include name="WidgetListMovies">
                         <param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
@@ -110,21 +113,24 @@
                 <include name="SubMenu">
                     <param name="list_id" value="6900"/>
                     <param name="ondown_id" value="6100"/>
-                    <param name="item1_id" value="5901" />
+                    <param name="item1_id" value="6901" />
                     <param name="item1_onclick" value="ActivateWindow(videos)" />
                     <param name="item1_label" value="$LOCALIZE[652]" />
-                    <param name="item2_id" value="5902" />
+                    <param name="item2_id" value="6902" />
                     <param name="item2_onclick" value="ActivateWindow(videos)" />
                     <param name="item2_label" value="$LOCALIZE[20434]" />
-                    <param name="item3_id" value="5903" />
+                    <param name="item3_id" value="6903" />
                     <param name="item3_onclick" value="ActivateWindow(videos)" />
                     <param name="item3_label" value="$LOCALIZE[344]" />
-                    <param name="item4_id" value="5904" />
+                    <param name="item4_id" value="6904" />
                     <param name="item4_onclick" value="ActivateWindow(videos)" />
                     <param name="item4_label" value="$LOCALIZE[135]" />
-                    <param name="item5_id" value="5905" />
+                    <param name="item5_id" value="6905" />
                     <param name="item5_onclick" value="ActivateWindow(videos)" />
                     <param name="item5_label" value="Really long label. auto-width ftw." />
+                    <param name="item6_id" value="6906" />
+                    <param name="item6_onclick" value="ActivateWindow(videos)" />
+                    <param name="item6_label" value="Really long label. auto-width ftw." />
                 </include>
                 <include name="WidgetListEpisodes">
                     <param name="content_path" value="special://skin/playlists/inprogress_episodes.xsp"/>
@@ -167,21 +173,24 @@
                 <include name="SubMenu">
                     <param name="list_id" value="7900"/>
                     <param name="ondown_id" value="7100"/>
-                    <param name="item1_id" value="5901" />
+                    <param name="item1_id" value="7901" />
                     <param name="item1_onclick" value="ActivateWindow(videos)" />
                     <param name="item1_label" value="$LOCALIZE[652]" />
-                    <param name="item2_id" value="5902" />
+                    <param name="item2_id" value="7902" />
                     <param name="item2_onclick" value="ActivateWindow(videos)" />
                     <param name="item2_label" value="$LOCALIZE[20434]" />
-                    <param name="item3_id" value="5903" />
+                    <param name="item3_id" value="7903" />
                     <param name="item3_onclick" value="ActivateWindow(videos)" />
                     <param name="item3_label" value="$LOCALIZE[344]" />
-                    <param name="item4_id" value="5904" />
+                    <param name="item4_id" value="7904" />
                     <param name="item4_onclick" value="ActivateWindow(videos)" />
                     <param name="item4_label" value="$LOCALIZE[135]" />
-                    <param name="item5_id" value="5905" />
+                    <param name="item5_id" value="7905" />
                     <param name="item5_onclick" value="ActivateWindow(videos)" />
                     <param name="item5_label" value="Really long label. auto-width ftw." />
+                    <param name="item6_id" value="7906" />
+                    <param name="item6_onclick" value="ActivateWindow(videos)" />
+                    <param name="item6_label" value="Really long label. auto-width ftw." />
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
@@ -333,7 +342,7 @@
             <font>font16</font>
             <label>$INFO[System.Time]</label>
             <textcolor>white</textcolor>
-            <shadowcolor>22000000</shadowcolor>
+            <shadowcolor>text_shadow</shadowcolor>
             <visible>!Window.IsActive(infodialog)</visible>
         </control>
         <control type="textbox">
@@ -353,10 +362,10 @@
             <width>1920</width>
             <font>font10</font>
             <urlset>1</urlset>
-            <textcolor>77FFFFFF</textcolor>
+            <textcolor>FFF0F0F0</textcolor>
             <titlecolor>77FFFFFF</titlecolor>
-            <shadowcolor>22000000</shadowcolor>
-            <headlinecolor>77FFFFFF</headlinecolor>
+            <shadowcolor>text_shadow</shadowcolor>
+            <headlinecolor>FFC0C0C0</headlinecolor>
         </control>
         <control type="list" id="9000">
             <posx>0</posx>
@@ -397,7 +406,7 @@
                     <label>$INFO[ListItem.Label]</label>
                     <selectedcolor>SelectedGreen</selectedcolor>
                     <textcolor>white</textcolor>
-                    <shadowcolor>22000000</shadowcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -433,7 +442,7 @@
                     <label>$INFO[ListItem.Label]</label>
                     <selectedcolor>SelectedGreen</selectedcolor>
                     <textcolor>white</textcolor>
-                    <shadowcolor>22000000</shadowcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
                     <scroll>false</scroll>
                 </control>
                 <control type="image">
