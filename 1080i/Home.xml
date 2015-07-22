@@ -678,7 +678,9 @@
             <itemgap>-10</itemgap>
             <posx>12</posx>
             <posy>900</posy>
+            <onup>SetFocus(9000,99)</onup>
             <onup>9000</onup>
+            <ondown>SetFocus(9000,0)</ondown>
             <ondown>9000</ondown>
             <control type="radiobutton" id="800">
                 <width>100</width>
