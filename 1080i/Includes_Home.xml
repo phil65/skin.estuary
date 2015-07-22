@@ -119,7 +119,7 @@
             <control type="list" id="$PARAM[list_id]">
                 <posx>500</posx>
                 <posy>70</posy>
-                <width>1400</width>
+                <width>1395</width>
                 <height>400</height>
                 <oninfo>$PARAM[list_oninfo]</oninfo>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -140,13 +140,13 @@
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                     <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
                 </animation>
-                <itemlayout width="280">
+                <itemlayout width="279">
                     <control type="group">
                         <control type="image">
                             <posx>0</posx>
-                            <posy>0</posy>
-                            <width>220</width>
-                            <height>330</height>
+                            <posy>3</posy>
+                            <width>218</width>
+                            <height>327</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture>colors/black.png</bordertexture>
@@ -154,7 +154,7 @@
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="280">
+                <focusedlayout width="279">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,130" />
@@ -164,9 +164,9 @@
                         </animation>
                         <control type="image">
                             <posx>0</posx>
-                            <posy>0</posy>
-                            <width>220</width>
-                            <height>330</height>
+                            <posy>3</posy>
+                            <width>218</width>
+                            <height>327</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture>colors/black.png</bordertexture>
@@ -185,7 +185,7 @@
                                 <control type="image">
                                     <posx>0</posx>
                                     <posy>270</posy>
-                                    <width>220</width>
+                                    <width>218</width>
                                     <height>60</height>
                                     <aspectratio>stretch</aspectratio>
                                     <texture>colors/black.png</texture>
@@ -229,8 +229,8 @@
                             </control>
                             <control type="image">
                                 <posx>0</posx>
-                                <posy>0</posy>
-                                <width>220</width>
+                                <posy>3</posy>
+                                <width>218</width>
                                 <height>330</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
