@@ -174,22 +174,21 @@
                         </control>
                         <control type="group">
                             <animation type="Focus">
-                                <effect type="fade" start="0" end="100" time="200"/>
+                                <effect type="fade" start="0" end="100" time="0"/>
                             </animation>
                             <animation type="Unfocus">
-                                <effect type="fade" start="100" end="0" time="200"/>
+                                <effect type="fade" start="100" end="0" time="0"/>
                             </animation>
                             <visible>Control.HasFocus($PARAM[list_id])</visible>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>270</posy>
+                                <width>218</width>
+                                <height>60</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture>colors/black.png</texture>
+                            </control>
                             <control type="group">
-                                <animation effect="zoom" start="100,0" end="100,100" time="200" center="0,330">Focus</animation>
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>270</posy>
-                                    <width>218</width>
-                                    <height>60</height>
-                                    <aspectratio>stretch</aspectratio>
-                                    <texture>colors/black.png</texture>
-                                </control>
                                 <control type="label">
                                     <posx>110</posx>
                                     <posy>270</posy>
