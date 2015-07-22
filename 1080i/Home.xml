@@ -70,6 +70,9 @@
                         <param name="item6_id" value="5906" />
                         <param name="item6_onclick" value="ActivateWindow(videos)" />
                         <param name="item6_label" value="$LOCALIZE[14022]" />
+                        <param name="item7_id" value="5907" />
+                        <param name="item7_onclick" value="UpdateLibrary(video)" />
+                        <param name="item7_label" value="$LOCALIZE[653]" />
                     </include>
                     <include name="WidgetListMovies">
                         <param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
@@ -139,6 +142,9 @@
                     <param name="item6_id" value="6906" />
                     <param name="item6_onclick" value="ActivateWindow(videos)" />
                     <param name="item6_label" value="$LOCALIZE[14022]" />
+                    <param name="item7_id" value="6907" />
+                    <param name="item7_onclick" value="UpdateLibrary(video)" />
+                    <param name="item7_label" value="$LOCALIZE[653]" />
                 </include>
                 <include name="WidgetListEpisodes">
                     <param name="content_path" value="special://skin/playlists/inprogress_episodes.xsp"/>
@@ -199,6 +205,9 @@
                     <param name="item6_id" value="7906" />
                     <param name="item6_onclick" value="ActivateWindow(MusicLibrary,root)" />
                     <param name="item6_label" value="$LOCALIZE[14022]" />
+                    <param name="item7_id" value="7907" />
+                    <param name="item7_onclick" value="UpdateLibrary(music)" />
+                    <param name="item7_label" value="$LOCALIZE[653]" />
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
@@ -222,6 +231,22 @@
                     <param name="widget_target" value="music"/>
                     <param name="list_id" value="7300"/>
                     <param name="onup_id" value="7200"/>
+                    <param name="ondown_id" value="7400"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="special://skin/playlists/random_artists.xsp"/>
+                    <param name="widget_header" value="Random artists"/>
+                    <param name="widget_target" value="music"/>
+                    <param name="list_id" value="7400"/>
+                    <param name="onup_id" value="7300"/>
+                    <param name="ondown_id" value="7500"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="special://skin/playlists/unplayed_albums.xsp"/>
+                    <param name="widget_header" value="Unplayed albums"/>
+                    <param name="widget_target" value="music"/>
+                    <param name="list_id" value="7500"/>
+                    <param name="onup_id" value="7400"/>
                     <param name="ondown_id" value="20001"/>
                 </include>
             </control>
@@ -240,7 +265,7 @@
                 </animation>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/executable/"/>
-                    <param name="widget_header" value="Program add-ons"/>
+                    <param name="widget_header" value="$LOCALIZE[1043]"/>
                     <param name="widget_target" value="programs"/>
                     <param name="list_id" value="8100"/>
                     <param name="onup_id" value="20000"/>
@@ -248,18 +273,26 @@
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/video/"/>
-                    <param name="widget_header" value="Video add-ons"/>
-                    <param name="widget_target" value="videos"/>
+                    <param name="widget_header" value="$LOCALIZE[20244]"/>
+                    <param name="widget_target" value="files"/>
                     <param name="list_id" value="8200"/>
                     <param name="onup_id" value="8100"/>
                     <param name="ondown_id" value="8300"/>
                 </include>
                 <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/audio/"/>
-                    <param name="widget_header" value="Audio add-ons"/>
-                    <param name="widget_target" value="music"/>
+                    <param name="content_path" value="addons://sources/video/"/>
+                    <param name="widget_header" value="$LOCALIZE[1037]"/>
+                    <param name="widget_target" value="videos"/>
                     <param name="list_id" value="8300"/>
                     <param name="onup_id" value="8200"/>
+                    <param name="ondown_id" value="8400"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/audio/"/>
+                    <param name="widget_header" value="$LOCALIZE[1038]"/>
+                    <param name="widget_target" value="music"/>
+                    <param name="list_id" value="8400"/>
+                    <param name="onup_id" value="8300"/>
                     <param name="ondown_id" value="20001"/>
                 </include>
             </control>
@@ -298,12 +331,37 @@
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                     <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
                 </animation>
+                <include name="SubMenu">
+                    <param name="list_id" value="11900"/>
+                    <param name="ondown_id" value="11100"/>
+                    <param name="item1_id" value="11901" />
+                    <param name="item1_onclick" value="ActivateWindow(TVChannels)" />
+                    <param name="item1_label" value="Files" />
+                    <param name="item2_id" value="11902" />
+                    <param name="item2_onclick" value="ActivateWindow(TVGuide)" />
+                    <param name="item2_label" value="Playlists" />
+                    <param name="item3_id" value="11903" />
+                    <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
+                    <param name="item3_label" value="Add source..." />
+                    <param name="item4_vis" value="False" />
+                    <param name="item5_vis" value="False" />
+                    <param name="item6_vis" value="False" />
+                    <param name="item7_vis" value="False" />
+                </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="sources://video/"/>
                     <param name="widget_header" value="Sources"/>
                     <param name="widget_target" value="files"/>
                     <param name="list_id" value="11100"/>
                     <param name="onup_id" value="20000"/>
+                    <param name="ondown_id" value="11200"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="sources://video/"/>
+                    <param name="widget_header" value="Playlists"/>
+                    <param name="widget_target" value="files"/>
+                    <param name="list_id" value="11200"/>
+                    <param name="onup_id" value="11100"/>
                     <param name="ondown_id" value="20001"/>
                 </include>
             </control>
@@ -339,6 +397,7 @@
                     <param name="item5_onclick" value="ActivateWindow(TVSearch)" />
                     <param name="item5_label" value="$LOCALIZE[137]" />
                     <param name="item6_vis" value="False" />
+                    <param name="item7_vis" value="False" />
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="pvr://channels/tv/All channels/"/>
@@ -389,6 +448,7 @@
                     <param name="item5_onclick" value="ActivateWindow(TVSearch)" />
                     <param name="item5_label" value="$LOCALIZE[137]" />
                     <param name="item6_vis" value="False" />
+                    <param name="item7_vis" value="False" />
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="pvr://channels/radio/All channels/"/>
@@ -467,7 +527,7 @@
             <posx>0</posx>
             <posy>1050</posy>
             <height>30</height>
-            <width>1920</width>
+            <width>1840</width>
             <font>font10</font>
             <urlset>1</urlset>
             <textcolor>FFF0F0F0</textcolor>

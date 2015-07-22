@@ -63,6 +63,12 @@
                     <label>     $PARAM[item6_label]     </label>
                     <visible>$PARAM[item6_vis]</visible>
                 </control>
+                <control type="button" id="$PARAM[item7_id]">
+                    <include>SubMenuItemsCommon</include>
+                    <onclick>$PARAM[item7_onclick]</onclick>
+                    <label>     $PARAM[item7_label]     </label>
+                    <visible>$PARAM[item7_vis]</visible>
+                </control>
             </control>
         </control>
     </include>
