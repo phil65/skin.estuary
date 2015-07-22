@@ -151,10 +151,10 @@
                 <focusedlayout width="280">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,150" />
+                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,130" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,150" />
+                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,130" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
@@ -185,7 +185,7 @@
                             <control type="label">
                                 <posx>110</posx>
                                 <posy>270</posy>
-                                <width>180</width>
+                                <width>200</width>
                                 <label>$INFO[ListItem.Label]</label>
                                 <font>font10</font>
                                 <textcolor>white</textcolor>
@@ -203,7 +203,21 @@
                                 <shadowcolor>text_shadow</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>center</align>
+                                <visible>Stringcompare(ListItem.PercentPlayed,0)</visible>
                             </control>
+                <control type="progress">
+                    <posx>20</posx>
+                    <posy>302</posy>
+                    <width>180</width>
+                    <height>13</height>
+                    <info>ListItem.PercentPlayed</info>
+                    <texturebg border="3">progress/texturebg_border_white.png</texturebg>
+                    <midtexture>progress/texturebg_white.png</midtexture>
+                    <lefttexture>-</lefttexture>
+                    <righttexture>-</righttexture>
+                    <overlaytexture>-</overlaytexture>
+                                <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+                </control>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
@@ -298,10 +312,10 @@
                 <focusedlayout width="467">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="233,150" />
+                            <effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="233,120" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="233,150" />
+                            <effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="233,120" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
@@ -445,10 +459,10 @@
                 <focusedlayout width="350">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,150" />
+                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,120" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,150" />
+                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,120" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
