@@ -598,6 +598,14 @@
                 </control>
             </itemlayout>
             <content>
+                <item id="14">
+                    <label>Now playing...</label>
+                    <onclick condition="Player.HasVideo">ActivateWindow(Fullscreen)</onclick>
+                    <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
+                    <icon>-</icon>
+                    <thumb>-</thumb>
+<!--                     <visible>Player.HasMedia</visible>
+ -->                </item>
                 <item id="10">
                     <label>31954</label>
                     <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
