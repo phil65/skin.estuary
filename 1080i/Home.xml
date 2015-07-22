@@ -65,7 +65,7 @@
                         <param name="item6_label" value="$LOCALIZE[14022]" />
                         <param name="item7_id" value="5907" />
                         <param name="item7_onclick" value="UpdateLibrary(video)" />
-                        <param name="item7_label" value="$LOCALIZE[653]" />
+                        <param name="item7_label" value="$VAR[VideoLibraryUpdateVar]" />
                     </include>
                     <include name="WidgetListMovies">
                         <param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
@@ -134,7 +134,7 @@
                     <param name="item6_label" value="$LOCALIZE[14022]" />
                     <param name="item7_id" value="6907" />
                     <param name="item7_onclick" value="UpdateLibrary(video)" />
-                    <param name="item7_label" value="$LOCALIZE[653]" />
+                    <param name="item7_label" value="$VAR[VideoLibraryUpdateVar]" />
                 </include>
                 <include name="WidgetListEpisodes">
                     <param name="content_path" value="special://skin/playlists/inprogress_episodes.xsp"/>
@@ -190,7 +190,7 @@
                     <param name="item6_label" value="$LOCALIZE[14022]" />
                     <param name="item7_id" value="7907" />
                     <param name="item7_onclick" value="UpdateLibrary(music)" />
-                    <param name="item7_label" value="$LOCALIZE[653]" />
+                    <param name="item7_label" value="$VAR[MusicLibraryUpdateVar]" />
                 </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="MusicLibraryUpdateVar">
+        <value condition="Library.IsScanningMusic">Cancel update</value>
+        <value>$LOCALIZE[653]</value>
+    </variable>
+    <variable name="VideoLibraryUpdateVar">
+        <value condition="Library.IsScanningVideo">Cancel update</value>
+        <value>$LOCALIZE[653]</value>
+    </variable>
     <include name="SubMenuItemsCommon">
         <width>auto</width>
         <height>94</height>
