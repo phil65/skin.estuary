@@ -242,7 +242,7 @@
     <include name="WidgetListEpisodes">
         <control type="group">
             <description>Episode Widget including header and arrows</description>
-            <height>410</height>
+            <height>412</height>
             <posx>0</posx>
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -403,7 +403,7 @@
     <include name="WidgetListSquare">
         <control type="group">
             <description>Square Widget including header and arrows</description>
-            <height>405</height>
+            <height>407</height>
             <posx>0</posx>
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
