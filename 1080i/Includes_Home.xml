@@ -318,10 +318,10 @@
                 <focusedlayout width="467">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="233,120" />
+                            <effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="233,70" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="233,120" />
+                            <effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="233,70" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
@@ -479,10 +479,10 @@
                 <focusedlayout width="346">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,120" />
+                            <effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,120" />
+                            <effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
