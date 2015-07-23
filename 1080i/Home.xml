@@ -574,6 +574,15 @@
                     <texture>lists/arrow-right-fo.png</texture>
                     <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
                 </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>-4</posy>
+                    <width>70</width>
+                    <height>70</height>
+                    <texture>lists/arrow-right-colour-fo.png</texture>
+                    <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+                    <visible>!Control.HasFocus(9000)</visible>
+                </control>
             </focusedlayout>
             <itemlayout height="70">
                 <control type="image">
