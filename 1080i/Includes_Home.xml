@@ -20,7 +20,7 @@
     </include>
     <include name="SubMenu">
         <control type="group">
-            <height>86</height>
+            <height>76</height>
             <control type="grouplist" id="$PARAM[list_id]">
                 <orientation>horizontal</orientation>
                 <itemgap>-5</itemgap>
@@ -80,7 +80,7 @@
     <include name="WidgetListMovies">
         <control type="group">
             <description>Poster Widget including header and arrows</description>
-            <height>415</height>
+            <height>424</height>
             <posx>0</posx>
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
