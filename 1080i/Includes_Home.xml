@@ -428,7 +428,7 @@
             <control type="list" id="$PARAM[list_id]">
                 <posx>500</posx>
                 <posy>70</posy>
-                <width>1400</width>
+                <width>1384</width>
                 <height>400</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>horizontal</orientation>
@@ -448,7 +448,7 @@
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                     <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
                 </animation>
-                <itemlayout width="350">
+                <itemlayout width="346">
                     <control type="group">
                         <control type="image">
                             <posx>0</posx>
@@ -462,13 +462,13 @@
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="350">
+                <focusedlayout width="346">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,120" />
+                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="150,120" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,120" />
+                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="150,120" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
