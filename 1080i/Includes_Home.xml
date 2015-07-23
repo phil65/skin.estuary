@@ -20,7 +20,7 @@
     </include>
     <include name="SubMenu">
         <control type="group">
-            <height>90</height>
+            <height>86</height>
             <control type="grouplist" id="$PARAM[list_id]">
                 <orientation>horizontal</orientation>
                 <itemgap>-5</itemgap>
@@ -145,8 +145,8 @@
                         <control type="image">
                             <posx>0</posx>
                             <posy>3</posy>
-                            <width>218</width>
-                            <height>327</height>
+                            <width>216</width>
+                            <height>324</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture>colors/black.png</bordertexture>
@@ -157,16 +157,16 @@
                 <focusedlayout width="279">
                     <control type="group">
                         <animation type="Focus">
-                            <effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,130" />
+                            <effect type="zoom" start="100" end="109" time="200" tween="sine" easing="inout" center="110,130" />
                         </animation>
                         <animation type="Unfocus">
-                            <effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+                            <effect type="zoom" start="109" end="100" time="200" tween="sine" easing="inout" center="110,130" />
                         </animation>
                         <control type="image">
                             <posx>0</posx>
                             <posy>3</posy>
-                            <width>218</width>
-                            <height>327</height>
+                            <width>216</width>
+                            <height>324</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture>colors/black.png</bordertexture>
@@ -178,8 +178,8 @@
                             <visible>Control.HasFocus($PARAM[list_id])</visible>
                             <control type="image">
                                 <posx>0</posx>
-                                <posy>270</posy>
-                                <width>218</width>
+                                <posy>267</posy>
+                                <width>216</width>
                                 <height>60</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/black.png</texture>
@@ -189,8 +189,8 @@
                                 <animation effect="fade" start="0" delay="300" end="100" time="200">Focus</animation>
                                 <control type="label">
                                     <posx>110</posx>
-                                    <posy>270</posy>
-                                    <width>200</width>
+                                    <posy>267</posy>
+                                    <width>198</width>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>font10</font>
                                     <textcolor>white</textcolor>
@@ -200,8 +200,8 @@
                                 </control>
                                 <control type="label">
                                     <posx>110</posx>
-                                    <posy>294</posy>
-                                    <width>180</width>
+                                    <posy>291</posy>
+                                    <width>178</width>
                                     <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
                                     <font>font10</font>
                                     <textcolor>white</textcolor>
@@ -212,8 +212,8 @@
                                 </control>
                                 <control type="progress">
                                     <posx>20</posx>
-                                    <posy>302</posy>
-                                    <width>180</width>
+                                    <posy>299</posy>
+                                    <width>178</width>
                                     <height>13</height>
                                     <info>ListItem.PercentPlayed</info>
                                     <texturebg border="3">progress/texturebg_border_white.png</texturebg>
@@ -227,8 +227,8 @@
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>3</posy>
-                                <width>218</width>
-                                <height>330</height>
+                                <width>216</width>
+                                <height>327</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
                             </control>
@@ -242,7 +242,7 @@
     <include name="WidgetListEpisodes">
         <control type="group">
             <description>Episode Widget including header and arrows</description>
-            <height>400</height>
+            <height>410</height>
             <posx>0</posx>
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -403,7 +403,7 @@
     <include name="WidgetListSquare">
         <control type="group">
             <description>Square Widget including header and arrows</description>
-            <height>400</height>
+            <height>405</height>
             <posx>0</posx>
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
