@@ -80,7 +80,7 @@
     <include name="WidgetListMovies">
         <control type="group">
             <description>Poster Widget including header and arrows</description>
-            <height>420</height>
+            <height>415</height>
             <posx>0</posx>
             <posy>0</posy>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -363,12 +363,26 @@
                                     <posx>200</posx>
                                     <posy>264</posy>
                                     <width>360</width>
-                                    <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
+                                    <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
                                     <font>font10</font>
                                     <textcolor>white</textcolor>
                                     <shadowcolor>text_shadow</shadowcolor>
                                     <scroll>false</scroll>
                                     <align>center</align>
+                                    <visible>Stringcompare(ListItem.PercentPlayed,0)</visible>
+                                </control>
+                                <control type="progress">
+                                    <posx>30</posx>
+                                    <posy>273</posy>
+                                    <width>340</width>
+                                    <height>13</height>
+                                    <info>ListItem.PercentPlayed</info>
+                                    <texturebg border="3">progress/texturebg_border_white.png</texturebg>
+                                    <midtexture>progress/texturebg_white.png</midtexture>
+                                    <lefttexture>-</lefttexture>
+                                    <righttexture>-</righttexture>
+                                    <overlaytexture>-</overlaytexture>
+                                    <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
                                 </control>
                             </control>
                             <control type="image">
