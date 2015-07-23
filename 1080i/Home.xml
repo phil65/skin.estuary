@@ -544,8 +544,6 @@
                     <width>400</width>
                     <height>69</height>
                     <texture colordiffuse="button_focus" border="150,1,150,1">lists/focus.png</texture>
-                    <include>listfocusanim</include>
-                    <include>visiblehidefadeinfo</include>
                     <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
                 </control>
                 <control type="label">
