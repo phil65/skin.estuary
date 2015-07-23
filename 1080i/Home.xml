@@ -469,7 +469,7 @@
             <posy>1000</posy>
             <width>1920</width>
             <height>80</height>
-            <texture>frame/InfoBarBottom.png</texture>
+            <texture border="1">frame/InfoBarBottom.png</texture>
         </control>
         <control type="image">
             <description>Logo</description>
