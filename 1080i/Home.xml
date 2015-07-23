@@ -431,6 +431,21 @@
                     <param name="ondown_id" value="20001"/>
                 </include>
             </control>
+           <control type="grouplist" id="14000">
+                <orientation>vertical</orientation>
+                <posy>76</posy>
+                <height>925</height>
+                <visible>Container(9000).HasFocus(14)</visible>
+                <include>Vis_FadeSlide_Right</include>
+                <control type="group">
+                <control type="videowindow">
+                    <posy>100</posy>
+                    <posx>500</posx>
+                    <width>1300</width>
+                    <height>500</height>
+                </control>
+                </control>
+            </control>
         </control>
         <control type="image">
             <description>InfoBarTop</description>
