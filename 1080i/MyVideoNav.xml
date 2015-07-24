@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">50</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <backgroundcolor>0</backgroundcolor>
+    <controls>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>special://skin/extras/backgrounds/01.jpg</texture>
+        </control>
+       <control type="group">
+            <description>Poster Widget including header and arrows</description>
+            <height>424</height>
+            <posx>0</posx>
+            <posy>300</posy>
+            <control type="image">
+                <posx>50</posx>
+                <posy>221</posy>
+                <width>28</width>
+                <height>28</height>
+                <texture flipx="true">overlays/arrowright.png</texture>
+                <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+                <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                <visible>Container(50).HasPrevious + Control.HasFocus(50)</visible>
+            </control>
+            <control type="image">
+                <posx>1840</posx>
+                <posy>221</posy>
+                <width>28</width>
+                <height>28</height>
+                <texture>overlays/arrowright.png</texture>
+                <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
+                <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                <visible>Container(50).HasNext + Control.HasFocus(50)</visible>
+            </control>
+            <control type="label">
+                <posx>150</posx>
+                <posy>0</posy>
+                <width>600</width>
+                <height>40</height>
+                <label>Sorted by: Title</label>
+                <font>font14</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <scroll>false</scroll>
+                <align>left</align>
+            </control>
+            <control type="list" id="50">
+                <posx>150</posx>
+                <posy>70</posy>
+                <width>1660</width>
+                <height>400</height>
+                <oninfo>$PARAM[list_oninfo]</oninfo>
+                <scrolltime tween="cubic" easing="out">500</scrolltime>
+                <orientation>horizontal</orientation>
+                <onleft>9000</onleft>
+                <onright>50</onright>
+                <onup>$PARAM[onup_id]</onup>
+                <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
+                <preloaditems>1</preloaditems>
+                <animation type="WindowOpen">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="WindowClose">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <itemlayout width="279">
+                    <control type="group">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>3</posy>
+                            <width>216</width>
+                            <height>324</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
+                            <bordertexture>colors/black.png</bordertexture>
+                            <bordersize>4</bordersize>
+                        </control>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="279">
+                    <control type="group">
+                        <animation type="Focus">
+                            <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+                        </animation>
+                        <animation type="Unfocus">
+                            <effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+                        </animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>3</posy>
+                            <width>216</width>
+                            <height>324</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
+                            <bordertexture>colors/black.png</bordertexture>
+                            <bordersize>4</bordersize>
+                        </control>
+                        <control type="group">
+                            <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                            <visible>Control.HasFocus(50)</visible>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>267</posy>
+                                <width>216</width>
+                                <height>60</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture>colors/black.png</texture>
+                                <animation effect="zoom" start="100,0" end="100,100" time="200" delay="300" center="0,330" tween="sine">Focus</animation>
+                            </control>
+                            <control type="group">
+                                <animation effect="fade" start="0" delay="300" end="100" time="200">Focus</animation>
+                                <control type="label">
+                                    <posx>110</posx>
+                                    <posy>267</posy>
+                                    <width>198</width>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <font>font10</font>
+                                    <textcolor>white</textcolor>
+                                    <shadowcolor>text_shadow</shadowcolor>
+                                    <scroll>false</scroll>
+                                    <align>center</align>
+                                </control>
+                                <control type="label">
+                                    <posx>110</posx>
+                                    <posy>291</posy>
+                                    <width>178</width>
+                                    <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
+                                    <font>font10</font>
+                                    <textcolor>white</textcolor>
+                                    <shadowcolor>text_shadow</shadowcolor>
+                                    <scroll>false</scroll>
+                                    <align>center</align>
+                                    <visible>Stringcompare(ListItem.PercentPlayed,0)</visible>
+                                </control>
+                                <control type="progress">
+                                    <posx>20</posx>
+                                    <posy>299</posy>
+                                    <width>178</width>
+                                    <height>13</height>
+                                    <info>ListItem.PercentPlayed</info>
+                                    <texturebg border="3">progress/texturebg_border_white.png</texturebg>
+                                    <midtexture>progress/texturebg_white.png</midtexture>
+                                    <lefttexture>-</lefttexture>
+                                    <righttexture>-</righttexture>
+                                    <overlaytexture>-</overlaytexture>
+                                    <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+                                </control>
+                            </control>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>3</posy>
+                                <width>216</width>
+                                <height>327</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
+                            </control>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </controls>
+</window>
