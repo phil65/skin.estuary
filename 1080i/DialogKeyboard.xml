@@ -12,13 +12,10 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="860" />
-				<param name="DialogBackgroundHeight" value="430" />
-				<param name="DialogHeaderWidth" value="780" />
+				<param name="DialogBackgroundWidth" value="1320" />
+				<param name="DialogBackgroundHeight" value="600" />
 				<param name="DialogHeaderLabel" value="" />
 				<param name="DialogHeaderId" value="311" />
-				<param name="CloseButtonLeft" value="770" />
-				<param name="CloseButtonNav" value="3" />
 			</include>
 			<control type="image">
 				<left>50</left>
@@ -40,20 +37,12 @@
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 			</control>
-			<control type="image">
-				<left>130</left>
-				<top>110</top>
-				<width>600</width>
-				<height>30</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>DialogHeader.png</texture>
-			</control>
 			<control type="group">
 				<left>30</left>
 				<top>140</top>
 				<!-- 1st row -->
 				<control type="grouplist">
-					<itemgap>0</itemgap>
+					<itemgap>-20</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button" id="309">
 						<description>Layout button</description>
@@ -62,8 +51,8 @@
 						<label>20177</label>
 						<onup>300</onup>
 						<ondown>302</ondown>
-						<texturenofocus border="25,25,5,5">KeyboardCornerTopNF.png</texturenofocus>
-						<texturefocus border="25,25,5,5">KeyboardCornerTop.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -147,8 +136,8 @@
 				<!-- 2nd row -->
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
-					<top>50</top>
-					<itemgap>0</itemgap>
+					<top>75</top>
+					<itemgap>-20</itemgap>
 					<control type="radiobutton" id="302">
 						<description>SHIFT button</description>
 						<width>200</width>
@@ -156,8 +145,8 @@
 						<label>20178</label>
 						<onup>309</onup>
 						<ondown>303</ondown>
-						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<radioposy>5</radioposy>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
@@ -241,9 +230,9 @@
 				</control>
 				<!-- 3rd row -->
 				<control type="grouplist">
-					<top>100</top>
+					<top>150</top>
 					<orientation>horizontal</orientation>
-					<itemgap>0</itemgap>
+					<itemgap>-20</itemgap>
 					<control type="radiobutton" id="303">
 						<description>CAPS LOCK button</description>
 						<width>200</width>
@@ -251,8 +240,8 @@
 						<label>20179</label>
 						<onup>302</onup>
 						<ondown>307</ondown>
-						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<radioposy>5</radioposy>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
@@ -336,8 +325,8 @@
 				</control>
 				<!-- 4th row -->
 				<control type="grouplist">
-					<top>150</top>
-					<itemgap>0</itemgap>
+					<top>225</top>
+					<itemgap>-20</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button" id="307">
 						<description>IP Input button</description>
@@ -346,8 +335,8 @@
 						<onup>303</onup>
 						<ondown>300</ondown>
 						<label>IP</label>
-						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -357,11 +346,11 @@
 						<description>Symbols button</description>
 						<width>100</width>
 						<height>50</height>
-						<label>@#!*   </label>
+						<label>@#!*</label>
 						<onup>303</onup>
 						<ondown>300</ondown>
-						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<radioposy>5</radioposy>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
@@ -445,15 +434,15 @@
 				</control>
 				<!-- 5th row -->
 				<control type="grouplist">
-					<top>200</top>
-					<itemgap>0</itemgap>
+					<top>300</top>
+					<itemgap>-20</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button" id="300">
 						<description>DONE button</description>
 						<width>200</width>
 						<height>50</height>
-						<texturenofocus border="25,5,25,5">KeyboardCornerBottomNF.png</texturenofocus>
-						<texturefocus border="25,5,25,5">KeyboardCornerBottom.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<label>20177</label>
 						<font>font13</font>
 						<align>center</align>
@@ -467,8 +456,8 @@
 						<width>200</width>
 						<height>50</height>
 						<label>20182</label>
-						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -483,8 +472,8 @@
 						<label>20181</label>
 						<onup>165</onup>
 						<ondown>105</ondown>
-						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -497,8 +486,8 @@
 						<label>&lt;</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
-						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<font>font30</font>
 						<focusedcolor>black</focusedcolor>
 						<onup>168</onup>
@@ -511,8 +500,8 @@
 						<label>&gt;</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<texturenofocus flipx="true" border="5,5,25,25">KeyboardCornerBottomNF.png</texturenofocus>
-						<texturefocus flipx="true" border="5,5,25,25">KeyboardCornerBottom.png</texturefocus>
+						<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<font>font30</font>
 						<focusedcolor>black</focusedcolor>
 						<onup>170</onup>
