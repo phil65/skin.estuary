@@ -7,7 +7,7 @@
 		<top>40</top>
 		<origin x="185" y="10">!IsEmpty(ListItem.Property(Addon.broken))</origin>
 	</coordinates>
-	<include>dialogeffect</include>
+	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="group">
 			<include>VisibleFadeEffect</include>

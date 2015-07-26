@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonMenu">
 	<defaultcontrol>9001</defaultcontrol>
-	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
 		<left>0</left>
 		<top>0</top>
 	</coordinates>
 	<controls>
-		<control type="button" id="9001">
-			<description>Make sure we hit the first button in the group list and not the close window button</description>
-			<left>-16</left>
-			<top>-16</top>
-			<width>4</width>
-			<height>4</height>
-			<label>-</label>
-			<font>-</font>
-			<onfocus>down</onfocus>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
-			<onup>9000</onup>
-			<ondown>2</ondown>
-		</control>
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
-			<texture>black-back.png</texture>
-		</control>
+
 		<control type="grouplist" id="9000">
 			<left>470</left>
 			<top>0</top>
@@ -52,23 +29,6 @@
 					<width>340</width>
 					<height>30</height>
 					<texture border="20,19,20,0">DialogContextTop.png</texture>
-				</control>
-				<control type="button" id="20">
-					<description>Close Window button</description>
-					<left>260</left>
-					<top>5</top>
-					<width>64</width>
-					<height>32</height>
-					<label>-</label>
-					<font>-</font>
-					<onclick>PreviousMenu</onclick>
-					<texturefocus>DialogCloseButton-focus.png</texturefocus>
-					<texturenofocus>DialogCloseButton.png</texturenofocus>
-					<onleft>2</onleft>
-					<onright>13</onright>
-					<onup>13</onup>
-					<ondown>2</ondown>
-					<visible>system.getbool(input.enablemouse)</visible>
 				</control>
 			</control>
 			<control type="button" id="2">

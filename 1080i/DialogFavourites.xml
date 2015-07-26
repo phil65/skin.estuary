@@ -1,123 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog">
-	<defaultcontrol always="true">450</defaultcontrol>
-	<coordinates>
-		<system>1</system>
-		<left>0</left>
-		<top>0</top>
-	</coordinates>
-	<controls>
-		<control type="group">
-			<animation effect="slide" start="400,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="400,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
-			<control type="image">
-				<left>400r</left>
-				<top>0</top>
-				<width>400</width>
-				<height>720</height>
-				<texture border="15,0,0,0" flipx="true">HomeBladeSub.png</texture>
-			</control>
-			<control type="button">
-				<description>Close Window button</description>
-				<left>380r</left>
-				<top>0</top>
-				<width>64</width>
-				<height>32</height>
-				<label>-</label>
-				<font>-</font>
-				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
-				<texturenofocus>DialogCloseButton.png</texturenofocus>
-				<onleft>450</onleft>
-				<onright>450</onright>
-				<onup>450</onup>
-				<ondown>450</ondown>
-				<visible>system.getbool(input.enablemouse)</visible>
-			</control>
-			<control type="image">
-				<left>370r</left>
-				<top>30</top>
-				<width>200</width>
-				<height>200</height>
-				<aspectratio align="center">keep</aspectratio>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<bordertexture border="8">ThumbShadow.png</bordertexture>
-				<bordersize>8</bordersize>
-			</control>
-			<control type="list" id="450">
-				<left>390r</left>
-				<top>250</top>
-				<width>450</width>
-				<height>380</height>
-				<onup>450</onup>
-				<onleft>Dialog.Close(Favourites)</onleft>
-				<onright>450</onright>
-				<ondown>450</ondown>
-				<pagecontrol>-</pagecontrol>
-				<scrolltime>200</scrolltime>
-				<itemlayout height="40">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>370</width>
-						<height>40</height>
-						<texture border="5">button-nofocus.png</texture>
-					</control>
-					<control type="label">
-						<left>10</left>
-						<top>0</top>
-						<width>350</width>
-						<height>40</height>
-						<font>font12_title</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<selectedcolor>selected</selectedcolor>
-						<info>ListItem.Label</info>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>370</width>
-						<height>40</height>
-						<visible>!Control.HasFocus(450)</visible>
-						<texture border="3">button-nofocus.png</texture>
-					</control>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>370</width>
-						<height>40</height>
-						<visible>Control.HasFocus(450)</visible>
-						<texture border="3">button-focus.png</texture>
-					</control>
-					<control type="label">
-						<left>10</left>
-						<top>0</top>
-						<width>350</width>
-						<height>40</height>
-						<font>font12_title</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<selectedcolor>selected</selectedcolor>
-						<info>ListItem.Label</info>
-					</control>
-				</focusedlayout>
-			</control>
-			<control type="label">
-				<description>Page label</description>
-				<right>30</right>
-				<top>670</top>
-				<width>350</width>
-				<height>30</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<label>([COLOR=blue]$INFO[Container(450).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages][/COLOR])</label>
-			</control>
-		</control>
-	</controls>
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="134">
+    <defaultcontrol always="true">450</defaultcontrol>
+    <coordinates>
+        <posx>210</posx>
+        <posy>150</posy>
+        <system>1</system>
+    </coordinates>
+    <include>Animation_DialogPopupOpenClose</include>
+    <controls>
+        <include name="DialogBackgroundCommons">
+            <param name="DialogBackgroundWidth" value="1500" />
+            <param name="DialogBackgroundHeight" value="800" />
+            <param name="DialogHeaderWidth" value="620" />
+            <param name="DialogHeaderLabel" value="$LOCALIZE[1036]" />
+            <param name="DialogHeaderId" value="2" />
+        </include>
+        <control type="panel" id="450">
+            <posx>40</posx>
+            <posy>70</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <onleft>450</onleft>
+            <onright>61</onright>
+            <onup>450</onup>
+            <ondown>450</ondown>
+            <preloaditems>2</preloaditems>
+            <pagecontrol>61</pagecontrol>
+            <scrolltime tween="sine">200</scrolltime>
+            <orientation>vertical</orientation>
+            <itemlayout width="346">
+                <control type="group">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>300</width>
+                        <height>300</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
+                        <bordertexture>colors/black.png</bordertexture>
+                        <bordersize>4</bordersize>
+                    </control>
+                </control>
+            </itemlayout>
+            <focusedlayout width="346">
+                <control type="group">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>300</width>
+                        <height>300</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
+                        <bordertexture>colors/black.png</bordertexture>
+                        <bordersize>4</bordersize>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>300</width>
+                        <height>300</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
+                    </control>
+                </control>
+            </focusedlayout>
+        </control>
+        <control type="scrollbar" id="61">
+            <posx>1860</posx>
+            <posy>132</posy>
+            <width>46</width>
+            <height>802</height>
+            <texturesliderbackground colordiffuse="$VAR[AreaColorVar]">views/scrollbarbacklist.png</texturesliderbackground>
+            <onleft>450</onleft>
+            <onright>450</onright>
+            <ondown>61</ondown>
+            <onup>61</onup>
+        </control>
+    </controls>
 </window>

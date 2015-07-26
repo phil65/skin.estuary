@@ -3,7 +3,7 @@
 	<animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 	<coordinates>
-		<left>1500</left>
+		<left>700</left>
 		<top>10</top>
 	</coordinates>
 	<controls>
@@ -18,7 +18,7 @@
 			</control>
 			<control type="image" id="400">
 				<description>avatar</description>
-				<left>330</left>
+				<left>0</left>
 				<top>0</top>
 				<width>60</width>
 				<height>60</height>
@@ -27,10 +27,10 @@
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
 				<left>75</left>
-				<top>15</top>
+				<top>4</top>
 				<width>310</width>
 				<height>18</height>
-				<font>font13</font>
+				<font>font12</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -40,11 +40,11 @@
 			<control type="fadelabel" id="402">
 				<description>Line 2 Label</description>
 				<left>75</left>
-				<top>35</top>
+				<top>33</top>
 				<width>310</width>
 				<height>20</height>
-				<font>font13</font>
-				<textcolor>grey2</textcolor>
+				<font>font12</font>
+				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<scrollout>false</scrollout>
