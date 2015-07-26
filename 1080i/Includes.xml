@@ -45,11 +45,11 @@
         </control>
         <control type="image">
             <description>Dialog Header image</description>
-            <left>40</left>
-            <top>16</top>
-            <width>$PARAM[DialogHeaderWidth]</width>
+            <left>0</left>
+            <top>60</top>
+            <width>$PARAM[DialogBackgroundWidth]</width>
             <height>3</height>
-            <texture>dialogheader.png</texture>
+            <texture colordiffuse="button_focus" border="2">dialogs/separator.png</texture>
         </control>
         <control type="label" id="$PARAM[DialogHeaderId]">
             <description>header label</description>
