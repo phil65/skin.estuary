@@ -176,10 +176,10 @@
                                 <height>60</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/black.png</texture>
-                                <animation effect="zoom" start="100,0" end="100,100" time="200" delay="300" center="0,330" tween="sine">Focus</animation>
+                                <animation effect="fade" start="0" delay="100" end="70" time="200">Focus</animation>
                             </control>
                             <control type="group">
-                                <animation effect="fade" start="0" delay="300" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="0" delay="100" end="100" time="100">Focus</animation>
                                 <control type="label">
                                     <posx>110</posx>
                                     <posy>267</posy>
@@ -330,10 +330,10 @@
                                 <height>60</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/black.png</texture>
-                                <animation effect="zoom" start="100,0" end="100,100" time="200" delay="300" center="0,300" tween="sine">Focus</animation>
+                                <animation effect="fade" start="0" delay="100" end="70" time="200">Focus</animation>
                             </control>
                             <control type="group">
-                                <animation effect="fade" start="0" delay="300" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="0" delay="100" end="100" time="100">Focus</animation>
                                 <control type="label">
                                     <posx>200</posx>
                                     <posy>240</posy>
@@ -484,10 +484,10 @@
                                 <height>60</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/black.png</texture>
-                                <animation effect="zoom" start="100,0" end="100,100" time="200" delay="300" center="0,300" tween="sine">Focus</animation>
+                                <animation effect="fade" start="0" delay="100" end="70" time="200">Focus</animation>
                             </control>
                             <control type="group">
-                                <animation effect="fade" start="0" delay="300" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="0" delay="100" end="100" time="100">Focus</animation>
                                 <control type="label">
                                     <posx>150</posx>
                                     <posy>240</posy>
