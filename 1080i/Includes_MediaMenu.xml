@@ -163,41 +163,7 @@
             <visible>Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)</visible>
         </control>
     </include>
-    <include name="Media_Menu_Furniture">
-        <control type="group">
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus">
-                <effect type="slide" end="-420" time="320" easing="in" tween="cubic" />
-            </animation>
-            <animation type="Conditional" condition="Window.IsActive(1126)">
-                <effect type="slide" end="75" time="320" easing="in" tween="cubic" />
-            </animation>
-            <animation type="Conditional" condition="Window.IsActive(1127) | Window.IsActive(1112)">
-                <effect type="slide" end="-600" time="320" easing="in" tween="cubic" />
-            </animation>
-            <animation type="WindowClose">
-                <effect type="slide" end="-450" time="320" easing="in" tween="cubic" />
-            </animation>
-            <animation type="WindowOpen">
-                <effect type="slide" start="-450" end="0" time="320" delay="800" tween="cubic" />
-            </animation>
-            <control type="group">
-                <animation effect="slide" end="-182" time="320" easing="in" tween="cubic" condition="Window.IsActive(1121)">Conditional</animation>
-                <control type="image">
-                    <posx>-92</posx>
-                    <width>512</width>
-                    <height>1080</height>
-                    <texture colordiffuse="$VAR[DialogColorVar]">dialogs/context_middle.png</texture>
-                    <animation effect="slide" end="-2" time="320" easing="in" tween="cubic" condition="Window.IsActive(1126)">Conditional</animation>
-                </control>
-                <control type="group">
-                    <posx>380</posx>
-                    <include>Neon_VerticalBar</include>
-                </control>
-            </control>
-        </control>
-    </include>
     <include name="Media_Menu">
-        <include>Media_Menu_Furniture</include>
         <control type="group">
             <visible>!Skin.HasSetting(kioskmode)</visible>
             <include>Animation_MediaMenuSlide2</include>
@@ -207,16 +173,16 @@
                 <include>HiddenObject</include>
             </control>
             <control type="grouplist" id="9000">
-                <width>400</width>
+                <posy>100</posy>
+                <width>1920</width>
                 <height>1080</height>
-                <orientation>vertical</orientation>
+                <align>right</align>
+                <orientation>horizontal</orientation>
                 <scroll>true</scroll>
                 <onright>50</onright>
                 <onup>9000</onup>
                 <ondown>9000</ondown>
                 <onback>50</onback>
-                <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
-                <animation effect="fade" time="160" delay="1000">Hidden</animation>
                 <control type="button" id="1802">
                     <label>[B]$INFO[Container.Viewmode][/B]</label>
                     <include>SubMenuItemsCommon</include>
