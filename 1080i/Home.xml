@@ -463,6 +463,15 @@
             </control>
         </control>
         <include>TopBar</include>
+        <control type="image">
+            <description>Logo</description>
+            <posx>20</posx>
+            <posy>10</posy>
+            <aspectratio>keep</aspectratio>
+            <width>192</width>
+            <height>56</height>
+            <texture>logo.png</texture>
+        </control>
         <include>BottomBar</include>
         <control type="group">
             <include>OpenClose_FadeSlide_Left</include>
