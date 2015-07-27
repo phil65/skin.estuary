@@ -3,16 +3,15 @@
     <zorder>1</zorder>
     <defaultcontrol always="true">3</defaultcontrol>
     <coordinates>
-        <left>235</left>
-        <top>75</top>
+        <left>350</left>
+        <top>120</top>
     </coordinates>
     <include>Animation_DialogPopupOpenClose</include>
     <controls>
         <control type="group">
             <include name="DialogBackgroundCommons">
-                <param name="DialogBackgroundWidth" value="610" />
-                <param name="DialogBackgroundHeight" value="240" />
-                <param name="DialogHeaderWidth" value="530" />
+                <param name="DialogBackgroundWidth" value="1220" />
+                <param name="DialogBackgroundHeight" value="600" />
                 <param name="DialogHeaderLabel" value="" />
                 <param name="DialogHeaderId" value="1" />
             </include>
@@ -219,29 +218,38 @@
                     <label>$VAR[SelectLabel]</label>
                 </control>
                 <control type="grouplist" id="90">
-                    <left>612</left>
+                    <left>1000</left>
                     <top>100</top>
                     <onleft>3</onleft>
+                    <itemgap>-20</itemgap>
                     <onright>3</onright>
                     <control type="button" id="5">
                         <description>Manual button</description>
                         <width>200</width>
-                        <height>40</height>
                         <label>-</label>
+                        <height>94</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+                        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                        <textoffsetx>35</textoffsetx>
                         <font>font12_title</font>
                         <textcolor>white</textcolor>
                         <focusedcolor>white</focusedcolor>
-                        <align>center</align>
                     </control>
                     <control type="button" id="99">
                         <description>Cancel button</description>
                         <width>200</width>
-                        <height>40</height>
                         <label>222</label>
                         <font>font12_title</font>
                         <textcolor>white</textcolor>
                         <focusedcolor>white</focusedcolor>
-                        <align>center</align>
+                        <height>94</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+                        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                        <textoffsetx>35</textoffsetx>
                         <onclick>Dialog.Close(selectdialog)</onclick>
                     </control>
                 </control>
