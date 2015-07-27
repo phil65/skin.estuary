@@ -17,8 +17,8 @@
     <default type="button">
         <width>300</width>
         <height>42</height>
-        <texturefocus border="5">button-focus.png</texturefocus>
-        <texturenofocus border="5">button-nofocus.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <font>font13</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey3</disabledcolor>
@@ -29,10 +29,10 @@
     <default type="togglebutton">
         <width>20</width>
         <height>20</height>
-        <texturefocus>scroll-up-focus.png</texturefocus>
-        <texturenofocus>scroll-up.png</texturenofocus>
-        <alttexturefocus>scroll-down-focus.png</alttexturefocus>
-        <alttexturenofocus>scroll-down.png</alttexturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+        <alttexturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</alttexturefocus>
+        <alttexturenofocus border="40">buttons/button-nofo.png</alttexturenofocus>
         <textcolor>white</textcolor>
         <label>-</label>
         <font>font13</font>
@@ -98,8 +98,8 @@
         <textureradioonnofocus>buttons/radio-button-fo.png</textureradioonnofocus>
         <textureradioofffocus>buttons/radio-button-nf.png</textureradioofffocus>
         <textureradiooffnofocus>buttons/radio-button-nf.png</textureradiooffnofocus>
-        <texturefocus border="5">button-focus.png</texturefocus>
-        <texturenofocus border="5">button-nofocus.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <label>215</label>
         <font>font13</font>
         <textcolor>white</textcolor>
@@ -132,8 +132,8 @@
         <height>35</height>
         <textoffsetx>7</textoffsetx>
         <aligny>center</aligny>
-        <texturefocus border="5">button-focus.png</texturefocus>
-        <texturenofocus border="5">button-nofocus.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <sliderwidth>150</sliderwidth>
         <sliderheight>20</sliderheight>
         <texturesliderbar>osd_slider_bg.png</texturesliderbar>
@@ -144,18 +144,18 @@
         <disabledcolor>grey3</disabledcolor>
     </default>
     <default type="mover">
-        <texturefocus border="5">button-focus.png</texturefocus>
-        <texturenofocus border="5">button-nofocus.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
     </default>
     <default type="resize">
-        <texturefocus border="5">button-focus.png</texturefocus>
-        <texturenofocus border="5">button-nofocus.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
     </default>
     <default type="edit">
         <width>300</width>
         <height>42</height>
-        <texturefocus border="5">button-focus.png</texturefocus>
-        <texturenofocus border="5">button-nofocus.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <font>font13</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey3</disabledcolor>

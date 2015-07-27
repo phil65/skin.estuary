@@ -5,12 +5,11 @@
     <controls>
         <include>CommonBackground</include>
         <control type="image">
-            <left>0</left>
-            <top>100r</top>
-            <width>1280</width>
-            <height>100</height>
-            <texture>floor.png</texture>
-            <include>VisibleFadeEffect</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>special://skin/extras/backgrounds/01.jpg</texture>
         </control>
         <control type="group">
             <left>90</left>
@@ -115,14 +114,7 @@
                 <top>10</top>
                 <width>790</width>
                 <height>618</height>
-                <texture border="5">black-back2.png</texture>
-            </control>
-            <control type="image">
-                <left>268</left>
-                <top>10</top>
-                <width>790</width>
-                <height>52</height>
-                <texture>dialogheader.png</texture>
+                <texture border="2">dialogs/dialog-bg.png</texture>
             </control>
             <control type="label">
                 <description>header label</description>
@@ -195,45 +187,45 @@
             <align>right</align>
             <aligny>center</aligny>
             <font>font13_title</font>
-            <textcolor>grey2</textcolor>
+            <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-            <texturefocus border="5">MenuItemFO.png</texturefocus>
-            <texturenofocus border="5">MenuItemNF.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
             <pulseonselect>false</pulseonselect>
         </control>
         <control type="button" id="7">
             <description>Default Button</description>
             <left>0</left>
             <top>0</top>
-            <height>40</height>
+            <height>70</height>
             <font>font13</font>
-            <textcolor>grey2</textcolor>
+            <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
             <invalidcolor>invalid</invalidcolor>
-            <texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-            <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         </control>
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <left>0</left>
             <top>0</top>
-            <height>40</height>
+            <height>70</height>
             <font>font13</font>
-            <textcolor>grey2</textcolor>
+            <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-            <texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-            <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default SpinControlex</description>
             <left>0</left>
             <top>0</top>
-            <height>40</height>
+            <height>70</height>
             <font>font13</font>
-            <textcolor>grey2</textcolor>
+            <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-            <texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-            <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
             <aligny>center</aligny>
             <reverse>yes</reverse>
         </control>
@@ -241,12 +233,12 @@
             <description>Default Slider</description>
             <posx>0</posx>
             <posy>0</posy>
-            <height>40</height>
+            <height>70</height>
             <font>font13</font>
-            <textcolor>grey2</textcolor>
+            <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-            <texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-            <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
             <aligny>center</aligny>
         </control>
         <control type="image" id="11">
