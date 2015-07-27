@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonMenu">
-	<defaultcontrol>9001</defaultcontrol>
+	<defaultcontrol>9000</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<left>0</left>
 		<top>0</top>
 	</coordinates>
 	<controls>
-
+		<control type="image">
+			<description>background image</description>
+			<include>FullScreenDimensions</include>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+		</control>
 		<control type="grouplist" id="9000">
-			<left>470</left>
+			<left>705</left>
 			<top>0</top>
-			<width>340</width>
+			<width>510</width>
 			<height>720</height>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
@@ -20,27 +26,27 @@
 			<itemgap>0</itemgap>
 			<align>center</align>
 			<control type="group" id="1">
-				<width>340</width>
+				<width>510</width>
 				<height>30</height>
 				<control type="image">
 					<description>background top image</description>
 					<left>0</left>
 					<top>0</top>
-					<width>340</width>
+					<width>510</width>
 					<height>30</height>
-					<texture border="20,19,20,0">DialogContextTop.png</texture>
+					<texture>-</texture>
 				</control>
 			</control>
 			<control type="button" id="2">
 				<description>Exit button</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Quit()</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -49,14 +55,14 @@
 			</control>
 			<control type="button" id="3">
 				<description>Shutdown button</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Powerdown()</onclick>
 				<visible>System.CanPowerDown</visible>
 				<pulseonselect>no</pulseonselect>
@@ -65,14 +71,14 @@
 			</control>
 			<control type="button" id="4">
 				<description>Custom Shutdown Timer</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -82,14 +88,14 @@
 			</control>
 			<control type="button" id="5">
 				<description>Cancel Shutdown Timer</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>CancelAlarm(shutdowntimer)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -98,14 +104,14 @@
 			</control>
 			<control type="button" id="6">
 				<description>Suspend button</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Suspend()</onclick>
 				<visible>System.CanSuspend</visible>
 				<pulseonselect>no</pulseonselect>
@@ -114,14 +120,14 @@
 			</control>
 			<control type="button" id="7">
 				<description>Hibernate button</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Hibernate()</onclick>
 				<visible>System.CanHibernate</visible>
 				<pulseonselect>no</pulseonselect>
@@ -130,14 +136,14 @@
 			</control>
 			<control type="button" id="8">
 				<description>Reboot button</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Reset()</onclick>
 				<visible>System.CanReboot</visible>
 				<pulseonselect>no</pulseonselect>
@@ -146,14 +152,14 @@
 			</control>
 			<control type="button" id="9">
 				<description>Logoff button</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>dialog.close(all,true)</onclick>
 				<onclick>System.LogOff</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -164,17 +170,17 @@
 			</control>
 			<control type="togglebutton" id="10">
 				<description>Master mode button</description>
-				<width>340</width>
-				<height>40</height>
+				<width>510</width>
+				<height>100</height>
 				<label>20046</label>
 				<altlabel>20045</altlabel>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textwidth>290</textwidth>
-				<textcolor>grey2</textcolor>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<usealttexture>!System.IsMaster</usealttexture>
 				<alttexturefocus border="25,5,25,5">ShutdownButtonFocus.png</alttexturefocus>
 				<alttexturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</alttexturenofocus>
@@ -184,14 +190,14 @@
 				<visible>System.HasLocks</visible>
 			</control>
 			<control type="group" id="11">
-				<width>340</width>
+				<width>510</width>
 				<height>70</height>
 				<visible>System.HasAlarm(shutdowntimer)</visible>
 				<control type="image">
 					<description>background top image</description>
 					<left>0</left>
 					<top>0</top>
-					<width>340</width>
+					<width>510</width>
 					<height>70</height>
 					<texture border="25,5,25,5">DialogContextMiddle.png</texture>
 				</control>
@@ -209,14 +215,14 @@
 			</control>
 			<control type="button" id="12">
 				<description>Inhibit idle shutdown</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>InhibitIdleShutdown(true)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -225,14 +231,14 @@
 			</control>
 			<control type="button" id="13">
 				<description>Allow idle shutdown</description>
-				<width>340</width>
-				<height>40</height>
-				<textcolor>grey2</textcolor>
+				<width>510</width>
+				<height>100</height>
+				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
-				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>InhibitIdleShutdown(false)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
@@ -242,7 +248,7 @@
 			<control type="image" id="14">
 				<description>background bottom image</description>
 				<left>0</left>
-				<width>340</width>
+				<width>510</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
 			</control>
