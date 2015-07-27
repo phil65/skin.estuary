@@ -5,7 +5,7 @@
     <controls>
         <include>CommonBackground</include>
         <control type="image">
-            <posx>0</posx>
+            <left>0</left>
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
@@ -18,7 +18,7 @@
                 <include>OpenClose_FadeSlide_Left</include>
                 <control type="image">
                     <description>Menu Panel</description>
-                    <posx>0</posx>
+                    <left>0</left>
                     <posy>158</posy>
                     <width>400</width>
                     <height>752</height>
@@ -27,10 +27,11 @@
                 <control type="grouplist" id="3">
                     <description>button area</description>
                     <left>0</left>
-                    <top>158</top>
+                    <top>160</top>
                     <width>400</width>
                     <height>700</height>
                     <itemgap>0</itemgap>
+                    <usecontrolcoords>true</usecontrolcoords>
                     <onleft>5</onleft>
                     <onright>5</onright>
                     <onup>3</onup>
@@ -38,8 +39,9 @@
                 </control>
                 <control type="button" id="10">
                     <description>Default Category Button</description>
+                    <left>2</left>
                     <height>75</height>
-                    <width>400</width>
+                    <width>396</width>
                     <textoffsetx>20</textoffsetx>
                     <align>left</align>
                     <aligny>center</aligny>
@@ -204,7 +206,7 @@
         </control>
         <control type="sliderex" id="13">
             <description>Default Slider</description>
-            <posx>0</posx>
+            <left>0</left>
             <textoffsetx>45</textoffsetx>
             <posy>0</posy>
             <height>75</height>
