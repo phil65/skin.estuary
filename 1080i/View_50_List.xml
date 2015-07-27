@@ -57,7 +57,7 @@
                             <aligny>center</aligny>
                             <font>font14</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>selected</selectedcolor>
                             <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -102,7 +102,7 @@
                             <aligny>center</aligny>
                             <font>font14</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>selected</selectedcolor>
                             <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                             <scroll>false</scroll>
