@@ -102,9 +102,9 @@
             </control>
             <control type="label">
                 <description>header label</description>
-                <left>300</left>
-                <top>20</top>
-                <width>726</width>
+                <left>500</left>
+                <top>120</top>
+                <width>1300</width>
                 <height>30</height>
                 <font>font16</font>
                 <label>$INFO[Control.GetLabel(2)] - $LOCALIZE[5]</label>
@@ -116,9 +116,9 @@
             <control type="grouplist" id="5">
                 <description>control area</description>
                 <left>550</left>
-                <top>120</top>
+                <top>160</top>
                 <width>1200</width>
-                <height>735</height>
+                <height>680</height>
                 <itemgap>-20</itemgap>
                 <pagecontrol>60</pagecontrol>
                 <onleft>3</onleft>
@@ -249,23 +249,6 @@
             <height>35</height>
             <aspectratio>keep</aspectratio>
             <texture>icon_system.png</texture>
-        </control>
-        <control type="grouplist">
-            <left>65</left>
-            <top>5</top>
-            <width>1000</width>
-            <height>30</height>
-            <orientation>horizontal</orientation>
-            <align>left</align>
-            <itemgap>5</itemgap>
-            <control type="label">
-                <include>WindowTitleCommons</include>
-                <label>$LOCALIZE[5]</label>
-            </control>
-            <control type="label">
-                <include>WindowTitleCommons</include>
-                <label>[COLOR=blue] - [/COLOR]$INFO[Control.GetLabel(2)]</label>
-            </control>
         </control>
         <include>TopBar</include>
         <include>BottomBar</include>
