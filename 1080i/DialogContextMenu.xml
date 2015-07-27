@@ -17,13 +17,14 @@
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-		</control>		<control type="image" id="999">
+		</control>
+		<control type="image" id="999">
 			<description>background image</description>
 			<left>0</left>
 			<top>0</top>
 			<width>450</width>
 			<height>720</height>
-			<texture border="20">lists/panel.png</texture>
+            <texture border="2">dialogs/dialog-bg.png</texture>
 		</control>
 		<control type="grouplist" id="996">
 			<description>grouplist for context buttons</description>
@@ -31,7 +32,7 @@
 			<top>30</top>
 			<width>450</width>
 			<height max="670">auto</height>
-			<itemgap>2</itemgap>
+			<usecontrolcoords>true</usecontrolcoords>
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
@@ -52,16 +53,16 @@
 		</control>
 		<control type="button" id="1000">
 			<description>button template</description>
-			<left>-</left>
+			<left>2</left>
 			<top>-</top>
-			<width>450</width>
+			<width>446</width>
 			<height>60</height>
 			<font>fontContextMenu</font>
 			<align>center</align>
 			<textcolor>grey</textcolor>
 			<focusedcolor>white</focusedcolor>
-                    <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-                    <texturenofocus border="40">lists/separator.png</texturenofocus>
+			<texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+			<texturenofocus border="40">lists/separator.png</texturenofocus>
 		</control>
 	</controls>
 </window>
