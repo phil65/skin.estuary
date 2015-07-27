@@ -46,7 +46,7 @@
                 </control>
                 <control type="button" id="10">
                     <description>Default Category Button</description>
-                    <height>95</height>
+                    <height>75</height>
                     <width>400</width>
                     <textoffsetx>20</textoffsetx>
                     <align>left</align>
@@ -60,20 +60,20 @@
                 </control>
                 <control type="button" id="20">
                     <description>Setting level button</description>
-                    <left>10</left>
-                    <top>862</top>
-                    <height>60</height>
-                    <width>260</width>
+                    <left>0</left>
+                    <top>842</top>
+                    <height>120</height>
+                    <width>400</width>
                     <label>10037</label>
                     <textoffsetx>20</textoffsetx>
-                    <textoffsety>28</textoffsety>
-                    <align>right</align>
-                    <aligny>top</aligny>
+                    <textoffsety>50</textoffsety>
+                    <align>center</align>
+                    <aligny>bottom</aligny>
                     <font>font13</font>
                     <textcolor>white</textcolor>
                     <focusedcolor>white</focusedcolor>
-                    <texturefocus border="5">MenuItemFO.png</texturefocus>
-                    <texturenofocus border="5">MenuItemNF.png</texturenofocus>
+                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
                     <pulseonselect>false</pulseonselect>
                     <onleft>5</onleft>
                     <onright>5</onright>
@@ -82,14 +82,14 @@
                     <onclick>SettingsLevelChange</onclick>
                 </control>
                 <control type="label">
-                    <left>20</left>
+                    <left>0</left>
                     <top>866</top>
                     <height>25</height>
-                    <width>230</width>
+                    <width>400</width>
                     <label>31142</label>
                     <font>font13_title</font>
                     <textcolor>white</textcolor>
-                    <align>right</align>
+                    <align>center</align>
                     <aligny>center</aligny>
                 </control>
             </control>
@@ -97,29 +97,47 @@
                 <left>500</left>
                 <top>100</top>
                 <width>1300</width>
-                <height>818</height>
+                <height>868</height>
                 <texture border="2">dialogs/dialog-bg.png</texture>
             </control>
-            <control type="label">
+            <control type="image">
+                <description>Dialog Header image</description>
+                <left>502</left>
+                <top>802</top>
+                <width>1296</width>
+                <height>3</height>
+                <texture colordiffuse="button_focus" border="2">dialogs/separator.png</texture>
+            </control>
+            <!-- <control type="group">
+                 <left>500</left>
+                 <top>100</top>
+                 <include name="DialogBackgroundCommons">
+                 <param name="DialogBackgroundWidth" value="1300" />
+                 <param name="DialogBackgroundHeight" value="868" />
+                 <param name="DialogHeaderLabel" value="$LOCALIZE[24003]" />
+                 <param name="DialogHeaderId" value="2" />
+                 <param name="darken_bg" value="false" />
+                 </include>
+                 </control> -->
+            <control type="label" id="2">
                 <description>header label</description>
-                <left>500</left>
-                <top>120</top>
+                <left>20</left>
+                <top>20</top>
                 <width>1300</width>
                 <height>30</height>
                 <font>font16</font>
-                <label>$INFO[Control.GetLabel(2)] - $LOCALIZE[5]</label>
-                <align>center</align>
+                <align>left</align>
                 <aligny>center</aligny>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="grouplist" id="5">
                 <description>control area</description>
-                <left>550</left>
-                <top>160</top>
-                <width>1200</width>
-                <height>680</height>
-                <itemgap>-20</itemgap>
+                <left>502</left>
+                <top>102</top>
+                <width>1296</width>
+                <height>700</height>
+                <itemgap>0</itemgap>
                 <pagecontrol>60</pagecontrol>
                 <onleft>3</onleft>
                 <onright>60</onright>
@@ -146,19 +164,19 @@
                 <left>290</left>
                 <top>525</top>
                 <width>750</width>
-                <height>2</height>
+                <height>30</height>
                 <texture>separator2.png</texture>
                 <colordiffuse>40FFFFFF</colordiffuse>
             </control>
             <control type="textbox" id="6">
                 <description>description area</description>
                 <left>570</left>
-                <top>832</top>
+                <top>852</top>
                 <width>1150</width>
                 <height>83</height>
                 <font>font12</font>
                 <align>justify</align>
-                <textcolor>white</textcolor>
+                <textcolor>grey</textcolor>
                 <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
             </control>
         </control>
@@ -167,37 +185,37 @@
             <left>0</left>
             <textoffsetx>45</textoffsetx>
             <top>0</top>
-            <height>95</height>
+            <height>75</height>
             <font>font13</font>
             <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
             <invalidcolor>invalid</invalidcolor>
-            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+            <texturenofocus border="4">lists/separator.png</texturenofocus>
         </control>
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <left>0</left>
             <textoffsetx>45</textoffsetx>
             <top>0</top>
-            <height>95</height>
+            <height>75</height>
             <font>font13</font>
             <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+            <texturenofocus border="40">lists/separator.png</texturenofocus>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default SpinControlex</description>
             <left>0</left>
             <textoffsetx>45</textoffsetx>
             <top>0</top>
-            <height>95</height>
+            <height>75</height>
             <font>font13</font>
             <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+            <texturenofocus border="40">lists/separator.png</texturenofocus>
             <aligny>center</aligny>
             <reverse>yes</reverse>
         </control>
@@ -206,18 +224,18 @@
             <posx>0</posx>
             <textoffsetx>45</textoffsetx>
             <posy>0</posy>
-            <height>95</height>
+            <height>75</height>
             <font>font13</font>
             <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+            <texturenofocus border="40">lists/separator.png</texturenofocus>
             <aligny>center</aligny>
         </control>
         <control type="image" id="11">
             <description>separator image</description>
-            <height>20</height>
-            <texture>separator2.png</texture>
+            <height>3</height>
+            <texture colordiffuse="grey" border="2">dialogs/separator.png</texture>
         </control>
         <control type="label" id="14">
             <description>Default Label</description>
@@ -231,15 +249,6 @@
             <font>font13_title</font>
             <textcolor>grey</textcolor>
             <shadowcolor>black</shadowcolor>
-        </control>
-        <control type="label" id="2">
-            <description>Fake Label so we can pass it value down to the one below</description>
-            <left>0</left>
-            <top>0</top>
-            <width>0</width>
-            <height>0</height>
-            <font>-</font>
-            <visible>false</visible>
         </control>
         <control type="image">
             <description>Section header image</description>
