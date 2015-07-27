@@ -464,6 +464,7 @@
         </control>
         <include>TopBar</include>
         <control type="image">
+            <include>OpenClose_FadeSlide_Left</include>
             <description>Logo</description>
             <posx>20</posx>
             <posy>10</posy>

@@ -244,25 +244,28 @@
         </control>
         <include>TopBar</include>
         <include>BottomBar</include>
-        <control type="image">
-            <description>breadcrumbs image</description>
-            <left>0</left>
-            <top>10</top>
-            <width>80</width>
-            <height>80</height>
-            <texture colordiffuse="button_focus">$VAR[SettingsSectionIcon]</texture>
-        </control>
-        <control type="label" id="2">
-            <description>breadcrumbs label</description>
-            <left>80</left>
-            <top>20</top>
-            <width>1300</width>
-            <height>30</height>
-            <font>font16</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
+        <control type="group">
+            <include>OpenClose_FadeSlide_Left</include>
+            <control type="image">
+                <description>breadcrumbs image</description>
+                <left>0</left>
+                <top>10</top>
+                <width>80</width>
+                <height>80</height>
+                <texture colordiffuse="button_focus">$VAR[SettingsSectionIcon]</texture>
+            </control>
+            <control type="label" id="2">
+                <description>breadcrumbs label</description>
+                <left>80</left>
+                <top>20</top>
+                <width>1300</width>
+                <height>30</height>
+                <font>font16</font>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
         </control>
     </controls>
 </window>
