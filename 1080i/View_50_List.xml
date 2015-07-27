@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_50_List">
+        <control type="group">
+            <description>Poster Widget including header and arrows</description>
+            <height>424</height>
+            <posx>0</posx>
+            <posy>300</posy>
+            <control type="label">
+                <posx>150</posx>
+                <posy>0</posy>
+                <width>600</width>
+                <height>40</height>
+                <label>Sorted by: Title</label>
+                <font>font14</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <scroll>false</scroll>
+                <align>left</align>
+            </control>
+            <control type="list" id="50">
+                <posx>150</posx>
+                <posy>70</posy>
+                <width>1660</width>
+                <height>400</height>
+                <oninfo>$PARAM[list_oninfo]</oninfo>
+                <scrolltime tween="cubic" easing="out">500</scrolltime>
+                <orientation>vertical</orientation>
+                <onleft>9000</onleft>
+                <onright>50</onright>
+                <onup>$PARAM[onup_id]</onup>
+                <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
+                <preloaditems>1</preloaditems>
+                <animation type="WindowOpen">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                </animation>
+                <animation type="WindowClose">
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="100" end="120" time="300" tween="cubic" easing="out" />
+                </animation>
+                <focusedlayout height="70">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>400</width>
+                        <height>71</height>
+                        <texture border="90,3,90,3">lists/separator.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>400</width>
+                        <height>69</height>
+                        <texture border="150,1,150,1">lists/focus.png</texture>
+                        <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <posx>70</posx>
+                        <posy>0</posy>
+                        <height>70</height>
+                        <width>560</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font14</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>-4</posy>
+                        <width>70</width>
+                        <height>70</height>
+                        <texture>lists/arrow-right-nofo.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>-4</posy>
+                        <width>70</width>
+                        <height>70</height>
+                        <texture>lists/arrow-right-fo.png</texture>
+                        <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>-4</posy>
+                        <width>70</width>
+                        <height>70</height>
+                        <texture>lists/arrow-right-colour-fo.png</texture>
+                        <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+                        <visible>!Control.HasFocus(9000)</visible>
+                    </control>
+                </focusedlayout>
+                <itemlayout height="70">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>400</width>
+                        <height>71</height>
+                        <texture border="90,3,90,3">lists/separator.png</texture>
+                    </control>
+                    <control type="label">
+                        <posx>70</posx>
+                        <posy>0</posy>
+                        <height>70</height>
+                        <width>560</width>
+                        <aligny>center</aligny>
+                        <font>font14</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>-4</posy>
+                        <width>70</width>
+                        <height>70</height>
+                        <texture>$INFO[ListItem.Property(nofocus)]</texture>
+                    </control>
+                </itemlayout>
+            </control>
+        </control>
+    </include>
+</includes>

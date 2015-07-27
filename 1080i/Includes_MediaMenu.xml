@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="PlaylistEditorButtons">
+        <control type="button" id="6">
+            <label>31055</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="7">
+            <label>31056</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="8">
+            <label>31057</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+    </include>
+    <include name="PlaylistButtons">
+        <control type="button" id="20">
+            <label>$LOCALIZE[191]$INFO[Playlist.Random, : ]</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="26">
+            <label>-</label>
+            <include>SubMenuItemsCommon</include>
+            <!--to-do
+            <texture>$VAR[RepeatImageVar]</texture>-->
+        </control>
+        <control type="button" id="21">
+            <label>190</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="22">
+            <label>192</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+    </include>
+    <include name="AddonBrowserButtons">
+        <control type="button" id="5">
+            <label>$LOCALIZE[24063]: $VAR[AutoUpdateLabelVar]</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="6">
+            <label>$LOCALIZE[25000]: $VAR[AddonNotificationsLabelVar]</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="7">
+            <label>$LOCALIZE[25001]: $VAR[AddonLanguageLabelVar]</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="2052">
+            <label>$LOCALIZE[24999]: $VAR[AddonHideBrokenLabelVar]</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="223">
+            <label>$LOCALIZE[31173]</label>
+            <include>SubMenuItemsCommon</include>
+            <onclick>UpdateAddonRepos</onclick>
+            <onclick>Notification($LOCALIZE[31902],$LOCALIZE[31911])</onclick>
+        </control>
+        <control type="button" id="224">
+            <label>$LOCALIZE[31174]</label>
+            <include>SubMenuItemsCommon</include>
+            <onclick>UpdateLocalAddons</onclick>
+            <onclick>Notification($LOCALIZE[31902],$LOCALIZE[31912])</onclick>
+        </control>
+    </include>
+    <include name="MusicLibraryButtons">
+        <control type="button" id="8">
+            <label>137</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="16">
+            <label>589</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="100">
+            <label>$LOCALIZE[31022]</label>
+            <include>SubMenuItemsCommon</include>
+            <onclick>ReplaceWindow(MusicFiles)</onclick>
+        </control>
+        <control type="button" id="20">
+            <description>Update library</description>
+            <include>SubMenuItemsCommon</include>
+            <label>$VAR[LibraryScanLabelVar]</label>
+        </control>
+    </include>
+    <include name="VideoLibraryButtons">
+        <control type="button" id="16">
+            <label>589</label>
+            <include>SubMenuItemsCommon</include>
+            <visible>Container.Content(musicvideos)</visible>
+        </control>
+        <control type="button" id="10">
+            <include>SubMenuItemsCommon</include>
+            <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
+        </control>
+        <control type="button" id="11">
+            <label>20336</label>
+            <include>SubMenuItemsCommon</include>
+            <onclick>xbmc.mastermode</onclick>
+            <visible>system.haslocks</visible>
+        </control>
+        <control type="button" id="20">
+            <description>Update library</description>
+            <include>SubMenuItemsCommon</include>
+            <label>$VAR[LibraryScanLabelVar]</label>
+        </control>
+    </include>
+    <include name="MusicFilesButtons">
+        <control type="button" id="7">
+            <label>136</label>
+            <include>SubMenuItemsCommon</include>
+            <visible>!SubString(Container.FolderPath,special://musicplaylists/,left)</visible>
+        </control>
+        <control type="button" id="9">
+            <include>SubMenuItemsCommon</include>
+
+        </control>
+        <control type="button" id="10">
+            <include>SubMenuItemsCommon</include>
+            <visible>Control.IsEnabled(10)</visible>
+        </control>
+        <control type="button" id="102">
+            <label>$LOCALIZE[29800]</label>
+            <include>SubMenuItemsCommon</include>
+            <onclick>ReplaceWindow(MusicLibrary)</onclick>
+        </control>
+        <control type="button" id="17">
+            <label>527</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+    </include>
+    <include name="PicturesButtons">
+        <control type="button" id="6">
+            <label>13317</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="7">
+            <label>13318</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="9">
+            <label>13319</label>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="1688">
+            <label>Show Images on Map</label>
+            <onclick>RunScript(script.maps.browser,folder=$INFO[Container.FolderPath])</onclick>
+            <include>SubMenuItemsCommon</include>
+        </control>
+    </include>
+    <include name="GeneralSettingsButton">
+        <control type="button" id="1667">
+            <label>Video Settings</label>
+            <include>SubMenuItemsCommon</include>
+            <onclick>ActivateWindow(videossettings)</onclick>
+            <visible>Window.IsActive(videos)</visible>
+        </control>
+        <control type="button" id="1668">
+            <label>Music Settings</label>
+            <include>SubMenuItemsCommon</include>
+            <onclick>ActivateWindow(musicsettings)</onclick>
+            <visible>Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)</visible>
+        </control>
+    </include>
+    <include name="Media_Menu_Furniture">
+        <control type="group">
+            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus">
+                <effect type="slide" end="-420" time="320" easing="in" tween="cubic" />
+            </animation>
+            <animation type="Conditional" condition="Window.IsActive(1126)">
+                <effect type="slide" end="75" time="320" easing="in" tween="cubic" />
+            </animation>
+            <animation type="Conditional" condition="Window.IsActive(1127) | Window.IsActive(1112)">
+                <effect type="slide" end="-600" time="320" easing="in" tween="cubic" />
+            </animation>
+            <animation type="WindowClose">
+                <effect type="slide" end="-450" time="320" easing="in" tween="cubic" />
+            </animation>
+            <animation type="WindowOpen">
+                <effect type="slide" start="-450" end="0" time="320" delay="800" tween="cubic" />
+            </animation>
+            <control type="group">
+                <animation effect="slide" end="-182" time="320" easing="in" tween="cubic" condition="Window.IsActive(1121)">Conditional</animation>
+                <control type="image">
+                    <posx>-92</posx>
+                    <width>512</width>
+                    <height>1080</height>
+                    <texture colordiffuse="$VAR[DialogColorVar]">dialogs/context_middle.png</texture>
+                    <animation effect="slide" end="-2" time="320" easing="in" tween="cubic" condition="Window.IsActive(1126)">Conditional</animation>
+                </control>
+                <control type="group">
+                    <posx>380</posx>
+                    <include>Neon_VerticalBar</include>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="Media_Menu">
+        <include>Media_Menu_Furniture</include>
+        <control type="group">
+            <visible>!Skin.HasSetting(kioskmode)</visible>
+            <include>Animation_MediaMenuSlide2</include>
+            <control type="togglebutton" id="4">
+                <label>$LOCALIZE[31164]: $LOCALIZE[584]</label>
+                <altlabel>$LOCALIZE[31164]: $LOCALIZE[585]</altlabel>
+                <include>HiddenObject</include>
+            </control>
+            <control type="grouplist" id="9000">
+                <width>400</width>
+                <height>1080</height>
+                <orientation>vertical</orientation>
+                <scroll>true</scroll>
+                <onright>50</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onback>50</onback>
+                <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
+                <animation effect="fade" time="160" delay="1000">Hidden</animation>
+                <control type="button" id="1802">
+                    <label>[B]$INFO[Container.Viewmode][/B]</label>
+                    <include>SubMenuItemsCommon</include>
+                    <onclick>SetProperty(viewtypeselect,1,home)</onclick>
+                    <onclick>ActivateWindow(1121)</onclick>
+                    <visible>!Window.IsActive(musicplaylisteditor)</visible>
+                </control>
+                <control type="button" id="3">
+                    <description>Sort Button</description>
+                    <include>SubMenuItemsCommon</include>
+                    <visible>Control.IsEnabled(3)</visible>
+                </control>
+                <control type="button" id="4">
+                    <include>SubMenuItemsCommon</include>
+                    <visible>Control.IsEnabled(4)</visible>
+                </control>
+                <include condition="!Window.IsActive(videoplaylist) + !Window.IsActive(musicplaylist)">FilterButtons</include>
+                <include condition="Window.IsActive(videos)">VideoLibraryButtons</include>
+                <include condition="Window.IsActive(AddonBrowser)">AddonBrowserButtons</include>
+                <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons</include>
+                <include condition="Window.IsActive(MusicFiles)">MusicFilesButtons</include>
+                <include condition="Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist)">PlaylistButtons</include>
+                <include condition="Window.IsActive(pictures)">PicturesButtons</include>
+                <include condition="Window.IsActive(musicplaylisteditor)">PlaylistEditorButtons</include>
+                <control type="button" id="1800">
+                    <label>31316</label>
+                    <include>SubMenuItemsCommon</include>
+                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
+                    <onclick condition="Container.Content(TVShows) | Container.Content(seasons) | Container.Content(episodes)">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,silent=true,extrafanart,poster,fanart,banner,clearlogo,clearart,landscape,characterart,seasonbanner,seasonposter,seasonlandscape)</onclick>
+                    <onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader,mode=custom,mediatype=musicvideo,silent=true,poster,clearlogo,fanart,extrafanart)</onclick>
+                    <onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader,mode=custom,mediatype=movie,silent=true,extrafanart,poster,fanart,banner,clearlogo,clearart,landscape,discart,extrathumbs)</onclick>
+                </control>
+                <control type="button" id="612">
+                    <label>13350</label>
+                    <include>SubMenuItemsCommon</include>
+                    <onclick condition="IntegerGreaterThan(Playlist.Length(music),1)">ActivateWindow(musicplaylist)</onclick>
+                    <onclick condition="IntegerGreaterThan(Playlist.Length(video),1)">ActivateWindow(videoplaylist)</onclick>
+                    <visible>IntegerGreaterThan(Playlist.Length(music),1) | IntegerGreaterThan(Playlist.Length(video),1)</visible>
+                    <visible>!Window.IsActive(MusicPlaylist) + !Window.IsActive(VideoPlaylist)</visible>
+                </control>
+                <control type="button" id="613">
+                    <label>FullScreen Media</label>
+                    <include>SubMenuItemsCommon</include>
+                    <onclick>FullScreen</onclick>
+                    <visible>Player.HasMedia</visible>
+                </control>
+                <include>GeneralSettingsButton</include>
+            </control>
+        </control>
+    </include>
+    <include name="FilterButtons">
+        <control type="button" id="19">
+            <label>587</label>
+            <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+            <visible>!Container.Content()</visible>
+            <include>SubMenuItemsCommon</include>
+        </control>
+        <control type="button" id="98">
+            <label>587</label>
+            <visible>Container.CanFilterAdvanced</visible>
+            <onclick>SetFocus(50)</onclick>
+            <onclick>Filter</onclick>
+            <include>SubMenuItemsCommon</include>
+            <visible>!Container.Content()</visible>
+        </control>
+    </include>
+
+</includes>
