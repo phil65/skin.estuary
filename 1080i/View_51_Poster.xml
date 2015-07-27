@@ -2,10 +2,11 @@
 <includes>
 <include name="View_51_Poster">
       <control type="group">
-            <description>Poster Widget including header and arrows</description>
+            <description>Poster Viewtype</description>
             <height>424</height>
             <posx>0</posx>
             <posy>300</posy>
+            <visible>Control.IsVisible(51)</visible>
             <control type="image">
                 <posx>50</posx>
                 <posy>221</posy>

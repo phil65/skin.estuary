@@ -149,20 +149,6 @@
             <include>SubMenuItemsCommon</include>
         </control>
     </include>
-    <include name="GeneralSettingsButton">
-        <control type="button" id="1667">
-            <label>Video Settings</label>
-            <include>SubMenuItemsCommon</include>
-            <onclick>ActivateWindow(videossettings)</onclick>
-            <visible>Window.IsActive(videos)</visible>
-        </control>
-        <control type="button" id="1668">
-            <label>Music Settings</label>
-            <include>SubMenuItemsCommon</include>
-            <onclick>ActivateWindow(musicsettings)</onclick>
-            <visible>Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)</visible>
-        </control>
-    </include>
     <include name="Media_Menu">
         <control type="group">
             <visible>!Skin.HasSetting(kioskmode)</visible>
@@ -186,8 +172,7 @@
                 <control type="button" id="1802">
                     <label>[B]$INFO[Container.Viewmode][/B]</label>
                     <include>SubMenuItemsCommon</include>
-                    <onclick>SetProperty(viewtypeselect,1,home)</onclick>
-                    <onclick>ActivateWindow(1121)</onclick>
+
                     <visible>!Window.IsActive(musicplaylisteditor)</visible>
                 </control>
                 <control type="button" id="3">
@@ -229,7 +214,6 @@
                     <onclick>FullScreen</onclick>
                     <visible>Player.HasMedia</visible>
                 </control>
-                <include>GeneralSettingsButton</include>
             </control>
         </control>
     </include>
