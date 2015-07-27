@@ -151,8 +151,8 @@
     </include>
     <include name="Media_Menu">
         <control type="group">
+            <include>OpenClose_FadeSlide_Right</include>
             <visible>!Skin.HasSetting(kioskmode)</visible>
-            <include>Animation_MediaMenuSlide2</include>
             <control type="togglebutton" id="4">
                 <label>$LOCALIZE[31164]: $LOCALIZE[584]</label>
                 <altlabel>$LOCALIZE[31164]: $LOCALIZE[585]</altlabel>
