@@ -25,6 +25,14 @@
                     <height>250</height>
                     <texture border="40">buttons/button-nofo.png</texture>
                 </control>
+                    <control type="image">
+                        <posx>80</posx>
+                        <posy>10</posy>
+                        <width>240</width>
+                        <height>240</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <align>center</align>
+                    </control>
                 <control type="label">
                     <posx>200</posx>
                     <posy>180</posy>
@@ -52,13 +60,16 @@
                     <control type="image">
                         <width>400</width>
                         <height>250</height>
-                        <texture border="40">buttons/button-nofo.png</texture>#
-                        <animation type="Focus" reversible="true">
-                            <effect type="fade" start="0" end="100" delay="1000" time="500" tween="cubic" />
-                        </animation>
-                        <animation type="UnFocus" reversible="true">
-                            <effect type="fade" start="100" end="0" time="500" tween="cubic" />
-                        </animation>
+                        <texture border="40">buttons/button-theme-fo.png</texture>
+                        <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                    </control>
+                    <control type="image">
+                        <posx>80</posx>
+                        <posy>10</posy>
+                        <width>240</width>
+                        <height>240</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <align>center</align>
                     </control>
                     <control type="label">
                         <posx>200</posx>
@@ -75,65 +86,62 @@
                 <item id="1">
                     <label>480</label>
                     <onclick>ActivateWindow(AppearanceSettings)</onclick>
-                    <icon>special://skin/backgrounds/color.jpg</icon>
-                </item>
+                    <icon>icons/settings/appearance.png</icon>
+                </item>^
                 <item id="2">
                     <label>157</label>
                     <onclick>ActivateWindow(VideosSettings)</onclick>
-                    <icon>special://skin/backgrounds/videos/videos.jpg</icon>
+                    <icon>icons/settings/video.png</icon>
                 </item>
                 <item id="3">
                     <label>2</label>
                     <onclick>ActivateWindow(MusicSettings)</onclick>
-                    <icon>special://skin/backgrounds/music/music.jpg</icon>
+                    <icon>icons/settings/music.png</icon>
                 </item>
                 <item id="4">
                     <label>1</label>
                     <onclick>ActivateWindow(PicturesSettings)</onclick>
-                    <icon>special://skin/backgrounds/pictures/pictures.jpg</icon>
+                    <icon>icons/settings/pictures.png</icon>
                 </item>
                 <item id="5">
                     <label>8</label>
                     <onclick>ActivateWindow(WeatherSettings)</onclick>
-                    <icon>special://skin/backgrounds/weather/weather.jpg</icon>
+                    <icon>icons/settings/weather.png</icon>
                 </item>
                 <item id="6">
                     <label>24001</label>
-                    <label2>31411</label2>
                     <onclick>ActivateWindow(AddonBrowser)</onclick>
-                    <icon>special://skin/backgrounds/programs/programs.jpg</icon>
+                    <icon>icons/settings/addons.png</icon>
                 </item>
                 <item id="7">
                     <label>14036</label>
                     <onclick>ActivateWindow(ServiceSettings)</onclick>
-                    <icon>special://skin/backgrounds/network.jpg</icon>
+                    <icon>icons/settings/network.png</icon>
                 </item>
                 <item id="8">
                     <label>13000</label>
                     <onclick>ActivateWindow(SystemSettings)</onclick>
-                    <icon>special://skin/backgrounds/system/system.jpg</icon>
+                    <icon>icons/settings/system.png</icon>
                 </item>
                 <item id="21">
-                    <label>31017</label>
-                    <label2>31478</label2>
+                    <label>Live TV</label>
                     <onclick>ActivateWindow(PVRSettings)</onclick>
-                    <icon>special://skin/backgrounds/livetv/livetv.jpg</icon>
+                    <icon>icons/settings/livetv.png</icon>
                 </item>
                 <item id="10">
                     <label>13281</label>
-                    <label2>31413</label2>
                     <onclick>ActivateWindow(systeminfo)</onclick>
-                    <icon>special://skin/backgrounds/system/systeminfo.jpg</icon>
+                    <icon>icons/settings/sysinfo.png</icon>
                 </item>
                 <item id="9">
                     <label>$LOCALIZE[13200]</label>
                     <onclick>ActivateWindow(Profiles)</onclick>
-                    <icon>special://skin/backgrounds/appearance.jpg</icon>
+                    <icon>icons/settings/appearance.png</icon>
                 </item>
                 <item id="9">
                     <label>$LOCALIZE[7]</label>
                     <onclick>ActivateWindow(filemanager)</onclick>
-                    <icon>special://skin/backgrounds/system/files.jpg</icon>
+                    <icon>icons/settings/files.png</icon>
                 </item>
             </content>
         </control>
