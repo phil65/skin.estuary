@@ -74,96 +74,68 @@
             <content>
                 <item id="1">
                     <label>480</label>
-                    <property name="description">$LOCALIZE[31400]</property>
                     <onclick>ActivateWindow(AppearanceSettings)</onclick>
                     <icon>special://skin/backgrounds/color.jpg</icon>
                 </item>
                 <item id="2">
                     <label>157</label>
-                    <property name="description">$LOCALIZE[31401]</property>
                     <onclick>ActivateWindow(VideosSettings)</onclick>
                     <icon>special://skin/backgrounds/videos/videos.jpg</icon>
                 </item>
                 <item id="3">
                     <label>2</label>
-                    <property name="description">$LOCALIZE[31402]</property>
                     <onclick>ActivateWindow(MusicSettings)</onclick>
                     <icon>special://skin/backgrounds/music/music.jpg</icon>
                 </item>
                 <item id="4">
                     <label>1</label>
-                    <property name="description">$LOCALIZE[31403]</property>
                     <onclick>ActivateWindow(PicturesSettings)</onclick>
                     <icon>special://skin/backgrounds/pictures/pictures.jpg</icon>
                 </item>
                 <item id="5">
                     <label>8</label>
-                    <property name="description">$LOCALIZE[31404]</property>
                     <onclick>ActivateWindow(WeatherSettings)</onclick>
                     <icon>special://skin/backgrounds/weather/weather.jpg</icon>
                 </item>
                 <item id="6">
                     <label>24001</label>
                     <label2>31411</label2>
-                    <property name="description">$LOCALIZE[31408]</property>
                     <onclick>ActivateWindow(AddonBrowser)</onclick>
                     <icon>special://skin/backgrounds/programs/programs.jpg</icon>
                 </item>
                 <item id="7">
                     <label>14036</label>
-                    <property name="description">$LOCALIZE[31405]</property>
                     <onclick>ActivateWindow(ServiceSettings)</onclick>
                     <icon>special://skin/backgrounds/network.jpg</icon>
                 </item>
                 <item id="8">
                     <label>13000</label>
-                    <property name="description">$LOCALIZE[31406]</property>
                     <onclick>ActivateWindow(SystemSettings)</onclick>
                     <icon>special://skin/backgrounds/system/system.jpg</icon>
                 </item>
                 <item id="21">
                     <label>31017</label>
                     <label2>31478</label2>
-                    <property name="description">$LOCALIZE[31016]</property>
                     <onclick>ActivateWindow(PVRSettings)</onclick>
                     <icon>special://skin/backgrounds/livetv/livetv.jpg</icon>
                 </item>
                 <item id="10">
                     <label>13281</label>
                     <label2>31413</label2>
-                    <property name="description">$LOCALIZE[31409]</property>
                     <onclick>ActivateWindow(systeminfo)</onclick>
                     <icon>special://skin/backgrounds/system/systeminfo.jpg</icon>
                 </item>
                 <item id="9">
                     <label>$LOCALIZE[13200]</label>
-                    <property name="description">some Text</property>
                     <onclick>ActivateWindow(Profiles)</onclick>
                     <icon>special://skin/backgrounds/appearance.jpg</icon>
                 </item>
                 <item id="9">
                     <label>$LOCALIZE[7]</label>
-                    <property name="description">some Text</property>
                     <onclick>ActivateWindow(filemanager)</onclick>
                     <icon>special://skin/backgrounds/system/files.jpg</icon>
                 </item>
             </content>
-        </control>
-        <control type="textbox">
-            <posx>10</posx>
-            <posy>900</posy>
-            <animation type="Focus" reversible="true">
-                <effect type="fade" start="0" end="100" delay="1000" time="500" tween="cubic" />
-            </animation>
-            <animation type="UnFocus" reversible="true">
-                <effect type="fade" start="100" end="0" time="500" tween="cubic" />
-            </animation>
-            <width>380</width>
-            <height>140</height>
-            <autoscroll delay="3000" time="AutoScrollTime" repeat="8001">true</autoscroll>
-            <label>$INFO[ListItem.Property(Description)]</label>
-            <font>Font_Reg25_2</font>
-            <align>center</align>
         </control>
         <include>TopBar</include>
         <include>BottomBar</include>
