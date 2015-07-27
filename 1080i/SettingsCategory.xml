@@ -54,44 +54,44 @@
                     <font>font13_title</font>
                     <textcolor>white</textcolor>
                     <focusedcolor>white</focusedcolor>
-                        <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+                    <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
                     <texturenofocus border="40">lists/separator.png</texturenofocus>
                     <pulseonselect>false</pulseonselect>
                 </control>
-            </control>
-            <control type="button" id="20">
-                <description>Setting level button</description>
-                <left>10</left>
-                <top>862</top>
-                <height>60</height>
-                <width>260</width>
-                <label>10037</label>
-                <textoffsetx>20</textoffsetx>
-                <textoffsety>28</textoffsety>
-                <align>right</align>
-                <aligny>top</aligny>
-                <font>font13</font>
-                <textcolor>white</textcolor>
-                <focusedcolor>white</focusedcolor>
-                <texturefocus border="5">MenuItemFO.png</texturefocus>
-                <texturenofocus border="5">MenuItemNF.png</texturenofocus>
-                <pulseonselect>false</pulseonselect>
-                <onleft>5</onleft>
-                <onright>5</onright>
-                <onup>3</onup>
-                <ondown>3</ondown>
-                <onclick>SettingsLevelChange</onclick>
-            </control>
-            <control type="label">
-                <left>20</left>
-                <top>866</top>
-                <height>25</height>
-                <width>230</width>
-                <label>31142</label>
-                <font>font13_title</font>
-                <textcolor>white</textcolor>
-                <align>right</align>
-                <aligny>center</aligny>
+                <control type="button" id="20">
+                    <description>Setting level button</description>
+                    <left>10</left>
+                    <top>862</top>
+                    <height>60</height>
+                    <width>260</width>
+                    <label>10037</label>
+                    <textoffsetx>20</textoffsetx>
+                    <textoffsety>28</textoffsety>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <texturefocus border="5">MenuItemFO.png</texturefocus>
+                    <texturenofocus border="5">MenuItemNF.png</texturenofocus>
+                    <pulseonselect>false</pulseonselect>
+                    <onleft>5</onleft>
+                    <onright>5</onright>
+                    <onup>3</onup>
+                    <ondown>3</ondown>
+                    <onclick>SettingsLevelChange</onclick>
+                </control>
+                <control type="label">
+                    <left>20</left>
+                    <top>866</top>
+                    <height>25</height>
+                    <width>230</width>
+                    <label>31142</label>
+                    <font>font13_title</font>
+                    <textcolor>white</textcolor>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                </control>
             </control>
             <control type="image">
                 <left>500</left>
