@@ -87,6 +87,28 @@
             <visible>!Window.IsActive(infodialog)</visible>
         </control>
     </include>
+    <include name="BottomBar">
+        <control type="image">
+            <description>List Panel</description>
+            <posx>0</posx>
+            <posy>1000</posy>
+            <width>1920</width>
+            <height>80</height>
+            <texture border="1">frame/InfoBarBottom.png</texture>
+        </control>
+        <control type="rss">
+            <posx>0</posx>
+            <posy>1045</posy>
+            <height>30</height>
+            <width>1920</width>
+            <font>font12</font>
+            <urlset>1</urlset>
+            <textcolor>FFF0F0F0</textcolor>
+            <titlecolor>77FFFFFF</titlecolor>
+            <shadowcolor>text_shadow</shadowcolor>
+            <headlinecolor>FFC0C0C0</headlinecolor>
+        </control>
+    </include>
     <include name="KeyboardButton">
         <width>125</width>
         <height>125</height>

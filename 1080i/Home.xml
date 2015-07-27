@@ -462,6 +462,7 @@
             </control>
         </control>
         <include>TopBar</include>
+        <include>BottomBar</include>
         <control type="image">
             <description>Menu Panel</description>
             <posx>0</posx>
@@ -469,14 +470,6 @@
             <width>400</width>
             <height>920</height>
             <texture>lists/panel.png</texture>
-        </control>
-        <control type="image">
-            <description>List Panel</description>
-            <posx>0</posx>
-            <posy>1000</posy>
-            <width>1920</width>
-            <height>80</height>
-            <texture border="1">frame/InfoBarBottom.png</texture>
         </control>
         <control type="image">
             <description>Logo</description>
@@ -487,6 +480,7 @@
             <height>56</height>
             <texture>logo.png</texture>
         </control>
+        <include>BottomBar</include>
         <control type="label">
             <posy>1010</posy>
             <posx>1840</posx>
@@ -508,18 +502,6 @@
             <font>font12</font>
             <include>Vis_FadeSlide_Right</include>
             <visible>Container(9000).HasFocus(11)</visible>
-        </control>
-        <control type="rss">
-            <posx>0</posx>
-            <posy>1045</posy>
-            <height>30</height>
-            <width>1920</width>
-            <font>font12</font>
-            <urlset>1</urlset>
-            <textcolor>FFF0F0F0</textcolor>
-            <titlecolor>77FFFFFF</titlecolor>
-            <shadowcolor>text_shadow</shadowcolor>
-            <headlinecolor>FFC0C0C0</headlinecolor>
         </control>
         <control type="list" id="9000">
             <posx>0</posx>
