@@ -46,7 +46,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Quit()</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -62,7 +62,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Powerdown()</onclick>
 				<visible>System.CanPowerDown</visible>
@@ -78,7 +78,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -95,7 +95,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>CancelAlarm(shutdowntimer)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -111,7 +111,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Suspend()</onclick>
 				<visible>System.CanSuspend</visible>
@@ -127,7 +127,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Hibernate()</onclick>
 				<visible>System.CanHibernate</visible>
@@ -143,7 +143,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Reset()</onclick>
 				<visible>System.CanReboot</visible>
@@ -159,7 +159,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>dialog.close(all,true)</onclick>
 				<onclick>System.LogOff</onclick>
@@ -180,7 +180,7 @@
 				<textwidth>290</textwidth>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<usealttexture>!System.IsMaster</usealttexture>
 				<alttexturefocus border="25,5,25,5">ShutdownButtonFocus.png</alttexturefocus>
@@ -222,7 +222,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>InhibitIdleShutdown(true)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -238,7 +238,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>290</textwidth>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>InhibitIdleShutdown(false)</onclick>
 				<pulseonselect>no</pulseonselect>
