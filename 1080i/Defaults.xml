@@ -54,13 +54,13 @@
         <overlaytexture>-</overlaytexture>
     </default>
     <default type="spincontrol">
-        <textureup>scroll-up-2.png</textureup>
-        <texturedown>scroll-down-2.png</texturedown>
-        <textureupfocus>scroll-up-focus-2.png</textureupfocus>
-        <texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
+        <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
+        <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
+        <textureupfocus>buttons/spinctrl/arrow-light-up-fo.png</textureupfocus>
+        <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
         <align>right</align>
-        <width>33</width>
-        <height>22</height>
+        <width>77</width>
+        <height>33</height>
         <font>font13</font>
         <reverse>yes</reverse>
         <textcolor>white</textcolor>
@@ -73,14 +73,14 @@
     <default type="spincontrolex">
         <width>300</width>
         <height>42</height>
-        <spinwidth>33</spinwidth>
-        <spinheight>22</spinheight>
-        <texturefocus>button-focus.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
-        <textureup>scroll-up-2.png</textureup>
-        <texturedown>scroll-down-2.png</texturedown>
-        <textureupfocus>scroll-up-focus-2.png</textureupfocus>
-        <texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
+        <spinwidth>32</spinwidth>
+        <spinheight>60</spinheight>
+        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+        <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
+        <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
+        <textureupfocus>buttons/spinctrl/arrow-light-up-fo.png</textureupfocus>
+        <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
         <font>font13</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey</disabledcolor>
