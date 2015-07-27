@@ -108,7 +108,6 @@
                 <texture>frame/clock.png</texture>
                 <aspectratio align="center">keep</aspectratio>
                 <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
-                <animation effect="slide" end="160" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
             </control>
             <control type="label">
                 <description>System Time</description>
@@ -121,7 +120,6 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
                 <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
-                <animation effect="slide" end="163" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
             </control>
         </control>
     </include>
