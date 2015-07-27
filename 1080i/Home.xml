@@ -645,7 +645,7 @@
             <content>
                 <item id="14">
                     <label>[B]Now playing...[/B]</label>
-                    <onclick condition="Player.HasVideo">ActivateWindow(Fullscreen)</onclick>
+                    <onclick condition="Player.HasVideo">Fullscreen</onclick>
                     <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
                     <property name="nofocus">lists/arrow-right-nofo.png</property>
                     <property name="focus">lists/arrow-right-fo.png</property>
