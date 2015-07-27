@@ -12,8 +12,8 @@
             <texture>special://skin/extras/backgrounds/01.jpg</texture>
         </control>
         <control type="group">
-            <left>90</left>
-            <top>30</top>
+            <left>0</left>
+            <top>0</top>
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
                 <effect type="fade" start="0" end="100" time="225" />
@@ -22,63 +22,47 @@
                 <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
                 <effect type="fade" start="100" end="0" time="225" />
             </animation>
-            <control type="image">
-                <left>5</left>
-                <top>5</top>
-                <width>1090</width>
-                <height>630</height>
-                <texture border="15">ContentPanel.png</texture>
-            </control>
-            <control type="image">
-                <left>5</left>
-                <top>625</top>
-                <width>1090</width>
-                <height>64</height>
-                <texture border="15">ContentPanelMirror.png</texture>
-            </control>
-            <control type="button">
-                <description>Close Window button</description>
-                <left>980</left>
-                <top>11</top>
-                <width>64</width>
-                <height>32</height>
-                <label>-</label>
-                <font>-</font>
-                <onclick>PreviousMenu</onclick>
-                <texturefocus>DialogCloseButton-focus.png</texturefocus>
-                <texturenofocus>DialogCloseButton.png</texturenofocus>
-                <onleft>1</onleft>
-                <onright>1</onright>
-                <onup>1</onup>
-                <ondown>1</ondown>
-                <visible>system.getbool(input.enablemouse)</visible>
-                <include>VisibleFadeEffect</include>
-            </control>
-            <control type="image">
-                <description>LOGO</description>
-                <left>30</left>
-                <top>15</top>
-                <width>220</width>
-                <height>80</height>
-                <aspectratio>keep</aspectratio>
-                <texture>Confluence_Logo.png</texture>
-            </control>
-            <control type="grouplist" id="3">
-                <description>button area</description>
-                <left>10</left>
-                <top>90</top>
-                <width>260</width>
-                <height>481</height>
-                <itemgap>-1</itemgap>
-                <onleft>5</onleft>
-                <onright>5</onright>
-                <onup>3</onup>
-                <ondown>20</ondown>
+            <control type="group">
+                <include>OpenClose_FadeSlide_Left</include>
+                <control type="image">
+                    <description>Menu Panel</description>
+                    <posx>0</posx>
+                    <posy>80</posy>
+                    <width>400</width>
+                    <height>920</height>
+                    <texture>lists/panel.png</texture>
+                </control>
+                <control type="grouplist" id="3">
+                    <description>button area</description>
+                    <left>0</left>
+                    <top>90</top>
+                    <width>400</width>
+                    <height>700</height>
+                    <itemgap>0</itemgap>
+                    <onleft>5</onleft>
+                    <onright>5</onright>
+                    <onup>3</onup>
+                    <ondown>20</ondown>
+                </control>
+                <control type="button" id="10">
+                    <description>Default Category Button</description>
+                    <height>95</height>
+                    <width>400</width>
+                    <textoffsetx>20</textoffsetx>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font13_title</font>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                        <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+                    <texturenofocus border="40">lists/separator.png</texturenofocus>
+                    <pulseonselect>false</pulseonselect>
+                </control>
             </control>
             <control type="button" id="20">
                 <description>Setting level button</description>
                 <left>10</left>
-                <top>562</top>
+                <top>862</top>
                 <height>60</height>
                 <width>260</width>
                 <label>10037</label>
@@ -87,8 +71,8 @@
                 <align>right</align>
                 <aligny>top</aligny>
                 <font>font13</font>
-                <textcolor>selected</textcolor>
-                <focusedcolor>selected</focusedcolor>
+                <textcolor>white</textcolor>
+                <focusedcolor>white</focusedcolor>
                 <texturefocus border="5">MenuItemFO.png</texturefocus>
                 <texturenofocus border="5">MenuItemNF.png</texturenofocus>
                 <pulseonselect>false</pulseonselect>
@@ -100,7 +84,7 @@
             </control>
             <control type="label">
                 <left>20</left>
-                <top>566</top>
+                <top>866</top>
                 <height>25</height>
                 <width>230</width>
                 <label>31142</label>
@@ -110,10 +94,10 @@
                 <aligny>center</aligny>
             </control>
             <control type="image">
-                <left>268</left>
-                <top>10</top>
-                <width>790</width>
-                <height>618</height>
+                <left>500</left>
+                <top>100</top>
+                <width>1300</width>
+                <height>818</height>
                 <texture border="2">dialogs/dialog-bg.png</texture>
             </control>
             <control type="label">
@@ -131,11 +115,11 @@
             </control>
             <control type="grouplist" id="5">
                 <description>control area</description>
-                <left>290</left>
-                <top>70</top>
-                <width>750</width>
-                <height>435</height>
-                <itemgap>-1</itemgap>
+                <left>550</left>
+                <top>120</top>
+                <width>1200</width>
+                <height>735</height>
+                <itemgap>-20</itemgap>
                 <pagecontrol>60</pagecontrol>
                 <onleft>3</onleft>
                 <onright>60</onright>
@@ -168,8 +152,8 @@
             </control>
             <control type="textbox" id="6">
                 <description>description area</description>
-                <left>297</left>
-                <top>532</top>
+                <left>550</left>
+                <top>832</top>
                 <width>736</width>
                 <height>83</height>
                 <font>font12</font>
@@ -178,77 +162,67 @@
                 <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
             </control>
         </control>
-        <include>BehindDialogFadeOut</include>
-        <control type="button" id="10">
-            <description>Default Category Button</description>
-            <height>60</height>
-            <width>260</width>
-            <textoffsetx>20</textoffsetx>
-            <align>right</align>
-            <aligny>center</aligny>
-            <font>font13_title</font>
-            <textcolor>white</textcolor>
-            <focusedcolor>white</focusedcolor>
-        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-            <pulseonselect>false</pulseonselect>
-        </control>
         <control type="button" id="7">
             <description>Default Button</description>
             <left>0</left>
+            <textoffsetx>45</textoffsetx>
             <top>0</top>
-            <height>70</height>
+            <height>95</height>
             <font>font13</font>
             <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
             <invalidcolor>invalid</invalidcolor>
-        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         </control>
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <left>0</left>
+            <textoffsetx>45</textoffsetx>
             <top>0</top>
-            <height>70</height>
+            <height>95</height>
             <font>font13</font>
             <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default SpinControlex</description>
             <left>0</left>
+            <textoffsetx>45</textoffsetx>
             <top>0</top>
-            <height>70</height>
+            <height>95</height>
             <font>font13</font>
             <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
             <aligny>center</aligny>
             <reverse>yes</reverse>
         </control>
         <control type="sliderex" id="13">
             <description>Default Slider</description>
             <posx>0</posx>
+            <textoffsetx>45</textoffsetx>
             <posy>0</posy>
-            <height>70</height>
+            <height>95</height>
             <font>font13</font>
             <textcolor>white</textcolor>
             <focusedcolor>white</focusedcolor>
-        <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <texturefocus border="40" colordiffuse="button_focus">buttons/button-theme-fo.png</texturefocus>
+            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
             <aligny>center</aligny>
         </control>
         <control type="image" id="11">
             <description>separator image</description>
-            <height>2</height>
+            <height>20</height>
             <texture>separator2.png</texture>
         </control>
         <control type="label" id="14">
             <description>Default Label</description>
             <left>0</left>
+            <textoffsetx>45</textoffsetx>
             <top>0</top>
             <height>30</height>
             <label>-</label>
@@ -267,8 +241,6 @@
             <font>-</font>
             <visible>false</visible>
         </control>
-        <include>CommonNowPlaying</include>
-        <include>MainWindowMouseButtons</include>
         <control type="image">
             <description>Section header image</description>
             <left>20</left>
