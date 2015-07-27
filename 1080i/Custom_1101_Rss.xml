@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1101">
+    <zorder>2</zorder>
+    <visible>!Window.IsVisible(SettingsScreenCalibration.xml) + !Window.IsVisible(screensaver) + !Window.IsVisible(startup) + !Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.IsVisible(SlideShow.xml)</visible>
+    <controls>
+        <control type="rss">
+            <posx>0</posx>
+            <posy>1045</posy>
+            <height>30</height>
+            <width>1920</width>
+            <font>font12</font>
+            <urlset>1</urlset>
+            <textcolor>white</textcolor>
+            <titlecolor>77FFFFFF</titlecolor>
+            <shadowcolor>text_shadow</shadowcolor>
+            <headlinecolor>FFC0C0C0</headlinecolor>
+        </control>
+    </controls>
+</window>
