@@ -69,54 +69,60 @@
             <height>80</height>
             <texture>frame/InfoBarTop.png</texture>
         </control>
-        <control type="image">
-            <description>Weather</description>
-            <posx>1846</posx>
-            <posy>10</posy>
-            <width>60</width>
-            <height>60</height>
-            <texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
-            <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
-            <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
-        </control>
-        <control type="label">
-            <description>Weather label</description>
-            <posx>1846</posx>
-            <posy>12</posy>
-            <width>150</width>
-            <height>100</height>
-            <label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
-            <font>font16</font>
-            <textcolor>white</textcolor>
-            <shadowcolor>text_shadow</shadowcolor>
+        <control type="grouplist">
+            <posx>1400</posx>
+            <width>500</width>
             <align>right</align>
-            <scroll>false</scroll>
-            <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
-            <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
-        </control>
-        <control type="image">
-            <description>System Time Clock</description>
-            <posx>1700</posx>
-            <posy>24</posy>
-            <height>32</height>
-            <width>32</width>
-            <texture>frame/clock.png</texture>
-            <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
-            <animation effect="slide" end="160" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
-        </control>
-        <control type="label">
-            <description>System Time</description>
-            <posx>1680</posx>
-            <posy>12</posy>
-            <height>100</height>
-            <width>200</width>
-            <align>right</align>
-            <font>font16</font>
-            <label>$INFO[System.Time]</label>
-            <textcolor>white</textcolor>
-            <shadowcolor>text_shadow</shadowcolor>
-            <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
-            <animation effect="slide" end="163" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
+            <orientation>horizontal</orientation>
+            <usecontrolcoords>true</usecontrolcoords>
+            <control type="image">
+                <description>Weather</description>
+                <posy>10</posy>
+                <width>60</width>
+                <height>60</height>
+                <aspectratio align="right">keep</aspectratio>
+                <texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
+                <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
+            </control>
+            <control type="label">
+                <description>Weather label</description>
+                <posy>12</posy>
+                <width>auto</width>
+                <height>100</height>
+                <label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+                <font>font16</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <align>left</align>
+                <scroll>false</scroll>
+                <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
+            </control>
+            <control type="image">
+                <description>System Time Clock</description>
+                <posx>20</posx>
+                <posy>24</posy>
+                <height>32</height>
+                <width>60</width>
+                <texture>frame/clock.png</texture>
+                <aspectratio align="center">keep</aspectratio>
+                <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
+                <animation effect="slide" end="160" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
+            </control>
+            <control type="label">
+                <description>System Time</description>
+                <posy>12</posy>
+                <height>100</height>
+                <width>auto</width>
+                <align>left</align>
+                <font>font16</font>
+                <label>$INFO[System.Time]</label>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
+                <animation effect="slide" end="163" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
+            </control>
         </control>
     </include>
     <include name="BottomBar">
