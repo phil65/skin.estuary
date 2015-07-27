@@ -431,19 +431,33 @@
                     <param name="ondown_id" value="20001"/>
                 </include>
             </control>
-           <control type="grouplist" id="14000">
+            <control type="grouplist" id="14000">
                 <orientation>vertical</orientation>
                 <posy>76</posy>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(14)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="group">
-                <control type="videowindow">
-                    <posy>100</posy>
-                    <posx>500</posx>
-                    <width>1300</width>
-                    <height>500</height>
-                </control>
+                    <control type="image">
+                        <posy>80</posy>
+                        <posx>500</posx>
+                        <width>1300</width>
+                        <height>540</height>
+                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    </control>
+                    <control type="image">
+                        <posy>650</posy>
+                        <posx>500</posx>
+                        <width>1300</width>
+                        <height>90</height>
+                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    </control>
+                    <control type="videowindow">
+                        <posy>100</posy>
+                        <posx>500</posx>
+                        <width>1300</width>
+                        <height>500</height>
+                    </control>
                 </control>
             </control>
         </control>
@@ -635,8 +649,9 @@
                     <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
                     <property name="nofocus">lists/arrow-right-nofo.png</property>
                     <property name="focus">lists/arrow-right-fo.png</property>
-<!--                     <visible>Player.HasMedia</visible>
- -->                </item>
+                    <!-- <visible>Player.HasMedia</visible>
+ -->
+                </item>
                 <item id="10">
                     <label>31954</label>
                     <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
