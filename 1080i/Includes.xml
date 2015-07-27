@@ -8,6 +8,10 @@
     <include file="View_51_Poster.xml" />
     <constant name="FanartCrossfadeTime">400</constant>
     <constant name="IconCrossfadeTime">400</constant>
+    <variable name="SelectLabel">
+        <value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
+        <value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
+    </variable>
     <include name="HiddenObject">
         <posx>-3000</posx>
         <posy>-3000</posy>

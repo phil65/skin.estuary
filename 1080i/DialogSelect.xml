@@ -11,14 +11,14 @@
         <control type="group">
             <include name="DialogBackgroundCommons">
                 <param name="DialogBackgroundWidth" value="1220" />
-                <param name="DialogBackgroundHeight" value="600" />
+                <param name="DialogBackgroundHeight" value="742" />
                 <param name="DialogHeaderLabel" value="" />
                 <param name="DialogHeaderId" value="1" />
             </include>
             <control type="list" id="3">
-                <left>20</left>
+                <left>2</left>
                 <top>67</top>
-                <width>550</width>
+                <width>900</width>
                 <height>460</height>
                 <onup>3</onup>
                 <ondown>3</ondown>
@@ -26,13 +26,13 @@
                 <onright>61</onright>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <itemlayout height="46" width="550">
+                <itemlayout height="46" width="900">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>550</width>
+                        <width>900</width>
                         <height>40</height>
-                        <texture border="5">button-nofocus.png</texture>
+                        <texture border="40">lists/separator.png</texture>
                     </control>
                     <control type="label">
                         <left>20</left>
@@ -40,29 +40,29 @@
                         <width>510</width>
                         <height>40</height>
                         <font>font13</font>
-                        <textcolor>grey2</textcolor>
+                        <textcolor>white</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="46" width="550">
+                <focusedlayout height="46" width="900">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>550</width>
+                        <width>900</width>
                         <height>40</height>
-                        <texture border="5">button-nofocus.png</texture>
+                        <texture border="40">lists/separator.png</texture>
                         <visible>!Control.HasFocus(3)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>550</width>
+                        <width>900</width>
                         <height>40</height>
-                        <texture border="5">button-focus2.png</texture>
+                        <texture border="150,1,150,1">lists/focus.png</texture>
                         <visible>Control.HasFocus(3)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
@@ -81,91 +81,38 @@
                 </focusedlayout>
             </control>
             <control type="list" id="6">
-                <left>20</left>
+                <left>2</left>
                 <top>67</top>
-                <width>550</width>
-                <height>460</height>
+                <width>900</width>
+                <height>675</height>
                 <onup>6</onup>
                 <ondown>6</ondown>
                 <onleft>99</onleft>
                 <onright>61</onright>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <itemlayout height="92" width="550">
+                <itemlayout height="135" width="900">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>550</width>
-                        <height>86</height>
-                        <texture border="5">button-nofocus.png</texture>
+                        <width>900</width>
+                        <height>131</height>
+                        <texture border="40">lists/separator.png</texture>
                     </control>
                     <control type="image">
                         <left>2</left>
                         <top>3</top>
-                        <width>80</width>
-                        <height>80</height>
+                        <width>120</width>
+                        <height>120</height>
                         <texture>$INFO[Listitem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                         <bordertexture border="3">black-back2.png</bordertexture>
                         <bordersize>2</bordersize>
                     </control>
                     <control type="label">
-                        <left>90</left>
+                        <left>130</left>
                         <top>2</top>
-                        <width>450</width>
-                        <height>30</height>
-                        <font>font13</font>
-                        <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>[B]$INFO[ListItem.Label][/B]</label>
-                    </control>
-                    <control type="textbox">
-                        <left>90</left>
-                        <top>34</top>
-                        <width>450</width>
-                        <height>48</height>
-                        <font>font12</font>
-                        <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>left</align>
-                        <label>$INFO[ListItem.Property(Addon.Summary)]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="92" width="550">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>550</width>
-                        <height>86</height>
-                        <texture border="5">button-nofocus.png</texture>
-                        <visible>!Control.HasFocus(6)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>550</width>
-                        <height>86</height>
-                        <texture border="5">button-focus2.png</texture>
-                        <visible>Control.HasFocus(6)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="image">
-                        <left>2</left>
-                        <top>3</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <texture>$INFO[Listitem.Icon]</texture>
-                        <aspectratio>keep</aspectratio>
-                        <bordertexture border="3">black-back2.png</bordertexture>
-                        <bordersize>2</bordersize>
-                    </control>
-                    <control type="label">
-                        <left>90</left>
-                        <top>2</top>
-                        <width>450</width>
+                        <width>700</width>
                         <height>30</height>
                         <font>font13</font>
                         <textcolor>white</textcolor>
@@ -175,10 +122,63 @@
                         <label>[B]$INFO[ListItem.Label][/B]</label>
                     </control>
                     <control type="textbox">
-                        <left>90</left>
+                        <left>130</left>
                         <top>34</top>
-                        <width>450</width>
-                        <height>48</height>
+                        <width>700</width>
+                        <height>90</height>
+                        <font>font12</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>left</align>
+                        <label>$INFO[ListItem.Property(Addon.Summary)]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="135" width="900">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>900</width>
+                        <height>131</height>
+                        <texture border="40">lists/separator.png</texture>
+                        <visible>!Control.HasFocus(6)</visible>
+                        <include>VisibleFadeEffect</include>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>900</width>
+                        <height>131</height>
+                        <texture border="150,1,150,1">lists/focus.png</texture>
+                        <visible>Control.HasFocus(6)</visible>
+                        <include>VisibleFadeEffect</include>
+                    </control>
+                    <control type="image">
+                        <left>2</left>
+                        <top>3</top>
+                        <width>120</width>
+                        <height>120</height>
+                        <texture>$INFO[Listitem.Icon]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <bordertexture border="3">black-back2.png</bordertexture>
+                        <bordersize>2</bordersize>
+                    </control>
+                    <control type="label">
+                        <left>130</left>
+                        <top>2</top>
+                        <width>700</width>
+                        <height>30</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>[B]$INFO[ListItem.Label][/B]</label>
+                    </control>
+                    <control type="textbox">
+                        <left>130</left>
+                        <top>34</top>
+                        <width>700</width>
+                        <height>90</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
                         <selectedcolor>selected</selectedcolor>
@@ -207,12 +207,12 @@
             <control type="group">
                 <control type="label">
                     <description>number of files/pages in list text label</description>
-                    <left>592</left>
-                    <top>490</top>
-                    <width>240</width>
+                    <left>900</left>
+                    <top>700</top>
+                    <width>300</width>
                     <height>35</height>
                     <font>font12</font>
-                    <align>center</align>
+                    <align>right</align>
                     <aligny>center</aligny>
                     <textcolor>grey</textcolor>
                     <label>$VAR[SelectLabel]</label>
