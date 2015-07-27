@@ -461,14 +461,7 @@
                 </control>
             </control>
         </control>
-        <control type="image">
-            <description>InfoBarTop</description>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>80</height>
-            <texture>frame/InfoBarTop.png</texture>
-        </control>
+        <include>TopBar</include>
         <control type="image">
             <description>Menu Panel</description>
             <posx>0</posx>
@@ -493,27 +486,6 @@
             <width>192</width>
             <height>56</height>
             <texture>logo.png</texture>
-        </control>
-        <control type="image">
-            <description>System Time Clock</description>
-            <posx>1868</posx>
-            <posy>24</posy>
-            <height>32</height>
-            <width>32</width>
-            <texture>frame/clock.png</texture>
-            <visible>!Window.IsActive(infodialog)</visible>
-        </control>
-        <control type="label">
-            <posx>1851</posx>
-            <posy>12</posy>
-            <height>100</height>
-            <width>200</width>
-            <align>right</align>
-            <font>font16</font>
-            <label>$INFO[System.Time]</label>
-            <textcolor>white</textcolor>
-            <shadowcolor>text_shadow</shadowcolor>
-            <visible>!Window.IsActive(infodialog)</visible>
         </control>
         <control type="label">
             <posy>1010</posy>
