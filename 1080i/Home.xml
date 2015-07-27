@@ -34,6 +34,7 @@
                 <effect type="slide" end="0,20" time="60" tween="sine" />
                 <effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
             </animation>
+            <include>OpenClose_FadeSlide_Right</include>
             <control type="group" id="5000">
                 <visible>Container(9000).HasFocus(10)</visible>
                 <include>Vis_FadeSlide_Right</include>
