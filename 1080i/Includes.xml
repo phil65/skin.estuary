@@ -75,16 +75,7 @@
             <align>right</align>
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
-            <control type="image">
-                <description>Weather</description>
-                <posy>10</posy>
-                <width>60</width>
-                <height>60</height>
-                <aspectratio align="right">keep</aspectratio>
-                <texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
-                <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
-                <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
-            </control>
+            <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
             <control type="label">
                 <description>Weather label</description>
                 <posy>12</posy>
@@ -97,17 +88,15 @@
                 <align>left</align>
                 <scroll>false</scroll>
                 <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
-                <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
             </control>
             <control type="image">
-                <description>System Time Clock</description>
-                <posx>20</posx>
-                <posy>24</posy>
-                <height>32</height>
-                <width>60</width>
-                <texture>frame/clock.png</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
+                <description>Weather</description>
+                <posy>10</posy>
+                <width>70</width>
+                <height>60</height>
+                <aspectratio align="left">keep</aspectratio>
+                <texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
+                <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
             </control>
             <control type="label">
                 <description>System Time</description>
@@ -119,7 +108,15 @@
                 <label>$INFO[System.Time]</label>
                 <textcolor>white</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
-                <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
+            </control>
+            <control type="image">
+                <description>System Time Clock</description>
+                <posx>10</posx>
+                <posy>24</posy>
+                <height>32</height>
+                <width>32</width>
+                <texture>frame/clock.png</texture>
+                <aspectratio>keep</aspectratio>
             </control>
         </control>
     </include>
