@@ -12,6 +12,17 @@
         <value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
         <value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
     </variable>
+    <variable name="SettingsSectionIcon">
+        <value condition="Window.IsActive(picturessettings)">icons/settings/pictures.png</value>
+        <value condition="Window.IsActive(programssettings)">icons/settings/programs.png</value>
+        <value condition="Window.IsActive(weathersettings)">icons/settings/weather.png</value>
+        <value condition="Window.IsActive(musicsettings)">icons/settings/music.png</value>
+        <value condition="Window.IsActive(systemsettings)">icons/settings/system.png</value>
+        <value condition="Window.IsActive(videossettings)">icons/settings/video.png</value>
+        <value condition="Window.IsActive(servicesettings)">icons/settings/network.png</value>
+        <value condition="Window.IsActive(appearancesettings)">icons/settings/appearance.png</value>
+        <value condition="Window.IsActive(pvrsettings)">icons/settings/livetv.png</value>
+    </variable>
     <include name="HiddenObject">
         <posx>-3000</posx>
         <posy>-3000</posy>
