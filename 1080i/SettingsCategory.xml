@@ -12,22 +12,22 @@
             <texture>special://skin/extras/backgrounds/01.jpg</texture>
         </control>
         <control type="group">
-            <left>0</left>
+            <left>110</left>
             <top>0</top>
             <control type="group">
                 <include>OpenClose_FadeSlide_Left</include>
                 <control type="image">
                     <description>Menu Panel</description>
                     <posx>0</posx>
-                    <posy>80</posy>
+                    <posy>158</posy>
                     <width>400</width>
-                    <height>920</height>
-                    <texture>lists/panel.png</texture>
+                    <height>752</height>
+                    <texture border="2">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="grouplist" id="3">
                     <description>button area</description>
                     <left>0</left>
-                    <top>90</top>
+                    <top>158</top>
                     <width>400</width>
                     <height>700</height>
                     <itemgap>0</itemgap>
@@ -53,12 +53,12 @@
                 <control type="button" id="20">
                     <description>Setting level button</description>
                     <left>0</left>
-                    <top>842</top>
+                    <top>792</top>
                     <height>120</height>
                     <width>400</width>
                     <label>10037</label>
                     <textoffsetx>20</textoffsetx>
-                    <textoffsety>50</textoffsety>
+                    <textoffsety>54</textoffsety>
                     <align>center</align>
                     <aligny>bottom</aligny>
                     <font>font13</font>
@@ -75,7 +75,7 @@
                 </control>
                 <control type="label">
                     <left>0</left>
-                    <top>866</top>
+                    <top>820</top>
                     <height>25</height>
                     <width>400</width>
                     <label>31142</label>
@@ -88,10 +88,10 @@
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
                 <control type="image">
-                    <left>500</left>
-                    <top>100</top>
-                    <width>1300</width>
-                    <height>868</height>
+                    <left>440</left>
+                    <top>158</top>
+                    <width>1260</width>
+                    <height>752</height>
                     <texture border="2">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="image">
@@ -115,10 +115,10 @@
                      </control> -->
                 <control type="grouplist" id="5">
                     <description>control area</description>
-                    <left>502</left>
-                    <top>102</top>
-                    <width>1296</width>
-                    <height>700</height>
+                    <left>440</left>
+                    <top>158</top>
+                    <width>1260</width>
+                    <height>610</height>
                     <itemgap>0</itemgap>
                     <pagecontrol>60</pagecontrol>
                     <onleft>3</onleft>
@@ -152,13 +152,13 @@
                 </control>
                 <control type="textbox" id="6">
                     <description>description area</description>
-                    <left>570</left>
-                    <top>852</top>
+                    <left>480</left>
+                    <top>800</top>
                     <width>1150</width>
                     <height>83</height>
                     <font>font12</font>
                     <align>justify</align>
-                    <textcolor>grey</textcolor>
+                    <textcolor>orange</textcolor>
                     <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                 </control>
             </control>
@@ -244,28 +244,17 @@
         </control>
         <include>TopBar</include>
         <include>BottomBar</include>
-        <control type="group">
-            <include>OpenClose_FadeSlide_Left</include>
-            <control type="image">
-                <description>breadcrumbs image</description>
-                <left>0</left>
-                <top>10</top>
-                <width>80</width>
-                <height>80</height>
-                <texture colordiffuse="button_focus">$VAR[SettingsSectionIcon]</texture>
-            </control>
-            <control type="label" id="2">
-                <description>breadcrumbs label</description>
-                <left>80</left>
-                <top>20</top>
-                <width>1300</width>
-                <height>30</height>
-                <font>font16</font>
-                <align>left</align>
-                <aligny>center</aligny>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
+        <control type="label" id="2">
+            <description>header label</description>
+            <left>20</left>
+            <top>20</top>
+            <width>1300</width>
+            <height>30</height>
+            <font>font16</font>
+            <align>left</align>
+            <aligny>center</aligny>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
         </control>
     </controls>
 </window>
