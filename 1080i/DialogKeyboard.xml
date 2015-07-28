@@ -4,15 +4,15 @@
 	<include>Animation_DialogPopupOpenClose</include>
 	<coordinates>
 		<system>2</system>
-		<left>300</left>
-		<top>120</top>
+		<left>270</left>
+		<top>200</top>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<include>VisibleFadeEffect</include>
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="1320" />
+				<param name="DialogBackgroundWidth" value="1390" />
 				<param name="DialogBackgroundHeight" value="650" />
 				<param name="DialogHeaderLabel" value="" />
 				<param name="DialogHeaderId" value="311" />
@@ -39,10 +39,12 @@
 					<orientation>horizontal</orientation>
 					<control type="button" id="309">
 						<description>Layout button</description>
-						<width>230</width>
+						<width>290</width>
 						<height>125</height>
 						<onup>300</onup>
 						<ondown>302</ondown>
+						<textoffsetx>20</textoffsetx>
+						<wrapmultiline>true</wrapmultiline>
 						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<align>center</align>
@@ -132,7 +134,7 @@
 					<itemgap>-20</itemgap>
 					<control type="radiobutton" id="302">
 						<description>SHIFT button</description>
-						<width>230</width>
+						<width>290</width>
 						<height>125</height>
 						<label>20178</label>
 						<onup>309</onup>
@@ -227,7 +229,7 @@
 					<itemgap>-20</itemgap>
 					<control type="radiobutton" id="303">
 						<description>CAPS LOCK button</description>
-						<width>230</width>
+						<width>290</width>
 						<height>125</height>
 						<label>20179</label>
 						<onup>302</onup>
@@ -322,7 +324,7 @@
 					<orientation>horizontal</orientation>
 					<control type="button" id="307">
 						<description>IP Input button</description>
-						<width>125</width>
+						<width>155</width>
 						<height>125</height>
 						<onup>303</onup>
 						<ondown>300</ondown>
@@ -336,7 +338,7 @@
 					</control>
 					<control type="radiobutton" id="304">
 						<description>Symbols button</description>
-						<width>125</width>
+						<width>155</width>
 						<height>125</height>
 						<label>@#!*</label>
 						<onup>303</onup>
