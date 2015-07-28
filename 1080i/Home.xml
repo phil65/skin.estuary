@@ -455,21 +455,21 @@
                 <include>Vis_FadeSlide_Right</include>
                 <control type="group">
                     <control type="image">
-                        <posy>80</posy>
+                        <posy>40</posy>
                         <posx>500</posx>
                         <width>1300</width>
                         <height>540</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
-                        <posy>650</posy>
+                        <posy>610</posy>
                         <posx>500</posx>
                         <width>1300</width>
                         <height>90</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="videowindow">
-                        <posy>100</posy>
+                        <posy>60</posy>
                         <posx>500</posx>
                         <width>1300</width>
                         <height>500</height>
@@ -484,16 +484,16 @@
                 <include>Vis_FadeSlide_Right</include>
                 <control type="group">
                     <description>Weather info</description>
-                    <height>407</height>
+                    <height>360</height>
                     <control type="image">
-                        <posy>80</posy>
+                        <posy>40</posy>
                         <posx>500</posx>
                         <width>1300</width>
                         <height>330</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
-                        <posy>100</posy>
+                        <posy>60</posy>
                         <posx>530</posx>
                         <width>270</width>
                         <height>270</height>
