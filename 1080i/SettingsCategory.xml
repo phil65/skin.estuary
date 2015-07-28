@@ -3,14 +3,7 @@
     <defaultcontrol>3</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
-        <include>CommonBackground</include>
-        <control type="image">
-            <left>0</left>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-            <texture>special://skin/extras/backgrounds/01.jpg</texture>
-        </control>
+        <include>DefaultBackground</include>
         <control type="group">
             <left>110</left>
             <top>0</top>

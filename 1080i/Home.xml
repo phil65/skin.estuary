@@ -18,13 +18,7 @@
             <onclick>noop</onclick>
             <visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
         </control>
-        <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-            <texture>special://skin/extras/backgrounds/01.jpg</texture>
-        </control>
+        <include>DefaultBackground</include>
         <control type="group" id="2000">
             <animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
                 <effect type="slide" end="0,-20" time="60" tween="sine" />

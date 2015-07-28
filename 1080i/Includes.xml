@@ -135,6 +135,15 @@
             </control>
         </control>
     </include>
+    <include name="DefaultBackground">
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>special://skin/extras/backgrounds/01.jpg</texture>
+        </control>
+    </include>
     <include name="BottomBar">
         <control type="image">
             <description>List Panel</description>
