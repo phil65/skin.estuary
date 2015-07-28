@@ -85,7 +85,7 @@
 						<top>0</top>
 						<width>410</width>
 						<height>30</height>
-						<texture border="5">button-nofocus.png</texture>
+						<texture border="40">buttons/button-nofo.png</texture>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
@@ -165,7 +165,7 @@
 						<top>0</top>
 						<width>410</width>
 						<height>30</height>
-						<texture border="5">button-nofocus.png</texture>
+						<texture border="40">buttons/button-nofo.png</texture>
 						<visible>!Control.HasFocus(11)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>

@@ -54,8 +54,8 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<invalidcolor>invalid</invalidcolor>
-			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
@@ -65,8 +65,8 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
@@ -76,8 +76,8 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
@@ -89,8 +89,8 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			<aligny>center</aligny>
 		</control>
 		<control type="edit" id="12">
@@ -101,8 +101,8 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 		</control>
 		<control type="group" id="9001">
 			<left>190</left>
@@ -115,8 +115,8 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<label>186</label>
 				<font>font12_title</font>
 				<onup>5</onup>
@@ -132,8 +132,8 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<label>192</label>
 				<font>font12_title</font>
 				<onup>5</onup>

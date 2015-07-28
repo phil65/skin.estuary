@@ -47,7 +47,7 @@
 					<top>0</top>
 					<width>525</width>
 					<height>40</height>
-					<texture border="5">button-nofocus.png</texture>
+					<texture border="40">buttons/button-nofo.png</texture>
 				</control>
 				<control type="label">
 					<left>10</left>
@@ -69,7 +69,7 @@
 					<width>525</width>
 					<height>40</height>
 					<visible>!Control.HasFocus(10)</visible>
-					<texture border="5">button-nofocus.png</texture>
+					<texture border="40">buttons/button-nofo.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -120,8 +120,8 @@
 				<font>font12_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<onup>18</onup>
 				<onleft>60</onleft>
 				<onright>10</onright>
@@ -137,8 +137,8 @@
 				<font>font12_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<onup>11</onup>
 				<onleft>60</onleft>
 				<onright>10</onright>
@@ -154,8 +154,8 @@
 				<font>font12_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<onup>13</onup>
 				<onleft>60</onleft>
 				<onright>10</onright>
@@ -185,8 +185,8 @@
 			<aligny>center</aligny>
 			<label>-</label>
 			<font>font13</font>
-			<texturefocus border="5">button-focus2.png</texturefocus>
-			<texturenofocus border="5">button-nofocus.png</texturenofocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 			<onup>10</onup>
 			<onleft>12</onleft>
 			<onright>19</onright>
@@ -203,8 +203,8 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<label>186</label>
 				<font>font12_title</font>
 				<onup>12</onup>
@@ -220,8 +220,8 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
-				<texturefocus border="5">button-focus.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<label>222</label>
 				<font>font12_title</font>
 				<onup>12</onup>

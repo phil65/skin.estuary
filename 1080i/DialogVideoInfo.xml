@@ -120,7 +120,7 @@
 						<top>0</top>
 						<width>675</width>
 						<height>380</height>
-						<texture border="5">button-nofocus.png</texture>
+						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="image">
 						<description>background</description>
@@ -888,7 +888,7 @@
 							<top>0</top>
 							<width>430</width>
 							<height>40</height>
-							<texture border="5">button-nofocus.png</texture>
+							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="label">
 							<description>Actor and Role</description>
@@ -910,7 +910,7 @@
 							<width>430</width>
 							<height>40</height>
 							<visible>!Control.HasFocus(50)</visible>
-							<texture border="5">button-nofocus.png</texture>
+							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>

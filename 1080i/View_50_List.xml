@@ -6,8 +6,8 @@
             <height>424</height>
             <posx>0</posx>
             <posy>250</posy>
-            <!-- <visible>Control.IsVisible(50)</visible>
- -->
+            <visible>Control.IsVisible(50)</visible>
+
             <control type="group">
                 <include>OpenClose_FadeSlide_Left</include>
                 <posx>50</posx>
@@ -23,14 +23,13 @@
                     <posy>63</posy>
                     <width>996</width>
                     <height>620</height>
-                    <oninfo>$PARAM[list_oninfo]</oninfo>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>vertical</orientation>
                     <onleft>9000</onleft>
                     <onright>50</onright>
-                    <onup>$PARAM[onup_id]</onup>
-                    <ondown>$PARAM[ondown_id]</ondown>
+                    <onup>SetFocus(9000)</onup>
                     <onback>SetFocus(50)</onback>
+                    <viewtype label="List">list</viewtype>
                     <preloaditems>1</preloaditems>
                     <focusedlayout height="70">
                         <control type="image">

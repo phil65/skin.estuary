@@ -142,7 +142,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 		</control>
 		<control type="radiobutton" id="4">
 			<description>Default RadioButton</description>
@@ -150,15 +150,15 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 		</control>
 		<control type="spincontrolex" id="5">
 			<description>Default spincontrolex</description>
 			<height>40</height>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="5">button-nofocus.png</texturenofocus>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			<font>font13</font>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
@@ -183,7 +183,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">button-focus2.png</texturefocus>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 		</control>
 	</controls>
 </window>

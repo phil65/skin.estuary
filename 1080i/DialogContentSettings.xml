@@ -38,8 +38,8 @@
 				<top>100</top>
 				<width>320</width>
 				<height>40</height>
-				<texturefocus border="5">button-focus.png</texturefocus>
-				<texturenofocus border="5">button-nofocus.png</texturenofocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<font>-</font>
 				<label>-</label>
 				<reverse>yes</reverse>
@@ -134,7 +134,7 @@
 						<top>0</top>
 						<width>360</width>
 						<height>40</height>
-						<texture border="5">button-nofocus.png</texture>
+						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="image">
 						<left>5</left>
@@ -163,7 +163,7 @@
 						<width>360</width>
 						<height>40</height>
 						<visible>!Control.HasFocus(21)</visible>
-						<texture border="5">button-nofocus.png</texture>
+						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -240,7 +240,7 @@
 				<top>0</top>
 				<height>40</height>
 				<font>font13</font>
-				<texturefocus border="5">button-focus2.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			</control>
 			<control type="radiobutton" id="8">
 				<description>Default RadioButton</description>
@@ -248,7 +248,7 @@
 				<top>0</top>
 				<height>40</height>
 				<font>font13</font>
-				<texturefocus border="5">button-focus2.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			</control>
 			<control type="group" id="9001">
 				<top>615</top>
