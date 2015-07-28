@@ -107,7 +107,7 @@
                     <height>28</height>
                     <texture>overlays/arrowdown.png</texture>
                     <animation effect="zoom" start="100,0" end="100,100" center="0,910" time="200">VisibleChange</animation>
-                    <animation effect="slide" start="0,150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,910" time="200">WindowOpen</animation>
                     <visible>Container(5).HasNext</visible>
                 </control>
                 <control type="image">
@@ -117,7 +117,7 @@
                     <height>28</height>
                     <texture flipy="true">overlays/arrowdown.png</texture>
                     <animation effect="zoom" start="100,0" end="100,100" center="0,158" time="200">VisibleChange</animation>
-                    <animation effect="slide" start="0,-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,158" time="200">WindowOpen</animation>
                     <visible>Container(5).HasPrevious</visible>
                 </control>
                 <control type="grouplist" id="5">
