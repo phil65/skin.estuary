@@ -458,7 +458,7 @@
         </control>
         <include>TopBar</include>
         <control type="image">
-            <include>OpenClose_FadeSlide_Left</include>
+            <include>OpenClose_FadeSlide_Down</include>
             <description>Logo</description>
             <posx>20</posx>
             <posy>10</posy>
@@ -736,7 +736,7 @@
             </control>
         </control>
         <control type="group">
-            <include>OpenClose_FadeSlide_Down</include>
+            <include>OpenClose_FadeSlide_Up</include>
             <control type="label">
                 <posy>1010</posy>
                 <posx>1840</posx>
