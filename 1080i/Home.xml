@@ -654,6 +654,7 @@
                     </item>
                     <item id="3">
                         <label>31956</label>
+                        <label2>Artists: $INFO[Window(Home).Property(Music.ArtistsCount)]  •  $LOCALIZE[134]: $INFO[Window(Home).Property(Music.SongsCount)]</label2>
                         <onclick>ActivateWindow(Music)</onclick>
                         <property name="nofocus">lists/arrow-right-nofo.png</property>
                         <property name="focus">lists/arrow-right-fo.png</property>
