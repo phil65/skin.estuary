@@ -476,6 +476,347 @@
                     </control>
                 </control>
             </control>
+            <control type="grouplist" id="15001">
+                <orientation>vertical</orientation>
+                <posy>76</posy>
+                <height>925</height>
+                <visible>Container(9000).HasFocus(7)</visible>
+                <include>Vis_FadeSlide_Right</include>
+                <control type="group">
+                    <description>Weather info</description>
+                    <height>407</height>
+                    <control type="image">
+                        <posy>80</posy>
+                        <posx>500</posx>
+                        <width>1300</width>
+                        <height>330</height>
+                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    </control>
+                    <control type="image">
+                        <posy>100</posy>
+                        <posx>530</posx>
+                        <width>270</width>
+                        <height>270</height>
+                        <texture colordiffuse="FFFFFFFF">$INFO[Weather.conditions]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <description>Square Weather Widget including header and arrows</description>
+                    <height>407</height>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <visible>IntegerGreaterThan(Container(15100).NumItems,0) | Container(15100).IsUpdating</visible>
+                    <control type="image">
+                        <posx>445</posx>
+                        <posy>200</posy>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture flipx="true">overlays/arrowright.png</texture>
+                        <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+                        <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                        <visible>Container(15100).HasPrevious + Control.HasFocus(15100)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>1860</posx>
+                        <posy>200</posy>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture>overlays/arrowright.png</texture>
+                        <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
+                        <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                        <visible>Container(15100).HasNext + Control.HasFocus(15100)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>500</posx>
+                        <posy>30</posy>
+                        <width>600</width>
+                        <height>40</height>
+                        <label>Hourly</label>
+                        <font>font14</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                    </control>
+                    <control type="list" id="15100">
+                        <posx>490</posx>
+                        <posy>70</posy>
+                        <width>1384</width>
+                        <height>400</height>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <orientation>horizontal</orientation>
+                        <onleft>9000</onleft>
+                        <onright>15100</onright>
+                        <onup>20000</onup>
+                        <ondown>Control.SetFocus(15200,$INFO[Container(15100).Position])</ondown>
+                        <ondown>15200</ondown>
+                        <onback>SetFocus(9000)</onback>
+                        <preloaditems>1</preloaditems>
+                        <include>OpenClose_WidgetZoom</include>
+                        <itemlayout width="343">
+                            <control type="image">
+                                <description>Menu Panel</description>
+                                <left>0</left>
+                                <posy>20</posy>
+                                <width>300</width>
+                                <height>300</height>
+                                <texture border="40">buttons/button-nofo.png</texture>
+                            </control>
+                            <control type="image">
+                                <description>Menu Panel</description>
+                                <left>75</left>
+                                <posy>50</posy>
+                                <width>150</width>
+                                <height>150</height>
+                                <texture>$INFO[ListItem.Icon]</texture>
+                            </control>
+                            <control type="label">
+                                <posx>150</posx>
+                                <posy>240</posy>
+                                <align>center</align>
+                                <label>$INFO[ListItem.Label]</label>
+                                <textcolor>white</textcolor>
+                                <font>font16</font>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout width="343">
+                            <control type="group">
+                                <animation type="Focus">
+                                    <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+                                </animation>
+                                <animation type="Unfocus">
+                                    <effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+                                </animation>
+                                <control type="image">
+                                    <description>Menu Panel</description>
+                                    <left>0</left>
+                                    <posy>20</posy>
+                                    <width>300</width>
+                                    <height>300</height>
+                                    <texture border="40">buttons/button-theme-fo.png</texture>
+                                </control>
+                                <control type="image">
+                                    <description>Menu Panel</description>
+                                    <left>75</left>
+                                    <posy>50</posy>
+                                    <width>150</width>
+                                    <height>150</height>
+                                    <texture>$INFO[ListItem.Icon]</texture>
+                                </control>
+                                <control type="label">
+                                    <posx>150</posx>
+                                    <posy>240</posy>
+                                    <align>center</align>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <textcolor>white</textcolor>
+                                    <font>font16</font>
+                                </control>
+                            </control>
+                        </focusedlayout>
+                        <content>
+                            <item>
+                                <icon>$LOCALIZE[31909]</icon>
+                                <onclick>noop</onclick>
+                                <visible>IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
+                            </item>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="1" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="2" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="3" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="4" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="5" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="6" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="7" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="8" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="9" />
+                            </include>
+                            <include name="WeatherHourlyItem">
+                                <param name="item_index" value="10" />
+                            </include>
+                        </content>
+                    </control>
+                </control>
+                <control type="group">
+                    <description>Square Widget including header and arrows</description>
+                    <height>407</height>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <visible>IntegerGreaterThan(Container(15200).NumItems,0) | Container(15200).IsUpdating</visible>
+                    <control type="image">
+                        <posx>445</posx>
+                        <posy>200</posy>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture flipx="true">overlays/arrowright.png</texture>
+                        <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+                        <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                        <visible>Container(15200).HasPrevious + Control.HasFocus(15200)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>1860</posx>
+                        <posy>200</posy>
+                        <width>28</width>
+                        <height>28</height>
+                        <texture>overlays/arrowright.png</texture>
+                        <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
+                        <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                        <visible>Container(15200).HasNext + Control.HasFocus(15200)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>500</posx>
+                        <posy>30</posy>
+                        <width>600</width>
+                        <height>40</height>
+                        <label>Daily</label>
+                        <font>font14</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                    </control>
+                    <control type="list" id="15200">
+                        <posx>490</posx>
+                        <posy>70</posy>
+                        <width>1384</width>
+                        <height>400</height>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <orientation>horizontal</orientation>
+                        <onleft>9000</onleft>
+                        <onright>15200</onright>
+                        <onup>Control.SetFocus(15100,$INFO[Container(15200).Position])</onup>
+                        <onup>15100</onup>
+                        <ondown>20001</ondown>
+                        <onback>SetFocus(9000)</onback>
+                        <preloaditems>1</preloaditems>
+                        <include>OpenClose_WidgetZoom</include>
+                        <itemlayout width="343">
+                            <control type="image">
+                                <description>Menu Panel</description>
+                                <left>0</left>
+                                <posy>20</posy>
+                                <width>300</width>
+                                <height>300</height>
+                                <texture border="40">buttons/button-nofo.png</texture>
+                            </control>
+                            <control type="image">
+                                <description>Menu Panel</description>
+                                <left>75</left>
+                                <posy>50</posy>
+                                <width>150</width>
+                                <height>150</height>
+                                <texture>$INFO[ListItem.Icon]</texture>
+                            </control>
+                            <control type="label">
+                                <posx>150</posx>
+                                <posy>200</posy>
+                                <align>center</align>
+                                <label>$INFO[ListItem.Label]</label>
+                                <textcolor>white</textcolor>
+                                <font>font16</font>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout width="343">
+                            <control type="group">
+                                <animation type="Focus">
+                                    <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+                                </animation>
+                                <animation type="Unfocus">
+                                    <effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+                                </animation>
+                                <control type="image">
+                                    <description>Menu Panel</description>
+                                    <left>0</left>
+                                    <posy>20</posy>
+                                    <width>300</width>
+                                    <height>300</height>
+                                    <texture border="40">buttons/button-theme-fo.png</texture>
+                                </control>
+                                <control type="image">
+                                    <description>Menu Panel</description>
+                                    <left>75</left>
+                                    <posy>50</posy>
+                                    <width>150</width>
+                                    <height>150</height>
+                                    <texture>$INFO[ListItem.Icon]</texture>
+                                </control>
+                                <control type="label">
+                                    <posx>150</posx>
+                                    <posy>200</posy>
+                                    <align>center</align>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <textcolor>white</textcolor>
+                                    <font>font16</font>
+                                </control>
+                            </control>
+                        </focusedlayout>
+                        <content>
+                            <item>
+                                <icon>$LOCALIZE[31909]</icon>
+                                <onclick>noop</onclick>
+                                <visible>IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
+                            </item>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="1" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="2" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="3" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="4" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="5" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="6" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="7" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="8" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="9" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="10" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="11" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="12" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="13" />
+                            </include>
+                            <include name="WeatherDailyItem">
+                                <param name="item_index" value="14" />
+                            </include>
+                        </content>
+                    </control>
+                </control>
+            </control>
         </control>
         <include>TopBar</include>
         <control type="image">
@@ -634,8 +975,7 @@
                         <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
                         <property name="nofocus">lists/arrow-right-nofo.png</property>
                         <property name="focus">lists/arrow-right-fo.png</property>
-                        <!-- <visible>Player.HasMedia</visible>
- -->
+                        <visible>Player.HasMedia</visible>
                     </item>
                     <item id="10">
                         <label>31954</label>
@@ -794,7 +1134,7 @@
             <include>OpenClose_FadeSlide_Up</include>
             <control type="rss">
                 <posx>0</posx>
-                <posy>1045</posy>
+                <posy>1041</posy>
                 <height>30</height>
                 <width>1920</width>
                 <font>font12</font>
