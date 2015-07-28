@@ -48,6 +48,7 @@
                 <effect type="slide" end="0,20" time="60" tween="sine" />
                 <effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
             </animation>
+            <posx>20</posx>
             <include>OpenClose_FadeSlide_Right</include>
             <control type="group" id="5000">
                 <visible>Container(9000).HasFocus(10)</visible>
@@ -492,16 +493,16 @@
             <include>OpenClose_FadeSlide_Left</include>
             <control type="image">
                 <description>Menu Panel</description>
-                <left>23</left>
-                <posy>108</posy>
-                <width>404</width>
+                <left>53</left>
+                <posy>118</posy>
+                <width>384</width>
                 <height>752</height>
                 <texture border="2">dialogs/dialog-bg.png</texture>
             </control>
             <control type="list" id="9000">
-                <posx>25</posx>
-                <posy>110</posy>
-                <width>400</width>
+                <posx>55</posx>
+                <posy>120</posy>
+                <width>380</width>
                 <height>800</height>
                 <pagecontrol>70</pagecontrol>
                 <onright>2000</onright>
@@ -512,7 +513,7 @@
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>400</width>
+                        <width>390</width>
                         <height>71</height>
                         <texture border="90,3,90,3">lists/separator.png</texture>
                     </control>
@@ -521,13 +522,13 @@
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>400</width>
+                            <width>390</width>
                             <height>69</height>
                             <texture border="150,1,150,1">lists/focus.png</texture>
                             <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
+                            <posx>-10</posx>
                             <posy>-4</posy>
                             <width>70</width>
                             <height>70</height>
@@ -536,14 +537,14 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <posx>-10</posx>
                         <posy>-4</posy>
                         <width>70</width>
                         <height>70</height>
                         <texture>lists/arrow-right-nofo.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <posx>-10</posx>
                         <posy>-4</posy>
                         <width>70</width>
                         <height>70</height>
@@ -552,7 +553,7 @@
                         <visible>!Control.HasFocus(9000)</visible>
                     </control>
                     <control type="label">
-                        <posx>70</posx>
+                        <posx>50</posx>
                         <posy>0</posy>
                         <height>70</height>
                         <width>560</width>
@@ -568,7 +569,7 @@
                         <animation effect="slide" start="0,-13" end="0,0" time="300" delay="200">UnFocus</animation>
                     </control>
                     <control type="label">
-                        <posx>70</posx>
+                        <posx>50</posx>
                         <posy>0</posy>
                         <height>70</height>
                         <width>560</width>
@@ -582,7 +583,7 @@
                         <visible>IsEmpty(ListItem.Label2)</visible>
                     </control>
                     <control type="label">
-                        <posx>70</posx>
+                        <posx>50</posx>
                         <posy>17</posy>
                         <height>70</height>
                         <width>560</width>
@@ -601,12 +602,12 @@
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>400</width>
+                        <width>390</width>
                         <height>71</height>
                         <texture border="90,3,90,3">lists/separator.png</texture>
                     </control>
                     <control type="label">
-                        <posx>70</posx>
+                        <posx>50</posx>
                         <posy>0</posy>
                         <height>70</height>
                         <width>560</width>
@@ -619,7 +620,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <posx>-10</posx>
                         <posy>-4</posy>
                         <width>70</width>
                         <height>70</height>
@@ -708,9 +709,9 @@
             </control>
             <control type="grouplist" id="700">
                 <orientation>horizontal</orientation>
-                <itemgap>-10</itemgap>
-                <posx>7</posx>
-                <posy>880</posy>
+                <itemgap>-17</itemgap>
+                <posx>37</posx>
+                <posy>875</posy>
                 <onup>SetFocus(9000,99)</onup>
                 <onup>9000</onup>
                 <ondown>SetFocus(9000,0)</ondown>
