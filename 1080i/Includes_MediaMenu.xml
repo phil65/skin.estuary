@@ -153,11 +153,6 @@
         <control type="group">
             <include>OpenClose_FadeSlide_Right</include>
             <visible>!Skin.HasSetting(kioskmode)</visible>
-            <control type="togglebutton" id="4">
-                <label>$LOCALIZE[31164]: $LOCALIZE[584]</label>
-                <altlabel>$LOCALIZE[31164]: $LOCALIZE[585]</altlabel>
-                <include>HiddenObject</include>
-            </control>
             <control type="grouplist" id="9000">
                 <posy>100</posy>
                 <width>1920</width>
@@ -169,10 +164,9 @@
                 <onup>9000</onup>
                 <ondown>9000</ondown>
                 <onback>50</onback>
-                <control type="button" id="1802">
+                <control type="button" id="2">
                     <label>[B]$INFO[Container.Viewmode][/B]</label>
                     <include>SubMenuItemsCommon</include>
-
                     <visible>!Window.IsActive(musicplaylisteditor)</visible>
                 </control>
                 <control type="button" id="3">
@@ -193,7 +187,7 @@
                 <include condition="Window.IsActive(pictures)">PicturesButtons</include>
                 <include condition="Window.IsActive(musicplaylisteditor)">PlaylistEditorButtons</include>
                 <control type="button" id="1800">
-                    <label>31316</label>
+                    <label>Download Artwork</label>
                     <include>SubMenuItemsCommon</include>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
                     <onclick condition="Container.Content(TVShows) | Container.Content(seasons) | Container.Content(episodes)">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,silent=true,extrafanart,poster,fanart,banner,clearlogo,clearart,landscape,characterart,seasonbanner,seasonposter,seasonlandscape)</onclick>
