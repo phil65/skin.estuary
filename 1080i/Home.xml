@@ -468,11 +468,109 @@
                         <height>90</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
+                    <control type="image">
+                        <posy>85</posy>
+                        <posx>530</posx>
+                        <width>300</width>
+                        <height>450</height>
+                        <texture>$INFO[Player.Art(poster)]</texture>
+                    </control>
                     <control type="videowindow">
-                        <posy>60</posy>
-                        <posx>500</posx>
+                        <posy>85</posy>
+                        <posx>680</posx>
                         <width>1300</width>
-                        <height>500</height>
+                        <height>450</height>
+                    </control>
+                    <control type="label">
+                        <posx>1770</posx>
+                        <width>600</width>
+                        <posy>610</posy>
+                        <height>90</height>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>[COLOR button_focus]Now Playing: [/COLOR]$INFO[Player.Title]$INFO[VideoPlayer.Year, [,]]</label>
+                        <textcolor>white</textcolor>
+                        <font>font14</font>
+                    </control>
+                    <control type="grouplist" id="14100">
+                        <orientation>horizontal</orientation>
+                        <itemgap>-17</itemgap>
+                        <posx>490</posx>
+                        <posy>600</posy>
+                        <onup>9000</onup>
+                        <ondown>9000</ondown>
+                        <control type="radiobutton" id="14101">
+                            <width>118</width>
+                            <height>110</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <onclick>RunScript(script.globalsearch)</onclick>
+                            <font>-</font>
+                            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                            <radioposx>38</radioposx>
+                            <radioposy>0</radioposy>
+                            <radiowidth>40</radiowidth>
+                            <radioheight>40</radioheight>
+                            <textureradioonfocus>icons/magnifier.png</textureradioonfocus>
+                            <textureradioonnofocus>icons/magnifier.png</textureradioonnofocus>
+                            <textureradioofffocus>icons/magnifier.png</textureradioofffocus>
+                            <textureradiooffnofocus>icons/magnifier.png</textureradiooffnofocus>
+                        </control>
+                        <control type="radiobutton" id="14102">
+                            <width>118</width>
+                            <height>110</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <onclick>ActivateWindow(settings)</onclick>
+                            <font>-</font>
+                            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                            <radioposx>38</radioposx>
+                            <radioposy>0</radioposy>
+                            <radiowidth>40</radiowidth>
+                            <radioheight>40</radioheight>
+                            <textureradioonfocus>icons/settings2.png</textureradioonfocus>
+                            <textureradioonnofocus>icons/settings2.png</textureradioonnofocus>
+                            <textureradioofffocus>icons/settings2.png</textureradioofffocus>
+                            <textureradiooffnofocus>icons/settings2.png</textureradiooffnofocus>
+                        </control>
+                        <control type="radiobutton" id="14103">
+                            <width>118</width>
+                            <height>110</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <onclick>ActivateWindow(favourites)</onclick>
+                            <font>-</font>
+                            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                            <radioposx>38</radioposx>
+                            <radioposy>0</radioposy>
+                            <radiowidth>40</radiowidth>
+                            <radioheight>40</radioheight>
+                            <textureradioonfocus>icons/star.png</textureradioonfocus>
+                            <textureradioonnofocus>icons/star.png</textureradioonnofocus>
+                            <textureradioofffocus>icons/star.png</textureradioofffocus>
+                            <textureradiooffnofocus>icons/star.png</textureradiooffnofocus>
+                        </control>
+                        <control type="radiobutton" id="14104">
+                            <width>118</width>
+                            <height>110</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <onclick>ActivateWindow(shutdownmenu)</onclick>
+                            <font>-</font>
+                            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                            <radioposx>38</radioposx>
+                            <radioposy>0</radioposy>
+                            <radiowidth>40</radiowidth>
+                            <radioheight>40</radioheight>
+                            <textureradioonfocus>icons/poweroff.png</textureradioonfocus>
+                            <textureradioonnofocus>icons/poweroff.png</textureradioonnofocus>
+                            <textureradioofffocus>icons/poweroff.png</textureradioofffocus>
+                            <textureradiooffnofocus>icons/poweroff.png</textureradiooffnofocus>
+                        </control>
                     </control>
                 </control>
             </control>
