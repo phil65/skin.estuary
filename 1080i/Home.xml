@@ -261,7 +261,9 @@
                     <param name="item1_id" value="8901" />
                     <param name="item1_onclick" value="ActivateWindow(addonbrowser)" />
                     <param name="item1_label" value="Add-on manager" />
-                    <param name="item2_vis" value="False" />
+                    <param name="item2_id" value="8902" />
+                    <param name="item2_onclick" value="ActivateWindow(filemanager)" />
+                    <param name="item2_label" value="File manager" />
                     <param name="item3_vis" value="False" />
                     <param name="item4_vis" value="False" />
                     <param name="item5_vis" value="False" />
