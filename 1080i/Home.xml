@@ -19,26 +19,26 @@
             <visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
         </control>
         <include>DefaultBackground</include>
-<!--         <control type="image">
-            <posx>1045</posx>
-            <posy>1000</posy>
-            <width>28</width>
-            <height>28</height>
-            <texture>overlays/arrowdown.png</texture>
-            <animation effect="zoom" start="100,0" end="100,100" center="0,1000" time="200">VisibleChange</animation>
-            <animation effect="slide" start="0,150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-            <visible>Container(6000).HasNext</visible>
-        </control>
-        <control type="image">
-            <posx>1045</posx>
-            <posy>50</posy>
-            <width>28</width>
-            <height>28</height>
-            <texture flipy="true">overlays/arrowdown.png</texture>
-            <animation effect="zoom" start="100,0" end="100,100" center="0,78" time="200">VisibleChange</animation>
-            <animation effect="slide" start="0,-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-            <visible>Container(6000).HasPrevious</visible>
-        </control> -->
+        <!-- <control type="image">
+             <posx>1045</posx>
+             <posy>1000</posy>
+             <width>28</width>
+             <height>28</height>
+             <texture>overlays/arrowdown.png</texture>
+             <animation effect="zoom" start="100,0" end="100,100" center="0,1000" time="200">VisibleChange</animation>
+             <animation effect="slide" start="0,150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+             <visible>Container(6000).HasNext</visible>
+             </control>
+             <control type="image">
+             <posx>1045</posx>
+             <posy>50</posy>
+             <width>28</width>
+             <height>28</height>
+             <texture flipy="true">overlays/arrowdown.png</texture>
+             <animation effect="zoom" start="100,0" end="100,100" center="0,78" time="200">VisibleChange</animation>
+             <animation effect="slide" start="0,-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+             <visible>Container(6000).HasPrevious</visible>
+             </control> -->
         <control type="group" id="2000">
             <animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
                 <effect type="slide" end="0,-20" time="60" tween="sine" />
@@ -516,26 +516,24 @@
                         <height>71</height>
                         <texture border="90,3,90,3">lists/separator.png</texture>
                     </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>400</width>
-                        <height>69</height>
-                        <texture border="150,1,150,1">lists/focus.png</texture>
-                        <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
-                    </control>
-                    <control type="label">
-                        <posx>70</posx>
-                        <posy>0</posy>
-                        <height>70</height>
-                        <width>560</width>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>font14</font>
-                        <label>$INFO[ListItem.Label]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
+                    <control type="group">
+                        <animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>400</width>
+                            <height>69</height>
+                            <texture border="150,1,150,1">lists/focus.png</texture>
+                            <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>-4</posy>
+                            <width>70</width>
+                            <height>70</height>
+                            <texture>lists/arrow-right-fo.png</texture>
+                            <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+                        </control>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -549,17 +547,54 @@
                         <posy>-4</posy>
                         <width>70</width>
                         <height>70</height>
-                        <texture>lists/arrow-right-fo.png</texture>
-                        <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>-4</posy>
-                        <width>70</width>
-                        <height>70</height>
                         <texture>lists/arrow-right-colour-fo.png</texture>
                         <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
                         <visible>!Control.HasFocus(9000)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>70</posx>
+                        <posy>0</posy>
+                        <height>70</height>
+                        <width>560</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font14</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <animation effect="slide" start="0,0" end="0,-13" time="300" delay="500">Focus</animation>
+                        <animation effect="slide" start="0,-13" end="0,0" time="300" delay="200">UnFocus</animation>
+                    </control>
+                    <control type="label">
+                        <posx>70</posx>
+                        <posy>0</posy>
+                        <height>70</height>
+                        <width>560</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font14</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <visible>IsEmpty(ListItem.Label2)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>70</posx>
+                        <posy>17</posy>
+                        <height>70</height>
+                        <width>560</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font10</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <animation effect="fade" start="0" end="100" time="300" delay="700">Focus</animation>
+                        <animation effect="fade" start="100" end="0" time="300">UnFocus</animation>
                     </control>
                 </focusedlayout>
                 <itemlayout height="70">
@@ -603,6 +638,7 @@
                     </item>
                     <item id="10">
                         <label>31954</label>
+                        <label2>Total: $INFO[Window(home).Property(movies.Count),, •] Watched: $INFO[Window(home).Property(movies.watched)]</label2>
                         <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
                         <property name="nofocus">lists/arrow-right-nofo.png</property>
                         <property name="focus">lists/arrow-right-fo.png</property>
@@ -610,6 +646,7 @@
                     </item>
                     <item id="11">
                         <label>31955</label>
+                        <label2>Episodes: $INFO[Window(home).Property(episodes.Count),, •] Watched: $INFO[Window(home).Property(episodes.watched)]</label2>
                         <onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
                         <property name="nofocus">lists/arrow-right-nofo.png</property>
                         <property name="focus">lists/arrow-right-fo.png</property>
@@ -757,28 +794,6 @@
         </control>
         <control type="group">
             <include>OpenClose_FadeSlide_Up</include>
-            <control type="label">
-                <posy>1010</posy>
-                <posx>1840</posx>
-                <align>right</align>
-                <width>700</width>
-                <textcolor>FFFFFFFF</textcolor>
-                <label>Total movies: $INFO[Window(home).Property(movies.Count),, •] Watched: $INFO[Window(home).Property(movies.watched)]</label>
-                <font>font12</font>
-                <include>Vis_FadeSlide_Right</include>
-                <visible>Container(9000).HasFocus(10)</visible>
-            </control>
-            <control type="label">
-                <posy>1010</posy>
-                <posx>1840</posx>
-                <align>right</align>
-                <width>700</width>
-                <textcolor>FFFFFFFF</textcolor>
-                <label>Total tvshows: $INFO[Window(home).Property(tvshows.Count),, •] Total episodes: $INFO[Window(home).Property(episodes.Count),, •] watched: $INFO[Window(home).Property(episodes.watched)]</label>
-                <font>font12</font>
-                <include>Vis_FadeSlide_Right</include>
-                <visible>Container(9000).HasFocus(11)</visible>
-            </control>
             <control type="rss">
                 <posx>0</posx>
                 <posy>1045</posy>
