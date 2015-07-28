@@ -492,15 +492,15 @@
             <include>OpenClose_FadeSlide_Left</include>
             <control type="image">
                 <description>Menu Panel</description>
-                <posx>0</posx>
-                <posy>80</posy>
-                <width>400</width>
-                <height>920</height>
-                <texture>lists/panel.png</texture>
+                <left>23</left>
+                <posy>108</posy>
+                <width>404</width>
+                <height>752</height>
+                <texture border="2">dialogs/dialog-bg.png</texture>
             </control>
             <control type="list" id="9000">
-                <posx>0</posx>
-                <posy>80</posy>
+                <posx>25</posx>
+                <posy>110</posy>
                 <width>400</width>
                 <height>800</height>
                 <pagecontrol>70</pagecontrol>
@@ -708,83 +708,79 @@
             <control type="grouplist" id="700">
                 <orientation>horizontal</orientation>
                 <itemgap>-10</itemgap>
-                <posx>12</posx>
-                <posy>900</posy>
+                <posx>7</posx>
+                <posy>880</posy>
                 <onup>SetFocus(9000,99)</onup>
                 <onup>9000</onup>
                 <ondown>SetFocus(9000,0)</ondown>
                 <ondown>9000</ondown>
                 <control type="radiobutton" id="800">
-                    <width>100</width>
-                    <posx>-13</posx>
-                    <height>93</height>
+                    <width>118</width>
+                    <height>110</height>
                     <align>center</align>
                     <aligny>center</aligny>
                     <onclick>RunScript(script.globalsearch)</onclick>
                     <font>-</font>
                     <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
                     <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <radioposx>30</radioposx>
+                    <radioposx>38</radioposx>
                     <radioposy>0</radioposy>
-                    <radiowidth>34</radiowidth>
-                    <radioheight>34</radioheight>
+                    <radiowidth>40</radiowidth>
+                    <radioheight>40</radioheight>
                     <textureradioonfocus>icons/magnifier.png</textureradioonfocus>
                     <textureradioonnofocus>icons/magnifier.png</textureradioonnofocus>
                     <textureradioofffocus>icons/magnifier.png</textureradioofffocus>
                     <textureradiooffnofocus>icons/magnifier.png</textureradiooffnofocus>
                 </control>
                 <control type="radiobutton" id="801">
-                    <width>100</width>
-                    <posx>-13</posx>
-                    <height>93</height>
+                    <width>118</width>
+                    <height>110</height>
                     <align>center</align>
                     <aligny>center</aligny>
                     <onclick>ActivateWindow(settings)</onclick>
                     <font>-</font>
                     <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
                     <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <radioposx>30</radioposx>
+                    <radioposx>38</radioposx>
                     <radioposy>0</radioposy>
-                    <radiowidth>34</radiowidth>
-                    <radioheight>34</radioheight>
+                    <radiowidth>40</radiowidth>
+                    <radioheight>40</radioheight>
                     <textureradioonfocus>icons/settings2.png</textureradioonfocus>
                     <textureradioonnofocus>icons/settings2.png</textureradioonnofocus>
                     <textureradioofffocus>icons/settings2.png</textureradioofffocus>
                     <textureradiooffnofocus>icons/settings2.png</textureradiooffnofocus>
                 </control>
                 <control type="radiobutton" id="802">
-                    <width>100</width>
-                    <posx>-13</posx>
-                    <height>93</height>
+                    <width>118</width>
+                    <height>110</height>
                     <align>center</align>
                     <aligny>center</aligny>
                     <onclick>ActivateWindow(favourites)</onclick>
                     <font>-</font>
                     <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
                     <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <radioposx>30</radioposx>
+                    <radioposx>38</radioposx>
                     <radioposy>0</radioposy>
-                    <radiowidth>34</radiowidth>
-                    <radioheight>34</radioheight>
+                    <radiowidth>40</radiowidth>
+                    <radioheight>40</radioheight>
                     <textureradioonfocus>icons/star.png</textureradioonfocus>
                     <textureradioonnofocus>icons/star.png</textureradioonnofocus>
                     <textureradioofffocus>icons/star.png</textureradioofffocus>
                     <textureradiooffnofocus>icons/star.png</textureradiooffnofocus>
                 </control>
                 <control type="radiobutton" id="803">
-                    <width>100</width>
-                    <posx>-13</posx>
-                    <height>93</height>
+                    <width>118</width>
+                    <height>110</height>
                     <align>center</align>
                     <aligny>center</aligny>
                     <onclick>ActivateWindow(shutdownmenu)</onclick>
                     <font>-</font>
                     <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
                     <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <radioposx>30</radioposx>
+                    <radioposx>38</radioposx>
                     <radioposy>0</radioposy>
-                    <radiowidth>34</radiowidth>
-                    <radioheight>34</radioheight>
+                    <radiowidth>40</radiowidth>
+                    <radioheight>40</radioheight>
                     <textureradioonfocus>icons/poweroff.png</textureradioonfocus>
                     <textureradioonnofocus>icons/poweroff.png</textureradioonnofocus>
                     <textureradioofffocus>icons/poweroff.png</textureradioofffocus>
