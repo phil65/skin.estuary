@@ -630,10 +630,10 @@
                             <radioposy>0</radioposy>
                             <radiowidth>40</radiowidth>
                             <radioheight>40</radioheight>
-                            <textureradioonfocus>icons/magnifier.png</textureradioonfocus>
-                            <textureradioonnofocus>icons/magnifier.png</textureradioonnofocus>
-                            <textureradioofffocus>icons/magnifier.png</textureradioofffocus>
-                            <textureradiooffnofocus>icons/magnifier.png</textureradiooffnofocus>
+                            <textureradioonfocus>icons/search.png</textureradioonfocus>
+                            <textureradioonnofocus>icons/search.png</textureradioonnofocus>
+                            <textureradioofffocus>icons/search.png</textureradioofffocus>
+                            <textureradiooffnofocus>icons/search.png</textureradiooffnofocus>
                         </control>
                         <control type="radiobutton" id="14102">
                             <width>118</width>
@@ -648,10 +648,10 @@
                             <radioposy>0</radioposy>
                             <radiowidth>40</radiowidth>
                             <radioheight>40</radioheight>
-                            <textureradioonfocus>icons/settings2.png</textureradioonfocus>
-                            <textureradioonnofocus>icons/settings2.png</textureradioonnofocus>
-                            <textureradioofffocus>icons/settings2.png</textureradioofffocus>
-                            <textureradiooffnofocus>icons/settings2.png</textureradiooffnofocus>
+                            <textureradioonfocus>icons/settings.png</textureradioonfocus>
+                            <textureradioonnofocus>icons/settings.png</textureradioonnofocus>
+                            <textureradioofffocus>icons/settings.png</textureradioofffocus>
+                            <textureradiooffnofocus>icons/settings.png</textureradiooffnofocus>
                         </control>
                         <control type="radiobutton" id="14103">
                             <width>118</width>
@@ -666,10 +666,10 @@
                             <radioposy>0</radioposy>
                             <radiowidth>40</radiowidth>
                             <radioheight>40</radioheight>
-                            <textureradioonfocus>icons/star.png</textureradioonfocus>
-                            <textureradioonnofocus>icons/star.png</textureradioonnofocus>
-                            <textureradioofffocus>icons/star.png</textureradioofffocus>
-                            <textureradiooffnofocus>icons/star.png</textureradiooffnofocus>
+                            <textureradioonfocus>icons/favourites.png</textureradioonfocus>
+                            <textureradioonnofocus>icons/favourites.png</textureradioonnofocus>
+                            <textureradioofffocus>icons/favourites.png</textureradioofffocus>
+                            <textureradiooffnofocus>icons/favourites.png</textureradiooffnofocus>
                         </control>
                         <control type="radiobutton" id="14104">
                             <width>118</width>
@@ -684,10 +684,10 @@
                             <radioposy>0</radioposy>
                             <radiowidth>40</radiowidth>
                             <radioheight>40</radioheight>
-                            <textureradioonfocus>icons/poweroff.png</textureradioonfocus>
-                            <textureradioonnofocus>icons/poweroff.png</textureradioonnofocus>
-                            <textureradioofffocus>icons/poweroff.png</textureradioofffocus>
-                            <textureradiooffnofocus>icons/poweroff.png</textureradiooffnofocus>
+                            <textureradioonfocus>icons/power.png</textureradioonfocus>
+                            <textureradioonnofocus>icons/power.png</textureradioonnofocus>
+                            <textureradioofffocus>icons/power.png</textureradioofffocus>
+                            <textureradiooffnofocus>icons/power.png</textureradiooffnofocus>
                         </control>
                     </control>
                 </control>
@@ -1130,12 +1130,12 @@
                 <posy>118</posy>
                 <width>384</width>
                 <height>752</height>
-                <texture border="2">dialogs/dialog-bg.png</texture>
+                <texture border="2">dialogs/home-menu-bg.png</texture>
             </control>
             <control type="list" id="9000">
-                <posx>55</posx>
-                <posy>120</posy>
-                <width>380</width>
+                <posx>54</posx>
+                <posy>119</posy>
+                <width>382</width>
                 <height>800</height>
                 <pagecontrol>70</pagecontrol>
                 <onright>2000</onright>
@@ -1345,8 +1345,8 @@
             <control type="grouplist" id="700">
                 <orientation>horizontal</orientation>
                 <itemgap>-17</itemgap>
-                <posx>37</posx>
-                <posy>875</posy>
+                <posx>36</posx>
+                <posy>872</posy>
                 <onup>SetFocus(9000,99)</onup>
                 <onup>9000</onup>
                 <ondown>SetFocus(9000,0)</ondown>
@@ -1361,13 +1361,13 @@
                     <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
                     <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
                     <radioposx>38</radioposx>
-                    <radioposy>0</radioposy>
+                    <radioposy>34</radioposy>
                     <radiowidth>40</radiowidth>
                     <radioheight>40</radioheight>
-                    <textureradioonfocus>icons/magnifier.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/magnifier.png</textureradioonnofocus>
-                    <textureradioofffocus>icons/magnifier.png</textureradioofffocus>
-                    <textureradiooffnofocus>icons/magnifier.png</textureradiooffnofocus>
+                    <textureradioonfocus>icons/search.png</textureradioonfocus>
+                    <textureradioonnofocus>icons/search.png</textureradioonnofocus>
+                    <textureradioofffocus>icons/search.png</textureradioofffocus>
+                    <textureradiooffnofocus>icons/search.png</textureradiooffnofocus>
                 </control>
                 <control type="radiobutton" id="801">
                     <width>118</width>
@@ -1382,10 +1382,10 @@
                     <radioposy>0</radioposy>
                     <radiowidth>40</radiowidth>
                     <radioheight>40</radioheight>
-                    <textureradioonfocus>icons/settings2.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/settings2.png</textureradioonnofocus>
-                    <textureradioofffocus>icons/settings2.png</textureradioofffocus>
-                    <textureradiooffnofocus>icons/settings2.png</textureradiooffnofocus>
+                    <textureradioonfocus>icons/settings.png</textureradioonfocus>
+                    <textureradioonnofocus>icons/settings.png</textureradioonnofocus>
+                    <textureradioofffocus>icons/settings.png</textureradioofffocus>
+                    <textureradiooffnofocus>icons/settings.png</textureradiooffnofocus>
                 </control>
                 <control type="radiobutton" id="802">
                     <width>118</width>
@@ -1400,10 +1400,10 @@
                     <radioposy>0</radioposy>
                     <radiowidth>40</radiowidth>
                     <radioheight>40</radioheight>
-                    <textureradioonfocus>icons/star.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/star.png</textureradioonnofocus>
-                    <textureradioofffocus>icons/star.png</textureradioofffocus>
-                    <textureradiooffnofocus>icons/star.png</textureradiooffnofocus>
+                    <textureradioonfocus>icons/favourites.png</textureradioonfocus>
+                    <textureradioonnofocus>icons/favourites.png</textureradioonnofocus>
+                    <textureradioofffocus>icons/favourites.png</textureradioofffocus>
+                    <textureradiooffnofocus>icons/favourites.png</textureradiooffnofocus>
                 </control>
                 <control type="radiobutton" id="803">
                     <width>118</width>
@@ -1418,10 +1418,10 @@
                     <radioposy>0</radioposy>
                     <radiowidth>40</radiowidth>
                     <radioheight>40</radioheight>
-                    <textureradioonfocus>icons/poweroff.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/poweroff.png</textureradioonnofocus>
-                    <textureradioofffocus>icons/poweroff.png</textureradioofffocus>
-                    <textureradiooffnofocus>icons/poweroff.png</textureradiooffnofocus>
+                    <textureradioonfocus>icons/power.png</textureradioonfocus>
+                    <textureradioonnofocus>icons/power.png</textureradioonnofocus>
+                    <textureradioofffocus>icons/power.png</textureradioofffocus>
+                    <textureradiooffnofocus>icons/power.png</textureradiooffnofocus>
                 </control>
             </control>
         </control>
