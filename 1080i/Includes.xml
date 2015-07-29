@@ -51,7 +51,7 @@
             <top>0</top>
             <width>$PARAM[DialogBackgroundWidth]</width>
             <height>$PARAM[DialogBackgroundHeight]</height>
-            <texture border="2">dialogs/dialog-bg.png</texture>
+            <texture border="2">dialogs/dialog-bg-solid.png</texture>
         </control>
         <control type="image">
             <description>Dialog Header image</description>
