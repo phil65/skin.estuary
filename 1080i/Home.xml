@@ -584,25 +584,58 @@
                 <include>Vis_FadeSlide_Right</include>
                 <control type="group">
                     <description>Weather info</description>
-                    <height>360</height>
+                    <height>210</height>
                     <control type="image">
                         <posy>40</posy>
                         <posx>500</posx>
                         <width>1300</width>
-                        <height>330</height>
+                        <height>200</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
-                        <posy>60</posy>
+                        <posy>20</posy>
                         <posx>530</posx>
-                        <width>270</width>
-                        <height>270</height>
+                        <width>230</width>
+                        <height>230</height>
                         <texture colordiffuse="FFFFFFFF">$INFO[Weather.conditions]</texture>
+                    </control>
+                    <control type="label">
+                        <left>950</left>
+                        <top>170</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>800</width>
+                        <align>right</align>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Weather.Conditions]</label>
+                    </control>
+                    <control type="label">
+                        <left>950</left>
+                        <top>130</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>800</width>
+                        <align>right</align>
+                        <font>font14</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Weather.Temperature]</label>
+                    </control>
+                    <control type="label">
+                        <left>950</left>
+                        <top>70</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>800</width>
+                        <align>right</align>
+                        <font>font35_title</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Weather.Location]</label>
                     </control>
                 </control>
                 <control type="group">
                     <description>Square Weather Widget including header and arrows</description>
-                    <height>407</height>
+                    <height>330</height>
                     <posx>0</posx>
                     <posy>0</posy>
                     <visible>IntegerGreaterThan(Container(15100).NumItems,0) | Container(15100).IsUpdating</visible>
@@ -617,7 +650,7 @@
                         <visible>Container(15100).HasPrevious + Control.HasFocus(15100)</visible>
                     </control>
                     <control type="image">
-                        <posx>1860</posx>
+                        <posx>1840</posx>
                         <posy>200</posy>
                         <width>28</width>
                         <height>28</height>
@@ -640,8 +673,8 @@
                     </control>
                     <control type="list" id="15100">
                         <posx>490</posx>
-                        <posy>70</posy>
-                        <width>1384</width>
+                        <posy>55</posy>
+                        <width>1350</width>
                         <height>400</height>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
                         <orientation>horizontal</orientation>
@@ -653,33 +686,34 @@
                         <onback>SetFocus(9000)</onback>
                         <preloaditems>1</preloaditems>
                         <include>OpenClose_WidgetZoom</include>
-                        <itemlayout width="343">
+                        <itemlayout width="269">
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>0</left>
                                 <posy>20</posy>
-                                <width>300</width>
-                                <height>300</height>
+                                <width>260</width>
+                                <height>290</height>
                                 <texture border="40">buttons/button-nofo.png</texture>
                             </control>
                             <control type="image">
                                 <description>Menu Panel</description>
-                                <left>75</left>
-                                <posy>50</posy>
-                                <width>150</width>
-                                <height>150</height>
+                                <left>60</left>
+                                <posy>90</posy>
+                                <width>130</width>
+                                <height>130</height>
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>150</posx>
-                                <posy>240</posy>
+                                <posx>130</posx>
+                                <posy>47</posy>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>white</textcolor>
-                                <font>font16</font>
+                                <width>230</width>
+                                <font>font14</font>
                             </control>
                         </itemlayout>
-                        <focusedlayout width="343">
+                        <focusedlayout width="269">
                             <control type="group">
                                 <animation type="Focus">
                                     <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
@@ -691,25 +725,36 @@
                                     <description>Menu Panel</description>
                                     <left>0</left>
                                     <posy>20</posy>
-                                    <width>300</width>
-                                    <height>300</height>
-                                    <texture border="40">buttons/button-theme-fo.png</texture>
+                                    <width>260</width>
+                                    <height>290</height>
+                                    <texture border="40">buttons/button-nofo.png</texture>
                                 </control>
                                 <control type="image">
                                     <description>Menu Panel</description>
-                                    <left>75</left>
-                                    <posy>50</posy>
-                                    <width>150</width>
-                                    <height>150</height>
+                                    <left>0</left>
+                                    <posy>20</posy>
+                                    <width>260</width>
+                                    <height>290</height>
+                                    <texture border="40">buttons/button-theme-fo.png</texture>
+                                    <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                                    <visible>Control.HasFocus(15100)</visible>
+                                </control>
+                                <control type="image">
+                                    <description>Menu Panel</description>
+                                    <left>60</left>
+                                    <posy>90</posy>
+                                    <width>130</width>
+                                    <height>130</height>
                                     <texture>$INFO[ListItem.Icon]</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>150</posx>
-                                    <posy>240</posy>
+                                    <posx>130</posx>
+                                    <posy>47</posy>
+                                <width>230</width>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
-                                    <font>font16</font>
+                                    <font>font14</font>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -754,7 +799,7 @@
                 </control>
                 <control type="group">
                     <description>Square Widget including header and arrows</description>
-                    <height>407</height>
+                    <height>330</height>
                     <posx>0</posx>
                     <posy>0</posy>
                     <visible>IntegerGreaterThan(Container(15200).NumItems,0) | Container(15200).IsUpdating</visible>
@@ -769,7 +814,7 @@
                         <visible>Container(15200).HasPrevious + Control.HasFocus(15200)</visible>
                     </control>
                     <control type="image">
-                        <posx>1860</posx>
+                        <posx>1840</posx>
                         <posy>200</posy>
                         <width>28</width>
                         <height>28</height>
@@ -792,8 +837,8 @@
                     </control>
                     <control type="list" id="15200">
                         <posx>490</posx>
-                        <posy>70</posy>
-                        <width>1384</width>
+                        <posy>55</posy>
+                        <width>1350</width>
                         <height>400</height>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
                         <orientation>horizontal</orientation>
@@ -805,33 +850,34 @@
                         <onback>SetFocus(9000)</onback>
                         <preloaditems>1</preloaditems>
                         <include>OpenClose_WidgetZoom</include>
-                        <itemlayout width="343">
+                          <itemlayout width="269">
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>0</left>
                                 <posy>20</posy>
-                                <width>300</width>
-                                <height>300</height>
+                                <width>260</width>
+                                <height>290</height>
                                 <texture border="40">buttons/button-nofo.png</texture>
                             </control>
                             <control type="image">
                                 <description>Menu Panel</description>
-                                <left>75</left>
-                                <posy>50</posy>
-                                <width>150</width>
-                                <height>150</height>
+                                <left>60</left>
+                                <posy>90</posy>
+                                <width>130</width>
+                                <height>130</height>
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>150</posx>
-                                <posy>200</posy>
+                                <posx>130</posx>
+                                <posy>47</posy>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>white</textcolor>
-                                <font>font16</font>
+                                <width>230</width>
+                                <font>font14</font>
                             </control>
                         </itemlayout>
-                        <focusedlayout width="343">
+                        <focusedlayout width="269">
                             <control type="group">
                                 <animation type="Focus">
                                     <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
@@ -843,25 +889,36 @@
                                     <description>Menu Panel</description>
                                     <left>0</left>
                                     <posy>20</posy>
-                                    <width>300</width>
-                                    <height>300</height>
-                                    <texture border="40">buttons/button-theme-fo.png</texture>
+                                    <width>260</width>
+                                    <height>290</height>
+                                    <texture border="40">buttons/button-nofo.png</texture>
                                 </control>
                                 <control type="image">
                                     <description>Menu Panel</description>
-                                    <left>75</left>
-                                    <posy>50</posy>
-                                    <width>150</width>
-                                    <height>150</height>
+                                    <left>0</left>
+                                    <posy>20</posy>
+                                    <width>260</width>
+                                    <height>290</height>
+                                    <texture border="40">buttons/button-theme-fo.png</texture>
+                                    <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                                    <visible>Control.HasFocus(15200)</visible>
+                                </control>
+                                <control type="image">
+                                    <description>Menu Panel</description>
+                                    <left>60</left>
+                                    <posy>90</posy>
+                                    <width>130</width>
+                                    <height>130</height>
                                     <texture>$INFO[ListItem.Icon]</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>150</posx>
-                                    <posy>200</posy>
+                                    <posx>130</posx>
+                                    <posy>47</posy>
+                                <width>230</width>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
-                                    <font>font16</font>
+                                    <font>font14</font>
                                 </control>
                             </control>
                         </focusedlayout>

@@ -100,7 +100,7 @@
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="image">
-                <posx>1860</posx>
+                <posx>1843</posx>
                 <posy>221</posy>
                 <width>28</width>
                 <height>28</height>
@@ -254,7 +254,7 @@
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="image">
-                <posx>1860</posx>
+                <posx>1843</posx>
                 <posy>210</posy>
                 <width>28</width>
                 <height>28</height>
@@ -407,7 +407,7 @@
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="image">
-                <posx>1860</posx>
+                <posx>1843</posx>
                 <posy>200</posy>
                 <width>28</width>
                 <height>28</height>
@@ -541,7 +541,7 @@
     </include>
     <include name="WeatherDailyItem">
         <item>
-            <label>[B]$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)][/B][CR][COLOR=grey2]$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)][/COLOR]</label>
+            <label>[B]$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)][/B] [COLOR=grey2]$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)][/COLOR]</label>
             <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
             <thumb>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
             <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)] $INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</icon>
