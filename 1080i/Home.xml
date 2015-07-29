@@ -309,6 +309,10 @@
                 <height>925</height>
                 <visible>Container(9000).HasFocus(4)</visible>
                 <include>Vis_FadeSlide_Right</include>
+                <control type="image">
+                    <height>15</height>
+                    <texture>-</texture>
+                </control>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="addons://sources/image/"/>
                     <param name="widget_header" value="Image add-ons"/>
