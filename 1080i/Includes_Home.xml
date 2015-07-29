@@ -531,10 +531,8 @@
     <include name="WeatherHourlyItem">
         <item>
             <label>[B]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)][/B]</label>
-            <label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)]</label2>
+            <label2>[B]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)][/B][CR][COLOR=grey2]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)][/COLOR]</label2>
             <icon>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
-            <property name="temp">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)]</property>
-            <property name="outlook">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Outlook)]</property>
             <onclick>noop</onclick>
             <visible>!IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
         </item>
@@ -542,7 +540,7 @@
     <include name="WeatherDailyItem">
         <item>
             <label>[B]$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)][/B] [COLOR=grey2]$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)][/COLOR]</label>
-            <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
+            <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature), • ,][CR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness),[COLOR=grey2]$LOCALIZE[387] : [/COLOR],]</label2>
             <thumb>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
             <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)] $INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</icon>
             <onclick>noop</onclick>

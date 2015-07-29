@@ -702,11 +702,11 @@
                     <description>Weather info</description>
                     <height>380</height>
                     <control type="image">
-                        <posy>40</posy>
+                        <posy>42</posy>
                         <posx>500</posx>
                         <width>1320</width>
                         <height>350</height>
-                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        <texture border="3">dialogs/home-menu-bg.png</texture>
                     </control>
                     <control type="image">
                         <posy>20</posy>
@@ -799,7 +799,7 @@
                         <posy>30</posy>
                         <width>600</width>
                         <height>40</height>
-                        <label>Hourly</label>
+                        <label>High Temperatures over 24 Hours</label>
                         <font>font14</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
@@ -847,6 +847,15 @@
                                 <width>230</width>
                                 <font>font13</font>
                             </control>
+                            <control type="label">
+                                <posx>130</posx>
+                                <posy>237</posy>
+                                <align>center</align>
+                                <label>$INFO[ListItem.Label2]</label>
+                                <textcolor>white</textcolor>
+                                <width>230</width>
+                                <font>font13</font>
+                            </control>
                         </itemlayout>
                         <focusedlayout width="273">
                             <control type="group">
@@ -889,6 +898,15 @@
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
+                                    <font>font13</font>
+                                </control>
+                                <control type="label">
+                                    <posx>130</posx>
+                                    <posy>237</posy>
+                                    <align>center</align>
+                                    <label>$INFO[ListItem.Label2]</label>
+                                    <textcolor>white</textcolor>
+                                    <width>230</width>
                                     <font>font13</font>
                                 </control>
                             </control>
@@ -1011,6 +1029,15 @@
                                 <width>230</width>
                                 <font>font13</font>
                             </control>
+                            <control type="label">
+                                <posx>130</posx>
+                                <posy>237</posy>
+                                <align>center</align>
+                                <label>$INFO[ListItem.Label2]</label>
+                                <textcolor>white</textcolor>
+                                <width>230</width>
+                                <font>font13</font>
+                            </control>
                         </itemlayout>
                         <focusedlayout width="273">
                             <control type="group">
@@ -1053,6 +1080,15 @@
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
+                                    <font>font13</font>
+                                </control>
+                                <control type="label">
+                                    <posx>130</posx>
+                                    <posy>237</posy>
+                                    <align>center</align>
+                                    <label>$INFO[ListItem.Label2]</label>
+                                    <textcolor>white</textcolor>
+                                    <width>230</width>
                                     <font>font13</font>
                                 </control>
                             </control>
