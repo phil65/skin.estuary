@@ -641,16 +641,16 @@
                     <param name="list_id" value="15900"/>
                     <param name="ondown_id" value="15100"/>
                     <param name="item1_id" value="15901" />
-                    <param name="item1_onclick" value="ActivateWindow(addonbrowser)" />
+                    <param name="item1_onclick" value="Weather.Refresh" />
                     <param name="item1_label" value="Refresh" />
                     <param name="item2_id" value="15902" />
-                    <param name="item2_onclick" value="ActivateWindow(filemanager)" />
+                    <param name="item2_onclick" value="Weather.LocationPrevious" />
                     <param name="item2_label" value="Previous city" />
                     <param name="item3_id" value="15903" />
-                    <param name="item3_onclick" value="ActivateWindow(filemanager)" />
+                    <param name="item3_onclick" value="Weather.LocationNext" />
                     <param name="item3_label" value="Next city" />
                     <param name="item4_id" value="15904" />
-                    <param name="item4_onclick" value="ActivateWindow(filemanager)" />
+                    <param name="item4_onclick" value="ActivateWindow(weathersettings)" />
                     <param name="item4_label" value="Weather settings" />
                     <param name="item5_vis" value="False" />
                     <param name="item6_vis" value="False" />
