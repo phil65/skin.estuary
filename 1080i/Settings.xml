@@ -42,10 +42,10 @@
             <focusedlayout height="270" width="440">
                 <control type="group">
                     <animation type="Focus" reversible="false">
-                        <effect type="zoom" center="auto" start="100" end="105" time="300" tween="sine" />
+                        <effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
                     </animation>
                     <animation type="UnFocus" reversible="false">
-                        <effect type="zoom" center="auto" start="105" end="100" time="300" tween="sine" />
+                        <effect type="zoom" center="auto" start="108" end="100" time="250" tween="sine" />
                     </animation>
                     <control type="image">
                         <width>400</width>
