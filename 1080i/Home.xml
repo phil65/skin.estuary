@@ -589,14 +589,14 @@
                         <posy>40</posy>
                         <posx>500</posx>
                         <width>1300</width>
-                        <height>200</height>
+                        <height>190</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
                         <posy>20</posy>
                         <posx>530</posx>
-                        <width>230</width>
-                        <height>230</height>
+                        <width>210</width>
+                        <height>210</height>
                         <texture colordiffuse="FFFFFFFF">$INFO[Weather.conditions]</texture>
                     </control>
                     <control type="label">
@@ -710,7 +710,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>white</textcolor>
                                 <width>230</width>
-                                <font>font14</font>
+                                <font>font13</font>
                             </control>
                         </itemlayout>
                         <focusedlayout width="269">
@@ -754,7 +754,7 @@
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
-                                    <font>font14</font>
+                                    <font>font13</font>
                                 </control>
                             </control>
                         </focusedlayout>

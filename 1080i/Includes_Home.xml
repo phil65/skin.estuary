@@ -530,7 +530,7 @@
     </include>
     <include name="WeatherHourlyItem">
         <item>
-            <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
+            <label>[B]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)][/B]</label>
             <label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)]</label2>
             <icon>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
             <property name="temp">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)]</property>
