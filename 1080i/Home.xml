@@ -1198,7 +1198,7 @@
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <animation effect="slide" start="0,0" end="0,-13" time="150" delay="200">Focus</animation>
+                        <animation effect="slide" start="0,0" end="0,-13" time="150" delay="400">Focus</animation>
                         <animation effect="slide" start="0,-13" end="0,0" time="300" delay="200">UnFocus</animation>
                     </control>
                     <control type="label">
@@ -1227,7 +1227,7 @@
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
-                        <animation effect="fade" start="0" end="100" time="150" delay="400">Focus</animation>
+                        <animation effect="fade" start="0" end="100" time="150" delay="500">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="300">UnFocus</animation>
                     </control>
                 </focusedlayout>
