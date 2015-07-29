@@ -1332,6 +1332,7 @@
                     </item>
                     <item id="7">
                         <label>31950</label>
+                        <label2>Provided by $INFO[Window(Weather).Property(WeatherProvider)]</label2>
                         <onclick>ActivateWindow(Weather)</onclick>
                         <property name="nofocus">lists/arrow-right-nofo.png</property>
                         <property name="focus">lists/arrow-right-fo.png</property>
