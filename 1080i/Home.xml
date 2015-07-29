@@ -371,6 +371,118 @@
                 <height>925</height>
                 <visible>Container(9000).HasFocus(12)</visible>
                 <include>Vis_FadeSlide_Right</include>
+                <control type="group">
+                    <height>408</height>
+                    <control type="image">
+                        <posy>40</posy>
+                        <posx>500</posx>
+                        <width>1320</width>
+                        <height>350</height>
+                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    </control>
+                    <control type="group">
+                        <visible>PVR.HasNonRecordingTimer</visible>
+                        <posx>1300</posx>
+                        <posy>50</posy>
+                        <control type="image">
+                            <left>280</left>
+                            <top>50</top>
+                            <width>200</width>
+                            <height>200</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NextRecordingChannelIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <description>Next Timer Header label</description>
+                            <left>0</left>
+                            <top>5</top>
+                            <height>25</height>
+                            <width>480</width>
+                            <label>$LOCALIZE[19157]</label>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font24_title</font>
+                            <textcolor>blue</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <description>NextRecordingDateTime</description>
+                            <left>0</left>
+                            <top>265</top>
+                            <height>25</height>
+                            <width>480</width>
+                            <label>$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]</label>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <scroll>true</scroll>
+                            <shadowcolor>black</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <description>NextRecordingTitle Channel</description>
+                            <left>-200</left>
+                            <top>295</top>
+                            <height>25</height>
+                            <width>680</width>
+                            <label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12_title</font>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <posy>50</posy>
+                        <posx>550</posx>
+                        <visible>PVR.IsRecording</visible>
+                        <control type="image">
+                            <left>0</left>
+                            <top>50</top>
+                            <width>200</width>
+                            <height>200</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NowRecordingChannelIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <description>Is Recording Header label</description>
+                            <left>0</left>
+                            <top>5</top>
+                            <height>25</height>
+                            <width>400</width>
+                            <label>$LOCALIZE[19158]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font24_title</font>
+                            <textcolor>blue</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <description>NextRecordingDateTime</description>
+                            <top>265</top>
+                            <height>25</height>
+                            <width>400</width>
+                            <label>$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <scroll>true</scroll>
+                            <shadowcolor>black</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <description>NextRecordingTitle Channel</description>
+                            <top>295</top>
+                            <height>30</height>
+                            <width>800</width>
+                            <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font12_title</font>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
                 <include name="SubMenu">
                     <param name="list_id" value="12900"/>
                     <param name="ondown_id" value="12100"/>
@@ -773,7 +885,7 @@
                                 <control type="label">
                                     <posx>130</posx>
                                     <posy>47</posy>
-                                <width>230</width>
+                                    <width>230</width>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
@@ -873,7 +985,7 @@
                         <onback>SetFocus(9000)</onback>
                         <preloaditems>1</preloaditems>
                         <include>OpenClose_WidgetZoom</include>
-                               <itemlayout width="273">
+                        <itemlayout width="273">
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>0</left>
@@ -937,7 +1049,7 @@
                                 <control type="label">
                                     <posx>130</posx>
                                     <posy>47</posy>
-                                <width>230</width>
+                                    <width>230</width>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
