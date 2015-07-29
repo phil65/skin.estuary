@@ -159,6 +159,14 @@
     <include name="Media_Menu">
         <control type="group">
             <include>OpenClose_FadeSlide_Left</include>
+        <animation type="Conditional" condition="ControlGroup(9000).HasFocus">
+            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
+            <effect type="slide" start="-320" end="0" time="400" tween="cubic" easing="out" />
+        </animation>
+        <animation type="Conditional" condition="!ControlGroup(9000).HasFocus">
+            <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+            <effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
+        </animation>
             <control type="image">
                 <description>Menu Panel</description>
                 <posx>0</posx>
