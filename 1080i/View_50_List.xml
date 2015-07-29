@@ -9,35 +9,39 @@
                 <posy>200</posy>
                 <width>469</width>
                 <height>704</height>
+                <include>OpenClose_FadeSlide_Left</include>
                 <aspectratio aligny="bottom">keep</aspectratio>
                 <fadetime>300</fadetime>
                 <bordertexture>colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
                 <texture border="4" background="true" fallback="info/movieinfogradient.png">$INFO[ListItem.Art(poster)]</texture>
             </control>
-            <control type="image">
-                <right>110</right>
-                <posy>200</posy>
-                <width>469</width>
-                <height>704</height>
-                <aspectratio>stretch</aspectratio>
-                <bordertexture>colors/black.png</bordertexture>
-                <bordersize>4</bordersize>
-                <texture border="4" background="true" fallback="info/movieinfogradient.png">colors/black.png</texture>
-            </control>
-            <control type="image">
-                <right>110</right>
-                <posy>200</posy>
-                <width>469</width>
-                <height>704</height>
-                <aspectratio aligny="bottom">keep</aspectratio>
-                <fadetime>300</fadetime>
-                <bordertexture>colors/black.png</bordertexture>
-                <bordersize>4</bordersize>
-                <texture border="4" background="true" fallback="info/movieinfogradient.png">$INFO[ListItem.Art(fanart)]</texture>
+            <control type="group">
+                <include>OpenClose_FadeSlide_Right</include>
+                <control type="image">
+                    <right>110</right>
+                    <posy>200</posy>
+                    <width>469</width>
+                    <height>704</height>
+                    <aspectratio>stretch</aspectratio>
+                    <bordertexture>colors/black.png</bordertexture>
+                    <bordersize>4</bordersize>
+                    <texture border="4" background="true" fallback="info/movieinfogradient.png">colors/black.png</texture>
+                </control>
+                <control type="image">
+                    <right>110</right>
+                    <posy>200</posy>
+                    <width>469</width>
+                    <height>704</height>
+                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <fadetime>300</fadetime>
+                    <bordertexture>colors/black.png</bordertexture>
+                    <bordersize>4</bordersize>
+                    <texture border="4" background="true" fallback="info/movieinfogradient.png">$INFO[ListItem.Art(fanart)]</texture>
+                </control>
             </control>
             <control type="group">
-                <include>OpenClose_FadeSlide_Left</include>
+                <include>OpenClose_FadeSlide_Right</include>
                 <posx>600</posx>
                 <posy>200</posy>
                 <control type="image">
