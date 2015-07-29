@@ -588,23 +588,23 @@
                 <include>Vis_FadeSlide_Right</include>
                 <control type="group">
                     <description>Weather info</description>
-                    <height>210</height>
+                    <height>380</height>
                     <control type="image">
                         <posy>40</posy>
                         <posx>500</posx>
-                        <width>1300</width>
-                        <height>190</height>
+                        <width>1320</width>
+                        <height>350</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
                         <posy>20</posy>
                         <posx>530</posx>
-                        <width>210</width>
-                        <height>210</height>
+                        <width>260</width>
+                        <height>260</height>
                         <texture colordiffuse="FFFFFFFF">$INFO[Weather.conditions]</texture>
                     </control>
                     <control type="label">
-                        <left>950</left>
+                        <left>990</left>
                         <top>170</top>
                         <aligny>center</aligny>
                         <height>24</height>
@@ -615,7 +615,7 @@
                         <label>$INFO[Weather.Conditions]</label>
                     </control>
                     <control type="label">
-                        <left>950</left>
+                        <left>990</left>
                         <top>130</top>
                         <aligny>center</aligny>
                         <height>24</height>
@@ -626,7 +626,7 @@
                         <label>$INFO[Weather.Temperature]</label>
                     </control>
                     <control type="label">
-                        <left>950</left>
+                        <left>990</left>
                         <top>70</top>
                         <aligny>center</aligny>
                         <height>24</height>
@@ -637,15 +637,34 @@
                         <label>$INFO[Weather.Location]</label>
                     </control>
                 </control>
+                <include name="SubMenu">
+                    <param name="list_id" value="15900"/>
+                    <param name="ondown_id" value="15100"/>
+                    <param name="item1_id" value="15901" />
+                    <param name="item1_onclick" value="ActivateWindow(addonbrowser)" />
+                    <param name="item1_label" value="Refresh" />
+                    <param name="item2_id" value="15902" />
+                    <param name="item2_onclick" value="ActivateWindow(filemanager)" />
+                    <param name="item2_label" value="Previous city" />
+                    <param name="item3_id" value="15903" />
+                    <param name="item3_onclick" value="ActivateWindow(filemanager)" />
+                    <param name="item3_label" value="Next city" />
+                    <param name="item4_id" value="15904" />
+                    <param name="item4_onclick" value="ActivateWindow(filemanager)" />
+                    <param name="item4_label" value="Weather settings" />
+                    <param name="item5_vis" value="False" />
+                    <param name="item6_vis" value="False" />
+                    <param name="item7_vis" value="False" />
+                </include>
                 <control type="group">
                     <description>Square Weather Widget including header and arrows</description>
-                    <height>330</height>
+                    <height>432</height>
                     <posx>0</posx>
                     <posy>0</posy>
                     <visible>IntegerGreaterThan(Container(15100).NumItems,0) | Container(15100).IsUpdating</visible>
                     <control type="image">
                         <posx>445</posx>
-                        <posy>200</posy>
+                        <posy>230</posy>
                         <width>28</width>
                         <height>28</height>
                         <texture flipx="true">overlays/arrowright.png</texture>
@@ -655,7 +674,7 @@
                     </control>
                     <control type="image">
                         <posx>1840</posx>
-                        <posy>200</posy>
+                        <posy>230</posy>
                         <width>28</width>
                         <height>28</height>
                         <texture>overlays/arrowright.png</texture>
@@ -684,19 +703,19 @@
                         <orientation>horizontal</orientation>
                         <onleft>9000</onleft>
                         <onright>15100</onright>
-                        <onup>20000</onup>
+                        <onup>15900</onup>
                         <ondown>Control.SetFocus(15200,$INFO[Container(15100).Position])</ondown>
                         <ondown>15200</ondown>
                         <onback>SetFocus(9000)</onback>
                         <preloaditems>1</preloaditems>
                         <include>OpenClose_WidgetZoom</include>
-                        <itemlayout width="269">
+                        <itemlayout width="273">
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>0</left>
                                 <posy>20</posy>
                                 <width>260</width>
-                                <height>290</height>
+                                <height>350</height>
                                 <texture border="40">buttons/button-nofo.png</texture>
                             </control>
                             <control type="image">
@@ -717,7 +736,7 @@
                                 <font>font13</font>
                             </control>
                         </itemlayout>
-                        <focusedlayout width="269">
+                        <focusedlayout width="273">
                             <control type="group">
                                 <animation type="Focus">
                                     <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
@@ -730,7 +749,7 @@
                                     <left>0</left>
                                     <posy>20</posy>
                                     <width>260</width>
-                                    <height>290</height>
+                                    <height>350</height>
                                     <texture border="40">buttons/button-nofo.png</texture>
                                 </control>
                                 <control type="image">
@@ -738,7 +757,7 @@
                                     <left>0</left>
                                     <posy>20</posy>
                                     <width>260</width>
-                                    <height>290</height>
+                                    <height>350</height>
                                     <texture border="40">buttons/button-theme-fo.png</texture>
                                     <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                                     <visible>Control.HasFocus(15100)</visible>
@@ -803,13 +822,13 @@
                 </control>
                 <control type="group">
                     <description>Square Widget including header and arrows</description>
-                    <height>330</height>
+                    <height>432</height>
                     <posx>0</posx>
                     <posy>0</posy>
                     <visible>IntegerGreaterThan(Container(15200).NumItems,0) | Container(15200).IsUpdating</visible>
                     <control type="image">
                         <posx>445</posx>
-                        <posy>200</posy>
+                        <posy>230</posy>
                         <width>28</width>
                         <height>28</height>
                         <texture flipx="true">overlays/arrowright.png</texture>
@@ -819,7 +838,7 @@
                     </control>
                     <control type="image">
                         <posx>1840</posx>
-                        <posy>200</posy>
+                        <posy>230</posy>
                         <width>28</width>
                         <height>28</height>
                         <texture>overlays/arrowright.png</texture>
@@ -854,13 +873,13 @@
                         <onback>SetFocus(9000)</onback>
                         <preloaditems>1</preloaditems>
                         <include>OpenClose_WidgetZoom</include>
-                          <itemlayout width="269">
+                               <itemlayout width="273">
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>0</left>
                                 <posy>20</posy>
                                 <width>260</width>
-                                <height>290</height>
+                                <height>350</height>
                                 <texture border="40">buttons/button-nofo.png</texture>
                             </control>
                             <control type="image">
@@ -878,10 +897,10 @@
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>white</textcolor>
                                 <width>230</width>
-                                <font>font14</font>
+                                <font>font13</font>
                             </control>
                         </itemlayout>
-                        <focusedlayout width="269">
+                        <focusedlayout width="273">
                             <control type="group">
                                 <animation type="Focus">
                                     <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
@@ -894,7 +913,7 @@
                                     <left>0</left>
                                     <posy>20</posy>
                                     <width>260</width>
-                                    <height>290</height>
+                                    <height>350</height>
                                     <texture border="40">buttons/button-nofo.png</texture>
                                 </control>
                                 <control type="image">
@@ -902,7 +921,7 @@
                                     <left>0</left>
                                     <posy>20</posy>
                                     <width>260</width>
-                                    <height>290</height>
+                                    <height>350</height>
                                     <texture border="40">buttons/button-theme-fo.png</texture>
                                     <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                                     <visible>Control.HasFocus(15200)</visible>
@@ -922,7 +941,7 @@
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
-                                    <font>font14</font>
+                                    <font>font13</font>
                                 </control>
                             </control>
                         </focusedlayout>
