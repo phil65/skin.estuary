@@ -7,7 +7,6 @@
             <posx>0</posx>
             <posy>200</posy>
             <visible>Control.IsVisible(51)</visible>
-
             <control type="image">
                 <posx>50</posx>
                 <posy>221</posy>
@@ -46,8 +45,8 @@
                 <preloaditems>1</preloaditems>
                 <viewtype label="Poster">icon</viewtype>
                 <animation type="WindowOpen">
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
-                    <effect type="zoom" start="120" end="100" time="400" delay="300" tween="cubic" easing="out" />
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
+                    <effect type="zoom" start="120" end="100" time="400" tween="cubic" easing="out" />
                 </animation>
                 <animation type="WindowClose">
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
@@ -89,6 +88,18 @@
                 <height>315</height>
                 <aspectratio>stretch</aspectratio>
                 <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+            </control>
+            <control type="label">
+                <left>645</left>
+                <posy>405</posy>
+                <width>1160</width>
+                <height>40</height>
+                <label>$INFO[ListItem.Title]</label>
+                <font>font30_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <scroll>false</scroll>
+                <align>left</align>
             </control>
             <control type="image">
                 <posx>110</posx>
