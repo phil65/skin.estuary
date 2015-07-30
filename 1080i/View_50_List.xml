@@ -3,7 +3,6 @@
     <include name="View_50_List">
         <control type="group">
             <description>List Viewtype</description>
-            <visible>Control.IsVisible(50)</visible>
             <control type="image">
                 <left>110</left>
                 <posy>200</posy>
@@ -15,9 +14,12 @@
                 <bordertexture>colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
                 <texture border="4" background="true" fallback="DefaultMovie.png">$INFO[ListItem.Art(poster)]</texture>
+            <visible>Control.IsVisible(50)</visible>
             </control>
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
+                <visible>Control.IsVisible(50)</visible>
+                <include>Vis_FadeSlide_Right</include>
                 <control type="image">
                     <right>110</right>
                     <posy>200</posy>
@@ -52,6 +54,8 @@
                 <include>OpenClose_FadeSlide_Right</include>
                 <posx>600</posx>
                 <posy>200</posy>
+                <visible>Control.IsVisible(50)</visible>
+                <include>Vis_FadeSlide_Right</include>
                 <control type="image">
                     <description>background image</description>
                     <left>0</left>

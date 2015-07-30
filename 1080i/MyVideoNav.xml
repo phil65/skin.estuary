@@ -9,6 +9,22 @@
         <include>View_50_List</include>
         <include>View_51_Poster</include>
         <include>Media_Menu</include>
+        <control type="label">
+            <posx>110</posx>
+            <posy>130</posy>
+            <width>600</width>
+            <height>40</height>
+            <label>Sorted by: Title</label>
+            <font>font30</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>text_shadow</shadowcolor>
+            <scroll>false</scroll>
+            <align>left</align>
+            <animation effect="fade" delay="300" start="0" end="100" time="150">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+            <!-- <visible>Control.IsVisible(51)</visible>
+ -->
+        </control>
         <include>TopBar</include>
         <include>BottomBar</include>
     </controls>
