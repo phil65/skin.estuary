@@ -376,16 +376,23 @@
                     <control type="image">
                         <posy>40</posy>
                         <posx>500</posx>
-                        <width>1320</width>
+                        <width>650</width>
+                        <height>350</height>
+                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    </control>
+                    <control type="image">
+                        <posy>40</posy>
+                        <posx>1170</posx>
+                        <width>650</width>
                         <height>350</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="group">
                         <visible>PVR.HasNonRecordingTimer</visible>
-                        <posx>1300</posx>
+                        <posx>1170</posx>
                         <posy>50</posy>
                         <control type="image">
-                            <left>280</left>
+                            <left>50</left>
                             <top>50</top>
                             <width>200</width>
                             <height>200</height>
@@ -394,12 +401,12 @@
                         </control>
                         <control type="label">
                             <description>Next Timer Header label</description>
-                            <left>0</left>
+                            <left>50</left>
                             <top>5</top>
                             <height>25</height>
                             <width>480</width>
                             <label>$LOCALIZE[19157]</label>
-                            <align>right</align>
+                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font24_title</font>
                             <textcolor>blue</textcolor>
@@ -407,12 +414,12 @@
                         </control>
                         <control type="label">
                             <description>NextRecordingDateTime</description>
-                            <left>0</left>
+                            <left>50</left>
                             <top>265</top>
                             <height>25</height>
                             <width>480</width>
                             <label>$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]</label>
-                            <align>right</align>
+                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font12</font>
                             <scroll>true</scroll>
@@ -420,12 +427,12 @@
                         </control>
                         <control type="label">
                             <description>NextRecordingTitle Channel</description>
-                            <left>-200</left>
+                            <left>50</left>
                             <top>295</top>
                             <height>25</height>
                             <width>680</width>
                             <label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
-                            <align>right</align>
+                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font12_title</font>
                             <shadowcolor>black</shadowcolor>
