@@ -6,23 +6,9 @@
     <include file="Includes_MediaMenu.xml" />
     <include file="View_50_List.xml" />
     <include file="View_51_Poster.xml" />
+    <include file="Variables.xml" />
     <constant name="FanartCrossfadeTime">400</constant>
     <constant name="IconCrossfadeTime">400</constant>
-    <variable name="SelectLabel">
-        <value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
-        <value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
-    </variable>
-    <variable name="SettingsSectionIcon">
-        <value condition="Window.IsActive(picturessettings)">icons/settings/pictures.png</value>
-        <value condition="Window.IsActive(programssettings)">icons/settings/programs.png</value>
-        <value condition="Window.IsActive(weathersettings)">icons/settings/weather.png</value>
-        <value condition="Window.IsActive(musicsettings)">icons/settings/music.png</value>
-        <value condition="Window.IsActive(systemsettings)">icons/settings/system.png</value>
-        <value condition="Window.IsActive(videossettings)">icons/settings/video.png</value>
-        <value condition="Window.IsActive(servicesettings)">icons/settings/network.png</value>
-        <value condition="Window.IsActive(appearancesettings)">icons/settings/appearance.png</value>
-        <value condition="Window.IsActive(pvrsettings)">icons/settings/livetv.png</value>
-    </variable>
     <include name="HiddenObject">
         <posx>-3000</posx>
         <posy>-3000</posy>
@@ -85,6 +71,40 @@
             <texture>frame/InfoBarTop.png</texture>
         </control>
         <control type="grouplist">
+            <posx>5</posx>
+            <description>Left side of top bar</description>
+            <width>900</width>
+            <orientation>horizontal</orientation>
+            <usecontrolcoords>true</usecontrolcoords>
+            <control type="image">
+                <width>56</width>
+                <height>38</height>
+                <aspectratio align="center">keep</aspectratio>
+                <texture>$VAR[BreadcrumbsIconVar]</texture>
+                <visible>!Player.HasMedia</visible>
+            </control>
+            <control type="label">
+                <label>$VAR[BreadcrumbsVideoVar]</label>
+                <include>BreadcrumbsLabel</include>
+            </control>
+            <control type="label">
+                <label>$VAR[BreadcrumbsLabel2Var]</label>
+                <include>BreadcrumbsLabel</include>
+                <visible>!Window.IsActive(PVR)</visible>
+            </control>
+            <control type="label">
+                <label>$INFO[Control.GetLabel(10),: ]</label>
+                <include>BreadcrumbsLabel</include>
+                <visible>!Stringcompare(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
+            </control>
+            <control type="label">
+                <label>(Filtered)</label>
+                <include>BreadcrumbsLabel</include>
+                <visible>Container.Filtered</visible>
+            </control>
+        </control>
+        <control type="grouplist">
+            <description>Right side of top bar</description>
             <posx>1400</posx>
             <width>500</width>
             <align>right</align>
@@ -93,15 +113,8 @@
             <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
             <control type="label">
                 <description>Weather label</description>
-                <posy>12</posy>
-                <width>auto</width>
-                <height>100</height>
+                <include>BreadcrumbsLabel</include>
                 <label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
-                <font>font16</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>text_shadow</shadowcolor>
-                <align>left</align>
-                <scroll>false</scroll>
                 <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
             </control>
             <control type="image">
@@ -115,14 +128,8 @@
             </control>
             <control type="label">
                 <description>System Time</description>
-                <posy>12</posy>
-                <height>100</height>
-                <width>auto</width>
-                <align>left</align>
-                <font>font16</font>
+                <include>BreadcrumbsLabel</include>
                 <label>$INFO[System.Time]</label>
-                <textcolor>white</textcolor>
-                <shadowcolor>text_shadow</shadowcolor>
             </control>
             <control type="image">
                 <description>System Time Clock</description>
@@ -134,6 +141,15 @@
                 <aspectratio>keep</aspectratio>
             </control>
         </control>
+    </include>
+    <include name="BreadcrumbsLabel">
+        <font>font16</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>text_shadow</shadowcolor>
+        <posy>12</posy>
+        <height>100</height>
+        <width>auto</width>
+        <align>left</align>
     </include>
     <include name="DefaultBackground">
         <control type="videowindow">
@@ -176,6 +192,17 @@
             <width>1920</width>
             <height>80</height>
             <texture border="1">frame/InfoBarBottom.png</texture>
+        </control>
+        <control type="label">
+            <posy>1010</posy>
+            <left>0</left>
+            <width>1900</width>
+            <height>50</height>
+            <align>right</align>
+            <font>font16</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>text_shadow</shadowcolor>
+            <label>Items: $INFO[Container.NumItems,[COLOR button_focus],[/COLOR]]   •   Page: [COLOR button_focus]$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages][/COLOR]</label>
         </control>
     </include>
     <include name="KeyboardButton">
