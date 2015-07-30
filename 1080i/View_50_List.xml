@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include>MediaBackground</include>
     <include name="View_50_List">
         <control type="group">
             <description>List Viewtype</description>
@@ -32,7 +33,7 @@
                     <right>130</right>
                     <posy>210</posy>
                     <width>429</width>
-                    <height>410</height>
+                    <height>335</height>
                     <align>justify</align>
                     <font>font_textbox</font>
                     <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>

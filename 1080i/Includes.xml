@@ -144,6 +144,27 @@
             <texture>special://skin/extras/backgrounds/01.jpg</texture>
         </control>
     </include>
+    <include name="MediaBackground">
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <aspectratio>scale</aspectratio>
+            <fadetime>400</fadetime>
+            <bordertexture>colors/black.png</bordertexture>
+            <bordersize>4</bordersize>
+            <texture background="true" fallback="special://skin/extras/backgrounds/01.jpg">$INFO[ListItem.Art(fanart)]</texture>
+        </control>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <aspectratio>stretch</aspectratio>
+            <texture colordiffuse="C2FFFFFF">colors/black.png</texture>
+        </control>
+    </include>
     <include name="BottomBar">
         <control type="image">
             <description>List Panel</description>
