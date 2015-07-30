@@ -39,6 +39,15 @@
                     <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
                     <label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
                 </control>
+                <control type="label">
+                    <right>130</right>
+                    <posy>570</posy>
+                    <width>429</width>
+                    <height>335</height>
+                    <align>justify</align>
+                    <font>font_textbox</font>
+                    <label>Flags Placeholder</label>
+                </control>
                 <control type="image">
                     <right>110</right>
                     <posy>200</posy>
@@ -49,6 +58,53 @@
                     <bordertexture>colors/black.png</bordertexture>
                     <bordersize>4</bordersize>
                     <texture border="4" background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(fanart)]</texture>
+                </control>
+                <control type="image">
+                    <right>110</right>
+                    <posy>830</posy>
+                    <width>469</width>
+                    <height>70</height>
+                    <fadetime>300</fadetime>
+                    <texture colordiffuse="D3FFFFFF">colors/black.png</texture>
+                </control>
+                <control type="image">
+                    <posx>556r</posx>
+                    <posy>852</posy>
+                    <width>32</width>
+                    <height>32</height>
+                    <fadetime>300</fadetime>
+                    <texture border="1">lists/year.png</texture>
+                    <visible>!IsEmpty(ListItem.Year)</visible>
+                </control>
+                <control type="label">
+                    <posx>510r</posx>
+                    <posy>850</posy>
+                    <width>100</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <font>font_textbox</font>
+                    <label>$INFO[ListItem.Year]</label>
+                </control>
+                <control type="image">
+                    <posx>441r</posx>
+                    <posy>852</posy>
+                    <width>32</width>
+                    <height>32</height>
+                    <fadetime>300</fadetime>
+                    <texture border="1">lists/rating.png</texture>
+                    <animation effect="slide" start="0,0" end="-115,0" time="0" reversible="false" condition="IsEmpty(ListItem.Year)">conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="175" condition="IsEmpty(ListItem.Year)">conditional</animation>
+                </control>
+                <control type="label">
+                    <posx>395r</posx>
+                    <posy>850</posy>
+                    <width>270</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <font>font_textbox</font>
+                    <label>$INFO[ListItem.RatingAndVotes]</label>
+                    <animation effect="slide" start="0,0" end="-115,0" time="0" reversible="false" condition="IsEmpty(ListItem.Year)">conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="175" condition="IsEmpty(ListItem.Year)">conditional</animation>
                 </control>
             </control>
             <control type="group">
