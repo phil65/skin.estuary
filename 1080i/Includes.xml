@@ -138,6 +138,11 @@
     <include name="DefaultBackground">
         <control type="videowindow">
             <include>FullScreenDimensions</include>
+            <visible>Player.HasVideo</visible>
+        </control>
+        <control type="visualisation">
+            <include>FullScreenDimensions</include>
+            <visible>Player.HasAudio</visible>
         </control>
         <control type="image">
             <posx>0</posx>
