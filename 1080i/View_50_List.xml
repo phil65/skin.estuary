@@ -14,7 +14,7 @@
                 <fadetime>300</fadetime>
                 <bordertexture>colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
-                <texture border="4" background="true" fallback="info/movieinfogradient.png">$INFO[ListItem.Art(poster)]</texture>
+                <texture border="4" background="true" fallback="DefaultMovie.png">$INFO[ListItem.Art(poster)]</texture>
             </control>
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
@@ -24,9 +24,16 @@
                     <width>469</width>
                     <height>704</height>
                     <aspectratio>stretch</aspectratio>
-                    <bordertexture>colors/black.png</bordertexture>
-                    <bordersize>4</bordersize>
-                    <texture border="4" background="true" fallback="info/movieinfogradient.png">colors/black.png</texture>
+                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                </control>
+                <control type="textbox">
+                    <right>130</right>
+                    <posy>210</posy>
+                    <width>429</width>
+                    <height>450</height>
+                    <align>justify</align>
+                    <font>font12</font>
+                    <label>$INFO[ListItem.Plot]</label>
                 </control>
                 <control type="image">
                     <right>110</right>
@@ -37,7 +44,7 @@
                     <fadetime>300</fadetime>
                     <bordertexture>colors/black.png</bordertexture>
                     <bordersize>4</bordersize>
-                    <texture border="4" background="true" fallback="info/movieinfogradient.png">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture border="4" background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(fanart)]</texture>
                 </control>
             </control>
             <control type="group">
@@ -94,6 +101,19 @@
                             <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
+                        <control type="label">
+                            <posx>695</posx>
+                            <posy>0</posy>
+                            <height>70</height>
+                            <width>605</width>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
                         <control type="image">
                             <posx>0</posx>
                             <posy>-4</posy>
@@ -139,6 +159,19 @@
                             <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                             <scroll>false</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>695</posx>
+                            <posy>0</posy>
+                            <height>70</height>
+                            <width>605</width>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="image">
                             <posx>0</posx>
