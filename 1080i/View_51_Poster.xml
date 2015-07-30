@@ -6,8 +6,8 @@
             <height>424</height>
             <posx>0</posx>
             <posy>200</posy>
-            <!-- <visible>Control.IsVisible(51)</visible>
- -->
+            <visible>Control.IsVisible(51)</visible>
+
             <control type="image">
                 <posx>50</posx>
                 <posy>221</posy>
@@ -35,6 +35,8 @@
                 <posy>0</posy>
                 <width>1660</width>
                 <height>704</height>
+                <focusposition>0</focusposition>
+                <movement>0</movement>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>horizontal</orientation>
                 <onleft>9000</onleft>
