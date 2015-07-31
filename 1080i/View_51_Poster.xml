@@ -42,7 +42,7 @@
                     <onleft>9000</onleft>
                     <onup>9000</onup>
                     <onright>50</onright>
-                    <visible>![Container.Content() | Container.Content(tags) | Container.Content(years)]</visible>
+                    <visible>![Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files)]</visible>
                     <onback>SetFocus(9000)</onback>
                     <preloaditems>1</preloaditems>
                     <viewtype label="Poster">icon</viewtype>
