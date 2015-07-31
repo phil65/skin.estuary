@@ -332,13 +332,13 @@
                     <param name="list_id" value="11900"/>
                     <param name="ondown_id" value="11100"/>
                     <param name="item1_id" value="11901" />
-                    <param name="item1_onclick" value="ActivateWindow(TVChannels)" />
+                    <param name="item1_onclick" value="ActivateWindow(Videos,Files,return)" />
                     <param name="item1_label" value="Files" />
                     <param name="item2_id" value="11902" />
-                    <param name="item2_onclick" value="ActivateWindow(TVGuide)" />
+                    <param name="item2_onclick" value="ActivateWindow(Videos,special://videoplaylists/,return)" />
                     <param name="item2_label" value="Playlists" />
                     <param name="item3_id" value="11903" />
-                    <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
+                    <param name="item3_onclick" value="Notification(not possible yet., Fuck.)" />
                     <param name="item3_label" value="Add source..." />
                     <param name="item4_id" value="11903" />
                     <param name="item4_onclick" value="PlayDVD" />
