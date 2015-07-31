@@ -10,6 +10,11 @@
         <value condition="!IsEmpty(Container(5300).ListItem.Art(fanart)) + Control.HasFocus(5300)">$INFO[Container(5300).ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(Container(5400).ListItem.Art(fanart)) + Control.HasFocus(5400)">$INFO[Container(5400).ListItem.Art(fanart)]</value>
     </variable>
+    <variable name="ListWatchedIcon">
+        <value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
+        <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlays/watched/OverlayWatched-List.png</value>
+        <value condition="[stringcompare(ListItem.Overlay,OverlayUnwatched.png) | Container.Content(songs)] + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(54)">overlays/watched/OverlayEmpty-List.png</value>
+    </variable>
     <variable name="SettingsSectionIcon">
         <value condition="Window.IsActive(picturessettings)">icons/settings/pictures.png</value>
         <value condition="Window.IsActive(programssettings)">icons/settings/programs.png</value>

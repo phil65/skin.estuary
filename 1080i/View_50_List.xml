@@ -169,26 +169,26 @@
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="image">
-                            <left>0</left>
-                            <top>-4</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>lists/arrow-right-nofo.png</texture>
+                            <left>19</left>
+                            <top>20</top>
+                            <width>32</width>
+                            <height>32</height>
+                            <texture>$VAR[ListWatchedIcon]</texture>
                         </control>
                         <control type="image">
-                            <left>0</left>
-                            <top>-4</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>lists/arrow-right-fo.png</texture>
+                            <left>19</left>
+                            <top>20</top>
+                            <width>32</width>
+                            <height>32</height>
+                            <texture colordiffuse="button_focus">$VAR[ListWatchedIcon]</texture>
                             <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
                         </control>
                         <control type="image">
-                            <left>0</left>
-                            <top>-4</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>lists/arrow-right-colour-fo.png</texture>
+                            <left>19</left>
+                            <top>20</top>
+                            <width>32</width>
+                            <height>32</height>
+                            <texture>$VAR[ListWatchedIcon]</texture>
                             <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
                             <visible>!Control.HasFocus(50)</visible>
                         </control>
@@ -228,11 +228,11 @@
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="image">
-                            <left>0</left>
-                            <top>-4</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>lists/arrow-right-nofo.png</texture>
+                            <left>19</left>
+                            <top>20</top>
+                            <width>32</width>
+                            <height>32</height>
+                            <texture>$VAR[ListWatchedIcon]</texture>
                         </control>
                     </itemlayout>
                 </control>
