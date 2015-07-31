@@ -9,20 +9,18 @@
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="800" />
-			<param name="DialogBackgroundHeight" value="500" />
-			<param name="DialogHeaderWidth" value="720" />
+			<param name="DialogBackgroundWidth" value="1200" />
+			<param name="DialogBackgroundHeight" value="750" />
+			<param name="DialogHeaderWidth" value="1080" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[587]" />
 			<param name="DialogHeaderId" value="2" />
-			<param name="CloseButtonLeft" value="710" />
-			<param name="CloseButtonNav" value="10" />
 		</include>
 		<control type="grouplist" id="5">
 			<description>control area</description>
 			<left>30</left>
 			<top>70</top>
-			<width>720</width>
-			<height>350</height>
+			<width>950</width>
+			<height>525</height>
 			<itemgap>4</itemgap>
 			<pagecontrol>6</pagecontrol>
 			<onup>9001</onup>
@@ -49,7 +47,7 @@
 			<description>Default Button</description>
 			<left>0</left>
 			<top>0</top>
-			<height>40</height>
+			<height>100</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
@@ -61,7 +59,7 @@
 			<description>Default RadioButton</description>
 			<left>0</left>
 			<top>0</top>
-			<height>40</height>
+			<height>100</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
@@ -72,7 +70,7 @@
 			<description>Default SpinControlex</description>
 			<left>0</left>
 			<top>0</top>
-			<height>40</height>
+			<height>100</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
@@ -85,7 +83,7 @@
 			<description>Default Slider</description>
 			<left>0</left>
 			<top>0</top>
-			<height>40</height>
+			<height>100</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
@@ -97,22 +95,23 @@
 			<description>Default Edit</description>
 			<left>0</left>
 			<top>0</top>
-			<height>40</height>
+			<height>100</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 		</control>
-		<control type="group" id="9001">
-			<left>190</left>
-			<top>435</top>
+		<control type="grouplist" id="9001">
+			<left>980</left>
+			<top>70</top>
+			<orientation>vertical</orientation>
 			<control type="button" id="28">
 				<description>Ok Button</description>
 				<left>0</left>
 				<top>0</top>
 				<width>200</width>
-				<height>40</height>
+				<height>100</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
@@ -129,7 +128,7 @@
 				<left>210</left>
 				<top>0</top>
 				<width>200</width>
-				<height>40</height>
+				<height>100</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>

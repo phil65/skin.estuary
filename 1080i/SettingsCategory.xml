@@ -174,13 +174,7 @@
             <description>Default Button</description>
             <left>2</left>
             <width>1256</width>
-            <textoffsetx>45</textoffsetx>
-            <top>0</top>
-            <height>75</height>
-            <font>font13</font>
-            <textcolor>white</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <invalidcolor>invalid</invalidcolor>
+            <include>DefaultSettingButton</include>
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
             <texturenofocus border="4">lists/separator.png</texturenofocus>
         </control>
@@ -188,12 +182,7 @@
             <description>Default RadioButton</description>
             <left>2</left>
             <width>1256</width>
-            <textoffsetx>45</textoffsetx>
-            <top>0</top>
-            <height>75</height>
-            <font>font13</font>
-            <textcolor>white</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <include>DefaultSettingButton</include>
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
             <texturenofocus border="40">lists/separator.png</texturenofocus>
         </control>
@@ -201,12 +190,7 @@
             <description>Default SpinControlex</description>
             <left>2</left>
             <width>1256</width>
-            <textoffsetx>45</textoffsetx>
-            <top>0</top>
-            <height>75</height>
-            <font>font13</font>
-            <textcolor>white</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <include>DefaultSettingButton</include>
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
             <texturenofocus border="40">lists/separator.png</texturenofocus>
             <aligny>center</aligny>
@@ -216,12 +200,7 @@
             <description>Default Slider</description>
             <left>2</left>
             <width>1256</width>
-            <textoffsetx>45</textoffsetx>
-            <posy>0</posy>
-            <height>75</height>
-            <font>font13</font>
-            <textcolor>white</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <include>DefaultSettingButton</include>
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
             <texturenofocus border="40">lists/separator.png</texturenofocus>
             <aligny>center</aligny>

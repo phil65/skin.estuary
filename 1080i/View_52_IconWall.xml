@@ -11,7 +11,7 @@
                 <onright>52</onright>
                 <onup>52</onup>
                 <ondown>52</ondown>
-                <visible>Container.Content()</visible>
+                <visible>Container.Content() | Container.Content(tags) | Container.Content(years)</visible>
                 <viewtype label="Icon Wall">icon</viewtype>
                 <include>OpenClose_FadeSlide_Right</include>
                 <itemlayout height="270" width="440">

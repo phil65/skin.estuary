@@ -20,6 +20,15 @@
         <label>-</label>
         <font>-</font>
     </include>
+    <include name="DefaultSettingButton">
+        <textoffsetx>45</textoffsetx>
+        <top>0</top>
+        <height>75</height>
+        <font>font13</font>
+        <textcolor>white</textcolor>
+        <focusedcolor>white</focusedcolor>
+        <invalidcolor>invalid</invalidcolor>
+    </include>
     <include name="DialogBackgroundCommons">
         <control type="image">
             <description>background image</description>
