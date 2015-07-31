@@ -172,9 +172,9 @@
                             </control>
                             <control type="group">
                                 <control type="label">
-                                    <left>110</left>
+                                    <left>20</left>
                                     <top>267</top>
-                                    <width>198</width>
+                                    <width>178</width>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>font10</font>
                                     <textcolor>white</textcolor>
@@ -183,7 +183,7 @@
                                     <align>center</align>
                                 </control>
                                 <control type="label">
-                                    <left>110</left>
+                                    <left>20</left>
                                     <top>291</top>
                                     <width>178</width>
                                     <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
@@ -322,7 +322,7 @@
                             <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                         </control>
                         <control type="label">
-                            <left>200</left>
+                            <left>20</left>
                             <top>240</top>
                             <width>360</width>
                             <label>$INFO[ListItem.Label]</label>
@@ -333,7 +333,7 @@
                             <align>center</align>
                         </control>
                         <control type="label">
-                            <left>200</left>
+                            <left>20</left>
                             <top>264</top>
                             <width>360</width>
                             <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
@@ -395,7 +395,7 @@
                             <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                         </control>
                         <control type="label">
-                            <left>200</left>
+                            <left>20</left>
                             <top>240</top>
                             <width>360</width>
                             <label>$INFO[ListItem.Label]</label>
@@ -406,7 +406,7 @@
                             <align>center</align>
                         </control>
                         <control type="label">
-                            <left>200</left>
+                            <left>20</left>
                             <top>264</top>
                             <width>360</width>
                             <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
@@ -535,7 +535,7 @@
                             </control>
                             <control type="group">
                                 <control type="label">
-                                    <left>150</left>
+                                    <left>20</left>
                                     <top>240</top>
                                     <width>260</width>
                                     <label>$INFO[ListItem.Label]$INFO[ListItem.Year, - ]</label>
@@ -546,7 +546,7 @@
                                     <align>center</align>
                                 </control>
                                 <control type="label">
-                                    <left>150</left>
+                                    <left>20</left>
                                     <top>264</top>
                                     <width>260</width>
                                     <label>$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version)]</label>
