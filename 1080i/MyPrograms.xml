@@ -8,9 +8,9 @@
         <include>DefaultBackground</include>
         <include>View_50_List</include>
         <include>Media_Menu</include>
-                <include name="TopBar">
+        <include name="TopBar">
             <param name="breadcrumbs_label" value="$VAR[BreadcrumbsVideoVar]" />
-            <param name="breadcrumbs_icon" value="$VAR[BreadcrumbsIconVar]" />
+            <param name="breadcrumbs_icon" value="$LOCALIZE[10001]" />
         </include>
         <include>BottomBar</include>
     </controls>
