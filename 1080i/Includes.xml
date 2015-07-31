@@ -29,8 +29,21 @@
         <textcolor>white</textcolor>
         <focusedcolor>white</focusedcolor>
         <invalidcolor>invalid</invalidcolor>
+        <selectedcolor>selected</selectedcolor>
         <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
         <texturenofocus border="40">lists/separator.png</texturenofocus>
+    </include>
+    <include name="DefaultBorderedSettingButton">
+        <height>100</height>
+        <font>font13</font>
+        <aligny>center</aligny>
+        <textcolor>white</textcolor>
+        <focusedcolor>white</focusedcolor>
+        <textoffsetx>40</textoffsetx>
+        <invalidcolor>invalid</invalidcolor>
+        <selectedcolor>selected</selectedcolor>
+        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+        <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
     </include>
     <include name="DialogBackgroundCommons">
         <control type="image">
@@ -91,6 +104,7 @@
             <usecontrolcoords>true</usecontrolcoords>
             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+            <itemgap>0</itemgap>
             <control type="image">
                 <posy>10</posy>
                 <width>80</width>
@@ -119,20 +133,20 @@
                 <visible>Container.Filtered</visible>
             </control>
         </control>
-<!--                 <control type="label">
-            <posx>55</posx>
-            <posy>50</posy>
-            <width>600</width>
-            <height>40</height>
-            <label>Sorted by: Title</label>
-            <font>font12</font>
-            <textcolor>white</textcolor>
-            <shadowcolor>text_shadow</shadowcolor>
-            <scroll>false</scroll>
-            <align>left</align>
-            <animation effect="fade" delay="300" start="0" end="100" time="150">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
-        </control> -->
+        <!-- <control type="label">
+             <posx>55</posx>
+             <posy>50</posy>
+             <width>600</width>
+             <height>40</height>
+             <label>Sorted by: Title</label>
+             <font>font12</font>
+             <textcolor>white</textcolor>
+             <shadowcolor>text_shadow</shadowcolor>
+             <scroll>false</scroll>
+             <align>left</align>
+             <animation effect="fade" delay="300" start="0" end="100" time="150">WindowOpen</animation>
+             <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+             </control> -->
         <control type="grouplist">
             <description>Right side of top bar</description>
             <posx>1400</posx>
