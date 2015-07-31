@@ -9,21 +9,18 @@
         <include>View_50_List</include>
         <include>View_51_Poster</include>
         <include>View_52_IconWall</include>
-        <control type="label">
+        <control type="image">
+            <include>OpenClose_FadeSlide_Left</include>
             <posx>110</posx>
-            <posy>130</posy>
-            <width>600</width>
-            <height>40</height>
-            <label>Sorted by: Title</label>
-            <font>font30</font>
-            <textcolor>white</textcolor>
-            <shadowcolor>text_shadow</shadowcolor>
-            <scroll>false</scroll>
-            <align>left</align>
-            <animation effect="fade" delay="300" start="0" end="100" time="150">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
-            <!-- <visible>Control.IsVisible(51)</visible>
- -->
+            <posy>200</posy>
+            <width>469</width>
+            <height>704</height>
+            <fadetime>200</fadetime>
+            <aspectratio>stretch</aspectratio>
+            <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
+            <bordertexture>colors/black.png</bordertexture>
+            <bordersize>4</bordersize>
+            <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
         </control>
         <include>Media_Menu</include>
         <include name="TopBar">

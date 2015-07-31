@@ -4,19 +4,6 @@
     <include name="View_50_List">
         <control type="group">
             <description>List Viewtype</description>
-            <control type="image">
-                <left>110</left>
-                <posy>200</posy>
-                <width>469</width>
-                <height>704</height>
-                <include>OpenClose_FadeSlide_Left</include>
-                <aspectratio aligny="bottom">keep</aspectratio>
-                <fadetime>300</fadetime>
-                <bordertexture>colors/black.png</bordertexture>
-                <bordersize>4</bordersize>
-                <texture border="4" background="true" fallback="DefaultMovie.png">$INFO[ListItem.Art(poster)]</texture>
-            <visible>Control.IsVisible(50)</visible>
-            </control>
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
                 <visible>Control.IsVisible(50)</visible>
@@ -28,6 +15,26 @@
                     <height>704</height>
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                </control>
+                <control type="image">
+                    <posx>976</posx>
+                    <posy>905</posy>
+                    <width>28</width>
+                    <height>28</height>
+                    <texture>overlays/arrowdown.png</texture>
+                    <animation effect="zoom" start="100,0" end="100,100" center="0,905" time="200">VisibleChange</animation>
+                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,910" time="200">WindowOpen</animation>
+                    <visible>Container(50).HasNext</visible>
+                </control>
+                <control type="image">
+                    <posx>976</posx>
+                    <posy>172</posy>
+                    <width>28</width>
+                    <height>28</height>
+                    <texture flipy="true">overlays/arrowdown.png</texture>
+                    <animation effect="zoom" start="100,0" end="100,100" center="0,200" time="200">VisibleChange</animation>
+                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,200" time="200">WindowOpen</animation>
+                    <visible>Container(50).HasPrevious</visible>
                 </control>
                 <control type="textbox">
                     <right>130</right>
