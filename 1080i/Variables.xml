@@ -4,6 +4,12 @@
         <value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
         <value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
     </variable>
+    <variable name="HomeFanartVar">
+        <value condition="!IsEmpty(Container(5100).ListItem.Art(fanart)) + Control.HasFocus(5100)">$INFO[Container(5100).ListItem.Art(fanart)]</value>
+        <value condition="!IsEmpty(Container(5200).ListItem.Art(fanart)) + Control.HasFocus(5200)">$INFO[Container(5200).ListItem.Art(fanart)]</value>
+        <value condition="!IsEmpty(Container(5300).ListItem.Art(fanart)) + Control.HasFocus(5300)">$INFO[Container(5300).ListItem.Art(fanart)]</value>
+        <value condition="!IsEmpty(Container(5400).ListItem.Art(fanart)) + Control.HasFocus(5400)">$INFO[Container(5400).ListItem.Art(fanart)]</value>
+    </variable>
     <variable name="SettingsSectionIcon">
         <value condition="Window.IsActive(picturessettings)">icons/settings/pictures.png</value>
         <value condition="Window.IsActive(programssettings)">icons/settings/programs.png</value>
@@ -49,5 +55,18 @@
         <value condition="Window.IsActive(script-globalsearch-main.xml)">common/DefaultSearch.png</value>
         <value condition="Window.IsActive(PVR)">pvr/TVIcon.png</value>
         <value>common/puzzle_icon.png</value>
+    </variable>
+    <variable name="MusicLibraryUpdateVar">
+        <value condition="Library.IsScanningMusic">Cancel update</value>
+        <value>$LOCALIZE[653]</value>
+    </variable>
+    <variable name="VideoLibraryUpdateVar">
+        <value condition="Library.IsScanningVideo">Cancel update</value>
+        <value>$LOCALIZE[653]</value>
+    </variable>
+    <variable name="LibraryScanLabelVar">
+        <value condition="Window.IsActive(videos) + library.IsScanningVideo">$LOCALIZE[13353]</value>
+        <value condition="Window.IsActive(musiclibrary) + library.IsScanningMusic">$LOCALIZE[13353]</value>
+        <value>$LOCALIZE[653]</value>
     </variable>
 </includes>
