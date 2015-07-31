@@ -233,30 +233,14 @@
             <aspectratio>keep</aspectratio>
             <texture>icon_system.png</texture>
         </control>
-        <include>TopBar</include>
+        <include name="TopBar">
+            <param name="breadcrumbs_label" value="$LOCALIZE[5]$INFO[Control.GetLabel(2), / ]" />
+            <param name="breadcrumbs_icon" value="$VAR[SettingsSectionIcon]" />
+        </include>
         <include>BottomBar</include>
-        <control type="group">
-            <include>OpenClose_FadeSlide_Down</include>
-            <control type="image">
-                <description>breadcrumbs image</description>
-                <left>0</left>
-                <top>10</top>
-                <width>80</width>
-                <height>80</height>
-                <texture colordiffuse="button_focus">$VAR[SettingsSectionIcon]</texture>
-            </control>
-            <control type="label" id="2">
-                <description>breadcrumbs label</description>
-                <left>80</left>
-                <top>20</top>
-                <width>1300</width>
-                <height>30</height>
-                <font>font16</font>
-                <align>left</align>
-                <aligny>center</aligny>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
+        <control type="label" id="2">
+            <description>breadcrumbs label</description>
+            <visible>False</visible>
         </control>
     </controls>
 </window>

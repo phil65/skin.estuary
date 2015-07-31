@@ -86,15 +86,18 @@
             <width>900</width>
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
+             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <control type="image">
-                <width>56</width>
-                <height>38</height>
+                <posy>10</posy>
+                <width>80</width>
+                <height>80</height>
                 <aspectratio align="center">keep</aspectratio>
-                <texture>$VAR[BreadcrumbsIconVar]</texture>
+                <texture colordiffuse="button_focus">$PARAM[breadcrumbs_icon]</texture>
                 <visible>!Player.HasMedia</visible>
             </control>
             <control type="label">
-                <label>$VAR[BreadcrumbsVideoVar]</label>
+                <label>$PARAM[breadcrumbs_label]</label>
                 <include>BreadcrumbsLabel</include>
             </control>
             <control type="label">

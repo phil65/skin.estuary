@@ -1153,7 +1153,10 @@
                 </control>
             </control>
         </control>
-        <include>TopBar</include>
+        <include name="TopBar">
+            <param name="breadcrumbs_label" value="" />
+            <param name="breadcrumbs_icon" value="" />
+        </include>
         <control type="image">
             <include>OpenClose_FadeSlide_Down</include>
             <description>Logo</description>

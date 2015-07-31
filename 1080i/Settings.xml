@@ -140,7 +140,10 @@
                 </item>
             </content>
         </control>
-        <include>TopBar</include>
+        <include name="TopBar">
+            <param name="breadcrumbs_label" value="$LOCALIZE[5]" />
+            <param name="breadcrumbs_icon" value="$VAR[BreadcrumbsIconVar]" />
+        </include>
         <include>BottomBar</include>
     </controls>
 </window>
