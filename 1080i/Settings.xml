@@ -20,16 +20,16 @@
                     <height>250</height>
                     <texture border="40">buttons/button-nofo.png</texture>
                 </control>
-                    <control type="image">
-                        <left>80</left>
-                        <top>10</top>
-                        <width>240</width>
-                        <height>240</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <align>center</align>
-                    </control>
+                <control type="image">
+                    <left>80</left>
+                    <top>10</top>
+                    <width>240</width>
+                    <height>240</height>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                    <align>center</align>
+                </control>
                 <control type="label">
-                    <left>200</left>
+                    <left>0</left>
                     <top>180</top>
                     <width>400</width>
                     <height>400</height>
@@ -67,7 +67,7 @@
                         <align>center</align>
                     </control>
                     <control type="label">
-                        <left>200</left>
+                        <left>0</left>
                         <top>180</top>
                         <width>400</width>
                         <height>400</height>
