@@ -11,8 +11,8 @@
     <constant name="FanartCrossfadeTime">400</constant>
     <constant name="IconCrossfadeTime">400</constant>
     <include name="HiddenObject">
-        <posx>-3000</posx>
-        <posy>-3000</posy>
+        <left>-3000</left>
+        <top>-3000</top>
         <width>1</width>
         <height>1</height>
         <texturefocus>-</texturefocus>
@@ -48,8 +48,8 @@
     <include name="DialogBackgroundCommons">
         <control type="image">
             <description>background image</description>
-            <posx>-1920</posx>
-            <posy>-1080</posy>
+            <left>-1920</left>
+            <top>-1080</top>
             <width>5760</width>
             <height>3240</height>
             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
@@ -90,14 +90,14 @@
     <include name="TopBar">
         <control type="image">
             <description>InfoBarTop</description>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>80</height>
             <texture>frame/InfoBarTop.png</texture>
         </control>
         <control type="grouplist">
-            <posx>5</posx>
+            <left>5</left>
             <description>Left side of top bar</description>
             <width>900</width>
             <orientation>horizontal</orientation>
@@ -106,7 +106,7 @@
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <itemgap>0</itemgap>
             <control type="image">
-                <posy>10</posy>
+                <top>10</top>
                 <width>80</width>
                 <height>80</height>
                 <aspectratio align="center">keep</aspectratio>
@@ -134,8 +134,8 @@
             </control>
         </control>
         <!-- <control type="label">
-             <posx>55</posx>
-             <posy>50</posy>
+             <left>55</left>
+             <top>50</top>
              <width>600</width>
              <height>40</height>
              <label>Sorted by: Title</label>
@@ -149,7 +149,7 @@
              </control> -->
         <control type="grouplist">
             <description>Right side of top bar</description>
-            <posx>1400</posx>
+            <left>1400</left>
             <width>500</width>
             <align>right</align>
             <orientation>horizontal</orientation>
@@ -163,7 +163,7 @@
             </control>
             <control type="image">
                 <description>Weather</description>
-                <posy>10</posy>
+                <top>10</top>
                 <width>70</width>
                 <height>60</height>
                 <aspectratio align="left">keep</aspectratio>
@@ -177,8 +177,8 @@
             </control>
             <control type="image">
                 <description>System Time Clock</description>
-                <posx>10</posx>
-                <posy>24</posy>
+                <left>10</left>
+                <top>24</top>
                 <height>32</height>
                 <width>32</width>
                 <texture>frame/clock.png</texture>
@@ -190,7 +190,7 @@
         <font>font16</font>
         <textcolor>white</textcolor>
         <shadowcolor>text_shadow</shadowcolor>
-        <posy>12</posy>
+        <top>12</top>
         <height>100</height>
         <width>auto</width>
         <align>left</align>
@@ -205,8 +205,8 @@
             <visible>Player.HasAudio</visible>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <animation effect="fade" start="100" end="80" time="0" condition="Player.HasMedia">Conditional</animation>
@@ -215,8 +215,8 @@
             <texture>special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <aspectratio>scale</aspectratio>
@@ -231,14 +231,14 @@
     <include name="BottomBar">
         <control type="image">
             <description>List Panel</description>
-            <posx>0</posx>
-            <posy>1000</posy>
+            <left>0</left>
+            <top>1000</top>
             <width>1920</width>
             <height>80</height>
             <texture border="1">frame/InfoBarBottom.png</texture>
         </control>
         <control type="label">
-            <posy>1010</posy>
+            <top>1010</top>
             <left>0</left>
             <width>1900</width>
             <height>50</height>
@@ -260,8 +260,8 @@
         <focusedcolor>white</focusedcolor>
     </include>
     <include name="FullscreenDimensions">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>1920</width>
         <height>1080</height>
     </include>

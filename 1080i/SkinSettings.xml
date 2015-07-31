@@ -12,7 +12,7 @@
                 <control type="image">
                     <description>Menu Panel</description>
                     <left>0</left>
-                    <posy>158</posy>
+                    <top>158</top>
                     <width>400</width>
                     <height>752</height>
                     <texture border="2">dialogs/dialog-bg.png</texture>
@@ -65,7 +65,7 @@
                 </control>
                 <control type="image">
                     <left>1045</left>
-                    <posy>910</posy>
+                    <top>910</top>
                     <width>28</width>
                     <height>28</height>
                     <texture>overlays/arrowdown.png</texture>
@@ -75,7 +75,7 @@
                 </control>
                 <control type="image">
                     <left>1045</left>
-                    <posy>130</posy>
+                    <top>130</top>
                     <width>28</width>
                     <height>28</height>
                     <texture flipy="true">overlays/arrowdown.png</texture>

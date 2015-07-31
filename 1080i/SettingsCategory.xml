@@ -12,7 +12,7 @@
                 <control type="image">
                     <description>Menu Panel</description>
                     <left>0</left>
-                    <posy>158</posy>
+                    <top>158</top>
                     <width>400</width>
                     <height>752</height>
                     <texture border="2">dialogs/dialog-bg.png</texture>
@@ -101,8 +101,8 @@
                      </include>
                      </control> -->
                 <control type="image">
-                    <posx>1031</posx>
-                    <posy>940</posy>
+                    <left>1031</left>
+                    <top>940</top>
                     <width>48</width>
                     <height>24</height>
                     <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
@@ -111,8 +111,8 @@
                     <visible>Container(5).HasNext</visible>
                 </control>
                 <control type="image">
-                    <posx>1031</posx>
-                    <posy>105</posy>
+                    <left>1031</left>
+                    <top>105</top>
                     <width>48</width>
                     <height>24</height>
                     <texture  colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>

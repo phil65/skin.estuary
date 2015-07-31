@@ -163,14 +163,14 @@
             </animation>
             <control type="image">
                 <description>Menu Panel</description>
-                <posx>0</posx>
-                <posy>80</posy>
+                <left>0</left>
+                <top>80</top>
                 <width>400</width>
                 <height>920</height>
                 <texture>lists/panel.png</texture>
             </control>
             <control type="grouplist" id="9000">
-                <posy>100</posy>
+                <top>100</top>
                 <width>1920</width>
                 <height>800</height>
                 <align>left</align>

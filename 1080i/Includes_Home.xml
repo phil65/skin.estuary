@@ -17,8 +17,8 @@
                 <orientation>horizontal</orientation>
                 <itemgap>-5</itemgap>
                 <onleft>9000</onleft>
-                <posx>440</posx>
-                <posy>20</posy>
+                <left>440</left>
+                <top>20</top>
                 <align>right</align>
                 <height>90</height>
                 <width>1400</width>
@@ -73,12 +73,12 @@
         <control type="group">
             <description>Poster Widget including header and arrows</description>
             <height>408</height>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>445</posx>
-                <posy>221</posy>
+                <left>445</left>
+                <top>221</top>
                 <width>28</width>
                 <height>28</height>
                 <texture flipx="true">overlays/arrowright.png</texture>
@@ -87,8 +87,8 @@
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="image">
-                <posx>1843</posx>
-                <posy>221</posy>
+                <left>1843</left>
+                <top>221</top>
                 <width>28</width>
                 <height>28</height>
                 <texture>overlays/arrowright.png</texture>
@@ -97,8 +97,8 @@
                 <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="label">
-                <posx>500</posx>
-                <posy>15</posy>
+                <left>500</left>
+                <top>15</top>
                 <width>600</width>
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
@@ -109,8 +109,8 @@
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
-                <posx>500</posx>
-                <posy>70</posy>
+                <left>500</left>
+                <top>70</top>
                 <width>1385</width>
                 <height>400</height>
                 <oninfo>$PARAM[list_oninfo]</oninfo>
@@ -128,8 +128,8 @@
                 <itemlayout width="277">
                     <control type="group">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>3</posy>
+                            <left>0</left>
+                            <top>3</top>
                             <width>212</width>
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
@@ -148,8 +148,8 @@
                             <effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
                         </animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>3</posy>
+                            <left>0</left>
+                            <top>3</top>
                             <width>212</width>
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
@@ -162,8 +162,8 @@
                             <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                             <visible>Control.HasFocus($PARAM[list_id])</visible>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>267</posy>
+                                <left>0</left>
+                                <top>267</top>
                                 <width>212</width>
                                 <height>57</height>
                                 <aspectratio>stretch</aspectratio>
@@ -172,8 +172,8 @@
                             </control>
                             <control type="group">
                                 <control type="label">
-                                    <posx>110</posx>
-                                    <posy>267</posy>
+                                    <left>110</left>
+                                    <top>267</top>
                                     <width>198</width>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>font10</font>
@@ -183,8 +183,8 @@
                                     <align>center</align>
                                 </control>
                                 <control type="label">
-                                    <posx>110</posx>
-                                    <posy>291</posy>
+                                    <left>110</left>
+                                    <top>291</top>
                                     <width>178</width>
                                     <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
                                     <font>font10</font>
@@ -195,8 +195,8 @@
                                     <visible>Stringcompare(ListItem.PercentPlayed,0)</visible>
                                 </control>
                                 <control type="progress">
-                                    <posx>20</posx>
-                                    <posy>299</posy>
+                                    <left>20</left>
+                                    <top>299</top>
                                     <width>174</width>
                                     <height>13</height>
                                     <info>ListItem.PercentPlayed</info>
@@ -209,8 +209,8 @@
                                 </control>
                             </control>
                             <control type="image">
-                                <posx>1</posx>
-                                <posy>3</posy>
+                                <left>1</left>
+                                <top>3</top>
                                 <width>211</width>
                                 <height>321</height>
                                 <aspectratio>stretch</aspectratio>
@@ -227,12 +227,12 @@
         <control type="group">
             <description>Episode Widget including header and arrows</description>
             <height>408</height>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>445</posx>
-                <posy>210</posy>
+                <left>445</left>
+                <top>210</top>
                 <width>28</width>
                 <height>28</height>
                 <texture flipx="true">overlays/arrowright.png</texture>
@@ -241,8 +241,8 @@
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="image">
-                <posx>1843</posx>
-                <posy>210</posy>
+                <left>1843</left>
+                <top>210</top>
                 <width>28</width>
                 <height>28</height>
                 <texture>overlays/arrowright.png</texture>
@@ -251,8 +251,8 @@
                 <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="label">
-                <posx>500</posx>
-                <posy>20</posy>
+                <left>500</left>
+                <top>20</top>
                 <width>600</width>
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
@@ -263,8 +263,8 @@
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
-                <posx>500</posx>
-                <posy>80</posy>
+                <left>500</left>
+                <top>80</top>
                 <width>1386</width>
                 <height>400</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -281,8 +281,8 @@
                 <itemlayout width="462">
                     <control type="group">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>400</width>
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
@@ -293,16 +293,16 @@
                         <control type="group">
                             <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>400</width>
                                 <height>30</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                             </control>
                             <control type="progress">
-                                <posx>30</posx>
-                                <posy>10</posy>
+                                <left>30</left>
+                                <top>10</top>
                                 <width>340</width>
                                 <height>13</height>
                                 <info>ListItem.PercentPlayed</info>
@@ -314,16 +314,16 @@
                             </control>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
+                            <left>0</left>
+                            <top>240</top>
                             <width>400</width>
                             <height>60</height>
                             <aspectratio>stretch</aspectratio>
                             <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                         </control>
                         <control type="label">
-                            <posx>200</posx>
-                            <posy>240</posy>
+                            <left>200</left>
+                            <top>240</top>
                             <width>360</width>
                             <label>$INFO[ListItem.Label]</label>
                             <font>font10</font>
@@ -333,8 +333,8 @@
                             <align>center</align>
                         </control>
                         <control type="label">
-                            <posx>200</posx>
-                            <posy>264</posy>
+                            <left>200</left>
+                            <top>264</top>
                             <width>360</width>
                             <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
                             <font>font10</font>
@@ -354,8 +354,8 @@
                             <effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="233,70" />
                         </animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>400</width>
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
@@ -366,16 +366,16 @@
                         <control type="group">
                             <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>400</width>
                                 <height>30</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                             </control>
                             <control type="progress">
-                                <posx>30</posx>
-                                <posy>10</posy>
+                                <left>30</left>
+                                <top>10</top>
                                 <width>340</width>
                                 <height>13</height>
                                 <info>ListItem.PercentPlayed</info>
@@ -387,16 +387,16 @@
                             </control>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
+                            <left>0</left>
+                            <top>240</top>
                             <width>400</width>
                             <height>60</height>
                             <aspectratio>stretch</aspectratio>
                             <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                         </control>
                         <control type="label">
-                            <posx>200</posx>
-                            <posy>240</posy>
+                            <left>200</left>
+                            <top>240</top>
                             <width>360</width>
                             <label>$INFO[ListItem.Label]</label>
                             <font>font10</font>
@@ -406,8 +406,8 @@
                             <align>center</align>
                         </control>
                         <control type="label">
-                            <posx>200</posx>
-                            <posy>264</posy>
+                            <left>200</left>
+                            <top>264</top>
                             <width>360</width>
                             <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
                             <font>font10</font>
@@ -417,8 +417,8 @@
                             <align>center</align>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>400</width>
                             <height>300</height>
                             <aspectratio>stretch</aspectratio>
@@ -437,12 +437,12 @@
         <control type="group">
             <description>Square Widget including header and arrows</description>
             <height>408</height>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
             <control type="image">
-                <posx>445</posx>
-                <posy>200</posy>
+                <left>445</left>
+                <top>200</top>
                 <width>28</width>
                 <height>28</height>
                 <texture flipx="true">overlays/arrowright.png</texture>
@@ -451,8 +451,8 @@
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="image">
-                <posx>1843</posx>
-                <posy>200</posy>
+                <left>1843</left>
+                <top>200</top>
                 <width>28</width>
                 <height>28</height>
                 <texture>overlays/arrowright.png</texture>
@@ -461,8 +461,8 @@
                 <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
             </control>
             <control type="label">
-                <posx>500</posx>
-                <posy>20</posy>
+                <left>500</left>
+                <top>20</top>
                 <width>600</width>
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
@@ -473,8 +473,8 @@
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
-                <posx>500</posx>
-                <posy>80</posy>
+                <left>500</left>
+                <top>80</top>
                 <width>1372</width>
                 <height>400</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -491,8 +491,8 @@
                 <itemlayout width="343">
                     <control type="group">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>300</width>
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
@@ -511,8 +511,8 @@
                             <effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
                         </animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>300</width>
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
@@ -525,8 +525,8 @@
                             <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                             <visible>Control.HasFocus($PARAM[list_id])</visible>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>240</posy>
+                                <left>0</left>
+                                <top>240</top>
                                 <width>300</width>
                                 <height>60</height>
                                 <aspectratio>stretch</aspectratio>
@@ -535,8 +535,8 @@
                             </control>
                             <control type="group">
                                 <control type="label">
-                                    <posx>150</posx>
-                                    <posy>240</posy>
+                                    <left>150</left>
+                                    <top>240</top>
                                     <width>260</width>
                                     <label>$INFO[ListItem.Label]$INFO[ListItem.Year, - ]</label>
                                     <font>font10</font>
@@ -546,8 +546,8 @@
                                     <align>center</align>
                                 </control>
                                 <control type="label">
-                                    <posx>150</posx>
-                                    <posy>264</posy>
+                                    <left>150</left>
+                                    <top>264</top>
                                     <width>260</width>
                                     <label>$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version)]</label>
                                     <font>font10</font>
@@ -558,8 +558,8 @@
                                 </control>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>300</width>
                                 <height>300</height>
                                 <aspectratio>stretch</aspectratio>

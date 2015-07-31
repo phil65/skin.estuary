@@ -6,8 +6,8 @@
 		<control type="group">
 			<include>OpenClose_FadeSlide_Left</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>80</posy>
+				<left>0</left>
+				<top>80</top>
 				<width>613</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
@@ -17,8 +17,8 @@
 		<control type="group">
 			<include>OpenClose_FadeSlide_Right</include>
 			<control type="image">
-				<posx>613</posx>
-				<posy>80</posy>
+				<left>613</left>
+				<top>80</top>
 				<width>1307</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>

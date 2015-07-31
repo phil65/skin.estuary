@@ -2,8 +2,8 @@
 <window type="dialog" id="134">
     <defaultcontrol always="true">450</defaultcontrol>
     <coordinates>
-        <posx>210</posx>
-        <posy>150</posy>
+        <left>210</left>
+        <top>150</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopupOpenClose</include>
@@ -16,8 +16,8 @@
             <param name="DialogHeaderId" value="2" />
         </include>
         <control type="panel" id="450">
-            <posx>40</posx>
-            <posy>80</posy>
+            <left>40</left>
+            <top>80</top>
             <width>1920</width>
             <height>1080</height>
             <onleft>450</onleft>
@@ -31,8 +31,8 @@
             <itemlayout width="346">
                 <control type="group">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>300</width>
                         <height>300</height>
                         <aspectratio>scale</aspectratio>
@@ -45,8 +45,8 @@
             <focusedlayout width="346">
                 <control type="group">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>300</width>
                         <height>300</height>
                         <aspectratio>scale</aspectratio>
@@ -55,8 +55,8 @@
                         <bordersize>4</bordersize>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>300</width>
                         <height>300</height>
                         <aspectratio>stretch</aspectratio>
@@ -66,8 +66,8 @@
             </focusedlayout>
         </control>
         <control type="scrollbar" id="61">
-            <posx>1860</posx>
-            <posy>132</posy>
+            <left>1860</left>
+            <top>132</top>
             <width>46</width>
             <height>802</height>
             <texturesliderbackground colordiffuse="$VAR[AreaColorVar]">views/scrollbarbacklist.png</texturesliderbackground>

@@ -5,8 +5,8 @@
     <controls>
         <include>DefaultBackground</include>
         <control type="panel" id="9000">
-            <posx>92</posx>
-            <posy>140</posy>
+            <left>92</left>
+            <top>140</top>
             <width>1850</width>
             <height>819</height>
             <onleft>9000</onleft>
@@ -21,16 +21,16 @@
                     <texture border="40">buttons/button-nofo.png</texture>
                 </control>
                     <control type="image">
-                        <posx>80</posx>
-                        <posy>10</posy>
+                        <left>80</left>
+                        <top>10</top>
                         <width>240</width>
                         <height>240</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <align>center</align>
                     </control>
                 <control type="label">
-                    <posx>200</posx>
-                    <posy>180</posy>
+                    <left>200</left>
+                    <top>180</top>
                     <width>400</width>
                     <height>400</height>
                     <label>$INFO[ListItem.Label]</label>
@@ -59,16 +59,16 @@
                         <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                     </control>
                     <control type="image">
-                        <posx>80</posx>
-                        <posy>10</posy>
+                        <left>80</left>
+                        <top>10</top>
                         <width>240</width>
                         <height>240</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <align>center</align>
                     </control>
                     <control type="label">
-                        <posx>200</posx>
-                        <posy>180</posy>
+                        <left>200</left>
+                        <top>180</top>
                         <width>400</width>
                         <height>400</height>
                         <label>$INFO[ListItem.Label]</label>

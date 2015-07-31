@@ -20,8 +20,8 @@
         </control>
         <include>DefaultBackground</include>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <aspectratio>scale</aspectratio>
@@ -33,8 +33,8 @@
             <visible>!Player.HasMedia</visible>
         </control>
         <!-- <control type="image">
-             <posx>1045</posx>
-             <posy>1000</posy>
+             <left>1045</left>
+             <top>1000</top>
              <width>28</width>
              <height>28</height>
              <texture>overlays/arrowdown.png</texture>
@@ -43,8 +43,8 @@
              <visible>Container(6000).HasNext</visible>
              </control>
              <control type="image">
-             <posx>1045</posx>
-             <posy>50</posy>
+             <left>1045</left>
+             <top>50</top>
              <width>28</width>
              <height>28</height>
              <texture flipy="true">overlays/arrowdown.png</texture>
@@ -61,14 +61,14 @@
                 <effect type="slide" end="0,20" time="60" tween="sine" />
                 <effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
             </animation>
-            <posx>20</posx>
+            <left>20</left>
             <include>OpenClose_FadeSlide_Right</include>
             <control type="group" id="5000">
                 <visible>Container(9000).HasFocus(10)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="grouplist" id="5001">
                     <orientation>vertical</orientation>
-                    <posy>76</posy>
+                    <top>76</top>
                     <height>925</height>
                     <itemgap>0</itemgap>
                     <include name="SubMenu">
@@ -136,7 +136,7 @@
             </control>
             <control type="grouplist" id="6001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(11)</visible>
                 <include>Vis_FadeSlide_Right</include>
@@ -192,7 +192,7 @@
             </control>
             <control type="grouplist" id="7001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(3)</visible>
                 <include>Vis_FadeSlide_Right</include>
@@ -264,7 +264,7 @@
             </control>
             <control type="grouplist" id="8001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(1)</visible>
                 <include>Vis_FadeSlide_Right</include>
@@ -318,7 +318,7 @@
             </control>
             <control type="grouplist" id="4001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(4)</visible>
                 <include>Vis_FadeSlide_Right</include>
@@ -337,7 +337,7 @@
             </control>
             <control type="grouplist" id="11001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(2)</visible>
                 <include>Vis_FadeSlide_Right</include>
@@ -380,30 +380,30 @@
             </control>
             <control type="grouplist" id="12001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(12)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="group">
                     <height>408</height>
                     <control type="image">
-                        <posy>40</posy>
-                        <posx>500</posx>
+                        <top>40</top>
+                        <left>500</left>
                         <width>650</width>
                         <height>350</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
-                        <posy>40</posy>
-                        <posx>1170</posx>
+                        <top>40</top>
+                        <left>1170</left>
                         <width>650</width>
                         <height>350</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="group">
                         <visible>PVR.HasNonRecordingTimer</visible>
-                        <posx>1170</posx>
-                        <posy>50</posy>
+                        <left>1170</left>
+                        <top>50</top>
                         <control type="image">
                             <left>50</left>
                             <top>50</top>
@@ -453,8 +453,8 @@
                         </control>
                     </control>
                     <control type="group">
-                        <posy>50</posy>
-                        <posx>550</posx>
+                        <top>50</top>
+                        <left>550</left>
                         <visible>PVR.IsRecording</visible>
                         <control type="image">
                             <left>0</left>
@@ -543,7 +543,7 @@
             </control>
             <control type="grouplist" id="13001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(13)</visible>
                 <include>Vis_FadeSlide_Right</include>
@@ -587,42 +587,42 @@
             </control>
             <control type="grouplist" id="14001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(14)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="group">
                     <control type="image">
-                        <posy>40</posy>
-                        <posx>500</posx>
+                        <top>40</top>
+                        <left>500</left>
                         <width>1300</width>
                         <height>540</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
-                        <posy>610</posy>
-                        <posx>500</posx>
+                        <top>610</top>
+                        <left>500</left>
                         <width>1300</width>
                         <height>90</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
-                        <posy>85</posy>
-                        <posx>530</posx>
+                        <top>85</top>
+                        <left>530</left>
                         <width>300</width>
                         <height>450</height>
                         <texture>$INFO[Player.Art(poster)]</texture>
                     </control>
                     <control type="videowindow">
-                        <posy>85</posy>
-                        <posx>680</posx>
+                        <top>85</top>
+                        <left>680</left>
                         <width>1300</width>
                         <height>450</height>
                     </control>
                     <control type="label">
-                        <posx>1770</posx>
+                        <left>1770</left>
                         <width>600</width>
-                        <posy>610</posy>
+                        <top>610</top>
                         <height>90</height>
                         <align>right</align>
                         <aligny>center</aligny>
@@ -633,8 +633,8 @@
                     <control type="grouplist" id="14100">
                         <orientation>horizontal</orientation>
                         <itemgap>-17</itemgap>
-                        <posx>490</posx>
-                        <posy>600</posy>
+                        <left>490</left>
+                        <top>600</top>
                         <onup>9000</onup>
                         <ondown>9000</ondown>
                         <control type="radiobutton" id="14101">
@@ -714,7 +714,7 @@
             </control>
             <control type="grouplist" id="15001">
                 <orientation>vertical</orientation>
-                <posy>76</posy>
+                <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(7)</visible>
                 <include>Vis_FadeSlide_Right</include>
@@ -722,15 +722,15 @@
                     <description>Weather info</description>
                     <height>380</height>
                     <control type="image">
-                        <posy>42</posy>
-                        <posx>500</posx>
+                        <top>42</top>
+                        <left>500</left>
                         <width>1320</width>
                         <height>350</height>
                         <texture border="3">dialogs/home-menu-bg.png</texture>
                     </control>
                     <control type="image">
-                        <posy>20</posy>
-                        <posx>530</posx>
+                        <top>20</top>
+                        <left>530</left>
                         <width>350</width>
                         <height>350</height>
                         <texture colordiffuse="FFFFFFFF">$INFO[Weather.conditions]</texture>
@@ -791,13 +791,13 @@
                 <control type="group">
                     <description>Square Weather Widget including header and arrows</description>
                     <height>432</height>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <visible>IntegerGreaterThan(Container(15100).NumItems,0) | Container(15100).IsUpdating</visible>
                     <visible>!IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                     <control type="image">
-                        <posx>445</posx>
-                        <posy>230</posy>
+                        <left>445</left>
+                        <top>230</top>
                         <width>28</width>
                         <height>28</height>
                         <texture flipx="true">overlays/arrowright.png</texture>
@@ -806,8 +806,8 @@
                         <visible>Container(15100).HasPrevious + Control.HasFocus(15100)</visible>
                     </control>
                     <control type="image">
-                        <posx>1840</posx>
-                        <posy>230</posy>
+                        <left>1840</left>
+                        <top>230</top>
                         <width>28</width>
                         <height>28</height>
                         <texture>overlays/arrowright.png</texture>
@@ -816,8 +816,8 @@
                         <visible>Container(15100).HasNext + Control.HasFocus(15100)</visible>
                     </control>
                     <control type="label">
-                        <posx>500</posx>
-                        <posy>30</posy>
+                        <left>500</left>
+                        <top>30</top>
                         <width>600</width>
                         <height>40</height>
                         <label>Temperatures over 24 Hours</label>
@@ -828,8 +828,8 @@
                         <align>left</align>
                     </control>
                     <control type="list" id="15100">
-                        <posx>490</posx>
-                        <posy>55</posy>
+                        <left>490</left>
+                        <top>55</top>
                         <width>1350</width>
                         <height>400</height>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -846,7 +846,7 @@
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>0</left>
-                                <posy>20</posy>
+                                <top>20</top>
                                 <width>260</width>
                                 <height>350</height>
                                 <texture border="40">buttons/button-nofo.png</texture>
@@ -854,14 +854,14 @@
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>60</left>
-                                <posy>90</posy>
+                                <top>90</top>
                                 <width>130</width>
                                 <height>130</height>
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>130</posx>
-                                <posy>47</posy>
+                                <left>130</left>
+                                <top>47</top>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label]</label>
                                 <textcolor>white</textcolor>
@@ -869,8 +869,8 @@
                                 <font>font13</font>
                             </control>
                             <control type="label">
-                                <posx>130</posx>
-                                <posy>237</posy>
+                                <left>130</left>
+                                <top>237</top>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
                                 <textcolor>white</textcolor>
@@ -889,7 +889,7 @@
                                 <control type="image">
                                     <description>Menu Panel</description>
                                     <left>0</left>
-                                    <posy>20</posy>
+                                    <top>20</top>
                                     <width>260</width>
                                     <height>350</height>
                                     <texture border="40">buttons/button-nofo.png</texture>
@@ -897,7 +897,7 @@
                                 <control type="image">
                                     <description>Menu Panel</description>
                                     <left>0</left>
-                                    <posy>20</posy>
+                                    <top>20</top>
                                     <width>260</width>
                                     <height>350</height>
                                     <texture border="40">buttons/button-theme-fo.png</texture>
@@ -907,14 +907,14 @@
                                 <control type="image">
                                     <description>Menu Panel</description>
                                     <left>60</left>
-                                    <posy>90</posy>
+                                    <top>90</top>
                                     <width>130</width>
                                     <height>130</height>
                                     <texture>$INFO[ListItem.Icon]</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>130</posx>
-                                    <posy>47</posy>
+                                    <left>130</left>
+                                    <top>47</top>
                                     <width>230</width>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Label]</label>
@@ -922,8 +922,8 @@
                                     <font>font13</font>
                                 </control>
                                 <control type="label">
-                                    <posx>130</posx>
-                                    <posy>237</posy>
+                                    <left>130</left>
+                                    <top>237</top>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
                                     <textcolor>white</textcolor>
@@ -974,13 +974,13 @@
                 <control type="group">
                     <description>Square Widget including header and arrows</description>
                     <height>432</height>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <visible>IntegerGreaterThan(Container(15200).NumItems,0) | Container(15200).IsUpdating</visible>
                     <visible>!IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                     <control type="image">
-                        <posx>445</posx>
-                        <posy>230</posy>
+                        <left>445</left>
+                        <top>230</top>
                         <width>28</width>
                         <height>28</height>
                         <texture flipx="true">overlays/arrowright.png</texture>
@@ -989,8 +989,8 @@
                         <visible>Container(15200).HasPrevious + Control.HasFocus(15200)</visible>
                     </control>
                     <control type="image">
-                        <posx>1840</posx>
-                        <posy>230</posy>
+                        <left>1840</left>
+                        <top>230</top>
                         <width>28</width>
                         <height>28</height>
                         <texture>overlays/arrowright.png</texture>
@@ -999,8 +999,8 @@
                         <visible>Container(15200).HasNext + Control.HasFocus(15200)</visible>
                     </control>
                     <control type="label">
-                        <posx>500</posx>
-                        <posy>30</posy>
+                        <left>500</left>
+                        <top>30</top>
                         <width>600</width>
                         <height>40</height>
                         <label>Daily</label>
@@ -1011,8 +1011,8 @@
                         <align>left</align>
                     </control>
                     <control type="list" id="15200">
-                        <posx>490</posx>
-                        <posy>55</posy>
+                        <left>490</left>
+                        <top>55</top>
                         <width>1350</width>
                         <height>400</height>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -1029,7 +1029,7 @@
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>0</left>
-                                <posy>20</posy>
+                                <top>20</top>
                                 <width>260</width>
                                 <height>350</height>
                                 <texture border="40">buttons/button-nofo.png</texture>
@@ -1037,14 +1037,14 @@
                             <control type="image">
                                 <description>Menu Panel</description>
                                 <left>60</left>
-                                <posy>90</posy>
+                                <top>90</top>
                                 <width>130</width>
                                 <height>130</height>
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>130</posx>
-                                <posy>47</posy>
+                                <left>130</left>
+                                <top>47</top>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
                                 <textcolor>white</textcolor>
@@ -1052,8 +1052,8 @@
                                 <font>font13</font>
                             </control>
                             <control type="label">
-                                <posx>130</posx>
-                                <posy>237</posy>
+                                <left>130</left>
+                                <top>237</top>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]Clouds: $INFO[ListItem.Property(Cloudiness)]</label>
                                 <textcolor>white</textcolor>
@@ -1072,7 +1072,7 @@
                                 <control type="image">
                                     <description>Menu Panel</description>
                                     <left>0</left>
-                                    <posy>20</posy>
+                                    <top>20</top>
                                     <width>260</width>
                                     <height>350</height>
                                     <texture border="40">buttons/button-nofo.png</texture>
@@ -1080,7 +1080,7 @@
                                 <control type="image">
                                     <description>Menu Panel</description>
                                     <left>0</left>
-                                    <posy>20</posy>
+                                    <top>20</top>
                                     <width>260</width>
                                     <height>350</height>
                                     <texture border="40">buttons/button-theme-fo.png</texture>
@@ -1090,14 +1090,14 @@
                                 <control type="image">
                                     <description>Menu Panel</description>
                                     <left>60</left>
-                                    <posy>90</posy>
+                                    <top>90</top>
                                     <width>130</width>
                                     <height>130</height>
                                     <texture>$INFO[ListItem.Icon]</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>130</posx>
-                                    <posy>47</posy>
+                                    <left>130</left>
+                                    <top>47</top>
                                     <width>230</width>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
@@ -1105,8 +1105,8 @@
                                     <font>font13</font>
                                 </control>
                                 <control type="label">
-                                    <posx>130</posx>
-                                    <posy>237</posy>
+                                    <left>130</left>
+                                    <top>237</top>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]Clouds: $INFO[ListItem.Property(Cloudiness)]</label>
                                     <textcolor>white</textcolor>
@@ -1176,8 +1176,8 @@
             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <description>Logo</description>
-            <posx>20</posx>
-            <posy>10</posy>
+            <left>20</left>
+            <top>10</top>
             <aspectratio>keep</aspectratio>
             <width>192</width>
             <height>56</height>
@@ -1189,14 +1189,14 @@
             <control type="image">
                 <description>Menu Panel</description>
                 <left>53</left>
-                <posy>118</posy>
+                <top>118</top>
                 <width>384</width>
                 <height>752</height>
                 <texture border="2">dialogs/home-menu-bg.png</texture>
             </control>
             <control type="list" id="9000">
-                <posx>54</posx>
-                <posy>119</posy>
+                <left>54</left>
+                <top>119</top>
                 <width>382</width>
                 <height>800</height>
                 <pagecontrol>70</pagecontrol>
@@ -1206,8 +1206,8 @@
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <focusedlayout height="70">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>71</height>
                         <texture border="90,3,90,3">lists/separator.png</texture>
@@ -1215,16 +1215,16 @@
                     <control type="group">
                         <animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>69</height>
                             <texture border="150,1,150,1">lists/focus.png</texture>
                             <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
                         </control>
                         <control type="image">
-                            <posx>-10</posx>
-                            <posy>-4</posy>
+                            <left>-10</left>
+                            <top>-4</top>
                             <width>70</width>
                             <height>70</height>
                             <texture>lists/arrow-right-fo.png</texture>
@@ -1232,15 +1232,15 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>-10</posx>
-                        <posy>-4</posy>
+                        <left>-10</left>
+                        <top>-4</top>
                         <width>70</width>
                         <height>70</height>
                         <texture>lists/arrow-right-nofo.png</texture>
                     </control>
                     <control type="image">
-                        <posx>-10</posx>
-                        <posy>-4</posy>
+                        <left>-10</left>
+                        <top>-4</top>
                         <width>70</width>
                         <height>70</height>
                         <texture>lists/arrow-right-colour-fo.png</texture>
@@ -1248,8 +1248,8 @@
                         <visible>!Control.HasFocus(9000)</visible>
                     </control>
                     <control type="label">
-                        <posx>50</posx>
-                        <posy>0</posy>
+                        <left>50</left>
+                        <top>0</top>
                         <height>70</height>
                         <width>560</width>
                         <align>left</align>
@@ -1264,8 +1264,8 @@
                         <animation effect="slide" start="0,-13" end="0,0" time="300" delay="200">UnFocus</animation>
                     </control>
                     <control type="label">
-                        <posx>50</posx>
-                        <posy>0</posy>
+                        <left>50</left>
+                        <top>0</top>
                         <height>70</height>
                         <width>560</width>
                         <align>left</align>
@@ -1278,8 +1278,8 @@
                         <visible>IsEmpty(ListItem.Label2)</visible>
                     </control>
                     <control type="label">
-                        <posx>50</posx>
-                        <posy>17</posy>
+                        <left>50</left>
+                        <top>17</top>
                         <height>70</height>
                         <width>560</width>
                         <align>left</align>
@@ -1295,15 +1295,15 @@
                 </focusedlayout>
                 <itemlayout height="70">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>71</height>
                         <texture border="90,3,90,3">lists/separator.png</texture>
                     </control>
                     <control type="label">
-                        <posx>50</posx>
-                        <posy>0</posy>
+                        <left>50</left>
+                        <top>0</top>
                         <height>70</height>
                         <width>560</width>
                         <aligny>center</aligny>
@@ -1315,8 +1315,8 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="image">
-                        <posx>-10</posx>
-                        <posy>-4</posy>
+                        <left>-10</left>
+                        <top>-4</top>
                         <width>70</width>
                         <height>70</height>
                         <texture>$INFO[ListItem.Property(nofocus)]</texture>
@@ -1407,8 +1407,8 @@
             <control type="grouplist" id="700">
                 <orientation>horizontal</orientation>
                 <itemgap>-17</itemgap>
-                <posx>36</posx>
-                <posy>872</posy>
+                <left>36</left>
+                <top>872</top>
                 <onup>SetFocus(9000,99)</onup>
                 <onup>9000</onup>
                 <ondown>SetFocus(9000,0)</ondown>
@@ -1490,8 +1490,8 @@
         <control type="group">
             <include>OpenClose_FadeSlide_Up</include>
             <control type="rss">
-                <posx>0</posx>
-                <posy>1041</posy>
+                <left>0</left>
+                <top>1041</top>
                 <height>30</height>
                 <width>1920</width>
                 <font>font12</font>
