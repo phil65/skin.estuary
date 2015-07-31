@@ -1158,7 +1158,8 @@
             <param name="breadcrumbs_icon" value="" />
         </include>
         <control type="image">
-            <include>OpenClose_FadeSlide_Down</include>
+             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <description>Logo</description>
             <posx>20</posx>
             <posy>10</posy>

@@ -26,7 +26,10 @@
             <!-- <visible>Control.IsVisible(51)</visible>
  -->
         </control>
-        <include>TopBar</include>
+                <include name="TopBar">
+            <param name="breadcrumbs_label" value="$VAR[BreadcrumbsVideoVar]" />
+            <param name="breadcrumbs_icon" value="$VAR[BreadcrumbsIconVar]" />
+        </include>
         <include>BottomBar</include>
     </controls>
 </window>
