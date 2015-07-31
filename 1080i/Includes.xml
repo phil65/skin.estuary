@@ -21,9 +21,10 @@
         <font>-</font>
     </include>
     <include name="DefaultSettingButton">
-        <textoffsetx>45</textoffsetx>
+        <textoffsetx>40</textoffsetx>
         <top>0</top>
         <height>75</height>
+        <aligny>center</aligny>
         <font>font13</font>
         <textcolor>white</textcolor>
         <focusedcolor>white</focusedcolor>
