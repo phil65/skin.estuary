@@ -215,7 +215,7 @@
             <font>font16</font>
             <textcolor>white</textcolor>
             <shadowcolor>text_shadow</shadowcolor>
-            <label>Items: $INFO[Container.NumItems,[COLOR button_focus],[/COLOR]]   •   Page: [COLOR button_focus]$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages][/COLOR]</label>
+            <label>$INFO[Container.NumItems,Items: [COLOR button_focus],[/COLOR]][COLOR button_focus]$INFO[Container.CurrentPage,   •   Page: , / ]$INFO[Container.NumPages][/COLOR]</label>
         </control>
     </include>
     <include name="KeyboardButton">
