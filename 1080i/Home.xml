@@ -615,12 +615,12 @@
                     </control>
                     <control type="videowindow">
                         <top>85</top>
-                        <left>680</left>
-                        <width>1300</width>
+                        <left>860</left>
+                        <width>900</width>
                         <height>450</height>
                     </control>
                     <control type="label">
-                        <left>1770</left>
+                        <left>1170</left>
                         <width>600</width>
                         <top>610</top>
                         <height>90</height>
@@ -860,7 +860,7 @@
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <left>130</left>
+                                <left>15</left>
                                 <top>47</top>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label]</label>
@@ -869,7 +869,7 @@
                                 <font>font13</font>
                             </control>
                             <control type="label">
-                                <left>130</left>
+                                <left>15</left>
                                 <top>237</top>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
@@ -913,7 +913,7 @@
                                     <texture>$INFO[ListItem.Icon]</texture>
                                 </control>
                                 <control type="label">
-                                    <left>130</left>
+                                    <left>15</left>
                                     <top>47</top>
                                     <width>230</width>
                                     <align>center</align>
@@ -922,7 +922,7 @@
                                     <font>font13</font>
                                 </control>
                                 <control type="label">
-                                    <left>130</left>
+                                    <left>15</left>
                                     <top>237</top>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
