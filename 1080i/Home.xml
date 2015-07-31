@@ -859,7 +859,7 @@
                                 <posx>130</posx>
                                 <posy>237</posy>
                                 <align>center</align>
-                                    <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
+                                <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
                                 <textcolor>white</textcolor>
                                 <width>230</width>
                                 <font>font13</font>
@@ -1042,7 +1042,7 @@
                                 <posx>130</posx>
                                 <posy>237</posy>
                                 <align>center</align>
-                                    <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
+                                <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]Clouds: $INFO[ListItem.Property(Cloudiness)]</label>
                                 <textcolor>white</textcolor>
                                 <width>230</width>
                                 <font>font13</font>
@@ -1095,7 +1095,7 @@
                                     <posx>130</posx>
                                     <posy>237</posy>
                                     <align>center</align>
-                                    <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
+                                    <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]Clouds: $INFO[ListItem.Property(Cloudiness)]</label>
                                     <textcolor>white</textcolor>
                                     <width>230</width>
                                     <font>font13</font>
@@ -1160,7 +1160,7 @@
             <param name="breadcrumbs_icon" value="" />
         </include>
         <control type="image">
-             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <description>Logo</description>
             <posx>20</posx>
