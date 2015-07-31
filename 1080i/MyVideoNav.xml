@@ -9,7 +9,6 @@
         <include>View_50_List</include>
         <include>View_51_Poster</include>
         <include>View_52_IconWall</include>
-        <include>Media_Menu</include>
         <control type="label">
             <posx>110</posx>
             <posy>130</posy>
@@ -26,7 +25,8 @@
             <!-- <visible>Control.IsVisible(51)</visible>
  -->
         </control>
-                <include name="TopBar">
+        <include>Media_Menu</include>
+        <include name="TopBar">
             <param name="breadcrumbs_label" value="$VAR[BreadcrumbsVideoVar]" />
             <param name="breadcrumbs_icon" value="$VAR[BreadcrumbsIconVar]" />
         </include>
