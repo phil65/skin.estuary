@@ -142,6 +142,7 @@
                     <ondown>50</ondown>
                     <viewtype label="List">list</viewtype>
                     <preloaditems>1</preloaditems>
+                    <visible>![Container.Content() | Container.Content(tags) | Container.Content(years)]</visible>
                     <focusedlayout height="70">
                         <control type="image">
                             <posx>0</posx>

@@ -7,7 +7,7 @@
                 <posy>140</posy>
                 <width>1850</width>
                 <height>819</height>
-                <onleft>52</onleft>
+                <onleft>9000</onleft>
                 <onright>52</onright>
                 <onup>52</onup>
                 <ondown>52</ondown>
@@ -21,16 +21,16 @@
                         <texture border="40">buttons/button-nofo.png</texture>
                     </control>
                     <control type="image">
-                        <posx>80</posx>
-                        <posy>10</posy>
-                        <width>240</width>
-                        <height>240</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <posx>130</posx>
+                        <posy>30</posy>
+                        <width>140</width>
+                        <height>140</height>
+                        <texture>$INFO[ListItem.Icon,icons/defaulticons/]</texture>
                         <align>center</align>
                     </control>
                     <control type="label">
                         <posx>200</posx>
-                        <posy>180</posy>
+                        <posy>170</posy>
                         <width>400</width>
                         <height>400</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -59,16 +59,16 @@
                             <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                         </control>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>10</posy>
-                            <width>240</width>
-                            <height>240</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                        <posx>130</posx>
+                        <posy>30</posy>
+                        <width>140</width>
+                        <height>140</height>
+                            <texture>$INFO[ListItem.Icon,icons/defaulticons/]</texture>
                             <align>center</align>
                         </control>
                         <control type="label">
                             <posx>200</posx>
-                            <posy>180</posy>
+                            <posy>170</posy>
                             <width>400</width>
                             <height>400</height>
                             <label>$INFO[ListItem.Label]</label>
