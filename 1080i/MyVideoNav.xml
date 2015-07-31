@@ -17,7 +17,7 @@
             <height>704</height>
             <fadetime>200</fadetime>
             <aspectratio>stretch</aspectratio>
-            <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
+            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
             <bordertexture>colors/black.png</bordertexture>
             <bordersize>4</bordersize>
             <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
