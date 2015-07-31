@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_52_IconWall">
+        <control type="group">
+            <control type="panel" id="52">
+                <posx>92</posx>
+                <posy>140</posy>
+                <width>1850</width>
+                <height>819</height>
+                <onleft>52</onleft>
+                <onright>52</onright>
+                <onup>52</onup>
+                <ondown>52</ondown>
+                <visible>Container.Content()</visible>
+                <viewtype label="Icon Wall">icon</viewtype>
+                <include>OpenClose_FadeSlide_Right</include>
+                <itemlayout height="270" width="440">
+                    <control type="image">
+                        <width>400</width>
+                        <height>250</height>
+                        <texture border="40">buttons/button-nofo.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>80</posx>
+                        <posy>10</posy>
+                        <width>240</width>
+                        <height>240</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <align>center</align>
+                    </control>
+                    <control type="label">
+                        <posx>200</posx>
+                        <posy>180</posy>
+                        <width>400</width>
+                        <height>400</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <font>font13</font>
+                        <align>center</align>
+                        <textcolor>white</textcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="270" width="440">
+                    <control type="group">
+                        <animation type="Focus" reversible="false">
+                            <effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
+                        </animation>
+                        <animation type="UnFocus" reversible="false">
+                            <effect type="zoom" center="auto" start="108" end="100" time="250" tween="sine" />
+                        </animation>
+                        <control type="image">
+                            <width>400</width>
+                            <height>250</height>
+                            <texture border="40">buttons/button-nofo.png</texture>
+                        </control>
+                        <control type="image">
+                            <width>400</width>
+                            <height>250</height>
+                            <texture border="40">buttons/button-theme-fo.png</texture>
+                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                        </control>
+                        <control type="image">
+                            <posx>80</posx>
+                            <posy>10</posy>
+                            <width>240</width>
+                            <height>240</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <align>center</align>
+                        </control>
+                        <control type="label">
+                            <posx>200</posx>
+                            <posy>180</posy>
+                            <width>400</width>
+                            <height>400</height>
+                            <label>$INFO[ListItem.Label]</label>
+                            <font>font13</font>
+                            <align>center</align>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </include>
+</includes>
