@@ -8,13 +8,23 @@
             <posy>200</posy>
             <control type="image">
                 <posx>50</posx>
-                <posy>221</posy>
+                <posy>170</posy>
                 <width>28</width>
                 <height>28</height>
                 <texture flipx="true">overlays/arrowright.png</texture>
                 <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container(51).HasPrevious + Control.HasFocus(51)</visible>
+            </control>
+            <control type="image">
+                <posx>1850</posx>
+                <posy>170</posy>
+                <width>28</width>
+                <height>28</height>
+                <texture>overlays/arrowright.png</texture>
+                <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+                <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                <visible>Container(51).HasNext + Control.HasFocus(51)</visible>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(51)</visible>
