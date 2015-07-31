@@ -198,7 +198,7 @@
             <animation effect="fade" start="100" end="80" time="0" condition="Player.HasMedia">Conditional</animation>
             <aspectratio>scale</aspectratio>
             <fadetime>400</fadetime>
-            <texture>special://skin/extras/backgrounds/01.jpg</texture>
+            <texture>special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
         </control>
         <control type="image">
             <posx>0</posx>

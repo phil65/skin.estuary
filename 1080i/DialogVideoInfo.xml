@@ -22,7 +22,7 @@
 				<width>1307</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture>special://skin/extras/backgrounds/01.jpg</texture>
+				<texture>special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 			</control>
 		</control>
 	</controls>
