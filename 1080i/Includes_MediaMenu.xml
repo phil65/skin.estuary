@@ -195,8 +195,8 @@
                 <control type="togglebutton" id="4">
                     <label>Order: $LOCALIZE[584]</label>
                     <altlabel>Order: $LOCALIZE[585]</altlabel>
-                    <alttexturefocus border="40">buttons/button-theme-fo.png</alttexturefocus>
-                    <alttexturenofocus border="40">buttons/button-nofo.png</alttexturenofocus>
+                    <alttexturefocus border="150,1,150,1">lists/focus.png</alttexturefocus>
+                    <alttexturenofocus border="40">lists/separator.png</alttexturenofocus>
                     <include>MediaMenuItemsCommon</include>
                     <visible>Control.IsEnabled(4)</visible>
                 </control>
