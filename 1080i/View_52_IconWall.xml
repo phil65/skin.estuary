@@ -16,10 +16,10 @@
                 <onright>52</onright>
                 <onup>52</onup>
                 <ondown>52</ondown>
-                <visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files)</visible>
+                <visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios)</visible>
                 <viewtype label="Icon Wall">icon</viewtype>
                 <include>OpenClose_FadeSlide_Right</include>
-                <itemlayout height="248" width="440">
+                <itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files)">
                     <control type="image">
                         <width>400</width>
                         <height>230</height>
@@ -44,7 +44,7 @@
                         <textcolor>white</textcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout height="248" width="440">
+                <focusedlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files)">
                     <control type="group">
                         <animation type="Focus" reversible="false">
                             <effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
@@ -75,6 +75,55 @@
                             <left>0</left>
                             <top>160</top>
                             <width>400</width>
+                            <height>400</height>
+                            <label>$INFO[ListItem.Label]</label>
+                            <font>font13</font>
+                            <align>center</align>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <itemlayout height="124" width="348" condition="Container.Content(genres) | Container.Content(years) | Container.Content(countries) | Container.Content(studios)">
+                    <control type="image">
+                        <width>330</width>
+                        <height>100</height>
+                        <texture border="40">buttons/button-nofo.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <textoffsetx>30</textoffsetx>
+                        <top>30</top>
+                        <width>330</width>
+                        <height>400</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <font>font13</font>
+                        <align>center</align>
+                        <textcolor>white</textcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="124" width="348" condition="Container.Content(genres) | Container.Content(years) | Container.Content(countries) | Container.Content(studios)">
+                    <control type="group">
+                        <animation type="Focus" reversible="false">
+                            <effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
+                        </animation>
+                        <animation type="UnFocus" reversible="false">
+                            <effect type="zoom" center="auto" start="108" end="100" time="250" tween="sine" />
+                        </animation>
+                        <control type="image">
+                            <width>330</width>
+                            <height>100</height>
+                            <texture border="40">buttons/button-nofo.png</texture>
+                        </control>
+                        <control type="image">
+                            <width>330</width>
+                            <height>100</height>
+                            <texture border="40">buttons/button-theme-fo.png</texture>
+                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <textoffsetx>30</textoffsetx>
+                            <top>30</top>
+                            <width>330</width>
                             <height>400</height>
                             <label>$INFO[ListItem.Label]</label>
                             <font>font13</font>
