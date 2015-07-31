@@ -28,7 +28,7 @@
             </control>
             <control type="group">
                 <visible>Control.IsVisible(51)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <include>OpenClose_FadeSlide_Right</include>
                 <control type="fixedlist" id="51">
                     <left>340</left>

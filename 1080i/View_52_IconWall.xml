@@ -2,9 +2,11 @@
 <includes>
     <include name="View_52_IconWall">
         <control type="group">
+            <visible>Control.IsVisible(52)</visible>
+            <include>Vis_FadeSlide_Right</include>
             <control type="panel" id="52">
                 <left>92</left>
-                <top>140</top>
+                <top>182</top>
                 <width>1850</width>
                 <height>819</height>
                 <onleft>9000</onleft>
@@ -14,23 +16,23 @@
                 <visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files)</visible>
                 <viewtype label="Icon Wall">icon</viewtype>
                 <include>OpenClose_FadeSlide_Right</include>
-                <itemlayout height="270" width="440">
+                <itemlayout height="248" width="440">
                     <control type="image">
                         <width>400</width>
-                        <height>250</height>
+                        <height>230</height>
                         <texture border="40">buttons/button-nofo.png</texture>
                     </control>
                     <control type="image">
-                        <left>130</left>
+                        <left>135</left>
                         <top>30</top>
-                        <width>140</width>
-                        <height>140</height>
+                        <width>130</width>
+                        <height>130</height>
                         <texture>$INFO[ListItem.Icon,icons/defaulticons/]</texture>
                         <align>center</align>
                     </control>
                     <control type="label">
                         <left>0</left>
-                        <top>170</top>
+                        <top>160</top>
                         <width>400</width>
                         <height>400</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -39,7 +41,7 @@
                         <textcolor>white</textcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout height="270" width="440">
+                <focusedlayout height="248" width="440">
                     <control type="group">
                         <animation type="Focus" reversible="false">
                             <effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
@@ -49,26 +51,26 @@
                         </animation>
                         <control type="image">
                             <width>400</width>
-                            <height>250</height>
+                            <height>230</height>
                             <texture border="40">buttons/button-nofo.png</texture>
                         </control>
                         <control type="image">
                             <width>400</width>
-                            <height>250</height>
+                            <height>230</height>
                             <texture border="40">buttons/button-theme-fo.png</texture>
                             <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                         </control>
                         <control type="image">
-                        <left>130</left>
-                        <top>30</top>
-                        <width>140</width>
-                        <height>140</height>
+                            <left>135</left>
+                            <top>30</top>
+                            <width>130</width>
+                            <height>130</height>
                             <texture>$INFO[ListItem.Icon,icons/defaulticons/]</texture>
                             <align>center</align>
                         </control>
                         <control type="label">
                             <left>0</left>
-                            <top>170</top>
+                            <top>160</top>
                             <width>400</width>
                             <height>400</height>
                             <label>$INFO[ListItem.Label]</label>

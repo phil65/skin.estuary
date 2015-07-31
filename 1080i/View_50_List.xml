@@ -7,7 +7,7 @@
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
                 <visible>Control.IsVisible(50)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="image">
                     <right>110</right>
                     <top>182</top>
@@ -120,7 +120,7 @@
                 <left>603</left>
                 <top>182</top>
                 <visible>Control.IsVisible(50)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="image">
                     <description>background image</description>
                     <left>0</left>

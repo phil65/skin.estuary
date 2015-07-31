@@ -65,7 +65,7 @@
             <include>OpenClose_FadeSlide_Right</include>
             <control type="group" id="5000">
                 <visible>Container(9000).HasFocus(10)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="grouplist" id="5001">
                     <orientation>vertical</orientation>
                     <top>76</top>
@@ -139,7 +139,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(11)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <include name="SubMenu">
                     <param name="list_id" value="6900"/>
                     <param name="ondown_id" value="6100"/>
@@ -195,7 +195,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(3)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <include name="SubMenu">
                     <param name="list_id" value="7900"/>
                     <param name="ondown_id" value="7100"/>
@@ -267,7 +267,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(1)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <include name="SubMenu">
                     <param name="list_id" value="8900"/>
                     <param name="ondown_id" value="8100"/>
@@ -321,7 +321,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(4)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="image">
                     <height>15</height>
                     <texture>-</texture>
@@ -340,7 +340,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(2)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <include name="SubMenu">
                     <param name="list_id" value="11900"/>
                     <param name="ondown_id" value="11100"/>
@@ -383,7 +383,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(12)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="group">
                     <height>408</height>
                     <control type="image">
@@ -546,7 +546,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(13)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <include name="SubMenu">
                     <param name="list_id" value="13900"/>
                     <param name="ondown_id" value="13100"/>
@@ -590,7 +590,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(14)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="group">
                     <control type="image">
                         <top>40</top>
@@ -717,7 +717,7 @@
                 <top>76</top>
                 <height>925</height>
                 <visible>Container(9000).HasFocus(7)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="group">
                     <description>Weather info</description>
                     <height>380</height>
