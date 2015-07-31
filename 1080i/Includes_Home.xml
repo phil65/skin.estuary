@@ -172,6 +172,7 @@
                             </control>
                             <control type="image">
                                 <left>0</left>
+                                <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
                                 <top>0</top>
                                 <width>212</width>
                                 <height>35</height>
