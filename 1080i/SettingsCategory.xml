@@ -101,23 +101,23 @@
                      </include>
                      </control> -->
                 <control type="image">
-                    <posx>1045</posx>
-                    <posy>910</posy>
-                    <width>28</width>
-                    <height>28</height>
-                    <texture>overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,910" time="200">VisibleChange</animation>
+                    <posx>1031</posx>
+                    <posy>940</posy>
+                    <width>48</width>
+                    <height>24</height>
+                    <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
+                    <animation effect="zoom" start="100,0" end="100,100" center="0,905" time="200">VisibleChange</animation>
                     <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,910" time="200">WindowOpen</animation>
                     <visible>Container(5).HasNext</visible>
                 </control>
                 <control type="image">
-                    <posx>1045</posx>
-                    <posy>130</posy>
-                    <width>28</width>
-                    <height>28</height>
-                    <texture flipy="true">overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,158" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,158" time="200">WindowOpen</animation>
+                    <posx>1031</posx>
+                    <posy>105</posy>
+                    <width>48</width>
+                    <height>24</height>
+                    <texture  colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
+                    <animation effect="zoom" start="100,0" end="100,100" center="0,150" time="200">VisibleChange</animation>
+                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,150" time="200">WindowOpen</animation>
                     <visible>Container(5).HasPrevious</visible>
                 </control>
                 <control type="grouplist" id="5">
