@@ -172,37 +172,25 @@
         </control>
         <control type="button" id="7">
             <description>Default Button</description>
-            <left>2</left>
             <width>1256</width>
             <include>DefaultSettingButton</include>
-            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-            <texturenofocus border="4">lists/separator.png</texturenofocus>
         </control>
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
-            <left>2</left>
             <width>1256</width>
             <include>DefaultSettingButton</include>
-            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-            <texturenofocus border="40">lists/separator.png</texturenofocus>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default SpinControlex</description>
-            <left>2</left>
             <width>1256</width>
             <include>DefaultSettingButton</include>
-            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-            <texturenofocus border="40">lists/separator.png</texturenofocus>
             <aligny>center</aligny>
             <reverse>yes</reverse>
         </control>
         <control type="sliderex" id="13">
             <description>Default Slider</description>
-            <left>2</left>
             <width>1256</width>
             <include>DefaultSettingButton</include>
-            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-            <texturenofocus border="40">lists/separator.png</texturenofocus>
             <aligny>center</aligny>
         </control>
         <control type="image" id="11">
@@ -212,7 +200,6 @@
         </control>
         <control type="label" id="14">
             <description>Default Label</description>
-            <left>2</left>
             <width>1256</width>
             <textoffsetx>45</textoffsetx>
             <top>0</top>

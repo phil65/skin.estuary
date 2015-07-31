@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="MediaMenuItemsCommon">
-        <width>300</width>
-        <height>94</height>
-        <align>left</align>
-        <aligny>center</aligny>
-        <font>font12</font>
-        <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-        <textoffsetx>35</textoffsetx>
+        <width>400</width>
+        <include>DefaultSettingButton</include>
     </include>
     <include name="PlaylistEditorButtons">
         <control type="button" id="6">

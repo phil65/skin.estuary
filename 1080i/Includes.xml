@@ -28,6 +28,8 @@
         <textcolor>white</textcolor>
         <focusedcolor>white</focusedcolor>
         <invalidcolor>invalid</invalidcolor>
+        <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+        <texturenofocus border="40">lists/separator.png</texturenofocus>
     </include>
     <include name="DialogBackgroundCommons">
         <control type="image">
@@ -86,7 +88,7 @@
             <width>900</width>
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
-             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <control type="image">
                 <posy>10</posy>
