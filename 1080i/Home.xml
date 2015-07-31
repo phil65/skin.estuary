@@ -718,8 +718,8 @@
                     <control type="image">
                         <posy>20</posy>
                         <posx>530</posx>
-                        <width>260</width>
-                        <height>260</height>
+                        <width>350</width>
+                        <height>350</height>
                         <texture colordiffuse="FFFFFFFF">$INFO[Weather.conditions]</texture>
                     </control>
                     <control type="label">
@@ -781,6 +781,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <visible>IntegerGreaterThan(Container(15100).NumItems,0) | Container(15100).IsUpdating</visible>
+                    <visible>!IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                     <control type="image">
                         <posx>445</posx>
                         <posy>230</posy>
@@ -806,7 +807,7 @@
                         <posy>30</posy>
                         <width>600</width>
                         <height>40</height>
-                        <label>High Temperatures over 24 Hours</label>
+                        <label>Temperatures over 24 Hours</label>
                         <font>font14</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
@@ -858,7 +859,7 @@
                                 <posx>130</posx>
                                 <posy>237</posy>
                                 <align>center</align>
-                                <label>$INFO[ListItem.Label2]</label>
+                                    <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
                                 <textcolor>white</textcolor>
                                 <width>230</width>
                                 <font>font13</font>
@@ -911,7 +912,7 @@
                                     <posx>130</posx>
                                     <posy>237</posy>
                                     <align>center</align>
-                                    <label>$INFO[ListItem.Label2]</label>
+                                    <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
                                     <textcolor>white</textcolor>
                                     <width>230</width>
                                     <font>font13</font>
@@ -963,6 +964,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <visible>IntegerGreaterThan(Container(15200).NumItems,0) | Container(15200).IsUpdating</visible>
+                    <visible>!IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                     <control type="image">
                         <posx>445</posx>
                         <posy>230</posy>
@@ -1031,7 +1033,7 @@
                                 <posx>130</posx>
                                 <posy>47</posy>
                                 <align>center</align>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
                                 <textcolor>white</textcolor>
                                 <width>230</width>
                                 <font>font13</font>
@@ -1040,7 +1042,7 @@
                                 <posx>130</posx>
                                 <posy>237</posy>
                                 <align>center</align>
-                                <label>$INFO[ListItem.Label2]</label>
+                                    <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
                                 <textcolor>white</textcolor>
                                 <width>230</width>
                                 <font>font13</font>
@@ -1085,7 +1087,7 @@
                                     <posy>47</posy>
                                     <width>230</width>
                                     <align>center</align>
-                                    <label>$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
                                     <textcolor>white</textcolor>
                                     <font>font13</font>
                                 </control>
@@ -1093,7 +1095,7 @@
                                     <posx>130</posx>
                                     <posy>237</posy>
                                     <align>center</align>
-                                    <label>$INFO[ListItem.Label2]</label>
+                                    <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
                                     <textcolor>white</textcolor>
                                     <width>230</width>
                                     <font>font13</font>

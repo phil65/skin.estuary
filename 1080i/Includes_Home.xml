@@ -587,21 +587,25 @@
     </include>
     <include name="WeatherHourlyItem">
         <item>
-            <label>[B]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)][/B]</label>
-            <label2>[B]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)][/B][CR][COLOR=grey2]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)][/COLOR]</label2>
+            <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
+            <property name="LowTemperature">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].LowTemperature)]</property>
+            <property name="HighTemperature">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].HighTemperature)]</property>
+            <property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)]</property>
             <icon>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</icon>
             <onclick>noop</onclick>
-            <visible>!IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
+            <visible>!IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook))</visible>
         </item>
     </include>
     <include name="WeatherDailyItem">
         <item>
-            <label>[B]$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)][/B] [COLOR=grey2]$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)][/COLOR]</label>
-            <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature), • ,][CR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness),[COLOR=grey2]$LOCALIZE[387] : [/COLOR],]</label2>
+            <label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)]</label>
+            <property name="LowTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)]</property>
+            <property name="HighTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</property>
+            <property name="Cloudiness">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness)]</property>
+            <property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)]</property>
             <thumb>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
-            <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)] $INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</icon>
             <onclick>noop</onclick>
-            <visible>Weather.IsFetched + !IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + !IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
+            <visible>!IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook))</visible>
         </item>
     </include>
 </includes>
