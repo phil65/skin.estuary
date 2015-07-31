@@ -136,9 +136,9 @@
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>vertical</orientation>
                     <onleft>9000</onleft>
-                    <onright>50</onright>
-                    <onup>SetFocus(9000)</onup>
-                    <onback>SetFocus(50)</onback>
+                    <onright>9000</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
                     <viewtype label="List">list</viewtype>
                     <preloaditems>1</preloaditems>
                     <focusedlayout height="70">
