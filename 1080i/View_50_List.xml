@@ -16,26 +16,9 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
-                <control type="image">
-                    <left>936</left>
-                    <top>910</top>
-                    <width>48</width>
-                    <height>24</height>
-                    <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,905" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,910" time="200">WindowOpen</animation>
-                    <visible>Container(50).HasNext</visible>
-                </control>
-                <control type="image">
-                    <left>936</left>
-                    <top>134</top>
-                    <width>48</width>
-                    <height>24</height>
-                    <texture  colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,200" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,200" time="200">WindowOpen</animation>
-                    <visible>Container(50).HasPrevious</visible>
-                </control>
+            <include name="UpDownArrows">
+                <param name="container_id" value="50" />
+            </include>
                 <control type="textbox">
                     <right>130</right>
                     <top>194</top>

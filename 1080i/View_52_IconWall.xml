@@ -4,11 +4,14 @@
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
             <include>Vis_FadeSlide_Right</include>
+            <include name="UpDownArrows">
+                <param name="container_id" value="52" />
+            </include>
             <control type="panel" id="52">
-                <left>92</left>
+                <left>100</left>
                 <top>182</top>
                 <width>1850</width>
-                <height>819</height>
+                <height>744</height>
                 <onleft>9000</onleft>
                 <onright>52</onright>
                 <onup>52</onup>
