@@ -32,6 +32,7 @@
 			<top>30</top>
 			<width>450</width>
 			<height max="670">auto</height>
+			<itemgap>0</itemgap>
 			<usecontrolcoords>true</usecontrolcoords>
 		</control>
 		<control type="button">
@@ -62,7 +63,7 @@
 			<textcolor>grey</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-			<texturenofocus border="40">lists/separator.png</texturenofocus>
+			<texturenofocus>lists/separator.png</texturenofocus>
 		</control>
 	</controls>
 </window>
