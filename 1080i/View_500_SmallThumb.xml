@@ -2,41 +2,22 @@
 <includes>
     <include>MediaBackground</include>
     <include name="View_500_SmallThumb">
+        <include name="UpDownArrows">
+            <param name="container_id" value="500" />
+        </include>
         <control type="group">
             <description>List Viewtype</description>
             <control type="group">
-                <control type="image">
-                    <left>836</left>
-                    <top>818</top>
-                    <width>48</width>
-                    <height>24</height>
-                    <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,890" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="500" center="0,890" time="200">WindowOpen</animation>
-                    <animation effect="zoom" start="100,100" end="100,0" center="0,890" time="200">WindowClose</animation>
-                    <visible>Container(500).HasNext + Control.IsVisible(500)</visible>
-                </control>
-                <control type="image">
-                    <left>836</left>
-                    <top>-42</top>
-                    <width>48</width>
-                    <height>24</height>
-                    <texture colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,180" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="500" center="0,180" time="200">WindowOpen</animation>
-                    <animation effect="zoom" start="100,100" end="100,0" center="0,180" time="200">WindowClose</animation>
-                    <visible>Container(500).HasPrevious + Control.IsVisible(500)</visible>
-                </control>
                 <include>OpenClose_FadeSlide_Right</include>
                 <left>100</left>
-                <top>142</top>
+                <top>182</top>
                 <visible>Control.IsVisible(500)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="panel" id="500">
-                    <left>2</left>
-                    <top>3</top>
-                    <width>1800</width>
-                    <height>800</height>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1840</width>
+                    <height>720</height>
                     <onleft>9000</onleft>
                     <onright>531</onright>
                     <onup>9000</onup>
@@ -46,96 +27,117 @@
                     <pagecontrol>531</pagecontrol>
                     <scrolltime>200</scrolltime>
                     <visible>![Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files)]</visible>
-                    <itemlayout height="279" width="250">
+                    <itemlayout height="360" width="300">
                         <control type="image">
                             <left>1</left>
-                            <top>0</top>
-                            <width>160</width>
-                            <height>240</height>
+                            <top>10</top>
+                            <width>220</width>
+                            <height>330</height>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             <aspectratio>stretch</aspectratio>
                             <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="276" width="250">
+                    <focusedlayout height="360" width="300">
                         <control type="image">
                             <left>1</left>
-                            <top>0</top>
-                            <width>160</width>
-                            <height>240</height>
+                            <top>10</top>
+                            <width>220</width>
+                            <height>330</height>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             <aspectratio>stretch</aspectratio>
-                            <bordertexture>buttons/thumbnail_focused.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                             <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
                             <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
                         </control>
-                        <control type="label">
-                            <left>-40</left>
-                            <top>245</top>
-                            <width>235</width>
-                            <height>20</height>
-                            <font>font10</font>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>white</selectedcolor>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <info>ListItem.Label</info>
+                        <control type="group">
+                            <animation type="Focus">
+                                <effect type="slide" start="0,0" end="-40,0" time="300" />
+                                <effect type="fade" start="0" end="100" time="300" />
+                            </animation>
+                            <animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+                            <control type="image">
+                                <left>1</left>
+                                <top>10</top>
+                                <width>220</width>
+                                <height>330</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="8">buttons/thumbnail_focused.png</texture>
+                            </control>
+                            <control type="image">
+                                <left>5</left>
+                                <top>296</top>
+                                <width>212</width>
+                                <height>40</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture>colors/black.png</texture>
+                                <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+                            </control>
+                            <control type="label">
+                                <left>15</left>
+                                <top>305</top>
+                                <width>192</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>white</selectedcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <info>ListItem.Label</info>
+                            </control>
                         </control>
                         <control type="image">
                             <right>47</right>
-                            <top>0</top>
+                            <top>10</top>
                             <width>70</width>
-                            <height>240</height>
+                            <height>330</height>
                             <fadetime>300</fadetime>
                             <texture colordiffuse="EE12B2E7">colors/white.png</texture>
-                            <animation effect="fade" start="0" end="100" time="300">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
+                            <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                            <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto">UnFocus</animation>
                         </control>
-                        <control type="image">
-                            <right>64</right>
+                        <control type="group">
+                            <animation effect="fade" start="0" end="100" time="300" delay="250">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="100">UnFocus</animation>
                             <top>10</top>
-                            <width>32</width>
-                            <height>32</height>
-                            <fadetime>300</fadetime>
-                            <texture border="1">lists/rating.png</texture>
-                            <visible>!IsEmpty(ListItem.Rating)</visible>
-                            <animation effect="fade" start="0" end="100" time="300">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
-                        </control>
-                        <control type="label">
-                            <right>47</right>
-                            <top>45</top>
-                            <width>70</width>
-                            <height>32</height>
-                            <align>center</align>
-                            <font>font_textbox</font>
-                            <label>$INFO[ListItem.Rating]</label>
-                            <animation effect="fade" start="0" end="100" time="300">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
-                        </control>
-                        <control type="image">
-                            <right>67</right>
-                            <top>90</top>
-                            <width>32</width>
-                            <height>32</height>
-                            <fadetime>300</fadetime>
-                            <texture border="1">lists/year.png</texture>
-                            <visible>!IsEmpty(ListItem.Year)</visible>
-                            <animation effect="fade" start="0" end="100" time="300">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
-                        </control>
-                        <control type="label">
-                            <right>47</right>
-                            <top>124</top>
-                            <width>70</width>
-                            <height>32</height>
-                            <align>center</align>
-                            <font>font_textbox</font>
-                            <label>$INFO[ListItem.Year]</label>
-                            <animation effect="fade" start="0" end="100" time="300">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
+                            <control type="image">
+                                <right>64</right>
+                                <top>10</top>
+                                <width>32</width>
+                                <height>32</height>
+                                <fadetime>300</fadetime>
+                                <texture border="1">lists/rating.png</texture>
+                                <visible>!IsEmpty(ListItem.Rating)</visible>
+                            </control>
+                            <control type="label">
+                                <right>47</right>
+                                <top>45</top>
+                                <width>70</width>
+                                <height>32</height>
+                                <align>center</align>
+                                <font>font_textbox</font>
+                                <label>$INFO[ListItem.Rating]</label>
+                            </control>
+                            <control type="image">
+                                <right>67</right>
+                                <top>90</top>
+                                <width>32</width>
+                                <height>32</height>
+                                <fadetime>300</fadetime>
+                                <texture border="1">lists/year.png</texture>
+                                <visible>!IsEmpty(ListItem.Year)</visible>
+                            </control>
+                            <control type="label">
+                                <right>47</right>
+                                <top>124</top>
+                                <width>70</width>
+                                <height>32</height>
+                                <align>center</align>
+                                <font>font_textbox</font>
+                                <label>$INFO[ListItem.Year]</label>
+                            </control>
                         </control>
                         <control type="image">
                             <right>65</right>
