@@ -7,6 +7,7 @@
     <include file="View_50_List.xml" />
     <include file="View_51_Poster.xml" />
     <include file="View_52_IconWall.xml" />
+    <include file="View_53_PosterThumb.xml" />
     <include file="Variables.xml" />
     <constant name="FanartCrossfadeTime">400</constant>
     <constant name="IconCrossfadeTime">400</constant>
@@ -235,6 +236,7 @@
             <height>1080</height>
             <animation effect="fade" start="100" end="80" time="0" condition="Player.HasMedia">Conditional</animation>
             <aspectratio>scale</aspectratio>
+            <fadetime>400</fadetime>
             <texture>special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
         </control>
         <control type="image">
