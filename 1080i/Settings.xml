@@ -142,7 +142,7 @@
         </control>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[5]" />
-            <param name="breadcrumbs_icon" value="$VAR[BreadcrumbsIconVar]" />
+            <param name="breadcrumbs_icon" value="icons/settings/settings.png" />
         </include>
         <include>BottomBar</include>
     </controls>

@@ -10,7 +10,7 @@
         <include>Media_Menu</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
-            <param name="breadcrumbs_icon" value="$VAR[BreadcrumbsIconVar]" />
+            <param name="breadcrumbs_icon" value="icons/settings/addons.png" />
         </include>
         <include>BottomBar</include>
     </controls>
