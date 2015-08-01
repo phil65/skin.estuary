@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include>MediaBackground</include>
+    <include name="View_501_Banner">
+        <include name="UpDownArrows">
+            <param name="container_id" value="501" />
+        </include>
+        <control type="group">
+            <description>List Viewtype</description>
+            <control type="group">
+                <include>OpenClose_FadeSlide_Right</include>
+                <left>100</left>
+                <top>182</top>
+                <visible>Control.IsVisible(501)</visible>
+                <include>Vis_FadeSlide_Right</include>
+                <control type="panel" id="501">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1840</width>
+                    <height>720</height>
+                    <onleft>9000</onleft>
+                    <onright>532</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <viewtype label="Banner">Banner</viewtype>
+                    <preloaditems>2</preloaditems>
+                    <pagecontrol>532</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <visible>![Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files)]</visible>
+                    <itemlayout height="178" width="920">
+                        <control type="image">
+                            <left>1</left>
+                            <top>10</top>
+                            <width>800</width>
+                            <height>160</height>
+                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(banner)]</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <bordertexture>colors/black.png</bordertexture>
+                            <bordersize>4</bordersize>
+                            <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+                        </control>
+                        <control type="image">
+                            <left>1</left>
+                            <top>10</top>
+                            <width>800</width>
+                            <height>160</height>
+                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+                            <aspectratio aligny="center">scale</aspectratio>
+                            <bordertexture>colors/black.png</bordertexture>
+                            <bordersize>4</bordersize>
+                            <visible>![Container.Content(tvshows) | Container.Content(seasons)]</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="178" width="920">
+                        <control type="image">
+                            <left>1</left>
+                            <top>10</top>
+                            <width>800</width>
+                            <height>160</height>
+                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(banner)]</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <bordertexture>colors/black.png</bordertexture>
+                            <bordersize>4</bordersize>
+                            <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+                            <animation effect="slide" start="0,0" end="-37,0" time="300">Focus</animation>
+                            <animation effect="slide" start="-37,0" end="0,0" time="125">UnFocus</animation>
+                        </control>
+                        <control type="image">
+                            <left>1</left>
+                            <top>10</top>
+                            <width>800</width>
+                            <height>160</height>
+                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+                            <aspectratio aligny="center">scale</aspectratio>
+                            <bordertexture>colors/black.png</bordertexture>
+                            <bordersize>4</bordersize>
+                            <visible>![Container.Content(tvshows) | Container.Content(seasons)]</visible>
+                            <animation effect="slide" start="0,0" end="-37,0" time="300">Focus</animation>
+                            <animation effect="slide" start="-37,0" end="0,0" time="125">UnFocus</animation>
+                        </control>
+                        <control type="image">
+                            <left>1</left>
+                            <top>10</top>
+                            <width>800</width>
+                            <height>160</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="8">buttons/thumbnail_focused.png</texture>
+                            <animation effect="slide" start="0,0" end="-37,0" time="300">Focus</animation>
+                            <animation effect="slide" start="-37,0" end="0,0" time="125">UnFocus</animation>
+                        </control>
+                        <control type="group">
+                            <animation type="Focus">
+                                <effect type="slide" start="0,0" end="-77,0" time="300" />
+                                <effect type="fade" start="0" end="100" time="300" />
+                            </animation>
+                            <animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+                            <control type="image">
+                                <left>45</left>
+                                <top>127</top>
+                                <width>792</width>
+                                <height>40</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture>colors/black.png</texture>
+                                <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+                            </control>
+                            <control type="label">
+                                <left>55</left>
+                                <top>136</top>
+                                <width>800</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>white</selectedcolor>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                                <info>ListItem.Label</info>
+                            </control>
+                            <control type="label">
+                                <right>100</right>
+                                <top>136</top>
+                                <width>800</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>white</selectedcolor>
+                                <align>right</align>
+                                <aligny>center</aligny>
+                                <info>ListItem.Property(TotalEpisodes)</info>
+                            </control>
+                        </control>
+                        <control type="image">
+                            <right>79</right>
+                            <top>10</top>
+                            <width>70</width>
+                            <height>160</height>
+                            <fadetime>300</fadetime>
+                            <texture colordiffuse="FF12B2E7">colors/white.png</texture>
+                            <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                            <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
+                        </control>
+                        <control type="group">
+                            <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                            <top>10</top>
+                            <control type="image">
+                                <right>98</right>
+                                <top>8</top>
+                                <width>32</width>
+                                <height>32</height>
+                                <fadetime>300</fadetime>
+                                <texture border="1">lists/rating.png</texture>
+                                <visible>!IsEmpty(ListItem.Rating)</visible>
+                            </control>
+                            <control type="label">
+                                <right>80</right>
+                                <top>43</top>
+                                <width>70</width>
+                                <height>32</height>
+                                <align>center</align>
+                                <font>font_textbox</font>
+                                <label>$INFO[ListItem.Rating]</label>
+                            </control>
+                            <control type="image">
+                                <right>100</right>
+                                <top>88</top>
+                                <width>32</width>
+                                <height>32</height>
+                                <fadetime>300</fadetime>
+                                <texture border="1">lists/year.png</texture>
+                                <visible>!IsEmpty(ListItem.Year)</visible>
+                            </control>
+                            <control type="label">
+                                <right>80</right>
+                                <top>120</top>
+                                <width>70</width>
+                                <height>32</height>
+                                <align>center</align>
+                                <font>font_textbox</font>
+                                <label>$INFO[ListItem.Year]</label>
+                            </control>
+                            <control type="image">
+                                <right>230</right>
+                                <top>122</top>
+                                <width>32</width>
+                                <height>32</height>
+                                <texture colordiffuse="FFFFFFFF">$VAR[ListWatchedIcon]</texture>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="532">
+                    <left>1170</left>
+                    <top>80</top>
+                    <width>25</width>
+                    <height>550</height>
+                    <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                    <texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
+                    <texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                    <textureslidernib>ScrollBarNib.png</textureslidernib>
+                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                    <onleft>501</onleft>
+                    <onright>2</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                    <visible>Control.IsVisible(501)</visible>
+                </control>
+            </control>
+        </control>
+    </include>
+</includes>
