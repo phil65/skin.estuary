@@ -4,6 +4,9 @@
     <include name="View_50_List">
         <control type="group">
             <description>List Viewtype</description>
+            <include name="UpDownArrows">
+                <param name="container_id" value="50" />
+            </include>
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
                 <visible>Control.IsVisible(50)</visible>
@@ -16,9 +19,6 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
-            <include name="UpDownArrows">
-                <param name="container_id" value="50" />
-            </include>
                 <control type="textbox">
                     <right>130</right>
                     <top>194</top>

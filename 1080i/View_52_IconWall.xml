@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="View_52_IconWall">
+        <include name="UpDownArrows">
+            <param name="container_id" value="52" />
+        </include>
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
             <include>Vis_FadeSlide_Right</include>
-            <include name="UpDownArrows">
-                <param name="container_id" value="52" />
-            </include>
             <control type="panel" id="52">
                 <left>100</left>
                 <top>182</top>
