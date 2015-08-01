@@ -173,14 +173,14 @@
                             <top>20</top>
                             <width>32</width>
                             <height>32</height>
-                            <texture>$VAR[ListWatchedIcon]</texture>
+                            <texture colordiffuse="grey">$VAR[ListWatchedIcon]</texture>
                         </control>
                         <control type="image">
                             <left>19</left>
                             <top>20</top>
                             <width>32</width>
                             <height>32</height>
-                            <texture colordiffuse="button_focus">$VAR[ListWatchedIcon]</texture>
+                            <texture>$VAR[ListWatchedIcon]</texture>
                             <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
                         </control>
                         <control type="image">
@@ -188,7 +188,7 @@
                             <top>20</top>
                             <width>32</width>
                             <height>32</height>
-                            <texture>$VAR[ListWatchedIcon]</texture>
+                            <texture colordiffuse="button_focus">$VAR[ListWatchedIcon]</texture>
                             <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
                             <visible>!Control.HasFocus(50)</visible>
                         </control>
@@ -232,7 +232,7 @@
                             <top>20</top>
                             <width>32</width>
                             <height>32</height>
-                            <texture>$VAR[ListWatchedIcon]</texture>
+                            <texture colordiffuse="grey">$VAR[ListWatchedIcon]</texture>
                         </control>
                     </itemlayout>
                 </control>
