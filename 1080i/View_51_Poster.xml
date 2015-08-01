@@ -90,8 +90,15 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
-                <control type="label">
+                        <control type="image">
                     <left>645</left>
+                    <top>415</top>
+                            <width>32</width>
+                            <height>32</height>
+                            <texture colordiffuse="grey">$VAR[ListWatchedIcon]</texture>
+                        </control>
+                <control type="label">
+                    <left>695</left>
                     <top>400</top>
                     <width>1160</width>
                     <height>40</height>
