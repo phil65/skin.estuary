@@ -9,7 +9,7 @@
             </include>
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
-                <visible>Control.IsVisible(50)</visible>
+                <visible>Control.IsVisible(50) + !IsEmpty(ListItem.DBID)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="image">
                     <right>110</right>
