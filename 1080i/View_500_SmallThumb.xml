@@ -96,11 +96,11 @@
                             <fadetime>300</fadetime>
                             <texture colordiffuse="EE12B2E7">colors/white.png</texture>
                             <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
-                            <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto">UnFocus</animation>
+                            <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
                         </control>
                         <control type="group">
-                            <animation effect="fade" start="0" end="100" time="300" delay="250">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="100">UnFocus</animation>
+                            <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
                             <top>10</top>
                             <control type="image">
                                 <right>64</right>
