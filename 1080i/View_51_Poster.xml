@@ -103,6 +103,30 @@
                     <align>left</align>
                 </control>
                 <control type="label">
+                    <left>645</left>
+                    <top>500</top>
+                    <width>1160</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.Genre,[COLOR button_focus]Genre: [/COLOR]]</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <scroll>false</scroll>
+                    <align>left</align>
+                </control>
+                <control type="label">
+                    <left>645</left>
+                    <top>540</top>
+                    <width>1160</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.Season,,[COLOR button_focus] Seasons[/COLOR]]$INFO[ListItem.Episode, - ,[COLOR button_focus] Episodes[/COLOR]]$INFO[ListItem.Director,[COLOR button_focus]Director: [/COLOR]]</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <scroll>false</scroll>
+                    <align>left</align>
+                </control>
+                <control type="label">
                     <right>135</right>
                     <top>400</top>
                     <width>1160</width>
