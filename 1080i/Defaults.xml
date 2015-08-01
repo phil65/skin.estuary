@@ -136,10 +136,10 @@
         <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
         <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <sliderwidth>150</sliderwidth>
-        <sliderheight>20</sliderheight>
-        <texturesliderbar>osd_slider_bg.png</texturesliderbar>
-        <textureslidernib>osd_slider_nibNF.png</textureslidernib>
-        <textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
+        <sliderheight>28</sliderheight>
+        <texturesliderbar>dialogs/mediasource/slider-back.png</texturesliderbar>
+        <textureslidernib>dialogs/mediasource/slider-nib-nf.png</textureslidernib>
+        <textureslidernibfocus>dialogs/mediasource/slider-nib-fo.png</textureslidernibfocus>
         <font>font12</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey</disabledcolor>
