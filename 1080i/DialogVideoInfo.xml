@@ -16,13 +16,179 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_FadeSlide_Right</include>
+			<left>613</left>
 			<control type="image">
-				<left>613</left>
 				<top>80</top>
 				<width>1307</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture>special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+				<texture>lists/panel.png</texture>
+			</control>
+				<control type="label">
+					<left>82</left>
+					<top>100</top>
+					<width>600</width>
+					<height>40</height>
+					<label>$INFO[ListItem.Title]</label>
+					<font>font35_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+				</control>
+			<control type="group">
+				<description>Actor list including header and arrows</description>
+				<height>408</height>
+				<left>27</left>
+				<top>580</top>
+				<control type="image">
+					<left>0</left>
+					<top>221</top>
+					<width>28</width>
+					<height>28</height>
+					<texture flipx="true">overlays/arrowright.png</texture>
+					<animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+					<animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+					<visible>Container(50).HasPrevious + Control.HasFocus(50)</visible>
+				</control>
+				<control type="image">
+					<left>1843</left>
+					<top>221</top>
+					<width>28</width>
+					<height>28</height>
+					<texture>overlays/arrowright.png</texture>
+					<animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
+					<animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+					<visible>Container(50).HasNext + Control.HasFocus(50)</visible>
+				</control>
+				<control type="label">
+					<left>55</left>
+					<top>15</top>
+					<width>600</width>
+					<height>40</height>
+					<label>Cast</label>
+					<font>font13</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+				</control>
+				<control type="list" id="50">
+					<left>55</left>
+					<top>70</top>
+					<width>1385</width>
+					<height>400</height>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<orientation>horizontal</orientation>
+					<onleft>9000</onleft>
+					<onright>50</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<onback>SetFocus(9000)</onback>
+					<preloaditems>1</preloaditems>
+					<include>OpenClose_WidgetZoom</include>
+					<itemlayout width="207">
+						<control type="group">
+							<control type="image">
+								<left>0</left>
+								<top>3</top>
+								<width>159</width>
+								<height>240</height>
+								<aspectratio>stretch</aspectratio>
+								<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<bordertexture>colors/black.png</bordertexture>
+								<bordersize>4</bordersize>
+							</control>
+						</control>
+					</itemlayout>
+					<focusedlayout width="207">
+						<control type="group">
+							<animation type="Focus">
+								<effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+							</animation>
+							<animation type="Unfocus">
+								<effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+							</animation>
+							<control type="image">
+								<left>0</left>
+								<top>3</top>
+								<width>159</width>
+								<height>240</height>
+								<aspectratio>stretch</aspectratio>
+								<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<bordertexture>colors/black.png</bordertexture>
+								<bordersize>4</bordersize>
+							</control>
+							<control type="group">
+								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+								<visible>Control.HasFocus(50)</visible>
+								<control type="image">
+									<left>0</left>
+									<top>267</top>
+									<width>212</width>
+									<height>57</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>colors/black.png</texture>
+									<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+								</control>
+								<control type="image">
+									<left>0</left>
+									<visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+									<top>0</top>
+									<width>212</width>
+									<height>35</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>colors/black.png</texture>
+									<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+								</control>
+								<control type="label">
+									<left>20</left>
+									<top>267</top>
+									<width>178</width>
+									<label>$INFO[ListItem.Label]</label>
+									<font>font10</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>text_shadow</shadowcolor>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<left>20</left>
+									<top>291</top>
+									<width>178</width>
+									<label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
+									<font>font10</font>
+									<textcolor>button_focus</textcolor>
+									<shadowcolor>text_shadow</shadowcolor>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+								<control type="progress">
+									<left>20</left>
+									<top>15</top>
+									<width>174</width>
+									<height>13</height>
+									<info>ListItem.PercentPlayed</info>
+									<texturebg border="3">progress/texturebg_border_white.png</texturebg>
+									<midtexture>progress/texturebg_white.png</midtexture>
+									<lefttexture>-</lefttexture>
+									<righttexture>-</righttexture>
+									<overlaytexture>-</overlaytexture>
+									<visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+								</control>
+								<control type="image">
+									<left>1</left>
+									<top>3</top>
+									<width>211</width>
+									<height>321</height>
+									<aspectratio>stretch</aspectratio>
+									<texture background="true" border="8">buttons/thumbnail_focused.png</texture>
+								</control>
+							</control>
+						</control>
+					</focusedlayout>
+				</control>
 			</control>
 		</control>
 	</controls>
