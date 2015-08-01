@@ -1043,7 +1043,7 @@
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <left>130</left>
+                                <left>15</left>
                                 <top>47</top>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
@@ -1052,7 +1052,7 @@
                                 <font>font13</font>
                             </control>
                             <control type="label">
-                                <left>130</left>
+                                <left>15</left>
                                 <top>237</top>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]Clouds: $INFO[ListItem.Property(Cloudiness)]</label>
@@ -1096,7 +1096,7 @@
                                     <texture>$INFO[ListItem.Icon]</texture>
                                 </control>
                                 <control type="label">
-                                    <left>130</left>
+                                    <left>15</left>
                                     <top>47</top>
                                     <width>230</width>
                                     <align>center</align>
@@ -1105,7 +1105,7 @@
                                     <font>font13</font>
                                 </control>
                                 <control type="label">
-                                    <left>130</left>
+                                    <left>15</left>
                                     <top>237</top>
                                     <align>center</align>
                                     <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]Clouds: $INFO[ListItem.Property(Cloudiness)]</label>
