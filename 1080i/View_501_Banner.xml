@@ -114,7 +114,7 @@
                             <width>70</width>
                             <height>160</height>
                             <fadetime>300</fadetime>
-                            <texture colordiffuse="FF12B2E7">colors/white.png</texture>
+                            <texture colordiffuse="button_focus">colors/white.png</texture>
                             <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
                             <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
                         </control>
