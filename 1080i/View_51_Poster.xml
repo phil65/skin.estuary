@@ -133,6 +133,17 @@
                     <scroll>false</scroll>
                     <align>left</align>
                 </control>
+                <control type="textbox">
+                    <left>645</left>
+                    <top>580</top>
+                    <width>1150</width>
+                    <height>110</height>
+                    <label>$INFO[ListItem.Plot,[COLOR button_focus]Plot:[/COLOR] ,]</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <align>left</align>
+                </control>
                 <control type="label">
                     <right>135</right>
                     <top>400</top>
