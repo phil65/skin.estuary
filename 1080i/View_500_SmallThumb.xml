@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include>MediaBackground</include>
-    <include name="View_53_PosterThumb">
+    <include name="View_500_SmallThumb">
         <control type="group">
             <description>List Viewtype</description>
             <control type="group">
@@ -11,7 +11,10 @@
                     <width>48</width>
                     <height>24</height>
                     <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
-                    <visible>Container(53).HasNext + Control.IsVisible(53)</visible>
+                    <animation effect="zoom" start="100,0" end="100,100" center="0,890" time="200">VisibleChange</animation>
+                    <animation effect="zoom" start="100,0" end="100,100" delay="500" center="0,890" time="200">WindowOpen</animation>
+                    <animation effect="zoom" start="100,100" end="100,0" center="0,890" time="200">WindowClose</animation>
+                    <visible>Container(500).HasNext + Control.IsVisible(500)</visible>
                 </control>
                 <control type="image">
                     <left>836</left>
@@ -19,14 +22,17 @@
                     <width>48</width>
                     <height>24</height>
                     <texture colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
-                    <visible>Container(53).HasPrevious + Control.IsVisible(53)</visible>
+                    <animation effect="zoom" start="100,0" end="100,100" center="0,180" time="200">VisibleChange</animation>
+                    <animation effect="zoom" start="100,0" end="100,100" delay="500" center="0,180" time="200">WindowOpen</animation>
+                    <animation effect="zoom" start="100,100" end="100,0" center="0,180" time="200">WindowClose</animation>
+                    <visible>Container(500).HasPrevious + Control.IsVisible(500)</visible>
                 </control>
                 <include>OpenClose_FadeSlide_Right</include>
                 <left>100</left>
                 <top>142</top>
-                <visible>Control.IsVisible(53)</visible>
+                <visible>Control.IsVisible(500)</visible>
                 <include>Vis_FadeSlide_Right</include>
-                <control type="panel" id="53">
+                <control type="panel" id="500">
                     <left>2</left>
                     <top>3</top>
                     <width>1800</width>
@@ -35,18 +41,19 @@
                     <onright>531</onright>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
-                    <viewtype label="Poster Thumbnail">Poster Thumbnail</viewtype>
+                    <viewtype label="Small Thumbnail">Small Thumbnail</viewtype>
                     <preloaditems>2</preloaditems>
                     <pagecontrol>531</pagecontrol>
+                    <scrolltime>200</scrolltime>
                     <visible>![Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files)]</visible>
                     <itemlayout height="279" width="250">
                         <control type="image">
                             <left>1</left>
                             <top>0</top>
-                            <width>214</width>
+                            <width>160</width>
                             <height>240</height>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <aspectratio>keep</aspectratio>
+                            <aspectratio>stretch</aspectratio>
                             <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
@@ -55,21 +62,21 @@
                         <control type="image">
                             <left>1</left>
                             <top>0</top>
-                            <width>214</width>
+                            <width>160</width>
                             <height>240</height>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <aspectratio>keep</aspectratio>
+                            <aspectratio>stretch</aspectratio>
                             <bordertexture>buttons/thumbnail_focused.png</bordertexture>
                             <bordersize>4</bordersize>
-                            <animation effect="slide" start="0,0" end="-30,0" time="300">Focus</animation>
-                            <animation effect="slide" start="-30,0" end="0,0" time="125">UnFocus</animation>
+                            <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
+                            <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
                         </control>
                         <control type="label">
-                            <left>0</left>
+                            <left>-40</left>
                             <top>245</top>
-                            <width>220</width>
+                            <width>235</width>
                             <height>20</height>
-                            <font>font12</font>
+                            <font>font10</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>white</selectedcolor>
                             <align>center</align>
@@ -77,7 +84,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
-                            <right>15</right>
+                            <right>47</right>
                             <top>0</top>
                             <width>70</width>
                             <height>240</height>
@@ -87,7 +94,7 @@
                             <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
                         </control>
                         <control type="image">
-                            <right>32</right>
+                            <right>64</right>
                             <top>10</top>
                             <width>32</width>
                             <height>32</height>
@@ -98,7 +105,7 @@
                             <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
                         </control>
                         <control type="label">
-                            <right>15</right>
+                            <right>47</right>
                             <top>45</top>
                             <width>70</width>
                             <height>32</height>
@@ -109,7 +116,7 @@
                             <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
                         </control>
                         <control type="image">
-                            <right>34</right>
+                            <right>67</right>
                             <top>90</top>
                             <width>32</width>
                             <height>32</height>
@@ -120,7 +127,7 @@
                             <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
                         </control>
                         <control type="label">
-                            <right>15</right>
+                            <right>47</right>
                             <top>124</top>
                             <width>70</width>
                             <height>32</height>
@@ -131,7 +138,7 @@
                             <animation effect="fade" start="100" end="0" time="125">UnFocus</animation>
                         </control>
                         <control type="image">
-                            <right>35</right>
+                            <right>65</right>
                             <top>180</top>
                             <width>32</width>
                             <height>32</height>
@@ -150,11 +157,11 @@
                     <texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
                     <textureslidernib>ScrollBarNib.png</textureslidernib>
                     <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-                    <onleft>53</onleft>
+                    <onleft>500</onleft>
                     <onright>2</onright>
                     <showonepage>false</showonepage>
                     <orientation>vertical</orientation>
-                    <visible>Control.IsVisible(53)</visible>
+                    <visible>Control.IsVisible(500)</visible>
                 </control>
             </control>
         </control>
