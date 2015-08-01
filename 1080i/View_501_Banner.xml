@@ -92,7 +92,7 @@
                                 <selectedcolor>white</selectedcolor>
                                 <align>left</align>
                                 <aligny>center</aligny>
-                                <info>ListItem.Label</info>
+                                <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <right>140</right>
@@ -100,11 +100,11 @@
                                 <width>800</width>
                                 <height>20</height>
                                 <font>font12</font>
-                                <textcolor>white</textcolor>
+                                <textcolor>button_focus</textcolor>
                                 <selectedcolor>white</selectedcolor>
                                 <align>right</align>
                                 <aligny>center</aligny>
-                                <info>ListItem.Property(TotalEpisodes)</info>
+                                <label>$VAR[BannerLabel2Var]</label>
                             </control>
                         </control>
                         </control>
