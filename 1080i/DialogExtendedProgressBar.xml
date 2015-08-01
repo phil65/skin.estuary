@@ -5,43 +5,78 @@
 	<animation effect="slide" start="0,0" end="0,-70" delay="300" time="75">WindowClose</animation>
 	<controls>
 		<control type="group">
-			<left>720</left>
+			<left>1830</left>
 			<top>0</top>
 			<animation effect="slide" end="0,-80" time="150" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
 			<control type="image">
-				<left>0</left>
-				<top>-10</top>
-				<width>400</width>
-				<height>70</height>
-				<texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
+				<description>Loading indicator</description>
+				<posx>-4</posx>
+				<posy>-13</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>dialogs/extendedprogress/loading-back.png</texture>
 			</control>
-			<control type="label" id="30">
-				<description>Header Label</description>
-				<left>15</left>
-				<top>4</top>
-				<width>370</width>
-				<height>18</height>
-				<font>font10_title</font>
-				<textcolor>selected</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
+			<control type="image">
+				<description>Loading indicator</description>
+				<posx>-4</posx>
+				<posy>-13</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>dialogs/extendedprogress/loading-green.png</texture>
+				<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+			</control>
+			<control type="grouplist">
+				<posx>-800</posx>
+				<posy>0</posy>
+				<width>800</width>
+				<height>120</height>
+				<align>right</align>
+				<orientation>horizontal</orientation>
+				<itemgap>0</itemgap>
+				<control type="label" id="30">
+					<description>Header label</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width min="0" max="680">auto</width>
+					<height>120</height>
+					<font>font12</font>
+					<textcolor>C0FFFFFF</textcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+				</control>
+				<control type="label">
+					<description>Header label</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width min="0" max="120">auto</width>
+					<height>120</height>
+					<font>font12</font>
+					<textcolor>C0FFFFFF</textcolor>
+					<label>$INFO[Control.GetLabel(32),: ,%]</label>
+					<scroll>false</scroll>
+					<align>left</align>
+				</control>
 			</control>
 			<control type="label" id="31">
-				<description>Title Label</description>
-				<left>15</left>
-				<top>20</top>
-				<width>370</width>
-				<height>20</height>
-				<font>font10</font>
-				<align>left</align>
-				<aligny>center</aligny>
+				<description>Title label</description>
+				<posx>0</posx>
+				<posy>33</posy>
+				<width>750</width>
+				<height>120</height>
+				<font>font12</font>
+				<textcolor>80FFFFFF</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
 			</control>
 			<control type="progress" id="32">
+				<posx>3000</posx>
 				<description>progress control</description>
-				<left>15</left>
-				<top>42</top>
-				<width>370</width>
-				<height>8</height>
+        <texturebg border="3">progress/texturebg_border_white.png</texturebg>
+        <midtexture>progress/texturebg_white.png</midtexture>
+        <lefttexture>-</lefttexture>
+        <righttexture>-</righttexture>
+        <overlaytexture>-</overlaytexture>
+        <height>15</height>
 			</control>
 		</control>
 	</controls>

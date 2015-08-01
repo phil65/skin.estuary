@@ -180,7 +180,7 @@
             <align>right</align>
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
-            <animation effect="slide" start="0,0" end="-400,0" time="175" condition="Window.IsVisible(infodialog)">conditional</animation>
+            <visible>!Window.IsVisible(infodialog) + !Window.IsVisible(extendedprogressdialog)</visible>
             <control type="label">
                 <description>Weather label</description>
                 <include>BreadcrumbsLabel</include>
