@@ -36,7 +36,6 @@
         <value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
         <value condition="Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes) + !SubString(Container.FolderName,$LOCALIZE[20373])]">$LOCALIZE[20343]</value>
         <value condition="Container.Content(episodes) + !SubString(Container.FolderPath,videodb://recentlyaddedepisodes/) + SubString(Container.FolderName,$LOCALIZE[20373])">$INFO[ListItem.TVShowTitle,$LOCALIZE[20343] / ]</value>
-        <value condition="Window.IsActive(videoplaylist)">$LOCALIZE[10522]</value>
         <value condition="Window.IsActive(musicplaylisteditor)">$LOCALIZE[10503]</value>
         <value condition="Window.IsActive(musicplaylist)">$LOCALIZE[10517]</value>
         <value condition="Window.IsActive(skinsettings)">$LOCALIZE[5] / $LOCALIZE[20077]</value>
@@ -53,14 +52,12 @@
     </variable>
     <variable name="BreadcrumbsIconVar">
         <value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes) | Window.IsActive(script-NextAired-TVGuide.xml)">common/tv_icon.png</value>
-        <value condition="Window.IsActive(videos) | Window.IsActive(videoplaylist)">common/logo_movies.png</value>
         <value condition="Window.IsActive(addonbrowser)">common/puzzle_icon.png</value>
         <value condition="Window.IsActive(musicplaylisteditor) | Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(musicplaylist)">common/logo_music.png</value>
         <value condition="Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)">common/logo_games.png</value>
         <value condition="Window.IsActive(filemanager)">common/logo_playlist.png</value>
         <value condition="Window.IsActive(settings) | Window.IsActive(skinsettings) | Window.IsActive(systeminfo) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(profilesettings) | Window.IsActive(loginscreen)">common/settings_logo.png</value>
         <value condition="Window.IsActive(pictures)">common/logo_pics.png</value>
-        <value condition="Window.IsActive(weather)">common/weather.png</value>
         <value condition="Window.IsActive(script-globalsearch-main.xml)">common/DefaultSearch.png</value>
         <value condition="Window.IsActive(PVR)">pvr/TVIcon.png</value>
         <value>common/puzzle_icon.png</value>
