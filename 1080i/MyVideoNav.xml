@@ -26,7 +26,7 @@
         <include>Media_Menu</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$VAR[BreadcrumbsVideoVar]" />
-            <param name="breadcrumbs_icon" value="common/logo_movies.png" />
+            <param name="breadcrumbs_icon" value="icons/settings/video.png" />
         </include>
         <include>BottomBar</include>
     </controls>
