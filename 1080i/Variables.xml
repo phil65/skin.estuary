@@ -4,6 +4,10 @@
         <value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
         <value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
     </variable>
+    <variable name="BannerArtVar">
+        <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+        <value>$INFO[ListItem.Art(fanart)]</value>
+    </variable>
     <variable name="HomeFanartVar">
         <value condition="!IsEmpty(Container(5100).ListItem.Art(fanart)) + Control.HasFocus(5100)">$INFO[Container(5100).ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(Container(5200).ListItem.Art(fanart)) + Control.HasFocus(5200)">$INFO[Container(5200).ListItem.Art(fanart)]</value>
