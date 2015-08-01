@@ -10,6 +10,10 @@
         <value condition="!IsEmpty(Container(5300).ListItem.Art(fanart)) + Control.HasFocus(5300)">$INFO[Container(5300).ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(Container(5400).ListItem.Art(fanart)) + Control.HasFocus(5400)">$INFO[Container(5400).ListItem.Art(fanart)]</value>
     </variable>
+    <variable name="NowPlayingPosterVar">
+        <value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
+        <value>$INFO[Player.Art(tvshow.poster)]</value>
+    </variable>
     <variable name="ListWatchedIcon">
         <value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
         <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlays/watched/OverlayWatched-List.png</value>

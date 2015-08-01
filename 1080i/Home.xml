@@ -611,7 +611,7 @@
                         <left>530</left>
                         <width>300</width>
                         <height>450</height>
-                        <texture>$INFO[Player.Art(poster)]</texture>
+                        <texture>$VAR[NowPlayingPosterVar]</texture>
                     </control>
                     <control type="videowindow">
                         <top>85</top>
