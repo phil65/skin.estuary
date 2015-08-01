@@ -63,7 +63,7 @@
                     <width>32</width>
                     <height>32</height>
                     <fadetime>300</fadetime>
-                    <texture border="1">lists/year.png</texture>
+                    <texture colordiffuse="button_focus">lists/year.png</texture>
                     <visible>!IsEmpty(ListItem.Year)</visible>
                 </control>
                 <control type="label">
@@ -81,7 +81,7 @@
                     <width>32</width>
                     <height>32</height>
                     <fadetime>300</fadetime>
-                    <texture border="1">lists/rating.png</texture>
+                    <texture colordiffuse="button_focus">lists/rating.png</texture>
                     <animation effect="slide" start="0,0" end="-115,0" time="0" reversible="false" condition="IsEmpty(ListItem.Year)">conditional</animation>
                     <animation effect="fade" start="100" end="0" time="175" condition="IsEmpty(ListItem.Year)">conditional</animation>
                     <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
