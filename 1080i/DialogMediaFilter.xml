@@ -3,24 +3,25 @@
 	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<left>240</left>
-		<top>100</top>
+		<left>360</left>
+		<top>570</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1200" />
-			<param name="DialogBackgroundHeight" value="800" />
+			<param name="DialogBackgroundHeight" value="400" />
 			<param name="DialogHeaderWidth" value="1080" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[587]" />
 			<param name="DialogHeaderId" value="2" />
+			<param name="darken_bg" value="false" />
 		</include>
 		<control type="grouplist" id="5">
 			<description>control area</description>
 			<left>30</left>
 			<top>70</top>
 			<width>950</width>
-			<height>710</height>
+			<height>310</height>
 			<itemgap>-25</itemgap>
 			<pagecontrol>6</pagecontrol>
 			<onup>5</onup>
