@@ -25,6 +25,7 @@
     <include name="VideoInfoMediaFlag">
         <control type="group">
             <visible>!IsEmpty($PARAM[InfoLabel])</visible>
+            <visible>$PARAM[Visible]</visible>
             <height>150</height>
             <width>155</width>
             <control type="label">

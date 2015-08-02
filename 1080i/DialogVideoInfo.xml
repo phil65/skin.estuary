@@ -11,7 +11,7 @@
 				<width>613</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture background="true" fallback="info/movieinfogradient.png">$INFO[ListItem.Art(poster)]</texture>
+				<texture background="true" fallback="info/movieinfogradient.png">$VAR[PosterVar]</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -205,57 +205,45 @@
 							<width>1200</width>
 							<orientation>vertical</orientation>
 							<usecontrolcoords>true</usecontrolcoords>
-							<control type="group">
-								<width>259</width>
-								<height>150</height>
-								<visible>Container.Content(episodes)</visible>
-								<control type="label">
-									<posx>4</posx>
-									<posy>-4</posy>
-									<width>249</width>
-									<height>65</height>
-									<align>center</align>
-									<label fallback="-">$INFO[ListItem.Season,S]  -  $INFO[ListItem.Episode,E]</label>
-									<font>Font_Bold46</font>
-								</control>
-								<control type="label">
-									<posx>4</posx>
-									<width>249</width>
-									<posy>59</posy>
-									<height>44</height>
-									<label fallback="31003">[COLOR grey]$LOCALIZE[31005]:[/COLOR] $INFO[ListItem.Premiered]</label>
-									<font>font12</font>
-									<align>center</align>
-									<scroll>true</scroll>
-								</control>
-							</control>
 							<include name="VideoInfoMediaFlag">
 								<param name="InfoLabel" value="ListItem.Rating" />
 								<param name="Title" value="Rating" />
+								<param name="Visible" value="True" />
 							</include>
 							<include name="VideoInfoMediaFlag">
 								<param name="InfoLabel" value="ListItem.Duration" />
 								<param name="Title" value="Minutes" />
+								<param name="Visible" value="True" />
 							</include>
 							<include name="VideoInfoMediaFlag">
 								<param name="InfoLabel" value="ListItem.Year" />
 								<param name="Title" value="Year" />
+								<param name="Visible" value="True" />
 							</include>
 							<include name="VideoInfoMediaFlag">
 								<param name="InfoLabel" value="ListItem.VideoResolution" />
 								<param name="Title" value="HD" />
+								<param name="Visible" value="True" />
 							</include>
 							<include name="VideoInfoMediaFlag">
 								<param name="InfoLabel" value="ListItem.VideoAspect" />
 								<param name="Title" value="AR" />
+								<param name="Visible" value="True" />
 							</include>
 							<include name="VideoInfoMediaFlag">
 								<param name="InfoLabel" value="ListItem.AudioChannels" />
 								<param name="Title" value="Channels" />
+								<param name="Visible" value="True" />
+							</include>
+							<include name="VideoInfoMediaFlag">
+								<param name="InfoLabel" value="ListItem.Season" />
+								<param name="Title" value="Seasons" />
+								<param name="Visible" value="!Container.Content(episodes)" />
 							</include>
 							<include name="VideoInfoMediaFlag">
 								<param name="InfoLabel" value="ListItem.Episode" />
 								<param name="Title" value="Episodes" />
+								<param name="Visible" value="!Container.Content(episodes)" />
 							</include>
 						</control>
 					</control>
