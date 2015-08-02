@@ -283,6 +283,8 @@
                 <texture flipx="true">lists/arrow-right-fo.png</texture>
             </control>
         </control>
+        <control type="group">
+            <visible>!Window.isActive(home)</visible>
             <control type="image">
                 <description>List Panel</description>
                 <left>110</left>
@@ -291,16 +293,17 @@
                 <height>40</height>
                 <texture colordiffuse="button_focus">overlays/watched/OverlayPlaying-List.png</texture>
             </control>
-        <control type="label">
-            <top>1014</top>
-            <left>150</left>
-            <width>1900</width>
-            <height>50</height>
-            <align>left</align>
-            <font>font16</font>
-            <textcolor>white</textcolor>
-            <shadowcolor>text_shadow</shadowcolor>
-            <label>$INFO[Player.Time,[COLOR button_focus],[/COLOR] - ]$INFO[Player.Title]</label>
+            <control type="label">
+                <top>1014</top>
+                <left>150</left>
+                <width>1900</width>
+                <height>50</height>
+                <align>left</align>
+                <font>font16</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <label>$INFO[Player.Time,[COLOR button_focus],[/COLOR] - ]$INFO[Player.Title]</label>
+            </control>
         </control>
         <control type="label">
             <top>1014</top>
