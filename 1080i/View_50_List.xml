@@ -42,7 +42,7 @@
                 <include>OpenClose_FadeSlide_Right</include>
                 <visible>Control.IsVisible(50) + !IsEmpty(ListItem.DBID)</visible>
                 <include>Vis_FadeSlide_Right</include>
-                <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+                <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
                 <control type="image">
                     <right>110</right>
                     <top>182</top>
@@ -144,7 +144,7 @@
                     <width>714</width>
                     <height>706</height>
                     <texture border="2">dialogs/dialog-bg.png</texture>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
                 </control>
                 <control type="image">
                     <description>background image</description>
@@ -168,7 +168,7 @@
                     <ondown>50</ondown>
                     <viewtype label="List">list</viewtype>
                     <preloaditems>1</preloaditems>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)</visible>
+                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(episodes)</visible>
                     <focusedlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
                         <control type="image">
                             <left>0</left>
