@@ -13,6 +13,14 @@
 				<aspectratio aligny="top">scale</aspectratio>
 				<texture background="true" fallback="info/movieinfogradient.png">$INFO[ListItem.Art(poster)]</texture>
 			</control>
+			<control type="image">
+				<left>0</left>
+				<top>80</top>
+				<width>613</width>
+				<height>920</height>
+				<aspectratio>stretch</aspectratio>
+				<texture background="true" border="8">buttons/thumbnail_focused.png</texture>
+			</control>
 		</control>
 		<control type="group">
 			<include>OpenClose_FadeSlide_Right</include>
@@ -31,13 +39,13 @@
 				<aspectratio aligny="top">scale</aspectratio>
 				<texture>lists/panel.png</texture>
 			</control>
-            <control type="image">
-            	<posx>35</posx>
+			<control type="image">
+				<posx>35</posx>
 				<top>80</top>
 				<width>140</width>
 				<height>920</height>
-                <texture colordiffuse="button_focus">colors/white.png</texture>
-            </control>
+				<texture colordiffuse="button_focus">colors/white.png</texture>
+			</control>
 			<control type="group">
 				<posx>190</posx>
 				<control type="button" id="13">
