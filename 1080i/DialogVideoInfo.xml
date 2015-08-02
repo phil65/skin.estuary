@@ -27,7 +27,7 @@
 			<left>613</left>
 			<control type="image">
 				<top>80</top>
-				<width>130</width>
+				<width>1307</width>
 				<height>920</height>
 				<aspectratio align="center">scale</aspectratio>
 				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -37,7 +37,7 @@
 				<width>1307</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture>lists/panel.png</texture>
+				<texture colordiffuse="D0FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="image">
 				<posx>35</posx>
