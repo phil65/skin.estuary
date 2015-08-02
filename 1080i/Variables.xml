@@ -5,6 +5,7 @@
         <value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
     </variable>
     <variable name="BannerArtVar">
+        <value condition="StringCompare(ListItem.Label,..)">DefaultBackBanner.png</value>
         <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
