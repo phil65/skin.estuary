@@ -98,7 +98,7 @@
                     <ondown>50</ondown>
                     <viewtype label="List">list</viewtype>
                     <preloaditems>1</preloaditems>
-                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(addons)</visible>
+                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)</visible>
                     <focusedlayout height="70">
                         <control type="image">
                             <left>0</left>
