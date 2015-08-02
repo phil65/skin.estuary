@@ -26,7 +26,7 @@
 			<font>font13</font>
 			<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 		</control>
-		<control type="progress">
+		<control type="progress" id="20">
 			<description>Progressbar</description>
 			<left>45</left>
 			<top>222</top>
