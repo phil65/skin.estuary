@@ -263,6 +263,22 @@
             <height>80</height>
             <texture border="1">frame/InfoBarBottom.png</texture>
         </control>
+        <control type="image">
+            <description>List Panel</description>
+            <left>20</left>
+            <top>1010</top>
+            <width>80</width>
+            <height>80</height>
+            <texture colordiffuse="button_focus">icons/settings/settings.png</texture>
+        </control>
+        <control type="image">
+            <description>List Panel</description>
+            <left>5</left>
+            <top>1012</top>
+            <width>55</width>
+            <height>55</height>
+            <texture flipx="true">lists/arrow-right-fo.png</texture>
+        </control>
         <control type="label">
             <top>1010</top>
             <left>0</left>
