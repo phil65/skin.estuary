@@ -196,7 +196,7 @@
 							</control>
 						</control>
 					</control>
-					<!-- First Row -->
+					<!-- Middle Row -->
 					<control type="group">
 						<posy>-60</posy>
 						<control type="grouplist">
@@ -248,25 +248,6 @@
 						</control>
 					</control>
 				</control>
-				<!-- 				<control type="button" id="600">
-				     <posx>675</posx>
-				     <posy>326</posy>
-				     <width>950</width>
-				     <height>217</height>
-				     <texturefocus>-</texturefocus>
-				     <texturenofocus>-</texturenofocus>
-				     <onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31172])</onclick>
-				     <onclick>SetProperty(Dialog.1.BuiltIn,RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label]))</onclick>
-				     <onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31096])</onclick>
-				     <onclick>SetProperty(Dialog.3.BuiltIn,SetProperty(listcontent,$INFO[Container(50).ListItem.Label],home)|ActivateWindow(1168))</onclick>
-				     <onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31197])</onclick>
-				     <onclick>SetProperty(Dialog.2.BuiltIn,SetFocus(13)|Action(Select))</onclick>
-				     <onclick>RunScript(script.toolbox,info=selectdialog,header=$INFO[Container(50).ListItem.Label])</onclick>
-				     <onleft>Control.Move(50,-1)</onleft>
-				     <onright>Control.Move(50,1)</onright>
-				     <onup>5000</onup>
-				     <ondown>5000</ondown>
-				     </control> -->
 				<control type="list" id="50">
 					<posx></posx>
 					<posy>630</posy>
