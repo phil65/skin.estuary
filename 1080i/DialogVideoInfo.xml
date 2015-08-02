@@ -112,9 +112,9 @@
 						<height>255</height>
 						<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.TagLine)</visible>
 						<control type="textbox" id="800">
-							<posx>40</posx>
+							<posx>20</posx>
 							<posy>20</posy>
-							<width>980</width>
+							<width>1050</width>
 							<height>210</height>
 							<align>left</align>
 							<label fallback="31003">[B]$INFO[ListItem.TagLine,,[CR]][/B]$INFO[ListItem.Plot]</label>
