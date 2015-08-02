@@ -32,13 +32,14 @@
 				<texture>lists/panel.png</texture>
 			</control>
             <control type="image">
+            	<posx>35</posx>
 				<top>80</top>
-				<width>180</width>
+				<width>140</width>
 				<height>920</height>
                 <texture colordiffuse="button_focus">colors/white.png</texture>
             </control>
 			<control type="group">
-				<posx>170</posx>
+				<posx>190</posx>
 				<control type="button" id="13">
 					<include>HiddenObject</include>
 					<texturenofocus>-</texturenofocus>
@@ -52,7 +53,7 @@
 					<ondown>5000</ondown>
 					<onup>5000</onup>
 					<control type="button" id="130">
-						<width>1120</width>
+						<width>1100</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -73,7 +74,7 @@
 					</control>
 					<control type="button" id="131">
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
-						<width>1120</width>
+						<width>1100</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -90,7 +91,7 @@
 						<visible>!IsEmpty(ListItem.Writer)</visible>
 					</control>
 					<control type="label" id="135">
-						<width>1120</width>
+						<width>1100</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -102,19 +103,8 @@
 					<control type="group" id="140">
 						<height>255</height>
 						<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.TagLine)</visible>
-						<control type="button" id="132">
-							<width>1120</width>
-							<height>255</height>
-							<onup>131</onup>
-							<ondown>5000</ondown>
-							<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-							<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-							<label>-</label>
-							<onclick>SetProperty(Text,[B]$INFO[ListItem.TagLine,,[CR]][/B]$ESCINFO[Window(home).Property(SeasonDescription),[B]Season Info:[/B][CR],[CR][CR][B]Show Info:[/B][CR]]$ESCINFO[ListItem.Plot],home)</onclick>
-							<onclick>RunScript(script.toolbox,info=textviewer,header=Plot,text='$ESCINFO[Window(home).Property(Text)]')</onclick>
-						</control>
 						<control type="textbox" id="800">
-							<posx>43</posx>
+							<posx>40</posx>
 							<posy>20</posy>
 							<width>980</width>
 							<height>210</height>
@@ -172,7 +162,7 @@
 									<width>995</width>
 									<height>40</height>
 									<label>$INFO[ListItem.Genre]</label>
-									<font>font12</font>
+									<font>font13</font>
 									<textcolor>grey</textcolor>
 									<scroll>true</scroll>
 								</control>
@@ -202,7 +192,7 @@
 					<control type="group">
 						<posy>-60</posy>
 						<control type="grouplist">
-							<posx>-180</posx>
+							<posx>-185</posx>
 							<posy>0</posy>
 							<width>1200</width>
 							<orientation>vertical</orientation>
@@ -226,7 +216,7 @@
 									<posy>59</posy>
 									<height>44</height>
 									<label fallback="31003">[COLOR grey]$LOCALIZE[31005]:[/COLOR] $INFO[ListItem.Premiered]</label>
-									<font>font10</font>
+									<font>font12</font>
 									<align>center</align>
 									<scroll>true</scroll>
 								</control>
@@ -257,7 +247,7 @@
 									<height>38</height>
 									<align>center</align>
 									<label fallback="?">$INFO[ListItem.Votes,, Votes]</label>
-									<font>font10</font>
+									<font>font12</font>
 								</control>
 							</control>
 							<control type="group">
@@ -278,7 +268,7 @@
 									<height>38</height>
 									<align>center</align>
 									<label>Minutes</label>
-									<font>font10</font>
+									<font>font12</font>
 								</control>
 							</control>
 							<control type="group">
@@ -299,7 +289,7 @@
 									<height>38</height>
 									<align>center</align>
 									<label>Year</label>
-									<font>font10</font>
+									<font>font12</font>
 								</control>
 							</control>
 						</control>
@@ -335,7 +325,7 @@
 					<ondown>5000</ondown>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
-					<itemlayout height="400" width="280">
+					<itemlayout height="400" width="278">
 						<control type="group">
 							<control type="image">
 								<posy>0</posy>
@@ -373,7 +363,7 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout height="400" width="280">
+					<focusedlayout height="400" width="278">
 						<control type="group">
 							<control type="image">
 								<posy>0</posy>
@@ -520,7 +510,7 @@
 					<posy>1033</posy>
 					<width>950</width>
 					<label>$INFO[ListItem.FileNameAndPath]</label>
-					<font>font10</font>
+					<font>font12</font>
 					<textcolor>white5</textcolor>
 					<scroll>true</scroll>
 					<haspath>true</haspath>
