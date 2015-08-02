@@ -17,7 +17,7 @@
                 <onright>52</onright>
                 <onup>52</onup>
                 <ondown>52</ondown>
-                <visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios)</visible>
+                <visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Window.IsActive(addonbrowser)</visible>
                 <viewtype label="Icon Wall">icon</viewtype>
                 <include>OpenClose_FadeSlide_Right</include>
                 <itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files)">
