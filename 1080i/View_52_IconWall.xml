@@ -34,9 +34,9 @@
                         <align>center</align>
                     </control>
                     <control type="label">
-                        <left>0</left>
+                        <left>25</left>
                         <top>160</top>
-                        <width>400</width>
+                        <width>350</width>
                         <height>400</height>
                         <label>$INFO[ListItem.Label]</label>
                         <font>font13</font>
@@ -72,9 +72,9 @@
                             <align>center</align>
                         </control>
                         <control type="label">
-                            <left>0</left>
+                            <left>25</left>
                             <top>160</top>
-                            <width>400</width>
+                            <width>350</width>
                             <height>400</height>
                             <label>$INFO[ListItem.Label]</label>
                             <font>font13</font>
