@@ -152,30 +152,102 @@
                         <control type="image">
                             <left>1</left>
                             <top>10</top>
-                            <width>400</width>
-                            <height>330</height>
+                            <width>380</width>
+                            <height>250</height>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <aspectratio>stretch</aspectratio>
+                            <aspectratio>scale</aspectratio>
                             <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
+                        </control>
+                        <control type="image">
+                            <left>1</left>
+                            <top>265</top>
+                            <width>375</width>
+                            <height>80</height>
+                            <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>10</left>
+                            <top>277</top>
+                            <width>355</width>
+                            <height>20</height>
+                            <font>font30_title</font>
+                            <textcolor>white</textcolor>
+                            <selectedcolor>white</selectedcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Season]x$INFO[ListItem.Episode]</label>
+                        </control>
+                        <control type="label">
+                            <left>15</left>
+                            <top>313</top>
+                            <width>355</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>white</textcolor>
+                            <selectedcolor>white</selectedcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Title]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout height="360" width="450" condition="Container.content(episodes)">
-                        <control type="image">
-                            <left>1</left>
-                            <top>10</top>
-                            <width>400</width>
-                            <height>330</height>
-                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <aspectratio>stretch</aspectratio>
-                            <bordertexture>colors/black.png</bordertexture>
-                            <bordersize>4</bordersize>
+                        <control type="group">
                             <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
                             <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+                            <control type="image">
+                                <left>1</left>
+                                <top>10</top>
+                                <width>380</width>
+                                <height>250</height>
+                                <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                                <aspectratio>scale</aspectratio>
+                                <bordertexture>colors/black.png</bordertexture>
+                                <bordersize>4</bordersize>
+                            </control>
+                            <control type="image">
+                                <left>1</left>
+                                <top>265</top>
+                                <width>380</width>
+                                <height>80</height>
+                                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                            </control>
+                            <control type="label">
+                                <left>10</left>
+                                <top>277</top>
+                                <width>355</width>
+                                <height>20</height>
+                                <font>font30_title</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>white</selectedcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <label>$INFO[ListItem.Season]x$INFO[ListItem.Episode]</label>
+                            </control>
+                            <control type="label">
+                                <left>15</left>
+                                <top>313</top>
+                                <width>355</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>white</selectedcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <label>$INFO[ListItem.Title]</label>
+                            </control>
+                            <control type="image">
+                                <left>1</left>
+                                <top>11</top>
+                                <width>380</width>
+                                <height>333</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="8">buttons/thumbnail_focused.png</texture>
+                            </control>
                         </control>
                         <control type="image">
-                            <right>42</right>
-                            <top>10</top>
+                            <right>32</right>
+                            <top>12</top>
                             <width>70</width>
                             <height>330</height>
                             <fadetime>300</fadetime>
