@@ -11,7 +11,7 @@
 				<width>613</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture background="true" fallback="info/movieinfogradient.png">$VAR[PosterVar]</texture>
+				<texture background="true" fallback="colors/black.png">$VAR[PosterVar]</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -30,7 +30,7 @@
 				<width>1307</width>
 				<height>920</height>
 				<aspectratio align="center">scale</aspectratio>
-				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+				<texture colordiffuse="button_focus" background="true" fallback="colors/white.png">$INFO[ListItem.Art(fanart)]</texture>
 			</control>
 			<control type="image">
 				<top>80</top>
