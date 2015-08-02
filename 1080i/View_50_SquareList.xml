@@ -20,7 +20,7 @@
                     <fadetime>300</fadetime>
                     <bordertexture>colors/black.png</bordertexture>
                     <bordersize>4</bordersize>
-                    <texture border="4" background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture border="4" background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
                 <control type="image">
                     <right>110</right>
@@ -116,20 +116,20 @@
                             <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
                         </control>
                         <control type="label">
-                            <left>30</left>
-                            <top>0</top>
+                            <left>15</left>
+                            <top>2</top>
                             <height>70</height>
                             <width>560</width>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <font>font13</font>
+                            <font>font12</font>
                             <label>$INFO[ListItem.Year]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>button_focus</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
-                            <left>115</left>
+                            <left>95</left>
                             <top>0</top>
                             <height>70</height>
                             <width>860</width>
@@ -188,20 +188,20 @@
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
                        <control type="label">
-                            <left>30</left>
-                            <top>0</top>
+                            <left>15</left>
+                            <top>2</top>
                             <height>70</height>
                             <width>560</width>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <font>font13</font>
+                            <font>font12</font>
                             <label>$INFO[ListItem.Year]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>button_focus</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
-                            <left>115</left>
+                            <left>95</left>
                             <top>0</top>
                             <height>70</height>
                             <width>860</width>
