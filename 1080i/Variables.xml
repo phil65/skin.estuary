@@ -9,7 +9,8 @@
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="PosterVar">
-        <value condition="!IsEmpty(ListItem.Art(tvshow.poster)) + Container.Content(episodes)">$INFO[ListItem.Art(tvshow.poster)]</value>
+        <value condition="!IsEmpty(Container.Art(season.poster)) + Container.Content(episodes)">$INFO[Container.Art(season.poster)]</value>
+        <value condition="!IsEmpty(Container.Art(tvshow.poster)) + Container.Content(episodes)">$INFO[Container.Art(tvshow.poster)]</value>
         <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
     <variable name="BannerLabel2Var">
