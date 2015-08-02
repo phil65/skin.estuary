@@ -101,11 +101,11 @@
 					<control type="label" id="135">
 						<width>1100</width>
 						<height>90</height>
-						<textoffsetx>40</textoffsetx>
+						<textoffsetx>20</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
 						<label fallback="31003">$INFO[ListItem.Premiered,$LOCALIZE[20416]: ]</label>
-						<font>font13</font>
+						<font>font24_title</font>
 						<visible>Container.Content(tvshows)</visible>
 					</control>
 					<control type="group" id="140">
@@ -359,7 +359,7 @@
 									<height>69</height>
 									<posy>267</posy>
 									<align>center</align>
-									<font>Font_Reg25_2</font>
+									<font>font12</font>
 									<info>ListItem.Label</info>
 								</control>
 							</control>
@@ -392,7 +392,7 @@
 									<height>69</height>
 									<posy>267</posy>
 									<align>center</align>
-									<font>Font_Reg25_2</font>
+									<font>font12</font>
 									<info>ListItem.Label</info>
 									<autoscroll delay="5000" time="AutoScrollTime" repeat="8001">true</autoscroll>
 								</control>
