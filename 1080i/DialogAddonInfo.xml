@@ -10,7 +10,7 @@
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="group">
-			<include>VisibleFadeEffect</include>
+
 			<visible>!Window.isVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
 			<include name="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="920" />

@@ -49,7 +49,7 @@
 				<control type="group">
 					<top>90</top>
 					<left>210</left>
-					<include>VisibleFadeEffect</include>
+
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -105,7 +105,7 @@
 								<height>30</height>
 								<visible>Control.HasFocus(49)</visible>
 								<texture>MenuItemFO.png</texture>
-								<include>VisibleFadeEffect</include>
+
 							</control>
 							<control type="label">
 								<left>5</left>

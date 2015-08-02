@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<include>VisibleFadeEffect</include>
+
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<include name="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="1390" />

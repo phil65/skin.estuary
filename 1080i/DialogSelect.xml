@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-    <zorder>1</zorder>
     <defaultcontrol always="true">3</defaultcontrol>
     <coordinates>
         <left>350</left>
@@ -55,7 +54,7 @@
                         <height>40</height>
                         <texture border="40">lists/separator.png</texture>
                         <visible>!Control.HasFocus(3)</visible>
-                        <include>VisibleFadeEffect</include>
+
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -64,7 +63,7 @@
                         <height>40</height>
                         <texture border="150,1,150,1">lists/focus.png</texture>
                         <visible>Control.HasFocus(3)</visible>
-                        <include>VisibleFadeEffect</include>
+
                     </control>
                     <control type="label">
                         <left>20</left>
@@ -141,7 +140,7 @@
                         <height>131</height>
                         <texture border="40">lists/separator.png</texture>
                         <visible>!Control.HasFocus(6)</visible>
-                        <include>VisibleFadeEffect</include>
+
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -150,7 +149,7 @@
                         <height>131</height>
                         <texture border="150,1,150,1">lists/focus.png</texture>
                         <visible>Control.HasFocus(6)</visible>
-                        <include>VisibleFadeEffect</include>
+
                     </control>
                     <control type="image">
                         <left>2</left>

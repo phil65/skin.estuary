@@ -10,7 +10,7 @@
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(PeripheralSettings)</visible>
-			<include>VisibleFadeEffect</include>
+
 			<include name="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="610" />
 				<param name="DialogBackgroundHeight" value="650" />
@@ -85,7 +85,7 @@
 						<height>80</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 						<visible>!Control.HasFocus(20)</visible>
-						<include>VisibleFadeEffect</include>
+
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -94,7 +94,7 @@
 						<height>80</height>
 						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(20)</visible>
-						<include>VisibleFadeEffect</include>
+
 					</control>
 					<control type="label">
 						<description>Name</description>
