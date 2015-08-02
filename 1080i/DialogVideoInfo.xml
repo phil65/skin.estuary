@@ -303,7 +303,7 @@
 						</control>
 					</control>
 				</control>
-				<control type="button" id="600">
+<!-- 				<control type="button" id="600">
 					<posx>675</posx>
 					<posy>326</posy>
 					<width>950</width>
@@ -321,37 +321,31 @@
 					<onright>Control.Move(50,1)</onright>
 					<onup>5000</onup>
 					<ondown>5000</ondown>
-				</control>
+				</control> -->
 				<control type="list" id="50">
-					<posx>-50</posx>
+					<posx></posx>
 					<posy>630</posy>
 					<width>1180</width>
 					<height>600</height>
-					<onleft>600</onleft>
-					<onright>600</onright>
+					<onleft>50</onleft>
+					<onright>50</onright>
 					<onup>5000</onup>
 					<ondown>5000</ondown>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
 					<itemlayout height="400" width="278">
 						<control type="group">
-							<control type="image">
-								<posy>0</posy>
-								<posx>50</posx>
-								<width>280</width>
-								<height>380</height>
-								<texture border="40">buttons/button-nofo.png</texture>
-							</control>
 							<control type="group">
-								<posx>77</posx>
+								<posx>20</posx>
 								<posy>18</posy>
 								<control type="image">
 									<posy>10</posy>
 									<width>224</width>
 									<height>325</height>
-									<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
+									<texture border="2" fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
 									<aspectratio aligny="center">scale</aspectratio>
-									<fadetime>0</fadetime>
+									<bordertexture>colors/black.png</bordertexture>
+									<bordersize>4</bordersize>
 								</control>
 								<control type="image">
 									<width>224</width>
@@ -373,33 +367,17 @@
 					</itemlayout>
 					<focusedlayout height="400" width="278">
 						<control type="group">
-							<control type="image">
-								<posy>0</posy>
-								<posx>50</posx>
-								<width>280</width>
-								<height>380</height>
-								<texture border="40">buttons/button-theme-fo.png</texture>
-								<include>PanelGlowFade</include>
-								<visible>Control.HasFocus(600)</visible>
-							</control>
-							<control type="image">
-								<posy>0</posy>
-								<posx>50</posx>
-								<width>280</width>
-								<height>380</height>
-								<texture border="40">buttons/button-nofo.png</texture>
-								<visible>!Control.HasFocus(600)</visible>
-							</control>
 							<control type="group">
-								<posx>77</posx>
+								<posx>20</posx>
 								<posy>18</posy>
 								<control type="image">
 									<posy>10</posy>
 									<width>224</width>
 									<height>325</height>
-									<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
+									<texture border="2" fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
 									<aspectratio aligny="center">scale</aspectratio>
-									<fadetime>0</fadetime>
+									<bordertexture>colors/black.png</bordertexture>
+									<bordersize>4</bordersize>
 								</control>
 								<control type="image">
 									<width>224</width>
@@ -407,7 +385,7 @@
 									<posy>267</posy>
 									<texture>colors/black.png</texture>
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
-									<animation effect="fade" start="100" end="80" time="40" condition="Control.HasFocus(600)">Conditional</animation>
+									<animation effect="fade" start="100" end="80" time="40" condition="Control.HasFocus(50)">Conditional</animation>
 								</control>
 								<control type="textbox">
 									<width>228</width>
@@ -417,6 +395,15 @@
 									<font>Font_Reg25_2</font>
 									<info>ListItem.Label</info>
 									<autoscroll delay="5000" time="AutoScrollTime" repeat="8001">true</autoscroll>
+								</control>
+								<control type="image">
+									<left>0</left>
+									<posy>10</posy>
+									<width>224</width>
+									<height>325</height>
+									<aspectratio>stretch</aspectratio>
+									<texture background="true" border="8">buttons/thumbnail_focused.png</texture>
+									<visible>Control.HasFocus(50)</visible>
 								</control>
 							</control>
 						</control>
@@ -430,7 +417,7 @@
 					<onleft>5000</onleft>
 					<onright>5000</onright>
 					<onup>132</onup>
-					<ondown>600</ondown>
+					<ondown>50</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<scrolltime tween="quadratic">200</scrolltime>
