@@ -458,46 +458,19 @@
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 						<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
 					</control>
-					<control type="button" id="445">
-						<include>VideoInfoButtonsCommon</include>
-						<label>Manage</label>
-						<onclick>SetProperty(Dialog.1.Label,-)</onclick>
-						<onclick>SetProperty(Dialog.2.Label,-)</onclick>
-						<onclick>SetProperty(Dialog.3.Label,-)</onclick>
-						<onclick>SetProperty(Dialog.4.Label,-)</onclick>
-						<onclick>SetProperty(Dialog.5.Label,-)</onclick>
-						<onclick>SetProperty(Dialog.6.Label,-)</onclick>
-						<onclick>SetProperty(Dialog.7.Label,-)</onclick>
-						<onclick>SetProperty(Dialog.8.Label,-)</onclick>
-						<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[184])</onclick>
-						<onclick>SetProperty(Dialog.1.BuiltIn,SendClick(6))</onclick>
-						<onclick condition="System.HasAddon(script.libraryeditor) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]">SetProperty(Dialog.3.Label,$LOCALIZE[31030])</onclick>
-						<onclick condition="System.HasAddon(script.libraryeditor) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]">SetProperty(Dialog.3.BuiltIn,RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID]))</onclick>
-						<onclick condition="Container.Content(tvshows) | Container.Content(movies)">SetProperty(Dialog.2.Label,$LOCALIZE[413])</onclick>
-						<onclick condition="Container.Content(tvshows)">SetProperty(Dialog.2.BuiltIn,RunScript(script.artwork.downloader,mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID]))</onclick>
-						<onclick condition="Container.Content(movies)">SetProperty(Dialog.2.BuiltIn,RunScript(script.artwork.downloader,mode=gui,mediatype=movie,dbid=$INFO[ListItem.DBID]))</onclick>
-						<onclick condition="Container.Content(tvshows) | Container.Content(movies)">SetProperty(Dialog.4.Label,$LOCALIZE[14061])</onclick>
-						<onclick condition="Container.Content(tvshows)">SetProperty(Dialog.4.BuiltIn,RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID]))</onclick>
-						<onclick condition="Container.Content(movies)">SetProperty(Dialog.4.BuiltIn,RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID]))</onclick>
-						<onclick condition="Container.Content(tvshows) | Container.Content(movies)">SetProperty(Dialog.5.Label,$LOCALIZE[31467])</onclick>
-						<onclick condition="Container.Content(tvshows)">SetProperty(Dialog.5.BuiltIn,RunScript(script.artwork.downloader,mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID]))</onclick>
-						<onclick condition="Container.Content(movies)">SetProperty(Dialog.5.BuiltIn,RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID]))</onclick>
-						<onclick>SetProperty(Dialog.6.Label,$LOCALIZE[13511])</onclick>
-						<onclick>SetProperty(Dialog.6.BuiltIn,SendClick(10))</onclick>
-						<onclick condition="Container.Content(tvshows) + system.hasaddon(script.tvtunes)">SetProperty(Dialog.7.Label,$LOCALIZE[31365])</onclick>
-						<onclick condition="Container.Content(tvshows) + system.hasaddon(script.tvtunes)">SetProperty(Dialog.7.BuiltIn,RunScript(script.tvtunes,mode=solo&amp;tvpath=$ESCINFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle]))</onclick>
-						<onclick condition="Container.Content(movies)">SetProperty(Dialog.8.Label,$LOCALIZE[31468])</onclick>
-						<onclick condition="Container.Content(movies)">SetProperty(Dialog.8.BuiltIn,RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],extrathumbs))</onclick>
-						<onclick>RunScript(script.toolbox,info=selectdialog,header=Choose Action)</onclick>
-						<visible>!Skin.HasSetting(kioskmode) + !substring(Container.FolderPath,plugin://)</visible>
-					</control>
 					<control type="button" id="10">
+						<include>VideoInfoButtonsCommon</include>
 						<label>$LOCALIZE[13511]</label>
-						<include>HiddenObject</include>
 					</control>
 					<control type="button" id="6">
-						<label>$LOCALIZE[13511]</label>
-						<include>HiddenObject</include>
+						<include>VideoInfoButtonsCommon</include>
+						<label>Re-scrape</label>
+					</control>
+					<control type="button" id="101">
+						<include>VideoInfoButtonsCommon</include>
+						<label>Extended Info</label>
+						<onclick>RunScript(script.extendedinfo,info=openinfodialog)</onclick>
+						<visible>System.HasAddon(script.extendedinfo)</visible>
 					</control>
 				</control>
 				<control type="label">
