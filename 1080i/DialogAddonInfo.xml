@@ -152,33 +152,34 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<align>left</align>
+				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="button" id="12">
-					<include>SubMenuItemsCommon</include>
+					<include>VideoInfoButtonsCommon</include>
 					<label>518</label>
 				</control>
 				<control type="button" id="9">
-					<include>SubMenuItemsCommon</include>
+					<include>VideoInfoButtonsCommon</include>
 					<label>24020</label>
 				</control>
 				<control type="button" id="8">
-					<include>SubMenuItemsCommon</include>
+					<include>VideoInfoButtonsCommon</include>
 					<label>24069</label>
 				</control>
 				<control type="button" id="6">
-					<include>SubMenuItemsCommon</include>
+					<include>VideoInfoButtonsCommon</include>
 					<label>24022</label>
 				</control>
 				<control type="button" id="7">
-					<include>SubMenuItemsCommon</include>
+					<include>VideoInfoButtonsCommon</include>
 					<label>24021</label>
 				</control>
 				<control type="button" id="11">
-					<include>SubMenuItemsCommon</include>
+					<include>VideoInfoButtonsCommon</include>
 					<label>24048</label>
 				</control>
 				<control type="button" id="10">
-					<include>SubMenuItemsCommon</include>
+					<include>VideoInfoButtonsCommon</include>
 					<label>24036</label>
 				</control>
 			</control>
