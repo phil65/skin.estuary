@@ -312,17 +312,17 @@
                             <left>15</left>
                             <top>2</top>
                             <height>70</height>
-                            <width>560</width>
+                            <width>70</width>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font12</font>
-                            <label>$INFO[ListItem.Year]</label>
+                            <label>$INFO[ListItem.Year]$INFO[ListItem.Property(addon.version)]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>button_focus</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
-                            <left>95</left>
+                            <left>100</left>
                             <top>0</top>
                             <height>70</height>
                             <width>860</width>
@@ -384,17 +384,17 @@
                             <left>15</left>
                             <top>2</top>
                             <height>70</height>
-                            <width>560</width>
+                            <width>70</width>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font12</font>
-                            <label>$INFO[ListItem.Year]</label>
+                            <label>$INFO[ListItem.Year]$INFO[ListItem.Property(addon.version)]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>button_focus</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
-                            <left>95</left>
+                            <left>100</left>
                             <top>0</top>
                             <height>70</height>
                             <width>860</width>
