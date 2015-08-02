@@ -102,7 +102,7 @@
                     <top>400</top>
                     <width>1160</width>
                     <height>40</height>
-                    <label>$INFO[ListItem.Title]</label>
+                    <label>$INFO[ListItem.Label]</label>
                     <font>font30_title</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
@@ -138,6 +138,7 @@
                     <top>580</top>
                     <width>1150</width>
                     <height>110</height>
+                    <autoscroll time="3000" delay="6000" repeat="5000">true</autoscroll>
                     <label>$INFO[ListItem.Plot]</label>
                     <font>font13</font>
                     <textcolor>white</textcolor>
