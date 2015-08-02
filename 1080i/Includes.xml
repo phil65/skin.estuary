@@ -285,7 +285,7 @@
             </control>
         </control>
         <control type="group">
-            <visible>!Window.isActive(home)</visible>
+            <visible>!Window.isActive(home) + Player.HasMedia</visible>
             <control type="image">
                 <description>List Panel</description>
                 <left>110</left>
