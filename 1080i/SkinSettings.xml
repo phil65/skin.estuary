@@ -175,13 +175,9 @@
             <texture>icon_system.png</texture>
         </control>
         <include name="TopBar">
-            <param name="breadcrumbs_label" value="$LOCALIZE[5]$INFO[Control.GetLabel(2), / ]" />
+            <param name="breadcrumbs_label" value="$LOCALIZE[5] / $LOCALIZE[20077]" />
             <param name="breadcrumbs_icon" value="icons/settings/skin.png" />
         </include>
         <include>BottomBar</include>
-        <control type="label" id="2">
-            <description>breadcrumbs label</description>
-            <visible>False</visible>
-        </control>
     </controls>
 </window>

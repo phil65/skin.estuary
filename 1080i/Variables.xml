@@ -45,8 +45,6 @@
         <value condition="Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes) + !SubString(Container.FolderName,$LOCALIZE[20373])]">$LOCALIZE[20343]</value>
         <value condition="Container.Content(episodes) + !SubString(Container.FolderPath,videodb://recentlyaddedepisodes/) + SubString(Container.FolderName,$LOCALIZE[20373])">$INFO[ListItem.TVShowTitle,$LOCALIZE[20343] / ]</value>
         <value condition="Window.IsActive(musicplaylisteditor)">$LOCALIZE[10503]</value>
-        <value condition="Window.IsActive(musicplaylist)">$LOCALIZE[10517]</value>
-        <value condition="Window.IsActive(skinsettings)">$LOCALIZE[5] / $LOCALIZE[20077]</value>
         <value condition="Window.IsActive(systeminfo)">$LOCALIZE[5] / $LOCALIZE[130]</value>
         <value condition="Window.IsActive(profilesettings)">$LOCALIZE[5] / $LOCALIZE[13200]</value>
         <value condition="Window.IsActive(loginscreen)">$INFO[Control.GetLabel(2)]</value>

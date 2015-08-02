@@ -57,8 +57,8 @@
     <default type="spincontrol">
         <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
         <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
-        <textureupfocus>buttons/spinctrl/arrow-light-up-fo.png</textureupfocus>
-        <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
+        <textureupfocus colordiffuse="button_focus">buttons/spinctrl/arrow-light-up-nf.png</textureupfocus>
+        <texturedownfocus colordiffuse="button_focus">buttons/spinctrl/arrow-light-down-nf.png</texturedownfocus>
         <align>right</align>
         <width>77</width>
         <height>33</height>
@@ -80,8 +80,8 @@
         <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
         <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
-        <textureupfocus>buttons/spinctrl/arrow-light-up-fo.png</textureupfocus>
-        <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
+        <textureupfocus colordiffuse="button_focus">buttons/spinctrl/arrow-light-up-nf.png</textureupfocus>
+        <texturedownfocus colordiffuse="button_focus">buttons/spinctrl/arrow-light-down-nf.png</texturedownfocus>
         <font>font13</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey</disabledcolor>
@@ -139,7 +139,7 @@
         <sliderheight>28</sliderheight>
         <texturesliderbar>dialogs/mediasource/slider-back.png</texturesliderbar>
         <textureslidernib>dialogs/mediasource/slider-nib-nf.png</textureslidernib>
-        <textureslidernibfocus>dialogs/mediasource/slider-nib-fo.png</textureslidernibfocus>
+        <textureslidernibfocus colordiffuse="button_focus">dialogs/mediasource/slider-nib-nf.png</textureslidernibfocus>
         <font>font12</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey</disabledcolor>
