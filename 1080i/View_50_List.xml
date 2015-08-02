@@ -10,8 +10,8 @@
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
                 <visible>Control.IsVisible(50)</visible>
-                <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)</visible>
+                <include>Vis_FadeSlide_Left</include>
                 <control type="image">
                     <left>110</left>
                     <top>182</top>
@@ -25,7 +25,7 @@
                     <top>186</top>
                     <width>561</width>
                     <height>561</height>
-                    <aspectratio aligny="bottom">scale</aspectratio>
+                    <aspectratio aligny="top">scale</aspectratio>
                     <fadetime>300</fadetime>
                     <texture background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
@@ -134,7 +134,7 @@
                 <include>OpenClose_FadeSlide_Right</include>
                 <left>603</left>
                 <top>182</top>
-                <animation effect="slide" start="0,0" end="100,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)">conditional</animation>
+                <animation effect="slide" start="0,0" end="100,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)">conditional</animation>
                 <visible>Control.IsVisible(50)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="image">
@@ -153,7 +153,7 @@
                     <width>1114</width>
                     <height>706</height>
                     <texture border="2">dialogs/dialog-bg.png</texture>
-                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)</visible>
+                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)</visible>
                 </control>
                 <control type="list" id="50">
                     <left>2</left>
@@ -168,7 +168,7 @@
                     <ondown>50</ondown>
                     <viewtype label="List">list</viewtype>
                     <preloaditems>1</preloaditems>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)</visible>
+                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)</visible>
                     <focusedlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
                         <control type="image">
                             <left>0</left>
@@ -292,7 +292,7 @@
                             <texture colordiffuse="grey">$VAR[MediaInfoOverlayVar]</texture>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)">
+                    <focusedlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
@@ -372,7 +372,7 @@
                             <visible>!Control.HasFocus(50)</visible>
                         </control>
                     </focusedlayout>
-                    <itemlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)">
+                    <itemlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>

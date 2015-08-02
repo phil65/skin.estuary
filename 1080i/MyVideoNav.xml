@@ -23,6 +23,7 @@
             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
             <bordertexture>colors/black.png</bordertexture>
             <bordersize>4</bordersize>
+            <visible>!Container.Content(actors) + !Container.Content(directors)</visible>
             <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
         </control>
         <include>Media_Menu</include>
