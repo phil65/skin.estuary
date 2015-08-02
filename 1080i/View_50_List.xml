@@ -173,14 +173,14 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>996</width>
+                            <width>710</width>
                             <height>71</height>
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>996</width>
+                            <width>710</width>
                             <height>69</height>
                             <texture border="150,1,150,1">lists/focus.png</texture>
                             <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -247,7 +247,7 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>996</width>
+                            <width>710</width>
                             <height>71</height>
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
