@@ -731,10 +731,10 @@
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
-                        <top>20</top>
+                        <top>52</top>
                         <left>530</left>
-                        <width>350</width>
-                        <height>350</height>
+                        <width>330</width>
+                        <height>330</height>
                         <texture colordiffuse="FFFFFFFF">$INFO[Weather.conditions]</texture>
                     </control>
                     <control type="label">
