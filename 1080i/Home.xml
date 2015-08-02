@@ -353,11 +353,13 @@
                     <param name="item3_id" value="11903" />
                     <param name="item3_onclick" value="Notification(not possible yet., Fuck.)" />
                     <param name="item3_label" value="Add source..." />
-                    <param name="item4_id" value="11903" />
+                    <param name="item4_id" value="11904" />
                     <param name="item4_onclick" value="PlayDVD" />
                     <param name="item4_label" value="$LOCALIZE[31958]" />
                     <param name="item4_vis" value="System.HasMediadvd" />
-                    <param name="item5_vis" value="False" />
+                    <param name="item5_id" value="11905" />
+                    <param name="item5_onclick" value="ActivateWindow(videos,addons,return)" />
+                    <param name="item5_label" value="Video Addons" />
                     <param name="item6_vis" value="False" />
                     <param name="item7_vis" value="False" />
                 </include>
