@@ -30,14 +30,14 @@
 				<width>1307</width>
 				<height>920</height>
 				<aspectratio align="center">scale</aspectratio>
-				<texture colordiffuse="button_focus" background="true" fallback="colors/white.png">$INFO[ListItem.Art(fanart)]</texture>
+				<texture background="true" fallback="colors/black.png">$INFO[ListItem.Art(fanart)]</texture>
 			</control>
 			<control type="image">
 				<top>80</top>
 				<width>1307</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture colordiffuse="D0FFFFFF">lists/panel.png</texture>
+				<texture colordiffuse="D0FFFFFF">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 			</control>
 			<control type="image">
 				<posx>35</posx>
