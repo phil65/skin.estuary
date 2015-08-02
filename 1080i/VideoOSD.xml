@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="2901">
+    <defaultcontrol>602</defaultcontrol>
+    <controls>
+        <control type="group">
+            <posy>950</posy>
+            <animation type="WindowOpen">
+                <effect type="slide" start="0,218" end="0,0" time="440" tween="cubic" />
+                <effect type="zoom" start="50" end="100" time="440" delay="0" center="auto" tween="cubic" />
+                <effect type="fade" start="0" end="100" time="440"/>
+            </animation>
+            <animation type="WindowClose">
+                <effect type="slide" end="0,218" start="0,0" time="440" tween="cubic" />
+                <effect type="zoom" end="50" start="100" time="440" delay="0" center="auto" tween="cubic" />
+            </animation>
+            <control type="grouplist" id="201">
+                <posx>0</posx>
+                <posy>2</posy>
+                <width>1920</width>
+                <height>135</height>
+                <align>center</align>
+                <itemgap>7</itemgap>
+                <scrolltime tween="sine">200</scrolltime>
+                <orientation>horizontal</orientation>
+                <onup>87</onup>
+                <ondown>noop</ondown>
+                <onleft>201</onleft>
+                <onright>201</onright>
+                <control type="radiobutton" id="701">
+                    <textureradioon>osd/buttons/OSDAudioNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDAudioNF.png</textureradiooff>
+                    <label>13396</label>
+                    <include>OSDButton</include>
+                    <onclick>ActivateWindow(osdaudiosettings)</onclick>
+                </control>
+                <control type="radiobutton" id="702">
+                    <textureradioon>osd/buttons/OSDVideoNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDVideoNF.png</textureradiooff>
+                    <label>13395</label>
+                    <include>OSDButton</include>
+                    <onclick>ActivateWindow(osdvideosettings)</onclick>
+                </control>
+                <control type="image" id="73001">
+                    <width>100</width>
+                    <texture>-</texture>
+                </control>
+                <control type="radiobutton" id="600">
+                    <textureradioon>osd/buttons/OSDPrevTrackNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDPrevTrackNF.png</textureradiooff>
+                    <include>OSDButton</include>
+                    <onclick>PlayerControl(Previous)</onclick>
+                    <visible>!VideoPlayer.Content(livetv) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
+                </control>
+                <control type="radiobutton" id="602">
+                    <textureradiooff>osd/buttons/OSDPauseNF.png</textureradiooff>
+                    <textureradioon>osd/buttons/OSDPlayNF.png</textureradioon>
+                    <include>OSDButton</include>
+                    <selected>Player.Paused</selected>
+                    <onclick>PlayerControl(Play)</onclick>
+                </control>
+                <control type="radiobutton" id="603">
+                    <textureradioon>osd/buttons/OSDStopNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDStopNF.png</textureradiooff>
+                    <include>OSDButton</include>
+                    <onclick>PlayerControl(Stop)</onclick>
+                </control>
+                <control type="radiobutton" id="605">
+                    <textureradioon>osd/buttons/OSDNextTrackNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDNextTrackNF.png</textureradiooff>
+                    <include>OSDButton</include>
+                    <onclick>PlayerControl(Next)</onclick>
+                    <visible>!VideoPlayer.Content(livetv) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
+                </control>
+                <control type="radiobutton" id="70040">
+                    <include>OSDButton</include>
+                    <textureradioon>osd/buttons/OSDPlaylistNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDPlaylistNF.png</textureradiooff>
+                    <onclick>ActivateWindow(PVROSDChannels)</onclick>
+                    <onclick>Dialog.Close(VideoOSD)</onclick>
+                    <visible>VideoPlayer.Content(livetv)</visible>
+                </control>
+                <control type="radiobutton" id="70041">
+                    <include>OSDButton</include>
+                    <textureradioon>osd/buttons/OSDEpgNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDEpgNF.png</textureradiooff>
+                    <onclick>ActivateWindow(PVROSDGuide)</onclick>
+                    <onclick>Dialog.Close(VideoOSD)</onclick>
+                    <visible>VideoPlayer.Content(livetv)</visible>
+                </control>
+                <control type="image" id="73002">
+                    <width>100</width>
+                    <texture>-</texture>
+                </control>
+                <control type="radiobutton" id="700">
+                    <textureradioon>osd/buttons/OSDBookMarksNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDBookMarksNF.png</textureradiooff>
+                    <label>298</label>
+                    <include>OSDButton</include>
+                    <onclick>ActivateWindow(videobookmarks)</onclick>
+                    <visible>!VideoPlayer.Content(livetv)</visible>
+                </control>
+                <control type="radiobutton" id="703">
+                    <textureradioon>osd/buttons/OSDSubtitlesNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDSubtitlesNF.png</textureradiooff>
+                    <label>31356</label>
+                    <include>OSDButton</include>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                    <visible>!VideoPlayer.Content(livetv)</visible>
+                </control>
+                <control type="radiobutton" id="804">
+                    <textureradioon>osd/buttons/OSDDvdNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDDvdNF.png</textureradiooff>
+                    <label>31355</label>
+                    <include>OSDButton</include>
+                    <onclick>PlayerControl(ShowVideoMenu)</onclick>
+                    <visible>VideoPlayer.HasMenu</visible>
+                </control>
+                <control type="radiobutton" id="70043">
+                    <include>OSDButton</include>
+                    <textureradioon>osd/buttons/OSDTxtNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDTxtNF.png</textureradiooff>
+                    <onclick>ActivateWindow(Teletext)</onclick>
+                    <onclick>Dialog.Close(VideoOSD)</onclick>
+                    <visible>VideoPlayer.Content(livetv)</visible>
+                </control>
+                <control type="radiobutton" id="70044">
+                    <include>OSDButton</include>
+                    <textureradioon>osd/buttons/OSDRecordNF.png</textureradioon>
+                    <textureradiooff>osd/buttons/OSDRecordNF.png</textureradiooff>
+                    <selected>Player.Recording</selected>
+                    <onclick>PlayerControl(Record)</onclick>
+                    <enable>Player.CanRecord</enable>
+                    <visible>VideoPlayer.Content(livetv)</visible>
+                    <animation effect="fade" start="100" end="50" time="80" condition="!Player.CanRecord">Conditional</animation>
+                </control>
+            </control>
+            <control type="group">
+                <control type="label">
+                    <posx>1840</posx>
+                    <posy>-75</posy>
+                    <width>400</width>
+                    <height>75</height>
+                    <align>right</align>
+                    <aligny>bottom</aligny>
+                    <label>$VAR[PlayerTimeLabelVar]</label>
+                    <font>Font_Bold37_Caps</font>
+                    <shadowcolor>black</shadowcolor>
+                    <textcolor>white3</textcolor>
+                    <animation effect="fade" start="0" end="100" delay="200" time="200">WindowOpen</animation>
+                    <animation effect="fade" end="0" time="200">WindowClose</animation>
+                </control>
+                <control type="progress" id="23">
+                    <animation effect="fade" end="0" time="200">WindowClose</animation>
+                    <posx>83</posx>
+                    <posy>-20</posy>
+                    <width>1754</width>
+                    <height>15</height>
+                    <info>Player.Progress</info>
+                    <texturebg colordiffuse="button_focus" border="3">progress/texturebg_border_white.png</texturebg>
+                    <midtexture colordiffuse="button_focus">progress/texturebg_white.png</midtexture>
+                </control>
+                <control type="button" id="87">
+                    <include>HiddenObject</include>
+                    <onup condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onup>
+                    <onup>201</onup>
+                    <ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
+                    <ondown>201</ondown>
+                    <onright condition="!IsEmpty(Window(home).Property(SeekButtonForward))">PlayerControl(BigSkipForward)</onright>
+                    <onright condition="IsEmpty(Window(home).Property(SeekButtonForward))">PlayerControl(SmallSkipForward)</onright>
+                    <onright>AlarmClock(SeekButtonDelayForward,ClearProperty(SeekButtonForward,home),00:01,silent)</onright>
+                    <onright>SetProperty(SeekButtonForward,true,home)</onright>
+                    <onleft condition="!IsEmpty(Window(home).Property(SeekButtonRewind))">PlayerControl(BigSkipBackward)</onleft>
+                    <onleft condition="IsEmpty(Window(home).Property(SeekButtonRewind))">PlayerControl(SmallSkipBackward)</onleft>
+                    <onleft>AlarmClock(SeekButtonDelayRewind,ClearProperty(SeekButtonRewind,home),00:01,silent)</onleft>
+                    <onleft>SetProperty(SeekButtonRewind,true,home)</onleft>
+                    <visible>Player.SeekEnabled</visible>
+                    <onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
+                </control>
+                <control type="slider">
+                    <posx>83</posx>
+                    <posy>-40</posy>
+                    <width>1754</width>
+                    <height>45</height>
+                    <onup>8010</onup>
+                    <ondown>650</ondown>
+                    <controloffsetx>75</controloffsetx>
+                    <controloffsety>0</controloffsety>
+                    <texturesliderbar colordiffuse="00FFFFFF">progress/slider_back.png</texturesliderbar>
+                    <textureslidernib>progress/orb_nofo.png</textureslidernib>
+                    <textureslidernibfocus colordiffuse="button_focus">progress/orb_fo.png</textureslidernibfocus>
+                    <info>Player.Progress</info>
+                    <action>seek</action>
+                    <visible>!Control.HasFocus(87)</visible>
+                </control>
+                <control type="slider">
+                    <posx>83</posx>
+                    <posy>-40</posy>
+                    <width>1754</width>
+                    <height>45</height>
+                    <onup>8010</onup>
+                    <ondown>650</ondown>
+                    <controloffsetx>75</controloffsetx>
+                    <controloffsety>0</controloffsety>
+                    <texturesliderbar colordiffuse="00FFFFFF">progress/slider_back.png</texturesliderbar>
+                    <textureslidernib colordiffuse="button_focus">progress/orb_fo.png</textureslidernib>
+                    <textureslidernibfocus colordiffuse="button_focus">progress/orb_fo.png</textureslidernibfocus>
+                    <info>Player.Progress</info>
+                    <action>seek</action>
+                    <visible>Control.HasFocus(87)</visible>
+                </control>
+                <control type="group">
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,2)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,3)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,4)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,5)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,6)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,7)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,8)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,9)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,10)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,11)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,12)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,13)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,14)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,15)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,16)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,17)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,18)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,19)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,20)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,21)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,22)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,23)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,24)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,25)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,26)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,27)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,28)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,29)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,30)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,31)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,32)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,33)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,34)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,35)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,36)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,37)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,38)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,39)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,40)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,41)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,42)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,43)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,44)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,45)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,46)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,47)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,48)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,49)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,50)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,51)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,52)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,53)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,54)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,55)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,56)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,57)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,58)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,59)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,60)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,61)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,62)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,63)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,64)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,65)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,66)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,67)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,68)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,69)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,70)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,71)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,72)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,73)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,74)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,75)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,76)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,77)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,78)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,79)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,80)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0" end="17.54" time="0" condition="IntegerGreaterThan(Player.Progress,81)" reversible="false">Conditonal</animation>
+                    <animation effect="slide" start="0,0" end="0,6" time="300" condition="IntegerGreaterThan(Player.Progress,82)" reversible="false">Conditonal</animation>
+                    <control type="label">
+                        <posx>17</posx>
+                        <posy>-80</posy>
+                        <width>200</width>
+                        <height>75</height>
+                        <align>center</align>
+                        <aligny>bottom</aligny>
+                        <label>$VAR[VideoPlayerForwardRewindVar]</label>
+                        <font>Font_Bold37_Caps</font>
+                        <shadowcolor>black</shadowcolor>
+                        <textcolor>white3</textcolor>
+                        <animation effect="fade" start="0" end="100" delay="200" time="200">WindowOpen</animation>
+                        <animation effect="fade" end="0" time="200">WindowClose</animation>
+                        <visible>Player.Rewinding | Player.Forwarding</visible>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
