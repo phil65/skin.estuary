@@ -12,6 +12,13 @@
         <value condition="Container.Content(tvshows)">$INFO[ListItem.Property(TotalEpisodes)]</value>
 <!--         <value>$INFO[ListItem.Year]</value>
  -->    </variable>
+    <variable name="MediaInfoOverlayVar">
+        <value condition="ListItem.IsCollection">icons/lists/Set.png</value>
+        <value condition="!ListItem.IsStereoscopic">$INFO[ListItem.VideoResolution,icons/lists/,.png]</value>
+        <value>icons/lists/3D.png</value>
+    </variable>
+
+
     <variable name="HomeFanartVar">
         <value condition="!IsEmpty(Container(5100).ListItem.Art(fanart)) + Control.HasFocus(5100)">$INFO[Container(5100).ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(Container(5200).ListItem.Art(fanart)) + Control.HasFocus(5200)">$INFO[Container(5200).ListItem.Art(fanart)]</value>
