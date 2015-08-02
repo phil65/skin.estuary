@@ -207,7 +207,7 @@
 							<usecontrolcoords>true</usecontrolcoords>
 							<control type="group">
 								<width>259</width>
-								<height>100</height>
+								<height>150</height>
 								<visible>Container.Content(episodes)</visible>
 								<control type="label">
 									<posx>4</posx>
@@ -239,7 +239,7 @@
 							</control>
 							<control type="group">
 								<width>155</width>
-								<height>100</height>
+								<height>150</height>
 								<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows)</visible>
 								<control type="label">
 									<posy>12</posy>
@@ -260,7 +260,7 @@
 							</control>
 							<control type="group">
 								<width>155</width>
-								<height>100</height>
+								<height>150</height>
 								<visible>Container.Content(movies) | Container.Content(episodes)</visible>
 								<control type="label">
 									<posy>12</posy>
@@ -281,7 +281,7 @@
 							</control>
 							<control type="group">
 								<visible>!Container.Content(episodes)</visible>
-								<height>100</height>
+								<height>150</height>
 								<width>155</width>
 								<control type="label">
 									<posy>12</posy>
@@ -436,16 +436,16 @@
 					<scrolltime tween="quadratic">200</scrolltime>
 					<control type="button" id="8">
 						<label>Play</label>
-						<include>SubMenuItemsCommon</include>
+						<include>VideoInfoButtonsCommon</include>
 					</control>
 					<control type="button" id="9">
 						<label>$LOCALIZE[13404] $INFO[ListItem.PercentPlayed,(,%)]</label>
-						<include>SubMenuItemsCommon</include>
+						<include>VideoInfoButtonsCommon</include>
 						<visible>Control.IsEnabled(9)</visible>
 					</control>
 					<control type="button" id="20">
 						<label>$LOCALIZE[31284]</label>
-						<include>SubMenuItemsCommon</include>
+						<include>VideoInfoButtonsCommon</include>
 						<onclick>Playlist.Clear</onclick>
 						<onclick>Dialog.Close(MovieInformation)</onclick>
 						<onclick>RunScript(script.cinema.experience)</onclick>
@@ -453,26 +453,26 @@
 					</control>
 					<control type="button" id="11">
 						<label>$LOCALIZE[20410]</label>
-						<include>SubMenuItemsCommon</include>
+						<include>VideoInfoButtonsCommon</include>
 						<visible>!IsEmpty(ListItem.Trailer)</visible>
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 					</control>
 					<control type="button" id="440">
 						<label>$LOCALIZE[31886]</label>
-						<include>SubMenuItemsCommon</include>
+						<include>VideoInfoButtonsCommon</include>
 						<visible>IsEmpty(ListItem.Trailer)</visible>
 						<onclick>SetProperty(listcontent,$INFO[ListItem.Label] Trailer,home)</onclick>
 						<onclick>ActivateWindow(1168)</onclick>
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 					</control>
 					<control type="button" id="100">
-						<include>SubMenuItemsCommon</include>
+						<include>VideoInfoButtonsCommon</include>
 						<label>$LOCALIZE[31020]</label>
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 						<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
 					</control>
 					<control type="button" id="445">
-						<include>SubMenuItemsCommon</include>
+						<include>VideoInfoButtonsCommon</include>
 						<label>Manage</label>
 						<onclick>SetProperty(Dialog.1.Label,-)</onclick>
 						<onclick>SetProperty(Dialog.2.Label,-)</onclick>
