@@ -57,8 +57,8 @@
     <default type="spincontrol">
         <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
         <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
-        <textureupfocus colordiffuse="button_focus">buttons/spinctrl/arrow-light-up-nf.png</textureupfocus>
-        <texturedownfocus colordiffuse="button_focus">buttons/spinctrl/arrow-light-down-nf.png</texturedownfocus>
+        <textureupfocus>buttons/spinctrl/arrow-light-up-fo.png</textureupfocus>
+        <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
         <align>right</align>
         <width>77</width>
         <height>33</height>
@@ -80,8 +80,8 @@
         <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <textureup>buttons/spinctrl/arrow-light-up-nf.png</textureup>
         <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
-        <textureupfocus colordiffuse="button_focus">buttons/spinctrl/arrow-light-up-nf.png</textureupfocus>
-        <texturedownfocus colordiffuse="button_focus">buttons/spinctrl/arrow-light-down-nf.png</texturedownfocus>
+        <textureupfocus>buttons/spinctrl/arrow-light-up-fo.png</textureupfocus>
+        <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
         <font>font13</font>
         <textcolor>white</textcolor>
         <disabledcolor>grey</disabledcolor>
