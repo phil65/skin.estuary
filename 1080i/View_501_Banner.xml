@@ -4,6 +4,7 @@
     <include name="View_501_Banner">
         <include name="UpDownArrows">
             <param name="container_id" value="501" />
+            <param name="posx" value="936" />
         </include>
         <control type="group">
             <description>List Viewtype</description>

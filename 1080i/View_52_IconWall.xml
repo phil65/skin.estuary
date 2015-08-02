@@ -3,6 +3,7 @@
     <include name="View_52_IconWall">
         <include name="UpDownArrows">
             <param name="container_id" value="52" />
+            <param name="posx" value="936" />
         </include>
         <control type="group">
             <visible>Control.IsVisible(52)</visible>

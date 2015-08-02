@@ -4,6 +4,7 @@
     <include name="View_500_SmallThumb">
         <include name="UpDownArrows">
             <param name="container_id" value="500" />
+            <param name="posx" value="936" />
         </include>
         <control type="group">
             <description>List Viewtype</description>

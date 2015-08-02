@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include name="View_50_List">
+    <include name="View_50_SquareList">
         <control type="group">
             <description>List Viewtype</description>
             <include name="UpDownArrows">
                 <param name="container_id" value="50" />
-                <param name="posx" value="936" />
+                <param name="posx" value="610" />
             </include>
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
@@ -14,36 +14,9 @@
                 <control type="image">
                     <right>110</right>
                     <top>182</top>
-                    <width>469</width>
-                    <height>580</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-                </control>
-                <control type="textbox">
-                    <right>130</right>
-                    <top>194</top>
-                    <width>429</width>
-                    <height>335</height>
-                    <align>justify</align>
-                    <font>font_textbox</font>
-                    <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
-                    <label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
-                </control>
-                <control type="label">
-                    <right>130</right>
-                    <top>570</top>
-                    <width>429</width>
-                    <height>335</height>
-                    <align>justify</align>
-                    <font>font_textbox</font>
-                    <label>Flags Placeholder</label>
-                </control>
-                <control type="image">
-                    <right>110</right>
-                    <top>184</top>
-                    <width>469</width>
-                    <height>704</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <width>569</width>
+                    <height>569</height>
+                    <aspectratio aligny="bottom">scale</aspectratio>
                     <fadetime>300</fadetime>
                     <bordertexture>colors/black.png</bordertexture>
                     <bordersize>4</bordersize>
@@ -51,9 +24,9 @@
                 </control>
                 <control type="image">
                     <right>110</right>
-                    <top>834</top>
-                    <width>469</width>
-                    <height>50</height>
+                    <top>770</top>
+                    <width>569</width>
+                    <height>120</height>
                     <fadetime>300</fadetime>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
@@ -100,7 +73,7 @@
             </control>
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
-                <left>603</left>
+                <left>110</left>
                 <top>182</top>
                 <visible>Control.IsVisible(50)</visible>
                 <include>Vis_FadeSlide_Right</include>
@@ -108,14 +81,14 @@
                     <description>background image</description>
                     <left>0</left>
                     <top>0</top>
-                    <width>714</width>
+                    <width>1114</width>
                     <height>706</height>
                     <texture border="2">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="list" id="50">
                     <left>2</left>
                     <top>3</top>
-                    <width>710</width>
+                    <width>1110</width>
                     <height>700</height>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>vertical</orientation>
@@ -125,7 +98,7 @@
                     <ondown>50</ondown>
                     <viewtype label="List">list</viewtype>
                     <preloaditems>1</preloaditems>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(addons)</visible>
                     <focusedlayout height="70">
                         <control type="image">
                             <left>0</left>
@@ -137,16 +110,29 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>996</width>
+                            <width>1296</width>
                             <height>69</height>
                             <texture border="150,1,150,1">lists/focus.png</texture>
                             <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
                         </control>
                         <control type="label">
-                            <left>70</left>
+                            <left>30</left>
                             <top>0</top>
                             <height>70</height>
                             <width>560</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font13</font>
+                            <label>$INFO[ListItem.Year]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>button_focus</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <left>115</left>
+                            <top>0</top>
+                            <height>70</height>
+                            <width>860</width>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font14</font>
@@ -159,7 +145,7 @@
                             <left>90</left>
                             <top>0</top>
                             <height>70</height>
-                            <width>605</width>
+                            <width>970</width>
                             <align>right</align>
                             <aligny>center</aligny>
                             <font>font12</font>
@@ -171,14 +157,14 @@
                         <control type="image">
                             <left>19</left>
                             <top>20</top>
-                            <width>32</width>
+                            <width>332</width>
                             <height>32</height>
                             <texture colordiffuse="grey">$VAR[ListWatchedIcon]</texture>
                         </control>
                         <control type="image">
                             <left>19</left>
                             <top>20</top>
-                            <width>32</width>
+                            <width>332</width>
                             <height>32</height>
                             <texture>$VAR[ListWatchedIcon]</texture>
                             <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
@@ -186,7 +172,7 @@
                         <control type="image">
                             <left>19</left>
                             <top>20</top>
-                            <width>32</width>
+                            <width>332</width>
                             <height>32</height>
                             <texture colordiffuse="button_focus">$VAR[ListWatchedIcon]</texture>
                             <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
@@ -197,28 +183,41 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>996</width>
+                            <width>1296</width>
                             <height>71</height>
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
-                        <control type="label">
-                            <left>70</left>
+                       <control type="label">
+                            <left>30</left>
                             <top>0</top>
                             <height>70</height>
                             <width>560</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font13</font>
+                            <label>$INFO[ListItem.Year]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>button_focus</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <left>115</left>
+                            <top>0</top>
+                            <height>70</height>
+                            <width>860</width>
+                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font14</font>
                             <label>$INFO[ListItem.Label]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
-                            <scroll>false</scroll>
                         </control>
                         <control type="label">
                             <left>90</left>
                             <top>0</top>
                             <height>70</height>
-                            <width>605</width>
+                            <width>970</width>
                             <align>right</align>
                             <aligny>center</aligny>
                             <font>font12</font>
