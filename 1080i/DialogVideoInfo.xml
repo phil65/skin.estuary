@@ -201,7 +201,7 @@
 						<posy>-60</posy>
 						<control type="grouplist">
 							<posx>-185</posx>
-							<posy>0</posy>
+							<posy>80</posy>
 							<width>1200</width>
 							<orientation>vertical</orientation>
 							<usecontrolcoords>true</usecontrolcoords>
@@ -229,99 +229,56 @@
 									<scroll>true</scroll>
 								</control>
 							</control>
-							<control type="image">
-								<posy>5</posy>
-								<width>135</width>
-								<height>67</height>
-								<aspectratio align="center">keep</aspectratio>
-								<texture colordiffuse="white2" fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
-								<visible>Container.Content(movies) | Container.Content(MusicVideos) | Container.Content(tvshows) | Container.Content(episodes)</visible>
-							</control>
-							<control type="group">
-								<width>155</width>
-								<height>150</height>
-								<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows)</visible>
-								<control type="label">
-									<posy>12</posy>
-									<width>155</width>
-									<height>38</height>
-									<align>center</align>
-									<label fallback="?">$INFO[ListItem.Rating]</label>
-									<font>font30_title</font>
-								</control>
-								<control type="label">
-									<posy>59</posy>
-									<width>155</width>
-									<height>38</height>
-									<align>center</align>
-									<label fallback="?">$INFO[ListItem.Votes,, Votes]</label>
-									<font>font12</font>
-								</control>
-							</control>
-							<control type="group">
-								<width>155</width>
-								<height>150</height>
-								<visible>Container.Content(movies) | Container.Content(episodes)</visible>
-								<control type="label">
-									<posy>12</posy>
-									<width>155</width>
-									<height>38</height>
-									<align>center</align>
-									<label fallback="?">$INFO[ListItem.Duration]</label>
-									<font>font30_title</font>
-								</control>
-								<control type="label">
-									<posy>59</posy>
-									<width>155</width>
-									<height>38</height>
-									<align>center</align>
-									<label>Minutes</label>
-									<font>font12</font>
-								</control>
-							</control>
-							<control type="group">
-								<visible>!Container.Content(episodes)</visible>
-								<height>150</height>
-								<width>155</width>
-								<control type="label">
-									<posy>12</posy>
-									<width>155</width>
-									<height>38</height>
-									<align>center</align>
-									<label fallback="?">$INFO[ListItem.Year]</label>
-									<font>font30_title</font>
-								</control>
-								<control type="label">
-									<posy>59</posy>
-									<width>155</width>
-									<height>38</height>
-									<align>center</align>
-									<label>Year</label>
-									<font>font12</font>
-								</control>
-							</control>
+							<include name="VideoInfoMediaFlag">
+								<param name="InfoLabel" value="ListItem.Rating" />
+								<param name="Title" value="Rating" />
+							</include>
+							<include name="VideoInfoMediaFlag">
+								<param name="InfoLabel" value="ListItem.Duration" />
+								<param name="Title" value="Minutes" />
+							</include>
+							<include name="VideoInfoMediaFlag">
+								<param name="InfoLabel" value="ListItem.Year" />
+								<param name="Title" value="Year" />
+							</include>
+							<include name="VideoInfoMediaFlag">
+								<param name="InfoLabel" value="ListItem.VideoResolution" />
+								<param name="Title" value="HD" />
+							</include>
+							<include name="VideoInfoMediaFlag">
+								<param name="InfoLabel" value="ListItem.VideoAspect" />
+								<param name="Title" value="AR" />
+							</include>
+							<include name="VideoInfoMediaFlag">
+								<param name="InfoLabel" value="ListItem.AudioChannels" />
+								<param name="Title" value="Channels" />
+							</include>
+							<include name="VideoInfoMediaFlag">
+								<param name="InfoLabel" value="ListItem.Episode" />
+								<param name="Title" value="Episodes" />
+							</include>
 						</control>
 					</control>
 				</control>
-<!-- 				<control type="button" id="600">
-					<posx>675</posx>
-					<posy>326</posy>
-					<width>950</width>
-					<height>217</height>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31172])</onclick>
-					<onclick>SetProperty(Dialog.1.BuiltIn,RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label]))</onclick>
-					<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31096])</onclick>
-					<onclick>SetProperty(Dialog.3.BuiltIn,SetProperty(listcontent,$INFO[Container(50).ListItem.Label],home)|ActivateWindow(1168))</onclick>
-					<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31197])</onclick>
-					<onclick>SetProperty(Dialog.2.BuiltIn,SetFocus(13)|Action(Select))</onclick>
-					<onclick>RunScript(script.toolbox,info=selectdialog,header=$INFO[Container(50).ListItem.Label])</onclick>
-					<onleft>Control.Move(50,-1)</onleft>
-					<onright>Control.Move(50,1)</onright>
-					<onup>5000</onup>
-					<ondown>5000</ondown>
-				</control> -->
+				<!-- 				<control type="button" id="600">
+				     <posx>675</posx>
+				     <posy>326</posy>
+				     <width>950</width>
+				     <height>217</height>
+				     <texturefocus>-</texturefocus>
+				     <texturenofocus>-</texturenofocus>
+				     <onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31172])</onclick>
+				     <onclick>SetProperty(Dialog.1.BuiltIn,RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label]))</onclick>
+				     <onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31096])</onclick>
+				     <onclick>SetProperty(Dialog.3.BuiltIn,SetProperty(listcontent,$INFO[Container(50).ListItem.Label],home)|ActivateWindow(1168))</onclick>
+				     <onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31197])</onclick>
+				     <onclick>SetProperty(Dialog.2.BuiltIn,SetFocus(13)|Action(Select))</onclick>
+				     <onclick>RunScript(script.toolbox,info=selectdialog,header=$INFO[Container(50).ListItem.Label])</onclick>
+				     <onleft>Control.Move(50,-1)</onleft>
+				     <onright>Control.Move(50,1)</onright>
+				     <onup>5000</onup>
+				     <ondown>5000</ondown>
+				     </control> -->
 				<control type="list" id="50">
 					<posx></posx>
 					<posy>630</posy>
@@ -424,11 +381,6 @@
 					<control type="button" id="8">
 						<label>Play</label>
 						<include>VideoInfoButtonsCommon</include>
-					</control>
-					<control type="button" id="9">
-						<label>$LOCALIZE[13404] $INFO[ListItem.PercentPlayed,(,%)]</label>
-						<include>VideoInfoButtonsCommon</include>
-						<visible>Control.IsEnabled(9)</visible>
 					</control>
 					<control type="button" id="20">
 						<label>$LOCALIZE[31284]</label>

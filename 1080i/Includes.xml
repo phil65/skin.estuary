@@ -22,6 +22,29 @@
         <label>-</label>
         <font>-</font>
     </include>
+    <include name="VideoInfoMediaFlag">
+        <control type="group">
+            <visible>!IsEmpty($PARAM[InfoLabel])</visible>
+            <height>150</height>
+            <width>155</width>
+            <control type="label">
+                <posy>12</posy>
+                <width>155</width>
+                <height>38</height>
+                <align>center</align>
+                <label fallback="?">$INFO[$PARAM[InfoLabel]]</label>
+                <font>font30_title</font>
+            </control>
+            <control type="label">
+                <posy>59</posy>
+                <width>155</width>
+                <height>38</height>
+                <align>center</align>
+                <label>$PARAM[Title]</label>
+                <font>font12</font>
+            </control>
+        </control>
+    </include>
     <include name="UpDownArrows">
         <control type="image">
             <left>$PARAM[posx]</left>
