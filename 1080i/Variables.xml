@@ -56,7 +56,6 @@
         <value>$LOCALIZE[3]</value>
     </variable>
     <variable name="BreadcrumbsIconVar">
-        <value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes) | Window.IsActive(script-NextAired-TVGuide.xml)">common/tv_icon.png</value>
         <value condition="Window.IsActive(musicplaylisteditor) | Window.IsActive(musicplaylist)">common/logo_music.png</value>
         <value condition="Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)">common/logo_games.png</value>
         <value condition="Window.IsActive(filemanager)">common/logo_playlist.png</value>
