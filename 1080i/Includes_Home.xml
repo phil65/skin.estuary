@@ -106,26 +106,10 @@
             <left>0</left>
             <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-            <control type="image">
-                <left>445</left>
-                <top>221</top>
-                <width>28</width>
-                <height>28</height>
-                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
-                <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
-                <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
-            </control>
-            <control type="image">
-                <left>1843</left>
-                <top>221</top>
-                <width>28</width>
-                <height>28</height>
-                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
-                <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
-                <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
-            </control>
+            <include name="LeftRightArrows">
+                <param name="posy" value="221" />
+                <param name="list_id" value="$PARAM[list_id]" />
+            </include>
             <control type="label">
                 <left>500</left>
                 <top>15</top>
@@ -267,26 +251,10 @@
             <left>0</left>
             <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-            <control type="image">
-                <left>445</left>
-                <top>210</top>
-                <width>28</width>
-                <height>28</height>
-                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
-                <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
-                <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
-            </control>
-            <control type="image">
-                <left>1843</left>
-                <top>210</top>
-                <width>28</width>
-                <height>28</height>
-                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
-                <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
-                <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
-            </control>
+            <include name="LeftRightArrows">
+                <param name="posy" value="210" />
+                <param name="list_id" value="$PARAM[list_id]" />
+            </include>
             <control type="label">
                 <left>500</left>
                 <top>20</top>
@@ -477,26 +445,10 @@
             <left>0</left>
             <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-            <control type="image">
-                <left>445</left>
-                <top>200</top>
-                <width>28</width>
-                <height>28</height>
-                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
-                <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
-                <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
-            </control>
-            <control type="image">
-                <left>1843</left>
-                <top>200</top>
-                <width>28</width>
-                <height>28</height>
-                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
-                <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
-                <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
-            </control>
+            <include name="LeftRightArrows">
+                <param name="posy" value="200" />
+                <param name="list_id" value="$PARAM[list_id]" />
+            </include>
             <control type="label">
                 <left>500</left>
                 <top>20</top>

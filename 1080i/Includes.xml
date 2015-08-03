@@ -22,7 +22,7 @@
         <label>-</label>
         <font>-</font>
     </include>
-  <include name="OSDButton">
+    <include name="OSDButton">
         <texturefocus colordiffuse="$INFO[Window(home).Property(ImageColor)]">osd/buttons/focus.png</texturefocus>
         <width>125</width>
         <animation center="62,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
@@ -80,6 +80,28 @@
             <animation effect="zoom" start="100,0" end="100,100" delay="500" center="0,180" time="200">WindowOpen</animation>
             <animation effect="zoom" start="100,100" end="100,0" center="0,180" time="200">WindowClose</animation>
             <visible>Container($PARAM[container_id]).HasPrevious + Control.IsVisible($PARAM[container_id])</visible>
+        </control>
+    </include>
+    <include name="LeftRightArrows">
+        <control type="image">
+            <left>445</left>
+            <top>$PARAM[posy]</top>
+            <width>28</width>
+            <height>28</height>
+            <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
+            <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+            <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+            <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
+        </control>
+        <control type="image">
+            <left>1843</left>
+            <top>$PARAM[posy]</top>
+            <width>28</width>
+            <height>28</height>
+            <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
+            <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
+            <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+            <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
         </control>
     </include>
     <include name="DefaultSettingButton">
