@@ -62,50 +62,50 @@
                                 <aspectratio>stretch</aspectratio>
                                 <texture border="8">buttons/thumbnail_focused.png</texture>
                             </control>
-                        <control type="group">
-                            <animation type="Focus">
-                                <effect type="fade" start="0" end="100" time="300" />
-                            </animation>
-                            <animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
-                            <control type="image">
-                                <left>5</left>
-                                <top>127</top>
-                                <width>792</width>
-                                <height>40</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture>colors/black.png</texture>
-                                <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+                            <control type="group">
+                                <animation type="Focus">
+                                    <effect type="fade" start="0" end="100" time="300" />
+                                </animation>
+                                <animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+                                <control type="image">
+                                    <left>5</left>
+                                    <top>127</top>
+                                    <width>792</width>
+                                    <height>40</height>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture>colors/black.png</texture>
+                                    <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+                                </control>
+                                <control type="image">
+                                    <left>15</left>
+                                    <top>130</top>
+                                    <width>32</width>
+                                    <height>32</height>
+                                    <texture colordiffuse="FFFFFFFF">$VAR[ListWatchedIcon]</texture>
+                                </control>
+                                <control type="label">
+                                    <left>60</left>
+                                    <top>136</top>
+                                    <width>800</width>
+                                    <height>20</height>
+                                    <font>font12</font>
+                                    <textcolor>white</textcolor>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="label">
+                                    <right>140</right>
+                                    <top>136</top>
+                                    <width>800</width>
+                                    <height>20</height>
+                                    <font>font12</font>
+                                    <textcolor>button_focus</textcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$VAR[BannerLabel2Var]</label>
+                                </control>
                             </control>
-                            <control type="image">
-                                <left>15</left>
-                                <top>130</top>
-                                <width>32</width>
-                                <height>32</height>
-                                <texture colordiffuse="FFFFFFFF">$VAR[ListWatchedIcon]</texture>
-                            </control>
-                            <control type="label">
-                                <left>60</left>
-                                <top>136</top>
-                                <width>800</width>
-                                <height>20</height>
-                                <font>font12</font>
-                                <textcolor>white</textcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <right>140</right>
-                                <top>136</top>
-                                <width>800</width>
-                                <height>20</height>
-                                <font>font12</font>
-                                <textcolor>button_focus</textcolor>
-                                <align>right</align>
-                                <aligny>center</aligny>
-                                <label>$VAR[BannerLabel2Var]</label>
-                            </control>
-                        </control>
                         </control>
                         <control type="image">
                             <right>79</right>
@@ -121,44 +121,17 @@
                             <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
                             <top>10</top>
-                            <control type="image">
-                                <right>98</right>
-                                <top>8</top>
-                                <width>32</width>
-                                <height>32</height>
-                                <fadetime>300</fadetime>
-                                <texture border="1">lists/rating.png</texture>
-                                <visible>!IsEmpty(ListItem.Rating)</visible>
-                            </control>
-                            <control type="label">
-                                <right>80</right>
-                                <top>43</top>
-                                <width>70</width>
-                                <height>32</height>
-                                <align>center</align>
-                                <font>font_textbox</font>
-                                <selectedcolor>white</selectedcolor>
-                                <label>$INFO[ListItem.Rating]</label>
-                            </control>
-                            <control type="image">
-                                <right>100</right>
-                                <top>88</top>
-                                <width>32</width>
-                                <height>32</height>
-                                <fadetime>300</fadetime>
-                                <texture border="1">lists/year.png</texture>
-                                <visible>!IsEmpty(ListItem.Year)</visible>
-                            </control>
-                            <control type="label">
-                                <right>80</right>
-                                <top>120</top>
-                                <width>70</width>
-                                <height>32</height>
-                                <selectedcolor>white</selectedcolor>
-                                <align>center</align>
-                                <font>font_textbox</font>
-                                <label>$INFO[ListItem.Year]</label>
-                            </control>
+                            <right>40</right>
+                            <include name="SmallThumbInfoFlag">
+                                <param name="icon" value="lists/rating.png" />
+                                <param name="infolabel" value="ListItem.Rating" />
+                                <param name="posy" value="5" />
+                            </include>
+                            <include name="SmallThumbInfoFlag">
+                                <param name="icon" value="lists/year.png" />
+                                <param name="infolabel" value="ListItem.Year" />
+                                <param name="posy" value="85" />
+                            </include>
                         </control>
                     </focusedlayout>
                 </control>
