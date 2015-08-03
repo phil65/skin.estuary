@@ -10,7 +10,7 @@
 				<top>0</top>
 				<width>1920</width>
 				<height>100</height>
-				<texture border="1">frame/InfoBarTop.png</texture>
+				<texture>frame/InfoBarTop.png</texture>
 			</control>
 			<!-- Progress Indicator -->
 			<control type="group" id="1">
@@ -131,7 +131,7 @@
 				<top>870</top>
 				<width>1920</width>
 				<height>220</height>
-				<texture border="1">frame/InfoBarBottomLarge.png</texture>
+				<texture>frame/InfoBarBottomLarge.png</texture>
 			</control>
 			<control type="textbox" id="1">
 				<left>300</left>

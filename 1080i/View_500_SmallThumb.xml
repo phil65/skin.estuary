@@ -10,7 +10,7 @@
                 <width>32</width>
                 <height>32</height>
                 <fadetime>300</fadetime>
-                <texture border="1">$PARAM[icon]</texture>
+                <texture>$PARAM[icon]</texture>
                 <visible>!IsEmpty($PARAM[infolabel])</visible>
             </control>
             <control type="label">
