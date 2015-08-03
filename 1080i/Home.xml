@@ -629,7 +629,6 @@
                         <width>900</width>
                         <height>450</height>
                     </control>
-
                     <control type="label">
                         <left>1170</left>
                         <width>600</width>
@@ -1011,78 +1010,26 @@
                 <ondown>SetFocus(9000,0)</ondown>
                 <ondown>9000</ondown>
                 <onright>2000</onright>
-                <control type="radiobutton" id="800">
-                    <width>118</width>
-                    <height>110</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <onclick>RunScript(script.globalsearch)</onclick>
-                    <font>-</font>
-                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <radioposx>38</radioposx>
-                    <radioposy>34</radioposy>
-                    <radiowidth>40</radiowidth>
-                    <radioheight>40</radioheight>
-                    <textureradioonfocus>icons/search.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/search.png</textureradioonnofocus>
-                    <textureradioofffocus>icons/search.png</textureradioofffocus>
-                    <textureradiooffnofocus>icons/search.png</textureradiooffnofocus>
-                </control>
-                <control type="radiobutton" id="801">
-                    <width>118</width>
-                    <height>110</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <onclick>ActivateWindow(settings)</onclick>
-                    <font>-</font>
-                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <radioposx>38</radioposx>
-                    <radioposy>0</radioposy>
-                    <radiowidth>40</radiowidth>
-                    <radioheight>40</radioheight>
-                    <textureradioonfocus>icons/settings.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/settings.png</textureradioonnofocus>
-                    <textureradioofffocus>icons/settings.png</textureradioofffocus>
-                    <textureradiooffnofocus>icons/settings.png</textureradiooffnofocus>
-                </control>
-                <control type="radiobutton" id="802">
-                    <width>118</width>
-                    <height>110</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <onclick>ActivateWindow(favourites)</onclick>
-                    <font>-</font>
-                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <radioposx>38</radioposx>
-                    <radioposy>0</radioposy>
-                    <radiowidth>40</radiowidth>
-                    <radioheight>40</radioheight>
-                    <textureradioonfocus>icons/favourites.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/favourites.png</textureradioonnofocus>
-                    <textureradioofffocus>icons/favourites.png</textureradioofffocus>
-                    <textureradiooffnofocus>icons/favourites.png</textureradiooffnofocus>
-                </control>
-                <control type="radiobutton" id="803">
-                    <width>118</width>
-                    <height>110</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <onclick>ActivateWindow(shutdownmenu)</onclick>
-                    <font>-</font>
-                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <radioposx>38</radioposx>
-                    <radioposy>0</radioposy>
-                    <radiowidth>40</radiowidth>
-                    <radioheight>40</radioheight>
-                    <textureradioonfocus>icons/power.png</textureradioonfocus>
-                    <textureradioonnofocus>icons/power.png</textureradioonnofocus>
-                    <textureradioofffocus>icons/power.png</textureradioofffocus>
-                    <textureradiooffnofocus>icons/power.png</textureradiooffnofocus>
-                </control>
+                <include name="BottomMainMenuItem">
+                    <param name="control_id" value="801" />
+                    <param name="onclick" value="RunScript(script.globalsearch)" />
+                    <param name="icon" value="icons/search.png" />
+                </include>
+                <include name="BottomMainMenuItem">
+                    <param name="control_id" value="802" />
+                    <param name="onclick" value="ActivateWindow(settings)" />
+                    <param name="icon" value="icons/settings.png" />
+                </include>
+                <include name="BottomMainMenuItem">
+                    <param name="control_id" value="803" />
+                    <param name="onclick" value="ActivateWindow(favourites)" />
+                    <param name="icon" value="icons/favourites.png" />
+                </include>
+                <include name="BottomMainMenuItem">
+                    <param name="control_id" value="804" />
+                    <param name="onclick" value="ActivateWindow(shutdownmenu)" />
+                    <param name="icon" value="icons/power.png" />
+                </include>
             </control>
         </control>
         <control type="group">
