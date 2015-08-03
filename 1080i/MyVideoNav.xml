@@ -23,7 +23,7 @@
             <fadetime>200</fadetime>
             <aspectratio>scale</aspectratio>
             <texture border="2" fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
-            <bordertexture>colors/black.png</bordertexture>
+            <bordertexture>colours/black.png</bordertexture>
             <bordersize>4</bordersize>
             <visible>!Container.Content(addons)</visible>
             <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>

@@ -18,7 +18,7 @@
                     <width>469</width>
                     <height>469</height>
                     <aspectratio>scale</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
                 </control>
                 <control type="image">
                     <left>114</left>
@@ -35,7 +35,7 @@
                     <width>469</width>
                     <height>220</height>
                     <fadetime>300</fadetime>
-                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
                 </control>
                 <control type="textbox">
                     <left>120</left>
@@ -59,7 +59,7 @@
                     <width>469</width>
                     <height>580</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
                 </control>
                 <control type="textbox">
                     <right>130</right>
@@ -87,7 +87,7 @@
                     <height>704</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>300</fadetime>
-                    <bordertexture>colors/black.png</bordertexture>
+                    <bordertexture>colours/black.png</bordertexture>
                     <bordersize>4</bordersize>
                     <texture border="4" background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(fanart)]</texture>
                 </control>
@@ -97,7 +97,7 @@
                     <width>469</width>
                     <height>50</height>
                     <fadetime>300</fadetime>
-                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
                 </control>
                 <control type="image">
                     <left>556r</left>
