@@ -190,41 +190,41 @@
                                 <texture>colors/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
-                                <control type="label">
-                                    <left>20</left>
-                                    <top>267</top>
-                                    <width>178</width>
-                                    <label>$INFO[ListItem.Label]</label>
-                                    <font>font10</font>
-                                    <textcolor>white</textcolor>
-                                    <shadowcolor>text_shadow</shadowcolor>
-                                    <scroll>false</scroll>
-                                    <align>center</align>
-                                </control>
-                                <control type="label">
-                                    <left>20</left>
-                                    <top>291</top>
-                                    <width>178</width>
-                                    <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
-                                    <font>font10</font>
-                                    <textcolor>button_focus</textcolor>
-                                    <shadowcolor>text_shadow</shadowcolor>
-                                    <scroll>false</scroll>
-                                    <align>center</align>
-                                </control>
-                                <control type="progress">
-                                    <left>20</left>
-                                    <top>15</top>
-                                    <width>174</width>
-                                    <height>13</height>
-                                    <info>ListItem.PercentPlayed</info>
-                                    <texturebg border="3">progress/texturebg_border_white.png</texturebg>
-                                    <midtexture>progress/texturebg_white.png</midtexture>
-                                    <lefttexture>-</lefttexture>
-                                    <righttexture>-</righttexture>
-                                    <overlaytexture>-</overlaytexture>
-                                    <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
-                                </control>
+                            <control type="label">
+                                <left>20</left>
+                                <top>267</top>
+                                <width>178</width>
+                                <label>$INFO[ListItem.Label]</label>
+                                <font>font10</font>
+                                <textcolor>white</textcolor>
+                                <shadowcolor>text_shadow</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>center</align>
+                            </control>
+                            <control type="label">
+                                <left>20</left>
+                                <top>291</top>
+                                <width>178</width>
+                                <label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
+                                <font>font10</font>
+                                <textcolor>button_focus</textcolor>
+                                <shadowcolor>text_shadow</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>center</align>
+                            </control>
+                            <control type="progress">
+                                <left>20</left>
+                                <top>15</top>
+                                <width>174</width>
+                                <height>13</height>
+                                <info>ListItem.PercentPlayed</info>
+                                <texturebg border="3">progress/texturebg_border_white.png</texturebg>
+                                <midtexture>progress/texturebg_white.png</midtexture>
+                                <lefttexture>-</lefttexture>
+                                <righttexture>-</righttexture>
+                                <overlaytexture>-</overlaytexture>
+                                <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+                            </control>
                             <control type="image">
                                 <left>1</left>
                                 <top>3</top>
@@ -588,6 +588,245 @@
                 <content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
             </control>
         </control>
+    </include>
+    <include name="WeatherWidget">
+        <control type="group">
+            <description>Square Weather Widget including header and arrows</description>
+            <height>432</height>
+            <left>0</left>
+            <top>0</top>
+            <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+            <visible>$PARAM[visible]</visible>
+            <control type="image">
+                <left>445</left>
+                <top>230</top>
+                <width>28</width>
+                <height>28</height>
+                <texture flipx="true">overlays/arrowright.png</texture>
+                <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
+                <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
+            </control>
+            <control type="image">
+                <left>1840</left>
+                <top>230</top>
+                <width>28</width>
+                <height>28</height>
+                <texture>overlays/arrowright.png</texture>
+                <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
+                <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+                <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
+            </control>
+            <control type="label">
+                <left>500</left>
+                <top>30</top>
+                <width>600</width>
+                <height>40</height>
+                <label>$PARAM[widget_header]</label>
+                <font>font14</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <scroll>false</scroll>
+                <align>left</align>
+            </control>
+            <control type="list" id="$PARAM[list_id]">
+                <left>490</left>
+                <top>55</top>
+                <width>1350</width>
+                <height>400</height>
+                <scrolltime tween="cubic" easing="out">500</scrolltime>
+                <orientation>horizontal</orientation>
+                <onleft>9000</onleft>
+                <onright>$PARAM[list_id]</onright>
+                <onup>$PARAM[onup_id]</onup>
+                <ondown>Control.SetFocus(15200,$INFO[Container($PARAM[list_id]).Position])</ondown>
+                <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
+                <preloaditems>1</preloaditems>
+                <include>OpenClose_WidgetZoom</include>
+                <itemlayout width="273">
+                    <control type="image">
+                        <description>Menu Panel</description>
+                        <left>0</left>
+                        <top>20</top>
+                        <width>260</width>
+                        <height>350</height>
+                        <texture border="40">buttons/button-nofo.png</texture>
+                    </control>
+                    <control type="image">
+                        <description>Menu Panel</description>
+                        <left>60</left>
+                        <top>90</top>
+                        <width>130</width>
+                        <height>130</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>47</top>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>white</textcolor>
+                        <width>230</width>
+                        <font>font13</font>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>237</top>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
+                        <textcolor>white</textcolor>
+                        <width>230</width>
+                        <font>font13</font>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="273">
+                    <control type="group">
+                        <animation type="Focus">
+                            <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+                        </animation>
+                        <animation type="Unfocus">
+                            <effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+                        </animation>
+                        <control type="image">
+                            <description>Menu Panel</description>
+                            <left>0</left>
+                            <top>20</top>
+                            <width>260</width>
+                            <height>350</height>
+                            <texture border="40">buttons/button-nofo.png</texture>
+                        </control>
+                        <control type="image">
+                            <description>Menu Panel</description>
+                            <left>0</left>
+                            <top>20</top>
+                            <width>260</width>
+                            <height>350</height>
+                            <texture border="40">buttons/button-theme-fo.png</texture>
+                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                            <visible>Control.HasFocus($PARAM[list_id])</visible>
+                        </control>
+                        <control type="image">
+                            <description>Menu Panel</description>
+                            <left>60</left>
+                            <top>90</top>
+                            <width>130</width>
+                            <height>130</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                        </control>
+                        <control type="label">
+                            <left>15</left>
+                            <top>47</top>
+                            <width>230</width>
+                            <align>center</align>
+                            <label>$INFO[ListItem.Label]</label>
+                            <textcolor>white</textcolor>
+                            <font>font13</font>
+                        </control>
+                        <control type="label">
+                            <left>15</left>
+                            <top>237</top>
+                            <align>center</align>
+                            <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
+                            <textcolor>white</textcolor>
+                            <width>230</width>
+                            <font>font13</font>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <include>$PARAM[content_include]</include>
+            </control>
+        </control>
+    </include>
+    <include name="HourlyItems">
+        <content>
+            <item>
+                <icon>$LOCALIZE[31909]</icon>
+                <onclick>noop</onclick>
+                <visible>IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
+            </item>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="1" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="2" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="3" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="4" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="5" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="6" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="7" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="8" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="9" />
+            </include>
+            <include name="WeatherHourlyItem">
+                <param name="item_index" value="10" />
+            </include>
+        </content>
+    </include>
+    <include name="DailyItems">
+        <content>
+            <item>
+                <icon>$LOCALIZE[31909]</icon>
+                <onclick>noop</onclick>
+                <visible>IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
+            </item>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="1" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="2" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="3" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="4" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="5" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="6" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="7" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="8" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="9" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="10" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="11" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="12" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="13" />
+            </include>
+            <include name="WeatherDailyItem">
+                <param name="item_index" value="14" />
+            </include>
+        </content>
     </include>
     <include name="WeatherHourlyItem">
         <item>
