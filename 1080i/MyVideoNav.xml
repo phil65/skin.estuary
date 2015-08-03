@@ -9,7 +9,9 @@
         <include>View_50_List</include>
         <include>View_51_Poster</include>
         <include>View_52_IconWall</include>
-        <include>View_500_SmallThumb</include>
+        <include name="View_500_SmallThumb">
+            <param name="layouts_include" value="SmallThumbVideoLayouts" />
+        </include>
         <include>View_501_Banner</include>
         <control type="image">
             <include>OpenClose_FadeSlide_Left</include>
