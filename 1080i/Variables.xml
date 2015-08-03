@@ -45,7 +45,8 @@
     </variable>
     <variable name="NowPlayingPosterVar">
         <value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
-        <value>$INFO[Player.Art(tvshow.poster)]</value>
+        <value condition="!IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
+        <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="ListWatchedIcon">
         <value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>

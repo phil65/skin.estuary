@@ -611,16 +611,25 @@
                     <control type="image">
                         <top>85</top>
                         <left>530</left>
-                        <width>300</width>
+                        <width>340</width>
                         <height>450</height>
+                        <aspectratio align="left" aligny="bottom">keep</aspectratio>
                         <texture>$VAR[NowPlayingPosterVar]</texture>
+                    </control>
+                    <control type="image">
+                        <top>85</top>
+                        <left>865</left>
+                        <width>900</width>
+                        <height>450</height>
+                        <texture>colors/black.png</texture>
                     </control>
                     <control type="videowindow">
                         <top>85</top>
-                        <left>860</left>
+                        <left>865</left>
                         <width>900</width>
                         <height>450</height>
                     </control>
+
                     <control type="label">
                         <left>1170</left>
                         <width>600</width>
