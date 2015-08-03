@@ -366,11 +366,11 @@
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 					</control>
 					<control type="button" id="440">
-						<label>$LOCALIZE[31886]</label>
+						<label>Search trailer</label>
 						<include>VideoInfoButtonsCommon</include>
 						<visible>IsEmpty(ListItem.Trailer)</visible>
-						<onclick>SetProperty(listcontent,$INFO[ListItem.Label] Trailer,home)</onclick>
-						<onclick>ActivateWindow(1168)</onclick>
+						<onclick>Action(close)</onclick>
+						<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])</onclick>
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 					</control>
 					<control type="button" id="100">
