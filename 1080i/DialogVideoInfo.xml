@@ -344,7 +344,7 @@
 					<onright>5000</onright>
 					<onup>132</onup>
 					<ondown>50</ondown>
-					<itemgap>0</itemgap>
+					<itemgap>-20</itemgap>
 					<orientation>horizontal</orientation>
 					<scrolltime tween="quadratic">200</scrolltime>
 					<control type="button" id="8">
@@ -370,6 +370,7 @@
 						<include>VideoInfoButtonsCommon</include>
 						<visible>IsEmpty(ListItem.Trailer)</visible>
 						<onclick>Action(close)</onclick>
+						<visible>System.hasAddon(script.extendedinfo)</visible>
 						<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])</onclick>
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 					</control>
