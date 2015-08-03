@@ -330,7 +330,7 @@
                             <left>20</left>
                             <top>240</top>
                             <width>360</width>
-                            <label>[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]</label>
+                            <label>$PARAM[second_label]</label>
                             <font>font10</font>
                             <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
@@ -403,7 +403,7 @@
                             <left>20</left>
                             <top>240</top>
                             <width>360</width>
-                            <label>[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]</label>
+                            <label>$PARAM[second_label]</label>
                             <font>font10</font>
                             <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>

@@ -170,6 +170,7 @@
                     <param name="widget_header" value="In-progress TV Shows"/>
                     <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
                     <param name="widget_target" value="videos"/>
+                    <param name="second_label" value="$INFO[ListItem.Genre]" />
                     <param name="list_id" value="6100"/>
                     <param name="onup_id" value="6900"/>
                     <param name="ondown_id" value="6200"/>
@@ -179,6 +180,7 @@
                     <param name="widget_header" value="Recently added episodes"/>
                     <param name="item_image" value="$INFO[ListItem.Art(thumb)]" />
                     <param name="widget_target" value="videos"/>
+                    <param name="second_label" value="[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]" />
                     <param name="list_id" value="6200"/>
                     <param name="onup_id" value="6100"/>
                     <param name="ondown_id" value="6300"/>
@@ -188,6 +190,7 @@
                     <param name="widget_header" value="Random episodes"/>
                     <param name="item_image" value="$INFO[ListItem.Art(thumb)]" />
                     <param name="widget_target" value="videos"/>
+                    <param name="second_label" value="[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]" />
                     <param name="list_id" value="6300"/>
                     <param name="onup_id" value="6200"/>
                     <param name="ondown_id" value="20001"/>
