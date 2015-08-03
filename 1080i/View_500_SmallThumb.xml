@@ -6,14 +6,15 @@
             <top>$PARAM[posy]</top>
             <control type="image">
                 <top>0</top>
-                <right>59</right>
-                <width>32</width>
+                <right>41</right>
+                <width>70</width>
                 <height>32</height>
                 <fadetime>300</fadetime>
+                <aspectratio align="center">keep</aspectratio>
                 <texture>$PARAM[icon]</texture>
             </control>
             <control type="label">
-                <right>42</right>
+                <right>41</right>
                 <top>35</top>
                 <width>70</width>
                 <height>32</height>
