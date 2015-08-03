@@ -21,6 +21,13 @@
                     <texture border="40">buttons/button-nofo.png</texture>
                 </control>
                 <control type="image">
+                    <posx>19</posx>
+                    <posy>179</posy>
+                    <width>360</width>
+                    <height>50</height>
+                    <texture border="1" colordiffuse="60FFFFFF">colours/black.png</texture>
+                </control>
+                <control type="image">
                     <left>80</left>
                     <top>10</top>
                     <width>240</width>
@@ -57,6 +64,13 @@
                         <height>250</height>
                         <texture border="40">buttons/button-theme-fo.png</texture>
                         <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                    </control>
+                    <control type="image">
+                        <posx>19</posx>
+                        <posy>179</posy>
+                        <width>360</width>
+                        <height>50</height>
+                        <texture border="1" colordiffuse="60FFFFFF">colours/black.png</texture>
                     </control>
                     <control type="image">
                         <left>80</left>
@@ -136,7 +150,7 @@
                 <item id="9">
                     <label>$LOCALIZE[7]</label>
                     <onclick>ActivateWindow(filemanager)</onclick>
-                    <icon>icons/settings/files.png</icon>
+                    <icon>icons/settings/filemanager.png</icon>
                 </item>
             </content>
         </control>
