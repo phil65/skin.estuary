@@ -8,34 +8,44 @@
                 <param name="posx" value="936" />
             </include>
             <control type="group">
-                <include>OpenClose_FadeSlide_Right</include>
+                <include>OpenClose_FadeSlide_Left</include>
                 <visible>Control.IsVisible(50)</visible>
-                <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)</visible>
+                <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)</visible>
                 <include>Vis_FadeSlide_Left</include>
                 <control type="image">
                     <left>110</left>
                     <top>182</top>
-                    <width>569</width>
-                    <height>569</height>
+                    <width>469</width>
+                    <height>469</height>
                     <aspectratio>scale</aspectratio>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
                 <control type="image">
                     <left>114</left>
                     <top>186</top>
-                    <width>561</width>
-                    <height>561</height>
+                    <width>461</width>
+                    <height>461</height>
                     <aspectratio aligny="top">scale</aspectratio>
                     <fadetime>300</fadetime>
                     <texture background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
                 <control type="image">
                     <left>110</left>
-                    <top>770</top>
-                    <width>569</width>
-                    <height>120</height>
+                    <top>670</top>
+                    <width>469</width>
+                    <height>220</height>
                     <fadetime>300</fadetime>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                </control>
+                <control type="textbox">
+                    <left>120</left>
+                    <top>680</top>
+                    <width>449</width>
+                    <height>190</height>
+                    <align>justify</align>
+                    <font>font_textbox</font>
+                    <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
+                    <label fallback="No info available">$INFO[ListItem.Property(Addon.Description)]$INFO[ListItem.Property(Artist_Description)]</label>
                 </control>
             </control>
             <control type="group">
@@ -134,7 +144,6 @@
                 <include>OpenClose_FadeSlide_Right</include>
                 <left>603</left>
                 <top>182</top>
-                <animation effect="slide" start="0,0" end="100,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)">conditional</animation>
                 <visible>Control.IsVisible(50)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="image">
@@ -150,7 +159,7 @@
                     <description>background image</description>
                     <left>0</left>
                     <top>0</top>
-                    <width>1114</width>
+                    <width>1214</width>
                     <height>706</height>
                     <texture border="2">dialogs/dialog-bg.png</texture>
                     <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)</visible>
@@ -158,7 +167,7 @@
                 <control type="list" id="50">
                     <left>2</left>
                     <top>3</top>
-                    <width>1110</width>
+                    <width>1210</width>
                     <height>700</height>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>vertical</orientation>
@@ -291,14 +300,14 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>996</width>
+                            <width>1096</width>
                             <height>71</height>
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>1296</width>
+                            <width>1396</width>
                             <height>69</height>
                             <texture border="150,1,150,1">lists/focus.png</texture>
                             <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -333,7 +342,7 @@
                             <left>90</left>
                             <top>0</top>
                             <height>70</height>
-                            <width>990</width>
+                            <width>1090</width>
                             <align>right</align>
                             <aligny>center</aligny>
                             <font>font12</font>
@@ -366,7 +375,7 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>1296</width>
+                            <width>1396</width>
                             <height>71</height>
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
@@ -387,7 +396,7 @@
                             <left>95</left>
                             <top>0</top>
                             <height>70</height>
-                            <width>860</width>
+                            <width>960</width>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font13</font>
@@ -400,7 +409,7 @@
                             <left>90</left>
                             <top>0</top>
                             <height>70</height>
-                            <width>990</width>
+                            <width>1090</width>
                             <align>right</align>
                             <aligny>center</aligny>
                             <font>font12</font>

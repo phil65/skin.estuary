@@ -12,6 +12,7 @@
     <variable name="PosterVar">
         <value condition="!IsEmpty(Container.Art(season.poster)) + Container.Content(episodes)">$INFO[Container.Art(season.poster)]</value>
         <value condition="!IsEmpty(Container.Art(tvshow.poster)) + Container.Content(episodes)">$INFO[Container.Art(tvshow.poster)]</value>
+        <value condition="Container.Content(actors) | Container.Content(directors)">$INFO[Container.ListItem.Art(thumb)]</value>
         <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
     <variable name="BannerLabel2Var">
