@@ -111,7 +111,7 @@
                 <top>221</top>
                 <width>28</width>
                 <height>28</height>
-                <texture flipx="true">overlays/arrowright.png</texture>
+                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
                 <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
@@ -121,7 +121,7 @@
                 <top>221</top>
                 <width>28</width>
                 <height>28</height>
-                <texture>overlays/arrowright.png</texture>
+                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
                 <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
@@ -164,7 +164,7 @@
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture>colours/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </control>
@@ -184,7 +184,7 @@
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture>colours/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -197,7 +197,7 @@
                                 <width>212</width>
                                 <height>57</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colors/black.png</texture>
+                                <texture>colours/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
                             <control type="image">
@@ -207,7 +207,7 @@
                                 <width>212</width>
                                 <height>35</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colors/black.png</texture>
+                                <texture>colours/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
                             <control type="label">
@@ -272,7 +272,7 @@
                 <top>210</top>
                 <width>28</width>
                 <height>28</height>
-                <texture flipx="true">overlays/arrowright.png</texture>
+                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
                 <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
@@ -282,7 +282,7 @@
                 <top>210</top>
                 <width>28</width>
                 <height>28</height>
-                <texture>overlays/arrowright.png</texture>
+                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
                 <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
@@ -324,7 +324,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture>colours/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -335,7 +335,7 @@
                                 <width>400</width>
                                 <height>30</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                                <texture colordiffuse="99FFFFFF">colours/black.png</texture>
                             </control>
                             <control type="progress">
                                 <left>30</left>
@@ -356,7 +356,7 @@
                             <width>400</width>
                             <height>60</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                            <texture colordiffuse="99FFFFFF">colours/black.png</texture>
                         </control>
                         <control type="label">
                             <left>20</left>
@@ -397,7 +397,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture>colours/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -408,7 +408,7 @@
                                 <width>400</width>
                                 <height>30</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                                <texture colordiffuse="99FFFFFF">colours/black.png</texture>
                             </control>
                             <control type="progress">
                                 <left>30</left>
@@ -429,7 +429,7 @@
                             <width>400</width>
                             <height>60</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                            <texture colordiffuse="99FFFFFF">colours/black.png</texture>
                         </control>
                         <control type="label">
                             <left>20</left>
@@ -482,7 +482,7 @@
                 <top>200</top>
                 <width>28</width>
                 <height>28</height>
-                <texture flipx="true">overlays/arrowright.png</texture>
+                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
                 <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
@@ -492,7 +492,7 @@
                 <top>200</top>
                 <width>28</width>
                 <height>28</height>
-                <texture>overlays/arrowright.png</texture>
+                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
                 <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
@@ -534,7 +534,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture>colours/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </control>
@@ -554,7 +554,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture>colours/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -567,7 +567,7 @@
                                 <width>300</width>
                                 <height>60</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colors/black.png</texture>
+                                <texture>colours/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
                             <control type="group">
@@ -622,7 +622,7 @@
                 <top>230</top>
                 <width>28</width>
                 <height>28</height>
-                <texture flipx="true">overlays/arrowright.png</texture>
+                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
                 <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
@@ -632,7 +632,7 @@
                 <top>230</top>
                 <width>28</width>
                 <height>28</height>
-                <texture>overlays/arrowright.png</texture>
+                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
                 <animation effect="slide" start="-30,0" end="0,0" time="200">VisibleChange</animation>
                 <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 <visible>Container($PARAM[list_id]).HasNext + Control.HasFocus($PARAM[list_id])</visible>
