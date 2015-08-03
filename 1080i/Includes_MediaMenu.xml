@@ -2,7 +2,18 @@
 <includes>
     <include name="MediaMenuItemsCommon">
         <width>400</width>
-        <include>DefaultSettingButton</include>
+        <textoffsetx>20</textoffsetx>
+        <top>0</top>
+        <height>75</height>
+        <radioposx>300</radioposx>
+        <aligny>center</aligny>
+        <font>font13</font>
+        <textcolor>white</textcolor>
+        <focusedcolor>white</focusedcolor>
+        <invalidcolor>invalid</invalidcolor>
+        <selectedcolor>selected</selectedcolor>
+        <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+        <texturenofocus border="40">lists/separator.png</texturenofocus>
     </include>
     <include name="PlaylistEditorButtons">
         <control type="button" id="6">
@@ -37,20 +48,20 @@
         </control>
     </include>
     <include name="AddonBrowserButtons">
-        <control type="button" id="5">
-            <label>$LOCALIZE[24063]: $VAR[AutoUpdateLabelVar]</label>
+        <control type="radiobutton" id="5">
+            <label>$LOCALIZE[24063]</label>
             <include>MediaMenuItemsCommon</include>
         </control>
-        <control type="button" id="6">
-            <label>$LOCALIZE[25000]: $VAR[AddonNotificationsLabelVar]</label>
+        <control type="radiobutton" id="6">
+            <label>$LOCALIZE[25000]</label>
             <include>MediaMenuItemsCommon</include>
         </control>
-        <control type="button" id="7">
-            <label>$LOCALIZE[25001]: $VAR[AddonLanguageLabelVar]</label>
+        <control type="radiobutton" id="7">
+            <label>$LOCALIZE[25001]</label>
             <include>MediaMenuItemsCommon</include>
         </control>
-        <control type="button" id="2052">
-            <label>$LOCALIZE[24999]: $VAR[AddonHideBrokenLabelVar]</label>
+        <control type="radiobutton" id="2052">
+            <label>$LOCALIZE[24999]</label>
             <include>MediaMenuItemsCommon</include>
         </control>
         <control type="button" id="223">
