@@ -20,6 +20,7 @@
                 <height>32</height>
                 <align>center</align>
                 <font>font_textbox</font>
+                <selectedcolor>white</selectedcolor>
                 <label>$INFO[$PARAM[infolabel]]</label>
             </control>
         </control>
@@ -80,10 +81,9 @@
                     <height>20</height>
                     <font>font12</font>
                     <textcolor>white</textcolor>
-                    <selectedcolor>white</selectedcolor>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <info>ListItem.Label</info>
+                    <label>$INFO[ListItem.Label]</label>
                 </control>
             </control>
             <control type="group">
@@ -172,10 +172,9 @@
                     <height>20</height>
                     <font>font12</font>
                     <textcolor>white</textcolor>
-                    <selectedcolor>white</selectedcolor>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <info>ListItem.Label</info>
+                    <label>$INFO[ListItem.Label]</label>
                 </control>
             </control>
             <control type="image">
