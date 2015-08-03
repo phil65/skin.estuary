@@ -106,7 +106,7 @@
 				<top>24</top>
 				<height>32</height>
 				<width>32</width>
-				<texture>frame/clock.png</texture>
+				<texture colordiffuse="button_focus">frame/clock.png</texture>
 				<animation effect="slide" start="0,0" end="-30,0" time="0" condition="Window.IsVisible(Mutebug)">conditional</animation>
 				<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(VideoOSD)">conditional</animation>
 				<animation effect="slide" start="0,0" end="-400,0" time="0" condition="Window.IsVisible(infodialog)">conditional</animation>
