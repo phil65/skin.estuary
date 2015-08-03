@@ -166,8 +166,9 @@
                     <param name="item7_label" value="$VAR[VideoLibraryUpdateVar]" />
                 </include>
                 <include name="WidgetListEpisodes">
-                    <param name="content_path" value="special://skin/playlists/inprogress_episodes.xsp"/>
-                    <param name="widget_header" value="In-progress episodes"/>
+                    <param name="content_path" value="special://skin/playlists/inprogress_tvshows.xsp"/>
+                    <param name="widget_header" value="In-progress TV Shows"/>
+                    <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
                     <param name="widget_target" value="videos"/>
                     <param name="list_id" value="6100"/>
                     <param name="onup_id" value="6900"/>
@@ -176,6 +177,7 @@
                 <include name="WidgetListEpisodes">
                     <param name="content_path" value="videodb://recentlyaddedepisodes/"/>
                     <param name="widget_header" value="Recently added episodes"/>
+                    <param name="item_image" value="$INFO[ListItem.Art(thumb)]" />
                     <param name="widget_target" value="videos"/>
                     <param name="list_id" value="6200"/>
                     <param name="onup_id" value="6100"/>
@@ -184,6 +186,7 @@
                 <include name="WidgetListEpisodes">
                     <param name="content_path" value="special://skin/playlists/random_episodes.xsp"/>
                     <param name="widget_header" value="Random episodes"/>
+                    <param name="item_image" value="$INFO[ListItem.Art(thumb)]" />
                     <param name="widget_target" value="videos"/>
                     <param name="list_id" value="6300"/>
                     <param name="onup_id" value="6200"/>

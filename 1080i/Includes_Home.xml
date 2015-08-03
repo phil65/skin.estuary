@@ -291,7 +291,7 @@
                             <width>400</width>
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
-                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                            <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
                             <bordertexture>colours/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
@@ -364,7 +364,7 @@
                             <width>400</width>
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
-                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                            <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
                             <bordertexture>colours/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
