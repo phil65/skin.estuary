@@ -105,20 +105,13 @@
                     <include name="SmallThumbInfoFlag">
                         <param name="icon" value="lists/rating.png" />
                         <param name="infolabel" value="ListItem.Rating" />
-                        <param name="posy" value="10" />
+                        <param name="posy" value="50" />
                     </include>
                     <include name="SmallThumbInfoFlag">
                         <param name="icon" value="lists/year.png" />
                         <param name="infolabel" value="ListItem.Year" />
-                        <param name="posy" value="90" />
+                        <param name="posy" value="200" />
                     </include>
-                    <control type="image">
-                        <right>60</right>
-                        <top>180</top>
-                        <width>32</width>
-                        <height>32</height>
-                        <texture colordiffuse="FFFFFFFF">$VAR[ListWatchedIcon]</texture>
-                    </control>
                 </control>
             </control>
         </focusedlayout>
