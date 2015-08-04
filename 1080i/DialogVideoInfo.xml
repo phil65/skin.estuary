@@ -194,7 +194,7 @@
 									<posy>267</posy>
 									<align>center</align>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] as ,[/COLOR]]</label>
 								</control>
 							</control>
 						</control>
@@ -227,7 +227,7 @@
 									<posy>267</posy>
 									<align>center</align>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] as ,[/COLOR]]</label>
 									<autoscroll delay="5000" time="AutoScrollTime" repeat="8001">true</autoscroll>
 								</control>
 								<control type="image">
