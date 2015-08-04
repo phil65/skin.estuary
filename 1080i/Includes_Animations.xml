@@ -10,6 +10,16 @@
             <effect type="fade" start="100" end="0" time="240" />
         </animation>
     </include>
+    <include name="Animation_DialogPopupVisible">
+        <animation type="Visible" reversible="false">
+            <effect type="zoom" start="80" end="100" center="960,540" delay="160" tween="back" time="240" />
+            <effect type="fade" delay="160" end="100" time="240" />
+        </animation>
+        <animation type="Hidden" reversible="false">
+            <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240" />
+            <effect type="fade" start="100" end="0" time="240" />
+        </animation>
+    </include>
     <include name="Vis_FadeSlide_Right_Delayed">
         <animation type="Visible">
             <effect type="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" />
