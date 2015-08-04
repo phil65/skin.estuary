@@ -12,14 +12,14 @@
             <control type="group">
                 <control type="image">
                     <posx>-40</posx>
-                    <width>760</width>
+                    <width>728</width>
                     <height>1080</height>
                     <texture>lists/panel.png</texture>
                 </control>
             </control>
             <control type="label" id="2">
                 <posx>60</posx>
-                <posy>35</posy>
+                <posy>20</posy>
                 <width>1080</width>
                 <height>60</height>
                 <font>font30_title</font>
@@ -40,38 +40,39 @@
         </control>
         <control type="sliderex" id="13">
             <height>60</height>
-            <width>1172</width>
-            <textoffsetx>20</textoffsetx>
-            <font>font13</font>
+            <width>508</width>
+            <textoffsetx>30</textoffsetx>
+            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+            <texturenofocus>lists/separator.png</texturenofocus>
+                        <font>font12</font>
             <textcolor>white</textcolor>
         </control>
         <control type="button" id="7">
-            <width>1172</width>
+            <width>508</width>
             <height>60</height>
-            <textoffsetx>20</textoffsetx>
+            <textoffsetx>30</textoffsetx>
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-            <texturenofocus border="40">lists/separator.png</texturenofocus>
-            <font>font13</font>
+            <texturenofocus>lists/separator.png</texturenofocus>
+            <font>font12</font>
             <textcolor>white</textcolor>
         </control>
         <control type="radiobutton" id="8">
-            <width>1172</width>
+            <width>508</width>
             <height>60</height>
-            <textoffsetx>20</textoffsetx>
+            <textoffsetx>30</textoffsetx>
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-            <texturenofocus border="40">lists/separator.png</texturenofocus>
-            <font>font13</font>
+            <texturenofocus>lists/separator.png</texturenofocus>
+            <font>font12</font>
             <textcolor>white</textcolor>
             <radioposx>572</radioposx>
         </control>
         <control type="spincontrolex" id="9">
             <height>60</height>
-            <textoffsetx>20</textoffsetx>
+            <textoffsetx>30</textoffsetx>
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-            <texturenofocus border="40">lists/separator.png</texturenofocus>
-            <font>font13</font>
+            <texturenofocus>lists/separator.png</texturenofocus>
+            <font>font12</font>
             <textcolor>white</textcolor>
-            <spinposx>-13</spinposx>
         </control>
     </controls>
 </window>
