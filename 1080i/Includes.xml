@@ -467,10 +467,12 @@
             <align>right</align>
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
+            <animation effect="fade" time="150">VisibleChange</animation>
             <visible>!Window.IsVisible(infodialog) + !Window.IsVisible(extendedprogressdialog)</visible>
             <control type="label">
                 <description>Weather label</description>
                 <include>BreadcrumbsLabel</include>
+                <animation effect="fade" time="300">VisibleChange</animation>
                 <label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
                 <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
             </control>
@@ -481,6 +483,7 @@
                 <height>60</height>
                 <aspectratio align="left">keep</aspectratio>
                 <texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
+                <animation effect="fade" time="300">VisibleChange</animation>
                 <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
             </control>
             <control type="label">
