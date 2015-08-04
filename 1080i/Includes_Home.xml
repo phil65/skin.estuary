@@ -222,11 +222,6 @@
                                 <width>174</width>
                                 <height>13</height>
                                 <info>ListItem.PercentPlayed</info>
-                                <texturebg border="3">progress/texturebg_border_white.png</texturebg>
-                                <midtexture>progress/texturebg_white.png</midtexture>
-                                <lefttexture>-</lefttexture>
-                                <righttexture>-</righttexture>
-                                <overlaytexture>-</overlaytexture>
                                 <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
                             </control>
                             <control type="image">
@@ -311,11 +306,6 @@
                                 <width>340</width>
                                 <height>13</height>
                                 <info>ListItem.PercentPlayed</info>
-                                <texturebg border="3">progress/texturebg_border_white.png</texturebg>
-                                <midtexture>progress/texturebg_white.png</midtexture>
-                                <lefttexture>-</lefttexture>
-                                <righttexture>-</righttexture>
-                                <overlaytexture>-</overlaytexture>
                             </control>
                         </control>
                         <control type="image">
@@ -384,11 +374,6 @@
                                 <width>340</width>
                                 <height>13</height>
                                 <info>ListItem.PercentPlayed</info>
-                                <texturebg border="3">progress/texturebg_border_white.png</texturebg>
-                                <midtexture>progress/texturebg_white.png</midtexture>
-                                <lefttexture>-</lefttexture>
-                                <righttexture>-</righttexture>
-                                <overlaytexture>-</overlaytexture>
                             </control>
                         </control>
                         <control type="image">

@@ -49,7 +49,7 @@
     </default>
     <default type="progress">
         <texturebg border="3">progress/texturebg_border_white.png</texturebg>
-        <midtexture>progress/texturebg_white.png</midtexture>
+        <midtexture colordiffuse="button_focus">progress/texturebg_white.png</midtexture>
         <lefttexture>-</lefttexture>
         <righttexture>-</righttexture>
         <overlaytexture>-</overlaytexture>
