@@ -319,10 +319,18 @@
                     <param name="widget_target" value="music"/>
                     <param name="list_id" value="8400"/>
                     <param name="onup_id" value="8300"/>
+                    <param name="ondown_id" value="8500"/>
+                </include>
+                <include name="WidgetListSquare">
+                    <param name="content_path" value="addons://sources/image/"/>
+                    <param name="widget_header" value="Image add-ons"/>
+                    <param name="widget_target" value="pictures"/>
+                    <param name="list_id" value="8500"/>
+                    <param name="onup_id" value="8400"/>
                     <param name="ondown_id" value="20001"/>
                 </include>
             </control>
-            <control type="grouplist" id="4001">
+<!--             <control type="grouplist" id="4001">
                 <orientation>vertical</orientation>
                 <top>76</top>
                 <height>925</height>
@@ -332,15 +340,8 @@
                     <height>15</height>
                     <texture>-</texture>
                 </control>
-                <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/image/"/>
-                    <param name="widget_header" value="Image add-ons"/>
-                    <param name="widget_target" value="pictures"/>
-                    <param name="list_id" value="4100"/>
-                    <param name="onup_id" value="20000"/>
-                    <param name="ondown_id" value="20001"/>
-                </include>
-            </control>
+
+            </control> -->
             <control type="grouplist" id="11001">
                 <orientation>vertical</orientation>
                 <top>76</top>
@@ -974,9 +975,8 @@
                         <visible>PVR.HasRadioChannels</visible>
                     </item>
                     <item id="1">
-                        <label>31957</label>
-                        <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
-                        <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+                        <label>$LOCALIZE[24001]</label>
+                        <onclick>ActivateWindow(1100)</onclick>
                         <property name="nofocus">lists/arrow-right-nofo.png</property>
                         <property name="focus">lists/arrow-right-fo.png</property>
                         <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
@@ -990,8 +990,7 @@
                     </item>
                     <item id="2">
                         <label>31953</label>
-                        <onclick condition="StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos)</onclick>
-                        <onclick condition="!StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
+                        <onclick>ActivateWindow(Videos,root)</onclick>
                         <property name="nofocus">lists/arrow-right-nofo.png</property>
                         <property name="focus">lists/arrow-right-fo.png</property>
                         <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
