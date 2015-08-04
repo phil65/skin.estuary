@@ -6,6 +6,14 @@
             <height>424</height>
             <left>0</left>
             <top>182</top>
+            <control type="button" id="20000">
+                <description>Dummy button to get animations right (hide focusedlayout on animations)</description>
+                <include>HiddenObject</include>
+                <animation effect="fade" delay="300" time="0" start="100" end="0">Visible</animation>
+                <animation effect="fade" delay="300" time="0" start="100" end="0">WindowOpen</animation>
+                <onclick>noop</onclick>
+                <visible>Control.IsVisible(51)</visible>
+            </control>
             <control type="image">
                 <left>50</left>
                 <top>170</top>
@@ -61,6 +69,8 @@
                     </itemlayout>
                     <focusedlayout width="279">
                         <control type="group">
+                            <animation effect="fade" time="300" start="100" end="0">Focus</animation>
+                            <visible>Control.IsVisible(20000)</visible>
                             <control type="image">
                                 <left>0</left>
                                 <top>3</top>
