@@ -23,11 +23,6 @@
 			</control>
 			<control type="group">
 				<posx>190</posx>
-				<control type="button" id="13">
-					<include>HiddenObject</include>
-					<texturenofocus>-</texturenofocus>
-					<label>-</label>
-				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
 					<posx>00</posx>
@@ -35,7 +30,7 @@
 					<itemgap>-25</itemgap>
 					<ondown>5000</ondown>
 					<onup>5000</onup>
-					<control type="button" id="130">
+					<control type="button" id="13">
 						<width>1100</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
@@ -45,14 +40,7 @@
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
 						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-						<label>$INFO[ListItem.Director,[COLOR button_focus]Director: [/COLOR]]</label>
-						<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31172])</onclick>
-						<onclick>SetProperty(Dialog.1.BuiltIn,RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Director]))</onclick>
-						<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31096])</onclick>
-						<onclick>SetProperty(Dialog.3.BuiltIn,SetProperty(listcontent,$INFO[ListItem.Director],home)|ActivateWindow(1168))</onclick>
-						<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31197])</onclick>
-						<onclick>SetProperty(Dialog.2.BuiltIn,SetFocus(13)|Action(Select))</onclick>
-						<onclick>RunScript(script.toolbox,info=selectdialog,header=$INFO[ListItem.Director])</onclick>
+						<label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
 						<visible>!IsEmpty(ListItem.Director)</visible>
 					</control>
 					<control type="button" id="131">
@@ -65,12 +53,8 @@
 						<font>font13</font>
 						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-						<label>$INFO[ListItem.Writer,[COLOR button_focus]Writer: [/COLOR]]</label>
-						<onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31172])</onclick>
-						<onclick>SetProperty(Dialog.1.BuiltIn,RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer]))</onclick>
-						<onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31096])</onclick>
-						<onclick>SetProperty(Dialog.2.BuiltIn,SetProperty(listcontent,$INFO[ListItem.Writer],home)|ActivateWindow(1168))</onclick>
-						<onclick>RunScript(script.toolbox,info=selectdialog,header=$INFO[ListItem.Writer])</onclick>
+						<label>$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]: [/COLOR]]</label>
+						<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
 						<visible>!IsEmpty(ListItem.Writer)</visible>
 					</control>
 					<control type="label" id="135">
@@ -266,7 +250,7 @@
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
-					<onup>132</onup>
+					<onup>131</onup>
 					<ondown>50</ondown>
 					<itemgap>-20</itemgap>
 					<orientation>horizontal</orientation>
