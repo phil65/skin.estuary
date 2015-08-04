@@ -11,11 +11,8 @@
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="700" />
 			<param name="DialogBackgroundHeight" value="570" />
-			<param name="DialogHeaderWidth" value="620" />
 			<param name="DialogHeaderLabel" value="" />
 			<param name="DialogHeaderId" value="2" />
-			<param name="CloseButtonLeft" value="610" />
-			<param name="CloseButtonNav" value="5" />
 		</include>
 		<control type="grouplist" id="5">
 			<animation effect="slide" start="0,0" end="5,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>

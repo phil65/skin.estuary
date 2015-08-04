@@ -8,42 +8,12 @@
 		<top>260</top>
 	</coordinates>
 	<controls>
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>650</width>
-			<height>200</height>
-			<texture border="20">OverlayDialogBackground.png</texture>
-		</control>
-		<control type="button">
-			<description>Close Window button</description>
-			<left>560</left>
-			<top>5</top>
-			<width>64</width>
-			<height>32</height>
-			<label>-</label>
-			<font>-</font>
-			<onclick>PreviousMenu</onclick>
-			<texturefocus>DialogCloseButton-focus.png</texturefocus>
-			<texturenofocus>DialogCloseButton.png</texturenofocus>
-			<onleft>13</onleft>
-			<onright>13</onright>
-			<onup>13</onup>
-			<ondown>13</ondown>
-			<visible>system.getbool(input.enablemouse)</visible>
-		</control>
-		<control type="label">
-			<description>heading label</description>
-			<left>40</left>
-			<top>18</top>
-			<width>570</width>
-			<height>30</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font13</font>
-			<label>$INFO[ListItem.Label]</label>
-			<textcolor>white</textcolor>
-		</control>
+		<include name="DialogBackgroundCommons">
+			<param name="DialogBackgroundWidth" value="1390" />
+			<param name="DialogBackgroundHeight" value="650" />
+			<param name="DialogHeaderLabel" value="$INFO[ListItem.Label]" />
+			<param name="DialogHeaderId" value="311" />
+		</include>
 		<control type="label">
 			<left>40</left>
 			<top>60</top>

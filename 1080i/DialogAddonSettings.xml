@@ -11,11 +11,8 @@
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1440" />
 			<param name="DialogBackgroundHeight" value="900" />
-			<param name="DialogHeaderWidth" value="720" />
 			<param name="DialogHeaderLabel" value="-" />
 			<param name="DialogHeaderId" value="20" />
-			<param name="CloseButtonLeft" value="710" />
-			<param name="CloseButtonNav" value="3" />
 		</include>
 		<control type="grouplist" id="9">
 			<description>button area</description>

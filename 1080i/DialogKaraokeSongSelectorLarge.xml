@@ -11,11 +11,8 @@
 			<include name="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="450" />
 				<param name="DialogBackgroundHeight" value="170" />
-				<param name="DialogHeaderWidth" value="370" />
 				<param name="DialogHeaderLabel" value="$LOCALIZE[31321]" />
 				<param name="DialogHeaderId" value="1" />
-				<param name="CloseButtonLeft" value="360" />
-				<param name="CloseButtonNav" value="10" />
 			</include>
 			<control type="label" id="401">
 				<description>Song Number Label</description>

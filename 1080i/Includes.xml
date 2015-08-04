@@ -389,9 +389,9 @@
         </control>
         <control type="label" id="$PARAM[DialogHeaderId]">
             <description>header label</description>
-            <left>40</left>
+            <textoffsetx>40</textoffsetx>
             <top>20</top>
-            <width>$PARAM[DialogHeaderWidth]</width>
+            <width>$PARAM[DialogBackgroundWidth]</width>
             <height>30</height>
             <font>font13_title</font>
             <label>$PARAM[DialogHeaderLabel]</label>

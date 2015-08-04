@@ -14,11 +14,8 @@
 			<include name="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="910" />
 				<param name="DialogBackgroundHeight" value="510" />
-				<param name="DialogHeaderWidth" value="830" />
 				<param name="DialogHeaderLabel" value="$LOCALIZE[658]" />
 				<param name="DialogHeaderId" value="2" />
-				<param name="CloseButtonLeft" value="820" />
-				<param name="CloseButtonNav" value="3" />
 			</include>
 			<control type="label">
 				<description>Song Title value</description>
