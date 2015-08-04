@@ -100,6 +100,79 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
                 </control>
+                <control type="list" id="5000">
+                    <right>110</right>
+                    <top>475</top>
+                    <width>1192</width>
+                    <height>235</height>
+                    <orientation>vertical</orientation>
+                    <onleft>9000</onleft>
+                    <onright>9000</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <viewtype label="List">list</viewtype>
+                    <preloaditems>1</preloaditems>
+                    <visible>Stringcompare(Listitem.dbtype,set)</visible>
+                    <focusedlayout height="40">
+                        <control type="label">
+                            <left>50</left>
+                            <top>0</top>
+                            <height>50</height>
+                            <width>560</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font13</font>
+                            <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <left>90</left>
+                            <top>0</top>
+                            <height>50</height>
+                            <width>555</width>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                    </focusedlayout>
+                    <itemlayout height="40">
+                        <control type="label">
+                            <left>50</left>
+                            <top>0</top>
+                            <height>50</height>
+                            <width>560</width>
+                            <aligny>center</aligny>
+                            <font>font13</font>
+                            <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="label">
+                            <left>90</left>
+                            <top>0</top>
+                            <height>50</height>
+                            <width>555</width>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                    </itemlayout>
+                    <content>$INFO[ListItem.Path]</content>
+                </control>
                 <control type="image">
                     <left>645</left>
                     <top>415</top>
