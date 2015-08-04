@@ -181,6 +181,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <font>font12</font>
+                            <animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
                             <label>$INFO[ListItem.Label2]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>grey</textcolor>
@@ -242,6 +243,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <font>font12</font>
+                            <animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
                             <label>$INFO[ListItem.Label2]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>grey</textcolor>
