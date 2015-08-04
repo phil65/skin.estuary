@@ -8,6 +8,21 @@
         <include>DefaultBackground</include>
         <include>PlaylistWindowButtons</include>
         <include>PlaylistViewtype</include>
+                <control type="image">
+            <include>OpenClose_FadeSlide_Right</include>
+            <include>Vis_FadeSlide_Right</include>
+            <right>110</right>
+            <top>182</top>
+            <width>469</width>
+            <height>704</height>
+            <fadetime>200</fadetime>
+            <aspectratio aligny="bottom">keep</aspectratio>
+            <texture border="2" fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
+            <bordertexture>colours/black.png</bordertexture>
+            <bordersize>4</bordersize>
+            <visible>!Container.Content(addons)</visible>
+            <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
+        </control>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="Video Playlist" />
             <param name="breadcrumbs_icon" value="icons/settings/video.png" />
