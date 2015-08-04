@@ -218,8 +218,8 @@
                     <param name="item4_onclick" value="ActivateWindow(MusicFiles)" />
                     <param name="item4_label" value="$LOCALIZE[744]" />
                     <param name="item5_id" value="7905" />
-                    <param name="item5_onclick" value="ActivateWindow(MusicFiles,Addons,return)" />
-                    <param name="item5_label" value="$LOCALIZE[24001]" />
+                    <param name="item5_onclick" value="ActivateWindow(MusicFiles,special://musicplaylists/,return)" />
+                    <param name="item5_label" value="Playlists" />
                     <param name="item6_id" value="7906" />
                     <param name="item6_onclick" value="ActivateWindow(MusicLibrary,root)" />
                     <param name="item6_label" value="$LOCALIZE[14022]" />
