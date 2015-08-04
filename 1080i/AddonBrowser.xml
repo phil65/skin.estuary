@@ -7,7 +7,9 @@
     <controls>
         <include>DefaultBackground</include>
         <include>View_50_List</include>
-        <include>View_52_IconWall</include>
+        <include name="View_52_IconWall">
+            <param name="visible" value="true" />
+        </include>
         <include>Media_Menu</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[24001]" />

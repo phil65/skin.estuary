@@ -8,7 +8,9 @@
         <include>DefaultBackground</include>
         <include>View_50_List</include>
         <include>View_51_Poster</include>
-        <include>View_52_IconWall</include>
+        <include name="View_52_IconWall">
+            <param name="visible" value="Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios)" />
+        </include>
         <include name="View_500_SmallThumb">
             <param name="layouts_include" value="SmallThumbVideoLayouts" />
         </include>

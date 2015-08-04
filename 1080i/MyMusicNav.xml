@@ -7,7 +7,9 @@
     <controls>
         <include>DefaultBackground</include>
         <include>View_50_List</include>
-        <include>View_52_IconWall</include>
+        <include name="View_52_IconWall">
+            <param name="visible" value="Container.Content() | Container.Content(years) | Container.Content(files) | Container.Content(genres)" />
+        </include>
         <include name="View_500_SmallThumb">
             <param name="layouts_include" value="SmallThumbMusicLayouts" />
             <paran name="visible" value="Container.Content(artists) | Container.Content(albums)" />
