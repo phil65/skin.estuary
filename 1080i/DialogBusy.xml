@@ -26,7 +26,7 @@
             <visible>!Window.IsActive(startup)</visible>
         <control type="image">
             <texture>colours/black.png</texture>
-            <include>FullscreenDimensions</include>
+            <include>FullScreenDimensions</include>
             <animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
             <animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
             <animation effect="fade" end="100" time="560">WindowOpen</animation>

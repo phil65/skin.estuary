@@ -697,7 +697,7 @@
                         <left>530</left>
                         <width>330</width>
                         <height>330</height>
-                        <texture colordiffuse="FFFFFFFF">$INFO[Weather.conditions]</texture>
+                        <texture>$INFO[Weather.conditions]</texture>
                     </control>
                     <control type="label">
                         <left>990</left>

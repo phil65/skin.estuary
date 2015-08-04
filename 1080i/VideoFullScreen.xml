@@ -304,11 +304,5 @@
                 <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
             </control>
         </control>
-        <control type="group" id="2">
-			<visible>[Player.ShowInfo|Player.Forwarding|Player.Seeking] + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
-            <visible>VideoPlayer.Content(LiveTV) + !IsEmpty(VideoPlayer.ChannelName)</visible>
-            <include condition="IsEmpty(Skin.String(LiveTV.InfobarType)) | StringCompare(Skin.String(LiveTV.InfobarType),2)">FullScreenInfoBarLiveTV</include>
-            <include condition="StringCompare(Skin.String(LiveTV.InfobarType),1)">FullScreenInfoBarLiveTV_Compact</include>
-        </control>
     </controls>
 </window>
