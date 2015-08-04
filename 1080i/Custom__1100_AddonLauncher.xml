@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1100">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <include>DefaultBackground</include>
+        <include name="SettingsPanel">
+            <param name="content" value="AddonLauncherItems" />
+        </include>
+        <include name="TopBar">
+            <param name="breadcrumbs_label" value="Addon launcher" />
+            <param name="breadcrumbs_icon" value="icons/settings/addons.png" />
+        </include>
+        <include>BottomBar</include>
+    </controls>
+</window>
