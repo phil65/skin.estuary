@@ -195,42 +195,6 @@
                     <align>left</align>
                 </control>
                 <control type="label">
-                    <left>645</left>
-                    <top>500</top>
-                    <width>1160</width>
-                    <height>40</height>
-                    <label>$INFO[ListItem.Genre,[COLOR button_focus]Genre: [/COLOR]]</label>
-                    <font>font13</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <scroll>false</scroll>
-                    <align>left</align>
-                </control>
-                <control type="label">
-                    <left>645</left>
-                    <top>540</top>
-                    <width>1160</width>
-                    <height>40</height>
-                    <label>$INFO[ListItem.Season,,[COLOR button_focus] Seasons[/COLOR]]$INFO[ListItem.Episode, - ,[COLOR button_focus] Episodes[/COLOR]]$INFO[ListItem.Director,[COLOR button_focus]Director: [/COLOR]]</label>
-                    <font>font13</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <scroll>false</scroll>
-                    <align>left</align>
-                </control>
-                <control type="textbox">
-                    <left>645</left>
-                    <top>580</top>
-                    <width>1150</width>
-                    <height>110</height>
-                    <autoscroll time="3000" delay="6000" repeat="5000">true</autoscroll>
-                    <label>$INFO[ListItem.Plot]</label>
-                    <font>font13</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <align>left</align>
-                </control>
-                <control type="label">
                     <right>135</right>
                     <top>400</top>
                     <width>1160</width>
@@ -242,6 +206,55 @@
                     <scroll>false</scroll>
                     <align>right</align>
                 </control>
+                <control type="grouplist">
+                    <orientation>vertical</orientation>
+                    <left>645</left>
+                    <top>480</top>
+                    <height>200</height>
+                <control type="label">
+                    <width>1160</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR]]</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <scroll>false</scroll>
+                    <align>left</align>
+                    <visible>!IsEmpty(ListItem.Genre)</visible>
+                </control>
+                <control type="label">>
+                    <width>1160</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <scroll>false</scroll>
+                    <align>left</align>
+                    <visible>!IsEmpty(ListItem.Director)</visible>
+                </control>
+                <control type="label">>
+                    <width>1160</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.Season,,[COLOR button_focus] Seasons[/COLOR]]$INFO[ListItem.Episode, - ,[COLOR button_focus] Episodes[/COLOR]]</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <scroll>false</scroll>
+                    <align>left</align>
+                    <visible>!IsEmpty(ListItem.Season)</visible>
+                </control>
+                <control type="textbox">
+                    <width>1150</width>
+                    <height max="200">auto</height>
+                    <autoscroll time="3000" delay="3000" repeat="5000">true</autoscroll>
+                    <label>$INFO[ListItem.Plot]</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <align>left</align>
+                </control>
+            </control>
             </control>
         </control>
     </include>
