@@ -481,6 +481,7 @@
                 <top>10</top>
                 <width>70</width>
                 <height>60</height>
+                <fadetime>300</fadetime>
                 <aspectratio align="left">keep</aspectratio>
                 <texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
                 <animation effect="fade" time="300">VisibleChange</animation>
