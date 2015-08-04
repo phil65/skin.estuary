@@ -128,14 +128,14 @@
                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <left>70</left>
+                        <left>30</left>
                         <top>0</top>
                         <height>70</height>
-                        <width>560</width>
+                        <width>880</width>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>font14</font>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
@@ -144,7 +144,7 @@
                         <left>90</left>
                         <top>0</top>
                         <height>70</height>
-                        <width>605</width>
+                        <width>880</width>
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>font12</font>
@@ -187,13 +187,13 @@
                         <texture border="90,3,90,3">lists/separator.png</texture>
                     </control>
                     <control type="label">
-                        <left>70</left>
+                        <left>30</left>
                         <top>0</top>
                         <height>70</height>
-                        <width>560</width>
+                        <width>880</width>
                         <aligny>center</aligny>
                         <font>font14</font>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
@@ -203,7 +203,7 @@
                         <left>90</left>
                         <top>0</top>
                         <height>70</height>
-                        <width>605</width>
+                        <width>880</width>
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>font12</font>
