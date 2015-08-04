@@ -13,6 +13,7 @@
         </include>
         <include name="View_500_SmallThumb">
             <param name="layouts_include" value="SmallThumbVideoLayouts" />
+            <param name="visible" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)" />
         </include>
         <include>View_501_Banner</include>
         <control type="image">

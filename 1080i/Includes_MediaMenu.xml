@@ -196,7 +196,7 @@
                     <label>[B]$INFO[Container.Viewmode][/B]</label>
                     <include>MediaMenuItemsCommon</include>
                     <onclick>Container.NextViewMode</onclick>
-                    <visible>!Window.IsActive(musicplaylisteditor)</visible>
+                    <visible>Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
                 </control>
                 <control type="button" id="3">
                     <description>Sort Button</description>
