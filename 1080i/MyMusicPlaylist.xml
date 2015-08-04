@@ -12,6 +12,12 @@
             <param name="breadcrumbs_label" value="Music Playlist" />
             <param name="breadcrumbs_icon" value="icons/settings/music.png" />
         </include>
+            <control type="group">
+                <posx>1230</posx>
+                <include>OpenClose_FadeSlide_Right</include>
+                <include>Vis_FadeSlide_Left</include>
+                <include>ListThumbInfoPanel</include>
+            </control>
         <include>BottomBar</include>
     </controls>
 </window>

@@ -12,41 +12,7 @@
                 <visible>Control.IsVisible(50)</visible>
                 <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)</visible>
                 <include>Vis_FadeSlide_Left</include>
-                <control type="image">
-                    <left>110</left>
-                    <top>182</top>
-                    <width>469</width>
-                    <height>469</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
-                </control>
-                <control type="image">
-                    <left>114</left>
-                    <top>186</top>
-                    <width>461</width>
-                    <height>461</height>
-                    <aspectratio aligny="top">scale</aspectratio>
-                    <fadetime>300</fadetime>
-                    <texture background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(thumb)]</texture>
-                </control>
-                <control type="image">
-                    <left>110</left>
-                    <top>670</top>
-                    <width>469</width>
-                    <height>220</height>
-                    <fadetime>300</fadetime>
-                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
-                </control>
-                <control type="textbox">
-                    <left>120</left>
-                    <top>680</top>
-                    <width>449</width>
-                    <height>190</height>
-                    <align>justify</align>
-                    <font>font_textbox</font>
-                    <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
-                    <label fallback="No info available">$INFO[ListItem.Property(Addon.Description)]$INFO[ListItem.Property(Artist_Description)]</label>
-                </control>
+                <include>ListThumbInfoPanel</include>
             </control>
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
@@ -429,6 +395,43 @@
                     </itemlayout>
                 </control>
             </control>
+        </control>
+    </include>
+    <include name="ListThumbInfoPanel">
+        <control type="image">
+            <left>110</left>
+            <top>182</top>
+            <width>469</width>
+            <height>469</height>
+            <aspectratio>scale</aspectratio>
+            <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
+        </control>
+        <control type="image">
+            <left>114</left>
+            <top>186</top>
+            <width>461</width>
+            <height>461</height>
+            <aspectratio aligny="top">scale</aspectratio>
+            <fadetime>300</fadetime>
+            <texture background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(thumb)]</texture>
+        </control>
+        <control type="image">
+            <left>110</left>
+            <top>670</top>
+            <width>469</width>
+            <height>220</height>
+            <fadetime>300</fadetime>
+            <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
+        </control>
+        <control type="textbox">
+            <left>120</left>
+            <top>680</top>
+            <width>449</width>
+            <height>190</height>
+            <align>justify</align>
+            <font>font_textbox</font>
+            <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
+            <label fallback="No info available">$INFO[ListItem.Property(Addon.Description)]$INFO[ListItem.Property(Artist_Description)]</label>
         </control>
     </include>
 </includes>

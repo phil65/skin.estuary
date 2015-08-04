@@ -94,14 +94,14 @@
                 <description>background image</description>
                 <left>0</left>
                 <top>0</top>
-                <width>1490</width>
+                <width>1000</width>
                 <height>706</height>
                 <texture border="2">dialogs/dialog-bg.png</texture>
             </control>
             <control type="list" id="50">
                 <left>2</left>
                 <top>3</top>
-                <width>1490</width>
+                <width>1000</width>
                 <height>700</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <orientation>vertical</orientation>
@@ -122,7 +122,7 @@
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>1486</width>
+                        <width>996</width>
                         <height>139</height>
                         <texture border="150,1,150,1">lists/focus.png</texture>
                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
