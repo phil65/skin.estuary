@@ -3,25 +3,7 @@
 	<defaultcontrol always="true">8</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<control type="group">
-			<include>OpenClose_FadeSlide_Left</include>
-			<control type="image">
-				<left>0</left>
-				<top>80</top>
-				<width>613</width>
-				<height>920</height>
-				<aspectratio aligny="top">scale</aspectratio>
-				<texture background="true" fallback="colours/black.png">$VAR[PosterVar]</texture>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>80</top>
-				<width>613</width>
-				<height>920</height>
-				<aspectratio>stretch</aspectratio>
-				<texture background="true" border="8">buttons/thumbnail_focused.png</texture>
-			</control>
-		</control>
+
 		<control type="group">
 			<include>OpenClose_FadeSlide_Right</include>
 			<left>613</left>
@@ -38,13 +20,6 @@
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
 				<texture colordiffuse="D0FFFFFF">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
-			</control>
-			<control type="image">
-				<posx>35</posx>
-				<top>80</top>
-				<width>140</width>
-				<height>920</height>
-				<texture colordiffuse="button_focus">colours/white.png</texture>
 			</control>
 			<control type="group">
 				<posx>190</posx>
@@ -194,57 +169,6 @@
 								<textcolor>grey</textcolor>
 								<visible>Container.Content(episodes) + !IsEmpty(ListItem.TvShowTitle)</visible>
 							</control>
-						</control>
-					</control>
-					<!-- Middle Row -->
-					<control type="group">
-						<posy>-60</posy>
-						<control type="grouplist">
-							<posx>-185</posx>
-							<posy>80</posy>
-							<width>1200</width>
-							<orientation>vertical</orientation>
-							<usecontrolcoords>true</usecontrolcoords>
-							<include name="VideoInfoMediaFlag">
-								<param name="InfoLabel" value="ListItem.Rating" />
-								<param name="Title" value="Rating" />
-								<param name="Visible" value="True" />
-							</include>
-							<include name="VideoInfoMediaFlag">
-								<param name="InfoLabel" value="ListItem.Duration" />
-								<param name="Title" value="Minutes" />
-								<param name="Visible" value="True" />
-							</include>
-							<include name="VideoInfoMediaFlag">
-								<param name="InfoLabel" value="ListItem.Year" />
-								<param name="Title" value="Year" />
-								<param name="Visible" value="True" />
-							</include>
-							<include name="VideoInfoMediaFlag">
-								<param name="InfoLabel" value="ListItem.VideoResolution" />
-								<param name="Title" value="HD" />
-								<param name="Visible" value="True" />
-							</include>
-							<include name="VideoInfoMediaFlag">
-								<param name="InfoLabel" value="ListItem.VideoAspect" />
-								<param name="Title" value="AR" />
-								<param name="Visible" value="True" />
-							</include>
-							<include name="VideoInfoMediaFlag">
-								<param name="InfoLabel" value="ListItem.AudioChannels" />
-								<param name="Title" value="Channels" />
-								<param name="Visible" value="True" />
-							</include>
-							<include name="VideoInfoMediaFlag">
-								<param name="InfoLabel" value="ListItem.Season" />
-								<param name="Title" value="Seasons" />
-								<param name="Visible" value="!Container.Content(episodes)" />
-							</include>
-							<include name="VideoInfoMediaFlag">
-								<param name="InfoLabel" value="ListItem.Episode" />
-								<param name="Title" value="Episodes" />
-								<param name="Visible" value="!Container.Content(episodes)" />
-							</include>
 						</control>
 					</control>
 				</control>
@@ -426,6 +350,92 @@
 					<animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
 					<visible>Container(5000).HasNext+ ControlGroup(5000).HasFocus</visible>
 				</control>
+			</control>
+		</control>
+				<control type="group">
+			<include>OpenClose_FadeSlide_Left</include>
+			<!-- Middle Row -->
+			<control type="group">
+				<posy>0</posy>
+				<posx>600</posx>
+				<animation type="WindowOpen">
+					<effect type="fade" start="0" end="100" delay="500" time="300" tween="sine" easing="out" />
+					<effect type="slide" start="-320" end="0" delay="500" time="400" tween="cubic" easing="out" />
+				</animation>
+				<animation type="WindowClose">
+					<effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+					<effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
+				</animation>
+				<control type="image">
+					<posx>35</posx>
+					<top>80</top>
+					<width>140</width>
+					<height>920</height>
+					<texture colordiffuse="button_focus">colours/white.png</texture>
+				</control>
+				<control type="grouplist">
+					<posx>25</posx>
+					<posy>80</posy>
+					<width>1200</width>
+					<orientation>vertical</orientation>
+					<usecontrolcoords>true</usecontrolcoords>
+					<include name="VideoInfoMediaFlag">
+						<param name="InfoLabel" value="ListItem.Rating" />
+						<param name="Title" value="Rating" />
+						<param name="Visible" value="True" />
+					</include>
+					<include name="VideoInfoMediaFlag">
+						<param name="InfoLabel" value="ListItem.Duration" />
+						<param name="Title" value="Minutes" />
+						<param name="Visible" value="True" />
+					</include>
+					<include name="VideoInfoMediaFlag">
+						<param name="InfoLabel" value="ListItem.Year" />
+						<param name="Title" value="Year" />
+						<param name="Visible" value="True" />
+					</include>
+					<include name="VideoInfoMediaFlag">
+						<param name="InfoLabel" value="ListItem.VideoResolution" />
+						<param name="Title" value="HD" />
+						<param name="Visible" value="True" />
+					</include>
+					<include name="VideoInfoMediaFlag">
+						<param name="InfoLabel" value="ListItem.VideoAspect" />
+						<param name="Title" value="AR" />
+						<param name="Visible" value="True" />
+					</include>
+					<include name="VideoInfoMediaFlag">
+						<param name="InfoLabel" value="ListItem.AudioChannels" />
+						<param name="Title" value="Channels" />
+						<param name="Visible" value="True" />
+					</include>
+					<include name="VideoInfoMediaFlag">
+						<param name="InfoLabel" value="ListItem.Season" />
+						<param name="Title" value="Seasons" />
+						<param name="Visible" value="!Container.Content(episodes)" />
+					</include>
+					<include name="VideoInfoMediaFlag">
+						<param name="InfoLabel" value="ListItem.Episode" />
+						<param name="Title" value="Episodes" />
+						<param name="Visible" value="!Container.Content(episodes)" />
+					</include>
+				</control>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>80</top>
+				<width>613</width>
+				<height>920</height>
+				<aspectratio aligny="top">scale</aspectratio>
+				<texture background="true" fallback="colours/black.png">$VAR[PosterVar]</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>80</top>
+				<width>613</width>
+				<height>920</height>
+				<aspectratio>stretch</aspectratio>
+				<texture background="true" border="8">buttons/thumbnail_focused.png</texture>
 			</control>
 		</control>
 	</controls>
