@@ -53,6 +53,7 @@
         <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="ListWatchedIcon">
+        <value condition="Stringcompare(ListItem.Label,..)">-</value>
         <value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
         <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlays/watched/OverlayWatched-List.png</value>
         <value>overlays/watched/OverlayEmpty-List.png</value>
