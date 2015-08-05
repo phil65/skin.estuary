@@ -148,7 +148,7 @@
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </control>
@@ -168,8 +168,8 @@
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
-                            <bordersize>4</bordersize>
+                            <bordertexture>colors/black.png</bordertexture>
+                            <bordersize>2</bordersize>
                         </control>
                         <control type="group">
                             <animation effect="fade" start="0" end="100" time="200">Focus</animation>
@@ -287,7 +287,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -355,7 +355,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -471,7 +471,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </control>
@@ -491,7 +491,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
