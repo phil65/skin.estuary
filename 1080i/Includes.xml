@@ -408,12 +408,16 @@
         </control>
     </include>
     <include name="OSDButton">
+        <textureradioonfocus colordiffuse="button_focus">$PARAM[texture]</textureradioonfocus>
+        <textureradioonnofocus>$PARAM[texture]</textureradioonnofocus>
+        <textureradioofffocus colordiffuse="button_focus">$PARAM[texture]</textureradioofffocus>
+        <textureradiooffnofocus>$PARAM[texture]</textureradiooffnofocus>
         <texturefocus colordiffuse="button_focus">osd/buttons/focus.png</texturefocus>
         <width>125</width>
         <animation center="62,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
         <height>123</height>
-        <radiowidth>125</radiowidth>
-        <radioheight>125</radioheight>
+        <radiowidth>80</radiowidth>
+        <radioheight>80</radioheight>
         <font>-</font>
         <texturenofocus>-</texturenofocus>
         <radioposx>1</radioposx>
