@@ -20,7 +20,7 @@
         <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
     <variable name="BannerLabel2Var">
-        <value condition="Container.Content(tvshows)">$INFO[ListItem.Property(TotalEpisodes)]</value>
+        <value condition="Container.Content(tvshows)">$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</value>
         <!-- <value>$INFO[ListItem.Year]</value>
  -->
     </variable>

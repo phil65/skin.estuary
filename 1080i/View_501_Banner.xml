@@ -93,8 +93,15 @@
                                     <aligny>center</aligny>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
+                                <control type="image">
+                                    <right>93</right>
+                                    <top>135</top>
+                                    <width>22</width>
+                                    <height>22</height>
+                                    <texture>lists/played-total.png</texture>
+                                </control>
                                 <control type="label">
-                                    <right>140</right>
+                                    <right>123</right>
                                     <top>136</top>
                                     <width>800</width>
                                     <height>20</height>
