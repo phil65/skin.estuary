@@ -4,21 +4,13 @@
     <controls>
         <control type="group">
             <posy>920</posy>
-            <animation type="WindowOpen">
-                <effect type="slide" start="0,218" end="0,0" time="440" tween="cubic" />
-                <effect type="zoom" start="50" end="100" time="440" delay="0" center="auto" tween="cubic" />
-                <effect type="fade" start="0" end="100" time="440"/>
-            </animation>
-            <animation type="WindowClose">
-                <effect type="slide" end="0,218" start="0,0" time="440" tween="cubic" />
-                <effect type="zoom" end="50" start="100" time="440" delay="0" center="auto" tween="cubic" />
-            </animation>
+            <include>OpenClose_FadeSlide_Down</include>
             <control type="image">
                 <description>Menu Panel</description>
                 <left>0</left>
-                <top>-20</top>
+                <top>-70</top>
                 <width>1920</width>
-                <height>200</height>
+                <height>250</height>
                 <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
             </control>
             <control type="grouplist" id="201">
@@ -158,17 +150,15 @@
                 <posy>20</posy>
                 <control type="label">
                     <posx>1840</posx>
-                    <posy>-75</posy>
+                    <posy>-90</posy>
                     <width>400</width>
                     <height>75</height>
                     <align>right</align>
                     <aligny>bottom</aligny>
-                    <label>$VAR[PlayerTimeLabelVar]</label>
-                    <font>Font_Bold37_Caps</font>
+                    <label>$INFO[Player.Time]</label>
+                    <font>font30_title</font>
                     <shadowcolor>black</shadowcolor>
-                    <textcolor>white3</textcolor>
-                    <animation effect="fade" start="0" end="100" delay="200" time="200">WindowOpen</animation>
-                    <animation effect="fade" end="0" time="200">WindowClose</animation>
+                    <textcolor>white</textcolor>
                 </control>
                 <control type="progress" id="23">
                     <animation effect="fade" end="0" time="200">WindowClose</animation>
@@ -228,21 +218,6 @@
                     <info>Player.Progress</info>
                     <action>seek</action>
                     <visible>Control.HasFocus(87)</visible>
-                </control>
-                <control type="label">
-                    <posx>17</posx>
-                    <posy>-80</posy>
-                    <width>200</width>
-                    <height>75</height>
-                    <align>center</align>
-                    <aligny>bottom</aligny>
-                    <label>$VAR[VideoPlayerForwardRewindVar]</label>
-                    <font>Font_Bold37_Caps</font>
-                    <shadowcolor>black</shadowcolor>
-                    <textcolor>white3</textcolor>
-                    <animation effect="fade" start="0" end="100" delay="200" time="200">WindowOpen</animation>
-                    <animation effect="fade" end="0" time="200">WindowClose</animation>
-                    <visible>Player.Rewinding | Player.Forwarding</visible>
                 </control>
             </control>
         </control>
