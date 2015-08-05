@@ -104,14 +104,6 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 			</control>
-			<control type="image">
-				<left>0</left>
-				<top>80</top>
-				<width>613</width>
-				<height>920</height>
-				<aspectratio>stretch</aspectratio>
-				<texture background="true" border="8">buttons/thumbnail_focused.png</texture>
-			</control>
 		</control>
 		<control type="group">
 			<include>OpenClose_FadeSlide_Right</include>
