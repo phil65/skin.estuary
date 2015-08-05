@@ -33,7 +33,7 @@
                 <height>330</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
-                <bordertexture>colors/black.png</bordertexture>
+                <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
             </control>
         </itemlayout>
@@ -45,7 +45,7 @@
                 <height>330</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
-                <bordertexture>colors/black.png</bordertexture>
+                <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
                 <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
                 <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
@@ -124,7 +124,7 @@
                 <height>330</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture>colors/black.png</bordertexture>
+                <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
             </control>
         </itemlayout>
@@ -136,7 +136,7 @@
                 <height>330</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture>colors/black.png</bordertexture>
+                <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
                 <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
                 <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
@@ -217,7 +217,7 @@
                 <height>250</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
-                <bordertexture>colors/black.png</bordertexture>
+                <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
             </control>
             <control type="image">
@@ -263,7 +263,7 @@
                     <height>250</height>
                     <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio>scale</aspectratio>
-                    <bordertexture>colors/black.png</bordertexture>
+                    <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                     <bordersize>4</bordersize>
                 </control>
                 <control type="image">

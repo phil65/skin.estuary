@@ -105,7 +105,7 @@
                         <height>120</height>
                         <texture>$INFO[Listitem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
-                        <bordertexture border="2">colors/black.png</bordertexture>
+                        <bordertexture border="2" colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                         <bordersize>2</bordersize>
                     </control>
                     <control type="label">

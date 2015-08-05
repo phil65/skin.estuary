@@ -148,7 +148,7 @@
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </control>
@@ -168,7 +168,7 @@
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -287,7 +287,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -355,7 +355,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -471,7 +471,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </control>
@@ -491,7 +491,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture>colors/black.png</bordertexture>
+                            <bordertexture colordiffuse="80FFFFFF">colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
