@@ -184,7 +184,7 @@
                     <ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
                     <ondown>201</ondown>
                     <onright>StepForward</onright>
-                    <onleft>PStepBackward</onleft>
+                    <onleft>StepBackward</onleft>
                     <visible>Player.SeekEnabled</visible>
                     <onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
                 </control>
@@ -215,7 +215,7 @@
                     <controloffsety>0</controloffsety>
                     <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
                     <textureslidernib colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernib>
-                    <textureslidernibfocus colordiffuse="button_focus">progress/orb_fo.png</textureslidernibfocus>
+                    <textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
                     <info>Player.Progress</info>
                     <action>seek</action>
                     <visible>Control.HasFocus(87)</visible>
