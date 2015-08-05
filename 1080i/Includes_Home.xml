@@ -147,9 +147,9 @@
                             <width>212</width>
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                            <texture border="3" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture colordiffuse="60FFFFFF">colors/black.png</bordertexture>
-                            <bordersize>4</bordersize>
+                            <bordersize>3</bordersize>
                         </control>
                     </control>
                 </itemlayout>
@@ -167,9 +167,9 @@
                             <width>212</width>
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                            <texture border="3" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture colordiffuse="60FFFFFF">colors/black.png</bordertexture>
-                            <bordersize>2</bordersize>
+                            <bordersize>3</bordersize>
                         </control>
                         <control type="group">
                             <animation effect="fade" start="0" end="100" time="200">Focus</animation>
@@ -226,9 +226,9 @@
                             </control>
                             <control type="image">
                                 <left>1</left>
-                                <top>3</top>
+                                <top>1</top>
                                 <width>211</width>
-                                <height>321</height>
+                                <height>323</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture border="8">buttons/thumbnail_focused.png</texture>
                             </control>
