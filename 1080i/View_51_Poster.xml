@@ -5,7 +5,7 @@
             <description>Poster Viewtype</description>
             <height>424</height>
             <left>0</left>
-            <top>182</top>
+            <top>180</top>
             <control type="button" id="20000">
                 <description>Dummy button to get animations right (hide focusedlayout on animations)</description>
                 <include>HiddenObject</include>
@@ -98,7 +98,7 @@
                     <right>110</right>
                     <top>475</top>
                     <width>1192</width>
-                    <height>235</height>
+                    <height>232</height>
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
