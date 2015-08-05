@@ -29,7 +29,7 @@
                 <animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="!Window.IsVisible(volumebar)">Conditional</animation>
             </control>
             <control type="image">
-                <posx>36</posx>
+                <posx>37</posx>
                 <posy>19</posy>
                 <width>40</width>
                 <height>40</height>
