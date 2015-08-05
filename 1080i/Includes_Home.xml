@@ -138,7 +138,7 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-                <include>OpenClose_WidgetZoom</include>
+                <include>Open_WidgetZoom</include>
                 <itemlayout width="277">
                     <control type="group">
                         <control type="image">
@@ -277,7 +277,7 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-                <include>OpenClose_WidgetZoom</include>
+                <include>Open_WidgetZoom</include>
                 <itemlayout width="462">
                     <control type="group">
                         <control type="image">
@@ -461,7 +461,7 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-                <include>OpenClose_WidgetZoom</include>
+                <include>Open_WidgetZoom</include>
                 <itemlayout width="343">
                     <control type="group">
                         <control type="image">
@@ -600,7 +600,7 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-                <include>OpenClose_WidgetZoom</include>
+                <include>Open_WidgetZoom</include>
                 <itemlayout width="273">
                     <control type="image">
                         <description>Menu Panel</description>
