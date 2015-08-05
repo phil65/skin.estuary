@@ -22,7 +22,7 @@
 				<texture colordiffuse="D0FFFFFF">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 			</control>
 			<control type="group">
-				<posx>190</posx>
+				<posx>40</posx>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
 					<posx>00</posx>
@@ -159,7 +159,7 @@
 				<control type="list" id="50">
 					<posx></posx>
 					<posy>630</posy>
-					<width>1180</width>
+					<width>1090</width>
 					<height>600</height>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -341,21 +341,21 @@
 			<!-- Middle Row -->
 			<control type="group">
 				<posy>0</posy>
-				<posx>600</posx>
+				<posx>1745</posx>
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" delay="200" time="300" tween="sine" easing="out" />
-					<effect type="slide" start="-320" end="0" delay="200" time="400" tween="cubic" easing="out" />
+					<effect type="slide" start="320" end="0" delay="200" time="400" tween="cubic" easing="out" />
 				</animation>
 				<animation type="WindowClose">
 					<effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-					<effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
+					<effect type="slide" start="320" end="0" time="300" tween="cubic" easing="out" />
 				</animation>
 				<control type="image">
 					<posx>35</posx>
 					<top>80</top>
 					<width>140</width>
 					<height>920</height>
-					<texture colordiffuse="button_focus">colours/white.png</texture>
+					<texture colordiffuse="A1FFFFFF">colours/black.png</texture>
 				</control>
 				<control type="grouplist">
 					<posx>25</posx>
