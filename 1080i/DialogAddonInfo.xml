@@ -3,15 +3,26 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<control type="group">
-			<include>OpenClose_FadeSlide_Left</include>
+			<include>OpenClose_FadeSlide_Right</include>
 			<control type="image">
-				<left>0</left>
 				<top>80</top>
-				<width>613</width>
+				<left>0</left>
+				<width>1920</width>
 				<height>920</height>
-				<aspectratio>stretch</aspectratio>
-				<texture background="true" border="8">lists/panel.png</texture>
+				<aspectratio align="center">scale</aspectratio>
+				<texture background="true" fallback="colours/black.png">$INFO[ListItem.Art(fanart)]</texture>
 			</control>
+			<control type="image">
+				<top>80</top>
+				<left>0</left>
+				<width>1920</width>
+				<height>920</height>
+				<aspectratio aligny="top">scale</aspectratio>
+				<texture colordiffuse="D0FFFFFF">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+			</control>
+		</control>
+		<control type="group">
+			<include>OpenClose_FadeSlide_Left</include>
 			<control type="image">
 				<left>70</left>
 				<top>150</top>
@@ -107,22 +118,6 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_FadeSlide_Right</include>
-			<control type="image">
-				<top>80</top>
-				<left>613</left>
-				<width>1307</width>
-				<height>920</height>
-				<aspectratio align="center">scale</aspectratio>
-				<texture background="true" fallback="colours/black.png">$INFO[ListItem.Art(fanart)]</texture>
-			</control>
-			<control type="image">
-				<top>80</top>
-				<left>613</left>
-				<width>1307</width>
-				<height>920</height>
-				<aspectratio aligny="top">scale</aspectratio>
-				<texture colordiffuse="D0FFFFFF">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
-			</control>
 			<control type="label" id="400">
 				<posx>950</posx>
 				<posy>180</posy>

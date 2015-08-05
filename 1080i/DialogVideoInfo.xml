@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">8</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-
 		<control type="group">
 			<include>OpenClose_FadeSlide_Right</include>
 			<left>613</left>
@@ -336,7 +335,7 @@
 				</control>
 			</control>
 		</control>
-				<control type="group">
+		<control type="group">
 			<include>OpenClose_FadeSlide_Left</include>
 			<!-- Middle Row -->
 			<control type="group">
@@ -344,18 +343,18 @@
 				<posx>1745</posx>
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" delay="200" time="300" tween="sine" easing="out" />
-					<effect type="slide" start="320" end="0" delay="200" time="400" tween="cubic" easing="out" />
+					<effect type="slide" start="320" end="0" delay="200" time="350" tween="cubic" easing="out" />
 				</animation>
 				<animation type="WindowClose">
-					<effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-					<effect type="slide" start="320" end="0" time="300" tween="cubic" easing="out" />
+					<effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
+					<effect type="slide" start="0" end="320" time="200" tween="cubic" easing="out" />
 				</animation>
 				<control type="image">
 					<posx>35</posx>
 					<top>80</top>
 					<width>140</width>
 					<height>920</height>
-					<texture colordiffuse="A1FFFFFF">colours/black.png</texture>
+					<texture colordiffuse="B2FFFFFF">colours/black.png</texture>
 				</control>
 				<control type="grouplist">
 					<posx>25</posx>
@@ -412,14 +411,6 @@
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
 				<texture background="true" fallback="colours/black.png">$VAR[PosterVar]</texture>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>80</top>
-				<width>613</width>
-				<height>920</height>
-				<aspectratio>stretch</aspectratio>
-				<texture background="true" border="8">buttons/thumbnail_focused.png</texture>
 			</control>
 		</control>
 	</controls>
