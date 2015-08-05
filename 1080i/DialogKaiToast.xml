@@ -15,15 +15,15 @@
 			</control>
 			<control type="image" id="400">
 				<description>avatar</description>
-				<left>15</left>
-				<top>15</top>
-				<width>70</width>
-				<height>70</height>
+				<left>10</left>
+				<top>10</top>
+				<width>80</width>
+				<height>80</height>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
-				<left>100</left>
+				<left>105</left>
 				<top>20</top>
 				<width>1050</width>
 				<height>18</height>
@@ -36,7 +36,7 @@
 			</control>
 			<control type="fadelabel" id="402">
 				<description>Line 2 Label</description>
-				<left>101</left>
+				<left>106</left>
 				<top>55</top>
 				<width>1050</width>
 				<height>20</height>
