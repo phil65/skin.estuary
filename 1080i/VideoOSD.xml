@@ -60,9 +60,20 @@
                     <visible>!VideoPlayer.Content(livetv) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
                 </control>
                 <control type="radiobutton" id="602">
-                    <include name="OSDButton">
-                        <param name="texture" value="osd/fullscreen/buttons/pause.png"/>
-                    </include>
+                    <textureradioonfocus colordiffuse="button_focus">osd/fullscreen/buttons/play.png</textureradioonfocus>
+                    <textureradioonnofocus>osd/fullscreen/buttons/play.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="button_focus">osd/fullscreen/buttons/pause.png</textureradioofffocus>
+                    <textureradiooffnofocus>osd/fullscreen/buttons/pause.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="button_focus">osd/buttons/focus.png</texturefocus>
+                    <width>125</width>
+                    <animation center="62,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
+                    <height>123</height>
+                    <radiowidth>80</radiowidth>
+                    <radioheight>80</radioheight>
+                    <font>-</font>
+                    <texturenofocus>-</texturenofocus>
+                    <radioposx>1</radioposx>
+                    <radioposy>-1</radioposy>
                     <selected>Player.Paused</selected>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
