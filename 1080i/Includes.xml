@@ -749,6 +749,7 @@
                 <top>1010</top>
                 <width>80</width>
                 <height>80</height>
+                <animation effect="slide" end="0,7" time="200" reversible="true" condition="Control.IsVisible(51)">Conditional</animation>
                 <texture colordiffuse="button_focus">icons/settings/settings.png</texture>
             </control>
             <control type="image">
@@ -757,7 +758,7 @@
                 <top>1012</top>
                 <width>55</width>
                 <height>55</height>
-                <animation effect="rotate" end="-90" center="60,1042" time="200" reversible="true" condition="Control.IsVisible(51)">Conditional</animation>
+                <animation effect="rotate" end="-90" center="57,1045" time="200" reversible="true" condition="Control.IsVisible(51)">Conditional</animation>
                 <texture flipx="true">lists/arrow-right-fo.png</texture>
             </control>
         </control>
