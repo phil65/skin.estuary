@@ -406,7 +406,7 @@
             <width>469</width>
             <height>469</height>
             <aspectratio>scale</aspectratio>
-            <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+            <texture colordiffuse="60FFFFFF">colors/black.png</texture>
             <visible>!IsEmpty(ListItem.Art(thumb))</visible>
             <animation effect="fade" time="300">VisibleChange</animation>
         </control>
