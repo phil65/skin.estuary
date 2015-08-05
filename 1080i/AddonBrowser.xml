@@ -6,10 +6,13 @@
     <views>50,52</views>
     <controls>
         <include>DefaultBackground</include>
-        <include>View_50_List</include>
-        <include name="View_52_IconWall">
-            <param name="visible" value="true" />
-        </include>
+        <control type="group">
+            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation)">Conditional</animation>
+            <include>View_50_List</include>
+            <include name="View_52_IconWall">
+                <param name="visible" value="true" />
+            </include>
+        </control>
         <include>Media_Menu</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[24001]" />

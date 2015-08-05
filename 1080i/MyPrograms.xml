@@ -6,11 +6,14 @@
     <views>50</views>
     <controls>
         <include>DefaultBackground</include>
-        <include>View_50_List</include>
+        <control type="group">
+            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation)">Conditional</animation>
+            <include>View_50_List</include>
+        </control>
         <include>Media_Menu</include>
         <include name="TopBar">
-            <param name="breadcrumbs_label" value="$VAR[BreadcrumbsVideoVar]" />
-            <param name="breadcrumbs_icon" value="$LOCALIZE[10001]" />
+            <param name="breadcrumbs_label" value="$LOCALIZE[10001]" />
+            <param name="breadcrumbs_icon" value="icons/settings/addons.png" />
         </include>
         <include>BottomBar</include>
     </controls>
