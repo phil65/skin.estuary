@@ -82,14 +82,14 @@
                 <control type="radiobutton" id="701">
                     <label>13396</label>
                     <include name="OSDButton">
-                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+                        <param name="texture" value="osd/fullscreen/buttons/settings-audio.png"/>
                     </include>
                     <onclick>ActivateWindow(osdaudiosettings)</onclick>
                 </control>
                 <control type="radiobutton" id="702">
                     <label>13395</label>
                     <include name="OSDButton">
-                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+                        <param name="texture" value="osd/fullscreen/buttons/settings-video.png"/>
                     </include>
                     <onclick>ActivateWindow(osdvideosettings)</onclick>
                 </control>
@@ -116,7 +116,7 @@
                 <control type="radiobutton" id="700">
                     <label>298</label>
                     <include name="OSDButton">
-                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+                        <param name="texture" value="osd/fullscreen/buttons/bookmarks.png"/>
                     </include>
                     <onclick>ActivateWindow(videobookmarks)</onclick>
                     <visible>!VideoPlayer.Content(livetv)</visible>
@@ -124,7 +124,7 @@
                 <control type="radiobutton" id="703">
                     <label>31356</label>
                     <include name="OSDButton">
-                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+                        <param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
                     </include>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(SubtitleSearch)</onclick>
