@@ -3,47 +3,30 @@
     <defaultcontrol always="true">602</defaultcontrol>
     <controls>
         <control type="group">
-            <posy>920</posy>
-            <include>OpenClose_FadeSlide_Down</include>
+            <posy>900</posy>
+                <animation effect="fade" end="100" time="200">WindowOpen</animation>
+                 <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <control type="image">
                 <description>Menu Panel</description>
-                <left>0</left>
-                <top>-70</top>
-                <width>1920</width>
-                <height>250</height>
+                <left>30</left>
+                <top>0</top>
+                <width>1860</width>
+                <height>140</height>
                 <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
             </control>
             <control type="grouplist" id="201">
-                <posx>0</posx>
-                <posy>30</posy>
+                <posx>50</posx>
+                <posy>10</posy>
                 <width>1920</width>
                 <height>135</height>
-                <align>center</align>
-                <itemgap>7</itemgap>
+                <align>left</align>
+                <itemgap>-50</itemgap>
                 <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>
                 <onup>87</onup>
                 <ondown>noop</ondown>
-                <onleft>201</onleft>
-                <onright>201</onright>
-                <control type="radiobutton" id="701">
-                    <label>13396</label>
-                    <include name="OSDButton">
-                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
-                    </include>
-                    <onclick>ActivateWindow(osdaudiosettings)</onclick>
-                </control>
-                <control type="radiobutton" id="702">
-                    <label>13395</label>
-                    <include name="OSDButton">
-                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
-                    </include>
-                    <onclick>ActivateWindow(osdvideosettings)</onclick>
-                </control>
-                <control type="image" id="73001">
-                    <width>100</width>
-                    <texture>-</texture>
-                </control>
+                <onleft>70044</onleft>
+                <onright>701</onright>
                 <control type="radiobutton" id="600">
                     <include name="OSDButton">
                         <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
@@ -81,6 +64,34 @@
                     </include>
                     <onclick>PlayerControl(Next)</onclick>
                     <visible>!VideoPlayer.Content(livetv) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
+                </control>
+            </control>
+            <control type="grouplist" id="202">
+                <posx>50</posx>
+                <posy>10</posy>
+                <width>1820</width>
+                <height>135</height>
+                <align>right</align>
+                <itemgap>-50</itemgap>
+                <scrolltime tween="sine">200</scrolltime>
+                <orientation>horizontal</orientation>
+                <onup>87</onup>
+                <ondown>noop</ondown>
+                <onleft>605</onleft>
+                <onright>600</onright>
+                <control type="radiobutton" id="701">
+                    <label>13396</label>
+                    <include name="OSDButton">
+                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+                    </include>
+                    <onclick>ActivateWindow(osdaudiosettings)</onclick>
+                </control>
+                <control type="radiobutton" id="702">
+                    <label>13395</label>
+                    <include name="OSDButton">
+                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+                    </include>
+                    <onclick>ActivateWindow(osdvideosettings)</onclick>
                 </control>
                 <control type="radiobutton" id="70040">
                     <include name="OSDButton">
@@ -147,28 +158,28 @@
                 </control>
             </control>
             <control type="group">
-                <posy>20</posy>
+                <posy>-20</posy>
                 <control type="label">
-                    <posx>1840</posx>
-                    <posy>-90</posy>
-                    <width>400</width>
+                    <posx>30</posx>
+                    <posy>60</posy>
+                    <width>1860</width>
                     <height>75</height>
-                    <align>right</align>
+                    <align>center</align>
                     <aligny>bottom</aligny>
-                    <label>$INFO[Player.Time]</label>
-                    <font>font30_title</font>
+                    <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+                    <font>font30</font>
                     <shadowcolor>black</shadowcolor>
                     <textcolor>white</textcolor>
                 </control>
                 <control type="progress" id="23">
                     <animation effect="fade" end="0" time="200">WindowClose</animation>
-                    <posx>83</posx>
-                    <posy>-20</posy>
-                    <width>1754</width>
-                    <height>15</height>
+                    <posx>30</posx>
+                    <posy>-10</posy>
+                    <width>1860</width>
+                    <height>30</height>
                     <info>Player.Progress</info>
-                    <texturebg border="3">progress/texturebg_border_white.png</texturebg>
-                    <midtexture colordiffuse="button_focus">progress/texturebg_white.png</midtexture>
+                    <texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
+                    <midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
                 </control>
                 <control type="button" id="87">
                     <include>HiddenObject</include>
@@ -188,32 +199,32 @@
                     <onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
                 </control>
                 <control type="slider">
-                    <posx>83</posx>
-                    <posy>-40</posy>
-                    <width>1754</width>
-                    <height>45</height>
+                    <posx>30</posx>
+                    <posy>-20</posy>
+                    <width>1860</width>
+                    <height>50</height>
                     <onup>8010</onup>
                     <ondown>650</ondown>
                     <controloffsetx>75</controloffsetx>
                     <controloffsety>0</controloffsety>
-                    <texturesliderbar colordiffuse="00FFFFFF">progress/slider_back.png</texturesliderbar>
-                    <textureslidernib>progress/orb_nofo.png</textureslidernib>
-                    <textureslidernibfocus colordiffuse="button_focus">progress/orb_fo.png</textureslidernibfocus>
+                    <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
+                    <textureslidernib>osd/progress/nub_bar.png</textureslidernib>
+                    <textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
                     <info>Player.Progress</info>
                     <action>seek</action>
                     <visible>!Control.HasFocus(87)</visible>
                 </control>
                 <control type="slider">
-                    <posx>83</posx>
-                    <posy>-40</posy>
-                    <width>1754</width>
-                    <height>45</height>
+                    <posx>30</posx>
+                    <posy>-20</posy>
+                    <width>1860</width>
+                    <height>50</height>
                     <onup>8010</onup>
                     <ondown>650</ondown>
                     <controloffsetx>75</controloffsetx>
                     <controloffsety>0</controloffsety>
-                    <texturesliderbar colordiffuse="00FFFFFF">progress/slider_back.png</texturesliderbar>
-                    <textureslidernib colordiffuse="button_focus">progress/orb_fo.png</textureslidernib>
+                    <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
+                    <textureslidernib colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernib>
                     <textureslidernibfocus colordiffuse="button_focus">progress/orb_fo.png</textureslidernibfocus>
                     <info>Player.Progress</info>
                     <action>seek</action>
