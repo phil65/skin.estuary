@@ -651,6 +651,7 @@
             <align>right</align>
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
+            <animation effect="slide" end="-70,0" time="200" reversible="true" condition="Window.IsActive(1101)">Conditional</animation>
             <animation effect="fade" time="150">VisibleChange</animation>
             <visible>!Window.IsVisible(extendedprogressdialog)</visible>
             <control type="label">
