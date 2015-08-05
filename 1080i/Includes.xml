@@ -652,7 +652,7 @@
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
             <animation effect="fade" time="150">VisibleChange</animation>
-            <visible>!Window.IsVisible(infodialog) + !Window.IsVisible(extendedprogressdialog)</visible>
+            <visible>!Window.IsVisible(extendedprogressdialog)</visible>
             <control type="label">
                 <description>Weather label</description>
                 <include>BreadcrumbsLabel</include>
