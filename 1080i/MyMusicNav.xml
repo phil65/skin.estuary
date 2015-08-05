@@ -6,14 +6,17 @@
     <views>50,52,500</views>
     <controls>
         <include>DefaultBackground</include>
-        <include>View_50_List</include>
-        <include name="View_52_IconWall">
-            <param name="visible" value="Container.Content() | Container.Content(years) | Container.Content(files) | Container.Content(genres)" />
-        </include>
-        <include name="View_500_SmallThumb">
-            <param name="layouts_include" value="SmallThumbMusicLayouts" />
-            <paran name="visible" value="Container.Content(artists) | Container.Content(albums)" />
-        </include>
+        <control type="group">
+            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation)">Conditional</animation>
+            <include>View_50_List</include>
+            <include name="View_52_IconWall">
+                <param name="visible" value="Container.Content() | Container.Content(years) | Container.Content(files) | Container.Content(genres)" />
+            </include>
+            <include name="View_500_SmallThumb">
+                <param name="layouts_include" value="SmallThumbMusicLayouts" />
+                <paran name="visible" value="Container.Content(artists) | Container.Content(albums)" />
+            </include>
+        </control>
         <include>Media_Menu</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[10516]" />
