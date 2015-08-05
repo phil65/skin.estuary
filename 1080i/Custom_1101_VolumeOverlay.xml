@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="1101">
+    <visible>Window.IsVisible(mutebug) | Window.IsVisible(volumebar)</visible>
+    <visible>!Window.IsActive(startup)</visible>
+    <controls>
+        <control type="progress" id="20">
+            <include>HiddenObject</include>
+            <info>Player.Volume</info>
+        </control>
+        <control type="group">
+            <posx>890</posx>
+            <posy>0</posy>
+            <animation effect="fade" delay="300" start="0" end="100" time="150">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+            <control type="image">
+                <posx>0</posx>
+                <posy>-20</posy>
+                <width>114</width>
+                <height>114</height>
+                <texture>dialogs/volume/volume-back.png</texture>
+                <animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="!Window.IsVisible(volumebar)">Conditional</animation>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>-20</posy>
+                <width>114</width>
+                <height>114</height>
+                <texture>dialogs/volume/progress/p$INFO[Control.GetLabel(20)].png</texture>
+                <animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="!Window.IsVisible(volumebar)">Conditional</animation>
+            </control>
+            <control type="image">
+                <posx>36</posx>
+                <posy>19</posy>
+                <width>40</width>
+                <height>40</height>
+                <texture colordiffuse="white">$VAR[VolumeIconVar]</texture>
+            </control>
+        </control>
+    </controls>
+</window>
