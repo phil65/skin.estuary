@@ -334,12 +334,10 @@
 					<visible>Container(5000).HasNext+ ControlGroup(5000).HasFocus</visible>
 				</control>
 			</control>
-		</control>
-		<control type="group">
 			<!-- Middle Row -->
 			<control type="group">
 				<posy>0</posy>
-				<posx>1745</posx>
+				<posx>1115</posx>
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" delay="200" time="300" tween="sine" easing="out" />
 					<effect type="slide" start="320" end="0" delay="200" time="350" tween="cubic" easing="out" />
@@ -403,14 +401,15 @@
 					</include>
 				</control>
 			</control>
-			<control type="image">
-				<left>0</left>
-				<top>80</top>
-				<width>613</width>
-				<height>920</height>
-				<aspectratio aligny="top">scale</aspectratio>
-				<texture background="true" fallback="colors/black.png">$VAR[PosterVar]</texture>
-			</control>
+		</control>
+		<control type="image">
+			<include>OpenClose_FadeSlide_Left</include>
+			<left>0</left>
+			<top>80</top>
+			<width>613</width>
+			<height>920</height>
+			<aspectratio aligny="top">scale</aspectratio>
+			<texture background="true" fallback="colors/black.png">$VAR[PosterVar]</texture>
 		</control>
 	</controls>
 </window>
