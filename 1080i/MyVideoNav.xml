@@ -28,7 +28,7 @@
                 <height>704</height>
                 <aspectratio>scale</aspectratio>
                 <texture border="2">colors/black.png</texture>
-                <bordertexture colordiffuse="60FFFFFF">colors/black.png</bordertexture>
+                <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
             </control>
             <control type="image">

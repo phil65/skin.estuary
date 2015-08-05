@@ -29,7 +29,7 @@
 				<width>480</width>
 				<height>480</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<bordertexture colordiffuse="60FFFFFF">colors/black.png</bordertexture>
+				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 				<bordersize>4</bordersize>
 				<texture border="4" background="true" fallback="colors/black.png">$INFO[ListItem.Art(thumb)]</texture>
 			</control>

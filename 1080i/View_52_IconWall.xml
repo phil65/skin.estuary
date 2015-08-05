@@ -39,7 +39,7 @@
                         <posy>159</posy>
                         <width>359</width>
                         <height>50</height>
-                        <texture colordiffuse="60FFFFFF">colors/black.png</texture>
+                        <texture colordiffuse="border_alpha">colors/black.png</texture>
                     </control>
                     <control type="label">
                         <left>25</left>
@@ -84,7 +84,7 @@
                             <posy>159</posy>
                             <width>359</width>
                             <height>50</height>
-                            <texture colordiffuse="60FFFFFF">colors/black.png</texture>
+                            <texture colordiffuse="border_alpha">colors/black.png</texture>
                         </control>
                         <control type="label">
                             <left>25</left>

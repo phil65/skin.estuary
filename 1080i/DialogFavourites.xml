@@ -36,7 +36,7 @@
                         <height>300</height>
                         <aspectratio>scale</aspectratio>
                         <texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
-                        <bordertexture colordiffuse="60FFFFFF">colors/black.png</bordertexture>
+                        <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
                         <bordersize>4</bordersize>
                     </control>
                 </control>
@@ -50,7 +50,7 @@
                         <height>300</height>
                         <aspectratio>scale</aspectratio>
                         <texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
-                        <bordertexture colordiffuse="60FFFFFF">colors/black.png</bordertexture>
+                        <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
                         <bordersize>4</bordersize>
                     </control>
                     <control type="image">
