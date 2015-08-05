@@ -760,7 +760,7 @@
                 <width>55</width>
                 <height>55</height>
                 <animation effect="rotate" end="-90" center="57,1045" time="200" reversible="true" condition="Control.IsVisible(51)">Conditional</animation>
-                <texture flipx="true">lists/arrow-right-fo.png</texture>
+                <texture colordiffuse="button_focus" flipx="true">lists/arrow-right-fo.png</texture>
             </control>
         </control>
         <control type="group">
