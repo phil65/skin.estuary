@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol />
+	<zorder>3</zorder>
 	<animation effect="slide" start="0,-70" end="0,0" time="75">WindowOpen</animation>
 	<animation effect="slide" start="0,0" end="0,-70" delay="300" time="75">WindowClose</animation>
 	<controls>
