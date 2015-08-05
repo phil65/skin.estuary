@@ -1,664 +1,189 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol always="true">5</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<control type="group">
-			<visible>!Window.IsVisible(FileBrowser)</visible>
-			<animation effect="slide" start="1100,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="1100,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
+			<include>OpenClose_FadeSlide_Right</include>
 			<control type="image">
-				<left>180</left>
-				<top>0</top>
-				<width>1100</width>
-				<height>720</height>
-				<texture border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
+				<top>80</top>
+				<left>0</left>
+				<width>1920</width>
+				<height>920</height>
+				<aspectratio align="center">scale</aspectratio>
+				<texture background="true" fallback="colors/black.png">$INFO[ListItem.Art(fanart)]</texture>
 			</control>
-			<control type="button">
-				<description>Close Window button</description>
-				<left>230</left>
-				<top>0</top>
-				<width>64</width>
-				<height>32</height>
-				<label>-</label>
-				<font>-</font>
-				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
-				<texturenofocus>DialogCloseButton.png</texturenofocus>
+			<control type="image">
+				<top>80</top>
+				<left>0</left>
+				<width>1920</width>
+				<height>920</height>
+				<aspectratio aligny="top">scale</aspectratio>
+				<texture colordiffuse="D0FFFFFF">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+			</control>
+		</control>
+		<control type="group">
+			<include>OpenClose_FadeSlide_Left</include>
+			<control type="image">
+				<left>70</left>
+				<top>150</top>
+				<width>480</width>
+				<height>480</height>
+				<aspectratio aligny="top">scale</aspectratio>
+				<texture background="true" fallback="colors/black.png">$INFO[ListItem.Art(thumb)]</texture>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>750</posy>
+				<control type="label">
+					<posx>30</posx>
+					<posy>-70</posy>
+					<width>1920</width>
+					<height>40</height>
+					<label>$INFO[ListItem.Property(Addon.Name)]</label>
+					<font>font30_title</font>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<width>345</width>
+					<height>38</height>
+					<label>$LOCALIZE[146]</label>
+					<font>font13</font>
+					<textcolor>button_focus</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<width>870</width>
+					<height>38</height>
+					<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
+					<font>font13</font>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>45</posy>
+					<width>345</width>
+					<height>38</height>
+					<label>$LOCALIZE[21863]:</label>
+					<font>font13</font>
+					<textcolor>button_focus</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>45</posy>
+					<width>870</width>
+					<height>38</height>
+					<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
+					<font>font13</font>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>90</posy>
+					<width>345</width>
+					<height>38</height>
+					<label>$LOCALIZE[24051]</label>
+					<font>font13</font>
+					<textcolor>button_focus</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>90</posy>
+					<width>870</width>
+					<height>38</height>
+					<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
+					<font>font13</font>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>690</posy>
+					<width>900</width>
+					<height>38</height>
+					<label>$LOCALIZE[24052]</label>
+					<font>font13</font>
+					<textcolor>button_focus</textcolor>
+					<visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>735</posy>
+					<width>850</width>
+					<height>60</height>
+					<label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
+					<font>Font_Info</font>
+					<scroll>true</scroll>
+					<wrapmultiline>true</wrapmultiline>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<include>OpenClose_FadeSlide_Right</include>
+			<control type="label" id="400">
+				<posx>950</posx>
+				<posy>180</posy>
+				<width>850</width>
+				<height>396</height>
+				<wrapmultiline>true</wrapmultiline>
+				<align>center</align>
+				<label>[B]$INFO[ListItem.Property(Addon.Summary)][/B][COLOR=white][CR]$INFO[ListItem.Property(Addon.Description)][/COLOR][COLOR=white][CR]$INFO[ListItem.Property(Addon.Disclaimer),[CR][CR]$LOCALIZE[24052]][/COLOR]</label>
+				<font>font13</font>
+				<textcolor>button_focus</textcolor>
+			</control>
+			<control type="grouplist" id="9000">
+				<posx>630</posx>
+				<posy>830</posy>
+				<width>1920</width>
+				<height>768</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<visible>system.getbool(input.enablemouse)</visible>
+				<align>left</align>
+				<itemgap>-10</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="button" id="5">
+					<include>VideoInfoButtonsCommon</include>
+					<label>206</label>
+				</control>
+				<control type="button" id="6">
+					<include>VideoInfoButtonsCommon</include>
+					<label>184</label>
+				</control>
+				<control type="button" id="10">
+					<include>VideoInfoButtonsCommon</include>
+					<label>13405</label>
+				</control>
+				<control type="button" id="12">
+					<include>VideoInfoButtonsCommon</include>
+					<label>20413</label>
+				</control>
 			</control>
 			<control type="group">
-				<animation effect="fade" delay="300" start="0" end="100" time="150">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				<posx>678</posx>
+				<posy>885</posy>
+				<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
 				<control type="label">
-					<description>Album header label</description>
-					<left>210</left>
-					<top>50</top>
-					<width>1030</width>
-					<height>30</height>
-					<font>font24_title</font>
-					<label>$INFO[Listitem.Album]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<visible>container.content(Albums)</visible>
-				</control>
-				<control type="label">
-					<description>Artist header label</description>
-					<left>210</left>
-					<top>50</top>
-					<width>1030</width>
-					<height>30</height>
-					<font>font24_title</font>
-					<label>$INFO[Listitem.Artist]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<visible>container.content(Artists)</visible>
-				</control>
-				<control type="group">
-					<visible>Control.HasFocus(12)</visible>
-					<top>90</top>
-					<left>387</left>
-
-					<control type="image">
-						<description>Current Fanart image</description>
-						<left>0</left>
-						<top>0</top>
-						<width>675</width>
-						<height>380</height>
-						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-						<bordertexture border="5">button-nofocus.png</bordertexture>
-						<bordersize>4</bordersize>
-						<aspectratio>keep</aspectratio>
-						<visible>!IsEmpty(Listitem.Property(Fanart_Image))</visible>
-					</control>
-					<control type="group">
-						<visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
-						<control type="image">
-							<description>No Fanart Back</description>
-							<left>0</left>
-							<top>0</top>
-							<width>675</width>
-							<height>380</height>
-							<texture>Fanart_Fallback_Music_Small.jpg</texture>
-							<bordertexture border="5">button-nofocus.png</bordertexture>
-							<bordersize>4</bordersize>
-							<aspectratio>stretch</aspectratio>
-							<colordiffuse>88FFFFFF</colordiffuse>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>0</top>
-							<width>675</width>
-							<height>380</height>
-							<font>font30_title</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>31311</label>
-						</control>
-					</control>
-				</control>
-				<control type="group">
-					<visible>container.content(Albums) + !Control.HasFocus(12)</visible>
-					<top>90</top>
-					<left>210</left>
-
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>380</width>
-						<height>360</height>
-						<aspectratio>keep</aspectratio>
-						<bordertexture border="5">button-nofocus.png</bordertexture>
-						<bordersize>4</bordersize>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="list" id="49">
-						<left>390</left>
-						<top>20</top>
-						<width>640</width>
-						<height>330</height>
-						<onleft>49</onleft>
-						<onright>49</onright>
-						<onup>9000</onup>
-						<ondown>61</ondown>
-						<pagecontrol>-</pagecontrol>
-						<scrolltime>200</scrolltime>
-						<itemlayout height="30">
-							<control type="label">
-								<left>0</left>
-								<top>0</top>
-								<width>140</width>
-								<height>30</height>
-								<font>font13</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
-							</control>
-							<control type="label">
-								<left>150</left>
-								<top>0</top>
-								<width>500</width>
-								<height>30</height>
-								<font>font13</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
-							</control>
-						</itemlayout>
-						<focusedlayout height="30">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>640</width>
-								<height>30</height>
-								<visible>Control.HasFocus(49)</visible>
-								<texture>MenuItemFO.png</texture>
-
-							</control>
-							<control type="label">
-								<left>0</left>
-								<top>0</top>
-								<width>140</width>
-								<height>30</height>
-								<font>font13</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
-							</control>
-							<control type="label">
-								<left>150</left>
-								<top>0</top>
-								<width>500</width>
-								<height>30</height>
-								<font>font13</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
-							</control>
-						</focusedlayout>
-						<content>
-							<item>
-								<label>$LOCALIZE[557]:</label>
-								<label2>$INFO[ListItem.Artist]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Artist)</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[515]:</label>
-								<label2>$INFO[ListItem.Genre]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Genre)</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[563]:</label>
-								<label2>$INFO[ListItem.Rating]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Rating)</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[175]:</label>
-								<label2>$INFO[ListItem.Property(Album_Mood)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Album_Mood))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[176]:</label>
-								<label2>$INFO[ListItem.Property(Album_Style)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Album_Style))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[21895]:</label>
-								<label2>$INFO[ListItem.Property(Album_Theme)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Album_Theme))</visible>
-							</item>
-							<item>
-								<label>146</label>
-								<label2>$INFO[ListItem.Property(Album_Type)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Album_Type))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[21899]:</label>
-								<label2>$INFO[ListItem.Property(Album_Label)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[562]:</label>
-								<label2>$INFO[ListItem.Year]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Year)</visible>
-							</item>
-						</content>
-					</control>
-					<control type="image">
-						<left>390</left>
-						<top>370</top>
-						<width>640</width>
-						<height>4</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
-					</control>
-				</control>
-				<control type="group">
-					<visible>container.content(Artists) + !Control.HasFocus(12)</visible>
-					<top>90</top>
-					<left>210</left>
-
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>380</width>
-						<height>360</height>
-						<aspectratio>keep</aspectratio>
-						<bordertexture border="5">button-nofocus.png</bordertexture>
-						<bordersize>4</bordersize>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="list" id="49">
-						<left>390</left>
-						<top>20</top>
-						<width>640</width>
-						<height>330</height>
-						<onleft>49</onleft>
-						<onright>49</onright>
-						<onup>9000</onup>
-						<ondown>61</ondown>
-						<pagecontrol>-</pagecontrol>
-						<scrolltime>200</scrolltime>
-						<itemlayout height="30">
-							<control type="label">
-								<left>5</left>
-								<top>0</top>
-								<width>160</width>
-								<height>30</height>
-								<font>font13</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
-							</control>
-							<control type="label">
-								<left>175</left>
-								<top>0</top>
-								<width>465</width>
-								<height>30</height>
-								<font>font13</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
-							</control>
-						</itemlayout>
-						<focusedlayout height="30">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>640</width>
-								<height>30</height>
-								<visible>Control.HasFocus(49)</visible>
-								<texture>MenuItemFO.png</texture>
-
-							</control>
-							<control type="label">
-								<left>5</left>
-								<top>0</top>
-								<width>160</width>
-								<height>30</height>
-								<font>font13</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>blue</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
-							</control>
-							<control type="label">
-								<left>175</left>
-								<top>0</top>
-								<width>465</width>
-								<height>30</height>
-								<font>font13</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
-							</control>
-						</focusedlayout>
-						<content>
-							<item>
-								<label>$LOCALIZE[21893]:</label>
-								<label2>$INFO[ListItem.Property(Artist_Born)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[21894]:</label>
-								<label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[515]:</label>
-								<label2>$INFO[ListItem.Genre]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Genre)</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[175]:</label>
-								<label2>$INFO[ListItem.Property(Artist_Mood)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Artist_Mood))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[176]:</label>
-								<label2>$INFO[ListItem.Property(Artist_Style)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Artist_Style))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[21892]:</label>
-								<label2>$INFO[ListItem.Property(Artist_Instrument)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[21897]:</label>
-								<label2>$INFO[ListItem.Property(Artist_Died)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[21896]:</label>
-								<label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
-							</item>
-							<item>
-								<label>$LOCALIZE[21898]:</label>
-								<label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
-								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
-							</item>
-						</content>
-					</control>
-					<control type="image">
-						<left>390</left>
-						<top>370</top>
-						<width>640</width>
-						<height>4</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>separator.png</texture>
-					</control>
-				</control>
-				<control type="label">
-					<right>130</right>
-					<top>480</top>
-					<width>400</width>
-					<height>30</height>
-					<font>font13_title</font>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<posx>158</posx>
+					<width>564</width>
+					<height>68</height>
+					<label>24096</label>
+					<font>font14</font>
+					<textcolor>white3</textcolor>
 					<scroll>true</scroll>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>[COLOR=blue]$LOCALIZE[21821][/COLOR]$INFO[Container(4).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(4).NumPages,/, )]</label>
-					<visible>Control.IsVisible(4)</visible>
 				</control>
-				<control type="label">
-					<right>130</right>
-					<top>480</top>
-					<width>400</width>
-					<height>30</height>
-					<font>font13_title</font>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>[COLOR=blue]$LOCALIZE[182][/COLOR]$INFO[Container(50).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(50).NumPages,/, )]</label>
-					<visible>Control.IsVisible(50) + Container.Content(Albums)</visible>
-				</control>
-				<control type="label">
-					<right>130</right>
-					<top>480</top>
-					<width>400</width>
-					<height>30</height>
-					<font>font13_title</font>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>[COLOR=blue]$LOCALIZE[132][/COLOR]$INFO[Container(50).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(50).NumPages,/, )]</label>
-					<visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
-				</control>
-				<control type="spincontrol" id="61">
-					<description>Next page button</description>
-					<left>120r</left>
-					<top>485</top>
-					<subtype>page</subtype>
-					<font>-</font>
-					<onleft>61</onleft>
-					<onright>61</onright>
-					<ondown>9000</ondown>
-					<onup>49</onup>
-					<textcolor>-</textcolor>
-					<showonepage>true</showonepage>
-				</control>
-				<control type="textbox" id="4">
-					<description>Description</description>
-					<left>210</left>
-					<top>517</top>
-					<width>1030</width>
-					<height>122</height>
-					<font>font13</font>
-					<align>justify</align>
-					<textcolor>white</textcolor>
-					<pagecontrol>61</pagecontrol>
-					<autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>!Control.IsVisible(50)</visible>
-				</control>
-				<control type="image">
-					<description>Actor image</description>
-					<left>210</left>
-					<top>480</top>
-					<width>160</width>
-					<height>160</height>
-					<texture fallback="DefaultAlbumCover.png">$INFO[Container(50).Listitem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>Control.IsVisible(50)</visible>
-				</control>
-				<control type="panel" id="50">
-					<left>380</left>
-					<top>520</top>
-					<width>860</width>
-					<height>120</height>
-					<onleft>9000</onleft>
-					<onright>61</onright>
-					<onup>61</onup>
-					<ondown>9000</ondown>
-					<viewtype label="">list</viewtype>
-					<pagecontrol>61</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
-					<itemlayout condition="Container.Content(Albums)" height="40" width="430">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>430</width>
-							<height>40</height>
-							<texture border="40">buttons/button-nofo.png</texture>
-						</control>
-						<control type="label">
-							<left>10</left>
-							<top>0</top>
-							<width>410</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<label>([COLOR=selected][B]$INFO[ListItem.TrackNumber][/B][/COLOR]) - $INFO[ListItem.Label]</label>
-						</control>
-						<control type="label">
-							<left>220</left>
-							<top>0</top>
-							<width>200</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>right</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<label>$INFO[ListItem.Duration]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout condition="Container.Content(Albums)" height="40" width="430">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>430</width>
-							<height>40</height>
-							<visible>!Control.HasFocus(50)</visible>
-							<texture border="40">buttons/button-nofo.png</texture>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>430</width>
-							<height>40</height>
-							<visible>Control.HasFocus(50)</visible>
-							<texture border="5">button-focus2.png</texture>
-						</control>
-						<control type="label">
-							<left>10</left>
-							<top>0</top>
-							<width>410</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<label>([COLOR=selected][B]$INFO[ListItem.TrackNumber][/B][/COLOR]) - $INFO[ListItem.Label]</label>
-						</control>
-						<control type="label">
-							<left>220</left>
-							<top>0</top>
-							<width>200</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>right</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<label>$INFO[ListItem.Duration]</label>
-						</control>
-					</focusedlayout>
-					<itemlayout condition="Container.Content(Artists)" height="40" width="430">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>430</width>
-							<height>40</height>
-							<texture border="40">buttons/button-nofo.png</texture>
-						</control>
-						<control type="label">
-							<left>10</left>
-							<top>0</top>
-							<width>410</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout condition="Container.Content(Artists)" height="40" width="430">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>430</width>
-							<height>40</height>
-							<visible>!Control.HasFocus(50)</visible>
-							<texture border="40">buttons/button-nofo.png</texture>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>430</width>
-							<height>40</height>
-							<visible>Control.HasFocus(50)</visible>
-							<texture border="5">button-focus2.png</texture>
-						</control>
-						<control type="label">
-							<left>10</left>
-							<top>0</top>
-							<width>410</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-					</focusedlayout>
-				</control>
-				<control type="grouplist" id="9000">
-					<left>210</left>
-					<top>660</top>
-					<width>1030</width>
-					<height>40</height>
-					<itemgap>2</itemgap>
-					<align>center</align>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>9000</onright>
-					<onup>50</onup>
-					<ondown>49</ondown>
-					<control type="button" id="5">
-						<description>Cast/Review</description>
-						<include>SubMenuItemsCommon</include>
-						<label>206</label>
-					</control>
-					<control type="button" id="6">
-						<description>Refresh</description>
-						<include>SubMenuItemsCommon</include>
-						<label>184</label>
-					</control>
-					<control type="button" id="10">
-						<description>Get Thumb</description>
-						<include>SubMenuItemsCommon</include>
-						<label>13405</label>
-					</control>
-					<control type="button" id="12">
-						<description>Get Fanart</description>
-						<include>SubMenuItemsCommon</include>
-						<label>20413</label>
-					</control>
+				<control type="textbox">
+					<posx>158</posx>
+					<posy>54</posy>
+					<width>564</width>
+					<height>68</height>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>$INFO[ListItem.Property(Addon.broken)]</label>
+					<font>font14</font>
+					<textcolor>white3</textcolor>
 				</control>
 			</control>
 		</control>
 	</controls>
 </window>
+
