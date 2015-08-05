@@ -115,32 +115,32 @@
     </include>
     <include name="AddonLauncherItems">
         <content>
-        <item id="1">
-            <label>Programs</label>
-            <onclick>ActivateWindow(programs,addons://sources/executable/,return)</onclick>
-            <icon>icons/settings/appearance.png</icon>
-        </item>
-        <item id="2">
-            <label>Android apps</label>
-            <onclick>ActivateWindow(programs,androidapps://,return)</onclick>
-            <icon>icons/settings/android.png</icon>
-        </item>
-        <item id="3">
-            <label>Video add-ons</label>
-            <onclick>ActivateWindow(videos,addons://sources/video/,return)</onclick>
-            <icon>icons/settings/video.png</icon>
-        </item>
-        <item id="4">
-            <label>Audio add-ons</label>
-            <onclick>ActivateWindow(musicfiles,addons://sources/audio/,return)</onclick>
-            <icon>icons/settings/music.png</icon>
-        </item>
-        <item id="5">
-            <label>Image add-ons</label>
-            <onclick>ActivateWindow(pictures,addons://sources/image/,return)</onclick>
-            <icon>icons/settings/pictures.png</icon>
-        </item>
-    </content>
+            <item id="1">
+                <label>Programs</label>
+                <onclick>ActivateWindow(programs,addons://sources/executable/,return)</onclick>
+                <icon>icons/settings/appearance.png</icon>
+            </item>
+            <item id="2">
+                <label>Android apps</label>
+                <onclick>ActivateWindow(programs,androidapps://,return)</onclick>
+                <icon>icons/settings/android.png</icon>
+            </item>
+            <item id="3">
+                <label>Video add-ons</label>
+                <onclick>ActivateWindow(videos,addons://sources/video/,return)</onclick>
+                <icon>icons/settings/video.png</icon>
+            </item>
+            <item id="4">
+                <label>Audio add-ons</label>
+                <onclick>ActivateWindow(musicfiles,addons://sources/audio/,return)</onclick>
+                <icon>icons/settings/music.png</icon>
+            </item>
+            <item id="5">
+                <label>Image add-ons</label>
+                <onclick>ActivateWindow(pictures,addons://sources/image/,return)</onclick>
+                <icon>icons/settings/pictures.png</icon>
+            </item>
+        </content>
     </include>
     <include name="SettingsItems">
         <content>
@@ -751,7 +751,19 @@
                 <width>44</width>
                 <height>44</height>
                 <animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51)">Conditional</animation>
-                <texture colordiffuse="button_focus">frame/menu.png</texture>
+                <texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
+                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                <visible>!ControlGroup(9000).HasFocus</visible>
+            </control>
+            <control type="image">
+                <description>List Panel</description>
+                <left>17</left>
+                <top>1019</top>
+                <width>44</width>
+                <height>44</height>
+                <texture colordiffuse="button_focus">frame/menu-fo.png</texture>
+                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                <visible>ControlGroup(9000).HasFocus</visible>
             </control>
         </control>
         <control type="group">
