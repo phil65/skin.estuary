@@ -72,7 +72,7 @@
                 <width>1820</width>
                 <height>135</height>
                 <align>right</align>
-                <itemgap>-50</itemgap>
+                <itemgap>-20</itemgap>
                 <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>
                 <onup>87</onup>
@@ -108,10 +108,6 @@
                     <onclick>ActivateWindow(PVROSDGuide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                     <visible>VideoPlayer.Content(livetv)</visible>
-                </control>
-                <control type="image" id="73002">
-                    <width>100</width>
-                    <texture>-</texture>
                 </control>
                 <control type="radiobutton" id="700">
                     <label>298</label>
@@ -187,14 +183,8 @@
                     <onup>201</onup>
                     <ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
                     <ondown>201</ondown>
-                    <onright condition="!IsEmpty(Window(home).Property(SeekButtonForward))">PlayerControl(BigSkipForward)</onright>
-                    <onright condition="IsEmpty(Window(home).Property(SeekButtonForward))">PlayerControl(SmallSkipForward)</onright>
-                    <onright>AlarmClock(SeekButtonDelayForward,ClearProperty(SeekButtonForward,home),00:01,silent)</onright>
-                    <onright>SetProperty(SeekButtonForward,true,home)</onright>
-                    <onleft condition="!IsEmpty(Window(home).Property(SeekButtonRewind))">PlayerControl(BigSkipBackward)</onleft>
-                    <onleft condition="IsEmpty(Window(home).Property(SeekButtonRewind))">PlayerControl(SmallSkipBackward)</onleft>
-                    <onleft>AlarmClock(SeekButtonDelayRewind,ClearProperty(SeekButtonRewind,home),00:01,silent)</onleft>
-                    <onleft>SetProperty(SeekButtonRewind,true,home)</onleft>
+                    <onright>StepForward</onright>
+                    <onleft>PStepBackward</onleft>
                     <visible>Player.SeekEnabled</visible>
                     <onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
                 </control>
