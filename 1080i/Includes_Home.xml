@@ -148,7 +148,7 @@
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture>colours/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </control>
@@ -168,7 +168,7 @@
                             <height>321</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture>colours/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -181,7 +181,7 @@
                                 <width>212</width>
                                 <height>57</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colours/black.png</texture>
+                                <texture>colors/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
                             <control type="image">
@@ -191,7 +191,7 @@
                                 <width>212</width>
                                 <height>35</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colours/black.png</texture>
+                                <texture>colors/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
                             <control type="label">
@@ -287,7 +287,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-                            <bordertexture>colours/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -298,7 +298,7 @@
                                 <width>400</width>
                                 <height>30</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="99FFFFFF">colours/black.png</texture>
+                                <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                             </control>
                             <control type="progress">
                                 <left>30</left>
@@ -314,7 +314,7 @@
                             <width>400</width>
                             <height>60</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="99FFFFFF">colours/black.png</texture>
+                            <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                         </control>
                         <control type="label">
                             <left>20</left>
@@ -355,7 +355,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-                            <bordertexture>colours/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -366,7 +366,7 @@
                                 <width>400</width>
                                 <height>30</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="99FFFFFF">colours/black.png</texture>
+                                <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                             </control>
                             <control type="progress">
                                 <left>30</left>
@@ -382,7 +382,7 @@
                             <width>400</width>
                             <height>60</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="99FFFFFF">colours/black.png</texture>
+                            <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                         </control>
                         <control type="label">
                             <left>20</left>
@@ -471,7 +471,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture>colours/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </control>
@@ -491,7 +491,7 @@
                             <height>300</height>
                             <aspectratio>scale</aspectratio>
                             <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture>colours/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
@@ -504,7 +504,7 @@
                                 <width>300</width>
                                 <height>60</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colours/black.png</texture>
+                                <texture>colors/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
                             <control type="group">

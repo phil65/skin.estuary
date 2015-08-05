@@ -35,7 +35,7 @@
                             <height>160</height>
                             <texture border="2" fallback="DefaultVideo.png" background="true">$VAR[BannerArtVar]</texture>
                             <aspectratio aligny="center">scale</aspectratio>
-                            <bordertexture>colours/black.png</bordertexture>
+                            <bordertexture>colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
                         </control>
                     </itemlayout>
@@ -50,7 +50,7 @@
                                 <height>160</height>
                                 <texture border="2" fallback="DefaultVideo.png" background="true">$VAR[BannerArtVar]</texture>
                                 <aspectratio aligny="center">scale</aspectratio>
-                                <bordertexture>colours/black.png</bordertexture>
+                                <bordertexture>colors/black.png</bordertexture>
                                 <bordersize>4</bordersize>
                             </control>
                             <control type="image">
@@ -72,7 +72,7 @@
                                     <width>792</width>
                                     <height>40</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colours/black.png</texture>
+                                    <texture>colors/black.png</texture>
                                     <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                                 </control>
                                 <control type="image">
@@ -112,7 +112,7 @@
                             <width>70</width>
                             <height>160</height>
                             <fadetime>300</fadetime>
-                            <texture colordiffuse="button_focus">colours/white.png</texture>
+                            <texture colordiffuse="button_focus">colors/white.png</texture>
                             <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
                             <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
                         </control>

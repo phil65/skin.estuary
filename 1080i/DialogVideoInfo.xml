@@ -11,7 +11,7 @@
 				<width>1307</width>
 				<height>920</height>
 				<aspectratio align="center">scale</aspectratio>
-				<texture background="true" fallback="colours/black.png">$INFO[ListItem.Art(fanart)]</texture>
+				<texture background="true" fallback="colors/black.png">$INFO[ListItem.Art(fanart)]</texture>
 			</control>
 			<control type="image">
 				<top>80</top>
@@ -177,14 +177,14 @@
 									<height>325</height>
 									<texture border="2" fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
 									<aspectratio aligny="center">scale</aspectratio>
-									<bordertexture>colours/black.png</bordertexture>
+									<bordertexture>colors/black.png</bordertexture>
 									<bordersize>4</bordersize>
 								</control>
 								<control type="image">
 									<width>224</width>
 									<height>70</height>
 									<posy>267</posy>
-									<texture>colours/black.png</texture>
+									<texture>colors/black.png</texture>
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 								</control>
 								<control type="textbox">
@@ -209,14 +209,14 @@
 									<height>325</height>
 									<texture border="2" fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
 									<aspectratio aligny="center">scale</aspectratio>
-									<bordertexture>colours/black.png</bordertexture>
+									<bordertexture>colors/black.png</bordertexture>
 									<bordersize>4</bordersize>
 								</control>
 								<control type="image">
 									<width>224</width>
 									<height>70</height>
 									<posy>267</posy>
-									<texture>colours/black.png</texture>
+									<texture>colors/black.png</texture>
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 									<animation effect="fade" start="100" end="80" time="40" condition="Control.HasFocus(50)">Conditional</animation>
 								</control>
@@ -354,7 +354,7 @@
 					<top>80</top>
 					<width>140</width>
 					<height>920</height>
-					<texture colordiffuse="B2FFFFFF">colours/black.png</texture>
+					<texture colordiffuse="B2FFFFFF">colors/black.png</texture>
 				</control>
 				<control type="grouplist">
 					<posx>25</posx>
@@ -410,7 +410,7 @@
 				<width>613</width>
 				<height>920</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture background="true" fallback="colours/black.png">$VAR[PosterVar]</texture>
+				<texture background="true" fallback="colors/black.png">$VAR[PosterVar]</texture>
 			</control>
 		</control>
 	</controls>

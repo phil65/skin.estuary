@@ -64,7 +64,7 @@
                                 <height>354</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-                                <bordertexture>colours/black.png</bordertexture>
+                                <bordertexture>colors/black.png</bordertexture>
                                 <bordersize>4</bordersize>
                             </control>
                         </control>
@@ -80,7 +80,7 @@
                                 <height>354</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-                                <bordertexture>colours/black.png</bordertexture>
+                                <bordertexture>colors/black.png</bordertexture>
                                 <bordersize>4</bordersize>
                             </control>
                         </control>
@@ -92,7 +92,7 @@
                     <width>1192</width>
                     <height>70</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
+                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
                 <control type="image">
                     <right>110</right>
@@ -100,7 +100,7 @@
                     <width>1192</width>
                     <height>235</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
+                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
                 <control type="list" id="5000">
                     <right>130</right>

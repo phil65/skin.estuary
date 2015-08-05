@@ -44,7 +44,7 @@
                     <posy>179</posy>
                     <width>359</width>
                     <height>50</height>
-                    <texture colordiffuse="60FFFFFF">colours/black.png</texture>
+                    <texture colordiffuse="60FFFFFF">colors/black.png</texture>
                 </control>
                 <control type="image">
                     <left>80</left>
@@ -89,7 +89,7 @@
                         <posy>179</posy>
                         <width>359</width>
                         <height>50</height>
-                        <texture colordiffuse="60FFFFFF">colours/black.png</texture>
+                        <texture colordiffuse="60FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
                         <left>80</left>
@@ -552,7 +552,7 @@
             <height>3240</height>
             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
+            <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
             <visible>$PARAM[darken_bg]</visible>
         </control>
         <control type="image">
@@ -750,7 +750,7 @@
                 <top>1010</top>
                 <width>80</width>
                 <height>80</height>
-                <animation effect="slide" end="0,7" time="200" reversible="true" condition="Control.IsVisible(51) + !ControlGroup(9000).HasFocus">Conditional</animation>
+                <animation effect="slide" end="0,7" time="200" reversible="true" condition="Control.IsVisible(51)">Conditional</animation>
                 <texture colordiffuse="button_focus">icons/settings/settings.png</texture>
             </control>
             <control type="image">
@@ -759,8 +759,6 @@
                 <top>1012</top>
                 <width>55</width>
                 <height>55</height>
-                <visible>!ControlGroup(9000).HasFocus</visible>
-                <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
                 <animation effect="rotate" end="-90" center="57,1045" time="200" reversible="true" condition="Control.IsVisible(51)">Conditional</animation>
                 <texture colordiffuse="button_focus" flipx="true">lists/arrow-right-fo.png</texture>
             </control>

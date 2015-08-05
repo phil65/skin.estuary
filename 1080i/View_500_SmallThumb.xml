@@ -33,7 +33,7 @@
                 <height>330</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
-                <bordertexture>colours/black.png</bordertexture>
+                <bordertexture>colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
             </control>
         </itemlayout>
@@ -45,7 +45,7 @@
                 <height>330</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
-                <bordertexture>colours/black.png</bordertexture>
+                <bordertexture>colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
                 <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
                 <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
@@ -70,7 +70,7 @@
                     <width>322</width>
                     <height>40</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture>colours/black.png</texture>
+                    <texture>colors/black.png</texture>
                     <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                 </control>
                 <control type="label">
@@ -93,7 +93,7 @@
                     <width>70</width>
                     <height>330</height>
                     <fadetime>300</fadetime>
-                    <texture colordiffuse="button_focus">colours/white.png</texture>
+                    <texture colordiffuse="button_focus">colors/white.png</texture>
                     <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
                     <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
                 </control>
@@ -124,7 +124,7 @@
                 <height>330</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture>colours/black.png</bordertexture>
+                <bordertexture>colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
             </control>
         </itemlayout>
@@ -136,7 +136,7 @@
                 <height>330</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture>colours/black.png</bordertexture>
+                <bordertexture>colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
                 <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
                 <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
@@ -161,7 +161,7 @@
                     <width>212</width>
                     <height>40</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture>colours/black.png</texture>
+                    <texture>colors/black.png</texture>
                     <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                 </control>
                 <control type="label">
@@ -182,7 +182,7 @@
                 <width>70</width>
                 <height>330</height>
                 <fadetime>300</fadetime>
-                <texture colordiffuse="button_focus">colours/white.png</texture>
+                <texture colordiffuse="button_focus">colors/white.png</texture>
                 <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
                 <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
             </control>
@@ -217,7 +217,7 @@
                 <height>250</height>
                 <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
-                <bordertexture>colours/black.png</bordertexture>
+                <bordertexture>colors/black.png</bordertexture>
                 <bordersize>4</bordersize>
             </control>
             <control type="image">
@@ -225,7 +225,7 @@
                 <top>265</top>
                 <width>375</width>
                 <height>80</height>
-                <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
+                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
             </control>
             <control type="label">
                 <left>10</left>
@@ -263,7 +263,7 @@
                     <height>250</height>
                     <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio>scale</aspectratio>
-                    <bordertexture>colours/black.png</bordertexture>
+                    <bordertexture>colors/black.png</bordertexture>
                     <bordersize>4</bordersize>
                 </control>
                 <control type="image">
@@ -271,7 +271,7 @@
                     <top>265</top>
                     <width>380</width>
                     <height>80</height>
-                    <texture colordiffuse="B0FFFFFF">colours/black.png</texture>
+                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
                 <control type="label">
                     <left>10</left>
@@ -312,7 +312,7 @@
                 <width>70</width>
                 <height>330</height>
                 <fadetime>300</fadetime>
-                <texture colordiffuse="button_focus">colours/white.png</texture>
+                <texture colordiffuse="button_focus">colors/white.png</texture>
                 <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
                 <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
             </control>
