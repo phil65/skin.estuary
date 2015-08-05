@@ -123,22 +123,22 @@
         <item id="2">
             <label>Android apps</label>
             <onclick>ActivateWindow(programs,androidapps://,return)</onclick>
-            <icon>icons/settings/video.png</icon>
+            <icon>icons/settings/android.png</icon>
         </item>
         <item id="3">
             <label>Video add-ons</label>
             <onclick>ActivateWindow(videos,addons://sources/video/,return)</onclick>
-            <icon>icons/settings/music.png</icon>
+            <icon>icons/settings/video.png</icon>
         </item>
         <item id="4">
             <label>Audio add-ons</label>
             <onclick>ActivateWindow(musicfiles,addons://sources/audio/,return)</onclick>
-            <icon>icons/settings/pictures.png</icon>
+            <icon>icons/settings/music.png</icon>
         </item>
         <item id="5">
             <label>Image add-ons</label>
             <onclick>ActivateWindow(pictures,addons://sources/image/,return)</onclick>
-            <icon>icons/settings/weather.png</icon>
+            <icon>icons/settings/pictures.png</icon>
         </item>
     </content>
     </include>
