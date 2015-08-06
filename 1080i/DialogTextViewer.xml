@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">61</defaultcontrol>
+    <defaultcontrol always="true">3000</defaultcontrol>
     <include>Animation_DialogPopupOpenClose</include>
-	<coordinates>
-		<system>1</system>
-		<left>260</left>
-		<top>150</top>
-	</coordinates>
     <controls>
         <control type="group">
-		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1400" />
-			<param name="DialogBackgroundHeight" value="770" />
-			<param name="DialogHeaderLabel" value="$LOCALIZE[13406]" />
-			<param name="DialogHeaderId" value="1" />
-		</include>
+            <left>260</left>
+            <top>150</top>
+            <include name="DialogBackgroundCommons">
+                <param name="DialogBackgroundWidth" value="1400" />
+                <param name="DialogBackgroundHeight" value="770" />
+                <param name="DialogHeaderLabel" value="$LOCALIZE[13406]" />
+                <param name="DialogHeaderId" value="1" />
+            </include>
             <control type="textbox" id="5">
                 <posx>40</posx>
                 <posy>80</posy>
@@ -22,20 +19,31 @@
                 <height>675</height>
                 <font>font13</font>
                 <shadowcolor>black</shadowcolor>
-                <pagecontrol>61</pagecontrol>
+                <pagecontrol>3000</pagecontrol>
             </control>
-            <control type="scrollbar" id="61">
-                <posx>1668</posx>
-                <posy>180</posy>
-                <width>46</width>
-                <height>795</height>
-                <texturesliderbackground colordiffuse="button_focus">views/scrollbarbacklist.png</texturesliderbackground>
-                <include>Animation_VerticalScrollBar</include>
-                <onleft>61</onleft>
-                <onright>61</onright>
-                <ondown>61</ondown>
-                <onup>61</onup>
+            <control type="scrollbar" id="3000">
+                <include>InvisibleObject</include>
+                <ondown>3000</ondown>
+                <onup>3000</onup>
             </control>
+        </control>
+        <control type="image">
+            <left>936</left>
+            <top>113</top>
+            <width>48</width>
+            <height>20</height>
+            <texture colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
+            <visible>Control.IsVisible(3000) + IntegerGreaterThan(Container(5).CurrentPage,1)</visible>
+            <animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
+        </control>
+        <control type="image">
+            <left>936</left>
+            <top>940</top>
+            <width>48</width>
+            <height>20</height>
+            <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
+            <visible>Control.IsVisible(3000) + !StringCompare(Container(5).CurrentPage,Container(5).NumPages)</visible>
+            <animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
         </control>
     </controls>
 </window>
