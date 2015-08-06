@@ -100,16 +100,6 @@
 								<orientation>horizontal</orientation>
 								<usecontrolcoords>true</usecontrolcoords>
 								<visible>[Container.Content(movies) | Container.Content(tvshows)] + !IsEmpty(ListItem.Genre)</visible>
-								<control type="image" id="12020">
-									<posx>0</posx>
-									<posy>6</posy>
-									<width>42</width>
-									<height>35</height>
-									<aspectratio aligny="center" align="left">keep</aspectratio>
-									<texture colordiffuse="AAFFFFFF" background="true">$VAR[CountryFlagVar]</texture>
-									<fadetime>200</fadetime>
-									<visible>!IsEmpty(Control.GetLabel(12020))</visible>
-								</control>
 								<control type="label">
 									<width>995</width>
 									<height>40</height>
