@@ -34,8 +34,8 @@
 					<left>0</left>
 					<top>0</top>
 					<width>510</width>
-					<height>30</height>
-					<texture>-</texture>
+					<height>461</height>
+					<texture>lists/panel.png</texture>
 				</control>
 			</control>
 			<control type="button" id="2">
@@ -43,10 +43,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Quit()</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -59,10 +59,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Powerdown()</onclick>
 				<visible>System.CanPowerDown</visible>
@@ -75,10 +75,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -92,10 +92,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>CancelAlarm(shutdowntimer)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -108,10 +108,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Suspend()</onclick>
 				<visible>System.CanSuspend</visible>
@@ -124,10 +124,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Hibernate()</onclick>
 				<visible>System.CanHibernate</visible>
@@ -140,10 +140,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>Reset()</onclick>
 				<visible>System.CanReboot</visible>
@@ -156,10 +156,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>dialog.close(all,true)</onclick>
 				<onclick>System.LogOff</onclick>
@@ -179,8 +179,8 @@
 				<aligny>center</aligny>
 				<textwidth>390</textwidth>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<focusedcolor>white</focusedcolor>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<usealttexture>!System.IsMaster</usealttexture>
 				<alttexturefocus border="25,5,25,5">ShutdownButtonFocus.png</alttexturefocus>
@@ -219,10 +219,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>InhibitIdleShutdown(true)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -235,10 +235,10 @@
 				<width>510</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-solid-fo.png</texturefocus>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<onclick>InhibitIdleShutdown(false)</onclick>
 				<pulseonselect>no</pulseonselect>
