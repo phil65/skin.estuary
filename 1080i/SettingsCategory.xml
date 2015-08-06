@@ -87,7 +87,7 @@
                     <top>802</top>
                     <width>1256</width>
                     <height>3</height>
-                    <texture colordiffuse="button_focus" border="2">dialogs/separator.png</texture>
+                    <texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
                 </control>
                 <!-- <control type="group">
                      <left>500</left>
@@ -148,15 +148,6 @@
                     <showonepage>false</showonepage>
                     <orientation>vertical</orientation>
                 </control>
-                <control type="image">
-                    <description>separator image</description>
-                    <left>290</left>
-                    <top>525</top>
-                    <width>750</width>
-                    <height>30</height>
-                    <texture>separator2.png</texture>
-                    <colordiffuse>40FFFFFF</colordiffuse>
-                </control>
                 <control type="textbox" id="6">
                     <description>description area</description>
                     <left>480</left>
@@ -196,7 +187,7 @@
         <control type="image" id="11">
             <description>separator image</description>
             <height>3</height>
-            <texture colordiffuse="grey" border="2">dialogs/separator.png</texture>
+            <texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
         </control>
         <control type="label" id="14">
             <description>Default Label</description>
