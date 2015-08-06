@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">22</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <coordinates>
+        <system>1</system>
+        <left>210</left>
+        <top>90</top>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <visible>!Window.IsVisible(smartplaylistrule)</visible>
+            <include>VisibleFadeEffect</include>
+            <include name="DialogBackgroundCommons">
+                <param name="DialogBackgroundWidth" value="1500" />
+                <param name="DialogBackgroundHeight" value="900" />
+                <param name="DialogHeaderLabel" value="-" />
+                <param name="DialogHeaderId" value="2" />
+            </include>
+            <control type="grouplist" id="500">
+                <orientation>vertical</orientation>
+                <left>30</left>
+                <top>95</top>
+                <onright>10</onright>
+                <onleft>10</onleft>
+                <ondown>9001</ondown>
+                <onup>9001</onup>
+                <itemgap>-20</itemgap>
+                <control type="spincontrolex" id="22">
+                    <description>Set Playlist type</description>
+                    <width>600</width>
+                    <height>90</height>
+                    <label>467</label>
+                    <font>font13</font>
+                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                </control>
+                <control type="label" id="1100">
+                    <description>Name Label</description>
+                    <height>65</height>
+                    <width>600</width>
+                    <label>21433</label>
+                    <font>font12</font>
+                    <textcolor>blue</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+                <control type="edit" id="12">
+                    <description>Name Button</description>
+                    <width>600</width>
+                    <height>90</height>
+                    <textoffsetx>10</textoffsetx>
+                    <textwidth>720</textwidth>
+                    <font>font13</font>
+                    <align>center</align>
+                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                    <label>-</label>
+                </control>
+                <control type="label" id="1101">
+                    <description>Name Label</description>
+                    <height>65</height>
+                    <width>600</width>
+                    <label>31325</label>
+                    <font>font12</font>
+                    <textcolor>blue</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+                <control type="spincontrolex" id="16">
+                    <width>600</width>
+                    <height>90</height>
+                    <label>21424</label>
+                    <font>font13</font>
+                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                </control>
+                <control type="spincontrolex" id="17">
+                    <width>600</width>
+                    <height>90</height>
+                    <label>21427</label>
+                    <font>font13</font>
+                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                </control>
+                <control type="spincontrolex" id="18">
+                    <width>600</width>
+                    <height>90</height>
+                    <label>21429</label>
+                    <font>font13</font>
+                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                </control>
+                <control type="togglebutton" id="19">
+                    <width>600</width>
+                    <height>90</height>
+                    <font>font13</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textoffsetx>7</textoffsetx>
+                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                    <alttexturenofocus border="5">button-nofocus.png</alttexturenofocus>
+                    <alttexturefocus border="5">button-focus2.png</alttexturefocus>
+                    <label>Order: $LOCALIZE[21431]</label>
+                    <altlabel>Order: $LOCALIZE[21430]</altlabel>
+                </control>
+                <control type="spincontrolex" id="23">
+                    <width>600</width>
+                    <height>90</height>
+                    <label>21458</label>
+                    <font>font13</font>
+                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                </control>
+                <control type="radiobutton" id="24">
+                    <width>600</width>
+                    <height>90</height>
+                    <font>font13</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+                    <texturefocus border="5">button-focus.png</texturefocus>
+                    <label>Type: $LOCALIZE[21459]</label>
+                </control>
+            </control>
+            <control type="grouplist" id="9001">
+                <orientation>horizontal</orientation>
+                    <left>0</left>
+                    <width>1500</width>
+                    <align>center</align>
+                    <top>800</top>
+                <include name="DefaultDialogButton">
+                    <param name="id" value="20" />
+                    <param name="label" value="186" />
+                </include>
+                <include name="DefaultDialogButton">
+                    <param name="id" value="21" />
+                    <param name="label" value="222" />
+                </include>
+            </control>
+            <control type="label">
+                <description>rules label</description>
+                <left>440</left>
+                <top>70</top>
+                <width>600</width>
+                <height>65</height>
+                <align>left</align>
+                <label>21434</label>
+                <font>font12</font>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="list" id="10">
+                <description>Rules List Control</description>
+                <left>620</left>
+                <top>95</top>
+                <width>600</width>
+                <height>500</height>
+                <onleft>500</onleft>
+                <onright>500</onright>
+                <ondown>9001</ondown>
+                <onup>9001</onup>
+                <itemlayout width="600" height="45">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>40</height>
+                        <texture border="5">button-nofocus.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>510</width>
+                        <height>40</height>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                        <selectedcolor>selected</selectedcolor>
+                        <font>font13</font>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="600" height="45">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>40</height>
+                        <texture border="5">button-focus2.png</texture>
+                        <visible>Control.HasFocus(10)</visible>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>40</height>
+                        <texture border="5">button-nofocus.png</texture>
+                        <visible>!Control.HasFocus(10)</visible>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>0</top>
+                        <width>510</width>
+                        <height>40</height>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                        <selectedcolor>selected</selectedcolor>
+                        <font>font13</font>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </controls>
+</window>
