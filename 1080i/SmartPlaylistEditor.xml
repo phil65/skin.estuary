@@ -99,7 +99,7 @@
                     <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
                     <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
                     <alttexturenofocus border="5">button-nofocus.png</alttexturenofocus>
-                    <alttexturefocus border="5">button-focus2.png</alttexturefocus>
+                    <alttexturefocus border="5">buttons/button-theme-fo.png</alttexturefocus>
                     <label>Order: $LOCALIZE[21431]</label>
                     <altlabel>Order: $LOCALIZE[21430]</altlabel>
                 </control>
@@ -118,7 +118,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <texturefocus border="5">button-focus.png</texturefocus>
+                    <texturefocus border="5">buttons/button-theme-fo.png</texturefocus>
                     <label>Type: $LOCALIZE[21459]</label>
                 </control>
             </control>

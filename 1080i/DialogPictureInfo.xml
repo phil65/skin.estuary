@@ -57,7 +57,7 @@
 				<label>-</label>
 				<font>-</font>
 				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturefocus>DialogClosebuttons/button-theme-fo.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<onleft>2</onleft>
 				<onright>2</onright>
@@ -141,7 +141,7 @@
 						<top>0</top>
 						<width>720</width>
 						<height>40</height>
-						<texture border="5">button-focus2.png</texture>
+						<texture border="5">buttons/button-theme-fo.png</texture>
 						<visible>Control.HasFocus(5)</visible>
 					</control>
 					<control type="label">

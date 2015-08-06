@@ -119,7 +119,7 @@
 						<top>0</top>
 						<width>420</width>
 						<height>60</height>
-						<texture border="5">button-focus2.png</texture>
+						<texture border="5">buttons/button-theme-fo.png</texture>
 						<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
 					</control>
 					<control type="image">
@@ -374,7 +374,7 @@
 					<font>font12</font>
 					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-					<alttexturefocus border="5">button-focus2.png</alttexturefocus>
+					<alttexturefocus border="5">buttons/button-theme-fo.png</alttexturefocus>
 					<alttexturenofocus border="5">button-nofocus.png</alttexturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
