@@ -9,22 +9,22 @@
         </control>
         <control type="group">
             <posx>1820</posx>
-            <posy>2</posy>
+            <posy>0</posy>
             <animation effect="fade" delay="300" start="0" end="100" time="150">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
             <control type="image">
-                <posx>0</posx>
-                <posy>-20</posy>
-                <width>114</width>
-                <height>114</height>
+                <posx>6</posx>
+                <posy>-11</posy>
+                <width>100</width>
+                <height>100</height>
                 <texture>dialogs/volume/volume-back.png</texture>
                 <animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="!Window.IsVisible(volumebar)">Conditional</animation>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>-20</posy>
-                <width>114</width>
-                <height>114</height>
+                <posx>6</posx>
+                <posy>-11</posy>
+                <width>100</width>
+                <height>100</height>
                 <texture>dialogs/volume/progress/p$INFO[Control.GetLabel(20)].png</texture>
                 <animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="!Window.IsVisible(volumebar)">Conditional</animation>
             </control>
