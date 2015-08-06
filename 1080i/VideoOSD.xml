@@ -184,7 +184,7 @@
                     <ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
                     <ondown>201</ondown>
                     <onright>StepForward</onright>
-                    <onleft>StepBackward</onleft>
+                    <onleft>StepBack</onleft>
                     <visible>Player.SeekEnabled</visible>
                     <onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
                 </control>
