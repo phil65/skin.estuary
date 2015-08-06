@@ -88,33 +88,18 @@
 			<ondown>9001</ondown>
 			<onleft>2</onleft>
 			<onright>9</onright>
-			<control type="button" id="10">
-				<description>OK Button</description>
-				<width>300</width>
-				<height>90</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font12_title</font>
-				<label>186</label>
-			</control>
-			<control type="button" id="11">
-				<description>Cancel Button</description>
-				<width>300</width>
-				<height>90</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font12_title</font>
-				<label>222</label>
-			</control>
-			<control type="button" id="12">
-				<description>Defaults Button</description>
-				<width>300</width>
-				<height>90</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font12_title</font>
-				<label>409</label>
-			</control>
+			<include name="DefaultDialogButton">
+				<param name="id" value="10" />
+				<param name="label" value="186" />
+			</include>
+			<include name="DefaultDialogButton">
+				<param name="id" value="11" />
+				<param name="label" value="222" />
+			</include>
+			<include name="DefaultDialogButton">
+				<param name="id" value="12" />
+				<param name="label" value="409" />
+			</include>
 		</control>
 		<control type="button" id="13">
 			<description>Default Category Button</description>
