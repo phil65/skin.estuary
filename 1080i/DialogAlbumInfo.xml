@@ -3,25 +3,6 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<control type="group">
-			<include>OpenClose_FadeSlide_Right</include>
-			<control type="image">
-				<top>80</top>
-				<left>0</left>
-				<width>1920</width>
-				<height>920</height>
-				<aspectratio align="center">scale</aspectratio>
-				<texture background="true" fallback="colors/black.png">$INFO[ListItem.Art(fanart)]</texture>
-			</control>
-			<control type="image">
-				<top>80</top>
-				<left>0</left>
-				<width>1920</width>
-				<height>920</height>
-				<aspectratio aligny="top">scale</aspectratio>
-				<texture colordiffuse="D0FFFFFF">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
-			</control>
-		</control>
-		<control type="group">
 			<include>OpenClose_FadeSlide_Left</include>
 			<control type="image">
 				<left>70</left>
