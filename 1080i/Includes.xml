@@ -731,7 +731,7 @@
             <height>1080</height>
             <animation effect="fade" start="100" end="80" time="0" condition="Player.HasMedia">Conditional</animation>
             <aspectratio>scale</aspectratio>
-            <texture>special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+            <texture colordiffuse="button_focus">special://skin/extras/backgrounds/SKINDEFAULT.jpg</texture>
         </control>
         <control type="image">
             <left>0</left>
