@@ -22,6 +22,20 @@
         <label>-</label>
         <font>-</font>
     </include>
+    <include name="DefaultDialogButton">
+        <control type="button" id="$PARAM[id]">
+            <description>Yes button</description>
+            <width>300</width>
+            <height>90</height>
+            <label>$PARAM[label]</label>
+            <font>font12_title</font>
+            <textcolor>white</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <align>center</align>
+            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+        </control>
+    </include>
     <include name="SettingsPanel">
         <control type="panel" id="9000">
             <left>92</left>
