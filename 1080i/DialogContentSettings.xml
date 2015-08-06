@@ -247,53 +247,21 @@
 				<font>font13</font>
 				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			</control>
-			<control type="group" id="9001">
+			<control type="grouplist" id="9001">
+				<orientation>horizontal</orientation>
 				<top>615</top>
-				<control type="button" id="28">
-					<description>OK Button</description>
-					<left>300</left>
-					<top>0</top>
-					<width>200</width>
-					<height>40</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<label>186</label>
-					<onleft>22</onleft>
-					<onright>29</onright>
-					<onup>5</onup>
-					<ondown>20</ondown>
-				</control>
-				<control type="button" id="29">
-					<description>Cancel Button</description>
-					<left>510</left>
-					<top>0</top>
-					<width>200</width>
-					<height>40</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<label>222</label>
-					<onleft>28</onleft>
-					<onright>22</onright>
-					<onup>5</onup>
-					<ondown>20</ondown>
-				</control>
-				<control type="button" id="22">
-					<description>Settings Button</description>
-					<left>90</left>
-					<top>0</top>
-					<width>200</width>
-					<height>40</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<label>5</label>
-					<onleft>29</onleft>
-					<onright>28</onright>
-					<onup>5</onup>
-					<ondown>20</ondown>
-				</control>
+				<include name="DefaultDialogButton">
+					<param name="id" value="28" />
+					<param name="label" value="186" />
+				</include>
+				<include name="DefaultDialogButton">
+					<param name="id" value="29" />
+					<param name="label" value="222" />
+				</include>
+				<include name="DefaultDialogButton">
+					<param name="id" value="22" />
+					<param name="label" value="5" />
+				</include>
 			</control>
 		</control>
 	</controls>
