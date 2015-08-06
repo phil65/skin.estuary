@@ -729,7 +729,7 @@
             <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
             <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
-            <texture background="true" colordiffuse="20FFFFFF">$INFO[ListItem.Art(fanart)]</texture>
+            <texture background="true" colordiffuse="32FFFFFF">$INFO[ListItem.Art(fanart)]</texture>
             <visible>!IsEmpty(ListItem.Art(fanart)) + !Player.HasMedia</visible>
         </control>
     </include>
