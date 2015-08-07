@@ -3,13 +3,13 @@
 	<defaultcontrol>5</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<left>400</left>
+		<left>200</left>
 		<top>125</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1120" />
+			<param name="DialogBackgroundWidth" value="1520" />
 			<param name="DialogBackgroundHeight" value="850" />
 			<param name="DialogHeaderLabel" value="" />
 			<param name="DialogHeaderId" value="2" />
@@ -19,14 +19,14 @@
 			<description>control area</description>
 			<left>30</left>
 			<top>70</top>
-			<width>1060</width>
-			<height>610</height>
+			<width>1160</width>
+			<height>730</height>
 			<itemgap>-20</itemgap>
 			<pagecontrol>60</pagecontrol>
-			<onleft>28</onleft>
-			<onright>60</onright>
-			<onup>28</onup>
-			<ondown>28</ondown>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
@@ -62,18 +62,23 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="grouplist" id="9000">
-			<left>0</left>
-			<top>735</top>
-			<orientation>horizontal</orientation>
+			<left>1180</left>
+			<top>20</top>
+			<orientation>vertical</orientation>
 			<width>1120</width>
+			<height>350</height>
 			<align>center</align>
-			<include name="DefaultDialogButton">
-				<param name="id" value="29" />
-				<param name="label" value="222" />
-			</include>
+			<aligny>top</aligny>
+			<itemgap>-10</itemgap>
+			<onleft>5</onleft>
+			<onright>5</onright>
 			<include name="DefaultDialogButton">
 				<param name="id" value="28" />
 				<param name="label" value="186" />
+			</include>
+			<include name="DefaultDialogButton">
+				<param name="id" value="29" />
+				<param name="label" value="222" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="50" />
