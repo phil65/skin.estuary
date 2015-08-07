@@ -624,6 +624,13 @@
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
+                        <top>730</top>
+                        <left>500</left>
+                        <width>1300</width>
+                        <height>156</height>
+                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    </control>
+                    <control type="image">
                         <top>85</top>
                         <left>530</left>
                         <width>340</width>
@@ -645,8 +652,19 @@
                         <height>450</height>
                     </control>
                     <control type="label">
-                        <left>1170</left>
-                        <width>600</width>
+                        <left>1070</left>
+                        <width>670</width>
+                        <top>450</top>
+                        <height>90</height>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[VideoPlayer.Time]</label>
+                        <textcolor>button_focus</textcolor>
+                        <font>font30_title</font>
+                    </control>
+                    <control type="label">
+                        <left>1100</left>
+                        <width>670</width>
                         <top>610</top>
                         <height>90</height>
                         <align>right</align>
@@ -654,6 +672,18 @@
                         <label>[COLOR button_focus]Now Playing: [/COLOR]$INFO[Player.Title]$INFO[VideoPlayer.Year, [,]]</label>
                         <textcolor>white</textcolor>
                         <font>font14</font>
+                    </control>
+                    <control type="textbox">
+                        <left>515</left>
+                        <width>1265</width>
+                        <top>735</top>
+                        <height>145</height>
+                        <align>justify</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[VideoPlayer.Plot]</label>
+                        <textcolor>white</textcolor>
+                        <font>font13</font>
+                        <autoscroll delay="8000" repeat="7500" time="5000"></autoscroll>
                     </control>
                     <control type="grouplist" id="14100">
                         <orientation>horizontal</orientation>
@@ -664,23 +694,28 @@
                         <ondown>9000</ondown>
                         <include name="BottomMainMenuItem">
                             <param name="control_id" value="14101" />
-                            <param name="onclick" value="RunScript(script.globalsearch)" />
-                            <param name="icon" value="icons/search.png" />
+                            <param name="onclick" value="Pause" />
+                            <param name="icon" value="icons/now-playing/pause.png" />
                         </include>
                         <include name="BottomMainMenuItem">
                             <param name="control_id" value="14102" />
-                            <param name="onclick" value="ActivateWindow(settings)" />
-                            <param name="icon" value="icons/settings.png" />
+                            <param name="onclick" value="Stop" />
+                            <param name="icon" value="icons/now-playing/stop.png" />
                         </include>
                         <include name="BottomMainMenuItem">
                             <param name="control_id" value="14103" />
-                            <param name="onclick" value="ActivateWindow(favourites)" />
-                            <param name="icon" value="icons/favourites.png" />
+                            <param name="onclick" value="Previous" />
+                            <param name="icon" value="icons/now-playing/previous.png" />
                         </include>
                         <include name="BottomMainMenuItem">
                             <param name="control_id" value="14104" />
-                            <param name="onclick" value="ActivateWindow(shutdownmenu)" />
-                            <param name="icon" value="icons/power.png" />
+                            <param name="onclick" value="Next" />
+                            <param name="icon" value="icons/now-playing/next.png" />
+                        </include>
+                        <include name="BottomMainMenuItem">
+                            <param name="control_id" value="14105" />
+                            <param name="onclick" value="Fullscreen" />
+                            <param name="icon" value="icons/now-playing/fullscreen.png" />
                         </include>
                     </control>
                 </control>
