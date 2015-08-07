@@ -86,13 +86,13 @@
 			<control type="label" id="1">
 				<description>Heading label</description>
 				<left>50</left>
-				<top>610</top>
+				<top>600</top>
 				<width>910</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font30</font>
-				<label>[UPPERCASE]$LOCALIZE[31040][/UPPERCASE]</label>
+				<label>[UPPERCASE]$LOCALIZE[31040][/UPPERCASE]: $INFO[Player.Title]</label>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
@@ -116,27 +116,14 @@
 				</control>
 				<control type="textbox" id="1">
 					<left>0</left>
-					<top>115</top>
-					<width>1585</width>
-					<height>105</height>
+					<top>73</top>
+					<width>1600</width>
+					<height>146</height>
 					<label>$INFO[VideoPlayer.Plot]</label>
 					<textcolor>white</textcolor>
 					<font>font13</font>
-					<align>left</align>
+					<align>justify</align>
 					<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
-				</control>
-
-				<control type="label" id="1">
-					<left>0</left>
-					<top>70</top>
-					<width min="10" max="718">auto</width>
-					<height>30</height>
-					<font>font30</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[Player.Title]</label>
-					<textcolor>button_focus</textcolor>
-					<scroll>true</scroll>
 				</control>
 
 				<control type="label" id="1">
@@ -189,7 +176,30 @@
 					<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
 					<visible>!Window.IsVisible(videoosd)</visible>
 				</control>
-
+				<control type="label" id="1">
+					<description>Rating</description>
+					<left>20</left>
+					<width>155</width>
+					<top>925\</top>
+					<align>center</align>
+					<font>font30_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>text_shadow</shadowcolor>
+					<label>$INFO[VideoPlayer.Rating]</label>
+					<visible>!Window.IsVisible(videoosd)</visible>
+				</control>
+				<control type="label" id="1">
+					<description>Rating label</description>
+					<left>20</left>
+					<top>970</top>
+					<width>155</width>
+					<align>center</align>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>text_shadow</shadowcolor>
+					<label>Rating</label>
+					<visible>!Window.IsVisible(videoosd)</visible>
+				</control>
 				<control type="label" id="1">
 					<description>Channel Group label</description>
 					<left>50</left>
@@ -205,7 +215,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>Player time</description>
-					<left>50</left>
+					<left>250</left>
 					<top>940</top>
 					<width>1920</width>
 					<height>100</height>
@@ -266,6 +276,5 @@
 				</control>
 			</control>
 		</control>
-
 	</controls>
 </window>
