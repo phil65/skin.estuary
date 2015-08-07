@@ -3,24 +3,22 @@
 	<defaultcontrol always="true">20</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<left>335</left>
-		<top>30</top>
+		<left>400</left>
+		<top>265</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="group">
-			<visible>!Window.IsVisible(PeripheralSettings)</visible>
-
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="610" />
-				<param name="DialogBackgroundHeight" value="650" />
-				<param name="DialogHeaderLabel" value="$LOCALIZE[35000]" />
-				<param name="DialogHeaderId" value="1" />
+				<param name="DialogBackgroundWidth" value="1120" />
+				<param name="DialogBackgroundHeight" value="550" />
+				<param name="DialogHeaderLabel" value="Peripheral manager" />
+				<param name="DialogHeaderId" value="2" />
 			</include>
 			<control type="list" id="20">
 				<left>20</left>
 				<top>65</top>
-				<width>550</width>
+				<width>780</width>
 				<height>510</height>
 				<onup>10</onup>
 				<ondown>10</ondown>
@@ -29,20 +27,20 @@
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<animation effect="slide" start="0,0" end="10,0" time="0" condition="!Control.IsVisible(61)">Conditional</animation>
-				<itemlayout height="85" width="550">
+				<itemlayout height="95" width="780">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>550</width>
-						<height>80</height>
+						<width>780</width>
+						<height>120</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="label">
 						<description>Name</description>
-						<left>10</left>
+						<left>40</left>
 						<top>5</top>
-						<width>520</width>
-						<height>20</height>
+						<width>1040</width>
+						<height>60</height>
 						<label>$INFO[ListItem.Label]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -51,10 +49,10 @@
 					</control>
 					<control type="label">
 						<description>Product ID Vendor ID</description>
-						<left>10</left>
+						<left>40</left>
 						<top>30</top>
-						<width>520</width>
-						<height>20</height>
+						<width>1040</width>
+						<height>60</height>
 						<label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -63,42 +61,40 @@
 					</control>
 					<control type="label">
 						<description>class</description>
-						<left>10</left>
-						<top>50</top>
-						<width>520</width>
-						<height>20</height>
+						<left>40</left>
+				2	<top>50</top>
+						<width>1040</width>
+						<height>60</height>
 						<label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<textcolor>blue</textcolor>
+			2		<textcolor>blue</textcolor>
 					</control>
 				</itemlayout>
-				<focusedlayout height="85" width="550">
+				<focusedlayout height="95" width="550">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>550</width>
-						<height>80</height>
+						<width>780</width>
+						<height>120</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 						<visible>!Control.HasFocus(20)</visible>
-
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>550</width>
-						<height>80</height>
-						<texture border="5">buttons/button-theme-fo.png</texture>
+						<width>780</width>
+						<height>120</height>
+						<texture border="40">buttons/button-theme-fo.png</texture>
 						<visible>Control.HasFocus(20)</visible>
-
 					</control>
 					<control type="label">
 						<description>Name</description>
-						<left>10</left>
+						<left>40</left>
 						<top>5</top>
-						<width>520</width>
-						<height>20</height>
+						<width>1040</width>
+						<height>60</height>
 						<label>$INFO[ListItem.Label]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -107,10 +103,10 @@
 					</control>
 					<control type="label">
 						<description>Product ID Vendor ID</description>
-						<left>10</left>
+						<left>40</left>
 						<top>30</top>
-						<width>520</width>
-						<height>20</height>
+						<width>1040</width>
+						<height>60</height>
 						<label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -119,10 +115,10 @@
 					</control>
 					<control type="label">
 						<description>class</description>
-						<left>10</left>
+						<left>40</left>
 						<top>50</top>
-						<width>520</width>
-						<height>20</height>
+						<width>1040</width>
+						<height>60</height>
 						<label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -131,27 +127,10 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<control type="scrollbar" id="61">
-				<left>570</left>
-				<top>65</top>
-				<width>25</width>
-				<height>510</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-				<onleft>20</onleft>
-				<onright>10</onright>
-				<ondown>61</ondown>
-				<onup>61</onup>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			</control>
 			<control type="label">
 				<description>number of files/pages in list text label</description>
-				<left>280</left>
-				<top>585</top>
+				<left>790</left>
+				<top>500</top>
 				<width>300</width>
 				<height>35</height>
 				<font>font12</font>
@@ -163,17 +142,15 @@
 			</control>
 			<control type="button" id="10">
 				<description>OK button</description>
-				<left>20</left>
-				<top>585</top>
-				<width>200</width>
-				<height>40</height>
-				<label>186</label>
-				<font>font12_title</font>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<left>790</left>
+				<top>65</top>
+				<include>SettingsItemCommon</include>
+				<width>300</width>
+					<label>186</label>
+
 				<align>center</align>
-				<onup>20</onup>
-				<ondown>20</ondown>
+				<onleft>20</onleft>
+				<onright>20</onright>
 			</control>
 		</control>
 	</controls>
