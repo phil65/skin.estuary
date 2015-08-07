@@ -16,7 +16,7 @@
         </include>
         <control type="panel" id="450">
             <left>40</left>
-            <top>80</top>
+            <top>100</top>
             <width>1920</width>
             <height>1080</height>
             <onleft>450</onleft>
@@ -39,6 +39,23 @@
                         <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
                         <bordersize>4</bordersize>
                     </control>
+                    <control type="image">
+                        <left>4</left>
+                        <top>256</top>
+                        <width>292</width>
+                        <height>40</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>4</left>
+                        <top>256</top>
+                        <width>292</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
                 </control>
             </itemlayout>
             <focusedlayout width="346">
@@ -52,6 +69,23 @@
                         <texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
                         <bordersize>4</bordersize>
+                    </control>
+                    <control type="image">
+                        <left>4</left>
+                        <top>256</top>
+                        <width>292</width>
+                        <height>40</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>4</left>
+                        <top>256</top>
+                        <width>292</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
                         <left>0</left>
