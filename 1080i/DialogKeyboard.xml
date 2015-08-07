@@ -131,18 +131,16 @@
 					<orientation>horizontal</orientation>
 					<top>100</top>
 					<itemgap>-20</itemgap>
-					<control type="radiobutton" id="302">
+					<control type="togglebutton" id="302">
 						<description>SHIFT button</description>
 						<width>290</width>
 						<height>125</height>
-						<label>20178</label>
 						<onup>309</onup>
 						<ondown>303</ondown>
 						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-						<radioposy>5</radioposy>
-						<radiowidth>20</radiowidth>
-						<radioheight>20</radioheight>
+						<label>20178</label>
+						<altlabel>[B][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/B]</altlabel>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
