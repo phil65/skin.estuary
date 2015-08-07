@@ -20,19 +20,18 @@
 				<top>65</top>
 				<width>780</width>
 				<height>510</height>
-				<onup>10</onup>
-				<ondown>10</ondown>
-				<onleft>61</onleft>
-				<onright>61</onright>
-				<pagecontrol>61</pagecontrol>
+				<onup>20</onup>
+				<ondown>20</ondown>
+				<onleft>10</onleft>
+				<onright>10</onright>
 				<scrolltime>200</scrolltime>
 				<animation effect="slide" start="0,0" end="10,0" time="0" condition="!Control.IsVisible(61)">Conditional</animation>
-				<itemlayout height="95" width="780">
+				<itemlayout height="110" width="780">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>780</width>
-						<height>120</height>
+						<height>130</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="label">
@@ -50,7 +49,7 @@
 					<control type="label">
 						<description>Product ID Vendor ID</description>
 						<left>40</left>
-						<top>30</top>
+						<top>35</top>
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
@@ -62,7 +61,7 @@
 					<control type="label">
 						<description>class</description>
 						<left>40</left>
-						<top>50</top>
+						<top>60</top>
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
@@ -72,12 +71,12 @@
 						<textcolor>blue</textcolor>
 					</control>
 				</itemlayout>
-				<focusedlayout height="95" width="550">
+				<focusedlayout height="110" width="550">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>780</width>
-						<height>120</height>
+						<height>130</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 						<visible>!Control.HasFocus(20)</visible>
 					</control>
@@ -85,7 +84,7 @@
 						<left>0</left>
 						<top>0</top>
 						<width>780</width>
-						<height>120</height>
+						<height>130</height>
 						<texture border="40">buttons/button-theme-fo.png</texture>
 						<visible>Control.HasFocus(20)</visible>
 					</control>
@@ -104,7 +103,7 @@
 					<control type="label">
 						<description>Product ID Vendor ID</description>
 						<left>40</left>
-						<top>30</top>
+						<top>35</top>
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
@@ -116,7 +115,7 @@
 					<control type="label">
 						<description>class</description>
 						<left>40</left>
-						<top>50</top>
+						<top>60</top>
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
