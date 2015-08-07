@@ -9,8 +9,8 @@
             <control type="button" id="20000">
                 <description>Dummy button to get animations right (hide focusedlayout on animations)</description>
                 <include>HiddenObject</include>
-                <animation effect="fade" delay="300" time="0" start="100" end="0">Visible</animation>
-                <animation effect="fade" delay="300" time="0" start="100" end="0">WindowOpen</animation>
+                <animation effect="fade" delay="500" time="0" start="100" end="0">Visible</animation>
+                <animation effect="fade" delay="500" time="0" start="100" end="0">WindowOpen</animation>
                 <onclick>noop</onclick>
                 <visible>Control.IsVisible(51)</visible>
             </control>
