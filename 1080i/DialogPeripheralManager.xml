@@ -62,14 +62,14 @@
 					<control type="label">
 						<description>class</description>
 						<left>40</left>
-				2	<top>50</top>
+						<top>50</top>
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-			2		<textcolor>blue</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 				</itemlayout>
 				<focusedlayout height="95" width="550">
@@ -146,8 +146,7 @@
 				<top>65</top>
 				<include>SettingsItemCommon</include>
 				<width>300</width>
-					<label>186</label>
-
+				<label>186</label>
 				<align>center</align>
 				<onleft>20</onleft>
 				<onright>20</onright>
