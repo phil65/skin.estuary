@@ -20,7 +20,7 @@
                 <width>1920</width>
                 <height>135</height>
                 <align>left</align>
-                <itemgap>-50</itemgap>
+                <itemgap>-20</itemgap>
                 <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>
                 <onup>87</onup>
@@ -32,7 +32,7 @@
                         <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
                     </include>
                     <onclick>PlayerControl(Previous)</onclick>
-                    <visible>!VideoPlayer.Content(livetv) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
+                    <visible>!VideoPlayer.Content(livetv)</visible>
                 </control>
                 <control type="radiobutton" id="602">
                     <textureradioonfocus colordiffuse="button_focus">osd/fullscreen/buttons/play.png</textureradioonfocus>
@@ -47,14 +47,12 @@
                     <radioheight>80</radioheight>
                     <font>-</font>
                     <texturenofocus>-</texturenofocus>
-                    <radioposx>1</radioposx>
-                    <radioposy>0</radioposy>
                     <selected>Player.Paused</selected>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="radiobutton" id="603">
                     <include name="OSDButton">
-                        <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+                        <param name="texture" value="osd/fullscreen/buttons/stop.png"/>
                     </include>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
