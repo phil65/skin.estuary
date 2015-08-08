@@ -35,23 +35,6 @@
 			<itemgap>0</itemgap>
 			<usecontrolcoords>true</usecontrolcoords>
 		</control>
-		<control type="button">
-			<description>Close Window button</description>
-			<left>260</left>
-			<top>5</top>
-			<width>64</width>
-			<height>32</height>
-			<label>-</label>
-			<font>-</font>
-			<onclick>PreviousMenu</onclick>
-			<texturefocus>DialogClosebuttons/button-theme-fo.png</texturefocus>
-			<texturenofocus>DialogCloseButton.png</texturenofocus>
-			<onleft>2</onleft>
-			<onright>2</onright>
-			<onup>2</onup>
-			<ondown>2</ondown>
-			<visible>system.getbool(input.enablemouse)</visible>
-		</control>
 		<control type="button" id="1000">
 			<description>button template</description>
 			<left>2</left>
