@@ -160,7 +160,7 @@
                     <height>75</height>
                     <align>center</align>
                     <aligny>bottom</aligny>
-                    <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+                    <label>$INFO[Player.Time]$INFO[Player.Duration, / ][CR]$VAR[SeekLabel]</label>
                     <font>font30</font>
                     <shadowcolor>black</shadowcolor>
                     <textcolor>white</textcolor>
