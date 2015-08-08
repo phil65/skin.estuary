@@ -52,6 +52,7 @@
                     <onleft>9000</onleft>
                     <onup>9000</onup>
                     <onright>50</onright>
+                    <hitrect x="0" y="0" w="800" h="400" />
                     <visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)</visible>
                     <preloaditems>1</preloaditems>
                     <viewtype label="Poster">icon</viewtype>
