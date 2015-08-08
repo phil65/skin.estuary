@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<defaultcontrol>noop</defaultcontrol>
 	<controls>
 		<control type="group" id="1">
@@ -7,6 +9,7 @@
 				<left>30</left>
 				<top>870</top>
 				<visible>!VideoPlayer.Content(LiveTV) | [VideoPlayer.Content(LiveTV) + VideoPlayer.HasEpg]</visible>
+				<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
 				<control type="progress" id="1">
 					<description>ProgressbarCache</description>
 					<left>0</left>
@@ -33,7 +36,6 @@
 					<visible>!Window.IsVisible(videoosd)</visible>
 				</control>
 			</control>
-
 			<control type="image">
 				<description>Info Panel</description>
 				<left>30</left>
@@ -42,7 +44,6 @@
 				<height>190</height>
 				<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
 			</control>
-
 			<control type="image" id="1">
 				<description>TV Cover</description>
 				<right>30</right>
@@ -125,7 +126,6 @@
 					<align>justify</align>
 					<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
 				</control>
-
 				<control type="label" id="1">
 					<right>255</right>
 					<top>65</top>
@@ -138,7 +138,6 @@
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
-
 				<control type="label" id="1">
 					<right>255</right>
 					<top>65</top>
@@ -151,7 +150,6 @@
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(Movies)</visible>
 				</control>
-
 				<control type="label" id="1">
 					<right>255</right>
 					<top>65</top>
@@ -167,6 +165,7 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd)</visible>
+				<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
 				<control type="image">
 					<description>Menu Panel</description>
 					<left>30</left>
@@ -174,7 +173,6 @@
 					<width>1860</width>
 					<height>140</height>
 					<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-					<visible>!Window.IsVisible(videoosd)</visible>
 				</control>
 				<control type="label" id="1">
 					<description>Rating</description>
@@ -186,7 +184,6 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[VideoPlayer.Rating]</label>
-					<visible>!Window.IsVisible(videoosd)</visible>
 				</control>
 				<control type="label" id="1">
 					<description>Rating label</description>
@@ -198,7 +195,6 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>Rating</label>
-					<visible>!Window.IsVisible(videoosd)</visible>
 				</control>
 				<control type="label" id="1">
 					<description>Channel Group label</description>
@@ -226,7 +222,6 @@
 					<label>$INFO[Player.Time]$INFO[Player.Duration, / , •]  $INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, /] • $INFO[Player.FinishTime, Ends: ,]</label>
 					<visible>!Player.Seeking</visible>
 				</control>
-
 				<control type="grouplist" id="1">
 					<right>50</right>
 					<top>940</top>
