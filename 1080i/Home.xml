@@ -845,17 +845,49 @@
         <include>BottomBar</include>
         <control type="group">
             <include>OpenClose_FadeSlide_Left</include>
-            <control type="image">
-                <description>Menu Panel</description>
+            <control type="group">
+                <posx>40</posx>
+                <posy>100</posy>
+        <control type="radiobutton" id="900">
+            <width>118</width>
+            <height>110</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <onclick>RunScript(script.globalsearch)</onclick>
+            <font>-</font>
+            <texturefocus border="18,15,20,15">buttons/button-round-theme-fo.png</texturefocus>
+            <texturenofocus border="18,15,20,15">buttons/button-round-nofo.png</texturenofocus>
+            <radioposx>38</radioposx>
+            <radioposy>0</radioposy>
+            <radiowidth>40</radiowidth>
+            <radioheight>40</radioheight>
+            <textureradioonfocus colordiffuse="button_focus">icons/search.png</textureradioonfocus>
+            <textureradioonnofocus>icons/search.png</textureradioonnofocus>
+            <textureradioofffocus colordiffuse="button_focus">icons/search.png</textureradioofffocus>
+            <textureradiooffnofocus>icons/search.png</textureradiooffnofocus>
+        </control>
+                <control type="label">
+                    <posx>120</posx>
+                    <posy>30</posy>
+                    <height>30</height>
+                    <width>400</width>
+                    <font>font16</font>
+                    <label>Search libraries</label>
+                </control>
+            </control>
+            <control type="group">
                 <left>53</left>
-                <top>118</top>
+                <top>220</top>
+                            <control type="image">
+                <description>Menu Panel</description>
                 <width>384</width>
-                <height>752</height>
+                <height>650</height>
                 <texture border="2">dialogs/home-menu-bg.png</texture>
             </control>
+
             <control type="list" id="9000">
-                <left>54</left>
-                <top>119</top>
+                <left>1</left>
+                <top>1</top>
                 <width>382</width>
                 <height>800</height>
                 <pagecontrol>70</pagecontrol>
@@ -1060,6 +1092,7 @@
                         <visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
                     </item>
                 </content>
+            </control>
             </control>
             <control type="grouplist" id="700">
                 <orientation>horizontal</orientation>
