@@ -920,7 +920,7 @@
                                 <width>390</width>
                                 <height>69</height>
                                 <texture border="150,1,150,1">lists/focus.png</texture>
-                                <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
+                                <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus">Conditional</animation>
                             </control>
                             <control type="image">
                                 <left>-3</left>
@@ -936,7 +936,7 @@
                                 <width>68</width>
                                 <height>70</height>
                                 <texture colordiffuse="51FFFFFF" border="1">colors/black.png</texture>
-                                <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
+                                <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus">Conditional</animation>
                             </control>
                         </control>
                         <control type="image">
@@ -953,7 +953,7 @@
                             <height>70</height>
                             <texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
                             <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
-                            <visible>!Control.HasFocus(9000)</visible>
+                            <visible>!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus</visible>
                         </control>
                         <control type="label">
                             <left>74</left>

@@ -89,7 +89,7 @@
                     <posy>0</posy>
                     <width>1230</width>
                     <height>40</height>
-                    <label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[MusicPlayer.Title][/COLOR]</label>
+                    <label>$INFO[MusicPlayer.Artist]</label>
                     <font>font30_title</font>
                     <shadowcolor>black</shadowcolor>
                     <textcolor>button_focus</textcolor>
@@ -109,7 +109,7 @@
                     <posy>110</posy>
                     <width>1275</width>
                     <height>40</height>
-                    <label>$INFO[MusicPlayer.Artist]</label>
+                    <label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[MusicPlayer.Title][/COLOR]</label>
                     <font>font30_title</font>
                     <shadowcolor>black</shadowcolor>
                     <textcolor>grey</textcolor>
