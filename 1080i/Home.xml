@@ -923,32 +923,32 @@
                                 <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
                             </control>
                             <control type="image">
-                                <left>-10</left>
-                                <top>-4</top>
+                                <left>-5</left>
+                                <top>7</top>
                                 <width>70</width>
                                 <height>70</height>
-                                <texture>lists/arrow-right-fo.png</texture>
+                                <texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
                                 <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
                             </control>
                         </control>
                         <control type="image">
-                            <left>-10</left>
-                            <top>-4</top>
+                            <left>-5</left>
+                            <top>7</top>
                             <width>70</width>
                             <height>70</height>
-                            <texture>lists/arrow-right-nofo.png</texture>
+                            <texture>$INFO[ListItem.Art(thumb)]</texture>
                         </control>
                         <control type="image">
-                            <left>-10</left>
-                            <top>-4</top>
+                            <left>-5</left>
+                            <top>7</top>
                             <width>70</width>
                             <height>70</height>
-                            <texture>lists/arrow-right-colour-fo.png</texture>
+                                <texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
                             <animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
                             <visible>!Control.HasFocus(9000)</visible>
                         </control>
                         <control type="label">
-                            <left>50</left>
+                            <left>65</left>
                             <top>0</top>
                             <height>70</height>
                             <width>560</width>
@@ -964,7 +964,7 @@
                             <animation effect="slide" start="0,-13" end="0,0" time="300" delay="200">UnFocus</animation>
                         </control>
                         <control type="label">
-                            <left>50</left>
+                            <left>65</left>
                             <top>0</top>
                             <height>70</height>
                             <width>560</width>
@@ -978,7 +978,7 @@
                             <visible>IsEmpty(ListItem.Label2)</visible>
                         </control>
                         <control type="label">
-                            <left>50</left>
+                            <left>65</left>
                             <top>17</top>
                             <height>70</height>
                             <width>560</width>
@@ -1002,7 +1002,7 @@
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
                         <control type="label">
-                            <left>50</left>
+                            <left>65</left>
                             <top>0</top>
                             <height>70</height>
                             <width>560</width>
@@ -1015,11 +1015,11 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="image">
-                            <left>-10</left>
-                            <top>-4</top>
+                            <left>-5</left>
+                            <top>7</top>
                             <width>70</width>
                             <height>70</height>
-                            <texture>$INFO[ListItem.Property(nofocus)]</texture>
+                            <texture>$INFO[ListItem.Art(thumb)]</texture>
                         </control>
                     </itemlayout>
                     <content>
@@ -1027,77 +1027,67 @@
                             <label>[B]Now playing...[/B]</label>
                             <onclick condition="Player.HasVideo">Fullscreen</onclick>
                             <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/dvd.png</thumb>
                             <visible>Player.HasMedia</visible>
                         </item>
                         <item id="10">
                             <label>31954</label>
-                            <label2>Total: $INFO[Window(home).Property(movies.Count),, •] Watched: $INFO[Window(home).Property(movies.watched)]</label2>
+                            <label2>Watched: $INFO[Window(home).Property(movies.watched)] / $INFO[Window(home).Property(movies.Count)]</label2>
                             <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/video.png</thumb>
                             <visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
                         </item>
                         <item id="11">
                             <label>31955</label>
-                            <label2>Episodes: $INFO[Window(home).Property(episodes.Count),, •] Watched: $INFO[Window(home).Property(episodes.watched)]</label2>
+                            <label2>Watched: $INFO[Window(home).Property(episodes.watched)] / $INFO[Window(home).Property(episodes.Count)]</label2>
                             <onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/livetv.png</thumb>
                             <visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
                         </item>
                         <item id="3">
                             <label>31956</label>
                             <label2>Artists: $INFO[Window(Home).Property(Music.ArtistsCount)]  •  $LOCALIZE[134]: $INFO[Window(Home).Property(Music.SongsCount)]</label2>
                             <onclick>ActivateWindow(Music)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/music.png</thumb>
                             <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
                         </item>
                         <item id="12">
                             <label>31952</label>
                             <label2>$INFO[Pvr.BackendName]</label2>
                             <onclick>ActivateWindow(TVChannels)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/livetv.png</thumb>
                             <visible>PVR.HasTVChannels</visible>
                         </item>
                         <item id="13">
                             <label>31960</label>
                             <label2>$INFO[Pvr.BackendName]</label2>
                             <onclick>ActivateWindow(RadioChannels)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/livetv.png</thumb>
                             <visible>PVR.HasRadioChannels</visible>
                         </item>
                         <item id="1">
                             <label>$LOCALIZE[24001]</label>
                             <onclick>ActivateWindow(1100)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/addons.png</thumb>
                             <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
                         </item>
                         <item id="4">
                             <label>31951</label>
                             <onclick>ActivateWindow(Pictures)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/pictures.png</thumb>
                             <visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
                         </item>
                         <item id="2">
                             <label>31953</label>
                             <onclick>ActivateWindow(Videos,root)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/videoaddons.png</thumb>
                             <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
                         </item>
                         <item id="7">
                             <label>31950</label>
                             <label2>Provided by $INFO[Window(Weather).Property(WeatherProvider)]</label2>
                             <onclick>ActivateWindow(Weather)</onclick>
-                            <property name="nofocus">lists/arrow-right-nofo.png</property>
-                            <property name="focus">lists/arrow-right-fo.png</property>
+                            <thumb>icons/settings/weather.png</thumb>
                             <visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
                         </item>
                     </content>
