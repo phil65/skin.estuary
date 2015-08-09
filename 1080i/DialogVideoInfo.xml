@@ -16,7 +16,7 @@
 					<ondown>5000</ondown>
 					<onup>5000</onup>
 					<control type="button" id="13">
-						<width>1100</width>
+						<width>1070</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -30,7 +30,7 @@
 					</control>
 					<control type="button" id="131">
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
-						<width>1100</width>
+						<width>1070</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -43,7 +43,7 @@
 						<visible>!IsEmpty(ListItem.Writer)</visible>
 					</control>
 					<control type="label" id="135">
-						<width>1100</width>
+						<width>1070</width>
 						<height>90</height>
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -57,7 +57,7 @@
 						<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.TagLine)</visible>
 					<control type="button" id="138">
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
-						<width>1100</width>
+						<width>1070</width>
 						<height>235</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -75,7 +75,7 @@
 						<control type="textbox" id="800">
 							<posx>40</posx>
 							<posy>20</posy>
-							<width>1020</width>
+							<width>990</width>
 							<height>190</height>
 							<align>left</align>
 							<label fallback="31003">[B]$INFO[ListItem.TagLine,,[CR]][/B]$INFO[ListItem.Plot]</label>
