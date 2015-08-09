@@ -44,9 +44,9 @@
             <radioposy>0</radioposy>
             <radiowidth>40</radiowidth>
             <radioheight>40</radioheight>
-            <textureradioonfocus colordiffuse="button_focus">$PARAM[icon]</textureradioonfocus>
+            <textureradioonfocus>$PARAM[icon]</textureradioonfocus>
             <textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
-            <textureradioofffocus colordiffuse="button_focus">$PARAM[icon]</textureradioofffocus>
+            <textureradioofffocus>$PARAM[icon]</textureradioofffocus>
             <textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
         </control>
     </include>
