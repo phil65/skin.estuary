@@ -294,33 +294,33 @@
                     <param name="item7_vis" value="False" />
                 </include>
                 <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/executable/"/>
-                    <param name="widget_header" value="$LOCALIZE[1043]"/>
-                    <param name="widget_target" value="programs"/>
+                    <param name="content_path" value="addons://sources/video/"/>
+                    <param name="widget_header" value="$LOCALIZE[1037]"/>
+                    <param name="widget_target" value="videos"/>
                     <param name="list_id" value="8100"/>
                     <param name="onup_id" value="8900"/>
                     <param name="ondown_id" value="8200"/>
                 </include>
                 <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/video/"/>
-                    <param name="widget_header" value="$LOCALIZE[20244]"/>
-                    <param name="widget_target" value="files"/>
+                    <param name="content_path" value="addons://sources/audio/"/>
+                    <param name="widget_header" value="$LOCALIZE[1038]"/>
+                    <param name="widget_target" value="music"/>
                     <param name="list_id" value="8200"/>
                     <param name="onup_id" value="8100"/>
                     <param name="ondown_id" value="8300"/>
                 </include>
                 <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/video/"/>
-                    <param name="widget_header" value="$LOCALIZE[1037]"/>
-                    <param name="widget_target" value="videos"/>
+                    <param name="content_path" value="addons://sources/executable/"/>
+                    <param name="widget_header" value="$LOCALIZE[1043]"/>
+                    <param name="widget_target" value="programs"/>
                     <param name="list_id" value="8300"/>
                     <param name="onup_id" value="8200"/>
                     <param name="ondown_id" value="8400"/>
                 </include>
                 <include name="WidgetListSquare">
-                    <param name="content_path" value="addons://sources/audio/"/>
-                    <param name="widget_header" value="$LOCALIZE[1038]"/>
-                    <param name="widget_target" value="music"/>
+                    <param name="content_path" value="androidapps://"/>
+                    <param name="widget_header" value="$LOCALIZE[20244]"/>
+                    <param name="widget_target" value="programs"/>
                     <param name="list_id" value="8400"/>
                     <param name="onup_id" value="8300"/>
                     <param name="ondown_id" value="8500"/>
