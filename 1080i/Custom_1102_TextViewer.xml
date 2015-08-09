@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window>
+<window type="dialog" id="1102">
     <defaultcontrol always="true">3000</defaultcontrol>
     <include>Animation_DialogPopupOpenClose</include>
     <controls>
@@ -12,7 +12,7 @@
                 <param name="DialogHeaderLabel" value="$LOCALIZE[13406]" />
                 <param name="DialogHeaderId" value="1" />
             </include>
-            <control type="textbox" id="5">
+            <control type="textbox" id="2000">
                 <posx>40</posx>
                 <posy>80</posy>
                 <width>1320</width>
@@ -20,6 +20,7 @@
                 <font>font13</font>
                 <shadowcolor>black</shadowcolor>
                 <pagecontrol>3000</pagecontrol>
+                <label>$INFO[Window(home).Property(TextViewer_Text)]</label>
             </control>
             <control type="scrollbar" id="3000">
                 <include>InvisibleObject</include>
@@ -33,7 +34,7 @@
             <width>48</width>
             <height>20</height>
             <texture colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
-            <visible>Control.IsVisible(3000) + IntegerGreaterThan(Container(5).CurrentPage,1)</visible>
+            <visible>Control.IsVisible(3000) + IntegerGreaterThan(Container(2000).CurrentPage,1)</visible>
             <animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
         </control>
         <control type="image">
@@ -42,7 +43,7 @@
             <width>48</width>
             <height>20</height>
             <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
-            <visible>Control.IsVisible(3000) + !StringCompare(Container(5).CurrentPage,Container(5).NumPages)</visible>
+            <visible>Control.IsVisible(3000) + !StringCompare(Container(2000).CurrentPage,Container(2000).NumPages)</visible>
             <animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
         </control>
     </controls>

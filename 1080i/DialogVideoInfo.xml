@@ -55,11 +55,28 @@
 					<control type="group" id="140">
 						<height>255</height>
 						<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.TagLine)</visible>
+					<control type="button" id="138">
+						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
+						<width>1100</width>
+						<height>235</height>
+						<textoffsetx>40</textoffsetx>
+						<textoffsety>20</textoffsety>
+						<aligny>bottom</aligny>
+						<font>font13</font>
+						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+						<label></label>
+						<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+						<onclick>ActivateWindow(1102)</onclick>
+						<onup>131</onup>
+						<ondown>5000</ondown>
+						<visible>!IsEmpty(ListItem.Plot)</visible>
+					</control>
 						<control type="textbox" id="800">
-							<posx>20</posx>
+							<posx>40</posx>
 							<posy>20</posy>
-							<width>1050</width>
-							<height>210</height>
+							<width>1020</width>
+							<height>190</height>
 							<align>left</align>
 							<label fallback="31003">[B]$INFO[ListItem.TagLine,,[CR]][/B]$INFO[ListItem.Plot]</label>
 							<font>font13</font>
@@ -225,7 +242,7 @@
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
-					<onup>131</onup>
+					<onup>138</onup>
 					<ondown>50</ondown>
 					<itemgap>-20</itemgap>
 					<orientation>horizontal</orientation>
