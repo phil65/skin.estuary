@@ -1112,7 +1112,7 @@
                 <onright>2000</onright>
                 <include name="BottomMainMenuItem">
                     <param name="control_id" value="801" />
-                    <param name="onclick" value="RunScript(script.globalsearch)" />
+                    <param name="onclick" value="ActivateWindow(filemanager)" />
                     <param name="icon" value="icons/filemanager.png" />
                 </include>
                 <include name="BottomMainMenuItem">
