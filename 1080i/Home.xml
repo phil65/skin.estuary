@@ -891,9 +891,11 @@
                 <top>224</top>
                 <control type="image">
                     <description>Menu Panel</description>
-                    <width>384</width>
-                    <height>631</height>
-                    <texture border="2">dialogs/home-menu-bg.png</texture>
+                    <posx>-20</posx>
+                    <posy>-20</posy>
+                    <width>424</width>
+                    <height>671</height>
+                    <texture border="22">dialogs/home-menu-bg.png</texture>
                 </control>
                 <control type="list" id="9000">
                     <left>1</left>
