@@ -20,12 +20,12 @@
                 <include>Vis_FadeSlide_Right</include>
                 <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
                 <control type="image">
-                    <right>110</right>
-                    <top>182</top>
-                    <width>469</width>
-                    <height>580</height>
+                    <right>90</right>
+                    <top>162</top>
+                    <width>509</width>
+                    <height>746</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        <texture border="22">dialogs/info-bg.png</texture>
                 </control>
                 <control type="textbox">
                     <right>130</right>
@@ -47,21 +47,19 @@
                     <label>Flags Placeholder</label>
                 </control>
                 <control type="image">
-                    <right>110</right>
+                    <right>113</right>
                     <top>184</top>
-                    <width>469</width>
-                    <height>704</height>
+                    <width>463</width>
+                    <height>700</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>300</fadetime>
-                    <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                    <bordersize>4</bordersize>
-                    <texture border="4" background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(fanart)]</texture>
                 </control>
                 <control type="image">
-                    <right>110</right>
-                    <top>834</top>
-                    <width>469</width>
-                    <height>50</height>
+                    <right>113</right>
+                    <top>838</top>
+                    <width>463</width>
+                    <height>46</height>
                     <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 </control>
                 <control type="image">
