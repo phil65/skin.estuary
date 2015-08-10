@@ -1036,7 +1036,7 @@
                             <label>[B]Now playing...[/B]</label>
                             <onclick condition="Player.HasVideo">Fullscreen</onclick>
                             <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
-                            <thumb>icons/home/dvd.png</thumb>
+                            <thumb>icons/home/now-playing.png</thumb>
                             <visible>Player.HasMedia</visible>
                         </item>
                         <item id="10">
