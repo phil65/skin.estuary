@@ -61,6 +61,7 @@
                 <effect type="slide" end="0,20" time="60" tween="sine" />
                 <effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
             </animation>
+            <top>-2</top>
             <left>20</left>
             <include>OpenClose_FadeSlide_Right</include>
             <control type="group" id="5000">
@@ -71,7 +72,7 @@
                     <top>76</top>
                     <height>925</height>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <itemgap>0</itemgap>
+                    <itemgap>-2</itemgap>
                     <include name="SubMenu">
                         <param name="list_id" value="5900"/>
                         <param name="ondown_id" value="5100"/>
@@ -402,17 +403,17 @@
                 <control type="group">
                     <height>408</height>
                     <control type="image">
-                        <top>40</top>
+                        <top>38</top>
                         <left>500</left>
                         <width>650</width>
-                        <height>350</height>
+                        <height>352</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
-                        <top>40</top>
+                        <top>38</top>
                         <left>1170</left>
                         <width>650</width>
-                        <height>350</height>
+                        <height>352</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="group">
@@ -603,7 +604,7 @@
             </control>
             <control type="grouplist" id="14001">
                 <orientation>vertical</orientation>
-                <top>76</top>
+                <top>74</top>
                 <height>925</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <visible>Container(9000).HasFocus(14)</visible>
@@ -627,7 +628,7 @@
                         <top>730</top>
                         <left>500</left>
                         <width>1300</width>
-                        <height>156</height>
+                        <height>166</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
@@ -676,8 +677,8 @@
                     <control type="textbox">
                         <left>515</left>
                         <width>1265</width>
-                        <top>735</top>
-                        <height>145</height>
+                        <top>734</top>
+                        <height>148</height>
                         <align>justify</align>
                         <aligny>center</aligny>
                         <label>$INFO[VideoPlayer.Plot]</label>
@@ -730,12 +731,12 @@
                 <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="group">
                     <description>Weather info</description>
-                    <height>380</height>
+                    <height>383</height>
                     <control type="image">
-                        <top>42</top>
+                        <top>38</top>
                         <left>500</left>
                         <width>1320</width>
-                        <height>350</height>
+                        <height>352</height>
                         <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="image">
@@ -847,7 +848,7 @@
             <include>OpenClose_FadeSlide_Left</include>
             <control type="radiobutton" id="900">
                 <posx>37</posx>
-                <posy>100</posy>
+                <posy>94</posy>
                 <width>420</width>
                 <height>110</height>
                 <align>left</align>
@@ -872,7 +873,7 @@
             </control>
             <control type="fadelabel">
                 <posx>77</posx>
-                <posy>100</posy>
+                <posy>91</posy>
                 <width>520</width>
                 <height>110</height>
                 <align>left</align>
@@ -887,18 +888,18 @@
             </control>
             <control type="group">
                 <left>53</left>
-                <top>215</top>
+                <top>224</top>
                 <control type="image">
                     <description>Menu Panel</description>
                     <width>384</width>
-                    <height>650</height>
+                    <height>631</height>
                     <texture border="2">dialogs/home-menu-bg.png</texture>
                 </control>
                 <control type="list" id="9000">
                     <left>1</left>
                     <top>1</top>
                     <width>382</width>
-                    <height>800</height>
+                    <height>631</height>
                     <pagecontrol>70</pagecontrol>
                     <onright>2000</onright>
                     <onup>900</onup>
@@ -1105,7 +1106,7 @@
                 <orientation>horizontal</orientation>
                 <itemgap>-17</itemgap>
                 <left>36</left>
-                <top>872</top>
+                <top>878</top>
                 <onup>SetFocus(9000,99)</onup>
                 <onup>9000</onup>
                 <ondown>900</ondown>
