@@ -393,7 +393,7 @@
                     </itemlayout>
                 </control>
                 <control type="group">
-                    <animation effect="slide" start="0,0" end="500,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)">conditional</animation>
+                    <animation effect="slide" start="0,0" end="500,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">conditional</animation>
                     <control type="scrollbar" id="60">
                         <left>720</left>
                         <top>0</top>
