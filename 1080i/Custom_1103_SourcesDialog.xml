@@ -14,18 +14,18 @@
                 <param name="DialogHeaderLabel" value="Add media sources" />
                 <param name="DialogHeaderId" value="" />
             </include>
-                        <control type="textbox">
+            <control type="textbox">
                 <left>2</left>
                 <top>307</top>
-                        <width>460</width>
-                        <height>300</height>
-                        <font>font13</font>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>Some help text. Some help text. Some help text. Some help text. Some help text. Some help text. Some help text. </label>
-                    </control>
+                <width>460</width>
+                <height>300</height>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>Some help text. Some help text. Some help text. Some help text. Some help text. Some help text. Some help text.</label>
+            </control>
             <control type="list" id="5000">
                 <left>2</left>
                 <top>107</top>
