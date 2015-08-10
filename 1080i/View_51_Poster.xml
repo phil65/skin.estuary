@@ -88,20 +88,20 @@
                     </focusedlayout>
                 </control>
                 <control type="image">
-                    <right>110</right>
-                    <top>395</top>
-                    <width>1192</width>
-                    <height>70</height>
+                    <right>90</right>
+                    <top>375</top>
+                    <width>1232</width>
+                    <height>110</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    <texture border="22">dialogs/info-bg.png</texture>
                 </control>
                 <control type="image">
-                    <right>110</right>
-                    <top>475</top>
-                    <width>1192</width>
-                    <height>232</height>
+                    <right>90</right>
+                    <top>455</top>
+                    <width>1232</width>
+                    <height>272</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    <texture border="22">dialogs/info-bg.png</texture>
                 </control>
                 <control type="list" id="5000">
                     <right>130</right>
@@ -184,50 +184,50 @@
                     <left>645</left>
                     <top>480</top>
                     <height>200</height>
-                <control type="label">
-                    <width>1160</width>
-                    <height>40</height>
-                    <label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR]]</label>
-                    <font>font13</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <scroll>false</scroll>
-                    <align>left</align>
-                    <visible>!IsEmpty(ListItem.Genre)</visible>
+                    <control type="label">
+                        <width>1160</width>
+                        <height>40</height>
+                        <label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR]]</label>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <visible>!IsEmpty(ListItem.Genre)</visible>
+                    </control>
+                    <control type="label">>
+                        <width>1160</width>
+                        <height>40</height>
+                        <label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <visible>!IsEmpty(ListItem.Director)</visible>
+                    </control>
+                    <control type="label">>
+                        <width>1160</width>
+                        <height>40</height>
+                        <label>$INFO[ListItem.Season,,[COLOR button_focus] Seasons[/COLOR]]$INFO[ListItem.Episode, - ,[COLOR button_focus] Episodes[/COLOR]]</label>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <visible>!IsEmpty(ListItem.Season)</visible>
+                    </control>
+                    <control type="textbox">
+                        <width>1150</width>
+                        <height max="200">auto</height>
+                        <autoscroll time="3000" delay="3000" repeat="5000">true</autoscroll>
+                        <label>$INFO[ListItem.Plot]</label>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <align>left</align>
+                    </control>
                 </control>
-                <control type="label">>
-                    <width>1160</width>
-                    <height>40</height>
-                    <label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
-                    <font>font13</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <scroll>false</scroll>
-                    <align>left</align>
-                    <visible>!IsEmpty(ListItem.Director)</visible>
-                </control>
-                <control type="label">>
-                    <width>1160</width>
-                    <height>40</height>
-                    <label>$INFO[ListItem.Season,,[COLOR button_focus] Seasons[/COLOR]]$INFO[ListItem.Episode, - ,[COLOR button_focus] Episodes[/COLOR]]</label>
-                    <font>font13</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <scroll>false</scroll>
-                    <align>left</align>
-                    <visible>!IsEmpty(ListItem.Season)</visible>
-                </control>
-                <control type="textbox">
-                    <width>1150</width>
-                    <height max="200">auto</height>
-                    <autoscroll time="3000" delay="3000" repeat="5000">true</autoscroll>
-                    <label>$INFO[ListItem.Plot]</label>
-                    <font>font13</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <align>left</align>
-                </control>
-            </control>
             </control>
         </control>
     </include>
