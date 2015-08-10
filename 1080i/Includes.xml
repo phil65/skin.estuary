@@ -779,7 +779,7 @@
             <texture border="1">frame/InfoBarBottom.png</texture>
         </control>
         <control type="group">
-            <visible>Window.IsActive(videos) | Window.IsActive(addonbrowser) | Window.IsActive(musiclibrary) | Window.IsActive(programs) | Window.IsActive(musicfiles) | Window.IsActive(pictures)</visible>
+            <visible>Window.IsMedia</visible>
             <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
             <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
             <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
@@ -819,7 +819,7 @@
                 <visible>!ControlGroup(9000).HasFocus</visible>
             </control>
         </control>
-        <control type="group">
+ <!--        <control type="group">
             <visible>!Window.isActive(home) + Player.HasMedia</visible>
             <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
             <control type="image">
@@ -841,7 +841,7 @@
                 <shadowcolor>text_shadow</shadowcolor>
                 <label>$INFO[Player.Time,[COLOR button_focus],[/COLOR] - ]$INFO[Player.Title]</label>
             </control>
-        </control>
+        </control> -->
         <control type="group">
             <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
             <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
