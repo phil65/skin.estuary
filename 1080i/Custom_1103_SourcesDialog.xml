@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1103">
+    <defaultcontrol always="true">5000</defaultcontrol>
+    <coordinates>
+        <left>710</left>
+        <top>220</top>
+    </coordinates>
+    <include>Animation_DialogPopupOpenClose</include>
+    <controls>
+        <control type="group">
+            <include name="DialogBackgroundCommons">
+                <param name="DialogBackgroundWidth" value="500" />
+                <param name="DialogBackgroundHeight" value="550" />
+                <param name="DialogHeaderLabel" value="Add media sources" />
+                <param name="DialogHeaderId" value="" />
+            </include>
+                        <control type="textbox">
+                <left>2</left>
+                <top>307</top>
+                        <width>460</width>
+                        <height>300</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>Some help text. Some help text. Some help text. Some help text. Some help text. Some help text. Some help text. </label>
+                    </control>
+            <control type="list" id="5000">
+                <left>2</left>
+                <top>107</top>
+                <width>500</width>
+                <height>660</height>
+                <onup>5000</onup>
+                <ondown>5000</ondown>
+                <onleft>99</onleft>
+                <onright>61</onright>
+                <pagecontrol>61</pagecontrol>
+                <scrolltime>200</scrolltime>
+                <itemlayout height="70" width="500">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>500</width>
+                        <height>70</height>
+                        <texture border="40">lists/separator.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>0</top>
+                        <width>460</width>
+                        <height>70</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="70" width="500">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>500</width>
+                        <height>70</height>
+                        <texture border="40">lists/separator.png</texture>
+                        <visible>!Control.HasFocus(5000)</visible>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>500</width>
+                        <height>70</height>
+                        <texture border="150,1,150,1">lists/focus.png</texture>
+                        <visible>Control.HasFocus(5000)</visible>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>0</top>
+                        <width>460</width>
+                        <height>70</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item>
+                        <label>Local video sources</label>
+                        <onclick>ActivateWindow(Videos,Files,return)</onclick>
+                    </item>
+                    <item>
+                        <label>Local audio sources</label>
+                        <onclick>ActivateWindow(musicfiles,return)</onclick>
+                    </item>
+                    <item>
+                        <label>uPnP sources</label>
+                        <onclick>Notification(dummy item,blabla)</onclick>
+                    </item>
+                </content>
+            </control>
+        </control>
+    </controls>
+</window>
