@@ -611,25 +611,25 @@
                 <include>Vis_FadeSlide_Right_Delayed</include>
                 <control type="group">
                     <control type="image">
-                        <top>40</top>
-                        <left>500</left>
-                        <width>1300</width>
-                        <height>540</height>
-                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        <top>20</top>
+                        <left>480</left>
+                        <width>1340</width>
+                        <height>580</height>
+                        <texture border="22">dialogs/info-bg.png</texture>
                     </control>
                     <control type="image">
-                        <top>610</top>
-                        <left>500</left>
-                        <width>1300</width>
-                        <height>90</height>
-                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        <top>590</top>
+                        <left>480</left>
+                        <width>1340</width>
+                        <height>130</height>
+                        <texture border="22">dialogs/info-bg.png</texture>
                     </control>
                     <control type="image">
-                        <top>730</top>
-                        <left>500</left>
-                        <width>1300</width>
-                        <height>166</height>
-                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        <top>710</top>
+                        <left>480</left>
+                        <width>1340</width>
+                        <height>206</height>
+                        <texture border="22">dialogs/info-bg.png</texture>
                     </control>
                     <control type="image">
                         <top>85</top>
