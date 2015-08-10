@@ -543,7 +543,7 @@
                 <include name="WidgetListSquare">
                     <param name="content_path" value="pvr://channels/tv/All channels/"/>
                     <param name="widget_header" value="Recent recordings"/>
-                    <param name="widget_target" value="files"/>
+                    <param name="widget_target" value="pvr"/>
                     <param name="list_id" value="12100"/>
                     <param name="onup_id" value="12900"/>
                     <param name="ondown_id" value="12200"/>
@@ -551,7 +551,7 @@
                 <include name="WidgetListSquare">
                     <param name="content_path" value="pvr://channels/tv/All channels/"/>
                     <param name="widget_header" value="Favourite channels"/>
-                    <param name="widget_target" value="files"/>
+                    <param name="widget_target" value="pvr"/>
                     <param name="list_id" value="12200"/>
                     <param name="onup_id" value="12100"/>
                     <param name="ondown_id" value="20001"/>
