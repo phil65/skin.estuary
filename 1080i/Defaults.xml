@@ -115,6 +115,17 @@
         <aligny>center</aligny>
         <pulseonselect>no</pulseonselect>
     </default>
+    <default type="scrollbar">
+        <width>12</width>
+        <height>702</height>
+        <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
+        <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
+        <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
+        <textureslidernib>-</textureslidernib>
+        <textureslidernibfocus>-</textureslidernibfocus>
+        <showonepage>false</showonepage>
+        <orientation>vertical</orientation>
+    </default>
     <default type="selectbutton">
         <width>300</width>
         <height>50</height>

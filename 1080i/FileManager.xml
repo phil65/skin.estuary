@@ -5,10 +5,10 @@
         <include>DefaultBackground</include>
         <control type="image">
             <description>Dialog Header image</description>
-            <left>912</left>
-            <top>492</top>
-            <width>96</width>
-            <height>96</height>
+            <left>915</left>
+            <top>495</top>
+            <width>90</width>
+            <height>90</height>
             <texture colordiffuse="button_focus" border="2">icons/file-manager/left-right.png</texture>
             <animation effect="fade" start="0" end="100" time="300" delay="100">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="160">WindowClose</animation>
@@ -140,9 +140,6 @@
                 <top>0</top>
                 <width>12</width>
                 <height>702</height>
-                <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
-                <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
-                <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
                 <animation effect="zoom" start="100,100" end="150,100" time="250" center="auto" tween="cubic" easing="inout">Focus</animation>
                 <animation effect="zoom" start="150,100" end="100,100" time="125" center="auto" tween="cubic" easing="inout">UnFocus</animation>
                 <textureslidernib>-</textureslidernib>
@@ -281,9 +278,6 @@
                 <top>0</top>
                 <width>12</width>
                 <height>702</height>
-                <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
-                <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
-                <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
                 <animation effect="zoom" start="100,100" end="150,100" time="250" center="auto" tween="cubic" easing="inout">Focus</animation>
                 <animation effect="zoom" start="150,100" end="100,100" time="125" center="auto" tween="cubic" easing="inout">UnFocus</animation>
                 <textureslidernib>-</textureslidernib>
