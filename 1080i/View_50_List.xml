@@ -397,22 +397,25 @@
                         </control>
                     </itemlayout>
                 </control>
-                <control type="scrollbar" id="60">
-                    <left>720</left>
-                    <top>0</top>
-                    <width>12</width>
-                    <height>706</height>
-                    <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
-                    <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
-                    <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
-                    <animation effect="zoom" start="100,100" end="150,100" time="250" center="auto" tween="cubic" easing="inout">Focus</animation>
-                    <animation effect="zoom" start="150,100" end="100,100" time="125" center="auto" tween="cubic" easing="inout">UnFocus</animation>
-                    <textureslidernib>-</textureslidernib>
-                    <textureslidernibfocus>-</textureslidernibfocus>
-                    <onleft>50</onleft>
-                    <onright>50</onright>
-                    <showonepage>false</showonepage>
-                    <orientation>vertical</orientation>
+                <control type="group">
+                    <animation effect="slide" start="0,0" end="500,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)">conditional</animation>
+                    <control type="scrollbar" id="60">
+                        <left>720</left>
+                        <top>0</top>
+                        <width>12</width>
+                        <height>706</height>
+                        <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
+                        <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
+                        <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
+                        <animation effect="zoom" start="100,100" end="150,100" time="250" center="auto" tween="cubic" easing="inout">Focus</animation>
+                        <animation effect="zoom" start="150,100" end="100,100" time="125" center="auto" tween="cubic" easing="inout">UnFocus</animation>
+                        <textureslidernib>-</textureslidernib>
+                        <textureslidernibfocus>-</textureslidernibfocus>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <showonepage>false</showonepage>
+                        <orientation>vertical</orientation>
+                    </control>
                 </control>
             </control>
         </control>
