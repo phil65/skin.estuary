@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">450</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <include>Animation_DialogPopupOpenClose</include>
+    <coordinates>
+        <system>1</system>
+        <left>0</left>
+        <top>0</top>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <left>360</left>
+            <top>100</top>
+            <include name="DialogBackgroundCommons">
+                <param name="DialogBackgroundWidth" value="1300" />
+                <param name="DialogBackgroundHeight" value="920" />
+                <param name="DialogHeaderLabel" value="-" />
+                <param name="DialogHeaderId" value="411" />
+            </include>
+            <control type="group">
+                <!-- <control type="label" id="411">
+                     <description>header label</description>
+                     <left>40</left>
+                     <top>20</top>
+                     <width>595</width>
+                     <height>30</height>
+                     <font>font13_title</font>
+                     <label>1023</label>
+                     <align>center</align>
+                     <aligny>center</aligny>
+                     <textcolor>selected</textcolor>
+                     <shadowcolor>black</shadowcolor>
+                     </control> -->
+                <control type="label" id="412">
+                    <description>Path label</description>
+                    <left>40</left>
+                    <top>870</top>
+                    <width>595</width>
+                    <height>30</height>
+                    <font>font13</font>
+                    <haspath>true</haspath>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+                <control type="grouplist" id="9000">
+                    <left>980</left>
+                    <top>100</top>
+                    <width>400</width>
+                    <height>400</height>
+                    <itemgap>5</itemgap>
+                    <orientation>vertical</orientation>
+                    <onleft>450</onleft>
+                    <onright>450</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <include name="DefaultDialogButton">
+                        <param name="id" value="413" />
+                        <param name="label" value="186" />
+                    </include>
+                    <include name="DefaultDialogButton">
+                        <param name="id" value="414" />
+                        <param name="label" value="222" />
+                    </include>
+                    <include name="DefaultDialogButton">
+                        <param name="id" value="415" />
+                        <param name="label" value="119" />
+                    </include>
+                    <include name="DefaultDialogButton">
+                        <param name="id" value="416" />
+                        <param name="label" value="749" />
+                    </include>
+                </control>
+                <control type="image">
+                    <left>685</left>
+                    <top>400</top>
+                    <width>221</width>
+                    <height>221</height>
+                    <texture border="5">button-nofocus.png</texture>
+                </control>
+                <control type="image">
+                    <left>690</left>
+                    <top>405</top>
+                    <width>211</width>
+                    <height>211</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <visible>!SubString(Control.GetLabel(416),*)</visible>
+                </control>
+                <control type="image">
+                    <left>250</left>
+                    <top>465</top>
+                    <width>410</width>
+                    <height>200</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true" flipx="true">$INFO[ListItem.Icon]</texture>
+                    <visible>SubString(Control.GetLabel(416),*)</visible>
+                </control>
+                <control type="panel" id="450">
+                    <left>20</left>
+                    <top>90</top>
+                    <width>940</width>
+                    <height>562</height>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
+                    <onup>450</onup>
+                    <ondown>450</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="70" width="1000">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1000</width>
+                            <height>71</height>
+                            <texture border="40">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>10</left>
+                            <top>10</top>
+                            <width>50</width>
+                            <height>50</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>75</left>
+                            <top>0</top>
+                            <width>560</width>
+                            <height>40</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <selectedcolor>green</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="70" width="1000">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1000</width>
+                            <height>71</height>
+                            <visible>!Control.HasFocus(450)</visible>
+                            <texture border="40">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1000</width>
+                            <height>71</height>
+                            <visible>Control.HasFocus(450)</visible>
+                            <texture border="5">lists/focus.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>10</left>
+                            <top>10</top>
+                            <width>50</width>
+                            <height>50</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>75</left>
+                            <top>0</top>
+                            <width>560</width>
+                            <height>40</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <selectedcolor>green</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="panel" id="451">
+                    <left>20</left>
+                    <top>90</top>
+                    <width>1000</width>
+                    <height>562</height>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
+                    <onup>451</onup>
+                    <ondown>451</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="70" width="1000">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1000</width>
+                            <height>71</height>
+                            <texture border="40">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>10</left>
+                            <top>10</top>
+                            <width>50</width>
+                            <height>50</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>75</left>
+                            <top>0</top>
+                            <width>560</width>
+                            <height>40</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <selectedcolor>green</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="70" width="1000">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1000</width>
+                            <height>71</height>
+                            <visible>!Control.HasFocus(451)</visible>
+                            <texture border="40">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1000</width>
+                            <height>71</height>
+                            <visible>Control.HasFocus(451)</visible>
+                            <texture border="5">lists/focus.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>10</left>
+                            <top>10</top>
+                            <width>50</width>
+                            <height>50</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>75</left>
+                            <top>0</top>
+                            <width>560</width>
+                            <height>40</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <selectedcolor>green</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>640</left>
+                    <top>90</top>
+                    <width>25</width>
+                    <height>561</height>
+                    <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                    <textureslidernib>ScrollBarNib.png</textureslidernib>
+                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                    <onleft>450</onleft>
+                    <onright>9000</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                </control>
+                <control type="label">
+                    <description>Page label</description>
+                    <left>0</left>
+                    <top>870</top>
+                    <width>1260</width>
+                    <height>30</height>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <textcolor>grey</textcolor>
+                    <font>font12</font>
+                    <label>([COLOR=button_focus]$INFO[Container(450).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=button_focus]$INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages][/COLOR])</label>
+                    <wrapmultiline>true</wrapmultiline>
+                    <visible>!Control.IsVisible(451)</visible>
+                </control>
+                <control type="label">
+                    <description>Page label</description>
+                    <left>0</left>
+                    <top>870</top>
+                    <width>1260</width>
+                    <height>30</height>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <textcolor>grey</textcolor>
+                    <font>font12</font>
+                    <label>([COLOR=button_focus]$INFO[Container(451).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=button_focus]$INFO[Container(451).CurrentPage]/$INFO[Container(451).NumPages][/COLOR])</label>
+                    <wrapmultiline>true</wrapmultiline>
+                    <visible>Control.IsVisible(451)</visible>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
