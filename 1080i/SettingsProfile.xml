@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <backgroundcolor>0</backgroundcolor>
+    <controls>
+        <include>DefaultBackground</include>
+        <control type="group">
+            <visible>![Window.isVisible(ProfileSettings) | Window.IsVisible(LockSettings)]</visible>
+            <control type="group">
+                <include>OpenClose_FadeSlide_Left</include>
+            <control type="image">
+                <description>background image</description>
+                <left>110</left>
+                <top>190</top>
+                <width>350</width>
+                <height>706</height>
+                <texture border="2">dialogs/dialog-bg.png</texture>
+            </control>
+                    <control type="list" id="9000">
+                    <posx>113</posx>
+                    <posy>195</posy>
+                    <width>750</width>
+                    <height>567</height>
+                    <onleft>9100</onleft>
+                    <onright>9100</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <scrolltime>300</scrolltime>
+                    <itemlayout height="74" width="570">
+                        <control type="label">
+                            <posx>30</posx>
+                            <width>306</width>
+                            <height>74</height>
+                            <label>$INFO[ListItem.Label]</label>
+                            <font>font13</font>
+                            <textcolor>grey</textcolor>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="74" width="570">
+                        <control type="image">
+                            <width>324</width>
+                            <height>74</height>
+                            <texture border="150,1,150,1">lists/focus.png</texture>
+                            <animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+                        </control>
+                        <control type="label">
+                            <posx>30</posx>
+                            <width>306</width>
+                            <height>74</height>
+                            <label>$INFO[ListItem.Label]</label>
+                            <font>font13</font>
+                        </control>
+                    </focusedlayout>
+                    <content>
+                        <item id="1">
+                            <label>31006</label>
+                            <onclick>noop</onclick>
+                            <icon>-</icon>
+                        </item>
+                        <item id="2">
+                            <label>13200</label>
+                            <onclick>noop</onclick>
+                            <icon>-</icon>
+                        </item>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <include>OpenClose_FadeSlide_Right</include>
+                <control type="image">
+                    <description>background image</description>
+                    <left>510</left>
+                    <top>190</top>
+                    <width>1214</width>
+                    <height>706</height>
+                    <texture border="2">dialogs/dialog-bg.png</texture>
+                </control>
+
+                <control type="group" id="9100">
+                    <posx>387</posx>
+                    <posy>195</posy>
+                    <control type="panel" id="2">
+                        <visible>Container(9000).Hasfocus(2)</visible>
+                        <width>1600</width>
+                        <height>722</height>
+                        <onleft>9000</onleft>
+                        <onright>9000</onright>
+                        <onup>2</onup>
+                        <ondown>2</ondown>
+                        <viewtype label="21371">list</viewtype>
+                        <scrolltime>200</scrolltime>
+                        <itemlayout height="350" width="292">
+                            <control type="image">
+                                <left>23</left>
+                                <top>23</top>
+                                <width>246</width>
+                                <height>246</height>
+                                <bordertexture border="40">lists/separator.png</bordertexture>
+                                <bordersize>5</bordersize>
+                                <texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+                            </control>
+                            <control type="label">
+                                <left>6</left>
+                                <top>268</top>
+                                <width>280</width>
+                                <height>100</height>
+                                <font>font14</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>center</align>
+                                <aligny>top</aligny>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <left>6</left>
+                                <top>304</top>
+                                <width>280</width>
+                                <height>100</height>
+                                <font>font13</font>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>center</align>
+                                <aligny>top</aligny>
+                                <label fallback="13170">Last log-in:</label>
+                            </control>
+                            <control type="label">
+                                <left>6</left>
+                                <top>333</top>
+                                <width>280</width>
+                                <height>100</height>
+                                <font>font13</font>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>center</align>
+                                <aligny>top</aligny>
+                                <label fallback="13170">$INFO[ListItem.Label2]</label>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="373" width="292">
+                            <control type="image">
+                                <width>292</width>
+                                <height>390</height>
+                                <texture border="150,1,150,1">lists/focus.png</texture>
+                                <visible>Control.HasFocus(2)</visible>
+                            </control>
+                            <control type="image">
+                                <left>23</left>
+                                <top>23</top>
+                                <width>246</width>
+                                <height>246</height>
+                                <bordertexture border="40">lists/separator.png</bordertexture>
+                                <bordersize>5</bordersize>
+                                <texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+                            </control>
+                            <control type="label">
+                                <left>6</left>
+                                <top>268</top>
+                                <width>280</width>
+                                <height>100</height>
+                                <font>font14</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>center</align>
+                                <aligny>top</aligny>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <left>6</left>
+                                <top>304</top>
+                                <width>280</width>
+                                <height>100</height>
+                                <font>font13</font>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>center</align>
+                                <aligny>top</aligny>
+                                <label fallback="13170">Last log-in:</label>
+                            </control>
+                            <control type="label">
+                                <left>6</left>
+                                <top>333</top>
+                                <width>280</width>
+                                <height>100</height>
+                                <font>font13</font>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>center</align>
+                                <aligny>top</aligny>
+                                <label fallback="13170">$INFO[ListItem.Label2]</label>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                </control>
+                <control type="grouplist" id="9001">
+                    <visible>Container(9000).Hasfocus(1)</visible>
+                    <width>1480</width>
+                    <height>735</height>
+                    <itemgap>-1</itemgap>
+                    <posx>513</posx>
+                    <posy>194</posy>
+                    <pagecontrol>60</pagecontrol>
+                    <onleft>9000</onleft>
+                    <onright>9000</onright>
+                    <onup>9001</onup>
+                    <ondown>9001</ondown>
+                    <control type="radiobutton" id="4">
+                        <label>20096</label>
+                        <include>DefaultSettingButton</include>
+                        <width>1210</width>
+                    </control>
+                    <control type="button" id="5">
+                        <label>Auto Login (Current Setting: $INFO[System.ProfileAutoLogin])</label>
+                        <include>DefaultSettingButton</include>
+                        <width>1210</width>
+                        <enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
+                    </control>
+                </control>
+            </control>
+        </control>
+        <include name="TopBar">
+            <param name="breadcrumbs_label" value="$LOCALIZE[10034]" />
+            <param name="breadcrumbs_icon" value="icons/settings/video.png" />
+        </include>
+        <include>BottomBar</include>
+    </controls>
+</window>
