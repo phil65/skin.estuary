@@ -403,18 +403,18 @@
                 <control type="group">
                     <height>408</height>
                     <control type="image">
-                        <top>38</top>
-                        <left>500</left>
-                        <width>650</width>
-                        <height>352</height>
-                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        <top>18</top>
+                        <left>480</left>
+                        <width>690</width>
+                        <height>392</height>
+                        <texture border="22">dialogs/info-bg.png</texture>
                     </control>
                     <control type="image">
-                        <top>38</top>
-                        <left>1170</left>
-                        <width>650</width>
-                        <height>352</height>
-                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        <top>18</top>
+                        <left>1150</left>
+                        <width>690</width>
+                        <height>392</height>
+                        <texture border="22">dialogs/info-bg.png</texture>
                     </control>
                     <control type="group">
                         <visible>PVR.HasNonRecordingTimer</visible>
@@ -733,11 +733,11 @@
                     <description>Weather info</description>
                     <height>383</height>
                     <control type="image">
-                        <top>38</top>
-                        <left>500</left>
-                        <width>1320</width>
-                        <height>352</height>
-                        <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                        <top>18</top>
+                        <left>480</left>
+                        <width>1360</width>
+                        <height>392</height>
+                        <texture border="22">dialogs/info-bg.png</texture>
                     </control>
                     <control type="image">
                         <top>52</top>
