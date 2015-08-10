@@ -866,9 +866,9 @@
                 <radioposy>0</radioposy>
                 <radiowidth>40</radiowidth>
                 <radioheight>40</radioheight>
-                <textureradioonfocus colordiffuse="button_focus">icons/search.png</textureradioonfocus>
+                <textureradioonfocus>icons/search.png</textureradioonfocus>
                 <textureradioonnofocus>icons/search.png</textureradioonnofocus>
-                <textureradioofffocus colordiffuse="button_focus">icons/search.png</textureradioofffocus>
+                <textureradioofffocus>icons/search.png</textureradioofffocus>
                 <textureradiooffnofocus>icons/search.png</textureradiooffnofocus>
             </control>
             <control type="fadelabel">
