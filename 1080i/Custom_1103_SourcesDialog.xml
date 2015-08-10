@@ -91,10 +91,12 @@
                 <content>
                     <item>
                         <label>Local video sources</label>
+                        <onclick>Dialog.Close(all)</onclick>
                         <onclick>ActivateWindow(Videos,Files,return)</onclick>
                     </item>
                     <item>
                         <label>Local audio sources</label>
+                        <onclick>Dialog.Close(all)</onclick>
                         <onclick>ActivateWindow(musicfiles,return)</onclick>
                     </item>
                     <item>
