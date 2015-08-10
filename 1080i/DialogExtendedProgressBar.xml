@@ -23,6 +23,15 @@
 				<posy>-11</posy>
 				<width>100</width>
 				<height>100</height>
+                <texture>dialogs/volume/progress/p$INFO[Control.GetLabel(32)].png</texture>
+				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<description>Loading indicator</description>
+				<posx>-4</posx>
+				<posy>-11</posy>
+				<width>100</width>
+				<height>100</height>
 				<texture>dialogs/extendedprogress/loading.png</texture>
 				<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
 			</control>
