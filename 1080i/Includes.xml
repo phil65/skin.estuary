@@ -149,6 +149,15 @@
     </include>
     <include name="SettingsItems">
         <content>
+            <item id="9">
+                <label>Sources</label>
+                <onclick>SetProperty(Dialog.1.Label,Video Sources)</onclick>
+                <onclick>SetProperty(Dialog.1.BuiltIn,ActivateWindow(Videos,Files,return))</onclick>
+                <onclick>SetProperty(Dialog.2.Label,Audio Sources)</onclick>
+                <onclick>SetProperty(Dialog.2.BuiltIn,ActivateWindow(musicfiles,return))</onclick>
+                <onclick>RunScript(script.toolbox,info=selectdialog,header=Add Sources)</onclick>
+                <icon>icons/settings/filemanager.png</icon>
+            </item>
             <item id="1">
                 <label>480</label>
                 <onclick>ActivateWindow(AppearanceSettings)</onclick>
@@ -203,11 +212,6 @@
                 <label>$LOCALIZE[13200]</label>
                 <onclick>ActivateWindow(Profiles)</onclick>
                 <icon>icons/settings/appearance.png</icon>
-            </item>
-            <item id="9">
-                <label>$LOCALIZE[7]</label>
-                <onclick>ActivateWindow(filemanager)</onclick>
-                <icon>icons/settings/filemanager.png</icon>
             </item>
         </content>
     </include>
