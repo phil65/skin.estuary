@@ -1096,7 +1096,7 @@
                         </item>
                         <item id="7">
                             <label>31950</label>
-                            <label2>Provided by $INFO[Window(Weather).Property(WeatherProvider)]</label2>
+                            <label2>$INFO[Window(Weather).Property(WeatherProvider)]</label2>
                             <onclick>ActivateWindow(Weather)</onclick>
                             <thumb>icons/home/weather.png</thumb>
                             <visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
