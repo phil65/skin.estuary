@@ -99,8 +99,8 @@
             </control>
         <include>Media_Menu</include>
         <include name="TopBar">
-            <param name="breadcrumbs_label" value="$LOCALIZE[1213]" />
-            <param name="breadcrumbs_icon" value="icons/settings/pictures.png" />
+            <param name="breadcrumbs_label" value="$LOCALIZE[8]$INFO[Window(Weather).Property(Location), / ]" />
+            <param name="breadcrumbs_icon" value="icons/settings/weather.png" />
         </include>
         <include>BottomBar</include>
     </controls>
