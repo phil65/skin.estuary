@@ -114,20 +114,20 @@
                 <include>Vis_FadeSlide_Right</include>
                 <control type="image">
                     <description>background image</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>714</width>
-                    <height>706</height>
-                    <texture border="2">dialogs/dialog-bg.png</texture>
+                    <left>-20</left>
+                    <top>-20</top>
+                    <width>754</width>
+                    <height>746</height>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
                 </control>
                 <control type="image">
                     <description>background image</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>1214</width>
-                    <height>706</height>
-                    <texture border="2">dialogs/dialog-bg.png</texture>
+                    <left>-20</left>
+                    <top>-20</top>
+                    <width>1254</width>
+                    <height>746</height>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
                     <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)</visible>
                 </control>
                 <control type="list" id="50">

@@ -11,11 +11,11 @@
                 <include>OpenClose_FadeSlide_Left</include>
             <control type="image">
                 <description>background image</description>
-                <left>110</left>
-                <top>190</top>
-                <width>350</width>
-                <height>706</height>
-                <texture border="2">dialogs/dialog-bg.png</texture>
+                <left>90</left>
+                <top>170</top>
+                <width>390</width>
+                <height>746</height>
+                <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
                     <control type="list" id="9000">
                     <posx>113</posx>
@@ -70,11 +70,11 @@
                 <include>OpenClose_FadeSlide_Right</include>
                 <control type="image">
                     <description>background image</description>
-                    <left>510</left>
-                    <top>190</top>
-                    <width>1214</width>
-                    <height>706</height>
-                    <texture border="2">dialogs/dialog-bg.png</texture>
+                    <left>490</left>
+                    <top>170</top>
+                    <width>1254</width>
+                    <height>746</height>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
 
                 <control type="group" id="9100">

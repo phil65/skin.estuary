@@ -14,11 +14,11 @@
             <include>Vis_FadeSlide_Right</include>
             <control type="image">
                 <description>background image</description>
-                <left>0</left>
-                <top>0</top>
-                <width>714</width>
-                <height>706</height>
-                <texture border="2">dialogs/dialog-bg.png</texture>
+                <left>-20</left>
+                <top>-20</top>
+                <width>754</width>
+                <height>746</height>
+                <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="list" id="50">
                 <left>2</left>

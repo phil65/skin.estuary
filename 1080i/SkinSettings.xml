@@ -11,11 +11,11 @@
                 <include>OpenClose_FadeSlide_Left</include>
                 <control type="image">
                     <description>Menu Panel</description>
-                    <left>0</left>
-                    <top>158</top>
-                    <width>400</width>
-                    <height>752</height>
-                    <texture border="2">dialogs/dialog-bg.png</texture>
+                    <left>-20</left>
+                    <top>138</top>
+                    <width>440</width>
+                    <height>792</height>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="grouplist" id="3">
                     <description>button area</description>
@@ -50,11 +50,11 @@
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
                 <control type="image">
-                    <left>440</left>
-                    <top>158</top>
-                    <width>1260</width>
-                    <height>752</height>
-                    <texture border="2">dialogs/dialog-bg.png</texture>
+                    <left>420</left>
+                    <top>138</top>
+                    <width>1300</width>
+                    <height>792</height>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="image">
                     <description>Dialog Header image</description>
