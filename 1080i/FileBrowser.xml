@@ -74,29 +74,12 @@
                     </include>
                 </control>
                 <control type="image">
-                    <left>685</left>
-                    <top>400</top>
-                    <width>221</width>
-                    <height>221</height>
-                    <texture border="5">button-nofocus.png</texture>
-                </control>
-                <control type="image">
-                    <left>690</left>
-                    <top>405</top>
-                    <width>211</width>
-                    <height>211</height>
+                    <left>1000</left>
+                    <top>485</top>
+                    <width>260</width>
+                    <height>260</height>
                     <aspectratio>keep</aspectratio>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <visible>!SubString(Control.GetLabel(416),*)</visible>
-                </control>
-                <control type="image">
-                    <left>250</left>
-                    <top>465</top>
-                    <width>410</width>
-                    <height>200</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true" flipx="true">$INFO[ListItem.Icon]</texture>
-                    <visible>SubString(Control.GetLabel(416),*)</visible>
                 </control>
                 <control type="panel" id="450">
                     <left>20</left>
