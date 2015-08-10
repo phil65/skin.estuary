@@ -150,7 +150,7 @@
     <include name="SettingsItems">
         <content>
             <item id="9">
-                <label>Sources</label>
+                <label>Media sources</label>
                 <onclick>SetProperty(Dialog.1.Label,Video Sources)</onclick>
                 <onclick>SetProperty(Dialog.1.BuiltIn,ActivateWindow(Videos,Files,return))</onclick>
                 <onclick>SetProperty(Dialog.2.Label,Audio Sources)</onclick>
