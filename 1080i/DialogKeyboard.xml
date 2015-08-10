@@ -11,13 +11,15 @@
 		<control type="group">
 			<include>Animation_DialogPopupVisible</include>
 			<visible>!Window.IsVisible(numericinput)</visible>
+			<animation type="Conditional" condition="Control.HasFocus(502)">
+				<effect type="slide" start="0,0" end="0,880" time="700" tween="cubic" easing="inout" />
+			</animation>
 			<include name="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="1390" />
 				<param name="DialogBackgroundHeight" value="650" />
 				<param name="DialogHeaderLabel" value="" />
 				<param name="DialogHeaderId" value="311" />
 			</include>
-
 			<control type="edit" id="312">
 				<description>Edit Text</description>
 				<left>60</left>
@@ -234,7 +236,6 @@
 						<ondown>307</ondown>
 						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -481,8 +482,8 @@
 						<onup>167</onup>
 						<ondown>107</ondown>
 					</control>
-						<control type="button" id="501">
-						<description>next button</description>
+					<control type="button" id="501">
+						<description>hide button</description>
 						<width>230</width>
 						<height>125</height>
 						<label>Hide</label>
@@ -491,12 +492,22 @@
 						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<font>font13</font>
+						<onclick>SetFocus(502)</onclick>
 						<focusedcolor>white</focusedcolor>
 						<onup>169</onup>
 						<ondown>110</ondown>
 					</control>
 				</control>
 			</control>
+		</control>
+		<control type="button" id="502">
+			<description>hide button</description>
+			<include>HiddenObject</include>
+			<onup>501</onup>
+			<ondown>501</ondown>
+			<onleft>501</onleft>
+			<onright>501</onright>
+			<onclick>SetFocus(501)</onclick>
 		</control>
 	</controls>
 </window>
