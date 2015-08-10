@@ -10,7 +10,7 @@
             <control type="group">
                 <include>OpenClose_FadeSlide_Left</include>
                 <visible>Control.IsVisible(50)</visible>
-                <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)</visible>
+                <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)</visible>
                 <include>Vis_FadeSlide_Left</include>
                 <include>ListThumbInfoPanel</include>
             </control>
@@ -128,7 +128,7 @@
                     <width>1214</width>
                     <height>706</height>
                     <texture border="2">dialogs/dialog-bg.png</texture>
-                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)</visible>
+                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)</visible>
                 </control>
                 <control type="list" id="50">
                     <left>2</left>
@@ -143,7 +143,7 @@
                     <ondown>50</ondown>
                     <viewtype label="List">list</viewtype>
                     <preloaditems>1</preloaditems>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(episodes)</visible>
+                    <visible>$PARAM[visible]</visible>
                     <focusedlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
                         <control type="image">
                             <left>0</left>
@@ -264,7 +264,7 @@
                             <texture colordiffuse="grey">$VAR[MediaInfoOverlayVar]</texture>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)">
+                    <focusedlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
@@ -339,7 +339,7 @@
                             <visible>!Control.HasFocus(50)</visible>
                         </control>
                     </focusedlayout>
-                    <itemlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors)">
+                    <itemlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
