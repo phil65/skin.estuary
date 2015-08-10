@@ -852,7 +852,7 @@
                 <top>1015</top>
                 <right>24</right>
                 <with>1200</with>
-<!--                 <control type="label">
+                <control type="label">
                     <width>auto</width>
                     <height>48</height>
                     <aligny>center</aligny>
@@ -860,9 +860,9 @@
                     <font>font13</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
-                    <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
+                    <visible>Control.HasFocus(60)</visible>
                     <label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,, • ]</label>
-                </control> -->
+                </control>
                 <control type="label">
                     <width>auto</width>
                     <height>48</height>
