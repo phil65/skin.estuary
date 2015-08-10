@@ -47,11 +47,13 @@
                     <height>704</height>
                     <focusposition>0</focusposition>
                     <movement>0</movement>
+                    <pagecontrol>5199</pagecontrol>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>horizontal</orientation>
-                    <onleft>9000</onleft>
+                    <onleft>51</onleft>
                     <onup>9000</onup>
-                    <onright>50</onright>
+                    <ondown>5199</ondown>
+                    <onright>51</onright>
                     <hitrect x="0" y="0" w="800" h="400" />
                     <visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)</visible>
                     <preloaditems>1</preloaditems>
@@ -86,6 +88,25 @@
                             </control>
                         </control>
                     </focusedlayout>
+                </control>
+                <control type="scrollbar" id="5199">
+                    <left>110</left>
+                    <top>710</top>
+                    <width>1700</width>
+                    <height>10</height>
+                    <texturesliderbackground colordiffuse="00FFFFFF">colors/white.png</texturesliderbackground>
+                    <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
+                    <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
+                    <animation effect="zoom" start="100,100" end="100,150" time="250" center="110,710" tween="cubic" easing="inout" reversible="true">Focus</animation>
+                    <animation effect="zoom" start="100,150" end="100,100" time="125" center="110,710" tween="cubic" easing="inout" reversible="true">UnFocus</animation>
+                    <textureslidernib>-</textureslidernib>
+                    <textureslidernibfocus>-</textureslidernibfocus>
+                    <onleft>5199</onleft>
+                    <onright>5199</onright>
+                    <onup>51</onup>
+                    <ondown>51</ondown>
+                    <showonepage>false</showonepage>
+                    <orientation>horizontal</orientation>
                 </control>
                 <control type="image">
                     <right>90</right>

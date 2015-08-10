@@ -201,8 +201,6 @@
 				<itemgap>5</itemgap>
 				<control type="label" id="9001">
 					<description>channel options Header</description>
-					<left>0</left>
-					<top>0</top>
 					<width>380</width>
 					<height>25</height>
 					<font>font12</font>
@@ -214,8 +212,6 @@
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Channel activated</description>
-					<left>0</left>
-					<top>0</top>
 					<width>380</width>
 					<height>40</height>
 					<font>font12</font>
@@ -231,8 +227,6 @@
 				</control>
 				<control type="edit" id="8">
 					<description>Channel name</description>
-					<left>0</left>
-					<top>0</top>
 					<width>380</width>
 					<height>40</height>
 					<font>font12</font>
@@ -330,8 +324,6 @@
 				<animation effect="slide" start="0,0" end="0,45" time="0" condition="!Control.IsVisible(31)">Conditional</animation>
 				<control type="label" id="9003">
 					<description>channel options Header</description>
-					<left>0</left>
-					<top>0</top>
 					<width>380</width>
 					<height>25</height>
 					<font>font12</font>
@@ -343,8 +335,6 @@
 				</control>
 				<control type="button" id="31">
 					<description>New channel Button</description>
-					<left>0</left>
-					<top>0</top>
 					<width>380</width>
 					<height>40</height>
 					<font>font12</font>
@@ -355,8 +345,6 @@
 				</control>
 				<control type="button" id="30">
 					<description>Group Manager Button</description>
-					<left>0</left>
-					<top>0</top>
 					<width>380</width>
 					<height>40</height>
 					<font>font12</font>
@@ -367,8 +355,6 @@
 				</control>
 				<control type="togglebutton" id="34">
 					<description>TV/Radio toggle</description>
-					<left>0</left>
-					<top>0</top>
 					<width>380</width>
 					<height>40</height>
 					<font>font12</font>
