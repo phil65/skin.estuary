@@ -137,10 +137,6 @@
             <include>MediaMenuItemsCommon</include>
             <onclick>ReplaceWindow(MusicLibrary)</onclick>
         </control>
-        <control type="button" id="17">
-            <label>527</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
     </include>
     <include name="PicturesButtons">
         <control type="button" id="6">
