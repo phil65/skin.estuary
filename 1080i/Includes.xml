@@ -150,8 +150,12 @@
     <include name="SettingsItems">
         <content>
             <item id="9">
-                <label>Media sources</label>
-                <onclick>ActivateWindow(1103)</onclick>
+                <label>Sources</label>
+                <onclick>SetProperty(Dialog.1.Label,Video Sources)</onclick>
+                <onclick>SetProperty(Dialog.1.BuiltIn,ActivateWindow(Videos,Files,return))</onclick>
+                <onclick>SetProperty(Dialog.2.Label,Audio Sources)</onclick>
+                <onclick>SetProperty(Dialog.2.BuiltIn,ActivateWindow(musicfiles,return))</onclick>
+                <onclick>RunScript(script.toolbox,info=selectdialog,header=Add Sources)</onclick>
                 <icon>icons/settings/filemanager.png</icon>
             </item>
             <item id="1">
@@ -805,6 +809,19 @@
                 <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                 <visible>ControlGroup(9000).HasFocus</visible>
             </control>
+            <control type="label">
+                <top>1019</top>
+                <left>74</left>
+                <width>300</width>
+                <height>44</height>
+                <align>left</align>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <label>Options</label>
+                <animation effect="fade" start="0" end="100" time="225">VisibleChange</animation>
+                <visible>!ControlGroup(9000).HasFocus</visible>
+            </control>
         </control>
         <control type="group">
             <visible>!Window.isActive(home) + Player.HasMedia</visible>
@@ -829,20 +846,32 @@
                 <label>$INFO[Player.Time,[COLOR button_focus],[/COLOR] - ]$INFO[Player.Title]</label>
             </control>
         </control>
-        <control type="label">
-            <top>1014</top>
-            <left>0</left>
-            <width>1900</width>
-            <height>50</height>
-            <align>right</align>
-            <font>font16</font>
-            <textcolor>white</textcolor>
-            <shadowcolor>text_shadow</shadowcolor>
-            <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
-            <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
-            <label>$INFO[Container.NumItems,Items: [COLOR button_focus],[/COLOR]]$INFO[Container.CurrentPage,   •   Page: [COLOR button_focus], / ]$INFO[Container.NumPages,,[/COLOR]]</label>
-            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+        <control type="group">
+        <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+        <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+            <control type="label">
+                <top>1019</top>
+                <right>74</right>
+                <width>1900</width>
+                <height>44</height>
+                <align>right</align>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
+                <label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,]$INFO[Container.NumItems, • ,]</label>
+            </control>
+            <control type="image">
+                <description>Items icon</description>
+                <right>17</right>
+                <top>1019</top>
+                <width>44</width>
+                <height>44</height>
+                <texture colordiffuse="button_focus">frame/item-count.png</texture>
+                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                <visible>!IsEmpty(Container.NumItems) + !Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
+            </control>
         </control>
     </include>
     <include name="KeyboardButton">
