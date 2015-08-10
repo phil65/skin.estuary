@@ -843,47 +843,63 @@
             </control>
         </control>
         <control type="group">
-        <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
-        <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-        <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-            <control type="label">
-                <top>1019</top>
-                <right>74</right>
-                <width>1900</width>
-                <height>44</height>
+            <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+            <control type="grouplist">
+                <orientation>horizontal</orientation>
                 <align>right</align>
-                <font>font13</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>text_shadow</shadowcolor>
-                <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
-                <label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,]$INFO[Container.NumItems, • ,]</label>
+                <top>1015</top>
+                <right>24</right>
+                <with>1200</with>
+<!--                 <control type="label">
+                    <width>auto</width>
+                    <height>48</height>
+                    <aligny>center</aligny>
+                    <align>right</align>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
+                    <label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,, • ]</label>
+                </control> -->
+                <control type="label">
+                    <width>auto</width>
+                    <height>48</height>
+                    <aligny>center</aligny>
+                    <align>right</align>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
+                    <label>$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</label>
+                </control>
+                <control type="image">
+                    <description>Items icon</description>
+                    <width>54</width>
+                    <height>44</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="button_focus">frame/item-count.png</texture>
+                    <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                    <visible>!IsEmpty(Container.NumItems) + !Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
+                </control>
             </control>
-            <control type="image">
-                <description>Items icon</description>
-                <right>17</right>
-                <top>1019</top>
-                <width>44</width>
-                <height>44</height>
-                <texture colordiffuse="button_focus">frame/item-count.png</texture>
-                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-                <visible>!IsEmpty(Container.NumItems) + !Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
             </control>
-        </control>
-    </include>
-    <include name="KeyboardButton">
-        <width>125</width>
-        <height>125</height>
-        <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-        <align>center</align>
-        <aligny>center</aligny>
-        <font>font16</font>
-        <focusedcolor>white</focusedcolor>
-    </include>
-    <include name="FullScreenDimensions">
-        <left>0</left>
-        <top>0</top>
-        <width>1920</width>
-        <height>1080</height>
-    </include>
-</includes>
+        </include>
+        <include name="KeyboardButton">
+            <width>125</width>
+            <height>125</height>
+            <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+            <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font16</font>
+            <focusedcolor>white</focusedcolor>
+        </include>
+        <include name="FullScreenDimensions">
+            <left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>1080</height>
+        </include>
+    </includes>
