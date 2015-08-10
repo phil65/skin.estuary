@@ -4,14 +4,14 @@
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
 		<system>1</system>
-		<left>80</left>
-		<top>65</top>
+		<left>120</left>
+		<top>100</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1120" />
-			<param name="DialogBackgroundHeight" value="570" />
+			<param name="DialogBackgroundWidth" value="1680" />
+			<param name="DialogBackgroundHeight" value="855" />
 			<param name="DialogHeaderLabel" value="$VAR[PVRChannelMgrHeader]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
@@ -99,7 +99,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>grey3</textcolor>
+						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
 						<visible>!ListItem.Property(ActiveChannel)</visible>
@@ -162,7 +162,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>grey3</textcolor>
+						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
 						<visible>!ListItem.Property(ActiveChannel)</visible>
@@ -384,83 +384,45 @@
 				</control>
 			</control>
 		</control>
-		<control type="group" id="9000">
-			<left>890</left>
+		<control type="grouplist" id="9000">
+			<left>1360</left>
 			<top>95</top>
-			<control type="button" id="4">
-				<description>OK Button</description>
-				<left>0</left>
-				<top>0</top>
-				<width>200</width>
-				<height>40</height>
-				<label>186</label>
-				<font>font12_title</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<onleft>9002</onleft>
-				<onright>20</onright>
-				<onup>6</onup>
-				<ondown>5</ondown>
-			</control>
-			<control type="button" id="5">
-				<description>Apply changes Button</description>
-				<left>0</left>
-				<top>45</top>
-				<width>200</width>
-				<height>40</height>
-				<label>14070</label>
-				<font>font12_title</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<onleft>9002</onleft>
-				<onright>20</onright>
-				<onup>4</onup>
-				<ondown>6</ondown>
-			</control>
-			<control type="button" id="6">
-				<description>Cancel Button</description>
-				<left>0</left>
-				<top>90</top>
-				<width>200</width>
-				<height>40</height>
-				<label>222</label>
-				<font>font12_title</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<onleft>9002</onleft>
-				<onright>20</onright>
-				<onup>5</onup>
-				<ondown>4</ondown>
-			</control>
-			<control type="group">
-				<left>-5</left>
-				<top>200</top>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>210</width>
-					<height>210</height>
-					<texture border="40">buttons/button-nofo.png</texture>
-				</control>
+			<onleft>9002</onleft>
+			<onright>20</onright>
+			<include name="DefaultDialogButton">
+				<param name="id" value="4" />
+				<param name="label" value="294" />
+			</include>
+			<include name="DefaultDialogButton">
+				<param name="id" value="5" />
+				<param name="label" value="296" />
+			</include>
+			<include name="DefaultDialogButton">
+				<param name="id" value="6" />
+				<param name="label" value="20406" />
+			</include>
+		</control>
+		<control type="group">
+			<left>1360</left>
+			<top>400</top>
 				<control type="image">
 					<left>5</left>
 					<top>5</top>
-					<width>200</width>
-					<height>200</height>
+					<width>280</width>
+					<height>280</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[Container(20).ListItem.Icon]</texture>
 				</control>
-			</control>
 			<control type="label">
 				<description>Page Count Label</description>
-				<left>-15</left>
-				<top>418</top>
-				<width>230</width>
+				<left>-35</left>
+				<top>410</top>
+				<width>330</width>
 				<height>35</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<scroll>false</scroll>
-				<align>center</align>
+				<align>right</align>
 				<aligny>center</aligny>
 				<label>([COLOR=button_focus]$INFO[Container(20).NumItems][/COLOR]) $LOCALIZE[19019] - $LOCALIZE[31024] ([COLOR=button_focus]$INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages][/COLOR])</label>
 				<wrapmultiline>true</wrapmultiline>
