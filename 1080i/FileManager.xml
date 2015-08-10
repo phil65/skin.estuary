@@ -51,10 +51,10 @@
                 <width>796</width>
                 <height>635</height>
                 <onleft>30</onleft>
-                <onright>21</onright>
+                <onright>60</onright>
                 <onup>20</onup>
                 <ondown>20</ondown>
-                <pagecontrol>30</pagecontrol>
+                <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <focusedlayout height="70">
                     <control type="image">
@@ -135,6 +135,23 @@
                     </control>
                 </itemlayout>
             </control>
+            <control type="scrollbar" id="60">
+                <left>805</left>
+                <top>0</top>
+                <width>12</width>
+                <height>702</height>
+                <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
+                <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
+                <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
+                <animation effect="zoom" start="100,100" end="150,100" time="250" center="auto" tween="cubic" easing="inout">Focus</animation>
+                <animation effect="zoom" start="150,100" end="100,100" time="125" center="auto" tween="cubic" easing="inout">UnFocus</animation>
+                <textureslidernib>-</textureslidernib>
+                <textureslidernibfocus>-</textureslidernibfocus>
+                <onleft>20</onleft>
+                <onright>21</onright>
+                <showonepage>false</showonepage>
+                <orientation>vertical</orientation>
+            </control>
         </control>
         <control type="group">
             <posx>1020</posx>
@@ -174,11 +191,11 @@
                 <top>63</top>
                 <width>796</width>
                 <height>635</height>
-                <onleft>20</onleft>
-                <onright>20</onright>
+                <onleft>60</onleft>
+                <onright>61</onright>
                 <onup>21</onup>
                 <ondown>21</ondown>
-                <pagecontrol>30</pagecontrol>
+                <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <focusedlayout height="70">
                     <control type="image">
@@ -259,6 +276,23 @@
                     </control>
                 </itemlayout>
             </control>
+            <control type="scrollbar" id="61">
+                <left>805</left>
+                <top>0</top>
+                <width>12</width>
+                <height>702</height>
+                <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
+                <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
+                <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
+                <animation effect="zoom" start="100,100" end="150,100" time="250" center="auto" tween="cubic" easing="inout">Focus</animation>
+                <animation effect="zoom" start="150,100" end="100,100" time="125" center="auto" tween="cubic" easing="inout">UnFocus</animation>
+                <textureslidernib>-</textureslidernib>
+                <textureslidernibfocus>-</textureslidernibfocus>
+                <onleft>21</onleft>
+                <onright>20</onright>
+                <showonepage>false</showonepage>
+                <orientation>vertical</orientation>
+            </control>
         </control>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="File manager" />
@@ -301,7 +335,6 @@
                     <height>44</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="button_focus">frame/item-count.png</texture>
-                    <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                 </control>
             </control>
             <control type="grouplist">
@@ -318,7 +351,7 @@
                     <font>font13</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
-                    <visible>Control.HasFocus(60) | Control.HasFocus(5199)</visible>
+                    <visible>Control.HasFocus(60) | Control.HasFocus(61)</visible>
                     <label>$INFO[Container(20).CurrentPage,, / ]$INFO[Container(20).NumPages,, • ]</label>
                 </control>
                 <control type="label">
@@ -337,7 +370,6 @@
                     <height>44</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="button_focus">frame/item-count.png</texture>
-                    <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                 </control>
             </control>
         </control>
