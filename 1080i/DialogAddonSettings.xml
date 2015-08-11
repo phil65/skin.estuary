@@ -4,13 +4,13 @@
 	<coordinates>
 		<system>1</system>
 		<left>240</left>
-		<top>60</top>
+		<top>140</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1440" />
-			<param name="DialogBackgroundHeight" value="900" />
+			<param name="DialogBackgroundHeight" value="800" />
 			<param name="DialogHeaderLabel" value="-" />
 			<param name="DialogHeaderId" value="20" />
 		</include>
@@ -30,22 +30,22 @@
 			<ondown>9</ondown>
 		</control>
 		<control type="image">
-			<description>Has Previous</description>
-			<left>25</left>
-			<top>80</top>
-			<width>20</width>
-			<height>20</height>
-			<texture>scroll-left-focus.png</texture>
-			<visible>Container(9).HasPrevious</visible>
+			<left>696</left>
+			<top>810</top>
+			<width>48</width>
+			<height>24</height>
+			<texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
+			<animation effect="zoom" start="100,0" end="100,100" center="0,870" time="200">VisibleChange</animation>
+			<visible>Container(2).HasNext</visible>
 		</control>
 		<control type="image">
-			<description>Has Next</description>
-			<left>755</left>
-			<top>80</top>
-			<width>20</width>
-			<height>20</height>
-			<texture>scroll-right-focus.png</texture>
-			<visible>Container(9).HasNext</visible>
+			<left>696</left>
+			<top>-40</top>
+			<width>48</width>
+			<height>24</height>
+			<texture colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
+			<animation effect="zoom" start="100,0" end="100,100" center="0,-60" time="200">VisibleChange</animation>
+			<visible>Container(2).HasPrevious</visible>
 		</control>
 		<control type="grouplist" id="2">
 			<description>control area</description>
@@ -113,32 +113,15 @@
 		</control>
 		<control type="button" id="3">
 			<description>Default Button</description>
-			<height>100</height>
-			<font>font13</font>
-			<textcolor>white</textcolor>
-			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+			<include>SettingsItemCommon</include>
 		</control>
 		<control type="radiobutton" id="4">
 			<description>Default RadioButton</description>
-			<height>100</height>
-			<font>font13</font>
-			<textoffsetx>30</textoffsetx>
-			<textcolor>white</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+			<include>SettingsItemCommon</include>
 		</control>
 		<control type="spincontrolex" id="5">
 			<description>Default spincontrolex</description>
-			<height>100</height>
-			<textcolor>white</textcolor>
-			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<font>font13</font>
-			<aligny>center</aligny>
+			<include>SettingsItemCommon</include>
 			<reverse>yes</reverse>
 		</control>
 		<control type="label" id="7">
@@ -151,19 +134,14 @@
 			<align>left</align>
 			<aligny>center</aligny>
 		</control>
-		<control type="image" id="6">
+		<control type="image" id="6"><!--todo-->
 			<description>Default Seperator</description>
-			<height>2</height>
-			<texture>separator2.png</texture>
-		</control>
+			<height>20</height>
+<!-- 			<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+ -->		</control>
 		<control type="sliderex" id="8">
 			<description>Default Slider</description>
-			<height>100</height>
-			<font>font13</font>
-			<textoffsetx>30</textoffsetx>
-			<textcolor>white</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+			<include>SettingsItemCommon</include>
 		</control>
 	</controls>
 </window>
