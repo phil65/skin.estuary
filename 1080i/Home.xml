@@ -395,14 +395,14 @@
                         <left>480</left>
                         <width>690</width>
                         <height>392</height>
-                        <texture border="22">dialogs/info-bg.png</texture>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="image">
                         <top>18</top>
                         <left>1150</left>
                         <width>690</width>
                         <height>392</height>
-                        <texture border="22">dialogs/info-bg.png</texture>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="group">
                         <visible>PVR.HasNonRecordingTimer</visible>
@@ -603,21 +603,21 @@
                         <left>480</left>
                         <width>1340</width>
                         <height>580</height>
-                        <texture border="22">dialogs/info-bg.png</texture>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="image">
                         <top>590</top>
                         <left>480</left>
                         <width>1340</width>
                         <height>130</height>
-                        <texture border="22">dialogs/info-bg.png</texture>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="image">
                         <top>710</top>
                         <left>480</left>
                         <width>1340</width>
                         <height>206</height>
-                        <texture border="22">dialogs/info-bg.png</texture>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="image">
                         <top>85</top>
@@ -725,7 +725,7 @@
                         <left>480</left>
                         <width>1360</width>
                         <height>392</height>
-                        <texture border="22">dialogs/info-bg.png</texture>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="image">
                         <top>52</top>
@@ -813,7 +813,7 @@
                     <left>480</left>
                     <width>1340</width>
                     <height>120</height>
-                    <texture border="22">dialogs/info-bg.png</texture>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="label">
                     <top>93</top>
@@ -831,7 +831,7 @@
                     <width>1340</width>
                     <height>713</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture border="22">dialogs/info-bg.png</texture>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="image">
                     <top>280</top>

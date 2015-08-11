@@ -606,18 +606,18 @@
         <control type="image">
             <description>Dialog Header image</description>
             <left>0</left>
-            <top>60</top>
+            <top>0</top>
             <width>$PARAM[DialogBackgroundWidth]</width>
-            <height>3</height>
-            <texture colordiffuse="button_focus" border="2">dialogs/separator.png</texture>
+            <height>80</height>
+            <texture colordiffuse="button_focus" border="2">colors/white80.png</texture>
         </control>
         <control type="label" id="$PARAM[DialogHeaderId]">
             <description>header label</description>
             <textoffsetx>40</textoffsetx>
-            <top>20</top>
+            <top>0</top>
             <width>$PARAM[DialogBackgroundWidth]</width>
-            <height>30</height>
-            <font>font13_title</font>
+            <height>80</height>
+            <font>font20_title</font>
             <label>$PARAM[DialogHeaderLabel]</label>
             <align>left</align>
             <aligny>center</aligny>
@@ -889,7 +889,7 @@
         <width>125</width>
         <height>125</height>
         <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+        <texturenofocus border="40">buttons/button-alt-nofo.png</texturenofocus>
         <align>center</align>
         <aligny>center</aligny>
         <font>font16</font>
