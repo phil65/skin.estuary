@@ -78,7 +78,7 @@
         </control>
     </include>
     <include name="MusicLibraryButtons">
-        <control type="button" id="8">
+        <control type="edit" id="8">
             <label>137</label>
             <include>MediaMenuItemsCommon</include>
         </control>
@@ -98,6 +98,10 @@
         </control>
     </include>
     <include name="VideoLibraryButtons">
+        <control type="edit" id="19">
+            <label>137</label>
+            <include>MediaMenuItemsCommon</include>
+        </control>
         <control type="button" id="16">
             <label>589</label>
             <include>MediaMenuItemsCommon</include>
@@ -207,7 +211,7 @@
                     <include>MediaMenuItemsCommon</include>
                     <visible>Control.IsEnabled(4)</visible>
                 </control>
-                <include condition="!Window.IsActive(videoplaylist) + !Window.IsActive(musicplaylist)">FilterButtons</include>
+                <include>FilterButtons</include>
                 <include condition="Window.IsActive(videos)">VideoLibraryButtons</include>
                 <include condition="Window.IsActive(AddonBrowser)">AddonBrowserButtons</include>
                 <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons</include>
@@ -215,14 +219,6 @@
                 <include condition="Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist)">PlaylistButtons</include>
                 <include condition="Window.IsActive(pictures)">PicturesButtons</include>
                 <include condition="Window.IsActive(musicplaylisteditor)">PlaylistEditorButtons</include>
-                <control type="button" id="1800">
-                    <label>Download Artwork</label>
-                    <include>MediaMenuItemsCommon</include>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
-                    <onclick condition="Container.Content(TVShows) | Container.Content(seasons) | Container.Content(episodes)">RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,silent=true,extrafanart,poster,fanart,banner,clearlogo,clearart,landscape,characterart,seasonbanner,seasonposter,seasonlandscape)</onclick>
-                    <onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader,mode=custom,mediatype=musicvideo,silent=true,poster,clearlogo,fanart,extrafanart)</onclick>
-                    <onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader,mode=custom,mediatype=movie,silent=true,extrafanart,poster,fanart,banner,clearlogo,clearart,landscape,discart,extrathumbs)</onclick>
-                </control>
                 <control type="button" id="612">
                     <label>13350</label>
                     <include>MediaMenuItemsCommon</include>
