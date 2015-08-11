@@ -624,6 +624,15 @@
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
+        <control type="image">
+            <description>logo</description>
+            <left>-20</left>
+            <top>16</top>
+            <width>$PARAM[DialogBackgroundWidth]</width>
+            <height>48</height>
+            <aspectratio align="right">keep</aspectratio>
+            <texture colordiffuse="EEFFFFFF" border="2">icons/logo.png</texture>
+        </control>
     </include>
     <include name="TopBar">
         <control type="image">

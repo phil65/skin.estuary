@@ -22,14 +22,6 @@
             <height>60</height>
             <texture colordiffuse="32FFFFFF" border="2">colors/white.png</texture>
         </control>
-        <control type="image">
-            <description>logo</description>
-            <left>452</left>
-            <top>16</top>
-            <width>48</width>
-            <height>48</height>
-            <texture colordiffuse="EEFFFFFF" border="2">icons/logo.png</texture>
-        </control>
 		<control type="label" id="4">
 			<description>Edit Text</description>
 			<left>36</left>
