@@ -138,7 +138,6 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-
                 <itemlayout width="277">
                     <control type="group">
                         <control type="image">
@@ -277,7 +276,6 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-
                 <itemlayout width="462">
                     <control type="group">
                         <control type="image">
@@ -289,24 +287,6 @@
                             <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
                             <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
                             <bordersize>4</bordersize>
-                        </control>
-                        <control type="group">
-                            <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
-                            <control type="image">
-                                <left>0</left>
-                                <top>0</top>
-                                <width>400</width>
-                                <height>30</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="99FFFFFF">colors/black.png</texture>
-                            </control>
-                            <control type="progress">
-                                <left>30</left>
-                                <top>10</top>
-                                <width>340</width>
-                                <height>13</height>
-                                <info>ListItem.PercentPlayed</info>
-                            </control>
                         </control>
                         <control type="image">
                             <left>4</left>
@@ -359,7 +339,9 @@
                             <bordersize>4</bordersize>
                         </control>
                         <control type="group">
-                            <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+                            <visible>!Stringcompare(ListItem.PercentPlayed,0) + Control.HasFocus($PARAM[list_id])</visible>
+                            <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
@@ -461,7 +443,6 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-
                 <itemlayout width="343">
                     <control type="group">
                         <control type="image">
@@ -600,7 +581,6 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-
                 <itemlayout width="273">
                     <control type="image">
                         <description>Menu Panel</description>
