@@ -5,29 +5,29 @@
 	<coordinates>
 		<system>2</system>
 		<left>265</left>
-		<top>200</top>
+		<top>186</top>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<include>Animation_DialogPopupVisible</include>
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<animation type="Conditional" condition="Control.HasFocus(502)">
-				<effect type="slide" start="0,0" end="0,880" time="700" tween="cubic" easing="inout" />
+				<effect type="slide" start="0,0" end="0,894" time="700" tween="cubic" easing="inout" />
 			</animation>
 			<include name="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="1390" />
-				<param name="DialogBackgroundHeight" value="681" />
+				<param name="DialogBackgroundHeight" value="709" />
 				<param name="DialogHeaderLabel" value="" />
 				<param name="DialogHeaderId" value="311" />
 			</include>
-        <control type="image">
-            <description>background image</description>
-            <left>26</left>
-            <top>80</top>
-            <width>1340</width>
-            <height>100</height>
-            <texture border="40">buttons/button-alt-nofo.png</texture>
-        </control>
+	        <control type="image">
+	            <description>background image</description>
+	            <left>44</left>
+	            <top>100</top>
+	            <width>1302</width>
+	            <height>60</height>
+	            <texture colordiffuse="32FFFFFF" border="2">colors/white.png</texture>
+	        </control>
 			<control type="edit" id="312">
 				<description>Edit Text</description>
 				<left>50</left>

@@ -4,22 +4,30 @@
 	<include>Animation_DialogPopupOpenClose</include>
 	<coordinates>
 		<system>2</system>
-		<left>700</left>
-		<top>145</top>
+		<left>688</left>
+		<top>213</top>
 	</coordinates>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="520" />
-			<param name="DialogBackgroundHeight" value="620" />
+			<param name="DialogBackgroundWidth" value="545" />
+			<param name="DialogBackgroundHeight" value="654" />
 			<param name="DialogHeaderLabel" value="" />
 			<param name="DialogHeaderId" value="1" />
 		</include>
+        <control type="image">
+            <description>background image</description>
+            <left>44</left>
+            <top>100</top>
+            <width>457</width>
+            <height>60</height>
+            <texture colordiffuse="32FFFFFF" border="2">colors/white.png</texture>
+        </control>
 		<control type="label" id="4">
 			<description>Edit Text</description>
-			<left>20</left>
-			<top>70</top>
+			<left>36</left>
+			<top>87</top>
 			<width>480</width>
-			<height>50</height>
+			<height>80</height>
 			<font>font16</font>
 			<textcolor>white</textcolor>
 			<disabledcolor>grey</disabledcolor>
@@ -28,15 +36,15 @@
 		</control>
 		<control type="button" id="23">
 			<description>Backspace button</description>
-			<left>10</left>
-			<top>130</top>
+			<left>26</left>
+			<top>160</top>
 			<width>120</width>
 			<height>240</height>
 			<font>font12</font>
 			<align>center</align>
 			<aligny>center</aligny>
 			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturenofocus border="40">buttons/button-alt-nofo.png</texturenofocus>
 			<textwidth>200</textwidth>
 			<label>20181</label>
 			<focusedcolor>white</focusedcolor>
@@ -48,15 +56,15 @@
 		</control>
 		<control type="button" id="21">
 			<description>Done button</description>
-			<left>10</left>
-			<top>360</top>
+			<left>26</left>
+			<top>390</top>
 			<width>120</width>
 			<height>240</height>
 			<font>font12</font>
 			<align>center</align>
 			<aligny>center</aligny>
 			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturenofocus border="40">buttons/button-alt-nofo.png</texturenofocus>
 			<textwidth>120</textwidth>
 			<label>20177</label>
 			<focusedcolor>white</focusedcolor>
@@ -67,8 +75,8 @@
 			<ondown>23</ondown>
 		</control>
 		<control type="grouplist">
-			<left>120</left>
-			<top>130</top>
+			<left>136</left>
+			<top>160</top>
 			<height>1000</height>
 			<onleft>23</onleft>
 			<onright>23</onright>
