@@ -608,7 +608,7 @@
             <left>0</left>
             <top>0</top>
             <width>$PARAM[DialogBackgroundWidth]</width>
-            <height>80</height>
+            <height>70</height>
             <texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
         </control>
         <control type="label" id="$PARAM[DialogHeaderId]">
@@ -616,7 +616,7 @@
             <textoffsetx>40</textoffsetx>
             <top>0</top>
             <width>$PARAM[DialogBackgroundWidth]</width>
-            <height>80</height>
+            <height>70</height>
             <font>font20_title</font>
             <label>$PARAM[DialogHeaderLabel]</label>
             <align>left</align>
@@ -627,7 +627,7 @@
         <control type="image">
             <description>logo</description>
             <left>-20</left>
-            <top>16</top>
+            <top>11</top>
             <width>$PARAM[DialogBackgroundWidth]</width>
             <height>48</height>
             <aspectratio align="right">keep</aspectratio>
