@@ -31,7 +31,7 @@
             <posy>-30</posy>
             <width>1920</width>
             <height>226</height>
-            <visible>Player.ShowInfo | Skin.HasSetting(showvisinfo) | Window.IsActive(musicosd)</visible>
+            <visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
             <animation type="Visible">
                 <effect type="fade" time="320" end="100" />
                 <effect type="slide" time="320" start="0,226" end="0,0" tween="cubic" />
