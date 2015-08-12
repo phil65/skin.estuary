@@ -881,6 +881,7 @@
                 <onup>700</onup>
                 <ondown>SetFocus(9000,0)</ondown>
                 <ondown>9000</ondown>
+                <onright>2000</onright>
                 <aligny>center</aligny>
                 <onclick>RunScript(script.globalsearch)</onclick>
                 <font>font14</font>
