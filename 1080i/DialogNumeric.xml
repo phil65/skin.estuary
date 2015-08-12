@@ -14,14 +14,14 @@
 			<param name="DialogHeaderLabel" value="" />
 			<param name="DialogHeaderId" value="1" />
 		</include>
-        <control type="image">
-            <description>background image</description>
-            <left>44</left>
-            <top>94</top>
-            <width>457</width>
-            <height>60</height>
-            <texture colordiffuse="32FFFFFF" border="2">colors/white.png</texture>
-        </control>
+		<control type="image">
+			<description>background image</description>
+			<left>44</left>
+			<top>94</top>
+			<width>457</width>
+			<height>60</height>
+			<texture colordiffuse="32FFFFFF" border="2">colors/white.png</texture>
+		</control>
 		<control type="label" id="4">
 			<description>Edit Text</description>
 			<left>34</left>
@@ -44,7 +44,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-alt-nofo.png</texturenofocus>
+			<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 			<textwidth>200</textwidth>
 			<label>20181</label>
 			<focusedcolor>white</focusedcolor>
@@ -64,7 +64,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-alt-nofo.png</texturenofocus>
+			<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 			<textwidth>120</textwidth>
 			<label>20177</label>
 			<focusedcolor>white</focusedcolor>
@@ -167,7 +167,14 @@
 				<orientation>horizontal</orientation>
 				<control type="button" id="20">
 					<description>prev button</description>
-					<include>KeyboardButton</include>
+					<width>125</width>
+					<height>125</height>
+					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+					<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font16</font>
+					<focusedcolor>white</focusedcolor>
 					<label>&lt;</label>
 					<onup>17</onup>
 					<ondown>11</ondown>
@@ -181,7 +188,14 @@
 				</control>
 				<control type="button" id="22">
 					<description>next button</description>
-					<include>KeyboardButton</include>
+					<width>125</width>
+					<height>125</height>
+					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+					<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font16</font>
+					<focusedcolor>white</focusedcolor>
 					<label>&gt;</label>
 					<onup>19</onup>
 					<ondown>13</ondown>
