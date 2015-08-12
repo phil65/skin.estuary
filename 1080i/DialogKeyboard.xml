@@ -23,7 +23,7 @@
 	        <control type="image">
 	            <description>background image</description>
 	            <left>44</left>
-	            <top>100</top>
+	            <top>94</top>
 	            <width>1302</width>
 	            <height>60</height>
 	            <texture colordiffuse="32FFFFFF" border="2">colors/white.png</texture>
@@ -31,12 +31,13 @@
 			<control type="edit" id="312">
 				<description>Edit Text</description>
 				<left>50</left>
-				<top>77</top>
+				<top>73</top>
 				<width>1290</width>
 				<height>100</height>
 				<font>font16</font>
 				<align>center</align>
 				<aligny>center</aligny>
+				<textcolor>button_focus</textcolor>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 			</control>

@@ -17,19 +17,19 @@
         <control type="image">
             <description>background image</description>
             <left>44</left>
-            <top>100</top>
+            <top>94</top>
             <width>457</width>
             <height>60</height>
             <texture colordiffuse="32FFFFFF" border="2">colors/white.png</texture>
         </control>
 		<control type="label" id="4">
 			<description>Edit Text</description>
-			<left>36</left>
-			<top>87</top>
+			<left>34</left>
+			<top>83</top>
 			<width>480</width>
 			<height>80</height>
 			<font>font16</font>
-			<textcolor>white</textcolor>
+			<textcolor>button_focus</textcolor>
 			<disabledcolor>grey</disabledcolor>
 			<align>center</align>
 			<aligny>center</aligny>
