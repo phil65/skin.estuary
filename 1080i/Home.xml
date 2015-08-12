@@ -388,17 +388,38 @@
                 <visible>Container(9000).HasFocus(12)</visible>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <include>Vis_FadeSlide_Right_Delayed</include>
+                <include name="SubMenu">
+                    <param name="list_id" value="12900"/>
+                    <param name="ondown_id" value="12100"/>
+                    <param name="item1_id" value="12901" />
+                    <param name="item1_onclick" value="ActivateWindow(TVChannels)" />
+                    <param name="item1_label" value="$LOCALIZE[19019]" />
+                    <param name="item2_id" value="12902" />
+                    <param name="item2_onclick" value="ActivateWindow(TVGuide)" />
+                    <param name="item2_label" value="$LOCALIZE[22020]" />
+                    <param name="item3_id" value="12903" />
+                    <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
+                    <param name="item3_label" value="$LOCALIZE[19163]" />
+                    <param name="item4_id" value="12904" />
+                    <param name="item4_onclick" value="ActivateWindow(TVTimers)" />
+                    <param name="item4_label" value="$LOCALIZE[19040]" />
+                    <param name="item5_id" value="12905" />
+                    <param name="item5_onclick" value="ActivateWindow(TVSearch)" />
+                    <param name="item5_label" value="$LOCALIZE[137]" />
+                    <param name="item6_vis" value="False" />
+                    <param name="item7_vis" value="False" />
+                </include>
                 <control type="group">
-                    <height>408</height>
+                    <height>395</height>
                     <control type="image">
-                        <top>18</top>
+                        <top>-2</top>
                         <left>480</left>
                         <width>690</width>
                         <height>392</height>
                         <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="image">
-                        <top>18</top>
+                        <top>-2</top>
                         <left>1150</left>
                         <width>690</width>
                         <height>392</height>
@@ -407,7 +428,7 @@
                     <control type="group">
                         <visible>PVR.HasNonRecordingTimer</visible>
                         <left>1170</left>
-                        <top>50</top>
+                        <top>30</top>
                         <control type="image">
                             <left>50</left>
                             <top>50</top>
@@ -457,7 +478,7 @@
                         </control>
                     </control>
                     <control type="group">
-                        <top>50</top>
+                        <top>30</top>
                         <left>550</left>
                         <visible>PVR.IsRecording</visible>
                         <control type="image">
@@ -507,27 +528,6 @@
                         </control>
                     </control>
                 </control>
-                <include name="SubMenu">
-                    <param name="list_id" value="12900"/>
-                    <param name="ondown_id" value="12100"/>
-                    <param name="item1_id" value="12901" />
-                    <param name="item1_onclick" value="ActivateWindow(TVChannels)" />
-                    <param name="item1_label" value="$LOCALIZE[19019]" />
-                    <param name="item2_id" value="12902" />
-                    <param name="item2_onclick" value="ActivateWindow(TVGuide)" />
-                    <param name="item2_label" value="$LOCALIZE[22020]" />
-                    <param name="item3_id" value="12903" />
-                    <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
-                    <param name="item3_label" value="$LOCALIZE[19163]" />
-                    <param name="item4_id" value="12904" />
-                    <param name="item4_onclick" value="ActivateWindow(TVTimers)" />
-                    <param name="item4_label" value="$LOCALIZE[19040]" />
-                    <param name="item5_id" value="12905" />
-                    <param name="item5_onclick" value="ActivateWindow(TVSearch)" />
-                    <param name="item5_label" value="$LOCALIZE[137]" />
-                    <param name="item6_vis" value="False" />
-                    <param name="item7_vis" value="False" />
-                </include>
                 <include name="WidgetListSquare">
                     <param name="content_path" value="pvr://channels/tv/All channels/"/>
                     <param name="widget_header" value="Recent recordings"/>
@@ -717,57 +717,6 @@
                 <visible>Container(9000).HasFocus(7)</visible>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
                 <include>Vis_FadeSlide_Right_Delayed</include>
-                <control type="group">
-                    <description>Weather info</description>
-                    <height>383</height>
-                    <control type="image">
-                        <top>18</top>
-                        <left>480</left>
-                        <width>1360</width>
-                        <height>392</height>
-                        <texture border="22">dialogs/dialog-bg.png</texture>
-                    </control>
-                    <control type="image">
-                        <top>52</top>
-                        <left>530</left>
-                        <width>330</width>
-                        <height>330</height>
-                        <texture>$INFO[Weather.conditions]</texture>
-                    </control>
-                    <control type="label">
-                        <left>990</left>
-                        <top>170</top>
-                        <aligny>center</aligny>
-                        <height>24</height>
-                        <width>800</width>
-                        <align>right</align>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <label>$INFO[Weather.Conditions]</label>
-                    </control>
-                    <control type="label">
-                        <left>990</left>
-                        <top>130</top>
-                        <aligny>center</aligny>
-                        <height>24</height>
-                        <width>800</width>
-                        <align>right</align>
-                        <font>font14</font>
-                        <textcolor>white</textcolor>
-                        <label>$INFO[Weather.Temperature]</label>
-                    </control>
-                    <control type="label">
-                        <left>990</left>
-                        <top>70</top>
-                        <aligny>center</aligny>
-                        <height>24</height>
-                        <width>800</width>
-                        <align>right</align>
-                        <font>font35_title</font>
-                        <textcolor>white</textcolor>
-                        <label>$INFO[Weather.Location]</label>
-                    </control>
-                </control>
                 <include name="SubMenu">
                     <param name="list_id" value="15900"/>
                     <param name="ondown_id" value="15100"/>
@@ -787,6 +736,57 @@
                     <param name="item6_vis" value="False" />
                     <param name="item7_vis" value="False" />
                 </include>
+                <control type="group">
+                    <description>Weather info</description>
+                    <height>370</height>
+                    <control type="image">
+                        <top>-2</top>
+                        <left>480</left>
+                        <width>1360</width>
+                        <height>392</height>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
+                    </control>
+                    <control type="image">
+                        <top>32</top>
+                        <left>530</left>
+                        <width>330</width>
+                        <height>330</height>
+                        <texture>$INFO[Weather.conditions]</texture>
+                    </control>
+                    <control type="label">
+                        <left>990</left>
+                        <top>150</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>800</width>
+                        <align>right</align>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Weather.Conditions]</label>
+                    </control>
+                    <control type="label">
+                        <left>990</left>
+                        <top>110</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>800</width>
+                        <align>right</align>
+                        <font>font14</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Weather.Temperature]</label>
+                    </control>
+                    <control type="label">
+                        <left>990</left>
+                        <top>50</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>800</width>
+                        <align>right</align>
+                        <font>font35_title</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Weather.Location]</label>
+                    </control>
+                </control>
                 <include name="WeatherWidget">
                     <param name="content_include" value="HourlyItems" />
                     <param name="list_id" value="15100" />
@@ -915,31 +915,31 @@
             </control>
             <control type="group">
                 <left>53</left>
-                <top>224</top>
+                <top>204</top>
                 <control type="image">
                     <description>Menu Panel</description>
                     <posx>-20</posx>
                     <posy>-20</posy>
                     <width>424</width>
-                    <height>671</height>
+                    <height>711</height>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="list" id="9000">
                     <left>1</left>
                     <top>1</top>
                     <width>382</width>
-                    <height>631</height>
+                    <height>671</height>
                     <pagecontrol>70</pagecontrol>
                     <onright>2000</onright>
                     <onup>900</onup>
                     <ondown>700</ondown>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <focusedlayout height="70">
+                    <focusedlayout height="74">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
                             <width>390</width>
-                            <height>71</height>
+                            <height>75</height>
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
                         <control type="group">
@@ -948,7 +948,7 @@
                                 <left>0</left>
                                 <top>0</top>
                                 <width>390</width>
-                                <height>69</height>
+                                <height>73</height>
                                 <texture border="150,1,150,1">lists/focus.png</texture>
                                 <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus">Conditional</animation>
                             </control>
@@ -964,7 +964,7 @@
                                 <left>-5</left>
                                 <top>0</top>
                                 <width>68</width>
-                                <height>70</height>
+                                <height>74</height>
                                 <texture colordiffuse="51FFFFFF" border="1">colors/black.png</texture>
                                 <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus">Conditional</animation>
                             </control>
@@ -1031,12 +1031,12 @@
                             <animation effect="fade" start="100" end="0" time="300">UnFocus</animation>
                         </control>
                     </focusedlayout>
-                    <itemlayout height="70">
+                    <itemlayout height="74">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
                             <width>390</width>
-                            <height>71</height>
+                            <height>75</height>
                             <texture border="90,3,90,3">lists/separator.png</texture>
                         </control>
                         <control type="label">

@@ -42,14 +42,14 @@
     </include>
     <include name="SubMenu">
         <control type="group">
-            <height>96</height>
+            <height>110</height>
             <control type="image">
                 <description>background image</description>
                 <right>60</right>
                 <top>19</top>
                 <width>1360</width>
                 <height>110</height>
-                <texture colordiffuse="A3FFFFFF" border="22">dialogs/dialog-bg.png</texture>
+                <texture colordiffuse="FFFFFFFF" border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="grouplist" id="$PARAM[list_id]">
                 <orientation>horizontal</orientation>
@@ -110,7 +110,7 @@
     <include name="WidgetListMovies">
         <control type="group">
             <description>Poster Widget including header and arrows</description>
-            <height>408</height>
+            <height>398</height>
             <left>0</left>
             <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -249,7 +249,7 @@
     <include name="WidgetListEpisodes">
         <control type="group">
             <description>Episode Widget including header and arrows</description>
-            <height>408</height>
+            <height>395</height>
             <left>0</left>
             <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -259,7 +259,7 @@
             </include>
             <control type="label">
                 <left>500</left>
-                <top>20</top>
+                <top>15</top>
                 <width>600</width>
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
@@ -416,7 +416,7 @@
     <include name="WidgetListSquare">
         <control type="group">
             <description>Square Widget including header and arrows</description>
-            <height>408</height>
+            <height>395</height>
             <left>0</left>
             <top>0</top>
             <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -426,7 +426,7 @@
             </include>
             <control type="label">
                 <left>500</left>
-                <top>20</top>
+                <top>15</top>
                 <width>600</width>
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
