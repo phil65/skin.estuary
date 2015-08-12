@@ -625,14 +625,16 @@
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
-        <control type="image">
+        <control type="button">
             <description>logo</description>
-            <left>-20</left>
+            <left>$PARAM[DialogBackgroundWidth]</left>
             <top>11</top>
-            <width>$PARAM[DialogBackgroundWidth]</width>
+            <width>48</width>
             <height>48</height>
-            <aspectratio align="right">keep</aspectratio>
-            <texture colordiffuse="EEFFFFFF" border="2">icons/logo.png</texture>
+            <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
+            <texturefocus colordiffuse="EEFFFFFF" border="2">icons/logo.png</texturefocus>
+            <texturenofocus colordiffuse="EEFFFFFF" border="2">icons/logo.png</texturenofocus>
+            <onclick>Action(close)</onclick>
         </control>
     </include>
     <include name="TopBar">
