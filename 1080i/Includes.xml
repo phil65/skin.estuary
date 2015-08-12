@@ -632,8 +632,8 @@
             <width>48</width>
             <height>48</height>
             <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
-            <texturefocus colordiffuse="EEFFFFFF" border="2">icons/logo.png</texturefocus>
-            <texturenofocus colordiffuse="EEFFFFFF" border="2">icons/logo.png</texturenofocus>
+            <texturefocus colordiffuse="EEFFFFFF">icons/logo.png</texturefocus>
+            <texturenofocus colordiffuse="EEFFFFFF">icons/logo.png</texturenofocus>
             <onclick>Action(close)</onclick>
         </control>
     </include>
