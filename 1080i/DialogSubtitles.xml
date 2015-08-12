@@ -7,62 +7,13 @@
 	</coordinates>
 	<controls>
 		<control type="group" id="250">
-			<animation effect="slide" start="0,0" end="900,0" time="375" tween="quadratic" easing="out">WindowClose</animation>
-			<animation type="Conditional" condition="Control.HasFocus(150) | Control.HasFocus(160)" reversible="true">
-				<effect type="slide" end="-250,0" time="300" />
-			</animation>
-			<control type="button" id="8999">
-				<description>Fake button for mouse control</description>
-				<left>880</left>
-				<top>0</top>
-				<width>80</width>
-				<height>720</height>
-				<label>-</label>
-				<font>-</font>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<visible>true</visible>
-				<onfocus>SetFocus(150)</onfocus>
-			</control>
-			<control type="image">
-				<description>media info background image</description>
-				<left>0</left>
-				<top>0</top>
-				<width>1150</width>
-				<height>720</height>
-				<colordiffuse>BBFFFFFF</colordiffuse>
-				<texture border="20,0,0,0" flipx="true">MediaBladeSub.png</texture>
-			</control>
-			<control type="button">
-				<description>Close Window button</description>
-				<left>20</left>
-				<top>0</top>
-				<width>64</width>
-				<height>32</height>
-				<label>-</label>
-				<font>-</font>
-				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogClosebuttons/button-theme-fo.png</texturefocus>
-				<texturenofocus>DialogCloseButton.png</texturenofocus>
-				<onleft>101</onleft>
-				<onright>101</onright>
-				<onup>101</onup>
-				<ondown>101</ondown>
-				<visible>system.getbool(input.enablemouse)</visible>
-			</control>
+            <include name="DialogBackgroundCommons">
+                <param name="DialogBackgroundWidth" value="1400" />
+                <param name="DialogBackgroundHeight" value="770" />
+                <param name="DialogHeaderLabel" value="Subtitles" />
+                <param name="DialogHeaderId" value="100" />
+            </include>
 			<control type="group">
-				<control type="label" id="100">
-					<description>header label</description>
-					<left>330</left>
-					<top>80</top>
-					<width>550</width>
-					<height>30</height>
-					<font>font30_title</font>
-					<align>right</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
 				<control type="label">
 					<description>Video label</description>
 					<left>255</left>
