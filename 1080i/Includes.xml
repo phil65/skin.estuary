@@ -595,6 +595,26 @@
             <texture colordiffuse="C2FFFFFF">colors/black.png</texture>
             <visible>$PARAM[darken_bg]</visible>
         </control>
+        <control type="button">
+            <description>background image</description>
+            <left>-1920</left>
+            <top>-1080</top>
+            <width>5760</width>
+            <height>3240</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onclick>Action(close)</onclick>
+        </control>
+        <control type="button">
+            <description>background image</description>
+            <left>0</left>
+            <top>0</top>
+            <width>$PARAM[DialogBackgroundWidth]</width>
+            <height>$PARAM[DialogBackgroundHeight]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onclick>noop</onclick>
+        </control>
         <control type="image">
             <description>background image</description>
             <left>0</left>
