@@ -33,11 +33,10 @@
             </control>
             <control type="button">
                 <description>logo</description>
-                <left>689</left>
+                <left>619</left>
                 <top>11</top>
                 <width>48</width>
                 <height>48</height>
-                <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
                 <texturefocus colordiffuse="EEFFFFFF" border="2">icons/logo.png</texturefocus>
                 <texturenofocus colordiffuse="EEFFFFFF" border="2">icons/logo.png</texturenofocus>
                 <onclick>Action(close)</onclick>
