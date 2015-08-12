@@ -103,8 +103,10 @@
                     </control>
                     <control type="radiobutton" id="8">
                         <description>Default RadioButton</description>
+                        <label>20189</label>
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
+                        <onclick>Skin.ToggleSetting(autoscroll)</onclick>
                     </control>
                     <control type="spincontrolex" id="9">
                         <description>Default SpinControlex</description>
