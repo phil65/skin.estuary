@@ -13,22 +13,34 @@
             <control type="image">
                 <description>Dialog Header image</description>
                 <left>0</left>
-                <top>60</top>
+                <top>0</top>
                 <width>689</width>
-                <height>3</height>
-                <texture colordiffuse="button_focus" border="2">dialogs/separator.png</texture>
+                <height>70</height>
+                <texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
             </control>
             <control type="label" id="2">
                 <description>header label</description>
-                <textoffsetx>40</textoffsetx>
-                <top>20</top>
-                <width>680</width>
-                <height>30</height>
-                <font>font13_title</font>
+                <textoffsetx>70</textoffsetx>
+                <left>-30</left>
+                <top>0</top>
+                <width>689</width>
+                <height>70</height>
+                <font>font20_title</font>
                 <align>left</align>
                 <aligny>center</aligny>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="button">
+                <description>logo</description>
+                <left>689</left>
+                <top>11</top>
+                <width>48</width>
+                <height>48</height>
+                <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
+                <texturefocus colordiffuse="EEFFFFFF" border="2">icons/logo.png</texturefocus>
+                <texturenofocus colordiffuse="EEFFFFFF" border="2">icons/logo.png</texturenofocus>
+                <onclick>Action(close)</onclick>
             </control>
             <control type="grouplist" id="5">
                 <posx>0</posx>
