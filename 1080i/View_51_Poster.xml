@@ -234,7 +234,7 @@
                     <control type="label">>
                         <width>1160</width>
                         <height>40</height>
-                        <label>$INFO[ListItem.Season,,[COLOR button_focus] Seasons[/COLOR]]$INFO[ListItem.Episode, - ,[COLOR button_focus] Episodes[/COLOR]]</label>
+                        <label>$INFO[ListItem.Season,[COLOR button_focus]Seasons: [/COLOR],]$INFO[ListItem.Episode,  •  [COLOR button_focus] Episodes: [/COLOR],]</label>
                         <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
