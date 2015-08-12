@@ -6,7 +6,7 @@
         <align>left</align>
         <aligny>center</aligny>
         <font>font12</font>
-        <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+        <texturefocus colordiffuse="button_focus" border="40">buttons/button-submenu-fo.png</texturefocus>
         <texturenofocus border="40">buttons/button-submenu-nofo.png</texturenofocus>
         <textoffsetx>35</textoffsetx>
     </include>
@@ -43,29 +43,19 @@
     <include name="SubMenu">
         <control type="group">
             <height>96</height>
-            <!--
-            <control type="image">
-                <description>background image</description>
-                <right>80</right>
-                <top>39</top>
-                <width>1320</width>
-                <height>70</height>
-                <texture colordiffuse="button_focus_light" border="2">colors/white.png</texture>
-            </control>
-            -->
             <control type="image">
                 <description>background image</description>
                 <right>60</right>
                 <top>19</top>
                 <width>1360</width>
                 <height>110</height>
-                <texture border="22">dialogs/dialog-bg.png</texture>
+                <texture colordiffuse="A3FFFFFF" border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="grouplist" id="$PARAM[list_id]">
                 <orientation>horizontal</orientation>
                 <itemgap>-5</itemgap>
                 <onleft>9000</onleft>
-                <left>420</left>
+                <left>425</left>
                 <top>28</top>
                 <align>right</align>
                 <height>90</height>
