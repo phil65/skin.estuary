@@ -25,7 +25,7 @@
                     <width>509</width>
                     <height>746</height>
                     <aspectratio>stretch</aspectratio>
-                        <texture border="22">dialogs/dialog-bg.png</texture>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="textbox">
                     <right>130</right>
@@ -439,7 +439,7 @@
             <top>650</top>
             <width>509</width>
             <height>260</height>
-            <texture border="22">dialogs/info-bg.png</texture>
+            <texture border="22">dialogs/dialog-bg.png</texture>
         </control>
         <control type="textbox">
             <left>120</left>
