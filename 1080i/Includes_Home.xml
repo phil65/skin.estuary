@@ -43,19 +43,11 @@
     <include name="SubMenu">
         <control type="group">
             <height>110</height>
-            <control type="image">
-                <description>background image</description>
-                <right>60</right>
-                <top>19</top>
-                <width>1360</width>
-                <height>110</height>
-                <texture colordiffuse="FFFFFFFF" border="22">dialogs/dialog-bg.png</texture>
-            </control>
             <control type="grouplist" id="$PARAM[list_id]">
                 <orientation>horizontal</orientation>
-                <itemgap>-5</itemgap>
+                <itemgap>5</itemgap>
                 <onleft>9000</onleft>
-                <left>425</left>
+                <left>420</left>
                 <top>28</top>
                 <align>right</align>
                 <height>90</height>
