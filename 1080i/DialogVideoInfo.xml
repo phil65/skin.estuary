@@ -404,7 +404,7 @@
 			<width>613</width>
 			<height>920</height>
 			<aspectratio aligny="top">scale</aspectratio>
-			<texture background="true" fallback="colors/black.png">$VAR[PosterVar]</texture>
+			<texture background="true" fallback="DefaultVideo.png">$VAR[PosterVar]</texture>
 		</control>
 	</controls>
 </window>
