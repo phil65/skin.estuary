@@ -595,26 +595,6 @@
             <texture colordiffuse="C2FFFFFF">colors/black.png</texture>
             <visible>$PARAM[darken_bg]</visible>
         </control>
-        <control type="button">
-            <description>background image</description>
-            <left>-1920</left>
-            <top>-1080</top>
-            <width>5760</width>
-            <height>3240</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <onclick>Action(close)</onclick>
-        </control>
-        <control type="button">
-            <description>background image</description>
-            <left>0</left>
-            <top>0</top>
-            <width>$PARAM[DialogBackgroundWidth]</width>
-            <height>$PARAM[DialogBackgroundHeight]</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <onclick>noop</onclick>
-        </control>
         <control type="image">
             <description>background image</description>
             <left>0</left>
@@ -645,19 +625,44 @@
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
-        <control type="togglebutton" id="22000">
+        <control type="button" id="22001">
+            <description>background close area</description>
+            <left>-1920</left>
+            <top>-1080</top>
+            <width>5760</width>
+            <height>3240</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onclick>Action(close)</onclick>
+        </control>
+        <control type="button" id="22002">
+            <description>button overlay to avoid closing in dialog area</description>
+            <left>0</left>
+            <top>0</top>
+            <width>$PARAM[DialogBackgroundWidth]</width>
+            <height>$PARAM[DialogBackgroundHeight]</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onclick>noop</onclick>
+        </control>
+        <control type="radiobutton" id="22000">
             <description>logo</description>
             <left>$PARAM[DialogBackgroundWidth]</left>
             <top>11</top>
             <width>48</width>
             <height>48</height>
+            <radiowidth>48</radiowidth>
+            <radioheight>48</radioheight>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <label></label>
             <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
-            <texturefocus colordiffuse="EEFFFFFF">icons/logo.png</texturefocus>
-            <texturenofocus colordiffuse="EEFFFFFF">icons/logo.png</texturenofocus>
-            <alttexturefocus colordiffuse="EEFFFFFF">DefaultIconError.png</alttexturefocus>
-            <alttexturenofocus colordiffuse="EEFFFFFF">DefaultIconError.png</alttexturenofocus>
-            <usealttexture>Control.HasFocus(22000)</usealttexture>
-            <onclick>Action(close)</onclick>
+            <textureradioofffocus colordiffuse="EEFFFFFF">DefaultIconError.png</textureradioofffocus>
+            <textureradiooffnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradiooffnofocus>
+            <textureradioonfocus colordiffuse="EEFFFFFF">DefaultIconError.png</textureradioonfocus>
+            <textureradioonnofocus colordiffuse="EEFFFFFF">DefaultIconError.png</textureradioonnofocus>
+<!--             <selected>Control.HasFocus(22000)</selected>
+ -->            <onclick>Action(close)</onclick>
         </control>
     </include>
     <include name="TopBar">
