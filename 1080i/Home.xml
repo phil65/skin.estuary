@@ -411,24 +411,17 @@
                 </include>
                 <control type="group">
                     <height>395</height>
-                    <control type="image">
-                        <top>-2</top>
-                        <left>480</left>
-                        <width>690</width>
-                        <height>392</height>
-                        <texture border="22">dialogs/dialog-bg.png</texture>
-                    </control>
-                    <control type="image">
-                        <top>-2</top>
-                        <left>1150</left>
-                        <width>690</width>
-                        <height>392</height>
-                        <texture border="22">dialogs/dialog-bg.png</texture>
-                    </control>
                     <control type="group">
                         <visible>PVR.HasNonRecordingTimer</visible>
                         <left>1170</left>
                         <top>30</top>
+                        <control type="image">
+                            <top>-32</top>
+                            <left>-20</left>
+                            <width>690</width>
+                            <height>392</height>
+                            <texture border="22">dialogs/dialog-bg.png</texture>
+                        </control>
                         <control type="image">
                             <left>50</left>
                             <top>50</top>
@@ -481,6 +474,13 @@
                         <top>30</top>
                         <left>550</left>
                         <visible>PVR.IsRecording</visible>
+                        <control type="image">
+                            <top>-32</top>
+                            <left>-70</left>
+                            <width>690</width>
+                            <height>392</height>
+                            <texture border="22">dialogs/dialog-bg.png</texture>
+                        </control>
                         <control type="image">
                             <left>0</left>
                             <top>50</top>
