@@ -56,7 +56,6 @@
 						<height>255</height>
 						<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.TagLine)</visible>
 					<control type="button" id="138">
-						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
 						<width>1070</width>
 						<height>235</height>
 						<textoffsetx>40</textoffsetx>

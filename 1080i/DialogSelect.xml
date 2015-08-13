@@ -15,8 +15,8 @@
                 <param name="DialogHeaderId" value="1" />
             </include>
             <control type="list" id="3">
-                <left>2</left>
-                <top>67</top>
+                <left>0</left>
+                <top>70</top>
                 <width>900</width>
                 <height>660</height>
                 <onup>3</onup>
@@ -78,8 +78,8 @@
                 </focusedlayout>
             </control>
             <control type="list" id="6">
-                <left>2</left>
-                <top>67</top>
+                <left>0</left>
+                <top>70</top>
                 <width>900</width>
                 <height>675</height>
                 <onup>6</onup>
@@ -229,7 +229,7 @@
                         <font>font12_title</font>
                         <textcolor>white</textcolor>
                         <focusedcolor>white</focusedcolor>
-                        <height>100</height>
+                        <height>90</height>
                         <align>center</align>
                         <aligny>center</aligny>
                         <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>

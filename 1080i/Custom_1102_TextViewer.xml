@@ -23,7 +23,7 @@
                 <label>$INFO[Window(home).Property(TextViewer_Text)]</label>
             </control>
             <control type="scrollbar" id="3000">
-                <include>InvisibleObject</include>
+                <include>HiddenObject</include>
                 <ondown>3000</ondown>
                 <onup>3000</onup>
             </control>

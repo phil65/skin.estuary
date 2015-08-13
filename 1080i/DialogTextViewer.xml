@@ -22,7 +22,7 @@
                 <pagecontrol>3000</pagecontrol>
             </control>
             <control type="scrollbar" id="3000">
-                <include>InvisibleObject</include>
+                <include>HiddenObject</include>
                 <ondown>3000</ondown>
                 <onup>3000</onup>
             </control>
