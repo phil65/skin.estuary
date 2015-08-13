@@ -16,16 +16,16 @@
         </include>
         <control type="panel" id="11">
             <left>40</left>
-            <top>80</top>
+            <top>100</top>
             <width>1110</width>
             <height>700</height>
-            <onleft>11</onleft>
-            <onright>11</onright>
+            <onleft>9001</onleft>
+            <onright>9001</onright>
             <preloaditems>2</preloaditems>
             <pagecontrol>61</pagecontrol>
             <scrolltime tween="sine">200</scrolltime>
             <orientation>vertical</orientation>
-            <itemlayout width="370" height="350">
+            <itemlayout width="370" height="360">
                 <control type="group">
                     <control type="image">
                         <left>0</left>
@@ -51,7 +51,7 @@
                     </control>
                 </control>
             </itemlayout>
-            <focusedlayout width="370" height="350">
+            <focusedlayout width="370" height="360">
                 <control type="group">
                     <control type="image">
                         <left>0</left>
@@ -88,8 +88,8 @@
         </control>
         <control type="grouplist" id="9001">
             <orientation>vertical</orientation>
-            <left>1150</left>
-            <top>70</top>
+            <left>1180</left>
+            <top>85</top>
             <width>1500</width>
             <height>800</height>
             <aligny>top</aligny>
