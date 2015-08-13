@@ -449,7 +449,7 @@
             <align>justify</align>
             <font>font_textbox</font>
             <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
-            <label fallback="No info available">$INFO[ListItem.Property(Addon.creator),[COLOR button_focus]Author: [/COLOR],[CR]]$INFO[ListItem.Property(Addon.Description)]$INFO[ListItem.Property(Artist_Description)]</label>
+            <label fallback="No info available">$VAR[ListBoxInfoVar]</label>
         </control>
     </include>
     <include name="SongsListLayout">
