@@ -645,7 +645,7 @@
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
-        <control type="button">
+        <control type="togglebutton" id="22000">
             <description>logo</description>
             <left>$PARAM[DialogBackgroundWidth]</left>
             <top>11</top>
@@ -654,6 +654,9 @@
             <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
             <texturefocus colordiffuse="EEFFFFFF">icons/logo.png</texturefocus>
             <texturenofocus colordiffuse="EEFFFFFF">icons/logo.png</texturenofocus>
+            <alttexturefocus colordiffuse="EEFFFFFF">DefaultIconError.png</alttexturefocus>
+            <alttexturenofocus colordiffuse="EEFFFFFF">DefaultIconError.png</alttexturenofocus>
+            <usealttexture>Control.HasFocus(22000)</usealttexture>
             <onclick>Action(close)</onclick>
         </control>
     </include>
