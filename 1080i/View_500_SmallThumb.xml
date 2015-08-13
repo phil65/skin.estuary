@@ -116,7 +116,7 @@
         </focusedlayout>
     </include>
     <include name="SmallThumbVideoLayouts">
-        <itemlayout height="360" width="300" condition="!Container.content(episodes)">
+        <itemlayout height="375" width="300" condition="!Container.content(episodes)">
             <control type="image">
                 <left>1</left>
                 <top>10</top>
@@ -128,7 +128,7 @@
                 <bordersize>4</bordersize>
             </control>
         </itemlayout>
-        <focusedlayout height="360" width="300" condition="!Container.content(episodes)">
+        <focusedlayout height="375" width="300" condition="!Container.content(episodes)">
             <control type="image">
                 <left>1</left>
                 <top>10</top>
@@ -328,7 +328,7 @@
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
                 <left>100</left>
-                <top>182</top>
+                <top>172</top>
                 <visible>Control.IsVisible(500)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="panel" id="500">

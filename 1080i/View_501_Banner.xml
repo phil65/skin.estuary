@@ -10,14 +10,14 @@
             <control type="group">
                 <include>OpenClose_FadeSlide_Right</include>
                 <left>100</left>
-                <top>182</top>
+                <top>167</top>
                 <visible>Control.IsVisible(501)</visible>
                 <include>Vis_FadeSlide_Right</include>
                 <control type="panel" id="501">
                     <left>0</left>
                     <top>0</top>
                     <width>1840</width>
-                    <height>720</height>
+                    <height>732</height>
                     <onleft>9000</onleft>
                     <onright>9000</onright>
                     <onup>501</onup>
@@ -27,7 +27,7 @@
                     <pagecontrol>532</pagecontrol>
                     <scrolltime>200</scrolltime>
                     <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-                    <itemlayout height="178" width="900">
+                    <itemlayout height="183" width="900">
                         <control type="image">
                             <left>1</left>
                             <top>15</top>
@@ -39,7 +39,7 @@
                             <bordersize>4</bordersize>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="178" width="900">
+                    <focusedlayout height="183" width="900">
                         <control type="group">
                             <animation effect="slide" start="0,0" end="-37,0" time="300">Focus</animation>
                             <animation effect="slide" start="-37,0" end="0,0" time="125">UnFocus</animation>
