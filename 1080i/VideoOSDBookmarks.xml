@@ -88,7 +88,7 @@
         </control>
         <control type="grouplist" id="9001">
             <orientation>vertical</orientation>
-            <left>1180</left>
+            <left>1140</left>
             <top>85</top>
             <width>1500</width>
             <height>800</height>
@@ -99,14 +99,17 @@
             <include name="DefaultDialogButton">
                 <param name="id" value="2" />
                 <param name="label" value="294" />
+                <param name="width" value="350" />
             </include>
             <include name="DefaultDialogButton">
                 <param name="id" value="3" />
                 <param name="label" value="296" />
+                <param name="width" value="350" />
             </include>
             <include name="DefaultDialogButton">
                 <param name="id" value="4" />
                 <param name="label" value="20406" />
+                <param name="width" value="350" />
             </include>
         </control>
         <control type="scrollbar" id="61">
