@@ -3,16 +3,15 @@
 	<defaultcontrol always="true">20</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<left>240</left>
-		<top>20</top>
+		<left>360</left>
+		<top>120</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="150" condition="Window.IsActive(AddonSettings)">Conditional</animation>
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="800" />
-				<param name="DialogBackgroundHeight" value="680" />
+				<param name="DialogBackgroundWidth" value="1200" />
+				<param name="DialogBackgroundHeight" value="850" />
 				<param name="DialogHeaderLabel" value="$LOCALIZE[20333]" />
 				<param name="DialogHeaderId" value="1" />
 			</include>
@@ -249,7 +248,9 @@
 			</control>
 			<control type="grouplist" id="9001">
 				<orientation>horizontal</orientation>
-				<top>615</top>
+				<top>720</top>
+				<width>1200</width>
+				<align>center</align>
 				<include name="DefaultDialogButton">
 					<param name="id" value="28" />
 					<param name="label" value="186" />

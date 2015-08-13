@@ -17,7 +17,7 @@
 		<control type="label">
 			<description>path label</description>
 			<left>30</left>
-			<top>65</top>
+			<top>90</top>
 			<width>1140</width>
 			<height>30</height>
 			<align>center</align>
@@ -27,6 +27,13 @@
 			<textcolor>blue</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
+				<control type="image">
+			<left>25</left>
+			<top>145</top>
+					<width>860</width>
+					<height>285</height>
+					<texture border="40">buttons/button-nofo.png</texture>
+				</control>
 		<control type="list" id="10">
 			<left>45</left>
 			<top>165</top>
