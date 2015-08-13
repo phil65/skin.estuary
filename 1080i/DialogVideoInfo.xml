@@ -181,7 +181,8 @@
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 								</control>
 								<control type="textbox">
-									<width>228</width>
+									<posx>5</posx>
+									<width>214</width>
 									<height>69</height>
 									<posy>267</posy>
 									<align>center</align>
@@ -214,7 +215,8 @@
 									<animation effect="fade" start="100" end="80" time="40" condition="Control.HasFocus(50)">Conditional</animation>
 								</control>
 								<control type="textbox">
-									<width>228</width>
+									<posx>5</posx>
+									<width>214</width>
 									<height>69</height>
 									<posy>267</posy>
 									<align>center</align>
