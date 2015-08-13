@@ -23,11 +23,6 @@
 				<top>5</top>
 				<width>25</width>
 				<height>470</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>20</onleft>
 				<onright>9002</onright>
 				<showonepage>false</showonepage>
@@ -51,7 +46,7 @@
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="45" width="420">
+				<itemlayout height="70" width="420">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -66,17 +61,6 @@
 						<height>30</height>
 						<texture>$INFO[ListItem.Property(Icon)]</texture>
 						<aspectratio>keep</aspectratio>
-						<visible>ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="image">
-						<left>5</left>
-						<top>5</top>
-						<width>30</width>
-						<height>30</height>
-						<colordiffuse>77FFFFFF</colordiffuse>
-						<texture>$INFO[ListItem.Property(Icon)]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
 						<left>45</left>
@@ -89,20 +73,6 @@
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-						<visible>ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="label">
-						<left>45</left>
-						<top>0</top>
-						<width>335</width>
-						<height>40</height>
-						<font>font12</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
 						<left>390</left>
@@ -113,7 +83,7 @@
 						<visible>ListItem.Property(Changed)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="65" width="420">
+				<focusedlayout height="70" width="420">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -129,17 +99,6 @@
 						<height>30</height>
 						<texture>$INFO[ListItem.Property(Icon)]</texture>
 						<aspectratio>keep</aspectratio>
-						<visible>ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="image">
-						<left>5</left>
-						<top>5</top>
-						<width>30</width>
-						<height>30</height>
-						<colordiffuse>77FFFFFF</colordiffuse>
-						<texture>$INFO[ListItem.Property(Icon)]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="label">
 						<left>45</left>
@@ -152,20 +111,6 @@
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-						<visible>ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="label">
-						<left>45</left>
-						<top>0</top>
-						<width>335</width>
-						<height>40</height>
-						<font>font12</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
 					<control type="image">
 						<left>390</left>
