@@ -27,24 +27,51 @@
                     <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
+                <control type="image">
+                    <description>Audio Channels</description>
+                    <right>118</right>
+                    <top>570</top>
+                    <width>110</width>
+                    <height>50</height>
+                    <aspectratio align="center">keep</aspectratio>
+                    <texture>$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]</texture>
+                </control>
+                <control type="image">
+                    <description>Audio Codec</description>
+                    <right>233</right>
+                    <top>570</top>
+                    <width>110</width>
+                    <height>50</height>
+                    <aspectratio align="center">keep</aspectratio>
+                    <texture>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
+                </control>
+                <control type="image">
+                    <right>348</right>
+                    <top>570</top>
+                    <description>Video Aspect</description>
+                    <width>110</width>
+                    <height>50</height>
+                    <aspectratio align="center">keep</aspectratio>
+                    <texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
+                </control>
+                <control type="image">
+                    <right>463</right>
+                    <top>570</top>
+                    <description>Video Codec</description>
+                    <width>110</width>
+                    <height>50</height>
+                    <aspectratio align="center">keep</aspectratio>
+                    <texture>$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>
+                </control>
                 <control type="textbox">
                     <right>130</right>
                     <top>194</top>
                     <width>429</width>
-                    <height>335</height>
+                    <height>345</height>
                     <align>justify</align>
                     <font>font_textbox</font>
                     <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
                     <label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
-                </control>
-                <control type="label">
-                    <right>130</right>
-                    <top>570</top>
-                    <width>429</width>
-                    <height>335</height>
-                    <align>justify</align>
-                    <font>font_textbox</font>
-                    <label>Flags Placeholder</label>
                 </control>
                 <control type="image">
                     <right>113</right>
