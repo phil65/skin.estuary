@@ -98,10 +98,6 @@
         </control>
     </include>
     <include name="VideoLibraryButtons">
-        <control type="edit" id="19">
-            <label>137</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
         <control type="button" id="16">
             <label>589</label>
             <include>MediaMenuItemsCommon</include>
@@ -246,10 +242,10 @@
         </control>
     </include>
     <include name="FilterButtons">
-        <control type="button" id="19">
-            <label>587</label>
-            <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-            <visible>!Container.Content()</visible>
+        <control type="edit" id="19">
+            <label>$LOCALIZE[137]...</label>
+<!--             <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+ -->            <visible>!Container.Content()</visible>
             <include>MediaMenuItemsCommon</include>
         </control>
         <control type="button" id="98">
