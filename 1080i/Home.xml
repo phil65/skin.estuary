@@ -954,7 +954,7 @@
                             </control>
                             <control type="image">
                                 <left>-3</left>
-                                <top>-1</top>
+                                <top>1</top>
                                 <width>70</width>
                                 <height>70</height>
                                 <texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
@@ -971,14 +971,14 @@
                         </control>
                         <control type="image">
                             <left>-3</left>
-                            <top>-1</top>
+                            <top>1</top>
                             <width>70</width>
                             <height>70</height>
                             <texture>$INFO[ListItem.Art(thumb)]</texture>
                         </control>
                         <control type="image">
                             <left>-3</left>
-                            <top>-1</top>
+                            <top>1</top>
                             <width>70</width>
                             <height>70</height>
                             <texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
@@ -1054,7 +1054,7 @@
                         </control>
                         <control type="image">
                             <left>-3</left>
-                            <top>-1</top>
+                            <top>1</top>
                             <width>70</width>
                             <height>70</height>
                             <texture>$INFO[ListItem.Art(thumb)]</texture>
