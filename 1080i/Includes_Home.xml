@@ -7,7 +7,7 @@
         <aligny>center</aligny>
         <font>font12</font>
         <texturefocus colordiffuse="button_focus" border="40">buttons/button-submenu-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-submenu-nofo.png</texturenofocus>
+        <texturenofocus colordiffuse="AAFFFFFF" border="40">buttons/button-submenu-nofo.png</texturenofocus>
         <textoffsetx>35</textoffsetx>
     </include>
     <include name="BottomMainMenuItem">
