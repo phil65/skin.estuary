@@ -5,7 +5,6 @@
             <description>List Viewtype</description>
             <include name="UpDownArrows">
                 <param name="container_id" value="50" />
-                <param name="posx" value="936" />
             </include>
             <control type="group">
                 <include>OpenClose_FadeSlide_Left</include>

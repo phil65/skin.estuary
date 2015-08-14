@@ -48,23 +48,11 @@
 			<texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
 			<texturenofocus>lists/separator.png</texturenofocus>
 		</control>
-		<control type="image">
-			<left>201</left>
-			<top>730</top>
-			<width>48</width>
-			<height>24</height>
-			<texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
-			<animation effect="zoom" start="100,0" end="100,100" center="0,790" time="200">VisibleChange</animation>
-			<visible>Container(996).HasNext</visible>
-		</control>
-		<control type="image">
-			<left>201</left>
-			<top>-40</top>
-			<width>48</width>
-			<height>24</height>
-			<texture colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
-			<animation effect="zoom" start="100,0" end="100,100" center="0,-60" time="200">VisibleChange</animation>
-			<visible>Container(996).HasPrevious</visible>
-		</control>
+        <include name="UpDownArrows">
+            <param name="container_id" value="996" />
+            <param name="posx" value="201" />
+            <param name="up_posy" value="-40" />
+            <param name="down_posy" value="730" />
+        </include>
 	</controls>
 </window>

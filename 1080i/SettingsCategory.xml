@@ -89,37 +89,12 @@
                     <height>3</height>
                     <texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
                 </control>
-                <!-- <control type="group">
-                     <left>500</left>
-                     <top>100</top>
-                     <include name="DialogBackgroundCommons">
-                     <param name="DialogBackgroundWidth" value="1300" />
-                     <param name="DialogBackgroundHeight" value="868" />
-                     <param name="DialogHeaderLabel" value="$LOCALIZE[24003]" />
-                     <param name="DialogHeaderId" value="2" />
-                     <param name="darken_bg" value="false" />
-                     </include>
-                     </control> -->
-                <control type="image">
-                    <left>1031</left>
-                    <top>940</top>
-                    <width>48</width>
-                    <height>24</height>
-                    <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,905" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,910" time="200">WindowOpen</animation>
-                    <visible>Container(5).HasNext</visible>
-                </control>
-                <control type="image">
-                    <left>1031</left>
-                    <top>105</top>
-                    <width>48</width>
-                    <height>24</height>
-                    <texture  colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,150" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,150" time="200">WindowOpen</animation>
-                    <visible>Container(5).HasPrevious</visible>
-                </control>
+                <include name="UpDownArrows">
+                    <param name="container_id" value="5" />
+                    <param name="posx" value="1031" />
+                    <param name="up_posy" value="105" />
+                    <param name="down_posy" value="940" />
+                </include>
                 <control type="grouplist" id="5">
                     <description>control area</description>
                     <left>442</left>
