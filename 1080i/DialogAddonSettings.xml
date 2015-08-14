@@ -3,13 +3,13 @@
 	<defaultcontrol always="true">9</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<left>240</left>
+		<left>150</left>
 		<top>140</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1440" />
+			<param name="DialogBackgroundWidth" value="1620" />
 			<param name="DialogBackgroundHeight" value="800" />
 			<param name="DialogHeaderLabel" value="-" />
 			<param name="DialogHeaderId" value="20" />
@@ -51,7 +51,7 @@
 			<description>control area</description>
 			<left>330</left>
 			<top>70</top>
-			<width>800</width>
+			<width>980</width>
 			<height>700</height>
 			<itemgap>-25</itemgap>
 			<pagecontrol>30</pagecontrol>
@@ -61,7 +61,7 @@
 			<onright>9001</onright>
 		</control>
 		<control type="scrollbar" id="30">
-			<left>765</left>
+			<left>945</left>
 			<top>120</top>
 			<width>25</width>
 			<height>380</height>
@@ -76,7 +76,7 @@
 			<orientation>vertical</orientation>
 		</control>
 		<control type="grouplist" id="9001">
-			<left>1130</left>
+			<left>1310</left>
 			<top>-160</top>
 			<width>300</width>
 			<height>700</height>
