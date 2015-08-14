@@ -151,7 +151,7 @@
             </item>
             <item id="6">
                 <label>Get more...</label>
-                <onclick>ActivateWindow(addonbrowser,addons://repos/,return)</onclick>
+                <onclick>ActivateWindow(addonbrowser,addons://all/,return)</onclick>
                 <icon>icons/settings/addons.png</icon>
             </item>
         </content>
