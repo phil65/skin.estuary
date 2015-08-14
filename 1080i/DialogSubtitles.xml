@@ -231,11 +231,6 @@
 					<ondown>120</ondown>
 					<onup>120</onup>
 					<textoffsetx>10</textoffsetx>
-					<textureup>scroll-up.png</textureup>
-					<texturedown>scroll-down.png</texturedown>
-					<textureupfocus>scroll-up-focus.png</textureupfocus>
-					<texturedownfocus>scroll-down-focus.png</texturedownfocus>
-					<showonepage>false</showonepage>
 					<visible>Control.IsVisible(120)</visible>
 				</control>
 				<control type="group" id="130">

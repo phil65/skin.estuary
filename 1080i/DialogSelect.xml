@@ -190,13 +190,10 @@
                 <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
                 <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
                 <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
-                <!-- <animation effect="zoom" start="100,100" end="150,100" time="150" center="auto" tween="cubic" easing="inout">Focus</animation>
-                     <animation effect="zoom" start="150,100" end="100,100" time="125" center="auto" tween="cubic" easing="inout">UnFocus</animation> -->
                 <textureslidernib>-</textureslidernib>
                 <textureslidernibfocus>-</textureslidernibfocus>
                 <onleft>3</onleft>
                 <onright>90</onright>
-                <showonepage>false</showonepage>
                 <orientation>vertical</orientation>
             </control>
             <control type="group">

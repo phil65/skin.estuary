@@ -215,18 +215,18 @@
 					<label>[COLOR=blue]$LOCALIZE[207][/COLOR]$INFO[Container(400).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(400).NumPages,/, )]</label>
 					<visible>Control.IsVisible(400)</visible>
 				</control>
-				<control type="spincontrol" id="61">
+				<control type="button" id="61">
 					<description>Next page button</description>
 					<left>120r</left>
 					<top>485</top>
-					<subtype>page</subtype>
 					<font>-</font>
 					<onleft>61</onleft>
 					<onright>61</onright>
 					<ondown>9000</ondown>
 					<onup>49</onup>
 					<textcolor>-</textcolor>
-					<showonepage>true</showonepage>
+						<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+						<onclick>ActivateWindow(1102)</onclick>
 				</control>
 				<control type="textbox" id="400">
 					<left>210</left>

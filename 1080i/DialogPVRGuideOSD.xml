@@ -255,16 +255,10 @@
 				<top>100</top>
 				<width>25</width>
 				<height>490</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>11</onleft>
 				<onright>11</onright>
 				<ondown>61</ondown>
 				<onup>61</onup>
-				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 			</control>
 			<control type="label">
