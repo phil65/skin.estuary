@@ -85,7 +85,6 @@
 				<top>315</top>
 				<width>320</width>
 				<height>30</height>
-				<font>font13</font>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -144,7 +143,6 @@
 						<top>0</top>
 						<width>290</width>
 						<height>40</height>
-						<font>font13</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>grey2</textcolor>
@@ -181,7 +179,6 @@
 						<top>0</top>
 						<width>290</width>
 						<height>40</height>
-						<font>font13</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -234,7 +231,6 @@
 				<left>0</left>
 				<top>0</top>
 				<height>40</height>
-				<font>font13</font>
 				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			</control>
 			<control type="radiobutton" id="8">
@@ -242,7 +238,6 @@
 				<left>0</left>
 				<top>0</top>
 				<height>40</height>
-				<font>font13</font>
 				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			</control>
 			<control type="grouplist" id="9001">

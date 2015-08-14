@@ -148,7 +148,6 @@
                             <width>1152</width>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <font>font13</font>
                             <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>white</textcolor>
@@ -162,7 +161,6 @@
                             <height>50</height>
                             <width>1152</width>
                             <aligny>center</aligny>
-                            <font>font13</font>
                             <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
                             <selectedcolor>selected</selectedcolor>
                             <textcolor>white</textcolor>
@@ -212,7 +210,6 @@
                         <width>1160</width>
                         <height>40</height>
                         <label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR]]</label>
-                        <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                         <scroll>false</scroll>
@@ -223,7 +220,6 @@
                         <width>1160</width>
                         <height>40</height>
                         <label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
-                        <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                         <scroll>false</scroll>
@@ -234,7 +230,6 @@
                         <width>1160</width>
                         <height>40</height>
                         <label>$INFO[ListItem.Season,[COLOR button_focus]Seasons: [/COLOR],]$INFO[ListItem.Episode,  •  [COLOR button_focus] Episodes: [/COLOR],]</label>
-                        <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                         <scroll>false</scroll>
@@ -246,7 +241,6 @@
                         <height max="200">auto</height>
                         <autoscroll time="3000" delay="3000" repeat="5000">true</autoscroll>
                         <label>$INFO[ListItem.Plot]</label>
-                        <font>font13</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                         <align>left</align>

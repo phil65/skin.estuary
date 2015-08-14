@@ -21,7 +21,6 @@
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
-						<font>font13</font>
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
 						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
@@ -35,7 +34,6 @@
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
-						<font>font13</font>
 						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 						<label>$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]: [/COLOR]]</label>
@@ -55,22 +53,21 @@
 					<control type="group" id="140">
 						<height>255</height>
 						<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.TagLine)</visible>
-					<control type="button" id="138">
-						<width>1070</width>
-						<height>235</height>
-						<textoffsetx>40</textoffsetx>
-						<textoffsety>20</textoffsety>
-						<aligny>bottom</aligny>
-						<font>font13</font>
-						<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-						<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-						<label></label>
-						<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
-						<onclick>ActivateWindow(1102)</onclick>
-						<onup>131</onup>
-						<ondown>5000</ondown>
-						<visible>!IsEmpty(ListItem.Plot)</visible>
-					</control>
+						<control type="button" id="138">
+							<width>1070</width>
+							<height>235</height>
+							<textoffsetx>40</textoffsetx>
+							<textoffsety>20</textoffsety>
+							<aligny>bottom</aligny>
+							<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+							<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+							<label></label>
+							<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+							<onclick>ActivateWindow(1102)</onclick>
+							<onup>131</onup>
+							<ondown>5000</ondown>
+							<visible>!IsEmpty(ListItem.Plot)</visible>
+						</control>
 						<control type="textbox" id="800">
 							<posx>40</posx>
 							<posy>20</posy>
@@ -78,7 +75,6 @@
 							<height>190</height>
 							<align>left</align>
 							<label fallback="31003">[B]$INFO[ListItem.TagLine,,[CR]][/B]$INFO[ListItem.Plot]</label>
-							<font>font13</font>
 							<autoscroll delay="10000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 					</control>
@@ -120,7 +116,6 @@
 									<width>995</width>
 									<height>40</height>
 									<label>$INFO[ListItem.Genre]</label>
-									<font>font13</font>
 									<textcolor>grey</textcolor>
 									<scroll>true</scroll>
 								</control>
@@ -130,7 +125,6 @@
 								<height>40</height>
 								<aligny>bottom</aligny>
 								<label>$INFO[ListItem.Artist]</label>
-								<font>font13</font>
 								<textcolor>grey</textcolor>
 								<scroll>true</scroll>
 								<visible>Container.Content(musicvideos) + !IsEmpty(ListItem.Artist)</visible>
@@ -140,7 +134,6 @@
 								<height>40</height>
 								<aligny>bottom</aligny>
 								<label>$INFO[ListItem.TvShowTitle]</label>
-								<font>font13</font>
 								<textcolor>grey</textcolor>
 								<visible>Container.Content(episodes) + !IsEmpty(ListItem.TvShowTitle)</visible>
 							</control>

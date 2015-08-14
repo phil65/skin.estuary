@@ -7,7 +7,6 @@
         <height>75</height>
         <radioposx>300</radioposx>
         <aligny>center</aligny>
-        <font>font13</font>
         <textcolor>white</textcolor>
         <focusedcolor>white</focusedcolor>
         <invalidcolor>invalid</invalidcolor>
@@ -244,8 +243,9 @@
     <include name="FilterButtons">
         <control type="edit" id="19">
             <label>$LOCALIZE[137]...</label>
-<!--             <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
- -->            <visible>!Container.Content()</visible>
+            <!-- <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+ -->
+            <visible>!Container.Content()</visible>
             <include>MediaMenuItemsCommon</include>
         </control>
         <control type="button" id="98">

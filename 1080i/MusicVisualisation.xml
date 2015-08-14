@@ -148,7 +148,6 @@
                         <align>right</align>
                         <height>110</height>
                         <label>[B][UPPERCASE]Next Tracks[/UPPERCASE][/B][CR]$INFO[MusicPlayer.Offset(1).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(1).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(2).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(2).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(3).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(3).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
-                        <font>font13</font>
                         <textcolor>button_focus</textcolor>
                         <visible>!IsEmpty(MusicPlayer.Offset(1).Title)</visible>
                         <visible>Player.HasAudio</visible>

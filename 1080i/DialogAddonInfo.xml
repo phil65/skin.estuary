@@ -30,7 +30,6 @@
 					<width>345</width>
 					<height>38</height>
 					<label>$LOCALIZE[146]</label>
-					<font>font13</font>
 					<textcolor>button_focus</textcolor>
 				</control>
 				<control type="label">
@@ -38,7 +37,6 @@
 					<width>870</width>
 					<height>38</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
-					<font>font13</font>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -47,7 +45,6 @@
 					<width>345</width>
 					<height>38</height>
 					<label>$LOCALIZE[21863]:</label>
-					<font>font13</font>
 					<textcolor>button_focus</textcolor>
 				</control>
 				<control type="label">
@@ -56,7 +53,6 @@
 					<width>870</width>
 					<height>38</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
-					<font>font13</font>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -65,7 +61,6 @@
 					<width>345</width>
 					<height>38</height>
 					<label>$LOCALIZE[24051]</label>
-					<font>font13</font>
 					<textcolor>button_focus</textcolor>
 				</control>
 				<control type="label">
@@ -74,7 +69,6 @@
 					<width>870</width>
 					<height>38</height>
 					<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
-					<font>font13</font>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -83,7 +77,6 @@
 					<width>900</width>
 					<height>38</height>
 					<label>$LOCALIZE[24052]</label>
-					<font>font13</font>
 					<textcolor>button_focus</textcolor>
 					<visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
 				</control>
@@ -109,7 +102,6 @@
 				<wrapmultiline>true</wrapmultiline>
 				<align>center</align>
 				<label>[B]$INFO[ListItem.Property(Addon.Summary)][/B][COLOR=white][CR]$INFO[ListItem.Property(Addon.Description)][/COLOR][COLOR=white][CR]$INFO[ListItem.Property(Addon.Disclaimer),[CR][CR]$LOCALIZE[24052]][/COLOR]</label>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="grouplist" id="9000">

@@ -21,7 +21,6 @@
         <top>0</top>
         <height>75</height>
         <aligny>center</aligny>
-        <font>font13</font>
         <textcolor>white</textcolor>
         <focusedcolor>white</focusedcolor>
         <invalidcolor>invalid</invalidcolor>
@@ -30,7 +29,6 @@
         <texturenofocus border="40">lists/separator.png</texturenofocus>
     </include>
     <include name="SettingsItemCommon">
-        <font>font13</font>
         <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
         <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <height>100</height>
@@ -49,7 +47,6 @@
     </include>
     <include name="DefaultBorderedSettingButton">
         <height>100</height>
-        <font>font13</font>
         <aligny>center</aligny>
         <textcolor>white</textcolor>
         <focusedcolor>white</focusedcolor>

@@ -54,7 +54,6 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <label>$LOCALIZE[19005]</label>
-                    <font>font13</font>
                     <textcolor>button_focus</textcolor>
                 </control>
                 <control type="label">
@@ -299,7 +298,6 @@
                 <height>42</height>
                 <align>center</align>
                 <label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
-                <font>font13</font>
                 <shadowcolor>88e5e5e5</shadowcolor>
                 <textcolor>FF363636</textcolor>
                 <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>

@@ -7,12 +7,12 @@
 	</coordinates>
 	<controls>
 		<control type="group" id="250">
-            <include name="DialogBackgroundCommons">
-                <param name="DialogBackgroundWidth" value="1400" />
-                <param name="DialogBackgroundHeight" value="770" />
-                <param name="DialogHeaderLabel" value="Subtitles" />
-                <param name="DialogHeaderId" value="100" />
-            </include>
+			<include name="DialogBackgroundCommons">
+				<param name="DialogBackgroundWidth" value="1400" />
+				<param name="DialogBackgroundHeight" value="770" />
+				<param name="DialogHeaderLabel" value="Subtitles" />
+				<param name="DialogHeaderId" value="100" />
+			</include>
 			<control type="group">
 				<control type="label">
 					<description>Video label</description>
@@ -49,7 +49,6 @@
 					<top>140</top>
 					<width>780</width>
 					<height>40</height>
-					<font>font13</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -97,7 +96,6 @@
 							<top>0</top>
 							<width>90</width>
 							<height>38</height>
-							<font>font13</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
@@ -125,7 +123,6 @@
 							<top>0</top>
 							<width>495</width>
 							<height>38</height>
-							<font>font13</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
@@ -170,7 +167,6 @@
 							<top>0</top>
 							<width>90</width>
 							<height>38</height>
-							<font>font13</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
@@ -198,7 +194,6 @@
 							<top>0</top>
 							<width>495</width>
 							<height>38</height>
-							<font>font13</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
@@ -221,7 +216,6 @@
 					<top>664</top>
 					<width>20</width>
 					<height>20</height>
-					<font>font13</font>
 					<align>right</align>
 					<aligny>center</aligny>
 					<subtype>page</subtype>
@@ -250,7 +244,6 @@
 							<description>notification</description>
 							<width min="10" max="560">auto</width>
 							<height>30</height>
-							<font>font13</font>
 							<textcolor>white</textcolor>
 							<label>$LOCALIZE[31413]</label>
 							<aligny>center</aligny>
@@ -281,7 +274,6 @@
 					<width>240</width>
 					<height>26</height>
 					<label>[B]$LOCALIZE[24018][/B]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
 					<textcolor>blue</textcolor>
@@ -320,7 +312,6 @@
 							<top>0</top>
 							<width>230</width>
 							<height>38</height>
-							<font>font13</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
@@ -349,7 +340,6 @@
 							<top>0</top>
 							<width>230</width>
 							<height>38</height>
-							<font>font13</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>

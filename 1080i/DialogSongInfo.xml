@@ -35,8 +35,8 @@
 				<width>400</width>
 				<height>400</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
-                        <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                        <bordersize>4</bordersize>
+				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+				<bordersize>4</bordersize>
 				<texture border="4">$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="grouplist">
@@ -52,7 +52,6 @@
 						<height>25</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>blue</textcolor>
 						<label>$LOCALIZE[557]:</label>
 					</control>
@@ -62,7 +61,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.Artist]</label>
 						<scrollout>false</scrollout>
@@ -78,7 +76,6 @@
 						<height>25</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>blue</textcolor>
 						<label>$LOCALIZE[558]:</label>
 					</control>
@@ -88,7 +85,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.Album]$INFO[listitem.discnumber, - $LOCALIZE[427] ]</label>
 						<scrollout>false</scrollout>
@@ -104,7 +100,6 @@
 						<height>25</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>blue</textcolor>
 						<label>$LOCALIZE[515]:</label>
 						<scrollout>false</scrollout>
@@ -116,7 +111,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.Genre]</label>
 					</control>
@@ -130,7 +124,6 @@
 						<height>25</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>blue</textcolor>
 						<label>$LOCALIZE[562]:</label>
 					</control>
@@ -140,7 +133,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.Year]</label>
 					</control>
@@ -154,7 +146,6 @@
 						<height>25</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>blue</textcolor>
 						<label>$LOCALIZE[554]:</label>
 					</control>
@@ -164,7 +155,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.TrackNumber]</label>
 					</control>
@@ -178,7 +168,6 @@
 						<height>25</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>blue</textcolor>
 						<label>$LOCALIZE[563]:</label>
 					</control>
@@ -234,7 +223,6 @@
 						<height>25</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<textcolor>blue</textcolor>
 						<label>$LOCALIZE[569]:</label>
 					</control>
@@ -243,7 +231,6 @@
 						<top>-6</top>
 						<width>700</width>
 						<height>138</height>
-						<font>font13</font>
 						<pagecontrol>-</pagecontrol>
 						<label fallback="161">$INFO[ListItem.Comment]</label>
 					</control>
