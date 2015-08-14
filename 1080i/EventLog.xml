@@ -146,6 +146,9 @@
                     </control>
                 </focusedlayout>
             </control>
+        <include name="UpDownArrows">
+            <param name="container_id" value="570" />
+        </include>
             <control type="scrollbar" id="60">
                 <right>210</right>
                 <top>184</top>
