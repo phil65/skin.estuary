@@ -638,10 +638,15 @@
             <animation effect="slide" end="-70,0" time="200" reversible="true" condition="Window.IsActive(1101)">Conditional</animation>
             <animation effect="fade" time="150">VisibleChange</animation>
             <visible>!Window.IsVisible(extendedprogressdialog)</visible>
-            <control type="label">
+            <control type="button">
                 <description>Weather label</description>
                 <include>BreadcrumbsLabel</include>
                 <animation effect="fade" time="300">VisibleChange</animation>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <aligny>top</aligny>
+                <textoffsetx>0</textoffsetx>
+                <onclick>ActivateWindow(weather)</onclick>
                 <label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
                 <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
             </control>
