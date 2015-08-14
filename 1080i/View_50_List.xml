@@ -27,41 +27,23 @@
                     <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
-                <control type="image">
-                    <description>Audio Channels</description>
-                    <right>118</right>
+                <control type="grouplist">
+                    <orientation>horizontal</orientation>
+                    <left>1347</left>
                     <top>570</top>
-                    <width>110</width>
-                    <height>50</height>
-                    <aspectratio align="center">keep</aspectratio>
-                    <texture>$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]</texture>
-                </control>
-                <control type="image">
-                    <description>Audio Codec</description>
-                    <right>233</right>
-                    <top>570</top>
-                    <width>110</width>
-                    <height>50</height>
-                    <aspectratio align="center">keep</aspectratio>
-                    <texture>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
-                </control>
-                <control type="image">
-                    <right>348</right>
-                    <top>570</top>
-                    <description>Video Aspect</description>
-                    <width>110</width>
-                    <height>50</height>
-                    <aspectratio align="center">keep</aspectratio>
-                    <texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
-                </control>
-                <control type="image">
-                    <right>463</right>
-                    <top>570</top>
-                    <description>Video Codec</description>
-                    <width>110</width>
-                    <height>50</height>
-                    <aspectratio align="center">keep</aspectratio>
-                    <texture>$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>
+                    <itemgap>5</itemgap>
+                    <include name="MediaFlag">
+                        <param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
+                    </include>
+                    <include name="MediaFlag">
+                        <param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
+                    </include>
+                    <include name="MediaFlag">
+                        <param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+                    </include>
+                    <include name="MediaFlag">
+                        <param name="texture" value="$INFO[ListItem.VideoCodec,flags/videocodec/,.png]" />
+                    </include>
                 </control>
                 <control type="textbox">
                     <right>130</right>
@@ -585,7 +567,7 @@
             </control>
         </itemlayout>
     </include>
-   <include name="AddonsListLayout">
+    <include name="AddonsListLayout">
         <focusedlayout height="70" condition="Container.Content(addons)">
             <control type="image">
                 <left>0</left>

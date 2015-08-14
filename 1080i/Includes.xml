@@ -22,6 +22,15 @@
         <label>-</label>
         <font>-</font>
     </include>
+    <include name="MediaFlag">
+        <control type="image">
+            <description>Audio Channels</description>
+            <width>110</width>
+            <height>50</height>
+            <aspectratio align="center">keep</aspectratio>
+            <texture>$PARAM[texture]</texture>
+        </control>
+    </include>
     <include name="SettingsPanel">
         <control type="panel" id="9000">
             <left>92</left>
