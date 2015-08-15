@@ -10,7 +10,7 @@
         <control type="group">
             <description>Fanart Viewtype</description>
             <control type="group">
-                <include>OpenClose_FadeSlide_Down</include>
+                <include>OpenClose_FadeSlide_Right</include>
                 <left>100</left>
                 <top>167</top>
                 <visible>Control.IsVisible(502)</visible>
@@ -249,10 +249,7 @@
                         <width>4</width>
                         <height>682</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
-                        <animation type="Focus">
-                            <effect type="fade" start="0" end="40" time="300" />
-                        </animation>
+                        <texture colordiffuse="80FFFFFF">colors/white.png</texture>
                     </control>
                     <control type="textbox">
                         <left>30</left>
@@ -264,21 +261,6 @@
                         <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
                         <label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
                     </control>
-                </control>
-                <control type="scrollbar" id="5021">
-                    <left>1170</left>
-                    <top>80</top>
-                    <width>25</width>
-                    <height>550</height>
-                    <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-                    <texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-                    <texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-                    <textureslidernib>ScrollBarNib.png</textureslidernib>
-                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-                    <onleft>502</onleft>
-                    <onright>2</onright>
-                    <orientation>vertical</orientation>
-                    <visible>Control.IsVisible(502)</visible>
                 </control>
             </control>
         </control>
