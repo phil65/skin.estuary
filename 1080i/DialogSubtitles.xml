@@ -245,15 +245,6 @@
 				</control>
 			</control>
 			<control type="group">
-				<control type="image">
-					<description>separator</description>
-					<left>542</left>
-					<top>360</top>
-					<width>720</width>
-					<height>4</height>
-					<texture>separator.png</texture>
-					<animation effect="rotate" start="0" end="90" center="auto" time="0" condition="true">Conditional</animation>
-				</control>
 				<control type="label">
 					<left>905</left>
 					<top>150</top>
