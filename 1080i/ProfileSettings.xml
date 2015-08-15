@@ -2,14 +2,14 @@
 <window>
     <coordinates>
         <system>1</system>
-        <left>360</left>
-        <top>120</top>
+        <left>260</left>
+        <top>140</top>
     </coordinates>
     <include>Animation_DialogPopupOpenClose</include>
     <controls>
         <include name="DialogBackgroundCommons">
-            <param name="DialogBackgroundWidth" value="1200" />
-            <param name="DialogBackgroundHeight" value="740" />
+            <param name="DialogBackgroundWidth" value="1400" />
+            <param name="DialogBackgroundHeight" value="570" />
             <param name="DialogHeaderLabel" value="-" />
             <param name="DialogHeaderId" value="2" />
         </include>
@@ -17,8 +17,8 @@
             <description>profile image</description>
             <left>40</left>
             <top>90</top>
-            <width>250</width>
-            <height>250</height>
+            <width>280</width>
+            <height>280</height>
             <align>left</align>
             <aspectratio>stretch</aspectratio>
             <texture border="4">DefaultUser.png</texture>
@@ -27,8 +27,8 @@
         </control>
         <control type="label">
             <description>profile name label</description>
-            <left>310</left>
-            <top>90</top>
+            <left>40</left>
+            <top>380</top>
             <width>660</width>
             <align>left</align>
             <font>font13_title</font>
@@ -37,17 +37,17 @@
         </control>
         <control type="label" id="102">
             <description>profile name Value</description>
-            <left>310</left>
-            <top>125</top>
+            <left>40</left>
+            <top>415</top>
             <width>660</width>
             <align>left</align>
-            <font>font16</font>
+            <font>font12</font>
             <textcolor>white</textcolor>
         </control>
         <control type="label">
             <description>profile directory label</description>
-            <left>310</left>
-            <top>195</top>
+            <left>40</left>
+            <top>455</top>
             <width>660</width>
             <align>left</align>
             <font>font13_title</font>
@@ -56,25 +56,25 @@
         </control>
         <control type="label" id="103">
             <description>profile directory Value</description>
-            <left>310</left>
-            <top>230</top>
+            <left>40</left>
+            <top>490</top>
             <width>660</width>
             <align>left</align>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>white</textcolor>
         </control>
         <control type="grouplist" id="5">
             <description>control area</description>
-            <left>20</left>
-            <top>360</top>
-            <width>1160</width>
-            <height>300</height>
-            <itemgap>-20</itemgap>
+            <left>360</left>
+            <top>75</top>
+            <width>750</width>
+            <height>500</height>
+            <itemgap>-25</itemgap>
             <pagecontrol>60</pagecontrol>
-            <onleft>28</onleft>
-            <onright>60</onright>
-            <onup>28</onup>
-            <ondown>28</ondown>
+            <onleft>9001</onleft>
+            <onright>9001</onright>
+            <onup>5</onup>
+            <ondown>5</ondown>
         </control>
         <control type="button" id="7">
             <description>Default Button</description>
@@ -90,8 +90,8 @@
         </control>
         <control type="image" id="11">
             <description>separator image</description>
-            <height>3</height>
-            <texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
+            <height>25</height>
+            <texture colordiffuse="AAAAAAAA" border="3">-</texture>
         </control>
         <control type="label" id="14">
             <description>Default Label</description>
@@ -105,13 +105,17 @@
             <textcolor>grey</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
-        <control type="grouplist">
-            <orientation>horizontal</orientation>
-            <left>0</left>
-            <top>630</top>
-            <onup>5</onup>
-            <ondown>5</ondown>
+        <control type="grouplist" id="9001">
+            <orientation>vertical</orientation>
+            <left>1090</left>
+            <top>-80</top>
+            <onup>9001</onup>
+            <ondown>9001</ondown>
+            <onleft>5</onleft>
+            <onright>5</onright>
             <width>1200</width>
+            <height>500</height>
+            <aligny>top</aligny>
             <align>center</align>
             <include name="DefaultDialogButton">
                 <param name="id" value="28" />
