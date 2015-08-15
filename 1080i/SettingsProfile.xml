@@ -32,6 +32,7 @@
                             <width>306</width>
                             <height>74</height>
                             <label>$INFO[ListItem.Label]</label>
+                            <aligny>center</aligny>
                             <textcolor>grey</textcolor>
                         </control>
                     </itemlayout>
@@ -46,6 +47,7 @@
                             <posx>30</posx>
                             <width>306</width>
                             <height>74</height>
+                            <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
