@@ -61,7 +61,7 @@
                     <height>700</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>300</fadetime>
-                    <texture background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture background="true" fallback="DefaultFanart.png">$VAR[ListInfoBoxImageVar]</texture>
                 </control>
                 <control type="image">
                     <right>113</right>
