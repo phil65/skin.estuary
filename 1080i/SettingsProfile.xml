@@ -92,9 +92,9 @@
                             <top>23</top>
                             <width>246</width>
                             <height>246</height>
-                            <bordertexture border="40">lists/separator.png</bordertexture>
-                            <bordersize>5</bordersize>
-                            <texture fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
+                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+                            <bordersize>4</bordersize>
+                            <texture border="4" fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
                         </control>
                         <control type="label">
                             <left>6</left>
@@ -143,9 +143,9 @@
                             <top>23</top>
                             <width>246</width>
                             <height>246</height>
-                            <bordertexture border="40">lists/separator.png</bordertexture>
-                            <bordersize>5</bordersize>
-                            <texture fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
+                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+                            <bordersize>4</bordersize>
+                            <texture border="4" fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
                         </control>
                         <control type="label">
                             <left>6</left>
