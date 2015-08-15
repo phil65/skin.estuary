@@ -10,7 +10,7 @@
     <controls>
         <include name="DialogBackgroundCommons">
             <param name="DialogBackgroundWidth" value="1000" />
-            <param name="DialogBackgroundHeight" value="700" />
+            <param name="DialogBackgroundHeight" value="830" />
             <param name="DialogHeaderLabel" value="$LOCALIZE[20043]" />
             <param name="DialogHeaderId" value="2" />
         </include>
@@ -18,9 +18,9 @@
             <description>control area</description>
             <left>30</left>
             <top>70</top>
-            <width>640</width>
-            <height>410</height>
-            <itemgap>5</itemgap>
+            <width>940</width>
+            <height>660</height>
+            <itemgap>-20</itemgap>
             <onleft>28</onleft>
             <onright>29</onright>
             <onup>28</onup>
@@ -40,8 +40,8 @@
         </control>
         <control type="image" id="11">
             <description>separator image</description>
-            <height>2</height>
-            <texture>separator2.png</texture>
+            <height>20</height>
+            <texture>lists/separator.png</texture>
         </control>
         <control type="label" id="14">
             <description>Default Label</description>
@@ -57,7 +57,7 @@
         </control>
         <control type="grouplist" id="9001">
             <left>0</left>
-            <top>505</top>
+            <top>745</top>
             <orientation>horizontal</orientation>
             <width>1000</width>
             <align>center</align>
