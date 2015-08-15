@@ -70,7 +70,7 @@
             <width>800</width>
             <height>635</height>
             <onleft>$PARAM[nav_id]</onleft>
-            <onright>60</onright>
+            <onright>$PARAM[scrollbar_id]</onright>
             <onup>$PARAM[list_id]</onup>
             <ondown>$PARAM[list_id]</ondown>
             <pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
