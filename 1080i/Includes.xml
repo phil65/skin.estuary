@@ -733,9 +733,9 @@
             <texturenofocus>-</texturenofocus>
             <label></label>
             <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
-            <textureradioofffocus colordiffuse="EEFFFFFF">DefaultIconError.png</textureradioofffocus>
+            <textureradioofffocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioofffocus>
             <textureradiooffnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradiooffnofocus>
-            <textureradioonfocus colordiffuse="EEFFFFFF">DefaultIconError.png</textureradioonfocus>
+            <textureradioonfocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioonfocus>
             <textureradioonnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradioonnofocus>
             <!-- <selected>Control.HasFocus(22000)</selected>
  -->
