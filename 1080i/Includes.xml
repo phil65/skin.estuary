@@ -728,7 +728,7 @@
             <texture border="1">frame/InfoBarBottom.png</texture>
         </control>
         <control type="group">
-            <visible>Window.IsMedia</visible>
+            <visible>Window.IsMedia + !Window.IsActive(eventlog)</visible>
             <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
             <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
             <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>

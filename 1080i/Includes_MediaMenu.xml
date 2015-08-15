@@ -206,7 +206,21 @@
                     <include>MediaMenuItemsCommon</include>
                     <visible>Control.IsEnabled(4)</visible>
                 </control>
-                <include>FilterButtons</include>
+                <control type="edit" id="19">
+                    <label>$LOCALIZE[137]...</label>
+                    <!-- <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible> -->
+                    <visible>!Container.Content()</visible>
+                    <include>MediaMenuItemsCommon</include>
+                    <visible>!Window.IsActive(musiclibrary)</visible>
+                </control>
+                <control type="button" id="98">
+                    <label>587</label>
+                    <visible>Container.CanFilterAdvanced</visible>
+                    <onclick>SetFocus(50)</onclick>
+                    <onclick>Filter</onclick>
+                    <include>MediaMenuItemsCommon</include>
+                    <visible>!Container.Content()</visible>
+                </control>
                 <include condition="Window.IsActive(videos)">VideoLibraryButtons</include>
                 <include condition="Window.IsActive(AddonBrowser)">AddonBrowserButtons</include>
                 <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons</include>
@@ -238,23 +252,6 @@
             <posy>0</posy>
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
-        </control>
-    </include>
-    <include name="FilterButtons">
-        <control type="edit" id="19">
-            <label>$LOCALIZE[137]...</label>
-            <!-- <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
- -->
-            <visible>!Container.Content()</visible>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="98">
-            <label>587</label>
-            <visible>Container.CanFilterAdvanced</visible>
-            <onclick>SetFocus(50)</onclick>
-            <onclick>Filter</onclick>
-            <include>MediaMenuItemsCommon</include>
-            <visible>!Container.Content()</visible>
         </control>
     </include>
 </includes>
