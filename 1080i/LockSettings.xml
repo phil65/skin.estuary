@@ -3,14 +3,14 @@
     <defaultcontrol>5</defaultcontrol>
     <coordinates>
         <system>1</system>
-        <left>290</left>
+        <left>460</left>
         <top>75</top>
     </coordinates>
     <include>Animation_DialogPopupOpenClose</include>
     <controls>
         <include name="DialogBackgroundCommons">
-            <param name="DialogBackgroundWidth" value="700" />
-            <param name="DialogBackgroundHeight" value="570" />
+            <param name="DialogBackgroundWidth" value="1000" />
+            <param name="DialogBackgroundHeight" value="700" />
             <param name="DialogHeaderLabel" value="$LOCALIZE[20043]" />
             <param name="DialogHeaderId" value="2" />
         </include>
@@ -28,36 +28,15 @@
         </control>
         <control type="button" id="7">
             <description>Default Button</description>
-            <left>0</left>
-            <top>0</top>
-            <height>40</height>
-            <font>font13</font>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus border="5">button-focus2.png</texturefocus>
+            <include>SettingsItemCommon</include>
         </control>
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
-            <left>0</left>
-            <top>0</top>
-            <height>40</height>
-            <font>font13</font>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus border="5">button-focus2.png</texturefocus>
+            <include>SettingsItemCommon</include>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default SpinControlex</description>
-            <left>0</left>
-            <top>0</top>
-            <height>40</height>
-            <font>font13</font>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus border="5">button-focus2.png</texturefocus>
-            <texturenofocus border="5">button-nofocus.png</texturenofocus>
-            <aligny>center</aligny>
-            <reverse>yes</reverse>
+            <include>SettingsItemCommon</include>
         </control>
         <control type="image" id="11">
             <description>separator image</description>
@@ -80,7 +59,7 @@
             <left>0</left>
             <top>505</top>
             <orientation>horizontal</orientation>
-            <width>1120</width>
+            <width>1000</width>
             <align>center</align>
             <itemgap>-10</itemgap>
             <onup>5</onup>
