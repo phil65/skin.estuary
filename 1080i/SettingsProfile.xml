@@ -101,7 +101,6 @@
                             <top>268</top>
                             <width>280</width>
                             <height>100</height>
-                            <font>font14</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -113,11 +112,12 @@
                             <top>304</top>
                             <width>280</width>
                             <height>100</height>
+                            <font>font12</font>
                             <textcolor>grey</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
-                            <label fallback="13170">Last log-in:</label>
+                            <label>Last log-in:</label>
                         </control>
                         <control type="label">
                             <left>6</left>
@@ -125,6 +125,7 @@
                             <width>280</width>
                             <height>100</height>
                             <textcolor>grey</textcolor>
+                            <font>font12</font>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
@@ -152,7 +153,6 @@
                             <top>268</top>
                             <width>280</width>
                             <height>100</height>
-                            <font>font14</font>
                             <textcolor>white</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
@@ -165,16 +165,18 @@
                             <width>280</width>
                             <height>100</height>
                             <textcolor>grey</textcolor>
+                            <font>font12</font>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
-                            <label fallback="13170">Last log-in:</label>
+                            <label>Last log-in:</label>
                         </control>
                         <control type="label">
                             <left>6</left>
                             <top>333</top>
                             <width>280</width>
                             <height>100</height>
+                            <font>font12</font>
                             <textcolor>grey</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <align>center</align>
