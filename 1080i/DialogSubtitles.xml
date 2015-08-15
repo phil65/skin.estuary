@@ -28,13 +28,6 @@
 					<shadowcolor>black</shadowcolor>
 					<scroll>true</scroll>
 				</control>
-				<control type="image">
-					<left>30</left>
-					<top>140</top>
-					<width>820</width>
-					<height>4</height>
-					<texture>separator.png</texture>
-				</control>
 				<control type="image" id="110">
 					<description>Service Logo</description>
 					<left>0</left>
@@ -53,13 +46,6 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
-				</control>
-				<control type="image">
-					<left>30</left>
-					<top>176</top>
-					<width>820</width>
-					<height>4</height>
-					<texture>separator.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -81,7 +67,7 @@
 							<top>0</top>
 							<width>780</width>
 							<height>38</height>
-							<texture>MenuItemNF.png</texture>
+							<texture>lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>5</left>
@@ -144,14 +130,14 @@
 							<top>0</top>
 							<width>780</width>
 							<height>38</height>
-							<texture>MenuItemNF.png</texture>
+							<texture>lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>780</width>
 							<height>38</height>
-							<texture>MenuItemFO.png</texture>
+							<texture>lists/focus.png</texture>
 							<visible>Control.HasFocus(120)</visible>
 						</control>
 						<control type="image">
@@ -305,7 +291,7 @@
 							<top>0</top>
 							<width>230</width>
 							<height>38</height>
-							<texture>MenuItemNF.png</texture>
+							<texture>lists/separator.png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
@@ -325,14 +311,14 @@
 							<top>0</top>
 							<width>230</width>
 							<height>38</height>
-							<texture>MenuItemNF.png</texture>
+							<texture>lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
 							<top>0</top>
 							<width>230</width>
 							<height>38</height>
-							<texture>MenuItemFO.png</texture>
+							<texture>lists/focus.png</texture>
 							<visible>Control.HasFocus(150)</visible>
 						</control>
 						<control type="label">

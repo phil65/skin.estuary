@@ -4,7 +4,9 @@
     <controls>
         <control type="group">
             <posy>900</posy>
+            <visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings)</visible>
             <animation effect="fade" end="100" time="200">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <control type="image">
                 <description>Menu Panel</description>
@@ -13,6 +15,36 @@
                 <width>1860</width>
                 <height>140</height>
                 <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+            </control>
+            <control type="image">
+                <description>Menu Panel</description>
+                <left>30</left>
+                <top>-90</top>
+                <width>1860</width>
+                <height>60</height>
+                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+            </control>
+            <control type="label">
+                <description>Menu Panel</description>
+                <left>30</left>
+                <top>-90</top>
+                <textoffsetx>20</textoffsetx>
+                <aligny>center</aligny>
+                <width>1860</width>
+                <height>60</height>
+                <label>$VAR[OSDHelpTextVar]</label>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <top>-90</top>
+                <width>1860</width>
+                <height>60</height>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$VAR[SeekLabel]</label>
+                <font>font13</font>
+                <shadowcolor>black</shadowcolor>
+                <textcolor>white</textcolor>
             </control>
             <control type="grouplist" id="201">
                 <posx>50</posx>
@@ -160,7 +192,7 @@
                     <height>75</height>
                     <align>center</align>
                     <aligny>bottom</aligny>
-                    <label>$INFO[Player.Time]$INFO[Player.Duration, / ][CR]$VAR[SeekLabel]</label>
+                    <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
                     <font>font30</font>
                     <shadowcolor>black</shadowcolor>
                     <textcolor>white</textcolor>
@@ -192,8 +224,8 @@
                     <onup>201</onup>
                     <ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
                     <ondown>201</ondown>
-                    <onright>StepForward</onright>
-                    <onleft>StepBack</onleft>
+                    <onright>PlayerControl(Forward)</onright>
+                    <onleft>PlayerControl(Rewind)</onleft>
                     <visible>Player.SeekEnabled</visible>
                     <onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
                 </control>
@@ -208,22 +240,22 @@
                     <controloffsety>0</controloffsety>
                     <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
                     <textureslidernib>osd/progress/nub_bar.png</textureslidernib>
-                    <textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
+                    <textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
                     <info>Player.Progress</info>
                     <action>seek</action>
                     <visible>!Control.HasFocus(87)</visible>
                 </control>
-<!--                 <control type="slider" id="401">
-                    <description>Seek Slider</description>
-                    <left>20</left>
-                    <top>42</top>
-                    <width>1860</width>
-                    <height>12</height>
-                    <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
-                    <textureslidernib>osd/progress/nub_bar.png</textureslidernib>
-                    <textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
-                    <visible>Player.Seeking</visible>
-                </control> -->
+                <!-- <control type="slider" id="401">
+                     <description>Seek Slider</description>
+                     <left>20</left>
+                     <top>42</top>
+                     <width>1860</width>
+                     <height>12</height>
+                     <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
+                     <textureslidernib>osd/progress/nub_bar.png</textureslidernib>
+                     <textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
+                     <visible>Player.Seeking</visible>
+                     </control> -->
                 <control type="slider">
                     <posx>30</posx>
                     <posy>-20</posy>
@@ -235,7 +267,7 @@
                     <controloffsety>0</controloffsety>
                     <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
                     <textureslidernib colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernib>
-                    <textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
+                    <textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
                     <info>Player.Progress</info>
                     <action>seek</action>
                     <visible>Control.HasFocus(87)</visible>
