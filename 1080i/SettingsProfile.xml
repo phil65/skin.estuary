@@ -6,7 +6,6 @@
     <controls>
         <include>DefaultBackground</include>
         <control type="group">
-            <visible>![Window.isVisible(ProfileSettings) | Window.IsVisible(LockSettings)]</visible>
             <control type="group">
                 <include>OpenClose_FadeSlide_Left</include>
                 <control type="image">
