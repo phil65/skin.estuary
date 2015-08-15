@@ -65,9 +65,9 @@
             <shadowcolor>black</shadowcolor>
         </control>
         <control type="list" id="$PARAM[list_id]">
-            <left>2</left>
+            <left>0</left>
             <top>72</top>
-            <width>796</width>
+            <width>800</width>
             <height>635</height>
             <onleft>$PARAM[nav_id]</onleft>
             <onright>60</onright>
