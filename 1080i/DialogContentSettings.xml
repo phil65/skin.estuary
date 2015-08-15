@@ -47,6 +47,7 @@
 					<width>1140</width>
 				<label>Choose Scraper</label>
 				<label2>Scraper name</label2>
+				<onclick>Notification(Todo for core,Open SelectDialog with scraper list)</onclick>
 			</control>
 			</control>
 			<!-- 			<control type="list" id="21">
