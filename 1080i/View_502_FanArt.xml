@@ -15,10 +15,10 @@
                 <top>167</top>
                 <visible>Control.IsVisible(502)</visible>
                 <include>Vis_FadeSlide_Right</include>
-                <control type="wraplist" id="502">
+                <control type="fixedlist" id="502">
                     <left>0</left>
                     <top>0</top>
-                    <width>1840</width>
+                    <width>1740</width>
                     <height>732</height>
                     <onleft>502</onleft>
                     <onright>502</onright>
@@ -30,7 +30,7 @@
                     <scrolltime tween="cubic">800</scrolltime>
                     <orientation>horizontal</orientation>
                     <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-                    <itemlayout width="1920" height="690">
+                    <itemlayout width="1740" height="690">
                         <control type="image">
                             <left>1</left>
                             <top>15</top>
@@ -41,7 +41,7 @@
                             <texture fallback="DefaultVideo.png" colordiffuse="FF555555" background="true">$VAR[PosterVar]</texture>
                         </control>
                         <control type="image">
-                            <right>199</right>
+                            <left>463</left>
                             <top>15</top>
                             <width>1258</width>
                             <height>690</height>
@@ -91,7 +91,7 @@
                             <visible>Stringcompare(Listitem.dbtype,tvshow)</visible>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="1920" height="690">
+                    <focusedlayout width="1740" height="690">
                         <control type="group">
                             <control type="image">
                                 <left>1</left>
@@ -103,7 +103,7 @@
                                 <texture fallback="DefaultVideo.png" colordiffuse="FF555555" background="true">$VAR[PosterVar]</texture>
                             </control>
                             <control type="image">
-                                <right>199</right>
+                                <left>463</left>
                                 <top>15</top>
                                 <width>1258</width>
                                 <height>690</height>
