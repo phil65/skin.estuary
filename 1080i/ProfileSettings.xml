@@ -2,14 +2,14 @@
 <window>
     <coordinates>
         <system>1</system>
-        <left>290</left>
-        <top>75</top>
+        <left>360</left>
+        <top>120</top>
     </coordinates>
-    <include>dialogeffect</include>
+    <include>Animation_DialogPopupOpenClose</include>
     <controls>
         <include name="DialogBackgroundCommons">
-            <param name="DialogBackgroundWidth" value="700" />
-            <param name="DialogBackgroundHeight" value="570" />
+            <param name="DialogBackgroundWidth" value="1200" />
+            <param name="DialogBackgroundHeight" value="700" />
             <param name="DialogHeaderLabel" value="-" />
             <param name="DialogHeaderId" value="2" />
         </include>
@@ -128,30 +128,20 @@
         </control>
         <control type="grouplist">
             <orientation>horizontal</orientation>
-            <left>145</left>
-            <top>505</top>
+            <left>0</left>
+            <top>605</top>
             <onup>5</onup>
             <ondown>5</ondown>
-            <control type="button" id="28">
-                <description>Ok Button</description>
-                <width>200</width>
-                <height>40</height>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font12_title</font>
-                <label>186</label>
-            </control>
-            <control type="button" id="29">
-                <description>Cancel Button</description>
-                <left>355</left>
-                <top>505</top>
-                <width>200</width>
-                <height>40</height>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font12_title</font>
-                <label>222</label>
-            </control>
+            <width>1200</width>
+            <align>center</align>
+            <include name="DefaultDialogButton">
+                <param name="id" value="28" />
+                <param name="label" value="186" />
+            </include>
+            <include name="DefaultDialogButton">
+                <param name="id" value="29" />
+                <param name="label" value="222" />
+            </include>
         </control>
     </controls>
 </window>
