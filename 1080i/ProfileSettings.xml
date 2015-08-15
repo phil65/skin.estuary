@@ -15,7 +15,7 @@
         </include>
         <control type="image" id="101">
             <description>profile image</description>
-            <left>30</left>
+            <left>40</left>
             <top>90</top>
             <width>250</width>
             <height>250</height>
@@ -27,7 +27,7 @@
         </control>
         <control type="label">
             <description>profile name label</description>
-            <left>300</left>
+            <left>310</left>
             <top>90</top>
             <width>660</width>
             <align>left</align>
@@ -37,7 +37,7 @@
         </control>
         <control type="label" id="102">
             <description>profile name Value</description>
-            <left>300</left>
+            <left>310</left>
             <top>125</top>
             <width>660</width>
             <align>left</align>
@@ -46,7 +46,7 @@
         </control>
         <control type="label">
             <description>profile directory label</description>
-            <left>300</left>
+            <left>310</left>
             <top>195</top>
             <width>660</width>
             <align>left</align>
@@ -56,7 +56,7 @@
         </control>
         <control type="label" id="103">
             <description>profile directory Value</description>
-            <left>300</left>
+            <left>310</left>
             <top>230</top>
             <width>660</width>
             <align>left</align>
@@ -65,9 +65,9 @@
         </control>
         <control type="grouplist" id="5">
             <description>control area</description>
-            <left>30</left>
+            <left>20</left>
             <top>360</top>
-            <width>1100</width>
+            <width>1160</width>
             <height>300</height>
             <itemgap>-20</itemgap>
             <pagecontrol>60</pagecontrol>
