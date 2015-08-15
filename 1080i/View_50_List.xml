@@ -405,8 +405,6 @@
                         <top>0</top>
                         <width>12</width>
                         <height>706</height>
-                        <animation effect="zoom" start="100,100" end="150,100" time="150" center="auto" tween="cubic" easing="inout">Focus</animation>
-                        <animation effect="zoom" start="150,100" end="100,100" time="125" center="auto" tween="cubic" easing="inout">UnFocus</animation>
                         <textureslidernib>-</textureslidernib>
                         <textureslidernibfocus>-</textureslidernibfocus>
                         <onleft>50</onleft>
