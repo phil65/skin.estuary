@@ -25,7 +25,7 @@
         </control>
     </include>
     <include name="SmallThumbMusicLayouts">
-        <itemlayout height="375" width="460" condition="Container.Content(artists) | Container.Content(albums)">
+        <itemlayout height="360" width="460" condition="Container.Content(artists) | Container.Content(albums)">
             <control type="image">
                 <left>1</left>
                 <top>10</top>
