@@ -111,6 +111,14 @@
                                 <aspectratio align="right">scale</aspectratio>
                             </control>
                             <control type="image">
+                                <left>463</left>
+                                <top>19</top>
+                                <width>4</width>
+                                <height>682</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture colordiffuse="80FFFFFF">colors/white.png</texture>
+                            </control>
+                            <control type="image">
                                 <left>1</left>
                                 <top>15</top>
                                 <width>1720</width>
@@ -242,14 +250,6 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$VAR[BannerLabel2Var]</label>
-                    </control>
-                    <control type="image">
-                        <left>463</left>
-                        <top>19</top>
-                        <width>4</width>
-                        <height>682</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="80FFFFFF">colors/white.png</texture>
                     </control>
                     <control type="textbox">
                         <left>30</left>
