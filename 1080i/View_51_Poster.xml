@@ -14,28 +14,12 @@
                 <onclick>noop</onclick>
                 <visible>Control.IsVisible(51)</visible>
             </control>
-            <control type="image">
-                <left>50</left>
-                <top>170</top>
-                <width>28</width>
-                <height>28</height>
-                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
-                <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
-                <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                <animation effect="slide" start="0" end="-150" time="300" tween="cubic">WindowClose</animation>
-                <visible>Container(51).HasPrevious + Control.HasFocus(51)</visible>
-            </control>
-            <control type="image">
-                <left>1850</left>
-                <top>170</top>
-                <width>28</width>
-                <height>28</height>
-                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
-                <animation effect="slide" start="30,0" end="0,0" time="200">VisibleChange</animation>
-                <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-                <animation effect="slide" start="0" end="150" time="300" tween="cubic">WindowClose</animation>
-                <visible>Container(51).HasNext + Control.HasFocus(51)</visible>
-            </control>
+            <include name="LeftRightArrows">
+                <param name="list_id" value="51" />
+                <param name="left_posx" value="45" />
+                <param name="right_posx" value="1849" />
+                <param name="posy" value="170" />
+            </include>
             <control type="scrollbar" id="5199">
                 <left>110</left>
                 <top>710</top>
