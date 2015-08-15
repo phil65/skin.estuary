@@ -47,17 +47,17 @@
         <control type="image">
             <description>Dialog Header image</description>
             <left>0</left>
-            <top>60</top>
+            <top>0</top>
             <width>800</width>
-            <height>3</height>
-            <texture colordiffuse="button_focus" border="2">dialogs/separator.png</texture>
+            <height>70</height>
+            <texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
         </control>
         <control type="label" id="$PARAM[header_id]">
             <description>header label</description>
             <textoffsetx>40</textoffsetx>
-            <top>20</top>
+            <top>0</top>
             <width>800</width>
-            <height>30</height>
+            <height>70</height>
             <font>font13_title</font>
             <align>left</align>
             <aligny>center</aligny>
@@ -66,7 +66,7 @@
         </control>
         <control type="list" id="$PARAM[list_id]">
             <left>2</left>
-            <top>63</top>
+            <top>72</top>
             <width>796</width>
             <height>635</height>
             <onleft>$PARAM[nav_id]</onleft>
