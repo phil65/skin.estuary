@@ -196,7 +196,7 @@
                         </include>
                     </control>
                     <control type="image">
-                        <left>480</left>
+                        <left>496</left>
                         <top>38</top>
                         <width>32</width>
                         <height>32</height>
@@ -204,7 +204,7 @@
                         <visible>!IsEmpty(ListItem.Year)</visible>
                     </control>
                     <control type="label">
-                        <left>525</left>
+                        <left>541</left>
                         <top>34</top>
                         <width>100</width>
                         <height>32</height>
@@ -213,7 +213,7 @@
                         <label>$INFO[ListItem.Year]</label>
                     </control>
                     <control type="image">
-                        <left>610</left>
+                        <left>626</left>
                         <top>37</top>
                         <width>32</width>
                         <height>32</height>
@@ -221,7 +221,7 @@
                         <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                     </control>
                     <control type="label">
-                        <left>657</left>
+                        <left>673</left>
                         <top>34</top>
                         <width>230</width>
                         <height>32</height>
