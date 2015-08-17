@@ -589,7 +589,7 @@
                     <control type="image">
                         <description>Menu Panel</description>
                         <left>60</left>
-                        <top>90</top>
+                        <top>130</top>
                         <width>130</width>
                         <height>130</height>
                         <texture>$INFO[ListItem.Icon]</texture>
@@ -604,9 +604,18 @@
                     </control>
                     <control type="label">
                         <left>15</left>
-                        <top>237</top>
+                        <top>80</top>
                         <align>center</align>
-                        <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Property(ShortDate)]</label>
+                        <textcolor>white</textcolor>
+                        <width>230</width>
+                    </control>
+                    <control type="label">
+                        <left>15</left>
+                        <top>280</top>
+                        <align>center</align>
+                        <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR] - [COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
                         <textcolor>white</textcolor>
                         <width>230</width>
                     </control>
@@ -640,7 +649,7 @@
                         <control type="image">
                             <description>Menu Panel</description>
                             <left>60</left>
-                            <top>90</top>
+                            <top>130</top>
                             <width>130</width>
                             <height>130</height>
                             <texture>$INFO[ListItem.Icon]</texture>
@@ -648,16 +657,25 @@
                         <control type="label">
                             <left>15</left>
                             <top>47</top>
-                            <width>230</width>
                             <align>center</align>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>white</textcolor>
+                            <width>230</width>
                         </control>
                         <control type="label">
                             <left>15</left>
-                            <top>237</top>
+                            <top>80</top>
                             <align>center</align>
-                            <label>$INFO[ListItem.Property(LowTemperature)] - $INFO[ListItem.Property(HighTemperature)][CR]$INFO[ListItem.Property(ShortDate)]</label>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Property(ShortDate)]</label>
+                            <textcolor>white</textcolor>
+                            <width>230</width>
+                        </control>
+                        <control type="label">
+                            <left>15</left>
+                            <top>280</top>
+                            <align>center</align>
+                            <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR] - [COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
                             <textcolor>white</textcolor>
                             <width>230</width>
                         </control>
