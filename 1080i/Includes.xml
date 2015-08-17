@@ -900,7 +900,7 @@
                 <top>1019</top>
                 <width>44</width>
                 <height>44</height>
-                <animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(502)">Conditional</animation>
+                <animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
                 <texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
                 <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                 <visible>!ControlGroup(9000).HasFocus</visible>
