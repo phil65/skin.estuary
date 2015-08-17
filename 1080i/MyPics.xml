@@ -15,8 +15,8 @@
             <include name="View_52_IconWall">
                 <param name="visible" value="IsEmpty(Container.FolderPath)" />
             </include>
+            <include>View_53_Shift</include>
         </control>
-        <include>View_53_Shift</include>
         <include>Media_Menu</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[1213]" />
