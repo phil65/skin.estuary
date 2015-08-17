@@ -76,25 +76,18 @@
                     <include name="SubMenu">
                         <param name="list_id" value="5900"/>
                         <param name="ondown_id" value="5100"/>
-                        <param name="item1_id" value="5901" />
                         <param name="item1_onclick" value="ActivateWindow(videos,MovieYears,return)" />
                         <param name="item1_label" value="$LOCALIZE[652]" />
-                        <param name="item2_id" value="5902" />
                         <param name="item2_onclick" value="ActivateWindow(videos,MovieSets,return)" />
                         <param name="item2_label" value="$LOCALIZE[20434]" />
-                        <param name="item3_id" value="5903" />
                         <param name="item3_onclick" value="ActivateWindow(videos,MovieActors,return)" />
                         <param name="item3_label" value="$LOCALIZE[344]" />
-                        <param name="item4_id" value="5904" />
                         <param name="item4_onclick" value="ActivateWindow(videos,MovieGenres,return)" />
                         <param name="item4_label" value="$LOCALIZE[135]" />
-                        <param name="item5_id" value="5905" />
                         <param name="item5_onclick" value="ActivateWindow(videos,MovieTags,return)" />
                         <param name="item5_label" value="$LOCALIZE[20459]" />
-                        <param name="item6_id" value="5906" />
                         <param name="item6_onclick" value="ActivateWindow(videos,library://video/movies/,return)" />
                         <param name="item6_label" value="$LOCALIZE[14022]" />
-                        <param name="item7_id" value="5907" />
                         <param name="item7_onclick" value="UpdateLibrary(video)" />
                         <param name="item7_label" value="$VAR[VideoLibraryUpdateVar]" />
                     </include>
@@ -146,25 +139,18 @@
                 <include name="SubMenu">
                     <param name="list_id" value="6900"/>
                     <param name="ondown_id" value="6100"/>
-                    <param name="item1_id" value="6901" />
                     <param name="item1_onclick" value="ActivateWindow(Videos,TVShowYears,return)" />
                     <param name="item1_label" value="$LOCALIZE[652]" />
-                    <param name="item2_id" value="6902" />
                     <param name="item2_onclick" value="ActivateWindow(Videos,TVShowTitles,return)" />
                     <param name="item2_label" value="$LOCALIZE[369]" />
-                    <param name="item3_id" value="6903" />
                     <param name="item3_onclick" value="ActivateWindow(Videos,TVShowGenres,return)" />
                     <param name="item3_label" value="$LOCALIZE[135]" />
-                    <param name="item4_id" value="6904" />
                     <param name="item4_onclick" value="ActivateWindow(Videos,TVShowActors,return)" />
                     <param name="item4_label" value="$LOCALIZE[344]" />
-                    <param name="item5_id" value="6905" />
                     <param name="item5_onclick" value="ActivateWindow(Videos,TVShowYears,return)" />
                     <param name="item5_label" value="Tags" />
-                    <param name="item6_id" value="6906" />
                     <param name="item6_onclick" value="ActivateWindow(videos,library://video/tvshows/)" />
                     <param name="item6_label" value="$LOCALIZE[14022]" />
-                    <param name="item7_id" value="6907" />
                     <param name="item7_onclick" value="UpdateLibrary(video)" />
                     <param name="item7_label" value="$VAR[VideoLibraryUpdateVar]" />
                 </include>
@@ -209,25 +195,18 @@
                 <include name="SubMenu">
                     <param name="list_id" value="7900"/>
                     <param name="ondown_id" value="7100"/>
-                    <param name="item1_id" value="7901" />
                     <param name="item1_onclick" value="ActivateWindow(MusicLibrary,Artists,return)" />
                     <param name="item1_label" value="$LOCALIZE[133]" />
-                    <param name="item2_id" value="7902" />
                     <param name="item2_onclick" value="ActivateWindow(MusicLibrary,Albums,return)" />
                     <param name="item2_label" value="$LOCALIZE[132]" />
-                    <param name="item3_id" value="7903" />
                     <param name="item3_onclick" value="ActivateWindow(MusicLibrary,Top100,return)" />
                     <param name="item3_label" value="Top 100" />
-                    <param name="item4_id" value="7904" />
                     <param name="item4_onclick" value="ActivateWindow(MusicFiles)" />
                     <param name="item4_label" value="$LOCALIZE[744]" />
-                    <param name="item5_id" value="7905" />
                     <param name="item5_onclick" value="ActivateWindow(MusicFiles,special://musicplaylists/,return)" />
                     <param name="item5_label" value="Playlists" />
-                    <param name="item6_id" value="7906" />
                     <param name="item6_onclick" value="ActivateWindow(MusicLibrary,root)" />
                     <param name="item6_label" value="$LOCALIZE[14022]" />
-                    <param name="item7_id" value="7907" />
                     <param name="item7_onclick" value="UpdateLibrary(music)" />
                     <param name="item7_label" value="$VAR[MusicLibraryUpdateVar]" />
                 </include>
@@ -282,12 +261,9 @@
                 <include name="SubMenu">
                     <param name="list_id" value="8900"/>
                     <param name="ondown_id" value="8100"/>
-                    <param name="item1_id" value="8901" />
                     <param name="item1_onclick" value="ActivateWindow(addonbrowser)" />
                     <param name="item1_label" value="Add-on manager" />
-                    <param name="item2_id" value="8902" />
-                    <param name="item2_onclick" value="ActivateWindow(filemanager)" />
-                    <param name="item2_label" value="File manager" />
+                    <param name="item2_vis" value="False" />
                     <param name="item3_vis" value="False" />
                     <param name="item4_vis" value="False" />
                     <param name="item5_vis" value="False" />
@@ -345,20 +321,15 @@
                 <include name="SubMenu">
                     <param name="list_id" value="11900"/>
                     <param name="ondown_id" value="11100"/>
-                    <param name="item1_id" value="11901" />
                     <param name="item1_onclick" value="ActivateWindow(Videos,Files,return)" />
                     <param name="item1_label" value="Files" />
-                    <param name="item2_id" value="11902" />
                     <param name="item2_onclick" value="ActivateWindow(Videos,special://videoplaylists/,return)" />
                     <param name="item2_label" value="Playlists" />
-                    <param name="item3_id" value="11903" />
                     <param name="item3_onclick" value="Notification(not possible yet., Fuck.)" />
                     <param name="item3_label" value="Add source..." />
-                    <param name="item4_id" value="11904" />
                     <param name="item4_onclick" value="PlayDVD" />
                     <param name="item4_label" value="$LOCALIZE[31958]" />
                     <param name="item4_vis" value="System.HasMediadvd" />
-                    <param name="item5_id" value="11905" />
                     <param name="item5_onclick" value="ActivateWindow(videos,addons,return)" />
                     <param name="item5_label" value="Video Addons" />
                     <param name="item6_vis" value="False" />
@@ -391,19 +362,14 @@
                 <include name="SubMenu">
                     <param name="list_id" value="12900"/>
                     <param name="ondown_id" value="12100"/>
-                    <param name="item1_id" value="12901" />
                     <param name="item1_onclick" value="ActivateWindow(TVChannels)" />
                     <param name="item1_label" value="$LOCALIZE[19019]" />
-                    <param name="item2_id" value="12902" />
                     <param name="item2_onclick" value="ActivateWindow(TVGuide)" />
                     <param name="item2_label" value="$LOCALIZE[22020]" />
-                    <param name="item3_id" value="12903" />
                     <param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
                     <param name="item3_label" value="$LOCALIZE[19163]" />
-                    <param name="item4_id" value="12904" />
                     <param name="item4_onclick" value="ActivateWindow(TVTimers)" />
                     <param name="item4_label" value="$LOCALIZE[19040]" />
-                    <param name="item5_id" value="12905" />
                     <param name="item5_onclick" value="ActivateWindow(TVSearch)" />
                     <param name="item5_label" value="$LOCALIZE[137]" />
                     <param name="item6_vis" value="False" />
@@ -555,19 +521,14 @@
                 <include name="SubMenu">
                     <param name="list_id" value="13900"/>
                     <param name="ondown_id" value="13100"/>
-                    <param name="item1_id" value="13901" />
                     <param name="item1_onclick" value="ActivateWindow(RadioChannels)" />
                     <param name="item1_label" value="$LOCALIZE[19019]" />
-                    <param name="item2_id" value="13902" />
                     <param name="item2_onclick" value="ActivateWindow(RadioGuide)" />
                     <param name="item2_label" value="$LOCALIZE[22020]" />
-                    <param name="item3_id" value="13903" />
                     <param name="item3_onclick" value="ActivateWindow(RadioRecordings)" />
                     <param name="item3_label" value="$LOCALIZE[19163]" />
-                    <param name="item4_id" value="13904" />
                     <param name="item4_onclick" value="ActivateWindow(RadioTimers)" />
                     <param name="item4_label" value="$LOCALIZE[19040]" />
-                    <param name="item5_id" value="13905" />
                     <param name="item5_onclick" value="ActivateWindow(RadioSearch)" />
                     <param name="item5_label" value="$LOCALIZE[137]" />
                     <param name="item6_vis" value="False" />
@@ -719,16 +680,12 @@
                 <include name="SubMenu">
                     <param name="list_id" value="15900"/>
                     <param name="ondown_id" value="15100"/>
-                    <param name="item1_id" value="15901" />
                     <param name="item1_onclick" value="Weather.Refresh" />
                     <param name="item1_label" value="$LOCALIZE[184]" />
-                    <param name="item2_id" value="15902" />
                     <param name="item2_onclick" value="Weather.LocationPrevious" />
                     <param name="item2_label" value="Previous city" />
-                    <param name="item3_id" value="15903" />
                     <param name="item3_onclick" value="Weather.LocationNext" />
                     <param name="item3_label" value="Next city" />
-                    <param name="item4_id" value="15904" />
                     <param name="item4_onclick" value="ActivateWindow(weathersettings)" />
                     <param name="item4_label" value="$LOCALIZE[5]" />
                     <param name="item5_vis" value="False" />

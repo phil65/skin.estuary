@@ -53,43 +53,43 @@
                 <width>1400</width>
                 <onup>20000</onup>
                 <ondown>$PARAM[ondown_id]</ondown>
-                <control type="button" id="$PARAM[item1_id]">
+                <control type="button" id="$PARAM[list_id]901">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item1_onclick]</onclick>
                     <label>$PARAM[item1_label]</label>
                     <visible>$PARAM[item1_vis]</visible>
                 </control>
-                <control type="button" id="$PARAM[item2_id]">
+                <control type="button" id="$PARAM[list_id]902">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item2_onclick]</onclick>
                     <label>$PARAM[item2_label]</label>
                     <visible>$PARAM[item2_vis]</visible>
                 </control>
-                <control type="button" id="$PARAM[item3_id]">
+                <control type="button" id="$PARAM[list_id]903">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item3_onclick]</onclick>
                     <label>$PARAM[item3_label]</label>
                     <visible>$PARAM[item3_vis]</visible>
                 </control>
-                <control type="button" id="$PARAM[item4_id]">
+                <control type="button" id="$PARAM[list_id]904">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item4_onclick]</onclick>
                     <label>$PARAM[item4_label]</label>
                     <visible>$PARAM[item4_vis]</visible>
                 </control>
-                <control type="button" id="$PARAM[item5_id]">
+                <control type="button" id="$PARAM[list_id]905">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item5_onclick]</onclick>
                     <label>$PARAM[item5_label]</label>
                     <visible>$PARAM[item5_vis]</visible>
                 </control>
-                <control type="button" id="$PARAM[item6_id]">
+                <control type="button" id="$PARAM[list_id]906">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item6_onclick]</onclick>
                     <label>$PARAM[item6_label]</label>
                     <visible>$PARAM[item6_vis]</visible>
                 </control>
-                <control type="button" id="$PARAM[item7_id]">
+                <control type="button" id="$PARAM[list_id]907">
                     <include>SubMenuItemsCommon</include>
                     <onclick>$PARAM[item7_onclick]</onclick>
                     <label>$PARAM[item7_label]</label>
