@@ -14,11 +14,12 @@
             </include>
             <control type="textbox" id="2000">
                 <posx>40</posx>
-                <posy>80</posy>
+                <posy>85</posy>
                 <width>1320</width>
                 <height>675</height>
                 <shadowcolor>black</shadowcolor>
                 <pagecontrol>3000</pagecontrol>
+                <font>font14</font>
                 <label>$INFO[Window(home).Property(TextViewer_Text)]</label>
             </control>
             <control type="scrollbar" id="3000">
