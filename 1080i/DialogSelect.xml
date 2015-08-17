@@ -15,21 +15,21 @@
                 <param name="DialogHeaderId" value="1" />
             </include>
             <control type="list" id="3">
-                <left>0</left>
-                <top>70</top>
-                <width>900</width>
-                <height>660</height>
+                <left>20</left>
+                <top>100</top>
+                <width>880</width>
+                <height>620</height>
                 <onup>3</onup>
                 <ondown>3</ondown>
                 <onleft>99</onleft>
                 <onright>61</onright>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <itemlayout height="70" width="900">
+                <itemlayout height="70" width="880">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>900</width>
+                        <width>880</width>
                         <height>70</height>
                         <texture border="40">lists/separator.png</texture>
                     </control>
@@ -45,11 +45,11 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="70" width="900">
+                <focusedlayout height="70" width="880">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>900</width>
+                        <width>880</width>
                         <height>70</height>
                         <texture border="40">lists/separator.png</texture>
                         <visible>!Control.HasFocus(3)</visible>
@@ -57,7 +57,7 @@
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>900</width>
+                        <width>880</width>
                         <height>70</height>
                         <texture border="150,1,150,1">lists/focus.png</texture>
                         <visible>Control.HasFocus(3)</visible>
@@ -76,22 +76,22 @@
                 </focusedlayout>
             </control>
             <control type="list" id="6">
-                <left>0</left>
-                <top>70</top>
-                <width>900</width>
-                <height>671</height>
+                <left>20</left>
+                <top>100</top>
+                <width>880</width>
+                <height>625</height>
                 <onup>6</onup>
                 <ondown>6</ondown>
                 <onleft>99</onleft>
                 <onright>61</onright>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <itemlayout height="134" width="900">
+                <itemlayout height="125" width="880">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>900</width>
-                        <height>134</height>
+                        <width>880</width>
+                        <height>125</height>
                         <texture border="40">lists/separator.png</texture>
                     </control>
                     <control type="image">
@@ -127,20 +127,20 @@
                         <label>$INFO[ListItem.Property(Addon.Summary)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="134" width="900">
+                <focusedlayout height="125" width="880">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>900</width>
-                        <height>134</height>
+                        <width>880</width>
+                        <height>125</height>
                         <texture border="40">lists/separator.png</texture>
                         <visible>!Control.HasFocus(6)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>900</width>
-                        <height>134</height>
+                        <width>880</width>
+                        <height>125</height>
                         <texture border="150,1,150,1">lists/focus.png</texture>
                         <visible>Control.HasFocus(6)</visible>
                     </control>
@@ -179,10 +179,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="61">
-                <left>902</left>
-                <top>70</top>
+                <left>900</left>
+                <top>100</top>
                 <width>12</width>
-                <height>671</height>
+                <height>625</height>
                 <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
                 <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
                 <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
@@ -195,7 +195,7 @@
             <control type="group">
                 <control type="label">
                     <description>number of files/pages in list text label</description>
-                    <left>900</left>
+                    <left>880</left>
                     <top>700</top>
                     <width>300</width>
                     <height>35</height>
