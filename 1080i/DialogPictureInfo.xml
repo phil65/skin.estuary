@@ -6,9 +6,16 @@
 			<include>OpenClose_FadeSlide_Left</include>
 			<control type="image">
 				<left>70</left>
-				<top>150</top>
+				<top>130</top>
 				<width>1280</width>
-				<height>780</height>
+				<height>820</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
+			</control>
+			<control type="image">
+				<left>120</left>
+				<top>180</top>
+				<width>1180</width>
+				<height>720</height>
 				<aspectratio aligny="center">keep</aspectratio>
 				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 				<bordersize>4</bordersize>
@@ -25,19 +32,19 @@
 				<height>820</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
-        <include name="UpDownArrows">
-            <param name="container_id" value="5" />
-            <param name="posx" value="1590" />
-            <param name="up_posy" value="110" />
-            <param name="down_posy" value="950" />
-        </include>
-                     <control type="scrollbar" id="60">
-                        <left>1840</left>
-                        <top>150</top>
-                        <width>12</width>
-                        <height>780</height>
-                        <orientation>vertical</orientation>
-                    </control>
+			<include name="UpDownArrows">
+				<param name="container_id" value="5" />
+				<param name="posx" value="1590" />
+				<param name="up_posy" value="110" />
+				<param name="down_posy" value="950" />
+			</include>
+			<control type="scrollbar" id="60">
+				<left>1840</left>
+				<top>150</top>
+				<width>12</width>
+				<height>780</height>
+				<orientation>vertical</orientation>
+			</control>
 			<control type="list" id="5">
 				<right>70</right>
 				<top>160</top>
