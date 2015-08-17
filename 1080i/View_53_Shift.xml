@@ -63,7 +63,7 @@
                                 <width>330</width>
                                 <height>424</height>
                                 <aspectratio aligny="bottom">keep</aspectratio>
-                                <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
+                                <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
                                 <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
                                 <bordersize>4</bordersize>
                             </control>
@@ -76,7 +76,7 @@
                             <width>330</width>
                             <height>424</height>
                             <aspectratio aligny="bottom">keep</aspectratio>
-                            <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
+                            <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
                             <bordertexture colordiffuse="button_focus">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
                         </control>
