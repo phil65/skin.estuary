@@ -14,26 +14,41 @@
             <param name="DialogHeaderLabel" value="$LOCALIZE[1036]" />
             <param name="DialogHeaderId" value="2" />
         </include>
+        <include name="UpDownArrows">
+            <param name="container_id" value="450" />
+            <param name="posx" value="726" />
+            <param name="up_posy" value="-40" />
+            <param name="down_posy" value="820" />
+        </include>
+                    <control type="scrollbar" id="60">
+                        <left>1465</left>
+                        <top>100</top>
+                        <width>12</width>
+                        <height>670</height>
+                        <onleft>450</onleft>
+                        <onright>450</onright>
+                        <orientation>vertical</orientation>
+                    </control>
         <control type="panel" id="450">
-            <left>40</left>
+            <left>35</left>
             <top>100</top>
-            <width>1920</width>
-            <height>1080</height>
-            <onleft>450</onleft>
-            <onright>61</onright>
+            <width>1600</width>
+            <height>700</height>
+            <onleft>60</onleft>
+            <onright>60</onright>
             <onup>450</onup>
             <ondown>450</ondown>
             <preloaditems>2</preloaditems>
-            <pagecontrol>61</pagecontrol>
+            <pagecontrol>60</pagecontrol>
             <scrolltime tween="sine">200</scrolltime>
             <orientation>vertical</orientation>
-            <itemlayout width="346">
+            <itemlayout width="365" height="350">
                 <control type="group">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>300</width>
-                        <height>300</height>
+                        <width>320</width>
+                        <height>320</height>
                         <aspectratio>scale</aspectratio>
                         <texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
@@ -41,16 +56,16 @@
                     </control>
                     <control type="image">
                         <left>4</left>
-                        <top>256</top>
-                        <width>292</width>
+                        <top>276</top>
+                        <width>312</width>
                         <height>40</height>
                         <aspectratio>scale</aspectratio>
                         <texture colordiffuse="A0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="label">
                         <left>4</left>
-                        <top>256</top>
-                        <width>292</width>
+                        <top>276</top>
+                        <width>312</width>
                         <height>40</height>
                         <align>center</align>
                         <font>font12</font>
@@ -58,13 +73,13 @@
                     </control>
                 </control>
             </itemlayout>
-            <focusedlayout width="346">
+            <focusedlayout width="365" height="350">
                 <control type="group">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>300</width>
-                        <height>300</height>
+                        <width>320</width>
+                        <height>320</height>
                         <aspectratio>scale</aspectratio>
                         <texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
                         <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
@@ -72,16 +87,16 @@
                     </control>
                     <control type="image">
                         <left>4</left>
-                        <top>256</top>
-                        <width>292</width>
+                        <top>276</top>
+                        <width>312</width>
                         <height>40</height>
                         <aspectratio>scale</aspectratio>
                         <texture colordiffuse="A0FFFFFF">colors/black.png</texture>
                     </control>
                     <control type="label">
                         <left>4</left>
-                        <top>256</top>
-                        <width>292</width>
+                        <top>276</top>
+                        <width>312</width>
                         <height>40</height>
                         <align>center</align>
                         <font>font12</font>
@@ -90,8 +105,8 @@
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>300</width>
-                        <height>300</height>
+                        <width>320</width>
+                        <height>320</height>
                         <aspectratio>stretch</aspectratio>
                         <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
                     </control>
@@ -111,15 +126,5 @@
                 <font>font30_title</font>
                 <visible>Stringcompare(Container(450).NumItems,0)</visible>
             </control>
-        <control type="scrollbar" id="61">
-            <left>1860</left>
-            <top>132</top>
-            <width>46</width>
-            <height>802</height>
-            <onleft>450</onleft>
-            <onright>450</onright>
-            <ondown>61</ondown>
-            <onup>61</onup>
-        </control>
     </controls>
 </window>

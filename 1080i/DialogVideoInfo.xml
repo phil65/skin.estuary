@@ -232,13 +232,14 @@
 				<control type="grouplist" id="5000">
 					<posx>0</posx>
 					<posy>560</posy>
-					<width>1130</width>
+					<width>1085</width>
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
 					<onup>138</onup>
 					<ondown>50</ondown>
 					<itemgap>-20</itemgap>
+					<align>justify</align>
 					<orientation>horizontal</orientation>
 					<scrolltime tween="quadratic">200</scrolltime>
 					<control type="button" id="8">
