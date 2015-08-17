@@ -914,7 +914,7 @@
                 <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                 <visible>ControlGroup(9000).HasFocus</visible>
             </control>
-            <control type="label">
+            <control type="button">
                 <top>1019</top>
                 <left>74</left>
                 <width>300</width>
@@ -923,6 +923,9 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
                 <label>Options</label>
+                <onclick>SetFocus(9000)</onclick>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
                 <animation effect="fade" start="0" end="100" time="225">VisibleChange</animation>
                 <visible>!ControlGroup(9000).HasFocus</visible>
             </control>
