@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_53_Shift">
+        <control type="group">
+            <description>Poster Viewtype</description>
+            <height>424</height>
+            <left>0</left>
+            <top>180</top>
+            <include name="LeftRightArrows">
+                <param name="list_id" value="53" />
+                <param name="left_posx" value="45" />
+                <param name="right_posx" value="1849" />
+                <param name="posy" value="170" />
+            </include>
+            <control type="scrollbar" id="5399">
+                <left>110</left>
+                <top>710</top>
+                <width>1700</width>
+                <height>10</height>
+                <texturesliderbackground colordiffuse="00FFFFFF">colors/white.png</texturesliderbackground>
+                <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
+                <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
+                <animation effect="zoom" start="100,100" end="100,150" time="250" center="110,710" tween="cubic" easing="inout" reversible="true">Focus</animation>
+                <animation effect="zoom" start="100,150" end="100,100" time="125" center="110,710" tween="cubic" easing="inout" reversible="true">UnFocus</animation>
+                <textureslidernib>-</textureslidernib>
+                <textureslidernibfocus>-</textureslidernibfocus>
+                <onleft>5399</onleft>
+                <onright>5399</onright>
+                <onup>53</onup>
+                <ondown>53</ondown>
+                <orientation>horizontal</orientation>
+                <visible>Control.IsVisible(53)</visible>
+                <animation effect="fade" start="100" end="0" time="200">VisibleChange</animation>
+                <animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+                <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+            </control>
+            <control type="group">
+                <visible>Control.IsVisible(53)</visible>
+                <include>Vis_FadeSlide_Right</include>
+                <include>OpenClose_FadeSlide_Right</include>
+                <control type="fixedlist" id="53">
+                    <left>110</left>
+                    <top>0</top>
+                    <width>1700</width>
+                    <height>704</height>
+                    <focusposition>2</focusposition>
+                    <movement>0</movement>
+                    <pagecontrol>5399</pagecontrol>
+                    <scrolltime tween="cubic" easing="out">500</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <visible>!IsEmpty(Container.FolderPath)</visible>
+                    <onleft>53</onleft>
+                    <onup>53</onup>
+                    <ondown>5399</ondown>
+                    <onright>53</onright>
+                    <preloaditems>1</preloaditems>
+                    <viewtype label="Shift">icon</viewtype>
+                    <itemlayout width="350">
+                        <control type="group">
+                            <control type="image">
+                                <left>0</left>
+                                <top>3</top>
+                                <width>330</width>
+                                <height>424</height>
+                                <aspectratio aligny="bottom">keep</aspectratio>
+                                <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
+                                <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+                                <bordersize>4</bordersize>
+                            </control>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="350">
+                        <control type="image">
+                            <left>0</left>
+                            <top>3</top>
+                            <width>330</width>
+                            <height>424</height>
+                            <aspectratio aligny="bottom">keep</aspectratio>
+                            <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
+                            <bordertexture colordiffuse="button_focus">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="image">
+                    <left>90</left>
+                    <top>415</top>
+                    <width>1740</width>
+                    <height>110</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
+                </control>
+                <control type="image">
+                    <left>90</left>
+                    <top>495</top>
+                    <width>1740</width>
+                    <height>232</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
+                </control>
+                <control type="label">
+                    <left>130</left>
+                    <top>440</top>
+                    <width>1160</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.Label]</label>
+                    <font>font30_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <scroll>false</scroll>
+                    <align>left</align>
+                </control>
+            </control>
+        </control>
+    </include>
+</includes>

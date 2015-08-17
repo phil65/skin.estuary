@@ -3,19 +3,20 @@
     <defaultcontrol always="true">50</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
-    <views>50,52</views>
+    <views>50,52,53</views>
     <menucontrol>9000</menucontrol>
     <controls>
         <include>DefaultBackground</include>
         <control type="group">
-            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(pictureinfo)">Conditional</animation>
             <include name="View_50_List">
                 <param name="visible" value="Container.Content(addons)" />
             </include>
             <include name="View_52_IconWall">
-                <param name="visible" value="Container.Content() | Container.Content(files)" />
+                <param name="visible" value="IsEmpty(Container.FolderPath)" />
             </include>
         </control>
+        <include>View_53_Shift</include>
         <include>Media_Menu</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[1213]" />
