@@ -185,6 +185,7 @@
 					<ondown>9000</ondown>
 					<onup>49</onup>
 					<textcolor>-</textcolor>
+					<onclick>SetProperty(TextViewer_Header,Plot,home)</onclick>
 					<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 					<onclick>ActivateWindow(1102)</onclick>
 				</control>

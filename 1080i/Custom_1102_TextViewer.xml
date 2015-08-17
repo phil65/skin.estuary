@@ -9,7 +9,7 @@
             <include name="DialogBackgroundCommons">
                 <param name="DialogBackgroundWidth" value="1400" />
                 <param name="DialogBackgroundHeight" value="770" />
-                <param name="DialogHeaderLabel" value="$LOCALIZE[207]" />
+                <param name="DialogHeaderLabel" value="$INFO[Window(home).Property(TextViewer_Header)]" />
                 <param name="DialogHeaderId" value="1" />
             </include>
             <control type="textbox" id="2000">
