@@ -61,17 +61,53 @@
                         <bordertexture border="2" colordiffuse="border_alpha">colors/black.png</bordertexture>
                         <bordersize>2</bordersize>
                     </control>
+                    <control type="progress">
+                        <description>Progressbar</description>
+                        <left>125</left>
+                        <top>60</top>
+                        <width>55</width>
+                        <height>12</height>
+                        <colordiffuse>88FFFFFF</colordiffuse>
+                        <visible>ListItem.HasEpg</visible>
+                        <info>ListItem.Progress</info>
+                    </control>
+                    <!-- <control type="label">
+                         <left>125</left>
+                         <top>65</top>
+                         <height>100</height>
+                         <width>560</width>
+                         <aligny>top</aligny>
+                         <label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+                         <font>font12</font>
+                         <selectedcolor>selected</selectedcolor>
+                         <textcolor>white</textcolor>
+                         <shadowcolor>text_shadow</shadowcolor>
+                         <scroll>false</scroll>
+                         </control> -->
                     <control type="label">
                         <left>125</left>
-                        <top>0</top>
+                        <top>8</top>
                         <height>100</height>
                         <width>560</width>
                         <align>left</align>
-                        <aligny>center</aligny>
+                        <aligny>top</aligny>
+                        <font>font14</font>
                         <label>$INFO[ListItem.Label]</label>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <left>190</left>
+                        <top>54</top>
+                        <width>560</width>
+                        <height>20</height>
+                        <font>font12</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>grey</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Duration] - $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
                         <left>0</left>
@@ -80,7 +116,7 @@
                         <width>780</width>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <font>font30_title</font>
+                        <font>font35_title</font>
                         <label>$INFO[ListItem.ChannelNumberLabel]</label>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>grey</textcolor>
@@ -105,17 +141,53 @@
                         <bordertexture border="2" colordiffuse="border_alpha">colors/black.png</bordertexture>
                         <bordersize>2</bordersize>
                     </control>
+                    <control type="progress">
+                        <description>Progressbar</description>
+                        <left>125</left>
+                        <top>60</top>
+                        <width>55</width>
+                        <height>12</height>
+                        <colordiffuse>88FFFFFF</colordiffuse>
+                        <visible>ListItem.HasEpg</visible>
+                        <info>ListItem.Progress</info>
+                    </control>
+                    <!-- <control type="label">
+                         <left>125</left>
+                         <top>65</top>
+                         <height>100</height>
+                         <width>560</width>
+                         <aligny>top</aligny>
+                         <label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+                         <font>font12</font>
+                         <selectedcolor>selected</selectedcolor>
+                         <textcolor>white</textcolor>
+                         <shadowcolor>text_shadow</shadowcolor>
+                         <scroll>false</scroll>
+                         </control> -->
                     <control type="label">
                         <left>125</left>
-                        <top>0</top>
+                        <top>8</top>
                         <height>100</height>
                         <width>560</width>
-                        <aligny>center</aligny>
+                        <align>left</align>
+                        <aligny>top</aligny>
+                        <font>font14</font>
                         <label>$INFO[ListItem.Label]</label>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
-                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>190</left>
+                        <top>54</top>
+                        <width>560</width>
+                        <height>20</height>
+                        <font>font12</font>
+                        <textcolor>grey</textcolor>
+                        <selectedcolor>grey</selectedcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Duration] - $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
                         <left>0</left>
@@ -124,7 +196,7 @@
                         <width>780</width>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <font>font30_title</font>
+                        <font>font35_title</font>
                         <label>$INFO[ListItem.ChannelNumberLabel]</label>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>grey</textcolor>
@@ -142,12 +214,28 @@
                 <orientation>vertical</orientation>
             </control>
             <control type="image">
-                <description>background image</description>
                 <left>850</left>
                 <top>-20</top>
                 <width>844</width>
                 <height>746</height>
                 <texture border="22">dialogs/dialog-bg.png</texture>
+            </control>
+            <control type="progress">
+                <description>Progressbar</description>
+                <left>890</left>
+                <top>410</top>
+                <width>750</width>
+                <height>12</height>
+                <colordiffuse>88FFFFFF</colordiffuse>
+                <visible>ListItem.HasEpg</visible>
+                <info>ListItem.Progress</info>
+            </control>
+            <control type="textbox">
+                <left>890</left>
+                <top>434</top>
+                <width>764</width>
+                <height>262</height>
+                <label>$INFO[ListItem.Plot]</label>
             </control>
             <include name="UpDownArrows">
                 <param name="container_id" value="50" />
