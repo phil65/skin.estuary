@@ -65,7 +65,7 @@
                     <pagecontrol>5399</pagecontrol>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>!IsEmpty(Container.FolderPath)</visible>
+                    <visible>$PARAM[visible]</visible>
                     <onleft>53</onleft>
                     <onup>53</onup>
                     <ondown>5399</ondown>
@@ -85,9 +85,9 @@
                                 <bordersize>4</bordersize>
                             </control>
                             <control type="label">
-                                <left>0</left>
+                                <left>20</left>
                                 <top>445</top>
-                                <width>330</width>
+                                <width>290</width>
                                 <height>424</height>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label]</label>
@@ -106,9 +106,9 @@
                             <bordersize>4</bordersize>
                         </control>
                         <control type="label">
-                            <left>0</left>
+                            <left>20</left>
                             <top>445</top>
-                            <width>330</width>
+                            <width>290</width>
                             <height>424</height>
                             <align>center</align>
                             <label>$INFO[ListItem.Label]</label>
