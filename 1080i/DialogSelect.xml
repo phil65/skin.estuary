@@ -18,7 +18,7 @@
                 <left>20</left>
                 <top>100</top>
                 <width>880</width>
-                <height>620</height>
+                <height>625</height>
                 <onup>3</onup>
                 <ondown>3</ondown>
                 <onleft>99</onleft>
@@ -59,7 +59,7 @@
                         <top>0</top>
                         <width>880</width>
                         <height>70</height>
-                        <texture border="150,1,150,1">lists/focus.png</texture>
+                        <texture>lists/focus.png</texture>
                         <visible>Control.HasFocus(3)</visible>
                     </control>
                     <control type="label">
@@ -141,7 +141,7 @@
                         <top>0</top>
                         <width>880</width>
                         <height>125</height>
-                        <texture border="150,1,150,1">lists/focus.png</texture>
+                        <texture>lists/focus.png</texture>
                         <visible>Control.HasFocus(6)</visible>
                     </control>
                     <control type="image">
