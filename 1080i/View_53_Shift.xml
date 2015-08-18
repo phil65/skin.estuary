@@ -53,6 +53,7 @@
                     <height>70</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.HasFocus(53)</visible>
+                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                     <texture colordiffuse="button_focus">colors/white.png</texture>
                     <animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,1) | Stringcompare(Container.Position,0)">Conditional</animation>
                     <animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,0)">Conditional</animation>
