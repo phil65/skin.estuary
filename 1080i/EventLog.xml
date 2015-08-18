@@ -6,7 +6,7 @@
     <controls>
         <include>DefaultBackground</include>
         <control type="group">
-            <include>OpenClose_FadeSlide_Left</include>
+            <include>OpenClose_Left</include>
             <control type="grouplist" id="700">
                 <orientation>vertical</orientation>
                 <itemgap>-8.5</itemgap>
@@ -65,7 +65,7 @@
         <control type="group">
             <posx>250</posx>
             <visible>Control.IsVisible(570)</visible>
-            <include>OpenClose_FadeSlide_Right</include>
+            <include>OpenClose_Right</include>
             <control type="image">
                 <left>210</left>
                 <top>162</top>

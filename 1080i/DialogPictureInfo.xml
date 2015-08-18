@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">60</defaultcontrol>
 	<controls>
 		<control type="group">
-			<include>OpenClose_FadeSlide_Left</include>
+			<include>OpenClose_Left</include>
 			<control type="image">
 				<left>70</left>
 				<top>130</top>
@@ -23,7 +23,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<include>OpenClose_FadeSlide_Right</include>
+			<include>OpenClose_Right</include>
 			<control type="image">
 				<description>background image</description>
 				<right>70</right>

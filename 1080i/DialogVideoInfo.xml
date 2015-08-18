@@ -4,7 +4,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="group">
-			<include>OpenClose_FadeSlide_Right</include>
+			<include>OpenClose_Right</include>
 			<left>613</left>
 			<control type="group">
 				<posx>40</posx>
@@ -392,7 +392,7 @@
 			</control>
 		</control>
 		<control type="image">
-			<include>OpenClose_FadeSlide_Left</include>
+			<include>OpenClose_Left</include>
 			<left>0</left>
 			<top>80</top>
 			<width>613</width>

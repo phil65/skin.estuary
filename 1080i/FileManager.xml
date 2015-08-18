@@ -16,7 +16,7 @@
         <control type="group">
             <posy>190</posy>
             <posx>100</posx>
-            <include>OpenClose_FadeSlide_Left</include>
+            <include>OpenClose_Left</include>
             <include name="FileManagerPanel">
                 <param name="header_id" value="101" />
                 <param name="list_id" value="20" />
@@ -27,7 +27,7 @@
         <control type="group">
             <posx>1020</posx>
             <posy>190</posy>
-            <include>OpenClose_FadeSlide_Right</include>
+            <include>OpenClose_Right</include>
                <include name="FileManagerPanel">
                 <param name="header_id" value="102" />
                 <param name="list_id" value="21" />

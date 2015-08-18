@@ -10,8 +10,8 @@
         <include>PlaylistViewtype</include>
         <control type="group">
             <posx>1230</posx>
-            <include>OpenClose_FadeSlide_Right</include>
-            <include>Vis_FadeSlide_Left</include>
+            <include>OpenClose_Right</include>
+            <include>Visible_Left</include>
             <include>ListThumbInfoPanel</include>
         </control>
         <include name="TopBar">

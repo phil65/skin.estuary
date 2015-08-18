@@ -30,8 +30,8 @@
                 <left>110</left>
                 <visible>!Container.Content(addons)</visible>
                 <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
-                <include>OpenClose_FadeSlide_Left</include>
-                <include>Vis_FadeSlide_Left</include>
+                <include>OpenClose_Left</include>
+                <include>Visible_Left</include>
                 <control type="image">
                     <width>469</width>
                     <height>704</height>

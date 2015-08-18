@@ -51,7 +51,7 @@
             <control type="group">
                 <posx>8</posx>
                 <posy>532</posy>
-                <include>OpenClose_FadeSlide_Left</include>
+                <include>OpenClose_Left</include>
                 <control type="image">
                     <posx>48</posx>
                     <posy>-360</posy>
@@ -84,7 +84,7 @@
             <control type="group">
                 <posx>80</posx>
                 <posy>717</posy>
-                <include>OpenClose_FadeSlide_Left</include>
+                <include>OpenClose_Left</include>
                 <control type="label">
                     <posy>0</posy>
                     <width>1230</width>
@@ -119,7 +119,7 @@
             <control type="group">
                 <posx>80</posx>
                 <posy>717</posy>
-                <include>OpenClose_FadeSlide_Right</include>
+                <include>OpenClose_Right</include>
                 <control type="image">
                     <animation effect="fade" start="0" end="100" time="200" delay="1000" condition="!IsEmpty(Player.Art(fanart)) + SubString(Window(Visualisation).Property(ArtistSlideshow),resources/black) + !Window.IsActive(musicosd) + !Window.IsActive(script-cu-lrclyrics-main.xml)">Conditional</animation>
                     <posx>955</posx>

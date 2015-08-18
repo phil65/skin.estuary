@@ -7,11 +7,11 @@
         <control type="group">
             <description>List Viewtype</description>
             <control type="group">
-                <include>OpenClose_FadeSlide_Right</include>
+                <include>OpenClose_Right</include>
                 <left>100</left>
                 <top>167</top>
                 <visible>Control.IsVisible(501)</visible>
-                <include>Vis_FadeSlide_Right</include>
+                <include>Visible_Right</include>
                 <control type="panel" id="501">
                     <left>0</left>
                     <top>0</top>
