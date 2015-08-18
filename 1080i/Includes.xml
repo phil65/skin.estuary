@@ -848,36 +848,39 @@
         <align>left</align>
     </include>
     <include name="DefaultBackground">
-        <control type="videowindow">
-            <include>FullScreenDimensions</include>
-            <visible>Player.HasVideo</visible>
-        </control>
-        <control type="visualisation">
-            <include>FullScreenDimensions</include>
-            <visible>Player.HasAudio</visible>
-        </control>
-        <control type="image">
-            <left>0</left>
-            <top>0</top>
-            <width>1920</width>
-            <height>1080</height>
-            <animation effect="fade" start="100" end="80" time="0" condition="Player.HasMedia">Conditional</animation>
-            <aspectratio>scale</aspectratio>
-            <texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
-        </control>
-        <control type="image">
-            <left>0</left>
-            <top>0</top>
-            <width>1920</width>
-            <height>1080</height>
-            <aspectratio>scale</aspectratio>
-            <fadetime>400</fadetime>
-            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-            <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
-            <texture background="true" colordiffuse="32FFFFFF">$INFO[ListItem.Art(fanart)]</texture>
-            <visible>!IsEmpty(ListItem.Art(fanart)) + !Player.HasMedia</visible>
-        </control>
+        <param name="fanart">ListItem.Art(fanart)</param>
+        <definition>
+            <control type="videowindow">
+                <include>FullScreenDimensions</include>
+                <visible>Player.HasVideo</visible>
+            </control>
+            <control type="visualisation">
+                <include>FullScreenDimensions</include>
+                <visible>Player.HasAudio</visible>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>1920</width>
+                <height>1080</height>
+                <animation effect="fade" start="100" end="80" time="0" condition="Player.HasMedia">Conditional</animation>
+                <aspectratio>scale</aspectratio>
+                <texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>1920</width>
+                <height>1080</height>
+                <aspectratio>scale</aspectratio>
+                <fadetime>400</fadetime>
+                <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+                <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+                <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+                <texture background="true" colordiffuse="32FFFFFF">$INFO[$PARAM[fanart]]</texture>
+                <visible>!IsEmpty($PARAM[fanart]) + !Player.HasMedia</visible>
+            </control>
+        </definition>
     </include>
     <include name="BottomBar">
         <control type="image">

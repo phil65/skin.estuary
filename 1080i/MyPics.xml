@@ -7,6 +7,9 @@
     <menucontrol>9000</menucontrol>
     <controls>
         <include>DefaultBackground</include>
+            <include name="DefaultBackground">
+                <param name="fanart" value="ListItem.Art(thumb)" />
+            </include>
         <control type="group">
             <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(pictureinfo)">Conditional</animation>
             <include name="View_50_List">
