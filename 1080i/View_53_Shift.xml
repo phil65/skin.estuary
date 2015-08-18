@@ -47,21 +47,25 @@
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="image">
-                    <left>810</left>
+                    <left>800</left>
                     <top>435</top>
-                    <width>330</width>
+                    <width>320</width>
                     <height>70</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.HasFocus(53)</visible>
                     <texture colordiffuse="button_focus">colors/white.png</texture>
+                    <animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,1) | Stringcompare(Container.Position,0)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,0)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,3) | Stringcompare(Container.Position,4)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,4)">Conditional</animation>
                 </control>
                 <control type="fixedlist" id="53">
-                    <left>110</left>
+                    <left>100</left>
                     <top>0</top>
-                    <width>1700</width>
+                    <width>1720</width>
                     <height>704</height>
                     <focusposition>2</focusposition>
-                    <movement>0</movement>
+                    <movement>2</movement>
                     <pagecontrol>5399</pagecontrol>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>horizontal</orientation>
@@ -72,10 +76,10 @@
                     <onright>53</onright>
                     <preloaditems>1</preloaditems>
                     <viewtype label="Shift">icon</viewtype>
-                    <itemlayout width="350">
+                    <itemlayout width="344">
                         <control type="group">
                             <control type="image">
-                                <left>0</left>
+                                <left>7</left>
                                 <top>3</top>
                                 <width>330</width>
                                 <height>424</height>
@@ -87,16 +91,16 @@
                             <control type="label">
                                 <left>20</left>
                                 <top>445</top>
-                                <width>290</width>
+                                <width>304</width>
                                 <height>424</height>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="350">
+                    <focusedlayout width="344">
                         <control type="image">
-                            <left>0</left>
+                            <left>7</left>
                             <top>3</top>
                             <width>330</width>
                             <height>424</height>
@@ -108,7 +112,7 @@
                         <control type="label">
                             <left>20</left>
                             <top>445</top>
-                            <width>290</width>
+                            <width>304</width>
                             <height>424</height>
                             <align>center</align>
                             <label>$INFO[ListItem.Label]</label>
