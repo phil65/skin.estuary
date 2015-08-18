@@ -752,6 +752,7 @@
             <width>1920</width>
             <height>80</height>
             <texture>frame/InfoBarTop.png</texture>
+            <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
         </control>
         <control type="grouplist">
             <left>5</left>
@@ -798,6 +799,7 @@
             <usecontrolcoords>true</usecontrolcoords>
             <animation effect="slide" end="-70,0" time="200" reversible="true" condition="Window.IsActive(1101)">Conditional</animation>
             <animation effect="fade" time="150">VisibleChange</animation>
+            <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
             <visible>!Window.IsVisible(extendedprogressdialog)</visible>
             <control type="button">
                 <description>Weather label</description>
@@ -890,6 +892,7 @@
             <width>1920</width>
             <height>80</height>
             <texture border="1">frame/InfoBarBottom.png</texture>
+            <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
         </control>
         <control type="group">
             <visible>Window.IsMedia + !Window.IsActive(eventlog)</visible>
