@@ -155,7 +155,7 @@
 					<height>68</height>
 					<label>24096</label>
 					<font>font14</font>
-					<textcolor>white3</textcolor>
+					<textcolor>grey</textcolor>
 					<scroll>true</scroll>
 				</control>
 				<control type="textbox">
@@ -167,7 +167,7 @@
 					<aligny>top</aligny>
 					<label>$INFO[ListItem.Property(Addon.broken)]</label>
 					<font>font14</font>
-					<textcolor>white3</textcolor>
+					<textcolor>grey</textcolor>
 				</control>
 			</control>
 		</control>
