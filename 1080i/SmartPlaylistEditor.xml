@@ -99,12 +99,19 @@
                     <param name="label" value="222" />
                 </include>
             </control>
+            <control type="image">
+                <left>650</left>
+                <top>95</top>
+                <width>630</width>
+                <height>485</height>
+                <texture border="40">buttons/button-nofo.png</texture>
+            </control>
             <control type="list" id="10">
                 <description>Rules List Control</description>
                 <left>670</left>
-                <top>100</top>
+                <top>115</top>
                 <width>600</width>
-                <height>500</height>
+                <height>435</height>
                 <onleft>500</onleft>
                 <onright>500</onright>
                 <ondown>9001</ondown>
@@ -157,14 +164,14 @@
             </control>
             <control type="textbox">
                 <left>680</left>
-                <top>200</top>
+                <top>500</top>
                 <width>540</width>
                 <height>300</height>
                 <aligny>center</aligny>
-                <label>Some help text to explain how this dialog works. Some help text to explain how this dialog works. Disappears after adding first Rule.</label>
+                <label>Some help text to explain how this dialog works. Some help text to explain how this dialog works.</label>
                 <selectedcolor>selected</selectedcolor>
                 <textcolor>grey</textcolor>
-                <font>font16</font>
+                <font>font14</font>
             </control>
         </control>
     </controls>

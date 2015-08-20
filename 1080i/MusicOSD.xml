@@ -98,23 +98,20 @@
                     <include name="OSDButton">
                         <param name="texture" value="osd/fullscreen/buttons/bookmarks.png"/>
                     </include>
-                    <onclick>ActivateWindow(videobookmarks)</onclick>
+                <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="radiobutton" id="703">
                     <label>31356</label>
                     <include name="OSDButton">
                         <param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
                     </include>
-                    <onclick>Close</onclick>
-                    <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                    <onclick>ActivateWindow(visualisationpresetlist)</onclick>
                 </control>
-                <control type="radiobutton" id="804">
+                <control type="radiobutton" id="500">
                     <label>31355</label>
                     <include name="OSDButton">
                         <param name="texture" value="osd/fullscreen/buttons/previous.png"/>
                     </include>
-                    <onclick>PlayerControl(ShowVideoMenu)</onclick>
-                    <visible>VideoPlayer.HasMenu</visible>
                 </control>
             </control>
             <control type="group">
