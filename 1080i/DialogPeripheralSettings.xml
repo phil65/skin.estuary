@@ -13,19 +13,19 @@
 			<param name="DialogHeaderLabel" value="" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
-			<control type="image">
+		<control type="image">
 			<left>10</left>
 			<top>80</top>
 			<width>1200</width>
 			<height>790</height>
-				<texture border="40">buttons/button-nofo.png</texture>
-			</control>
-        <include name="UpDownArrows">
-            <param name="container_id" value="5" />
-            <param name="posx" value="565" />
-            <param name="up_posy" value="-40" />
-            <param name="down_posy" value="890" />
-        </include>
+			<texture border="40">buttons/button-nofo.png</texture>
+		</control>
+		<include name="UpDownArrows">
+			<param name="container_id" value="5" />
+			<param name="posx" value="565" />
+			<param name="up_posy" value="-40" />
+			<param name="down_posy" value="890" />
+		</include>
 		<control type="grouplist" id="5">
 			<animation effect="slide" start="0,0" end="5,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>
 			<description>control area</description>
