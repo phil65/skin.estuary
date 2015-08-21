@@ -106,7 +106,7 @@
                     <control type="image">
                         <width>450</width>
                         <height>60</height>
-                        <texture colordiffuse="button_focus">lists/focus.png</texture>
+                        <texture>lists/focus.png</texture>
                     </control>
                     <control type="label">
                         <left>5</left>
@@ -219,7 +219,7 @@
                         <width>60</width>
                         <height>60</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="button_focus">lists/focus.png</texture>
+                        <texture>lists/focus.png</texture>
                     </control>
                     <control type="image" id="2">
                         <width>60</width>
@@ -443,7 +443,7 @@
                             <left>0</left>
                             <width>1665</width>
                             <height>59</height>
-                            <texture colordiffuse="button_focus">lists/focus.png</texture>
+                            <texture>lists/focus.png</texture>
                         </control>
                         <control type="image">
                             <left>3</left>
@@ -684,7 +684,7 @@
                             <left>0</left>
                             <width>1665</width>
                             <height>59</height>
-                            <texture colordiffuse="button_focus">lists/focus.png</texture>
+                            <texture>lists/focus.png</texture>
                         </control>
                         <control type="image">
                             <left>3</left>
@@ -944,7 +944,7 @@
                             <left>0</left>
                             <width>1665</width>
                             <height>59</height>
-                            <texture colordiffuse="button_focus">lists/focus.png</texture>
+                            <texture>lists/focus.png</texture>
                         </control>
                         <control type="label">
                             <left>3</left>
