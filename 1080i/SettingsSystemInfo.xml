@@ -67,6 +67,14 @@
                 <height>792</height>
                 <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
+                <control type="image">
+                    <description>Dialog Header image</description>
+                    <left>442</left>
+                    <top>596</top>
+                    <width>1256</width>
+                    <height>3</height>
+                    <texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+                </control>
             <control type="grouplist">
                 <left>460</left>
                 <top>100</top>
@@ -165,29 +173,34 @@
                 </control>
                 <control type="grouplist">
                     <description>Kodi build version</description>
-                    <itemgap>50</itemgap>
+                    <itemgap>10</itemgap>
                     <top>450</top>
                     <left>0</left>
                     <align>left</align>
-                    <height>35</height>
+                    <height>45</height>
                     <orientation>horizontal</orientation>
                     <control type="label">
                         <description>Build label</description>
                         <width>auto</width>
-                        <height>25</height>
+                        <height>50</height>
+                        <aligny>bottom</aligny>
+                        <textoffsety>10</textoffsety>
                         <label>$LOCALIZE[144]</label>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <font>font13_title</font>
+                        <font>font13</font>
                     </control>
                     <control type="label" id="52">
                         <description>Kodi Build Version</description>
                         <left>90</left>
                         <top>450</top>
+                        <height>50</height>
+                        <aligny>bottom</aligny>
+                        <textoffsety>10</textoffsety>
                         <width>auto</width>
                         <textcolor>blue</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <font>font13_title</font>
+                        <font>font13</font>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -204,14 +217,14 @@
                         <label>$LOCALIZE[174]</label>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <font>font13_title</font>
+                        <font>font13</font>
                     </control>
                     <control type="label" id="53">
                         <description>Kodi Build Date</description>
                         <width>auto</width>
                         <textcolor>blue</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <font>font13_title</font>
+                        <font>font13</font>
                     </control>
                 </control>
             </control>
