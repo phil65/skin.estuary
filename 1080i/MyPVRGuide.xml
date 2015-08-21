@@ -315,7 +315,7 @@
                         <height>75</height>
                         <align>center</align>
                         <label>$INFO[Control.GetLabel(30)]</label>
-                        <font>Font_Reg25</font>
+                        <font>font12</font>
                         <textcolor>grey</textcolor>
                         <focusedcolor>white</focusedcolor>
                         <texturefocus border="40">buttons/roundedbutton-focus.png</texturefocus>
@@ -835,7 +835,7 @@
                     <width>300</width>
                     <height>30</height>
                     <label>555</label>
-                    <font>Font_Bold34_Caps</font>
+                    <font>font24_title</font>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="label">
@@ -845,7 +845,7 @@
                     <width>825</width>
                     <height>30</height>
                     <label>369</label>
-                    <font>Font_Bold34_Caps</font>
+                    <font>font24_title</font>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="label">
@@ -855,7 +855,7 @@
                     <width>210</width>
                     <height>30</height>
                     <label>126</label>
-                    <font>Font_Bold34_Caps</font>
+                    <font>font24_title</font>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="image">
