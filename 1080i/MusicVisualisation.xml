@@ -176,7 +176,7 @@
                         <height>126</height>
                         <align>left</align>
                         <label>$INFO[MusicPlayer.BitRate,,[COLOR grey] kbps[/COLOR]][CR]$INFO[MusicPlayer.SampleRate,,[COLOR grey] kHz[/COLOR] ][CR]$INFO[MusicPlayer.bitspersample,,[COLOR grey] bit[/COLOR] ]</label>
-                        <font>Font_Reg19_Caps</font>
+                        <font>font10</font>
                         <shadowcolor>black</shadowcolor>
                         <textcolor>button_focus</textcolor>
                     </control>
