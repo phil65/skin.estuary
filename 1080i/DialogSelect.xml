@@ -21,7 +21,7 @@
                 <height>625</height>
                 <onup>3</onup>
                 <ondown>3</ondown>
-                <onleft>99</onleft>
+                <onleft>9001</onleft>
                 <onright>61</onright>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -82,7 +82,7 @@
                 <height>625</height>
                 <onup>6</onup>
                 <ondown>6</ondown>
-                <onleft>99</onleft>
+                <onleft>9001</onleft>
                 <onright>61</onright>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -188,8 +188,9 @@
                 <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
                 <textureslidernib>-</textureslidernib>
                 <textureslidernibfocus>-</textureslidernibfocus>
-                <onleft>3</onleft>
-                <onright>90</onright>
+                <onleft condition="Control.IsVisible(3)">3</onleft>
+                <onleft condition="Control.IsVisible(6)">6</onleft>
+                <onright>9001</onright>
                 <orientation>vertical</orientation>
             </control>
             <control type="group">
@@ -205,7 +206,7 @@
                     <textcolor>grey</textcolor>
                     <label>$VAR[SelectLabel]</label>
                 </control>
-                <control type="grouplist" id="90">
+                <control type="grouplist" id="9001">
                     <left>920</left>
                     <top>80</top>
                     <onleft>61</onleft>
