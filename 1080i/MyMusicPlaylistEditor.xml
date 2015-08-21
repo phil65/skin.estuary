@@ -21,19 +21,32 @@
                 <label>$LOCALIZE[31061]</label>
             </control>
             <control type="grouplist" id="9000">
-                <left>875</left>
-                <top>250</top>
+                <left>100</left>
+                <top>-20</top>
+                <onright>50</onright>
+                <onleft>100</onleft>
+                <align>left</align>
+                <itemgap>-20</itemgap>
                 <include name="DefaultDialogButton">
                     <param name="id" value="6" />
                     <param name="label" value="31055" />
+                    <param name="width" value="200" />
+                    <param name="height" value="200" />
+                    <param name="wrapmultiline" value="true" />
                 </include>
                 <include name="DefaultDialogButton">
                     <param name="id" value="7" />
                     <param name="label" value="31056" />
+                    <param name="width" value="200" />
+                    <param name="height" value="200" />
+                    <param name="wrapmultiline" value="true" />
                 </include>
                 <include name="DefaultDialogButton">
                     <param name="id" value="8" />
                     <param name="label" value="31057" />
+                    <param name="width" value="200" />
+                    <param name="height" value="200" />
+                    <param name="wrapmultiline" value="true" />
                 </include>
             </control>
             <control type="group">
@@ -86,15 +99,16 @@
         </control>
         <control type="group">
             <include>OpenClose_Left</include>
-            <posx>100</posx>
+            <posx>300</posx>
             <posy>180</posy>
             <include name="FileManagerPanel">
                 <param name="header_id" value="22" />
                 <param name="header_label" value="31058" />
                 <param name="list_id" value="50" />
                 <param name="scrollbar_id" value="60" />
-                <param name="nav_id" value="100" />
-                <param name="width" value="750" />
+                <param name="onleft_id" value="9000" />
+                <param name="onright_id" value="100" />
+                <param name="width" value="740" />
             </include>
         </control>
         <control type="group">
@@ -106,8 +120,9 @@
                 <param name="header_label" value="31059" />
                 <param name="list_id" value="100" />
                 <param name="scrollbar_id" value="61" />
-                <param name="nav_id" value="50" />
-                <param name="width" value="750" />
+                <param name="onleft_id" value="50" />
+                <param name="onright_id" value="9000" />
+                <param name="width" value="740" />
             </include>
         </control>
         <include name="TopBar">

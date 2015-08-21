@@ -127,7 +127,7 @@
             <top>72</top>
             <width>$PARAM[width]</width>
             <height>635</height>
-            <onleft>$PARAM[nav_id]</onleft>
+            <onleft>$PARAM[onleft_id]</onleft>
             <onright>$PARAM[scrollbar_id]</onright>
             <onup>$PARAM[list_id]</onup>
             <ondown>$PARAM[list_id]</ondown>
@@ -223,7 +223,7 @@
             <textureslidernib>-</textureslidernib>
             <textureslidernibfocus>-</textureslidernibfocus>
             <onleft>$PARAM[list_id]</onleft>
-            <onright>$PARAM[nav_id]</onright>
+            <onright>$PARAM[onright_id]</onright>
             <orientation>vertical</orientation>
         </control>
     </include>
