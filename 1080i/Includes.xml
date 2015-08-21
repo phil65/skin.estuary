@@ -97,7 +97,7 @@
             <description>background image</description>
             <left>0</left>
             <top>0</top>
-            <width>800</width>
+            <width>$PARAM[width]</width>
             <height>700</height>
             <texture border="2">dialogs/dialog-bg-solid.png</texture>
         </control>
@@ -105,7 +105,7 @@
             <description>Dialog Header image</description>
             <left>0</left>
             <top>0</top>
-            <width>800</width>
+            <width>$PARAM[width]</width>
             <height>70</height>
             <texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
         </control>
@@ -113,18 +113,19 @@
             <description>header label</description>
             <textoffsetx>40</textoffsetx>
             <top>0</top>
-            <width>800</width>
+            <width>$PARAM[width]</width>
             <height>70</height>
             <font>font13_title</font>
             <align>left</align>
             <aligny>center</aligny>
+            <label>$PARAM[header_label]</label>
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
         <control type="list" id="$PARAM[list_id]">
             <left>0</left>
             <top>72</top>
-            <width>800</width>
+            <width>$PARAM[width]</width>
             <height>635</height>
             <onleft>$PARAM[nav_id]</onleft>
             <onright>$PARAM[scrollbar_id]</onright>
@@ -136,23 +137,24 @@
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
-                    <width>1096</width>
+                    <width>$PARAM[width]</width>
                     <height>71</height>
                     <texture border="90,3,90,3">lists/separator.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
-                    <width>1396</width>
+                    <width>$PARAM[width]</width>
                     <height>69</height>
                     <texture border="150,1,150,1">lists/focus.png</texture>
                     <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
                 </control>
                 <control type="label">
-                    <left>35</left>
+                    <left>20</left>
+                    <textoffsetx>15</textoffsetx>
                     <top>0</top>
                     <height>70</height>
-                    <width>740</width>
+                    <width>$PARAM[width]</width>
                     <align>left</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.Label]</label>
@@ -161,10 +163,11 @@
                     <shadowcolor>text_shadow</shadowcolor>
                 </control>
                 <control type="label">
-                    <left>90</left>
+                    <left>0</left>
+                    <textoffsetx>15</textoffsetx>
                     <top>0</top>
                     <height>70</height>
-                    <width>690</width>
+                    <width>$PARAM[width]</width>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font12</font>
@@ -178,15 +181,16 @@
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
-                    <width>1396</width>
+                    <width>$PARAM[width]</width>
                     <height>71</height>
                     <texture border="90,3,90,3">lists/separator.png</texture>
                 </control>
                 <control type="label">
-                    <left>35</left>
+                    <left>20</left>
+                    <textoffsetx>15</textoffsetx>
                     <top>0</top>
                     <height>70</height>
-                    <width>740</width>
+                    <width>$PARAM[width]</width>
                     <align>left</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.Label]</label>
@@ -195,10 +199,11 @@
                     <shadowcolor>text_shadow</shadowcolor>
                 </control>
                 <control type="label">
-                    <left>90</left>
+                    <left>0</left>
+                    <textoffsetx>15</textoffsetx>
                     <top>0</top>
                     <height>70</height>
-                    <width>690</width>
+                    <width>$PARAM[width]</width>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>font12</font>
@@ -210,7 +215,8 @@
             </itemlayout>
         </control>
         <control type="scrollbar" id="$PARAM[scrollbar_id]">
-            <left>805</left>
+            <left>$PARAM[width]</left>
+            <animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
             <top>0</top>
             <width>12</width>
             <height>702</height>
