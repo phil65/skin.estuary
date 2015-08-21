@@ -76,7 +76,7 @@
 							<height>190</height>
 							<align>left</align>
 							<label fallback="31003">[B]$INFO[ListItem.TagLine,,[CR]][/B]$INFO[ListItem.Plot]</label>
-							<autoscroll delay="10000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+							<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 					</control>
 				</control>
@@ -215,7 +215,7 @@
 									<align>center</align>
 									<font>font12</font>
 									<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] as ,[/COLOR]]</label>
-									<autoscroll delay="5000" time="AutoScrollTime" repeat="8001">true</autoscroll>
+									<autoscroll delay="5000" time="3000" repeat="8001">true</autoscroll>
 								</control>
 								<control type="image">
 									<left>0</left>
