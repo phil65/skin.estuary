@@ -89,55 +89,10 @@
 						<onright>73</onright>
 						<pagecontrol>73</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<itemlayout height="70">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>300</width>
-								<height>70</height>
-								<texture border="40">lists/separator.png</texture>
-							</control>
-							<control type="label">
-								<left>10</left>
-								<top>0</top>
-								<width>330</width>
-								<height>70</height>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>grey</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
-							</control>
-						</itemlayout>
-						<focusedlayout height="70">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>300</width>
-								<height>70</height>
-								<texture border="40">lists/separator.png</texture>
-								<visible>!Control.HasFocus(13)</visible>
-							</control>
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>300</width>
-								<height>70</height>
-								<texture>lists/focus.png</texture>
-								<visible>Control.HasFocus(13)</visible>
-							</control>
-							<control type="label">
-								<left>10</left>
-								<top>0</top>
-								<width>330</width>
-								<height>70</height>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
-							</control>
-						</focusedlayout>
+						<include name="DefaultSimpleListLayout">
+							<param name="width" value="300" />
+							<param name="list_id" value="13" />
+						</include>
 					</control>
 					<control type="scrollbar" id="73">
 						<left>305</left>

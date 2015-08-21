@@ -101,7 +101,7 @@
             <control type="image">
                 <left>650</left>
                 <top>95</top>
-                <width>630</width>
+                <width>640</width>
                 <height>485</height>
                 <texture border="40">buttons/button-nofo.png</texture>
             </control>
@@ -115,51 +115,10 @@
                 <onright>500</onright>
                 <ondown>9001</ondown>
                 <onup>9001</onup>
-                <itemlayout width="600" height="70">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>600</width>
-                        <height>70</height>
-                        <texture border="40">lists/separator.png</texture>
-                    </control>
-                    <control type="label">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>580</width>
-                        <height>70</height>
-                        <aligny>center</aligny>
-                        <info>ListItem.Label</info>
-                        <selectedcolor>selected</selectedcolor>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="600" height="70">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>600</width>
-                        <height>70</height>
-                        <texture>lists/focus.png</texture>
-                        <visible>Control.HasFocus(10)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>600</width>
-                        <height>70</height>
-                        <texture border="40">lists/separator.png</texture>
-                        <visible>!Control.HasFocus(10)</visible>
-                    </control>
-                    <control type="label">
-                        <left>10</left>
-                        <top>0</top>
-                        <width>580</width>
-                        <height>70</height>
-                        <aligny>center</aligny>
-                        <info>ListItem.Label</info>
-                        <selectedcolor>selected</selectedcolor>
-                    </control>
-                </focusedlayout>
+                <include name="DefaultSimpleListLayout">
+                    <param name="width" value="600" />
+                    <param name="list_id" value="10" />
+                </include>
             </control>
             <control type="textbox">
                 <left>680</left>

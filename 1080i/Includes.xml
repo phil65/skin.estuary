@@ -25,6 +25,62 @@
         <label>-</label>
         <font>-</font>
     </include>
+    <include name="DefaultSimpleListLayout">
+        <param name="align">left</param>
+        <definition>
+            <itemlayout height="70">
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>$PARAM[width]</width>
+                    <height>70</height>
+                    <texture border="40">lists/separator.png</texture>
+                </control>
+                <control type="label">
+                    <left>0</left>
+                    <textoffsetx>20</textoffsetx>
+                    <top>0</top>
+                    <width>$PARAM[width]</width>
+                    <height>70</height>
+                    <align>$PARAM[align]</align>
+                    <aligny>center</aligny>
+                    <textcolor>grey</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </itemlayout>
+            <focusedlayout height="70">
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>$PARAM[width]</width>
+                    <height>70</height>
+                    <texture border="40">lists/separator.png</texture>
+                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
+                </control>
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>$PARAM[width]</width>
+                    <height>70</height>
+                    <texture>lists/focus.png</texture>
+                    <visible>Control.HasFocus($PARAM[list_id])</visible>
+                </control>
+                <control type="label">
+                    <left>0</left>
+                    <textoffsetx>20</textoffsetx>
+                    <top>0</top>
+                    <width>$PARAM[width]</width>
+                    <height>70</height>
+                    <align>$PARAM[align]</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </focusedlayout>
+        </definition>
+    </include>
     <include name="MediaFlag">
         <param name="width">110</param>
         <definition>

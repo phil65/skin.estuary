@@ -25,55 +25,10 @@
                 <onright>61</onright>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <itemlayout height="70" width="880">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>880</width>
-                        <height>70</height>
-                        <texture border="40">lists/separator.png</texture>
-                    </control>
-                    <control type="label">
-                        <left>20</left>
-                        <top>0</top>
-                        <width>860</width>
-                        <height>70</height>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="70" width="880">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>880</width>
-                        <height>70</height>
-                        <texture border="40">lists/separator.png</texture>
-                        <visible>!Control.HasFocus(3)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>880</width>
-                        <height>70</height>
-                        <texture>lists/focus.png</texture>
-                        <visible>Control.HasFocus(3)</visible>
-                    </control>
-                    <control type="label">
-                        <left>20</left>
-                        <top>0</top>
-                        <width>860</width>
-                        <height>70</height>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                </focusedlayout>
+                <include name="DefaultSimpleListLayout">
+                    <param name="width" value="880" />
+                    <param name="list_id" value="3" />
+                </include>
             </control>
             <control type="list" id="6">
                 <left>20</left>
