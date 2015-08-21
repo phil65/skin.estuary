@@ -4,19 +4,19 @@
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="group">
-			<left>150</left>
-			<top>90</top>
+			<left>100</left>
+			<top>100</top>
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="1620" />
-				<param name="DialogBackgroundHeight" value="900" />
+				<param name="DialogBackgroundWidth" value="1720" />
+				<param name="DialogBackgroundHeight" value="880" />
 				<param name="DialogHeaderLabel" value="19143" />
 				<param name="DialogHeaderId" value="1" />
 			</include>
 			<control type="group">
 				<control type="grouplist" id="9000">
 					<left>0</left>
-					<top>70</top>
-					<width>400</width>
+					<top>50</top>
+					<width>370</width>
 					<height>600</height>
 					<itemgap>-20</itemgap>
 					<align>center</align>
@@ -64,7 +64,7 @@
 						<description>name label</description>
 						<left>0</left>
 						<top>0</top>
-						<width>400</width>
+						<width>360</width>
 						<height>70</height>
 						<label>31506</label>
 						<align>center</align>
@@ -73,15 +73,15 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>75</top>
-						<width>340</width>
+						<top>55</top>
+						<width>360</width>
 						<height>740</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="list" id="13">
 						<left>20</left>
-						<top>95</top>
-						<width>300</width>
+						<top>75</top>
+						<width>320</width>
 						<height>700</height>
 						<onup>13</onup>
 						<ondown>13</ondown>
@@ -90,13 +90,13 @@
 						<pagecontrol>73</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<include name="DefaultSimpleListLayout">
-							<param name="width" value="300" />
+							<param name="width" value="320" />
 							<param name="list_id" value="13" />
 						</include>
 					</control>
 					<control type="scrollbar" id="73">
 						<left>305</left>
-						<top>95</top>
+						<top>75</top>
 						<width>12</width>
 						<height>700</height>
 						<onleft>13</onleft>
@@ -108,13 +108,13 @@
 				</control>
 				<control type="group">
 					<description>Channels list</description>
-					<left>670</left>
+					<left>700</left>
 					<top>80</top>
 					<control type="label" id="21">
 						<description>name label</description>
 						<left>0</left>
 						<top>0</top>
-						<width>480</width>
+						<width>510</width>
 						<height>70</height>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -122,15 +122,15 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>75</top>
-						<width>480</width>
+						<top>55</top>
+						<width>510</width>
 						<height>740</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="list" id="11">
-						<left>5</left>
-						<top>85</top>
-						<width>300</width>
+						<left>20</left>
+						<top>75</top>
+						<width>470</width>
 						<height>700</height>
 						<onup>11</onup>
 						<ondown>11</ondown>
@@ -142,7 +142,7 @@
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
-								<width>300</width>
+								<width>470</width>
 								<height>70</height>
 								<texture border="40">lists/separator.png</texture>
 							</control>
@@ -157,12 +157,13 @@
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="label">
-								<left>40</left>
+								<left>75</left>
 								<top>0</top>
-								<width>250</width>
+								<width>390</width>
 								<height>70</height>
 								<align>left</align>
 								<aligny>center</aligny>
+								<font>fontContextMenu</font>
 								<textcolor>grey</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
@@ -172,7 +173,7 @@
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
-								<width>300</width>
+								<width>470</width>
 								<height>70</height>
 								<texture border="40">lists/separator.png</texture>
 								<visible>!Control.HasFocus(11)</visible>
@@ -180,9 +181,9 @@
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
-								<width>300</width>
+								<width>470</width>
 								<height>70</height>
-								<texture border="40">lists/focus.png</texture>
+								<texture>lists/focus.png</texture>
 								<visible>Control.HasFocus(11)</visible>
 							</control>
 							<control type="image">
@@ -196,11 +197,12 @@
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="label">
-								<left>40</left>
+								<left>75</left>
 								<top>0</top>
-								<width>250</width>
+								<width>390</width>
 								<height>70</height>
 								<align>left</align>
+								<font>fontContextMenu</font>
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>selected</selectedcolor>
@@ -210,7 +212,7 @@
 					</control>
 					<control type="scrollbar" id="71">
 						<left>465</left>
-						<top>95</top>
+						<top>75</top>
 						<width>12</width>
 						<height>700</height>
 						<onleft>11</onleft>
@@ -222,13 +224,13 @@
 				</control>
 				<control type="group">
 					<description>Grouped Channels list</description>
-					<left>1130</left>
+					<left>1200</left>
 					<top>80</top>
 					<control type="label" id="22">
 						<description>name label</description>
 						<left>0</left>
 						<top>0</top>
-						<width>480</width>
+						<width>510</width>
 						<height>70</height>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -236,15 +238,15 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>75</top>
-						<width>480</width>
+						<top>55</top>
+						<width>510</width>
 						<height>740</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="list" id="12">
 						<left>20</left>
-						<top>95</top>
-						<width>440</width>
+						<top>75</top>
+						<width>470</width>
 						<height>700</height>
 						<onup>12</onup>
 						<ondown>12</ondown>
@@ -256,7 +258,7 @@
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
-								<width>440</width>
+								<width>470</width>
 								<height>70</height>
 								<texture border="40">lists/separator.png</texture>
 							</control>
@@ -271,12 +273,13 @@
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="label">
-								<left>70</left>
+								<left>75</left>
 								<top>0</top>
-								<width>360</width>
+								<width>390</width>
 								<height>70</height>
 								<align>left</align>
 								<aligny>center</aligny>
+								<font>fontContextMenu</font>
 								<textcolor>grey</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
@@ -286,7 +289,7 @@
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
-								<width>440</width>
+								<width>470</width>
 								<height>70</height>
 								<texture border="40">lists/separator.png</texture>
 								<visible>!Control.HasFocus(12)</visible>
@@ -294,7 +297,7 @@
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
-								<width>440</width>
+								<width>470</width>
 								<height>70</height>
 								<texture>lists/focus.png</texture>
 								<visible>Control.HasFocus(12)</visible>
@@ -310,11 +313,12 @@
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="label">
-								<left>70</left>
+								<left>75</left>
 								<top>0</top>
-								<width>360</width>
+								<width>390</width>
 								<height>70</height>
 								<align>left</align>
+								<font>fontContextMenu</font>
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>selected</selectedcolor>
@@ -323,8 +327,8 @@
 						</focusedlayout>
 					</control>
 					<control type="scrollbar" id="72">
-						<left>465</left>
-						<top>95</top>
+						<left>495</left>
+						<top>75</top>
 						<width>12</width>
 						<height>700</height>
 						<onleft>12</onleft>
