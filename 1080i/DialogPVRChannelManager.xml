@@ -3,19 +3,19 @@
 	<defaultcontrol always="true">20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
-		<left>120</left>
+		<left>100</left>
 		<top>100</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1680" />
+			<param name="DialogBackgroundWidth" value="1720" />
 			<param name="DialogBackgroundHeight" value="855" />
 			<param name="DialogHeaderLabel" value="$VAR[PVRChannelMgrHeader]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
 		<control type="group">
-			<left>20</left>
+			<left>10</left>
 			<top>70</top>
 			<control type="scrollbar" id="60">
 				<left>630</left>
@@ -147,7 +147,7 @@
 				<itemgap>-25</itemgap>
 				<control type="label" id="9001">
 					<description>channel options Header</description>
-					<width>660</width>
+					<width>700</width>
 					<height>60</height>
 					<textoffsetx>30</textoffsetx>
 					<font>font12</font>
@@ -159,90 +159,40 @@
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Channel activated</description>
-					<width>660</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
+					<width>700</width>
+					<include>SettingsItemCommon</include>
 					<label>19074</label>
 				</control>
 				<control type="edit" id="8">
 					<description>Channel name</description>
-					<width>660</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<shadowcolor>black</shadowcolor>
-					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+					<width>700</width>
+					<include>SettingsItemCommon</include>
 					<label>19201</label>
 				</control>
 				<control type="button" id="9">
 					<description>Channel logo Button</description>
-					<left>0</left>
-					<top>0</top>
-					<width>660</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+					<width>700</width>
+					<include>SettingsItemCommon</include>
 					<label>19202</label>
 					<label2>$INFO[ListItem.Icon]</label2>
-					<onleft>60</onleft>
-					<onright>9000</onright>
-					<onup>8</onup>
-					<ondown>12</ondown>
 				</control>
 				<control type="radiobutton" id="12">
 					<description>EPG activated</description>
-					<left>0</left>
-					<top>0</top>
-					<width>660</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
+					<width>700</width>
+					<include>SettingsItemCommon</include>
 					<label>19206</label>
 				</control>
 				<control type="spincontrolex" id="13">
 					<description>EPG source</description>
-					<left>0</left>
-					<top>0</top>
-					<width>660</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+					<width>700</width>
+					<include>SettingsItemCommon</include>
 					<label>19200</label>
 				</control>
 				<control type="radiobutton" id="14">
 					<description>Parental locked</description>
-					<left>0</left>
-					<top>0</top>
-					<width>660</width>
+					<width>700</width>
 					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
+					<include>SettingsItemCommon</include>
 					<label>19267</label>
 				</control>
 			</control>
@@ -256,7 +206,7 @@
 				<animation effect="slide" start="0,0" end="0,45" time="0" condition="!Control.IsVisible(31)">Conditional</animation>
 				<control type="label" id="9003">
 					<description>channel options Header</description>
-					<width>660</width>
+					<width>700</width>
 					<height>50</height>
 					<textoffsetx>30</textoffsetx>
 					<font>font12</font>
@@ -268,7 +218,7 @@
 				</control>
 				<control type="button" id="31">
 					<description>New channel Button</description>
-					<width>660</width>
+					<width>700</width>
 					<height>100</height>
 					<textoffsetx>40</textoffsetx>
 					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
@@ -278,7 +228,7 @@
 				</control>
 				<control type="button" id="30">
 					<description>Group Manager Button</description>
-					<width>660</width>
+					<width>700</width>
 					<height>100</height>
 					<textoffsetx>40</textoffsetx>
 					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
@@ -288,7 +238,7 @@
 				</control>
 				<control type="togglebutton" id="34">
 					<description>TV/Radio toggle</description>
-					<width>660</width>
+					<width>700</width>
 					<height>100</height>
 					<textoffsetx>40</textoffsetx>
 					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
@@ -304,10 +254,11 @@
 			</control>
 		</control>
 		<control type="grouplist" id="9000">
-			<left>1330</left>
-			<top>95</top>
+			<left>1360</left>
+			<top>90</top>
 			<onleft>9002</onleft>
 			<onright>20</onright>
+			<itemgap>-20</itemgap>
 			<include name="DefaultDialogButton">
 				<param name="width" value="350" />
 				<param name="id" value="4" />
@@ -325,7 +276,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<left>1360</left>
+			<left>1390</left>
 			<top>400</top>
 			<control type="image">
 				<left>-10</left>
