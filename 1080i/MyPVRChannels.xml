@@ -8,11 +8,11 @@
     <controls>
         <include>DefaultBackground</include>
         <control type="group">
-            <include>OpenClose_Right</include>
+            <include>OpenClose_Left</include>
             <left>110</left>
             <top>182</top>
             <visible>Control.IsVisible(50)</visible>
-            <include>Visible_Right</include>
+            <include>Visible_Left</include>
             <control type="image">
                 <description>background image</description>
                 <left>-20</left>
@@ -213,6 +213,13 @@
                 <onright>50</onright>
                 <orientation>vertical</orientation>
             </control>
+        </control>
+        <control type="group">
+            <left>110</left>
+            <top>182</top>
+            <visible>Control.IsVisible(50)</visible>
+            <include>Visible_Right</include>
+            <include>OpenClose_Right</include>
             <control type="image">
                 <left>850</left>
                 <top>-20</top>
@@ -237,13 +244,13 @@
                 <height>262</height>
                 <label>$INFO[ListItem.Plot]</label>
             </control>
-            <include name="UpDownArrows">
-                <param name="container_id" value="50" />
-                <param name="posx" value="826" />
-                <param name="up_posy" value="-50" />
-                <param name="down_posy" value="730" />
-            </include>
         </control>
+        <include name="UpDownArrows">
+            <param name="container_id" value="50" />
+            <param name="posx" value="826" />
+            <param name="up_posy" value="-50" />
+            <param name="down_posy" value="730" />
+        </include>
         <include>Media_Menu</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="Live TV$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), / ]" />
