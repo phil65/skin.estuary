@@ -132,7 +132,7 @@
                             <width>1000</width>
                             <height>71</height>
                             <visible>Control.HasFocus(450)</visible>
-                            <texture border="5">lists/focus.png</texture>
+                            <texture>lists/focus.png</texture>
                         </control>
                         <control type="image">
                             <left>10</left>
@@ -207,7 +207,7 @@
                             <width>1000</width>
                             <height>71</height>
                             <visible>Control.HasFocus(451)</visible>
-                            <texture border="5">lists/focus.png</texture>
+                            <texture>lists/focus.png</texture>
                         </control>
                         <control type="image">
                             <left>10</left>

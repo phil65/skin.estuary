@@ -164,7 +164,7 @@
                         <top>0</top>
                         <width>400</width>
                         <height>30</height>
-                        <texture border="7">lists/focus.png</texture>
+                        <texture>lists/focus.png</texture>
                         <visible>Control.HasFocus(50)</visible>
                     </control>
                     <control type="label">
@@ -282,7 +282,7 @@
                         <top>0</top>
                         <width>400</width>
                         <height>30</height>
-                        <texture border="7">lists/focus.png</texture>
+                        <texture>lists/focus.png</texture>
                         <visible>Control.HasFocus(100)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
