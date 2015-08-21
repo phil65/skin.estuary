@@ -9,18 +9,31 @@
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1520" />
-			<param name="DialogBackgroundHeight" value="850" />
+			<param name="DialogBackgroundHeight" value="870" />
 			<param name="DialogHeaderLabel" value="" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
+			<control type="image">
+			<left>10</left>
+			<top>80</top>
+			<width>1200</width>
+			<height>790</height>
+				<texture border="40">buttons/button-nofo.png</texture>
+			</control>
+        <include name="UpDownArrows">
+            <param name="container_id" value="5" />
+            <param name="posx" value="565" />
+            <param name="up_posy" value="-40" />
+            <param name="down_posy" value="890" />
+        </include>
 		<control type="grouplist" id="5">
 			<animation effect="slide" start="0,0" end="5,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>
 			<description>control area</description>
-			<left>30</left>
-			<top>70</top>
+			<left>24</left>
+			<top>100</top>
 			<width>1160</width>
-			<height>730</height>
-			<itemgap>-20</itemgap>
+			<height>750</height>
+			<itemgap>0</itemgap>
 			<pagecontrol>60</pagecontrol>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
@@ -29,19 +42,19 @@
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
-			<include>SettingsItemCommon</include>
+			<include>DefaultSettingButton</include>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
-			<include>SettingsItemCommon</include>
+			<include>DefaultSettingButton</include>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
-			<include>SettingsItemCommon</include>
+			<include>DefaultSettingButton</include>
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Slider</description>
-			<include>SettingsItemCommon</include>
+			<include>DefaultSettingButton</include>
 		</control>
 		<control type="image" id="11">
 			<description>separator image</description>
@@ -61,8 +74,8 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="grouplist" id="9000">
-			<left>1180</left>
-			<top>20</top>
+			<left>1210</left>
+			<top>30</top>
 			<orientation>vertical</orientation>
 			<width>1120</width>
 			<height>350</height>
