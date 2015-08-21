@@ -376,14 +376,12 @@
                             <left>60</left>
                             <width>285</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <label>$INFO[ListItem.ChannelName]</label>
                         </control>
                         <control type="label">
                             <left>378</left>
                             <width>300</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
                         </control>
                         <control type="progress">
@@ -398,7 +396,6 @@
                             <left>750</left>
                             <width>825</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <textcolor>button_focus</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -415,7 +412,6 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
-                            <font>Font_Reg29</font>
                             <label>31111</label>
                             <visible>ListItem.IsRecording</visible>
                         </control>
@@ -431,7 +427,6 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
-                            <font>Font_Reg29</font>
                             <label>31104</label>
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
@@ -461,14 +456,12 @@
                             <left>60</left>
                             <width>285</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <label>$INFO[ListItem.ChannelName]</label>
                         </control>
                         <control type="label">
                             <left>378</left>
                             <width>300</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
                         </control>
                         <control type="progress">
@@ -483,7 +476,6 @@
                             <left>750</left>
                             <width>825</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <textcolor>button_focus</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -500,7 +492,6 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
-                            <font>Font_Reg29</font>
                             <label>31111</label>
                             <visible>ListItem.IsRecording</visible>
                         </control>
@@ -516,7 +507,6 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
-                            <font>Font_Reg29</font>
                             <label>31104</label>
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
@@ -567,14 +557,14 @@
                     <width>1350</width>
                     <height>30</height>
                     <textcolor>button_focus</textcolor>
-                    <font>Font_Reg29</font>
+                    <font>font13</font>
                     <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]  [COLOR grey]$INFO[ListItem.Title][/COLOR]      $LOCALIZE[515]: [COLOR grey]$INFO[ListItem.Genre][/COLOR]</label>
                 </control>
                 <control type="textbox">
                     <top>40</top>
                     <width>1350</width>
                     <height>145</height>
-                    <font>Font_Reg29</font>
+                    <font>font13</font>
                     <label>$INFO[ListItem.Plot]</label>
                     <autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                 </control>
@@ -627,14 +617,12 @@
                             <left>60</left>
                             <width>285</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <label>$INFO[ListItem.ChannelName]</label>
                         </control>
                         <control type="label">
                             <left>378</left>
                             <width>300</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
                         </control>
                         <control type="progress">
@@ -649,7 +637,6 @@
                             <left>750</left>
                             <width>825</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <textcolor>button_focus</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -666,7 +653,6 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
-                            <font>Font_Reg29</font>
                             <label>31111</label>
                             <visible>ListItem.IsRecording</visible>
                         </control>
@@ -682,7 +668,6 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
-                            <font>Font_Reg29</font>
                             <label>31104</label>
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
@@ -712,14 +697,12 @@
                             <left>60</left>
                             <width>285</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <label>$INFO[ListItem.ChannelName]</label>
                         </control>
                         <control type="label">
                             <left>378</left>
                             <width>300</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
                         </control>
                         <control type="progress">
@@ -734,7 +717,6 @@
                             <left>750</left>
                             <width>825</width>
                             <height>52</height>
-                            <font>Font_Reg29</font>
                             <textcolor>button_focus</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -751,7 +733,6 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
-                            <font>Font_Reg29</font>
                             <label>31111</label>
                             <visible>ListItem.IsRecording</visible>
                         </control>
@@ -767,7 +748,6 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
-                            <font>Font_Reg29</font>
                             <label>31104</label>
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
@@ -819,14 +799,14 @@
                     <width>1350</width>
                     <height>30</height>
                     <textcolor>button_focus</textcolor>
-                    <font>Font_Reg29</font>
+                    <font>font13</font>
                     <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]  [COLOR grey]$INFO[ListItem.Title][/COLOR]      $LOCALIZE[515]: [COLOR grey]$INFO[ListItem.Genre][/COLOR]</label>
                 </control>
                 <control type="textbox">
                     <top>40</top>
                     <width>1350</width>
                     <height>145</height>
-                    <font>Font_Reg29</font>
+                    <font>font13</font>
                     <label>$INFO[ListItem.Plot]</label>
                     <autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                 </control>
