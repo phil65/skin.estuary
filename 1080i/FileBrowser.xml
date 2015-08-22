@@ -70,6 +70,13 @@
                     <bordersize>4</bordersize>
                     <texture border="4" background="true">$INFO[ListItem.Icon]</texture>
                 </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>80</top>
+                        <width>980</width>
+                        <height>740</height>
+                        <texture border="40">buttons/button-nofo.png</texture>
+                    </control>
                 <control type="panel" id="450">
                     <left>20</left>
                     <top>100</top>
@@ -221,15 +228,10 @@
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="60">
-                    <left>640</left>
-                    <top>90</top>
-                    <width>25</width>
-                    <height>561</height>
-                    <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-                    <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-                    <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-                    <textureslidernib>ScrollBarNib.png</textureslidernib>
-                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                    <left>965</left>
+                    <top>100</top>
+                    <width>12</width>
+                    <height>698</height>
                     <onleft>450</onleft>
                     <onright>9000</onright>
                     <orientation>vertical</orientation>
@@ -277,5 +279,11 @@
                 </control>
             </control>
         </control>
+        <include name="UpDownArrows">
+            <param name="container_id" value="450" />
+            <param name="posx" value="830" />
+            <param name="up_posy" value="50" />
+            <param name="down_posy" value="980" />
+        </include>
     </controls>
 </window>
