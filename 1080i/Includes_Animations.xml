@@ -47,11 +47,11 @@
         <include condition="!Skin.HasSetting(no_slide_animations)">Vis_FadeSlide_Right</include>
     </include>
     <include name="Vis_FadeSlide_Right">
-        <animation type="Visible">
-            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
+        <animation type="Visible" reversible="False">
+            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out"/>
             <effect type="slide" start="320" end="0" time="400" tween="cubic" easing="out" />
         </animation>
-        <animation type="Hidden">
+        <animation type="Hidden" reversible="False">
             <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
             <effect type="slide" start="0" end="320" time="300" tween="cubic" easing="out" />
         </animation>
@@ -61,11 +61,11 @@
         <include condition="!Skin.HasSetting(no_slide_animations)">Vis_FadeSlide_Left</include>
     </include>
     <include name="Vis_FadeSlide_Left">
-        <animation type="Visible">
+        <animation type="Visible" reversible="False">
             <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
             <effect type="slide" start="-320" end="0" time="400" tween="cubic" easing="out" />
         </animation>
-        <animation type="Hidden">
+        <animation type="Hidden" reversible="False">
             <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
             <effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
         </animation>
