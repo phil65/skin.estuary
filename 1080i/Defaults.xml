@@ -7,13 +7,13 @@
         <label>-</label>
         <font>font13</font>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <selectedcolor>selected</selectedcolor>
     </default>
     <default type="fadelabel">
         <font>font13</font>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
     </default>
     <default type="button">
         <width>300</width>
@@ -22,7 +22,7 @@
         <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <font>font13</font>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <textoffsetx>7</textoffsetx>
         <aligny>center</aligny>
         <pulseonselect>no</pulseonselect>
@@ -37,7 +37,7 @@
         <textcolor>white</textcolor>
         <label>-</label>
         <font>font13</font>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <pulseonselect>no</pulseonselect>
     </default>
     <default type="textbox">
@@ -67,7 +67,7 @@
         <font>font13</font>
         <reverse>yes</reverse>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <subtype>text</subtype>
         <textoffsetx>-5</textoffsetx>
         <textoffsety>0</textoffsety>
@@ -88,7 +88,7 @@
         <texturedowndisabled colordiffuse="40FFFFFF">buttons/spinctrl/arrow-light-down-nf.png</texturedowndisabled>
         <font>font13</font>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <textoffsetx>7</textoffsetx>
         <aligny>center</aligny>
         <reverse>yes</reverse>
@@ -110,7 +110,7 @@
         <label>215</label>
         <font>font13</font>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <textoffsetx>7</textoffsetx>
         <aligny>center</aligny>
         <pulseonselect>no</pulseonselect>
@@ -139,7 +139,7 @@
         <textureright>scroll-right.png</textureright>
         <texturerightfocus>scroll-right-focus.png</texturerightfocus>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <aligny>center</aligny>
     </default>
     <default type="slider">
@@ -162,7 +162,7 @@
         <textureslidernibfocus colordiffuse="button_focus">dialogs/mediasource/slider-nib-nf.png</textureslidernibfocus>
         <font>font13</font>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
     </default>
     <default type="mover">
         <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
@@ -179,7 +179,7 @@
         <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <font>font13</font>
         <textcolor>white</textcolor>
-        <disabledcolor>darkgrey</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <invalidcolor>invalid</invalidcolor>
         <textoffsetx>7</textoffsetx>
         <aligny>center</aligny>
