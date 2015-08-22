@@ -59,8 +59,8 @@
         <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
         <textureupfocus>buttons/spinctrl/arrow-light-up-fo.png</textureupfocus>
         <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
-        <textureupdisabled colordiffuse="40FFFFFF">buttons/spinctrl/arrow-light-up-nf.png</textureupdisabled>
-        <texturedowndisabled colordiffuse="40FFFFFF">buttons/spinctrl/arrow-light-down-nf.png</texturedowndisabled>
+        <textureupdisabled colordiffuse="disabled">buttons/spinctrl/arrow-light-up-nf.png</textureupdisabled>
+        <texturedowndisabled colordiffuse="disabled">buttons/spinctrl/arrow-light-down-nf.png</texturedowndisabled>
         <align>right</align>
         <width>77</width>
         <height>33</height>
@@ -84,8 +84,8 @@
         <texturedown>buttons/spinctrl/arrow-light-down-nf.png</texturedown>
         <textureupfocus>buttons/spinctrl/arrow-light-up-fo.png</textureupfocus>
         <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
-        <textureupdisabled colordiffuse="40FFFFFF">buttons/spinctrl/arrow-light-up-nf.png</textureupdisabled>
-        <texturedowndisabled colordiffuse="40FFFFFF">buttons/spinctrl/arrow-light-down-nf.png</texturedowndisabled>
+        <textureupdisabled colordiffuse="disabled">buttons/spinctrl/arrow-light-up-nf.png</textureupdisabled>
+        <texturedowndisabled colordiffuse="disabled">buttons/spinctrl/arrow-light-down-nf.png</texturedowndisabled>
         <font>font13</font>
         <textcolor>white</textcolor>
         <disabledcolor>disabled</disabledcolor>
@@ -103,8 +103,8 @@
         <textureradioonnofocus>buttons/radio-button-fo.png</textureradioonnofocus>
         <textureradioofffocus>buttons/radio-button-nf.png</textureradioofffocus>
         <textureradiooffnofocus>buttons/radio-button-nf.png</textureradiooffnofocus>
-        <textureradioondisabled colordiffuse="40FFFFFF">buttons/radio-button-fo.png</textureradioondisabled>
-        <textureradiooffdisabled colordiffuse="40FFFFFF">buttons/radio-button-nf.png</textureradiooffdisabled>
+        <textureradioondisabled colordiffuse="disabled">buttons/radio-button-fo.png</textureradioondisabled>
+        <textureradiooffdisabled colordiffuse="disabled">buttons/radio-button-nf.png</textureradiooffdisabled>
         <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
         <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
         <label>215</label>
