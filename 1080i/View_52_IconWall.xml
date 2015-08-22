@@ -17,6 +17,7 @@
                 <onup>52</onup>
                 <ondown>52</ondown>
                 <visible>$PARAM[visible]</visible>
+                <include>Visible_Right</include>
                 <viewtype label="Icon Wall">icon</viewtype>
                 <include>OpenClose_Right</include>
                 <itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files)">
