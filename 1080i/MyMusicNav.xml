@@ -4,7 +4,7 @@
     <allowoverlay>yes</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <menucontrol>9000</menucontrol>
-    <views>50,52,500</views>
+    <views>50,52,53,500</views>
     <controls>
         <include>DefaultBackground</include>
         <control type="group">
@@ -17,6 +17,9 @@
             </include>
             <include name="View_500_SmallThumb">
                 <param name="layouts_include" value="SmallThumbMusicLayouts" />
+                <param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
+            </include>
+            <include name="View_53_Shift">
                 <param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
             </include>
         </control>
