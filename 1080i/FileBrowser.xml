@@ -13,7 +13,7 @@
             <top>100</top>
             <include name="DialogBackgroundCommons">
                 <param name="DialogBackgroundWidth" value="1300" />
-                <param name="DialogBackgroundHeight" value="920" />
+                <param name="DialogBackgroundHeight" value="850" />
                 <param name="DialogHeaderLabel" value="-" />
                 <param name="DialogHeaderId" value="411" />
             </include>
@@ -31,24 +31,13 @@
                      <textcolor>selected</textcolor>
                      <shadowcolor>black</shadowcolor>
                      </control> -->
-                <control type="label" id="412">
-                    <description>Path label</description>
-                    <left>40</left>
-                    <top>870</top>
-                    <width>595</width>
-                    <height>30</height>
-                    <haspath>true</haspath>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                </control>
                 <control type="grouplist" id="9000">
-                    <left>980</left>
-                    <top>100</top>
+                    <left>990</left>
+                    <top>85</top>
                     <width>400</width>
                     <height>400</height>
                     <itemgap>5</itemgap>
+                    <align>left</align>
                     <orientation>vertical</orientation>
                     <onleft>450</onleft>
                     <onright>450</onright>
@@ -72,16 +61,18 @@
                     </include>
                 </control>
                 <control type="image">
-                    <left>1000</left>
-                    <top>485</top>
+                    <left>1010</left>
+                    <top>510</top>
                     <width>260</width>
                     <height>260</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+                    <bordersize>4</bordersize>
+                    <texture border="4" background="true">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="panel" id="450">
                     <left>20</left>
-                    <top>90</top>
+                    <top>100</top>
                     <width>940</width>
                     <height>700</height>
                     <onleft>9000</onleft>
@@ -243,11 +234,24 @@
                     <onright>9000</onright>
                     <orientation>vertical</orientation>
                 </control>
+                <control type="label" id="412">
+                    <description>Path label</description>
+                    <left>40</left>
+                    <top>810</top>
+                    <width>595</width>
+                    <height>30</height>
+                    <haspath>true</haspath>
+                    <align>left</align>
+                    <font>font12</font>
+                    <aligny>center</aligny>
+                    <textcolor>button_focus</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
                 <control type="label">
                     <description>Page label</description>
                     <left>0</left>
-                    <top>870</top>
-                    <width>1260</width>
+                    <top>810</top>
+                    <width>1270</width>
                     <height>30</height>
                     <align>right</align>
                     <aligny>center</aligny>
@@ -260,8 +264,8 @@
                 <control type="label">
                     <description>Page label</description>
                     <left>0</left>
-                    <top>870</top>
-                    <width>1260</width>
+                    <top>810</top>
+                    <width>1270</width>
                     <height>30</height>
                     <align>right</align>
                     <aligny>center</aligny>
