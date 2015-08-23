@@ -11,7 +11,7 @@
                 <height>625</height>
                 <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
                 <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
-                <animation effect="slide" end="0,270" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
+                <animation effect="slide" end="0,250" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
             </control>
             <control type="group">
                 <posy>-52</posy>
@@ -24,9 +24,9 @@
                     <font>font12</font>
                 </control>
                 <control type="label" id="11">
-                    <posx>960</posx>
-                    <posy>65</posy>
-                    <width>960</width>
+                    <posx>45</posx>
+                    <posy>95</posy>
+                    <width>1770</width>
                     <height>30</height>
                     <label>-</label>
                     <align>left</align>
@@ -41,22 +41,23 @@
                     <font>font12</font>
                 </control>
             </control>
+            <control type="label">
+                <description>Header</description>
+                <posx>50</posx>
+                <posy>180</posy>
+                <width>1720</width>
+                <height>65</height>
+                <align>center</align>
+                <aligny>top</aligny>
+                <label>$LOCALIZE[19005]</label>
+                <font>font24_title</font>
+                <textcolor>button_focus</textcolor>
+            </control>
             <control type="grouplist">
                 <orientation>vertical</orientation>
-                <posx>100</posx>
-                <posy>145</posy>
+                <posx>50</posx>
+                <posy>270</posy>
                 <visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
-                <control type="label">
-                    <description>Header</description>
-                    <posx>50</posx>
-                    <posy>5</posy>
-                    <width>1200</width>
-                    <height>25</height>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>$LOCALIZE[19005]</label>
-                    <textcolor>button_focus</textcolor>
-                </control>
                 <include name="LeftRightAlignedInfoLine">
                     <param name="label" value="19012" />
                     <param name="value" value="$INFO[PVR.ActStreamClient]" />
@@ -69,52 +70,51 @@
                     <param name="label" value="19007" />
                     <param name="value" value="$INFO[PVR.ActStreamStatus]" />
                 </include>
+            </control>
+            <control type="group">
+                <posx>1470</posx>
+                <posy>270</posy>
                 <control type="label">
                     <description>Signal</description>
-                    <posx>50</posx>
-                    <posy>130</posy>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$LOCALIZE[19008]: $INFO[PVR.ActStreamSignal]</label>
+                    <label>[COLOR button_focus]$LOCALIZE[19008]:[/COLOR] $INFO[PVR.ActStreamSignal]</label>
                     <font>font12</font>
-                    <textcolor>grey2</textcolor>
+                    <textcolor>white</textcolor>
                 </control>
                 <control type="progress">
                     <description>Progressbar</description>
-                    <posx>50</posx>
-                    <posy>137</posy>
-                    <width>910</width>
-                    <height>14</height>
+                    <posy>30</posy>
+                    <width>360</width>
+                    <height>12</height>
                     <info>PVR.ActStreamProgrSignal</info>
                 </control>
                 <control type="label">
                     <description>SNR</description>
-                    <posx>50</posx>
-                    <posy>160</posy>
+                    <posy>60</posy>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$LOCALIZE[19009]: $INFO[PVR.ActStreamSNR]</label>
+                    <label>[COLOR button_focus]$LOCALIZE[19009]:[/COLOR] $INFO[PVR.ActStreamSNR]</label>
                     <font>font12</font>
-                    <textcolor>grey2</textcolor>
+                    <textcolor>white</textcolor>
                 </control>
                 <control type="progress">
                     <description>Progressbar</description>
-                    <posx>50</posx>
-                    <posy>167</posy>
-                    <width>910</width>
-                    <height>14</height>
+                    <posy>90</posy>
+                    <width>360</width>
+                    <height>12</height>
                     <info>PVR.ActStreamProgrSNR</info>
                 </control>
             </control>
         </control>
         <control type="grouplist">
             <orientation>vertical</orientation>
-            <posx>960</posx>
-            <posy>145</posy>
+            <posx>700</posx>
+            <posy>270</posy>
             <visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
             <include name="LeftRightAlignedInfoLine">
                 <param name="label" value="19010" />
