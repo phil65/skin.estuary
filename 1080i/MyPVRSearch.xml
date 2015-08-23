@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">50</defaultcontrol>
+    <menucontrol>9000</menucontrol>
+    <allowoverlay>no</allowoverlay>
+    <views>50</views>
+    <controls>
+        <include>DefaultBackground</include>
+        <control type="group">
+            <include>Window_OpenClose_Animation</include>
+            <description>TV Search group</description>
+            <visible>Control.IsVisible(50)</visible>
+            <include>OpenClose_Right</include>
+            <include>Visible_Right</include>
+            <control type="group">
+                <left>110</left>
+                <top>180</top>
+                <control type="label">
+                    <description>Channel label</description>
+                    <left>0</left>
+                    <top>20</top>
+                    <width>220</width>
+                    <height>20</height>
+                    <font>font13_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <aligny>center</aligny>
+                    <label>19148</label>
+                </control>
+                <control type="label">
+                    <description>Title header label</description>
+                    <left>240</left>
+                    <top>20</top>
+                    <width>300</width>
+                    <height>20</height>
+                    <font>font13_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <aligny>center</aligny>
+                    <label>369</label>
+                </control>
+                <control type="label">
+                    <description>Time label</description>
+                    <left>750</left>
+                    <top>20</top>
+                    <width>300</width>
+                    <height>20</height>
+                    <font>font13_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <aligny>center</aligny>
+                    <label>21820</label>
+                </control>
+                <control type="label">
+                    <description>Status header label</description>
+                    <left>980</left>
+                    <top>20</top>
+                    <width>140</width>
+                    <height>20</height>
+                    <font>font13_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <aligny>center</aligny>
+                    <label>126</label>
+                </control>
+                <control type="list" id="50">
+                    <left>0</left>
+                    <top>55</top>
+                    <width>1100</width>
+                    <height>520</height>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <onleft>104</onleft>
+                    <onright>77</onright>
+                    <pagecontrol>77</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="70">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1100</width>
+                            <height>41</height>
+                            <texture border="5">lists/separator.png</texture>
+                        </control>
+                            <control type="label">
+                            <visible>IsEmpty(ListItem.Date)</visible>
+                                <left>50</left>
+                                <top>0</top>
+                                <width>650</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Label</info>
+                            </control>
+                        <control type="group">
+                            <visible>!IsEmpty(ListItem.Date)</visible>
+                            <control type="image">
+                                <left>0</left>
+                                <top>5</top>
+                                <width>30</width>
+                                <height>30</height>
+                                <texture border="1">$INFO[ListItem.Icon]</texture>
+                                <aspectratio>keep</aspectratio>
+                                <visible>!IsEmpty(ListItem.Icon)</visible>
+                            </control>
+                            <control type="label">
+                                <left>50</left>
+                                <top>0</top>
+                                <width>190</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.ChannelName</info>
+                                <visible>!IsEmpty(ListItem.Icon)</visible>
+                            </control>
+                            <control type="label">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>190</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.ChannelName</info>
+                                <visible>IsEmpty(ListItem.Icon)</visible>
+                            </control>
+                            <control type="label">
+                                <left>240</left>
+                                <top>0</top>
+                                <width>510</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Label</info>
+                            </control>
+                            <control type="label">
+                                <left>750</left>
+                                <top>0</top>
+                                <width>230</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Date</info>
+                            </control>
+                            <control type="image">
+                                <left>980</left>
+                                <top>10</top>
+                                <width>30</width>
+                                <height>20</height>
+                                <texture>windows/pvr/record.png</texture>
+                                <visible>ListItem.IsRecording</visible>
+                            </control>
+                            <control type="label">
+                                <left>1015</left>
+                                <top>0</top>
+                                <width>80</width>
+                                <height>70</height>
+                                <font>font10</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <label>19043</label>
+                                <visible>ListItem.IsRecording</visible>
+                            </control>
+                            <control type="image">
+                                <left>980</left>
+                                <top>10</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <texture>windows/pvr/timer.png</texture>
+                                <visible>ListItem.HasTimer + !ListItem.IsRecording + !ListItem.HasTimerSchedule</visible>
+                            </control>
+                            <control type="image">
+                                <left>980</left>
+                                <top>10</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <texture>windows/pvr/timer.png</texture>
+                                <visible>ListItem.HasTimerSchedule + !ListItem.IsRecording</visible>
+                            </control>
+                            <control type="label">
+                                <left>1010</left>
+                                <top>0</top>
+                                <width>80</width>
+                                <height>70</height>
+                                <font>font10</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <label>31510</label>
+                                <visible>ListItem.HasTimer</visible>
+                            </control>
+                            <control type="image">
+                                <left>980</left>
+                                <top>10</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <texture>PVR-HasRecording.png</texture>
+                                <visible>ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer</visible>
+                            </control>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="70">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1100</width>
+                            <height>71</height>
+                            <texture border="5">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1100</width>
+                            <height>71</height>
+                            <texture>lists/focus.png</texture>
+                            <visible>Control.HasFocus(50)</visible>
+                        </control>
+                        <control type="group">
+                            <visible>IsEmpty(ListItem.Date)</visible>
+                            <control type="label">
+                                <left>50</left>
+                                <top>0</top>
+                                <width>650</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Label</info>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>!IsEmpty(ListItem.Date)</visible>
+                            <control type="image">
+                                <left>0</left>
+                                <top>5</top>
+                                <width>30</width>
+                                <height>30</height>
+                                <texture border="1">$INFO[ListItem.Icon]</texture>
+                                <aspectratio>keep</aspectratio>
+                                <visible>!IsEmpty(ListItem.Icon)</visible>
+                            </control>
+                            <control type="label">
+                                <left>50</left>
+                                <top>0</top>
+                                <width>190</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.ChannelName</info>
+                                <visible>!IsEmpty(ListItem.Icon)</visible>
+                            </control>
+                            <control type="label">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>190</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.ChannelName</info>
+                                <visible>IsEmpty(ListItem.Icon)</visible>
+                            </control>
+                            <control type="label">
+                                <left>240</left>
+                                <top>0</top>
+                                <width>510</width>
+                                <height>40</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Label</info>
+                            </control>
+                            <control type="label">
+                                <left>750</left>
+                                <top>0</top>
+                                <width>230</width>
+                                <height>70</height>
+                                <font>font12</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Date</info>
+                            </control>
+                            <control type="image">
+                                <left>980</left>
+                                <top>10</top>
+                                <width>30</width>
+                                <height>20</height>
+                                <texture>windows/pvr/record.png</texture>
+                                <visible>ListItem.IsRecording</visible>
+                            </control>
+                            <control type="label">
+                                <left>1015</left>
+                                <top>0</top>
+                                <width>80</width>
+                                <height>70</height>
+                                <font>font10</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <label>19043</label>
+                                <visible>ListItem.IsRecording</visible>
+                            </control>
+                            <control type="image">
+                                <left>980</left>
+                                <top>10</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <texture>windows/pvr/timer.png</texture>
+                                <visible>ListItem.HasTimer + !ListItem.IsRecording + !ListItem.HasTimerSchedule</visible>
+                            </control>
+                            <control type="image">
+                                <left>980</left>
+                                <top>10</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <texture>windows/pvr/timer.png</texture>
+                                <visible>ListItem.HasTimerSchedule + !ListItem.IsRecording</visible>
+                            </control>
+                            <control type="label">
+                                <left>1010</left>
+                                <top>0</top>
+                                <width>80</width>
+                                <height>70</height>
+                                <font>font10</font>
+                                <aligny>center</aligny>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <label>31510</label>
+                                <visible>ListItem.HasTimer</visible>
+                            </control>
+                            <control type="image">
+                                <left>980</left>
+                                <top>10</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <texture>windows/pvr/record.png</texture>
+                                <visible>ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="77">
+                    <left>1105</left>
+                    <top>50</top>
+                    <width>25</width>
+                    <height>520</height>
+                    <onleft>50</onleft>
+                    <onright>104</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                </control>
+            </control>
+        </control>
+        <include name="TopBar">
+            <param name="breadcrumbs_label" value="TV search" />
+            <param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
+        </include>
+        <include>BottomBar</include>
+    </controls>
+</window>
