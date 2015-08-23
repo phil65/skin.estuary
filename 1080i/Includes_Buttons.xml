@@ -17,16 +17,19 @@
         <radioposy>0</radioposy>
     </include>
     <include name="DefaultSettingButton">
-        <textoffsetx>40</textoffsetx>
-        <top>0</top>
-        <height>75</height>
-        <aligny>center</aligny>
-        <textcolor>white</textcolor>
-        <focusedcolor>white</focusedcolor>
-        <invalidcolor>invalid</invalidcolor>
-        <selectedcolor>selected</selectedcolor>
-        <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-        <texturenofocus border="40">lists/separator.png</texturenofocus>
+        <param name="height">75</param>
+        <definition>
+            <textoffsetx>40</textoffsetx>
+            <top>0</top>
+            <height>$PARAM[height]</height>
+            <aligny>center</aligny>
+            <textcolor>white</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <invalidcolor>invalid</invalidcolor>
+            <selectedcolor>selected</selectedcolor>
+            <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+            <texturenofocus border="40">lists/separator.png</texturenofocus>
+        </definition>
     </include>
     <include name="SettingsItemCommon">
         <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
