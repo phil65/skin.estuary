@@ -25,6 +25,32 @@
         <label>-</label>
         <font>-</font>
     </include>
+    <include name="LeftRightAlignedInfoLine">
+        <control type="label">
+            <description>Device</description>
+            <posx>50</posx>
+            <posy>70</posy>
+            <width>250</width>
+            <height>25</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>$PARAM[label]:</label>
+            <font>font12</font>
+            <textcolor>grey2</textcolor>
+        </control>
+        <control type="label">
+            <description>Device value</description>
+            <posx>50</posx>
+            <posy>70</posy>
+            <width>1000</width>
+            <height>25</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>$PARAM[value]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+        </control>
+    </include>
     <include name="DefaultSimpleListLayout">
         <param name="align">left</param>
         <definition>
