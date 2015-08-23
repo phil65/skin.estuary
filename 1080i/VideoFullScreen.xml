@@ -41,8 +41,9 @@
                     <font>font12</font>
                 </control>
             </control>
-            <control type="group">
-                <posx>0</posx>
+            <control type="grouplist">
+                <orientation>vertical</orientation>
+                <posx>100</posx>
                 <posy>145</posy>
                 <visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
                 <control type="label">
@@ -76,7 +77,7 @@
                     <height>25</height>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$LOCALIZE[19008]:</label>
+                    <label>$LOCALIZE[19008]: $INFO[PVR.ActStreamSignal]</label>
                     <font>font12</font>
                     <textcolor>grey2</textcolor>
                 </control>
@@ -89,18 +90,6 @@
                     <info>PVR.ActStreamProgrSignal</info>
                 </control>
                 <control type="label">
-                    <description>Signal value</description>
-                    <posx>1210</posx>
-                    <posy>135</posy>
-                    <width>180</width>
-                    <height>25</height>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[PVR.ActStreamSignal]</label>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                </control>
-                <control type="label">
                     <description>SNR</description>
                     <posx>50</posx>
                     <posy>160</posy>
@@ -108,7 +97,7 @@
                     <height>25</height>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$LOCALIZE[19009]:</label>
+                    <label>$LOCALIZE[19009]: $INFO[PVR.ActStreamSNR]</label>
                     <font>font12</font>
                     <textcolor>grey2</textcolor>
                 </control>
@@ -120,31 +109,25 @@
                     <height>14</height>
                     <info>PVR.ActStreamProgrSNR</info>
                 </control>
-                <control type="label">
-                    <description>SNR value</description>
-                    <posx>1210</posx>
-                    <posy>160</posy>
-                    <width>180</width>
-                    <height>25</height>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[PVR.ActStreamSNR]</label>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                </control>
-                <include name="LeftRightAlignedInfoLine">
-                    <param name="label" value="19010" />
-                    <param name="value" value="$INFO[PVR.ActStreamBER]" />
-                </include>
-                <include name="LeftRightAlignedInfoLine">
-                    <param name="label" value="19011" />
-                    <param name="value" value="$INFO[PVR.ActStreamUNC]" />
-                </include>
-                <include name="LeftRightAlignedInfoLine">
-                    <param name="label" value="19015" />
-                    <param name="value" value="$INFO[PVR.ActStreamEncryptionName]" />
-                </include>
             </control>
+        </control>
+        <control type="grouplist">
+            <orientation>vertical</orientation>
+            <posx>960</posx>
+            <posy>145</posy>
+            <visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
+            <include name="LeftRightAlignedInfoLine">
+                <param name="label" value="19010" />
+                <param name="value" value="$INFO[PVR.ActStreamBER]" />
+            </include>
+            <include name="LeftRightAlignedInfoLine">
+                <param name="label" value="19011" />
+                <param name="value" value="$INFO[PVR.ActStreamUNC]" />
+            </include>
+            <include name="LeftRightAlignedInfoLine">
+                <param name="label" value="19015" />
+                <param name="value" value="$INFO[PVR.ActStreamEncryptionName]" />
+            </include>
         </control>
         <control type="group" id="1">
             <animation type="WindowOpen">
