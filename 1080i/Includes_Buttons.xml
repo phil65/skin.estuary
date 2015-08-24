@@ -18,8 +18,9 @@
     </include>
     <include name="DefaultSettingButton">
         <param name="height">75</param>
+        <param name="textoffsetx">40</param>
         <definition>
-            <textoffsetx>40</textoffsetx>
+            <textoffsetx>$PARAM[textoffsetx]</textoffsetx>
             <top>0</top>
             <height>$PARAM[height]</height>
             <aligny>center</aligny>

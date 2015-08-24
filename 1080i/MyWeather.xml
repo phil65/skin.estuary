@@ -1,102 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">15900</defaultcontrol>
+    <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <controls>
         <include>DefaultBackground</include>
-           <control type="grouplist" id="15001">
-                <orientation>vertical</orientation>
-                <top>76</top>
-                <height>925</height>
-                <include>OpenClose_Right</include>
-                <control type="group">
-                    <description>Weather info</description>
-                    <height>380</height>
-                    <control type="image">
-                        <top>22</top>
-                        <left>480</left>
-                        <width>1360</width>
-                        <height>390</height>
-                        <texture border="22">dialogs/dialog-bg.png</texture>
-                    </control>
-                    <control type="image">
-                        <top>52</top>
-                        <left>530</left>
-                        <width>330</width>
-                        <height>330</height>
-                        <texture>$INFO[Weather.conditions]</texture>
-                    </control>
-                    <control type="label">
-                        <left>990</left>
-                        <top>170</top>
-                        <aligny>center</aligny>
-                        <height>24</height>
-                        <width>800</width>
-                        <align>right</align>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <label>$INFO[Weather.Conditions]</label>
-                    </control>
-                    <control type="label">
-                        <left>990</left>
-                        <top>130</top>
-                        <aligny>center</aligny>
-                        <height>24</height>
-                        <width>800</width>
-                        <align>right</align>
-                        <font>font14</font>
-                        <textcolor>white</textcolor>
-                        <label>$INFO[Weather.Temperature]</label>
-                    </control>
-                    <control type="label">
-                        <left>990</left>
-                        <top>70</top>
-                        <aligny>center</aligny>
-                        <height>24</height>
-                        <width>800</width>
-                        <align>right</align>
-                        <font>font35_title</font>
-                        <textcolor>white</textcolor>
-                        <label>$INFO[Weather.Location]</label>
-                    </control>
-                </control>
-                <include name="SubMenu">
-                    <param name="list_id" value="15900"/>
-                    <param name="ondown_id" value="15100"/>
-                    <param name="item1_id" value="15901" />
-                    <param name="item1_onclick" value="Weather.Refresh" />
-                    <param name="item1_label" value="Refresh" />
-                    <param name="item2_id" value="15902" />
-                    <param name="item2_onclick" value="Weather.LocationPrevious" />
-                    <param name="item2_label" value="Previous city" />
-                    <param name="item3_id" value="15903" />
-                    <param name="item3_onclick" value="Weather.LocationNext" />
-                    <param name="item3_label" value="Next city" />
-                    <param name="item4_id" value="15904" />
-                    <param name="item4_onclick" value="ActivateWindow(weathersettings)" />
-                    <param name="item4_label" value="Weather settings" />
-                    <param name="item5_vis" value="False" />
-                    <param name="item6_vis" value="False" />
-                    <param name="item7_vis" value="False" />
-                </include>
-                <include name="WeatherWidget">
-                    <param name="content_include" value="HourlyItems" />
-                    <param name="list_id" value="15100" />
-                    <param name="onup_id" value="15900" />
-                    <param name="ondown_id" value="15200" />
-                    <param name="widget_header" value="Temperatures over 24 Hours"/>
-                    <param name="visible" value="!IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
-                </include>
-                <include name="WeatherWidget">
-                    <param name="content_include" value="DailyItems" />
-                    <param name="list_id" value="15200" />
-                    <param name="onup_id" value="15100" />
-                    <param name="ondown_id" value="20001" />
-                    <param name="widget_header" value="Daily Temperatures"/>
-                    <param name="visible" value="!IsEmpty(Window(weather).Property(Daily.IsFetched))" />
-                </include>
+        <control type="group">
+            <include>OpenClose_Left</include>
+            <control type="image">
+                <description>Menu Panel</description>
+                <left>90</left>
+                <top>138</top>
+                <width>420</width>
+                <height>794</height>
+                <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
+            <control type="grouplist" id="9000">
+                <description>button area</description>
+                <left>110</left>
+                <top>160</top>
+                <width>400</width>
+                <height>750</height>
+                <itemgap>0</itemgap>
+                <onleft>10000</onleft>
+                <onright>10000</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <control type="button" id="9010">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>Now</label>
+                </control>
+                <control type="button" id="9011">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>Today</label>
+                </control>
+                <control type="button" id="9012">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>$INFO[Window(weather).Property(Daily.2.LongDate)]</label>
+                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.2.TempDay)][/COLOR]</label2>
+                </control>
+                <control type="button" id="9013">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>$INFO[Window(weather).Property(Daily.3.LongDate)]</label>
+                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.3.TempDay)][/COLOR]</label2>
+                </control>
+                <control type="button" id="9014">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>$INFO[Window(weather).Property(Daily.4.LongDate)]</label>
+                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.4.TempDay)][/COLOR]</label2>
+                </control>
+                <control type="button" id="9015">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>$INFO[Window(weather).Property(Daily.5.LongDate)]</label>
+                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.5.TempDay)][/COLOR]</label2>
+                </control>
+                <control type="button" id="9016">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>$INFO[Window(weather).Property(Daily.6.LongDate)]</label>
+                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.6.TempDay)][/COLOR]</label2>
+                </control>
+                <control type="button" id="9017">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>$INFO[Window(weather).Property(Daily.7.LongDate)]</label>
+                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.7.TempDay)][/COLOR]</label2>
+                </control>
+                <control type="button" id="9018">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>$INFO[Window(weather).Property(Daily.8.LongDate)]</label>
+                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.8.TempDay)][/COLOR]</label2>
+                </control>
+                <control type="button" id="9019">
+                    <include name="DefaultSettingButton">
+                        <param name="textoffsetx" value="20" />
+                    </include>
+                    <width>380</width>
+                    <label>$INFO[Window(weather).Property(Daily.9.LongDate)]</label>
+                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.9.TempDay)][/COLOR]</label2>
+                </control>
+            </control>
+        </control>
+        <control type="grouplist" id="15001">
+            <orientation>vertical</orientation>
+            <top>120</top>
+            <height>925</height>
+            <include>OpenClose_Right</include>
+            <control type="group">
+                <description>Weather info</description>
+                <height>380</height>
+                <control type="image">
+                    <top>22</top>
+                    <left>480</left>
+                    <width>1360</width>
+                    <height>390</height>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
+                </control>
+                <control type="image">
+                    <top>52</top>
+                    <left>530</left>
+                    <width>330</width>
+                    <height>330</height>
+                    <texture>$INFO[Weather.conditions]</texture>
+                </control>
+                <control type="label">
+                    <left>990</left>
+                    <top>170</top>
+                    <aligny>center</aligny>
+                    <height>24</height>
+                    <width>800</width>
+                    <align>right</align>
+                    <font>font12</font>
+                    <textcolor>white</textcolor>
+                    <label>$INFO[Weather.Conditions]</label>
+                </control>
+                <control type="label">
+                    <left>990</left>
+                    <top>130</top>
+                    <aligny>center</aligny>
+                    <height>24</height>
+                    <width>800</width>
+                    <align>right</align>
+                    <font>font14</font>
+                    <textcolor>white</textcolor>
+                    <label>$INFO[Weather.Temperature]</label>
+                </control>
+                <control type="label">
+                    <left>990</left>
+                    <top>70</top>
+                    <aligny>center</aligny>
+                    <height>24</height>
+                    <width>800</width>
+                    <align>right</align>
+                    <font>font35_title</font>
+                    <textcolor>white</textcolor>
+                    <label>$INFO[Weather.Location]</label>
+                </control>
+            </control>
+            <include name="WeatherWidget">
+                <param name="content_include" value="HourlyItems" />
+                <param name="list_id" value="15100" />
+                <param name="onup_id" value="15900" />
+                <param name="ondown_id" value="15200" />
+                <param name="widget_header" value="Temperatures over 24 Hours"/>
+                <param name="visible" value="!IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
+            </include>
+        </control>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[8]$INFO[Window(Weather).Property(Location), / ]" />
             <param name="breadcrumbs_icon" value="icons/settings/weather.png" />
