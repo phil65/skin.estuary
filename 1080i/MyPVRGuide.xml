@@ -9,22 +9,23 @@
             <description>Guide Timeline</description>
             <visible>Control.IsVisible(10)</visible>
             <include>OpenClose_Right</include>
-            <top>70</top>
+            <top>170</top>
+            <left>110</left>
             <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)">Conditional</animation>
             <control type="image">
-                <left>20</left>
-                <top>300</top>
-                <width>1880</width>
-                <height>567</height>
+                <left>-20</left>
+                <top>-20</top>
+                <width>1740</width>
+                <height>552</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="epggrid" id="10">
                 <description>EPG Grid</description>
-                <left>40</left>
-                <top>320</top>
-                <width>1835</width>
-                <height>525</height>
+                <left>0</left>
+                <top>0</top>
+                <width>1700</width>
+                <height>510</height>
                 <pagecontrol>10</pagecontrol>
                 <scrolltime tween="quadratic" easing="out">200</scrolltime>
                 <timeblocks>40</timeblocks>
@@ -44,17 +45,18 @@
                         <textcolor>button_focus</textcolor>
                     </control>
                 </rulerlayout>
-                <channellayout height="60" width="420">
+                <channellayout height="58" width="420">
                     <control type="label">
                         <left>5</left>
                         <top>-2</top>
                         <width>50</width>
                         <height>60</height>
-                        <font>font12</font>
+                        <font>font24_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>button_focus</selectedcolor>
                         <label>$INFO[ListItem.ChannelNumber]</label>
                         <align>center</align>
+                        <aligny>center</aligny>
                     </control>
                     <control type="image">
                         <left>65</left>
@@ -102,7 +104,7 @@
                         <visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),2) + !IsEmpty(ListItem.Icon)</visible>
                     </control>
                 </channellayout>
-                <focusedchannellayout height="60" width="420">
+                <focusedchannellayout height="58" width="420">
                     <control type="image">
                         <width>450</width>
                         <height>60</height>
@@ -113,11 +115,12 @@
                         <top>-2</top>
                         <width>50</width>
                         <height>60</height>
-                        <font>font12</font>
+                        <font>font24_title</font>
                         <textcolor>white</textcolor>
                         <selectedcolor>button_focus</selectedcolor>
                         <label>$INFO[ListItem.ChannelNumber]</label>
                         <align>center</align>
+                        <aligny>center</aligny>
                     </control>
                     <control type="image">
                         <left>65</left>
@@ -165,7 +168,7 @@
                         <visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),2) + !IsEmpty(ListItem.Icon)</visible>
                     </control>
                 </focusedchannellayout>
-                <itemlayout height="60" width="60">
+                <itemlayout height="58" width="60">
                     <control type="image" id="1">
                         <width>60</width>
                         <height>60</height>
@@ -202,19 +205,10 @@
                         <top>12</top>
                         <width>35</width>
                         <height>35</height>
-                        <texture>windows/pvr/record.png</texture>
-                        <visible>ListItem.IsRecording</visible>
-                    </control>
-                    <control type="image">
-                        <left>8</left>
-                        <top>12</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>windows/pvr/timer.png</texture>
-                        <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+                        <texture>$VAR[PVRStatusImageVar]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout height="60" width="60">
+                <focusedlayout height="58" width="60">
                     <control type="image" id="14">
                         <width>60</width>
                         <height>60</height>
@@ -249,22 +243,13 @@
                         <top>12</top>
                         <width>35</width>
                         <height>35</height>
-                        <texture>windows/pvr/record.png</texture>
-                        <visible>ListItem.IsRecording</visible>
-                    </control>
-                    <control type="image">
-                        <left>8</left>
-                        <top>12</top>
-                        <width>35</width>
-                        <height>35</height>
-                        <texture>windows/pvr/timer.png</texture>
-                        <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+                        <texture>$VAR[PVRStatusImageVar]</texture>
                     </control>
                 </focusedlayout>
             </control>
             <control type="group">
-                <top>100</top>
-                <left>-80</left>
+                <top>540</top>
+                <left>-120</left>
                 <control type="group">
                     <control type="image" id="82">
                         <width>450</width>
@@ -290,7 +275,7 @@
                     <control type="image">
                         <top>-25</top>
                         <left>-50</left>
-                        <width>1620</width>
+                        <width>1480</width>
                         <height>250</height>
                         <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
@@ -358,13 +343,7 @@
                     <viewtype label="19030">list</viewtype>
                     <pagecontrol>76</pagecontrol>
                     <scrolltime>200</scrolltime>
-                    <itemlayout height="60">
-                        <control type="image">
-                            <left>-45</left>
-                            <width>1760</width>
-                            <height>60</height>
-                            <texture>osd/osd_settings_buttonnf.png</texture>
-                        </control>
+                    <itemlayout height="58">
                         <control type="image">
                             <left>3</left>
                             <top>8</top>
@@ -401,38 +380,14 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="image">
-                            <animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
                             <left>1400</left>
                             <top>15</top>
                             <width>35</width>
                             <height>35</height>
-                            <texture>windows/pvr/record.png</texture>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31111</label>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="image">
-                            <left>1400</left>
-                            <top>15</top>
-                            <width>35</width>
-                            <height>35</height>
-                            <texture>windows/pvr/timer.png</texture>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31104</label>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="60">
+                    <focusedlayout height="58">
                         <control type="image">
                             <left>-45</left>
                             <width>1760</width>
@@ -481,35 +436,11 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="image">
-                            <animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
                             <left>1400</left>
                             <top>15</top>
                             <width>35</width>
                             <height>35</height>
-                            <texture>windows/pvr/record.png</texture>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31111</label>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="image">
-                            <left>1400</left>
-                            <top>15</top>
-                            <width>35</width>
-                            <height>35</height>
-                            <texture>windows/pvr/timer.png</texture>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31104</label>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
                         </control>
                     </focusedlayout>
                 </control>
@@ -599,7 +530,7 @@
                     <viewtype label="19031">list</viewtype>
                     <pagecontrol>76</pagecontrol>
                     <scrolltime>200</scrolltime>
-                    <itemlayout height="60">
+                    <itemlayout height="58">
                         <control type="image">
                             <left>-45</left>
                             <width>1760</width>
@@ -673,7 +604,7 @@
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="60">
+                    <focusedlayout height="58">
                         <control type="image">
                             <left>-45</left>
                             <width>1760</width>
@@ -877,7 +808,7 @@
                     <pagecontrol>75</pagecontrol>
                     <scrolltime>200</scrolltime>
                     <visible>Player.HasVideo</visible>
-                    <itemlayout height="60">
+                    <itemlayout height="58">
                         <control type="image">
                             <left>-45</left>
                             <width>1760</width>
@@ -1021,7 +952,9 @@
             <param name="breadcrumbs_label" value="$INFO[Control.GetLabel(29)] - $INFO[Control.GetLabel(30)]" />
             <param name="breadcrumbs_icon" value="icons/settings/livetv.png" />
         </include>
-        <include>BottomBar</include>
+        <include name="BottomBar">
+            <param name="PageLabel" value="$INFO[Container.NumItems,Channels: ]" />
+        </include>
         <control type="label" id="29">
             <font>-</font>
             <include>HiddenObject</include>
