@@ -4,6 +4,12 @@
         <value condition="!StringCompare(ListItem.Comment,$LOCALIZE[305])">buttons/radio-button-fo.png</value>
         <value>buttons/radio-button-nf.png</value>
     </variable>
+    <variable name="PVRStatusImageVar">
+        <value condition="ListItem.IsRecording">windows/pvr/record.png</value>
+        <value condition="ListItem.HasTimer + !ListItem.IsRecording + !ListItem.HasTimerSchedule">windows/pvr/timer.png</value>
+        <value condition="ListItem.HasTimerSchedule + !ListItem.IsRecording">windows/pvr/timer.png</value>
+        <value condition="ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer">windows/pvr/timer.png</value>
+    </variable>
     <variable name="SelectLabel">
         <value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
         <value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
