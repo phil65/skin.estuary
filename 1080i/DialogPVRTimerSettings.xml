@@ -1,110 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol>29</defaultcontrol>
+	<defaultcontrol>5</defaultcontrol>
 	<coordinates>
-		<left>275</left>
-		<top>30</top>
+		<left>200</left>
+		<top>100</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="730" />
-			<param name="DialogBackgroundHeight" value="660" />
+			<param name="DialogBackgroundWidth" value="1520" />
+			<param name="DialogBackgroundHeight" value="870" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[19065]" />
-			<param name="DialogHeaderId" value="0" />
+			<param name="DialogHeaderId" value="" />
+		</include>
+		<control type="image">
+			<left>10</left>
+			<top>80</top>
+			<width>1200</width>
+			<height>790</height>
+			<texture border="40">buttons/button-nofo.png</texture>
+		</control>
+		<include name="UpDownArrows">
+			<param name="container_id" value="5" />
+			<param name="posx" value="565" />
+			<param name="up_posy" value="-40" />
+			<param name="down_posy" value="890" />
 		</include>
 		<control type="grouplist" id="5">
+			<animation effect="slide" start="0,0" end="5,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>
 			<description>control area</description>
-			<left>30</left>
-			<top>70</top>
-			<width>670</width>
-			<height>510</height>
-			<itemgap>5</itemgap>
-			<onup>9001</onup>
-			<ondown>9001</ondown>
-			<onleft>9001</onleft>
-			<onright>9001</onright>
-		</control>
-		<control type="group" id="9001">
-			<left>160</left>
-			<top>590</top>
-			<control type="button" id="28">
-				<description>OK Button</description>
-				<left>0</left>
-				<top>0</top>
-				<width>200</width>
-				<height>40</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font12_title</font>
-				<label>186</label>
-				<onleft>29</onleft>
-				<onright>29</onright>
-				<onup>5</onup>
-				<ondown>5</ondown>
-			</control>
-			<control type="button" id="29">
-				<description>Cancel Button</description>
-				<left>210</left>
-				<top>0</top>
-				<width>200</width>
-				<height>40</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font12_title</font>
-				<label>222</label>
-				<onleft>28</onleft>
-				<onright>28</onright>
-				<onup>5</onup>
-				<ondown>5</ondown>
-			</control>
+			<left>24</left>
+			<top>100</top>
+			<width>1160</width>
+			<height>750</height>
+			<itemgap>0</itemgap>
+			<pagecontrol>60</pagecontrol>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
-			<height>40</height>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<include>DefaultSettingButton</include>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
-			<height>40</height>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<include>DefaultSettingButton</include>
 		</control>
 		<control type="spincontrolex" id="9">
-			<description>Default spincontrolex</description>
-			<height>40</height>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-			<aligny>center</aligny>
-			<reverse>yes</reverse>
+			<description>Default SpinControlex</description>
+			<include>DefaultSettingButton</include>
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Slider</description>
-			<height>40</height>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
+			<include>DefaultSettingButton</include>
 		</control>
 		<control type="image" id="11">
-			<description>Default Seperator</description>
+			<description>separator image</description>
 			<height>2</height>
 			<texture>separator2.png</texture>
-		</control>
-		<control type="edit" id="12">
-			<description>Default Edit</description>
-			<height>40</height>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 		</control>
 		<control type="label" id="14">
 			<description>Default Label</description>
@@ -117,6 +72,26 @@
 			<font>font13_title</font>
 			<textcolor>grey</textcolor>
 			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="grouplist" id="9000">
+			<left>1210</left>
+			<top>30</top>
+			<orientation>vertical</orientation>
+			<width>1120</width>
+			<height>350</height>
+			<align>center</align>
+			<aligny>top</aligny>
+			<itemgap>-10</itemgap>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<include name="DefaultDialogButton">
+				<param name="id" value="28" />
+				<param name="label" value="186" />
+			</include>
+			<include name="DefaultDialogButton">
+				<param name="id" value="29" />
+				<param name="label" value="222" />
+			</include>
 		</control>
 	</controls>
 </window>
