@@ -49,16 +49,28 @@
                         <texture>$INFO[ListItem.Thumb]</texture>
                     </control>
                     <control type="label">
-                        <left>20</left>
-                        <textoffsetx>15</textoffsetx>
-                        <top>0</top>
-                        <height>94</height>
+                        <left>35</left>
+                        <top>10</top>
+                        <height>100</height>
                         <width>600</width>
                         <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label] - $INFO[ListItem.Property(ShortDate)]</label>
+                        <aligny>top</aligny>
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Property(ShortDate), - ]</label>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <left>35</left>
+                        <top>45</top>
+                        <height>100</height>
+                        <width>600</width>
+                        <align>left</align>
+                        <aligny>top</aligny>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Property(Outlook)]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>button_focus</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                     </control>
                     <control type="label">
@@ -100,16 +112,28 @@
                         <texture>$INFO[ListItem.Thumb]</texture>
                     </control>
                     <control type="label">
-                        <left>20</left>
-                        <textoffsetx>15</textoffsetx>
-                        <top>0</top>
-                        <height>94</height>
+                        <left>35</left>
+                        <top>10</top>
+                        <height>100</height>
                         <width>600</width>
                         <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label] - $INFO[ListItem.Property(ShortDate)]</label>
+                        <aligny>top</aligny>
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Property(ShortDate), - ]</label>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <left>35</left>
+                        <top>45</top>
+                        <height>100</height>
+                        <width>600</width>
+                        <align>left</align>
+                        <aligny>top</aligny>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Property(Outlook)]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>button_focus</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                     </control>
                     <control type="label">
