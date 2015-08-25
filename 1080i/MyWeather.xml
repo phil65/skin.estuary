@@ -11,99 +11,182 @@
                 <description>Menu Panel</description>
                 <left>90</left>
                 <top>138</top>
-                <width>420</width>
-                <height>794</height>
+                <width>640</width>
+                <height>796</height>
                 <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
-            <control type="grouplist" id="9000">
+            <control type="list" id="9000">
                 <description>button area</description>
                 <left>110</left>
                 <top>160</top>
-                <width>400</width>
-                <height>750</height>
-                <itemgap>0</itemgap>
+                <width>600</width>
+                <height>752</height>
                 <onleft>10000</onleft>
                 <onright>10000</onright>
                 <onup>9000</onup>
                 <ondown>9000</ondown>
-                <control type="button" id="9010">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                <focusedlayout height="94">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>94</height>
+                        <texture border="90,3,90,3">lists/separator.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>94</height>
+                        <texture border="150,1,150,1">lists/focus.png</texture>
+                        <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <left>500</left>
+                        <top>10</top>
+                        <width>80</width>
+                        <height>80</height>
+                        <texture>$INFO[ListItem.Thumb]</texture>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <textoffsetx>15</textoffsetx>
+                        <top>0</top>
+                        <height>94</height>
+                        <width>600</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label] - $INFO[ListItem.Property(ShortDate)]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <left>300</left>
+                        <top>5</top>
+                        <align>center</align>
+                        <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
+                        <textcolor>white</textcolor>
+                        <width>230</width>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <textoffsetx>15</textoffsetx>
+                        <top>0</top>
+                        <height>94</height>
+                        <width>600</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                </focusedlayout>
+                <itemlayout height="94">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>600</width>
+                        <height>94</height>
+                        <texture border="90,3,90,3">lists/separator.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>500</left>
+                        <top>10</top>
+                        <width>80</width>
+                        <height>80</height>
+                        <texture>$INFO[ListItem.Thumb]</texture>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <textoffsetx>15</textoffsetx>
+                        <top>0</top>
+                        <height>94</height>
+                        <width>600</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label] - $INFO[ListItem.Property(ShortDate)]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <left>300</left>
+                        <top>5</top>
+                        <align>center</align>
+                        <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
+                        <textcolor>white</textcolor>
+                        <width>230</width>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <textoffsetx>15</textoffsetx>
+                        <top>0</top>
+                        <height>94</height>
+                        <width>600</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                </itemlayout>
+                <content>
+                    <item>
+                        <label>Now</label>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item>
+                        <label>Tomorrow</label>
+                        <onclick>noop</onclick>
+                    </item>
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="1" />
                     </include>
-                    <width>380</width>
-                    <label>Now</label>
-                </control>
-                <control type="button" id="9011">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="2" />
                     </include>
-                    <width>380</width>
-                    <label>Today</label>
-                </control>
-                <control type="button" id="9012">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="3" />
                     </include>
-                    <width>380</width>
-                    <label>$INFO[Window(weather).Property(Daily.2.LongDate)]</label>
-                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.2.TempDay)][/COLOR]</label2>
-                </control>
-                <control type="button" id="9013">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="4" />
                     </include>
-                    <width>380</width>
-                    <label>$INFO[Window(weather).Property(Daily.3.LongDate)]</label>
-                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.3.TempDay)][/COLOR]</label2>
-                </control>
-                <control type="button" id="9014">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="5" />
                     </include>
-                    <width>380</width>
-                    <label>$INFO[Window(weather).Property(Daily.4.LongDate)]</label>
-                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.4.TempDay)][/COLOR]</label2>
-                </control>
-                <control type="button" id="9015">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="6" />
                     </include>
-                    <width>380</width>
-                    <label>$INFO[Window(weather).Property(Daily.5.LongDate)]</label>
-                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.5.TempDay)][/COLOR]</label2>
-                </control>
-                <control type="button" id="9016">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="7" />
                     </include>
-                    <width>380</width>
-                    <label>$INFO[Window(weather).Property(Daily.6.LongDate)]</label>
-                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.6.TempDay)][/COLOR]</label2>
-                </control>
-                <control type="button" id="9017">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="8" />
                     </include>
-                    <width>380</width>
-                    <label>$INFO[Window(weather).Property(Daily.7.LongDate)]</label>
-                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.7.TempDay)][/COLOR]</label2>
-                </control>
-                <control type="button" id="9018">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="9" />
                     </include>
-                    <width>380</width>
-                    <label>$INFO[Window(weather).Property(Daily.8.LongDate)]</label>
-                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.8.TempDay)][/COLOR]</label2>
-                </control>
-                <control type="button" id="9019">
-                    <include name="DefaultSettingButton">
-                        <param name="textoffsetx" value="20" />
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="10" />
                     </include>
-                    <width>380</width>
-                    <label>$INFO[Window(weather).Property(Daily.9.LongDate)]</label>
-                    <label2>[COLOR button_focus]$INFO[Window(weather).Property(Daily.9.TempDay)][/COLOR]</label2>
-                </control>
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="11" />
+                    </include>
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="12" />
+                    </include>
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="13" />
+                    </include>
+                    <include name="WeatherDailyItem">
+                        <param name="item_index" value="14" />
+                    </include>
+                </content>
             </control>
         </control>
         <control type="grouplist" id="15001">
@@ -111,25 +194,25 @@
             <top>120</top>
             <height>925</height>
             <include>OpenClose_Right</include>
+            <left>720</left>
             <control type="group">
                 <description>Weather info</description>
                 <height>380</height>
                 <control type="image">
                     <top>22</top>
-                    <left>480</left>
-                    <width>1360</width>
+                    <width>1100</width>
                     <height>390</height>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="image">
                     <top>52</top>
-                    <left>530</left>
+                    <left>50</left>
                     <width>330</width>
                     <height>330</height>
                     <texture>$INFO[Weather.conditions]</texture>
                 </control>
                 <control type="label">
-                    <left>990</left>
+                    <left>250</left>
                     <top>170</top>
                     <aligny>center</aligny>
                     <height>24</height>
@@ -140,7 +223,7 @@
                     <label>$INFO[Weather.Conditions]</label>
                 </control>
                 <control type="label">
-                    <left>990</left>
+                    <left>250</left>
                     <top>130</top>
                     <aligny>center</aligny>
                     <height>24</height>
@@ -151,7 +234,7 @@
                     <label>$INFO[Weather.Temperature]</label>
                 </control>
                 <control type="label">
-                    <left>990</left>
+                    <left>250</left>
                     <top>70</top>
                     <aligny>center</aligny>
                     <height>24</height>
@@ -162,14 +245,6 @@
                     <label>$INFO[Weather.Location]</label>
                 </control>
             </control>
-            <include name="WeatherWidget">
-                <param name="content_include" value="HourlyItems" />
-                <param name="list_id" value="15100" />
-                <param name="onup_id" value="15900" />
-                <param name="ondown_id" value="15200" />
-                <param name="widget_header" value="Temperatures over 24 Hours"/>
-                <param name="visible" value="!IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
-            </include>
         </control>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[8]$INFO[Window(Weather).Property(Location), / ]" />
