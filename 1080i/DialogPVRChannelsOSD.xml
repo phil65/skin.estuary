@@ -2,78 +2,46 @@
 <window>
 	<defaultcontrol always="true">11</defaultcontrol>
 	<coordinates>
-		<left>780</left>
+		<left>1300</left>
 		<top>30</top>
 	</coordinates>
-	<include>Animation_DialogPopupOpenClose</include>
+	<include>OpenClose_Right</include>
 	<controls>
 		<control type="group">
 			<control type="image">
 				<description>background image</description>
-				<left>0</left>
-				<top>0</top>
-				<width>480</width>
-				<height>660</height>
-				<texture border="40">DialogBack2.png</texture>
-			</control>
-			<control type="button">
-				<description>Close Window button</description>
-				<left>390</left>
-				<top>15</top>
-				<width>64</width>
-				<height>32</height>
-				<label>-</label>
-				<font>-</font>
-				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogClosebuttons/button-theme-fo.png</texturefocus>
-				<texturenofocus>DialogCloseButton.png</texturenofocus>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<onup>2</onup>
-				<ondown>2</ondown>
-				<visible>system.getbool(input.enablemouse)</visible>
+				<left>-20</left>
+				<top>-20</top>
+				<width>590</width>
+				<height>1040</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
-				<left>40</left>
-				<top>16</top>
-				<width>400</width>
-				<height>50</height>
-				<texture>dialogheader.png</texture>
+				<left>0</left>
+				<top>0</top>
+				<width>550</width>
+				<height>70</height>
+				<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
 			</control>
-			<control type="label">
+			<control type="label" id="2">
 				<description>header label</description>
-				<left>40</left>
-				<top>16</top>
-				<width>430</width>
-				<height>40</height>
-				<font>font12_title</font>
-				<label>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</label>
-				<align>center</align>
+				<textoffsetx>40</textoffsetx>
+				<top>0</top>
+				<width>550</width>
+				<height>70</height>
+				<font>font13_title</font>
+				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<label>$INFO[VideoPlayer.ChannelGroup]</label>
+				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>!pvr.IsPlayingRadio</visible>
-			</control>
-			<control type="label">
-				<description>header label</description>
-				<left>40</left>
-				<top>16</top>
-				<width>430</width>
-				<height>40</height>
-				<font>font12_title</font>
-				<label>$LOCALIZE[19024] - $INFO[MusicPlayer.ChannelGroup]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>pvr.IsPlayingRadio</visible>
 			</control>
 			<control type="label">
 				<description>header label</description>
 				<left>40</left>
 				<top>-7</top>
-				<width>430</width>
+				<width>530</width>
 				<height>120</height>
 				<font>font10_title</font>
 				<label>$INFO[System.Date(DDD)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)] • $INFO[System.Time]</label>
@@ -83,10 +51,10 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="list" id="11">
-				<left>30</left>
+				<left>0</left>
 				<top>70</top>
-				<width>410</width>
-				<height>520</height>
+				<width>550</width>
+				<height>850</height>
 				<onleft>PreviousChannelGroup</onleft>
 				<onright>60</onright>
 				<onup>11</onup>
@@ -94,13 +62,13 @@
 				<viewtype label="535">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="70" width="410">
+				<itemlayout height="100" width="550">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>410</width>
-						<height>65</height>
-						<texture border="40">buttons/button-nofo.png</texture>
+						<width>550</width>
+						<height>100</height>
+						<texture border="40">lists/separator.png</texture>
 					</control>
 					<control type="label">
 						<left>5</left>
@@ -202,21 +170,21 @@
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="410">
+				<focusedlayout height="100" width="550">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>410</width>
-						<height>65</height>
-						<texture border="40">buttons/button-nofo.png</texture>
+						<width>550</width>
+						<height>100</height>
+						<texture border="40">lists/separator.png</texture>
 						<visible>!Control.HasFocus(11)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>410</width>
-						<height>65</height>
-						<texture border="5">buttons/button-theme-fo.png</texture>
+						<width>550</width>
+						<height>100</height>
+						<texture>lists/focus.png</texture>
 						<visible>Control.HasFocus(11)</visible>
 					</control>
 					<control type="label">
