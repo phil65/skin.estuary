@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol>3</defaultcontrol>
+    <defaultcontrol>9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <controls>
@@ -18,7 +18,7 @@
                     <height>792</height>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
-                <control type="grouplist" id="3">
+                <control type="grouplist" id="9000">
                     <description>button area</description>
                     <left>0</left>
                     <top>160</top>
@@ -26,10 +26,10 @@
                     <height>700</height>
                     <itemgap>0</itemgap>
                     <usecontrolcoords>true</usecontrolcoords>
-                    <onleft>5</onleft>
-                    <onright>5</onright>
-                    <onup>3</onup>
-                    <ondown>3</ondown>
+                    <onleft>10000</onleft>
+                    <onright>10000</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
                     <control type="button" id="1000">
                         <description>Default Category Button</description>
                         <width>398</width>
@@ -44,7 +44,7 @@
                     </control>
                 </control>
             </control>
-            <control type="group">
+            <control type="group" id="10000">
                 <include>OpenClose_Right</include>
                 <control type="image">
                     <left>420</left>
@@ -61,27 +61,13 @@
                     <height>3</height>
                     <texture colordiffuse="button_focus" border="2">dialogs/separator.png</texture>
                 </control>
-                <control type="image">
-                    <left>1045</left>
-                    <top>910</top>
-                    <width>28</width>
-                    <height>28</height>
-                    <texture>overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,910" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,910" time="200">WindowOpen</animation>
-                    <visible>Container(5).HasNext</visible>
-                </control>
-                <control type="image">
-                    <left>1045</left>
-                    <top>130</top>
-                    <width>28</width>
-                    <height>28</height>
-                    <texture flipy="true">overlays/arrowdown.png</texture>
-                    <animation effect="zoom" start="100,0" end="100,100" center="0,158" time="200">VisibleChange</animation>
-                    <animation effect="zoom" start="100,0" end="100,100" delay="300" center="0,158" time="200">WindowOpen</animation>
-                    <visible>Container(5).HasPrevious</visible>
-                </control>
-                <control type="grouplist" id="5">
+                <include name="UpDownArrows">
+                    <param name="container_id" value="600" />
+                    <param name="posx" value="1045" />
+                    <param name="up_posy" value="130" />
+                    <param name="down_posy" value="910" />
+                </include>
+                <control type="grouplist" id="600">
                     <description>control area</description>
                     <left>442</left>
                     <top>160</top>
@@ -89,12 +75,11 @@
                     <height>610</height>
                     <itemgap>0</itemgap>
                     <pagecontrol>60</pagecontrol>
-                    <onleft>3</onleft>
+                    <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onup>5</onup>
-                    <ondown>5</ondown>
+                    <onup>600</onup>
+                    <ondown>600</ondown>
                     <control type="radiobutton" id="601">
-                        <description>Default RadioButton</description>
                         <label>Disable slide animations</label>
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
@@ -102,7 +87,6 @@
                         <onclick>Skin.ToggleSetting(no_slide_animations)</onclick>
                     </control>
                     <control type="radiobutton" id="602">
-                        <description>Default RadioButton</description>
                         <label>20189</label>
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
@@ -119,6 +103,7 @@
                     <font>font12</font>
                     <align>justify</align>
                     <textcolor>button_focus</textcolor>
+                    <label>Some help text. Some help text. Some help text. Some help text.</label>
                     <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                 </control>
             </control>

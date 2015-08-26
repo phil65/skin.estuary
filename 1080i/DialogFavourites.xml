@@ -19,15 +19,15 @@
             <param name="up_posy" value="-40" />
             <param name="down_posy" value="820" />
         </include>
-                    <control type="scrollbar" id="60">
-                        <left>1465</left>
-                        <top>100</top>
-                        <width>12</width>
-                        <height>670</height>
-                        <onleft>450</onleft>
-                        <onright>450</onright>
-                        <orientation>vertical</orientation>
-                    </control>
+        <control type="scrollbar" id="60">
+            <left>1465</left>
+            <top>100</top>
+            <width>12</width>
+            <height>670</height>
+            <onleft>450</onleft>
+            <onright>450</onright>
+            <orientation>vertical</orientation>
+        </control>
         <control type="panel" id="450">
             <left>35</left>
             <top>100</top>
@@ -112,18 +112,18 @@
                 </control>
             </focusedlayout>
         </control>
-            <control type="textbox">
-                <left>500</left>
-                <top>200</top>
-                <width>500</width>
-                <height>300</height>
-                <aligny>center</aligny>
-                <align>center</align>
-                <label>No favourites found. You can add any item from media views to this list by using the context menu.</label>
-                <selectedcolor>selected</selectedcolor>
-                <textcolor>white</textcolor>
-                <font>font30_title</font>
-                <visible>Stringcompare(Container(450).NumItems,0)</visible>
-            </control>
+        <control type="textbox">
+            <left>500</left>
+            <top>200</top>
+            <width>500</width>
+            <height>300</height>
+            <aligny>center</aligny>
+            <align>center</align>
+            <label>No favourites found. You can add any item from media views to this list by using the context menu.</label>
+            <selectedcolor>selected</selectedcolor>
+            <textcolor>white</textcolor>
+            <font>font30_title</font>
+            <visible>Stringcompare(Container(450).NumItems,0)</visible>
+        </control>
     </controls>
 </window>
