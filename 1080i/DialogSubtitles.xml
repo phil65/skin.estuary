@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<coordinates>
-		<left>380</left>
+		<left>100</left>
 		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="group" id="250">
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="1400" />
+				<param name="DialogBackgroundWidth" value="1720" />
 				<param name="DialogBackgroundHeight" value="770" />
 				<param name="DialogHeaderLabel" value="Subtitles" />
 				<param name="DialogHeaderId" value="100" />
@@ -51,7 +51,7 @@
 				<control type="list" id="120">
 					<left>50</left>
 					<top>206</top>
-					<width>800</width>
+					<width>780</width>
 					<height>434</height>
 					<onleft>121</onleft>
 					<onright>150</onright>
@@ -60,12 +60,12 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>121</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout width="800" height="36">
+					<itemlayout width="780" height="60">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>780</width>
-							<height>38</height>
+							<height>60</height>
 							<texture>lists/separator.png</texture>
 						</control>
 						<control type="image">
@@ -80,12 +80,12 @@
 							<left>40</left>
 							<top>0</top>
 							<width>90</width>
-							<height>38</height>
+							<height>60</height>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
 							<left>135</left>
@@ -107,12 +107,12 @@
 							<left>205</left>
 							<top>0</top>
 							<width>495</width>
-							<height>38</height>
+							<height>60</height>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
 							<left>710</left>
@@ -123,19 +123,19 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 					</itemlayout>
-					<focusedlayout width="800" height="36">
+					<focusedlayout width="780" height="60">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>780</width>
-							<height>38</height>
+							<height>60</height>
 							<texture>lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>780</width>
-							<height>38</height>
+							<height>60</height>
 							<texture>lists/focus.png</texture>
 							<visible>Control.HasFocus(120)</visible>
 						</control>
@@ -151,12 +151,12 @@
 							<left>40</left>
 							<top>0</top>
 							<width>90</width>
-							<height>38</height>
+							<height>60</height>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
 							<left>135</left>
@@ -178,12 +178,12 @@
 							<left>205</left>
 							<top>0</top>
 							<width>495</width>
-							<height>38</height>
+							<height>60</height>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
 							<left>710</left>
@@ -195,52 +195,26 @@
 						</control>
 					</focusedlayout>
 				</control>
-				<control type="spincontrol" id="121">
-					<description>Next page button</description>
-					<left>808</left>
-					<top>664</top>
-					<width>20</width>
-					<height>20</height>
-					<align>right</align>
-					<aligny>center</aligny>
-					<subtype>page</subtype>
-					<textcolor>white</textcolor>
-					<onleft>120</onleft>
-					<onright>120</onright>
-					<ondown>120</ondown>
-					<onup>120</onup>
-					<textoffsetx>10</textoffsetx>
-					<visible>Control.IsVisible(120)</visible>
-				</control>
-				<control type="group" id="130">
-					<control type="grouplist">
-						<left>50</left>
-						<top>659</top>
-						<width>605</width>
+				<control type="grouplist" id="130">
+					<left>50</left>
+					<top>659</top>
+					<width>605</width>
+					<height>30</height>
+					<orientation>horizontal</orientation>
+					<itemgap>5</itemgap>
+					<control type="image">
+						<width>30</width>
 						<height>30</height>
-						<orientation>horizontal</orientation>
-						<itemgap>5</itemgap>
-						<control type="image">
-							<width>30</width>
-							<height>30</height>
-							<texture>DefaultIconInfo.png</texture>
-						</control>
-						<control type="label">
-							<description>notification</description>
-							<width min="10" max="560">auto</width>
-							<height>30</height>
-							<textcolor>white</textcolor>
-							<label>$LOCALIZE[31413]</label>
-							<aligny>center</aligny>
-						</control>
+						<texture>DefaultIconInfo.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<left>866</left>
-					<top>348</top>
-					<width>24</width>
-					<height>24</height>
-					<texture>scroll-right-focus.png</texture>
+					<control type="label">
+						<description>notification</description>
+						<width min="10" max="560">auto</width>
+						<height>30</height>
+						<textcolor>white</textcolor>
+						<label>$LOCALIZE[31413]</label>
+						<aligny>center</aligny>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -256,18 +230,10 @@
 					<shadowcolor>black</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
-				<control type="image">
-					<description>separator</description>
-					<left>900</left>
-					<top>176</top>
-					<width>240</width>
-					<height>4</height>
-					<texture>separator.png</texture>
-				</control>
 				<control type="list" id="150">
 					<left>900</left>
 					<top>206</top>
-					<width>250</width>
+					<width>400</width>
 					<height>399</height>
 					<onleft>120</onleft>
 					<onright>120</onright>
@@ -275,71 +241,63 @@
 					<ondown>160</ondown>
 					<viewtype label="535">list</viewtype>
 					<scrolltime>200</scrolltime>
-					<itemlayout width="400" height="36">
+					<itemlayout width="400" height="60">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>230</width>
-							<height>38</height>
+							<width>400</width>
+							<height>60</height>
 							<texture>lists/separator.png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
 							<top>0</top>
-							<width>230</width>
-							<height>38</height>
+							<width>400</width>
+							<height>60</height>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout width="400" height="36">
+					<focusedlayout width="400" height="60">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>230</width>
-							<height>38</height>
+							<width>400</width>
+							<height>60</height>
 							<texture>lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>
 							<top>0</top>
-							<width>230</width>
-							<height>38</height>
+							<width>400</width>
+							<height>60</height>
 							<texture>lists/focus.png</texture>
 							<visible>Control.HasFocus(150)</visible>
 						</control>
 						<control type="label">
 							<left>40</left>
 							<top>0</top>
-							<width>230</width>
-							<height>38</height>
+							<width>400</width>
+							<height>60</height>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
 				</control>
-				<control type="button" id="160">
-					<description>Manual search button</description>
+				<control type="group">
 					<left>925</left>
 					<top>640</top>
-					<width>200</width>
-					<height>40</height>
-					<onleft>120</onleft>
-					<onright>120</onright>
-					<onup>150</onup>
-					<ondown>150</ondown>
-					<label>$LOCALIZE[24120]</label>
-					<font>font12_title</font>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<align>center</align>
-					<hitrect x="925" y="605" w="200" h="100" />
+					<include name="DefaultDialogButton">
+						<param name="id" value="160" />
+						<param name="label" value="$LOCALIZE[24120]" />
+						<param name="width" value="350" />
+					</include>
 				</control>
 			</control>
 		</control>
