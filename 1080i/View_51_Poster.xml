@@ -26,19 +26,14 @@
                 <width>1700</width>
                 <height>10</height>
                 <texturesliderbackground colordiffuse="00FFFFFF">colors/white.png</texturesliderbackground>
-                <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
-                <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
                 <animation effect="zoom" start="100,100" end="100,150" time="250" center="110,710" tween="cubic" easing="inout" reversible="true">Focus</animation>
                 <animation effect="zoom" start="100,150" end="100,100" time="125" center="110,710" tween="cubic" easing="inout" reversible="true">UnFocus</animation>
-                <textureslidernib>-</textureslidernib>
-                <textureslidernibfocus>-</textureslidernibfocus>
-                <onleft>5199</onleft>
-                <onright>5199</onright>
                 <onup>51</onup>
                 <ondown>51</ondown>
                 <orientation>horizontal</orientation>
                 <visible>Control.IsVisible(51)</visible>
-                <animation effect="fade" start="100" end="0" time="200">VisibleChange</animation>
+                <animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+                <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
                 <animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
                 <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
             </control>
