@@ -34,7 +34,7 @@
                 <ondown>10</ondown>
                 <onback>9003</onback>
                 <viewtype label="19032">list</viewtype>
-                <progresstexture border="0,60,18,14">windows/pvr/epg_progress.png</progresstexture>
+                <progresstexture border="0,60,18,14" colordiffuse="button_focus">windows/pvr/epg_progress.png</progresstexture>
                 <rulerlayout height="45" width="1400">
                     <control type="label">
                         <width>500</width>
