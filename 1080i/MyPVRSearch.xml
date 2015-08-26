@@ -88,23 +88,11 @@
                                 <label>$INFO[ListItem.Date]</label>
                             </control>
                             <control type="image">
-                                <left>1380</left>
-                                <top>10</top>
+                                <left>980</left>
+                                <top>50</top>
                                 <width>50</width>
                                 <height>50</height>
                                 <texture>$VAR[PVRStatusImageVar]</texture>
-                            </control>
-                            <control type="label">
-                                <left>1010</left>
-                                <top>0</top>
-                                <width>80</width>
-                                <height>100</height>
-                                <font>font10</font>
-                                <aligny>center</aligny>
-                                <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <label>31510</label>
-                                <visible>ListItem.HasTimer</visible>
                             </control>
                         </control>
                     </itemlayout>
@@ -170,23 +158,11 @@
                                 <label>$INFO[ListItem.Date]</label>
                             </control>
                             <control type="image">
-                                <left>1380</left>
-                                <top>10</top>
+                                <left>980</left>
+                                <top>50</top>
                                 <width>50</width>
                                 <height>50</height>
                                 <texture>$VAR[PVRStatusImageVar]</texture>
-                            </control>
-                            <control type="label">
-                                <left>1010</left>
-                                <top>0</top>
-                                <width>80</width>
-                                <height>100</height>
-                                <font>font10</font>
-                                <aligny>center</aligny>
-                                <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <label>31510</label>
-                                <visible>ListItem.HasTimer</visible>
                             </control>
                         </control>
                     </focusedlayout>
