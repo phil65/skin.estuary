@@ -145,9 +145,9 @@
     <default type="slider">
         <controloffsetx>75</controloffsetx>
         <controloffsety>0</controloffsety>
-        <texturesliderbar border="22,1,22,1">progress/slider_back.png</texturesliderbar>
-        <textureslidernib>progress/orb_nofo.png</textureslidernib>
-        <textureslidernibfocus>progress/orb_fo.png</textureslidernibfocus>
+        <texturesliderbar border="10">dialogs/mediasource/slider-back.png</texturesliderbar>
+        <textureslidernib>dialogs/mediasource/slider-nib-nf.png</textureslidernib>
+        <textureslidernibfocus colordiffuse="button_focus">dialogs/mediasource/slider-nib-nf.png</textureslidernibfocus>
     </default>
     <default type="sliderex">
         <height>35</height>
