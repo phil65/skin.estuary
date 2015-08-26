@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">50</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <backgroundcolor>0</backgroundcolor>
+    <views>50</views>
+    <menucontrol>8000</menucontrol>
+    <controls>
+        <include>DefaultBackground</include>
+        <control type="group">
+            <left>110</left>
+            <top>180</top>
+            <control type="image">
+                <description>background image</description>
+                <left>-20</left>
+                <top>-20</top>
+                <width>1090</width>
+                <height>740</height>
+                <texture border="2">dialogs/dialog-bg.png</texture>
+            </control>
+            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)">Conditional</animation>
+            <control type="list" id="50">
+                <left>0</left>
+                <top>72</top>
+                <width>1050</width>
+                <height>635</height>
+                <onleft>9000</onleft>
+                <onright>70</onright>
+                <onup>50</onup>
+                <ondown>50</ondown>
+                <pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
+                <scrolltime>200</scrolltime>
+                <focusedlayout height="70">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>1050</width>
+                        <height>71</height>
+                        <texture border="90,3,90,3">lists/separator.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>1050</width>
+                        <height>69</height>
+                        <texture border="150,1,150,1">lists/focus.png</texture>
+                        <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <textoffsetx>15</textoffsetx>
+                        <top>0</top>
+                        <height>70</height>
+                        <width>1050</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <textoffsetx>15</textoffsetx>
+                        <top>0</top>
+                        <height>70</height>
+                        <width>1050</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Date]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                </focusedlayout>
+                <itemlayout height="70">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>1050</width>
+                        <height>71</height>
+                        <texture border="90,3,90,3">lists/separator.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <textoffsetx>15</textoffsetx>
+                        <top>0</top>
+                        <height>70</height>
+                        <width>1050</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <textoffsetx>15</textoffsetx>
+                        <top>0</top>
+                        <height>70</height>
+                        <width>1050</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <label>$INFO[ListItem.Date]</label>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>grey</textcolor>
+                        <shadowcolor>text_shadow</shadowcolor>
+                    </control>
+                </itemlayout>
+            </control>
+        </control>
+        <control type="group">
+            <left>1220</left>
+            <posy>180</posy>
+            <visible>!IsEmpty(ListItem.ChannelName)</visible>
+            <include>Visible_Right</include>
+            <include>OpenClose_Right</include>
+            <include>PVRInfoPanel</include>
+        </control>
+        <include name="TopBar">
+            <param name="breadcrumbs_label" value="Live TV$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), / ]" />
+            <param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
+        </include>
+        <control type="label" id="29">
+            <font>-</font>
+            <include>HiddenObject</include>
+        </control>
+        <control type="label" id="30">
+            <font>-</font>
+            <include>HiddenObject</include>
+        </control>
+        <include>BottomBar</include>
+    </controls>
+</window>
