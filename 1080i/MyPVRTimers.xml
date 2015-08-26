@@ -171,6 +171,8 @@
             <control type="group">
                 <left>1220</left>
                 <posy>180</posy>
+                <visible>!IsEmpty(ListItem.Date)</visible>
+                <include>Visible_Right</include>
                 <include>OpenClose_Right</include>
                 <include>PVRInfoPanel</include>
             </control>
