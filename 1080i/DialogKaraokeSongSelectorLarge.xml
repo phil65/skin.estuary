@@ -2,22 +2,22 @@
 <window type="dialog">
 	<include>Animation_DialogPopupOpenClose</include>
 	<coordinates>
-		<left>415</left>
+		<left>700</left>
 		<top>275</top>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="450" />
-				<param name="DialogBackgroundHeight" value="170" />
+				<param name="DialogBackgroundWidth" value="520" />
+				<param name="DialogBackgroundHeight" value="220" />
 				<param name="DialogHeaderLabel" value="$LOCALIZE[31321]" />
 				<param name="DialogHeaderId" value="1" />
 			</include>
 			<control type="label" id="401">
 				<description>Song Number Label</description>
 				<left>30</left>
-				<top>70</top>
-				<width>390</width>
+				<top>100</top>
+				<width>460</width>
 				<height>30</height>
 				<font>font28_title</font>
 				<textcolor>white</textcolor>
@@ -27,8 +27,8 @@
 			<control type="label" id="402">
 				<description>Song Name Label</description>
 				<left>30</left>
-				<top>120</top>
-				<width>390</width>
+				<top>160</top>
+				<width>460</width>
 				<height>20</height>
 				<align>center</align>
 				<aligny>center</aligny>
