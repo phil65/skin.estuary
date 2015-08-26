@@ -29,7 +29,7 @@
                 <onright>70</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
-                <pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
+                <pagecontrol>73</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <focusedlayout height="70">
                     <control type="image">
@@ -112,6 +112,15 @@
                     </control>
                 </itemlayout>
             </control>
+                <control type="scrollbar" id="73">
+                    <left>1055</left>
+                    <top>1</top>
+                    <width>12</width>
+                    <height>698</height>
+                    <onleft>50</onleft>
+                    <onright>103</onright>
+                    <orientation>vertical</orientation>
+                </control>
         </control>
         <control type="group">
             <left>1220</left>
