@@ -10,19 +10,20 @@
         <control type="group">
             <left>110</left>
             <top>180</top>
+            <include>OpenClose_Left</include>
             <control type="image">
                 <description>background image</description>
                 <left>-20</left>
                 <top>-20</top>
                 <width>1090</width>
                 <height>740</height>
-                <texture border="2">dialogs/dialog-bg.png</texture>
+                <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)">Conditional</animation>
             <control type="list" id="50">
-                <left>0</left>
-                <top>72</top>
-                <width>1050</width>
+                <left>2</left>
+                <top>3</top>
+                <width>1046</width>
                 <height>635</height>
                 <onleft>9000</onleft>
                 <onright>70</onright>
