@@ -231,11 +231,11 @@
     <include name="FileManagerPanel">
         <control type="image">
             <description>background image</description>
-            <left>0</left>
-            <top>0</top>
-            <width>$PARAM[width]</width>
+            <left>-20</left>
+            <top>-20</top>
+            <width>$PARAM[bg_width]</width>
             <height>700</height>
-            <texture border="2">dialogs/dialog-bg-solid.png</texture>
+            <texture border="22">dialogs/dialog-bg.png</texture>
         </control>
         <control type="image">
             <description>Dialog Header image</description>
@@ -1083,6 +1083,8 @@
         </definition>
     </include>
     <include name="BottomBar">
+                <param name="PageLabel">$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</param>
+        <definition>
         <control type="image">
             <description>List Panel</description>
             <left>0</left>
@@ -1162,7 +1164,7 @@
                 <shadowcolor>text_shadow</shadowcolor>
                 <visible>!System.HasModalDialog</visible>
                 <animation effect="fade" start="0" end="100" delay="1" time="200">VisibleChange</animation>
-                <label>$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</label>
+                <label>$PARAM[PageLabel]</label>
             </control>
             <control type="image">
                 <description>Items icon</description>
@@ -1174,6 +1176,7 @@
                 <visible>!IsEmpty(Container.NumItems) + !System.HasModalDialog</visible>
             </control>
         </control>
+    </definition>
     </include>
     <include name="FullScreenDimensions">
         <left>0</left>

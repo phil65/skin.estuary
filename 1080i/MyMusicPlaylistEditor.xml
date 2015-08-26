@@ -62,6 +62,7 @@
                 <param name="onleft_id" value="9000" />
                 <param name="onright_id" value="100" />
                 <param name="width" value="740" />
+                <param name="bg_width" value="780" />
             </include>
         </control>
         <control type="group">
@@ -76,6 +77,7 @@
                 <param name="onleft_id" value="50" />
                 <param name="onright_id" value="9000" />
                 <param name="width" value="740" />
+                <param name="bg_width" value="780" />
             </include>
         </control>
         <include name="TopBar">

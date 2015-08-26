@@ -25,6 +25,7 @@
                 <param name="onleft_id" value="21" />
                 <param name="onright_id" value="21" />
                 <param name="width" value="800" />
+                <param name="bg_width" value="840" />
             </include>
         </control>
         <control type="group">
@@ -39,6 +40,7 @@
                 <param name="onleft_id" value="20" />
                 <param name="onright_id" value="20" />
                 <param name="width" value="800" />
+                <param name="bg_width" value="840" />
             </include>
         </control>
         <include name="TopBar">
