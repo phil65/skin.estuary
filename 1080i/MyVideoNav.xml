@@ -29,6 +29,7 @@
                 <top>182</top>
                 <left>110</left>
                 <visible>!Container.Content(addons)</visible>
+                <visible>!Container.Content(files)</visible>
                 <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
                 <include>OpenClose_Left</include>
                 <include>Visible_Left</include>
