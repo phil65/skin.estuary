@@ -1,53 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>11</defaultcontrol>
-	<animation effect="slide" start="0,-80" end="0,0" time="75">WindowOpen</animation>
-	<animation effect="slide" start="0,0" end="0,-80" time="75">WindowClose</animation>
+	<include>Animation_DialogPopupOpenClose</include>
 	<coordinates>
-		<left>405</left>
-		<top>0</top>
+		<left>560</left>
+		<top>100</top>
 	</coordinates>
 	<controls>
 		<control type="image">
 			<left>0</left>
 			<top>-10</top>
-			<width>460</width>
-			<height>80</height>
-			<texture flipy="true" border="20,2,20,20">InfoMessagePanel.png</texture>
+			<width>800</width>
+			<height>130</height>
+			<texture border="12">dialogs/dialog-bg-solid.png</texture>
 		</control>
 		<control type="label" id="10">
 			<description>Dialog header</description>
-			<left>20</left>
+			<left>40</left>
 			<top>10</top>
 			<width>230</width>
 			<height>20</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>font12_title</font>
+			<font>font14</font>
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="label" id="12">
 			<description>Slider Value</description>
-			<left>220</left>
+			<left>0</left>
 			<top>10</top>
-			<width>220</width>
+			<width>760</width>
 			<height>20</height>
 			<align>right</align>
 			<aligny>center</aligny>
-			<font>font12_title</font>
+			<font>font14</font>
 			<textcolor>white</textcolor>
 		</control>
 		<control type="slider" id="11">
 			<description>Slider</description>
-			<left>20</left>
-			<top>35</top>
-			<width>420</width>
-			<height>20</height>
+			<left>40</left>
+			<top>65</top>
+			<width>720</width>
+			<height>28</height>
 			<aligny>center</aligny>
 			<onup>11</onup>
 			<ondown>11</ondown>
 			<onleft>11</onleft>
 			<onright>11</onright>
 		</control>
+            <control type="image">
+                <left>0</left>
+                <top>65</top>
+                <width>28</width>
+                <height>28</height>
+                <texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
+                <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+                <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
+            </control>
+            <control type="image">
+                <left>770</left>
+                <top>65</top>
+                <width>28</width>
+                <height>28</height>
+                <texture colordiffuse="button_focus">overlays/arrowright.png</texture>
+                <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+                <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
+            </control>
 	</controls>
 </window>

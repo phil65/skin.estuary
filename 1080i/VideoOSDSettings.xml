@@ -4,6 +4,8 @@
     <include>OpenClose_Left</include>
     <controls>
         <control type="group">
+            <visible>!Window.IsActive(sliderdialog)</visible>
+            <include>Visible_Left</include>
             <control type="image">
                 <posx>-40</posx>
                 <width>728</width>
