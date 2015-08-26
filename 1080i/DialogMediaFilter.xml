@@ -2,13 +2,13 @@
 <window>
 	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
-		<left>335</left>
+		<left>320</left>
 		<top>570</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1250" />
+			<param name="DialogBackgroundWidth" value="1280" />
 			<param name="DialogBackgroundHeight" value="400" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[587]" />
 			<param name="DialogHeaderId" value="2" />
@@ -21,22 +21,17 @@
 			<width>950</width>
 			<height>310</height>
 			<itemgap>-25</itemgap>
-			<pagecontrol>6</pagecontrol>
+			<pagecontrol>60</pagecontrol>
 			<onup>5</onup>
 			<ondown>5</ondown>
 			<onleft>9001</onleft>
-			<onright>9001</onright>
+			<onright>60</onright>
 		</control>
-		<control type="scrollbar" id="6">
-			<left>755</left>
-			<top>70</top>
-			<width>25</width>
-			<height>350</height>
-			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-			<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>ScrollBarNib.png</textureslidernib>
-			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+		<control type="scrollbar" id="60">
+			<left>950</left>
+			<top>91</top>
+			<width>12</width>
+			<height>284</height>
 			<onleft>5</onleft>
 			<onright>9001</onright>
 			<orientation>vertical</orientation>
@@ -63,10 +58,10 @@
 			<include>DefaultBorderedSettingButton</include>
 		</control>
 		<control type="grouplist" id="9001">
-			<left>950</left>
+			<left>980</left>
 			<top>70</top>
 			<onup>9001</onup>
-			<onleft>5</onleft>
+			<onleft>60</onleft>
 			<onright>5</onright>
 			<ondown>9001</ondown>
 			<itemgap>-25</itemgap>
