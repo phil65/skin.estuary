@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<coordinates>
-		<left>250</left>
+		<left>360</left>
 		<top>200</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
@@ -10,7 +10,7 @@
 		<control type="group">
 			<visible>!Window.IsVisible(MusicInformation)</visible>
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="1420" />
+				<param name="DialogBackgroundWidth" value="1300" />
 				<param name="DialogBackgroundHeight" value="670" />
 				<param name="DialogHeaderLabel" value="$LOCALIZE[658]" />
 				<param name="DialogHeaderId" value="2" />
@@ -19,7 +19,7 @@
 				<description>Song Title value</description>
 				<left>0</left>
 				<top>100</top>
-				<width>1420</width>
+				<width>1300</width>
 				<textoffsetx>30</textoffsetx>
 				<height>30</height>
 				<align>center</align>
@@ -40,7 +40,7 @@
 				<texture border="4">$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="grouplist">
-				<left>500</left>
+				<left>420</left>
 				<top>200</top>
 				<orientation>vertical</orientation>
 				<control type="grouplist">
@@ -217,7 +217,7 @@
 			</control>
 			<control type="grouplist" id="9000">
 				<left>0</left>
-				<width>1420</width>
+				<width>1300</width>
 				<top>570</top>
 				<orientation>horizontal</orientation>
 				<align>center</align>
