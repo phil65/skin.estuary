@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<coordinates>
-		<left>300</left>
+		<left>250</left>
 		<top>200</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
@@ -10,16 +10,17 @@
 		<control type="group">
 			<visible>!Window.IsVisible(MusicInformation)</visible>
 			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="1320" />
-				<param name="DialogBackgroundHeight" value="650" />
+				<param name="DialogBackgroundWidth" value="1420" />
+				<param name="DialogBackgroundHeight" value="670" />
 				<param name="DialogHeaderLabel" value="$LOCALIZE[658]" />
 				<param name="DialogHeaderId" value="2" />
 			</include>
 			<control type="label">
 				<description>Song Title value</description>
-				<left>30</left>
-				<top>80</top>
-				<width>1260</width>
+				<left>0</left>
+				<top>100</top>
+				<width>1420</width>
+				<textoffsetx>30</textoffsetx>
 				<height>30</height>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -30,21 +31,22 @@
 			</control>
 			<control type="image">
 				<left>40</left>
-				<top>140</top>
-				<width>400</width>
-				<height>400</height>
+				<top>200</top>
+				<width>300</width>
+				<height>300</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 				<bordersize>4</bordersize>
 				<texture border="4">$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="grouplist">
-				<left>470</left>
-				<top>140</top>
+				<left>500</left>
+				<top>200</top>
 				<orientation>vertical</orientation>
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
 					<height>40</height>
+					<itemgap>20</itemgap>
 					<control type="label">
 						<description>Artist Title</description>
 						<width>150</width>
@@ -69,6 +71,7 @@
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
 					<height>40</height>
+					<itemgap>20</itemgap>
 					<control type="label">
 						<description>Album Title</description>
 						<width>150</width>
@@ -93,6 +96,7 @@
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
 					<height>40</height>
+					<itemgap>20</itemgap>
 					<control type="label">
 						<description>Genre Title</description>
 						<width>150</width>
@@ -117,6 +121,7 @@
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
 					<height>40</height>
+					<itemgap>20</itemgap>
 					<control type="label">
 						<description>Year Title</description>
 						<width>150</width>
@@ -139,6 +144,7 @@
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
 					<height>40</height>
+					<itemgap>20</itemgap>
 					<control type="label">
 						<description>Track Number Title</description>
 						<width>150</width>
@@ -161,6 +167,7 @@
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
 					<height>40</height>
+					<itemgap>20</itemgap>
 					<control type="label">
 						<description>Rating Title</description>
 						<width>150</width>
@@ -171,7 +178,7 @@
 						<label>$LOCALIZE[563]:</label>
 					</control>
 					<control type="group">
-						<left>160</left>
+						<left>170</left>
 						<top>148</top>
 						<control type="image">
 							<description>Rating value</description>
@@ -180,41 +187,14 @@
 							<width>150</width>
 							<height>32</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture>LeftRating/$INFO[ListItem.StarRating]</texture>
+							<texture>flags/starrating/$INFO[ListItem.StarRating]</texture>
 						</control>
-					</control>
-					<control type="button" id="14">
-						<description>Decrease Rating</description>
-						<left>160</left>
-						<top>5</top>
-						<width>33</width>
-						<height>22</height>
-						<onclick>DecreaseRating</onclick>
-						<texturenofocus>scroll-down-2.png</texturenofocus>
-						<texturefocus>scroll-down-focus-2.png</texturefocus>
-						<onleft>15</onleft>
-						<onright>15</onright>
-						<ondown>9000</ondown>
-						<onup>9000</onup>
-					</control>
-					<control type="button" id="15">
-						<description>Increase Rating</description>
-						<left>193</left>
-						<top>5</top>
-						<width>33</width>
-						<height>22</height>
-						<onclick>IncreaseRating</onclick>
-						<texturenofocus>scroll-up-2.png</texturenofocus>
-						<texturefocus>scroll-up-focus-2.png</texturefocus>
-						<onleft>14</onleft>
-						<onright>14</onright>
-						<ondown>9000</ondown>
-						<onup>9000</onup>
 					</control>
 				</control>
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
 					<height>240</height>
+					<itemgap>20</itemgap>
 					<usecontrolcoords>true</usecontrolcoords>
 					<control type="label">
 						<description>Comment Title</description>
@@ -237,8 +217,8 @@
 			</control>
 			<control type="grouplist" id="9000">
 				<left>0</left>
-				<width>1320</width>
-				<top>550</top>
+				<width>1420</width>
+				<top>570</top>
 				<orientation>horizontal</orientation>
 				<align>center</align>
 				<!-- 					<include name="DefaultDialogButton">
@@ -256,6 +236,16 @@
 				<include name="DefaultDialogButton">
 					<param name="id" value="13" />
 					<param name="label" value="13405" />
+				</include>
+				<include name="DefaultDialogButton">
+					<param name="id" value="14" />
+					<param name="label" value="Increase rating" />
+					<param name="onclick" value="IncreaseRating" />
+				</include>
+				<include name="DefaultDialogButton">
+					<param name="id" value="15" />
+					<param name="label" value="Decrease rating" />
+					<param name="onclick" value="DecreaseRating" />
 				</include>
 			</control>
 		</control>

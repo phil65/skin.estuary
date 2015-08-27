@@ -65,6 +65,7 @@
         <param name="height">90</param>
         <param name="wrapmultiline">false</param>
         <param name="font">font12_title</param>
+        <param name="onclick"></param>
         <definition>
             <control type="button" id="$PARAM[id]">
                 <width>$PARAM[width]</width>
@@ -74,6 +75,7 @@
                 <textcolor>white</textcolor>
                 <textoffsetx>20</textoffsetx>
                 <focusedcolor>white</focusedcolor>
+                <onclick>$PARAM[onclick]</onclick>
                 <wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
                 <align>center</align>
                 <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
