@@ -221,19 +221,27 @@
         <control type="group" id="0">
             <visible>Player.ShowCodec + ![Window.IsVisible(script-XBMC_Lyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
             <animation effect="slide" start="0,-255" end="0,0" time="400" tween="cubic">VisibleChange</animation>
+            <control type="image">
+                <posx>30</posx>
+                <posy>10</posy>
+                <width>1860</width>
+                <height>130</height>
+                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
+            </control>
             <control type="label">
                 <posx>75</posx>
                 <posy>20</posy>
                 <label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, • $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, • $LOCALIZE[612]: ,bit]$INFO[musicplayer.Samplerate, • $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, • $LOCALIZE[21444]: ]</label>
                 <label>-</label>
-                <font>font10</font>
+                <font>font12</font>
             </control>
             <control type="label">
                 <posx>75</posx>
                 <posy>55</posy>
                 <label>$INFO[Visualisation.Name] [I][COLOR=button_focus]($LOCALIZE[20166])[/COLOR][/I] • fps: $INFO[System.FPS]</label>
                 <label>-</label>
-                <font>font10</font>
+                <font>font12</font>
                 <visible>Visualisation.Locked</visible>
             </control>
             <control type="label">
@@ -241,7 +249,7 @@
                 <posy>55</posy>
                 <label>$INFO[Visualisation.Name] • fps: $INFO[System.FPS]</label>
                 <label>-</label>
-                <font>font10</font>
+                <font>font12</font>
                 <visible>!Visualisation.Locked</visible>
             </control>
             <control type="label">
@@ -249,7 +257,7 @@
                 <posy>90</posy>
                 <label>$LOCALIZE[13388]: $INFO[Visualisation.Preset]</label>
                 <label>-</label>
-                <font>font10</font>
+                <font>font12</font>
             </control>
         </control>
     </controls>

@@ -65,6 +65,15 @@
                     <onclick>PlayerControl(Next)</onclick>
                     <visible>IntegerGreaterThan(Playlist.Length(music),1)</visible>
                 </control>
+                <control type="radiobutton" id="606">
+                    <include name="OSDButton">
+                        <param name="texture" value="osd/fullscreen/buttons/next.png"/>
+                    </include>
+                <onclick condition="!IsEmpty(Skin.String(LyricScript_Path))">Close</onclick>
+                <onclick condition="!IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                <onclick condition="IsEmpty(Skin.String(LyricScript_Path))">Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
+                <visible>!MusicPlayer.Content(LiveTV)</visible>
+                </control>
             </control>
             <control type="grouplist" id="202">
                 <posx>50</posx>
