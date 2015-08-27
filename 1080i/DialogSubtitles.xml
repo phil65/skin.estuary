@@ -20,6 +20,7 @@
 					<top>300</top>
 					<width>400</width>
 					<height>100</height>
+					<fadetime>200</fadetime>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="grouplist">
@@ -114,7 +115,7 @@
 							<top>5</top>
 							<width>50</width>
 							<height>50</height>
-							<texture>Subtitles/flags/$INFO[ListItem.Thumb].png</texture>
+							<texture>windows/subtitles/flags/$INFO[ListItem.Thumb].png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
@@ -134,7 +135,7 @@
 							<top>13</top>
 							<width>20</width>
 							<height>12</height>
-							<texture>Subtitles/icon_close_caption.png</texture>
+							<texture>windows/subtitles/icon_close_caption.png</texture>
 							<visible>ListItem.property(hearing_imp)</visible>
 						</control>
 						<control type="image">
@@ -142,7 +143,7 @@
 							<top>13</top>
 							<width>40</width>
 							<height>12</height>
-							<texture>Subtitles/icon_sync.png</texture>
+							<texture>windows/subtitles/icon_sync.png</texture>
 							<visible>ListItem.property(sync)</visible>
 						</control>
 						<control type="label">
@@ -187,7 +188,7 @@
 							<top>5</top>
 							<width>50</width>
 							<height>50</height>
-							<texture>Subtitles/flags/$INFO[ListItem.Thumb].png</texture>
+							<texture>windows/subtitles/flags/$INFO[ListItem.Thumb].png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
@@ -207,7 +208,7 @@
 							<top>13</top>
 							<width>20</width>
 							<height>12</height>
-							<texture>Subtitles/icon_close_caption.png</texture>
+							<texture>windows/subtitles/icon_close_caption.png</texture>
 							<visible>ListItem.property(hearing_imp)</visible>
 						</control>
 						<control type="image">
@@ -215,7 +216,7 @@
 							<top>13</top>
 							<width>40</width>
 							<height>12</height>
-							<texture>Subtitles/icon_sync.png</texture>
+							<texture>windows/subtitles/icon_sync.png</texture>
 							<visible>ListItem.property(sync)</visible>
 						</control>
 						<control type="label">
