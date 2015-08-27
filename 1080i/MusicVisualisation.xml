@@ -18,7 +18,6 @@
             <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
             <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
             <texture background="true" colordiffuse="32FFFFFF">$INFO[Player.Art(fanart)]</texture>
-            <visible>!IsEmpty(ListItem.Art(fanart)) + !Player.HasMedia</visible>
         </control>
         <control type="image">
             <texture colordiffuse="button_focus">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
@@ -61,10 +60,9 @@
                     <animation effect="fade" start="60" end="80" time="2000" pulse="true" condition="true">conditional</animation>
                 </control>
                 <control type="group">
-                    <posx>33</posx>
+                    <posx>25</posx>
                     <posy>-330</posy>
                     <control type="image">
-                        <posx>42</posx>
                         <width>470</width>
                         <height>470</height>
                         <fadetime>400</fadetime>
@@ -73,7 +71,6 @@
                         <bordersize>4</bordersize>
                     </control>
                     <control type="image">
-                        <posx>42</posx>
                         <width>470</width>
                         <height>470</height>
                         <aspectratio scalediffuse="false" align="right">scale</aspectratio>
@@ -96,17 +93,17 @@
                     <scroll>true</scroll>
                 </control>
                 <control type="label">
-                    <posy>60</posy>
+                    <posy>56</posy>
                     <width>1230</width>
                     <height>40</height>
                     <label>[COLOR grey]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
-                    <font>font30_title</font>
+                    <font>font24_title</font>
                     <shadowcolor>black</shadowcolor>
                     <textcolor>button_focus</textcolor>
                     <scroll>true</scroll>
                 </control>
                 <control type="label">
-                    <posy>110</posy>
+                    <posy>100</posy>
                     <width>1275</width>
                     <height>40</height>
                     <label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[MusicPlayer.Title][/COLOR]</label>
@@ -116,21 +113,20 @@
                     <scroll>true</scroll>
                 </control>
             </control>
-            <control type="group">
-                <posx>80</posx>
-                <posy>717</posy>
+            <control type="image">
                 <include>OpenClose_Right</include>
-                <control type="image">
-                    <animation effect="fade" start="0" end="100" time="200" delay="1000" condition="!IsEmpty(Player.Art(fanart)) + SubString(Window(Visualisation).Property(ArtistSlideshow),resources/black) + !Window.IsActive(musicosd) + !Window.IsActive(script-cu-lrclyrics-main.xml)">Conditional</animation>
-                    <posx>955</posx>
-                    <posy>-515</posy>
-                    <width>798</width>
-                    <height>474</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture background="true" border="2">$INFO[Player.Art(fanart)]</texture>
-                    <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                    <bordersize>4</bordersize>
-                </control>
+                <posx>1090</posx>
+                <posy>202</posy>
+                <width>798</width>
+                <height>474</height>
+                <aspectratio>scale</aspectratio>
+                <texture background="true" border="2">$INFO[Player.Art(fanart)]</texture>
+                <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+                <bordersize>4</bordersize>
+                <visible>!IsEmpty(Player.Art(fanart))</visible>
+                <visible>![Window.IsActive(script-cu-lrclyrics-main.xml) | Window.IsActive(VisualisationSettings) | Window.IsActive(VisualisationPresetList)]</visible>
+                <animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
+                <animation effect="fade" end="0" time="200">Hidden</animation>
             </control>
             <control type="group">
                 <posy>854</posy>
@@ -152,33 +148,13 @@
                         <visible>!IsEmpty(MusicPlayer.Offset(1).Title)</visible>
                         <visible>Player.HasAudio</visible>
                     </control>
-                    <control type="image" id="8310">
+                    <control type="image">
                         <posx>91</posx>
                         <posy>1006</posy>
                         <width>150</width>
                         <height>99</height>
-                        <texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
+                        <texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
                         <aspectratio>keep</aspectratio>
-                    </control>
-                    <control type="image" id="8309">
-                        <posx>91</posx>
-                        <posy>1006</posy>
-                        <width>150</width>
-                        <height>99</height>
-                        <texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
-                        <aspectratio>keep</aspectratio>
-                        <visible>StringCompare(Control.GetLabel(8310),empty.png)</visible>
-                    </control>
-                    <control type="label">
-                        <posx>244</posx>
-                        <posy>992</posy>
-                        <width>1350</width>
-                        <height>126</height>
-                        <align>left</align>
-                        <label>$INFO[MusicPlayer.BitRate,,[COLOR grey] kbps[/COLOR]][CR]$INFO[MusicPlayer.SampleRate,,[COLOR grey] kHz[/COLOR] ][CR]$INFO[MusicPlayer.bitspersample,,[COLOR grey] bit[/COLOR] ]</label>
-                        <font>font10</font>
-                        <shadowcolor>black</shadowcolor>
-                        <textcolor>button_focus</textcolor>
                     </control>
                 </control>
                 <control type="label">
@@ -219,8 +195,9 @@
             </control>
         </control>
         <control type="group" id="0">
-            <visible>Player.ShowCodec + ![Window.IsVisible(script-XBMC_Lyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
-            <animation effect="slide" start="0,-255" end="0,0" time="400" tween="cubic">VisibleChange</animation>
+            <visible>Player.ShowCodec</visible>
+            <visible>![Window.IsActive(script-cu-lrclyrics-main.xml) | Window.IsActive(VisualisationSettings) | Window.IsActive(VisualisationPresetList)]</visible>
+            <animation effect="fade" start="0" end="100 " time="400" tween="cubic" reversible="true">VisibleChange</animation>
             <control type="image">
                 <posx>30</posx>
                 <posy>10</posy>
@@ -260,5 +237,9 @@
                 <font>font12</font>
             </control>
         </control>
+        <include name="TopBar">
+            <param name="breadcrumbs_label" value="Visualisation" />
+            <param name="breadcrumbs_icon" value="icons/settings/music.png" />
+        </include>
     </controls>
 </window>
