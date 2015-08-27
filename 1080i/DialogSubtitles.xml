@@ -119,7 +119,7 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<left>40</left>
+							<left>70</left>
 							<top>0</top>
 							<width>90</width>
 							<height>60</height>
@@ -149,7 +149,7 @@
 						<control type="label">
 							<left>205</left>
 							<top>0</top>
-							<width>700</width>
+							<width>595</width>
 							<height>60</height>
 							<font>font12</font>
 							<aligny>center</aligny>
@@ -159,11 +159,11 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
-							<left>710</left>
-							<top>11</top>
+							<left>810</left>
+							<top>10</top>
 							<width>90</width>
-							<height>17</height>
-							<texture>LeftRating/rating$INFO[ListItem.ActualIcon].png</texture>
+							<height>40</height>
+							<texture>flags/starrating/rating$INFO[ListItem.ActualIcon].png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 					</itemlayout>
@@ -192,7 +192,7 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<left>40</left>
+							<left>70</left>
 							<top>0</top>
 							<width>90</width>
 							<height>60</height>
@@ -222,7 +222,7 @@
 						<control type="label">
 							<left>205</left>
 							<top>0</top>
-							<width>700</width>
+							<width>595</width>
 							<height>60</height>
 							<aligny>center</aligny>
 							<font>font12</font>
@@ -232,11 +232,11 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
-							<left>710</left>
-							<top>11</top>
+							<left>810</left>
+							<top>10</top>
 							<width>90</width>
-							<height>17</height>
-							<texture>LeftRating/rating$INFO[ListItem.ActualIcon].png</texture>
+							<height>40</height>
+							<texture>flags/starrating/rating$INFO[ListItem.ActualIcon].png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 					</focusedlayout>
@@ -284,7 +284,7 @@
 							<texture>lists/separator.png</texture>
 						</control>
 						<control type="label">
-							<left>40</left>
+							<left>70</left>
 							<top>0</top>
 							<width>320</width>
 							<height>80</height>
@@ -312,7 +312,7 @@
 							<visible>Control.HasFocus(150)</visible>
 						</control>
 						<control type="label">
-							<left>40</left>
+							<left>70</left>
 							<top>0</top>
 							<width>320</width>
 							<height>80</height>
