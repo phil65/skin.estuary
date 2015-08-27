@@ -100,6 +100,11 @@
         <value condition="!IsEmpty(Container(8300).ListItem.Art(fanart)) + Control.HasFocus(8300)">$INFO[Container(8300).ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(Container(8400).ListItem.Art(fanart)) + Control.HasFocus(8400)">$INFO[Container(8400).ListItem.Art(fanart)]</value>
     </variable>
+    <variable name="MediaFanartVar">
+        <value condition="!IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
+        <value condition="!IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
+        <value>$INFO[ListItem.Art(fanart)]</value>
+    </variable>
     <variable name="NowPlayingPosterVar">
         <value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
         <value condition="!IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>

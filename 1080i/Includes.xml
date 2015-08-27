@@ -1048,7 +1048,7 @@
         <align>left</align>
     </include>
     <include name="DefaultBackground">
-        <param name="fanart">$INFO[ListItem.Art(fanart)]</param>
+        <param name="fanart">$VAR[MediaFanartVar]</param>
         <definition>
             <control type="videowindow">
                 <include>FullScreenDimensions</include>
@@ -1077,8 +1077,8 @@
                 <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
                 <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
                 <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
-                <texture background="true" colordiffuse="32FFFFFF">$PARAM[fanart]</texture>
-                <visible>!IsEmpty($PARAM[fanart]) + !Player.HasMedia</visible>
+                <texture background="true" colordiffuse="32FFFFFF">$VAR[MediaFanartVar]</texture>
+                <visible>!Player.HasMedia</visible>
             </control>
         </definition>
     </include>
