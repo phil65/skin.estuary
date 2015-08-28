@@ -163,13 +163,14 @@
     </include>
     <include name="DefaultSimpleListLayout">
         <param name="align">left</param>
+        <param name="height">70</param>
         <definition>
-            <itemlayout height="70">
+            <itemlayout height="$PARAM[height]">
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
                     <width>$PARAM[width]</width>
-                    <height>70</height>
+                    <height>$PARAM[height]</height>
                     <texture border="40">lists/separator.png</texture>
                 </control>
                 <control type="label">
@@ -177,7 +178,7 @@
                     <textoffsetx>20</textoffsetx>
                     <top>0</top>
                     <width>$PARAM[width]</width>
-                    <height>70</height>
+                    <height>$PARAM[height]</height>
                     <align>$PARAM[align]</align>
                     <aligny>center</aligny>
                     <textcolor>grey</textcolor>
@@ -185,12 +186,12 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </itemlayout>
-            <focusedlayout height="70">
+            <focusedlayout height="$PARAM[height]">
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
                     <width>$PARAM[width]</width>
-                    <height>70</height>
+                    <height>$PARAM[height]</height>
                     <texture border="40">lists/separator.png</texture>
                     <visible>!Control.HasFocus($PARAM[list_id])</visible>
                 </control>
@@ -198,7 +199,7 @@
                     <left>0</left>
                     <top>0</top>
                     <width>$PARAM[width]</width>
-                    <height>70</height>
+                    <height>$PARAM[height]</height>
                     <texture>lists/focus.png</texture>
                     <visible>Control.HasFocus($PARAM[list_id])</visible>
                 </control>
@@ -207,7 +208,7 @@
                     <textoffsetx>20</textoffsetx>
                     <top>0</top>
                     <width>$PARAM[width]</width>
-                    <height>70</height>
+                    <height>$PARAM[height]</height>
                     <align>$PARAM[align]</align>
                     <aligny>center</aligny>
                     <textcolor>white</textcolor>

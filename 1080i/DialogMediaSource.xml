@@ -96,13 +96,8 @@
 		<control type="scrollbar" id="60">
 			<left>555</left>
 			<top>105</top>
-			<width>25</width>
+			<width>12</width>
 			<height>225</height>
-			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>ScrollBarNib.png</textureslidernib>
-			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 			<onleft>10</onleft>
 			<onright>9000</onright>
 			<orientation>vertical</orientation>
