@@ -53,7 +53,7 @@
                     <height>70</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.HasFocus(53)</visible>
-                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                    <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                     <texture colordiffuse="button_focus">colors/white.png</texture>
                     <animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,1) | Stringcompare(Container.Position,0)">Conditional</animation>
                     <animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,0)">Conditional</animation>
@@ -61,9 +61,9 @@
                     <animation effect="slide" start="0,0" end="344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,4)">Conditional</animation>
                 </control>
                 <control type="fixedlist" id="53">
-                    <left>100</left>
+                    <left>110</left>
                     <top>0</top>
-                    <width>1720</width>
+                    <width>1700</width>
                     <height>704</height>
                     <focusposition>2</focusposition>
                     <movement>2</movement>
@@ -78,17 +78,17 @@
                     <onright>53</onright>
                     <preloaditems>1</preloaditems>
                     <viewtype label="Shift">icon</viewtype>
-                    <itemlayout width="344">
+                    <itemlayout width="340">
                         <control type="group">
                             <control type="image">
                                 <left>7</left>
                                 <top>3</top>
-                                <width>330</width>
+                                <width>340</width>
                                 <height>424</height>
                                 <aspectratio aligny="bottom">keep</aspectratio>
-                                <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
-                                <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                                <bordersize>4</bordersize>
+                                <texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+                                <bordertexture border="20">overlays/shadow.png</bordertexture>
+                                <bordersize>20</bordersize>
                             </control>
                             <control type="label">
                                 <left>20</left>
@@ -100,16 +100,16 @@
                             </control>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="344">
+                    <focusedlayout width="340">
                         <control type="image">
                             <left>7</left>
                             <top>3</top>
-                            <width>330</width>
+                            <width>340</width>
                             <height>424</height>
                             <aspectratio aligny="bottom">keep</aspectratio>
-                            <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
-                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                            <bordersize>4</bordersize>
+                            <texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
                         </control>
                         <control type="label">
                             <left>20</left>

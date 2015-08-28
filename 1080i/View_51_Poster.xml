@@ -42,9 +42,9 @@
                 <include>Visible_Right</include>
                 <include>OpenClose_Right</include>
                 <control type="fixedlist" id="51">
-                    <left>340</left>
-                    <top>0</top>
-                    <width>1466</width>
+                    <left>320</left>
+                    <top>-20</top>
+                    <width>1500</width>
                     <height>704</height>
                     <focusposition>0</focusposition>
                     <movement>0</movement>
@@ -63,13 +63,13 @@
                         <control type="group">
                             <control type="image">
                                 <left>0</left>
-                                <top>3</top>
-                                <width>236</width>
-                                <height>354</height>
+                                <top>8</top>
+                                <width>276</width>
+                                <height>394</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-                                <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                                <bordersize>4</bordersize>
+                                <texture fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
+                                <bordertexture border="20">overlays/shadow.png</bordertexture>
+                                <bordersize>20</bordersize>
                             </control>
                         </control>
                     </itemlayout>
@@ -78,14 +78,12 @@
                             <animation effect="fade" time="300" start="100" end="0">Focus</animation>
                             <visible>Control.IsVisible(20000)</visible>
                             <control type="image">
-                                <left>0</left>
-                                <top>3</top>
+                                <left>20</left>
+                                <top>28</top>
                                 <width>236</width>
                                 <height>354</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture border="2" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-                                <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                                <bordersize>4</bordersize>
+                                <texture fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
                             </control>
                         </control>
                     </focusedlayout>
