@@ -111,7 +111,7 @@
             </include>
             <control type="label">
                 <left>500</left>
-                <top>15</top>
+                <top>20</top>
                 <width>600</width>
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
@@ -260,7 +260,7 @@
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
-                <left>485</left>
+                <left>480</left>
                 <top>60</top>
                 <width>1386</width>
                 <height>400</height>
@@ -364,7 +364,7 @@
                                 </control>
                             </control>
                             <control type="image">
-                           <left>0</left>
+                                <left>0</left>
                                 <top>240</top>
                                 <width>400</width>
                                 <height>60</height>
@@ -434,8 +434,8 @@
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
-                <left>500</left>
-                <top>80</top>
+                <left>480</left>
+                <top>55</top>
                 <width>1372</width>
                 <height>400</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -449,17 +449,15 @@
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
                 <itemlayout width="343">
-                    <control type="group">
-                        <control type="image">
-                            <left>0</left>
-                            <top>0</top>
-                            <width>300</width>
-                            <height>300</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                            <bordersize>4</bordersize>
-                        </control>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>340</width>
+                        <height>340</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                        <bordertexture border="20">overlays/shadow.png</bordertexture>
+                        <bordersize>20</bordersize>
                     </control>
                 </itemlayout>
                 <focusedlayout width="343">
@@ -473,17 +471,19 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>300</width>
-                            <height>300</height>
+                            <width>340</width>
+                            <height>340</height>
                             <aspectratio>scale</aspectratio>
-                            <texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                            <bordersize>4</bordersize>
+                            <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
                         </control>
                         <control type="group">
                             <animation effect="fade" start="0" end="100" time="200">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                             <visible>Control.HasFocus($PARAM[list_id])</visible>
+                            <posx>20</posx>
+                                <posy>20</posy>
                             <control type="image">
                                 <left>0</left>
                                 <top>240</top>
