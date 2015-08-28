@@ -121,8 +121,8 @@
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
-                <left>500</left>
-                <top>70</top>
+                <left>484</left>
+                <top>60</top>
                 <width>1385</width>
                 <height>400</height>
                 <oninfo>$PARAM[list_oninfo]</oninfo>
@@ -141,12 +141,12 @@
                         <control type="image">
                             <left>0</left>
                             <top>3</top>
-                            <width>212</width>
-                            <height>321</height>
+                            <width>240</width>
+                            <height>340</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="3" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                            <bordersize>3</bordersize>
+                            <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
                         </control>
                     </control>
                 </itemlayout>
@@ -161,14 +161,15 @@
                         <control type="image">
                             <left>0</left>
                             <top>3</top>
-                            <width>212</width>
-                            <height>321</height>
+                            <width>240</width>
+                            <height>340</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="3" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                            <bordersize>3</bordersize>
+                            <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
                         </control>
                         <control type="group">
+                            <posx>13</posx>
                             <animation effect="fade" start="0" end="100" time="200">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                             <visible>Control.HasFocus($PARAM[list_id])</visible>
@@ -184,7 +185,7 @@
                             <control type="image">
                                 <left>0</left>
                                 <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
-                                <top>0</top>
+                                <top>20</top>
                                 <width>212</width>
                                 <height>35</height>
                                 <aspectratio>stretch</aspectratio>
@@ -215,7 +216,7 @@
                             </control>
                             <control type="progress">
                                 <left>20</left>
-                                <top>15</top>
+                                <top>35</top>
                                 <width>174</width>
                                 <height>13</height>
                                 <info>ListItem.PercentPlayed</info>
@@ -223,9 +224,9 @@
                             </control>
                             <control type="image">
                                 <left>1</left>
-                                <top>1</top>
+                                <top>18</top>
                                 <width>211</width>
-                                <height>323</height>
+                                <height>306</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture border="8">buttons/thumbnail_focused.png</texture>
                             </control>
@@ -259,8 +260,8 @@
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
-                <left>500</left>
-                <top>80</top>
+                <left>485</left>
+                <top>60</top>
                 <width>1386</width>
                 <height>400</height>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -273,51 +274,55 @@
                 <ondown>$PARAM[ondown_id]</ondown>
                 <onback>SetFocus(9000)</onback>
                 <preloaditems>1</preloaditems>
-                <itemlayout width="462">
+                <itemlayout width="458">
                     <control type="group">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>400</width>
-                            <height>300</height>
+                            <width>440</width>
+                            <height>340</height>
                             <aspectratio>scale</aspectratio>
-                            <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                            <bordersize>4</bordersize>
+                            <texture fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
                         </control>
-                        <control type="image">
-                            <left>4</left>
-                            <top>240</top>
-                            <width>392</width>
-                            <height>56</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="99FFFFFF">colors/black.png</texture>
-                        </control>
-                        <control type="label">
-                            <left>20</left>
-                            <top>240</top>
-                            <width>360</width>
-                            <label>$PARAM[second_label]</label>
-                            <font>font10</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>text_shadow</shadowcolor>
-                            <scroll>false</scroll>
-                            <align>center</align>
-                        </control>
-                        <control type="label">
-                            <left>20</left>
-                            <top>264</top>
-                            <width>360</width>
-                            <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
-                            <font>font10</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>text_shadow</shadowcolor>
-                            <scroll>false</scroll>
-                            <align>center</align>
+                        <control type="group">
+                            <posx>20</posx>
+                            <posy>20</posy>
+                            <control type="image">
+                                <left>0</left>
+                                <top>240</top>
+                                <width>400</width>
+                                <height>60</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                            </control>
+                            <control type="label">
+                                <left>20</left>
+                                <top>240</top>
+                                <width>360</width>
+                                <label>$PARAM[second_label]</label>
+                                <font>font10</font>
+                                <textcolor>white</textcolor>
+                                <shadowcolor>text_shadow</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>center</align>
+                            </control>
+                            <control type="label">
+                                <left>20</left>
+                                <top>264</top>
+                                <width>360</width>
+                                <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
+                                <font>font10</font>
+                                <textcolor>white</textcolor>
+                                <shadowcolor>text_shadow</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>center</align>
+                            </control>
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="462">
+                <focusedlayout width="458">
                     <control type="group">
                         <animation type="Focus">
                             <effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="233,70" />
@@ -328,73 +333,77 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>400</width>
-                            <height>300</height>
+                            <width>440</width>
+                            <height>340</height>
                             <aspectratio>scale</aspectratio>
-                            <texture border="2" fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-                            <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                            <bordersize>4</bordersize>
+                            <texture fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
                         </control>
                         <control type="group">
-                            <visible>!Stringcompare(ListItem.PercentPlayed,0) + Control.HasFocus($PARAM[list_id])</visible>
-                            <animation effect="fade" start="0" end="100" time="200">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                            <posx>20</posx>
+                            <posy>20</posy>
+                            <control type="group">
+                                <visible>!Stringcompare(ListItem.PercentPlayed,0) + Control.HasFocus($PARAM[list_id])</visible>
+                                <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                                <control type="image">
+                                    <left>0</left>
+                                    <top>0</top>
+                                    <width>400</width>
+                                    <height>30</height>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                                </control>
+                                <control type="progress">
+                                    <left>30</left>
+                                    <top>10</top>
+                                    <width>340</width>
+                                    <height>13</height>
+                                    <info>ListItem.PercentPlayed</info>
+                                </control>
+                            </control>
+                            <control type="image">
+                           <left>0</left>
+                                <top>240</top>
+                                <width>400</width>
+                                <height>60</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                            </control>
+                            <control type="label">
+                                <left>20</left>
+                                <top>240</top>
+                                <width>360</width>
+                                <label>$PARAM[second_label]</label>
+                                <font>font10</font>
+                                <textcolor>white</textcolor>
+                                <shadowcolor>text_shadow</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>center</align>
+                            </control>
+                            <control type="label">
+                                <left>20</left>
+                                <top>264</top>
+                                <width>360</width>
+                                <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
+                                <font>font10</font>
+                                <textcolor>white</textcolor>
+                                <shadowcolor>text_shadow</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>center</align>
+                            </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <width>400</width>
-                                <height>30</height>
+                                <height>300</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                                <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
+                                <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                                <visible>Control.HasFocus($PARAM[list_id])</visible>
                             </control>
-                            <control type="progress">
-                                <left>30</left>
-                                <top>10</top>
-                                <width>340</width>
-                                <height>13</height>
-                                <info>ListItem.PercentPlayed</info>
-                            </control>
-                        </control>
-                        <control type="image">
-                            <left>4</left>
-                            <top>240</top>
-                            <width>392</width>
-                            <height>56</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="99FFFFFF">colors/black.png</texture>
-                        </control>
-                        <control type="label">
-                            <left>20</left>
-                            <top>240</top>
-                            <width>360</width>
-                            <label>$PARAM[second_label]</label>
-                            <font>font10</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>text_shadow</shadowcolor>
-                            <scroll>false</scroll>
-                            <align>center</align>
-                        </control>
-                        <control type="label">
-                            <left>20</left>
-                            <top>264</top>
-                            <width>360</width>
-                            <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
-                            <font>font10</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>text_shadow</shadowcolor>
-                            <scroll>false</scroll>
-                            <align>center</align>
-                        </control>
-                        <control type="image">
-                            <left>0</left>
-                            <top>0</top>
-                            <width>400</width>
-                            <height>300</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
-                            <animation effect="fade" start="0" end="100" time="200">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-                            <visible>Control.HasFocus($PARAM[list_id])</visible>
                         </control>
                     </control>
                 </focusedlayout>
@@ -775,33 +784,33 @@
             </include>
         </content>
     </include>
-<!--     <include name="WeatherDailyItem">
-        <item id="$PARAM[item_index]">
-            <label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</label>
-            <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</label2>
-            <property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
-            <property name="Humidity">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Humidity)]</property>
-            <property name="Pressure">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Pressure)]</property>
-            <property name="DewPoint">$INFO[Window(weather).Property(Daily.$PARAM[item_index].DewPoint)]</property>
-            <property name="FeelsLike">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FeelsLike)]</property>
-            <property name="Rain">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Rain)]</property>
-            <property name="Snow">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Snow)]</property>
-            <property name="TempMorn">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempMorn)]</property>
-            <property name="TempDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempDay)]</property>
-            <property name="TempEve">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempEve)]</property>
-            <property name="TempNight">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempNight)]</property>
-            <property name="WindSpeed">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)]</property>
-            <property name="WindGust">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindGust)]</property>
-            <property name="WindDirection">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</property>
-            <property name="Precipitation">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Precipitation)]</property>
-            <property name="LowTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)]</property>
-            <property name="HighTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</property>
-            <property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
-            <property name="Cloudiness">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness)]</property>
-            <onclick>SetProperty(FocusedItem,$PARAM[item_index])</onclick>
-            <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</icon>
-        </item>
-    </include> -->
+    <!-- <include name="WeatherDailyItem">
+         <item id="$PARAM[item_index]">
+         <label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</label>
+         <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</label2>
+         <property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
+         <property name="Humidity">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Humidity)]</property>
+         <property name="Pressure">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Pressure)]</property>
+         <property name="DewPoint">$INFO[Window(weather).Property(Daily.$PARAM[item_index].DewPoint)]</property>
+         <property name="FeelsLike">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FeelsLike)]</property>
+         <property name="Rain">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Rain)]</property>
+         <property name="Snow">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Snow)]</property>
+         <property name="TempMorn">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempMorn)]</property>
+         <property name="TempDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempDay)]</property>
+         <property name="TempEve">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempEve)]</property>
+         <property name="TempNight">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempNight)]</property>
+         <property name="WindSpeed">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)]</property>
+         <property name="WindGust">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindGust)]</property>
+         <property name="WindDirection">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</property>
+         <property name="Precipitation">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Precipitation)]</property>
+         <property name="LowTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)]</property>
+         <property name="HighTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</property>
+         <property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
+         <property name="Cloudiness">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness)]</property>
+         <onclick>SetProperty(FocusedItem,$PARAM[item_index])</onclick>
+         <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</icon>
+         </item>
+         </include> -->
     <include name="WeatherHourlyItem">
         <item>
             <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>

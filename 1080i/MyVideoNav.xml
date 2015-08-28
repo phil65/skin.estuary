@@ -34,12 +34,14 @@
                 <include>OpenClose_Left</include>
                 <include>Visible_Left</include>
                 <control type="image">
-                    <width>469</width>
-                    <height>704</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture border="2">colors/black.png</texture>
-                    <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-                    <bordersize>4</bordersize>
+                    <posy>-16</posy>
+                    <posx>-16</posx>
+                    <width>502</width>
+                    <height>736</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>colors/black.png</texture>
+                    <bordertexture border="20">overlays/shadow.png</bordertexture>
+                    <bordersize>20</bordersize>
                 </control>
                 <control type="image">
                     <left>4</left>
