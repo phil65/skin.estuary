@@ -33,8 +33,8 @@
         </definition>
     </include>
     <include name="SettingsItemCommon">
-        <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+        <texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+        <texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
         <height>100</height>
         <aligny>center</aligny>
         <textoffsetx>40</textoffsetx>
@@ -57,8 +57,8 @@
         <textoffsetx>40</textoffsetx>
         <invalidcolor>invalid</invalidcolor>
         <selectedcolor>selected</selectedcolor>
-        <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-        <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+        <texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+        <texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
     </include>
     <include name="DefaultDialogButton">
         <param name="width">300</param>
