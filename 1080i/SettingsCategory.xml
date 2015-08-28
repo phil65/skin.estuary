@@ -101,20 +101,10 @@
                     <width>1256</width>
                     <height>610</height>
                     <itemgap>0</itemgap>
-                    <pagecontrol>60</pagecontrol>
                     <onleft>3</onleft>
-                    <onright>60</onright>
+                    <onright>3</onright>
                     <onup>5</onup>
                     <ondown>5</ondown>
-                </control>
-                <control type="scrollbar" id="60">
-                    <left>1060</left>
-                    <top>60</top>
-                    <width>12</width>
-                    <height>435</height>
-                    <onleft>5</onleft>
-                    <onright>3</onright>
-                    <orientation>vertical</orientation>
                 </control>
                 <control type="textbox" id="6">
                     <description>description area</description>
