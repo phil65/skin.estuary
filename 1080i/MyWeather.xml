@@ -13,24 +13,24 @@
                     <description>Menu Panel</description>
                     <left>-20</left>
                     <top>138</top>
-                    <width>340</width>
+                    <width>380</width>
                     <height>792</height>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                     <control type="list" id="300">
                         <left>0</left>
                         <top>158</top>
-                        <width>300</width>
+                        <width>340</width>
                         <height>700</height>
-                        <onup>13</onup>
-                        <ondown>13</ondown>
+                        <onup>20</onup>
+                        <ondown>20</ondown>
                         <onleft>9000</onleft>
                         <onright>73</onright>
                         <pagecontrol>73</pagecontrol>
                         <scrolltime>200</scrolltime>
                         <include name="DefaultSimpleListLayout">
                             <param name="align" value="center" />
-                            <param name="width" value="300" />
+                            <param name="width" value="340" />
                             <param name="height" value="120" />
                             <param name="list_id" value="300" />
                         </include>
@@ -54,7 +54,7 @@
                         </content>
                     </control>
                                     <control type="button" id="20">
-                    <width>300</width>
+                    <width>340</width>
                     <left>0</left>
                     <top>792</top>
                     <height>120</height>
@@ -67,15 +67,16 @@
                     <texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
                     <onleft>5</onleft>
                     <onright>5</onright>
-                    <onup>3</onup>
-                    <ondown>3</ondown>
+                    <onup>300</onup>
+                    <ondown>300</ondown>
                     <font>font12</font>
+                    <onclick>Weather.LocationNext</onclick>
                     <label>$INFO[Window(Weather).Property(Location)]</label>
                 </control>
             </control>
         <control type="group">
             <include>OpenClose_Left</include>
-            <posx>360</posx>
+            <posx>400</posx>
                     <visible>Container(300).HasFocus(3)</visible>
             <include>Visible_Right</include>
 
@@ -284,7 +285,7 @@
             <include>OpenClose_Right</include>
             <visible>Container(300).HasFocus(1)</visible>
             <include>Visible_Right</include>
-            <left>440</left>
+            <left>480</left>
             <control type="group">
                 <description>Weather info</description>
                 <height>380</height>
