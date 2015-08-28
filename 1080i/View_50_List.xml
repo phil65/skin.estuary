@@ -415,12 +415,14 @@
     </include>
     <include name="ListThumbInfoPanel">
         <control type="image">
-            <left>110</left>
-            <top>182</top>
-            <width>469</width>
-            <height>469</height>
+            <left>90</left>
+            <top>162</top>
+            <width>509</width>
+            <height>509</height>
             <aspectratio>scale</aspectratio>
             <texture colordiffuse="border_alpha">colors/black.png</texture>
+            <bordertexture border="20">overlays/shadow.png</bordertexture>
+            <bordersize>20</bordersize>
             <visible>!IsEmpty(ListItem.Art(thumb))</visible>
             <animation effect="fade" time="300">VisibleChange</animation>
         </control>
