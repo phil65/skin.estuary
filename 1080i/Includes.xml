@@ -224,6 +224,7 @@
             <control type="image">
                 <description>Audio Channels</description>
                 <width>$PARAM[width]</width>
+                <height>40</height>
                 <aspectratio align="center" aligny="top">keep</aspectratio>
                 <texture>$PARAM[texture]</texture>
             </control>
