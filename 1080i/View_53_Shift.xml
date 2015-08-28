@@ -81,7 +81,7 @@
                     <itemlayout width="340">
                         <control type="group">
                             <control type="image">
-                                <left>7</left>
+                                <left>0</left>
                                 <top>3</top>
                                 <width>340</width>
                                 <height>424</height>
@@ -93,7 +93,7 @@
                             <control type="label">
                                 <left>20</left>
                                 <top>445</top>
-                                <width>304</width>
+                                <width>300</width>
                                 <height>424</height>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Label]</label>
@@ -102,7 +102,7 @@
                     </itemlayout>
                     <focusedlayout width="340">
                         <control type="image">
-                            <left>7</left>
+                            <left>0</left>
                             <top>3</top>
                             <width>340</width>
                             <height>424</height>
@@ -114,7 +114,7 @@
                         <control type="label">
                             <left>20</left>
                             <top>445</top>
-                            <width>304</width>
+                            <width>300</width>
                             <height>424</height>
                             <align>center</align>
                             <label>$INFO[ListItem.Label]</label>
