@@ -47,20 +47,10 @@
 			<width>1060</width>
 			<height>680</height>
 			<itemgap>0</itemgap>
-			<pagecontrol>30</pagecontrol>
 			<onup>2</onup>
 			<ondown>2</ondown>
 			<onleft>9</onleft>
 			<onright>9001</onright>
-		</control>
-		<control type="scrollbar" id="30">
-			<left>945</left>
-			<top>120</top>
-			<width>12</width>
-			<height>380</height>
-			<onleft>2</onleft>
-			<onright>2</onright>
-			<orientation>vertical</orientation>
 		</control>
 		<control type="grouplist" id="9001">
 			<left>1410</left>
