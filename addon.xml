@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary" version="0.2.0" name="Estuary" provider-name="phil65|Piers">
+<addon id="skin.estuary" version="0.3.0" name="Estuary" provider-name="phil65|Piers">
     <requires>
         <import addon="xbmc.gui" version="5.10.0"/>
     </requires>
@@ -7,8 +7,8 @@
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Second alpha version of Estuary</summary>
-        <description lang="en">Second alpha version of Estuary</description>
+        <summary lang="en">Third alpha version of Estuary</summary>
+        <description lang="en">Third alpha version of Estuary</description>
         <disclaimer lang="en">-</disclaimer>
         <platform>all</platform>
         <license>CC BY-NC-SA 3.0</license>
