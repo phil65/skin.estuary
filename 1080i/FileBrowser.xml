@@ -75,7 +75,7 @@
                         <top>80</top>
                         <width>980</width>
                         <height>740</height>
-                        <texture border="40">buttons/button-nofo.png</texture>
+                        <texture border="40">buttons/dialogbutton-nofo.png</texture>
                     </control>
                 <control type="panel" id="450">
                     <left>20</left>
@@ -88,11 +88,11 @@
                     <ondown>450</ondown>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>200</scrolltime>
-                    <itemlayout height="70" width="1000">
+                    <itemlayout height="70" width="940">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>1000</width>
+                            <width>940</width>
                             <height>71</height>
                             <texture border="40">lists/separator.png</texture>
                         </control>
@@ -115,11 +115,11 @@
                             <info>ListItem.Label</info>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="70" width="1000">
+                    <focusedlayout height="70" width="940">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>1000</width>
+                            <width>940</width>
                             <height>71</height>
                             <visible>!Control.HasFocus(450)</visible>
                             <texture border="40">lists/separator.png</texture>
@@ -127,7 +127,7 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>1000</width>
+                            <width>940</width>
                             <height>71</height>
                             <visible>Control.HasFocus(450)</visible>
                             <texture>lists/focus.png</texture>
@@ -154,8 +154,8 @@
                 </control>
                 <control type="panel" id="451">
                     <left>20</left>
-                    <top>90</top>
-                    <width>1000</width>
+                    <top>100</top>
+                    <width>940</width>
                     <height>562</height>
                     <onleft>9000</onleft>
                     <onright>60</onright>
@@ -163,11 +163,11 @@
                     <ondown>451</ondown>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>200</scrolltime>
-                    <itemlayout height="70" width="1000">
+                    <itemlayout height="70" width="940">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>1000</width>
+                            <width>940</width>
                             <height>71</height>
                             <texture border="40">lists/separator.png</texture>
                         </control>
@@ -182,7 +182,7 @@
                         <control type="label">
                             <left>75</left>
                             <top>0</top>
-                            <width>560</width>
+                            <width>800</width>
                             <height>70</height>
                             <align>left</align>
                             <aligny>center</aligny>
@@ -190,11 +190,11 @@
                             <info>ListItem.Label</info>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="70" width="1000">
+                    <focusedlayout height="70" width="940">
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>1000</width>
+                            <width>940</width>
                             <height>71</height>
                             <visible>!Control.HasFocus(451)</visible>
                             <texture border="40">lists/separator.png</texture>
@@ -202,7 +202,7 @@
                         <control type="image">
                             <left>0</left>
                             <top>0</top>
-                            <width>1000</width>
+                            <width>940</width>
                             <height>71</height>
                             <visible>Control.HasFocus(451)</visible>
                             <texture>lists/focus.png</texture>
@@ -218,7 +218,7 @@
                         <control type="label">
                             <left>75</left>
                             <top>0</top>
-                            <width>560</width>
+                            <width>800</width>
                             <height>70</height>
                             <align>left</align>
                             <aligny>center</aligny>
