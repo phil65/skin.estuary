@@ -103,7 +103,12 @@
     <variable name="MediaFanartVar">
         <value condition="!IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
         <value condition="!IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
+        <value condition="!IsEmpty(Container.Art(fanart))">$INFO[Container.Art(fanart)]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
+    </variable>
+    <variable name="WeatherFanartVar">
+        <value condition="!IsEmpty(Container(9000).ListItem.Property(fanartcode))">$INFO[Container(9000).ListItem.Property(fanartcode),resource://resource.images.weatherfanart.single/,.jpg]</value>
+        <value>$INFO[Window(weather).Property(fanartcode),resource://resource.images.weatherfanart.single/,.jpg]</value>
     </variable>
     <variable name="NowPlayingPosterVar">
         <value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
