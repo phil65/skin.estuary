@@ -972,6 +972,7 @@
             </control>
             <control type="label">
                 <label>$PARAM[breadcrumbs_label]</label>
+            <animation effect="slide" end="0,12" time="200" reversible="true" condition="IsEmpty(Container.SortMethod)">Conditional</animation>
                 <include>BreadcrumbsLabel</include>
             </control>
             <control type="label">
@@ -990,6 +991,21 @@
                 <visible>Container.Filtered</visible>
             </control>
         </control>
+        <control type="label">
+            <top>42</top>
+            <label>$INFO[Container.SortMethod,Sort by: ]</label>
+            <font>font10</font>
+            <left>85</left>
+            <textcolor>white</textcolor>
+            <shadowcolor>text_shadow</shadowcolor>
+            <height>100</height>
+            <width>auto</width>
+            <align>left</align>
+            <visible>!IsEmpty(Container.SortMethod)</visible>
+            <animation effect="fade" time="150">VisibleChange</animation>
+            <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+        </control>
         <control type="grouplist">
             <description>Right side of top bar</description>
             <left>1400</left>
@@ -998,8 +1014,8 @@
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
             <animation effect="slide" end="-70,0" time="200" reversible="true" condition="Window.IsActive(1101)">Conditional</animation>
-            <animation effect="fade" time="150">VisibleChange</animation>
             <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+            <animation effect="fade" time="150">VisibleChange</animation>
             <visible>!Window.IsVisible(extendedprogressdialog)</visible>
             <control type="button">
                 <description>Weather label</description>
@@ -1016,7 +1032,7 @@
             </control>
             <control type="image">
                 <description>Weather</description>
-                <top>10</top>
+                <top>0</top>
                 <width>70</width>
                 <height>60</height>
                 <fadetime>300</fadetime>
@@ -1034,19 +1050,34 @@
             <control type="image">
                 <description>System Time Clock</description>
                 <left>10</left>
-                <top>24</top>
-                <height>32</height>
-                <width>32</width>
+                <top>16</top>
+                <height>26</height>
+                <width>26</width>
                 <texture colordiffuse="button_focus">frame/clock.png</texture>
                 <aspectratio>keep</aspectratio>
             </control>
         </control>
+        <control type="label">
+            <top>42</top>
+            <label>$INFO[System.Date]</label>
+            <font>font10</font>
+            <left>1400</left>
+            <textcolor>white</textcolor>
+            <shadowcolor>text_shadow</shadowcolor>
+            <height>100</height>
+            <width>500</width>
+            <align>right</align>
+            <animation effect="fade" time="150">VisibleChange</animation>
+            <visible>!Window.IsVisible(extendedprogressdialog)</visible>
+            <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+
+        </control>
     </include>
     <include name="BreadcrumbsLabel">
-        <font>font16</font>
+        <font>font13_title</font>
         <textcolor>white</textcolor>
         <shadowcolor>text_shadow</shadowcolor>
-        <top>12</top>
+        <top>7</top>
         <height>100</height>
         <width>auto</width>
         <align>left</align>
@@ -1087,100 +1118,100 @@
         </definition>
     </include>
     <include name="BottomBar">
-                <param name="PageLabel">$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</param>
+        <param name="PageLabel">$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</param>
         <definition>
-        <control type="image">
-            <description>List Panel</description>
-            <left>0</left>
-            <top>1000</top>
-            <width>1920</width>
-            <height>80</height>
-            <texture border="1">frame/InfoBarBottom.png</texture>
-            <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
-        </control>
-        <control type="group">
-            <visible>Window.IsMedia + !Window.IsActive(eventlog)</visible>
-            <visible>!System.HasModalDialog</visible>
-            <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
-            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
             <control type="image">
                 <description>List Panel</description>
-                <left>17</left>
-                <top>1019</top>
-                <width>44</width>
-                <height>44</height>
-                <animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
-                <texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
-                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-                <visible>!ControlGroup(9000).HasFocus</visible>
+                <left>0</left>
+                <top>1000</top>
+                <width>1920</width>
+                <height>80</height>
+                <texture border="1">frame/InfoBarBottom.png</texture>
+                <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
             </control>
-            <control type="image">
-                <description>List Panel</description>
-                <left>17</left>
-                <top>1019</top>
-                <width>44</width>
-                <height>44</height>
-                <texture colordiffuse="button_focus">frame/menu-fo.png</texture>
-                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-                <visible>ControlGroup(9000).HasFocus</visible>
-            </control>
-            <control type="button">
-                <top>1019</top>
-                <left>74</left>
-                <width>300</width>
-                <height>44</height>
-                <align>left</align>
-                <textcolor>white</textcolor>
-                <shadowcolor>text_shadow</shadowcolor>
-                <label>Options</label>
-                <onclick>SetFocus(9000)</onclick>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <animation effect="fade" start="0" end="100" time="225">VisibleChange</animation>
-                <visible>!ControlGroup(9000).HasFocus</visible>
-            </control>
-        </control>
-        <control type="grouplist">
-            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-            <orientation>horizontal</orientation>
-            <align>right</align>
-            <top>1015</top>
-            <right>24</right>
-            <with>1200</with>
-            <control type="label">
-                <width>auto</width>
-                <height>48</height>
-                <aligny>center</aligny>
-                <align>right</align>
-                <textcolor>white</textcolor>
-                <shadowcolor>text_shadow</shadowcolor>
-                <visible>Control.HasFocus(60) | Control.HasFocus(5199)</visible>
-                <label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,, • ]</label>
-            </control>
-            <control type="label">
-                <width>auto</width>
-                <height>48</height>
-                <aligny>center</aligny>
-                <align>right</align>
-                <textcolor>white</textcolor>
-                <shadowcolor>text_shadow</shadowcolor>
+            <control type="group">
+                <visible>Window.IsMedia + !Window.IsActive(eventlog)</visible>
                 <visible>!System.HasModalDialog</visible>
-                <animation effect="fade" start="0" end="100" delay="1" time="200">VisibleChange</animation>
-                <label>$PARAM[PageLabel]</label>
+                <animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+                <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+                <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+                <control type="image">
+                    <description>List Panel</description>
+                    <left>17</left>
+                    <top>1019</top>
+                    <width>44</width>
+                    <height>44</height>
+                    <animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
+                    <texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
+                    <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                    <visible>!ControlGroup(9000).HasFocus</visible>
+                </control>
+                <control type="image">
+                    <description>List Panel</description>
+                    <left>17</left>
+                    <top>1019</top>
+                    <width>44</width>
+                    <height>44</height>
+                    <texture colordiffuse="button_focus">frame/menu-fo.png</texture>
+                    <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                    <visible>ControlGroup(9000).HasFocus</visible>
+                </control>
+                <control type="button">
+                    <top>1019</top>
+                    <left>74</left>
+                    <width>300</width>
+                    <height>44</height>
+                    <align>left</align>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <label>Options</label>
+                    <onclick>SetFocus(9000)</onclick>
+                    <texturefocus>-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <animation effect="fade" start="0" end="100" time="225">VisibleChange</animation>
+                    <visible>!ControlGroup(9000).HasFocus</visible>
+                </control>
             </control>
-            <control type="image">
-                <description>Items icon</description>
-                <width>54</width>
-                <height>44</height>
-                <aspectratio>keep</aspectratio>
-                <texture colordiffuse="button_focus">frame/item-count.png</texture>
-                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-                <visible>!IsEmpty(Container.NumItems) + !System.HasModalDialog</visible>
+            <control type="grouplist">
+                <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+                <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+                <orientation>horizontal</orientation>
+                <align>right</align>
+                <top>1015</top>
+                <right>24</right>
+                <with>1200</with>
+                <control type="label">
+                    <width>auto</width>
+                    <height>48</height>
+                    <aligny>center</aligny>
+                    <align>right</align>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <visible>Control.HasFocus(60) | Control.HasFocus(5199)</visible>
+                    <label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,, • ]</label>
+                </control>
+                <control type="label">
+                    <width>auto</width>
+                    <height>48</height>
+                    <aligny>center</aligny>
+                    <align>right</align>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <visible>!System.HasModalDialog</visible>
+                    <animation effect="fade" start="0" end="100" delay="1" time="200">VisibleChange</animation>
+                    <label>$PARAM[PageLabel]</label>
+                </control>
+                <control type="image">
+                    <description>Items icon</description>
+                    <width>54</width>
+                    <height>44</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="button_focus">frame/item-count.png</texture>
+                    <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                    <visible>!IsEmpty(Container.NumItems) + !System.HasModalDialog</visible>
+                </control>
             </control>
-        </control>
-    </definition>
+        </definition>
     </include>
     <include name="FullScreenDimensions">
         <left>0</left>
