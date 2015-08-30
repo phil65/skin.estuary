@@ -35,8 +35,7 @@
                     <include>MediaMenuItemsCommon</include>
                     <label>24034</label>
                 </control>
-                <control type="button" id="202">
-                    <description>Check for repository updates</description>
+                <control type="label" id="202">
                     <include>MediaMenuLabelCommon</include>
                     <label>$INFO[Window(AddonBrowser).Property(Updated)]</label>
                 </control>
