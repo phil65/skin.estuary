@@ -13,50 +13,62 @@
                 <left>-20</left>
                 <top>50</top>
                 <width>440</width>
-                <height>792</height>
+                <height>570</height>
                 <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="grouplist" id="9000">
                 <left>0</left>
                 <top>70</top>
                 <width>400</width>
-                <height>481</height>
+                <height>540</height>
                 <itemgap>0</itemgap>
                 <onup>9000</onup>
                 <ondown>9000</ondown>
                 <control type="button" id="95">
                     <description>Button Summary Values</description>
-                    <include>DefaultSettingButton</include>
+                <include name="DefaultSettingButton">
+                    <param name="height" value="88" />
+                </include>
                     <width>400</width>
                     <label>20037</label>
                 </control>
                 <control type="button" id="94">
                     <description>Button Storage</description>
-                    <include>DefaultSettingButton</include>
+                <include name="DefaultSettingButton">
+                    <param name="height" value="88" />
+                </include>
                     <width>400</width>
                     <label>13277</label>
                 </control>
                 <control type="button" id="96">
                     <description>Button Network</description>
-                    <include>DefaultSettingButton</include>
+                <include name="DefaultSettingButton">
+                    <param name="height" value="88" />
+                </include>
                     <width>400</width>
                     <label>13279</label>
                 </control>
                 <control type="button" id="97">
                     <description>Button Video</description>
-                    <include>DefaultSettingButton</include>
+                <include name="DefaultSettingButton">
+                    <param name="height" value="88" />
+                </include>
                     <width>400</width>
                     <label>13280</label>
                 </control>
                 <control type="button" id="98">
                     <description>Button Hardware</description>
-                    <include>DefaultSettingButton</include>
+                <include name="DefaultSettingButton">
+                    <param name="height" value="88" />
+                </include>
                     <width>400</width>
                     <label>13281</label>
                 </control>
                 <control type="button" id="99">
                     <description>Button PVR</description>
-                    <include>DefaultSettingButton</include>
+                <include name="DefaultSettingButton">
+                    <param name="height" value="88" />
+                </include>
                     <width>400</width>
                     <label>19191</label>
                 </control>
@@ -70,75 +82,80 @@
                 <left>420</left>
                 <top>70</top>
                 <width>1300</width>
-                <height>520</height>
+                <height>570</height>
                 <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="image">
-                <left>420</left>
-                <top>570</top>
-                <width>1300</width>
-                <height>292</height>
+                <left>-20</left>
+                <top>630</top>
+                <width>1740</width>
+                <height>232</height>
                 <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="grouplist">
-                <left>460</left>
-                <top>100</top>
+                <left>480</left>
+                <top>105</top>
                 <orientation>vertical</orientation>
                 <control type="label" id="2">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="3">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="4">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="5">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="6">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="7">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="8">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="9">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="10">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
                 <control type="label" id="11">
-                    <height>41</height>
+                    <height>45</height>
                     <width>1220</width>
                     <label>-</label>
                 </control>
+                </control>
+                    <control type="grouplist">
+                <left>60</left>
+                <top>630</top>
+                <orientation>vertical</orientation>
                 <control type="label">
                     <description>CPU Text</description>
-                    <left>0</left>
+                    <left>300</left>
                     <top>350</top>
-                    <width>1220</width>
+                    <width>700</width>
                     <height>80</height>
                     <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
                     <align>left</align>
@@ -150,17 +167,17 @@
                 </control>
                 <control type="progress">
                     <description>CPU BAR</description>
-                    <left>0</left>
+                    <left>300</left>
                     <top>375</top>
-                    <width>1220</width>
+                    <width>700</width>
                     <height>16</height>
                     <info>System.CPUUsage</info>
                 </control>
                 <control type="label">
                     <description>Memory Text</description>
-                    <left>0</left>
+                    <left>300</left>
                     <top>395</top>
-                    <width>auto</width>
+                    <width>700</width>
                     <height>40</height>
                     <label>$LOCALIZE[31309] $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
                     <align>left</align>
@@ -171,17 +188,30 @@
                 </control>
                 <control type="progress">
                     <description>Memory BAR</description>
-                    <left>0</left>
+                    <left>300</left>
                     <top>420</top>
-                    <width>1220</width>
+                    <width>700</width>
                     <height>16</height>
                     <info>system.memory(used)</info>
                 </control>
+                </control>
+                    <control type="label">
+                    <top>665</top>
+                    <left>900</left>
+                        <width>auto</width>
+                        <height>50</height>
+                        <aligny>bottom</aligny>
+                        <textoffsety>10</textoffsety>
+                        <label>[B]Version info:[/B]</label>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <font>font13</font>
+                    </control>
                 <control type="grouplist">
                     <description>Kodi build version</description>
                     <itemgap>10</itemgap>
-                    <top>450</top>
-                    <left>0</left>
+                    <top>715</top>
+                    <left>900</left>
                     <align>left</align>
                     <height>45</height>
                     <orientation>horizontal</orientation>
@@ -198,8 +228,6 @@
                     </control>
                     <control type="label" id="52">
                         <description>Kodi Build Version</description>
-                        <left>90</left>
-                        <top>450</top>
                         <height>50</height>
                         <aligny>bottom</aligny>
                         <textoffsety>10</textoffsety>
@@ -212,9 +240,9 @@
                 <control type="grouplist">
                     <description>Build date</description>
                     <itemgap>10</itemgap>
-                    <top>480</top>
+                    <top>765</top>
                     <align>left</align>
-                    <left>0</left>
+                    <left>900</left>
                     <orientation>horizontal</orientation>
                     <control type="label">
                         <description>kodi Compiled Text</description>
@@ -232,7 +260,6 @@
                         <shadowcolor>black</shadowcolor>
                         <font>font13</font>
                     </control>
-                </control>
             </control>
         </control>
         <include name="TopBar">
