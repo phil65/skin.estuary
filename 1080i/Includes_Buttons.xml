@@ -38,6 +38,17 @@
         <height>100</height>
         <aligny>center</aligny>
         <textoffsetx>40</textoffsetx>
+        <alttexturefocus border="40">buttons/dialogbutton-theme-fo.png</alttexturefocus>
+        <alttexturenofocus border="40">buttons/dialogbutton-nofo.png</alttexturenofocus>
+    </include>
+    <include name="ShutdownMenuItemCommon">
+        <texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+        <texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
+        <height>100</height>
+        <aligny>center</aligny>
+        <align>center</align>
+        <textoffsetx>40</textoffsetx>
+        <width>550</width>
         <alttexturefocus border="40">buttons/button-theme-fo.png</alttexturefocus>
         <alttexturenofocus border="40">buttons/button-nofo.png</alttexturenofocus>
     </include>

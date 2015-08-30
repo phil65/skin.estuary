@@ -17,7 +17,7 @@
 		<control type="grouplist" id="9000">
 			<left>706</left>
 			<top>177</top>
-			<width>510</width>
+			<width>550</width>
 			<height>720</height>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
@@ -25,221 +25,88 @@
 			<ondown>9000</ondown>
 			<itemgap>-28</itemgap>
 			<align>center</align>
-			<control type="group" id="1">
-				<width>510</width>
-				<height>30</height>
-				<control type="image">
-					<description>background top image</description>
-					<left>0</left>
-					<top>0</top>
-					<width>510</width>
-					<height>461</height>
-					<texture>lists/panel.png</texture>
-				</control>
-			</control>
 			<control type="button" id="2">
 				<description>Exit button</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>Quit()</onclick>
-				<pulseonselect>no</pulseonselect>
 				<label>13012</label>
 				<visible>System.ShowExitButton</visible>
 			</control>
 			<control type="button" id="3">
 				<description>Shutdown button</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>Powerdown()</onclick>
 				<visible>System.CanPowerDown</visible>
-				<pulseonselect>no</pulseonselect>
 				<label>13016</label>
 			</control>
 			<control type="button" id="4">
 				<description>Custom Shutdown Timer</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
-				<pulseonselect>no</pulseonselect>
 				<label>20150</label>
 				<visible>!System.HasAlarm(shutdowntimer)</visible>
 				<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
 			</control>
 			<control type="button" id="5">
 				<description>Cancel Shutdown Timer</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>CancelAlarm(shutdowntimer)</onclick>
-				<pulseonselect>no</pulseonselect>
 				<label>20151</label>
 				<visible>System.HasAlarm(shutdowntimer)</visible>
 			</control>
 			<control type="button" id="6">
 				<description>Suspend button</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>Suspend()</onclick>
 				<visible>System.CanSuspend</visible>
-				<pulseonselect>no</pulseonselect>
 				<label>13011</label>
 			</control>
 			<control type="button" id="7">
 				<description>Hibernate button</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>Hibernate()</onclick>
 				<visible>System.CanHibernate</visible>
-				<pulseonselect>no</pulseonselect>
 				<label>13010</label>
 			</control>
 			<control type="button" id="8">
 				<description>Reboot button</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>Reset()</onclick>
 				<visible>System.CanReboot</visible>
-				<pulseonselect>no</pulseonselect>
 				<label>13013</label>
 			</control>
 			<control type="button" id="9">
 				<description>Logoff button</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>dialog.close(all,true)</onclick>
 				<onclick>System.LogOff</onclick>
-				<pulseonselect>no</pulseonselect>
 				<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
 				<visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
 				<visible>System.Loggedon</visible>
 			</control>
 			<control type="togglebutton" id="10">
 				<description>Master mode button</description>
-				<width>510</width>
-				<height>100</height>
+				<include>ShutdownMenuItemCommon</include>
 				<label>20046</label>
 				<altlabel>20045</altlabel>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textwidth>390</textwidth>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<usealttexture>!System.IsMaster</usealttexture>
-				<alttexturefocus border="25,5,25,5">ShutdownButtonFocus.png</alttexturefocus>
-				<alttexturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</alttexturenofocus>
+				<alttexturefocus border="40">buttons/button-theme-fo.png</alttexturefocus>
+				<alttexturenofocus border="40">buttons/button-nofo.png</alttexturenofocus>
 				<onclick>mastermode</onclick>
-				<pulseonselect>no</pulseonselect>
 				<visible>System.HasLocks</visible>
-			</control>
-			<control type="group" id="11">
-				<width>510</width>
-				<height>70</height>
-				<visible>System.HasAlarm(shutdowntimer)</visible>
-				<control type="image">
-					<description>background top image</description>
-					<left>0</left>
-					<top>0</top>
-					<width>510</width>
-					<height>70</height>
-					<texture border="25,5,25,5">DialogContextMiddle.png</texture>
-				</control>
-				<control type="textbox">
-					<left>25</left>
-					<top>22</top>
-					<width>390</width>
-					<height>48</height>
-					<font>font12</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>center</align>
-					<label>$LOCALIZE[31329] [B]$INFO[System.Alarmpos][/B]</label>
-				</control>
 			</control>
 			<control type="button" id="12">
 				<description>Inhibit idle shutdown</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-				<onclick>InhibitIdleShutdown(true)</onclick>
-				<pulseonselect>no</pulseonselect>
+				<include>ShutdownMenuItemCommon</include>>
 				<label>13017</label>
 				<visible>System.HasShutdown +!System.IsInhibit</visible>
 			</control>
 			<control type="button" id="13">
 				<description>Allow idle shutdown</description>
-				<width>510</width>
-				<height>100</height>
-				<textcolor>white</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<align>center</align>
-				<textwidth>390</textwidth>
-				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<include>ShutdownMenuItemCommon</include>
 				<onclick>InhibitIdleShutdown(false)</onclick>
-				<pulseonselect>no</pulseonselect>
 				<label>13018</label>
 				<visible>System.HasShutdown + System.IsInhibit</visible>
-			</control>
-			<control type="image" id="14">
-				<description>background bottom image</description>
-				<left>0</left>
-				<width>510</width>
-				<height>25</height>
-				<texture border="20,0,19,20">DialogContextBottom.png</texture>
 			</control>
 		</control>
 	</controls>
