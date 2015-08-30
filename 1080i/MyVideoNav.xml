@@ -59,13 +59,6 @@
             <control type="grouplist" id="9000">
                 <top>110</top>
                 <include>MediaMenuListCommon</include>
-                <control type="button" id="6051">
-                    <description>Viewtype Toggle</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <label>Viewtype</label>
-                    <label2>[COLOR button_focus]$INFO[Container.Viewmode][/COLOR]</label2>
-                    <onclick>Container.NextViewMode</onclick>
-                </control>
                 <control type="label" id="201">
                     <description>View options</description>
                     <include>MediaMenuLabelCommon</include>

@@ -62,12 +62,12 @@
             <include>MediaMenuLabelCommon</include>
             <label>31006</label>
         </control>
-        <control type="button" id="2000">
-            <description>View As button</description>
-            <textwidth>352</textwidth>
+        <control type="button" id="6051">
+            <description>Viewtype Toggle</description>
             <include>MediaMenuItemsCommon</include>
-            <label>$INFO[Container.Viewmode,$LOCALIZE[31100] ]</label>
-            <onclick>ActivateWindow(1129)</onclick>
+            <label>Viewtype</label>
+            <label2>[COLOR button_focus]$INFO[Container.Viewmode][/COLOR]</label2>
+            <onclick>Container.NextViewMode</onclick>
         </control>
         <control type="button" id="3">
             <description>Sort by button</description>
