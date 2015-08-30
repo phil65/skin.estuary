@@ -964,6 +964,7 @@
                 <top>10</top>
                 <width>80</width>
                 <height>80</height>
+            <animation effect="fade" end="0" time="200" reversible="true" condition="Container.Scrolling">Conditional</animation>
                 <aspectratio align="center">keep</aspectratio>
                 <texture colordiffuse="button_focus">$PARAM[breadcrumbs_icon]</texture>
             </control>

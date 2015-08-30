@@ -61,7 +61,7 @@
                     <height>700</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <fadetime>300</fadetime>
-                    <texture background="true" fallback="DefaultFanart.png">$VAR[ListInfoBoxImageVar]</texture>
+                    <texture background="true" fallback="DefaultFolder.png">$VAR[ListInfoBoxImageVar]</texture>
                 </control>
                 <control type="image">
                     <right>113</right>
@@ -423,7 +423,6 @@
             <texture colordiffuse="border_alpha">colors/black.png</texture>
             <bordertexture border="20">overlays/shadow.png</bordertexture>
             <bordersize>20</bordersize>
-            <visible>!IsEmpty(ListItem.Art(thumb))</visible>
             <animation effect="fade" time="300">VisibleChange</animation>
         </control>
         <control type="image">
@@ -433,7 +432,7 @@
             <height>461</height>
             <aspectratio aligny="top">scale</aspectratio>
             <fadetime>300</fadetime>
-            <texture background="true" fallback="DefaultFanart.png">$INFO[ListItem.Art(thumb)]</texture>
+            <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
         </control>
         <control type="image">
             <left>90</left>
