@@ -24,9 +24,9 @@
 			<shadowcolor>black</shadowcolor>
 			<hinttext>Search label...</hinttext>
 			<align>left</align>
-			<onleft>9</onleft>
-			<onright>9</onright>
-			<onup>26</onup>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>24</onup>
 			<ondown>10</ondown>
 		</control>
 		<control type="textbox">
@@ -52,6 +52,8 @@
 			<top>230</top>
 			<onright>6000</onright>
 			<onleft>9000</onleft>
+			<ondown>9</ondown>
+			<onup>9</onup>
 			<orientation>vertical</orientation>
 			<control type="radiobutton" id="10">
 				<description>Include Description</description>
