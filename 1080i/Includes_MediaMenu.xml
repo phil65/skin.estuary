@@ -13,6 +13,73 @@
         <selectedcolor>selected</selectedcolor>
         <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
         <texturenofocus border="40">lists/separator.png</texturenofocus>
+        <alttexturefocus border="150,1,150,1">lists/focus.png</alttexturefocus>
+        <alttexturenofocus border="40">lists/separator.png</alttexturenofocus>
+    </include>
+    <include name="MediaMenuLabelCommon">
+        <width>400</width>
+        <textoffsetx>20</textoffsetx>
+        <textoffsety>15</textoffsety>
+        <top>0</top>
+        <height>50</height>
+        <radioposx>300</radioposx>
+        <font>font12_title</font>
+        <align>left</align>
+        <aligny>top</aligny>
+        <textcolor>button_focus</textcolor>
+    </include>
+    <include name="MediaMenuCommon">
+        <include>OpenClose_Left</include>
+        <animation type="Conditional" condition="ControlGroup(9000).HasFocus | Control.HasFocus(6130)">
+            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
+            <effect type="slide" start="-320" end="0" time="400" tween="cubic" easing="out" />
+        </animation>
+        <animation type="Conditional" condition="!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)">
+            <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+            <effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
+        </animation>
+        <control type="image">
+            <description>Menu Panel</description>
+            <left>0</left>
+            <top>80</top>
+            <width>400</width>
+            <height>920</height>
+            <texture>lists/panel.png</texture>
+        </control>
+    </include>
+    <include name="MediaMenuListCommon">
+        <left>0</left>
+        <top>100</top>
+        <width>400</width>
+        <height>1080</height>
+        <onleft>9000</onleft>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <onback>50</onback>
+        <itemgap>0</itemgap>
+        <control type="label" id="200">
+            <include>MediaMenuLabelCommon</include>
+            <label>31006</label>
+        </control>
+        <control type="button" id="2000">
+            <description>View As button</description>
+            <textwidth>352</textwidth>
+            <include>MediaMenuItemsCommon</include>
+            <label>$INFO[Container.Viewmode,$LOCALIZE[31100] ]</label>
+            <onclick>ActivateWindow(1129)</onclick>
+        </control>
+        <control type="button" id="3">
+            <description>Sort by button</description>
+            <include>MediaMenuItemsCommon</include>
+            <label>103</label>
+        </control>
+        <control type="togglebutton" id="4">
+            <description>Sort asc</description>
+            <include>MediaMenuItemsCommon</include>
+            <label>31051</label>
+            <altlabel>31050</altlabel>
+            <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+        </control>
     </include>
     <include name="PlaylistEditorButtons">
         <control type="button" id="6">
@@ -89,28 +156,6 @@
             <label>Music files</label>
             <include>MediaMenuItemsCommon</include>
             <onclick>ReplaceWindow(MusicFiles)</onclick>
-        </control>
-        <control type="button" id="20">
-            <description>Update library</description>
-            <include>MediaMenuItemsCommon</include>
-            <label>$VAR[LibraryScanLabelVar]</label>
-        </control>
-    </include>
-    <include name="VideoLibraryButtons">
-        <control type="button" id="16">
-            <label>589</label>
-            <include>MediaMenuItemsCommon</include>
-            <visible>Container.Content(musicvideos)</visible>
-        </control>
-        <control type="button" id="10">
-            <include>MediaMenuItemsCommon</include>
-            <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
-        </control>
-        <control type="button" id="11">
-            <label>20336</label>
-            <include>MediaMenuItemsCommon</include>
-            <onclick>xbmc.mastermode</onclick>
-            <visible>system.haslocks</visible>
         </control>
         <control type="button" id="20">
             <description>Update library</description>
@@ -202,8 +247,6 @@
                 <control type="togglebutton" id="4">
                     <label>Order: $LOCALIZE[584]</label>
                     <altlabel>Order: $LOCALIZE[585]</altlabel>
-                    <alttexturefocus border="150,1,150,1">lists/focus.png</alttexturefocus>
-                    <alttexturenofocus border="40">lists/separator.png</alttexturenofocus>
                     <include>MediaMenuItemsCommon</include>
                     <visible>Control.IsEnabled(4)</visible>
                 </control>
@@ -222,7 +265,6 @@
                     <include>MediaMenuItemsCommon</include>
                     <visible>!Container.Content()</visible>
                 </control>
-                <include condition="Window.IsActive(videos)">VideoLibraryButtons</include>
                 <include condition="Window.IsActive(AddonBrowser)">AddonBrowserButtons</include>
                 <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons</include>
                 <include condition="Window.IsActive(MusicFiles)">MusicFilesButtons</include>
