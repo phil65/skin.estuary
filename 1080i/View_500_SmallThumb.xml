@@ -329,13 +329,22 @@
                 <top>172</top>
                 <visible>Control.IsVisible(500)</visible>
                 <include>Visible_Right</include>
+                <control type="scrollbar" id="531">
+                    <left>1740</left>
+                    <top>10</top>
+                    <width>12</width>
+                    <height>695</height>
+                    <onleft>500</onleft>
+                    <onright>500</onright>
+                    <orientation>vertical</orientation>
+                </control>
                 <control type="panel" id="500">
                     <left>0</left>
                     <top>0</top>
                     <width>1840</width>
                     <height>720</height>
                     <onleft>9000</onleft>
-                    <onright>9000</onright>
+                    <onright>531</onright>
                     <onup>500</onup>
                     <ondown>500</ondown>
                     <viewtype label="Wall">Small Thumbnail</viewtype>
@@ -345,16 +354,6 @@
                     <include>Visible_Right</include>
                     <visible>$PARAM[visible]</visible>
                     <include>$PARAM[layouts_include]</include>
-                </control>
-                <control type="scrollbar" id="531">
-                    <left>1170</left>
-                    <top>80</top>
-                    <width>12</width>
-                    <height>550</height>
-                    <onleft>500</onleft>
-                    <onright>2</onright>
-                    <orientation>vertical</orientation>
-                    <visible>Control.IsVisible(500)</visible>
                 </control>
             </control>
         </control>
