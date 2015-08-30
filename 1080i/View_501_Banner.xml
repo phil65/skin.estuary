@@ -12,13 +12,22 @@
                 <top>167</top>
                 <visible>Control.IsVisible(501)</visible>
                 <include>Visible_Right</include>
+                <control type="scrollbar" id="532">
+                    <left>1740</left>
+                    <top>20</top>
+                    <width>12</width>
+                    <height>695</height>
+                    <onleft>501</onleft>
+                    <onright>501</onright>
+                    <orientation>vertical</orientation>
+                </control>
                 <control type="panel" id="501">
                     <left>0</left>
                     <top>0</top>
                     <width>1840</width>
                     <height>732</height>
                     <onleft>9000</onleft>
-                    <onright>9000</onright>
+                    <onright>532</onright>
                     <onup>501</onup>
                     <ondown>501</ondown>
                     <viewtype label="Banner">Banner</viewtype>
@@ -140,16 +149,6 @@
                             </include>
                         </control>
                     </focusedlayout>
-                </control>
-                <control type="scrollbar" id="532">
-                    <left>1170</left>
-                    <top>80</top>
-                    <width>12</width>
-                    <height>550</height>
-                    <onleft>501</onleft>
-                    <onright>2</onright>
-                    <orientation>vertical</orientation>
-                    <visible>Control.IsVisible(501)</visible>
                 </control>
             </control>
         </control>
