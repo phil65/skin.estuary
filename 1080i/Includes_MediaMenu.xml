@@ -114,36 +114,6 @@
             <include>MediaMenuItemsCommon</include>
         </control>
     </include>
-    <include name="AddonBrowserButtons">
-        <control type="radiobutton" id="5">
-            <label>$LOCALIZE[24063]</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="radiobutton" id="6">
-            <label>$LOCALIZE[25000]</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="radiobutton" id="7">
-            <label>$LOCALIZE[25001]</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="radiobutton" id="2052">
-            <label>$LOCALIZE[24999]</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="223">
-            <label>Update add-on repos</label>
-            <include>MediaMenuItemsCommon</include>
-            <onclick>UpdateAddonRepos</onclick>
-            <onclick>Notification(bla,bla)</onclick>
-        </control>
-        <control type="button" id="224">
-            <label>Update local add-ons</label>
-            <include>MediaMenuItemsCommon</include>
-            <onclick>UpdateLocalAddons</onclick>
-            <onclick>Notification(bla,bla)</onclick>
-        </control>
-    </include>
     <include name="MusicLibraryButtons">
         <control type="edit" id="8">
             <label>137</label>
@@ -162,25 +132,6 @@
             <description>Update library</description>
             <include>MediaMenuItemsCommon</include>
             <label>$VAR[LibraryScanLabelVar]</label>
-        </control>
-    </include>
-    <include name="MusicFilesButtons">
-        <control type="button" id="7">
-            <label>136</label>
-            <include>MediaMenuItemsCommon</include>
-            <visible>!SubString(Container.FolderPath,special://musicplaylists/,left)</visible>
-        </control>
-        <control type="button" id="9">
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="10">
-            <include>MediaMenuItemsCommon</include>
-            <visible>Control.IsEnabled(10)</visible>
-        </control>
-        <control type="button" id="102">
-            <label>$LOCALIZE[29800]</label>
-            <include>MediaMenuItemsCommon</include>
-            <onclick>ReplaceWindow(MusicLibrary)</onclick>
         </control>
     </include>
     <include name="PicturesButtons">
@@ -266,9 +217,7 @@
                     <include>MediaMenuItemsCommon</include>
                     <visible>!Container.Content()</visible>
                 </control>
-                <include condition="Window.IsActive(AddonBrowser)">AddonBrowserButtons</include>
                 <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons</include>
-                <include condition="Window.IsActive(MusicFiles)">MusicFilesButtons</include>
                 <include condition="Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist)">PlaylistButtons</include>
                 <include condition="Window.IsActive(pictures)">PicturesButtons</include>
                 <include condition="Window.IsActive(musicplaylisteditor)">PlaylistEditorButtons</include>
