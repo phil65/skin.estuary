@@ -134,7 +134,7 @@
                     <top>530</top>
                     <width>680</width>
                     <height>160</height>
-                    <label>$INFO[ListItem.Genre,[COLOR button_focus]Genre:  [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR button_focus]Director:  [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR button_focus]Writer:  [/COLOR],[CR]]$INFO[ListItem.Duration,[COLOR button_focus]Duration:  [/COLOR],[CR]]</label>
+                    <label>$VAR[ShiftLeftTextBoxVar]</label>
                     <font>font_textbox</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
@@ -153,7 +153,7 @@
                     <top>530</top>
                     <width>790</width>
                     <height>160</height>
-                    <label>$INFO[ListItem.Plot]</label>
+                    <label>$VAR[ShiftRightTextBoxVar]</label>
                     <font>font_textbox</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>

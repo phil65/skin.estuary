@@ -10,7 +10,15 @@
         <value condition="ListItem.HasTimerSchedule + !ListItem.IsRecording">windows/pvr/timer.png</value>
         <value condition="ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer">windows/pvr/timer.png</value>
     </variable>
-    <variable name="SelectLabel">
+    <variable name="ShiftLeftTextBoxVar">
+        <value condition="Window.IsActive(pictures)">$INFO[ListItem.PictureDatetime,[COLOR button_focus]Date:  [/COLOR],[CR]]$INFO[ListItem.PictureResolution,[COLOR button_focus]Resolution:  [/COLOR],[CR]]$INFO[ListItem.PictureCamMake,[COLOR button_focus]Camera manufacturer:  [/COLOR],[CR]]$INFO[ListItem.PictureCamModel,[COLOR button_focus]Camera model:  [/COLOR],[CR]]</value>
+        <value>$INFO[ListItem.Genre,[COLOR button_focus]Genre:  [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR button_focus]Director:  [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR button_focus]Writer:  [/COLOR],[CR]]$INFO[ListItem.Duration,[COLOR button_focus]Duration:  [/COLOR],[CR]]</value>
+    </variable>
+    <variable name="ShiftRightTextBoxVar">
+        <value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,[COLOR button_focus]Size:  [/COLOR],[CR]]$INFO[ListItem.PictureAperture,[COLOR button_focus]Aperture:  [/COLOR],[CR]]$INFO[ListItem.PictureFocalLen,[COLOR button_focus]Focal length:  [/COLOR],[CR]]$INFO[ListItem.PictureExpTime,[COLOR button_focus]Exposure time:  [/COLOR],[CR]]</value>
+        <value>$INFO[ListItem.Plot]</value>
+    </variable>
+        <variable name="SelectLabel">
         <value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
         <value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
     </variable>
