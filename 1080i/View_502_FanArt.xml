@@ -62,7 +62,7 @@
                             <width>1254</width>
                             <height>80</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+                            <texture colordiffuse="button_focus">colors/white.png</texture>
                         </control>
                         <control type="image">
                             <left>480</left>
@@ -126,13 +126,26 @@
                                 <aspectratio>stretch</aspectratio>
                                 <texture colordiffuse="A0000000">colors/black.png</texture>
                             </control>
+                                                <control type="image">
+                                <left>465</left>
+                                <top>621</top>
+                                <width>1252</width>
+                                <height>80</height>
+                                <aspectratio>stretch</aspectratio>
+                                <visible>!Control.HasFocus(502)</visible>
+                                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                                <texture colordiffuse="A0000000">colors/black.png</texture>
+                            </control>
                             <control type="image">
                                 <left>465</left>
                                 <top>621</top>
                                 <width>1252</width>
                                 <height>80</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+                                <visible>Control.HasFocus(502)</visible>
+                                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                                <animation effect="fade" start="0" end="80" time="0" condition="true">Conditional</animation>
+                                <texture colordiffuse="button_focus">colors/white.png</texture>
                             </control>
                             <control type="image">
                                 <left>480</left>
@@ -144,13 +157,25 @@
                             <control type="label">
                                 <left>540</left>
                                 <top>651</top>
-                                <width>1720</width>
+                                <width>1160</width>
                                 <height>20</height>
                                 <font>font24_title</font>
                                 <textcolor>white</textcolor>
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <left>540</left>
+                                <top>651</top>
+                                <width>1160</width>
+                                <height>20</height>
+                                <font>font24_title</font>
+                                <textcolor>white</textcolor>
+                                <align>right</align>
+                                <aligny>center</aligny>
+                                <visible>Container.Content(movies)</visible>
+                                <label>$INFO[ListItem.Year]</label>
                             </control>
                         </control>
                     </focusedlayout>
@@ -160,69 +185,37 @@
                     <animation type="Visible">
                         <effect type="fade" start="0" end="100" delay="800" time="300" />
                     </animation>
-                    <control type="image">
-                        <left>465</left>
-                        <top>19</top>
-                        <width>1252</width>
-                        <height>70</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="A0FFFFFF">colors/black.png</texture>
-                    </control>
+
                     <control type="grouplist">
                         <visible>!Stringcompare(Listitem.dbtype,tvshow)</visible>
                         <orientation>horizontal</orientation>
-                        <top>27</top>
-                        <itemgap>26</itemgap>
-                        <left>988</left>
-                        <include name="MediaFlag">
-                            <param name="texture" value="$INFO[ListItem.VideoCodec,flags/videocodec/,.png]" />
-                            <param name="width" value="120" />
-                        </include>
+                        <top>640</top>
+                        <itemgap>3</itemgap>
+                        <left>10</left>
                         <include name="MediaFlag">
                             <param name="texture" value="$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]" />
-                            <param name="width" value="120" />
                         </include>
                         <include name="MediaFlag">
                             <param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-                            <param name="width" value="120" />
                         </include>
                         <include name="MediaFlag">
                             <param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
-                            <param name="width" value="120" />
                         </include>
                         <include name="MediaFlag">
                             <param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
-                            <param name="width" value="120" />
                         </include>
                     </control>
                     <control type="image">
-                        <left>496</left>
-                        <top>38</top>
-                        <width>32</width>
-                        <height>32</height>
-                        <texture>lists/year.png</texture>
-                        <visible>!IsEmpty(ListItem.Year)</visible>
-                    </control>
-                    <control type="label">
-                        <left>541</left>
-                        <top>34</top>
-                        <width>100</width>
-                        <height>32</height>
-                        <align>left</align>
-                        <font>font_textbox</font>
-                        <label>$INFO[ListItem.Year]</label>
-                    </control>
-                    <control type="image">
-                        <left>626</left>
-                        <top>37</top>
+                        <left>146</left>
+                        <top>597</top>
                         <width>32</width>
                         <height>32</height>
                         <texture>lists/rating.png</texture>
                         <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                     </control>
                     <control type="label">
-                        <left>673</left>
-                        <top>34</top>
+                        <left>193</left>
+                        <top>594</top>
                         <width>230</width>
                         <height>32</height>
                         <align>left</align>
@@ -243,7 +236,7 @@
                         <width>800</width>
                         <height>20</height>
                         <font>font16</font>
-                        <textcolor>button_focus</textcolor>
+                        <textcolor>white</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$VAR[BannerLabel2Var]</label>
@@ -252,7 +245,7 @@
                         <left>30</left>
                         <top>35</top>
                         <width>400</width>
-                        <height>645</height>
+                        <height>535</height>
                         <align>justify</align>
                         <font>font_textbox</font>
                         <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
