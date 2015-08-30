@@ -220,11 +220,11 @@
     </include>
     <include name="MediaFlag">
         <param name="width">110</param>
+        <param name="height">50</param>
         <definition>
             <control type="image">
-                <description>Audio Channels</description>
                 <width>$PARAM[width]</width>
-                <height>40</height>
+                <height>$PARAM[height]</height>
                 <aspectratio align="center" aligny="top">keep</aspectratio>
                 <texture>$PARAM[texture]</texture>
             </control>
@@ -232,7 +232,6 @@
     </include>
     <include name="FileManagerPanel">
         <control type="image">
-            <description>background image</description>
             <left>-20</left>
             <top>-20</top>
             <width>$PARAM[bg_width]</width>
@@ -240,7 +239,6 @@
             <texture border="22">dialogs/dialog-bg.png</texture>
         </control>
         <control type="image">
-            <description>Dialog Header image</description>
             <left>0</left>
             <top>0</top>
             <width>$PARAM[width]</width>
@@ -248,7 +246,6 @@
             <texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
         </control>
         <control type="label" id="$PARAM[header_id]">
-            <description>header label</description>
             <textoffsetx>40</textoffsetx>
             <top>0</top>
             <width>$PARAM[width]</width>

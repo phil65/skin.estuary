@@ -124,15 +124,26 @@
                 <control type="image">
                     <left>90</left>
                     <top>495</top>
-                    <width>870</width>
+                    <width>880</width>
                     <height>232</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
+                <control type="textbox">
+                    <left>130</left>
+                    <top>530</top>
+                    <width>680</width>
+                    <height>160</height>
+                    <label>$INFO[ListItem.Genre,[COLOR button_focus]Genre:  [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR button_focus]Director:  [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR button_focus]Writer:  [/COLOR],[CR]]$INFO[ListItem.Duration,[COLOR button_focus]Duration:  [/COLOR],[CR]]</label>
+                    <font>font_textbox</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>text_shadow</shadowcolor>
+                    <align>justify</align>
+                </control>
                 <control type="image">
                     <right>90</right>
                     <top>495</top>
-                    <width>870</width>
+                    <width>880</width>
                     <height>232</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
@@ -148,22 +159,11 @@
                     <shadowcolor>text_shadow</shadowcolor>
                     <align>justify</align>
                 </control>
-                <control type="textbox">
-                    <left>130</left>
-                    <top>530</top>
-                    <width>680</width>
-                    <height>160</height>
-                    <label>$INFO[ListItem.Genre,[COLOR button_focus]Genre:  [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR button_focus]Director:  [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR button_focus]Writer:  [/COLOR],[CR]]$INFO[ListItem.Duration,[COLOR button_focus]Duration:  [/COLOR],[CR]]</label>
-                    <font>font_textbox</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <align>justify</align>
-                </control>
                     <control type="grouplist">
                         <orientation>vertical</orientation>
-                        <top>525</top>
-                        <itemgap>3</itemgap>
-                        <left>820</left>
+                        <top>523</top>
+                        <itemgap>-8</itemgap>
+                        <left>830</left>
                         <include name="MediaFlag">
                             <param name="texture" value="$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]" />
                         </include>
