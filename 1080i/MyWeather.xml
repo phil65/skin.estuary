@@ -32,10 +32,8 @@
                 <height>700</height>
                 <onup>20</onup>
                 <ondown>20</ondown>
-                <onleft>9000</onleft>
-                <onright>73</onright>
-                <pagecontrol>73</pagecontrol>
-                <scrolltime>200</scrolltime>
+                <onleft>3000</onleft>
+                <onright>3000</onright>
                 <include name="DefaultSimpleListLayout">
                     <param name="align" value="center" />
                     <param name="width" value="340" />
@@ -83,626 +81,632 @@
                 <label>$INFO[Window(Weather).Property(Location)]</label>
             </control>
         </control>
-        <control type="group">
-            <include>OpenClose_Left</include>
-            <posx>400</posx>
-            <visible>Container(300).HasFocus(3)</visible>
-            <include>Visible_Right</include>
-            <control type="image">
-                <description>Menu Panel</description>
-                <left>90</left>
-                <top>138</top>
-                <width>1370</width>
-                <height>796</height>
-                <texture border="22">dialogs/dialog-bg.png</texture>
-            </control>
-            <control type="panel" id="9000">
-                <description>button area</description>
-                <left>110</left>
-                <top>160</top>
-                <width>1330</width>
-                <height>752</height>
-                <onleft>10000</onleft>
-                <onright>10000</onright>
-                <onup>9000</onup>
-                <ondown>9000</ondown>
-                <orientation>horizontal</orientation>
-                <focusedlayout height="100" width="665">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>665</width>
-                        <height>100</height>
-                        <texture border="90,3,90,3">lists/separator.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>665</width>
-                        <height>100</height>
-                        <texture border="150,1,150,1">lists/focus.png</texture>
-                        <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
-                    </control>
-                    <control type="image">
-                        <left>20</left>
-                        <top>10</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
-                    <control type="label">
-                        <left>120</left>
-                        <top>10</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>left</align>
-                        <aligny>top</aligny>
-                        <label>$INFO[ListItem.Property(ShortDate)]$INFO[ListItem.Property(LongDay), - ]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                    <control type="label">
-                        <left>120</left>
-                        <top>45</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>left</align>
-                        <aligny>top</aligny>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.Property(Outlook)]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>button_focus</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                    <!-- <control type="label">
-                         <left>360</left>
-                         <top>15</top>
-                         <align>center</align>
-                         <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
-                         <font>font12</font>
-                         <textcolor>white</textcolor>
-                         <width>230</width>
-                         </control> -->
-                    <control type="label">
-                        <left>0</left>
-                        <textoffsetx>15</textoffsetx>
-                        <top>0</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.Label2]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>grey</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                </focusedlayout>
-                <itemlayout height="100" width="665">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>665</width>
-                        <height>100</height>
-                        <texture border="90,3,90,3">lists/separator.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>20</left>
-                        <top>10</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
-                    <control type="label">
-                        <left>120</left>
-                        <top>10</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>left</align>
-                        <aligny>top</aligny>
-                        <label>$INFO[ListItem.Property(ShortDate)]$INFO[ListItem.Property(LongDay), - ]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                    <control type="label">
-                        <left>120</left>
-                        <top>45</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>left</align>
-                        <aligny>top</aligny>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.Property(Outlook)]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>button_focus</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                    <!-- <control type="label">
-                         <left>320</left>
-                         <top>15</top>
-                         <align>right</align>
-                         <font>font12</font>
-                         <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
-                         <textcolor>white</textcolor>
-                         <width>175</width>
-                         </control> -->
-                    <control type="label">
-                        <left>400</left>
-                        <top>15</top>
-                        <align>center</align>
-                        <font>font30_title</font>
-                        <label>$INFO[ListItem.Property(TempDay)]</label>
-                        <textcolor>white</textcolor>
-                        <width>230</width>
-                    </control>
-                    <control type="label">
-                        <left>0</left>
-                        <textoffsetx>15</textoffsetx>
-                        <top>0</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.Label2]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>grey</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                </itemlayout>
-                <content>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="1" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="2" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="3" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="4" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="5" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="6" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="7" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="8" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="9" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="10" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="11" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="12" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="13" />
-                    </include>
-                    <include name="WeatherDailyItem">
-                        <param name="item_index" value="14" />
-                    </include>
-                </content>
-            </control>
-        </control>
-        <control type="group">
-            <include>OpenClose_Left</include>
-            <posx>400</posx>
-            <visible>Container(300).HasFocus(2)</visible>
-            <include>Visible_Right</include>
-            <control type="image">
-                <description>Menu Panel</description>
-                <left>90</left>
-                <top>138</top>
-                <width>1370</width>
-                <height>796</height>
-                <texture border="22">dialogs/dialog-bg.png</texture>
-            </control>
-            <control type="panel" id="8000">
-                <description>button area</description>
-                <left>110</left>
-                <top>160</top>
-                <width>1330</width>
-                <height>752</height>
-                <onleft>10000</onleft>
-                <onright>10000</onright>
-                <onup>8000</onup>
-                <ondown>8000</ondown>
-                <orientation>horizontal</orientation>
-                <focusedlayout height="100" width="665">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>665</width>
-                        <height>100</height>
-                        <texture border="90,3,90,3">lists/separator.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>665</width>
-                        <height>100</height>
-                        <texture border="150,1,150,1">lists/focus.png</texture>
-                        <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
-                    </control>
-                    <control type="image">
-                        <left>20</left>
-                        <top>10</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
-                    <control type="label">
-                        <left>120</left>
-                        <top>0</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>font24_title</font>
-                        <label>$INFO[ListItem.Label]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                    <control type="label">
-                        <left>0</left>
-                        <textoffsetx>15</textoffsetx>
-                        <top>0</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.Label2]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>grey</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                </focusedlayout>
-                <itemlayout height="100" width="665">
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>665</width>
-                        <height>100</height>
-                        <texture border="90,3,90,3">lists/separator.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>20</left>
-                        <top>10</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
-                    <control type="label">
-                        <left>120</left>
-                        <top>0</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>font24_title</font>
-                        <label>$INFO[ListItem.Label]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                    <control type="label">
-                        <left>400</left>
-                        <top>15</top>
-                        <align>center</align>
-                        <font>font30_title</font>
-                        <label>$INFO[ListItem.Property(TempDay)]</label>
-                        <textcolor>white</textcolor>
-                        <width>230</width>
-                    </control>
-                    <control type="label">
-                        <left>0</left>
-                        <textoffsetx>15</textoffsetx>
-                        <top>0</top>
-                        <height>100</height>
-                        <width>600</width>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.Label2]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>grey</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                </itemlayout>
-                <content>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="1" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="2" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="3" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="4" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="5" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="6" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="7" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="8" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="9" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="10" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="11" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="12" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="13" />
-                    </include>
-                    <include name="WeatherHourlyItem">
-                        <param name="item_index" value="14" />
-                    </include>
-                </content>
-            </control>
-        </control>
-        <control type="grouplist" id="15001">
-            <orientation>vertical</orientation>
-            <top>120</top>
-            <height>925</height>
-            <include>OpenClose_Right</include>
-            <visible>Container(300).HasFocus(1)</visible>
-            <include>Visible_Right</include>
-            <left>480</left>
+        <control type="group" id="3000">
             <control type="group">
-                <description>Weather info</description>
-                <height>380</height>
+                <include>OpenClose_Left</include>
+                <posx>400</posx>
+                <visible>Container(300).HasFocus(3)</visible>
+                <include>Visible_Right</include>
+                <control type="image">
+                    <description>Menu Panel</description>
+                    <left>90</left>
+                    <top>138</top>
+                    <width>1370</width>
+                    <height>796</height>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
+                </control>
+                <control type="panel" id="9000">
+                    <description>button area</description>
+                    <left>110</left>
+                    <top>160</top>
+                    <width>1330</width>
+                    <height>752</height>
+                    <onleft>300</onleft>
+                    <onright>300</onright>
+                    <onup>300</onup>
+                    <ondown>300</ondown>
+                    <orientation>horizontal</orientation>
+                    <focusedlayout height="100" width="665">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>665</width>
+                            <height>100</height>
+                            <texture border="90,3,90,3">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>665</width>
+                            <height>100</height>
+                            <texture border="150,1,150,1">lists/focus.png</texture>
+                            <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>10</top>
+                            <width>80</width>
+                            <height>80</height>
+                            <texture>$INFO[ListItem.Thumb]</texture>
+                        </control>
+                        <control type="label">
+                            <left>120</left>
+                            <top>10</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <label>$INFO[ListItem.Property(ShortDate)]$INFO[ListItem.Property(LongDay), - ]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <left>120</left>
+                            <top>45</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Property(Outlook)]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>button_focus</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <!-- <control type="label">
+                             <left>360</left>
+                             <top>15</top>
+                             <align>center</align>
+                             <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
+                             <font>font12</font>
+                             <textcolor>white</textcolor>
+                             <width>230</width>
+                             </control> -->
+                        <control type="label">
+                            <left>0</left>
+                            <textoffsetx>15</textoffsetx>
+                            <top>0</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                    </focusedlayout>
+                    <itemlayout height="100" width="665">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>665</width>
+                            <height>100</height>
+                            <texture border="90,3,90,3">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>10</top>
+                            <width>80</width>
+                            <height>80</height>
+                            <texture>$INFO[ListItem.Thumb]</texture>
+                        </control>
+                        <control type="label">
+                            <left>120</left>
+                            <top>10</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <label>$INFO[ListItem.Property(ShortDate)]$INFO[ListItem.Property(LongDay), - ]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <left>120</left>
+                            <top>45</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Property(Outlook)]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>button_focus</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <!-- <control type="label">
+                             <left>320</left>
+                             <top>15</top>
+                             <align>right</align>
+                             <font>font12</font>
+                             <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
+                             <textcolor>white</textcolor>
+                             <width>175</width>
+                             </control> -->
+                        <control type="label">
+                            <left>400</left>
+                            <top>15</top>
+                            <align>center</align>
+                            <font>font30_title</font>
+                            <label>$INFO[ListItem.Property(TempDay)]</label>
+                            <textcolor>white</textcolor>
+                            <width>230</width>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <textoffsetx>15</textoffsetx>
+                            <top>0</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                    </itemlayout>
+                    <content>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="1" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="2" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="3" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="4" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="5" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="6" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="7" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="8" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="9" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="10" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="11" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="12" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="13" />
+                        </include>
+                        <include name="WeatherDailyItem">
+                            <param name="item_index" value="14" />
+                        </include>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <include>OpenClose_Left</include>
+                <posx>400</posx>
+                <visible>Container(300).HasFocus(2)</visible>
+                <include>Visible_Right</include>
+                <control type="image">
+                    <description>Menu Panel</description>
+                    <left>90</left>
+                    <top>138</top>
+                    <width>1370</width>
+                    <height>796</height>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
+                </control>
+                <control type="panel" id="8000">
+                    <description>button area</description>
+                    <left>110</left>
+                    <top>160</top>
+                    <width>1330</width>
+                    <height>752</height>
+                    <onleft>300</onleft>
+                    <onright>300</onright>
+                    <onup>300</onup>
+                    <ondown>300</ondown>
+                    <orientation>horizontal</orientation>
+                    <focusedlayout height="100" width="665">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>665</width>
+                            <height>100</height>
+                            <texture border="90,3,90,3">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>665</width>
+                            <height>100</height>
+                            <texture border="150,1,150,1">lists/focus.png</texture>
+                            <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>10</top>
+                            <width>80</width>
+                            <height>80</height>
+                            <texture>$INFO[ListItem.Thumb]</texture>
+                        </control>
+                        <control type="label">
+                            <left>120</left>
+                            <top>0</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font24_title</font>
+                            <label>$INFO[ListItem.Label]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <textoffsetx>15</textoffsetx>
+                            <top>0</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                    </focusedlayout>
+                    <itemlayout height="100" width="665">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>665</width>
+                            <height>100</height>
+                            <texture border="90,3,90,3">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>10</top>
+                            <width>80</width>
+                            <height>80</height>
+                            <texture>$INFO[ListItem.Thumb]</texture>
+                        </control>
+                        <control type="label">
+                            <left>120</left>
+                            <top>0</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font24_title</font>
+                            <label>$INFO[ListItem.Label]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <left>400</left>
+                            <top>15</top>
+                            <align>center</align>
+                            <font>font30_title</font>
+                            <label>$INFO[ListItem.Property(TempDay)]</label>
+                            <textcolor>white</textcolor>
+                            <width>230</width>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <textoffsetx>15</textoffsetx>
+                            <top>0</top>
+                            <height>100</height>
+                            <width>600</width>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                    </itemlayout>
+                    <content>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="1" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="2" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="3" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="4" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="5" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="6" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="7" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="8" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="9" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="10" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="11" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="12" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="13" />
+                        </include>
+                        <include name="WeatherHourlyItem">
+                            <param name="item_index" value="14" />
+                        </include>
+                    </content>
+                </control>
+            </control>
+            <control type="grouplist" id="15001">
+                <orientation>vertical</orientation>
+                <top>120</top>
+                <height>925</height>
+                <include>OpenClose_Right</include>
+                <visible>Container(300).HasFocus(1)</visible>
+                <include>Visible_Right</include>
+                <left>480</left>
+                <control type="group">
+                    <description>Weather info</description>
+                    <height>380</height>
+                    <control type="image">
+                        <top>20</top>
+                        <width>1370</width>
+                        <height>200</height>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>840</left>
+                        <top>65</top>
+                        <width>450</width>
+                        <height>90</height>
+                        <aspectratio align="right" aligny="center">keep</aspectratio>
+                        <texture>$INFO[Window(weather).Property(WeatherProviderLogo)]</texture>
+                    </control>
+                    <control type="label">
+                        <left>60</left>
+                        <top>75</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>800</width>
+                        <align>left</align>
+                        <font>font24_title</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[System.Time] - $INFO[System.Date]</label>
+                    </control>
+                    <control type="label">
+                        <left>60</left>
+                        <top>120</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>800</width>
+                        <align>left</align>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Window(Weather).Property(Location)]</label>
+                    </control>
+                    <control type="image">
+                        <top>220</top>
+                        <width>1370</width>
+                        <height>592</height>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
+                    </control>
+                    <control type="image">
+                        <top>232</top>
+                        <left>50</left>
+                        <width>330</width>
+                        <height>330</height>
+                        <texture>$INFO[Weather.conditions]</texture>
+                    </control>
+                    <control type="label">
+                        <left>800</left>
+                        <top>380</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>500</width>
+                        <align>right</align>
+                        <font>WeatherTemp</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Weather.Temperature]</label>
+                    </control>
+                    <control type="grouplist">
+                        <orientation>vertical</orientation>
+                        <posy>550</posy>
+                        <include name="LeftRightAlignedInfoLine">
+                            <param name="label" value="402" />
+                            <param name="value" value="$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]" />
+                        </include>
+                        <include name="LeftRightAlignedInfoLine">
+                            <param name="label" value="405" />
+                            <param name="value" value="$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]" />
+                        </include>
+                        <include name="LeftRightAlignedInfoLine">
+                            <param name="label" value="406" />
+                            <param name="value" value="$INFO[Window.Property(Current.Humidity)]" />
+                        </include>
+                        <include name="LeftRightAlignedInfoLine">
+                            <param name="label" value="403" />
+                            <param name="value" value="$INFO[Window.Property(Current.UVIndex)]" />
+                        </include>
+                        <include name="LeftRightAlignedInfoLine">
+                            <param name="label" value="33021" />
+                            <param name="value" value="$INFO[Window.Property(Current.Precipitation)]" />
+                        </include>
+                        <include name="LeftRightAlignedInfoLine">
+                            <param name="label" value="404" />
+                            <param name="value" value="$INFO[Window.Property(Current.Wind)]" />
+                        </include>
+                    </control>
+                    <control type="label">
+                        <left>660</left>
+                        <top>450</top>
+                        <align>right</align>
+                        <label>Range: [COLOR blue]$INFO[Window(weather).Property(Current.LowTemperature)][/COLOR] - [COLOR red]$INFO[Window(weather).Property(Current.HighTemperature)][/COLOR]</label>
+                        <font>font16</font>
+                        <textcolor>white</textcolor>
+                        <width>630</width>
+                    </control>
+                    <control type="label">
+                        <left>660</left>
+                        <top>540</top>
+                        <aligny>center</aligny>
+                        <height>24</height>
+                        <width>630</width>
+                        <align>right</align>
+                        <font>font16</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[Weather.Conditions]</label>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <include>OpenClose_Right</include>
+                <visible>Container(300).HasFocus(4)</visible>
+                <include>Visible_Right</include>
+                <left>520</left>
+                <top>120</top>
                 <control type="image">
                     <top>20</top>
                     <width>1370</width>
-                    <height>200</height>
+                    <height>792</height>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
-                <control type="image">
-                    <left>840</left>
-                    <top>65</top>
-                    <width>450</width>
-                    <height>90</height>
-                    <aspectratio align="right" aligny="center">keep</aspectratio>
-                    <texture>$INFO[Window(weather).Property(WeatherProviderLogo)]</texture>
-                </control>
-                <control type="label">
-                    <left>60</left>
-                    <top>75</top>
-                    <aligny>center</aligny>
-                    <height>24</height>
-                    <width>800</width>
-                    <align>left</align>
-                    <font>font24_title</font>
-                    <textcolor>white</textcolor>
-                    <label>$INFO[System.Time] - $INFO[System.Date]</label>
-                </control>
-                <control type="label">
-                    <left>60</left>
-                    <top>120</top>
-                    <aligny>center</aligny>
-                    <height>24</height>
-                    <width>800</width>
-                    <align>left</align>
-                    <font>font13</font>
-                    <textcolor>white</textcolor>
-                    <label>$INFO[Window(Weather).Property(Location)]</label>
-                </control>
-                <control type="image">
-                    <top>220</top>
-                    <width>1370</width>
-                    <height>592</height>
-                    <texture border="22">dialogs/dialog-bg.png</texture>
-                </control>
-                <control type="image">
-                    <top>232</top>
-                    <left>50</left>
-                    <width>330</width>
-                    <height>330</height>
-                    <texture>$INFO[Weather.conditions]</texture>
-                </control>
-                <control type="label">
-                    <left>800</left>
-                    <top>380</top>
-                    <aligny>center</aligny>
-                    <height>24</height>
-                    <width>500</width>
-                    <align>right</align>
-                    <font>WeatherTemp</font>
-                    <textcolor>white</textcolor>
-                    <label>$INFO[Weather.Temperature]</label>
-                </control>
-                <control type="grouplist">
+                <control type="list" id="16001">
                     <orientation>vertical</orientation>
-                    <posy>550</posy>
-                        <include name="LeftRightAlignedInfoLine">
-                        <param name="label" value="402" />
-                        <param name="value" value="$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]" />
-                    </include>
-                        <include name="LeftRightAlignedInfoLine">
-                        <param name="label" value="405" />
-                        <param name="value" value="$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]" />
-                    </include>
-                        <include name="LeftRightAlignedInfoLine">
-                        <param name="label" value="406" />
-                        <param name="value" value="$INFO[Window.Property(Current.Humidity)]" />
-                    </include>
-                        <include name="LeftRightAlignedInfoLine">
-                        <param name="label" value="403" />
-                        <param name="value" value="$INFO[Window.Property(Current.UVIndex)]" />
-                    </include>
-                        <include name="LeftRightAlignedInfoLine">
-                        <param name="label" value="33021" />
-                        <param name="value" value="$INFO[Window.Property(Current.Precipitation)]" />
-                    </include>
-                        <include name="LeftRightAlignedInfoLine">
-                        <param name="label" value="404" />
-                        <param name="value" value="$INFO[Window.Property(Current.Wind)]" />
-                    </include>
+                    <height>925</height>
+                    <top>60</top>
+                    <left>45</left>
+                    <onleft>300</onleft>
+                    <onright>300</onright>
+                    <onup>300</onup>
+                    <ondown>300</ondown>
+                    <itemlayout height="40" width="1280">
+                        <control type="image">
+                            <description>legend image</description>
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1280</width>
+                            <height>55</height>
+                            <texture border="22,0,22,0">buttons/button-nofo.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <textoffsetx>15</textoffsetx>
+                            <top>0</top>
+                            <height>50</height>
+                            <width>1280</width>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font12</font>
+                            <label>$INFO[ListItem.Label]</label>
+                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="550" width="1280">
+                        <control type="image">
+                            <left>20</left>
+                            <top>0</top>
+                            <width>1240</width>
+                            <height>550</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>0</top>
+                            <width>1240</width>
+                            <height>550</height>
+                            <texture>$INFO[ListItem.Property(Layer)]</texture>
+                            <aspectratio>scale</aspectratio>
+                            <colordiffuse>70FFFFFF</colordiffuse>
+                        </control>
+                        <control type="image">
+                            <left>900</left>
+                            <top>480</top>
+                            <width>350</width>
+                            <height>55</height>
+                            <texture>$INFO[ListItem.Label2]</texture>
+                        </control>
+                        <control type="image">
+                            <left>30</left>
+                            <top>480</top>
+                            <width>350</width>
+                            <height>55</height>
+                            <texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+                        </control>
+                        <control type="label">
+                            <description>legend image</description>
+                            <left>30</left>
+                            <top>480</top>
+                            <width>350</width>
+                            <height>55</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font13_title</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>0</top>
+                            <width>1240</width>
+                            <height>550</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="8">buttons/thumbnail_focused.png</texture>
+                            <visible>Control.HasFocus(16001)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content>
+                        <include name="WeatherMapItem">
+                            <param name="item_id" value="1" />
+                        </include>
+                        <include name="WeatherMapItem">
+                            <param name="item_id" value="2" />
+                        </include>
+                        <include name="WeatherMapItem">
+                            <param name="item_id" value="3" />
+                        </include>
+                        <include name="WeatherMapItem">
+                            <param name="item_id" value="4" />
+                        </include>
+                        <include name="WeatherMapItem">
+                            <param name="item_id" value="5" />
+                        </include>
+                    </content>
                 </control>
-                <control type="label">
-                    <left>660</left>
-                    <top>450</top>
-                    <align>right</align>
-                    <label>Range: [COLOR blue]$INFO[Window(weather).Property(Current.LowTemperature)][/COLOR] - [COLOR red]$INFO[Window(weather).Property(Current.HighTemperature)][/COLOR]</label>
-                    <font>font16</font>
-                    <textcolor>white</textcolor>
-                    <width>630</width>
-                </control>
-                <control type="label">
-                    <left>660</left>
-                    <top>540</top>
-                    <aligny>center</aligny>
-                    <height>24</height>
-                    <width>630</width>
-                    <align>right</align>
-                    <font>font16</font>
-                    <textcolor>white</textcolor>
-                    <label>$INFO[Weather.Conditions]</label>
-                </control>
-            </control>
-        </control>
-        <control type="group">
-            <include>OpenClose_Right</include>
-            <visible>Container(300).HasFocus(4)</visible>
-            <include>Visible_Right</include>
-            <left>520</left>
-            <top>120</top>
-            <control type="image">
-                <top>20</top>
-                <width>1370</width>
-                <height>792</height>
-                <texture border="22">dialogs/dialog-bg.png</texture>
-            </control>
-            <control type="list" id="16001">
-                <orientation>vertical</orientation>
-                <height>925</height>
-                <top>60</top>
-                <left>45</left>
-                <itemlayout height="40" width="1280">
-                    <control type="image">
-                        <description>legend image</description>
-                        <left>0</left>
-                        <top>0</top>
-                        <width>1280</width>
-                        <height>55</height>
-                        <texture border="22,0,22,0">buttons/button-nofo.png</texture>
-                    </control>
-                    <control type="label">
-                        <left>0</left>
-                        <textoffsetx>15</textoffsetx>
-                        <top>0</top>
-                        <height>50</height>
-                        <width>1280</width>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.Label]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="550" width="1280">
-                    <control type="image">
-                        <left>20</left>
-                        <top>0</top>
-                        <width>1240</width>
-                        <height>550</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
-                    <control type="image">
-                        <left>20</left>
-                        <top>0</top>
-                        <width>1240</width>
-                        <height>550</height>
-                        <texture>$INFO[ListItem.Property(Layer)]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <colordiffuse>70FFFFFF</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <left>900</left>
-                        <top>480</top>
-                        <width>350</width>
-                        <height>55</height>
-                        <texture>$INFO[ListItem.Label2]</texture>
-                    </control>
-                    <control type="image">
-                        <left>30</left>
-                        <top>480</top>
-                        <width>350</width>
-                        <height>55</height>
-                        <texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-                    </control>
-                    <control type="label">
-                        <description>legend image</description>
-                        <left>30</left>
-                        <top>480</top>
-                        <width>350</width>
-                        <height>55</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>font13_title</font>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="image">
-                        <left>20</left>
-                        <top>0</top>
-                        <width>1240</width>
-                        <height>550</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="8">buttons/thumbnail_focused.png</texture>
-                        <visible>Control.HasFocus(16001)</visible>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <include name="WeatherMapItem">
-                        <param name="item_id" value="1" />
-                    </include>
-                    <include name="WeatherMapItem">
-                        <param name="item_id" value="2" />
-                    </include>
-                    <include name="WeatherMapItem">
-                        <param name="item_id" value="3" />
-                    </include>
-                    <include name="WeatherMapItem">
-                        <param name="item_id" value="4" />
-                    </include>
-                    <include name="WeatherMapItem">
-                        <param name="item_id" value="5" />
-                    </include>
-                </content>
             </control>
         </control>
         <include name="TopBar">
