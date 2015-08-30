@@ -22,13 +22,8 @@
                 <top>110</top>
                 <include>MediaMenuListCommon</include>
                 <control type="label" id="201">
-                    <width>400</width>
-                    <height>52</height>
-                    <textoffsetx>15</textoffsetx>
-                    <font>font13_title</font>
+                    <include>MediaMenuLabelCommon</include>
                     <label>31026</label>
-                    <textcolor>button_focus</textcolor>
-                    <aligny>center</aligny>
                 </control>
                 <control type="button" id="5">
                     <description>Addon-updates</description>
@@ -42,8 +37,7 @@
                 </control>
                 <control type="button" id="202">
                     <description>Check for repository updates</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <enable>no</enable>
+                    <include>MediaMenuLabelCommon</include>
                     <label>$INFO[Window(AddonBrowser).Property(Updated)]</label>
                 </control>
                 <control type="radiobutton" id="6">
