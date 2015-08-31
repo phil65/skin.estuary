@@ -211,8 +211,6 @@
                     <height>$PARAM[height]</height>
                     <align>$PARAM[align]</align>
                     <aligny>center</aligny>
-                    <textcolor>white</textcolor>
-                    <selectedcolor>selected</selectedcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </focusedlayout>
@@ -293,8 +291,6 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.Label]</label>
-                    <selectedcolor>selected</selectedcolor>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                 </control>
                 <control type="label">
@@ -329,8 +325,6 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.Label]</label>
-                    <selectedcolor>selected</selectedcolor>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                 </control>
                 <control type="label">
@@ -640,8 +634,6 @@
                         <aligny>center</aligny>
                         <font>font14</font>
                         <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                     </control>
                     <control type="label">
@@ -698,8 +690,6 @@
                         <aligny>center</aligny>
                         <font>font14</font>
                         <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
-                        <selectedcolor>selected</selectedcolor>
-                        <textcolor>white</textcolor>
                         <shadowcolor>text_shadow</shadowcolor>
                         <scroll>false</scroll>
                     </control>

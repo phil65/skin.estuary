@@ -137,8 +137,6 @@
                             <align>left</align>
                             <aligny>top</aligny>
                             <label>$INFO[ListItem.Property(ShortDate)]$INFO[ListItem.Property(LongDay), - ]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
@@ -201,8 +199,6 @@
                             <align>left</align>
                             <aligny>top</aligny>
                             <label>$INFO[ListItem.Property(ShortDate)]$INFO[ListItem.Property(LongDay), - ]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
@@ -353,8 +349,6 @@
                             <aligny>center</aligny>
                             <font>font24_title</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
@@ -396,8 +390,6 @@
                             <aligny>center</aligny>
                             <font>font24_title</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
@@ -631,8 +623,6 @@
                             <aligny>center</aligny>
                             <font>font12</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                     </itemlayout>

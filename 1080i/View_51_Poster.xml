@@ -126,8 +126,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                     </focusedlayout>
@@ -139,8 +137,6 @@
                             <width>1152</width>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                             <scroll>false</scroll>
                         </control>

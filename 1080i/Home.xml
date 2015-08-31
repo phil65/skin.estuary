@@ -952,8 +952,6 @@
                             <aligny>center</aligny>
                             <font>font14</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                             <visible>!IsEmpty(ListItem.Label2)</visible>
                             <animation effect="slide" start="0,0" end="0,-13" time="150" delay="400">Focus</animation>

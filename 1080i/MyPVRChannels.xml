@@ -79,8 +79,6 @@
                             <align>left</align>
                             <aligny>top</aligny>
                             <label>$INFO[ListItem.Label][COLOR button_focus]$INFO[ListItem.Title, - ][/COLOR]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
@@ -131,8 +129,6 @@
                             <align>left</align>
                             <aligny>top</aligny>
                             <label>$INFO[ListItem.Label][COLOR button_focus]$INFO[ListItem.Title, - ][/COLOR]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
                         <control type="label">
