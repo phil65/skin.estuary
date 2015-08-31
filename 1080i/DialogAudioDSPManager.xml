@@ -197,18 +197,8 @@
 							<top>8</top>
 							<width>30</width>
 							<height>30</height>
-							<texture>$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
 							<aspectratio aligny="center" align="left">keep</aspectratio>
-							<visible>!StringCompare(ListItem.Property(Icon),"")</visible>
-						</control>
-						<control type="image">
-							<left>15</left>
-							<top>8</top>
-							<width>30</width>
-							<height>30</height>
-							<texture>DefaultAudioDSP.png</texture>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
-							<visible>StringCompare(ListItem.Property(Icon),"")</visible>
 						</control>
 						<control type="label">
 							<description>active addon name and mode name</description>
@@ -236,18 +226,8 @@
 							<top>8</top>
 							<width>50</width>
 							<height>50</height>
-							<texture>$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
 							<aspectratio aligny="center" align="left">keep</aspectratio>
-							<visible>!StringCompare(ListItem.Property(Icon),"")</visible>
-						</control>
-						<control type="image">
-							<left>5</left>
-							<top>8</top>
-							<height>50</height>
-							<width>50</width>
-							<texture>DefaultAudioDSP.png</texture>
-							<aspectratio>keep</aspectratio>
-							<visible>StringCompare(ListItem.Property(Icon),"")</visible>
 						</control>
 						<control type="label">
 							<description>addon name and mode</description>
@@ -336,18 +316,8 @@
 							<top>8</top>
 							<width>30</width>
 							<height>30</height>
-							<texture>$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
 							<aspectratio aligny="center" align="left">keep</aspectratio>
-							<visible>!StringCompare(ListItem.Property(Icon),"")</visible>
-						</control>
-						<control type="image">
-							<left>15</left>
-							<top>8</top>
-							<width>30</width>
-							<height>30</height>
-							<texture>DefaultAudioDSP.png</texture>
-							<aspectratio>keep</aspectratio>
-							<visible>StringCompare(ListItem.Property(Icon),"")</visible>
 						</control>
 						<control type="label">
 							<description>active addon name and mode name</description>
@@ -375,18 +345,8 @@
 							<top>8</top>
 							<width>50</width>
 							<height>50</height>
-							<texture>$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
 							<aspectratio aligny="center" align="left">keep</aspectratio>
-							<visible>!StringCompare(ListItem.Property(Icon),"")</visible>
-						</control>
-						<control type="image">
-							<left>5</left>
-							<top>8</top>
-							<height>50</height>
-							<width>50</width>
-							<texture>DefaultAudioDSP.png</texture>
-							<aspectratio>keep</aspectratio>
-							<visible>StringCompare(ListItem.Property(Icon),"")</visible>
 						</control>
 						<control type="label">
 							<description>addon name and mode name</description>
