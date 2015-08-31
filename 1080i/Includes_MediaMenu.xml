@@ -80,38 +80,6 @@
             <usealttexture>Container.SortDirection(Ascending)</usealttexture>
         </control>
     </include>
-    <include name="PlaylistEditorButtons">
-        <control type="button" id="6">
-            <label>Open playlist</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="7">
-            <label>Save playlist</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="8">
-            <label>Close playlist</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-    </include>
-    <include name="PlaylistButtons">
-        <control type="button" id="20">
-            <label>$LOCALIZE[191]$INFO[Playlist.Random, : ]</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="26">
-            <label>-</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="21">
-            <label>190</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="22">
-            <label>192</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-    </include>
     <include name="MusicLibraryButtons">
         <control type="edit" id="8">
             <label>137</label>
@@ -215,9 +183,7 @@
                     <visible>!Container.Content()</visible>
                 </control>
                 <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons</include>
-                <include condition="Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist)">PlaylistButtons</include>
                 <include condition="Window.IsActive(pictures)">PicturesButtons</include>
-                <include condition="Window.IsActive(musicplaylisteditor)">PlaylistEditorButtons</include>
                 <control type="button" id="612">
                     <label>13350</label>
                     <include>MediaMenuItemsCommon</include>
