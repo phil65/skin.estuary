@@ -40,7 +40,6 @@
 						<width>1040</width>
 						<height>60</height>
 						<label>$INFO[ListItem.Label]</label>
-						<align>left</align>
 						<aligny>center</aligny>
 					</control>
 					<control type="label">
@@ -50,7 +49,6 @@
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
-						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
 						<textcolor>button_focus</textcolor>
@@ -62,7 +60,6 @@
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
-						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
 						<textcolor>button_focus</textcolor>
@@ -92,7 +89,6 @@
 						<width>1040</width>
 						<height>60</height>
 						<label>$INFO[ListItem.Label]</label>
-						<align>left</align>
 						<aligny>center</aligny>
 					</control>
 					<control type="label">
@@ -102,7 +98,6 @@
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35504]:  [COLOR=grey2]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=grey2]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
-						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
 						<textcolor>button_focus</textcolor>
@@ -114,7 +109,6 @@
 						<width>1040</width>
 						<height>60</height>
 						<label>$LOCALIZE[35501]:  [COLOR=grey2]$INFO[ListItem.Property(Class)][/COLOR]     $LOCALIZE[19114]:  [COLOR=grey2]$INFO[ListItem.Property(Version)][/COLOR]</label>
-						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
 						<textcolor>button_focus</textcolor>

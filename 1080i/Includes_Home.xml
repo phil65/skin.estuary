@@ -116,7 +116,7 @@
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
                 <shadowcolor>text_shadow</shadowcolor>
-                <scroll>false</scroll>
+
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
@@ -198,7 +198,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-                                <scroll>false</scroll>
+
                                 <align>center</align>
                             </control>
                             <control type="label">
@@ -209,7 +209,7 @@
                                 <font>font10</font>
                                 <textcolor>button_focus</textcolor>
                                 <shadowcolor>text_shadow</shadowcolor>
-                                <scroll>false</scroll>
+
                                 <align>center</align>
                             </control>
                             <control type="progress">
@@ -253,7 +253,7 @@
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
                 <shadowcolor>text_shadow</shadowcolor>
-                <scroll>false</scroll>
+
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
@@ -301,7 +301,7 @@
                                 <label>$PARAM[second_label]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-                                <scroll>false</scroll>
+
                                 <align>center</align>
                             </control>
                             <control type="label">
@@ -311,7 +311,7 @@
                                 <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-                                <scroll>false</scroll>
+
                                 <align>center</align>
                             </control>
                         </control>
@@ -373,7 +373,7 @@
                                 <label>$PARAM[second_label]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-                                <scroll>false</scroll>
+
                                 <align>center</align>
                             </control>
                             <control type="label">
@@ -383,7 +383,7 @@
                                 <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-                                <scroll>false</scroll>
+
                                 <align>center</align>
                             </control>
                             <control type="image">
@@ -422,7 +422,7 @@
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
                 <shadowcolor>text_shadow</shadowcolor>
-                <scroll>false</scroll>
+
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
@@ -493,7 +493,7 @@
                                     <label>$INFO[ListItem.Label]$INFO[ListItem.Year,[COLOR button_focus] - ,[/COLOR]]</label>
                                     <font>font10</font>
                                     <shadowcolor>text_shadow</shadowcolor>
-                                    <scroll>false</scroll>
+
                                     <align>center</align>
                                 </control>
                                 <control type="label">
@@ -503,7 +503,7 @@
                                     <label>$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version),[COLOR button_focus],[/COLOR]]</label>
                                     <font>font10</font>
                                     <shadowcolor>text_shadow</shadowcolor>
-                                    <scroll>false</scroll>
+
                                     <align>center</align>
                                 </control>
                             </control>
@@ -558,8 +558,7 @@
                 <label>$PARAM[widget_header]</label>
                 <font>font14</font>
                 <shadowcolor>text_shadow</shadowcolor>
-                <scroll>false</scroll>
-                <align>left</align>
+
             </control>
             <control type="list" id="$PARAM[list_id]">
                 <left>490</left>

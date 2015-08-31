@@ -138,7 +138,6 @@
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
                             <shadowcolor>text_shadow</shadowcolor>
-                            <scroll>false</scroll>
                         </control>
                     </itemlayout>
                     <content>$INFO[ListItem.Path]</content>
@@ -158,7 +157,6 @@
                     <label>$INFO[ListItem.Label]</label>
                     <font>font30_title</font>
                     <shadowcolor>text_shadow</shadowcolor>
-                    <scroll>false</scroll>
                     <align>left</align>
                 </control>
                 <control type="label">
@@ -170,7 +168,6 @@
                     <font>font30_title</font>
                     <textcolor>button_focus</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
-                    <scroll>false</scroll>
                     <align>right</align>
                 </control>
                 <control type="grouplist">
@@ -183,7 +180,6 @@
                         <height>40</height>
                         <label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR]]</label>
                         <shadowcolor>text_shadow</shadowcolor>
-                        <scroll>false</scroll>
                         <align>left</align>
                         <visible>!IsEmpty(ListItem.Genre)</visible>
                     </control>
@@ -192,7 +188,6 @@
                         <height>40</height>
                         <label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
                         <shadowcolor>text_shadow</shadowcolor>
-                        <scroll>false</scroll>
                         <align>left</align>
                         <visible>!IsEmpty(ListItem.Director)</visible>
                     </control>
@@ -201,7 +196,6 @@
                         <height>40</height>
                         <label>$INFO[ListItem.Season,[COLOR button_focus]Seasons: [/COLOR],]$INFO[ListItem.Episode,  •  [COLOR button_focus] Episodes: [/COLOR],]</label>
                         <shadowcolor>text_shadow</shadowcolor>
-                        <scroll>false</scroll>
                         <align>left</align>
                         <visible>!IsEmpty(ListItem.Season)</visible>
                     </control>

@@ -295,7 +295,6 @@
 				<height>20</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
-				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>[COLOR=button_focus]$INFO[Container(11).NumItems][/COLOR] $LOCALIZE[19019] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</label>
@@ -308,7 +307,6 @@
 				<height>20</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
-				<scroll>false</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[COLOR button_focus][B]&lt;&gt;[/B][/COLOR]  Groups</label>
