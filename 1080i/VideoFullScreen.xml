@@ -29,7 +29,6 @@
                     <width>1770</width>
                     <height>30</height>
                     <label>-</label>
-                    <align>left</align>
                     <font>font12</font>
                 </control>
                 <control type="label" id="12">
@@ -79,7 +78,6 @@
                         <description>Signal</description>
                         <width>250</width>
                         <height>25</height>
-                        <align>left</align>
                         <aligny>center</aligny>
                         <label>[COLOR button_focus]$LOCALIZE[19008]:[/COLOR] $INFO[PVR.ActStreamSignal]</label>
                         <font>font12</font>
@@ -96,7 +94,6 @@
                         <posy>60</posy>
                         <width>250</width>
                         <height>25</height>
-                        <align>left</align>
                         <aligny>center</aligny>
                         <label>[COLOR button_focus]$LOCALIZE[19009]:[/COLOR] $INFO[PVR.ActStreamSNR]</label>
                         <font>font12</font>

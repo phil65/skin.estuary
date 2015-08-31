@@ -104,7 +104,6 @@
                         <width>530</width>
                         <height>40</height>
                         <font>font16</font>
-                        <align>left</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
@@ -116,7 +115,6 @@
                         <width>530</width>
                         <height>40</height>
                         <font>font16</font>
-                        <align>left</align>
                         <aligny>center</aligny>
                         <info>ListItem.Label</info>
                     </control>
@@ -127,12 +125,12 @@
                 <ondown>3000</ondown>
                 <onup>3000</onup>
             </control>
-        <include name="UpDownArrows">
-            <param name="container_id" value="110" />
-            <param name="posx" value="1330" />
-            <param name="up_posy" value="40" />
-            <param name="down_posy" value="610" />
-        </include>
+            <include name="UpDownArrows">
+                <param name="container_id" value="110" />
+                <param name="posx" value="1330" />
+                <param name="up_posy" value="40" />
+                <param name="down_posy" value="610" />
+            </include>
             <control type="label">
                 <description>Scraper label</description>
                 <left>610</left>

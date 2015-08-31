@@ -66,7 +66,6 @@
 						<width>100</width>
 						<height>30</height>
 						<textcolor>grey2</textcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
@@ -75,7 +74,7 @@
 						<top>5</top>
 						<width>30</width>
 						<height>20</height>
-                         <texture>$VAR[PVRStatusImageVar]</texture>
+						<texture>$VAR[PVRStatusImageVar]</texture>
 					</control>
 					<control type="label">
 						<left>100</left>
@@ -125,7 +124,6 @@
 						<width>100</width>
 						<height>30</height>
 						<textcolor>grey2</textcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
@@ -134,7 +132,7 @@
 						<top>5</top>
 						<width>30</width>
 						<height>20</height>
-                         <texture>$VAR[PVRStatusImageVar]</texture>
+						<texture>$VAR[PVRStatusImageVar]</texture>
 					</control>
 					<control type="label">
 						<left>100</left>

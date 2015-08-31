@@ -109,7 +109,6 @@
                         <top>0</top>
                         <width>870</width>
                         <height>50</height>
-                        <align>left</align>
                         <aligny>center</aligny>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
                     </control>
@@ -120,7 +119,6 @@
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <align>left</align>
                         <label>$INFO[ListItem.Property(Event.Description)]</label>
                     </control>
                     <control type="label">
@@ -167,7 +165,6 @@
                         <top>0</top>
                         <width>870</width>
                         <height>50</height>
-                        <align>left</align>
                         <aligny>center</aligny>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
                     </control>
@@ -178,7 +175,6 @@
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <align>left</align>
                         <label>$INFO[ListItem.Property(Event.Description)]</label>
                     </control>
                     <control type="label">

@@ -85,7 +85,6 @@
                             <width>1720</width>
                             <height>20</height>
                             <font>font30_title</font>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -167,7 +166,6 @@
                                 <width>1160</width>
                                 <height>20</height>
                                 <font>font24_title</font>
-                                <align>left</align>
                                 <aligny>center</aligny>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
@@ -222,7 +220,6 @@
                         <top>594</top>
                         <width>230</width>
                         <height>32</height>
-                        <align>left</align>
                         <font>font_textbox</font>
                         <label>$INFO[ListItem.RatingAndVotes]</label>
                     </control>
