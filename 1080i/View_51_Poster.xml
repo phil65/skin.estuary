@@ -208,7 +208,7 @@
                     <control type="textbox">
                         <width>1150</width>
                         <height max="200">auto</height>
-                        <autoscroll time="3000" delay="3000" repeat="5000">true</autoscroll>
+                        <autoscroll time="3000" delay="3000" repeat="5000">!System.HasModalDialog</autoscroll>
                         <label>$INFO[ListItem.Plot]</label>
                         <shadowcolor>text_shadow</shadowcolor>
                         <align>left</align>

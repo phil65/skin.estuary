@@ -51,7 +51,7 @@
                     <height>345</height>
                     <align>justify</align>
                     <font>font_textbox</font>
-                    <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
+                    <autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
                     <label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
                 </control>
                 <control type="image">
@@ -434,7 +434,7 @@
             <height>190</height>
             <align>justify</align>
             <font>font_textbox</font>
-            <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
+            <autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
             <label fallback="No info available">$VAR[ListBoxInfoVar]</label>
         </control>
     </include>
