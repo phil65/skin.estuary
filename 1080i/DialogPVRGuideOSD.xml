@@ -163,7 +163,7 @@
 			<control type="scrollbar" id="60">
 				<left>440</left>
 				<top>100</top>
-				<width>25</width>
+				<width>12</width>
 				<height>490</height>
 				<onleft>11</onleft>
 				<onright>11</onright>
@@ -179,7 +179,6 @@
 				<height>20</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
-				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>[COLOR=button_focus]$INFO[Container(11).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</label>

@@ -32,26 +32,6 @@
             <texture background="true" colordiffuse="20FFFFFF">$VAR[HomeFanartVar]</texture>
             <visible>!Player.HasMedia</visible>
         </control>
-        <!-- <control type="image">
-             <left>1045</left>
-             <top>1000</top>
-             <width>28</width>
-             <height>28</height>
-             <texture>overlays/arrowdown.png</texture>
-             <animation effect="zoom" start="100,0" end="100,100" center="0,1000" time="200">VisibleChange</animation>
-             <animation effect="slide" start="0,150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-             <visible>Container(6000).HasNext</visible>
-             </control>
-             <control type="image">
-             <left>1045</left>
-             <top>50</top>
-             <width>28</width>
-             <height>28</height>
-             <texture flipy="true">overlays/arrowdown.png</texture>
-             <animation effect="zoom" start="100,0" end="100,100" center="0,78" time="200">VisibleChange</animation>
-             <animation effect="slide" start="0,-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-             <visible>Container(6000).HasPrevious</visible>
-             </control> -->
         <control type="group" id="2000">
             <animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
                 <effect type="slide" end="0,-20" time="60" tween="sine" />
@@ -489,9 +469,9 @@
                     </control>
                 </control>
                 <include name="WidgetListSquare">
-                    <param name="content_path" value="pvr://recordings/active/"/>
+                    <param name="content_path" value="pvr://recordings/all"/>
                     <param name="widget_header" value="Recent recordings"/>
-                    <param name="widget_target" value="pvr"/>
+                    <param name="widget_target" value="video"/>
                     <param name="list_id" value="12100"/>
                     <param name="onup_id" value="12900"/>
                     <param name="ondown_id" value="12200"/>
