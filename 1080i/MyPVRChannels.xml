@@ -65,17 +65,17 @@
                             <description>Progressbar</description>
                             <left>75</left>
                             <top>26</top>
-                            <width>80</width>
+                            <width>60</width>
                             <height>12</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
                             <visible>ListItem.HasEpg</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
-                            <left>170</left>
+                            <left>150</left>
                             <top>8</top>
                             <height>60</height>
-                            <width>750</width>
+                            <width>770</width>
                             <align>left</align>
                             <aligny>top</aligny>
                             <label>$INFO[ListItem.Label][COLOR button_focus]$INFO[ListItem.Title, - ][/COLOR]</label>
@@ -114,17 +114,17 @@
                             <description>Progressbar</description>
                             <left>75</left>
                             <top>26</top>
-                            <width>80</width>
+                            <width>60</width>
                             <height>12</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
                             <visible>ListItem.HasEpg</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
-                            <left>170</left>
+                            <left>150</left>
                             <top>8</top>
                             <height>60</height>
-                            <width>750</width>
+                            <width>770</width>
                             <align>left</align>
                             <aligny>top</aligny>
                             <label>$INFO[ListItem.Label][COLOR button_focus]$INFO[ListItem.Title, - ][/COLOR]</label>
