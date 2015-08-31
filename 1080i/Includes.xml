@@ -1196,7 +1196,7 @@
                     <align>right</align>
                     <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
-                    <visible>Control.HasFocus(60) | Control.HasFocus(5199)</visible>
+                    <visible>Control.HasFocus(60) | Control.HasFocus(5199) | Control.HasFocus(5399) | Control.HasFocus(531) | Control.HasFocus(532)</visible>
                     <label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,, • ]</label>
                 </control>
                 <control type="label">
