@@ -15,10 +15,18 @@
                 <top>167</top>
                 <visible>Control.IsVisible(502)</visible>
                 <include>Visible_Right</include>
+                <control type="image">
+                    <left>-20</left>
+                    <top>-9</top>
+                    <width>1765</width>
+                    <height>742</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
+                </control>
                 <control type="fixedlist" id="502">
                     <left>0</left>
                     <top>0</top>
-                    <width>1740</width>
+                    <width>1720</width>
                     <height>732</height>
                     <onleft>502</onleft>
                     <onright>502</onright>
@@ -30,7 +38,7 @@
                     <scrolltime tween="cubic">800</scrolltime>
                     <orientation>horizontal</orientation>
                     <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-                    <itemlayout width="1740" height="690">
+                    <itemlayout width="1720" height="690">
                         <control type="image">
                             <left>5</left>
                             <top>19</top>
@@ -91,7 +99,7 @@
                             <visible>Stringcompare(Listitem.dbtype,tvshow)</visible>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="1740" height="690">
+                    <focusedlayout width="1720" height="690">
                         <control type="group">
                             <control type="image">
                                 <left>5</left>
