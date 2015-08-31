@@ -157,7 +157,6 @@
                              <align>center</align>
                              <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
                              <font>font12</font>
-                             <textcolor>white</textcolor>
                              <width>230</width>
                              </control> -->
                         <control type="label">
@@ -217,7 +216,6 @@
                              <align>right</align>
                              <font>font12</font>
                              <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
-                             <textcolor>white</textcolor>
                              <width>175</width>
                              </control> -->
                         <control type="label">
@@ -226,7 +224,6 @@
                             <align>center</align>
                             <font>font30_title</font>
                             <label>$INFO[ListItem.Property(TempDay)]</label>
-                            <textcolor>white</textcolor>
                             <width>230</width>
                         </control>
                         <control type="label">
@@ -393,7 +390,6 @@
                             <align>center</align>
                             <font>font30_title</font>
                             <label>$INFO[ListItem.Property(TempDay)]</label>
-                            <textcolor>white</textcolor>
                             <width>230</width>
                         </control>
                         <control type="label">
@@ -489,7 +485,6 @@
                         <width>800</width>
                         <align>left</align>
                         <font>font24_title</font>
-                        <textcolor>white</textcolor>
                         <label>$INFO[System.Time] - $INFO[System.Date]</label>
                     </control>
                     <control type="label">
@@ -500,7 +495,6 @@
                         <width>800</width>
                         <align>left</align>
                         <font>font13</font>
-                        <textcolor>white</textcolor>
                         <label>$INFO[Window(Weather).Property(Location)]</label>
                     </control>
                     <control type="image">
@@ -524,7 +518,6 @@
                         <width>500</width>
                         <align>right</align>
                         <font>WeatherTemp</font>
-                        <textcolor>white</textcolor>
                         <label>$INFO[Weather.Temperature]</label>
                     </control>
                     <control type="grouplist">
@@ -561,7 +554,6 @@
                         <align>right</align>
                         <label>Range: [COLOR blue]$INFO[Window(weather).Property(Current.LowTemperature)][/COLOR] - [COLOR red]$INFO[Window(weather).Property(Current.HighTemperature)][/COLOR]</label>
                         <font>font16</font>
-                        <textcolor>white</textcolor>
                         <width>630</width>
                     </control>
                     <control type="label">
@@ -572,7 +564,6 @@
                         <width>630</width>
                         <align>right</align>
                         <font>font16</font>
-                        <textcolor>white</textcolor>
                         <label>$INFO[Weather.Conditions]</label>
                     </control>
                 </control>

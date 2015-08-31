@@ -135,7 +135,6 @@
                     <height>160</height>
                     <label>$VAR[ShiftLeftTextBoxVar]</label>
                     <font>font_textbox</font>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <align>justify</align>
                 </control>
@@ -154,28 +153,27 @@
                     <height>160</height>
                     <label>$VAR[ShiftRightTextBoxVar]</label>
                     <font>font_textbox</font>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <align>justify</align>
                 </control>
-                    <control type="grouplist">
-                        <orientation>vertical</orientation>
-                        <top>523</top>
-                        <itemgap>-8</itemgap>
-                        <left>830</left>
-                        <include name="MediaFlag">
-                            <param name="texture" value="$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]" />
-                        </include>
-                        <include name="MediaFlag">
-                            <param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-                        </include>
-                        <include name="MediaFlag">
-                            <param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
-                        </include>
-                        <include name="MediaFlag">
-                            <param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
-                        </include>
-                    </control>
+                <control type="grouplist">
+                    <orientation>vertical</orientation>
+                    <top>523</top>
+                    <itemgap>-8</itemgap>
+                    <left>830</left>
+                    <include name="MediaFlag">
+                        <param name="texture" value="$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]" />
+                    </include>
+                    <include name="MediaFlag">
+                        <param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+                    </include>
+                    <include name="MediaFlag">
+                        <param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
+                    </include>
+                    <include name="MediaFlag">
+                        <param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
+                    </include>
+                </control>
             </control>
         </control>
     </include>

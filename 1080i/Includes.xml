@@ -106,14 +106,12 @@
             <top>210</top>
             <width>560</width>
             <height>262</height>
-            <textcolor>white</textcolor>
             <label>$INFO[ListItem.Genre,[COLOR button_focus]Genre:[/COLOR] ]</label>
         </control>
         <control type="label">
             <top>660</top>
             <width>560</width>
             <height>262</height>
-            <textcolor>white</textcolor>
             <font>font12</font>
             <label>$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]</label>
         </control>
@@ -122,7 +120,6 @@
             <width>560</width>
             <height>262</height>
             <align>right</align>
-            <textcolor>white</textcolor>
             <font>font12</font>
             <label>$INFO[ListItem.NextStartTime]</label>
         </control>
@@ -157,7 +154,6 @@
                 <aligny>center</aligny>
                 <label>$PARAM[value]</label>
                 <font>font12</font>
-                <textcolor>white</textcolor>
             </control>
         </control>
     </include>
@@ -251,7 +247,6 @@
             <align>left</align>
             <aligny>center</aligny>
             <label>$PARAM[header_label]</label>
-            <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
         <control type="list" id="$PARAM[list_id]">
@@ -392,7 +387,6 @@
                     <height>400</height>
                     <label>$INFO[ListItem.Label]</label>
                     <align>center</align>
-                    <textcolor>white</textcolor>
                 </control>
             </itemlayout>
             <focusedlayout height="270" width="440">
@@ -882,7 +876,6 @@
             <label>$PARAM[DialogHeaderLabel]</label>
             <align>left</align>
             <aligny>center</aligny>
-            <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
         <control type="button" id="22001">
@@ -990,7 +983,6 @@
             <label>$INFO[Container.SortMethod,Sort by: ]</label>
             <font>font10</font>
             <left>85</left>
-            <textcolor>white</textcolor>
             <shadowcolor>text_shadow</shadowcolor>
             <height>100</height>
             <width>auto</width>
@@ -1056,7 +1048,6 @@
             <label>$INFO[System.Date]</label>
             <font>font10</font>
             <left>1400</left>
-            <textcolor>white</textcolor>
             <shadowcolor>text_shadow</shadowcolor>
             <height>100</height>
             <width>500</width>
@@ -1068,7 +1059,6 @@
     </include>
     <include name="BreadcrumbsLabel">
         <font>font13_title</font>
-        <textcolor>white</textcolor>
         <shadowcolor>text_shadow</shadowcolor>
         <top>7</top>
         <height>100</height>
@@ -1155,7 +1145,6 @@
                     <width>300</width>
                     <height>44</height>
                     <align>left</align>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <label>Options</label>
                     <onclick>SetFocus(9000)</onclick>
@@ -1179,7 +1168,6 @@
                     <height>48</height>
                     <aligny>center</aligny>
                     <align>right</align>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <visible>Control.HasFocus(60) | Control.HasFocus(5199) | Control.HasFocus(5399) | Control.HasFocus(531) | Control.HasFocus(532)</visible>
                     <label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,, • ]</label>
@@ -1189,7 +1177,6 @@
                     <height>48</height>
                     <aligny>center</aligny>
                     <align>right</align>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <visible>!System.HasModalDialog</visible>
                     <animation effect="fade" start="0" end="100" delay="1" time="200">VisibleChange</animation>

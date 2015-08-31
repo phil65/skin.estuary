@@ -31,7 +31,6 @@
 					<label>$INFO[Listitem.Title]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="list" id="49">
@@ -63,7 +62,6 @@
 							<height>30</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
 							<selectedcolor>white</selectedcolor>
 							<info>ListItem.Label2</info>
 						</control>
@@ -94,7 +92,6 @@
 							<height>30</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
 							<selectedcolor>white</selectedcolor>
 							<info>ListItem.Label2</info>
 							<scroll>true</scroll>
@@ -179,7 +176,6 @@
 					<width>1030</width>
 					<height>115</height>
 					<align>justify</align>
-					<textcolor>white</textcolor>
 					<pagecontrol>61</pagecontrol>
 					<label>$INFO[ListItem.Plot]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>

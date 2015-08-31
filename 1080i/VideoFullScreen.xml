@@ -83,7 +83,6 @@
                         <aligny>center</aligny>
                         <label>[COLOR button_focus]$LOCALIZE[19008]:[/COLOR] $INFO[PVR.ActStreamSignal]</label>
                         <font>font12</font>
-                        <textcolor>white</textcolor>
                     </control>
                     <control type="progress">
                         <description>Progressbar</description>
@@ -101,7 +100,6 @@
                         <aligny>center</aligny>
                         <label>[COLOR button_focus]$LOCALIZE[19009]:[/COLOR] $INFO[PVR.ActStreamSNR]</label>
                         <font>font12</font>
-                        <textcolor>white</textcolor>
                     </control>
                     <control type="progress">
                         <description>Progressbar</description>

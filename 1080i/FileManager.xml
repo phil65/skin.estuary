@@ -32,7 +32,7 @@
             <posx>1020</posx>
             <posy>190</posy>
             <include>OpenClose_Right</include>
-               <include name="FileManagerPanel">
+            <include name="FileManagerPanel">
                 <param name="header_id" value="102" />
                 <param name="header_label" value="" />
                 <param name="list_id" value="21" />
@@ -63,7 +63,6 @@
                     <height>48</height>
                     <aligny>center</aligny>
                     <align>right</align>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <visible>Control.HasFocus(60) | Control.HasFocus(5199)</visible>
                     <label>$INFO[Container(21).CurrentPage,, / ]$INFO[Container(21).NumPages,, • ]</label>
@@ -73,7 +72,6 @@
                     <height>48</height>
                     <aligny>center</aligny>
                     <align>right</align>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <label>$INFO[Container(21).CurrentItem,, / ]$INFO[Container(21).NumItems]</label>
                 </control>
@@ -97,7 +95,6 @@
                     <height>48</height>
                     <aligny>center</aligny>
                     <align>right</align>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <visible>Control.HasFocus(60) | Control.HasFocus(61)</visible>
                     <label>$INFO[Container(20).CurrentPage,, / ]$INFO[Container(20).NumPages,, • ]</label>
@@ -107,7 +104,6 @@
                     <height>48</height>
                     <aligny>center</aligny>
                     <align>right</align>
-                    <textcolor>white</textcolor>
                     <shadowcolor>text_shadow</shadowcolor>
                     <label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
                 </control>

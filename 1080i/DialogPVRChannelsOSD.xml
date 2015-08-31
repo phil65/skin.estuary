@@ -34,7 +34,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[VideoPlayer.ChannelGroup]</label>
-				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
@@ -47,7 +46,6 @@
 				<label>$INFO[System.Time]</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="list" id="11">
@@ -94,7 +92,6 @@
 						<top>5</top>
 						<width>350</width>
 						<height>40</height>
-						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -207,7 +204,6 @@
 						<top>5</top>
 						<width>350</width>
 						<height>40</height>
-						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>

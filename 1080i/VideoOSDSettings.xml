@@ -30,7 +30,7 @@
                 <font>font20_title</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>white</textcolor>
+
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="button">
@@ -63,7 +63,6 @@
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
             <texturenofocus>lists/separator.png</texturenofocus>
             <font>font12</font>
-            <textcolor>white</textcolor>
         </control>
         <control type="button" id="7">
             <width>508</width>
@@ -72,7 +71,6 @@
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
             <texturenofocus>lists/separator.png</texturenofocus>
             <font>font12</font>
-            <textcolor>white</textcolor>
         </control>
         <control type="radiobutton" id="8">
             <width>508</width>
@@ -81,7 +79,6 @@
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
             <texturenofocus>lists/separator.png</texturenofocus>
             <font>font12</font>
-            <textcolor>white</textcolor>
             <radioposx>572</radioposx>
         </control>
         <control type="spincontrolex" id="9">
@@ -90,7 +87,6 @@
             <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
             <texturenofocus>lists/separator.png</texturenofocus>
             <font>font12</font>
-            <textcolor>white</textcolor>
         </control>
     </controls>
 </window>

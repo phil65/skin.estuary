@@ -85,7 +85,6 @@
                             <width>1720</width>
                             <height>20</height>
                             <font>font30_title</font>
-                            <textcolor>white</textcolor>
                             <align>left</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
@@ -134,7 +133,7 @@
                                 <aspectratio>stretch</aspectratio>
                                 <texture colordiffuse="A0000000">colors/black.png</texture>
                             </control>
-                                                <control type="image">
+                            <control type="image">
                                 <left>465</left>
                                 <top>621</top>
                                 <width>1252</width>
@@ -168,7 +167,6 @@
                                 <width>1160</width>
                                 <height>20</height>
                                 <font>font24_title</font>
-                                <textcolor>white</textcolor>
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <label>$INFO[ListItem.Label]</label>
@@ -179,7 +177,6 @@
                                 <width>1160</width>
                                 <height>20</height>
                                 <font>font24_title</font>
-                                <textcolor>white</textcolor>
                                 <align>right</align>
                                 <aligny>center</aligny>
                                 <visible>Container.Content(movies)</visible>
@@ -193,7 +190,6 @@
                     <animation type="Visible">
                         <effect type="fade" start="0" end="100" delay="800" time="300" />
                     </animation>
-
                     <control type="grouplist">
                         <visible>!Stringcompare(Listitem.dbtype,tvshow)</visible>
                         <orientation>horizontal</orientation>
@@ -244,7 +240,6 @@
                         <width>800</width>
                         <height>20</height>
                         <font>font16</font>
-                        <textcolor>white</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$VAR[BannerLabel2Var]</label>
