@@ -109,7 +109,6 @@
 								<width>1018</width>
 								<height>50</height>
 								<aligny>top</aligny>
-								<itemgap>0</itemgap>
 								<orientation>horizontal</orientation>
 								<usecontrolcoords>true</usecontrolcoords>
 								<visible>[Container.Content(movies) | Container.Content(tvshows)] + !IsEmpty(ListItem.Genre)</visible>

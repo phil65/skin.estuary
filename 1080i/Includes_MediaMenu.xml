@@ -57,7 +57,6 @@
         <onright>50</onright>
         <ondown>9000</ondown>
         <onback>50</onback>
-        <itemgap>0</itemgap>
         <control type="label" id="200">
             <include>MediaMenuLabelCommon</include>
             <label>31006</label>
@@ -178,7 +177,6 @@
                 <height>800</height>
                 <align>left</align>
                 <aligny>top</aligny>
-                <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <scroll>true</scroll>
                 <onright>50</onright>

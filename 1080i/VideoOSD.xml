@@ -14,7 +14,7 @@
                 <top>0</top>
                 <width>1860</width>
                 <height>140</height>
-                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="image">
                 <description>Menu Panel</description>
@@ -22,7 +22,7 @@
                 <top>-90</top>
                 <width>1860</width>
                 <height>60</height>
-                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                    <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="label">
                 <description>Menu Panel</description>

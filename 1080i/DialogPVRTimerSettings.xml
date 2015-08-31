@@ -3,13 +3,13 @@
 	<defaultcontrol>5</defaultcontrol>
 	<coordinates>
 		<left>200</left>
-		<top>100</top>
+		<top>70</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1520" />
-			<param name="DialogBackgroundHeight" value="870" />
+			<param name="DialogBackgroundHeight" value="945" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[19065]" />
 			<param name="DialogHeaderId" value="" />
 		</include>
@@ -17,14 +17,14 @@
 			<left>10</left>
 			<top>80</top>
 			<width>1200</width>
-			<height>790</height>
+			<height>865</height>
 			<texture border="40">buttons/dialogbutton-nofo.png</texture>
 		</control>
 		<include name="UpDownArrows">
 			<param name="container_id" value="5" />
 			<param name="posx" value="565" />
-			<param name="up_posy" value="-40" />
-			<param name="down_posy" value="890" />
+			<param name="up_posy" value="-50" />
+			<param name="down_posy" value="965" />
 		</include>
 		<control type="grouplist" id="5">
 			<animation effect="slide" start="0,0" end="5,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>
@@ -32,8 +32,7 @@
 			<left>24</left>
 			<top>100</top>
 			<width>1160</width>
-			<height>750</height>
-			<itemgap>0</itemgap>
+			<height>824</height>
 			<pagecontrol>60</pagecontrol>
 			<onleft>9000</onleft>
 			<onright>9000</onright>

@@ -23,7 +23,7 @@
 				<posy>-11</posy>
 				<width>100</width>
 				<height>100</height>
-                <texture>dialogs/volume/progress/p$INFO[Control.GetLabel(32)].png</texture>
+				<texture>dialogs/volume/progress/p$INFO[Control.GetLabel(32)].png</texture>
 				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
@@ -42,7 +42,6 @@
 				<height>120</height>
 				<align>right</align>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
 				<control type="label" id="30">
 					<description>Header label</description>
 					<posx>0</posx>
