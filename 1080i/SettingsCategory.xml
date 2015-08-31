@@ -40,9 +40,8 @@
                     <font>font13_title</font>
                     <textcolor>white</textcolor>
                     <focusedcolor>white</focusedcolor>
-                    <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+                    <texturefocus>lists/focus.png</texturefocus>
                     <texturenofocus border="40">lists/separator.png</texturenofocus>
-                    <pulseonselect>false</pulseonselect>
                 </control>
                 <control type="radiobutton" id="20">
                     <width>400</width>

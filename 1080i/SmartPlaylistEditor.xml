@@ -9,8 +9,6 @@
     <include>Animation_DialogPopupOpenClose</include>
     <controls>
         <control type="group">
-            <visible>!Window.IsVisible(smartplaylistrule)</visible>
-            <include>VisibleFadeEffect</include>
             <include name="DialogBackgroundCommons">
                 <param name="DialogBackgroundWidth" value="1300" />
                 <param name="DialogBackgroundHeight" value="920" />
