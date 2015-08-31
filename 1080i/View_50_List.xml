@@ -184,7 +184,6 @@
                             <font>font12</font>
                             <animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
                             <label>$INFO[ListItem.Label2]</label>
-                            <selectedcolor>selected</selectedcolor>
                             <textcolor>grey</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -243,7 +242,6 @@
                             <font>font12</font>
                             <animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
                             <label>$INFO[ListItem.Label2]</label>
-                            <selectedcolor>selected</selectedcolor>
                             <textcolor>grey</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -287,7 +285,6 @@
                             <aligny>center</aligny>
                             <font>font12</font>
                             <label>$INFO[ListItem.Year]</label>
-                            <selectedcolor>selected</selectedcolor>
                             <textcolor>button_focus</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -310,7 +307,6 @@
                             <aligny>center</aligny>
                             <font>font12</font>
                             <label>$INFO[ListItem.Label2]</label>
-                            <selectedcolor>selected</selectedcolor>
                             <textcolor>grey</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -351,7 +347,6 @@
                             <aligny>center</aligny>
                             <font>font12</font>
                             <label>$INFO[ListItem.Year]</label>
-                            <selectedcolor>selected</selectedcolor>
                             <textcolor>button_focus</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -374,7 +369,6 @@
                             <aligny>center</aligny>
                             <font>font12</font>
                             <label>$INFO[ListItem.Label2]</label>
-                            <selectedcolor>selected</selectedcolor>
                             <textcolor>grey</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -470,7 +464,6 @@
                 <aligny>center</aligny>
                 <font>font30_title</font>
                 <label>$INFO[ListItem.TrackNumber]</label>
-                <selectedcolor>selected</selectedcolor>
                 <textcolor>button_focus</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
@@ -482,8 +475,6 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Title]</label>
-                <selectedcolor>selected</selectedcolor>
-                <textcolor>white</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
             <control type="label">
@@ -495,7 +486,6 @@
                 <aligny>center</aligny>
                 <font>font12</font>
                 <label>$INFO[ListItem.Label2]</label>
-                <selectedcolor>selected</selectedcolor>
                 <textcolor>grey</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
@@ -517,7 +507,6 @@
                 <aligny>center</aligny>
                 <font>font30_title</font>
                 <label>$INFO[ListItem.TrackNumber]</label>
-                <selectedcolor>selected</selectedcolor>
                 <textcolor>button_focus</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
@@ -529,8 +518,6 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Title]</label>
-                <selectedcolor>selected</selectedcolor>
-                <textcolor>white</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
             <control type="label">
@@ -542,7 +529,6 @@
                 <aligny>center</aligny>
                 <font>font12</font>
                 <label>$INFO[ListItem.Label2]</label>
-                <selectedcolor>selected</selectedcolor>
                 <textcolor>grey</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
@@ -573,8 +559,6 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Label]</label>
-                <selectedcolor>selected</selectedcolor>
-                <textcolor>white</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
             <control type="label">
@@ -586,7 +570,6 @@
                 <aligny>center</aligny>
                 <font>font12</font>
                 <label>$INFO[ListItem.Label2]</label>
-                <selectedcolor>selected</selectedcolor>
                 <textcolor>grey</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
@@ -607,8 +590,6 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$INFO[ListItem.Label]</label>
-                <selectedcolor>selected</selectedcolor>
-                <textcolor>white</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
             <control type="label">
@@ -620,7 +601,6 @@
                 <aligny>center</aligny>
                 <font>font12</font>
                 <label>$INFO[ListItem.Label2]</label>
-                <selectedcolor>selected</selectedcolor>
                 <textcolor>grey</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>

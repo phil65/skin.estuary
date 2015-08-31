@@ -102,8 +102,6 @@
                             <top>268</top>
                             <width>280</width>
                             <height>100</height>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
                             <label>$INFO[ListItem.Label]</label>
@@ -115,7 +113,6 @@
                             <height>100</height>
                             <font>font12</font>
                             <textcolor>grey</textcolor>
-                            <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
                             <label>Last log-in:</label>
@@ -127,7 +124,6 @@
                             <height>100</height>
                             <textcolor>grey</textcolor>
                             <font>font12</font>
-                            <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
                             <label fallback="13170">$INFO[ListItem.Label2]</label>
@@ -154,8 +150,6 @@
                             <top>268</top>
                             <width>280</width>
                             <height>100</height>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
                             <label>$INFO[ListItem.Label]</label>
@@ -167,7 +161,6 @@
                             <height>100</height>
                             <textcolor>grey</textcolor>
                             <font>font12</font>
-                            <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
                             <label>Last log-in:</label>
@@ -179,7 +172,6 @@
                             <height>100</height>
                             <font>font12</font>
                             <textcolor>grey</textcolor>
-                            <selectedcolor>selected</selectedcolor>
                             <align>center</align>
                             <aligny>top</aligny>
                             <label fallback="13170">$INFO[ListItem.Label2]</label>
