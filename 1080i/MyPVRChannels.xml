@@ -70,6 +70,13 @@
                             <visible>ListItem.HasEpg</visible>
                             <info>ListItem.Progress</info>
                         </control>
+                        <control type="image">
+                            <left>890</left>
+                            <top>9</top>
+                            <width>40</width>
+                            <height>40</height>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
+                        </control>
                         <control type="label">
                             <left>150</left>
                             <top>8</top>
@@ -117,6 +124,13 @@
                             <colordiffuse>88FFFFFF</colordiffuse>
                             <visible>ListItem.HasEpg</visible>
                             <info>ListItem.Progress</info>
+                        </control>
+                        <control type="image">
+                            <left>890</left>
+                            <top>9</top>
+                            <width>40</width>
+                            <height>40</height>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
                         </control>
                         <control type="label">
                             <left>150</left>
