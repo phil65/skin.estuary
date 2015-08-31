@@ -82,7 +82,6 @@
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Property(Addon.Summary)]</label>
                     </control>
@@ -130,7 +129,6 @@
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Property(Addon.Summary)]</label>
                     </control>
