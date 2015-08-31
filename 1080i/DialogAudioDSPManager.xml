@@ -2,7 +2,7 @@
 <window type="dialog">
 	<zorder>1</zorder>
 	<defaultcontrol>9000</defaultcontrol>
-    <include>Animation_DialogPopupOpenClose</include>
+	<include>Animation_DialogPopupOpenClose</include>
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
 		<left>40</left>
@@ -33,20 +33,18 @@
 					<top>0</top>
 					<width>228</width>
 					<height>40</height>
-					<texture border="5">button-nofocus.png</texture>
+					<texture border="38">lists/separator.png</texture>
 				</control>
 				<control type="label">
 					<posx>5</posx>
 					<posy>0</posy>
 					<width>218</width>
 					<height>40</height>
-					<textcolor>grey3</textcolor>
+					<textcolor>grey2</textcolor>
 					<font>font13_title</font>
 					<aligny>center</aligny>
 					<align>center</align>
 					<info>ListItem.Label</info>
-					<scroll>false</scroll>
-					<scrollspeed>0</scrollspeed>
 				</control>
 			</itemlayout>
 			<focusedlayout width="228" height="40">
@@ -55,7 +53,7 @@
 					<top>0</top>
 					<width>228</width>
 					<height>40</height>
-					<texture border="5">button-focus2.png</texture>
+					<texture>lists/focus.png</texture>
 					<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(9000)">conditional</animation>
 				</control>
 				<control type="label">
@@ -63,48 +61,40 @@
 					<posy>0</posy>
 					<width>218</width>
 					<height>40</height>
-					<textcolor>white</textcolor>
 					<font>font13_title</font>
 					<aligny>center</aligny>
 					<align>center</align>
 					<info>ListItem.Label</info>
-					<scroll>false</scroll>
-					<scrollspeed>0</scrollspeed>
 				</control>
 			</focusedlayout>
 			<content>
 				<item id="91">
 					<label>1. $LOCALIZE[15057]</label>
 					<label2>$LOCALIZE[15114]</label2>
-					<visible>true</visible>
 					<onclick>noop</onclick>
 					<property name="currentMode">InputResampling</property>
 				</item>
 				<item id="92">
 					<label>2. $LOCALIZE[15058]</label>
 					<label2>$LOCALIZE[15113]</label2>
-					<visible>true</visible>
 					<onclick>noop</onclick>
 					<property name="currentMode">Preprocessing</property>
 				</item>
 				<item id="93">
 					<label>3. $LOCALIZE[15059]</label>
 					<label2>$LOCALIZE[15115]</label2>
-					<visible>true</visible>
 					<onclick>noop</onclick>
 					<property name="currentMode">Masterprocessing</property>
 				</item>
 				<item id="94">
 					<label>4. $LOCALIZE[15060]</label>
 					<label2>$LOCALIZE[15117]</label2>
-					<visible>true</visible>
 					<onclick>noop</onclick>
 					<property name="currentMode">Postprocessing</property>
 				</item>
 				<item id="95">
 					<label>5. $LOCALIZE[15061]</label>
 					<label2>$LOCALIZE[15116]</label2>
-					<visible>true</visible>
 					<onclick>noop</onclick>
 					<property name="currentMode">OutputResampling</property>
 				</item>
@@ -134,8 +124,6 @@
 				<font>font12</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
-				<selectedcolor>selected</selectedcolor>
 				<label>$INFO[Container(9000).ListItem.Label2]</label>
 			</control>
 		</control>
@@ -172,7 +160,7 @@
 					<top>30</top>
 					<width>538</width>
 					<height>350</height>
-					<texture border="5">button-nofocus.png</texture>
+					<texture border="38">lists/separator.png</texture>
 				</control>
 				<control type="scrollbar" id="60">
 					<description>scrollbar for available modes list</description>
@@ -202,7 +190,7 @@
 							<top>3</top>
 							<width>528</width>
 							<height>40</height>
-							<texture border="5">button-nofocus.png</texture>
+							<texture border="38">lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>15</left>
@@ -231,9 +219,6 @@
 							<font>font12</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<scroll>false</scroll>
-							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
 						</control>
 					</itemlayout>
@@ -243,7 +228,7 @@
 							<top>3</top>
 							<width>528</width>
 							<height>60</height>
-							<texture border="5">button-focus2.png</texture>
+							<texture>lists/focus.png</texture>
 							<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
 						</control>
 						<control type="image">
@@ -265,7 +250,7 @@
 							<visible>StringCompare(ListItem.Property(Icon),"")</visible>
 						</control>
 						<control type="label">
-							<description>addon name and mode name on focus</description>
+							<description>addon name and mode</description>
 							<left>80</left>
 							<top>3</top>
 							<width>435</width>
@@ -273,13 +258,10 @@
 							<font>font12</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<scroll>false</scroll>
-							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
 						</control>
 						<control type="label">
-							<description>ADSP-Mode description on focus</description>
+							<description>ADSP-Mode description</description>
 							<left>80</left>
 							<top>33</top>
 							<width>435</width>
@@ -288,26 +270,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>grey2</textcolor>
-							<scroll>false</scroll>
-							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Property(Description)]</label>
-							<visible>!Control.HasFocus(20)</visible>
-						</control>
-						<control type="label">
-							<description>ADSP-Mode description on focus</description>
-							<left>80</left>
-							<top>33</top>
-							<width>435</width>
-							<height>30</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>grey2</textcolor>
-							<scroll>true</scroll>
-							<scrollsuffix>&gt;   &lt;</scrollsuffix>
-							<selectedcolor>selected</selectedcolor>
-							<label>$INFO[ListItem.Property(Description)]</label>
-							<visible>Control.HasFocus(20)</visible>
 						</control>
 					</focusedlayout>
 				</control>
@@ -336,7 +299,7 @@
 					<top>30</top>
 					<width>538</width>
 					<height>350</height>
-					<texture border="5">button-nofocus.png</texture>
+					<texture border="38">lists/separator.png</texture>
 				</control>
 				<control type="scrollbar" id="61">
 					<description>scrollbar for active modes list</description>
@@ -366,7 +329,7 @@
 							<top>3</top>
 							<width>528</width>
 							<height>40</height>
-							<texture border="5">button-nofocus.png</texture>
+							<texture border="38">lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>15</left>
@@ -395,9 +358,6 @@
 							<font>font12</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<scroll>false</scroll>
-							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
 						</control>
 					</itemlayout>
@@ -407,7 +367,7 @@
 							<top>3</top>
 							<width>528</width>
 							<height>60</height>
-							<texture border="5">button-focus2.png</texture>
+							<texture>lists/focus.png</texture>
 							<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(21)">conditional</animation>
 						</control>
 						<control type="image">
@@ -429,7 +389,7 @@
 							<visible>StringCompare(ListItem.Property(Icon),"")</visible>
 						</control>
 						<control type="label">
-							<description>addon name and mode name on focus</description>
+							<description>addon name and mode name</description>
 							<left>80</left>
 							<top>3</top>
 							<width>435</width>
@@ -437,14 +397,10 @@
 							<font>font12</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<scroll>false</scroll>
-							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
-							<visible>true</visible>
 						</control>
 						<control type="label">
-							<description>ADSP-Mode description on focus</description>
+							<description>ADSP-Mode description</description>
 							<left>80</left>
 							<top>33</top>
 							<width>435</width>
@@ -453,26 +409,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>grey2</textcolor>
-							<scroll>false</scroll>
-							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Property(Description)]</label>
-							<visible>!Control.HasFocus(21)</visible>
-						</control>
-						<control type="label">
-							<description>ADSP-Mode description on focus</description>
-							<left>80</left>
-							<top>33</top>
-							<width>435</width>
-							<height>30</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>grey2</textcolor>
-							<scroll>true</scroll>
-							<scrollsuffix>&gt;   &lt;</scrollsuffix>
-							<selectedcolor>selected</selectedcolor>
-							<label>$INFO[ListItem.Property(Description)]</label>
-							<visible>Control.HasFocus(21)</visible>
 						</control>
 					</focusedlayout>
 				</control>
