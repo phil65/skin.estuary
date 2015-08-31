@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>9000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <controls>
         <include>DefaultBackground</include>
@@ -24,7 +23,6 @@
                     <top>160</top>
                     <width>400</width>
                     <height>700</height>
-                    <usecontrolcoords>true</usecontrolcoords>
                     <onleft>10000</onleft>
                     <onright>10000</onright>
                     <onup>9000</onup>
