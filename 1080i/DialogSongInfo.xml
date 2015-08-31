@@ -59,7 +59,6 @@
 						<description>Artist Value</description>
 						<width>700</width>
 						<height>25</height>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label fallback="161">$INFO[ListItem.Artist]</label>
 						<scrollout>false</scrollout>
@@ -83,7 +82,6 @@
 						<description>Album Value</description>
 						<width>700</width>
 						<height>25</height>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label fallback="161">$INFO[ListItem.Album]$INFO[listitem.discnumber, - $LOCALIZE[427] ]</label>
 						<scrollout>false</scrollout>
@@ -109,7 +107,6 @@
 						<description>Genre Value</description>
 						<width>700</width>
 						<height>25</height>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label fallback="161">$INFO[ListItem.Genre]</label>
 					</control>
@@ -131,7 +128,6 @@
 						<description>Year Value</description>
 						<width>700</width>
 						<height>25</height>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label fallback="161">$INFO[ListItem.Year]</label>
 					</control>
@@ -153,7 +149,6 @@
 						<description>Track Number Value</description>
 						<width>700</width>
 						<height>25</height>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label fallback="161">$INFO[ListItem.TrackNumber]</label>
 					</control>

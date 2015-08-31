@@ -90,7 +90,6 @@
 				<top>600</top>
 				<width>910</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<font>font30</font>
 				<label>[UPPERCASE]$LOCALIZE[31040][/UPPERCASE]: $INFO[Player.Title]</label>
@@ -107,7 +106,6 @@
 					<top>30</top>
 					<width>910</width>
 					<height>25</height>
-					<align>left</align>
 					<font>font12</font>
 					<label>$INFO[VideoPlayer.Artist] $INFO[VideoPlayer.Album, - ]</label>
 					<textcolor>grey2</textcolor>
@@ -191,7 +189,6 @@
 					<top>900</top>
 					<width>1000</width>
 					<height>100</height>
-					<align>left</align>
 					<font>font16</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
@@ -203,7 +200,6 @@
 					<top>940</top>
 					<width>1920</width>
 					<height>100</height>
-					<align>left</align>
 					<font>font16</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[Player.Time]$INFO[Player.Duration, / , •]  $INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, /] • $INFO[Player.FinishTime, Ends: ,]</label>

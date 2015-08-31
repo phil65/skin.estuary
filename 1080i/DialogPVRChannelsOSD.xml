@@ -31,7 +31,6 @@
 				<width>580</width>
 				<height>70</height>
 				<font>font13_title</font>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[VideoPlayer.ChannelGroup]</label>
 				<shadowcolor>black</shadowcolor>
@@ -92,7 +91,6 @@
 						<top>5</top>
 						<width>350</width>
 						<height>40</height>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -103,7 +101,6 @@
 						<height>20</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 						<visible>IsEmpty(Listitem.Icon)</visible>
@@ -115,7 +112,6 @@
 						<height>20</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 						<visible>!IsEmpty(Listitem.Icon)</visible>
@@ -204,7 +200,6 @@
 						<top>5</top>
 						<width>350</width>
 						<height>40</height>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -215,7 +210,6 @@
 						<height>20</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 						<visible>IsEmpty(Listitem.Icon)</visible>
@@ -227,7 +221,6 @@
 						<height>20</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 						<visible>!IsEmpty(Listitem.Icon)</visible>
@@ -307,7 +300,6 @@
 				<height>20</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>[COLOR button_focus][B]&lt;&gt;[/B][/COLOR]  Groups</label>
 			</control>

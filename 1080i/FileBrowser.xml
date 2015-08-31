@@ -69,13 +69,13 @@
                     <bordersize>4</bordersize>
                     <texture border="4" background="true">$INFO[ListItem.Icon]</texture>
                 </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>80</top>
-                        <width>980</width>
-                        <height>740</height>
-                        <texture border="40">buttons/dialogbutton-nofo.png</texture>
-                    </control>
+                <control type="image">
+                    <left>0</left>
+                    <top>80</top>
+                    <width>980</width>
+                    <height>740</height>
+                    <texture border="40">buttons/dialogbutton-nofo.png</texture>
+                </control>
                 <control type="panel" id="450">
                     <left>20</left>
                     <top>100</top>
@@ -108,7 +108,6 @@
                             <top>0</top>
                             <width>560</width>
                             <height>70</height>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <selectedcolor>green</selectedcolor>
                             <info>ListItem.Label</info>
@@ -144,7 +143,6 @@
                             <top>0</top>
                             <width>560</width>
                             <height>70</height>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <selectedcolor>green</selectedcolor>
                             <info>ListItem.Label</info>
@@ -183,7 +181,6 @@
                             <top>0</top>
                             <width>800</width>
                             <height>70</height>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <selectedcolor>green</selectedcolor>
                             <info>ListItem.Label</info>
@@ -219,7 +216,6 @@
                             <top>0</top>
                             <width>800</width>
                             <height>70</height>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <selectedcolor>green</selectedcolor>
                             <info>ListItem.Label</info>
@@ -242,7 +238,6 @@
                     <width>595</width>
                     <height>30</height>
                     <haspath>true</haspath>
-                    <align>left</align>
                     <font>font12</font>
                     <aligny>center</aligny>
                     <textcolor>button_focus</textcolor>

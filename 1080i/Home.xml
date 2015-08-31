@@ -403,7 +403,6 @@
                             <height>25</height>
                             <width>480</width>
                             <label>$LOCALIZE[19157]</label>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font24_title</font>
                             <textcolor>button_focus</textcolor>
@@ -416,7 +415,6 @@
                             <height>25</height>
                             <width>480</width>
                             <label>$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]</label>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font12</font>
                             <scroll>true</scroll>
@@ -429,7 +427,6 @@
                             <height>25</height>
                             <width>680</width>
                             <label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - ][/COLOR]</label>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font12_title</font>
                             <shadowcolor>black</shadowcolor>
@@ -462,7 +459,6 @@
                             <height>25</height>
                             <width>400</width>
                             <label>$LOCALIZE[19158]</label>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font24_title</font>
                             <textcolor>button_focus</textcolor>
@@ -474,7 +470,6 @@
                             <height>25</height>
                             <width>400</width>
                             <label>$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]</label>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font12</font>
                             <scroll>true</scroll>
@@ -486,7 +481,6 @@
                             <height>30</height>
                             <width>800</width>
                             <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - ][/COLOR]</label>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font12_title</font>
                             <shadowcolor>black</shadowcolor>
@@ -495,7 +489,7 @@
                     </control>
                 </control>
                 <include name="WidgetListSquare">
-                    <param name="content_path" value="pvr://channels/tv/All channels/"/>
+                    <param name="content_path" value="pvr://recordings/active/"/>
                     <param name="widget_header" value="Recent recordings"/>
                     <param name="widget_target" value="pvr"/>
                     <param name="list_id" value="12100"/>
@@ -828,7 +822,6 @@
                 <posy>94</posy>
                 <width>420</width>
                 <height>110</height>
-                <align>left</align>
                 <onup>700</onup>
                 <ondown>SetFocus(9000,0)</ondown>
                 <ondown>9000</ondown>
@@ -854,7 +847,6 @@
                 <posy>91</posy>
                 <width>520</width>
                 <height>110</height>
-                <align>left</align>
                 <aligny>center</aligny>
                 <font>font14</font>
                 <scrollout>false</scrollout>
@@ -943,7 +935,6 @@
                             <top>0</top>
                             <height>70</height>
                             <width>560</width>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font14</font>
                             <label>$INFO[ListItem.Label]</label>
@@ -957,7 +948,6 @@
                             <top>0</top>
                             <height>70</height>
                             <width>560</width>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font14</font>
                             <label>$INFO[ListItem.Label]</label>
@@ -969,7 +959,6 @@
                             <top>17</top>
                             <height>70</height>
                             <width>560</width>
-                            <align>left</align>
                             <aligny>center</aligny>
                             <font>font10</font>
                             <label>$INFO[ListItem.Label2]</label>
