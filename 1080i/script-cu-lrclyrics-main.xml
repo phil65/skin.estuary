@@ -56,8 +56,6 @@
                         <aligny>center</aligny>
                         <align>center</align>
                         <shadowcolor>black</shadowcolor>
-                        <textcolor>white</textcolor>
-                        <selectedcolor>selected</selectedcolor>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!Control.HasFocus(110)</visible>
                     </control>
@@ -86,7 +84,6 @@
                 <aligny>center</aligny>
                 <font>font13_title</font>
                 <label>31203</label>
-                <textcolor>white</textcolor>
                 <visible>Control.IsVisible(120) + !Control.IsVisible(110)</visible>
             </control>
             <!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->

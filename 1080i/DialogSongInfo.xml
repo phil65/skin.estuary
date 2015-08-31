@@ -26,7 +26,6 @@
 				<aligny>center</aligny>
 				<font>font30_title</font>
 				<label>[B]$INFO[ListItem.Title][/B]</label>
-				<textcolor>white</textcolor>
 				<scroll>true</scroll>
 			</control>
 			<control type="image">
@@ -62,7 +61,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.Artist]</label>
 						<scrollout>false</scrollout>
 						<pauseatend>2000</pauseatend>
@@ -87,7 +85,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.Album]$INFO[listitem.discnumber, - $LOCALIZE[427] ]</label>
 						<scrollout>false</scrollout>
 						<pauseatend>2000</pauseatend>
@@ -114,7 +111,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.Genre]</label>
 					</control>
 				</control>
@@ -137,7 +133,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.Year]</label>
 					</control>
 				</control>
@@ -160,7 +155,6 @@
 						<height>25</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
 						<label fallback="161">$INFO[ListItem.TrackNumber]</label>
 					</control>
 				</control>

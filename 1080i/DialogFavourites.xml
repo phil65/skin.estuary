@@ -120,8 +120,6 @@
             <aligny>center</aligny>
             <align>center</align>
             <label>No favourites found. You can add any item from media views to this list by using the context menu.</label>
-            <selectedcolor>selected</selectedcolor>
-            <textcolor>white</textcolor>
             <font>font30_title</font>
             <visible>Stringcompare(Container(450).NumItems,0)</visible>
         </control>

@@ -94,7 +94,6 @@
 				<aligny>center</aligny>
 				<font>font30</font>
 				<label>[UPPERCASE]$LOCALIZE[31040][/UPPERCASE]: $INFO[Player.Title]</label>
-				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
 				<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
@@ -121,7 +120,6 @@
 					<width>1600</width>
 					<height>146</height>
 					<label>$INFO[VideoPlayer.Plot]</label>
-					<textcolor>white</textcolor>
 					<align>justify</align>
 					<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
 				</control>
@@ -131,7 +129,6 @@
 					<width min="10" max="840">auto</width>
 					<height>44</height>
 					<label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, • Season ,]$INFO[VideoPlayer.Episode, • Episode ,]$INFO[Player.Duration, • ,]</label>
-					<textcolor>white</textcolor>
 					<align>right</align>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(Episodes)</visible>
@@ -142,7 +139,6 @@
 					<width min="10" max="840">auto</width>
 					<height>44</height>
 					<label>$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, • ,]$INFO[VideoPlayer.Studio, • ,]$INFO[VideoPlayer.Rating, • ,]$INFO[Player.Duration(mm:ss), • ,]</label>
-					<textcolor>white</textcolor>
 					<align>right</align>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(Movies)</visible>
@@ -153,7 +149,6 @@
 					<width min="10" max="840">auto</width>
 					<height>44</height>
 					<label>$INFO[VideoPlayer.ChannelNumberLabel,$LOCALIZE[19029]: , ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.NextTitle, • $LOCALIZE[19031]: ]</label>
-					<textcolor>white</textcolor>
 					<align>right</align>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
@@ -177,7 +172,6 @@
 					<top>925\</top>
 					<align>center</align>
 					<font>font30_title</font>
-					<textcolor>white</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[VideoPlayer.Rating]</label>
 				</control>
@@ -188,7 +182,6 @@
 					<width>155</width>
 					<align>center</align>
 					<font>font12</font>
-					<textcolor>white</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>Rating</label>
 				</control>
@@ -200,7 +193,6 @@
 					<height>100</height>
 					<align>left</align>
 					<font>font16</font>
-					<textcolor>white</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
@@ -213,7 +205,6 @@
 					<height>100</height>
 					<align>left</align>
 					<font>font16</font>
-					<textcolor>white</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[Player.Time]$INFO[Player.Duration, / , •]  $INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, /] • $INFO[Player.FinishTime, Ends: ,]</label>
 					<visible>!Player.Seeking</visible>
