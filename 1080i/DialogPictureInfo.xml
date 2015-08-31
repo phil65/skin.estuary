@@ -68,7 +68,6 @@
 						<aligny>center</aligny>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
-						<selectedcolor>selected</selectedcolor>
 						<textcolor>button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -81,8 +80,6 @@
 						<font>font12</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
-						<selectedcolor>selected</selectedcolor>
-						<textcolor>white</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</focusedlayout>
@@ -95,7 +92,6 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font12</font>
-						<selectedcolor>selected</selectedcolor>
 						<textcolor>button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 						<scroll>false</scroll>
@@ -109,8 +105,6 @@
 						<font>font12</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
-						<selectedcolor>selected</selectedcolor>
-						<textcolor>white</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</itemlayout>

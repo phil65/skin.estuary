@@ -70,8 +70,6 @@
 						<textoffsetx>40</textoffsetx>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
 					</control>
 					<control type="image">
@@ -108,8 +106,6 @@
 						<textoffsetx>40</textoffsetx>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
 					</control>
 					<control type="image">
@@ -130,7 +126,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
 						<label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
 					</control>
 				</focusedlayout>

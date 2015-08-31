@@ -120,7 +120,6 @@
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Property(Event.Description)]</label>
                     </control>
@@ -131,7 +130,6 @@
                         <height>50</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -180,7 +178,6 @@
                         <height>60</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Property(Event.Description)]</label>
                     </control>
@@ -191,7 +188,6 @@
                         <height>50</height>
                         <font>font12</font>
                         <textcolor>grey</textcolor>
-                        <selectedcolor>selected</selectedcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>

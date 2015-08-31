@@ -968,8 +968,6 @@
                             <aligny>center</aligny>
                             <font>font14</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                             <visible>IsEmpty(ListItem.Label2)</visible>
                         </control>
@@ -982,8 +980,6 @@
                             <aligny>center</aligny>
                             <font>font10</font>
                             <label>$INFO[ListItem.Label2]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                             <visible>Control.HasFocus(9000)</visible>
                             <animation effect="fade" start="0" end="100" time="300">VisibleChange</animation>
@@ -1007,8 +1003,6 @@
                             <aligny>center</aligny>
                             <font>font14</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>selected</selectedcolor>
-                            <textcolor>white</textcolor>
                             <shadowcolor>text_shadow</shadowcolor>
                             <scroll>false</scroll>
                         </control>

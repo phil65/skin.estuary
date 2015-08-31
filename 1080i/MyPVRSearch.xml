@@ -50,8 +50,6 @@
                             <height>100</height>
                             <font>font24_title</font>
                             <aligny>center</aligny>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="group">
@@ -73,7 +71,6 @@
                                 <font>font13</font>
                                 <aligny>top</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
                                 <label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
                             </control>
                             <control type="label">
@@ -84,7 +81,6 @@
                                 <font>font12</font>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
                                 <label>$INFO[ListItem.Date]</label>
                             </control>
                             <control type="image">
@@ -120,8 +116,6 @@
                             <height>100</height>
                             <font>font24_title</font>
                             <aligny>center</aligny>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>selected</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="group">
@@ -143,7 +137,6 @@
                                 <font>font13</font>
                                 <aligny>top</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
                                 <label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
                             </control>
                             <control type="label">
@@ -154,7 +147,6 @@
                                 <font>font12</font>
                                 <aligny>center</aligny>
                                 <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
                                 <label>$INFO[ListItem.Date]</label>
                             </control>
                             <control type="image">

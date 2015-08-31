@@ -60,7 +60,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>grey2</textcolor>
-					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
@@ -88,7 +87,6 @@
 					<height>60</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
