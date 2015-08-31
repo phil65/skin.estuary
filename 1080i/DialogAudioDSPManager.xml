@@ -107,7 +107,6 @@
 			<width>1140</width>
 			<height>500</height>
 			<control type="image">
-				<description>blue border</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1140</width>
@@ -150,7 +149,7 @@
 					<label>$LOCALIZE[15050] ($INFO[Container(20).NumItems])</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>blue</textcolor>
+					<textcolor>button_focus</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
@@ -269,7 +268,7 @@
 					<label>$LOCALIZE[15051] ($INFO[Container(21).NumItems])</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>blue</textcolor>
+					<textcolor>button_focus</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
