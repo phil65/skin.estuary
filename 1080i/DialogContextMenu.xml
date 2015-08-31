@@ -31,7 +31,6 @@
 			<top>30</top>
 			<width>450</width>
 			<height max="670">auto</height>
-
 			<usecontrolcoords>true</usecontrolcoords>
 		</control>
 		<control type="button" id="1000">
@@ -44,14 +43,14 @@
 			<align>center</align>
 			<textcolor>grey</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="150,1,150,1">listsfocus.png</texturefocus>
+			<texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
 			<texturenofocus>lists/separator.png</texturenofocus>
 		</control>
-        <include name="UpDownArrows">
-            <param name="container_id" value="996" />
-            <param name="posx" value="201" />
-            <param name="up_posy" value="-40" />
-            <param name="down_posy" value="730" />
-        </include>
+		<include name="UpDownArrows">
+			<param name="container_id" value="996" />
+			<param name="posx" value="201" />
+			<param name="up_posy" value="-40" />
+			<param name="down_posy" value="730" />
+		</include>
 	</controls>
 </window>
