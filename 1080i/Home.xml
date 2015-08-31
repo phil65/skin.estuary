@@ -428,7 +428,7 @@
                             <top>295</top>
                             <height>25</height>
                             <width>680</width>
-                            <label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
+                            <label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - ][/COLOR]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font12_title</font>
@@ -485,7 +485,7 @@
                             <top>295</top>
                             <height>30</height>
                             <width>800</width>
-                            <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
+                            <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - ][/COLOR]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>font12_title</font>
