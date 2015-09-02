@@ -554,28 +554,11 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="image">
-                            <animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
                             <left>1400</left>
                             <top>15</top>
                             <width>35</width>
                             <height>35</height>
-                            <texture>windows/pvr/record.png</texture>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31111</label>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="image">
-                            <left>1400</left>
-                            <top>15</top>
-                            <width>35</width>
-                            <height>35</height>
-                            <texture>windows/pvr/timer.png</texture>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
                         </control>
                         <control type="label">
                             <left>1445</left>
@@ -634,28 +617,11 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="image">
-                            <animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
                             <left>1400</left>
                             <top>15</top>
                             <width>35</width>
                             <height>35</height>
-                            <texture>windows/pvr/record.png</texture>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31111</label>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="image">
-                            <left>1400</left>
-                            <top>15</top>
-                            <width>35</width>
-                            <height>35</height>
-                            <texture>windows/pvr/timer.png</texture>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
                         </control>
                         <control type="label">
                             <left>1445</left>
@@ -816,33 +782,7 @@
                             <top>15</top>
                             <width>35</width>
                             <height>35</height>
-                            <texture>windows/pvr/record.png</texture>
-                            <animation effect="fade" start="100" end="40" time="960" pulse="true" condition="true">conditional</animation>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31111</label>
-                            <font>font14</font>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="image">
-                            <left>1400</left>
-                            <top>15</top>
-                            <width>35</width>
-                            <height>35</height>
-                            <texture>windows/pvr/timer.png</texture>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31104</label>
-                            <font>font14</font>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
                         </control>
                     </itemlayout>
                     <focusedlayout height="260">
@@ -888,33 +828,7 @@
                             <top>15</top>
                             <width>35</width>
                             <height>35</height>
-                            <texture>windows/pvr/record.png</texture>
-                            <animation effect="fade" start="100" end="40" time="960" pulse="true" condition="true">conditional</animation>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31111</label>
-                            <font>font14</font>
-                            <visible>ListItem.IsRecording</visible>
-                        </control>
-                        <control type="image">
-                            <left>1400</left>
-                            <top>15</top>
-                            <width>35</width>
-                            <height>35</height>
-                            <texture>windows/pvr/timer.png</texture>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31104</label>
-                            <font>font14</font>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
                         </control>
                     </focusedlayout>
                 </control>
