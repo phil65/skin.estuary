@@ -156,34 +156,24 @@
                     </control>
                 </focusedchannellayout>
                 <itemlayout height="58" width="60">
-                    <control type="image" id="1">
+                    <control type="image">
                         <width>60</width>
                         <height>60</height>
                         <texture border="3">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
                     </control>
-                    <control type="image" id="2">
+                    <control type="image">
                         <width>60</width>
                         <height>60</height>
                         <texture border="3" fallback="epg-genres/0.png">$INFO[ListItem.Genre,windows/pvr/epg-genres/,.png]</texture>
                         <visible>!Control.IsVisible(1)</visible>
                     </control>
-                    <control type="label" id="1">
+                    <control type="label">
                         <left>9</left>
                         <top>3</top>
                         <width>45</width>
                         <height>50</height>
                         <font>font13</font>
                         <label>$INFO[ListItem.Label]</label>
-                        <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
-                    </control>
-                    <control type="label" id="1">
-                        <left>45</left>
-                        <top>3</top>
-                        <width>35</width>
-                        <height>50</height>
-                        <font>font13</font>
-                        <label>$INFO[ListItem.Label]</label>
-                        <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                     </control>
                     <control type="image">
                         <left>8</left>
@@ -194,17 +184,17 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="58" width="60">
-                    <control type="image" id="14">
+                    <control type="image">
                         <width>60</width>
                         <height>60</height>
                         <texture>lists/focus.png</texture>
                     </control>
-                    <control type="image" id="2">
+                    <control type="image">
                         <width>60</width>
                         <height>60</height>
                         <top>0</top>
                     </control>
-                    <control type="label" id="1">
+                    <control type="label">
                         <left>9</left>
                         <top>3</top>
                         <width>35</width>
@@ -213,7 +203,7 @@
                         <label>$INFO[ListItem.Label]</label>
                         <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
                     </control>
-                    <control type="label" id="1">
+                    <control type="label">
                         <left>45</left>
                         <top>3</top>
                         <width>35</width>
@@ -350,7 +340,7 @@
                             <top>22</top>
                             <width>180</width>
                             <height>12</height>
-                            <visible>SubString(Window(mypvr).Property(EpgNow),true)</visible>
+                            <visible>SubString(Window(pvr).Property(EpgNow),true)</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
@@ -406,7 +396,7 @@
                             <top>22</top>
                             <width>180</width>
                             <height>12</height>
-                            <visible>SubString(Window(mypvr).Property(EpgNow),true)</visible>
+                            <visible>SubString(Window(pvr).Property(EpgNow),true)</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
@@ -543,7 +533,7 @@
                             <top>22</top>
                             <width>180</width>
                             <height>12</height>
-                            <visible>SubString(Window(mypvr).Property(EpgNow),true)</visible>
+                            <visible>SubString(Window(pvr).Property(EpgNow),true)</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
@@ -559,13 +549,6 @@
                             <width>35</width>
                             <height>35</height>
                             <texture>$VAR[PVRStatusImageVar]</texture>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31104</label>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout height="58">
@@ -606,7 +589,7 @@
                             <top>22</top>
                             <width>180</width>
                             <height>12</height>
-                            <visible>SubString(Window(mypvr).Property(EpgNow),true)</visible>
+                            <visible>SubString(Window(pvr).Property(EpgNow),true)</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
@@ -622,13 +605,6 @@
                             <width>35</width>
                             <height>35</height>
                             <texture>$VAR[PVRStatusImageVar]</texture>
-                        </control>
-                        <control type="label">
-                            <left>1445</left>
-                            <width>200</width>
-                            <height>60</height>
-                            <label>31104</label>
-                            <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                     </focusedlayout>
                 </control>
