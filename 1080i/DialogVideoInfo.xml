@@ -45,7 +45,7 @@
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
-						<label fallback="31003">$INFO[ListItem.Premiered,$LOCALIZE[20416]: ]</label>
+						<label>$INFO[ListItem.Premiered,$LOCALIZE[20416]: ]</label>
 						<font>font24_title</font>
 						<visible>Container.Content(tvshows)</visible>
 					</control>
@@ -74,7 +74,7 @@
 							<width>990</width>
 							<height>190</height>
 							<align>left</align>
-							<label fallback="31003">[B]$INFO[ListItem.TagLine,,[CR]][/B]$INFO[ListItem.Plot]</label>
+							<label>[B]$INFO[ListItem.TagLine,,[CR]][/B]$INFO[ListItem.Plot]</label>
 							<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 					</control>
