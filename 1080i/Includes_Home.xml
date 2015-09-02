@@ -10,6 +10,54 @@
         <texturenofocus colordiffuse="AAFFFFFF" border="40">buttons/button-submenu-nofo.png</texturenofocus>
         <textoffsetx>35</textoffsetx>
     </include>
+    <include name="PVRWidget">
+        <control type="image">
+            <top>-32</top>
+            <left>-70</left>
+            <width>690</width>
+            <height>392</height>
+            <texture border="22">dialogs/dialog-bg.png</texture>
+        </control>
+        <control type="image">
+            <left>0</left>
+            <top>50</top>
+            <width>200</width>
+            <height>200</height>
+            <aspectratio>keep</aspectratio>
+            <texture background="true" fallback="DefaultVideoCover.png">$PARAM[icon]</texture>
+        </control>
+        <control type="label">
+            <left>0</left>
+            <top>5</top>
+            <height>25</height>
+            <width>400</width>
+            <label>$PARAM[header]</label>
+            <aligny>center</aligny>
+            <font>font24_title</font>
+            <textcolor>button_focus</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control>
+        <control type="label">
+            <top>265</top>
+            <height>25</height>
+            <width>400</width>
+            <label>$PARAM[label1]</label>
+            <aligny>center</aligny>
+            <font>font12</font>
+            <scroll>true</scroll>
+            <shadowcolor>black</shadowcolor>
+        </control>
+        <control type="label">
+            <top>295</top>
+            <height>30</height>
+            <width>800</width>
+            <label>$PARAM[label2]</label>
+            <aligny>center</aligny>
+            <font>font12_title</font>
+            <shadowcolor>black</shadowcolor>
+            <scroll>true</scroll>
+        </control>
+    </include>
     <include name="BottomMainMenuItem">
         <control type="radiobutton" id="$PARAM[control_id]">
             <width>118</width>
@@ -116,7 +164,6 @@
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
                 <shadowcolor>text_shadow</shadowcolor>
-
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
@@ -198,7 +245,6 @@
                                 <label>$INFO[ListItem.Label]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-
                                 <align>center</align>
                             </control>
                             <control type="label">
@@ -209,7 +255,6 @@
                                 <font>font10</font>
                                 <textcolor>button_focus</textcolor>
                                 <shadowcolor>text_shadow</shadowcolor>
-
                                 <align>center</align>
                             </control>
                             <control type="progress">
@@ -253,7 +298,6 @@
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
                 <shadowcolor>text_shadow</shadowcolor>
-
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
@@ -301,7 +345,6 @@
                                 <label>$PARAM[second_label]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-
                                 <align>center</align>
                             </control>
                             <control type="label">
@@ -311,7 +354,6 @@
                                 <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-
                                 <align>center</align>
                             </control>
                         </control>
@@ -373,7 +415,6 @@
                                 <label>$PARAM[second_label]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-
                                 <align>center</align>
                             </control>
                             <control type="label">
@@ -383,7 +424,6 @@
                                 <label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
                                 <font>font10</font>
                                 <shadowcolor>text_shadow</shadowcolor>
-
                                 <align>center</align>
                             </control>
                             <control type="image">
@@ -422,7 +462,6 @@
                 <height>40</height>
                 <label>$PARAM[widget_header]</label>
                 <shadowcolor>text_shadow</shadowcolor>
-
                 <align>left</align>
             </control>
             <control type="list" id="$PARAM[list_id]">
@@ -493,7 +532,6 @@
                                     <label>$INFO[ListItem.Label]$INFO[ListItem.Year,[COLOR button_focus] - ,[/COLOR]]</label>
                                     <font>font10</font>
                                     <shadowcolor>text_shadow</shadowcolor>
-
                                     <align>center</align>
                                 </control>
                                 <control type="label">
@@ -503,7 +541,6 @@
                                     <label>$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version),[COLOR button_focus],[/COLOR]]</label>
                                     <font>font10</font>
                                     <shadowcolor>text_shadow</shadowcolor>
-
                                     <align>center</align>
                                 </control>
                             </control>
@@ -558,7 +595,6 @@
                 <label>$PARAM[widget_header]</label>
                 <font>font14</font>
                 <shadowcolor>text_shadow</shadowcolor>
-
             </control>
             <control type="list" id="$PARAM[list_id]">
                 <left>490</left>
