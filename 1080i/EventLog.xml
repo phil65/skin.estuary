@@ -218,7 +218,7 @@
                 </control>
                 <control type="togglebutton" id="4">
                     <description>Sort asc</description>
-                    <include>ButtonCommonValues</include>
+                    <include>MediaMenuItemsCommon</include>
                     <label>31051</label>
                     <altlabel>31050</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
@@ -235,17 +235,17 @@
                 <control type="button" id="21">
                     <description>Level button</description>
                     <textwidth>235</textwidth>
-                    <include>ButtonCommonValues</include>
+                    <include>MediaMenuItemsCommon</include>
                     <label>-</label>
                 </control>
                 <control type="radiobutton" id="22">
                     <description>Only show current level</description>
-                    <include>ButtonCommonValues</include>
+                    <include>MediaMenuItemsCommon</include>
                     <label>-</label>
                 </control>
                 <control type="button" id="20">
                     <description>Clear button</description>
-                    <include>ButtonCommonValues</include>
+                    <include>MediaMenuItemsCommon</include>
                     <label>192</label>
                 </control>
             </control>

@@ -962,7 +962,8 @@
                 <include>BreadcrumbsLabel</include>
             </control>
             <control type="label">
-                <label>$VAR[BreadcrumbsLabel2Var]</label>
+                <label>$INFO[Container.FolderName, / ]</label>
+                <animation effect="slide" end="0,12" time="200" reversible="true" condition="IsEmpty(Container.SortMethod)">Conditional</animation>
                 <include>BreadcrumbsLabel</include>
                 <visible>!Window.IsActive(PVR)</visible>
             </control>
