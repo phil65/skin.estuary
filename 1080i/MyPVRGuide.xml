@@ -340,7 +340,6 @@
                             <top>22</top>
                             <width>180</width>
                             <height>12</height>
-                            <visible>SubString(Window(pvr).Property(EpgNow),true)</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
@@ -396,7 +395,6 @@
                             <top>22</top>
                             <width>180</width>
                             <height>12</height>
-                            <visible>SubString(Window(pvr).Property(EpgNow),true)</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
@@ -533,7 +531,6 @@
                             <top>22</top>
                             <width>180</width>
                             <height>12</height>
-                            <visible>SubString(Window(pvr).Property(EpgNow),true)</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
@@ -589,7 +586,6 @@
                             <top>22</top>
                             <width>180</width>
                             <height>12</height>
-                            <visible>SubString(Window(pvr).Property(EpgNow),true)</visible>
                             <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
