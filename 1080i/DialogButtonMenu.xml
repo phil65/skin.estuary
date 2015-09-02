@@ -90,8 +90,6 @@
 				<label>20046</label>
 				<altlabel>20045</altlabel>
 				<usealttexture>!System.IsMaster</usealttexture>
-				<alttexturefocus border="40">buttons/button-theme-fo.png</alttexturefocus>
-				<alttexturenofocus border="40">buttons/button-nofo.png</alttexturenofocus>
 				<onclick>mastermode</onclick>
 				<visible>System.HasLocks</visible>
 			</control>

@@ -4,62 +4,55 @@
     <views>570</views>
     <controls>
         <include>DefaultBackground</include>
-        <control type="group">
+        <control type="grouplist" id="700">
             <include>OpenClose_Left</include>
-            <control type="grouplist" id="700">
-                <orientation>vertical</orientation>
-                <itemgap>-8.5</itemgap>
-                <left>110</left>
-                <top>162</top>
-                <onup>700</onup>
-                <ondown>700</ondown>
-                <onleft>570</onleft>
-                <onright>570</onright>
-                <control type="togglebutton" id="4">
-                    <width>350</width>
-                    <height>199</height>
-                    <align>center</align>
-                    <aligny>top</aligny>
-                    <font>font12</font>
-                    <textoffsetx>20</textoffsetx>
-                    <textoffsety>130</textoffsety>
-                    <label>Order: $LOCALIZE[584]</label>
-                    <altlabel>Order: $LOCALIZE[585]</altlabel>
-                    <texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-                    <texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-                    <alttexturefocus border="40">buttons/button-theme-fo.png</alttexturefocus>
-                    <alttexturenofocus border="40">buttons/button-nofo.png</alttexturenofocus>
-                    <focusedcolor>white</focusedcolor>
-                </control>
-                <control type="group" id="4100">
-                    <height>0</height>
-                    <control type="image">
-                        <posy>-150</posy>
-                        <width>350</width>
-                        <height>70</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>icons/search.png</texture>
-                    </control>
-                </control>
-                <include name="PlaylistWindowButton">
-                    <param name="control_id" value="21" />
-                    <param name="onclick" value="" />
-                    <param name="label" value="" />
-                    <param name="icon" value="icons/settings.png" />
-                </include>
-                <include name="PlaylistWindowButton">
-                    <param name="control_id" value="22" />
-                    <param name="onclick" value="" />
-                    <param name="label" value="190" />
-                    <param name="icon" value="icons/favourites.png" />
-                </include>
-                <include name="PlaylistWindowButton">
-                    <param name="control_id" value="20" />
-                    <param name="onclick" value="" />
-                    <param name="label" value="192" />
-                    <param name="icon" value="DefaultIconError.png" />
-                </include>
+            <orientation>vertical</orientation>
+            <itemgap>-8.5</itemgap>
+            <left>110</left>
+            <top>162</top>
+            <onup>700</onup>
+            <ondown>700</ondown>
+            <onleft>570</onleft>
+            <onright>570</onright>
+            <control type="togglebutton" id="4">
+                <width>350</width>
+                <height>199</height>
+                <align>center</align>
+                <aligny>top</aligny>
+                <font>font12</font>
+                <textoffsetx>20</textoffsetx>
+                <textoffsety>130</textoffsety>
+                <label>Order: $LOCALIZE[584]</label>
+                <altlabel>Order: $LOCALIZE[585]</altlabel>
             </control>
+            <control type="group" id="4100">
+                <height>0</height>
+                <control type="image">
+                    <posy>-150</posy>
+                    <width>350</width>
+                    <height>70</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture>icons/search.png</texture>
+                </control>
+            </control>
+            <include name="PlaylistWindowButton">
+                <param name="control_id" value="21" />
+                <param name="onclick" value="" />
+                <param name="label" value="" />
+                <param name="icon" value="icons/settings.png" />
+            </include>
+            <include name="PlaylistWindowButton">
+                <param name="control_id" value="22" />
+                <param name="onclick" value="" />
+                <param name="label" value="190" />
+                <param name="icon" value="icons/favourites.png" />
+            </include>
+            <include name="PlaylistWindowButton">
+                <param name="control_id" value="20" />
+                <param name="onclick" value="" />
+                <param name="label" value="192" />
+                <param name="icon" value="DefaultIconError.png" />
+            </include>
         </control>
         <control type="group">
             <posx>250</posx>
@@ -227,8 +220,6 @@
                 <control type="togglebutton" id="4">
                     <description>Sort asc</description>
                     <include>ButtonCommonValues</include>
-                    <alttexturefocus border="5">button-focus.png</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
                     <label>31051</label>
                     <altlabel>31050</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>

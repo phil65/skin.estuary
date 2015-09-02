@@ -58,7 +58,6 @@
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
-						<focusedcolor>white</focusedcolor>
 					</control>
 					<control type="button" id="100">
 						<description>(0,0) key button</description>
@@ -152,7 +151,6 @@
 						<altlabel>[B][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/B]</altlabel>
 						<align>center</align>
 						<aligny>center</aligny>
-						<focusedcolor>white</focusedcolor>
 					</control>
 					<control type="button" id="120">
 						<description>(1,0) key button</description>
@@ -244,7 +242,6 @@
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
-						<focusedcolor>white</focusedcolor>
 					</control>
 					<control type="button" id="140">
 						<description>(2,0) key button</description>
@@ -335,7 +332,6 @@
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
-						<focusedcolor>white</focusedcolor>
 					</control>
 					<control type="togglebutton" id="304">
 						<description>Symbols button</description>
@@ -349,7 +345,6 @@
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
-						<focusedcolor>white</focusedcolor>
 					</control>
 					<control type="button" id="160">
 						<description>(3,0) key button</description>
@@ -440,7 +435,6 @@
 						<aligny>center</aligny>
 						<onup>304</onup>
 						<ondown>309</ondown>
-						<focusedcolor>white</focusedcolor>
 					</control>
 					<control type="button" id="32">
 						<description>SPACE button</description>
@@ -451,7 +445,6 @@
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
-						<focusedcolor>white</focusedcolor>
 						<onup>161</onup>
 						<ondown>101</ondown>
 					</control>
@@ -466,7 +459,6 @@
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
-						<focusedcolor>white</focusedcolor>
 					</control>
 					<control type="button" id="305">
 						<description>previous button</description>
@@ -478,7 +470,6 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font16</font>
-						<focusedcolor>white</focusedcolor>
 						<onup>166</onup>
 						<ondown>106</ondown>
 					</control>
@@ -492,7 +483,6 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font16</font>
-						<focusedcolor>white</focusedcolor>
 						<onup>167</onup>
 						<ondown>107</ondown>
 					</control>
@@ -506,7 +496,6 @@
 						<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<onclick>SetFocus(502)</onclick>
-						<focusedcolor>white</focusedcolor>
 						<onup>169</onup>
 						<ondown>110</ondown>
 					</control>
