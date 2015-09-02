@@ -523,15 +523,15 @@
                 <onclick>ActivateWindow(PVRSettings)</onclick>
                 <icon>icons/settings/livetv.png</icon>
             </item>
-            <item id="10">
-                <label>13281</label>
-                <onclick>ActivateWindow(systeminfo)</onclick>
-                <icon>icons/settings/sysinfo.png</icon>
-            </item>
             <item id="9">
                 <label>$LOCALIZE[13200]</label>
                 <onclick>ActivateWindow(Profiles)</onclick>
                 <icon>icons/settings/appearance.png</icon>
+            </item>
+            <item id="10">
+                <label>System information</label>
+                <onclick>ActivateWindow(systeminfo)</onclick>
+                <icon>icons/settings/sysinfo.png</icon>
             </item>
         </content>
     </include>
