@@ -369,7 +369,7 @@
                     </control>
                     <control type="group">
                         <top>30</top>
-                        <left>1170</left>
+                        <left>1220</left>
                         <visible>PVR.IsRecording</visible>
                         <include name="PVRWidget">
                             <param name="icon" value="$INFO[PVR.NextRecordingChannelIcon]" />
