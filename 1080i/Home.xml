@@ -666,7 +666,6 @@
                     <left>480</left>
                     <width>1340</width>
                     <height>713</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="image">
@@ -674,7 +673,6 @@
                     <left>480</left>
                     <width>1340</width>
                     <height>713</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture>resource://resource.images.weatherfanart.single/$INFO[Weather.FanartCode].png</texture>
                 </control>
             </control>

@@ -17,7 +17,6 @@
                 <top>-20</top>
                 <width>1740</width>
                 <height>552</height>
-                <aspectratio>stretch</aspectratio>
                 <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="epggrid" id="10">
@@ -160,13 +159,11 @@
                     <control type="image" id="1">
                         <width>60</width>
                         <height>60</height>
-                        <aspectratio>stretch</aspectratio>
                         <texture border="3">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
                     </control>
                     <control type="image" id="2">
                         <width>60</width>
                         <height>60</height>
-                        <aspectratio>stretch</aspectratio>
                         <texture border="3" fallback="epg-genres/0.png">$INFO[ListItem.Genre,windows/pvr/epg-genres/,.png]</texture>
                         <visible>!Control.IsVisible(1)</visible>
                     </control>
@@ -200,7 +197,6 @@
                     <control type="image" id="14">
                         <width>60</width>
                         <height>60</height>
-                        <aspectratio>stretch</aspectratio>
                         <texture>lists/focus.png</texture>
                     </control>
                     <control type="image" id="2">

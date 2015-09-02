@@ -220,7 +220,6 @@
 									<posy>10</posy>
 									<width>224</width>
 									<height>325</height>
-									<aspectratio>stretch</aspectratio>
 									<texture background="true" border="8">buttons/thumbnail_focused.png</texture>
 									<visible>Control.HasFocus(50)</visible>
 								</control>

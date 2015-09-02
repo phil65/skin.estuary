@@ -66,7 +66,6 @@
                                 <top>8</top>
                                 <width>276</width>
                                 <height>394</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
                                 <bordertexture border="20">overlays/shadow.png</bordertexture>
                                 <bordersize>20</bordersize>
@@ -82,7 +81,6 @@
                                 <top>28</top>
                                 <width>236</width>
                                 <height>354</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
                             </control>
                         </control>
@@ -93,7 +91,6 @@
                     <top>375</top>
                     <width>1232</width>
                     <height>110</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="image">
@@ -101,7 +98,6 @@
                     <top>455</top>
                     <width>1232</width>
                     <height>272</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="list" id="5000">

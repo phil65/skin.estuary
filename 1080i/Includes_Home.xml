@@ -189,7 +189,6 @@
                             <top>3</top>
                             <width>240</width>
                             <height>340</height>
-                            <aspectratio>stretch</aspectratio>
                             <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture border="20">overlays/shadow.png</bordertexture>
                             <bordersize>20</bordersize>
@@ -209,7 +208,6 @@
                             <top>3</top>
                             <width>240</width>
                             <height>340</height>
-                            <aspectratio>stretch</aspectratio>
                             <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture border="20">overlays/shadow.png</bordertexture>
                             <bordersize>20</bordersize>
@@ -224,7 +222,6 @@
                                 <top>267</top>
                                 <width>212</width>
                                 <height>57</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture>colors/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
@@ -234,7 +231,6 @@
                                 <top>20</top>
                                 <width>212</width>
                                 <height>35</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture>colors/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
@@ -270,7 +266,6 @@
                                 <top>18</top>
                                 <width>211</width>
                                 <height>306</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture border="8">buttons/thumbnail_focused.png</texture>
                             </control>
                         </control>
@@ -335,7 +330,6 @@
                                 <top>240</top>
                                 <width>400</width>
                                 <height>60</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                             </control>
                             <control type="label">
@@ -389,7 +383,6 @@
                                     <top>0</top>
                                     <width>400</width>
                                     <height>30</height>
-                                    <aspectratio>stretch</aspectratio>
                                     <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                                 </control>
                                 <control type="progress">
@@ -405,7 +398,6 @@
                                 <top>240</top>
                                 <width>400</width>
                                 <height>60</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture colordiffuse="99FFFFFF">colors/black.png</texture>
                             </control>
                             <control type="label">
@@ -431,7 +423,6 @@
                                 <top>0</top>
                                 <width>400</width>
                                 <height>300</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
                                 <animation effect="fade" start="0" end="100" time="200">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
@@ -520,7 +511,6 @@
                                 <top>240</top>
                                 <width>300</width>
                                 <height>60</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture>colors/black.png</texture>
                                 <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                             </control>
@@ -549,7 +539,6 @@
                                 <top>0</top>
                                 <width>300</width>
                                 <height>300</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
                             </control>
                         </control>

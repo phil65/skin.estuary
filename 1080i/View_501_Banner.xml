@@ -67,7 +67,6 @@
                                 <top>15</top>
                                 <width>820</width>
                                 <height>155</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture border="8">buttons/thumbnail_focused.png</texture>
                             </control>
                             <control type="group">
@@ -80,7 +79,6 @@
                                     <top>126</top>
                                     <width>812</width>
                                     <height>40</height>
-                                    <aspectratio>stretch</aspectratio>
                                     <texture>colors/black.png</texture>
                                     <animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
                                 </control>

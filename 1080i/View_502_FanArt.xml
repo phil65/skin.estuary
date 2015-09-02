@@ -20,7 +20,6 @@
                     <top>-4</top>
                     <width>1765</width>
                     <height>742</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="fixedlist" id="502">
@@ -61,7 +60,6 @@
                             <top>15</top>
                             <width>1720</width>
                             <height>690</height>
-                            <aspectratio>stretch</aspectratio>
                             <texture colordiffuse="A0000000" border="8">buttons/thumbnail_focused.png</texture>
                         </control>
                         <control type="image">
@@ -69,7 +67,6 @@
                             <top>621</top>
                             <width>1254</width>
                             <height>80</height>
-                            <aspectratio>stretch</aspectratio>
                             <texture colordiffuse="button_focus">colors/white.png</texture>
                         </control>
                         <control type="image">
@@ -121,7 +118,6 @@
                                 <top>15</top>
                                 <width>1720</width>
                                 <height>690</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture colordiffuse="A0000000" border="8">buttons/thumbnail_focused.png</texture>
                             </control>
                             <control type="image">
@@ -129,7 +125,6 @@
                                 <top>19</top>
                                 <width>4</width>
                                 <height>682</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture colordiffuse="A0000000">colors/black.png</texture>
                             </control>
                             <control type="image">
@@ -137,7 +132,6 @@
                                 <top>621</top>
                                 <width>1252</width>
                                 <height>80</height>
-                                <aspectratio>stretch</aspectratio>
                                 <visible>!Control.HasFocus(502)</visible>
                                 <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                                 <texture colordiffuse="A0000000">colors/black.png</texture>
@@ -147,7 +141,6 @@
                                 <top>621</top>
                                 <width>1252</width>
                                 <height>80</height>
-                                <aspectratio>stretch</aspectratio>
                                 <visible>Control.HasFocus(502)</visible>
                                 <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                                 <animation effect="fade" start="0" end="80" time="0" condition="true">Conditional</animation>

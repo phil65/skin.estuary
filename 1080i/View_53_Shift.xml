@@ -43,7 +43,6 @@
                     <top>415</top>
                     <width>1740</width>
                     <height>110</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="image">
@@ -51,7 +50,6 @@
                     <top>435</top>
                     <width>320</width>
                     <height>70</height>
-                    <aspectratio>stretch</aspectratio>
                     <visible>Control.HasFocus(53)</visible>
                     <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
                     <texture colordiffuse="button_focus">colors/white.png</texture>
@@ -125,7 +123,6 @@
                     <top>495</top>
                     <width>880</width>
                     <height>232</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="textbox">
@@ -143,7 +140,6 @@
                     <top>495</top>
                     <width>880</width>
                     <height>232</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
                 <control type="textbox">
