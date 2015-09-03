@@ -931,13 +931,14 @@
         <control type="label" id="23000">
             <top>3</top>
             <left>0</left>
+            <label>$INFO[ListItem.SortLetter]</label>
             <font>font35_title</font>
             <width>80</width>
             <height>80</height>
             <align>center</align>
             <visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,Rating)]</visible>
+            <visible>!Container.Content(seasons)</visible>
             <animation effect="fade" start="0" end="100" time="200" delay="500" reversible="true">VisibleChange</animation>
-            <label>$INFO[ListItem.SortLetter]</label>
         </control>
         <control type="grouplist">
             <left>5</left>
@@ -1019,8 +1020,8 @@
             <control type="image">
                 <description>Weather</description>
                 <top>0</top>
-                <width>70</width>
-                <height>60</height>
+                <width>62</width>
+                <height>52</height>
                 <fadetime>300</fadetime>
                 <aspectratio align="left">keep</aspectratio>
                 <texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
@@ -1037,8 +1038,8 @@
                 <description>System Time Clock</description>
                 <left>10</left>
                 <top>16</top>
-                <height>26</height>
-                <width>26</width>
+                <height>24</height>
+                <width>24</width>
                 <texture colordiffuse="button_focus">frame/clock.png</texture>
                 <aspectratio>keep</aspectratio>
             </control>
