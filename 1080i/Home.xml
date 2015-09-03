@@ -684,7 +684,6 @@
         <control type="image">
             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <description>Logo</description>
             <left>20</left>
             <top>10</top>
             <aspectratio>keep</aspectratio>
@@ -695,7 +694,6 @@
         <control type="image">
             <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <description>Logo</description>
             <left>60</left>
             <top>20</top>
             <aspectratio>keep</aspectratio>
@@ -749,7 +747,6 @@
                 <left>53</left>
                 <top>204</top>
                 <control type="image">
-                    <description>Menu Panel</description>
                     <posx>-20</posx>
                     <posy>-20</posy>
                     <width>424</width>
