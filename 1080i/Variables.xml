@@ -149,17 +149,9 @@
     <variable name="BreadcrumbsVideoVar">
         <value condition="Container.Content(movies)">$LOCALIZE[20342]</value>
         <value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
-        <value condition="Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes) + !SubString(Container.FolderName,$LOCALIZE[20373])]">$LOCALIZE[20343]</value>
-        <value condition="Container.Content(episodes) + !SubString(Container.FolderPath,videodb://recentlyaddedepisodes/) + SubString(Container.FolderName,$LOCALIZE[20373])">$INFO[ListItem.TVShowTitle,$LOCALIZE[20343] / ]</value>
-        <value condition="Window.IsActive(musicplaylisteditor)">$LOCALIZE[10503]</value>
-        <value condition="Window.IsActive(systeminfo)">$LOCALIZE[5] / $LOCALIZE[130]</value>
-        <value condition="Window.IsActive(profilesettings)">$LOCALIZE[5] / $LOCALIZE[13200]</value>
-        <value condition="Window.IsActive(loginscreen)">$INFO[Control.GetLabel(2)]</value>
-        <value condition="Window.IsActive(weather)">$LOCALIZE[8]</value>
-        <value condition="Window.IsActive(filemanager)">$LOCALIZE[10003]</value>
-        <value condition="Window.IsActive(script-NextAired-TVGuide.xml)">$LOCALIZE[31290]</value>
-        <value condition="Window.IsActive(script-globalsearch-main.xml)">$LOCALIZE[283]</value>
-        <value condition="Window.IsActive(script-Rom_Collection_Browser-main.xml)">Rom Collection Browser $INFO[ListItem.Property(romcollection), / ]</value>
+        <value condition="Container.Content(tvshows)">$LOCALIZE[20343]</value>
+        <value condition="Container.Content(seasons)">$LOCALIZE[20343]</value>
+        <value condition="Container.Content(episodes)">$LOCALIZE[20343]$INFO[ListItem.TVShowTitle, / ]</value>
         <value>$LOCALIZE[3]</value>
     </variable>
     <variable name="MusicLibraryUpdateVar">
