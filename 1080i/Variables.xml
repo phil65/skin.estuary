@@ -51,8 +51,8 @@
     </variable>
     <variable name="AudioDSPIconVar">
         <value condition="!IsEmpty(ADSP.MasterOverrideIcon)">$INFO[ADSP.MasterOverrideIcon]</value>
-        <value condition="Player.HasVideo">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</value>
-        <value condition="Player.HasAudio">$INFO[MusicPlayer.Codec,flagging/audio/,.png]</value>
+        <value condition="Player.HasVideo">$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</value>
+        <value condition="Player.HasAudio">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</value>
     </variable>
     <variable name="PosterVar">
         <value condition="!IsEmpty(Container.Art(season.poster)) + Container.Content(episodes)">$INFO[Container.Art(season.poster)]</value>

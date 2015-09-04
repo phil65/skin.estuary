@@ -114,7 +114,7 @@
                             <textcolor>grey</textcolor>
                             <align>center</align>
                             <aligny>top</aligny>
-                            <label>Last log-in:</label>
+                            <label>$LOCALIZE[31320]:</label>
                         </control>
                         <control type="label">
                             <left>6</left>
@@ -162,7 +162,7 @@
                             <font>font12</font>
                             <align>center</align>
                             <aligny>top</aligny>
-                            <label>Last log-in:</label>
+                            <label>$LOCALIZE[31320]:</label>
                         </control>
                         <control type="label">
                             <left>6</left>
@@ -193,7 +193,8 @@
                         <width>1214</width>
                     </control>
                     <control type="button" id="5">
-                        <label>Auto Login (Current Setting: $INFO[System.ProfileAutoLogin])</label>
+                        <label>Auto Login</label>
+                        <label2>[COLOR button_focus]$INFO[System.ProfileAutoLogin][/COLOR]</label2>
                         <include>DefaultSettingButton</include>
                         <width>1214</width>
                         <enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>

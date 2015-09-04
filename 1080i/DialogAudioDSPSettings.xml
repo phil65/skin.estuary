@@ -76,7 +76,7 @@
 				<width>50</width>
 				<height>35</height>
 				<aspectratio align="center">keep</aspectratio>
-				<texture>$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
+				<texture>$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]</texture>
 			</control>
 			<control type="label">
 				<description>type label</description>
