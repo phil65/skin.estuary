@@ -32,6 +32,13 @@
                     <scrolltime>200</scrolltime>
                     <itemlayout height="58">
                         <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1050</width>
+                            <height>58</height>
+                            <texture border="90,3,90,3">lists/separator.png</texture>
+                        </control>
+                        <control type="image">
                             <left>5</left>
                             <top>5</top>
                             <width>48</width>
@@ -56,7 +63,7 @@
                         </control>
                         <control type="progress">
                             <left>380</left>
-                            <top>38</top>
+                            <top>35</top>
                             <width>200</width>
                             <height>12</height>
                             <info>ListItem.Progress</info>
@@ -119,7 +126,7 @@
                         </control>
                         <control type="progress">
                             <left>380</left>
-                            <top>38</top>
+                            <top>35</top>
                             <width>200</width>
                             <height>12</height>
                             <info>ListItem.Progress</info>
