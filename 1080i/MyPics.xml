@@ -21,7 +21,50 @@
                 <param name="visible" value="!IsEmpty(Container.FolderPath)" />
             </include>
         </control>
-        <include>Media_Menu</include>
+        <control type="group">
+            <include>MediaMenuCommon</include>
+            <control type="grouplist" id="9000">
+                <top>110</top>
+                <include>MediaMenuListCommon</include>
+                <control type="edit" id="19">
+                    <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>587</label>
+                </control>
+                <control type="radiobutton" id="20">
+                    <visible>Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>587</label>
+                    <onclick>right</onclick>
+                    <onclick>Filter</onclick>
+                </control>
+                <control type="label" id="203">
+                    <description>Actions</description>
+                    <include>MediaMenuLabelCommon</include>
+                    <label>31039</label>
+                </control>
+                <control type="button" id="6">
+                    <label>13317</label>
+                    <include>MediaMenuItemsCommon</include>
+                </control>
+                <control type="button" id="7">
+                    <label>13318</label>
+                    <include>MediaMenuItemsCommon</include>
+                </control>
+                <control type="button" id="9">
+                    <label>13319</label>
+                    <include>MediaMenuItemsCommon</include>
+                </control>
+                <control type="button" id="1688">
+                    <label>Show Images on Map</label>
+                    <onclick>RunScript(script.maps.browser,folder=$INFO[Container.FolderPath])</onclick>
+                    <include>MediaMenuItemsCommon</include>
+                    <visible>System.HasAddon(script.maps.browser)</visible>
+                </control>
+            </control>
+        </control>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[1213]" />
             <param name="breadcrumbs_icon" value="icons/settings/pictures.png" />

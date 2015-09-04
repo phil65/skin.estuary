@@ -12,7 +12,27 @@
                 <param name="visible" value="Container.Content(addons)" />
             </include>
         </control>
-        <include>Media_Menu</include>
+       <control type="group">
+            <include>MediaMenuCommon</include>
+            <control type="grouplist" id="9000">
+                <top>110</top>
+                <include>MediaMenuListCommon</include>
+                <control type="edit" id="19">
+                    <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>587</label>
+                </control>
+                <control type="radiobutton" id="20">
+                    <visible>Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>587</label>
+                    <onclick>right</onclick>
+                    <onclick>Filter</onclick>
+                </control>
+            </control>
+        </control>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[10001]" />
             <param name="breadcrumbs_icon" value="icons/settings/addons.png" />

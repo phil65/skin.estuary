@@ -188,6 +188,8 @@
             <include>MediaMenuItemsCommon</include>
             <label>Viewtype</label>
             <label2>[COLOR button_focus]$INFO[Container.Viewmode][/COLOR]</label2>
+            <visible>!Container.Content(addons) + !Window.IsActive(addonbrowser)</visible>
+            <visible>!Container.Content(genres) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(tags) + !Container.Content(countries) + !Container.Content(years)</visible>
             <onclick>Container.NextViewMode</onclick>
         </control>
         <control type="button" id="3">
@@ -203,127 +205,7 @@
             <usealttexture>Container.SortDirection(Ascending)</usealttexture>
         </control>
     </include>
-    <include name="MusicLibraryButtons">
-        <control type="edit" id="8">
-            <label>137</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="16">
-            <label>589</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="100">
-            <label>Music files</label>
-            <include>MediaMenuItemsCommon</include>
-            <onclick>ReplaceWindow(MusicFiles)</onclick>
-        </control>
-        <control type="button" id="20">
-            <description>Update library</description>
-            <include>MediaMenuItemsCommon</include>
-            <label>$VAR[LibraryScanLabelVar]</label>
-        </control>
-    </include>
-    <include name="PicturesButtons">
-        <control type="button" id="6">
-            <label>13317</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="7">
-            <label>13318</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="9">
-            <label>13319</label>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-        <control type="button" id="1688">
-            <label>Show Images on Map</label>
-            <onclick>RunScript(script.maps.browser,folder=$INFO[Container.FolderPath])</onclick>
-            <include>MediaMenuItemsCommon</include>
-        </control>
-    </include>
-    <include name="Media_Menu">
-        <control type="group">
-            <include>OpenClose_Left</include>
-            <animation type="Conditional" condition="ControlGroup(9000).HasFocus | Control.HasFocus(6130)">
-                <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
-                <effect type="slide" start="-320" end="0" time="400" tween="cubic" easing="out" />
-            </animation>
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)">
-                <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-                <effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
-            </animation>
-            <control type="image">
-                <description>Menu Panel</description>
-                <left>0</left>
-                <top>80</top>
-                <width>450</width>
-                <height>920</height>
-                <texture>lists/panel.png</texture>
-            </control>
-            <control type="grouplist" id="9000">
-                <top>100</top>
-                <width>1920</width>
-                <height>800</height>
-                <align>left</align>
-                <aligny>top</aligny>
-                <orientation>vertical</orientation>
-                <scroll>true</scroll>
-                <onright>50</onright>
-                <onup>9000</onup>
-                <ondown>9000</ondown>
-                <onback>50</onback>
-                <control type="button" id="601">
-                    <label>[B]$INFO[Container.Viewmode][/B]</label>
-                    <include>MediaMenuItemsCommon</include>
-                    <onclick>Container.NextViewMode</onclick>
-                    <visible>!Window.IsActive(musicplaylisteditor)</visible>
-                </control>
-                <control type="button" id="3">
-                    <description>Sort Button</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <visible>Control.IsEnabled(3)</visible>
-                </control>
-                <control type="togglebutton" id="4">
-                    <label>Order: $LOCALIZE[584]</label>
-                    <altlabel>Order: $LOCALIZE[585]</altlabel>
-                    <include>MediaMenuItemsCommon</include>
-                    <visible>Control.IsEnabled(4)</visible>
-                </control>
-                <control type="edit" id="19">
-                    <label>$LOCALIZE[137]...</label>
-                    <!-- <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible> -->
-                    <visible>!Container.Content()</visible>
-                    <include>MediaMenuItemsCommon</include>
-                    <visible>!Window.IsActive(musiclibrary)</visible>
-                </control>
-                <control type="button" id="98">
-                    <label>587</label>
-                    <visible>Container.CanFilterAdvanced</visible>
-                    <onclick>SetFocus(50)</onclick>
-                    <onclick>Filter</onclick>
-                    <include>MediaMenuItemsCommon</include>
-                    <visible>!Container.Content()</visible>
-                </control>
-                <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons</include>
-                <include condition="Window.IsActive(pictures)">PicturesButtons</include>
-                <control type="button" id="612">
-                    <label>13350</label>
-                    <include>MediaMenuItemsCommon</include>
-                    <onclick condition="IntegerGreaterThan(Playlist.Length(music),1)">ActivateWindow(musicplaylist)</onclick>
-                    <onclick condition="IntegerGreaterThan(Playlist.Length(video),1)">ActivateWindow(videoplaylist)</onclick>
-                    <visible>IntegerGreaterThan(Playlist.Length(music),1) | IntegerGreaterThan(Playlist.Length(video),1)</visible>
-                    <visible>!Window.IsActive(MusicPlaylist) + !Window.IsActive(VideoPlaylist)</visible>
-                </control>
-                <control type="button" id="613">
-                    <label>FullScreen Media</label>
-                    <include>MediaMenuItemsCommon</include>
-                    <onclick>FullScreen</onclick>
-                    <visible>Player.HasMedia</visible>
-                </control>
-            </control>
-        </control>
-        <control type="button" id="6130">
+<!--         <control type="button" id="6130">
             <label>Button for media menu mouse support</label>
             <height>1080</height>
             <width>50</width>
@@ -331,6 +213,5 @@
             <posy>0</posy>
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
-        </control>
-    </include>
+        </control> -->
 </includes>
