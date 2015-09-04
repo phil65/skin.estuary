@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="PVRGuideListViewtype">
+        <control type="group">
+            <description>TV Guide Now</description>
+            <visible>Control.IsVisible($PARAM[container_id])</visible>
+            <top>30</top>
+            <control type="image">
+                <left>45</left>
+                <top>38</top>
+                <width>1830</width>
+                <height>1068</height>
+                <texture colordiffuse="button_focus">lists/panel.png</texture>
+            </control>
+            <control type="group">
+                <left>120</left>
+                <top>36</top>
+                <width>1740</width>
+                <height>600</height>
+                <visible>Control.IsVisible($PARAM[container_id])</visible>
+                <control type="list" id="$PARAM[container_id]">
+                    <top>60</top>
+                    <width>1740</width>
+                    <height>600</height>
+                    <onup>$PARAM[container_id]</onup>
+                    <ondown>$PARAM[container_id]</ondown>
+                    <onleft>9003</onleft>
+                    <onright>76</onright>
+                    <viewtype label="$PARAM[container_name]">list</viewtype>
+                    <pagecontrol>76</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="58">
+                        <control type="image">
+                            <left>3</left>
+                            <top>8</top>
+                            <width>45</width>
+                            <height>45</height>
+                            <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>60</left>
+                            <width>285</width>
+                            <height>52</height>
+                            <label>$INFO[ListItem.ChannelName]</label>
+                        </control>
+                        <control type="label">
+                            <left>378</left>
+                            <width>300</width>
+                            <height>52</height>
+                            <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
+                        </control>
+                        <control type="progress">
+                            <left>560</left>
+                            <top>22</top>
+                            <width>180</width>
+                            <height>12</height>
+                            <info>ListItem.Progress</info>
+                        </control>
+                        <control type="label">
+                            <left>750</left>
+                            <width>825</width>
+                            <height>52</height>
+                            <textcolor>button_focus</textcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <left>1400</left>
+                            <top>15</top>
+                            <width>35</width>
+                            <height>35</height>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="58">
+                        <control type="image">
+                            <left>-45</left>
+                            <width>1760</width>
+                            <height>60</height>
+                            <texture>osd/osd_settings_buttonnf.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <width>1665</width>
+                            <height>59</height>
+                            <texture>lists/focus.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>3</left>
+                            <top>8</top>
+                            <width>45</width>
+                            <height>45</height>
+                            <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>60</left>
+                            <width>285</width>
+                            <height>52</height>
+                            <label>$INFO[ListItem.ChannelName]</label>
+                        </control>
+                        <control type="label">
+                            <left>378</left>
+                            <width>300</width>
+                            <height>52</height>
+                            <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
+                        </control>
+                        <control type="progress">
+                            <left>560</left>
+                            <top>22</top>
+                            <width>180</width>
+                            <height>12</height>
+                            <info>ListItem.Progress</info>
+                        </control>
+                        <control type="label">
+                            <left>750</left>
+                            <width>825</width>
+                            <height>52</height>
+                            <textcolor>button_focus</textcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <left>1400</left>
+                            <top>15</top>
+                            <width>35</width>
+                            <height>35</height>
+                            <texture>$VAR[PVRStatusImageVar]</texture>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="scrollbar" id="76">
+                <left>1840</left>
+                <top>92</top>
+                <width>46</width>
+                <height>600</height>
+                <onleft>$PARAM[container_id]</onleft>
+                <onright>$PARAM[container_id]</onright>
+            </control>
+            <control type="group">
+                <left>58</left>
+                <top>698</top>
+                <height>227</height>
+                <width>400</width>
+                <control type="image">
+                    <left>100</left>
+                    <top>35</top>
+                    <width>200</width>
+                    <height>150</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[Container($PARAM[container_id]).ListItem.Icon]</texture>
+                    <visible>!Control.IsVisible(55)</visible>
+                </control>
+                <control type="image" id="55">
+                    <left>0</left>
+                    <top>15</top>
+                    <width>400</width>
+                    <height>200</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.PlotOutline]</texture>
+                    <visible>SubString(ListItem.PlotOutline,http://,Left) | SubString(ListItem.PlotOutline,https://,Left)</visible>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.IsVisible($PARAM[container_id])</visible>
+                <left>480</left>
+                <top>722</top>
+                <height>227</height>
+                <width>1500</width>
+                <control type="label">
+                    <width>1350</width>
+                    <height>30</height>
+                    <textcolor>button_focus</textcolor>
+                    <font>font13</font>
+                    <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]  [COLOR grey]$INFO[ListItem.Title][/COLOR]      $LOCALIZE[515]: [COLOR grey]$INFO[ListItem.Genre][/COLOR]</label>
+                </control>
+                <control type="textbox">
+                    <top>40</top>
+                    <width>1350</width>
+                    <height>145</height>
+                    <font>font13</font>
+                    <label>$INFO[ListItem.Plot]</label>
+                    <autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="PVRInfoPanel">
+        <control type="image">
+            <left>-40</left>
+            <top>-20</top>
+            <width>644</width>
+            <height>170</height>
+            <texture border="22">dialogs/dialog-bg.png</texture>
+        </control>
+        <control type="image">
+            <left>-40</left>
+            <top>130</top>
+            <width>644</width>
+            <height>520</height>
+            <texture border="22">dialogs/dialog-bg.png</texture>
+        </control>
+        <control type="image">
+            <left>-40</left>
+            <top>632</top>
+            <width>644</width>
+            <height>94</height>
+            <texture border="22">dialogs/dialog-bg.png</texture>
+        </control>
+        <control type="group">
+            <left>150</left>
+            <top>40</top>
+            <control type="progress">
+                <description>Progressbar</description>
+                <top>60</top>
+                <width>360</width>
+                <height>12</height>
+                <colordiffuse>88FFFFFF</colordiffuse>
+                <visible>ListItem.HasEpg</visible>
+                <info>ListItem.Progress</info>
+            </control>
+            <control type="label">
+                <top>24</top>
+                <width>560</width>
+                <height>262</height>
+                <align>left</align>
+                <font>font12</font>
+                <visible>!StringCompare(ListItem.StartTime,ListItem.EndTime)</visible>
+                <label>$INFO[ListItem.StartTime]</label>
+            </control>
+            <control type="label">
+                <top>24</top>
+                <width>360</width>
+                <height>262</height>
+                <align>right</align>
+                <font>font12</font>
+                <visible>!StringCompare(ListItem.StartTime,ListItem.EndTime)</visible>
+                <label>$INFO[ListItem.EndTime]</label>
+            </control>
+            <control type="label">
+                <top>-30</top>
+                <width>560</width>
+                <height>262</height>
+                <textcolor>button_focus</textcolor>
+                <font>font24_title</font>
+                <label>$INFO[ListItem.ChannelName]</label>
+            </control>
+        </control>
+        <control type="image">
+            <left>-20</left>
+            <top>15</top>
+            <width>150</width>
+            <height>100</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[ListItem.Icon]</texture>
+        </control>
+        <control type="label">
+            <top>154</top>
+            <width>560</width>
+            <height>262</height>
+            <textcolor>button_focus</textcolor>
+            <font>font24_title</font>
+            <label>$INFO[ListItem.Title]</label>
+        </control>
+        <control type="label">
+            <top>210</top>
+            <width>560</width>
+            <height>262</height>
+            <label>$INFO[ListItem.Genre,[COLOR button_focus]Genre:[/COLOR] ]</label>
+        </control>
+        <control type="label">
+            <top>660</top>
+            <width>560</width>
+            <height>262</height>
+            <font>font12</font>
+            <label>$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]</label>
+        </control>
+        <control type="label">
+            <top>660</top>
+            <width>560</width>
+            <height>262</height>
+            <align>right</align>
+            <font>font12</font>
+            <label>$INFO[ListItem.NextStartTime]</label>
+        </control>
+        <control type="textbox">
+            <top>254</top>
+            <width>560</width>
+            <height>362</height>
+            <align>justify</align>
+            <label>$INFO[ListItem.Plot]</label>
+        </control>
+    </include>
+</includes>
