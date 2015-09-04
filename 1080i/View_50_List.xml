@@ -375,17 +375,15 @@
                     <include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">SongsListLayout</include>
                     <include>AddonsListLayout</include>
                 </control>
-                <control type="group">
+                <control type="scrollbar" id="60">
                     <animation effect="slide" start="0,0" end="500,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">conditional</animation>
-                    <control type="scrollbar" id="60">
-                        <left>720</left>
-                        <top>0</top>
-                        <width>12</width>
-                        <height>706</height>
-                        <onleft>50</onleft>
-                        <onright>50</onright>
-                        <orientation>vertical</orientation>
-                    </control>
+                    <left>720</left>
+                    <top>0</top>
+                    <width>12</width>
+                    <height>706</height>
+                    <onleft>50</onleft>
+                    <onright>50</onright>
+                    <orientation>vertical</orientation>
                 </control>
             </control>
         </control>
@@ -557,7 +555,7 @@
                 <align>right</align>
                 <aligny>center</aligny>
                 <font>font12</font>
-                <label>$INFO[ListItem.Label2]</label>
+                <label>$VAR[AddonsLabel2Var]</label>
                 <textcolor>grey</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
@@ -587,7 +585,7 @@
                 <align>right</align>
                 <aligny>center</aligny>
                 <font>font12</font>
-                <label>$INFO[ListItem.Label2]</label>
+                <label>$VAR[AddonsLabel2Var]</label>
                 <textcolor>grey</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>

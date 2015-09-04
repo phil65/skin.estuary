@@ -45,6 +45,10 @@
         <value condition="Container.Content(episodes)">$INFO[ListItem.Art(thumb)]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
+    <variable name="AddonsLabel2Var">
+        <value condition="!IsEmpty(Label2)">$INFO[ListItem.Label2]</value>
+        <value>$INFO[ListItem.Property(addon.creator)]$INFO[ListItem.Property(addon.version), - ]</value>
+    </variable>
     <variable name="AudioDSPIconVar">
         <value condition="!IsEmpty(ADSP.MasterOverrideIcon)">$INFO[ADSP.MasterOverrideIcon]</value>
         <value condition="Player.HasVideo">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</value>
