@@ -96,6 +96,7 @@
                             <width>1050</width>
                             <height>101</height>
                             <texture border="90,3,90,3">lists/separator.png</texture>
+                            <visible>!Control.HasFocus(50)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
