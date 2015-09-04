@@ -29,7 +29,7 @@
                     <height>700</height>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <onleft>104</onleft>
+                    <onleft>9000</onleft>
                     <onright>77</onright>
                     <pagecontrol>77</pagecontrol>
                     <scrolltime>200</scrolltime>
@@ -173,6 +173,7 @@
             <include>OpenClose_Right</include>
             <include>PVRInfoPanel</include>
         </control>
+        <include>PVRSideBar</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="TV search" />
             <param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />

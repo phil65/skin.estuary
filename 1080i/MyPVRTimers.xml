@@ -27,7 +27,7 @@
                     <height>700</height>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <onleft>103</onleft>
+                    <onleft>9000</onleft>
                     <onright>73</onright>
                     <pagecontrol>73</pagecontrol>
                     <scrolltime>200</scrolltime>
@@ -168,6 +168,7 @@
                 <include>PVRInfoPanel</include>
             </control>
         </control>
+        <include>PVRSideBar</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="Live TV - Timers" />
             <param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />

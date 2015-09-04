@@ -29,7 +29,7 @@
                     <height>700</height>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>vertical</orientation>
-                    <onleft>60</onleft>
+                    <onleft>9000</onleft>
                     <onright>60</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
@@ -180,7 +180,7 @@
                 <param name="down_posy" value="912" />
             </include>
         </control>
-        <include>Media_Menu</include>
+        <include>PVRSideBar</include>
         <include name="TopBar">
             <param name="breadcrumbs_label" value="Live TV$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), / ]" />
             <param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
