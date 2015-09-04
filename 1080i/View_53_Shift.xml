@@ -154,20 +154,28 @@
                 </control>
                 <control type="grouplist">
                     <orientation>vertical</orientation>
-                    <top>523</top>
+                    <top>518</top>
                     <itemgap>-8</itemgap>
-                    <left>830</left>
+                    <left>815</left>
                     <include name="MediaFlag">
                         <param name="texture" value="$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]" />
+                        <param name="width" value="130" />
+                        <param name="height" value="53" />
                     </include>
                     <include name="MediaFlag">
                         <param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+                        <param name="width" value="130" />
+                        <param name="height" value="53" />
                     </include>
                     <include name="MediaFlag">
                         <param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
+                        <param name="width" value="130" />
+                        <param name="height" value="53" />
                     </include>
                     <include name="MediaFlag">
                         <param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
+                        <param name="width" value="130" />
+                        <param name="height" value="53" />
                     </include>
                 </control>
             </control>
