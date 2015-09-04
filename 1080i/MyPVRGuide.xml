@@ -44,7 +44,7 @@
                         <textcolor>button_focus</textcolor>
                     </control>
                 </rulerlayout>
-                <channellayout height="58" width="420">
+                <channellayout height="58" width="330">
                     <control type="label">
                         <left>5</left>
                         <top>-2</top>
@@ -55,26 +55,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                     </control>
-                    <control type="image">
-                        <left>65</left>
-                        <top>4</top>
-                        <width>65</width>
-                        <height>50</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio>keep</aspectratio>
-                        <align>center</align>
-                        <visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),2) + !IsEmpty(ListItem.Icon)</visible>
-                    </control>
-                    <control type="image">
-                        <left>65</left>
-                        <width>250</width>
-                        <height>60</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio align="center">keep</aspectratio>
-                        <align>center</align>
-                        <visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),1) + !IsEmpty(ListItem.Icon)</visible>
-                    </control>
-                    <control type="label">
+                    <control type="label" id="1">
                         <left>65</left>
                         <top>-2</top>
                         <width>350</width>
@@ -83,21 +64,9 @@
                         <label>$INFO[ListItem.ChannelName]</label>
                         <aligny>center</aligny>
                         <textoffsetx>10</textoffsetx>
-                        <visible>IsEmpty(Skin.String(LiveTV.EpgViewChannels)) | IsEmpty(ListItem.Icon)</visible>
-                    </control>
-                    <control type="label">
-                        <left>130</left>
-                        <top>-2</top>
-                        <width>300</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.ChannelName]</label>
-                        <aligny>center</aligny>
-                        <textoffsetx>10</textoffsetx>
-                        <visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),2) + !IsEmpty(ListItem.Icon)</visible>
                     </control>
                 </channellayout>
-                <focusedchannellayout height="58" width="420">
+                <focusedchannellayout height="58" width="330">
                     <control type="image">
                         <width>450</width>
                         <height>60</height>
@@ -113,26 +82,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                     </control>
-                    <control type="image">
-                        <left>65</left>
-                        <top>4</top>
-                        <width>65</width>
-                        <height>50</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio>keep</aspectratio>
-                        <align>center</align>
-                        <visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),2) + !IsEmpty(ListItem.Icon)</visible>
-                    </control>
-                    <control type="image">
-                        <left>65</left>
-                        <width>250</width>
-                        <height>60</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio align="center">keep</aspectratio>
-                        <align>center</align>
-                        <visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),1) + !IsEmpty(ListItem.Icon)</visible>
-                    </control>
-                    <control type="label">
+                    <control type="label" id="1">
                         <left>65</left>
                         <top>-2</top>
                         <width>350</width>
@@ -141,22 +91,10 @@
                         <label>$INFO[ListItem.ChannelName]</label>
                         <aligny>center</aligny>
                         <textoffsetx>10</textoffsetx>
-                        <visible>IsEmpty(Skin.String(LiveTV.EpgViewChannels)) | IsEmpty(ListItem.Icon)</visible>
-                    </control>
-                    <control type="label">
-                        <left>130</left>
-                        <top>-2</top>
-                        <width>300</width>
-                        <height>60</height>
-                        <font>font12</font>
-                        <label>$INFO[ListItem.ChannelName]</label>
-                        <aligny>center</aligny>
-                        <textoffsetx>10</textoffsetx>
-                        <visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),2) + !IsEmpty(ListItem.Icon)</visible>
                     </control>
                 </focusedchannellayout>
                 <itemlayout height="58" width="60">
-                    <control type="image">
+                    <control type="image" id="2">
                         <width>60</width>
                         <height>60</height>
                         <texture border="3">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
@@ -167,7 +105,7 @@
                         <texture border="3" fallback="epg-genres/0.png">$INFO[ListItem.Genre,windows/pvr/epg-genres/,.png]</texture>
                         <visible>!Control.IsVisible(1)</visible>
                     </control>
-                    <control type="label">
+                    <control type="label" id="1">
                         <left>9</left>
                         <top>3</top>
                         <width>45</width>
@@ -184,33 +122,26 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="58" width="60">
-                    <control type="image">
+                    <control type="image" id="2">
                         <width>60</width>
                         <height>60</height>
                         <texture>lists/focus.png</texture>
+                        <visible>Control.HasFocus(10)</visible>
                     </control>
-                    <control type="image">
+                    <control type="image" id="2">
                         <width>60</width>
                         <height>60</height>
                         <top>0</top>
+                        <texture border="3">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
+                        <visible>!Control.HasFocus(10)</visible>
                     </control>
-                    <control type="label">
+                    <control type="label" id="1">
                         <left>9</left>
                         <top>3</top>
                         <width>35</width>
                         <height>50</height>
                         <font>font13</font>
                         <label>$INFO[ListItem.Label]</label>
-                        <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
-                    </control>
-                    <control type="label">
-                        <left>45</left>
-                        <top>3</top>
-                        <width>35</width>
-                        <height>50</height>
-                        <font>font13</font>
-                        <label>$INFO[ListItem.Label]</label>
-                        <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                     </control>
                     <control type="image">
                         <left>8</left>
@@ -231,7 +162,7 @@
                         <aspectratio align="center" aligny="top">keep</aspectratio>
                         <fadetime>400</fadetime>
                         <texture>$INFO[ListItem.PlotOutline]</texture>
-                        <visible>SubString(ListItem.PlotOutline,"http://",Left) | SubString(ListItem.PlotOutline,"https://",Left)</visible>
+                        <visible>SubString(ListItem.PlotOutline,http://,Left) | SubString(ListItem.PlotOutline,https://,Left)</visible>
                     </control>
                     <control type="image">
                         <left>125</left>
@@ -444,7 +375,7 @@
                         <height>200</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.PlotOutline]</texture>
-                        <visible>SubString(ListItem.PlotOutline,"http://",Left) | SubString(ListItem.PlotOutline,"https://",Left)</visible>
+                        <visible>SubString(ListItem.PlotOutline,http://,Left) | SubString(ListItem.PlotOutline,https://,Left)</visible>
                     </control>
                 </control>
             </control>
@@ -636,7 +567,7 @@
                         <height>200</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.PlotOutline]</texture>
-                        <visible>SubString(ListItem.PlotOutline,"http://",Left) | SubString(ListItem.PlotOutline,"https://",Left)</visible>
+                        <visible>SubString(ListItem.PlotOutline,http://,Left) | SubString(ListItem.PlotOutline,https://,Left)</visible>
                     </control>
                 </control>
             </control>
