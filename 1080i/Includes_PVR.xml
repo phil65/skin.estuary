@@ -151,6 +151,12 @@
                     </focusedlayout>
                 </control>
             </control>
+            <include name="UpDownArrows">
+                <param name="container_id" value="$PARAM[container_id]" />
+                <param name="posx" value="830" />
+                <param name="up_posy" value="-50" />
+                <param name="down_posy" value="730" />
+            </include>
             <control type="scrollbar" id="76">
                 <left>1055</left>
                 <top>2</top>
