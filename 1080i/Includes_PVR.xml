@@ -164,6 +164,7 @@
             <left>1220</left>
             <posy>180</posy>
             <visible>!IsEmpty(ListItem.Date)</visible>
+            <visible>Control.IsVisible($PARAM[container_id])</visible>
             <include>Visible_Right</include>
             <include>OpenClose_Right</include>
             <include>PVRInfoPanel</include>

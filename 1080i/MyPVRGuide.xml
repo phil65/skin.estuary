@@ -3,6 +3,7 @@
     <defaultcontrol always="true">10</defaultcontrol>
     <backgroundcolor>0</backgroundcolor>
     <views>10,11,12,13</views>
+    <menucontrol>101</menucontrol>
     <controls>
         <include>DefaultBackground</include>
         <control type="group">
@@ -196,21 +197,6 @@
                         <font>font13</font>
                         <label>$INFO[ListItem.Plot]</label>
                         <autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
-                    <control type="button" id="85">
-                        <top>205</top>
-                        <left>1145</left>
-                        <width>260</width>
-                        <height>75</height>
-                        <align>center</align>
-                        <label>$INFO[Control.GetLabel(30)]</label>
-                        <font>font12</font>
-                        <textcolor>grey</textcolor>
-                        <onclick>NextChannelGroup</onclick>
-                        <ondown>10</ondown>
-                        <onup>10</onup>
-                        <onleft>10</onleft>
-                        <onright>10</onright>
                     </control>
                 </control>
             </control>
