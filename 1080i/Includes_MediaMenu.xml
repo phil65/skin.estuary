@@ -14,6 +14,99 @@
         <alttexturefocus border="150,1,150,1">lists/focus.png</alttexturefocus>
         <alttexturenofocus border="40">lists/separator.png</alttexturenofocus>
     </include>
+    <include name="PVRSideBar">
+        <control type="group">
+            <include>MediaMenuCommon</include>
+            <control type="grouplist" id="9000">
+                <top>110</top>
+                <include>MediaMenuListCommon</include>
+                <control type="button" id="28">
+                    <description>Channel Groups</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>-</label>
+                </control>
+                    <control type="label" id="300">
+                    <label>33063</label>
+                    <include>MediaMenuLabelCommon</include>
+                </control>
+                <control type="button" id="100">
+                    <description>Channels</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>19019</label>
+                    <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                </control>
+                <control type="button" id="101">
+                    <description>TV Guide</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>22020</label>
+                    <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                </control>
+                <control type="button" id="102">
+                    <description>Recordings</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>19163</label>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                </control>
+                <control type="button" id="103">
+                    <description>Timers</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>19040</label>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                </control>
+                <control type="button" id="104">
+                    <description>Search</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>137</label>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                </control>
+                <control type="radiobutton" id="31">
+                    <description>Filter</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>587</label>
+                    <selected>Container.Filtered</selected>
+                    <onclick>right</onclick>
+                    <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+                </control>
+                <!-- Misc Options (ID is completely arbitrary) -->
+                <control type="label" id="205">
+                    <label>31026</label>
+                    <include>MediaMenuLabelCommon</include>
+                    <visible>Control.IsVisible(5) | Control.IsVisible(6) | Control.IsVisible(7) | Control.IsVisible(8)</visible>
+                </control>
+                <control type="radiobutton" id="5">
+                    <description>Group recording items by folder structure</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>19270</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                </control>
+                <control type="radiobutton" id="6">
+                    <description>Show hidden channels</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>19051</label>
+                    <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+                </control>
+                <control type="radiobutton" id="7">
+                    <description>Show deleted recordings</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>19184</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                </control>
+                <control type="radiobutton" id="8">
+                    <description>Group timers</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>842</label>
+                    <visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</visible>
+                </control>
+            </control>
+        </control>
+    </include>
     <include name="MediaMenuLabelCommon">
         <width>400</width>
         <textoffsetx>20</textoffsetx>
