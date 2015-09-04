@@ -214,11 +214,11 @@
             <visible>Control.IsVisible(13)</visible>
             <top>30</top>
             <control type="image">
-                <left>45</left>
-                <top>38</top>
-                <width>1830</width>
-                <height>1068</height>
-                <texture colordiffuse="button_focus">lists/panel.png</texture>
+                <left>-20</left>
+                <top>-20</top>
+                <width>1740</width>
+                <height>552</height>
+                <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="group">
                 <width>1740</width>

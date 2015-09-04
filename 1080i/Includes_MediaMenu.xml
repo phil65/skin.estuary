@@ -157,14 +157,14 @@
             <effect type="slide" start="-320" end="0" time="400" tween="cubic" easing="out" />
         </animation>
         <animation type="Conditional" condition="!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)">
-            <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-            <effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
+            <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" />
+            <effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="in" />
         </animation>
         <control type="image">
             <description>Menu Panel</description>
             <left>0</left>
             <top>80</top>
-            <width>400</width>
+            <width>450</width>
             <height>920</height>
             <texture>lists/panel.png</texture>
         </control>
@@ -257,7 +257,7 @@
                 <description>Menu Panel</description>
                 <left>0</left>
                 <top>80</top>
-                <width>400</width>
+                <width>450</width>
                 <height>920</height>
                 <texture>lists/panel.png</texture>
             </control>
