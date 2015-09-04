@@ -37,7 +37,7 @@
                     <label>Viewtype</label>
                     <label2>[COLOR button_focus]$INFO[Container.Viewmode][/COLOR]</label2>
                     <onclick>Container.NextViewMode</onclick>
-                    <visible>!Window.IsActive(tvchannels) + !Window.IsActive(radiochannels)</visible>
+                    <visible>Window.IsActive(tvguide) | Window.IsActive(radioguide)</visible>
                 </control>
                 <control type="button" id="3">
                     <description>Sort by button</description>
