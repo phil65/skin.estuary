@@ -57,36 +57,11 @@
             <control type="grouplist" id="9000">
                 <top>110</top>
                 <include>MediaMenuListCommon</include>
-                <control type="label" id="201">
-                    <description>View options</description>
-                    <include>MediaMenuLabelCommon</include>
-                    <label>Filters</label>
-                </control>
                 <control type="button" id="10">
                     <description>Watched Toggle</description>
                     <include>MediaMenuItemsCommon</include>
                     <label>20367</label>
                     <label2>[COLOR button_focus]$INFO[Container.NumItems][/COLOR]</label2>
-                </control>
-                <control type="button" id="8">
-                    <description>Search</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <label>137</label>
-                </control>
-                <control type="edit" id="19">
-                    <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-                    <description>Filter</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <label>587</label>
-                </control>
-                <control type="radiobutton" id="98">
-                    <visible>Container.CanFilterAdvanced</visible>
-                    <description>Filter</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <label>587</label>
-                    <selected>Container.Filtered</selected>
-                    <onclick>right</onclick>
-                    <onclick>Filter</onclick>
                 </control>
                 <control type="label" id="203">
                     <description>View options</description>
@@ -107,10 +82,11 @@
                     <selected>system.ismaster</selected>
                     <visible>system.haslocks</visible>
                 </control>
-                <control type="togglebutton" id="20">
+                <control type="togglebutton" id="619">
                     <description>Update library</description>
                     <include>MediaMenuItemsCommon</include>
                     <label>653</label>
+                    <onclick>UpdateLibrary(video)</onclick>
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
                 </control>

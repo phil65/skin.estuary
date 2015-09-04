@@ -204,14 +204,30 @@
             <altlabel>31050</altlabel>
             <usealttexture>Container.SortDirection(Ascending)</usealttexture>
         </control>
+        <control type="edit" id="19">
+            <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+            <description>Filter</description>
+            <textwidth>345</textwidth>
+            <include>MediaMenuItemsCommon</include>
+            <label>Search</label>
+        </control>
+        <control type="radiobutton" id="20">
+            <visible>Container.CanFilterAdvanced</visible>
+            <description>Filter</description>
+            <include>MediaMenuItemsCommon</include>
+            <label>587</label>
+            <selected>Container.Filtered</selected>
+            <onclick>right</onclick>
+            <onclick>Filter</onclick>
+        </control>
     </include>
-<!--         <control type="button" id="6130">
-            <label>Button for media menu mouse support</label>
-            <height>1080</height>
-            <width>50</width>
-            <posx>-50</posx>
-            <posy>0</posy>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
-        </control> -->
+    <!-- <control type="button" id="6130">
+         <label>Button for media menu mouse support</label>
+         <height>1080</height>
+         <width>50</width>
+         <posx>-50</posx>
+         <posy>0</posy>
+         <texturefocus>-</texturefocus>
+         <texturenofocus>-</texturenofocus>
+         </control> -->
 </includes>

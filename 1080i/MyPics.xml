@@ -26,20 +26,6 @@
             <control type="grouplist" id="9000">
                 <top>110</top>
                 <include>MediaMenuListCommon</include>
-                <control type="edit" id="19">
-                    <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-                    <description>Filter</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <label>587</label>
-                </control>
-                <control type="radiobutton" id="20">
-                    <visible>Container.CanFilterAdvanced</visible>
-                    <description>Filter</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <label>587</label>
-                    <onclick>right</onclick>
-                    <onclick>Filter</onclick>
-                </control>
                 <control type="label" id="203">
                     <description>Actions</description>
                     <include>MediaMenuLabelCommon</include>
