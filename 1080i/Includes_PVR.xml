@@ -6,6 +6,8 @@
             <visible>Control.IsVisible($PARAM[container_id])</visible>
             <top>180</top>
             <left>110</left>
+            <include>OpenClose_Left</include>
+            <include>Visible_Left</include>
             <control type="image">
                 <left>-20</left>
                 <top>-20</top>
