@@ -18,14 +18,45 @@
         <control type="group">
             <include>MediaMenuCommon</include>
             <control type="grouplist" id="9000">
-                <top>110</top>
-                <include>MediaMenuListCommon</include>
+                <top>90</top>
+                <left>0</left>
+                <width>400</width>
+                <height>1080</height>
+                <onleft>9000</onleft>
+                <onup>9000</onup>
+                <onright>50</onright>
+                <ondown>9000</ondown>
+                <onback>50</onback>
+                <control type="label" id="200">
+                    <include>MediaMenuLabelCommon</include>
+                    <label>31006</label>
+                </control>
+                <control type="button" id="6051">
+                    <description>Viewtype Toggle</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>Viewtype</label>
+                    <label2>[COLOR button_focus]$INFO[Container.Viewmode][/COLOR]</label2>
+                    <onclick>Container.NextViewMode</onclick>
+                    <visible>!Window.IsActive(tvchannels) + !Window.IsActive(radiochannels)</visible>
+                </control>
+                <control type="button" id="3">
+                    <description>Sort by button</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>103</label>
+                </control>
+                <control type="togglebutton" id="4">
+                    <description>Sort asc</description>
+                    <include>MediaMenuItemsCommon</include>
+                    <label>31051</label>
+                    <altlabel>31050</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
                 <control type="button" id="28">
                     <description>Channel Groups</description>
                     <include>MediaMenuItemsCommon</include>
                     <label>-</label>
                 </control>
-                    <control type="label" id="300">
+                <control type="label" id="300">
                     <label>33063</label>
                     <include>MediaMenuLabelCommon</include>
                 </control>
