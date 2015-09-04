@@ -95,8 +95,16 @@
                             <top>0</top>
                             <width>1700</width>
                             <height>101</height>
-                            <texture border="5">lists/focus.png</texture>
+                            <texture>lists/focus.png</texture>
                             <visible>Control.HasFocus(50)</visible>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1700</width>
+                            <height>101</height>
+                            <texture border="5">lists/separator.png</texture>
+                            <visible>!Control.HasFocus(50)</visible>
                         </control>
                         <control type="label">
                             <left>30</left>
