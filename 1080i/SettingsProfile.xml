@@ -194,7 +194,7 @@
                     </control>
                     <control type="button" id="5">
                         <label>Auto Login</label>
-                        <label2>[COLOR button_focus]$INFO[System.ProfileAutoLogin][/COLOR]</label2>
+                        <label2>[B]$INFO[System.ProfileAutoLogin][/B]</label2>
                         <include>DefaultSettingButton</include>
                         <width>1214</width>
                         <enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
