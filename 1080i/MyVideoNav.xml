@@ -61,7 +61,7 @@
                     <description>Watched Toggle</description>
                     <include>MediaMenuItemsCommon</include>
                     <label>20367</label>
-                    <label2>[COLOR button_focus]$INFO[Container.NumItems][/COLOR]</label2>
+                    <label2>[B]$INFO[Container.NumItems][/B]</label2>
                 </control>
                 <control type="label" id="203">
                     <description>View options</description>

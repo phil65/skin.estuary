@@ -84,7 +84,7 @@
                     <description>Viewtype Toggle</description>
                     <include>MediaMenuItemsCommon</include>
                     <label>Viewtype</label>
-                    <label2>[COLOR button_focus]$INFO[Container.Viewmode][/COLOR]</label2>
+                    <label2>[B]$INFO[Container.Viewmode][/B]</label2>
                     <onclick>Container.NextViewMode</onclick>
                     <visible>Window.IsActive(tvguide) | Window.IsActive(radioguide)</visible>
                 </control>
@@ -193,7 +193,7 @@
             <description>Viewtype Toggle</description>
             <include>MediaMenuItemsCommon</include>
             <label>Viewtype</label>
-            <label2>[COLOR button_focus]$INFO[Container.Viewmode][/COLOR]</label2>
+            <label2>[B]$INFO[Container.Viewmode][/B]</label2>
             <visible>!Container.Content(addons) + !Window.IsActive(addonbrowser)</visible>
             <visible>!Container.Content(genres) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(tags) + !Container.Content(countries) + !Container.Content(years)</visible>
             <onclick>Container.NextViewMode</onclick>
