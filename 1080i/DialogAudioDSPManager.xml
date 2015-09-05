@@ -127,242 +127,31 @@
 			<description>available- and active mode lists</description>
 			<left>30</left>
 			<top>150</top>
-			<width>1140</width>
-			<height>500</height>
-			<ondown>9001</ondown>
-			<onup>9000</onup>
 			<control type="group">
 				<description>available modes group</description>
 				<left>0</left>
 				<top>0</top>
 				<width>570</width>
 				<height>360</height>
-				<control type="label">
-					<description>blue available modes</description>
-					<left>25</left>
-					<top>2</top>
-					<width>550</width>
-					<height>30</height>
-					<font>font12_title</font>
-					<label>$LOCALIZE[15050] ($INFO[Container(20).NumItems])</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<textcolor>button_focus</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="image">
-					<description>available modes list border</description>
-					<left>25</left>
-					<top>30</top>
-					<width>538</width>
-					<height>350</height>
-					<texture border="38">lists/separator.png</texture>
-				</control>
-				<control type="scrollbar" id="60">
-					<description>scrollbar for available modes list</description>
-					<left>5</left>
-					<top>30</top>
-					<width>25</width>
-					<height>350</height>
-					<onleft>61</onleft>
-					<onright>20</onright>
-					<orientation>vertical</orientation>
-				</control>
-				<control type="list" id="20">
-					<description>available modes list</description>
-					<left>30</left>
-					<top>35</top>
-					<width>528</width>
-					<height>345</height>
-					<onup>9000</onup>
-					<ondown>9001</ondown>
-					<onleft>60</onleft>
-					<onright>21</onright>
-					<pagecontrol>60</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<itemlayout height="46" width="528">
-						<control type="image">
-							<left>0</left>
-							<top>3</top>
-							<width>528</width>
-							<height>40</height>
-							<texture border="38">lists/separator.png</texture>
-						</control>
-						<control type="image">
-							<left>15</left>
-							<top>8</top>
-							<width>30</width>
-							<height>30</height>
-							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
-						</control>
-						<control type="label">
-							<description>active addon name and mode name</description>
-							<left>80</left>
-							<top>3</top>
-							<width>435</width>
-							<height>40</height>
-							<font>font12</font>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout height="66" width="528">
-						<control type="image">
-							<left>0</left>
-							<top>3</top>
-							<width>528</width>
-							<height>60</height>
-							<texture>lists/focus.png</texture>
-							<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
-						</control>
-						<control type="image">
-							<left>5</left>
-							<top>8</top>
-							<width>50</width>
-							<height>50</height>
-							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
-						</control>
-						<control type="label">
-							<description>addon name and mode</description>
-							<left>80</left>
-							<top>3</top>
-							<width>435</width>
-							<height>40</height>
-							<font>font12</font>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
-						</control>
-						<control type="label">
-							<description>ADSP-Mode description</description>
-							<left>80</left>
-							<top>33</top>
-							<width>435</width>
-							<height>30</height>
-							<font>font12</font>
-							<aligny>center</aligny>
-							<textcolor>grey2</textcolor>
-							<label>$INFO[ListItem.Property(Description)]</label>
-						</control>
-					</focusedlayout>
-				</control>
+				<include name="AudioDSPModeList">
+					<param name="sublabel" value="$LOCALIZE[15050] ($INFO[Container(20).NumItems])" />
+					<param name="scrollbar_id" value="60" />
+					<param name="list_id" value="20" />
+					<param name="onright" value="21" />
+					<param name="onleft" value="21" />
+				</include>
 			</control>
 			<control type="group">
+				<description>active modes group</description>
 				<left>568</left>
 				<top>0</top>
-				<width>570</width>
-				<height>360</height>
-				<control type="label">
-					<description>blue active modes</description>
-					<left>10</left>
-					<top>2</top>
-					<width>550</width>
-					<height>30</height>
-					<font>font12_title</font>
-					<label>$LOCALIZE[15051] ($INFO[Container(21).NumItems])</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<textcolor>button_focus</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="image">
-					<description>active modes list border</description>
-					<left>10</left>
-					<top>30</top>
-					<width>538</width>
-					<height>350</height>
-					<texture border="38">lists/separator.png</texture>
-				</control>
-				<control type="scrollbar" id="61">
-					<description>scrollbar for active modes list</description>
-					<left>542</left>
-					<top>30</top>
-					<width>25</width>
-					<height>350</height>
-					<onleft>21</onleft>
-					<onright>60</onright>
-					<orientation>vertical</orientation>
-				</control>
-				<control type="list" id="21">
-					<description>active modes list</description>
-					<left>15</left>
-					<top>35</top>
-					<width>538</width>
-					<height>345</height>
-					<onup>9000</onup>
-					<ondown>9001</ondown>
-					<onleft>20</onleft>
-					<onright>61</onright>
-					<pagecontrol>61</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<itemlayout height="46" width="528">
-						<control type="image">
-							<left>0</left>
-							<top>3</top>
-							<width>528</width>
-							<height>40</height>
-							<texture border="38">lists/separator.png</texture>
-						</control>
-						<control type="image">
-							<left>15</left>
-							<top>8</top>
-							<width>30</width>
-							<height>30</height>
-							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
-						</control>
-						<control type="label">
-							<description>active addon name and mode name</description>
-							<left>80</left>
-							<top>3</top>
-							<width>435</width>
-							<height>40</height>
-							<font>font12</font>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout height="66" width="528">
-						<control type="image">
-							<left>0</left>
-							<top>3</top>
-							<width>528</width>
-							<height>60</height>
-							<texture>lists/focus.png</texture>
-							<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(21)">conditional</animation>
-						</control>
-						<control type="image">
-							<left>5</left>
-							<top>8</top>
-							<width>50</width>
-							<height>50</height>
-							<texture fallback="DefaultAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
-						</control>
-						<control type="label">
-							<description>addon name and mode name</description>
-							<left>80</left>
-							<top>3</top>
-							<width>435</width>
-							<height>40</height>
-							<font>font12</font>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
-						</control>
-						<control type="label">
-							<description>ADSP-Mode description</description>
-							<left>80</left>
-							<top>33</top>
-							<width>435</width>
-							<height>30</height>
-							<font>font12</font>
-							<aligny>center</aligny>
-							<textcolor>grey2</textcolor>
-							<label>$INFO[ListItem.Property(Description)]</label>
-						</control>
-					</focusedlayout>
-				</control>
+				<include name="AudioDSPModeList">
+					<param name="sublabel" value="$LOCALIZE[15051] ($INFO[Container(21).NumItems])" />
+					<param name="scrollbar_id" value="61" />
+					<param name="list_id" value="21" />
+					<param name="onright" value="20" />
+					<param name="onleft" value="20" />
+				</include>
 			</control>
 		</control>
 		<control type="grouplist" id="9001">
