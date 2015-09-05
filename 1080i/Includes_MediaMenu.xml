@@ -31,42 +31,50 @@
                     <include>MediaMenuLabelCommon</include>
                     <label>Sections</label>
                 </control>
-               <control type="button" id="100">
+               <control type="togglebutton" id="100">
                     <description>Channels</description>
                     <include>MediaMenuItemsCommon</include>
-                    <label>19019</label>
-                    <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
+                    <label>$LOCALIZE[19019]</label>
+                    <altlabel>[B][COLOR selected]$LOCALIZE[19019][/COLOR][/B]</altlabel>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
                     <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                    <usealttexture>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</usealttexture>
                 </control>
-                <control type="button" id="101">
+                <control type="togglebutton" id="101">
                     <description>TV Guide</description>
                     <include>MediaMenuItemsCommon</include>
-                    <label>22020</label>
-                    <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
+                    <label>$LOCALIZE[22020]</label>
+                    <altlabel>[B][COLOR selected]$LOCALIZE[22020][/COLOR][/B]</altlabel>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
                     <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                    <usealttexture>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</usealttexture>
                 </control>
-                <control type="button" id="102">
+                <control type="togglebutton" id="102">
                     <description>Recordings</description>
                     <include>MediaMenuItemsCommon</include>
-                    <label>19163</label>
+                    <label>$LOCALIZE[19163]</label>
+                    <altlabel>[B][COLOR selected]$LOCALIZE[19163][/COLOR][/B]</altlabel>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
                     <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <usealttexture>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</usealttexture>
                 </control>
-                <control type="button" id="103">
+                <control type="togglebutton" id="103">
                     <description>Timers</description>
                     <include>MediaMenuItemsCommon</include>
-                    <label>19040</label>
+                    <label>$LOCALIZE[19040]</label>
+                    <altlabel>[B][COLOR selected]$LOCALIZE[19040][/COLOR][/B]</altlabel>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
                     <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <usealttexture>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</usealttexture>
                 </control>
-                <control type="button" id="104">
+                <control type="togglebutton" id="104">
                     <description>Search</description>
                     <include>MediaMenuItemsCommon</include>
-                    <label>137</label>
+                    <label>$LOCALIZE[137]</label>
+                    <altlabel>[B][COLOR selected]$LOCALIZE[137][/COLOR][/B]</altlabel>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
                     <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <usealttexture>Window.IsActive(TVSearch) | Window.IsActive(RadioSearch)</usealttexture>
                 </control>
                 <control type="label" id="200">
                     <include>MediaMenuLabelCommon</include>
