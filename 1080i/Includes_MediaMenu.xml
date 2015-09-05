@@ -4,15 +4,15 @@
         <width>400</width>
         <textoffsetx>20</textoffsetx>
         <top>0</top>
-        <height>75</height>
+        <height>70</height>
         <radioposx>300</radioposx>
         <aligny>center</aligny>
         <textcolor>white</textcolor>
         <invalidcolor>invalid</invalidcolor>
         <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
-        <texturenofocus border="40">lists/separator.png</texturenofocus>
+        <texturenofocus border="30">lists/separator.png</texturenofocus>
         <alttexturefocus border="150,1,150,1">lists/focus.png</alttexturefocus>
-        <alttexturenofocus border="40">lists/separator.png</alttexturenofocus>
+        <alttexturenofocus border="30">lists/separator.png</alttexturenofocus>
     </include>
     <include name="PVRSideBar">
         <control type="group">
