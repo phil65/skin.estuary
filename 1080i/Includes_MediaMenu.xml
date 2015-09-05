@@ -31,7 +31,7 @@
                     <include>MediaMenuLabelCommon</include>
                     <label>Sections</label>
                 </control>
-               <control type="togglebutton" id="100">
+                <control type="togglebutton" id="100">
                     <description>Channels</description>
                     <include>MediaMenuItemsCommon</include>
                     <label>$LOCALIZE[19019]</label>
@@ -88,22 +88,26 @@
                     <onclick>Container.NextViewMode</onclick>
                     <visible>Window.IsActive(tvguide) | Window.IsActive(radioguide)</visible>
                 </control>
-                <control type="button" id="3">
+                <control type="button" id="6053">
                     <description>Sort by button</description>
                     <include>MediaMenuItemsCommon</include>
-                    <label>103</label>
+                    <label>Sort by:</label>
+                    <label2>[B]$INFO[Container.SortMethod][/B]</label2>
+                    <onclick>Container.NextSortMethod</onclick>
                 </control>
-                <control type="togglebutton" id="4">
+                <control type="button" id="6055">
                     <description>Sort asc</description>
                     <include>MediaMenuItemsCommon</include>
-                    <label>31051</label>
-                    <altlabel>31050</altlabel>
-                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                    <label>Sort</label>
+                    <label2>[B]$INFO[Container.SortOrder][/B]</label2>
+                    <onclick>Container.SortDirection</onclick>
                 </control>
-                <control type="button" id="28">
+                <control type="button" id="6054">
                     <description>Channel Groups</description>
                     <include>MediaMenuItemsCommon</include>
-                    <label>-</label>
+                    <label>Group:</label>
+                    <label2>[B]$INFO[Control.GetLabel(29)][/B]</label2>
+                    <onclick>NextChannelGroup</onclick>
                 </control>
                 <control type="label" id="300">
                     <label>31026</label>
