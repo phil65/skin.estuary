@@ -386,7 +386,7 @@
             <width>560</width>
             <height>262</height>
             <font>font12</font>
-            <label>$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]</label>
+            <label>$PARAM[bottom_label1]</label>
         </control>
         <control type="label">
             <top>660</top>
@@ -394,7 +394,7 @@
             <height>262</height>
             <align>right</align>
             <font>font12</font>
-            <label>$INFO[ListItem.NextStartTime]</label>
+            <label>$PARAM[bottom_label2]</label>
         </control>
         <control type="textbox">
             <top>254</top>

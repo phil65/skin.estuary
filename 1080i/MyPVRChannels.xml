@@ -171,7 +171,10 @@
                 <visible>Control.IsVisible(50)</visible>
                 <include>Visible_Right</include>
                 <include>OpenClose_Right</include>
-                <include>PVRInfoPanel</include>
+                <include name="PVRInfoPanel">
+                    <param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]" />
+                    <param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
+                </include>
             </control>
             <include name="UpDownArrows">
                 <param name="container_id" value="50" />

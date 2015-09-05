@@ -173,7 +173,10 @@
             <visible>!IsEmpty(ListItem.Date)</visible>
             <include>Visible_Right</include>
             <include>OpenClose_Right</include>
-            <include>PVRInfoPanel</include>
+            <include name="PVRInfoPanel">
+                <param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]" />
+                <param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
+            </include>
         </control>
         <include>PVRSideBar</include>
         <include name="TopBar">
