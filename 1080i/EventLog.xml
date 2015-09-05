@@ -32,7 +32,7 @@
                     <width>350</width>
                     <height>70</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>icons/search.png</texture>
+                    <texture>icons/order.png</texture>
                 </control>
             </control>
             <include name="PlaylistWindowButton">
@@ -45,7 +45,7 @@
                 <param name="control_id" value="22" />
                 <param name="onclick" value="" />
                 <param name="label" value="190" />
-                <param name="icon" value="icons/favourites.png" />
+                <param name="icon" value="icons/levels.png" />
             </include>
             <include name="PlaylistWindowButton">
                 <param name="control_id" value="20" />
