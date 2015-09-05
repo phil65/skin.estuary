@@ -198,17 +198,19 @@
             <visible>!Container.Content(genres) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(tags) + !Container.Content(countries) + !Container.Content(years)</visible>
             <onclick>Container.NextViewMode</onclick>
         </control>
-        <control type="button" id="3">
+        <control type="button" id="6053">
             <description>Sort by button</description>
             <include>MediaMenuItemsCommon</include>
-            <label>103</label>
+            <label>Sort by:</label>
+            <label2>[B]$INFO[Container.SortMethod][/B]</label2>
+            <onclick>Container.NextSortMethod</onclick>
         </control>
-        <control type="togglebutton" id="4">
+        <control type="button" id="6052">
             <description>Sort asc</description>
             <include>MediaMenuItemsCommon</include>
-            <label>31051</label>
-            <altlabel>31050</altlabel>
-            <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+            <label>Sort</label>
+            <label2>[B]$INFO[Container.SortOrder][/B]</label2>
+            <onclick>Container.SortDirection</onclick>
         </control>
         <control type="edit" id="19">
             <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
