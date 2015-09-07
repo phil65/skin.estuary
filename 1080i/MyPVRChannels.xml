@@ -67,8 +67,7 @@
                             <width>50</width>
                             <height>12</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
-        <midtexture border="3">progress/texturebg_white.png</midtexture>
-
+                            <midtexture border="3">progress/texturebg_white.png</midtexture>
                             <visible>ListItem.HasEpg + !ListItem.IsRecording</visible>
                             <info>ListItem.Progress</info>
                         </control>
