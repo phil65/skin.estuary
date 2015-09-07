@@ -70,9 +70,9 @@
                                 <info>ListItem.Date</info>
                             </control>
                             <control type="label">
-                                <left>750</left>
+                                <left>650</left>
                                 <top>0</top>
-                                <width>180</width>
+                                <width>300</width>
                                 <height>100</height>
                                 <font>font12</font>
                                 <align>right</align>
@@ -125,7 +125,7 @@
                                 <height>100</height>
                                 <font>font13</font>
                                 <aligny>top</aligny>
-                                <label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
+                                <label>$INFO[ListItem.ChannelName]$INFO[ListItem.Label, - ]</label>
                             </control>
                             <control type="label">
                                 <left>30</left>
@@ -137,9 +137,9 @@
                                 <info>ListItem.Date</info>
                             </control>
                             <control type="label">
-                                <left>750</left>
+                                <left>650</left>
                                 <top>0</top>
-                                <width>180</width>
+                                <width>300</width>
                                 <height>100</height>
                                 <font>font12</font>
                                 <align>right</align>
