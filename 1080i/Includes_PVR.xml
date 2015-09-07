@@ -194,7 +194,7 @@
                         </control>
                         <control type="label">
                             <left>620</left>
-                            <width>525</width>
+                            <width>430</width>
                             <height>58</height>
                             <textcolor>button_focus</textcolor>
                             <aligny>center</aligny>
@@ -254,10 +254,11 @@
                             <width>200</width>
                             <height>12</height>
                             <info>ListItem.Progress</info>
+                            <midtexture border="3">progress/texturebg_white.png</midtexture>
                         </control>
                         <control type="label">
                             <left>620</left>
-                            <width>525</width>
+                            <width>430</width>
                             <height>58</height>
                             <textcolor>white</textcolor>
                             <aligny>center</aligny>
