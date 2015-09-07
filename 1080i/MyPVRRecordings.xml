@@ -54,7 +54,6 @@
                         <width>1050</width>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
-                        <shadowcolor>text_shadow</shadowcolor>
                     </control>
                     <control type="label">
                         <left>0</left>
@@ -66,8 +65,7 @@
                         <aligny>center</aligny>
                         <font>font12</font>
                         <label>$INFO[ListItem.Date]</label>
-                        <textcolor>grey</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
+                        <textcolor>white</textcolor>
                     </control>
                 </focusedlayout>
                 <itemlayout height="70">
