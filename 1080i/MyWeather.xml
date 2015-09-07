@@ -650,7 +650,7 @@
                             <top>0</top>
                             <width>1240</width>
                             <height>550</height>
-                            <texture border="8">buttons/thumbnail_focused.png</texture>
+                            <texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
                             <visible>Control.HasFocus(16001)</visible>
                         </control>
                     </focusedlayout>

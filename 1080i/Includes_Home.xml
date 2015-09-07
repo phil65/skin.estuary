@@ -266,7 +266,7 @@
                                 <top>18</top>
                                 <width>211</width>
                                 <height>306</height>
-                                <texture border="8">buttons/thumbnail_focused.png</texture>
+                                <texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
                             </control>
                         </control>
                     </control>
@@ -423,7 +423,7 @@
                                 <top>0</top>
                                 <width>400</width>
                                 <height>300</height>
-                                <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
+                                <texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
                                 <animation effect="fade" start="0" end="100" time="200">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
                                 <visible>Control.HasFocus($PARAM[list_id])</visible>
@@ -539,7 +539,7 @@
                                 <top>0</top>
                                 <width>300</width>
                                 <height>300</height>
-                                <texture background="true" border="8">buttons/thumbnail_focused.png</texture>
+                                <texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
                             </control>
                         </control>
                     </control>

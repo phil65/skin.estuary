@@ -67,7 +67,7 @@
                                 <top>15</top>
                                 <width>820</width>
                                 <height>155</height>
-                                <texture border="8">buttons/thumbnail_focused.png</texture>
+                                <texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
                             </control>
                             <control type="group">
                                 <animation type="Focus">
