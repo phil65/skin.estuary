@@ -28,21 +28,27 @@
                 <onup>3000</onup>
             </control>
         </control>
-        <control type="image">
+        <control type="button">
             <left>936</left>
             <top>113</top>
             <width>48</width>
             <height>20</height>
-            <texture colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
+            <onclick>SetFocus(3000)</onclick>
+            <onclick>Up</onclick>
+            <texturefocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturefocus>
+            <texturenofocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturenofocus>
             <visible>Control.IsVisible(3000) + IntegerGreaterThan(Container(2000).CurrentPage,1)</visible>
             <animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
         </control>
-        <control type="image">
+        <control type="button">
             <left>936</left>
             <top>940</top>
             <width>48</width>
             <height>20</height>
-            <texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
+            <onclick>SetFocus(3000)</onclick>
+            <onclick>Down</onclick>
+            <texturefocus colordiffuse="button_focus">overlays/arrowdown.png</texturefocus>
+            <texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
             <visible>Control.IsVisible(3000) + !StringCompare(Container(2000).CurrentPage,Container(2000).NumPages)</visible>
             <animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
         </control>
