@@ -118,7 +118,7 @@
                             <top>0</top>
                             <width>665</width>
                             <height>100</height>
-                            <texture border="150,1,150,1">lists/focus.png</texture>
+                            <texture>lists/focus.png</texture>
                             <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
                         </control>
                         <control type="image">
@@ -318,7 +318,7 @@
                             <top>0</top>
                             <width>665</width>
                             <height>100</height>
-                            <texture border="150,1,150,1">lists/focus.png</texture>
+                            <texture>lists/focus.png</texture>
                             <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
                         </control>
                         <control type="image">

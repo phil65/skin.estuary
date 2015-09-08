@@ -9,9 +9,9 @@
         <aligny>center</aligny>
         <textcolor>white</textcolor>
         <invalidcolor>invalid</invalidcolor>
-        <texturefocus border="150,1,150,1">lists/focus.png</texturefocus>
+        <texturefocus>lists/focus.png</texturefocus>
         <texturenofocus border="30">lists/separator.png</texturenofocus>
-        <alttexturefocus border="150,1,150,1">lists/focus.png</alttexturefocus>
+        <alttexturefocus>lists/focus.png</alttexturefocus>
         <alttexturenofocus border="30">lists/separator.png</alttexturenofocus>
     </include>
     <include name="PVRSideBar">

@@ -778,7 +778,7 @@
                                 <top>0</top>
                                 <width>390</width>
                                 <height>73</height>
-                                <texture border="150,1,150,1">lists/focus.png</texture>
+                                <texture>lists/focus.png</texture>
                                 <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus">Conditional</animation>
                             </control>
                             <control type="image">
