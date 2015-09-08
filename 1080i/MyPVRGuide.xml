@@ -34,7 +34,6 @@
                     <rulerunit>8</rulerunit>
                     <onup>9000</onup>
                     <ondown>10</ondown>
-                    <onback>9000</onback>
                     <viewtype label="19032">list</viewtype>
                     <progresstexture border="0,60,18,14" colordiffuse="button_focus">windows/pvr/epg_progress.png</progresstexture>
                     <rulerlayout height="45" width="1400">
@@ -70,11 +69,6 @@
                         </control>
                     </channellayout>
                     <focusedchannellayout height="58" width="330">
-                        <control type="image">
-                            <width>450</width>
-                            <height>60</height>
-                            <texture>lists/focus.png</texture>
-                        </control>
                         <control type="label">
                             <left>2</left>
                             <top>-2</top>
@@ -82,6 +76,7 @@
                             <height>60</height>
                             <font>font24_title</font>
                             <label>$INFO[ListItem.ChannelNumber]</label>
+                            <textcolor>button_focus</textcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -92,6 +87,7 @@
                             <height>60</height>
                             <font>font_textbox</font>
                             <label>$INFO[ListItem.ChannelName]</label>
+                            <textcolor>button_focus</textcolor>
                             <aligny>center</aligny>
                             <textoffsetx>10</textoffsetx>
                         </control>
