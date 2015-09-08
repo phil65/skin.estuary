@@ -100,7 +100,7 @@
                         <control type="image" id="2">
                             <width>58</width>
                             <height>58</height>
-                            <texture border="3" fallback="epg-genres/0.png">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
+                            <texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
                         </control>
                         <control type="image" id="2">
                             <width>58</width>
@@ -126,8 +126,10 @@
                     </itemlayout>
                     <focusedlayout height="58" width="58">
                         <control type="image" id="2">
-                            <width>58</width>
-                            <height>58</height>
+                            <top>2</top>
+                            <left>2</left>
+                            <width>54</width>
+                            <height>54</height>
                             <texture>lists/focus.png</texture>
                             <visible>Control.HasFocus(10)</visible>
                         </control>
@@ -135,7 +137,7 @@
                             <width>58</width>
                             <height>58</height>
                             <top>0</top>
-                            <texture border="3">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
+                            <texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
                             <visible>!Control.HasFocus(10)</visible>
                         </control>
                         <control type="label" id="1">
