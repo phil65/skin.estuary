@@ -124,7 +124,7 @@
         </control>
         <include>PVRSideBar</include>
         <include name="TopBar">
-            <param name="breadcrumbs_label" value="Live TV$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), / ]" />
+            <param name="breadcrumbs_label" value="Live TV / Recordings" />
             <param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
         </include>
         <control type="label" id="29">
