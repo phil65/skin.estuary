@@ -8,11 +8,11 @@
         <include>DefaultBackground</include>
         <control type="group" id="50">
             <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)">Conditional</animation>
-
             <control type="group">
                 <description>Guide Timeline</description>
                 <visible>Control.IsVisible(10)</visible>
                 <include>OpenClose_Right</include>
+                <include>Visible_Right</include>
                 <top>170</top>
                 <left>110</left>
                 <control type="image">
@@ -220,17 +220,19 @@
             <control type="group">
                 <description>TV Guide Channel</description>
                 <visible>Control.IsVisible(13)</visible>
+                <include>Visible_Left</include>
+                <include>OpenClose_Left</include>
                 <top>30</top>
                 <control type="group">
                     <left>80</left>
                     <top>150</top>
-                <control type="image">
-                    <left>-20</left>
-                    <top>-20</top>
-                    <width>1130</width>
-                    <height>746</height>
-                    <texture border="22">dialogs/dialog-bg.png</texture>
-                </control>
+                    <control type="image">
+                        <left>-20</left>
+                        <top>-20</top>
+                        <width>1130</width>
+                        <height>746</height>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
+                    </control>
                     <control type="list" id="13">
                         <top>0</top>
                         <width>1740</width>
@@ -324,17 +326,18 @@
                         <onright>13</onright>
                     </control>
                 </control>
-        <control type="group">
-            <left>1220</left>
-            <posy>150</posy>
-            <visible>!IsEmpty(ListItem.ChannelName)</visible>
-            <include>Visible_Right</include>
-            <include>OpenClose_Right</include>
-            <include name="PVRInfoPanel">
-                <param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]" />
-                <param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
-            </include>
-        </control>
+            </control>
+            <control type="group">
+                <left>1220</left>
+                <posy>150</posy>
+                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                <visible>Control.IsVisible(13)</visible>
+                <include>Visible_Right</include>
+                <include>OpenClose_Right</include>
+                <include name="PVRInfoPanel">
+                    <param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]" />
+                    <param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
+                </include>
             </control>
         </control>
         <include>PVRSideBar</include>
