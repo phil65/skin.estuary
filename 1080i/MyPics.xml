@@ -21,6 +21,7 @@
                 <param name="visible" value="!IsEmpty(Container.FolderPath)" />
             </include>
         </control>
+        <include>MediaMenuMouseOverlay</include>
         <control type="group">
             <include>MediaMenuCommon</include>
             <control type="grouplist" id="9000">

@@ -52,6 +52,7 @@
                 </control>
             </control>
         </control>
+        <include>MediaMenuMouseOverlay</include>
         <control type="group">
             <include>MediaMenuCommon</include>
             <control type="grouplist" id="9000">

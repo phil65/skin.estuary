@@ -15,6 +15,7 @@
         <alttexturenofocus border="30">lists/separator.png</alttexturenofocus>
     </include>
     <include name="PVRSideBar">
+        <include>MediaMenuMouseOverlay</include>
         <control type="group">
             <include>MediaMenuCommon</include>
             <control type="grouplist" id="9000">
@@ -234,13 +235,15 @@
             <onclick>Filter</onclick>
         </control>
     </include>
-    <!-- <control type="button" id="6130">
-         <label>Button for media menu mouse support</label>
-         <height>1080</height>
-         <width>50</width>
-         <posx>-50</posx>
-         <posy>0</posy>
-         <texturefocus>-</texturefocus>
-         <texturenofocus>-</texturenofocus>
-         </control> -->
+    <include name="MediaMenuMouseOverlay">
+        <control type="button" id="6130">
+            <label>Button for media menu mouse support</label>
+            <height>1080</height>
+            <width>50</width>
+            <posx>-50</posx>
+            <posy>0</posy>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+        </control>
+    </include>
 </includes>

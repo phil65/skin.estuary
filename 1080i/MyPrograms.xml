@@ -12,6 +12,7 @@
                 <param name="visible" value="Container.Content(addons)" />
             </include>
         </control>
+        <include>MediaMenuMouseOverlay</include>
        <control type="group">
             <include>MediaMenuCommon</include>
             <control type="grouplist" id="9000">
