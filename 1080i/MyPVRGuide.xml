@@ -222,72 +222,63 @@
                 <description>TV Guide Channel</description>
                 <visible>Control.IsVisible(13)</visible>
                 <top>30</top>
+                <control type="group">
+                    <left>80</left>
+                    <top>80</top>
                 <control type="image">
                     <left>-20</left>
                     <top>-20</top>
                     <width>1740</width>
-                    <height>552</height>
+                    <height>746</height>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
-                <control type="group">
-                    <width>1740</width>
-                    <height>750</height>
-                    <left>120</left>
-                    <top>90</top>
                     <control type="label">
                         <description>Time</description>
-                        <left>3</left>
-                        <top>15</top>
+                        <left>20</left>
+                        <top>2</top>
                         <width>300</width>
                         <height>30</height>
                         <label>555</label>
-                        <font>font24_title</font>
+                        <font>font20_title</font>
                         <shadowcolor>black</shadowcolor>
                     </control>
                     <control type="label">
                         <description>Title</description>
                         <left>378</left>
-                        <top>15</top>
+                        <top>2</top>
                         <width>825</width>
                         <height>30</height>
                         <label>369</label>
-                        <font>font24_title</font>
+                        <font>font20_title</font>
                         <shadowcolor>black</shadowcolor>
                     </control>
                     <control type="label">
                         <description>Status</description>
                         <left>1400</left>
-                        <top>15</top>
+                        <top>2</top>
                         <width>210</width>
                         <height>30</height>
                         <label>126</label>
-                        <font>font24_title</font>
+                        <font>font20_title</font>
                         <shadowcolor>black</shadowcolor>
-                    </control>
-                    <control type="image">
-                        <left>-45</left>
-                        <width>1760</width>
-                        <height>60</height>
-                        <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="list" id="13">
                         <top>60</top>
                         <width>1740</width>
-                        <height>750</height>
+                        <height>640</height>
                         <onup>13</onup>
                         <ondown>13</ondown>
-                        <onleft>9003</onleft>
+                        <onleft>9000</onleft>
                         <onright>75</onright>
                         <viewtype label="19029">list</viewtype>
                         <pagecontrol>75</pagecontrol>
                         <scrolltime>200</scrolltime>
-                        <visible>Player.HasVideo</visible>
                         <itemlayout height="58">
                             <control type="image">
-                                <left>-45</left>
+                                <left>0</left>
                                 <width>1760</width>
                                 <height>60</height>
-                                <texture border="1">osd/osd_settings_buttonnf.png</texture>
+                                <texture border="10">lists/separator.png</texture>
                             </control>
                             <control type="label">
                                 <left>3</left>
@@ -314,15 +305,15 @@
                         </itemlayout>
                         <focusedlayout height="260">
                             <control type="image">
-                                <left>-45</left>
-                                <width>1760</width>
+                                <left>0</left>
+                                <width>1700</width>
                                 <height>60</height>
-                                <texture border="1">osd/osd_settings_buttonnf.png</texture>
+                                <texture border="10">lists/separator.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
-                                <width>1665</width>
-                                <height>59</height>
+                                <width>1700</width>
+                                <height>60</height>
                                 <texture>lists/focus.png</texture>
                             </control>
                             <control type="label">
@@ -362,9 +353,8 @@
                     <control type="scrollbar" id="75">
                         <left>1722</left>
                         <top>50</top>
-                        <width>46</width>
+                        <width>12</width>
                         <height>830</height>
-                        <include>Animation_VerticalScrollBar</include>
                         <onleft>13</onleft>
                         <onright>13</onright>
                     </control>
