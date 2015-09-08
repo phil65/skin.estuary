@@ -15,7 +15,6 @@
                 <include>OpenClose_Right</include>
                 <top>170</top>
                 <left>110</left>
-                <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)">Conditional</animation>
                 <control type="image">
                     <left>-20</left>
                     <top>-20</top>
