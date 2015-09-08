@@ -3,16 +3,30 @@
 	<defaultcontrol always="true">7</defaultcontrol>
 	<controls>
 		<control type="group">
-			<control type="image">
-				<top>180</top>
-				<left>50</left>
-				<width>500</width>
-				<height>500</height>
+			<control type="group">
 				<include>OpenClose_Left</include>
-				<aspectratio>keep</aspectratio>
-				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-				<bordersize>4</bordersize>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<control type="image">
+					<top>180</top>
+					<left>110</left>
+					<width>500</width>
+					<height>500</height>
+					<aspectratio>keep</aspectratio>
+					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+					<bordersize>4</bordersize>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="label">
+					<description>header label</description>
+					<left>110</left>
+					<top>700</top>
+					<width>1030</width>
+					<height>30</height>
+					<font>font30_title</font>
+					<label>$INFO[Listitem.ChannelName]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<shadowcolor>black</shadowcolor>
+				</control>
 			</control>
 			<control type="group">
 				<top>180</top>
@@ -20,20 +34,20 @@
 				<include>OpenClose_Right</include>
 				<control type="label">
 					<description>header label</description>
-					<left>210</left>
+					<left>620</left>
 					<top>0</top>
 					<width>1030</width>
 					<height>30</height>
-					<font>font24_title</font>
+					<font>font30_title</font>
 					<label>$INFO[Listitem.Title]</label>
-					<align>center</align>
+					<align>left</align>
 					<aligny>center</aligny>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="list" id="49">
-					<left>550</left>
+					<left>580</left>
 					<top>70</top>
-					<width>640</width>
+					<width>1050</width>
 					<height>450</height>
 					<onleft>49</onleft>
 					<onright>49</onright>
@@ -44,7 +58,7 @@
 						<control type="label">
 							<left>5</left>
 							<top>0</top>
-							<width>160</width>
+							<width>200</width>
 							<height>30</height>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -52,9 +66,9 @@
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-							<left>175</left>
+							<left>215</left>
 							<top>0</top>
-							<width>465</width>
+							<width>1000</width>
 							<height>30</height>
 							<aligny>center</aligny>
 							<selectedcolor>white</selectedcolor>
@@ -62,18 +76,10 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="45">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>640</width>
-							<height>30</height>
-							<visible>Control.HasFocus(49)</visible>
-							<texture>MenuItemFO.png</texture>
-						</control>
 						<control type="label">
 							<left>5</left>
 							<top>0</top>
-							<width>160</width>
+							<width>200</width>
 							<height>30</height>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -81,9 +87,9 @@
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-							<left>175</left>
+							<left>215</left>
 							<top>0</top>
-							<width>465</width>
+							<width>1000</width>
 							<height>30</height>
 							<aligny>center</aligny>
 							<selectedcolor>white</selectedcolor>
@@ -93,27 +99,10 @@
 					</focusedlayout>
 					<content>
 						<item>
-							<label>$LOCALIZE[21442]:</label>
+							<label>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ]$LOCALIZE[21442]:</label>
 							<label2>$INFO[ListItem.EpisodeName]</label2>
 							<onclick>noop</onclick>
 							<visible>!IsEmpty(ListItem.EpisodeName)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[20373]:</label>
-							<label2>$INFO[ListItem.Season]</label2>
-							<onclick>noop</onclick>
-							<visible>!IsEmpty(ListItem.Season)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[20359]:</label>
-							<label2>$INFO[ListItem.Episode]</label2>
-							<onclick>noop</onclick>
-							<visible>!IsEmpty(ListItem.Episode)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[19148]:</label>
-							<label2>$INFO[ListItem.ChannelName]</label2>
-							<onclick>noop</onclick>
 						</item>
 						<item>
 							<label>$LOCALIZE[142]</label>
@@ -151,8 +140,10 @@
 					</content>
 				</control>
 				<control type="button" id="61">
-					<left>120r</left>
-					<top>485</top>
+					<left>570</left>
+					<top>367</top>
+					<width>1090</width>
+					<height>155</height>
 					<font>-</font>
 					<onleft>61</onleft>
 					<onright>61</onright>
@@ -163,8 +154,8 @@
 					<onclick>ActivateWindow(1102)</onclick>
 				</control>
 				<control type="textbox" id="400">
-					<left>570</left>
-					<top>427</top>
+					<left>600</left>
+					<top>387</top>
 					<width>1030</width>
 					<height>115</height>
 					<align>justify</align>
@@ -172,7 +163,7 @@
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="grouplist" id="9000">
-					<left>210</left>
+					<left>240</left>
 					<top>660</top>
 					<width>1030</width>
 					<height>120</height>
