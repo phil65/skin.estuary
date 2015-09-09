@@ -9,20 +9,11 @@
             <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <control type="image">
-                <description>Menu Panel</description>
-                <left>30</left>
-                <top>0</top>
-                <width>1860</width>
-                <height>140</height>
-                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-            </control>
-            <control type="image">
-                <description>Menu Panel</description>
-                <left>30</left>
-                <top>-90</top>
-                <width>1860</width>
-                <height>60</height>
-                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                <left>10</left>
+                <top>-110</top>
+                <width>1900</width>
+                <height>270</height>
+                <texture border="40">buttons/dialogbutton-nofo.png</texture>
             </control>
             <control type="label">
                 <description>Menu Panel</description>
