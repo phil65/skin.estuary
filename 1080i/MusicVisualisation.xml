@@ -40,12 +40,11 @@
                 <effect type="slide" time="320" end="0,226" easing="in" tween="cubic" />
             </animation>
             <control type="image">
-                <description>Menu Panel</description>
-                <left>30</left>
-                <top>700</top>
-                <width>1860</width>
-                <height>380</height>
-                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+                <left>10</left>
+                <top>680</top>
+                <width>1900</width>
+                <height>420</height>
+                <texture border="40">buttons/dialogbutton-nofo.png</texture>
             </control>
             <control type="group">
                 <posx>8</posx>

@@ -6,6 +6,7 @@
         </include>
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
+                <include>OpenClose_Right</include>
             <include>Visible_Right</include>
             <control type="panel" id="52">
                 <left>100</left>
@@ -18,7 +19,6 @@
                 <ondown>52</ondown>
                 <visible>$PARAM[visible]</visible>
                 <viewtype label="Icon Wall">icon</viewtype>
-                <include>OpenClose_Right</include>
                 <itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files)">
                     <control type="image">
                         <width>400</width>

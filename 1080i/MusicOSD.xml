@@ -8,15 +8,6 @@
             <animation effect="fade" end="100" time="200">WindowOpen</animation>
             <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <control type="image">
-                <description>Menu Panel</description>
-                <left>30</left>
-                <top>0</top>
-                <width>1860</width>
-                <height>140</height>
-                <texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-            </control>
-
             <control type="grouplist" id="201">
                 <posx>50</posx>
                 <posy>10</posy>
@@ -136,27 +127,6 @@
                     <font>font30</font>
                     <shadowcolor>black</shadowcolor>
                     <textcolor>white</textcolor>
-                </control>
-                <control type="progress">
-                    <animation effect="fade" end="0" time="200">WindowClose</animation>
-                    <posx>30</posx>
-                    <posy>-10</posy>
-                    <width>1860</width>
-                    <height>30</height>
-                    <info>Player.ProgressCache</info>
-                    <texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-                    <midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-                    <animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-                </control>
-                <control type="progress" id="23">
-                    <animation effect="fade" end="0" time="200">WindowClose</animation>
-                    <posx>30</posx>
-                    <posy>-10</posy>
-                    <width>1860</width>
-                    <height>30</height>
-                    <info>Player.Progress</info>
-                    <texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-                    <midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
                 </control>
                 <control type="button" id="87">
                     <include>HiddenObject</include>
