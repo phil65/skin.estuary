@@ -15,6 +15,8 @@
         <alttexturenofocus border="30">lists/separator.png</alttexturenofocus>
     </include>
     <include name="PVRSideBar">
+        <param name="group_label2">$INFO[Control.GetLabel(29)]</param>
+        <definition>
         <include>MediaMenuMouseOverlay</include>
         <control type="group">
             <include>MediaMenuCommon</include>
@@ -107,7 +109,7 @@
                     <description>Channel Groups</description>
                     <include>MediaMenuItemsCommon</include>
                     <label>Group:</label>
-                    <label2>[B]$INFO[Control.GetLabel(29)][/B]</label2>
+                    <label2>[B]$PARAM[group_label2][/B]</label2>
                     <onclick>NextChannelGroup</onclick>
                 </control>
                 <control type="label" id="300">
@@ -149,6 +151,7 @@
                 </control>
             </control>
         </control>
+    </definition>
     </include>
     <include name="MediaMenuLabelCommon">
         <width>400</width>
