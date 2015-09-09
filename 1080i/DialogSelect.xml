@@ -135,11 +135,6 @@
                 <top>100</top>
                 <width>12</width>
                 <height>625</height>
-                <texturesliderbackground colordiffuse="29FFFFFF">colors/white.png</texturesliderbackground>
-                <texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
-                <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
-                <textureslidernib>-</textureslidernib>
-                <textureslidernibfocus>-</textureslidernibfocus>
                 <onleft condition="Control.IsVisible(3)">3</onleft>
                 <onleft condition="Control.IsVisible(6)">6</onleft>
                 <onright>9001</onright>

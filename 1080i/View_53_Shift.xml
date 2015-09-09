@@ -22,8 +22,6 @@
                 <texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
                 <animation effect="zoom" start="100,100" end="100,150" time="250" center="110,710" tween="cubic" easing="inout" reversible="true">Focus</animation>
                 <animation effect="zoom" start="100,150" end="100,100" time="125" center="110,710" tween="cubic" easing="inout" reversible="true">UnFocus</animation>
-                <textureslidernib>-</textureslidernib>
-                <textureslidernibfocus>-</textureslidernibfocus>
                 <onleft>5399</onleft>
                 <onright>5399</onright>
                 <onup>53</onup>
