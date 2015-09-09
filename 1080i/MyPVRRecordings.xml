@@ -149,22 +149,13 @@
                     <left>150</left>
                     <top>40</top>
                     <control type="label">
-                        <top>24</top>
+                        <top>20</top>
                         <width>560</width>
                         <height>262</height>
                         <align>left</align>
                         <font>font12</font>
-                        <visible>!StringCompare(ListItem.StartTime,ListItem.EndTime)</visible>
-                        <label>$INFO[ListItem.StartTime]</label>
-                    </control>
-                    <control type="label">
-                        <top>24</top>
-                        <width>360</width>
-                        <height>262</height>
-                        <align>right</align>
-                        <font>font12</font>
-                        <visible>!StringCompare(ListItem.StartTime,ListItem.EndTime)</visible>
-                        <label>$INFO[ListItem.EndTime]</label>
+                        <wrapmultiline>true</wrapmultiline>
+                        <label>$INFO[ListItem.Date][CR]$INFO[ListItem.Duration]</label>
                     </control>
                     <control type="label">
                         <top>-30</top>
@@ -257,7 +248,7 @@
                         <param name="path" value="$INFO[ListItem.Path]/$INFO[ListItem.Label]" />
                         <param name="height" value="362" />
                         <param name="width" value="560" />
-                        <param name="item_label" value="$INFO[ListItem.ChannelName,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
+                        <param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
                     </include>
                 </control>
             </control>
