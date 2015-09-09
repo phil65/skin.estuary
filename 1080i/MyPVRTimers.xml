@@ -69,15 +69,15 @@
                                 <aligny>top</aligny>
                                 <info>ListItem.Date</info>
                             </control>
-                            <control type="label">
+                            <control type="textbox">
                                 <left>650</left>
-                                <top>0</top>
+                                <top>13</top>
                                 <width>300</width>
-                                <height>100</height>
+                                <height>70</height>
                                 <font>font12</font>
                                 <align>right</align>
                                 <aligny>center</aligny>
-                                <info>ListItem.Timertype</info>
+                                <label>$INFO[ListItem.Timertype]</label>
                             </control>
                             <control type="image">
                                 <posx>940</posx>
@@ -136,15 +136,15 @@
                                 <aligny>top</aligny>
                                 <info>ListItem.Date</info>
                             </control>
-                            <control type="label">
+                            <control type="textbox">
                                 <left>650</left>
-                                <top>0</top>
+                                <top>13</top>
                                 <width>300</width>
-                                <height>100</height>
+                                <height>70</height>
                                 <font>font12</font>
                                 <align>right</align>
                                 <aligny>center</aligny>
-                                <info>ListItem.Timertype</info>
+                                <label>$INFO[ListItem.Timertype]</label>
                             </control>
                             <control type="image">
                                 <posx>940</posx>
