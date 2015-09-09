@@ -7,7 +7,7 @@
     <controls>
         <include>DefaultBackground</include>
         <control type="group">
-            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(musicinformation) | Window.IsActive(songinformation)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(musicinformation)">Conditional</animation>
             <include name="View_50_List">
                 <param name="visible" value="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)" />
             </include>
