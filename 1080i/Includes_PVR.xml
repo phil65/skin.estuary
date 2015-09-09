@@ -168,6 +168,7 @@
                             <width>48</width>
                             <height>48</height>
                             <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                            <fadetime>200</fadetime>
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="label">

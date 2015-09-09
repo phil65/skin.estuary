@@ -100,42 +100,11 @@
                     <height>272</height>
                     <texture border="22">dialogs/dialog-bg.png</texture>
                 </control>
-                <control type="list" id="5000">
-                    <right>130</right>
+                <control type="group">
+                    <left>635</left>
                     <top>475</top>
-                    <width>1152</width>
-                    <height>235</height>
-                    <orientation>vertical</orientation>
-                    <onleft>9000</onleft>
-                    <onright>9000</onright>
-                    <onup>50</onup>
-                    <ondown>50</ondown>
-                    <viewtype label="List">list</viewtype>
-                    <preloaditems>1</preloaditems>
                     <visible>Stringcompare(Listitem.dbtype,set)</visible>
-                    <focusedlayout height="40">
-                        <control type="label">
-                            <left>10</left>
-                            <top>0</top>
-                            <height>50</height>
-                            <width>1152</width>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
-                            <shadowcolor>text_shadow</shadowcolor>
-                        </control>
-                    </focusedlayout>
-                    <itemlayout height="40">
-                        <control type="label">
-                            <left>10</left>
-                            <top>0</top>
-                            <height>50</height>
-                            <width>1152</width>
-                            <aligny>center</aligny>
-                            <label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</label>
-                            <shadowcolor>text_shadow</shadowcolor>
-                        </control>
-                    </itemlayout>
-                    <content>$INFO[ListItem.Path]</content>
+                    <include>InfoList</include>
                 </control>
                 <control type="image">
                     <left>645</left>
