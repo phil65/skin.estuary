@@ -85,7 +85,7 @@
                 <include>OpenClose_Left</include>
                 <posx>400</posx>
                 <visible>Container(300).HasFocus(3)</visible>
-                <include>Visible_Right</include>
+                <include>Visible_Right_Delayed</include>
                 <control type="image">
                     <description>Menu Panel</description>
                     <left>90</left>
@@ -285,7 +285,7 @@
                 <include>OpenClose_Left</include>
                 <posx>400</posx>
                 <visible>Container(300).HasFocus(2)</visible>
-                <include>Visible_Right</include>
+                <include>Visible_Right_Delayed</include>
                 <control type="image">
                     <description>Menu Panel</description>
                     <left>90</left>
@@ -451,7 +451,7 @@
                 <height>925</height>
                 <include>OpenClose_Right</include>
                 <visible>Container(300).HasFocus(1)</visible>
-                <include>Visible_Right</include>
+                <include>Visible_Right_Delayed</include>
                 <left>480</left>
                 <control type="group">
                     <description>Weather info</description>
@@ -562,7 +562,7 @@
             <control type="group">
                 <include>OpenClose_Right</include>
                 <visible>Container(300).HasFocus(4)</visible>
-                <include>Visible_Right</include>
+                <include>Visible_Right_Delayed</include>
                 <left>520</left>
                 <top>120</top>
                 <control type="image">
