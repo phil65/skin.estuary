@@ -548,6 +548,98 @@
             </control>
         </control>
     </include>
+    <include name="WidgetListText">
+        <control type="group">
+            <description>Square Widget including header and arrows</description>
+            <height>395</height>
+            <left>0</left>
+            <top>0</top>
+            <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+            <include name="LeftRightArrows">
+                <param name="posy" value="200" />
+                <param name="list_id" value="$PARAM[list_id]" />
+            </include>
+            <control type="label">
+                <left>500</left>
+                <top>15</top>
+                <width>600</width>
+                <height>40</height>
+                <label>$PARAM[widget_header]</label>
+                <shadowcolor>text_shadow</shadowcolor>
+                <align>left</align>
+            </control>
+            <control type="panel" id="$PARAM[list_id]">
+                <left>480</left>
+                <top>55</top>
+                <width>1372</width>
+                <height>400</height>
+                <scrolltime tween="cubic" easing="out">500</scrolltime>
+                <orientation>horizontal</orientation>
+                <onleft>9000</onleft>
+                <onright>$PARAM[list_id]</onright>
+                <onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+                <onup>$PARAM[onup_id]</onup>
+                <ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+                <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
+                <preloaditems>1</preloaditems>
+                <itemlayout width="343" height="160">
+                    <control type="image">
+                        <width>300</width>
+                        <height>160</height>
+                        <texture border="40">buttons/button-nofo.png</texture>
+                    </control>
+                    <control type="textbox">
+                        <left>20</left>
+                        <top>20</top>
+                        <width>260</width>
+                            <height>120</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <font>font14</font>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="343" height="160">
+                    <control type="group">
+                        <animation type="Focus">
+                            <effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+                        </animation>
+                        <animation type="Unfocus">
+                            <effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+                        </animation>
+                        <control type="image">
+                            <width>300</width>
+                            <height>160</height>
+                            <texture border="40">buttons/button-nofo.png</texture>
+                        </control>
+                        <control type="textbox">
+                            <left>20</left>
+                            <top>20</top>
+                            <width>260</width>
+                            <height>120</height>
+                            <label>$INFO[ListItem.Label]</label>
+                            <font>font14</font>
+                            <shadowcolor>text_shadow</shadowcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>20</top>
+                            <width>260</width>
+                            <height>120</height>
+                            <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                            <texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
+            </control>
+        </control>
+    </include>
     <include name="WeatherWidget">
         <control type="group">
             <description>Square Weather Widget including header and arrows</description>
