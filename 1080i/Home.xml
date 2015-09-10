@@ -586,21 +586,11 @@
                         <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="image">
-                        <top>32</top>
+                        <top>20</top>
                         <left>530</left>
-                        <width>330</width>
-                        <height>330</height>
+                        <width>150</width>
+                        <height>150</height>
                         <texture>$INFO[Weather.conditions]</texture>
-                    </control>
-                    <control type="label">
-                        <left>990</left>
-                        <top>150</top>
-                        <aligny>center</aligny>
-                        <height>24</height>
-                        <width>800</width>
-                        <align>right</align>
-                        <font>font12</font>
-                        <label>$INFO[Weather.Conditions]</label>
                     </control>
                     <control type="label">
                         <left>990</left>
@@ -610,7 +600,7 @@
                         <width>800</width>
                         <align>right</align>
                         <font>font14</font>
-                        <label>$INFO[Weather.Temperature]</label>
+                        <label>$INFO[Weather.Conditions] - $INFO[Weather.Temperature]</label>
                     </control>
                     <control type="label">
                         <left>990</left>
@@ -621,6 +611,36 @@
                         <align>right</align>
                         <font>font35_title</font>
                         <label>$INFO[Weather.Location]</label>
+                    </control>
+                                        <control type="grouplist">
+                        <posy>200</posy>
+                        <left>570</left>
+                        <orientation>horizontal</orientation>
+                        <include name="WeatherIcon">
+                            <param name="label" value="$INFO[Window(weather).Property(Current.Wind)]" />
+                            <param name="texture" value="icons/weather/wind.png" />
+                            <param name="header" value="404" />
+                        </include>
+                        <include name="WeatherIcon">
+                            <param name="label" value="$INFO[Window(weather).Property(Current.Humidity)]" />
+                            <param name="texture" value="icons/weather/humidity.png" />
+                            <param name="header" value="406" />
+                        </include>
+                        <include name="WeatherIcon">
+                            <param name="label" value="$INFO[Window(weather).Property(Current.Precipitation)]" />
+                            <param name="texture" value="icons/weather/rain.png" />
+                            <param name="header" value="33021" />
+                        </include>
+                        <include name="WeatherIcon">
+                            <param name="label" value="$INFO[Window(weather).Property(Today.Sunrise)]" />
+                            <param name="texture" value="icons/weather/sunrise.png" />
+                            <param name="header" value="405" />
+                        </include>
+                        <include name="WeatherIcon">
+                            <param name="label" value="$INFO[Window(weather).Property(Today.Sunset)]" />
+                            <param name="texture" value="icons/weather/sunset.png" />
+                            <param name="header" value="403" />
+                        </include>
                     </control>
                 </control>
                 <include name="WeatherWidget">
