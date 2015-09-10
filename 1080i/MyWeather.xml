@@ -157,6 +157,14 @@
                              <width>230</width>
                              </control> -->
                         <control type="label">
+                            <left>400</left>
+                            <top>15</top>
+                            <align>center</align>
+                            <font>font30_title</font>
+                            <label>$INFO[ListItem.Property(TempDay)]</label>
+                            <width>230</width>
+                        </control>
+                        <control type="label">
                             <left>0</left>
                             <textoffsetx>15</textoffsetx>
                             <top>0</top>
@@ -337,6 +345,14 @@
                             <font>font24_title</font>
                             <label>$INFO[ListItem.Label]</label>
                             <shadowcolor>text_shadow</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <left>400</left>
+                            <top>15</top>
+                            <align>center</align>
+                            <font>font30_title</font>
+                            <label>$INFO[ListItem.Property(TempDay)]</label>
+                            <width>230</width>
                         </control>
                         <control type="label">
                             <left>0</left>
