@@ -499,7 +499,7 @@
                     <control type="image">
                         <top>220</top>
                         <width>1370</width>
-                        <height>592</height>
+                        <height>392</height>
                         <texture border="22">dialogs/dialog-bg.png</texture>
                     </control>
                     <control type="image">
@@ -519,8 +519,14 @@
                         <font>WeatherTemp</font>
                         <label>$INFO[Weather.Temperature]</label>
                     </control>
+                    <control type="image">
+                        <top>612</top>
+                        <width>1370</width>
+                        <height>200</height>
+                        <texture border="22">dialogs/dialog-bg.png</texture>
+                    </control>
                     <control type="grouplist">
-                        <posy>620</posy>
+                        <posy>650</posy>
                         <left>100</left>
                         <orientation>horizontal</orientation>
                         <include name="WeatherIcon">
