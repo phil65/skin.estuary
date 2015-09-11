@@ -472,6 +472,8 @@
                         <height>450</height>
                         <aspectratio align="left" aligny="bottom">keep</aspectratio>
                         <texture>$VAR[NowPlayingPosterVar]</texture>
+                        <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+                        <bordersize>4</bordersize>
                     </control>
                     <control type="image">
                         <top>85</top>
