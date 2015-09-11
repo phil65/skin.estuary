@@ -41,7 +41,7 @@
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="ListBoxInfoVar">
-        <value condition="Container.Content(addons)">$INFO[ListItem.Property(Addon.creator),[COLOR button_focus]Author: [/COLOR],[CR]]$INFO[ListItem.Property(Addon.Description)]</value>
+        <value condition="Container.Content(addons)">$INFO[ListItem.Property(Addon.Description)]</value>
         <value condition="Container.Content(albums)">$INFO[ListItem.Genre,[COLOR button_focus]Genre: [/COLOR],[CR]]$INFO[ListItem.Property(album_description)]</value>
         <value condition="Container.Content(artists)">$INFO[ListItem.Property(artist_genre),[COLOR button_focus]Genre: [/COLOR],[CR]]$INFO[ListItem.Property(artist_description)]</value>
         <value>$INFO[ListItem.Genre,[COLOR button_focus]Genre: [/COLOR],[CR]]</value>
