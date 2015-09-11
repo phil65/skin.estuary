@@ -1210,7 +1210,7 @@
                 </control>
                 <control type="grouplist">
                     <top>1005</top>
-                    <visible>!Window.IsActive(home)</visible>
+                    <visible>!Window.IsActive(home) + Player.HasMedia</visible>
                     <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
                     <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
                     <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
@@ -1230,7 +1230,7 @@
                             <texture colordiffuse="button_focus">$VAR[NowPlayingIconVar]</texture>
                         </control>
                         <control type="label">
-                            <label>$INFO[Player.Time] - $INFO[Player.Title]</label>
+                            <label>$INFO[Player.Time]$INFO[Player.Title, - ]</label>
                             <font>font13_title</font>
                             <shadowcolor>text_shadow</shadowcolor>
                             <textoffsetx>0</textoffsetx>
