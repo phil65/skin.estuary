@@ -48,7 +48,7 @@
                     <top>194</top>
                     <width>429</width>
                     <height>345</height>
-                    <align>justify</align>
+                    <align>left</align>
                     <font>font_textbox</font>
                     <autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
                     <label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
@@ -423,7 +423,7 @@
             <top>680</top>
             <width>449</width>
             <height>190</height>
-            <align>justify</align>
+            <align>left</align>
             <font>font_textbox</font>
             <autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
             <label fallback="No info available">$VAR[ListBoxInfoVar]</label>
