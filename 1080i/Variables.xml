@@ -55,7 +55,7 @@
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="AddonsLabel2Var">
-        <value condition="!IsEmpty(ListItem.Label2) + !Stringcompare(ListItem.Label2,$LOCALIZE[305])">[COLOR button_focus]$INFO[ListItem.Label2][/COLOR]</value>
+        <value condition="!IsEmpty(ListItem.Property(addon.status)) + !Stringcompare(ListItem.Property(addon.status),$LOCALIZE[305])">[COLOR button_focus]$INFO[ListItem.Property(addon.status)][/COLOR]</value>
         <value>$INFO[ListItem.Property(addon.creator)]$INFO[ListItem.Property(addon.version), - ]</value>
     </variable>
     <variable name="AudioDSPIconVar">
