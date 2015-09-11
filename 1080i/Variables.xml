@@ -17,11 +17,17 @@
     <variable name="NowPlayingSublabel">
         <value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TvShowTitle]</value>
         <value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ]</value>
+        <value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelName]</value>
         <value condition="Player.HasAudio">$INFO[MusicPlayer.Artist]</value>
     </variable>
     <variable name="NowPlayingIconVar">
         <value condition="Player.Paused">icons/now-playing/pause.png</value>
         <value>icons/now-playing/play.png</value>
+    </variable>
+    <variable name="NowPlayingPosterVar">
+        <value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
+        <value condition="!IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
+        <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="ShiftRightTextBoxVar">
         <value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,[COLOR button_focus]Size:  [/COLOR],[CR]]$INFO[ListItem.PictureAperture,[COLOR button_focus]Aperture:  [/COLOR],[CR]]$INFO[ListItem.PictureFocalLen,[COLOR button_focus]Focal length:  [/COLOR],[CR]]$INFO[ListItem.PictureExpTime,[COLOR button_focus]Exposure time:  [/COLOR],[CR]]</value>
@@ -135,11 +141,6 @@
     <variable name="WeatherFanartVar">
         <value condition="!IsEmpty(Container(9000).ListItem.Property(fanartcode))">$INFO[Container(9000).ListItem.Property(fanartcode),resource://resource.images.weatherfanart.single/,.jpg]</value>
         <value>$INFO[Window(weather).Property(fanartcode),resource://resource.images.weatherfanart.single/,.jpg]</value>
-    </variable>
-    <variable name="NowPlayingPosterVar">
-        <value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
-        <value condition="!IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
-        <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="ListWatchedIcon">
         <value condition="IsEmpty(ListItem.DBType)">-</value>
