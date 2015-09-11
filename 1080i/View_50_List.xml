@@ -167,6 +167,7 @@
                             <height>70</height>
                             <width>560</width>
                             <aligny>center</aligny>
+                            <scroll>true</scroll>
                             <label>$INFO[ListItem.Label]</label>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -288,6 +289,7 @@
                             <height>70</height>
                             <width>860</width>
                             <aligny>center</aligny>
+                            <scroll>true</scroll>
                             <label>$INFO[ListItem.Label]</label>
                             <shadowcolor>text_shadow</shadowcolor>
                         </control>
@@ -462,6 +464,7 @@
                 <height>70</height>
                 <width>860</width>
                 <aligny>center</aligny>
+                <scroll>true</scroll>
                 <label>$INFO[ListItem.Title]</label>
                 <shadowcolor>text_shadow</shadowcolor>
             </control>
@@ -544,6 +547,7 @@
                 <height>70</height>
                 <width>860</width>
                 <aligny>center</aligny>
+                <scroll>true</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
