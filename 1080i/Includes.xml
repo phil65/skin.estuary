@@ -1210,22 +1210,40 @@
                 <visible>!Window.IsActive(home)</visible>
                 <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
                 <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-                    <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-                <control type="label">
-                    <label>$INFO[Player.Time] - $INFO[Player.Title]</label>
-                    <font>font13_title</font>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <textoffsetx>300</textoffsetx>
-                    <height>35</height>
-                    <width>1920</width>
+                <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+                <itemgap>-3</itemgap>
+                <control type="grouplist">
+                    <orientation>horizontal</orientation>
+                    <height>38</height>
                     <align>center</align>
+                    <itemgap>5</itemgap>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <animation effect="slide" start="0,0" end="0,15" time="0" condition="IsEmpty(Control.GetLabel(7700))">conditional</animation>
+                    <control type="image">
+                        <top>8</top>
+                        <width>28</width>
+                        <height>28</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="button_focus">$VAR[NowPlayingIconVar]</texture>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Player.Time] - $INFO[Player.Title]</label>
+                        <font>font13_title</font>
+                        <shadowcolor>text_shadow</shadowcolor>
+                        <textoffsetx>0</textoffsetx>
+                        <height>35</height>
+                        <width>auto</width>
+                        <align>center</align>
+                        <aligny>top</aligny>
+                    </control>
                 </control>
-                <control type="label">
-                    <label>$INFO[MusicPlayer.Artist]</label>
+                <control type="label" id="7700">
+                    <label>$VAR[NowPlayingSublabel]</label>
                     <font>font12</font>
                     <shadowcolor>text_shadow</shadowcolor>
-                    <height>40</height>
+                    <height>25</height>
                     <width>1920</width>
+                    <aligny>top</aligny>
                     <textoffsetx>300</textoffsetx>
                     <align>center</align>
                 </control>
