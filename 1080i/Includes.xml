@@ -1069,9 +1069,9 @@
             </control>
             <control type="image">
                 <description>Weather</description>
-                <top>0</top>
-                <width>62</width>
-                <height>52</height>
+                <top>4</top>
+                <width>60</width>
+                <height>50</height>
                 <fadetime>300</fadetime>
                 <aspectratio align="left">keep</aspectratio>
                 <texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
