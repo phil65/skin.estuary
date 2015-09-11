@@ -96,6 +96,10 @@
         <value condition="Player.Forwarding">$LOCALIZE[31044] $VAR[VideoPlayerForwardRewindVar]</value>
         <value condition="Player.Rewinding">$LOCALIZE[31045] $VAR[VideoPlayerForwardRewindVar]</value>
     </variable>
+    <variable name="SeekTimeLabel">
+        <value condition="Player.Seeking">$INFO[Player.SeekTime] - $INFO[Player.Duration]</value>
+        <value>$INFO[Player.Time] - $INFO[Player.Duration]</value>
+    </variable>
     <variable name="OSDHelpTextVar">
         <value condition="ControlGroup(201).HasFocus">Press up to FF / RW.</value>
         <value condition="Control.HasFocus(87)">Press left right bla</value>

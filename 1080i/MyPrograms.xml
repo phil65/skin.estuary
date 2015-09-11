@@ -9,7 +9,7 @@
         <control type="group">
             <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation)">Conditional</animation>
             <include name="View_50_List">
-                <param name="visible" value="Container.Content(addons)" />
+                <param name="visible" value="true" />
             </include>
         </control>
         <include>MediaMenuMouseOverlay</include>

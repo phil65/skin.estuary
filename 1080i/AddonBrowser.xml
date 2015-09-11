@@ -20,7 +20,9 @@
             <include>MediaMenuCommon</include>
             <control type="grouplist" id="9000">
                 <top>110</top>
-                <include>MediaMenuListCommon</include>
+                <include name="MediaMenuListCommon">
+                    <param name="viewtype_button_vis" value="False" />
+                </include>
                 <control type="label" id="201">
                     <include>MediaMenuLabelCommon</include>
                     <label>31026</label>
