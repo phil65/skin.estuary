@@ -65,6 +65,7 @@
                     <include>MediaMenuItemsCommon</include>
                     <label>20367</label>
                     <label2>[B]$INFO[Container.NumItems][/B]</label2>
+                    <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes)</visible>
                 </control>
                 <control type="label" id="203">
                     <description>View options</description>
