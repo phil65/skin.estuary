@@ -379,7 +379,7 @@
                         </include>
                     </control>
                 </control>
-                <include name="WidgetListSquare">
+                <include name="WidgetListText">
                     <param name="content_path" value="pvr://recordings/all"/>
                     <param name="widget_header" value="Recent recordings"/>
                     <param name="widget_target" value="video"/>
