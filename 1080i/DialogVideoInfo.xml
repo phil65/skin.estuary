@@ -145,77 +145,73 @@
 					<orientation>horizontal</orientation>
 					<itemlayout height="400" width="270">
 						<control type="group">
-							<control type="group">
-								<posx>20</posx>
-								<posy>18</posy>
-								<control type="image">
-									<posy>10</posy>
-									<width>224</width>
-									<height>325</height>
-									<texture border="2" fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
-									<aspectratio aligny="center">scale</aspectratio>
-									<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-									<bordersize>4</bordersize>
-								</control>
-								<control type="image">
-									<width>224</width>
-									<height>70</height>
-									<posy>267</posy>
-									<texture>colors/black.png</texture>
-									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
-								</control>
-								<control type="textbox">
-									<posx>5</posx>
-									<width>214</width>
-									<height>69</height>
-									<posy>267</posy>
-									<align>center</align>
-									<font>font12</font>
-									<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] as ,[/COLOR]]</label>
-								</control>
+							<posx>0</posx>
+							<posy>10</posy>
+							<control type="image">
+								<posy>0</posy>
+								<width>264</width>
+								<height>357</height>
+								<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
+								<aspectratio aligny="center">scale</aspectratio>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<width>224</width>
+								<height>70</height>
+								<posy>267</posy>
+								<texture>colors/black.png</texture>
+								<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
+							</control>
+							<control type="textbox">
+								<left>25</left>
+								<width>214</width>
+								<height>69</height>
+								<posy>267</posy>
+								<align>center</align>
+								<font>font12</font>
+								<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] as ,[/COLOR]]</label>
 							</control>
 						</control>
 					</itemlayout>
 					<focusedlayout height="400" width="270">
 						<control type="group">
-							<control type="group">
-								<posx>20</posx>
-								<posy>18</posy>
-								<control type="image">
-									<posy>10</posy>
-									<width>224</width>
-									<height>325</height>
-									<texture border="2" fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
-									<aspectratio aligny="center">scale</aspectratio>
-									<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-									<bordersize>4</bordersize>
-								</control>
-								<control type="image">
-									<width>224</width>
-									<height>70</height>
-									<posy>267</posy>
-									<texture>colors/black.png</texture>
-									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
-									<animation effect="fade" start="100" end="80" time="40" condition="Control.HasFocus(50)">Conditional</animation>
-								</control>
-								<control type="textbox">
-									<posx>5</posx>
-									<width>214</width>
-									<height>69</height>
-									<posy>267</posy>
-									<align>center</align>
-									<font>font12</font>
-									<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] as ,[/COLOR]]</label>
-									<autoscroll delay="5000" time="3000" repeat="8001">true</autoscroll>
-								</control>
-								<control type="image">
-									<left>0</left>
-									<posy>10</posy>
-									<width>224</width>
-									<height>325</height>
-									<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-									<visible>Control.HasFocus(50)</visible>
-								</control>
+							<posx>0</posx>
+							<posy>10</posy>
+							<control type="image">
+								<posy>0</posy>
+								<width>264</width>
+								<height>357</height>
+								<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
+								<aspectratio aligny="center">scale</aspectratio>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<width>224</width>
+								<height>70</height>
+								<posy>267</posy>
+								<texture>colors/black.png</texture>
+								<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
+							</control>
+							<control type="textbox">
+								<left>25</left>
+								<width>214</width>
+								<height>69</height>
+								<posy>267</posy>
+								<align>center</align>
+								<font>font12</font>
+								<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] as ,[/COLOR]]</label>
+							</control>
+							<control type="image">
+								<left>18</left>
+								<posy>20</posy>
+								<width>230</width>
+								<height>320</height>
+								<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+								<visible>Control.HasFocus(50)</visible>
 							</control>
 						</control>
 					</focusedlayout>
