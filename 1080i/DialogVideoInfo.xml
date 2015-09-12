@@ -171,7 +171,7 @@
 								<posy>267</posy>
 								<align>center</align>
 								<font>font12</font>
-								<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] as ,[/COLOR]]</label>
+								<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[COLOR grey] $LOCALIZE[20347] ,[/COLOR]]</label>
 							</control>
 						</control>
 					</itemlayout>
