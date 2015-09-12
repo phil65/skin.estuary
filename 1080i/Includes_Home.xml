@@ -2,12 +2,10 @@
 <includes>
 	<include name="SubMenuItemsCommon">
 		<width>auto</width>
-		<height>94</height>
+		<height>110</height>
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>font12</font>
-		<texturefocus colordiffuse="button_focus" border="40">buttons/button-submenu-fo.png</texturefocus>
-		<texturenofocus colordiffuse="AAFFFFFF" border="40">buttons/button-submenu-nofo.png</texturenofocus>
 		<textoffsetx>35</textoffsetx>
 	</include>
 	<include name="PVRWidget">
@@ -82,10 +80,10 @@
 			<height>110</height>
 			<control type="grouplist" id="$PARAM[list_id]">
 				<orientation>horizontal</orientation>
-				<itemgap>5</itemgap>
+				<itemgap>-15</itemgap>
 				<onleft>9000</onleft>
-				<left>420</left>
-				<top>28</top>
+				<left>435</left>
+				<top>22</top>
 				<align>right</align>
 				<height>90</height>
 				<width>1400</width>

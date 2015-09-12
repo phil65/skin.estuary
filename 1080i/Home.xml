@@ -355,9 +355,9 @@
 					<param name="item7_vis" value="False" />
 				</include>
 				<control type="group">
-					<height>210</height>
+					<height>212</height>
 					<control type="group">
-						<top>30</top>
+						<top>34</top>
 						<left>550</left>
 						<visible>PVR.IsRecording</visible>
 						<include name="PVRWidget">
@@ -368,7 +368,7 @@
 						</include>
 					</control>
 					<control type="group">
-						<top>30</top>
+						<top>34</top>
 						<left>1220</left>
 						<visible>PVR.HasNonRecordingTimer</visible>
 						<include name="PVRWidget">
