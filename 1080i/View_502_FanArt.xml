@@ -74,7 +74,7 @@
 							<top>629</top>
 							<width>64</width>
 							<height>64</height>
-							<texture>$VAR[ListWatchedIcon]</texture>
+							<texture>$VAR[ListWatchedIconVar]</texture>
 						</control>
 						<control type="label">
 							<left>550</left>
@@ -151,7 +151,7 @@
 								<top>639</top>
 								<width>48</width>
 								<height>48</height>
-								<texture>$VAR[ListWatchedIcon]</texture>
+								<texture>$VAR[ListWatchedIconVar]</texture>
 							</control>
 							<control type="label">
 								<left>540</left>

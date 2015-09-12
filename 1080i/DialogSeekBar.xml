@@ -67,7 +67,7 @@
 				<font>font13_title</font>
 				<textcolor>white</textcolor>
 				<aligny>center</aligny>
-				<label>$VAR[SeekTimeLabel]</label>
+				<label>$VAR[SeekTimeLabelVar]</label>
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
