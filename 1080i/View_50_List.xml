@@ -152,6 +152,7 @@
 							<width>710</width>
 							<height>71</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
+							<visible>!Control.HasFocus(50)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -263,6 +264,7 @@
 							<width>1096</width>
 							<height>71</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
+							<visible>!Control.HasFocus(50)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>

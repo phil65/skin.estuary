@@ -60,7 +60,7 @@
 							<effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
 						</animation>
 						<animation type="UnFocus" reversible="false">
-							<effect type="zoom" center="auto" start="108" end="100" time="250" tween="sine" />
+							<effect type="zoom" center="auto" start="108" end="100" time="150" tween="sine" />
 						</animation>
 						<control type="image">
 							<width>400</width>
@@ -124,7 +124,7 @@
 							<effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
 						</animation>
 						<animation type="UnFocus" reversible="false">
-							<effect type="zoom" center="auto" start="108" end="100" time="250" tween="sine" />
+							<effect type="zoom" center="auto" start="108" end="100" time="150" tween="sine" />
 						</animation>
 						<top>12</top>
 						<control type="image">
