@@ -85,7 +85,7 @@
                 <font>font13</font>
                 <textcolor>button_focus</textcolor>
                 <label>$LOCALIZE[557]:</label>
-                <visible>!IsEmpty(RDS.Artist)+!IsEmpty(RDS.Band)</visible>
+                <visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
             </control>
             <control type="fadelabel">
                 <description>Artist Value (alt pos)</description>
@@ -98,7 +98,7 @@
                 <font>font13</font>
                 <textcolor>white</textcolor>
                 <label>$INFO[RDS.Artist]</label>
-                <visible>!IsEmpty(RDS.Artist)+!IsEmpty(RDS.Band)</visible>
+                <visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
             </control>
             <control type="label">
                 <description>Song Title</description>
@@ -221,7 +221,7 @@
                 <font>font13</font>
                 <textcolor>button_focus</textcolor>
                 <label>$LOCALIZE[29904]:</label>
-                <visible>IsEmpty(RDS.Band)+!IsEmpty(RDS.Artist)</visible>
+                <visible>IsEmpty(RDS.Band) + !IsEmpty(RDS.Artist)</visible>
             </control>
             <control type="textbox">
                 <description>Artist Value</description>
@@ -235,7 +235,7 @@
                 <pagecontrol>-</pagecontrol>
                 <label fallback="161">$INFO[RDS.Artist]</label>
                 <autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
-                <visible>IsEmpty(RDS.Band)+!IsEmpty(RDS.Artist)</visible>
+                <visible>IsEmpty(RDS.Band) + !IsEmpty(RDS.Artist)</visible>
             </control>
             <control type="label">
                 <description>Band Title</description>
@@ -276,7 +276,7 @@
                 <font>font13</font>
                 <textcolor>button_focus</textcolor>
                 <label>$LOCALIZE[29904]:</label>
-                <visible>!IsEmpty(RDS.Artist)+!IsEmpty(RDS.Band)</visible>
+                <visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
             </control>
             <control type="textbox">
                 <description>Artist Value (alt pos)</description>
@@ -290,7 +290,7 @@
                 <pagecontrol>-</pagecontrol>
                 <label>$INFO[RDS.Artist]</label>
                 <autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
-                <visible>!IsEmpty(RDS.Artist)+!IsEmpty(RDS.Band)</visible>
+                <visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
             </control>
             <control type="label">
                 <description>Conductor Title</description>
@@ -331,7 +331,7 @@
                 <font>font13</font>
                 <textcolor>button_focus</textcolor>
                 <label>$LOCALIZE[29902]:</label>
-                <visible>IsEmpty(RDS.Conductor)+!IsEmpty(RDS.ProgStyle)</visible>
+                <visible>IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
             </control>
             <control type="fadelabel">
                 <description>Programme style Value</description>
@@ -344,7 +344,7 @@
                 <font>font13</font>
                 <textcolor>white</textcolor>
                 <label>$INFO[RDS.ProgStyle]</label>
-                <visible>IsEmpty(RDS.Conductor)+!IsEmpty(RDS.ProgStyle)</visible>
+                <visible>IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
             </control>
             <control type="label">
                 <description>Programme style Name</description>
@@ -357,7 +357,7 @@
                 <font>font13</font>
                 <textcolor>button_focus</textcolor>
                 <label>$LOCALIZE[29902]:</label>
-                <visible>!IsEmpty(RDS.Conductor)+!IsEmpty(RDS.ProgStyle)</visible>
+                <visible>!IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
             </control>
             <control type="fadelabel">
                 <description>Programme style Value</description>
@@ -370,7 +370,7 @@
                 <font>font13</font>
                 <textcolor>white</textcolor>
                 <label>INFO[RDS.ProgStyle]</label>
-                <visible>!IsEmpty(RDS.Conductor)+!IsEmpty(RDS.ProgStyle)</visible>
+                <visible>!IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
             </control>
         </control>
         <control type="label">
@@ -525,15 +525,6 @@
                 <visible>!IsEmpty(RDS.ProgNow) | !IsEmpty(RDS.ProgNext)</visible>
             </control>
             <control type="label">
-                <description>blind label</description>
-                <left>10</left>
-                <top>280</top>
-                <width>140</width>
-                <height>25</height>
-                <label></label>
-                <visible>!IsEmpty(RDS.ProgNow) + !IsEmpty(RDS.ProgNext)</visible>
-            </control>
-            <control type="label">
                 <description>Studio basename</description>
                 <width>140</width>
                 <height>25</height>
@@ -676,20 +667,6 @@
             <height>300</height>
             <itemgap>8</itemgap>
             <control type="label">
-                <description>blind label</description>
-                <width>5</width>
-                <height>25</height>
-                <label></label>
-                <visible>!IsEmpty(RDS.ProgNow)</visible>
-            </control>
-            <control type="label">
-                <description>blind label</description>
-                <width>5</width>
-                <height>25</height>
-                <label></label>
-                <visible>!IsEmpty(RDS.ProgNext)</visible>
-            </control>
-            <control type="label">
                 <description>Hotline basename</description>
                 <width>140</width>
                 <height>25</height>
@@ -699,13 +676,6 @@
                 <textcolor>button_focus</textcolor>
                 <label>$LOCALIZE[29913]:</label>
                 <visible>!IsEmpty(RDS.PhoneHotline) | !IsEmpty(RDS.EmailHotline)</visible>
-            </control>
-            <control type="label">
-                <description>blind label</description>
-                <width>140</width>
-                <height>25</height>
-                <label></label>
-                <visible>!IsEmpty(RDS.PhoneHotline) + !IsEmpty(RDS.EmailHotline)</visible>
             </control>
             <control type="label">
                 <description>Homepage Name</description>
@@ -727,20 +697,6 @@
             <width>520</width>
             <height>300</height>
             <itemgap>8</itemgap>
-            <control type="label">
-                <description>blind label</description>
-                <width>5</width>
-                <height>25</height>
-                <label></label>
-                <visible>!IsEmpty(RDS.ProgNow)</visible>
-            </control>
-            <control type="label">
-                <description>blind label</description>
-                <width>5</width>
-                <height>25</height>
-                <label></label>
-                <visible>!IsEmpty(RDS.ProgNext)</visible>
-            </control>
             <control type="label">
                 <description>Hotline phone Name</description>
                 <width>160</width>
@@ -781,20 +737,6 @@
             <width>520</width>
             <height>300</height>
             <itemgap>8</itemgap>
-            <control type="label">
-                <description>blind label</description>
-                <width>5</width>
-                <height>25</height>
-                <label></label>
-                <visible>!IsEmpty(RDS.ProgNow)</visible>
-            </control>
-            <control type="label">
-                <description>blind label</description>
-                <width>140</width>
-                <height>25</height>
-                <label></label>
-                <visible>!IsEmpty(RDS.ProgNext)</visible>
-            </control>
             <control type="fadelabel">
                 <description>Hotline phone Value</description>
                 <width>248</width>
