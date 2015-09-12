@@ -239,7 +239,7 @@
                         <top>35</top>
                         <width>400</width>
                         <height>535</height>
-                        <align>justify</align>
+                        <align>left</align>
                         <font>font_textbox</font>
                         <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
                         <label>$INFO[ListItem.Tagline,[COLOR button_focus][B],[/B][/COLOR][CR]]$INFO[ListItem.Plot]</label>
