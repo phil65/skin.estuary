@@ -106,6 +106,7 @@
                         <param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
                     </include>
                     <onclick>ActivateWindow(visualisationpresetlist)</onclick>
+                    <enable>Visualisation.HasPresets</enable>
                 </control>
                 <control type="radiobutton" id="500">
                     <label>31355</label>
