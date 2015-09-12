@@ -49,74 +49,74 @@
 				</control>
 			</control>
 			<!-- 			<control type="list" id="21">
-			     <left>400</left>
-			     <top>100</top>
-			     <width>360</width>
-			     <height>241</height>
-			     <onup>21</onup>
-			     <onleft>20</onleft>
-			     <onright>60</onright>
-			     <ondown>21</ondown>
-			     <scrolltime>200</scrolltime>
-			     <itemlayout height="45">
-			     <control type="image">
-			     <left>0</left>
-			     <top>0</top>
-			     <width>360</width>
-			     <height>100</height>
-			     <texture border="40">buttons/button-nofo.png</texture>
-			     </control>
-			     <control type="image">
-			     <left>5</left>
-			     <top>5</top>
-			     <width>35</width>
-			     <height>30</height>
-			     <texture>$INFO[Listitem.Icon]</texture>
-			     </control>
-			     <control type="label">
-			     <left>50</left>
-			     <top>0</top>
-			     <width>290</width>
-			     <height>100</height>
-			     <aligny>center</aligny>
-			     <textcolor>grey2</textcolor>
-			     <info>ListItem.Label</info>
-			     </control>
-			     </itemlayout>
-			     <focusedlayout height="45">
-			     <control type="image">
-			     <left>0</left>
-			     <top>0</top>
-			     <width>360</width>
-			     <height>100</height>
-			     <visible>!Control.HasFocus(21)</visible>
-			     <texture border="40">buttons/button-nofo.png</texture>
-			     </control>
-			     <control type="image">
-			     <left>0</left>
-			     <top>0</top>
-			     <width>360</width>
-			     <height>100</height>
-			     <visible>Control.HasFocus(21)</visible>
-			     <texture border="5">buttons/button-theme-fo.png</texture>
-			     </control>
-			     <control type="image">
-			     <left>5</left>
-			     <top>5</top>
-			     <width>35</width>
-			     <height>30</height>
-			     <texture>$INFO[Listitem.Icon]</texture>
-			     </control>
-			     <control type="label">
-			     <left>50</left>
-			     <top>0</top>
-			     <width>290</width>
-			     <height>100</height>
-			     <aligny>center</aligny>
-			     <info>ListItem.Label</info>
-			     </control>
-			     </focusedlayout>
-			     </control> -->
+				 <left>400</left>
+				 <top>100</top>
+				 <width>360</width>
+				 <height>241</height>
+				 <onup>21</onup>
+				 <onleft>20</onleft>
+				 <onright>60</onright>
+				 <ondown>21</ondown>
+				 <scrolltime>200</scrolltime>
+				 <itemlayout height="45">
+				 <control type="image">
+				 <left>0</left>
+				 <top>0</top>
+				 <width>360</width>
+				 <height>100</height>
+				 <texture border="40">buttons/button-nofo.png</texture>
+				 </control>
+				 <control type="image">
+				 <left>5</left>
+				 <top>5</top>
+				 <width>35</width>
+				 <height>30</height>
+				 <texture>$INFO[Listitem.Icon]</texture>
+				 </control>
+				 <control type="label">
+				 <left>50</left>
+				 <top>0</top>
+				 <width>290</width>
+				 <height>100</height>
+				 <aligny>center</aligny>
+				 <textcolor>grey2</textcolor>
+				 <info>ListItem.Label</info>
+				 </control>
+				 </itemlayout>
+				 <focusedlayout height="45">
+				 <control type="image">
+				 <left>0</left>
+				 <top>0</top>
+				 <width>360</width>
+				 <height>100</height>
+				 <visible>!Control.HasFocus(21)</visible>
+				 <texture border="40">buttons/button-nofo.png</texture>
+				 </control>
+				 <control type="image">
+				 <left>0</left>
+				 <top>0</top>
+				 <width>360</width>
+				 <height>100</height>
+				 <visible>Control.HasFocus(21)</visible>
+				 <texture border="5">buttons/button-theme-fo.png</texture>
+				 </control>
+				 <control type="image">
+				 <left>5</left>
+				 <top>5</top>
+				 <width>35</width>
+				 <height>30</height>
+				 <texture>$INFO[Listitem.Icon]</texture>
+				 </control>
+				 <control type="label">
+				 <left>50</left>
+				 <top>0</top>
+				 <width>290</width>
+				 <height>100</height>
+				 <aligny>center</aligny>
+				 <info>ListItem.Label</info>
+				 </control>
+				 </focusedlayout>
+				 </control> -->
 			<control type="label">
 				<description>Scanning Options Header</description>
 				<left>60</left>

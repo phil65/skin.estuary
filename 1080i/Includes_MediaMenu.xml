@@ -1,254 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <include name="MediaMenuItemsCommon">
-        <width>400</width>
-        <textoffsetx>20</textoffsetx>
-        <top>0</top>
-        <height>70</height>
-        <radioposx>300</radioposx>
-        <aligny>center</aligny>
-        <textcolor>white</textcolor>
-        <invalidcolor>invalid</invalidcolor>
-        <texturefocus>lists/focus.png</texturefocus>
-        <texturenofocus border="30">lists/separator.png</texturenofocus>
-        <alttexturefocus>lists/focus.png</alttexturefocus>
-        <alttexturenofocus border="30">lists/separator.png</alttexturenofocus>
-    </include>
-    <include name="PVRSideBar">
-        <param name="group_label2">$INFO[Control.GetLabel(29)]</param>
-        <definition>
-            <include>MediaMenuMouseOverlay</include>
-            <control type="group">
-                <include>MediaMenuCommon</include>
-                <control type="grouplist" id="9000">
-                    <top>90</top>
-                    <left>0</left>
-                    <width>400</width>
-                    <height>1080</height>
-                    <onleft>9000</onleft>
-                    <onup>9000</onup>
-                    <onright>50</onright>
-                    <ondown>9000</ondown>
-                    <onback>50</onback>
-                    <control type="label" id="6052">
-                        <include>MediaMenuLabelCommon</include>
-                        <label>Sections</label>
-                    </control>
-                    <control type="togglebutton" id="100">
-                        <description>Channels</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>$LOCALIZE[19019]</label>
-                        <altlabel>[B][COLOR selected]$LOCALIZE[19019][/COLOR][/B]</altlabel>
-                        <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
-                        <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
-                        <usealttexture>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</usealttexture>
-                    </control>
-                    <control type="togglebutton" id="101">
-                        <description>TV Guide</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>$LOCALIZE[22020]</label>
-                        <altlabel>[B][COLOR selected]$LOCALIZE[22020][/COLOR][/B]</altlabel>
-                        <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
-                        <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
-                        <usealttexture>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</usealttexture>
-                    </control>
-                    <control type="togglebutton" id="102">
-                        <description>Recordings</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>$LOCALIZE[19163]</label>
-                        <altlabel>[B][COLOR selected]$LOCALIZE[19163][/COLOR][/B]</altlabel>
-                        <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
-                        <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
-                        <usealttexture>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</usealttexture>
-                    </control>
-                    <control type="togglebutton" id="103">
-                        <description>Timers</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>$LOCALIZE[19040]</label>
-                        <altlabel>[B][COLOR selected]$LOCALIZE[19040][/COLOR][/B]</altlabel>
-                        <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
-                        <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
-                        <usealttexture>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</usealttexture>
-                    </control>
-                    <control type="togglebutton" id="104">
-                        <description>Search</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>$LOCALIZE[137]</label>
-                        <altlabel>[B][COLOR selected]$LOCALIZE[137][/COLOR][/B]</altlabel>
-                        <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
-                        <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
-                        <usealttexture>Window.IsActive(TVSearch) | Window.IsActive(RadioSearch)</usealttexture>
-                    </control>
-                    <control type="label" id="200">
-                        <include>MediaMenuLabelCommon</include>
-                        <label>31006</label>
-                    </control>
-                    <control type="button" id="6051">
-                        <description>Viewtype Toggle</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>Viewtype</label>
-                        <label2>[B]$INFO[Container.Viewmode][/B]</label2>
-                        <onclick>Container.NextViewMode</onclick>
-                        <visible>Window.IsActive(tvguide) | Window.IsActive(radioguide)</visible>
-                    </control>
-                    <control type="button" id="6053">
-                        <description>Sort by button</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>Sort by:</label>
-                        <label2>[B]$INFO[Container.SortMethod][/B]</label2>
-                        <onclick>Container.NextSortMethod</onclick>
-                    </control>
-                    <control type="button" id="6055">
-                        <description>Sort asc</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>Sort</label>
-                        <label2>[B]$INFO[Container.SortOrder][/B]</label2>
-                        <onclick>Container.SortDirection</onclick>
-                    </control>
-                    <control type="button" id="6054">
-                        <description>Channel Groups</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>Group:</label>
-                        <label2>[B]$PARAM[group_label2][/B]</label2>
-                        <onclick>NextChannelGroup</onclick>
-                    </control>
-                    <control type="label" id="300">
-                        <label>31026</label>
-                        <include>MediaMenuLabelCommon</include>
-                        <visible>Control.IsVisible(31) |Control.IsVisible(5) |Control.IsVisible(6) |Control.IsVisible(7) |Control.IsVisible(8)</visible>
-                    </control>
-                    <control type="radiobutton" id="31">
-                        <description>Filter</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>587</label>
-                        <selected>Container.Filtered</selected>
-                        <onclick>right</onclick>
-                        <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
-                    </control>
-                    <control type="radiobutton" id="5">
-                        <description>Group recording items by folder structure</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>19270</label>
-                        <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
-                    </control>
-                    <control type="radiobutton" id="6">
-                        <description>Show hidden channels</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>19051</label>
-                        <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
-                    </control>
-                    <control type="radiobutton" id="7">
-                        <description>Show deleted recordings</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>19184</label>
-                        <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
-                    </control>
-                    <control type="radiobutton" id="8">
-                        <description>Group timers</description>
-                        <include>MediaMenuItemsCommon</include>
-                        <label>842</label>
-                        <visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</visible>
-                    </control>
-                </control>
-            </control>
-        </definition>
-    </include>
-    <include name="MediaMenuLabelCommon">
-        <width>400</width>
-        <textoffsetx>20</textoffsetx>
-        <textoffsety>15</textoffsety>
-        <top>0</top>
-        <height>50</height>
-        <radioposx>300</radioposx>
-        <font>font12_title</font>
-        <align>left</align>
-        <aligny>top</aligny>
-        <textcolor>button_focus</textcolor>
-    </include>
-    <include name="MediaMenuCommon">
-        <include>OpenClose_Left</include>
-        <animation type="Conditional" condition="ControlGroup(9000).HasFocus | Control.HasFocus(6130)">
-            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
-            <effect type="slide" start="-320" end="0" time="400" tween="cubic" easing="out" />
-        </animation>
-        <animation type="Conditional" condition="!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)">
-            <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" />
-            <effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="in" />
-        </animation>
-        <control type="image">
-            <description>Menu Panel</description>
-            <left>0</left>
-            <top>80</top>
-            <width>450</width>
-            <height>920</height>
-            <texture>lists/panel.png</texture>
-        </control>
-    </include>
-    <include name="MediaMenuListCommon">
-        <param name="viewtype_button_vis">true</param>
-        <definition>
-            <left>0</left>
-            <top>100</top>
-            <width>400</width>
-            <height>1080</height>
-            <onleft>9000</onleft>
-            <onup>9000</onup>
-            <onright>50</onright>
-            <ondown>9000</ondown>
-            <onback>50</onback>
-            <control type="label" id="200">
-                <include>MediaMenuLabelCommon</include>
-                <label>31006</label>
-            </control>
-            <control type="button" id="6051">
-                <description>Viewtype Toggle</description>
-                <include>MediaMenuItemsCommon</include>
-                <label>Viewtype</label>
-                <label2>[B]$INFO[Container.Viewmode][/B]</label2>
-                <enable>$PARAM[viewtype_button_vis]</enable>
-                <onclick>Container.NextViewMode</onclick>
-            </control>
-            <control type="button" id="6053">
-                <description>Sort by button</description>
-                <include>MediaMenuItemsCommon</include>
-                <label>Sort by:</label>
-                <label2>[B]$INFO[Container.SortMethod][/B]</label2>
-                <onclick>Container.NextSortMethod</onclick>
-            </control>
-            <control type="button" id="6052">
-                <description>Sort asc</description>
-                <include>MediaMenuItemsCommon</include>
-                <label>Sort</label>
-                <label2>[B]$INFO[Container.SortOrder][/B]</label2>
-                <onclick>Container.SortDirection</onclick>
-            </control>
-            <control type="edit" id="19">
-                <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-                <description>Filter</description>
-                <textwidth>345</textwidth>
-                <include>MediaMenuItemsCommon</include>
-                <label>Search</label>
-            </control>
-            <control type="radiobutton" id="20">
-                <visible>Container.CanFilterAdvanced</visible>
-                <description>Filter</description>
-                <include>MediaMenuItemsCommon</include>
-                <label>587</label>
-                <selected>Container.Filtered</selected>
-                <onclick>right</onclick>
-                <onclick>Filter</onclick>
-            </control>
-        </definition>
-    </include>
-    <include name="MediaMenuMouseOverlay">
-        <control type="button" id="6130">
-            <label>Button for media menu mouse support</label>
-            <height>1080</height>
-            <width>50</width>
-            <posx>-50</posx>
-            <posy>0</posy>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
-        </control>
-    </include>
+	<include name="MediaMenuItemsCommon">
+		<width>400</width>
+		<textoffsetx>20</textoffsetx>
+		<top>0</top>
+		<height>70</height>
+		<radioposx>300</radioposx>
+		<aligny>center</aligny>
+		<textcolor>white</textcolor>
+		<invalidcolor>invalid</invalidcolor>
+		<texturefocus>lists/focus.png</texturefocus>
+		<texturenofocus border="30">lists/separator.png</texturenofocus>
+		<alttexturefocus>lists/focus.png</alttexturefocus>
+		<alttexturenofocus border="30">lists/separator.png</alttexturenofocus>
+	</include>
+	<include name="PVRSideBar">
+		<param name="group_label2">$INFO[Control.GetLabel(29)]</param>
+		<definition>
+			<include>MediaMenuMouseOverlay</include>
+			<control type="group">
+				<include>MediaMenuCommon</include>
+				<control type="grouplist" id="9000">
+					<top>90</top>
+					<left>0</left>
+					<width>400</width>
+					<height>1080</height>
+					<onleft>9000</onleft>
+					<onup>9000</onup>
+					<onright>50</onright>
+					<ondown>9000</ondown>
+					<onback>50</onback>
+					<control type="label" id="6052">
+						<include>MediaMenuLabelCommon</include>
+						<label>Sections</label>
+					</control>
+					<control type="togglebutton" id="100">
+						<description>Channels</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>$LOCALIZE[19019]</label>
+						<altlabel>[B][COLOR selected]$LOCALIZE[19019][/COLOR][/B]</altlabel>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+						<usealttexture>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</usealttexture>
+					</control>
+					<control type="togglebutton" id="101">
+						<description>TV Guide</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>$LOCALIZE[22020]</label>
+						<altlabel>[B][COLOR selected]$LOCALIZE[22020][/COLOR][/B]</altlabel>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+						<usealttexture>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</usealttexture>
+					</control>
+					<control type="togglebutton" id="102">
+						<description>Recordings</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>$LOCALIZE[19163]</label>
+						<altlabel>[B][COLOR selected]$LOCALIZE[19163][/COLOR][/B]</altlabel>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+						<usealttexture>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</usealttexture>
+					</control>
+					<control type="togglebutton" id="103">
+						<description>Timers</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>$LOCALIZE[19040]</label>
+						<altlabel>[B][COLOR selected]$LOCALIZE[19040][/COLOR][/B]</altlabel>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+						<usealttexture>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</usealttexture>
+					</control>
+					<control type="togglebutton" id="104">
+						<description>Search</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>$LOCALIZE[137]</label>
+						<altlabel>[B][COLOR selected]$LOCALIZE[137][/COLOR][/B]</altlabel>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+						<usealttexture>Window.IsActive(TVSearch) | Window.IsActive(RadioSearch)</usealttexture>
+					</control>
+					<control type="label" id="200">
+						<include>MediaMenuLabelCommon</include>
+						<label>31006</label>
+					</control>
+					<control type="button" id="6051">
+						<description>Viewtype Toggle</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>Viewtype</label>
+						<label2>[B]$INFO[Container.Viewmode][/B]</label2>
+						<onclick>Container.NextViewMode</onclick>
+						<visible>Window.IsActive(tvguide) | Window.IsActive(radioguide)</visible>
+					</control>
+					<control type="button" id="6053">
+						<description>Sort by button</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>Sort by:</label>
+						<label2>[B]$INFO[Container.SortMethod][/B]</label2>
+						<onclick>Container.NextSortMethod</onclick>
+					</control>
+					<control type="button" id="6055">
+						<description>Sort asc</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>Sort</label>
+						<label2>[B]$INFO[Container.SortOrder][/B]</label2>
+						<onclick>Container.SortDirection</onclick>
+					</control>
+					<control type="button" id="6054">
+						<description>Channel Groups</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>Group:</label>
+						<label2>[B]$PARAM[group_label2][/B]</label2>
+						<onclick>NextChannelGroup</onclick>
+					</control>
+					<control type="label" id="300">
+						<label>31026</label>
+						<include>MediaMenuLabelCommon</include>
+						<visible>Control.IsVisible(31) |Control.IsVisible(5) |Control.IsVisible(6) |Control.IsVisible(7) |Control.IsVisible(8)</visible>
+					</control>
+					<control type="radiobutton" id="31">
+						<description>Filter</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>587</label>
+						<selected>Container.Filtered</selected>
+						<onclick>right</onclick>
+						<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+					</control>
+					<control type="radiobutton" id="5">
+						<description>Group recording items by folder structure</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>19270</label>
+						<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+					</control>
+					<control type="radiobutton" id="6">
+						<description>Show hidden channels</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>19051</label>
+						<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+					</control>
+					<control type="radiobutton" id="7">
+						<description>Show deleted recordings</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>19184</label>
+						<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+					</control>
+					<control type="radiobutton" id="8">
+						<description>Group timers</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>842</label>
+						<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</visible>
+					</control>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="MediaMenuLabelCommon">
+		<width>400</width>
+		<textoffsetx>20</textoffsetx>
+		<textoffsety>15</textoffsety>
+		<top>0</top>
+		<height>50</height>
+		<radioposx>300</radioposx>
+		<font>font12_title</font>
+		<align>left</align>
+		<aligny>top</aligny>
+		<textcolor>button_focus</textcolor>
+	</include>
+	<include name="MediaMenuCommon">
+		<include>OpenClose_Left</include>
+		<animation type="Conditional" condition="ControlGroup(9000).HasFocus | Control.HasFocus(6130)">
+			<effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
+			<effect type="slide" start="-320" end="0" time="400" tween="cubic" easing="out" />
+		</animation>
+		<animation type="Conditional" condition="!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)">
+			<effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" />
+			<effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="in" />
+		</animation>
+		<control type="image">
+			<description>Menu Panel</description>
+			<left>0</left>
+			<top>80</top>
+			<width>450</width>
+			<height>920</height>
+			<texture>lists/panel.png</texture>
+		</control>
+	</include>
+	<include name="MediaMenuListCommon">
+		<param name="viewtype_button_vis">true</param>
+		<definition>
+			<left>0</left>
+			<top>100</top>
+			<width>400</width>
+			<height>1080</height>
+			<onleft>9000</onleft>
+			<onup>9000</onup>
+			<onright>50</onright>
+			<ondown>9000</ondown>
+			<onback>50</onback>
+			<control type="label" id="200">
+				<include>MediaMenuLabelCommon</include>
+				<label>31006</label>
+			</control>
+			<control type="button" id="6051">
+				<description>Viewtype Toggle</description>
+				<include>MediaMenuItemsCommon</include>
+				<label>Viewtype</label>
+				<label2>[B]$INFO[Container.Viewmode][/B]</label2>
+				<enable>$PARAM[viewtype_button_vis]</enable>
+				<onclick>Container.NextViewMode</onclick>
+			</control>
+			<control type="button" id="6053">
+				<description>Sort by button</description>
+				<include>MediaMenuItemsCommon</include>
+				<label>Sort by:</label>
+				<label2>[B]$INFO[Container.SortMethod][/B]</label2>
+				<onclick>Container.NextSortMethod</onclick>
+			</control>
+			<control type="button" id="6052">
+				<description>Sort asc</description>
+				<include>MediaMenuItemsCommon</include>
+				<label>Sort</label>
+				<label2>[B]$INFO[Container.SortOrder][/B]</label2>
+				<onclick>Container.SortDirection</onclick>
+			</control>
+			<control type="edit" id="19">
+				<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+				<description>Filter</description>
+				<textwidth>345</textwidth>
+				<include>MediaMenuItemsCommon</include>
+				<label>Search</label>
+			</control>
+			<control type="radiobutton" id="20">
+				<visible>Container.CanFilterAdvanced</visible>
+				<description>Filter</description>
+				<include>MediaMenuItemsCommon</include>
+				<label>587</label>
+				<selected>Container.Filtered</selected>
+				<onclick>right</onclick>
+				<onclick>Filter</onclick>
+			</control>
+		</definition>
+	</include>
+	<include name="MediaMenuMouseOverlay">
+		<control type="button" id="6130">
+			<label>Button for media menu mouse support</label>
+			<height>1080</height>
+			<width>50</width>
+			<posx>-50</posx>
+			<posy>0</posy>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+		</control>
+	</include>
 </includes>

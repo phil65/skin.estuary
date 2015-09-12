@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">20</defaultcontrol>
-    <controls>
-        <include>DefaultBackground</include>
-        <control type="image">
-            <description>Dialog Header image</description>
-            <left>926</left>
-            <top>495</top>
-            <width>68</width>
-            <height>68</height>
-            <texture colordiffuse="button_focus" border="2">icons/file-manager/left-right.png</texture>
-            <animation effect="fade" start="0" end="100" time="300" delay="100">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="160">WindowClose</animation>
-        </control>
-        <control type="group">
-            <posy>190</posy>
-            <posx>100</posx>
-            <include>OpenClose_Left</include>
-            <include name="FileManagerPanel">
-                <param name="header_id" value="101" />
-                <param name="header_label" value="" />
-                <param name="list_id" value="20" />
-                <param name="scrollbar_id" value="60" />
-                <param name="onleft_id" value="21" />
-                <param name="onright_id" value="21" />
-                <param name="width" value="800" />
-                <param name="bg_width" value="840" />
-            </include>
-        </control>
-        <control type="group">
-            <posx>1020</posx>
-            <posy>190</posy>
-            <include>OpenClose_Right</include>
-            <include name="FileManagerPanel">
-                <param name="header_id" value="102" />
-                <param name="header_label" value="" />
-                <param name="list_id" value="21" />
-                <param name="scrollbar_id" value="61" />
-                <param name="onleft_id" value="20" />
-                <param name="onright_id" value="20" />
-                <param name="width" value="800" />
-                <param name="bg_width" value="840" />
-            </include>
-        </control>
-        <include name="TopBar">
-            <param name="breadcrumbs_label" value="File manager" />
-            <param name="breadcrumbs_icon" value="icons/settings/filemanager.png" />
-        </include>
-        <include>BottomBar</include>
-        <control type="group">
-            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-            <control type="grouplist">
-                <orientation>horizontal</orientation>
-                <align>right</align>
-                <top>1015</top>
-                <itemgap>10</itemgap>
-                <right>24</right>
-                <with>1200</with>
-                <control type="label">
-                    <width>auto</width>
-                    <height>48</height>
-                    <aligny>center</aligny>
-                    <align>right</align>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <visible>Control.HasFocus(60) | Control.HasFocus(5199)</visible>
-                    <label>$INFO[Container(21).CurrentPage,, / ]$INFO[Container(21).NumPages,, • ]</label>
-                </control>
-                <control type="label">
-                    <width>auto</width>
-                    <height>48</height>
-                    <aligny>center</aligny>
-                    <align>right</align>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <label>$INFO[Container(21).CurrentItem,, / ]$INFO[Container(21).NumItems]</label>
-                </control>
-                <control type="image">
-                    <description>Items icon</description>
-                    <width>54</width>
-                    <height>44</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="button_focus">frame/item-count.png</texture>
-                </control>
-            </control>
-            <control type="grouplist">
-                <orientation>horizontal</orientation>
-                <align>left</align>
-                <top>1015</top>
-                <left>24</left>
-                <with>1200</with>
-                <itemgap>10</itemgap>
-                <control type="label">
-                    <width>auto</width>
-                    <height>48</height>
-                    <aligny>center</aligny>
-                    <align>right</align>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <visible>Control.HasFocus(60) | Control.HasFocus(61)</visible>
-                    <label>$INFO[Container(20).CurrentPage,, / ]$INFO[Container(20).NumPages,, • ]</label>
-                </control>
-                <control type="label">
-                    <width>auto</width>
-                    <height>48</height>
-                    <aligny>center</aligny>
-                    <align>right</align>
-                    <shadowcolor>text_shadow</shadowcolor>
-                    <label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
-                </control>
-                <control type="image">
-                    <description>Items icon</description>
-                    <width>54</width>
-                    <height>44</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="button_focus">frame/item-count.png</texture>
-                </control>
-            </control>
-        </control>
-    </controls>
+	<defaultcontrol always="true">20</defaultcontrol>
+	<controls>
+		<include>DefaultBackground</include>
+		<control type="image">
+			<description>Dialog Header image</description>
+			<left>926</left>
+			<top>495</top>
+			<width>68</width>
+			<height>68</height>
+			<texture colordiffuse="button_focus" border="2">icons/file-manager/left-right.png</texture>
+			<animation effect="fade" start="0" end="100" time="300" delay="100">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="160">WindowClose</animation>
+		</control>
+		<control type="group">
+			<posy>190</posy>
+			<posx>100</posx>
+			<include>OpenClose_Left</include>
+			<include name="FileManagerPanel">
+				<param name="header_id" value="101" />
+				<param name="header_label" value="" />
+				<param name="list_id" value="20" />
+				<param name="scrollbar_id" value="60" />
+				<param name="onleft_id" value="21" />
+				<param name="onright_id" value="21" />
+				<param name="width" value="800" />
+				<param name="bg_width" value="840" />
+			</include>
+		</control>
+		<control type="group">
+			<posx>1020</posx>
+			<posy>190</posy>
+			<include>OpenClose_Right</include>
+			<include name="FileManagerPanel">
+				<param name="header_id" value="102" />
+				<param name="header_label" value="" />
+				<param name="list_id" value="21" />
+				<param name="scrollbar_id" value="61" />
+				<param name="onleft_id" value="20" />
+				<param name="onright_id" value="20" />
+				<param name="width" value="800" />
+				<param name="bg_width" value="840" />
+			</include>
+		</control>
+		<include name="TopBar">
+			<param name="breadcrumbs_label" value="File manager" />
+			<param name="breadcrumbs_icon" value="icons/settings/filemanager.png" />
+		</include>
+		<include>BottomBar</include>
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<control type="grouplist">
+				<orientation>horizontal</orientation>
+				<align>right</align>
+				<top>1015</top>
+				<itemgap>10</itemgap>
+				<right>24</right>
+				<with>1200</with>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Control.HasFocus(60) | Control.HasFocus(5199)</visible>
+					<label>$INFO[Container(21).CurrentPage,, / ]$INFO[Container(21).NumPages,, • ]</label>
+				</control>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<label>$INFO[Container(21).CurrentItem,, / ]$INFO[Container(21).NumItems]</label>
+				</control>
+				<control type="image">
+					<description>Items icon</description>
+					<width>54</width>
+					<height>44</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+				</control>
+			</control>
+			<control type="grouplist">
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<top>1015</top>
+				<left>24</left>
+				<with>1200</with>
+				<itemgap>10</itemgap>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Control.HasFocus(60) | Control.HasFocus(61)</visible>
+					<label>$INFO[Container(20).CurrentPage,, / ]$INFO[Container(20).NumPages,, • ]</label>
+				</control>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
+				</control>
+				<control type="image">
+					<description>Items icon</description>
+					<width>54</width>
+					<height>44</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+				</control>
+			</control>
+		</control>
+	</controls>
 </window>

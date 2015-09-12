@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">50</defaultcontrol>
-    <backgroundcolor>0</backgroundcolor>
-    <menucontrol>9000</menucontrol>
-    <views>50,52,53,500</views>
-    <controls>
-        <include>DefaultBackground</include>
-        <control type="group">
-            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(musicinformation)">Conditional</animation>
-            <include name="View_50_List">
-                <param name="visible" value="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)" />
-            </include>
-            <include name="View_52_IconWall">
-                <param name="visible" value="Container.Content() | Container.Content(years) | Container.Content(files) | Container.Content(genres)" />
-            </include>
-            <include name="View_500_SmallThumb">
-                <param name="layouts_include" value="SmallThumbMusicLayouts" />
-                <param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
-            </include>
-            <include name="View_53_Shift">
-                <param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
-            </include>
-        </control>
-        <include>MediaMenuMouseOverlay</include>
-        <control type="group">
-            <include>MediaMenuCommon</include>
-            <control type="grouplist" id="9000">
-                <top>110</top>
-                <include name="MediaMenuListCommon">
-                    <param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(songs) | Container.Content(albums)" />
-                </include>
-                <control type="label" id="203">
-                    <description>Actions</description>
-                    <include>MediaMenuLabelCommon</include>
-                    <label>31039</label>
-                </control>
-                <control type="radiobutton" id="99">
-                    <description>Library button</description>
-                    <label>$LOCALIZE[29800]</label>
-                    <onclick>ReplaceWindow(MusicLibrary)</onclick>
-                    <selected>Window.IsVisible(MusicLibrary)</selected>
-                    <include>MediaMenuItemsCommon</include>
-                    <enable>Library.HasContent(Music)</enable>
-                </control>
-                <control type="button" id="619">
-                    <description>Update library</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <label>$VAR[LibraryScanLabelVar]</label>
-                    <onclick>UpdateLibrary(music)</onclick>
-                </control>
-                <control type="button" id="16">
-                    <label>589</label>
-                    <include>MediaMenuItemsCommon</include>
-                </control>
-                <control type="button" id="612">
-                    <description>Go to playlist</description>
-                    <include>MediaMenuItemsCommon</include>
-                    <label>13350</label>
-                    <onclick>ActivateWindow(musicplaylist)</onclick>
-                    <visible>!StringCompare(Playlist.Length(music),0)</visible>
-                </control>
-            </control>
-        </control>
-        <include name="TopBar">
-            <param name="breadcrumbs_label" value="$VAR[MusicBreadcrumbsVar]" />
-            <param name="breadcrumbs_icon" value="icons/settings/music.png" />
-        </include>
-        <include>BottomBar</include>
-    </controls>
+	<defaultcontrol always="true">50</defaultcontrol>
+	<backgroundcolor>0</backgroundcolor>
+	<menucontrol>9000</menucontrol>
+	<views>50,52,53,500</views>
+	<controls>
+		<include>DefaultBackground</include>
+		<control type="group">
+			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(musicinformation)">Conditional</animation>
+			<include name="View_50_List">
+				<param name="visible" value="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)" />
+			</include>
+			<include name="View_52_IconWall">
+				<param name="visible" value="Container.Content() | Container.Content(years) | Container.Content(files) | Container.Content(genres)" />
+			</include>
+			<include name="View_500_SmallThumb">
+				<param name="layouts_include" value="SmallThumbMusicLayouts" />
+				<param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
+			</include>
+			<include name="View_53_Shift">
+				<param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
+			</include>
+		</control>
+		<include>MediaMenuMouseOverlay</include>
+		<control type="group">
+			<include>MediaMenuCommon</include>
+			<control type="grouplist" id="9000">
+				<top>110</top>
+				<include name="MediaMenuListCommon">
+					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(songs) | Container.Content(albums)" />
+				</include>
+				<control type="label" id="203">
+					<description>Actions</description>
+					<include>MediaMenuLabelCommon</include>
+					<label>31039</label>
+				</control>
+				<control type="radiobutton" id="99">
+					<description>Library button</description>
+					<label>$LOCALIZE[29800]</label>
+					<onclick>ReplaceWindow(MusicLibrary)</onclick>
+					<selected>Window.IsVisible(MusicLibrary)</selected>
+					<include>MediaMenuItemsCommon</include>
+					<enable>Library.HasContent(Music)</enable>
+				</control>
+				<control type="button" id="619">
+					<description>Update library</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>$VAR[LibraryScanLabelVar]</label>
+					<onclick>UpdateLibrary(music)</onclick>
+				</control>
+				<control type="button" id="16">
+					<label>589</label>
+					<include>MediaMenuItemsCommon</include>
+				</control>
+				<control type="button" id="612">
+					<description>Go to playlist</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>13350</label>
+					<onclick>ActivateWindow(musicplaylist)</onclick>
+					<visible>!StringCompare(Playlist.Length(music),0)</visible>
+				</control>
+			</control>
+		</control>
+		<include name="TopBar">
+			<param name="breadcrumbs_label" value="$VAR[MusicBreadcrumbsVar]" />
+			<param name="breadcrumbs_icon" value="icons/settings/music.png" />
+		</include>
+		<include>BottomBar</include>
+	</controls>
 </window>
