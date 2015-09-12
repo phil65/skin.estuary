@@ -147,6 +147,7 @@
 		<value>$INFO[Window(weather).Property(fanartcode),resource://resource.images.weatherfanart.single/,.jpg]</value>
 	</variable>
 	<variable name="ListWatchedIcon">
+		<value condition="Container.Content(files)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
 		<value condition="IsEmpty(ListItem.DBType)">-</value>
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
 		<value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlays/watched/OverlayWatched-List.png</value>
