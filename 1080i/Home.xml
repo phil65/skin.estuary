@@ -391,8 +391,8 @@
 						</include>
 					</control>
 					<control type="group">>
-<!-- 						<visible>PVR.HasNonRecordingTimer</visible>
- -->						<width>680</width>
+						<visible>PVR.HasNonRecordingTimer</visible>
+						<width>680</width>
 						<include name="PVRWidget">
 							<param name="icon" value="$INFO[PVR.NextRecordingChannelIcon]" />
 							<param name="header" value="$LOCALIZE[19157]" />
@@ -587,10 +587,10 @@
 					<description>Weather info</description>
 					<height>370</height>
 					<control type="image">
-						<top>-2</top>
+						<top>2</top>
 						<left>480</left>
 						<width>1360</width>
-						<height>200</height>
+						<height>190</height>
 						<texture border="22">dialogs/dialog-bg.png</texture>
 					</control>
 					<control type="image">
@@ -620,42 +620,44 @@
 						<font>font35_title</font>
 						<label>$INFO[Weather.Location]</label>
 					</control>
-					<control type="image">
-						<top>195</top>
-						<left>480</left>
-						<width>1360</width>
-						<height>200</height>
-						<texture border="22">dialogs/dialog-bg.png</texture>
-					</control>
-					<control type="grouplist">
-						<posy>230</posy>
-						<left>540</left>
-						<orientation>horizontal</orientation>
-						<include name="WeatherIcon">
-							<param name="label" value="$INFO[Window(weather).Property(Current.Wind)]" />
-							<param name="texture" value="icons/weather/wind.png" />
-							<param name="header" value="404" />
-						</include>
-						<include name="WeatherIcon">
-							<param name="label" value="$INFO[Window(weather).Property(Current.Humidity)]" />
-							<param name="texture" value="icons/weather/humidity.png" />
-							<param name="header" value="406" />
-						</include>
-						<include name="WeatherIcon">
-							<param name="label" value="$INFO[Window(weather).Property(Current.Precipitation)]" />
-							<param name="texture" value="icons/weather/rain.png" />
-							<param name="header" value="33021" />
-						</include>
-						<include name="WeatherIcon">
-							<param name="label" value="$INFO[Window(weather).Property(Today.Sunrise)]" />
-							<param name="texture" value="icons/weather/sunrise.png" />
-							<param name="header" value="405" />
-						</include>
-						<include name="WeatherIcon">
-							<param name="label" value="$INFO[Window(weather).Property(Today.Sunset)]" />
-							<param name="texture" value="icons/weather/sunset.png" />
-							<param name="header" value="403" />
-						</include>
+					<control type="group">
+						<top>180</top>
+						<control type="image">
+							<left>480</left>
+							<width>1360</width>
+							<height>200</height>
+							<texture border="22">dialogs/dialog-bg.png</texture>
+						</control>
+						<control type="grouplist">
+							<posy>35</posy>
+							<left>540</left>
+							<orientation>horizontal</orientation>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Current.Wind)]" />
+								<param name="texture" value="icons/weather/wind.png" />
+								<param name="header" value="404" />
+							</include>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Current.Humidity)]" />
+								<param name="texture" value="icons/weather/humidity.png" />
+								<param name="header" value="406" />
+							</include>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Current.Precipitation)]" />
+								<param name="texture" value="icons/weather/rain.png" />
+								<param name="header" value="33021" />
+							</include>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Today.Sunrise)]" />
+								<param name="texture" value="icons/weather/sunrise.png" />
+								<param name="header" value="405" />
+							</include>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Today.Sunset)]" />
+								<param name="texture" value="icons/weather/sunset.png" />
+								<param name="header" value="403" />
+							</include>
+						</control>
 					</control>
 				</control>
 				<include name="WeatherWidget">

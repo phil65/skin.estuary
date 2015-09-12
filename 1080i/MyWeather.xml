@@ -73,7 +73,9 @@
 				<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 				<onleft>3000</onleft>
 				<onright>3000</onright>
+				<onup>SetFocus(300,99)</onup>
 				<onup>300</onup>
+				<ondown>SetFocus(300,0)</ondown>
 				<ondown>300</ondown>
 				<font>font12</font>
 				<onclick>Weather.LocationNext</onclick>
