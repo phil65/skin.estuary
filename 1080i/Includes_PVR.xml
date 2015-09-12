@@ -404,8 +404,17 @@
             <top>254</top>
             <width>560</width>
             <height>362</height>
-            <align>justify</align>
+            <align>left</align>
             <label>$INFO[ListItem.Plot]</label>
+        </control>
+        <control type="textbox">
+            <top>330</top>
+            <width>560</width>
+            <height>362</height>
+            <align>center</align>
+            <font>font24_title</font>
+            <label>No information_available</label>
+            <visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Genre)</visible>
         </control>
     </include>
 </includes>
