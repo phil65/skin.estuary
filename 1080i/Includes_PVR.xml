@@ -413,7 +413,7 @@
             <height>362</height>
             <align>center</align>
             <font>font24_title</font>
-            <label>No information_available</label>
+            <label>$LOCALIZE[19055]</label>
             <visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Genre)</visible>
         </control>
     </include>
