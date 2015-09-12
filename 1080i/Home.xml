@@ -338,6 +338,7 @@
 				<visible>Container(9000).HasFocus(12)</visible>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<include>Visible_Right_Delayed</include>
+				<usecontrolcoords>true</usecontrolcoords>
 				<include name="SubMenu">
 					<param name="list_id" value="12900"/>
 					<param name="ondown_id" value="12100"/>
@@ -354,31 +355,6 @@
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
 				</include>
-				<control type="group">
-					<height>212</height>
-					<control type="group">
-						<top>34</top>
-						<left>550</left>
-						<visible>PVR.IsRecording</visible>
-						<include name="PVRWidget">
-							<param name="icon" value="$INFO[PVR.NowRecordingChannelIcon]" />
-							<param name="header" value="$LOCALIZE[19158]" />
-							<param name="label1" value="$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]" />
-							<param name="label2" value="$INFO[PVR.NowRecordingTitle][CR][COLOR=grey]$INFO[PVR.NowRecordingChannel][/COLOR]" />
-						</include>
-					</control>
-					<control type="group">
-						<top>34</top>
-						<left>1220</left>
-						<visible>PVR.HasNonRecordingTimer</visible>
-						<include name="PVRWidget">
-							<param name="icon" value="$INFO[PVR.NextRecordingChannelIcon]" />
-							<param name="header" value="$LOCALIZE[19157]" />
-							<param name="label1" value="$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]" />
-							<param name="label2" value="$INFO[PVR.NextRecordingTitle][CR][COLOR=grey]$INFO[PVR.NextRecordingChannel][/COLOR]" />
-						</include>
-					</control>
-				</control>
 				<include name="WidgetListText">
 					<param name="content_path" value="pvr://recordings/all"/>
 					<param name="widget_header" value="Recent recordings"/>
@@ -395,7 +371,36 @@
 					<param name="list_id" value="12200"/>
 					<param name="onup_id" value="12100"/>
 					<param name="ondown_id" value="20001"/>
+					<param name="height" value="380"/>
 				</include>
+				<control type="grouplist">
+					<height>212</height>
+					<posx>478</posx>
+					<top>36</top>
+					<orientation>horizontal</orientation>
+					<align>right</align>
+					<width>1360</width>
+					<control type="group">
+						<width>680</width>
+						<visible>PVR.IsRecording</visible>
+						<include name="PVRWidget">
+							<param name="icon" value="$INFO[PVR.NowRecordingChannelIcon]" />
+							<param name="header" value="$LOCALIZE[19158]" />
+							<param name="label1" value="$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]" />
+							<param name="label2" value="$INFO[PVR.NowRecordingTitle][CR][COLOR=grey]$INFO[PVR.NowRecordingChannel][/COLOR]" />
+						</include>
+					</control>
+					<control type="group">>
+<!-- 						<visible>PVR.HasNonRecordingTimer</visible>
+ -->						<width>680</width>
+						<include name="PVRWidget">
+							<param name="icon" value="$INFO[PVR.NextRecordingChannelIcon]" />
+							<param name="header" value="$LOCALIZE[19157]" />
+							<param name="label1" value="$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]" />
+							<param name="label2" value="$INFO[PVR.NextRecordingTitle][CR][COLOR=grey]$INFO[PVR.NextRecordingChannel][/COLOR]" />
+						</include>
+					</control>
+				</control>
 			</control>
 			<control type="grouplist" id="13001">
 				<orientation>vertical</orientation>
