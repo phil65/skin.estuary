@@ -590,7 +590,7 @@
 						<top>-2</top>
 						<left>480</left>
 						<width>1360</width>
-						<height>392</height>
+						<height>200</height>
 						<texture border="22">dialogs/dialog-bg.png</texture>
 					</control>
 					<control type="image">
@@ -620,9 +620,16 @@
 						<font>font35_title</font>
 						<label>$INFO[Weather.Location]</label>
 					</control>
+					<control type="image">
+						<top>195</top>
+						<left>480</left>
+						<width>1360</width>
+						<height>200</height>
+						<texture border="22">dialogs/dialog-bg.png</texture>
+					</control>
 					<control type="grouplist">
-						<posy>220</posy>
-						<left>570</left>
+						<posy>230</posy>
+						<left>540</left>
 						<orientation>horizontal</orientation>
 						<include name="WeatherIcon">
 							<param name="label" value="$INFO[Window(weather).Property(Current.Wind)]" />

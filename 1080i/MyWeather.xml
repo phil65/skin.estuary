@@ -527,7 +527,7 @@
 					</control>
 					<control type="grouplist">
 						<posy>650</posy>
-						<left>100</left>
+						<left>70</left>
 						<orientation>horizontal</orientation>
 						<include name="WeatherIcon">
 							<param name="label" value="$INFO[Window(weather).Property(Current.Wind)]" />
