@@ -25,8 +25,8 @@
 			<include>View_501_Banner</include>
 			<include>View_502_FanArt</include>
 			<control type="group">
-				<top>182</top>
-				<left>110</left>
+				<top>180</top>
+				<left>106</left>
 				<visible>!Container.Content(addons)</visible>
 				<visible>!Container.Content(files)</visible>
 				<visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
@@ -35,8 +35,8 @@
 				<control type="image">
 					<posy>-16</posy>
 					<posx>-16</posx>
-					<width>502</width>
-					<height>736</height>
+					<width>506</width>
+					<height>741</height>
 					<texture>colors/black.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
@@ -44,8 +44,8 @@
 				<control type="image">
 					<left>4</left>
 					<top>4</top>
-					<width>464</width>
-					<height>699</height>
+					<width>466</width>
+					<height>702</height>
 					<fadetime>200</fadetime>
 					<aspectratio>scale</aspectratio>
 					<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
