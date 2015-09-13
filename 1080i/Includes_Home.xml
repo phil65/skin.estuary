@@ -137,7 +137,7 @@
 	<include name="WidgetListMovies">
 		<control type="group">
 			<description>Poster Widget including header and arrows</description>
-			<height>398</height>
+			<height>404</height>
 			<left>0</left>
 			<top>0</top>
 			<visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -266,7 +266,7 @@
 	<include name="WidgetListEpisodes">
 		<control type="group">
 			<description>Episode Widget including header and arrows</description>
-			<height>395</height>
+			<height>405</height>
 			<left>0</left>
 			<top>0</top>
 			<visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -424,7 +424,7 @@
 		</control>
 	</include>
 	<include name="WidgetListSquare">
-		<param name="height">395</param>
+		<param name="height">405</param>
 		<definition>
 			<control type="group">
 				<description>Square Widget including header and arrows</description>
@@ -894,7 +894,6 @@
 	     <item id="$PARAM[item_index]">
 	     <label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</label>
 	     <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</label2>
-	     <property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
 	     <property name="Humidity">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Humidity)]</property>
 	     <property name="Pressure">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Pressure)]</property>
 	     <property name="DewPoint">$INFO[Window(weather).Property(Daily.$PARAM[item_index].DewPoint)]</property>
@@ -902,17 +901,12 @@
 	     <property name="Rain">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Rain)]</property>
 	     <property name="Snow">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Snow)]</property>
 	     <property name="TempMorn">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempMorn)]</property>
-	     <property name="TempDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempDay)]</property>
 	     <property name="TempEve">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempEve)]</property>
 	     <property name="TempNight">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempNight)]</property>
 	     <property name="WindSpeed">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)]</property>
 	     <property name="WindGust">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindGust)]</property>
 	     <property name="WindDirection">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</property>
 	     <property name="Precipitation">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Precipitation)]</property>
-	     <property name="LowTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)]</property>
-	     <property name="HighTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</property>
-	     <property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
-	     <property name="Cloudiness">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness)]</property>
 	     <onclick>SetProperty(FocusedItem,$PARAM[item_index])</onclick>
 	     <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</icon>
 	     </item>
