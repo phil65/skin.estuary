@@ -138,7 +138,7 @@
 					<param name="widget_header" value="In-progress TV Shows"/>
 					<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
 					<param name="widget_target" value="videos"/>
-					<param name="second_label" value="$INFO[ListItem.Genre]" />
+					<param name="second_label" value="Watched: $INFO[ListItem.Property(WatchedEpisodes)] / $INFO[ListItem.Property(TotalEpisodes)]" />
 					<param name="list_id" value="6100"/>
 					<param name="onup_id" value="6900"/>
 					<param name="ondown_id" value="6200"/>

@@ -333,7 +333,7 @@
 								<left>20</left>
 								<top>264</top>
 								<width>360</width>
-								<label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
+								<label>$INFO[ListItem.TVShowTitle]</label>
 								<font>font10</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -401,7 +401,7 @@
 								<left>20</left>
 								<top>264</top>
 								<width>360</width>
-								<label>$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, [COLOR=77FFFFFF][,][/COLOR]]</label>
+								<label>$INFO[ListItem.TVShowTitle]</label>
 								<font>font10</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
