@@ -329,6 +329,7 @@
 					<param name="list_id" value="11200"/>
 					<param name="onup_id" value="11100"/>
 					<param name="ondown_id" value="20001"/>
+					<param name="icon" value="icons/defaulticons/DefaultPlaylist.png"/>
 				</include>
 			</control>
 			<control type="grouplist" id="12001">
@@ -362,9 +363,11 @@
 					<param name="list_id" value="12100"/>
 					<param name="onup_id" value="12900"/>
 					<param name="height" value="195"/>
+					<param name="arrow_posy" value="120"/>
 					<param name="ondown_id" value="12200"/>
+					<param name="icon" value="$INFO[ListItem.Icon]"/>
 				</include>
-				<include name="WidgetListSquare">
+				<include name="WidgetListText">
 					<param name="content_path" value="pvr://channels/tv/All channels/"/>
 					<param name="widget_header" value="Favourite channels"/>
 					<param name="widget_target" value="pvr"/>

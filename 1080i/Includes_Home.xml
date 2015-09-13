@@ -541,6 +541,8 @@
 	</include>
 	<include name="WidgetListText">
 		<param name="height">395</param>
+		<param name="arrow_posy">200</param>
+		<param name="icon">icons/defaulticons/$INFO[ListItem.Icon]</param>
 		<definition>
 			<control type="group">
 				<description>Square Widget including header and arrows</description>
@@ -549,7 +551,7 @@
 				<top>0</top>
 				<visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<include name="LeftRightArrows">
-					<param name="posy" value="200" />
+					<param name="posy" value="$PARAM[arrow_posy]" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="label">
@@ -582,15 +584,22 @@
 							<height>160</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
+							<control type="image">
+								<posy>45</posy>
+								<posx>25</posx>
+								<width>70</width>
+								<height>70</height>
+								<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+							</control>
 						<control type="textbox">
-							<left>30</left>
+							<left>105</left>
 							<top>20</top>
-							<width>280</width>
+							<width>210</width>
 							<height>120</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font14</font>
+							<font>font13</font>
 							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
+							<align>left</align>
 							<aligny>center</aligny>
 						</control>
 					</itemlayout>
@@ -607,15 +616,22 @@
 								<height>160</height>
 								<texture border="40">buttons/button-nofo.png</texture>
 							</control>
+							<control type="image">
+								<posy>45</posy>
+								<posx>25</posx>
+								<width>70</width>
+								<height>70</height>
+								<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+							</control>
 							<control type="textbox">
-								<left>30</left>
+								<left>105</left>
 								<top>20</top>
-								<width>280</width>
+								<width>210</width>
 								<height>120</height>
 								<label>$INFO[ListItem.Label]</label>
-								<font>font14</font>
+								<font>font13</font>
 								<shadowcolor>text_shadow</shadowcolor>
-								<align>center</align>
+								<align>left</align>
 								<aligny>center</aligny>
 							</control>
 							<control type="image">
