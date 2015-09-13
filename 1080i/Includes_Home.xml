@@ -542,6 +542,7 @@
 	<include name="WidgetListText">
 		<param name="height">395</param>
 		<param name="arrow_posy">200</param>
+		<param name="item_limit">8</param>
 		<param name="icon">icons/defaulticons/$INFO[ListItem.Icon]</param>
 		<definition>
 			<control type="group">
@@ -550,10 +551,6 @@
 				<left>0</left>
 				<top>0</top>
 				<visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<include name="LeftRightArrows">
-					<param name="posy" value="$PARAM[arrow_posy]" />
-					<param name="list_id" value="$PARAM[list_id]" />
-				</include>
 				<control type="label">
 					<left>500</left>
 					<top>15</top>
@@ -569,7 +566,7 @@
 					<width>1372</width>
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
+					<orientation>vertical</orientation>
 					<onleft>9000</onleft>
 					<onright>$PARAM[list_id]</onright>
 					<onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
@@ -645,7 +642,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
+					<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>

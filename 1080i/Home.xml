@@ -362,7 +362,8 @@
 					<param name="widget_target" value="video"/>
 					<param name="list_id" value="12100"/>
 					<param name="onup_id" value="12900"/>
-					<param name="height" value="195"/>
+					<param name="height" value="200"/>
+					<param name="item_limit" value="4"/>
 					<param name="arrow_posy" value="120"/>
 					<param name="ondown_id" value="12200"/>
 					<param name="icon" value="$INFO[ListItem.Icon]"/>
@@ -374,10 +375,10 @@
 					<param name="list_id" value="12200"/>
 					<param name="onup_id" value="12100"/>
 					<param name="ondown_id" value="20001"/>
-					<param name="height" value="380"/>
+					<param name="height" value="370"/>
 				</include>
 				<control type="grouplist">
-					<height>212</height>
+					<height>208</height>
 					<posx>478</posx>
 					<top>36</top>
 					<orientation>horizontal</orientation>
@@ -428,17 +429,17 @@
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
 				</include>
-				<include name="WidgetListSquare">
+				<include name="WidgetListText">
 					<param name="content_path" value="pvr://channels/radio/All channels/"/>
-					<param name="widget_header" value="Recent recordings"/>
+					<param name="widget_header" value="Recent channels"/>
 					<param name="widget_target" value="files"/>
 					<param name="list_id" value="13100"/>
 					<param name="onup_id" value="13900"/>
 					<param name="ondown_id" value="13200"/>
 				</include>
-				<include name="WidgetListSquare">
+				<include name="WidgetListText">
 					<param name="content_path" value="pvr://channels/radio/All channels/"/>
-					<param name="widget_header" value="Favourite channels"/>
+					<param name="widget_header" value="Most played channels"/>
 					<param name="widget_target" value="files"/>
 					<param name="list_id" value="13200"/>
 					<param name="onup_id" value="13100"/>
