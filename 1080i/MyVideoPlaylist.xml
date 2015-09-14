@@ -10,18 +10,16 @@
 				<control type="image">
 			<include>OpenClose_Right</include>
 			<include>Visible_Right</include>
-			<right>110</right>
-			<top>182</top>
-			<width>469</width>
-			<height>704</height>
-			<fadetime>200</fadetime>
-			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
-			<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-			<bordersize>4</bordersize>
-			<visible>!Container.Content(addons)</visible>
-			<visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
-		</control>
+			<posy>163</posy>
+			<left>1324</left>
+					<width>506</width>
+					<height>742</height>
+					<fadetime>200</fadetime>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="Video Playlist" />
 			<param name="breadcrumbs_icon" value="icons/settings/video.png" />

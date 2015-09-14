@@ -657,9 +657,10 @@
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<onleft>700</onleft>
-				<onright>700</onright>
+				<onright>60</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>
+				<pagecontrol>60</pagecontrol>
 				<viewtype label="List">list</viewtype>
 				<preloaditems>1</preloaditems>
 				<focusedlayout height="140">
@@ -754,6 +755,16 @@
 					</control>
 				</itemlayout>
 			</control>
+					<control type="scrollbar" id="60">
+			<description>scrollbar for active modes list</description>
+			<left>1005</left>
+			<top>0</top>
+			<width>12</width>
+			<height>704</height>
+			<onleft>50</onleft>
+			<onright>700</onright>
+			<orientation>vertical</orientation>
+		</control>
 		</control>
 	</include>
 	<include name="VideoInfoMediaFlag">

@@ -26,7 +26,7 @@
 		<control type="group">
 			<include>MediaMenuCommon</include>
 			<control type="grouplist" id="9000">
-				<top>110</top>
+				<top>90</top>
 				<include name="MediaMenuListCommon">
 					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(songs) | Container.Content(albums)" />
 				</include>
