@@ -20,7 +20,7 @@
 			<texture background="true" colordiffuse="32FFFFFF">$INFO[Player.Art(fanart)]</texture>
 		</control>
 		<control type="image">
-			<texture colordiffuse="button_focus">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+			<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 			<width>1920</width>
 			<height>1080</height>
 			<aspectratio align="center">scale</aspectratio>
