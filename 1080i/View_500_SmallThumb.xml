@@ -227,7 +227,7 @@
 				<selectedcolor>white</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Season]x$INFO[ListItem.Episode]</label>
+				<label>$INFO[ListItem.Season]$INFO[ListItem.Episode,x]</label>
 			</control>
 			<control type="label">
 				<left>15</left>
@@ -271,7 +271,7 @@
 					<selectedcolor>white</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Season]x$INFO[ListItem.Episode]</label>
+					<label>$INFO[ListItem.Season]$INFO[ListItem.Episode,x]</label>
 				</control>
 				<control type="label">
 					<left>15</left>
