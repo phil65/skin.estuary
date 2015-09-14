@@ -32,15 +32,6 @@
 					<include>MediaMenuItemsCommon</include>
 					<label>24063</label>
 				</control>
-				<control type="button" id="9">
-					<description>Check for repository updates</description>
-					<include>MediaMenuItemsCommon</include>
-					<label>24034</label>
-				</control>
-				<control type="label" id="202">
-					<include>MediaMenuLabelCommon</include>
-					<label>$INFO[Window(AddonBrowser).Property(Updated)]</label>
-				</control>
 				<control type="radiobutton" id="6">
 					<description>No notifications</description>
 					<include>MediaMenuItemsCommon</include>
@@ -56,6 +47,22 @@
 					<include>MediaMenuItemsCommon</include>
 					<label>24999</label>
 				</control>
+				<control type="button" id="9">
+					<description>Check for repository updates</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>24034</label>
+				</control>
+			</control>
+			<control type="label" id="202">
+				<posy>915</posy>
+				<left>20</left>
+				<width>700</width>
+				<height>50</height>
+				<font>font12_title</font>
+				<align>left</align>
+				<aligny>top</aligny>
+				<textcolor>button_focus</textcolor>
+				<label>Last updated:[CR][COLOR white]$INFO[Window(AddonBrowser).Property(Updated)][/COLOR]</label>
 			</control>
 		</control>
 		<include name="TopBar">
