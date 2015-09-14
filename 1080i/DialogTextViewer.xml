@@ -37,7 +37,7 @@
 			<onclick>SetFocus(3000)</onclick>
 			<onclick>Up</onclick>
 			<visible>Control.IsVisible(3000) + IntegerGreaterThan(Container(5).CurrentPage,1)</visible>
-			<animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
+			<animation delay="80" effect="fade" time="120">VisibleChange</animation>
 		</control>
 		<control type="button">
 			<left>936</left>
@@ -49,7 +49,7 @@
 			<texturefocus colordiffuse="button_focus">overlays/arrowdown.png</texturefocus>
 			<texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
 			<visible>Control.IsVisible(3000) + !StringCompare(Container(5).CurrentPage,Container(5).NumPages)</visible>
-			<animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
+			<animation delay="80" effect="fade" time="120">VisibleChange</animation>
 		</control>
 	</controls>
 </window>

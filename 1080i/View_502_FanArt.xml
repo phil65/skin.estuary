@@ -133,7 +133,7 @@
 								<width>1252</width>
 								<height>80</height>
 								<visible>!Control.HasFocus(502)</visible>
-								<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+								<animation effect="fade" time="200">VisibleChange</animation>
 								<texture colordiffuse="A0000000">colors/black.png</texture>
 							</control>
 							<control type="image">
@@ -142,7 +142,7 @@
 								<width>1252</width>
 								<height>80</height>
 								<visible>Control.HasFocus(502)</visible>
-								<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+								<animation effect="fade" time="200">VisibleChange</animation>
 								<animation effect="fade" start="0" end="80" time="0" condition="true">Conditional</animation>
 								<texture colordiffuse="button_focus">colors/white.png</texture>
 							</control>

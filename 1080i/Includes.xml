@@ -849,7 +849,7 @@
 				<width>36</width>
 				<height>18</height>
 				<texture colordiffuse="button_focus">overlays/arrowdown.png</texture>
-				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+				<animation effect="fade" time="200">VisibleChange</animation>
 				<animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="0,890" time="200">WindowClose</animation>
 				<visible>Container($PARAM[container_id]).HasNext</visible>
@@ -860,7 +860,7 @@
 				<width>36</width>
 				<height>18</height>
 				<texture colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texture>
-				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+				<animation effect="fade" time="200">VisibleChange</animation>
 				<animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="0,180" time="200">WindowClose</animation>
 				<visible>Container($PARAM[container_id]).HasPrevious</visible>
@@ -1175,7 +1175,7 @@
 				<fadetime>400</fadetime>
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-				<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
 				<texture background="true" colordiffuse="32FFFFFF">$VAR[MediaFanartVar]</texture>
 				<visible>!Player.HasMedia</visible>
 			</control>
@@ -1199,7 +1199,7 @@
 				<control type="group">
 					<visible>Window.IsMedia + !Window.IsActive(eventlog) + !Window.IsActive(tvguide) + !Window.IsActive(radioguide)</visible>
 					<visible>!System.HasModalDialog</visible>
-					<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+					<animation effect="fade" time="400">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 					<control type="image">
@@ -1210,7 +1210,7 @@
 						<height>44</height>
 						<animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
 						<texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
-						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>!ControlGroup(9000).HasFocus</visible>
 					</control>
 					<control type="image">
@@ -1220,7 +1220,7 @@
 						<width>44</width>
 						<height>44</height>
 						<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
-						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>ControlGroup(9000).HasFocus</visible>
 					</control>
 					<control type="button">
@@ -1234,7 +1234,7 @@
 						<onclick>SetFocus(9000)</onclick>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<animation effect="fade" start="0" end="100" time="225">VisibleChange</animation>
+						<animation effect="fade" time="225">VisibleChange</animation>
 						<visible>!ControlGroup(9000).HasFocus</visible>
 					</control>
 				</control>
@@ -1243,7 +1243,7 @@
 					<visible>!Window.IsActive(home) + Player.HasMedia</visible>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-					<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+					<animation effect="fade" time="200">VisibleChange</animation>
 					<itemgap>-3</itemgap>
 					<control type="grouplist">
 						<orientation>horizontal</orientation>
@@ -1306,7 +1306,7 @@
 						<align>right</align>
 						<shadowcolor>text_shadow</shadowcolor>
 						<visible>!System.HasModalDialog</visible>
-						<animation effect="fade" start="0" end="100" delay="1" time="200">VisibleChange</animation>
+						<animation effect="fade" delay="1" time="200">VisibleChange</animation>
 						<label>$PARAM[PageLabel]</label>
 					</control>
 					<control type="image">
@@ -1315,7 +1315,7 @@
 						<height>44</height>
 						<aspectratio>keep</aspectratio>
 						<texture colordiffuse="button_focus">frame/item-count.png</texture>
-						<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>!IsEmpty(Container.NumItems) + !System.HasModalDialog</visible>
 					</control>
 				</control>

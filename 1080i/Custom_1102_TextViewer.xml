@@ -38,7 +38,7 @@
 			<texturefocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturefocus>
 			<texturenofocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturenofocus>
 			<visible>Control.IsVisible(3000) + IntegerGreaterThan(Container(2000).CurrentPage,1)</visible>
-			<animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
+			<animation delay="80" effect="fade" time="120">VisibleChange</animation>
 		</control>
 		<control type="button">
 			<left>936</left>
@@ -50,7 +50,7 @@
 			<texturefocus colordiffuse="button_focus">overlays/arrowdown.png</texturefocus>
 			<texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
 			<visible>Control.IsVisible(3000) + !StringCompare(Container(2000).CurrentPage,Container(2000).NumPages)</visible>
-			<animation delay="80" effect="fade" end="100" start="0" time="120">VisibleChange</animation>
+			<animation delay="80" effect="fade" time="120">VisibleChange</animation>
 		</control>
 	</controls>
 </window>

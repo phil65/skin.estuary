@@ -9,7 +9,7 @@
 				<left>30</left>
 				<top>870</top>
 				<visible>!VideoPlayer.Content(LiveTV) | [VideoPlayer.Content(LiveTV) + VideoPlayer.HasEpg]</visible>
-				<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
 				<control type="progress" id="1">
 					<description>ProgressbarCache</description>
 					<left>0</left>
@@ -154,7 +154,7 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd)</visible>
-				<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
 				<control type="image">
 					<description>Menu Panel</description>
 					<left>30</left>

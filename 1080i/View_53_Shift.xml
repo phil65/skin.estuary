@@ -20,15 +20,15 @@
 				<texturesliderbackground colordiffuse="00FFFFFF">colors/white.png</texturesliderbackground>
 				<texturesliderbar colordiffuse="AAFFFFFF">colors/white.png</texturesliderbar>
 				<texturesliderbarfocus colordiffuse="button_focus">colors/white.png</texturesliderbarfocus>
-				<animation effect="zoom" start="100,100" end="100,150" time="250" center="110,710" tween="cubic" easing="inout" reversible="true">Focus</animation>
-				<animation effect="zoom" start="100,150" end="100,100" time="125" center="110,710" tween="cubic" easing="inout" reversible="true">UnFocus</animation>
+				<animation effect="zoom" start="100,100" end="100,120" time="150" center="110,710" tween="cubic" easing="inout" reversible="true">Focus</animation>
+				<animation effect="zoom" start="100,120" end="100,100" time="75" center="110,710" tween="cubic" easing="inout" reversible="true">UnFocus</animation>
 				<onleft>5399</onleft>
 				<onright>5399</onright>
 				<onup>53</onup>
 				<ondown>53</ondown>
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(53)</visible>
-				<animation effect="fade" start="100" end="0" time="200">VisibleChange</animation>
+				<animation effect="fade" time="200">VisibleChange</animation>
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			</control>
@@ -49,7 +49,7 @@
 					<width>320</width>
 					<height>70</height>
 					<visible>Control.HasFocus(53)</visible>
-					<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+					<animation effect="fade" time="200">VisibleChange</animation>
 					<texture colordiffuse="button_focus">colors/white.png</texture>
 					<animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,1) | Stringcompare(Container.Position,0)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" condition="Stringcompare(Container.Position,0)">Conditional</animation>
