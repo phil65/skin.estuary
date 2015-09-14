@@ -95,6 +95,13 @@
 						<onclick>Skin.ToggleSetting(no_weatherinfo)</onclick>
 						<selected>!Skin.HasSetting(no_weatherinfo)</selected>
 					</control>
+					<control type="radiobutton" id="604">
+						<label>Show media flags for movies / episodes / music videos</label>
+						<width>1256</width>
+						<include>DefaultSettingButton</include>
+						<onclick>Skin.ToggleSetting(show_mediaflags)</onclick>
+						<selected>Skin.HasSetting(show_mediaflags)</selected>
+					</control>
 				</control>
 				<control type="textbox" id="6">
 					<description>description area</description>
