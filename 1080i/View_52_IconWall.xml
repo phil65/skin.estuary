@@ -100,20 +100,19 @@
 				</focusedlayout>
 				<itemlayout height="124" width="348" condition="Container.Content(genres) | Container.Content(years) | Container.Content(countries) | Container.Content(studios)">
 					<control type="group">
-						<top>12</top>
 						<control type="image">
 							<width>330</width>
-							<height>100</height>
+							<height>124</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
-						<control type="label">
-							<left>0</left>
-							<textoffsetx>30</textoffsetx>
-							<top>30</top>
-							<width>330</width>
-							<height>400</height>
+									<control type="textbox">
+							<left>30</left>
+							<top>22</top>
+							<width>270</width>
+							<height>80</height>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
+							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 						</control>
 					</control>
@@ -126,26 +125,26 @@
 						<animation type="UnFocus" reversible="false">
 							<effect type="zoom" center="auto" start="108" end="100" time="150" tween="sine" />
 						</animation>
-						<top>12</top>
 						<control type="image">
 							<width>330</width>
-							<height>100</height>
+							<height>124</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
 							<width>330</width>
-							<height>100</height>
+							<height>124</height>
 							<texture border="40">buttons/button-theme-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
-						<control type="label">
-							<left>0</left>
-							<textoffsetx>30</textoffsetx>
-							<top>30</top>
-							<width>330</width>
-							<height>400</height>
+						<control type="textbox">
+							<left>30</left>
+							<top>22</top>
+							<width>270</width>
+							<height>80</height>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
 						</control>
 					</control>
 				</focusedlayout>
