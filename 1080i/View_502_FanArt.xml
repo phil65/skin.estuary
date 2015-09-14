@@ -93,6 +93,26 @@
 							<texture>lists/played-total.png</texture>
 							<visible>Stringcompare(Listitem.dbtype,tvshow)</visible>
 						</control>
+						<control type="label">
+							<left>470</left>
+							<top>651</top>
+							<width>1160</width>
+							<height>20</height>
+							<font>font24_title</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<visible>Container.Content(movies)</visible>
+							<label>$INFO[ListItem.Year]</label>
+						</control>
+						<control type="image">
+							<right>20</right>
+							<top>637</top>
+							<width>50</width>
+							<height>50</height>
+							<aspectratio>keep</aspectratio>
+							<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
+							<texture>$VAR[MediaInfoOverlayVar]</texture>
+						</control>
 					</itemlayout>
 					<focusedlayout width="1720" height="690">
 						<control type="group">
@@ -163,7 +183,7 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<left>540</left>
+								<left>470</left>
 								<top>651</top>
 								<width>1160</width>
 								<height>20</height>
@@ -172,6 +192,15 @@
 								<aligny>center</aligny>
 								<visible>Container.Content(movies)</visible>
 								<label>$INFO[ListItem.Year]</label>
+							</control>
+							<control type="image">
+								<right>20</right>
+								<top>637</top>
+								<width>50</width>
+								<height>50</height>
+								<aspectratio>keep</aspectratio>
+								<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
+								<texture>$VAR[MediaInfoOverlayVar]</texture>
 							</control>
 						</control>
 					</focusedlayout>
