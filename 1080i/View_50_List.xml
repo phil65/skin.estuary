@@ -37,10 +37,10 @@
 				</control>
 				<control type="image">
 					<right>113</right>
-					<top>534</top>
+					<top>614</top>
 					<width>463</width>
-					<height>350</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<height>270</height>
+					<aspectratio aligny="top">scale</aspectratio>
 					<fadetime>300</fadetime>
 					<texture background="true" fallback="DefaultFolder.png">$VAR[ListInfoBoxImageVar]</texture>
 				</control>
