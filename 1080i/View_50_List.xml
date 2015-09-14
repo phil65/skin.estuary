@@ -35,6 +35,16 @@
 					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
 					<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
 				</control>
+				<control type="textbox">
+					<right>130</right>
+					<top>360</top>
+					<width>429</width>
+					<height>413</height>
+					<align>center</align>
+					<font>font24_title</font>
+					<label>$LOCALIZE[19055]</label>
+					<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline)</visible>
+				</control>
 				<control type="image">
 					<right>113</right>
 					<top>614</top>
