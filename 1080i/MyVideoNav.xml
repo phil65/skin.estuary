@@ -102,7 +102,7 @@
 				<control type="button" id="612">
 					<description>Go to playlist</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>13350</label>
+					<label>Go to playlist</label>
 					<onclick>ActivateWindow(videoplaylist)</onclick>
 					<visible>!StringCompare(Playlist.Length(video),0)</visible>
 				</control>
