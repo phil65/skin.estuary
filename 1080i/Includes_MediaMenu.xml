@@ -210,14 +210,14 @@
 			<control type="button" id="6053">
 				<description>Sort by button</description>
 				<include>MediaMenuItemsCommon</include>
-				<label>Sort by:</label>
+				<label>Sort by</label>
 				<label2>[B]$INFO[Container.SortMethod][/B]</label2>
 				<onclick>Container.NextSortMethod</onclick>
 			</control>
 			<control type="button" id="6052">
 				<description>Sort asc</description>
 				<include>MediaMenuItemsCommon</include>
-				<label>Sort</label>
+				<label>Order</label>
 				<label2>[B]$INFO[Container.SortOrder][/B]</label2>
 				<onclick>Container.SortDirection</onclick>
 			</control>
