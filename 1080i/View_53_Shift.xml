@@ -90,7 +90,7 @@
 								<left>20</left>
 								<top>445</top>
 								<width>300</width>
-								<height>90</height>
+								<height>88</height>
 								<align>center</align>
 							<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
@@ -112,10 +112,11 @@
 							<left>20</left>
 							<top>445</top>
 							<width>300</width>
-							<height>90</height>
+							<height>88</height>
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
+							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
 						</control>
 					</focusedlayout>
 				</control>
