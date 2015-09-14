@@ -425,6 +425,7 @@
 	</include>
 	<include name="WidgetListSquare">
 		<param name="height">405</param>
+		<param name="sublabel">$INFO[ListItem.Label]$INFO[ListItem.Year,[COLOR button_focus] - ,[/COLOR]]</param>
 		<definition>
 			<control type="group">
 				<description>Square Widget including header and arrows</description>
@@ -509,7 +510,7 @@
 										<left>20</left>
 										<top>240</top>
 										<width>260</width>
-										<label>$INFO[ListItem.Label]$INFO[ListItem.Year,[COLOR button_focus] - ,[/COLOR]]</label>
+										<label>$PARAM[sublabel]</label>
 										<font>font10</font>
 										<shadowcolor>text_shadow</shadowcolor>
 										<align>center</align>
