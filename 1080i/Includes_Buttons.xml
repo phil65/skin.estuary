@@ -5,6 +5,8 @@
 		<textureradioonnofocus>$PARAM[texture]</textureradioonnofocus>
 		<textureradioofffocus colordiffuse="button_focus">$PARAM[texture]</textureradioofffocus>
 		<textureradiooffnofocus>$PARAM[texture]</textureradiooffnofocus>
+		<textureradioondisabled colordiffuse="disabled">$PARAM[texture]</textureradioondisabled>
+		<textureradiooffdisabled colordiffuse="disabled">$PARAM[texture]</textureradiooffdisabled>
 		<texturefocus colordiffuse="button_focus">osd/buttons/focus.png</texturefocus>
 		<width>125</width>
 		<animation center="62,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
