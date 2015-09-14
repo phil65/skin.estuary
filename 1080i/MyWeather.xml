@@ -328,38 +328,19 @@
 							<height>107</height>
 							<width>600</width>
 							<aligny>center</aligny>
-							<font>font24_title</font>
+							<font>font16</font>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
 							<left>400</left>
-							<top>15</top>
+							<top>0</top>
 							<align>center</align>
+							<aligny>center</aligny>
 							<font>font30_title</font>
 							<label>$INFO[ListItem.Property(TempDay)]</label>
 							<width>230</width>
-						</control>
-						<!-- <control type="label">
-							 <left>360</left>
-							 <top>15</top>
-							 <align>center</align>
-							 <label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
-							 <font>font12</font>
-							 <width>230</width>
-							 </control> -->
-						<control type="label">
-							<left>0</left>
-							<textoffsetx>15</textoffsetx>
-							<top>0</top>
 							<height>107</height>
-							<width>600</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$INFO[ListItem.Label2]</label>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
 					<itemlayout height="107" width="665">
@@ -383,30 +364,19 @@
 							<height>107</height>
 							<width>600</width>
 							<aligny>center</aligny>
-							<font>font24_title</font>
+							<font>font16</font>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
 							<left>400</left>
-							<top>15</top>
+							<top>0</top>
 							<align>center</align>
+							<aligny>center</aligny>
 							<font>font30_title</font>
 							<label>$INFO[ListItem.Property(TempDay)]</label>
 							<width>230</width>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<textoffsetx>15</textoffsetx>
-							<top>0</top>
 							<height>107</height>
-							<width>600</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$INFO[ListItem.Label2]</label>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</itemlayout>
 					<content>
