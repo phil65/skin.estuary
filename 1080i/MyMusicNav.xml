@@ -50,7 +50,7 @@
 					<include>MediaMenuItemsCommon</include>
 					<label>Go to playlist</label>
 					<onclick>ActivateWindow(musicplaylist)</onclick>
-					<visible>!StringCompare(Playlist.Length(music),0)</visible>
+					<visible>IntegerGreaterThan(Playlist.Length(music),0)</visible>
 				</control>
 			</control>
 		</control>

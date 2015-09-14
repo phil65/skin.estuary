@@ -104,7 +104,7 @@
 					<include>MediaMenuItemsCommon</include>
 					<label>Go to playlist</label>
 					<onclick>ActivateWindow(videoplaylist)</onclick>
-					<visible>!StringCompare(Playlist.Length(video),0)</visible>
+					<visible>IntegerGreaterThan(Playlist.Length(video),0)</visible>
 				</control>
 			</control>
 		</control>
