@@ -52,6 +52,38 @@
 				</control>
 			</control>
 		</control>
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<visible>Container.Content(movies) | Container.Content(episodes)</visible>
+			<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+				<top>898</top>
+			<control type="grouplist">
+				<orientation>horizontal</orientation>
+				<left>100</left>
+				<itemgap>5</itemgap>
+				<width>1720</width>
+				<include name="MediaFlag">
+					<param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
+				</include>
+				<include name="MediaFlag">
+					<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
+				</include>
+			</control>
+			<control type="grouplist">
+				<orientation>horizontal</orientation>
+				<left>100</left>
+				<itemgap>5</itemgap>
+				<width>1720</width>
+				<align>right</align>
+				<include name="MediaFlag">
+					<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+				</include>
+				<include name="MediaFlag">
+					<param name="texture" value="$INFO[ListItem.VideoCodec,flags/videocodec/,.png]" />
+				</include>
+			</control>
+		</control>
 		<include>MediaMenuMouseOverlay</include>
 		<control type="group">
 			<include>MediaMenuCommon</include>

@@ -181,25 +181,6 @@
 					<animation type="Visible">
 						<effect type="fade" start="0" end="100" delay="800" time="300" />
 					</animation>
-					<control type="grouplist">
-						<visible>!Stringcompare(Listitem.dbtype,tvshow)</visible>
-						<orientation>horizontal</orientation>
-						<top>640</top>
-						<itemgap>3</itemgap>
-						<left>10</left>
-						<include name="MediaFlag">
-							<param name="texture" value="$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]" />
-						</include>
-						<include name="MediaFlag">
-							<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-						</include>
-						<include name="MediaFlag">
-							<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
-						</include>
-						<include name="MediaFlag">
-							<param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
-						</include>
-					</control>
 					<control type="image">
 						<left>146</left>
 						<top>597</top>

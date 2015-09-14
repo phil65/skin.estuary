@@ -151,32 +151,6 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<align>left</align>
 				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<top>515</top>
-					<itemgap>-8</itemgap>
-					<left>818</left>
-					<include name="MediaFlag">
-						<param name="texture" value="$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]" />
-						<param name="width" value="130" />
-						<param name="height" value="54" />
-					</include>
-					<include name="MediaFlag">
-						<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-						<param name="width" value="130" />
-						<param name="height" value="54" />
-					</include>
-					<include name="MediaFlag">
-						<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
-						<param name="width" value="130" />
-						<param name="height" value="54" />
-					</include>
-					<include name="MediaFlag">
-						<param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
-						<param name="width" value="130" />
-						<param name="height" value="54" />
-					</include>
-				</control>
 			</control>
 		</control>
 	</include>
