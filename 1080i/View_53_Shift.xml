@@ -132,7 +132,7 @@
 					<label>$VAR[ShiftLeftTextBoxVar]</label>
 					<font>font_textbox</font>
 					<shadowcolor>text_shadow</shadowcolor>
-					<align>justify</align>
+					<align>left</align>
 				</control>
 				<control type="image">
 					<right>90</right>
@@ -149,7 +149,7 @@
 					<label>$VAR[ShiftRightTextBoxVar]</label>
 					<font>font_textbox</font>
 					<shadowcolor>text_shadow</shadowcolor>
-					<align>justify</align>
+					<align>left</align>
 				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
