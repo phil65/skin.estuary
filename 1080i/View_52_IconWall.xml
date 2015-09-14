@@ -21,6 +21,7 @@
 				<viewtype label="Icon Wall">icon</viewtype>
 				<itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files)">
 					<control type="group">
+						<posy>9</posy>
 						<control type="image">
 							<width>400</width>
 							<height>230</height>
@@ -60,6 +61,7 @@
 						<animation type="UnFocus" reversible="false">
 							<effect type="zoom" center="auto" start="108" end="100" time="150" tween="sine" />
 						</animation>
+						<posy>9</posy>
 						<control type="image">
 							<width>400</width>
 							<height>230</height>
