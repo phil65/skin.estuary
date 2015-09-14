@@ -5,7 +5,9 @@
 	<views>50</views>
 	<controls>
 		<include>DefaultBackground</include>
-		<include>PlaylistWindowButtons</include>
+		<include name="PlaylistWindowButtons">
+			<param name="width" value="220" />
+		</include>
 		<include>PlaylistViewtype</include>
 		<control type="group">
 			<posx>1230</posx>

@@ -266,6 +266,36 @@
 			</control>
 		</definition>
 	</include>
+	<include name="MediaFlags">
+		<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+		<top>898</top>
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>100</left>
+			<itemgap>5</itemgap>
+			<width>1720</width>
+			<include name="MediaFlag">
+				<param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
+			</include>
+			<include name="MediaFlag">
+				<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
+			</include>
+		</control>
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>100</left>
+			<itemgap>5</itemgap>
+			<width>1720</width>
+			<align>right</align>
+			<include name="MediaFlag">
+				<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+			</include>
+			<include name="MediaFlag">
+				<param name="texture" value="$INFO[ListItem.VideoCodec,flags/videocodec/,.png]" />
+			</include>
+		</control>
+	</include>
 	<include name="WeatherIcon">
 		<control type="group">
 			<width>268</width>
@@ -598,43 +628,50 @@
 		</content>
 	</include>
 	<include name="PlaylistWindowButtons">
-		<control type="group">
-			<include>OpenClose_Left</include>
-			<control type="grouplist" id="700">
-				<orientation>vertical</orientation>
-				<itemgap>-17</itemgap>
-				<left>110</left>
-				<top>162</top>
-				<onup>700</onup>
-				<ondown>700</ondown>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<include name="PlaylistWindowButton">
-					<param name="control_id" value="20" />
-					<param name="onclick" value="" />
-					<param name="label" value="$LOCALIZE[191]$INFO[Playlist.Random, : ]" />
-					<param name="icon" value="icons/search.png" />
-				</include>
-				<include name="PlaylistWindowButton">
-					<param name="control_id" value="26" />
-					<param name="onclick" value="" />
-					<param name="label" value="" />
-					<param name="icon" value="icons/settings.png" />
-				</include>
-				<include name="PlaylistWindowButton">
-					<param name="control_id" value="21" />
-					<param name="onclick" value="" />
-					<param name="label" value="190" />
-					<param name="icon" value="icons/favourites.png" />
-				</include>
-				<include name="PlaylistWindowButton">
-					<param name="control_id" value="22" />
-					<param name="onclick" value="" />
-					<param name="label" value="192" />
-					<param name="icon" value="icons/power.png" />
-				</include>
+		<param name="width">350</param>
+		<definition>
+			<control type="group">
+				<include>OpenClose_Left</include>
+				<control type="grouplist" id="700">
+					<orientation>vertical</orientation>
+					<itemgap>-9</itemgap>
+					<left>100</left>
+					<top>165</top>
+					<onup>700</onup>
+					<ondown>700</ondown>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<include name="PlaylistWindowButton">
+						<param name="control_id" value="20" />
+						<param name="onclick" value="" />
+						<param name="label" value="$LOCALIZE[191]$INFO[Playlist.Random, : ]" />
+						<param name="icon" value="icons/search.png" />
+						<param name="width" value="$PARAM[width]" />
+					</include>
+					<include name="PlaylistWindowButton">
+						<param name="control_id" value="26" />
+						<param name="onclick" value="" />
+						<param name="label" value="" />
+						<param name="icon" value="icons/settings.png" />
+						<param name="width" value="$PARAM[width]" />
+					</include>
+					<include name="PlaylistWindowButton">
+						<param name="control_id" value="21" />
+						<param name="onclick" value="" />
+						<param name="label" value="190" />
+						<param name="icon" value="icons/favourites.png" />
+						<param name="width" value="$PARAM[width]" />
+					</include>
+					<include name="PlaylistWindowButton">
+						<param name="control_id" value="22" />
+						<param name="onclick" value="" />
+						<param name="label" value="192" />
+						<param name="icon" value="icons/power.png" />
+						<param name="width" value="$PARAM[width]" />
+					</include>
+				</control>
 			</control>
-		</control>
+		</definition>
 	</include>
 	<include name="PlaylistViewtype">
 		<control type="group">
@@ -663,21 +700,22 @@
 				<pagecontrol>60</pagecontrol>
 				<viewtype label="List">list</viewtype>
 				<preloaditems>1</preloaditems>
-				<focusedlayout height="140">
+				<focusedlayout height="70">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>1486</width>
-						<height>141</height>
+						<height>70</height>
 						<texture border="90,3,90,3">lists/separator.png</texture>
+						<visible>!Control.HasFocus(50)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>996</width>
-						<height>139</height>
+						<height>70</height>
 						<texture>lists/focus.png</texture>
-						<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
+						<visible>Control.HasFocus(50)</visible>
 					</control>
 					<control type="label">
 						<left>30</left>
@@ -687,7 +725,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font14</font>
-						<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Title]</label>
+						<label>$INFO[ListItem.Artist,[COLOR button_focus],[/COLOR] - ]$INFO[ListItem.Title]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="label">
@@ -701,16 +739,6 @@
 						<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
-					</control>
-					<control type="label">
-						<left>919</left>
-						<top>0</top>
-						<width>32</width>
-						<height>32</height>
-						<align>right</align>
-						<font>font30_title</font>
-						<label>$INFO[ListItem.TrackNumber]</label>
-						<visible>!Stringcompare(ListItem.TrackNumber,0)</visible>
 					</control>
 				</focusedlayout>
 				<itemlayout height="70">
@@ -728,7 +756,7 @@
 						<width>880</width>
 						<aligny>center</aligny>
 						<font>font14</font>
-						<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Title]</label>
+						<label>$INFO[ListItem.Artist,[COLOR button_focus],[/COLOR] - ]$INFO[ListItem.Title]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="label">
@@ -743,28 +771,18 @@
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
-					<control type="label">
-						<left>919</left>
-						<top>0</top>
-						<width>32</width>
-						<height>32</height>
-						<align>right</align>
-						<font>font30_title</font>
-						<label>$INFO[ListItem.TrackNumber]</label>
-						<visible>!Stringcompare(ListItem.TrackNumber,0)</visible>
-					</control>
 				</itemlayout>
 			</control>
-					<control type="scrollbar" id="60">
-			<description>scrollbar for active modes list</description>
-			<left>1005</left>
-			<top>0</top>
-			<width>12</width>
-			<height>704</height>
-			<onleft>50</onleft>
-			<onright>700</onright>
-			<orientation>vertical</orientation>
-		</control>
+			<control type="scrollbar" id="60">
+				<description>scrollbar for active modes list</description>
+				<left>1005</left>
+				<top>0</top>
+				<width>12</width>
+				<height>704</height>
+				<onleft>50</onleft>
+				<onright>700</onright>
+				<orientation>vertical</orientation>
+			</control>
 		</control>
 	</include>
 	<include name="VideoInfoMediaFlag">
@@ -976,7 +994,7 @@
 			<textureradioonfocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioonfocus>
 			<textureradioonnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradioonnofocus>
 			<!-- <selected>Control.HasFocus(22000)</selected>
- -->
+			 -->
 			<onclick>Action(close)</onclick>
 		</control>
 	</include>

@@ -5,21 +5,26 @@
 	<views>50</views>
 	<controls>
 		<include>DefaultBackground</include>
-		<include>PlaylistWindowButtons</include>
+		<include name="PlaylistWindowButtons">
+			<param name="width" value="220" />
+		</include>
 		<include>PlaylistViewtype</include>
-				<control type="image">
+		<control type="image">
 			<include>OpenClose_Right</include>
 			<include>Visible_Right</include>
 			<posy>163</posy>
 			<left>1324</left>
-					<width>506</width>
-					<height>742</height>
-					<fadetime>200</fadetime>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
-					<bordertexture border="20">overlays/shadow.png</bordertexture>
-					<bordersize>20</bordersize>
-				</control>
+			<width>506</width>
+			<height>742</height>
+			<fadetime>200</fadetime>
+			<aspectratio aligny="bottom">keep</aspectratio>
+			<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
+			<bordertexture border="20">overlays/shadow.png</bordertexture>
+			<bordersize>20</bordersize>
+		</control>
+		<control type="group">
+			<include>MediaFlags</include>
+		</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="Video Playlist" />
 			<param name="breadcrumbs_icon" value="icons/settings/video.png" />
