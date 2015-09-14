@@ -10,7 +10,7 @@
 				<posy>0</posy>
 				<width>128</width>
 				<height>128</height>
-				<texturefocus>calibrate/cal_tl_fo.png</texturefocus>
+				<texturefocus colordiffuse="button_focus">calibrate/cal_tl.png</texturefocus>
 				<texturenofocus>calibrate/cal_tl.png</texturenofocus>
 			</control>
 			<control type="mover" id="9">
@@ -19,7 +19,7 @@
 				<posy>500</posy>
 				<width>128</width>
 				<height>128</height>
-				<texturefocus>calibrate/cal_br_fo.png</texturefocus>
+				<texturefocus colordiffuse="button_focus">calibrate/cal_br.png</texturefocus>
 				<texturenofocus>calibrate/cal_br.png</texturenofocus>
 			</control>
 			<control type="mover" id="10">
@@ -28,7 +28,7 @@
 				<posy>500</posy>
 				<width>384</width>
 				<height>128</height>
-				<texturefocus>calibrate/cal_sub_fo.png</texturefocus>
+				<texturefocus colordiffuse="button_focus">calibrate/cal_sub.png</texturefocus>
 				<texturenofocus>calibrate/cal_sub.png</texturenofocus>
 			</control>
 			<control type="resize" id="11">
@@ -37,7 +37,7 @@
 				<posy>390</posy>
 				<width>500</width>
 				<height>500</height>
-				<texturefocus>calibrate/cal_ratio_fo.png</texturefocus>
+				<texturefocus colordiffuse="button_focus">calibrate/cal_ratio.png</texturefocus>
 				<texturenofocus>calibrate/cal_ratio.png</texturenofocus>
 			</control>
 			<control type="label" id="2">
