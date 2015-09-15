@@ -1082,7 +1082,7 @@
 		</control>
 		<control type="grouplist">
 			<description>Right side of top bar</description>
-			<left>1400</left>
+			<left>1340</left>
 			<width>500</width>
 			<align>right</align>
 			<orientation>horizontal</orientation>
@@ -1121,21 +1121,21 @@
 				<include>BreadcrumbsLabel</include>
 				<label>$INFO[System.Time]</label>
 			</control>
+		</control>
 			<control type="image">
 				<description>System Time Clock</description>
-				<left>10</left>
-				<top>16</top>
-				<height>24</height>
-				<width>24</width>
+				<right>25</right>
+				<top>20</top>
+				<height>40</height>
+				<width>40</width>
 				<texture colordiffuse="button_focus">frame/clock.png</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
-		</control>
 		<control type="label">
 			<top>40</top>
 			<label>$INFO[System.Date]</label>
 			<font>font10</font>
-			<left>1400</left>
+			<left>1340</left>
 			<shadowcolor>text_shadow</shadowcolor>
 			<height>100</height>
 			<width>500</width>
