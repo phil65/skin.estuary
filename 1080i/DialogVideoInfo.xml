@@ -15,7 +15,7 @@
 					<ondown>5000</ondown>
 					<onup>5000</onup>
 					<control type="button" id="13">
-						<width>500</width>
+						<width>505</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -27,7 +27,7 @@
 					</control>
 					<control type="button" id="131">
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
-						<width>500</width>
+						<width>505</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -39,7 +39,7 @@
 					</control>
 					<control type="button" id="131">
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
-						<width>500</width>
+						<width>505</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -49,7 +49,7 @@
 						<onclick>IncreaseRating</onclick>
 					</control>
 					<control type="label" id="135">
-						<width>500</width>
+						<width>505</width>
 						<height>90</height>
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -60,7 +60,7 @@
 					</control>
 				</control>
 				<control type="group" id="140">
-					<posx>480</posx>
+					<posx>485</posx>
 					<posy>170</posy>
 					<control type="button" id="138">
 						<width>760</width>
@@ -137,7 +137,7 @@
 								<posy>0</posy>
 								<width>264</width>
 								<height>357</height>
-								<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="DefaultAddon.png">$INFO[ListItem.Thumb]</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -186,13 +186,13 @@
 					<control type="radiobutton" id="8">
 						<label>Play</label>
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 						</include>
 					</control>
 					<control type="radiobutton" id="20">
 						<label>$LOCALIZE[31284]</label>
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/defaulticons/DefaultPVRClient.png" />
 						</include>
 						<onclick>Playlist.Clear</onclick>
 						<onclick>Dialog.Close(MovieInformation)</onclick>
@@ -202,7 +202,7 @@
 					<control type="radiobutton" id="11">
 						<label>$LOCALIZE[20410]</label>
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/defaulticons/DefaultRemovableDisk.png" />
 						</include>
 						<visible>!IsEmpty(ListItem.Trailer)</visible>
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
@@ -210,7 +210,7 @@
 					<control type="radiobutton" id="440">
 						<label>Search trailer</label>
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/defaulticons/DefaultMusicTop100.png" />
 						</include>
 						<visible>IsEmpty(ListItem.Trailer)</visible>
 						<onclick>Action(close)</onclick>
@@ -220,7 +220,7 @@
 					</control>
 					<control type="radiobutton" id="100">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/defaulticons/DefaultMusicSearch.png" />
 						</include>
 						<label>$LOCALIZE[31020]</label>
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
@@ -228,13 +228,13 @@
 					</control>
 					<control type="radiobutton" id="10">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/defaulticons/DefaultEPG.png" />
 						</include>
 						<label>$LOCALIZE[13511]</label>
 					</control>
 					<control type="radiobutton" id="6">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/defaulticons/DefaultGames.png" />
 						</include>
 						<label>Re-scrape</label>
 					</control>
