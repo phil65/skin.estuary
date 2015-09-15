@@ -338,40 +338,6 @@
 						<width>1000</width>
 						<align>left</align>
 					</control>
-					<!-- 	<control type="grouplist">
-					     <posx>0</posx>
-					     <posy>0</posy>
-					     <width>1018</width>
-					     <height>50</height>
-					     <aligny>top</aligny>
-					     <orientation>horizontal</orientation>
-					     <usecontrolcoords>true</usecontrolcoords>
-					     <visible>[Container.Content(movies) | Container.Content(tvshows)] + !IsEmpty(ListItem.Genre)</visible>
-					     <control type="label">
-					     <width>995</width>
-					     <height>40</height>
-					     <label>$INFO[ListItem.Genre]</label>
-					     <textcolor>grey</textcolor>
-					     <scroll>true</scroll>
-					     </control>
-					     </control>
-					     <control type="label">
-					     <width>1018</width>
-					     <height>40</height>
-					     <aligny>bottom</aligny>
-					     <label>$INFO[ListItem.Artist]</label>
-					     <textcolor>grey</textcolor>
-					     <scroll>true</scroll>
-					     <visible>Container.Content(musicvideos) + !IsEmpty(ListItem.Artist)</visible>
-					     </control>
-					     <control type="label">
-					     <width>1018</width>
-					     <height>40</height>
-					     <aligny>bottom</aligny>
-					     <label>$INFO[ListItem.TvShowTitle]</label>
-					     <textcolor>grey</textcolor>
-					     <visible>Container.Content(episodes) + !IsEmpty(ListItem.TvShowTitle)</visible>
-					     </control> -->
 				</control>
 			</control>
 		</control>
