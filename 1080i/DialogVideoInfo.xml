@@ -9,7 +9,7 @@
 				<posx>40</posx>
 				<control type="grouplist" id="4000">
 					<orientation>vertical</orientation>
-					<posx>0</posx>
+					<posx>730</posx>
 					<posy>170</posy>
 					<itemgap>0</itemgap>
 					<ondown>5000</ondown>
@@ -62,10 +62,10 @@
 					</control>
 				</control>
 				<control type="group" id="140">
-					<posx>485</posx>
+					<posx>0</posx>
 					<posy>170</posy>
 					<control type="button" id="138">
-						<width>760</width>
+						<width>750</width>
 						<height>270</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -82,7 +82,7 @@
 					<control type="textbox" id="800">
 						<posx>40</posx>
 						<posy>20</posy>
-						<width>680</width>
+						<width>670</width>
 						<height>230</height>
 						<align>left</align>
 						<font>font_textbox</font>
