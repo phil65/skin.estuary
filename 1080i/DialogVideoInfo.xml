@@ -4,7 +4,7 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<left>560</left>
+			<left>550</left>
 			<control type="group">
 				<posx>40</posx>
 				<control type="grouplist">
@@ -59,34 +59,33 @@
 						<visible>Container.Content(tvshows)</visible>
 					</control>
 				</control>
-					<control type="group" id="140">
-						<posx>480</posx>
-						<posy>170</posy>
-						<control type="button" id="138">
-							<width>760</width>
-							<height>270</height>
-							<textoffsetx>40</textoffsetx>
-							<textoffsety>20</textoffsety>
-							<aligny>bottom</aligny>
-							<label></label>
-							<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
-							<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
-							<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
-							<onup>131</onup>
-							<ondown>5000</ondown>
-						</control>
-						<control type="textbox" id="800">
-							<posx>40</posx>
-							<posy>20</posy>
-							<width>680</width>
-							<height>230</height>
-							<align>left</align>
-							<font>font_textbox</font>
-							<label fallback="No information available">$INFO[ListItem.TagLine,[B],[CR][/B]]$INFO[ListItem.Plot]</label>
-							<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-						</control>
+				<control type="group" id="140">
+					<posx>480</posx>
+					<posy>170</posy>
+					<control type="button" id="138">
+						<width>760</width>
+						<height>270</height>
+						<textoffsetx>40</textoffsetx>
+						<textoffsety>20</textoffsety>
+						<aligny>bottom</aligny>
+						<label></label>
+						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
+						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+						<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
+						<onup>131</onup>
+						<ondown>5000</ondown>
 					</control>
-
+					<control type="textbox" id="800">
+						<posx>40</posx>
+						<posy>20</posy>
+						<width>680</width>
+						<height>230</height>
+						<align>left</align>
+						<font>font_textbox</font>
+						<label fallback="No information available">$INFO[ListItem.TagLine,[B],[CR][/B]]$INFO[ListItem.Plot]</label>
+						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+					</control>
+				</control>
 				<control type="list" id="50">
 					<posx></posx>
 					<posy>540</posy>
@@ -173,7 +172,7 @@
 				</control>
 				<control type="grouplist" id="5000">
 					<posx>0</posx>
-					<posy>470</posy>
+					<posy>430</posy>
 					<width>1300</width>
 					<height>400</height>
 					<onleft>5000</onleft>
@@ -184,49 +183,65 @@
 					<align>left</align>
 					<orientation>horizontal</orientation>
 					<scrolltime tween="quadratic">200</scrolltime>
-					<control type="button" id="8">
+					<control type="radiobutton" id="8">
 						<label>Play</label>
-						<include>VideoInfoButtonsCommon</include>
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+						</include>
 					</control>
-					<control type="button" id="20">
+					<control type="radiobutton" id="20">
 						<label>$LOCALIZE[31284]</label>
-						<include>VideoInfoButtonsCommon</include>
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+						</include>
 						<onclick>Playlist.Clear</onclick>
 						<onclick>Dialog.Close(MovieInformation)</onclick>
 						<onclick>RunScript(script.cinema.experience)</onclick>
 						<visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience) + !SubString(Container.FolderPath,plugin)</visible>
 					</control>
-					<control type="button" id="11">
+					<control type="radiobutton" id="11">
 						<label>$LOCALIZE[20410]</label>
-						<include>VideoInfoButtonsCommon</include>
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+						</include>
 						<visible>!IsEmpty(ListItem.Trailer)</visible>
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 					</control>
-					<control type="button" id="440">
+					<control type="radiobutton" id="440">
 						<label>Search trailer</label>
-						<include>VideoInfoButtonsCommon</include>
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+						</include>
 						<visible>IsEmpty(ListItem.Trailer)</visible>
 						<onclick>Action(close)</onclick>
 						<visible>System.hasAddon(script.extendedinfo)</visible>
 						<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])</onclick>
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 					</control>
-					<control type="button" id="100">
-						<include>VideoInfoButtonsCommon</include>
+					<control type="radiobutton" id="100">
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+						</include>
 						<label>$LOCALIZE[31020]</label>
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 						<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
 					</control>
-					<control type="button" id="10">
-						<include>VideoInfoButtonsCommon</include>
+					<control type="radiobutton" id="10">
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+						</include>
 						<label>$LOCALIZE[13511]</label>
 					</control>
-					<control type="button" id="6">
-						<include>VideoInfoButtonsCommon</include>
+					<control type="radiobutton" id="6">
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+						</include>
 						<label>Re-scrape</label>
 					</control>
-					<control type="button" id="101">
-						<include>VideoInfoButtonsCommon</include>
+					<control type="radiobutton" id="101">
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+						</include>
 						<label>Extended Info</label>
 						<onclick>RunScript(script.extendedinfo,info=openinfodialog)</onclick>
 						<visible>System.HasAddon(script.extendedinfo)</visible>
@@ -253,99 +268,99 @@
 					<visible>Container(5000).HasNext+ ControlGroup(5000).HasFocus</visible>
 				</control>
 			</control>
-<!-- 				<control type="grouplist">
-					<posx>25</posx>
-					<posy>80</posy>
-					<width>1200</width>
-					<orientation>vertical</orientation>
-					<usecontrolcoords>true</usecontrolcoords>
-					<include name="VideoInfoMediaFlag">
-						<param name="InfoLabel" value="ListItem.Rating" />
-						<param name="Title" value="Rating" />
-						<param name="Visible" value="True" />
-					</include>
-					<include name="VideoInfoMediaFlag">
-						<param name="InfoLabel" value="ListItem.Duration" />
-						<param name="Title" value="Minutes" />
-						<param name="Visible" value="True" />
-					</include>
-					<include name="VideoInfoMediaFlag">
-						<param name="InfoLabel" value="ListItem.Year" />
-						<param name="Title" value="Year" />
-						<param name="Visible" value="True" />
-					</include>
-					<include name="VideoInfoMediaFlag">
-						<param name="InfoLabel" value="ListItem.Season" />
-						<param name="Title" value="Seasons" />
-						<param name="Visible" value="!Container.Content(episodes)" />
-					</include>
-					<include name="VideoInfoMediaFlag">
-						<param name="InfoLabel" value="ListItem.Episode" />
-						<param name="Title" value="Episodes" />
-						<param name="Visible" value="!Container.Content(episodes)" />
-					</include>
-				</control> -->
+			<!-- 				<control type="grouplist">
+			     <posx>25</posx>
+			     <posy>80</posy>
+			     <width>1200</width>
+			     <orientation>vertical</orientation>
+			     <usecontrolcoords>true</usecontrolcoords>
+			     <include name="VideoInfoMediaFlag">
+			     <param name="InfoLabel" value="ListItem.Rating" />
+			     <param name="Title" value="Rating" />
+			     <param name="Visible" value="True" />
+			     </include>
+			     <include name="VideoInfoMediaFlag">
+			     <param name="InfoLabel" value="ListItem.Duration" />
+			     <param name="Title" value="Minutes" />
+			     <param name="Visible" value="True" />
+			     </include>
+			     <include name="VideoInfoMediaFlag">
+			     <param name="InfoLabel" value="ListItem.Year" />
+			     <param name="Title" value="Year" />
+			     <param name="Visible" value="True" />
+			     </include>
+			     <include name="VideoInfoMediaFlag">
+			     <param name="InfoLabel" value="ListItem.Season" />
+			     <param name="Title" value="Seasons" />
+			     <param name="Visible" value="!Container.Content(episodes)" />
+			     </include>
+			     <include name="VideoInfoMediaFlag">
+			     <param name="InfoLabel" value="ListItem.Episode" />
+			     <param name="Title" value="Episodes" />
+			     <param name="Visible" value="!Container.Content(episodes)" />
+			     </include>
+			     </control> -->
 		</control>
-				<!-- Movie info -->
-				<control type="group">
-					<posx>80</posx>
-					<posy>10</posy>
+		<!-- Movie info -->
+		<control type="group">
+			<posx>80</posx>
+			<posy>10</posy>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-					<control type="group">
-						<control type="grouplist">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1018</width>
-							<height>200</height>
-							<aligny>top</aligny>
-							<itemgap>20</itemgap>
-							<orientation>vertical</orientation>
-							<control type="label">
-								<width>1018</width>
-								<height>50</height>
-								<label>$INFO[ListItem.Title]</label>
-								<font>font30_title</font>
-								<animation effect="slide" start="0,0" end="0,30" time="0" condition="[Container.Content(movies) | Container.Content(tvshows)] + IsEmpty(ListItem.Genre)">Conditional</animation>
-								<animation effect="slide" start="0,0" end="0,30" time="0" condition="[Container.Content(musicvideos) + IsEmpty(ListItem.Artist)]">Conditional</animation>
-								<scroll>true</scroll>
-							</control>
-						<!-- 	<control type="grouplist">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>1018</width>
-								<height>50</height>
-								<aligny>top</aligny>
-								<orientation>horizontal</orientation>
-								<usecontrolcoords>true</usecontrolcoords>
-								<visible>[Container.Content(movies) | Container.Content(tvshows)] + !IsEmpty(ListItem.Genre)</visible>
-								<control type="label">
-									<width>995</width>
-									<height>40</height>
-									<label>$INFO[ListItem.Genre]</label>
-									<textcolor>grey</textcolor>
-									<scroll>true</scroll>
-								</control>
-							</control>
-							<control type="label">
-								<width>1018</width>
-								<height>40</height>
-								<aligny>bottom</aligny>
-								<label>$INFO[ListItem.Artist]</label>
-								<textcolor>grey</textcolor>
-								<scroll>true</scroll>
-								<visible>Container.Content(musicvideos) + !IsEmpty(ListItem.Artist)</visible>
-							</control>
-							<control type="label">
-								<width>1018</width>
-								<height>40</height>
-								<aligny>bottom</aligny>
-								<label>$INFO[ListItem.TvShowTitle]</label>
-								<textcolor>grey</textcolor>
-								<visible>Container.Content(episodes) + !IsEmpty(ListItem.TvShowTitle)</visible>
-							</control> -->
-						</control>
+			<control type="group">
+				<control type="grouplist">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1018</width>
+					<height>200</height>
+					<aligny>top</aligny>
+					<itemgap>20</itemgap>
+					<orientation>vertical</orientation>
+					<control type="label">
+						<width>1018</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Title]</label>
+						<font>font30_title</font>
+						<animation effect="slide" start="0,0" end="0,30" time="0" condition="[Container.Content(movies) | Container.Content(tvshows)] + IsEmpty(ListItem.Genre)">Conditional</animation>
+						<animation effect="slide" start="0,0" end="0,30" time="0" condition="[Container.Content(musicvideos) + IsEmpty(ListItem.Artist)]">Conditional</animation>
+						<scroll>true</scroll>
 					</control>
+					<!-- 	<control type="grouplist">
+					     <posx>0</posx>
+					     <posy>0</posy>
+					     <width>1018</width>
+					     <height>50</height>
+					     <aligny>top</aligny>
+					     <orientation>horizontal</orientation>
+					     <usecontrolcoords>true</usecontrolcoords>
+					     <visible>[Container.Content(movies) | Container.Content(tvshows)] + !IsEmpty(ListItem.Genre)</visible>
+					     <control type="label">
+					     <width>995</width>
+					     <height>40</height>
+					     <label>$INFO[ListItem.Genre]</label>
+					     <textcolor>grey</textcolor>
+					     <scroll>true</scroll>
+					     </control>
+					     </control>
+					     <control type="label">
+					     <width>1018</width>
+					     <height>40</height>
+					     <aligny>bottom</aligny>
+					     <label>$INFO[ListItem.Artist]</label>
+					     <textcolor>grey</textcolor>
+					     <scroll>true</scroll>
+					     <visible>Container.Content(musicvideos) + !IsEmpty(ListItem.Artist)</visible>
+					     </control>
+					     <control type="label">
+					     <width>1018</width>
+					     <height>40</height>
+					     <aligny>bottom</aligny>
+					     <label>$INFO[ListItem.TvShowTitle]</label>
+					     <textcolor>grey</textcolor>
+					     <visible>Container.Content(episodes) + !IsEmpty(ListItem.TvShowTitle)</visible>
+					     </control> -->
 				</control>
+			</control>
+		</control>
 	</controls>
 </window>
