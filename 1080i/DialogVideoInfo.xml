@@ -10,7 +10,7 @@
 				<control type="grouplist" id="4000">
 					<orientation>vertical</orientation>
 					<posx>730</posx>
-					<posy>170</posy>
+					<posy>163</posy>
 					<itemgap>0</itemgap>
 					<ondown>5000</ondown>
 					<onup>50</onup>
@@ -63,7 +63,7 @@
 				</control>
 				<control type="group" id="140">
 					<posx>0</posx>
-					<posy>170</posy>
+					<posy>163</posy>
 					<control type="button" id="138">
 						<width>750</width>
 						<height>270</height>
@@ -92,7 +92,7 @@
 				</control>
 				<control type="list" id="50">
 					<posx></posx>
-					<posy>540</posy>
+					<posy>538</posy>
 					<width>1235</width>
 					<height>600</height>
 					<onleft>50</onleft>
@@ -176,7 +176,7 @@
 				</control>
 				<control type="grouplist" id="5000">
 					<posx>0</posx>
-					<posy>430</posy>
+					<posy>420</posy>
 					<width>1248</width>
 					<height>400</height>
 					<onleft>5000</onleft>
@@ -259,7 +259,7 @@
 				</control>
 				<control type="image">
 					<posx>-12</posx>
-					<posy>490</posy>
+					<posy>480</posy>
 					<width>28</width>
 					<height>28</height>
 					<texture colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texture>
@@ -269,7 +269,7 @@
 				</control>
 				<control type="image">
 					<posx>1240</posx>
-					<posy>490</posy>
+					<posy>480</posy>
 					<width>28</width>
 					<height>28</height>
 					<texture colordiffuse="button_focus">overlays/arrowright.png</texture>
