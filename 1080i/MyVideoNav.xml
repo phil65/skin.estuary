@@ -51,11 +51,11 @@
 					<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
 				</control>
 			</control>
-		</control>
-		<control type="group">
-			<visible>Container.Content(movies) | Container.Content(episodes)</visible>
-			<animation effect="fade" time="200">VisibleChange</animation>
-			<include>MediaFlags</include>
+			<control type="group">
+				<visible>Container.Content(movies) | Container.Content(episodes)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<include>MediaFlags</include>
+			</control>
 		</control>
 		<include>MediaMenuMouseOverlay</include>
 		<control type="group">
