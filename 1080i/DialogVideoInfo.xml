@@ -9,7 +9,7 @@
 				<posx>40</posx>
 				<control type="grouplist" id="4000">
 					<orientation>vertical</orientation>
-					<posx>730</posx>
+					<posx>736</posx>
 					<posy>163</posy>
 					<itemgap>0</itemgap>
 					<ondown>5000</ondown>
@@ -141,7 +141,7 @@
 								<posy>0</posy>
 								<width>264</width>
 								<height>357</height>
-								<texture fallback="DefaultAddon.png">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -177,13 +177,13 @@
 				<control type="grouplist" id="5000">
 					<posx>0</posx>
 					<posy>420</posy>
-					<width>1248</width>
+					<width>1246</width>
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
 					<onup>138</onup>
 					<ondown>50</ondown>
-					<itemgap>-17</itemgap>
+					<itemgap>-16</itemgap>
 					<align>left</align>
 					<orientation>horizontal</orientation>
 					<scrolltime tween="quadratic">200</scrolltime>
