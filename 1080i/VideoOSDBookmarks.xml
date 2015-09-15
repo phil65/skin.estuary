@@ -13,22 +13,28 @@
 			<param name="DialogHeaderLabel" value="$LOCALIZE[298]" />
 			<param name="DialogHeaderId" value="" />
 		</include>
+		<control type="image">
+			<left>10</left>
+			<top>80</top>
+			<width>1130</width>
+			<height>720</height>
+			<texture border="40">buttons/dialogbutton-nofo.png</texture>
+		</control>
 		<control type="panel" id="11">
 			<left>40</left>
-			<top>100</top>
+			<top>105</top>
 			<width>1110</width>
-			<height>700</height>
+			<height>680</height>
 			<onleft>9001</onleft>
 			<onright>9001</onright>
 			<preloaditems>2</preloaditems>
-			<pagecontrol>61</pagecontrol>
 			<scrolltime tween="sine">200</scrolltime>
 			<orientation>vertical</orientation>
-			<itemlayout width="370" height="360">
+			<itemlayout width="370" height="340">
 				<control type="group">
 					<control type="image">
 						<left>0</left>
-						<top>0</top>
+						<top>5</top>
 						<width>330</width>
 						<height>250</height>
 						<aspectratio>scale</aspectratio>
@@ -38,7 +44,7 @@
 					</control>
 					<control type="label">
 						<left>20</left>
-						<top>250</top>
+						<top>255</top>
 						<width>290</width>
 						<height>40</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -48,11 +54,11 @@
 					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout width="370" height="360">
+			<focusedlayout width="370" height="340">
 				<control type="group">
 					<control type="image">
 						<left>0</left>
-						<top>0</top>
+						<top>5</top>
 						<width>330</width>
 						<height>250</height>
 						<aspectratio>scale</aspectratio>
@@ -62,14 +68,14 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>0</top>
+						<top>5</top>
 						<width>330</width>
 						<height>250</height>
 						<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 					</control>
 					<control type="label">
 						<left>20</left>
-						<top>250</top>
+						<top>255</top>
 						<width>290</width>
 						<height>40</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -105,16 +111,11 @@
 				<param name="width" value="350" />
 			</include>
 		</control>
-		<control type="scrollbar" id="61">
-			<left>1860</left>
-			<top>132</top>
-			<width>46</width>
-			<height>802</height>
-			<texturesliderbackground colordiffuse="button_focus">views/scrollbarbacklist.png</texturesliderbackground>
-			<onleft>450</onleft>
-			<onright>450</onright>
-			<ondown>61</ondown>
-			<onup>61</onup>
-		</control>
+		<include name="UpDownArrows">
+			<param name="container_id" value="11" />
+			<param name="posx" value="726" />
+			<param name="up_posy" value="-40" />
+			<param name="down_posy" value="820" />
+		</include>
 	</controls>
 </window>
