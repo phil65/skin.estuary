@@ -22,7 +22,14 @@
 				<param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
 			</include>
 		</control>
-		<include>MediaMenuMouseOverlay</include>
+			<control type="group">
+				<include>OpenClose_Left</include>
+				<visible>Control.IsVisible(50)</visible>
+				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)</visible>
+				<include>Visible_Left</include>
+				<include>ListThumbInfoPanel</include>
+			</control>
+					<include>MediaMenuMouseOverlay</include>
 		<control type="group">
 			<include>MediaMenuCommon</include>
 			<control type="grouplist" id="9000">

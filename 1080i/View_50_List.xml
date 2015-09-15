@@ -7,13 +7,6 @@
 				<param name="container_id" value="50" />
 			</include>
 			<control type="group">
-				<include>OpenClose_Left</include>
-				<visible>Control.IsVisible(50)</visible>
-				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)</visible>
-				<include>Visible_Left</include>
-				<include>ListThumbInfoPanel</include>
-			</control>
-			<control type="group">
 				<include>OpenClose_Right</include>
 				<visible>Control.IsVisible(50) + !IsEmpty(ListItem.DBID)</visible>
 				<include>Visible_Right</include>
@@ -411,6 +404,10 @@
 			<width>509</width>
 			<height>258</height>
 			<texture border="22">dialogs/dialog-bg.png</texture>
+			<visible>!Window.IsActive(addoninformation)</visible>
+							<animation effect="fade" time="200">VisibleChange</animation>
+
+
 		</control>
 		<control type="textbox">
 			<left>120</left>
@@ -421,6 +418,8 @@
 			<font>font_textbox</font>
 			<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
 			<label fallback="No info available">$VAR[ListBoxInfoVar]</label>
+			<visible>!Window.IsActive(addoninformation)</visible>
+							<animation effect="fade" time="200">VisibleChange</animation>
 		</control>
 	</include>
 	<include name="SongsListLayout">
