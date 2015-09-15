@@ -4,138 +4,93 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<left>613</left>
+			<left>560</left>
 			<control type="group">
 				<posx>40</posx>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
-					<posx>00</posx>
-					<posy>200</posy>
-					<itemgap>-25</itemgap>
+					<posx>0</posx>
+					<posy>170</posy>
+					<itemgap>0</itemgap>
 					<ondown>5000</ondown>
 					<onup>5000</onup>
 					<control type="button" id="13">
-						<width>1070</width>
+						<width>500</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
+						<font>font_textbox</font>
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
 						<label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
 						<visible>!IsEmpty(ListItem.Director)</visible>
 					</control>
 					<control type="button" id="131">
 						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
-						<width>1070</width>
+						<width>500</width>
 						<height>90</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
+						<font>font_textbox</font>
 						<aligny>bottom</aligny>
 						<label>$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]: [/COLOR]]</label>
 						<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
 						<visible>!IsEmpty(ListItem.Writer)</visible>
 					</control>
+					<control type="button" id="131">
+						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
+						<width>500</width>
+						<height>90</height>
+						<textoffsetx>40</textoffsetx>
+						<textoffsety>20</textoffsety>
+						<font>font_textbox</font>
+						<aligny>bottom</aligny>
+						<label>[COLOR button_focus]User rating: [/COLOR]$INFO[ListItem.UserRating]</label>
+						<onclick>IncreaseRating</onclick>
+					</control>
 					<control type="label" id="135">
-						<width>1070</width>
+						<width>500</width>
 						<height>90</height>
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
+						<font>font_textbox</font>
 						<label>$INFO[ListItem.Premiered,$LOCALIZE[20416]: ]</label>
-						<font>font24_title</font>
 						<visible>Container.Content(tvshows)</visible>
 					</control>
+				</control>
 					<control type="group" id="140">
-						<height>255</height>
-						<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.TagLine)</visible>
+						<posx>480</posx>
+						<posy>170</posy>
 						<control type="button" id="138">
-							<width>1070</width>
-							<height>235</height>
+							<width>760</width>
+							<height>270</height>
 							<textoffsetx>40</textoffsetx>
 							<textoffsety>20</textoffsety>
 							<aligny>bottom</aligny>
 							<label></label>
-							<onclick>SetProperty(TextViewer_Header,Plot,home)</onclick>
-							<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
-							<onclick>ActivateWindow(1102)</onclick>
+							<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
+							<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+							<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
 							<onup>131</onup>
 							<ondown>5000</ondown>
-							<visible>!IsEmpty(ListItem.Plot)</visible>
 						</control>
 						<control type="textbox" id="800">
 							<posx>40</posx>
 							<posy>20</posy>
-							<width>990</width>
-							<height>190</height>
+							<width>680</width>
+							<height>230</height>
 							<align>left</align>
-							<label>[B]$INFO[ListItem.TagLine,,[CR]][/B]$INFO[ListItem.Plot]</label>
+							<font>font_textbox</font>
+							<label fallback="No information available">$INFO[ListItem.TagLine,[B],[CR][/B]]$INFO[ListItem.Plot]</label>
 							<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
 					</control>
-				</control>
-				<!-- Movie info -->
-				<control type="group">
-					<posx>25</posx>
-					<posy>68</posy>
-					<control type="group">
-						<control type="grouplist">
-							<posx>0</posx>
-							<posy>15</posy>
-							<width>1018</width>
-							<height>200</height>
-							<aligny>top</aligny>
-							<itemgap>20</itemgap>
-							<orientation>vertical</orientation>
-							<control type="label">
-								<width>1018</width>
-								<height>50</height>
-								<label>$INFO[ListItem.Title]</label>
-								<font>font_MainMenu</font>
-								<animation effect="slide" start="0,0" end="0,30" time="0" condition="[Container.Content(movies) | Container.Content(tvshows)] + IsEmpty(ListItem.Genre)">Conditional</animation>
-								<animation effect="slide" start="0,0" end="0,30" time="0" condition="[Container.Content(musicvideos) + IsEmpty(ListItem.Artist)]">Conditional</animation>
-								<scroll>true</scroll>
-							</control>
-							<control type="grouplist">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>1018</width>
-								<height>50</height>
-								<aligny>top</aligny>
-								<orientation>horizontal</orientation>
-								<usecontrolcoords>true</usecontrolcoords>
-								<visible>[Container.Content(movies) | Container.Content(tvshows)] + !IsEmpty(ListItem.Genre)</visible>
-								<control type="label">
-									<width>995</width>
-									<height>40</height>
-									<label>$INFO[ListItem.Genre]</label>
-									<textcolor>grey</textcolor>
-									<scroll>true</scroll>
-								</control>
-							</control>
-							<control type="label">
-								<width>1018</width>
-								<height>40</height>
-								<aligny>bottom</aligny>
-								<label>$INFO[ListItem.Artist]</label>
-								<textcolor>grey</textcolor>
-								<scroll>true</scroll>
-								<visible>Container.Content(musicvideos) + !IsEmpty(ListItem.Artist)</visible>
-							</control>
-							<control type="label">
-								<width>1018</width>
-								<height>40</height>
-								<aligny>bottom</aligny>
-								<label>$INFO[ListItem.TvShowTitle]</label>
-								<textcolor>grey</textcolor>
-								<visible>Container.Content(episodes) + !IsEmpty(ListItem.TvShowTitle)</visible>
-							</control>
-						</control>
-					</control>
-				</control>
+
 				<control type="list" id="50">
 					<posx></posx>
-					<posy>630</posy>
-					<width>1090</width>
+					<posy>540</posy>
+					<width>1235</width>
 					<height>600</height>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -143,7 +98,7 @@
 					<ondown>5000</ondown>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
-					<itemlayout height="400" width="270">
+					<itemlayout height="400" width="245">
 						<control type="group">
 							<posx>0</posx>
 							<posy>10</posy>
@@ -175,7 +130,7 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout height="400" width="270">
+					<focusedlayout height="400" width="245">
 						<control type="group">
 							<posx>0</posx>
 							<posy>10</posy>
@@ -218,8 +173,8 @@
 				</control>
 				<control type="grouplist" id="5000">
 					<posx>0</posx>
-					<posy>560</posy>
-					<width>1085</width>
+					<posy>470</posy>
+					<width>1300</width>
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
@@ -277,17 +232,6 @@
 						<visible>System.HasAddon(script.extendedinfo)</visible>
 					</control>
 				</control>
-				<control type="label">
-					<posx>225</posx>
-					<posy>1033</posy>
-					<width>950</width>
-					<label>$INFO[ListItem.FileNameAndPath]</label>
-					<font>font12</font>
-					<textcolor>white5</textcolor>
-					<scroll>true</scroll>
-					<haspath>true</haspath>
-					<visible>ControlGroup(6000).HasFocus</visible>
-				</control>
 				<control type="image">
 					<posx>178</posx>
 					<posy>622</posy>
@@ -309,26 +253,7 @@
 					<visible>Container(5000).HasNext+ ControlGroup(5000).HasFocus</visible>
 				</control>
 			</control>
-			<!-- Middle Row -->
-			<control type="group">
-				<posy>0</posy>
-				<posx>1115</posx>
-				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="200" time="300" tween="sine" easing="out" />
-					<effect type="slide" start="320" end="0" delay="200" time="350" tween="cubic" easing="out" />
-				</animation>
-				<animation type="WindowClose">
-					<effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-					<effect type="slide" start="0" end="320" time="200" tween="cubic" easing="out" />
-				</animation>
-				<control type="image">
-					<posx>35</posx>
-					<top>80</top>
-					<width>140</width>
-					<height>920</height>
-					<texture colordiffuse="B2FFFFFF">colors/black.png</texture>
-				</control>
-				<control type="grouplist">
+<!-- 				<control type="grouplist">
 					<posx>25</posx>
 					<posy>80</posy>
 					<width>1200</width>
@@ -350,21 +275,6 @@
 						<param name="Visible" value="True" />
 					</include>
 					<include name="VideoInfoMediaFlag">
-						<param name="InfoLabel" value="ListItem.VideoResolution" />
-						<param name="Title" value="HD" />
-						<param name="Visible" value="True" />
-					</include>
-					<include name="VideoInfoMediaFlag">
-						<param name="InfoLabel" value="ListItem.VideoAspect" />
-						<param name="Title" value="AR" />
-						<param name="Visible" value="True" />
-					</include>
-					<include name="VideoInfoMediaFlag">
-						<param name="InfoLabel" value="ListItem.AudioChannels" />
-						<param name="Title" value="Channels" />
-						<param name="Visible" value="True" />
-					</include>
-					<include name="VideoInfoMediaFlag">
 						<param name="InfoLabel" value="ListItem.Season" />
 						<param name="Title" value="Seasons" />
 						<param name="Visible" value="!Container.Content(episodes)" />
@@ -374,17 +284,68 @@
 						<param name="Title" value="Episodes" />
 						<param name="Visible" value="!Container.Content(episodes)" />
 					</include>
+				</control> -->
+		</control>
+				<!-- Movie info -->
+				<control type="group">
+					<posx>80</posx>
+					<posy>10</posy>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+					<control type="group">
+						<control type="grouplist">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>1018</width>
+							<height>200</height>
+							<aligny>top</aligny>
+							<itemgap>20</itemgap>
+							<orientation>vertical</orientation>
+							<control type="label">
+								<width>1018</width>
+								<height>50</height>
+								<label>$INFO[ListItem.Title]</label>
+								<font>font30_title</font>
+								<animation effect="slide" start="0,0" end="0,30" time="0" condition="[Container.Content(movies) | Container.Content(tvshows)] + IsEmpty(ListItem.Genre)">Conditional</animation>
+								<animation effect="slide" start="0,0" end="0,30" time="0" condition="[Container.Content(musicvideos) + IsEmpty(ListItem.Artist)]">Conditional</animation>
+								<scroll>true</scroll>
+							</control>
+						<!-- 	<control type="grouplist">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>1018</width>
+								<height>50</height>
+								<aligny>top</aligny>
+								<orientation>horizontal</orientation>
+								<usecontrolcoords>true</usecontrolcoords>
+								<visible>[Container.Content(movies) | Container.Content(tvshows)] + !IsEmpty(ListItem.Genre)</visible>
+								<control type="label">
+									<width>995</width>
+									<height>40</height>
+									<label>$INFO[ListItem.Genre]</label>
+									<textcolor>grey</textcolor>
+									<scroll>true</scroll>
+								</control>
+							</control>
+							<control type="label">
+								<width>1018</width>
+								<height>40</height>
+								<aligny>bottom</aligny>
+								<label>$INFO[ListItem.Artist]</label>
+								<textcolor>grey</textcolor>
+								<scroll>true</scroll>
+								<visible>Container.Content(musicvideos) + !IsEmpty(ListItem.Artist)</visible>
+							</control>
+							<control type="label">
+								<width>1018</width>
+								<height>40</height>
+								<aligny>bottom</aligny>
+								<label>$INFO[ListItem.TvShowTitle]</label>
+								<textcolor>grey</textcolor>
+								<visible>Container.Content(episodes) + !IsEmpty(ListItem.TvShowTitle)</visible>
+							</control> -->
+						</control>
+					</control>
 				</control>
-			</control>
-		</control>
-		<control type="image">
-			<include>OpenClose_Left</include>
-			<left>0</left>
-			<top>80</top>
-			<width>613</width>
-			<height>920</height>
-			<aspectratio aligny="top">scale</aspectratio>
-			<texture background="true" fallback="DefaultVideo.png">$VAR[PosterVar]</texture>
-		</control>
 	</controls>
 </window>
