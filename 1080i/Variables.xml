@@ -30,16 +30,21 @@
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="ShiftRightTextBoxVar">
-		<value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,[COLOR button_focus]Size:  [/COLOR],[CR]]$INFO[ListItem.PictureAperture,[COLOR button_focus]Aperture:  [/COLOR],[CR]]$INFO[ListItem.PictureFocalLen,[COLOR button_focus]Focal length:  [/COLOR],[CR]]$INFO[ListItem.PictureExpTime,[COLOR button_focus]Exposure time:  [/COLOR],[CR]]</value>
+		<value condition="Window.IsActive(pictures)">$VAR[SizeVar,[COLOR button_focus]Size:  [/COLOR],[CR]]$INFO[ListItem.PictureAperture,[COLOR button_focus]Aperture:  [/COLOR],[CR]]$INFO[ListItem.PictureFocalLen,[COLOR button_focus]Focal length:  [/COLOR],[CR]]$INFO[ListItem.PictureExpTime,[COLOR button_focus]Exposure time:  [/COLOR],[CR]]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
-		<variable name="SelectLabel">
+	<variable name="SizeVar">
+		<value condition="!Stringcompare(ListItem.Size,0 B)">$INFO[ListItem.Size]</value>
+		<value></value>
+	</variable>
+	<variable name="SelectLabel">
 		<value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
 		<value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
 	</variable>
 	<variable name="MusicBreadcrumbsVar">
-<!--         <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
- -->        <value>$LOCALIZE[10516]</value>
+		<!-- <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
+		 -->
+		<value>$LOCALIZE[10516]</value>
 	</variable>
 	<variable name="BannerArtVar">
 		<value condition="StringCompare(ListItem.Label,..)">DefaultBackBanner.png</value>
@@ -79,7 +84,7 @@
 	<variable name="BannerLabel2Var">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</value>
 		<!-- <value>$INFO[ListItem.Year]</value>
- -->
+		 -->
 	</variable>
 	<variable name="VideoPlayerForwardRewindVar">
 		<value condition="Player.Forwarding2x | Player.Rewinding2x">2x</value>
@@ -105,7 +110,6 @@
 		<value condition="ControlGroup(201).HasFocus">Press up to FF / RW.</value>
 		<value condition="Control.HasFocus(87)">Press left right bla</value>
 		<value>Description for this button.</value>
-
 	</variable>
 	<variable name="VolumeIconVar">
 		<value condition="IntegerGreaterThan(Control.GetLabel(20),66)">dialogs/volume/volume.png</value>
@@ -187,7 +191,7 @@
 		<value condition="Window.IsActive(musiclibrary) + library.IsScanningMusic">$LOCALIZE[13353]</value>
 		<value>$LOCALIZE[653]</value>
 	</variable>
-		<variable name="PVRChannelMgrHeader">
+	<variable name="PVRChannelMgrHeader">
 		<value condition="!IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19199] - $LOCALIZE[19024]</value>
 		<value>$LOCALIZE[19199] - $LOCALIZE[19023]</value>
 	</variable>
