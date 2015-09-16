@@ -539,7 +539,7 @@
 			</item>
 			<item>
 				<label>Audio add-ons</label>
-				<onclick>ActivateWindow(musicfiles,addons://sources/audio/,return)</onclick>
+				<onclick>ActivateWindow(music,addons://sources/audio/,return)</onclick>
 				<icon>icons/settings/music.png</icon>
 			</item>
 			<item>

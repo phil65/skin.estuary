@@ -47,7 +47,7 @@
 					<item>
 						<label>Local audio sources</label>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick>ActivateWindow(musicfiles,return)</onclick>
+						<onclick>ActivateWindow(Music,Files,return)</onclick>
 					</item>
 					<item>
 						<label>uPnP sources</label>
