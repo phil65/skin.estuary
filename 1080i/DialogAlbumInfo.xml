@@ -4,9 +4,30 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
+			<control type="button" id="13">
+				<posx>836</posx>
+				<posy>164</posy>
+				<width>1014</width>
+				<height>509</height>
+				<textoffsetx>40</textoffsetx>
+				<textoffsety>20</textoffsety>
+				<aligny>bottom</aligny>
+				<font>font_textbox</font>
+				<label>-</label>
+			</control>
+			<control type="label" id="400">
+				<posx>886</posx>
+				<posy>200</posy>
+				<width>914</width>
+				<height>430</height>
+				<wrapmultiline>true</wrapmultiline>
+				<align>left</align>
+				<label>[B]$INFO[ListItem.Property(Artist_Mood),,[CR]][/B][COLOR=white]$INFO[ListItem.Property(Artist_Description)][/COLOR]</label>
+				<textcolor>button_focus</textcolor>
+			</control>
 			<control type="grouplist" id="9000">
-				<posx>630</posx>
-				<posy>770</posy>
+				<posx>585</posx>
+				<posy>768</posy>
 				<width>1920</width>
 				<height>768</height>
 				<onleft>9000</onleft>
@@ -16,29 +37,35 @@
 				<align>left</align>
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
-				<control type="button" id="5">
+				<control type="radiobutton" id="5">
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
 					<label>206</label>
 				</control>
-				<control type="button" id="6">
+				<control type="radiobutton" id="6">
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
 					<label>184</label>
 				</control>
-				<control type="button" id="10">
+				<control type="radiobutton" id="10">
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
 					<label>13405</label>
 				</control>
-				<control type="button" id="12">
+				<control type="radiobutton" id="12">
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
 					<label>20413</label>
+				</control>
+				<control type="radiobutton" id="120">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
+					<label>Show fanart</label>
 				</control>
 			</control>
 			<control type="group">
