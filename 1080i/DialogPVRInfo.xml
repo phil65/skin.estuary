@@ -33,15 +33,15 @@
 					<aligny>center</aligny>
 					<shadowcolor>black</shadowcolor>
 				</control>
-				<control type="label">
+				<control type="textbox">
 					<left>130</left>
-					<top>730</top>
+					<top>740</top>
 					<width>1030</width>
-					<height>30</height>
+					<height>150</height>
 					<font>font12</font>
 					<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.Duration])[CR]$INFO[ListItem.StartDate]</label>
 					<align>left</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
