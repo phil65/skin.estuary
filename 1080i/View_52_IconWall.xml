@@ -19,7 +19,7 @@
 				<ondown>52</ondown>
 				<visible>$PARAM[visible]</visible>
 				<viewtype label="Icon Wall">icon</viewtype>
-				<itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files)">
+				<itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files) | Container.Content(playlists)">
 					<control type="group">
 						<posy>9</posy>
 						<control type="image">
@@ -53,7 +53,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files)">
+				<focusedlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files) | Container.Content(playlists)">
 					<control type="group">
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
