@@ -3,76 +3,26 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<control type="group">
-			<include>OpenClose_Left</include>
-			<control type="group">
-				<posx>40</posx>
-				<posy>660</posy>
-<!-- 				<control type="label">
-					<posx>30</posx>
-					<posy>-70</posy>
-					<width>1920</width>
-					<height>40</height>
-					<label>$INFO[ListItem.Property(Addon.Name)]</label>
-					<font>font30_title</font>
-				</control> -->
-				<control type="label">
-					<posx>30</posx>
-					<width>345</width>
-					<height>38</height>
-					<label>$LOCALIZE[146]</label>
-					<textcolor>button_focus</textcolor>
-				</control>
-				<control type="label">
-					<posx>200</posx>
-					<width>870</width>
-					<height>38</height>
-					<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<posx>30</posx>
-					<posy>40</posy>
-					<width>345</width>
-					<height>38</height>
-					<label>$LOCALIZE[21863]:</label>
-					<textcolor>button_focus</textcolor>
-				</control>
-				<control type="label">
-					<posx>200</posx>
-					<posy>40</posy>
-					<width>870</width>
-					<height>38</height>
-					<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<posx>30</posx>
-					<posy>80</posy>
-					<width>345</width>
-					<height>38</height>
-					<label>$LOCALIZE[24051]</label>
-					<textcolor>button_focus</textcolor>
-				</control>
-				<control type="label">
-					<posx>200</posx>
-					<posy>80</posy>
-					<width>870</width>
-					<height>38</height>
-					<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
-					<scroll>true</scroll>
-				</control>
-			</control>
-		</control>
-		<control type="group">
 			<include>OpenClose_Right</include>
 			<posx>-30</posx>
+			<control type="button" id="13">
+				<posx>900</posx>
+				<posy>162</posy>
+				<width>950</width>
+				<height>509</height>
+				<textoffsetx>40</textoffsetx>
+				<textoffsety>20</textoffsety>
+				<aligny>bottom</aligny>
+				<font>font_textbox</font>
+				<label>-</label>
+			</control>
 			<control type="label" id="400">
 				<posx>950</posx>
-				<posy>180</posy>
+				<posy>200</posy>
 				<width>850</width>
 				<height>396</height>
 				<wrapmultiline>true</wrapmultiline>
-				<align>center</align>
+				<align>left</align>
 				<label>[B]$INFO[ListItem.Property(Addon.Summary)][/B][COLOR=white][CR]$INFO[ListItem.Property(Addon.Description)][/COLOR][COLOR=white][CR]$INFO[ListItem.Property(Addon.Disclaimer),[CR][CR]$LOCALIZE[24052]: ][/COLOR]</label>
 				<textcolor>button_focus</textcolor>
 			</control>
@@ -88,32 +38,46 @@
 				<align>left</align>
 				<itemgap>-18</itemgap>
 				<orientation>horizontal</orientation>
-				<control type="button" id="12">
-					<include>VideoInfoButtonsCommon</include>
+				<control type="radiobutton" id="12">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
 					<label>518</label>
 				</control>
-				<control type="button" id="9">
-					<include>VideoInfoButtonsCommon</include>
+				<control type="radiobutton" id="9">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
 					<label>24020</label>
 				</control>
-				<control type="button" id="8">
-					<include>VideoInfoButtonsCommon</include>
+				<control type="radiobutton" id="8">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
 					<label>24069</label>
 				</control>
-				<control type="button" id="6">
-					<include>VideoInfoButtonsCommon</include>
+				<control type="radiobutton" id="6">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
 					<label>24022</label>
 				</control>
-				<control type="button" id="7">
-					<include>VideoInfoButtonsCommon</include>
+				<control type="radiobutton" id="7">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
 					<label>24021</label>
 				</control>
-				<control type="button" id="11">
-					<include>VideoInfoButtonsCommon</include>
+				<control type="radiobutton" id="11">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
 					<label>24048</label>
 				</control>
-				<control type="button" id="10">
-					<include>VideoInfoButtonsCommon</include>
+				<control type="radiobutton" id="10">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
 					<label>24036</label>
 				</control>
 			</control>
@@ -140,6 +104,35 @@
 					<font>font14</font>
 					<textcolor>grey</textcolor>
 				</control>
+			</control>
+		</control>
+		<control type="grouplist">
+			<posx>85</posx>
+			<posy>5</posy>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<width>1018</width>
+			<height>80</height>
+			<aligny>top</aligny>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<control type="label">
+				<width>1018</width>
+				<label>$INFO[ListItem.Property(addon.name)]</label>
+				<font>font13_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<height>35</height>
+				<align>left</align>
+				<scroll>true</scroll>
+			</control>
+			<control type="label">
+				<label>$INFO[ListItem.Property(addon.version)]$INFO[ListItem.Property(addon.creator), by: ]</label>
+				<font>font10</font>
+				<left>85</left>
+				<shadowcolor>text_shadow</shadowcolor>
+				<height>100</height>
+				<width>1000</width>
+				<align>left</align>
 			</control>
 		</control>
 	</controls>

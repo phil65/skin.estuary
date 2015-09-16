@@ -83,6 +83,8 @@
 		<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
 		<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
 		<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
+		<textureradiooffdisabled colordiffuse="disabled">$PARAM[icon]</textureradiooffdisabled>
+		<textureradioondisabled colordiffuse="disabled">$PARAM[icon]</textureradioondisabled>
 	</include>
 	<include name="SubMenu">
 		<control type="group">

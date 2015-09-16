@@ -1039,7 +1039,7 @@
 			<width>900</width>
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
-			<visible>!Window.isActive(movieinformation)</visible>
+			<visible>!Window.isActive(movieinformation) + !Window.isActive(addoninformation)</visible>
 			<animation effect="fade" time="150">VisibleChange</animation>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
@@ -1075,7 +1075,7 @@
 			<width>auto</width>
 			<align>left</align>
 			<visible>!IsEmpty(Container.SortMethod)</visible>
-			<visible>!Window.isActive(movieinformation)</visible>
+			<visible>!Window.isActive(movieinformation) + !Window.isActive(addoninformation)</visible>
 			<animation effect="fade" time="150">VisibleChange</animation>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
