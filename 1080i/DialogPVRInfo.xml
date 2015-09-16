@@ -6,23 +6,40 @@
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<control type="image">
-					<top>180</top>
-					<left>110</left>
-					<width>500</width>
-					<height>500</height>
+					<left>114</left>
+					<top>186</top>
+					<width>461</width>
+					<height>461</height>
 					<aspectratio>keep</aspectratio>
 					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 					<bordersize>4</bordersize>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
+				<control type="image">
+					<left>90</left>
+					<top>650</top>
+					<width>509</width>
+					<height>258</height>
+					<texture border="22">dialogs/dialog-bg.png</texture>
+				</control>
 				<control type="label">
-					<description>header label</description>
-					<left>110</left>
+					<left>130</left>
 					<top>700</top>
 					<width>1030</width>
 					<height>30</height>
-					<font>font30_title</font>
+					<font>font24_title</font>
 					<label>$INFO[Listitem.ChannelName]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<left>130</left>
+					<top>730</top>
+					<width>1030</width>
+					<height>30</height>
+					<font>font12</font>
+					<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.Duration])[CR]$INFO[ListItem.StartDate]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<shadowcolor>black</shadowcolor>
@@ -32,118 +49,11 @@
 				<top>180</top>
 				<left>50</left>
 				<include>OpenClose_Right</include>
-				<control type="label">
-					<description>header label</description>
-					<left>620</left>
-					<top>0</top>
-					<width>1030</width>
-					<height>30</height>
-					<font>font30_title</font>
-					<label>$INFO[Listitem.Title]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="list" id="49">
-					<left>580</left>
-					<top>70</top>
-					<width>1050</width>
-					<height>450</height>
-					<onleft>49</onleft>
-					<onright>49</onright>
-					<onup>9000</onup>
-					<ondown>61</ondown>
-					<scrolltime>200</scrolltime>
-					<itemlayout height="45">
-						<control type="label">
-							<left>5</left>
-							<top>0</top>
-							<width>200</width>
-							<height>30</height>
-							<align>right</align>
-							<aligny>center</aligny>
-							<textcolor>button_focus</textcolor>
-							<info>ListItem.Label</info>
-						</control>
-						<control type="label">
-							<left>215</left>
-							<top>0</top>
-							<width>1000</width>
-							<height>30</height>
-							<aligny>center</aligny>
-							<selectedcolor>white</selectedcolor>
-							<info>ListItem.Label2</info>
-						</control>
-					</itemlayout>
-					<focusedlayout height="45">
-						<control type="label">
-							<left>5</left>
-							<top>0</top>
-							<width>200</width>
-							<height>30</height>
-							<align>right</align>
-							<aligny>center</aligny>
-							<textcolor>button_focus</textcolor>
-							<info>ListItem.Label</info>
-						</control>
-						<control type="label">
-							<left>215</left>
-							<top>0</top>
-							<width>1000</width>
-							<height>30</height>
-							<aligny>center</aligny>
-							<selectedcolor>white</selectedcolor>
-							<info>ListItem.Label2</info>
-							<scroll>true</scroll>
-						</control>
-					</focusedlayout>
-					<content>
-						<item>
-							<label>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ]$LOCALIZE[21442]:</label>
-							<label2>$INFO[ListItem.EpisodeName]</label2>
-							<onclick>noop</onclick>
-							<visible>!IsEmpty(ListItem.EpisodeName)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[142]</label>
-							<label2>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.StartDate])</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>$LOCALIZE[180]:</label>
-							<label2>$INFO[ListItem.Duration]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>$LOCALIZE[515]:</label>
-							<label2>$INFO[ListItem.Genre]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>$LOCALIZE[20417]:</label>
-							<label2>$INFO[ListItem.Writer]</label2>
-							<onclick>noop</onclick>
-							<visible>!IsEmpty(ListItem.Writer)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[20339]:</label>
-							<label2>$INFO[ListItem.Director]</label2>
-							<onclick>noop</onclick>
-							<visible>!IsEmpty(ListItem.Director)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[206]:</label>
-							<label2>$INFO[ListItem.Cast]</label2>
-							<onclick>noop</onclick>
-							<visible>!IsEmpty(ListItem.Cast)</visible>
-						</item>
-					</content>
-				</control>
 				<control type="button" id="61">
-					<left>570</left>
-					<top>367</top>
-					<width>1090</width>
-					<height>155</height>
+					<posx>600</posx>
+					<posy>-18</posy>
+					<width>1170</width>
+					<height>509</height>
 					<font>-</font>
 					<onleft>61</onleft>
 					<onright>61</onright>
@@ -154,13 +64,25 @@
 					<onclick>ActivateWindow(1102)</onclick>
 				</control>
 				<control type="textbox" id="400">
-					<left>600</left>
-					<top>387</top>
+					<left>640</left>
+					<top>80</top>
 					<width>1030</width>
-					<height>115</height>
+					<height>560</height>
 					<align>justify</align>
-					<label>$INFO[ListItem.Plot]</label>
+					<label>[COLOR button_focus]$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ][/COLOR]$INFO[ListItem.EpisodeName,[B],[/B][CR]]$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:[/COLOR] ,[CR]]$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]:[/COLOR] ,[CR]]$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]:[/COLOR] ,[CR]]$INFO[ListItem.Cast,[COLOR button_focus]$LOCALIZE[206]:[/COLOR] ,[CR]][CR]$INFO[ListItem.Plot]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+				<control type="label">
+					<description>header label</description>
+					<left>640</left>
+					<top>20</top>
+					<width>1030</width>
+					<height>30</height>
+					<font>font30_title</font>
+					<label>$INFO[Listitem.Title]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="grouplist" id="9000">
 					<left>600</left>
@@ -216,5 +138,9 @@
 				</control>
 			</control>
 		</control>
+		<include name="InfoDialogTopBarInfo">
+			<param name="main_label" value="$INFO[ListItem.ChannelName]" />
+			<param name="sub_label" value="$INFO[ListItem.Title] [COLOR button_focus]$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E][/COLOR]" />
+		</include>
 	</controls>
 </window>
