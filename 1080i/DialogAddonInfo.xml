@@ -4,9 +4,8 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<posx>-30</posx>
 			<control type="button" id="13">
-				<posx>900</posx>
+				<posx>870</posx>
 				<posy>162</posy>
 				<width>950</width>
 				<height>509</height>
@@ -17,7 +16,7 @@
 				<label>-</label>
 			</control>
 			<control type="label" id="400">
-				<posx>950</posx>
+				<posx>920</posx>
 				<posy>200</posy>
 				<width>850</width>
 				<height>396</height>
@@ -27,7 +26,7 @@
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>118</posx>
+				<posx>88</posx>
 				<posy>770</posy>
 				<width>1920</width>
 				<height>768</height>
@@ -81,21 +80,31 @@
 					<label>24036</label>
 				</control>
 			</control>
-			<control type="textbox">
-				<posx>0</posx>
-				<posy>895</posy>
-				<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
-				<width>1920</width>
-				<align>center</align>
-				<height>68</height>
-				<aligny>top</aligny>
-				<label>$LOCALIZE[24096][CR]$INFO[ListItem.Property(Addon.broken)]</label>
-				<font>font14</font>
-			</control>
 		</control>
 		<include name="InfoDialogTopBarInfo">
 			<param name="main_label" value="$INFO[ListItem.Property(addon.name)]" />
 			<param name="sub_label" value="$INFO[ListItem.Property(addon.version),[COLOR button_focus],[/COLOR]]$INFO[ListItem.Property(addon.creator), by ]" />
 		</include>
+		<control type="group">
+				<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+				<include>OpenClose_Fade</include>
+				<control type="image">
+					<left>114</left>
+					<top>186</top>
+					<width>461</width>
+					<height>461</height>
+					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+				</control>
+				<control type="textbox">
+					<posx>130</posx>
+					<posy>190</posy>
+					<width>420</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<height>400</height>
+					<label>$LOCALIZE[24096]</label>
+					<font>font24_title</font>
+				</control>
+			</control>
 	</controls>
 </window>
