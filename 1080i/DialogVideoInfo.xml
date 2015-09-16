@@ -299,35 +299,9 @@
 				</control>
 			</control>
 		</control>
-		<!-- Movie info -->
-		<control type="grouplist">
-			<posx>85</posx>
-			<posy>5</posy>
-			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-			<width>1018</width>
-			<height>80</height>
-			<aligny>top</aligny>
-			<itemgap>0</itemgap>
-			<orientation>vertical</orientation>
-			<control type="label">
-				<width>1018</width>
-				<label>$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]</label>
-				<font>font13_title</font>
-				<shadowcolor>text_shadow</shadowcolor>
-				<height>35</height>
-				<align>left</align>
-				<scroll>true</scroll>
-			</control>
-			<control type="label">
-				<label>$INFO[ListItem.Genre]$INFO[ListItem.Artist]$INFO[ListItem.TVShowTitle]</label>
-				<font>font10</font>
-				<left>85</left>
-				<shadowcolor>text_shadow</shadowcolor>
-				<height>100</height>
-				<width>1000</width>
-				<align>left</align>
-			</control>
-		</control>
+		<include name="InfoDialogTopBarInfo">
+			<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
+			<param name="sub_label" value="$INFO[ListItem.Genre]$INFO[ListItem.Artist]$INFO[ListItem.TVShowTitle]" />
+		</include>
 	</controls>
 </window>
