@@ -181,7 +181,13 @@
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
-					<onup>138</onup>
+					<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">135</onup>
+					<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">138</onup>
+					<ondown condition="Stringcompare(Container(5000).CurrentItem,1)">SetFocus(50,0)</ondown>
+					<ondown condition="Stringcompare(Container(5000).CurrentItem,2)">SetFocus(50,1)</ondown>
+					<ondown condition="Stringcompare(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>
+					<ondown condition="Stringcompare(Container(5000).CurrentItem,4)">SetFocus(50,3)</ondown>
+					<ondown condition="Stringcompare(Container(5000).CurrentItem,5)">SetFocus(50,4)</ondown>
 					<ondown>50</ondown>
 					<itemgap>-16</itemgap>
 					<align>left</align>
