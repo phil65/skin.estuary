@@ -13,7 +13,7 @@
 			</include>
 			<include>View_51_Poster</include>
 			<include name="View_52_IconWall">
-				<param name="visible" value="Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios)" />
+				<param name="visible" value="Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists)" />
 			</include>
 			<include name="View_500_SmallThumb">
 				<param name="layouts_include" value="SmallThumbVideoLayouts" />
