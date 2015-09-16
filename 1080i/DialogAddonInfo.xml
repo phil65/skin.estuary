@@ -81,34 +81,21 @@
 					<label>24036</label>
 				</control>
 			</control>
-			<control type="group">
-				<posx>678</posx>
-				<posy>885</posy>
+			<control type="textbox">
+				<posx>0</posx>
+				<posy>895</posy>
 				<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
-				<control type="label">
-					<posx>158</posx>
-					<width>564</width>
-					<height>68</height>
-					<label>24096</label>
-					<font>font14</font>
-					<textcolor>grey</textcolor>
-					<scroll>true</scroll>
-				</control>
-				<control type="textbox">
-					<posx>158</posx>
-					<posy>54</posy>
-					<width>564</width>
-					<height>68</height>
-					<aligny>top</aligny>
-					<label>$INFO[ListItem.Property(Addon.broken)]</label>
-					<font>font14</font>
-					<textcolor>grey</textcolor>
-				</control>
+				<width>1920</width>
+				<align>center</align>
+				<height>68</height>
+				<aligny>top</aligny>
+				<label>$LOCALIZE[24096][CR]$INFO[ListItem.Property(Addon.broken)]</label>
+				<font>font14</font>
 			</control>
 		</control>
 		<include name="InfoDialogTopBarInfo">
 			<param name="main_label" value="$INFO[ListItem.Property(addon.name)]" />
-			<param name="sub_label" value="$INFO[ListItem.Property(addon.version)]$INFO[ListItem.Property(addon.creator), by: ]" />
+			<param name="sub_label" value="$INFO[ListItem.Property(addon.version),[COLOR button_focus],[/COLOR]]$INFO[ListItem.Property(addon.creator), by ]" />
 		</include>
 	</controls>
 </window>
