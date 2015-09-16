@@ -14,7 +14,7 @@
 				<left>615</left>
 				<top>200</top>
 				<width>690</width>
-				<height>50</height>
+				<height>53</height>
 				<aspectratio aligny="top" align="center">keep</aspectratio>
 				<texture>icons/logo.png</texture>
 			</control>
@@ -24,7 +24,7 @@
 				<width>690</width>
 				<height>40</height>
 				<font>font13</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31421]</label>
@@ -42,6 +42,13 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="130" width="690">
 					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>90</width>
+						<height>88</height>
+						<texture border="40">colors/black.png</texture>
+					</control>
+					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>690</width>
@@ -49,16 +56,16 @@
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="image">
-						<left>10</left>
-						<top>10</top>
+						<left>25</left>
+						<top>25</top>
 						<width>80</width>
-						<height>75</height>
+						<height>78</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>110</left>
-						<top>10</top>
+						<left>130</left>
+						<top>14</top>
 						<width>580</width>
 						<height>60</height>
 						<font>font24_title</font>
@@ -66,8 +73,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>110</left>
-						<top>50</top>
+						<left>130</left>
+						<top>58</top>
 						<width>580</width>
 						<height>50</height>
 						<font>font13</font>
@@ -77,6 +84,13 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="130" width="580">
+					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>90</width>
+						<height>90</height>
+						<texture border="40">colors/black.png</texture>
+					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -94,16 +108,16 @@
 						<visible>Control.HasFocus(52)</visible>
 					</control>
 					<control type="image">
-						<left>10</left>
-						<top>10</top>
+						<left>25</left>
+						<top>25</top>
 						<width>80</width>
-						<height>75</height>
+						<height>78</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>110</left>
-						<top>10</top>
+						<left>130</left>
+						<top>14</top>
 						<width>580</width>
 						<height>60</height>
 						<font>font24_title</font>
@@ -111,12 +125,11 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>110</left>
-						<top>50</top>
+						<left>130</left>
+						<top>58</top>
 						<width>580</width>
 						<height>50</height>
 						<font>font13</font>
-						<textcolor>grey</textcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
@@ -127,7 +140,7 @@
 				<left>710</left>
 				<top>950</top>
 				<width>500</width>
-				<height>85</height>
+				<height>98</height>
 				<label>Power options</label>
 				<font>font12</font>
 				<align>center</align>
