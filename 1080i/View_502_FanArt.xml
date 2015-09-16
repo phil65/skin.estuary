@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="View_502_FanArt">
-		<include name="LeftRightArrows">
-			<param name="list_id" value="502" />
-			<param name="left_posx" value="45" />
-			<param name="right_posx" value="1849" />
-			<param name="posy" value="513" />
-		</include>
 		<control type="group">
 			<description>Fanart Viewtype</description>
 			<control type="group">
@@ -16,9 +10,9 @@
 				<visible>Control.IsVisible(502)</visible>
 				<include>Visible_Right</include>
 				<control type="image">
-					<left>-20</left>
+					<left>-120</left>
 					<top>-4</top>
-					<width>1765</width>
+					<width>1965</width>
 					<height>742</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
@@ -39,8 +33,8 @@
 					<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 					<itemlayout width="1720" height="690">
 						<control type="image">
-							<left>5</left>
-							<top>19</top>
+							<left>3</left>
+							<top>21</top>
 							<width>456</width>
 							<height>682</height>
 							<fadetime>200</fadetime>
@@ -48,40 +42,33 @@
 							<texture fallback="DefaultVideo.png" colordiffuse="FF555555" background="true">$VAR[PosterVar]</texture>
 						</control>
 						<control type="image">
-							<left>465</left>
-							<top>19</top>
-							<width>1252</width>
+							<left>490</left>
+							<top>21</top>
+							<width>1227</width>
 							<height>682</height>
 							<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 							<aspectratio align="right">scale</aspectratio>
 						</control>
 						<control type="image">
-							<left>1</left>
-							<top>15</top>
-							<width>1720</width>
-							<height>690</height>
-							<texture colordiffuse="A0000000" border="8">buttons/thumbnail_focused.png</texture>
-						</control>
-						<control type="image">
-							<left>463</left>
-							<top>621</top>
-							<width>1254</width>
+							<left>490</left>
+							<top>623</top>
+							<width>1227</width>
 							<height>80</height>
 							<texture colordiffuse="button_focus">colors/white.png</texture>
 						</control>
 						<control type="image">
-							<left>480</left>
-							<top>629</top>
-							<width>64</width>
-							<height>64</height>
+							<left>507</left>
+							<top>639</top>
+							<width>48</width>
+							<height>48</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
 						</control>
 						<control type="label">
-							<left>550</left>
-							<top>650</top>
-							<width>1720</width>
+							<left>571</left>
+							<top>651</top>
+							<width>1160</width>
 							<height>20</height>
-							<font>font30_title</font>
+							<font>font24_title</font>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -94,7 +81,7 @@
 							<visible>Stringcompare(Listitem.dbtype,tvshow)</visible>
 						</control>
 						<control type="label">
-							<left>470</left>
+							<left>444</left>
 							<top>651</top>
 							<width>1160</width>
 							<height>20</height>
@@ -105,8 +92,8 @@
 							<label>$INFO[ListItem.Year]</label>
 						</control>
 						<control type="image">
-							<right>20</right>
-							<top>637</top>
+							<right>35</right>
+							<top>638</top>
 							<width>50</width>
 							<height>50</height>
 							<aspectratio>keep</aspectratio>
@@ -117,8 +104,8 @@
 					<focusedlayout width="1720" height="690">
 						<control type="group">
 							<control type="image">
-								<left>5</left>
-								<top>19</top>
+								<left>3</left>
+								<top>21</top>
 								<width>456</width>
 								<height>682</height>
 								<fadetime>200</fadetime>
@@ -126,40 +113,26 @@
 								<texture fallback="DefaultVideo.png" colordiffuse="FF555555" background="true">$VAR[PosterVar]</texture>
 							</control>
 							<control type="image">
-								<left>465</left>
-								<top>19</top>
-								<width>1252</width>
+								<left>490</left>
+								<top>21</top>
+								<width>1227</width>
 								<height>682</height>
 								<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 								<aspectratio align="right">scale</aspectratio>
 							</control>
 							<control type="image">
-								<left>1</left>
-								<top>15</top>
-								<width>1720</width>
-								<height>690</height>
-								<texture colordiffuse="A0000000" border="8">buttons/thumbnail_focused.png</texture>
-							</control>
-							<control type="image">
-								<left>461</left>
-								<top>19</top>
-								<width>4</width>
-								<height>682</height>
-								<texture colordiffuse="A0000000">colors/black.png</texture>
-							</control>
-							<control type="image">
 								<left>465</left>
 								<top>621</top>
-								<width>1252</width>
+								<width>1251</width>
 								<height>80</height>
 								<visible>!Control.HasFocus(502)</visible>
 								<animation effect="fade" time="200">VisibleChange</animation>
 								<texture colordiffuse="A0000000">colors/black.png</texture>
 							</control>
 							<control type="image">
-								<left>465</left>
-								<top>621</top>
-								<width>1252</width>
+								<left>490</left>
+								<top>623</top>
+								<width>1227</width>
 								<height>80</height>
 								<visible>Control.HasFocus(502)</visible>
 								<animation effect="fade" time="200">VisibleChange</animation>
@@ -167,14 +140,14 @@
 								<texture colordiffuse="button_focus">colors/white.png</texture>
 							</control>
 							<control type="image">
-								<left>480</left>
+								<left>507</left>
 								<top>639</top>
 								<width>48</width>
 								<height>48</height>
 								<texture>$VAR[ListWatchedIconVar]</texture>
 							</control>
 							<control type="label">
-								<left>540</left>
+								<left>571</left>
 								<top>651</top>
 								<width>1160</width>
 								<height>20</height>
@@ -183,7 +156,7 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<left>470</left>
+								<left>444</left>
 								<top>651</top>
 								<width>1160</width>
 								<height>20</height>
@@ -194,8 +167,8 @@
 								<label>$INFO[ListItem.Year]</label>
 							</control>
 							<control type="image">
-								<right>20</right>
-								<top>637</top>
+								<right>35</right>
+								<top>638</top>
 								<width>50</width>
 								<height>50</height>
 								<aspectratio>keep</aspectratio>
@@ -236,19 +209,19 @@
 						<label>$INFO[ListItem.RatingAndVotes]</label>
 					</control>
 					<control type="image">
-						<right>130</right>
-						<top>647</top>
+						<right>135</right>
+						<top>652</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>lists/played-total.png</texture>
 						<visible>Stringcompare(Listitem.dbtype,tvshow)</visible>
 					</control>
 					<control type="label">
-						<right>194</right>
-						<top>650</top>
+						<right>197</right>
+						<top>656</top>
 						<width>800</width>
 						<height>20</height>
-						<font>font16</font>
+						<font>font24_title</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$VAR[BannerLabel2Var]</label>
@@ -266,5 +239,11 @@
 				</control>
 			</control>
 		</control>
+		<include name="LeftRightArrows">
+			<param name="list_id" value="502" />
+			<param name="left_posx" value="45" />
+			<param name="right_posx" value="1849" />
+			<param name="posy" value="513" />
+		</include>
 	</include>
 </includes>
