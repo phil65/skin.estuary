@@ -12,6 +12,10 @@
 				<param name="visible" value="true" />
 			</include>
 		</control>
+		<control type="group">
+			<include>OpenClose_Left</include>
+			<include>ListThumbInfoPanel</include>
+		</control>
 		<include>MediaMenuMouseOverlay</include>
 	   <control type="group">
 			<include>MediaMenuCommon</include>

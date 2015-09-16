@@ -20,6 +20,12 @@
 				<param name="visible" value="!IsEmpty(Container.FolderPath)" />
 			</include>
 		</control>
+		<control type="group">
+			<include>OpenClose_Left</include>
+			<visible>Window.IsActive(addoninformation)</visible>
+			<include>Visible_Left</include>
+			<include>ListThumbInfoPanel</include>
+		</control>
 		<include>MediaMenuMouseOverlay</include>
 		<control type="group">
 			<include>MediaMenuCommon</include>
