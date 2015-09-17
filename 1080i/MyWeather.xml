@@ -155,7 +155,7 @@
 							<top>13</top>
 							<align>right</align>
 							<font>font13_title</font>
-							<label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
+							<label>[COLOR grey]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR white]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
 							<width>175</width>
 						</control>
 						<control type="label">
@@ -212,7 +212,7 @@
 							<top>13</top>
 							<align>right</align>
 							<font>font13_title</font>
-							<label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
+							<label>[COLOR grey]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR white]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
 							<width>175</width>
 						</control>
 						<control type="label">
