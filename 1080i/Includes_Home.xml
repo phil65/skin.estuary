@@ -9,6 +9,10 @@
 		<font>-</font>
 		<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 		<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+		<textureradioonfocus>$PARAM[icon]</textureradioonfocus>
+		<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
+		<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
+		<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
 		<radioposx>44</radioposx>
 		<radioposy>34</radioposy>
 		<radiowidth>40</radiowidth>
@@ -107,66 +111,52 @@
 				<onup>20000</onup>
 				<ondown>$PARAM[ondown_id]</ondown>
 				<control type="radiobutton" id="$PARAM[list_id]901">
-					<include>SubMenuItemsCommon</include>
+					<include name="SubMenuItemsCommon">
+						<param name="icon" value="icons/submenu/$PARAM[item1_icon]" />
+					</include>
 					<onclick>$PARAM[item1_onclick]</onclick>
-					<textureradioonfocus>icons/submenu/$PARAM[item1_icon]</textureradioonfocus>
-					<textureradioonnofocus>icons/submenu/$PARAM[item1_icon]</textureradioonnofocus>
-					<textureradioofffocus>icons/submenu/$PARAM[item1_icon]</textureradioofffocus>
-					<textureradiooffnofocus>icons/submenu/$PARAM[item1_icon]</textureradiooffnofocus>
 					<visible>$PARAM[item1_vis]</visible>
 				</control>
 				<control type="radiobutton" id="$PARAM[list_id]902">
-					<include>SubMenuItemsCommon</include>
+					<include name="SubMenuItemsCommon">
+						<param name="icon" value="icons/submenu/$PARAM[item2_icon]" />
+					</include>
 					<onclick>$PARAM[item2_onclick]</onclick>
-					<textureradioonfocus>icons/submenu/$PARAM[item2_icon]</textureradioonfocus>
-					<textureradioonnofocus>icons/submenu/$PARAM[item2_icon]</textureradioonnofocus>
-					<textureradioofffocus>icons/submenu/$PARAM[item2_icon]</textureradioofffocus>
-					<textureradiooffnofocus>icons/submenu/$PARAM[item2_icon]</textureradiooffnofocus>
 					<visible>$PARAM[item2_vis]</visible>
 				</control>
 				<control type="radiobutton" id="$PARAM[list_id]903">
-					<include>SubMenuItemsCommon</include>
+					<include name="SubMenuItemsCommon">
+						<param name="icon" value="icons/submenu/$PARAM[item3_icon]" />
+					</include>
 					<onclick>$PARAM[item3_onclick]</onclick>
-					<textureradioonfocus>icons/submenu/$PARAM[item3_icon]</textureradioonfocus>
-					<textureradioonnofocus>icons/submenu/$PARAM[item3_icon]</textureradioonnofocus>
-					<textureradioofffocus>icons/submenu/$PARAM[item3_icon]</textureradioofffocus>
-					<textureradiooffnofocus>icons/submenu/$PARAM[item3_icon]</textureradiooffnofocus>
 					<visible>$PARAM[item3_vis]</visible>
 				</control>
 				<control type="radiobutton" id="$PARAM[list_id]904">
-					<include>SubMenuItemsCommon</include>
+					<include name="SubMenuItemsCommon">
+						<param name="icon" value="icons/submenu/$PARAM[item4_icon]" />
+					</include>
 					<onclick>$PARAM[item4_onclick]</onclick>
-					<textureradioonfocus>icons/submenu/$PARAM[item4_icon]</textureradioonfocus>
-					<textureradioonnofocus>icons/submenu/$PARAM[item4_icon]</textureradioonnofocus>
-					<textureradioofffocus>icons/submenu/$PARAM[item4_icon]</textureradioofffocus>
-					<textureradiooffnofocus>icons/submenu/$PARAM[item4_icon]</textureradiooffnofocus>
 					<visible>$PARAM[item4_vis]</visible>
 				</control>
 				<control type="radiobutton" id="$PARAM[list_id]905">
-					<include>SubMenuItemsCommon</include>
+					<include name="SubMenuItemsCommon">
+						<param name="icon" value="icons/submenu/$PARAM[item5_icon]" />
+					</include>
 					<onclick>$PARAM[item5_onclick]</onclick>
-					<textureradioonfocus>icons/submenu/$PARAM[item5_icon]</textureradioonfocus>
-					<textureradioonnofocus>icons/submenu/$PARAM[item5_icon]</textureradioonnofocus>
-					<textureradioofffocus>icons/submenu/$PARAM[item5_icon]</textureradioofffocus>
-					<textureradiooffnofocus>icons/submenu/$PARAM[item5_icon]</textureradiooffnofocus>
 					<visible>$PARAM[item5_vis]</visible>
 				</control>
 				<control type="radiobutton" id="$PARAM[list_id]906">
-					<include>SubMenuItemsCommon</include>
+					<include name="SubMenuItemsCommon">
+						<param name="icon" value="icons/submenu/$PARAM[item6_icon]" />
+					</include>
 					<onclick>$PARAM[item6_onclick]</onclick>
-					<textureradioonfocus>icons/submenu/$PARAM[item6_icon]</textureradioonfocus>
-					<textureradioonnofocus>icons/submenu/$PARAM[item6_icon]</textureradioonnofocus>
-					<textureradioofffocus>icons/submenu/$PARAM[item6_icon]</textureradioofffocus>
-					<textureradiooffnofocus>icons/submenu/$PARAM[item6_icon]</textureradiooffnofocus>
 					<visible>$PARAM[item6_vis]</visible>
 				</control>
 				<control type="radiobutton" id="$PARAM[list_id]907">
-					<include>SubMenuItemsCommon</include>
+					<include name="SubMenuItemsCommon">
+						<param name="icon" value="icons/submenu/$PARAM[item7_icon]" />
+					</include>
 					<onclick>$PARAM[item7_onclick]</onclick>
-					<textureradioonfocus>icons/submenu/$PARAM[item7_icon]</textureradioonfocus>
-					<textureradioonnofocus>icons/submenu/$PARAM[item7_icon]</textureradioonnofocus>
-					<textureradioofffocus>icons/submenu/$PARAM[item7_icon]</textureradioofffocus>
-					<textureradiooffnofocus>icons/submenu/$PARAM[item7_icon]</textureradiooffnofocus>
 					<visible>$PARAM[item7_vis]</visible>
 				</control>
 			</control>
