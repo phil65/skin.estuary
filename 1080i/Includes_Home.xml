@@ -166,7 +166,7 @@
 					<textureradioonfocus>icons/submenu/$PARAM[item7_icon]</textureradioonfocus>
 					<textureradioonnofocus>icons/submenu/$PARAM[item7_icon]</textureradioonnofocus>
 					<textureradioofffocus>icons/submenu/$PARAM[item7_icon]</textureradioofffocus>
-					<textureradiooffnofocus>$PARAM[item7_icon]</textureradiooffnofocus>
+					<textureradiooffnofocus>icons/submenu/$PARAM[item7_icon]</textureradiooffnofocus>
 					<visible>$PARAM[item7_vis]</visible>
 				</control>
 			</control>
