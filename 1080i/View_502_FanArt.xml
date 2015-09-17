@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="View_502_FanArt">
+		<include name="LeftRightArrows">
+			<param name="list_id" value="502" />
+			<param name="left_posx" value="45" />
+			<param name="right_posx" value="1849" />
+			<param name="posy" value="513" />
+		</include>
 		<control type="group">
 			<description>Fanart Viewtype</description>
 			<control type="group">
 				<include>OpenClose_Right</include>
 				<left>100</left>
-				<top>162</top>
+				<top>167</top>
 				<visible>Control.IsVisible(502)</visible>
 				<include>Visible_Right</include>
 				<control type="image">
-					<left>-120</left>
-					<top>-7</top>
-					<width>1965</width>
-					<height>760</height>
+					<left>-26</left>
+					<top>-4</top>
+					<width>1774</width>
+					<height>742</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="fixedlist" id="502">
-					<left>0</left>
-					<top>0</top>
+					<left>1</left>
+					<top>5</top>
 					<width>1720</width>
 					<height>732</height>
 					<onleft>502</onleft>
@@ -33,10 +39,10 @@
 					<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 					<itemlayout width="1720" height="690">
 						<control type="image">
-							<left>10</left>
+							<left>3</left>
 							<top>21</top>
-							<width>465</width>
-							<height>704</height>
+							<width>456</width>
+							<height>682</height>
 							<fadetime>200</fadetime>
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultVideo.png" colordiffuse="FF555555" background="true">$VAR[PosterVar]</texture>
@@ -45,27 +51,27 @@
 							<left>490</left>
 							<top>21</top>
 							<width>1227</width>
-							<height>702</height>
+							<height>682</height>
 							<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 							<aspectratio align="right">scale</aspectratio>
 						</control>
 						<control type="image">
 							<left>490</left>
-							<top>643</top>
+							<top>623</top>
 							<width>1227</width>
 							<height>80</height>
 							<texture colordiffuse="button_focus">colors/white.png</texture>
 						</control>
 						<control type="image">
 							<left>507</left>
-							<top>659</top>
+							<top>639</top>
 							<width>48</width>
 							<height>48</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
 						</control>
 						<control type="label">
 							<left>571</left>
-							<top>671</top>
+							<top>651</top>
 							<width>1160</width>
 							<height>20</height>
 							<font>font24_title</font>
@@ -74,7 +80,7 @@
 						</control>
 						<control type="image">
 							<right>226</right>
-							<top>665</top>
+							<top>645</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>lists/played-total.png</texture>
@@ -82,7 +88,7 @@
 						</control>
 						<control type="label">
 							<left>444</left>
-							<top>671</top>
+							<top>651</top>
 							<width>1160</width>
 							<height>20</height>
 							<font>font24_title</font>
@@ -93,7 +99,7 @@
 						</control>
 						<control type="image">
 							<right>35</right>
-							<top>658</top>
+							<top>638</top>
 							<width>50</width>
 							<height>50</height>
 							<aspectratio>keep</aspectratio>
@@ -104,10 +110,10 @@
 					<focusedlayout width="1720" height="690">
 						<control type="group">
 							<control type="image">
-								<left>10</left>
+								<left>3</left>
 								<top>21</top>
-								<width>465</width>
-								<height>704</height>
+								<width>456</width>
+								<height>682</height>
 								<fadetime>200</fadetime>
 								<aspectratio>scale</aspectratio>
 								<texture fallback="DefaultVideo.png" colordiffuse="FF555555" background="true">$VAR[PosterVar]</texture>
@@ -116,13 +122,13 @@
 								<left>490</left>
 								<top>21</top>
 								<width>1227</width>
-								<height>702</height>
+								<height>682</height>
 								<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 								<aspectratio align="right">scale</aspectratio>
 							</control>
 							<control type="image">
 								<left>490</left>
-								<top>643</top>
+								<top>623</top>
 								<width>1227</width>
 								<height>80</height>
 								<visible>!Control.HasFocus(502)</visible>
@@ -131,7 +137,7 @@
 							</control>
 							<control type="image">
 								<left>490</left>
-								<top>643</top>
+								<top>623</top>
 								<width>1227</width>
 								<height>80</height>
 								<visible>Control.HasFocus(502)</visible>
@@ -141,14 +147,14 @@
 							</control>
 							<control type="image">
 								<left>507</left>
-								<top>659</top>
+								<top>639</top>
 								<width>48</width>
 								<height>48</height>
 								<texture>$VAR[ListWatchedIconVar]</texture>
 							</control>
 							<control type="label">
 								<left>571</left>
-								<top>671</top>
+								<top>651</top>
 								<width>1160</width>
 								<height>20</height>
 								<font>font24_title</font>
@@ -157,7 +163,7 @@
 							</control>
 							<control type="label">
 								<left>444</left>
-								<top>671</top>
+								<top>651</top>
 								<width>1160</width>
 								<height>20</height>
 								<font>font24_title</font>
@@ -168,7 +174,7 @@
 							</control>
 							<control type="image">
 								<right>35</right>
-								<top>658</top>
+								<top>638</top>
 								<width>50</width>
 								<height>50</height>
 								<aspectratio>keep</aspectratio>
@@ -194,7 +200,7 @@
 					</animation>
 					<control type="image">
 						<left>30</left>
-						<top>663</top>
+						<top>653</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>lists/rating.png</texture>
@@ -202,7 +208,7 @@
 					</control>
 					<control type="label">
 						<left>76</left>
-						<top>660</top>
+						<top>650</top>
 						<width>230</width>
 						<height>32</height>
 						<font>font_textbox</font>
@@ -210,7 +216,7 @@
 					</control>
 					<control type="image">
 						<right>135</right>
-						<top>662</top>
+						<top>652</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>lists/played-total.png</texture>
@@ -218,7 +224,7 @@
 					</control>
 					<control type="label">
 						<right>197</right>
-						<top>666</top>
+						<top>656</top>
 						<width>800</width>
 						<height>20</height>
 						<font>font24_title</font>
@@ -239,11 +245,5 @@
 				</control>
 			</control>
 		</control>
-		<include name="LeftRightArrows">
-			<param name="list_id" value="502" />
-			<param name="left_posx" value="45" />
-			<param name="right_posx" value="1849" />
-			<param name="posy" value="513" />
-		</include>
 	</include>
 </includes>
