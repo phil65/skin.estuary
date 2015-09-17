@@ -66,7 +66,7 @@
 						<param name="item5_onclick" value="ActivateWindow(videos,MovieTags,return)" />
 						<param name="item5_icon" value="tags.png" />
 						<param name="item6_onclick" value="ActivateWindow(videos,library://video/movies/,return)" />
-						<param name="item6_icon" value="library.png" />
+						<param name="item6_icon" value="movieslibrary.png" />
 						<param name="item7_onclick" value="UpdateLibrary(video)" />
 						<param name="item7_icon" value="updatelibrary.png" />
 					</include>
@@ -119,19 +119,19 @@
 					<param name="list_id" value="6900"/>
 					<param name="ondown_id" value="6100"/>
 					<param name="item1_onclick" value="ActivateWindow(Videos,TVShowYears,return)" />
-					<param name="item1_icon" value="" />
+					<param name="item1_icon" value="years.png" />
 					<param name="item2_onclick" value="ActivateWindow(Videos,TVShowTitles,return)" />
-					<param name="item2_icon" value="" />
+					<param name="item2_icon" value="title.png" />
 					<param name="item3_onclick" value="ActivateWindow(Videos,TVShowGenres,return)" />
-					<param name="item3_icon" value="" />
+					<param name="item3_icon" value="genres.png" />
 					<param name="item4_onclick" value="ActivateWindow(Videos,TVShowActors,return)" />
-					<param name="item4_icon" value="" />
-					<param name="item5_onclick" value="ActivateWindow(Videos,TVShowYears,return)" />
-					<param name="item5_icon" value="" />
+					<param name="item4_icon" value="actors.png" />
+					<param name="item5_onclick" value="ActivateWindow(Videos,TVShowTags,return)" />
+					<param name="item5_icon" value="tags.png" />
 					<param name="item6_onclick" value="ActivateWindow(videos,library://video/tvshows/)" />
-					<param name="item6_icon" value="" />
+					<param name="item6_icon" value="tvlibrary.png" />
 					<param name="item7_onclick" value="UpdateLibrary(video)" />
-					<param name="item7_icon" value="" />
+					<param name="item7_icon" value="updatelibrary.png" />
 				</include>
 				<include name="WidgetListEpisodes">
 					<param name="content_path" value="special://skin/playlists/inprogress_tvshows.xsp"/>
@@ -181,13 +181,13 @@
 					<param name="item3_onclick" value="ActivateWindow(Music,Top100,return)" />
 					<param name="item3_icon" value="" />
 					<param name="item4_onclick" value="ActivateWindow(Music,Files,return)" />
-					<param name="item4_icon" value="" />
+					<param name="item4_icon" value="files.png" />
 					<param name="item5_onclick" value="ActivateWindow(music,Playlists,return)" />
 					<param name="item5_icon" value="" />
 					<param name="item6_onclick" value="ActivateWindow(Music,root)" />
 					<param name="item6_icon" value="" />
 					<param name="item7_onclick" value="UpdateLibrary(music)" />
-					<param name="item7_icon" value="" />
+					<param name="item7_icon" value="updatelibrary.png" />
 				</include>
 				<include name="WidgetListSquare">
 					<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
@@ -302,10 +302,10 @@
 					<param name="list_id" value="11900"/>
 					<param name="ondown_id" value="11100"/>
 					<param name="item1_onclick" value="ActivateWindow(Videos,Files,return)" />
-					<param name="item1_icon" value="" />
+					<param name="item1_icon" value="files.png" />
 					<param name="item2_onclick" value="ActivateWindow(Videos,special://videoplaylists/,return)" />
 					<param name="item2_icon" value="" />
-					<param name="item3_onclick" value="Notification(not possible yet., Fuck.)" />
+					<param name="item3_onclick" value="Notification(not possible yet., Fuck. - made me laugh)" />
 					<param name="item3_icon" value="" />
 					<param name="item4_onclick" value="PlayDVD" />
 					<param name="item4_icon" value="" />
