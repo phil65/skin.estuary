@@ -25,7 +25,6 @@
 					<height>346</height>
 					<align>left</align>
 					<font>font_textbox</font>
-					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
 					<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
 				</control>
 				<control type="grouplist" id="4300">
