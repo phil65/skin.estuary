@@ -1135,27 +1135,29 @@
 				<label>$INFO[System.Time]</label>
 			</control>
 		</control>
-		<control type="image">
-			<description>System Time Clock</description>
-			<right>25</right>
-			<top>20</top>
-			<height>40</height>
-			<width>40</width>
-			<texture colordiffuse="button_focus">frame/clock.png</texture>
-			<aspectratio>keep</aspectratio>
-		</control>
-		<control type="label">
-			<top>40</top>
-			<label>$INFO[System.Date]</label>
-			<font>font10</font>
-			<left>1340</left>
-			<shadowcolor>text_shadow</shadowcolor>
-			<height>100</height>
-			<width>500</width>
-			<align>right</align>
-			<animation effect="fade" time="150">VisibleChange</animation>
+		<control type="group">
 			<visible>!Window.IsVisible(extendedprogressdialog)</visible>
-			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+			<animation effect="fade" time="150">VisibleChange</animation>
+			<control type="image">
+				<description>System Time Clock</description>
+				<right>25</right>
+				<top>20</top>
+				<height>40</height>
+				<width>40</width>
+				<texture colordiffuse="button_focus">frame/clock.png</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<top>40</top>
+				<label>$INFO[System.Date]</label>
+				<font>font10</font>
+				<left>1340</left>
+				<shadowcolor>text_shadow</shadowcolor>
+				<height>100</height>
+				<width>500</width>
+				<align>right</align>
+				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+			</control>
 		</control>
 	</include>
 	<include name="BreadcrumbsLabel">

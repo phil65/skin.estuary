@@ -1017,19 +1017,18 @@
 				</include>
 			</control>
 		</control>
-		<control type="group">
-			<include>OpenClose_Up</include>
-			<control type="rss">
-				<left>0</left>
-				<top>1041</top>
-				<height>30</height>
-				<width>1920</width>
-				<font>font12</font>
-				<urlset>1</urlset>
-				<titlecolor>button_focus</titlecolor>
-				<shadowcolor>text_shadow</shadowcolor>
-				<headlinecolor>FFC0C0C0</headlinecolor>
-			</control>
+		<control type="rss">
+			<left>0</left>
+			<top>1041</top>
+			<height>30</height>
+			<width>1920</width>
+			<font>font12</font>
+			<urlset>1</urlset>
+			<titlecolor>button_focus</titlecolor>
+			<shadowcolor>text_shadow</shadowcolor>
+			<headlinecolor>FFC0C0C0</headlinecolor>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 		</control>
 	</controls>
 </window>
