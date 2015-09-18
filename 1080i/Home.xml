@@ -175,17 +175,17 @@
 					<param name="list_id" value="7900"/>
 					<param name="ondown_id" value="7100"/>
 					<param name="item1_onclick" value="ActivateWindow(Music,Artists,return)" />
-					<param name="item1_icon" value="" />
+					<param name="item1_icon" value="artists.png" />
 					<param name="item2_onclick" value="ActivateWindow(Music,Albums,return)" />
-					<param name="item2_icon" value="" />
+					<param name="item2_icon" value="albums.png" />
 					<param name="item3_onclick" value="ActivateWindow(Music,Top100,return)" />
-					<param name="item3_icon" value="" />
+					<param name="item3_icon" value="top100.png" />
 					<param name="item4_onclick" value="ActivateWindow(Music,Files,return)" />
 					<param name="item4_icon" value="files.png" />
 					<param name="item5_onclick" value="ActivateWindow(music,Playlists,return)" />
-					<param name="item5_icon" value="" />
+					<param name="item5_icon" value="playlists.png" />
 					<param name="item6_onclick" value="ActivateWindow(Music,root)" />
-					<param name="item6_icon" value="" />
+					<param name="item6_icon" value="music.png" />
 					<param name="item7_onclick" value="UpdateLibrary(music)" />
 					<param name="item7_icon" value="updatelibrary.png" />
 				</include>
