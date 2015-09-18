@@ -698,18 +698,18 @@
 					<label>Daily image</label>
 				</control>
 				<control type="image">
-					<top>280</top>
+					<top>230</top>
 					<left>480</left>
 					<width>1340</width>
-					<height>713</height>
+					<height>763</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
-				<control type="image">
-					<top>280</top>
-					<left>480</left>
-					<width>1340</width>
-					<height>713</height>
-					<texture>resource://resource.images.weatherfanart.single/$INFO[Weather.FanartCode].png</texture>
+				<control type="multiimage">
+					<top>263</top>
+					<left>510</left>
+					<width>1280</width>
+					<height>700</height>
+					<imagepath>resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]</imagepath>
 				</control>
 			</control>
 		</control>

@@ -139,7 +139,6 @@
 					<width>48</width>
 					<height>48</height>
 					<aspectratio>keep</aspectratio>
-					<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
 					<texture>$VAR[MediaInfoOverlayVar]</texture>
 				</control>
 				<control type="grouplist">
