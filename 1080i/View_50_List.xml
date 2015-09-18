@@ -38,11 +38,13 @@
 					<onright>50</onright>
 					<control type="button" id="4301">
 						<description>background close area</description>
-						<width>502</width>
-						<height>90</height>
-						<align>center</align>
-						<label>Read more</label>
+						<width>auto</width>
+						<height>95</height>
+						<textoffsetx>30</textoffsetx>
+						<label>Read more...</label>
 						<font>font12</font>
+						<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
 						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
 						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
