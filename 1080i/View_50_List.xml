@@ -18,15 +18,36 @@
 					<height>746</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
-				<control type="textbox">
+				<control type="textbox" id="4380">
 					<right>130</right>
 					<top>194</top>
 					<width>429</width>
-					<height>413</height>
+					<height>346</height>
 					<align>left</align>
 					<font>font_textbox</font>
 					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
 					<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
+				</control>
+				<control type="grouplist" id="4300">
+					<left>1470</left>
+					<top>530</top>
+					<alignment>center</alignment>
+					<orientation>horizontal</orientation>
+					<width>400</width>
+					<onleft>60</onleft>
+					<onright>50</onright>
+					<control type="button" id="4301">
+						<description>background close area</description>
+						<width>auto</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<label>Read more...</label>
+						<font>font12</font>
+						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
+						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+						<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
+						<visible>IntegerGreaterThan(Container(4380).NumPages,1)</visible>
+					</control>
 				</control>
 				<control type="textbox">
 					<right>130</right>
@@ -371,7 +392,7 @@
 					<width>12</width>
 					<height>706</height>
 					<onleft>50</onleft>
-					<onright>50</onright>
+					<onright>4301</onright>
 					<orientation>vertical</orientation>
 				</control>
 			</control>
