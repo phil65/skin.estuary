@@ -66,7 +66,7 @@
 						<param name="item5_onclick" value="ActivateWindow(videos,MovieTags,return)" />
 						<param name="item5_icon" value="tags.png" />
 						<param name="item6_onclick" value="ActivateWindow(videos,library://video/movies/,return)" />
-						<param name="item6_icon" value="movieslibrary.png" />
+						<param name="item6_icon" value="media.png" />
 						<param name="item7_onclick" value="UpdateLibrary(video)" />
 						<param name="item7_icon" value="updatelibrary.png" />
 					</include>
@@ -129,7 +129,7 @@
 					<param name="item5_onclick" value="ActivateWindow(Videos,TVShowTags,return)" />
 					<param name="item5_icon" value="tags.png" />
 					<param name="item6_onclick" value="ActivateWindow(videos,library://video/tvshows/)" />
-					<param name="item6_icon" value="tvlibrary.png" />
+					<param name="item6_icon" value="media.png" />
 					<param name="item7_onclick" value="UpdateLibrary(video)" />
 					<param name="item7_icon" value="updatelibrary.png" />
 				</include>
@@ -185,7 +185,7 @@
 					<param name="item5_onclick" value="ActivateWindow(music,Playlists,return)" />
 					<param name="item5_icon" value="playlists.png" />
 					<param name="item6_onclick" value="ActivateWindow(Music,root)" />
-					<param name="item6_icon" value="music.png" />
+					<param name="item6_icon" value="media.png" />
 					<param name="item7_onclick" value="UpdateLibrary(music)" />
 					<param name="item7_icon" value="updatelibrary.png" />
 				</include>
