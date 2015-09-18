@@ -561,7 +561,7 @@
 			<item>
 				<label>Updates available</label>
 				<onclick>ActivateWindow(addonbrowser,addons://outdated/,return)</onclick>
-				<icon>icons/settings/addons.png</icon>
+				<icon>icons/settings/update-available.png</icon>
 				<visible>!Stringcompare(Container(8000).NumItems,0)</visible>
 			</item>
 			<item>
@@ -1068,12 +1068,12 @@
 				<visible>!Window.IsActive(PVR)</visible>
 			</control>
 			<control type="label">
-				<label>$INFO[Control.GetLabel(10),: [COLOR button_focus],[/COLOR]]</label>
+				<label>$INFO[Control.GetLabel(10),: ]</label>
 				<include>BreadcrumbsLabel</include>
 				<visible>!Stringcompare(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
 			</control>
 			<control type="label">
-				<label> ([COLOR button_focus]Filters active[/COLOR])</label>
+				<label>(Filtered)</label>
 				<include>BreadcrumbsLabel</include>
 				<visible>Container.Filtered</visible>
 			</control>
