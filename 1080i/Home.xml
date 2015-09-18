@@ -345,15 +345,15 @@
 					<param name="list_id" value="12900"/>
 					<param name="ondown_id" value="12100"/>
 					<param name="item1_onclick" value="ActivateWindow(TVChannels)" />
-					<param name="item1_icon" value="" />
+					<param name="item1_icon" value="channels.png" />
 					<param name="item2_onclick" value="ActivateWindow(TVGuide)" />
-					<param name="item2_icon" value="" />
+					<param name="item2_icon" value="guide.png" />
 					<param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
-					<param name="item3_icon" value="" />
+					<param name="item3_icon" value="recordings.png" />
 					<param name="item4_onclick" value="ActivateWindow(TVTimers)" />
-					<param name="item4_icon" value="" />
+					<param name="item4_icon" value="timers.png" />
 					<param name="item5_onclick" value="ActivateWindow(TVSearch)" />
-					<param name="item5_icon" value="" />
+					<param name="item5_icon" value="tv-search.png" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
 				</include>
@@ -418,15 +418,15 @@
 					<param name="list_id" value="13900"/>
 					<param name="ondown_id" value="13100"/>
 					<param name="item1_onclick" value="ActivateWindow(RadioChannels)" />
-					<param name="item1_icon" value="" />
+					<param name="item1_icon" value="channels.png" />
 					<param name="item2_onclick" value="ActivateWindow(RadioGuide)" />
-					<param name="item2_icon" value="" />
+					<param name="item2_icon" value="guide.png" />
 					<param name="item3_onclick" value="ActivateWindow(RadioRecordings)" />
-					<param name="item3_icon" value="" />
+					<param name="item3_icon" value="recordings.png" />
 					<param name="item4_onclick" value="ActivateWindow(RadioTimers)" />
-					<param name="item4_icon" value="" />
+					<param name="item4_icon" value="timers.png" />
 					<param name="item5_onclick" value="ActivateWindow(RadioSearch)" />
-					<param name="item5_icon" value="" />
+					<param name="item5_icon" value="tv-search.png" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
 				</include>
@@ -577,13 +577,13 @@
 					<param name="list_id" value="15900"/>
 					<param name="ondown_id" value="15100"/>
 					<param name="item1_onclick" value="Weather.Refresh" />
-					<param name="item1_icon" value="" />
+					<param name="item1_icon" value="updatelibrary.png" />
 					<param name="item2_onclick" value="Weather.LocationPrevious" />
-					<param name="item2_icon" value="" />
+					<param name="item2_icon" value="location-previous.png" />
 					<param name="item3_onclick" value="Weather.LocationNext" />
-					<param name="item3_icon" value="" />
+					<param name="item3_icon" value="location-next.png" />
 					<param name="item4_onclick" value="ActivateWindow(weathersettings)" />
-					<param name="item4_icon" value="" />
+					<param name="item4_icon" value="weather-settings.png" />
 					<param name="item5_vis" value="False" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
