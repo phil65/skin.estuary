@@ -21,15 +21,15 @@
 				<viewtype label="Icon Wall">icon</viewtype>
 				<itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files) | Container.Content(playlists)">
 					<control type="group">
-						<posy>9</posy>
+						<posy>2</posy>
 						<control type="image">
 							<width>400</width>
-							<height>230</height>
+							<height>245</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
 							<left>135</left>
-							<top>30</top>
+							<top>20</top>
 							<width>130</width>
 							<height>130</height>
 							<texture>$INFO[ListItem.Icon,icons/defaulticons/]</texture>
@@ -37,19 +37,19 @@
 						</control>
 						<control type="image">
 							<posx>19</posx>
-							<posy>159</posy>
+							<posy>149</posy>
 							<width>359</width>
-							<height>50</height>
+							<height>75</height>
 							<texture colordiffuse="border_alpha">colors/black.png</texture>
 						</control>
-						<control type="label">
+						<control type="textbox">
 							<left>25</left>
-							<top>160</top>
+							<top>140</top>
 							<width>350</width>
-							<height>400</height>
+							<height>88</height>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
-							<textcolor>white</textcolor>
+							<aligny>center</aligny>
 						</control>
 					</control>
 				</itemlayout>
@@ -61,21 +61,21 @@
 						<animation type="UnFocus" reversible="false">
 							<effect type="zoom" center="auto" start="108" end="100" time="150" tween="sine" />
 						</animation>
-						<posy>9</posy>
+						<posy>2</posy>
 						<control type="image">
 							<width>400</width>
-							<height>230</height>
+							<height>245</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
 							<width>400</width>
-							<height>230</height>
+							<height>245</height>
 							<texture border="40">buttons/button-theme-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="image">
 							<left>135</left>
-							<top>30</top>
+							<top>20</top>
 							<width>130</width>
 							<height>130</height>
 							<texture>$INFO[ListItem.Icon,icons/defaulticons/]</texture>
@@ -83,18 +83,19 @@
 						</control>
 						<control type="image">
 							<posx>19</posx>
-							<posy>159</posy>
+							<posy>149</posy>
 							<width>359</width>
-							<height>50</height>
+							<height>75</height>
 							<texture colordiffuse="border_alpha">colors/black.png</texture>
 						</control>
-						<control type="label">
+						<control type="textbox">
 							<left>25</left>
-							<top>160</top>
+							<top>140</top>
 							<width>350</width>
-							<height>400</height>
+							<height>88</height>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
+							<aligny>center</aligny>
 						</control>
 					</control>
 				</focusedlayout>
