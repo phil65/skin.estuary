@@ -116,14 +116,14 @@
 				<control type="label">
 					<left>695</left>
 					<top>400</top>
-					<width>1160</width>
+					<width>930</width>
 					<height>40</height>
 					<label>$INFO[ListItem.Label]</label>
 					<font>font30_title</font>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 				<control type="label">
-					<right>135</right>
+					<right>200</right>
 					<top>400</top>
 					<width>1160</width>
 					<height>40</height>
@@ -132,6 +132,15 @@
 					<textcolor>button_focus</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<align>right</align>
+				</control>
+				<control type="image">
+					<right>130</right>
+					<top>410</top>
+					<width>48</width>
+					<height>48</height>
+					<aspectratio>keep</aspectratio>
+					<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
+					<texture>$VAR[MediaInfoOverlayVar]</texture>
 				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
