@@ -35,7 +35,7 @@
 			<control type="grouplist" id="9000">
 				<top>90</top>
 				<include name="MediaMenuListCommon">
-					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(songs) | Container.Content(albums)" />
+					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(albums)" />
 				</include>
 				<control type="label" id="203">
 					<description>Actions</description>
