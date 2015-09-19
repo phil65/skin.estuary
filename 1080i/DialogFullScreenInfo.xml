@@ -5,49 +5,27 @@
 	<defaultcontrol>noop</defaultcontrol>
 	<controls>
 		<control type="group" id="1">
-			<control type="group" id="1">
-				<left>30</left>
-				<top>870</top>
-				<visible>!VideoPlayer.Content(LiveTV) | [VideoPlayer.Content(LiveTV) + VideoPlayer.HasEpg]</visible>
-				<animation effect="fade" time="400">VisibleChange</animation>
-				<control type="progress" id="1">
-					<description>ProgressbarCache</description>
-					<left>0</left>
-					<top>0</top>
-					<width>1860</width>
-					<height>30</height>
-					<info>Player.ProgressCache</info>
-					<reveal>true</reveal>
-					<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-					<visible>!Window.IsVisible(videoosd)</visible>
-				</control>
-				<control type="progress" id="1">
-					<description>Progressbar</description>
-					<left>0</left>
-					<top>0</top>
-					<width>1860</width>
-					<height>30</height>
-					<info>Player.Progress</info>
-					<reveal>true</reveal>
-					<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-					<visible>!Window.IsVisible(videoosd)</visible>
-				</control>
-			</control>
+			<posy>900</posy>
 			<control type="image">
-				<description>Info Panel</description>
-				<left>30</left>
-				<top>650</top>
-				<width>1860</width>
-				<height>190</height>
-				<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+				<left>10</left>
+				<top>-110</top>
+				<width>1900</width>
+				<height>270</height>
+				<texture border="40">buttons/dialogbutton-nofo.png</texture>
+			</control>
+			<control type="textbox" id="1">
+				<left>52</left>
+				<top>-80</top>
+				<width>1600</width>
+				<height>114</height>
+				<label>$INFO[VideoPlayer.Plot]</label>
+				<align>justify</align>
+				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
 			</control>
 			<control type="image" id="1">
 				<description>TV Cover</description>
 				<right>30</right>
-				<top>540</top>
+				<top>-160</top>
 				<width>200</width>
 				<height>300</height>
 				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(tvshow.poster)]</texture>
@@ -55,40 +33,20 @@
 				<visible>VideoPlayer.Content(Episodes)</visible>
 			</control>
 			<control type="image" id="1">
-				<description>General Cover</description>
-				<right>30</right>
-				<top>650</top>
-				<width>200</width>
-				<height>190</height>
-				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
-				<aspectratio aligny="bottom">scale</aspectratio>
-				<visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(LiveTV) | VideoPlayer.Content(Episodes)]</visible>
-			</control>
-			<control type="image" id="1">
 				<description>Movie Cover</description>
 				<right>30</right>
-				<top>540</top>
+				<top>-160</top>
 				<width>200</width>
 				<height>300</height>
 				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>
-			<control type="image" id="1">
-				<description>LiveTV Cover</description>
-				<right>30</right>
-				<top>650</top>
-				<width>200</width>
-				<height>190</height>
-				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
-				<aspectratio aligny="bottom">scale</aspectratio>
-				<visible>VideoPlayer.Content(LiveTV)</visible>
-			</control>
 			<control type="label" id="1">
 				<description>Heading label</description>
 				<left>50</left>
-				<top>600</top>
-				<width>910</width>
+				<top>-140</top>
+				<width>1010</width>
 				<height>25</height>
 				<aligny>center</aligny>
 				<font>font30</font>
@@ -98,8 +56,6 @@
 				<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
 			</control>
 			<control type="group" id="1">
-				<left>50</left>
-				<top>600</top>
 				<control type="label" id="1">
 					<description>Music Info label</description>
 					<left>20</left>
@@ -112,15 +68,7 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(MusicVideos)</visible>
 				</control>
-				<control type="textbox" id="1">
-					<left>0</left>
-					<top>73</top>
-					<width>1600</width>
-					<height>146</height>
-					<label>$INFO[VideoPlayer.Plot]</label>
-					<align>justify</align>
-					<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
-				</control>
+
 				<control type="label" id="1">
 					<right>255</right>
 					<top>65</top>
@@ -152,17 +100,11 @@
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 			</control>
+
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd)</visible>
 				<animation effect="fade" time="400">VisibleChange</animation>
-				<control type="image">
-					<description>Menu Panel</description>
-					<left>30</left>
-					<top>900</top>
-					<width>1860</width>
-					<height>140</height>
-					<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-				</control>
+
 				<control type="label" id="1">
 					<description>Rating</description>
 					<left>20</left>
