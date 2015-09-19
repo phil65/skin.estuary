@@ -4,10 +4,10 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<control type="button" id="13">
-				<posx>836</posx>
+			<control type="button" id="131">
+				<posx>584</posx>
 				<posy>164</posy>
-				<width>1014</width>
+				<width>520</width>
 				<height>509</height>
 				<textoffsetx>40</textoffsetx>
 				<textoffsety>20</textoffsety>
@@ -15,14 +15,71 @@
 				<font>font_textbox</font>
 				<label>-</label>
 			</control>
-			<control type="label" id="400">
-				<posx>886</posx>
+			<control type="button" id="130">
+				<posx>1090</posx>
+				<posy>164</posy>
+				<width>760</width>
+				<height>509</height>
+				<textoffsetx>40</textoffsetx>
+				<textoffsety>20</textoffsety>
+				<aligny>bottom</aligny>
+				<font>font_textbox</font>
+				<label>-</label>
+			</control>
+			<control type="image">
+				<posx>1117</posx>
+				<posy>190</posy>
+				<width>703</width>
+				<height>455</height>
+				<aspectratio>scale</aspectratio>
+				<texture>$INFO[ListItem.Art(fanart)]</texture>
+				<visible>IsEmpty(Control.GetLabel(400))</visible>
+			</control>
+			<control type="label">
+				<posx>620</posx>
 				<posy>200</posy>
-				<width>914</width>
+				<width>680</width>
 				<height>430</height>
 				<wrapmultiline>true</wrapmultiline>
 				<align>left</align>
-				<label>[B]$INFO[ListItem.Property(Artist_Mood),,[CR]][/B][COLOR=white]$INFO[ListItem.Property(Artist_Description)][/COLOR]</label>
+				<label>$VAR[MusicInfoListHeaderVar,[B],[/B]]</label>
+				<textcolor>button_focus</textcolor>
+			</control>
+			<control type="list" id="50">
+				<posx>610</posx>
+				<posy>240</posy>
+				<width>455</width>
+				<height>450</height>
+				<orientation>vertical</orientation>
+				<focusedlayout height="40" width="455">
+					<control type="label">
+						<left>10</left>
+						<height>50</height>
+						<width>455</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2,[COLOR button_focus],: [/COLOR]]$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+				</focusedlayout>
+				<itemlayout height="40" width="455">
+					<control type="label">
+						<left>10</left>
+						<height>50</height>
+						<width>455</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2,[COLOR button_focus],: [/COLOR]]$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+				</itemlayout>
+			</control>
+			<control type="label" id="400">
+				<posx>1130</posx>
+				<posy>200</posy>
+				<width>680</width>
+				<height>430</height>
+				<wrapmultiline>true</wrapmultiline>
+				<align>left</align>
+				<label>$INFO[ListItem.Property(Artist_Description),[B]Biography[/B][CR][COLOR=white],[/COLOR]]</label>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="grouplist" id="9000">
@@ -37,11 +94,25 @@
 				<align>left</align>
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
-				<control type="radiobutton" id="5">
+				<control type="radiobutton" id="600">
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
-					<label>206</label>
+					<label>Go to albums</label>
+					<visible>Container.Content(artists)</visible>
+				</control>
+				<control type="radiobutton" id="600">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
+					<label>Go to songs</label>
+					<visible>Container.Content(albums)</visible>
+				</control>
+				<control type="radiobutton" id="120">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
+					<label>Show fanart</label>
 				</control>
 				<control type="radiobutton" id="6">
 					<include name="VideoInfoButtonsCommon">
@@ -61,41 +132,21 @@
 					</include>
 					<label>20413</label>
 				</control>
-				<control type="radiobutton" id="120">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
-					</include>
-					<label>Show fanart</label>
-				</control>
-			</control>
-			<control type="group">
-				<posx>678</posx>
-				<posy>885</posy>
-				<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
-				<control type="label">
-					<posx>158</posx>
-					<width>564</width>
-					<height>68</height>
-					<label>24096</label>
-					<font>font14</font>
-					<textcolor>grey</textcolor>
-					<scroll>true</scroll>
-				</control>
-				<control type="textbox">
-					<posx>158</posx>
-					<posy>54</posy>
-					<width>564</width>
-					<height>68</height>
-					<aligny>top</aligny>
-					<label>$INFO[ListItem.Property(Addon.broken)]</label>
-					<font>font14</font>
-					<textcolor>grey</textcolor>
-				</control>
 			</control>
 		</control>
-		<include name="InfoDialogTopBarInfo">
-			<param name="main_label" value="$INFO[ListItem.Artist]" />
-			<param name="sub_label" value="$INFO[ListItem.Genre]" />
-		</include>
+		<control type="group">
+			<visible>Container.Content(artists)</visible>
+			<include name="InfoDialogTopBarInfo">
+				<param name="main_label" value="$INFO[ListItem.Artist]" />
+				<param name="sub_label" value="$INFO[ListItem.Genre]" />
+			</include>
+		</control>
+		<control type="group">
+			<visible>Container.Content(albums)</visible>
+			<include name="InfoDialogTopBarInfo">
+				<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
+				<param name="sub_label" value="$INFO[ListItem.Artist]" />
+			</include>
+		</control>
 	</controls>
 </window>
