@@ -605,7 +605,7 @@
 			</item>
 			<item>
 				<label>24001</label>
-				<onclick>ActivateWindow(AddonBrowser)</onclick>
+				<onclick>ActivateWindow(AddonBrowser,root)</onclick>
 				<icon>icons/settings/addons.png</icon>
 			</item>
 			<item>

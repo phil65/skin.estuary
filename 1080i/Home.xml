@@ -241,7 +241,7 @@
 				<include name="SubMenu">
 					<param name="list_id" value="8900"/>
 					<param name="ondown_id" value="8100"/>
-					<param name="item1_onclick" value="ActivateWindow(addonbrowser)" />
+					<param name="item1_onclick" value="ActivateWindow(addonbrowser,root)" />
 					<param name="item1_icon" value="add-ons.png" />
 					<param name="item2_vis" value="False" />
 					<param name="item3_vis" value="False" />
