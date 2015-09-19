@@ -37,7 +37,7 @@
 			</control>
 			<control type="label">
 				<posx>620</posx>
-				<posy>200</posy>
+				<posy>197</posy>
 				<width>680</width>
 				<height>430</height>
 				<wrapmultiline>true</wrapmultiline>
@@ -47,11 +47,11 @@
 			</control>
 			<control type="list" id="50">
 				<posx>610</posx>
-				<posy>240</posy>
+				<posy>237</posy>
 				<width>455</width>
 				<height>450</height>
 				<orientation>vertical</orientation>
-				<focusedlayout height="40" width="455">
+				<focusedlayout height="37" width="455">
 					<control type="label">
 						<left>10</left>
 						<height>50</height>
@@ -61,7 +61,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</focusedlayout>
-				<itemlayout height="40" width="455">
+				<itemlayout height="37" width="455">
 					<control type="label">
 						<left>10</left>
 						<height>50</height>
@@ -74,7 +74,7 @@
 			</control>
 			<control type="label" id="400">
 				<posx>1130</posx>
-				<posy>200</posy>
+				<posy>197</posy>
 				<width>680</width>
 				<height>430</height>
 				<wrapmultiline>true</wrapmultiline>
@@ -101,7 +101,7 @@
 					<label>Go to albums</label>
 					<visible>Container.Content(artists)</visible>
 				</control>
-				<control type="radiobutton" id="600">
+				<control type="radiobutton" id="601">
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
