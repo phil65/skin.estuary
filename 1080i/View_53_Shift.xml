@@ -92,7 +92,7 @@
 								<width>300</width>
 								<height>88</height>
 								<align>center</align>
-							<aligny>center</aligny>
+								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</control>
@@ -125,15 +125,15 @@
 				<visible>Control.IsVisible(53)</visible>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
+				<top>-20</top>
 				<control type="group">
-					<top>-20</top>
+					<animation effect="fade" time="200" start="0" end="100" condition="!IsEmpty(Control.GetLabel(53200))">Conditional</animation>
+					<animation effect="fade" time="200" start="100" end="0" condition="IsEmpty(Control.GetLabel(53200))">Conditional</animation>
 					<control type="image">
 						<left>90</left>
 						<width>880</width>
 						<height>192</height>
 						<texture border="22">dialogs/dialog-bg.png</texture>
-						<visible>!IsEmpty(Control.GetLabel(53200))</visible>
-						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 					<control type="textbox" id="53200">
 						<left>130</left>
@@ -145,13 +145,15 @@
 						<shadowcolor>text_shadow</shadowcolor>
 						<align>left</align>
 					</control>
+				</control>
+				<control type="group">
+					<animation effect="fade" time="200" start="0" end="100" condition="!IsEmpty(Control.GetLabel(53300))">Conditional</animation>
+					<animation effect="fade" time="200" start="100" end="0" condition="IsEmpty(Control.GetLabel(53300))">Conditional</animation>
 					<control type="image">
 						<right>90</right>
 						<width>880</width>
 						<height>192</height>
 						<texture border="22">dialogs/dialog-bg.png</texture>
-						<visible>!IsEmpty(Control.GetLabel(53300))</visible>
-						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 					<control type="textbox" id="53300">
 						<left>1000</left>
