@@ -49,7 +49,7 @@
 				<onup>87</onup>
 				<ondown>noop</ondown>
 				<onleft>70044</onleft>
-				<onright>701</onright>
+				<onright>70011</onright>
 				<control type="radiobutton" id="600">
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
@@ -100,6 +100,13 @@
 				<ondown>noop</ondown>
 				<onleft>605</onleft>
 				<onright>600</onright>
+				<control type="radiobutton" id="70011">
+					<label>19033</label>
+					<include name="OSDButton">
+						<param name="texture" value="osd/fullscreen/buttons/information.png"/>
+					</include>
+					<onclick>ActivateWindow(fullscreeninfo)</onclick>
+				</control>
 				<control type="radiobutton" id="701">
 					<label>13396</label>
 					<include name="OSDButton">
