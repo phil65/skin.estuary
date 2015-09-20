@@ -55,6 +55,10 @@
 		<value condition="Container.Content(albums)">Tracklist</value>
 		<value>Discography</value>
 	</variable>
+	<variable name="MusicInfoListLabelVar">
+		<value condition="Container.Content(artists)">$INFO[ListItem.Label2,[COLOR button_focus],: [/COLOR]]$INFO[ListItem.Label]</value>
+		<value>$INFO[ListItem.TrackNumber,[COLOR button_focus],: [/COLOR]]$INFO[ListItem.Label]</value>
+	</variable>
 	<variable name="ListBoxInfoVar">
 		<value condition="Container.Content(addons)">$INFO[ListItem.Property(Addon.Description)]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Genre,[COLOR button_focus]Genre: [/COLOR],[CR]]$INFO[ListItem.Property(album_description)]</value>
