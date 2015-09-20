@@ -100,11 +100,12 @@
 		</control>
 		<control type="grouplist" id="9000">
 			<left>880</left>
-			<top>150</top>
+			<top>147</top>
 			<orientation>vertical</orientation>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<ondown>12</ondown>
+			<itemgap>7</itemgap>
 			<include name="DefaultDialogButton">
 				<param name="id" value="11" />
 				<param name="label" value="1024" />
