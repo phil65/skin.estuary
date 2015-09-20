@@ -235,18 +235,6 @@
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 						<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
 					</control>
-					<control type="radiobutton" id="10">
-						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultEPG.png" />
-						</include>
-						<label>$LOCALIZE[13511]</label>
-					</control>
-					<control type="radiobutton" id="6">
-						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultGames.png" />
-						</include>
-						<label>Re-scrape</label>
-					</control>
 					<control type="radiobutton" id="101">
 						<include name="VideoInfoButtonsCommon">
 							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
@@ -260,6 +248,18 @@
 							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
 						</include>
 						<label>Show fanart</label>
+					</control>
+					<control type="radiobutton" id="10">
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultEPG.png" />
+						</include>
+						<label>$LOCALIZE[13511]</label>
+					</control>
+					<control type="radiobutton" id="6">
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultGames.png" />
+						</include>
+						<label>Re-scrape</label>
 					</control>
 				</control>
 				<control type="image">
