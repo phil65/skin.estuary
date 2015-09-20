@@ -5,22 +5,22 @@
 		<control type="group">
 			<include>OpenClose_Right</include>
 			<control type="button" id="13">
-				<posx>870</posx>
+				<posx>815</posx>
 				<posy>162</posy>
-				<width>950</width>
+				<width>1000</width>
 				<height>509</height>
 				<aligny>bottom</aligny>
 				<font>font_textbox</font>
 				<label>-</label>
 			</control>
 			<control type="label" id="400">
-				<posx>920</posx>
+				<posx>855</posx>
 				<posy>200</posy>
-				<width>850</width>
+				<width>920</width>
 				<height>396</height>
 				<wrapmultiline>true</wrapmultiline>
 				<align>left</align>
-				<label>[B]$INFO[ListItem.Property(Addon.Summary)][/B][COLOR=white][CR]$INFO[ListItem.Property(Addon.Description)][/COLOR][COLOR=white][CR]$INFO[ListItem.Property(Addon.Disclaimer),[CR][CR]$LOCALIZE[24052]: ][/COLOR]</label>
+				<label>$INFO[ListItem.Property(Addon.Summary),[B],[/B][CR]][COLOR=white]$INFO[ListItem.Property(Addon.Description)][/COLOR][COLOR=white][CR]$INFO[ListItem.Property(Addon.Disclaimer),[CR][CR]$LOCALIZE[24052]: ][/COLOR]</label>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="grouplist" id="9000">
