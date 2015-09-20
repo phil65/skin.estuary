@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="MediaMenuItemsCommon">
-		<width>400</width>
+		<width>430</width>
 		<textoffsetx>20</textoffsetx>
 		<top>0</top>
 		<height>70</height>
@@ -23,7 +23,7 @@
 				<control type="grouplist" id="9000">
 					<top>90</top>
 					<left>0</left>
-					<width>400</width>
+					<width>430</width>
 					<height>1080</height>
 					<onleft>9000</onleft>
 					<onup>9000</onup>
@@ -154,7 +154,7 @@
 		</definition>
 	</include>
 	<include name="MediaMenuLabelCommon">
-		<width>400</width>
+		<width>430</width>
 		<textoffsetx>20</textoffsetx>
 		<textoffsety>15</textoffsety>
 		<height>50</height>
@@ -178,7 +178,7 @@
 			<description>Menu Panel</description>
 			<left>0</left>
 			<top>80</top>
-			<width>450</width>
+			<width>484</width>
 			<height>920</height>
 			<texture>lists/panel.png</texture>
 		</control>
@@ -188,7 +188,7 @@
 		<definition>
 			<left>0</left>
 			<top>100</top>
-			<width>400</width>
+			<width>430</width>
 			<height>1080</height>
 			<onleft>9000</onleft>
 			<onup>9000</onup>
