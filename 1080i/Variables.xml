@@ -129,8 +129,8 @@
 	</variable>
 	<variable name="MediaInfoOverlayVar">
 		<value condition="ListItem.IsCollection">icons/lists/Set.png</value>
-		<value condition="!ListItem.IsStereoscopic">$INFO[ListItem.VideoResolution,icons/lists/,.png]</value>
-		<value>icons/lists/3D.png</value>
+		<value condition="ListItem.IsStereoscopic">icons/lists/3D.png</value>
+		<value>$INFO[ListItem.VideoResolution,icons/lists/,.png]</value>
 	</variable>
 	<variable name="HomeFanartVar">
 		<value condition="!IsEmpty(Container(5100).ListItem.Art(fanart)) + Control.HasFocus(5100)">$INFO[Container(5100).ListItem.Art(fanart)]</value>
