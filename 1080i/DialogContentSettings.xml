@@ -10,7 +10,7 @@
 		<control type="group">
 			<include name="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="1420" />
-				<param name="DialogBackgroundHeight" value="650" />
+				<param name="DialogBackgroundHeight" value="725" />
 				<param name="DialogHeaderLabel" value="$LOCALIZE[20333]" />
 				<param name="DialogHeaderId" value="1" />
 			</include>
@@ -31,7 +31,7 @@
 					<left>30</left>
 					<top>120</top>
 					<orientation>vertical</orientation>
-					<onup>9001</onup>
+					<onup>5</onup>
 					<ondown>5</ondown>
 					<onright>9001</onright>
 					<onleft>9001</onleft>
@@ -49,6 +49,12 @@
 						<label>Choose Scraper</label>
 						<label2>Scraper name</label2>
 						<onclick>Notification(Todo for core,Open SelectDialog with scraper list)</onclick>
+					</control>
+					<control type="button" id="22">
+						<description>Default Button</description>
+						<include>SettingsItemCommon</include>
+						<width>1050</width>
+						<label>Scraper settings</label>
 					</control>
 				</control>
 				<!-- 			<control type="list" id="21">
@@ -123,7 +129,7 @@
 				<control type="label">
 					<description>Scanning Options Header</description>
 					<left>60</left>
-					<top>260</top>
+					<top>335</top>
 					<width>320</width>
 					<height>100</height>
 					<font>font12</font>
@@ -135,11 +141,11 @@
 				<control type="grouplist" id="5">
 					<description>control area</description>
 					<left>30</left>
-					<top>320</top>
+					<top>395</top>
 					<width>1050</width>
 					<height>400</height>
 					<itemgap>-25</itemgap>
-					<onup>222</onup>
+					<onup>22</onup>
 					<ondown>20</ondown>
 					<onright>9001</onright>
 					<onleft>9001</onleft>
@@ -169,10 +175,6 @@
 				<include name="DefaultDialogButton">
 					<param name="id" value="29" />
 					<param name="label" value="222" />
-				</include>
-				<include name="DefaultDialogButton">
-					<param name="id" value="22" />
-					<param name="label" value="5" />
 				</include>
 			</control>
 		</control>
