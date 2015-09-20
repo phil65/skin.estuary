@@ -22,12 +22,10 @@
 						<textoffsetx>40</textoffsetx>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
 						<label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
 						<visible>!IsEmpty(ListItem.Director)</visible>
 					</control>
 					<control type="button" id="131">
-						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
 						<width>505</width>
 						<height>100</height>
 						<textoffsetx>40</textoffsetx>
@@ -38,23 +36,22 @@
 						<visible>!IsEmpty(ListItem.Writer)</visible>
 					</control>
 					<control type="button" id="136">
-						<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(tvshows)">Conditional</animation>
 						<width>505</width>
 						<height>100</height>
 						<textoffsetx>40</textoffsetx>
 						<font>font12</font>
 						<aligny>center</aligny>
-						<label>[COLOR button_focus]User rating: [/COLOR]$INFO[ListItem.UserRating]</label>
+						<label>[COLOR button_focus]Rating: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
 						<onclick>IncreaseRating</onclick>
 					</control>
-					<control type="label" id="135">
+					<control type="button" id="135">
 						<width>505</width>
-						<height>90</height>
-						<textoffsetx>20</textoffsetx>
-						<textoffsety>20</textoffsety>
-						<aligny>bottom</aligny>
+						<height>100</height>
+						<textoffsetx>40</textoffsetx>
 						<font>font12</font>
-						<label>$INFO[ListItem.Premiered,$LOCALIZE[20416]: ]</label>
+						<aligny>center</aligny>
+						<textcolor>button_focus</textcolor>
+						<label>$LOCALIZE[20416]: [COLOR white]$INFO[ListItem.Premiered,][/COLOR]</label>
 						<visible>Container.Content(tvshows)</visible>
 					</control>
 				</control>
@@ -231,14 +228,28 @@
 						<include name="VideoInfoButtonsCommon">
 							<param name="icon" value="icons/defaulticons/DefaultMusicSearch.png" />
 						</include>
-						<label>$LOCALIZE[31020]</label>
-						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-						<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
+						<label>Video extras</label>
+						<onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
+						<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
+						<onright>401</onright>
+					</control>
+						<control type="group" id="400">
+							<width>262</width>
+						<control type="radiobutton" id="401">
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/defaulticons/DefaultMusicSearch.png" />
+						</include>
+						<label>Your rating</label>
+						<onclick>SetRating</onclick>
+						<onleft>100</onleft>
+						<onright>101</onright>
+					</control>
 					</control>
 					<control type="radiobutton" id="101">
 						<include name="VideoInfoButtonsCommon">
 							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
 						</include>
+						<onleft>401</onleft>
 						<label>Extended Info</label>
 						<onclick>RunScript(script.extendedinfo,info=openinfodialog)</onclick>
 						<visible>System.HasAddon(script.extendedinfo)</visible>
@@ -306,7 +317,7 @@
 		</control>
 		<include name="InfoDialogTopBarInfo">
 			<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
-			<param name="sub_label" value="$INFO[ListItem.Genre]$INFO[ListItem.Artist]$INFO[ListItem.TVShowTitle]" />
+			<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
 		</include>
 	</controls>
 </window>

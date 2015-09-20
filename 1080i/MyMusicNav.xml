@@ -9,7 +9,7 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(musicinformation)">Conditional</animation>
 			<include name="View_50_List">
-				<param name="visible" value="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)" />
+				<param name="visible" value="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(directors)" />
 			</include>
 			<include name="View_52_IconWall">
 				<param name="visible" value="Container.Content() | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(playlists)" />
@@ -19,7 +19,7 @@
 				<param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
 			</include>
 			<include name="View_53_Shift">
-				<param name="visible" value="Container.Content(artists) | Container.Content(albums)" />
+				<param name="visible" value="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)" />
 			</include>
 		</control>
 		<control type="group">

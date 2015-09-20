@@ -132,6 +132,15 @@
 		<value condition="ListItem.IsStereoscopic">icons/lists/3D.png</value>
 		<value>$INFO[ListItem.VideoResolution,icons/lists/,.png]</value>
 	</variable>
+	<variable name="ListSubLabelVar">
+		<value condition="ListItem.IsCollection">$INFO[Container(5000).NumItems]</value>
+		<value>$INFO[ListItem.Year]</value>
+	</variable>
+	<variable name="VideoInfoSubLabelVar">
+		<value condition="Container.Content(movies) | Container.Content(tvshows)">$INFO[ListItem.Genre]$INFO[ListItem.RatingAndVotes, - ]</value>
+		<value condition="Container.Content(episodes)">[COLOR button_focus]$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ][/COLOR]$INFO[ListItem.TVShowTitle]</value>
+		<value>$INFO[ListItem.Year]</value>
+	</variable>
 	<variable name="HomeFanartVar">
 		<value condition="!IsEmpty(Container(5100).ListItem.Art(fanart)) + Control.HasFocus(5100)">$INFO[Container(5100).ListItem.Art(fanart)]</value>
 		<value condition="!IsEmpty(Container(5200).ListItem.Art(fanart)) + Control.HasFocus(5200)">$INFO[Container(5200).ListItem.Art(fanart)]</value>
