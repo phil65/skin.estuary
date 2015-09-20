@@ -137,7 +137,7 @@
 		<value>$INFO[ListItem.Year]</value>
 	</variable>
 	<variable name="VideoInfoSubLabelVar">
-		<value condition="Container.Content(movies) | Container.Content(tvshows)">$INFO[ListItem.Genre]$INFO[ListItem.RatingAndVotes, - ]</value>
+		<value condition="Container.Content(movies) | Container.Content(tvshows)">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(episodes)">[COLOR button_focus]$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ][/COLOR]$INFO[ListItem.TVShowTitle]</value>
 		<value>$INFO[ListItem.Year]</value>
 	</variable>
