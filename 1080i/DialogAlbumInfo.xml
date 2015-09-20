@@ -60,6 +60,16 @@
 						<label>$VAR[MusicInfoListLabelVar]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
+					<control type="label">
+						<left>0</left>
+						<height>50</height>
+						<width>455</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
+						<align>right</align>
+						<textcolor>button_focus</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
 				</focusedlayout>
 				<itemlayout height="37" width="455">
 					<control type="label">
@@ -68,6 +78,16 @@
 						<width>455</width>
 						<aligny>center</aligny>
 						<label>$VAR[MusicInfoListLabelVar]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<height>50</height>
+						<width>455</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
+						<align>right</align>
+						<textcolor>button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</itemlayout>
@@ -99,6 +119,8 @@
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
 					<label>Go to albums</label>
+					<onclick>Container.Update(musicdb://)</onclick>
+					<onclick>Action(close)</onclick>
 					<visible>Container.Content(artists)</visible>
 				</control>
 				<control type="radiobutton" id="601">
@@ -106,6 +128,8 @@
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
 					<label>Go to songs</label>
+					<onclick>Container.Update($INFO[ListItem.Path]/$INFO[ListItem.DBID])</onclick>
+					<onclick>Action(close)</onclick>
 					<visible>Container.Content(albums)</visible>
 				</control>
 				<control type="radiobutton" id="120">

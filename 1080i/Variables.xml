@@ -56,7 +56,7 @@
 		<value>Discography</value>
 	</variable>
 	<variable name="MusicInfoListLabelVar">
-		<value condition="Container.Content(artists)">$INFO[ListItem.Label2,[COLOR button_focus],: [/COLOR]]$INFO[ListItem.Label]</value>
+		<value condition="Container.Content(artists)">$INFO[ListItem.Label]</value>
 		<value>$INFO[ListItem.TrackNumber,[COLOR button_focus],: [/COLOR]]$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="ListBoxInfoVar">
