@@ -643,6 +643,13 @@
 								<texture border="40">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
+								<width>340</width>
+								<height>160</height>
+								<texture border="40">buttons/button-theme-fo.png</texture>
+								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							</control>
+							<control type="image">
 								<posy>45</posy>
 								<posx>25</posx>
 								<width>70</width>
@@ -659,15 +666,6 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>left</align>
 								<aligny>center</aligny>
-							</control>
-							<control type="image">
-								<left>20</left>
-								<top>20</top>
-								<width>300</width>
-								<height>120</height>
-								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-								<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
 					</focusedlayout>
