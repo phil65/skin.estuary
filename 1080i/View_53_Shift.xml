@@ -123,22 +123,19 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(53)</visible>
-				<include>Visible_Left</include>
-				<include>OpenClose_Left</include>
+				<include>Visible_Right</include>
+				<include>OpenClose_Right</include>
 				<include name="ShiftTextbox">
 					<param name="textbox_id" value="53200" />
 					<param name="textbox_content" value="$VAR[ShiftLeftTextBoxVar]" />
 				</include>
-			</control>
 				<control type="group">
-				<visible>Control.IsVisible(53)</visible>
-				<include>Visible_Right</include>
-				<include>OpenClose_Right</include>
-				<posx>860</posx>
-				<include name="ShiftTextbox">
-					<param name="textbox_id" value="53300" />
-					<param name="textbox_content" value="$VAR[ShiftRightTextBoxVar]" />
-				</include>
+					<posx>860</posx>
+					<include name="ShiftTextbox">
+						<param name="textbox_id" value="53300" />
+						<param name="textbox_content" value="$VAR[ShiftRightTextBoxVar]" />
+					</include>
+				</control>
 			</control>
 		</control>
 	</include>
