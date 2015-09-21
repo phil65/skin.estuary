@@ -15,7 +15,7 @@
 				<left>-20</left>
 				<top>-20</top>
 				<width>1090</width>
-				<height>740</height>
+				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)">Conditional</animation>
@@ -35,14 +35,14 @@
 						<left>0</left>
 						<top>0</top>
 						<width>1050</width>
-						<height>71</height>
+						<height>70</height>
 						<texture border="90,3,90,3">lists/separator.png</texture>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>1050</width>
-						<height>69</height>
+						<height>70</height>
 						<texture>lists/focus.png</texture>
 						<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
 					</control>
@@ -80,7 +80,7 @@
 						<left>0</left>
 						<top>0</top>
 						<width>1050</width>
-						<height>71</height>
+						<height>70</height>
 						<texture border="90,3,90,3">lists/separator.png</texture>
 					</control>
 					<control type="image">
@@ -118,7 +118,7 @@
 				<left>1055</left>
 				<top>1</top>
 				<width>12</width>
-				<height>698</height>
+				<height>704</height>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<orientation>vertical</orientation>

@@ -161,7 +161,7 @@
 					<left>1055</left>
 					<top>0</top>
 					<width>12</width>
-					<height>710</height>
+					<height>706</height>
 					<onleft>50</onleft>
 					<onright>103</onright>
 					<orientation>vertical</orientation>
@@ -174,8 +174,8 @@
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<include name="PVRInfoPanel">
-					<param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]" />
-					<param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
+					<param name="bottom_label1" value="$INFO[PVR.NextTimer]" />
+					<param name="bottom_label2" value="" />
 				</include>
 			</control>
 		</control>
