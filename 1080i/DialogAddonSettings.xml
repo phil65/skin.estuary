@@ -30,8 +30,8 @@
 		<include name="UpDownArrows">
 			<param name="container_id" value="2" />
 			<param name="posx" value="830" />
-			<param name="up_posy" value="-40" />
-			<param name="down_posy" value="810" />
+			<param name="up_posy" value="-42" />
+			<param name="down_posy" value="814" />
 		</include>
 		<control type="image">
 			<left>330</left>
@@ -79,7 +79,7 @@
 		</control>
 		<control type="button" id="13">
 			<description>Default Category Button</description>
-			<height>90</height>
+			<height>130</height>
 			<width>320</width>
 			<align>center</align>
 			<aligny>center</aligny>
