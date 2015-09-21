@@ -34,7 +34,7 @@
 					<top>85</top>
 					<width>400</width>
 					<height>400</height>
-					<itemgap>5</itemgap>
+					<itemgap>-15</itemgap>
 					<align>left</align>
 					<orientation>vertical</orientation>
 					<onleft>450</onleft>
@@ -60,10 +60,10 @@
 				</control>
 				<control type="image">
 					<left>1010</left>
-					<top>510</top>
+					<top>420</top>
 					<width>260</width>
-					<height>260</height>
-					<aspectratio>keep</aspectratio>
+					<height>380</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
 					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 					<bordersize>4</bordersize>
 					<texture border="4" background="true">$INFO[ListItem.Icon]</texture>
@@ -152,7 +152,7 @@
 					<left>20</left>
 					<top>100</top>
 					<width>940</width>
-					<height>562</height>
+					<height>700</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
 					<onup>451</onup>
