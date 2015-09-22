@@ -616,6 +616,7 @@
 							<width>70</width>
 							<height>70</height>
 							<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
 							<left>105</left>
@@ -655,6 +656,7 @@
 								<width>70</width>
 								<height>70</height>
 								<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="textbox">
 								<left>105</left>
