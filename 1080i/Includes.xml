@@ -1324,6 +1324,7 @@
 						<align>right</align>
 						<shadowcolor>text_shadow</shadowcolor>
 						<visible>Control.HasFocus(60) | Control.HasFocus(5199) | Control.HasFocus(5399) | Control.HasFocus(531) | Control.HasFocus(532)</visible>
+						<textcolor>button_focus</textcolor>
 						<label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,, • ]</label>
 					</control>
 					<control type="label">

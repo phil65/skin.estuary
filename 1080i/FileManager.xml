@@ -64,6 +64,7 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<shadowcolor>text_shadow</shadowcolor>
+					<textcolor>button_focus</textcolor>
 					<visible>Control.HasFocus(61)</visible>
 					<label>$INFO[Container(21).CurrentPage,, / ]$INFO[Container(21).NumPages,, • ]</label>
 				</control>
@@ -111,6 +112,7 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<shadowcolor>text_shadow</shadowcolor>
+					<textcolor>button_focus</textcolor>
 					<visible>Control.HasFocus(60)</visible>
 					<label>$INFO[Container(20).CurrentPage, • , / ]$INFO[Container(20).NumPages]</label>
 				</control>
