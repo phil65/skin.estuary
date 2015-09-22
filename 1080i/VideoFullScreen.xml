@@ -8,44 +8,40 @@
 				<posx>30</posx>
 				<posy>-465</posy>
 				<width>1860</width>
-				<height>625</height>
+				<height>710</height>
 				<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-				<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 				<animation effect="slide" end="0,250" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
 			</control>
-			<control type="group">
-				<posy>-52</posy>
-				<control type="label" id="10">
-					<posx>45</posx>
-					<posy>65</posy>
-					<width>1770</width>
-					<height>30</height>
-					<label>-</label>
-					<font>font12</font>
-				</control>
-				<control type="label" id="11">
-					<posx>45</posx>
-					<posy>95</posy>
-					<width>1770</width>
-					<height>30</height>
-					<label>-</label>
-					<font>font12</font>
-				</control>
-				<control type="label" id="12">
-					<posx>45</posx>
-					<posy>120</posy>
-					<width>1770</width>
-					<height>60</height>
-					<label>-</label>
-					<font>font12</font>
-				</control>
+			<control type="label" id="10">
+				<posx>45</posx>
+				<posy>15</posy>
+				<width>1770</width>
+				<height>60</height>
+				<label>-</label>
+				<font>font12</font>
+			</control>
+			<control type="label" id="11">
+				<posx>45</posx>
+				<posy>95</posy>
+				<width>1770</width>
+				<height>60</height>
+				<label>-</label>
+				<font>font12</font>
+			</control>
+			<control type="label" id="12">
+				<posx>45</posx>
+				<posy>175</posy>
+				<width>1770</width>
+				<height>60</height>
+				<label>-</label>
+				<font>font12</font>
 			</control>
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
+					<posy>240</posy>
 				<control type="label">
 					<description>Header</description>
 					<posx>50</posx>
-					<posy>180</posy>
 					<width>1720</width>
 					<height>65</height>
 					<align>center</align>
@@ -57,7 +53,7 @@
 				<control type="grouplist">
 					<orientation>vertical</orientation>
 					<posx>50</posx>
-					<posy>270</posy>
+					<posy>90</posy>
 					<include name="LeftRightAlignedInfoLine">
 						<param name="label" value="19012" />
 						<param name="value" value="$INFO[PVR.ActStreamClient]" />
@@ -73,7 +69,7 @@
 				</control>
 				<control type="group">
 					<posx>1470</posx>
-					<posy>270</posy>
+					<posy>90</posy>
 					<control type="label">
 						<description>Signal</description>
 						<width>250</width>
@@ -109,7 +105,7 @@
 				<control type="grouplist">
 					<orientation>vertical</orientation>
 					<posx>700</posx>
-					<posy>270</posy>
+					<posy>90</posy>
 					<include name="LeftRightAlignedInfoLine">
 						<param name="label" value="19010" />
 						<param name="value" value="$INFO[PVR.ActStreamBER]" />
