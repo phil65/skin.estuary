@@ -8,7 +8,7 @@
 				<posx>30</posx>
 				<posy>-465</posy>
 				<width>1860</width>
-				<height>710</height>
+				<height>740</height>
 				<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
 				<animation effect="slide" end="0,250" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
 			</control>
@@ -16,7 +16,7 @@
 				<posx>45</posx>
 				<posy>15</posy>
 				<width>1770</width>
-				<height>60</height>
+				<height>100</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
@@ -24,7 +24,7 @@
 				<posx>45</posx>
 				<posy>95</posy>
 				<width>1770</width>
-				<height>60</height>
+				<height>100</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
@@ -32,13 +32,13 @@
 				<posx>45</posx>
 				<posy>175</posy>
 				<width>1770</width>
-				<height>60</height>
+				<height>100</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
-					<posy>280</posy>
+					<posy>310</posy>
 				<control type="label">
 					<description>Header</description>
 					<posx>50</posx>
