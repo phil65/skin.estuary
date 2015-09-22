@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">11</defaultcontrol>
 	<coordinates>
-		<left>1170</left>
-		<top>30</top>
+		<left>1300</left>
+		<top>40</top>
 	</coordinates>
 	<include>OpenClose_Right</include>
 	<controls>
@@ -16,24 +16,42 @@
 				<height>1040</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>580</width>
+				<height>70</height>
+				<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
+			</control>
+			<control type="label" id="2">
+				<description>header label</description>
+				<textoffsetx>40</textoffsetx>
+				<top>0</top>
+				<width>580</width>
+				<height>70</height>
+				<font>font13_title</font>
+				<aligny>center</aligny>
+				<label>$INFO[VideoPlayer.ChannelGroup]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
 			<control type="label">
 				<description>header label</description>
 				<left>40</left>
-				<top>16</top>
-				<width>430</width>
-				<height>40</height>
-				<font>font12_title</font>
-				<label>$LOCALIZE[19222] - $INFO[VideoPlayer.ChannelName]</label>
-				<align>center</align>
+				<top>0</top>
+				<width>530</width>
+				<height>70</height>
+				<font>font13_title</font>
+				<label>$INFO[System.Time]</label>
+				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>button_focus</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Selected item's date</description>
-				<left>40</left>
-				<top>60</top>
-				<width>430</width>
+				<left>0</left>
+				<top>90</top>
+				<width>580</width>
 				<height>30</height>
 				<textcolor>grey2</textcolor>
 				<label>$INFO[Container(11).ListItem.StartDate]</label>
@@ -41,31 +59,31 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="list" id="11">
-				<left>30</left>
-				<top>100</top>
-				<width>650</width>
-				<height>490</height>
+				<left>0</left>
+				<top>150</top>
+				<width>580</width>
+				<height>780</height>
 				<onleft>60</onleft>
 				<onright>60</onright>
 				<onup>11</onup>
 				<ondown>11</ondown>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="58" width="650">
+				<itemlayout height="60" width="580">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>650</width>
-						<height>58</height>
+						<width>580</width>
+						<height>60</height>
 						<texture border="40">lists/separator.png</texture>
 					</control>
 					<control type="label">
-						<left>10</left>
+						<left>20</left>
 						<top>0</top>
-						<width>100</width>
-						<height>58</height>
-						<textcolor>grey2</textcolor>
+						<width>150</width>
+						<height>60</height>
 						<aligny>center</aligny>
+						<textcolor>grey</textcolor>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="image">
@@ -76,54 +94,40 @@
 						<texture>$VAR[PVRStatusImageVar]</texture>
 					</control>
 					<control type="label">
-						<left>100</left>
-						<top>0</top>
-						<width>300</width>
-						<height>58</height>
-						<font>font12</font>
-						<textcolor>grey2</textcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="label">
 						<left>150</left>
 						<top>0</top>
-						<width>250</width>
-						<height>58</height>
+						<width>410</width>
+						<height>60</height>
 						<font>font12</font>
-						<textcolor>grey2</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="58" width="650">
+				<focusedlayout height="60" width="580">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>650</width>
-						<height>58</height>
+						<width>580</width>
+						<height>60</height>
 						<texture border="5">lists/separator.png</texture>
 						<visible>!Control.HasFocus(11)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>650</width>
-						<height>58</height>
+						<width>580</width>
+						<height>60</height>
 						<texture>lists/focus.png</texture>
 						<visible>Control.HasFocus(11)</visible>
 					</control>
 					<control type="label">
-						<left>10</left>
+						<left>20</left>
 						<top>0</top>
-						<width>100</width>
-						<height>58</height>
-						<textcolor>grey2</textcolor>
+						<width>150</width>
+						<height>60</height>
 						<aligny>center</aligny>
+						<textcolor>grey</textcolor>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="image">
@@ -134,53 +138,37 @@
 						<texture>$VAR[PVRStatusImageVar]</texture>
 					</control>
 					<control type="label">
-						<left>100</left>
-						<top>0</top>
-						<width>300</width>
-						<height>58</height>
-						<font>font12</font>
-						<textcolor>grey2</textcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="label">
 						<left>150</left>
 						<top>0</top>
-						<width>250</width>
-						<height>58</height>
+						<width>410</width>
+						<height>60</height>
 						<font>font12</font>
-						<textcolor>grey2</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>440</left>
-				<top>100</top>
+				<left>585</left>
+				<top>70</top>
 				<width>12</width>
-				<height>490</height>
+				<height>936</height>
 				<onleft>11</onleft>
 				<onright>11</onright>
-				<ondown>61</ondown>
-				<onup>61</onup>
 				<orientation>vertical</orientation>
 			</control>
 			<control type="label">
 				<description>Page Count Label</description>
-				<left>50</left>
-				<top>610</top>
-				<width>400</width>
+				<left>110</left>
+				<top>960</top>
+				<width>450</width>
 				<height>20</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>[COLOR=button_focus]$INFO[Container(11).NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</label>
+				<label>[COLOR=button_focus]$INFO[Container(11).NumItems][/COLOR] $LOCALIZE[19019] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</label>
 			</control>
 		</control>
 	</controls>
