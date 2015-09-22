@@ -38,7 +38,7 @@
 			</control>
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
-					<posy>240</posy>
+					<posy>280</posy>
 				<control type="label">
 					<description>Header</description>
 					<posx>50</posx>
@@ -52,7 +52,7 @@
 				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
-					<posx>50</posx>
+					<posx>20</posx>
 					<posy>90</posy>
 					<include name="LeftRightAlignedInfoLine">
 						<param name="label" value="19012" />
@@ -104,7 +104,7 @@
 				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
-					<posx>700</posx>
+					<posx>800</posx>
 					<posy>90</posy>
 					<include name="LeftRightAlignedInfoLine">
 						<param name="label" value="19010" />
