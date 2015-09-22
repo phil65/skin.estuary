@@ -1238,7 +1238,7 @@
 						<animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
 						<texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
-						<visible>!ControlGroup(9000).HasFocus</visible>
+						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
 					</control>
 					<control type="image">
 						<description>List Panel</description>
@@ -1248,7 +1248,7 @@
 						<height>44</height>
 						<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
-						<visible>ControlGroup(9000).HasFocus</visible>
+						<visible>ControlGroup(9000).HasFocus | Control.HasFocus(6130)</visible>
 					</control>
 					<control type="button">
 						<top>1019</top>
@@ -1262,7 +1262,7 @@
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<animation effect="fade" time="225">VisibleChange</animation>
-						<visible>!ControlGroup(9000).HasFocus</visible>
+						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
 					</control>
 				</control>
 				<control type="grouplist">

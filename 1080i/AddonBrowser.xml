@@ -15,13 +15,13 @@
 				<param name="visible" value="!Container.Content(addons)" />
 			</include>
 		</control>
-			<control type="group">
-				<include>OpenClose_Left</include>
-				<visible>Control.IsVisible(50)</visible>
-				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)</visible>
-				<include>Visible_Left</include>
-				<include>ListThumbInfoPanel</include>
-			</control>
+		<control type="group">
+			<include>OpenClose_Left</include>
+			<visible>Control.IsVisible(50)</visible>
+			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)</visible>
+			<include>Visible_Left</include>
+			<include>ListThumbInfoPanel</include>
+		</control>
 		<include>MediaMenuMouseOverlay</include>
 		<control type="group">
 			<include>MediaMenuCommon</include>
@@ -60,22 +60,19 @@
 					<label>24034</label>
 				</control>
 			</control>
-			<control type="label" id="202">
-				<posy>915</posy>
-				<left>20</left>
-				<width>700</width>
-				<height>50</height>
-				<font>font12_title</font>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textcolor>button_focus</textcolor>
-				<label>Last updated:[CR][COLOR white]$INFO[Window(AddonBrowser).Property(Updated)][/COLOR]</label>
-			</control>
 		</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
 			<param name="breadcrumbs_icon" value="icons/settings/addons.png" />
 		</include>
 		<include>BottomBar</include>
+		<control type="group">
+			<posy>1002</posy>
+			<visible>ControlGroup(9000).HasFocus | Control.HasFocus(6130)</visible>
+			<include name="InfoDialogTopBarInfo">
+				<param name="main_label" value="$INFO[Window(AddonBrowser).Property(Updated)]" />
+				<param name="sub_label" value="Last Updated" />
+			</include>
+		</control>
 	</controls>
 </window>
