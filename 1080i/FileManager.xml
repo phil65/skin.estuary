@@ -64,7 +64,7 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<shadowcolor>text_shadow</shadowcolor>
-					<visible>Control.HasFocus(60) | Control.HasFocus(5199)</visible>
+					<visible>Control.HasFocus(61)</visible>
 					<label>$INFO[Container(21).CurrentPage,, / ]$INFO[Container(21).NumPages,, • ]</label>
 				</control>
 				<control type="label">
@@ -90,14 +90,12 @@
 				<left>24</left>
 				<with>1200</with>
 				<itemgap>10</itemgap>
-				<control type="label">
-					<width>auto</width>
-					<height>48</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<shadowcolor>text_shadow</shadowcolor>
-					<visible>Control.HasFocus(60) | Control.HasFocus(61)</visible>
-					<label>$INFO[Container(20).CurrentPage,, / ]$INFO[Container(20).NumPages,, • ]</label>
+				<control type="image">
+					<description>Items icon</description>
+					<width>54</width>
+					<height>44</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="button_focus">frame/item-count.png</texture>
 				</control>
 				<control type="label">
 					<width>auto</width>
@@ -107,12 +105,14 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
 				</control>
-				<control type="image">
-					<description>Items icon</description>
-					<width>54</width>
-					<height>44</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Control.HasFocus(60)</visible>
+					<label>$INFO[Container(20).CurrentPage, • , / ]$INFO[Container(20).NumPages]</label>
 				</control>
 			</control>
 		</control>
