@@ -85,14 +85,14 @@
 		<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 		<textoffsetx>35</textoffsetx>
 		<textoffsety>76</textoffsety>
-		<radioposx>107</radioposx>
+		<radioposx>108</radioposx>
 		<radioposy>10</radioposy>
-		<radiowidth>50</radiowidth>
+		<radiowidth>48</radiowidth>
 		<font>font12</font>
-		<textureradioonfocus>$PARAM[icon]</textureradioonfocus>
-		<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
-		<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
-		<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
+		<textureradioonfocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonfocus>
+		<textureradioonnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonnofocus>
+		<textureradioofffocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioofffocus>
+		<textureradiooffnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradiooffnofocus>
 		<textureradiooffdisabled colordiffuse="disabled">$PARAM[icon]</textureradiooffdisabled>
 		<textureradioondisabled colordiffuse="disabled">$PARAM[icon]</textureradioondisabled>
 	</include>

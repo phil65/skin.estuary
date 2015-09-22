@@ -192,13 +192,13 @@
 					<control type="radiobutton" id="8">
 						<label>Play</label>
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+							<param name="icon" value="icons/infodialogs/launch.png" />
 						</include>
 					</control>
 					<control type="radiobutton" id="20">
-						<label>$LOCALIZE[31284]</label>
+						<label>Cinema Experience</label>
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultPVRClient.png" />
+							<param name="icon" value="icons/infodialogs/cinema.png" />
 						</include>
 						<onclick>Playlist.Clear</onclick>
 						<onclick>Dialog.Close(MovieInformation)</onclick>
@@ -208,7 +208,7 @@
 					<control type="radiobutton" id="11">
 						<label>$LOCALIZE[20410]</label>
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultRemovableDisk.png" />
+							<param name="icon" value="icons/infodialogs/trailer.png" />
 						</include>
 						<visible>!IsEmpty(ListItem.Trailer)</visible>
 						<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
@@ -216,7 +216,7 @@
 					<control type="radiobutton" id="440">
 						<label>Search trailer</label>
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultMusicTop100.png" />
+							<param name="icon" value="icons/infodialogs/trailer.png" />
 						</include>
 						<visible>IsEmpty(ListItem.Trailer)</visible>
 						<onclick>Action(close)</onclick>
@@ -226,7 +226,7 @@
 					</control>
 					<control type="radiobutton" id="100">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultMusicSearch.png" />
+							<param name="icon" value="icons/infodialogs/DefaultMusicSearch.png" />
 						</include>
 						<label>Video extras</label>
 						<onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
@@ -237,7 +237,7 @@
 							<width>262</width>
 						<control type="radiobutton" id="401">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultMusicSearch.png" />
+							<param name="icon" value="icons/infodialogs/rating.png" />
 						</include>
 						<label>Your rating</label>
 						<onclick>SetRating</onclick>
@@ -247,7 +247,7 @@
 					</control>
 					<control type="radiobutton" id="101">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/infodialogs/info.png" />
 						</include>
 						<onleft>401</onleft>
 						<label>Extended Info</label>
@@ -256,19 +256,19 @@
 					</control>
 					<control type="radiobutton" id="102">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultActor.png" />
+							<param name="icon" value="icons/infodialogs/image.png" />
 						</include>
 						<label>Show fanart</label>
 					</control>
 					<control type="radiobutton" id="10">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultEPG.png" />
+							<param name="icon" value="icons/infodialogs/choose_image.png" />
 						</include>
 						<label>$LOCALIZE[13511]</label>
 					</control>
 					<control type="radiobutton" id="6">
 						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/defaulticons/DefaultGames.png" />
+							<param name="icon" value="icons/infodialogs/update.png" />
 						</include>
 						<label>Re-scrape</label>
 					</control>

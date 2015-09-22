@@ -37,43 +37,43 @@
 				<orientation>horizontal</orientation>
 				<control type="radiobutton" id="12">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/addoninfo/launch.png" />
+						<param name="icon" value="icons/infodialogs/launch.png" />
 					</include>
 					<label>518</label>
 				</control>
 				<control type="radiobutton" id="9">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/addoninfo/configure.png" />
+						<param name="icon" value="icons/infodialogs/configure.png" />
 					</include>
 					<label>24020</label>
 				</control>
 				<control type="radiobutton" id="8">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/addoninfo/update.png" />
+						<param name="icon" value="icons/infodialogs/update.png" />
 					</include>
 					<label>24069</label>
 				</control>
 				<control type="radiobutton" id="6">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/addoninfo/uninstall.png" />
+						<param name="icon" value="icons/infodialogs/uninstall.png" />
 					</include>
 					<label>24022</label>
 				</control>
 				<control type="radiobutton" id="7">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/addoninfo/disable.png" />
+						<param name="icon" value="icons/infodialogs/disable.png" />
 					</include>
 					<label>24021</label>
 				</control>
 				<control type="radiobutton" id="11">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/addoninfo/rollback.png" />
+						<param name="icon" value="icons/infodialogs/rollback.png" />
 					</include>
 					<label>24048</label>
 				</control>
 				<control type="radiobutton" id="10">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/addoninfo/changelog.png" />
+						<param name="icon" value="icons/infodialogs/changelog.png" />
 					</include>
 					<label>24036</label>
 				</control>
