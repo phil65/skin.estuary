@@ -182,6 +182,14 @@
 			<height>920</height>
 			<texture>lists/panel.png</texture>
 		</control>
+		<control type="button" id="3">
+			<description>Viewtype Toggle</description>
+			<include>HiddenObject</include>
+		</control>
+		<control type="button" id="4">
+			<description>Order Toggle</description>
+			<include>HiddenObject</include>
+		</control>
 	</include>
 	<include name="MediaMenuListCommon">
 		<param name="viewtype_button_vis">true</param>
@@ -212,14 +220,16 @@
 				<include>MediaMenuItemsCommon</include>
 				<label>Sort by</label>
 				<label2>[B]$INFO[Container.SortMethod][/B]</label2>
-				<onclick>Container.NextSortMethod</onclick>
+				<enable>Control.IsEnabled(3)</enable>
+				<onclick>SendClick(3)</onclick>
 			</control>
 			<control type="button" id="6052">
 				<description>Sort asc</description>
 				<include>MediaMenuItemsCommon</include>
 				<label>Order</label>
 				<label2>[B]$INFO[Container.SortOrder][/B]</label2>
-				<onclick>Container.SortDirection</onclick>
+				<enable>Control.IsEnabled(4)</enable>
+				<onclick>SendClick(4)</onclick>
 			</control>
 			<control type="edit" id="19">
 				<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
