@@ -2,6 +2,16 @@
 <window>
 	<defaultcontrol always="true">602</defaultcontrol>
 	<controls>
+		<control type="button" id="22001">
+			<description>background close area</description>
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>900</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>Action(close)</onclick>
+		</control>
 		<control type="group">
 			<posy>900</posy>
 			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings)</visible>
