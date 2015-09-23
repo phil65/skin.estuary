@@ -54,6 +54,16 @@
 						<label>$LOCALIZE[20416]: [COLOR white]$INFO[ListItem.Premiered,][/COLOR]</label>
 						<visible>Container.Content(tvshows)</visible>
 					</control>
+					<control type="button" id="210">
+						<width>505</width>
+						<height>100</height>
+						<textoffsetx>40</textoffsetx>
+						<font>font12</font>
+						<aligny>center</aligny>
+						<textcolor>button_focus</textcolor>
+						<label>Available: [COLOR white]$INFO[ListItem.Season] seasons ($INFO[ListItem.Episode] episodes)[/COLOR]</label>
+						<visible>Container.Content(tvshows)</visible>
+					</control>
 				</control>
 				<control type="group" id="140">
 					<posx>0</posx>
@@ -177,7 +187,7 @@
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
-					<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">135</onup>
+					<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
 					<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">138</onup>
 					<ondown condition="Stringcompare(Container(5000).CurrentItem,1)">SetFocus(50,0)</ondown>
 					<ondown condition="Stringcompare(Container(5000).CurrentItem,2)">SetFocus(50,1)</ondown>
