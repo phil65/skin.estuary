@@ -243,17 +243,24 @@
 						<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
 						<onright>401</onright>
 					</control>
-						<control type="group" id="400">
-							<width>262</width>
+					<control type="group" id="400">
+						<width>262</width>
 						<control type="radiobutton" id="401">
-						<include name="VideoInfoButtonsCommon">
-							<param name="icon" value="icons/infodialogs/rating.png" />
-						</include>
-						<label>Your rating</label>
-						<onclick>SetRating</onclick>
-						<onleft>100</onleft>
-						<onright>101</onright>
-					</control>
+							<include name="VideoInfoButtonsCommon">
+								<param name="icon" value="icons/infodialogs/rating.png" />
+							</include>
+							<label>Your rating</label>
+							<onclick>SetRating</onclick>
+							<onleft>100</onleft>
+							<onright>101</onright>
+							<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
+							<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">138</onup>
+							<ondown condition="Stringcompare(Container(5000).CurrentItem,1)">SetFocus(50,0)</ondown>
+							<ondown condition="Stringcompare(Container(5000).CurrentItem,2)">SetFocus(50,1)</ondown>
+							<ondown condition="Stringcompare(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>
+							<ondown condition="Stringcompare(Container(5000).CurrentItem,4)">SetFocus(50,3)</ondown>
+							<ondown condition="Stringcompare(Container(5000).CurrentItem,5)">SetFocus(50,4)</ondown>
+						</control>
 					</control>
 					<control type="radiobutton" id="101">
 						<include name="VideoInfoButtonsCommon">
