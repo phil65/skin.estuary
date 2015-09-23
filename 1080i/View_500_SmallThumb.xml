@@ -114,13 +114,15 @@
 	<include name="SmallThumbVideoLayouts">
 		<itemlayout height="360" width="300" condition="!Container.content(episodes)">
 			<control type="image">
-				<left>1</left>
-				<top>15</top>
-				<width>220</width>
-				<height>330</height>
-				<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
-				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-				<bordersize>4</bordersize>
+				<left>0</left>
+				<top>-1</top>
+				<width>256</width>
+				<height>362</height>
+				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+							<animation effect="slide" end="-15,0" time="0" condition="true">Conditional</animation>
+
 			</control>
 		</itemlayout>
 		<focusedlayout height="360" width="300" condition="!Container.content(episodes)">
