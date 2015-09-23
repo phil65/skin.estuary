@@ -5,11 +5,11 @@
 		<control type="group" id="0">
 			<!-- codec infos -->
 			<control type="image">
-				<posx>30</posx>
+				<posx>10</posx>
 				<posy>-465</posy>
-				<width>1860</width>
+				<width>1902</width>
 				<height>740</height>
-				<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				<animation effect="slide" end="0,250" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
 			</control>
 			<control type="label" id="10">
