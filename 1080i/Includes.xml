@@ -305,7 +305,7 @@
 				<left>50</left>
 				<width>60</width>
 				<height>60</height>
-				<texture>$PARAM[texture]</texture>
+				<texture colordiffuse="D0FFFFFF">$PARAM[texture]</texture>
 			</control>
 			<control type="textbox">
 				<top>68</top>
