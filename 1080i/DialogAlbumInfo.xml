@@ -115,8 +115,9 @@
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="radiobutton" id="600">
+
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
 					<label>Go to albums</label>
 					<onclick>Container.Update(musicdb://)</onclick>
@@ -125,7 +126,7 @@
 				</control>
 				<control type="radiobutton" id="601">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
 					<label>Go to songs</label>
 					<onclick>Container.Update($INFO[ListItem.Path]/$INFO[ListItem.DBID])</onclick>
@@ -134,25 +135,25 @@
 				</control>
 				<control type="radiobutton" id="120">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/image.png" />
 					</include>
 					<label>Show fanart</label>
 				</control>
 				<control type="radiobutton" id="6">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/update.png" />
 					</include>
 					<label>184</label>
 				</control>
 				<control type="radiobutton" id="10">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/choose_image.png" />
 					</include>
 					<label>13405</label>
 				</control>
 				<control type="radiobutton" id="12">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/choose_image.png" />
 					</include>
 					<label>20413</label>
 				</control>
