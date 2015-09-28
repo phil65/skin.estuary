@@ -56,8 +56,8 @@
 		</control>
 		<control type="image" id="11">
 			<description>separator image</description>
-			<height>2</height>
-			<texture>separator2.png</texture>
+			<height>3</height>
+			<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
 		</control>
 		<control type="label" id="14">
 			<description>Default Label</description>
