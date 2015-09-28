@@ -245,12 +245,11 @@
 					</control>
 					<control type="group" id="400">
 						<width>262</width>
-						<control type="radiobutton" id="401">
+						<control type="button" id="7">
 							<include name="VideoInfoButtonsCommon">
-								<param name="icon" value="icons/infodialogs/rating.png" />
+								<param name="icon" value="" />
 							</include>
 							<label>Your rating</label>
-							<onclick>SetRating</onclick>
 							<onleft>100</onleft>
 							<onright>101</onright>
 							<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
@@ -260,6 +259,23 @@
 							<ondown condition="Stringcompare(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>
 							<ondown condition="Stringcompare(Container(5000).CurrentItem,4)">SetFocus(50,3)</ondown>
 							<ondown condition="Stringcompare(Container(5000).CurrentItem,5)">SetFocus(50,4)</ondown>
+						</control>
+						<control type="label">
+							<label>$INFO[ListItem.UserRating]</label>
+							<font>font30_title</font>
+							<posx>0</posx>
+							<posy>18</posy>
+							<width>262</width>
+							<align>center</align>
+						</control>
+					<control type="image">
+							<texture>icons/infodialogs/rating.png</texture>
+							<posx>107</posx>
+							<posy>24</posy>
+							<width>48</width>
+							<height>48</height>
+							<align>center</align>
+							<visible>IsEmpty(ListItem.UserRating)</visible>
 						</control>
 					</control>
 					<control type="radiobutton" id="101">
