@@ -83,6 +83,13 @@
 			<height>350</height>
 			<texture border="38">lists/separator.png</texture>
 		</control>
+		<control type="image">
+			<posx>-5</posx>
+			<posy>15</posy>
+			<width>578</width>
+			<height>500</height>
+			<texture border="40">buttons/dialogbutton-nofo.png</texture>
+		</control>
 		<control type="scrollbar" id="$PARAM[scrollbar_id]">
 			<description>scrollbar for active modes list</description>
 			<left>542</left>
@@ -105,11 +112,11 @@
 			<onright>$PARAM[scrollbar_id]</onright>
 			<pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="46" width="528">
+			<itemlayout height="46" width="538">
 				<control type="image">
 					<left>0</left>
 					<top>3</top>
-					<width>528</width>
+					<width>538</width>
 					<height>40</height>
 					<texture border="38">lists/separator.png</texture>
 				</control>
@@ -132,11 +139,11 @@
 					<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="66" width="528">
+			<focusedlayout height="66" width="538">
 				<control type="image">
 					<left>0</left>
 					<top>3</top>
-					<width>528</width>
+					<width>538</width>
 					<height>60</height>
 					<texture>lists/focus.png</texture>
 					<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus($PARAM[list_id])">conditional</animation>
