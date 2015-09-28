@@ -360,7 +360,7 @@
 				<include name="WidgetListText">
 					<param name="content_path" value="pvr://recordings/all"/>
 					<param name="widget_header" value="Recent recordings"/>
-					<param name="widget_target" value="video"/>
+					<param name="widget_target" value="TVRecordings"/>
 					<param name="list_id" value="12100"/>
 					<param name="onup_id" value="12900"/>
 					<param name="height" value="200"/>
