@@ -10,35 +10,35 @@
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1720" />
-			<param name="DialogBackgroundHeight" value="800" />
+			<param name="DialogBackgroundHeight" value="700" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[15020]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
 		<control type="list" id="9000">
 			<description>processing mode selection list</description>
-			<left>30</left>
-			<top>70</top>
-			<width>1140</width>
-			<height>40</height>
-			<onup>9001</onup>
+			<left>0</left>
+			<top>105</top>
+			<width>350</width>
+			<height>700</height>
+			<onup>9000</onup>
 			<ondown>200</ondown>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
-			<orientation>horizontal</orientation>
+			<onleft>21</onleft>
+			<onright>20</onright>
+			<orientation>vertical</orientation>
 			<scrolltime tween="sine" easing="out">200</scrolltime>
-			<itemlayout width="228" height="40">
+			<itemlayout width="350" height="110">
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>228</width>
-					<height>40</height>
-					<texture border="38">lists/separator.png</texture>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>350</width>
+					<height>130</height>
+					<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				</control>
 				<control type="label">
-					<posx>5</posx>
+					<posx>0</posx>
 					<posy>0</posy>
-					<width>218</width>
-					<height>40</height>
+					<width>350</width>
+					<height>130</height>
 					<textcolor>grey2</textcolor>
 					<font>font13_title</font>
 					<aligny>center</aligny>
@@ -46,20 +46,28 @@
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
-			<focusedlayout width="228" height="40">
+			<focusedlayout width="350" height="110">
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>228</width>
-					<height>40</height>
-					<texture>lists/focus.png</texture>
-					<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(9000)">conditional</animation>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>350</width>
+					<height>130</height>
+					<texture border="40">buttons/dialogbutton-nofo.png</texture>
+					<visible>!Control.HasFocus(9000)</visible>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>350</width>
+					<height>130</height>
+					<visible>Control.HasFocus(9000)</visible>
+					<texture border="40">buttons/dialogbutton-fo.png</texture>
 				</control>
 				<control type="label">
-					<posx>5</posx>
+					<posx>0</posx>
 					<posy>0</posy>
-					<width>218</width>
-					<height>40</height>
+					<width>350</width>
+					<height>130</height>
 					<font>font13_title</font>
 					<aligny>center</aligny>
 					<align>center</align>
@@ -99,24 +107,14 @@
 				</item>
 			</content>
 		</control>
-		<control type="label">
-			<description>current mode description label</description>
-			<left>40</left>
-			<top>109</top>
-			<width>1120</width>
-			<height>30</height>
-			<font>font12</font>
-			<aligny>center</aligny>
-			<label>$INFO[Container(9000).ListItem.Label2]</label>
-		</control>
 		<control type="group" id="200">
 			<description>available- and active mode lists</description>
-			<left>30</left>
-			<top>150</top>
+			<top>90</top>
 			<control type="group">
+				<left>340</left>
 				<description>available modes group</description>
 				<include name="AudioDSPModeList">
-					<param name="sublabel" value="$LOCALIZE[15050] ($INFO[Container(20).NumItems])" />
+					<param name="sublabel" value="$LOCALIZE[15050]: $INFO[Container(20).NumItems]" />
 					<param name="scrollbar_id" value="60" />
 					<param name="list_id" value="20" />
 					<param name="onright" value="21" />
@@ -125,10 +123,10 @@
 			</control>
 			<control type="group">
 				<description>active modes group</description>
-				<left>568</left>
+				<left>810</left>
 				<top>0</top>
 				<include name="AudioDSPModeList">
-					<param name="sublabel" value="$LOCALIZE[15051] ($INFO[Container(21).NumItems])" />
+					<param name="sublabel" value="$LOCALIZE[15051]: $INFO[Container(21).NumItems]" />
 					<param name="scrollbar_id" value="61" />
 					<param name="list_id" value="21" />
 					<param name="onright" value="20" />
@@ -138,7 +136,7 @@
 		</control>
 		<control type="grouplist" id="9001">
 			<left>1280</left>
-			<top>100</top>
+			<top>105</top>
 			<itemgap>-20</itemgap>
 			<onleft>24</onleft>
 			<onright>23</onright>
@@ -157,6 +155,16 @@
 				<param name="label" value="15066" />
 				<param name="width" value="430" />
 			</include>
+		</control>
+		<control type="textbox">
+			<description>current mode description label</description>
+			<left>1305</left>
+			<top>330</top>
+			<width>400</width>
+			<height>300</height>
+			<font>font12</font>
+			<aligny>top</aligny>
+			<label>$INFO[Container(9000).ListItem.Label2]</label>
 		</control>
 	</controls>
 </window>

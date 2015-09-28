@@ -66,7 +66,7 @@
 			<description>blue active modes</description>
 			<left>10</left>
 			<top>2</top>
-			<width>550</width>
+			<width>430</width>
 			<height>30</height>
 			<font>font12_title</font>
 			<label>$PARAM[sublabel]</label>
@@ -76,18 +76,10 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="image">
-			<description>active modes list border</description>
-			<left>10</left>
-			<top>30</top>
-			<width>538</width>
-			<height>350</height>
-			<texture border="38">lists/separator.png</texture>
-		</control>
-		<control type="image">
 			<posx>-5</posx>
 			<posy>15</posy>
-			<width>578</width>
-			<height>500</height>
+			<width>490</width>
+			<height>570</height>
 			<texture border="40">buttons/dialogbutton-nofo.png</texture>
 		</control>
 		<control type="scrollbar" id="$PARAM[scrollbar_id]">
@@ -104,7 +96,7 @@
 			<description>active modes list</description>
 			<left>15</left>
 			<top>35</top>
-			<width>538</width>
+			<width>430</width>
 			<height>345</height>
 			<onup>9000</onup>
 			<ondown>9001</ondown>
@@ -112,11 +104,11 @@
 			<onright>$PARAM[scrollbar_id]</onright>
 			<pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="46" width="538">
+			<itemlayout height="46" width="430">
 				<control type="image">
 					<left>0</left>
 					<top>3</top>
-					<width>538</width>
+					<width>430</width>
 					<height>40</height>
 					<texture border="38">lists/separator.png</texture>
 				</control>
@@ -139,14 +131,22 @@
 					<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="66" width="538">
+			<focusedlayout height="66" width="430">
 				<control type="image">
 					<left>0</left>
-					<top>3</top>
-					<width>538</width>
+					<top>0</top>
+					<width>430</width>
+					<height>60</height>
+					<texture>lists/separator.png</texture>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>430</width>
 					<height>60</height>
 					<texture>lists/focus.png</texture>
-					<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus($PARAM[list_id])">conditional</animation>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 				<control type="image">
 					<left>5</left>
