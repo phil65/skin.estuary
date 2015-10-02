@@ -253,7 +253,7 @@
 					<height>100</height>
 					<font>font16</font>
 					<shadowcolor>text_shadow</shadowcolor>
-					<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
+					<label>$INFO[VideoPlayer.ChannelGroup,Channel Group: ]</label>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="label" id="1">
