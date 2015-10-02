@@ -242,7 +242,7 @@
 				<visible>Container.CanFilterAdvanced</visible>
 				<description>Filter</description>
 				<include>MediaMenuItemsCommon</include>
-				<label>587</label>
+				<label>$LOCALIZE[587]</label>
 				<selected>Container.Filtered</selected>
 				<onclick>right</onclick>
 				<onclick>Filter</onclick>
