@@ -52,7 +52,7 @@
 					</focusedlayout>
 					<content>
 						<item id="1">
-							<label>31006</label>
+							<label>View options</label>
 							<onclick>noop</onclick>
 							<icon>-</icon>
 						</item>
@@ -187,7 +187,7 @@
 					<onup>9001</onup>
 					<ondown>9001</ondown>
 					<control type="radiobutton" id="4">
-						<label>20096</label>
+						<label>$LOCALIZE[20096]</label>
 						<include>DefaultSettingButton</include>
 						<width>1214</width>
 					</control>

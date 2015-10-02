@@ -28,7 +28,7 @@
 						<param name="height" value="88" />
 					</include>
 					<width>400</width>
-					<label>20037</label>
+					<label>$LOCALIZE[20037]</label>
 				</control>
 				<control type="button" id="94">
 					<description>Button Storage</description>
@@ -36,7 +36,7 @@
 						<param name="height" value="88" />
 					</include>
 					<width>400</width>
-					<label>13277</label>
+					<label>$LOCALIZE[13277]</label>
 				</control>
 				<control type="button" id="96">
 					<description>Button Network</description>
@@ -44,7 +44,7 @@
 						<param name="height" value="88" />
 					</include>
 					<width>400</width>
-					<label>13279</label>
+					<label>$LOCALIZE[13279]</label>
 				</control>
 				<control type="button" id="97">
 					<description>Button Video</description>
@@ -52,7 +52,7 @@
 						<param name="height" value="88" />
 					</include>
 					<width>400</width>
-					<label>13280</label>
+					<label>$LOCALIZE[13280]</label>
 				</control>
 				<control type="button" id="98">
 					<description>Button Hardware</description>
@@ -60,7 +60,7 @@
 						<param name="height" value="88" />
 					</include>
 					<width>400</width>
-					<label>13281</label>
+					<label>$LOCALIZE[13281]</label>
 				</control>
 				<control type="button" id="99">
 					<description>Button PVR</description>
@@ -68,7 +68,7 @@
 						<param name="height" value="88" />
 					</include>
 					<width>400</width>
-					<label>19191</label>
+					<label>$LOCALIZE[19191]</label>
 				</control>
 			</control>
 		</control>

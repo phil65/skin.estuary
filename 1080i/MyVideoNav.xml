@@ -88,25 +88,25 @@
 				<control type="button" id="10">
 					<description>Watched Toggle</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>20367</label>
+					<label>$LOCALIZE[20367]</label>
 					<label2>[B]$INFO[Container.NumItems][/B]</label2>
 					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes)</visible>
 				</control>
 				<control type="label" id="203">
 					<description>View options</description>
 					<include>MediaMenuLabelCommon</include>
-					<label>31039</label>
+					<label>Actions</label>
 				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
-					<label>589</label>
+					<label>$LOCALIZE[589]</label>
 					<include>MediaMenuItemsCommon</include>
 					<visible>Container.Content(MusicVideos)</visible>
 				</control>
 				<control type="radiobutton" id="11">
 					<description>Unlock Shares</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>20336</label>
+					<label>$LOCALIZE[20336]</label>
 					<onclick>xbmc.mastermode</onclick>
 					<selected>system.ismaster</selected>
 					<visible>system.haslocks</visible>
@@ -114,9 +114,9 @@
 				<control type="togglebutton" id="619">
 					<description>Update library</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>653</label>
+					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
-					<altlabel>13353</altlabel>
+					<altlabel>$LOCALIZE[13353]</altlabel>
 					<usealttexture>library.isscanningvideo</usealttexture>
 				</control>
 				<control type="button" id="612">

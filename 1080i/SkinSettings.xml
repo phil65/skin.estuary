@@ -82,7 +82,7 @@
 						<onclick>Skin.ToggleSetting(no_slide_animations)</onclick>
 					</control>
 					<control type="radiobutton" id="602">
-						<label>20189</label>
+						<label>$LOCALIZE[20189]</label>
 						<width>1256</width>
 						<include>DefaultSettingButton</include>
 						<onclick>Skin.ToggleSetting(autoscroll)</onclick>
