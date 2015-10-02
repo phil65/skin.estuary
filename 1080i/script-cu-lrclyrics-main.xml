@@ -80,7 +80,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
-				<label>31203</label>
+				<label>Choose your song</label>
 				<visible>Control.IsVisible(120) + !Control.IsVisible(110)</visible>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
@@ -136,7 +136,7 @@
 				<top>680</top>
 				<width>1300</width>
 				<height>30</height>
-				<label>$LOCALIZE[31205] - $INFO[Control.GetLabel(200)]</label>
+				<label>Lyrics source - $INFO[Control.GetLabel(200)]</label>
 				<font>font12_title</font>
 				<align>right</align>
 				<aligny>center</aligny>
