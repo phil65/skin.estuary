@@ -30,11 +30,11 @@
 			<itemgap>80</itemgap>
 			<include name="DefaultDialogButton">
 				<param name="id" value="11" />
-				<param name="label" value="107" />
+				<param name="label" value="$LOCALIZE[107]" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="10" />
-				<param name="label" value="106" />
+				<param name="label" value="$LOCALIZE[106]" />
 			</include>
 		</control>
 	</controls>

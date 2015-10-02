@@ -108,15 +108,15 @@
 			<itemgap>7</itemgap>
 			<include name="DefaultDialogButton">
 				<param name="id" value="11" />
-				<param name="label" value="1024" />
+				<param name="label" value="$LOCALIZE[1024]" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="13" />
-				<param name="label" value="15019" />
+				<param name="label" value="$LOCALIZE[15019]" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="14" />
-				<param name="label" value="1210" />
+				<param name="label" value="$LOCALIZE[1210]" />
 			</include>
 		</control>
 		<control type="label">
@@ -153,11 +153,11 @@
 			<onup>12</onup>
 			<include name="DefaultDialogButton">
 				<param name="id" value="18" />
-				<param name="label" value="186" />
+				<param name="label" value="$LOCALIZE[186]" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="19" />
-				<param name="label" value="222" />
+				<param name="label" value="$LOCALIZE[222]" />
 			</include>
 		</control>
 	</controls>

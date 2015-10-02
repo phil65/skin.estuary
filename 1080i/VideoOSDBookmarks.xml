@@ -97,17 +97,17 @@
 			<onright>11</onright>
 			<include name="DefaultDialogButton">
 				<param name="id" value="2" />
-				<param name="label" value="294" />
+				<param name="label" value="$LOCALIZE[294]" />
 				<param name="width" value="350" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="3" />
-				<param name="label" value="296" />
+				<param name="label" value="$LOCALIZE[296]" />
 				<param name="width" value="350" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="4" />
-				<param name="label" value="20406" />
+				<param name="label" value="$LOCALIZE[20406]" />
 				<param name="width" value="350" />
 			</include>
 		</control>

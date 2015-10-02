@@ -219,19 +219,19 @@
 				<align>center</align>
 				<!-- 					<include name="DefaultDialogButton">
 					 <param name="id" value="10" />
-					 <param name="label" value="186" />
+					 <param name="label" value="$LOCALIZE[186]" />
 					 </include>
 					 <include name="DefaultDialogButton">
 					 <param name="id" value="11" />
-					 <param name="label" value="222" />
+					 <param name="label" value="$LOCALIZE[222]" />
 					 </include> -->
 				<include name="DefaultDialogButton">
 					<param name="id" value="12" />
-					<param name="label" value="10523" />
+					<param name="label" value="$LOCALIZE[10523]" />
 				</include>
 				<include name="DefaultDialogButton">
 					<param name="id" value="13" />
-					<param name="label" value="13405" />
+					<param name="label" value="$LOCALIZE[13405]" />
 				</include>
 				<include name="DefaultDialogButton">
 					<param name="id" value="14" />

@@ -202,15 +202,15 @@
 			<orientation>vertical</orientation>
 			<include name="DefaultDialogButton">
 				<param name="id" value="26" />
-				<param name="label" value="137" />
+				<param name="label" value="$LOCALIZE[137]" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="28" />
-				<param name="label" value="10035" />
+				<param name="label" value="$LOCALIZE[10035]" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="25" />
-				<param name="label" value="222" />
+				<param name="label" value="$LOCALIZE[222]" />
 			</include>
 		</control>
 	</controls>

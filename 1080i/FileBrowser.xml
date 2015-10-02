@@ -43,19 +43,19 @@
 					<ondown>9000</ondown>
 					<include name="DefaultDialogButton">
 						<param name="id" value="413" />
-						<param name="label" value="186" />
+						<param name="label" value="$LOCALIZE[186]" />
 					</include>
 					<include name="DefaultDialogButton">
 						<param name="id" value="414" />
-						<param name="label" value="222" />
+						<param name="label" value="$LOCALIZE[222]" />
 					</include>
 					<include name="DefaultDialogButton">
 						<param name="id" value="415" />
-						<param name="label" value="119" />
+						<param name="label" value="$LOCALIZE[119]" />
 					</include>
 					<include name="DefaultDialogButton">
 						<param name="id" value="416" />
-						<param name="label" value="749" />
+						<param name="label" value="$LOCALIZE[749]" />
 					</include>
 				</control>
 				<control type="image">

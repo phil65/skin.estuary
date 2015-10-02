@@ -28,21 +28,21 @@
 				<itemgap>-20</itemgap>
 				<include name="DefaultDialogButton">
 					<param name="id" value="6" />
-					<param name="label" value="31055" />
+					<param name="label" value="$LOCALIZE[31055]" />
 					<param name="width" value="200" />
 					<param name="height" value="200" />
 					<param name="wrapmultiline" value="true" />
 				</include>
 				<include name="DefaultDialogButton">
 					<param name="id" value="7" />
-					<param name="label" value="31056" />
+					<param name="label" value="$LOCALIZE[31056]" />
 					<param name="width" value="200" />
 					<param name="height" value="200" />
 					<param name="wrapmultiline" value="true" />
 				</include>
 				<include name="DefaultDialogButton">
 					<param name="id" value="8" />
-					<param name="label" value="31057" />
+					<param name="label" value="$LOCALIZE[31057]" />
 					<param name="width" value="200" />
 					<param name="height" value="200" />
 					<param name="wrapmultiline" value="true" />
