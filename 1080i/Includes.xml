@@ -1330,6 +1330,8 @@
 					<right>24</right>
 					<with>1200</with>
 					<itemgap>10</itemgap>
+					<visible>!System.HasModalDialog</visible>
+					<animation effect="fade" delay="1" time="200">VisibleChange</animation>
 					<control type="label">
 						<width>auto</width>
 						<height>48</height>
@@ -1346,18 +1348,15 @@
 						<aligny>center</aligny>
 						<align>right</align>
 						<shadowcolor>text_shadow</shadowcolor>
-						<visible>!System.HasModalDialog</visible>
-						<animation effect="fade" delay="1" time="200">VisibleChange</animation>
 						<label>$PARAM[PageLabel]</label>
 					</control>
 					<control type="image">
-						<description>Items icon</description>
 						<width>54</width>
 						<height>44</height>
 						<aspectratio>keep</aspectratio>
 						<texture colordiffuse="button_focus">frame/item-count.png</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
-						<visible>!IsEmpty(Container.NumItems) + !System.HasModalDialog</visible>
+						<visible>!IsEmpty(Container.NumItems)</visible>
 					</control>
 				</control>
 			</control>
