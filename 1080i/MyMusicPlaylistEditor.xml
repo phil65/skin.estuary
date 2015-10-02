@@ -55,7 +55,7 @@
 			<posy>180</posy>
 			<include name="FileManagerPanel">
 				<param name="header_id" value="22" />
-				<param name="header_label" value="31058" />
+				<param name="header_label" value="$LOCALIZE[31058]" />
 				<param name="list_id" value="50" />
 				<param name="scrollbar_id" value="60" />
 				<param name="onleft_id" value="9000" />
@@ -70,7 +70,7 @@
 			<posy>180</posy>
 			 <include name="FileManagerPanel">
 				<param name="header_id" value="23" />
-				<param name="header_label" value="31059" />
+				<param name="header_label" value="$LOCALIZE[31059]" />
 				<param name="list_id" value="100" />
 				<param name="scrollbar_id" value="61" />
 				<param name="onleft_id" value="50" />
