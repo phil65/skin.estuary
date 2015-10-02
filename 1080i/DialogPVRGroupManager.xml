@@ -29,31 +29,31 @@
 						<description>Add Group</description>
 						<width>370</width>
 						<include>SettingsItemCommon</include>
-						<label>31503</label>
+						<label>Add group</label>
 					</control>
 					<control type="button" id="27">
 						<description>Rename Group</description>
 						<width>370</width>
 						<include>SettingsItemCommon</include>
-						<label>31504</label>
+						<label>Rename group</label>
 					</control>
 					<control type="radiobutton" id="25">
 						<description>Hide Group</description>
 						<width>370</width>
 						<include>SettingsItemCommon</include>
-						<label>19289</label>
+						<label>$LOCALIZE[19289]</label>
 					</control>
 					<control type="button" id="28">
 						<description>Delete Group</description>
 						<width>370</width>
 						<include>SettingsItemCommon</include>
-						<label>31505</label>
+						<label>Delete group</label>
 					</control>
 					<control type="button" id="29">
 						<description>OK</description>
 						<width>370</width>
 						<include>SettingsItemCommon</include>
-						<label>186</label>
+						<label>$LOCALIZE[186]</label>
 					</control>
 				</control>
 				<control type="group">
@@ -65,7 +65,7 @@
 						<top>0</top>
 						<width>360</width>
 						<height>70</height>
-						<label>31506</label>
+						<label>Available groups</label>
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>button_focus</textcolor>

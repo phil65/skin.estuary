@@ -32,32 +32,32 @@
 				</include>
 				<control type="label" id="201">
 					<include>MediaMenuLabelCommon</include>
-					<label>31026</label>
+					<label>$LOCALIZE[31026]</label>
 				</control>
 				<control type="button" id="5">
 					<description>Addon-updates</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>24063</label>
+					<label>$LOCALIZE[24063]</label>
 				</control>
 				<control type="radiobutton" id="6">
 					<description>No notifications</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>25000</label>
+					<label>$LOCALIZE[25000]</label>
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Hide foreign</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>25001</label>
+					<label>$LOCALIZE[25001]</label>
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Hide incompatible</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>24999</label>
+					<label>$LOCALIZE[24999]</label>
 				</control>
 				<control type="button" id="9">
 					<description>Check for repository updates</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>24034</label>
+					<label>$LOCALIZE[24034]</label>
 				</control>
 			</control>
 		</control>

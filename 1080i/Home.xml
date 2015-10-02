@@ -952,7 +952,7 @@
 							<visible>PVR.HasTVChannels</visible>
 						</item>
 						<item id="13">
-							<label>31960</label>
+							<label>Radio</label>
 							<label2>$INFO[Pvr.BackendChannels,Channels: ]</label2>
 							<onclick>ActivateWindow(RadioChannels)</onclick>
 							<thumb>icons/home/radio.png</thumb>
@@ -977,7 +977,7 @@
 							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 						</item>
 						<item id="7">
-							<label>31950</label>
+							<label>Weather</label>
 							<label2>$INFO[Window(Weather).Property(WeatherProvider)]</label2>
 							<onclick>ActivateWindow(Weather)</onclick>
 							<thumb>icons/home/weather.png</thumb>

@@ -832,7 +832,7 @@
 	<include name="HourlyItems">
 		<content>
 			<item>
-				<icon>$LOCALIZE[31909]</icon>
+				<icon>Fetching forecast info...</icon>
 				<onclick>noop</onclick>
 				<visible>IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
 			</item>
@@ -871,7 +871,7 @@
 	<include name="DailyItems">
 		<content>
 			<item>
-				<icon>$LOCALIZE[31909]</icon>
+				<icon>Fetching forecast info...</icon>
 				<onclick>noop</onclick>
 				<visible>IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
 			</item>

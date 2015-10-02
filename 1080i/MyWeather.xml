@@ -41,15 +41,15 @@
 				</include>
 				<content>
 					<item id="1">
-						<label>$LOCALIZE[19030]</label>
+						<label>Now</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
-						<label>$LOCALIZE[33036]</label>
+						<label>Hourly</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="3">
-						<label>$LOCALIZE[31905]</label>
+						<label>Forecast</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="4">

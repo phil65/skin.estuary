@@ -211,7 +211,7 @@
 					<width>250</width>
 					<height>35</height>
 					<font>font12</font>
-					<label>31006</label>
+					<label>View options</label>
 					<textcolor>button_focus</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -219,15 +219,15 @@
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>31051</label>
-					<altlabel>31050</altlabel>
+					<label>Sort: Descending</label>
+					<altlabel>Sort: Ascending</altlabel>
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 				</control>
 				<control type="label" id="201">
 					<width>250</width>
 					<height>35</height>
 					<font>font12</font>
-					<label>31026</label>
+					<label>Misc options</label>
 					<textcolor>button_focus</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -246,7 +246,7 @@
 				<control type="button" id="20">
 					<description>Clear button</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>192</label>
+					<label>$LOCALIZE[192]</label>
 				</control>
 			</control>
 		</control>
