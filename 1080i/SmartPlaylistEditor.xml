@@ -88,11 +88,11 @@
 				<ondown>22</ondown>
 				<include name="DefaultDialogButton">
 					<param name="id" value="20" />
-					<param name="label" value="186" />
+					<param name="label" value="$LOCALIZE[186]" />
 				</include>
 				<include name="DefaultDialogButton">
 					<param name="id" value="21" />
-					<param name="label" value="222" />
+					<param name="label" value="$LOCALIZE[222]" />
 				</include>
 			</control>
 			<control type="image">

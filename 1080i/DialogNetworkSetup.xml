@@ -74,11 +74,11 @@
 			<align>center</align>
 			<include name="DefaultDialogButton">
 				<param name="id" value="18" />
-				<param name="label" value="186" />
+				<param name="label" value="$LOCALIZE[186]" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="19" />
-				<param name="label" value="222" />
+				<param name="label" value="$LOCALIZE[222]" />
 			</include>
 		</control>
 	</controls>
