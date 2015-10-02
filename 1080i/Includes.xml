@@ -540,28 +540,28 @@
 	<include name="AddonLauncherItems">
 		<content>
 			<item>
-				<label>Video add-ons</label>
+				<label>$LOCALIZE[1037]</label>
 				<onclick>ActivateWindow(videos,addons://sources/video/,return)</onclick>
 				<icon>icons/settings/video.png</icon>
 			</item>
 			<item>
-				<label>Audio add-ons</label>
+				<label>$LOCALIZE[1038]</label>
 				<onclick>ActivateWindow(music,addons://sources/audio/,return)</onclick>
 				<icon>icons/settings/music.png</icon>
 			</item>
 			<item>
-				<label>Programs</label>
+				<label>$LOCALIZE[0]</label>
 				<onclick>ActivateWindow(programs,addons://sources/executable/,return)</onclick>
 				<icon>icons/settings/appearance.png</icon>
 			</item>
 			<item>
-				<label>Android apps</label>
+				<label>$LOCALIZE[20244]</label>
 				<onclick>ActivateWindow(programs,androidapps://,return)</onclick>
 				<icon>icons/settings/android.png</icon>
 				<visible>System.Platform.Android</visible>
 			</item>
 			<item>
-				<label>Image add-ons</label>
+				<label>$LOCALIZE[1039]</label>
 				<onclick>ActivateWindow(pictures,addons://sources/image/,return)</onclick>
 				<icon>icons/settings/pictures.png</icon>
 			</item>
@@ -572,7 +572,7 @@
 				<visible>!Stringcompare(Container(8000).NumItems,0)</visible>
 			</item>
 			<item>
-				<label>Get more...</label>
+				<label>$LOCALIZE[21452]</label>
 				<onclick>ActivateWindow(addonbrowser,addons://all/,return)</onclick>
 				<icon>icons/settings/addons.png</icon>
 			</item>
@@ -581,7 +581,7 @@
 	<include name="SettingsItems">
 		<content>
 			<item>
-				<label>Media sources</label>
+				<label>$LOCALIZE[20094]</label>
 				<onclick>ActivateWindow(1103)</onclick>
 				<icon>icons/settings/filemanager.png</icon>
 			</item>
@@ -626,7 +626,7 @@
 				<icon>icons/settings/system.png</icon>
 			</item>
 			<item>
-				<label>TV</label>
+				<label>$LOCALIZE[19020]</label>
 				<onclick>ActivateWindow(PVRSettings)</onclick>
 				<icon>icons/settings/livetv.png</icon>
 			</item>
@@ -636,7 +636,7 @@
 				<icon>icons/settings/appearance.png</icon>
 			</item>
 			<item>
-				<label>System information</label>
+				<label>$LOCALIZE[138]</label>
 				<onclick>ActivateWindow(systeminfo)</onclick>
 				<icon>icons/settings/sysinfo.png</icon>
 			</item>

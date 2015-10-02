@@ -41,7 +41,7 @@
 				<height>25</height>
 				<aligny>center</aligny>
 				<font>font30</font>
-				<label>[UPPERCASE]Now playing[/UPPERCASE]: $INFO[Player.Title]</label>
+				<label>[UPPERCASE]$LOCALIZE[31000][/UPPERCASE]: $INFO[Player.Title]</label>
 				<shadowcolor>black</shadowcolor>
 				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
 				<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
