@@ -70,7 +70,7 @@
 					<description>background image</description>
 					<left>490</left>
 					<top>170</top>
-					<width>1254</width>
+					<width>1340</width>
 					<height>746</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
@@ -78,36 +78,36 @@
 					<posx>510</posx>
 					<posy>192</posy>
 					<visible>Container(9000).Hasfocus(2)</visible>
-					<width>1600</width>
-					<height>722</height>
+					<width>1300</width>
+					<height>700</height>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>2</onup>
 					<ondown>2</ondown>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="350" width="292">
+					<itemlayout height="350" width="325">
 						<control type="image">
-							<left>23</left>
+							<left>55</left>
 							<top>23</top>
-							<width>246</width>
-							<height>246</height>
+							<width>215</width>
+							<height>215</height>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
 							<texture border="4" fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<left>6</left>
-							<top>268</top>
-							<width>280</width>
+							<left>10</left>
+							<top>240</top>
+							<width>305</width>
 							<height>100</height>
 							<align>center</align>
 							<aligny>top</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>6</left>
-							<top>304</top>
-							<width>280</width>
+							<left>10</left>
+							<top>275</top>
+							<width>305</width>
 							<height>100</height>
 							<font>font12</font>
 							<textcolor>grey</textcolor>
@@ -116,9 +116,9 @@
 							<label>$LOCALIZE[31320]:</label>
 						</control>
 						<control type="label">
-							<left>6</left>
-							<top>333</top>
-							<width>280</width>
+							<left>10</left>
+							<top>305</top>
+							<width>305</width>
 							<height>100</height>
 							<textcolor>grey</textcolor>
 							<font>font12</font>
@@ -127,35 +127,35 @@
 							<label fallback="13170">$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="373" width="292">
+					<focusedlayout height="350" width="325">
 						<control type="image">
-							<width>292</width>
-							<height>390</height>
+							<width>325</width>
+							<height>352</height>
 							<texture>lists/focus.png</texture>
 							<visible>Control.HasFocus(2)</visible>
 						</control>
 						<control type="image">
-							<left>23</left>
+							<left>55</left>
 							<top>23</top>
-							<width>246</width>
-							<height>246</height>
+							<width>215</width>
+							<height>215</height>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
 							<texture border="4" fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<left>6</left>
-							<top>268</top>
-							<width>280</width>
+							<left>10</left>
+							<top>240</top>
+							<width>305</width>
 							<height>100</height>
 							<align>center</align>
 							<aligny>top</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>6</left>
-							<top>304</top>
-							<width>280</width>
+							<left>10</left>
+							<top>275</top>
+							<width>305</width>
 							<height>100</height>
 							<textcolor>grey</textcolor>
 							<font>font12</font>
@@ -164,9 +164,9 @@
 							<label>$LOCALIZE[31320]:</label>
 						</control>
 						<control type="label">
-							<left>6</left>
-							<top>333</top>
-							<width>280</width>
+							<left>10</left>
+							<top>305</top>
+							<width>305</width>
 							<height>100</height>
 							<font>font12</font>
 							<textcolor>grey</textcolor>
@@ -178,7 +178,7 @@
 				</control>
 				<control type="grouplist" id="9001">
 					<visible>Container(9000).Hasfocus(1)</visible>
-					<width>1484</width>
+					<width>1300</width>
 					<height>735</height>
 					<posx>510</posx>
 					<posy>192</posy>
@@ -189,13 +189,13 @@
 					<control type="radiobutton" id="4">
 						<label>$LOCALIZE[20096]</label>
 						<include>DefaultSettingButton</include>
-						<width>1214</width>
+						<width>1300</width>
 					</control>
 					<control type="button" id="5">
 						<label>Auto Login</label>
 						<label2>[B]$INFO[System.ProfileAutoLogin][/B]</label2>
 						<include>DefaultSettingButton</include>
-						<width>1214</width>
+						<width>1300</width>
 						<enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
 					</control>
 				</control>
