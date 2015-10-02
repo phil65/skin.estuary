@@ -168,7 +168,7 @@
 				<textcolor>grey</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>[COLOR=button_focus]$INFO[Container(11).NumItems][/COLOR] $LOCALIZE[19019] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</label>
+				<label>[COLOR=button_focus]$INFO[Container(11).NumItems][/COLOR] $LOCALIZE[19019] - Pages [COLOR=button_focus]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</label>
 			</control>
 		</control>
 	</controls>

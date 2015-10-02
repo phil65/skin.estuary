@@ -113,7 +113,7 @@
 						<onclick>NextChannelGroup</onclick>
 					</control>
 					<control type="label" id="300">
-						<label>31026</label>
+						<label>Misc options</label>
 						<include>MediaMenuLabelCommon</include>
 						<visible>Control.IsVisible(31) |Control.IsVisible(5) |Control.IsVisible(6) |Control.IsVisible(7) |Control.IsVisible(8)</visible>
 					</control>

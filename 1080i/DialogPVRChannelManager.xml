@@ -200,7 +200,7 @@
 					<height>50</height>
 					<textoffsetx>30</textoffsetx>
 					<font>font12</font>
-					<label>$LOCALIZE[31026]</label>
+					<label>Misc options</label>
 					<aligny>center</aligny>
 					<textcolor>button_focus</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -277,7 +277,7 @@
 				<textcolor>grey</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>[COLOR=button_focus]$INFO[Container(20).NumItems][/COLOR] $LOCALIZE[19019] - $LOCALIZE[31024] [COLOR=button_focus]$INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages][/COLOR]</label>
+				<label>[COLOR=button_focus]$INFO[Container(20).NumItems][/COLOR] $LOCALIZE[19019] - Pages [COLOR=button_focus]$INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages][/COLOR]</label>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 		</control>

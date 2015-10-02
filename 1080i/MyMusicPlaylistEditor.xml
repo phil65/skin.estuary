@@ -17,7 +17,7 @@
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[31061]</label>
+				<label>Current selected</label>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>100</left>
@@ -28,21 +28,21 @@
 				<itemgap>-20</itemgap>
 				<include name="DefaultDialogButton">
 					<param name="id" value="6" />
-					<param name="label" value="$LOCALIZE[31055]" />
+					<param name="label" value="Open playlist" />
 					<param name="width" value="200" />
 					<param name="height" value="200" />
 					<param name="wrapmultiline" value="true" />
 				</include>
 				<include name="DefaultDialogButton">
 					<param name="id" value="7" />
-					<param name="label" value="$LOCALIZE[31056]" />
+					<param name="label" value="Save playlist" />
 					<param name="width" value="200" />
 					<param name="height" value="200" />
 					<param name="wrapmultiline" value="true" />
 				</include>
 				<include name="DefaultDialogButton">
 					<param name="id" value="8" />
-					<param name="label" value="$LOCALIZE[31057]" />
+					<param name="label" value="Close playlist" />
 					<param name="width" value="200" />
 					<param name="height" value="200" />
 					<param name="wrapmultiline" value="true" />
@@ -55,7 +55,7 @@
 			<posy>180</posy>
 			<include name="FileManagerPanel">
 				<param name="header_id" value="22" />
-				<param name="header_label" value="$LOCALIZE[31058]" />
+				<param name="header_label" value="System music files" />
 				<param name="list_id" value="50" />
 				<param name="scrollbar_id" value="60" />
 				<param name="onleft_id" value="9000" />
@@ -70,7 +70,7 @@
 			<posy>180</posy>
 			 <include name="FileManagerPanel">
 				<param name="header_id" value="23" />
-				<param name="header_label" value="$LOCALIZE[31059]" />
+				<param name="header_label" value="Current playlist" />
 				<param name="list_id" value="100" />
 				<param name="scrollbar_id" value="61" />
 				<param name="onleft_id" value="50" />
