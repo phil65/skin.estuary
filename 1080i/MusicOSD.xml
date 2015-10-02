@@ -90,28 +90,28 @@
 				<onleft>605</onleft>
 				<onright>600</onright>
 				<control type="radiobutton" id="701">
-					<label>13396</label>
+					<label>$LOCALIZE[13396]</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/settings-audio.png"/>
 					</include>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
 				</control>
 				<control type="radiobutton" id="702">
-					<label>13395</label>
+					<label>$LOCALIZE[13395]</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/settings-video.png"/>
 					</include>
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
 				</control>
 				<control type="radiobutton" id="700">
-					<label>298</label>
+					<label>$LOCALIZE[298]</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/bookmarks.png"/>
 					</include>
 				<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 				</control>
 				<control type="radiobutton" id="703">
-					<label>31356</label>
+					<label>Download subtitles</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
 					</include>
@@ -119,7 +119,7 @@
 					<enable>Visualisation.HasPresets</enable>
 				</control>
 				<control type="radiobutton" id="500">
-					<label>31355</label>
+					<label>Movie menu</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
 					</include>
