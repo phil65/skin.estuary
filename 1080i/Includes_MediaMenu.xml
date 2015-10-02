@@ -86,7 +86,7 @@
 					<control type="button" id="6051">
 						<description>Viewtype Toggle</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>Viewtype</label>
+						<label>$LOCALIZE[31023]</label>
 						<label2>[B]$INFO[Container.Viewmode][/B]</label2>
 						<onclick>Container.NextViewMode</onclick>
 						<visible>Window.IsActive(tvguide) | Window.IsActive(radioguide)</visible>
@@ -94,7 +94,7 @@
 					<control type="button" id="6053">
 						<description>Sort by button</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>Sort by:</label>
+						<label>$LOCALIZE[31022]</label>
 						<label2>[B]$INFO[Container.SortMethod][/B]</label2>
 						<onclick>Container.NextSortMethod</onclick>
 					</control>
@@ -108,7 +108,7 @@
 					<control type="button" id="6054">
 						<description>Channel Groups</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>Group:</label>
+						<label>$LOCALIZE[19141]</label>
 						<label2>[B]$PARAM[group_label2][/B]</label2>
 						<onclick>NextChannelGroup</onclick>
 					</control>
@@ -210,7 +210,7 @@
 			<control type="button" id="6051">
 				<description>Viewtype Toggle</description>
 				<include>MediaMenuItemsCommon</include>
-				<label>Viewtype</label>
+				<label>$LOCALIZE[31023]</label>
 				<label2>[B]$INFO[Container.Viewmode][/B]</label2>
 				<enable>$PARAM[viewtype_button_vis]</enable>
 				<onclick>Container.NextViewMode</onclick>
@@ -218,7 +218,7 @@
 			<control type="button" id="6053">
 				<description>Sort by button</description>
 				<include>MediaMenuItemsCommon</include>
-				<label>Sort by</label>
+				<label>$LOCALIZE[31022]</label>
 				<label2>[B]$INFO[Container.SortMethod][/B]</label2>
 				<enable>Control.IsEnabled(3)</enable>
 				<onclick>SendClick(3)</onclick>
