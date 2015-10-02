@@ -37,7 +37,7 @@
 				<control type="label" id="203">
 					<description>Actions</description>
 					<include>MediaMenuLabelCommon</include>
-					<label>Actions</label>
+					<label>$LOCALIZE[31020]</label>
 				</control>
 				<control type="button" id="6">
 					<label>$LOCALIZE[13317]</label>
@@ -50,12 +50,6 @@
 				<control type="button" id="9">
 					<label>$LOCALIZE[13319]</label>
 					<include>MediaMenuItemsCommon</include>
-				</control>
-				<control type="button" id="1688">
-					<label>Show Images on Map</label>
-					<onclick>RunScript(script.maps.browser,folder=$INFO[Container.FolderPath])</onclick>
-					<include>MediaMenuItemsCommon</include>
-					<visible>System.HasAddon(script.maps.browser)</visible>
 				</control>
 			</control>
 		</control>

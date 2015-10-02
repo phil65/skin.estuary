@@ -925,21 +925,21 @@
 						</item>
 						<item id="10">
 							<label>$LOCALIZE[342]</label>
-							<label2>Watched: $INFO[Window(home).Property(movies.watched)] / $INFO[Window(home).Property(movies.Count)]</label2>
+							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(movies.watched)] / $INFO[Window(home).Property(movies.Count)]</label2>
 							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 							<thumb>icons/home/movies.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
 						</item>
 						<item id="11">
 							<label>$LOCALIZE[20343]</label>
-							<label2>Watched: $INFO[Window(home).Property(episodes.watched)] / $INFO[Window(home).Property(episodes.Count)]</label2>
+							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(episodes.watched)] / $INFO[Window(home).Property(episodes.Count)]</label2>
 							<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 							<thumb>icons/home/tv.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
 						</item>
 						<item id="3">
 							<label>$LOCALIZE[2]</label>
-							<label2>Artists: $INFO[Window(Home).Property(Music.ArtistsCount)]</label2>
+							<label2>$LOCALIZE[133]: $INFO[Window(Home).Property(Music.ArtistsCount)]</label2>
 							<onclick>ActivateWindow(Music)</onclick>
 							<thumb>icons/home/music.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
