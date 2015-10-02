@@ -81,7 +81,7 @@
 					</control>
 					<control type="label" id="200">
 						<include>MediaMenuLabelCommon</include>
-						<label>31006</label>
+						<label>View options</label>
 					</control>
 					<control type="button" id="6051">
 						<description>Viewtype Toggle</description>
@@ -120,7 +120,7 @@
 					<control type="radiobutton" id="31">
 						<description>Filter</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>587</label>
+						<label>$LOCALIZE[587]</label>
 						<selected>Container.Filtered</selected>
 						<onclick>right</onclick>
 						<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
@@ -128,25 +128,25 @@
 					<control type="radiobutton" id="5">
 						<description>Group recording items by folder structure</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>19270</label>
+						<label>$LOCALIZE[19270]</label>
 						<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 					</control>
 					<control type="radiobutton" id="6">
 						<description>Show hidden channels</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>19051</label>
+						<label>$LOCALIZE[19051]</label>
 						<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
 					</control>
 					<control type="radiobutton" id="7">
 						<description>Show deleted recordings</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>19184</label>
+						<label>$LOCALIZE[19184]</label>
 						<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 					</control>
 					<control type="radiobutton" id="8">
 						<description>Group timers</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>842</label>
+						<label>$LOCALIZE[842]</label>
 						<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</visible>
 					</control>
 				</control>
@@ -205,7 +205,7 @@
 			<onback>50</onback>
 			<control type="label" id="200">
 				<include>MediaMenuLabelCommon</include>
-				<label>31006</label>
+				<label>View options</label>
 			</control>
 			<control type="button" id="6051">
 				<description>Viewtype Toggle</description>

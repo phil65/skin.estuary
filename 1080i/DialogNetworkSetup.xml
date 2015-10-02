@@ -25,7 +25,7 @@
 				<width>1150</width>
 				<include>SettingsItemCommon</include>
 				<reverse>yes</reverse>
-				<label>1008</label>
+				<label>$LOCALIZE[1008]</label>
 			</control>
 			<control type="edit" id="11">
 				<description>Server Address Button</description>
@@ -37,7 +37,7 @@
 				<description>Server Browse Button</description>
 				<include>SettingsItemCommon</include>
 				<width>1150</width>
-				<label>1024</label>
+				<label>$LOCALIZE[1024]</label>
 			</control>
 			<control type="edit" id="16">
 				<description>Remote path Button</description>
@@ -49,19 +49,19 @@
 				<description>Port Button</description>
 				<width>1150</width>
 				<include>SettingsItemCommon</include>
-				<label>1013</label>
+				<label>$LOCALIZE[1013]</label>
 			</control>
 			<control type="edit" id="14">
 				<description>Username Button</description>
 				<width>1150</width>
 				<include>SettingsItemCommon</include>
-				<label>1014</label>
+				<label>$LOCALIZE[1014]</label>
 			</control>
 			<control type="edit" id="15">
 				<description>Password Button</description>
 				<width>1150</width>
 				<include>SettingsItemCommon</include>
-				<label>15052</label>
+				<label>$LOCALIZE[15052]</label>
 			</control>
 		</control>
 		<control type="grouplist" id="9001">
