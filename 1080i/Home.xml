@@ -138,7 +138,7 @@
 					<param name="widget_header" value="In-progress TV Shows"/>
 					<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
 					<param name="widget_target" value="videos"/>
-					<param name="second_label" value="Watched: $INFO[ListItem.Property(WatchedEpisodes)] / $INFO[ListItem.Property(TotalEpisodes)]" />
+					<param name="second_label" value="$LOCALIZE[16102]: $INFO[ListItem.Property(WatchedEpisodes)] / $INFO[ListItem.Property(TotalEpisodes)]" />
 					<param name="list_id" value="6100"/>
 					<param name="onup_id" value="6900"/>
 					<param name="ondown_id" value="6200"/>
@@ -517,7 +517,7 @@
 						<height>90</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>[COLOR button_focus]Now Playing: [/COLOR]$INFO[Player.Title]$INFO[VideoPlayer.Year, [,]]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31000]: [/COLOR]$INFO[Player.Title]$INFO[VideoPlayer.Year, [,]]</label>
 						<font>font14</font>
 					</control>
 					<control type="textbox">
@@ -772,10 +772,10 @@
 				<font>font14</font>
 				<scrollout>false</scrollout>
 				<pauseatend>5000</pauseatend>
-				<label>Find movies...</label>
-				<label>Find episodes...</label>
-				<label>Find music...</label>
-				<label>Find actors...</label>
+				<label>$LOCALIZE[31001]...</label>
+				<label>$LOCALIZE[31002]...</label>
+				<label>$LOCALIZE[31003]...</label>
+				<label>$LOCALIZE[31004]...</label>
 			</control>
 			<control type="group">
 				<left>53</left>
@@ -917,42 +917,42 @@
 					</itemlayout>
 					<content>
 						<item id="14">
-							<label>[B]Now playing...[/B]</label>
+							<label>[B]$LOCALIZE[31000]...[/B]</label>
 							<onclick condition="Player.HasVideo">Fullscreen</onclick>
 							<onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
 							<thumb>icons/home/now-playing.png</thumb>
 							<visible>Player.HasMedia</visible>
 						</item>
 						<item id="10">
-							<label>Movies</label>
+							<label>$LOCALIZE[342]</label>
 							<label2>Watched: $INFO[Window(home).Property(movies.watched)] / $INFO[Window(home).Property(movies.Count)]</label2>
 							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 							<thumb>icons/home/movies.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
 						</item>
 						<item id="11">
-							<label>TV shows</label>
+							<label>$LOCALIZE[20343]</label>
 							<label2>Watched: $INFO[Window(home).Property(episodes.watched)] / $INFO[Window(home).Property(episodes.Count)]</label2>
 							<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 							<thumb>icons/home/tv.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
 						</item>
 						<item id="3">
-							<label>Music</label>
+							<label>$LOCALIZE[2]</label>
 							<label2>Artists: $INFO[Window(Home).Property(Music.ArtistsCount)]</label2>
 							<onclick>ActivateWindow(Music)</onclick>
 							<thumb>icons/home/music.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 						</item>
 						<item id="12">
-							<label>TV</label>
+							<label>$LOCALIZE[19020]</label>
 							<label2>$INFO[Pvr.BackendChannels,Channels: ]</label2>
 							<onclick>ActivateWindow(TVChannels)</onclick>
 							<thumb>icons/home/livetv.png</thumb>
 							<visible>PVR.HasTVChannels</visible>
 						</item>
 						<item id="13">
-							<label>Radio</label>
+							<label>$LOCALIZE[19021]</label>
 							<label2>$INFO[Pvr.BackendChannels,Channels: ]</label2>
 							<onclick>ActivateWindow(RadioChannels)</onclick>
 							<thumb>icons/home/radio.png</thumb>
@@ -965,19 +965,19 @@
 							<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 						</item>
 						<item id="4">
-							<label>Pictures</label>
+							<label>$LOCALIZE[1]</label>
 							<onclick>ActivateWindow(Pictures)</onclick>
 							<thumb>icons/home/pictures.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 						</item>
 						<item id="2">
-							<label>Videos</label>
+							<label>$LOCALIZE[3]</label>
 							<onclick>ActivateWindow(Videos,root)</onclick>
 							<thumb>icons/home/videos.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 						</item>
 						<item id="7">
-							<label>Weather</label>
+							<label>$LOCALIZE[8]</label>
 							<label2>$INFO[Window(Weather).Property(WeatherProvider)]</label2>
 							<onclick>ActivateWindow(Weather)</onclick>
 							<thumb>icons/home/weather.png</thumb>
