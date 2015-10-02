@@ -195,59 +195,56 @@
 				<visible>Control.IsVisible(570)</visible>
 			</control>
 		</control>
-		<control type="group">
+		<control type="grouplist" id="9000">
 			<left>-250</left>
-			<control type="grouplist" id="9000">
-				<left>0</left>
-				<top>110</top>
+			<top>110</top>
+			<width>250</width>
+			<height>600</height>
+			<onleft>9000</onleft>
+			<onright>570</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<onback>570</onback>
+			<control type="label" id="200">
 				<width>250</width>
-				<height>600</height>
-				<onleft>9000</onleft>
-				<onright>570</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onback>570</onback>
-				<control type="label" id="200">
-					<width>250</width>
-					<height>35</height>
-					<font>font12</font>
-					<label>View options</label>
-					<textcolor>button_focus</textcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-				</control>
-				<control type="togglebutton" id="4">
-					<description>Sort asc</description>
-					<include>MediaMenuItemsCommon</include>
-					<label>Sort: Descending</label>
-					<altlabel>Sort: Ascending</altlabel>
-					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
-				</control>
-				<control type="label" id="201">
-					<width>250</width>
-					<height>35</height>
-					<font>font12</font>
-					<label>Misc options</label>
-					<textcolor>button_focus</textcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-				</control>
-				<control type="button" id="21">
-					<description>Level button</description>
-					<textwidth>235</textwidth>
-					<include>MediaMenuItemsCommon</include>
-					<label>-</label>
-				</control>
-				<control type="radiobutton" id="22">
-					<description>Only show current level</description>
-					<include>MediaMenuItemsCommon</include>
-					<label>-</label>
-				</control>
-				<control type="button" id="20">
-					<description>Clear button</description>
-					<include>MediaMenuItemsCommon</include>
-					<label>$LOCALIZE[192]</label>
-				</control>
+				<height>35</height>
+				<font>font12</font>
+				<label>View options</label>
+				<textcolor>button_focus</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="togglebutton" id="4">
+				<description>Sort asc</description>
+				<include>MediaMenuItemsCommon</include>
+				<label>Sort: Descending</label>
+				<altlabel>Sort: Ascending</altlabel>
+				<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+			</control>
+			<control type="label" id="201">
+				<width>250</width>
+				<height>35</height>
+				<font>font12</font>
+				<label>Misc options</label>
+				<textcolor>button_focus</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="21">
+				<description>Level button</description>
+				<textwidth>235</textwidth>
+				<include>MediaMenuItemsCommon</include>
+				<label>-</label>
+			</control>
+			<control type="radiobutton" id="22">
+				<description>Only show current level</description>
+				<include>MediaMenuItemsCommon</include>
+				<label>-</label>
+			</control>
+			<control type="button" id="20">
+				<description>Clear button</description>
+				<include>MediaMenuItemsCommon</include>
+				<label>$LOCALIZE[192]</label>
 			</control>
 		</control>
 		<include name="TopBar">

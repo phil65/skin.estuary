@@ -128,69 +128,66 @@
 				<animation effect="fade" end="0" time="200">Hidden</animation>
 			</control>
 			<control type="group">
-				<posy>854</posy>
-				<control type="group">
-					<posy>-900</posy>
-					<visible>!Window.IsActive(musicosd)</visible>
-					<animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
-					<animation effect="fade" end="0" time="200">Hidden</animation>
-					<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
-					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<control type="textbox">
-						<posx>600</posx>
-						<posy>996</posy>
-						<width>1230</width>
-						<align>right</align>
-						<height>110</height>
-						<label>[B][UPPERCASE]Next Tracks[/UPPERCASE][/B][CR]$INFO[MusicPlayer.Offset(1).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(1).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(2).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(2).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(3).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(3).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
-						<textcolor>button_focus</textcolor>
-						<visible>!IsEmpty(MusicPlayer.Offset(1).Title)</visible>
-						<visible>Player.HasAudio</visible>
-					</control>
-					<control type="image">
-						<posx>91</posx>
-						<posy>1006</posy>
-						<width>150</width>
-						<height>99</height>
-						<texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-				</control>
-				<control type="label">
-					<posx>1840</posx>
-					<posy>-20</posy>
-					<width>400</width>
-					<height>45</height>
+				<posy>-46</posy>
+				<visible>!Window.IsActive(musicosd)</visible>
+				<animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
+				<animation effect="fade" end="0" time="200">Hidden</animation>
+				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<control type="textbox">
+					<posx>600</posx>
+					<posy>996</posy>
+					<width>1230</width>
 					<align>right</align>
-					<aligny>bottom</aligny>
-					<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-					<font>font30_title</font>
-					<shadowcolor>black</shadowcolor>
-					<textcolor>grey</textcolor>
-					<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
-					<animation effect="fade" end="0" time="200">WindowClose</animation>
+					<height>110</height>
+					<label>[B][UPPERCASE]Next Tracks[/UPPERCASE][/B][CR]$INFO[MusicPlayer.Offset(1).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(1).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(2).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(2).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(3).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(3).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
+					<textcolor>button_focus</textcolor>
+					<visible>!IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+					<visible>Player.HasAudio</visible>
 				</control>
-				<control type="progress">
-					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<posx>30</posx>
-					<posy>45</posy>
-					<width>1860</width>
-					<height>30</height>
-					<info>Player.ProgressCache</info>
-					<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>91</posx>
+					<posy>1006</posy>
+					<width>150</width>
+					<height>99</height>
+					<texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
-				<control type="progress" id="23">
-					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<posx>30</posx>
-					<posy>45</posy>
-					<width>1860</width>
-					<height>30</height>
-					<info>Player.Progress</info>
-					<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-				</control>
+			</control>
+			<control type="label">
+				<posx>1840</posx>
+				<posy>834</posy>
+				<width>400</width>
+				<height>45</height>
+				<align>right</align>
+				<aligny>bottom</aligny>
+				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+				<font>font30_title</font>
+				<shadowcolor>black</shadowcolor>
+				<textcolor>grey</textcolor>
+				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+			</control>
+			<control type="progress">
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<posx>30</posx>
+				<posy>900</posy>
+				<width>1860</width>
+				<height>30</height>
+				<info>Player.ProgressCache</info>
+				<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
+				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="progress" id="23">
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<posx>30</posx>
+				<posy>900</posy>
+				<width>1860</width>
+				<height>30</height>
+				<info>Player.Progress</info>
+				<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
+				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 			</control>
 		</control>
 		<control type="group" id="0">

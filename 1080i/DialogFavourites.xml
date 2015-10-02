@@ -42,72 +42,68 @@
 			<scrolltime tween="sine">200</scrolltime>
 			<orientation>vertical</orientation>
 			<itemlayout width="365" height="350">
-				<control type="group">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>320</width>
-						<height>320</height>
-						<aspectratio>scale</aspectratio>
-						<texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
-					</control>
-					<control type="image">
-						<left>4</left>
-						<top>276</top>
-						<width>312</width>
-						<height>40</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
-					</control>
-					<control type="label">
-						<left>4</left>
-						<top>276</top>
-						<width>312</width>
-						<height>40</height>
-						<align>center</align>
-						<font>font12</font>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>320</width>
+					<height>320</height>
+					<aspectratio>scale</aspectratio>
+					<texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
+					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+					<bordersize>4</bordersize>
+				</control>
+				<control type="image">
+					<left>4</left>
+					<top>276</top>
+					<width>312</width>
+					<height>40</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+				</control>
+				<control type="label">
+					<left>4</left>
+					<top>276</top>
+					<width>312</width>
+					<height>40</height>
+					<align>center</align>
+					<font>font12</font>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout width="365" height="350">
-				<control type="group">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>320</width>
-						<height>320</height>
-						<aspectratio>scale</aspectratio>
-						<texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
-					</control>
-					<control type="image">
-						<left>4</left>
-						<top>276</top>
-						<width>312</width>
-						<height>40</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
-					</control>
-					<control type="label">
-						<left>4</left>
-						<top>276</top>
-						<width>312</width>
-						<height>40</height>
-						<align>center</align>
-						<font>font12</font>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>320</width>
-						<height>320</height>
-						<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-					</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>320</width>
+					<height>320</height>
+					<aspectratio>scale</aspectratio>
+					<texture border="4" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
+					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+					<bordersize>4</bordersize>
+				</control>
+				<control type="image">
+					<left>4</left>
+					<top>276</top>
+					<width>312</width>
+					<height>40</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+				</control>
+				<control type="label">
+					<left>4</left>
+					<top>276</top>
+					<width>312</width>
+					<height>40</height>
+					<align>center</align>
+					<font>font12</font>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>320</width>
+					<height>320</height>
+					<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 				</control>
 			</focusedlayout>
 		</control>
