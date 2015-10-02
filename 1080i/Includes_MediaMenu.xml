@@ -81,7 +81,7 @@
 					</control>
 					<control type="label" id="200">
 						<include>MediaMenuLabelCommon</include>
-						<label>View options</label>
+						<label>$LOCALIZE[14018]</label>
 					</control>
 					<control type="button" id="6051">
 						<description>Viewtype Toggle</description>
@@ -113,7 +113,7 @@
 						<onclick>NextChannelGroup</onclick>
 					</control>
 					<control type="label" id="300">
-						<label>Misc options</label>
+						<label>$LOCALIZE[31021]</label>
 						<include>MediaMenuLabelCommon</include>
 						<visible>Control.IsVisible(31) |Control.IsVisible(5) |Control.IsVisible(6) |Control.IsVisible(7) |Control.IsVisible(8)</visible>
 					</control>
@@ -205,7 +205,7 @@
 			<onback>50</onback>
 			<control type="label" id="200">
 				<include>MediaMenuLabelCommon</include>
-				<label>View options</label>
+				<label>$LOCALIZE[14018]</label>
 			</control>
 			<control type="button" id="6051">
 				<description>Viewtype Toggle</description>

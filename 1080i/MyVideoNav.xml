@@ -93,7 +93,6 @@
 					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes)</visible>
 				</control>
 				<control type="label" id="203">
-					<description>View options</description>
 					<include>MediaMenuLabelCommon</include>
 					<label>$LOCALIZE[31020]</label>
 				</control>
