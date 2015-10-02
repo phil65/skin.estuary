@@ -924,28 +924,28 @@
 							<visible>Player.HasMedia</visible>
 						</item>
 						<item id="10">
-							<label>31954</label>
+							<label>Movies</label>
 							<label2>Watched: $INFO[Window(home).Property(movies.watched)] / $INFO[Window(home).Property(movies.Count)]</label2>
 							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 							<thumb>icons/home/movies.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
 						</item>
 						<item id="11">
-							<label>31955</label>
+							<label>TV shows</label>
 							<label2>Watched: $INFO[Window(home).Property(episodes.watched)] / $INFO[Window(home).Property(episodes.Count)]</label2>
 							<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 							<thumb>icons/home/tv.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
 						</item>
 						<item id="3">
-							<label>31956</label>
+							<label>Music</label>
 							<label2>Artists: $INFO[Window(Home).Property(Music.ArtistsCount)]</label2>
 							<onclick>ActivateWindow(Music)</onclick>
 							<thumb>icons/home/music.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 						</item>
 						<item id="12">
-							<label>31952</label>
+							<label>TV</label>
 							<label2>$INFO[Pvr.BackendChannels,Channels: ]</label2>
 							<onclick>ActivateWindow(TVChannels)</onclick>
 							<thumb>icons/home/livetv.png</thumb>
@@ -965,13 +965,13 @@
 							<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 						</item>
 						<item id="4">
-							<label>31951</label>
+							<label>Pictures</label>
 							<onclick>ActivateWindow(Pictures)</onclick>
 							<thumb>icons/home/pictures.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 						</item>
 						<item id="2">
-							<label>31953</label>
+							<label>Videos</label>
 							<onclick>ActivateWindow(Videos,root)</onclick>
 							<thumb>icons/home/videos.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>

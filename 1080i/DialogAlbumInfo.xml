@@ -143,13 +143,13 @@
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/update.png" />
 					</include>
-					<label>184</label>
+					<label>$LOCALIZE[184]</label>
 				</control>
 				<control type="radiobutton" id="10">
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/choose_image.png" />
 					</include>
-					<label>13405</label>
+					<label>$LOCALIZE[13405]</label>
 				</control>
 				<control type="radiobutton" id="12">
 					<include name="VideoInfoButtonsCommon">
