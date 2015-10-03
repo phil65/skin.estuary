@@ -28,7 +28,7 @@
 			<control type="group" id="4100">
 				<height>0</height>
 				<control type="image">
-					<posy>-150</posy>
+					<top>-150</top>
 					<width>350</width>
 					<height>70</height>
 					<aspectratio>keep</aspectratio>
@@ -55,7 +55,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<posx>250</posx>
+			<left>250</left>
 			<visible>Control.IsVisible(570)</visible>
 			<include>OpenClose_Right</include>
 			<control type="image">

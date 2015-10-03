@@ -21,7 +21,7 @@
 				<viewtype label="Icon Wall">icon</viewtype>
 				<itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files) | Container.Content(playlists)">
 					<control type="group">
-						<posy>2</posy>
+						<top>2</top>
 						<control type="image">
 							<width>400</width>
 							<height>245</height>
@@ -36,8 +36,8 @@
 							<align>center</align>
 						</control>
 						<control type="image">
-							<posx>19</posx>
-							<posy>149</posy>
+							<left>19</left>
+							<top>149</top>
 							<width>359</width>
 							<height>75</height>
 							<texture colordiffuse="border_alpha">colors/black.png</texture>
@@ -61,7 +61,7 @@
 						<animation type="UnFocus" reversible="false">
 							<effect type="zoom" center="auto" start="108" end="100" time="150" tween="sine" />
 						</animation>
-						<posy>2</posy>
+						<top>2</top>
 						<control type="image">
 							<width>400</width>
 							<height>245</height>
@@ -82,8 +82,8 @@
 							<align>center</align>
 						</control>
 						<control type="image">
-							<posx>19</posx>
-							<posy>149</posy>
+							<left>19</left>
+							<top>149</top>
 							<width>359</width>
 							<height>75</height>
 							<texture colordiffuse="border_alpha">colors/black.png</texture>

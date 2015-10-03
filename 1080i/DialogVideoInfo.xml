@@ -4,12 +4,11 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<left>550</left>
-			<posx>40</posx>
+			<left>590</left>
 			<control type="grouplist" id="4000">
 				<orientation>vertical</orientation>
-				<posx>736</posx>
-				<posy>163</posy>
+				<left>736</left>
+				<top>163</top>
 				<itemgap>-15</itemgap>
 				<ondown>5000</ondown>
 				<onup>50</onup>
@@ -65,8 +64,7 @@
 				</control>
 			</control>
 			<control type="group" id="140">
-				<posx>0</posx>
-				<posy>163</posy>
+				<top>163</top>
 				<control type="button" id="138">
 					<width>750</width>
 					<height>270</height>
@@ -83,8 +81,8 @@
 					<ondown>5000</ondown>
 				</control>
 				<control type="textbox" id="800">
-					<posx>40</posx>
-					<posy>25</posy>
+					<left>40</left>
+					<top>25</top>
 					<width>670</width>
 					<height>217</height>
 					<align>left</align>
@@ -94,8 +92,7 @@
 				</control>
 			</control>
 			<control type="list" id="50">
-				<posx></posx>
-				<posy>538</posy>
+				<top>538</top>
 				<width>1235</width>
 				<height>600</height>
 				<onleft>50</onleft>
@@ -106,10 +103,10 @@
 				<orientation>horizontal</orientation>
 				<itemlayout height="400" width="245">
 					<control type="group">
-						<posx>0</posx>
-						<posy>10</posy>
+						<left>0</left>
+						<top>10</top>
 						<control type="image">
-							<posy>0</posy>
+							<top>0</top>
 							<width>264</width>
 							<height>357</height>
 							<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
@@ -121,7 +118,7 @@
 							<left>20</left>
 							<width>224</width>
 							<height>70</height>
-							<posy>267</posy>
+							<top>267</top>
 							<texture>colors/black.png</texture>
 							<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 						</control>
@@ -129,7 +126,7 @@
 							<left>25</left>
 							<width>214</width>
 							<height>69</height>
-							<posy>267</posy>
+							<top>267</top>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
@@ -139,10 +136,10 @@
 				</itemlayout>
 				<focusedlayout height="400" width="245">
 					<control type="group">
-						<posx>0</posx>
-						<posy>10</posy>
+						<left>0</left>
+						<top>10</top>
 						<control type="image">
-							<posy>0</posy>
+							<top>0</top>
 							<width>264</width>
 							<height>357</height>
 							<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
@@ -154,7 +151,7 @@
 							<left>20</left>
 							<width>224</width>
 							<height>70</height>
-							<posy>267</posy>
+							<top>267</top>
 							<texture>colors/black.png</texture>
 							<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 						</control>
@@ -162,7 +159,7 @@
 							<left>25</left>
 							<width>214</width>
 							<height>69</height>
-							<posy>267</posy>
+							<top>267</top>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
@@ -170,7 +167,7 @@
 						</control>
 						<control type="image">
 							<left>18</left>
-							<posy>20</posy>
+							<top>20</top>
 							<width>230</width>
 							<height>320</height>
 							<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
@@ -180,8 +177,8 @@
 				</focusedlayout>
 			</control>
 			<control type="grouplist" id="5000">
-				<posx>0</posx>
-				<posy>420</posy>
+				<left>0</left>
+				<top>420</top>
 				<width>1246</width>
 				<height>400</height>
 				<onleft>5000</onleft>
@@ -262,15 +259,15 @@
 					<control type="label">
 						<label>$INFO[ListItem.UserRating]</label>
 						<font>font30_title</font>
-						<posx>0</posx>
-						<posy>18</posy>
+						<left>0</left>
+						<top>18</top>
 						<width>262</width>
 						<align>center</align>
 					</control>
 					<control type="image">
 						<texture>icons/infodialogs/rating.png</texture>
-						<posx>107</posx>
-						<posy>24</posy>
+						<left>107</left>
+						<top>24</top>
 						<width>48</width>
 						<height>48</height>
 						<align>center</align>
@@ -306,8 +303,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>-15</posx>
-				<posy>480</posy>
+				<left>-15</left>
+				<top>480</top>
 				<width>28</width>
 				<height>28</height>
 				<texture colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texture>
@@ -316,8 +313,8 @@
 				<visible>Container(5000).HasPrevious + ControlGroup(5000).HasFocus</visible>
 			</control>
 			<control type="image">
-				<posx>1240</posx>
-				<posy>480</posy>
+				<left>1240</left>
+				<top>480</top>
 				<width>28</width>
 				<height>28</height>
 				<texture colordiffuse="button_focus">overlays/arrowright.png</texture>
@@ -326,8 +323,8 @@
 				<visible>Container(5000).HasNext + ControlGroup(5000).HasFocus</visible>
 			</control>
 			<control type="image">
-				<posx>-15</posx>
-				<posy>720</posy>
+				<left>-15</left>
+				<top>720</top>
 				<width>28</width>
 				<height>28</height>
 				<texture colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texture>
@@ -336,8 +333,8 @@
 				<visible>Container(50).HasPrevious + Control.HasFocus(50)</visible>
 			</control>
 			<control type="image">
-				<posx>1240</posx>
-				<posy>720</posy>
+				<left>1240</left>
+				<top>720</top>
 				<width>28</width>
 				<height>28</height>
 				<texture colordiffuse="button_focus">overlays/arrowright.png</texture>

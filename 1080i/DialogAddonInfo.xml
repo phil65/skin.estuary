@@ -5,8 +5,8 @@
 		<control type="group">
 			<include>OpenClose_Right</include>
 			<control type="button" id="13">
-				<posx>815</posx>
-				<posy>162</posy>
+				<left>815</left>
+				<top>162</top>
 				<width>1000</width>
 				<height>509</height>
 				<aligny>bottom</aligny>
@@ -14,8 +14,8 @@
 				<label>-</label>
 			</control>
 			<control type="label" id="400">
-				<posx>855</posx>
-				<posy>200</posy>
+				<left>855</left>
+				<top>200</top>
 				<width>920</width>
 				<height>396</height>
 				<wrapmultiline>true</wrapmultiline>
@@ -24,8 +24,8 @@
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>88</posx>
-				<posy>770</posy>
+				<left>88</left>
+				<top>770</top>
 				<width>1920</width>
 				<height>768</height>
 				<onleft>9000</onleft>
@@ -94,8 +94,8 @@
 					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>130</posx>
-					<posy>190</posy>
+					<left>130</left>
+					<top>190</top>
 					<width>420</width>
 					<align>center</align>
 					<aligny>center</aligny>

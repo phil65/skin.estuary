@@ -5,7 +5,7 @@
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
 		<control type="group" id="1">
-			<posy>912</posy>
+			<top>912</top>
 			<control type="image">
 				<left>10</left>
 				<top>-240</top>
@@ -64,7 +64,7 @@
 
             <control type="grouplist" id="5550">
                 <right>40</right>
-                <posy>-310</posy>
+                <top>-310</top>
                 <width>600</width>
                 <height>100</height>
                 <align>right</align>
@@ -74,8 +74,8 @@
                 <ondown>Close</ondown>
                 <usecontrolcoords>true</usecontrolcoords>
                 <control type="button" id="5551">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus border="100,0,0,0">buttons/button-red-fo.png</texturenofocus>
@@ -83,24 +83,24 @@
                     <onclick>SetFocus(66610)</onclick>
                 </control>
                 <control type="button" id="5552">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus border="100,0,0,0">buttons/button-red-fo.png</texturenofocus>
                     <texturefocus border="100,0,0,0">buttons/button-green-fo.png</texturefocus>
                 </control>
                 <control type="button" id="5553">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus border="100,0,0,0">buttons/button-red-fo.png</texturenofocus>
                     <texturefocus border="100,0,0,0">buttons/button-green-fo.png</texturefocus>
                 </control>
                 <control type="button" id="5554">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus border="100,0,0,0">buttons/button-red-fo.png</texturenofocus>
@@ -112,11 +112,11 @@
 
 			<!-- Progress -->
 			<control type="group">
-				<posy>119</posy>
+				<top>119</top>
 				<control type="progress">
 					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<posx>29</posx>
-					<posy>-10</posy>
+					<left>29</left>
+					<top>-10</top>
 					<width>1862</width>
 					<height>30</height>
 					<info>Player.ProgressCache</info>
@@ -126,8 +126,8 @@
 				</control>
 				<control type="progress" id="23">
 					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<posx>29</posx>
-					<posy>-10</posy>
+					<left>29</left>
+					<top>-10</top>
 					<width>1862</width>
 					<height>30</height>
 					<info>Player.Progress</info>
@@ -146,8 +146,8 @@
 					<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
 				</control>
 				<control type="slider">
-					<posx>29</posx>
-					<posy>-10</posy>
+					<left>29</left>
+					<top>-10</top>
 					<width>1862</width>
 					<height>30</height>
 					<onup>8010</onup>
@@ -165,7 +165,7 @@
 			<!-- Item details -->
 			<control type="group" id="66610">
 				<visible>Control.HasFocus(5551)</visible>
-				<posy>-143</posy>
+				<top>-143</top>
 				<control type="label">
 					<description>Duration</description>
 					<right>255</right>

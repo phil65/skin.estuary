@@ -13,7 +13,7 @@
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group">
-			<posy>900</posy>
+			<top>900</top>
 			<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings)</visible>
 			<animation effect="fade" end="100" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -36,7 +36,7 @@
 				<label>$VAR[OSDHelpTextVar]</label>
 			</control>
 			<control type="label">
-				<posx>30</posx>
+				<left>30</left>
 				<top>-90</top>
 				<width>1860</width>
 				<height>60</height>
@@ -48,8 +48,8 @@
 				<textcolor>white</textcolor>
 			</control>
 			<control type="grouplist" id="201">
-				<posx>50</posx>
-				<posy>10</posy>
+				<left>50</left>
+				<top>10</top>
 				<width>1920</width>
 				<height>135</height>
 				<align>left</align>
@@ -98,8 +98,8 @@
 				</control>
 			</control>
 			<control type="grouplist" id="202">
-				<posx>50</posx>
-				<posy>10</posy>
+				<left>50</left>
+				<top>10</top>
 				<width>1820</width>
 				<height>135</height>
 				<align>right</align>
@@ -192,10 +192,10 @@
 				</control>
 			</control>
 			<control type="group">
-				<posy>-20</posy>
+				<top>-20</top>
 				<control type="label">
-					<posx>30</posx>
-					<posy>60</posy>
+					<left>30</left>
+					<top>60</top>
 					<width>1860</width>
 					<height>75</height>
 					<align>center</align>
@@ -207,8 +207,8 @@
 				</control>
 				<control type="progress">
 					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<posx>30</posx>
-					<posy>-10</posy>
+					<left>30</left>
+					<top>-10</top>
 					<width>1860</width>
 					<height>30</height>
 					<info>Player.ProgressCache</info>
@@ -218,8 +218,8 @@
 				</control>
 				<control type="progress" id="23">
 					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<posx>30</posx>
-					<posy>-10</posy>
+					<left>30</left>
+					<top>-10</top>
 					<width>1860</width>
 					<height>30</height>
 					<info>Player.Progress</info>
@@ -238,8 +238,8 @@
 					<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
 				</control>
 				<control type="slider">
-					<posx>30</posx>
-					<posy>-20</posy>
+					<left>30</left>
+					<top>-20</top>
 					<width>1860</width>
 					<height>50</height>
 					<onup>8010</onup>
@@ -265,8 +265,8 @@
 				     <visible>Player.Seeking</visible>
 				     </control> -->
 				<control type="slider">
-					<posx>30</posx>
-					<posy>-20</posy>
+					<left>30</left>
+					<top>-20</top>
 					<width>1860</width>
 					<height>50</height>
 					<onup>8010</onup>

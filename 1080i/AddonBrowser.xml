@@ -67,7 +67,7 @@
 		</include>
 		<include>BottomBar</include>
 		<control type="group">
-			<posy>1002</posy>
+			<top>1002</top>
 			<visible>ControlGroup(9000).HasFocus | Control.HasFocus(6130)</visible>
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="$INFO[Window(AddonBrowser).Property(Updated)]" />

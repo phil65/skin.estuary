@@ -71,8 +71,8 @@
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<posx>30</posx>
-				<posy>-10</posy>
+				<left>30</left>
+				<top>-10</top>
 				<width>1860</width>
 				<height>30</height>
 				<info>Player.ProgressCache</info>
@@ -81,8 +81,8 @@
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<posx>30</posx>
-				<posy>-10</posy>
+				<left>30</left>
+				<top>-10</top>
 				<width>1860</width>
 				<height>30</height>
 				<info>Player.Progress</info>
@@ -90,8 +90,8 @@
 				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 			</control>
 			<control type="slider" id="401">
-				<posx>30</posx>
-				<posy>-20</posy>
+				<left>30</left>
+				<top>-20</top>
 				<width>1860</width>
 				<height>50</height>
 				<onup>8010</onup>

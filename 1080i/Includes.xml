@@ -76,8 +76,8 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="image">
-			<posx>-5</posx>
-			<posy>15</posy>
+			<left>-5</left>
+			<top>15</top>
 			<width>490</width>
 			<height>570</height>
 			<texture border="40">buttons/dialogbutton-nofo.png</texture>
@@ -184,7 +184,7 @@
 			<height>30</height>
 			<control type="label">
 				<description>Device</description>
-				<posx>250</posx>
+				<left>250</left>
 				<width>250</width>
 				<height>40</height>
 				<align>right</align>
@@ -195,7 +195,7 @@
 			</control>
 			<control type="label">
 				<description>Device value</description>
-				<posx>270</posx>
+				<left>270</left>
 				<width>1000</width>
 				<height>40</height>
 				<align>left</align>
@@ -466,8 +466,8 @@
 					<texture border="40">buttons/button-nofo.png</texture>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>179</posy>
+					<left>19</left>
+					<top>179</top>
 					<width>359</width>
 					<height>50</height>
 					<texture colordiffuse="border_alpha">colors/black.png</texture>
@@ -509,8 +509,8 @@
 						<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 					</control>
 					<control type="image">
-						<posx>19</posx>
-						<posy>179</posy>
+						<left>19</left>
+						<top>179</top>
 						<width>359</width>
 						<height>50</height>
 						<texture colordiffuse="border_alpha">colors/black.png</texture>
@@ -801,8 +801,8 @@
 	</include>
 	<include name="InfoDialogTopBarInfo">
 		<control type="grouplist">
-			<posx>85</posx>
-			<posy>5</posy>
+			<left>85</left>
+			<top>5</top>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<width>1018</width>

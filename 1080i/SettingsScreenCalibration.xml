@@ -5,8 +5,8 @@
 		<include>DefaultBackground</include>
 		<control type="mover" id="8">
 			<description>top left mover</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>128</width>
 			<height>128</height>
 			<texturefocus colordiffuse="button_focus">calibrate/cal_tl.png</texturefocus>
@@ -14,8 +14,8 @@
 		</control>
 		<control type="mover" id="9">
 			<description>right bottom mover</description>
-			<posx>700</posx>
-			<posy>500</posy>
+			<left>700</left>
+			<top>500</top>
 			<width>128</width>
 			<height>128</height>
 			<texturefocus colordiffuse="button_focus">calibrate/cal_br.png</texturefocus>
@@ -23,8 +23,8 @@
 		</control>
 		<control type="mover" id="10">
 			<description>subtitle position mover</description>
-			<posx>200</posx>
-			<posy>500</posy>
+			<left>200</left>
+			<top>500</top>
 			<width>384</width>
 			<height>128</height>
 			<texturefocus colordiffuse="button_focus">calibrate/cal_sub.png</texturefocus>
@@ -32,8 +32,8 @@
 		</control>
 		<control type="resize" id="11">
 			<description>pixel aspect ratio</description>
-			<posx>0</posx>
-			<posy>390</posy>
+			<left>0</left>
+			<top>390</top>
 			<width>500</width>
 			<height>500</height>
 			<texturefocus colordiffuse="button_focus">calibrate/cal_ratio.png</texturefocus>
@@ -41,8 +41,8 @@
 		</control>
 		<control type="label" id="2">
 			<description>coordinates label</description>
-			<posx>0</posx>
-			<posy>150</posy>
+			<left>0</left>
+			<top>150</top>
 			<width>1920</width>
 			<align>center</align>
 			<label>-</label>
@@ -51,8 +51,8 @@
 		</control>
 		<control type="label" id="3">
 			<description>help information</description>
-			<posx>0</posx>
-			<posy>210</posy>
+			<left>0</left>
+			<top>210</top>
 			<width>1920</width>
 			<align>center</align>
 			<label>-</label>

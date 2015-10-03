@@ -119,7 +119,7 @@
 			<control type="group" id="$PARAM[control_id]100">
 				<height>0</height>
 				<control type="image">
-					<posy>-150</posy>
+					<top>-150</top>
 					<width>$PARAM[width]</width>
 					<height>70</height>
 					<aspectratio>keep</aspectratio>

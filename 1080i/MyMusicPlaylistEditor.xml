@@ -51,8 +51,8 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<posx>300</posx>
-			<posy>180</posy>
+			<left>300</left>
+			<top>180</top>
 			<include name="FileManagerPanel">
 				<param name="header_id" value="22" />
 				<param name="header_label" value="System music files" />
@@ -67,7 +67,7 @@
 		<control type="group">
 			<include>OpenClose_Right</include>
 			<left>1070</left>
-			<posy>180</posy>
+			<top>180</top>
 			 <include name="FileManagerPanel">
 				<param name="header_id" value="23" />
 				<param name="header_label" value="Current playlist" />

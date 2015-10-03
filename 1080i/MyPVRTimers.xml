@@ -80,8 +80,8 @@
 								<label>$INFO[ListItem.Timertype]</label>
 							</control>
 							<control type="image">
-								<posx>940</posx>
-								<posy>13</posy>
+								<left>940</left>
+								<top>13</top>
 								<width>120</width>
 								<height>75</height>
 								<texture>$VAR[TVTimerRadioButtonTexture]</texture>
@@ -147,8 +147,8 @@
 								<label>$INFO[ListItem.Timertype]</label>
 							</control>
 							<control type="image">
-								<posx>940</posx>
-								<posy>13</posy>
+								<left>940</left>
+								<top>13</top>
 								<width>120</width>
 								<height>75</height>
 								<texture>$VAR[TVTimerRadioButtonTexture]</texture>
@@ -169,7 +169,7 @@
 			</control>
 			<control type="group">
 				<left>1220</left>
-				<posy>180</posy>
+				<top>180</top>
 				<visible>!IsEmpty(ListItem.Date)</visible>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>

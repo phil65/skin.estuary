@@ -229,7 +229,7 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="group">
-							<posx>13</posx>
+							<left>13</left>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							<visible>Control.HasFocus($PARAM[list_id])</visible>
@@ -339,8 +339,8 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="group">
-							<posx>20</posx>
-							<posy>20</posy>
+							<left>20</left>
+							<top>20</top>
 							<control type="image">
 								<left>0</left>
 								<top>240</top>
@@ -388,8 +388,8 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="group">
-							<posx>20</posx>
-							<posy>20</posy>
+							<left>20</left>
+							<top>20</top>
 							<control type="group">
 								<visible>!Stringcompare(ListItem.PercentPlayed,0) + Control.HasFocus($PARAM[list_id])</visible>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
@@ -523,8 +523,8 @@
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 								<visible>Control.HasFocus($PARAM[list_id])</visible>
-								<posx>20</posx>
-								<posy>20</posy>
+								<left>20</left>
+								<top>20</top>
 								<control type="image">
 									<left>0</left>
 									<top>240</top>
@@ -611,8 +611,8 @@
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<posy>45</posy>
-							<posx>25</posx>
+							<top>45</top>
+							<left>25</left>
 							<width>70</width>
 							<height>70</height>
 							<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
@@ -651,8 +651,8 @@
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							</control>
 							<control type="image">
-								<posy>45</posy>
-								<posx>25</posx>
+								<top>45</top>
+								<left>25</left>
 								<width>70</width>
 								<height>70</height>
 								<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>

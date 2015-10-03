@@ -85,7 +85,7 @@
 		<control type="group" id="3000">
 			<control type="group">
 				<include>OpenClose_Left</include>
-				<posx>400</posx>
+				<left>400</left>
 				<visible>Container(300).HasFocus(3)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="image">
@@ -277,7 +277,7 @@
 			</control>
 			<control type="group">
 				<include>OpenClose_Left</include>
-				<posx>400</posx>
+				<left>400</left>
 				<visible>Container(300).HasFocus(2)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="image">
@@ -498,7 +498,7 @@
 						<texture border="22">dialogs/dialog-bg.png</texture>
 					</control>
 					<control type="grouplist">
-						<posy>650</posy>
+						<top>650</top>
 						<left>70</left>
 						<orientation>horizontal</orientation>
 						<include name="WeatherIcon">

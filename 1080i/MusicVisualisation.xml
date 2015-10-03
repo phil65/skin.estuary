@@ -27,7 +27,7 @@
 			<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
 		</control>
 		<control type="group">
-			<posy>-30</posy>
+			<top>-30</top>
 			<width>1920</width>
 			<height>226</height>
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
@@ -47,20 +47,20 @@
 				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="group">
-				<posx>8</posx>
-				<posy>532</posy>
+				<left>8</left>
+				<top>532</top>
 				<include>OpenClose_Left</include>
 				<control type="image">
-					<posx>48</posx>
-					<posy>-360</posy>
+					<left>48</left>
+					<top>-360</top>
 					<width>530</width>
 					<height>527</height>
 					<texture border="20" colordiffuse="button_focus">thumbs/cd_shadow_glow.png</texture>
 					<animation effect="fade" start="60" end="80" time="2000" pulse="true" condition="true">conditional</animation>
 				</control>
 				<control type="group">
-					<posx>25</posx>
-					<posy>-330</posy>
+					<left>25</left>
+					<top>-330</top>
 					<control type="image">
 						<width>470</width>
 						<height>470</height>
@@ -78,11 +78,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>80</posx>
-				<posy>717</posy>
+				<left>80</left>
+				<top>717</top>
 				<include>OpenClose_Left</include>
 				<control type="label">
-					<posy>0</posy>
+					<top>0</top>
 					<width>1230</width>
 					<height>40</height>
 					<label>$INFO[MusicPlayer.Artist]</label>
@@ -92,7 +92,7 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
-					<posy>56</posy>
+					<top>56</top>
 					<width>1230</width>
 					<height>40</height>
 					<label>[COLOR grey]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
@@ -102,7 +102,7 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
-					<posy>100</posy>
+					<top>100</top>
 					<width>1275</width>
 					<height>40</height>
 					<label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[MusicPlayer.Title][/COLOR]</label>
@@ -114,8 +114,8 @@
 			</control>
 			<control type="image">
 				<include>OpenClose_Right</include>
-				<posx>1090</posx>
-				<posy>202</posy>
+				<left>1090</left>
+				<top>202</top>
 				<width>798</width>
 				<height>474</height>
 				<aspectratio>scale</aspectratio>
@@ -128,15 +128,15 @@
 				<animation effect="fade" end="0" time="200">Hidden</animation>
 			</control>
 			<control type="group">
-				<posy>-46</posy>
+				<top>-46</top>
 				<visible>!Window.IsActive(musicosd)</visible>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
 				<animation effect="fade" end="0" time="200">Hidden</animation>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<control type="textbox">
-					<posx>600</posx>
-					<posy>996</posy>
+					<left>600</left>
+					<top>996</top>
 					<width>1230</width>
 					<align>right</align>
 					<height>110</height>
@@ -146,8 +146,8 @@
 					<visible>Player.HasAudio</visible>
 				</control>
 				<control type="image">
-					<posx>91</posx>
-					<posy>1006</posy>
+					<left>91</left>
+					<top>1006</top>
 					<width>150</width>
 					<height>99</height>
 					<texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
@@ -155,8 +155,8 @@
 				</control>
 			</control>
 			<control type="label">
-				<posx>1840</posx>
-				<posy>834</posy>
+				<left>1840</left>
+				<top>834</top>
 				<width>400</width>
 				<height>45</height>
 				<align>right</align>
@@ -170,8 +170,8 @@
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<posx>30</posx>
-				<posy>900</posy>
+				<left>30</left>
+				<top>900</top>
 				<width>1860</width>
 				<height>30</height>
 				<info>Player.ProgressCache</info>
@@ -181,8 +181,8 @@
 			</control>
 			<control type="progress" id="23">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<posx>30</posx>
-				<posy>900</posy>
+				<left>30</left>
+				<top>900</top>
 				<width>1860</width>
 				<height>30</height>
 				<info>Player.Progress</info>
@@ -195,39 +195,39 @@
 			<visible>![Window.IsActive(script-cu-lrclyrics-main.xml) | Window.IsActive(VisualisationSettings) | Window.IsActive(VisualisationPresetList)]</visible>
 			<animation effect="fade" time="400" tween="cubic" reversible="true">VisibleChange</animation>
 			<control type="image">
-				<posx>30</posx>
-				<posy>10</posy>
+				<left>30</left>
+				<top>10</top>
 				<width>1860</width>
 				<height>130</height>
 				<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
 				<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
-				<posx>75</posx>
-				<posy>20</posy>
+				<left>75</left>
+				<top>20</top>
 				<label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, • $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, • $LOCALIZE[612]: ,bit]$INFO[musicplayer.Samplerate, • $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, • $LOCALIZE[21444]: ]</label>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label">
-				<posx>75</posx>
-				<posy>55</posy>
+				<left>75</left>
+				<top>55</top>
 				<label>$INFO[Visualisation.Name] [I][COLOR=button_focus]($LOCALIZE[20166])[/COLOR][/I] • fps: $INFO[System.FPS]</label>
 				<label>-</label>
 				<font>font12</font>
 				<visible>Visualisation.Locked</visible>
 			</control>
 			<control type="label">
-				<posx>75</posx>
-				<posy>55</posy>
+				<left>75</left>
+				<top>55</top>
 				<label>$INFO[Visualisation.Name] • fps: $INFO[System.FPS]</label>
 				<label>-</label>
 				<font>font12</font>
 				<visible>!Visualisation.Locked</visible>
 			</control>
 			<control type="label">
-				<posx>75</posx>
-				<posy>90</posy>
+				<left>75</left>
+				<top>90</top>
 				<label>$LOCALIZE[13388]: $INFO[Visualisation.Preset]</label>
 				<label>-</label>
 				<font>font12</font>

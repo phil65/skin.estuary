@@ -14,8 +14,8 @@
 			<animation effect="fade" start="100" end="0" time="160">WindowClose</animation>
 		</control>
 		<control type="group">
-			<posy>190</posy>
-			<posx>100</posx>
+			<top>190</top>
+			<left>100</left>
 			<include>OpenClose_Left</include>
 			<include name="FileManagerPanel">
 				<param name="header_id" value="101" />
@@ -29,8 +29,8 @@
 			</include>
 		</control>
 		<control type="group">
-			<posx>1020</posx>
-			<posy>190</posy>
+			<left>1020</left>
+			<top>190</top>
 			<include>OpenClose_Right</include>
 			<include name="FileManagerPanel">
 				<param name="header_id" value="102" />

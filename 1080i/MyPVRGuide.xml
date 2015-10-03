@@ -328,7 +328,7 @@
 			</control>
 			<control type="group">
 				<left>1220</left>
-				<posy>150</posy>
+				<top>150</top>
 				<visible>!IsEmpty(ListItem.ChannelName)</visible>
 				<visible>Control.IsVisible(13)</visible>
 				<include>Visible_Right</include>

@@ -13,14 +13,14 @@
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group">
-			<posy>900</posy>
+			<top>900</top>
 			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings)</visible>
 			<animation effect="fade" end="100" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<control type="grouplist" id="201">
-				<posx>50</posx>
-				<posy>10</posy>
+				<left>50</left>
+				<top>10</top>
 				<width>1920</width>
 				<height>135</height>
 				<align>left</align>
@@ -77,8 +77,8 @@
 				</control>
 			</control>
 			<control type="grouplist" id="202">
-				<posx>50</posx>
-				<posy>10</posy>
+				<left>50</left>
+				<top>10</top>
 				<width>1820</width>
 				<height>135</height>
 				<align>right</align>
@@ -126,10 +126,10 @@
 				</control>
 			</control>
 			<control type="group">
-				<posy>-20</posy>
+				<top>-20</top>
 				<control type="label">
-					<posx>30</posx>
-					<posy>60</posy>
+					<left>30</left>
+					<top>60</top>
 					<width>1860</width>
 					<height>75</height>
 					<align>center</align>
@@ -151,8 +151,8 @@
 					<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
 				</control>
 				<control type="slider">
-					<posx>30</posx>
-					<posy>-20</posy>
+					<left>30</left>
+					<top>-20</top>
 					<width>1860</width>
 					<height>50</height>
 					<onup>8010</onup>
@@ -178,8 +178,8 @@
 					 <visible>Player.Seeking</visible>
 					 </control> -->
 				<control type="slider">
-					<posx>30</posx>
-					<posy>-20</posy>
+					<left>30</left>
+					<top>-20</top>
 					<width>1860</width>
 					<height>50</height>
 					<onup>8010</onup>

@@ -5,32 +5,32 @@
 		<control type="group" id="0">
 			<!-- codec infos -->
 			<control type="image">
-				<posx>10</posx>
-				<posy>-465</posy>
+				<left>10</left>
+				<top>-465</top>
 				<width>1902</width>
 				<height>740</height>
 				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				<animation effect="slide" end="0,250" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
 			</control>
 			<control type="label" id="10">
-				<posx>45</posx>
-				<posy>15</posy>
+				<left>45</left>
+				<top>15</top>
 				<width>1770</width>
 				<height>100</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="11">
-				<posx>45</posx>
-				<posy>95</posy>
+				<left>45</left>
+				<top>95</top>
 				<width>1770</width>
 				<height>100</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="12">
-				<posx>45</posx>
-				<posy>175</posy>
+				<left>45</left>
+				<top>175</top>
 				<width>1770</width>
 				<height>100</height>
 				<label>-</label>
@@ -38,10 +38,10 @@
 			</control>
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
-					<posy>310</posy>
+					<top>310</top>
 				<control type="label">
 					<description>Header</description>
-					<posx>50</posx>
+					<left>50</left>
 					<width>1720</width>
 					<height>65</height>
 					<align>center</align>
@@ -52,8 +52,8 @@
 				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
-					<posx>20</posx>
-					<posy>90</posy>
+					<left>20</left>
+					<top>90</top>
 					<include name="LeftRightAlignedInfoLine">
 						<param name="label" value="$LOCALIZE[19012]" />
 						<param name="value" value="$INFO[PVR.ActStreamClient]" />
@@ -68,8 +68,8 @@
 					</include>
 				</control>
 				<control type="group">
-					<posx>1470</posx>
-					<posy>90</posy>
+					<left>1470</left>
+					<top>90</top>
 					<control type="label">
 						<description>Signal</description>
 						<width>250</width>
@@ -80,14 +80,14 @@
 					</control>
 					<control type="progress">
 						<description>Progressbar</description>
-						<posy>30</posy>
+						<top>30</top>
 						<width>360</width>
 						<height>12</height>
 						<info>PVR.ActStreamProgrSignal</info>
 					</control>
 					<control type="label">
 						<description>SNR</description>
-						<posy>60</posy>
+						<top>60</top>
 						<width>250</width>
 						<height>25</height>
 						<aligny>center</aligny>
@@ -96,7 +96,7 @@
 					</control>
 					<control type="progress">
 						<description>Progressbar</description>
-						<posy>90</posy>
+						<top>90</top>
 						<width>360</width>
 						<height>12</height>
 						<info>PVR.ActStreamProgrSNR</info>
@@ -104,8 +104,8 @@
 				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
-					<posx>800</posx>
-					<posy>90</posy>
+					<left>800</left>
+					<top>90</top>
 					<include name="LeftRightAlignedInfoLine">
 						<param name="label" value="$LOCALIZE[19010]" />
 						<param name="value" value="$INFO[PVR.ActStreamBER]" />
@@ -141,14 +141,14 @@
 			<visible>![Player.Forwarding|Player.Seeking] + ![Window.IsVisible(seekbar) | Window.IsVisible(fullscreeninfo)]</visible>
 			<visible>VideoPlayer.Content(LiveTV)</visible>
 			<control type="image" id="1">
-				<posx>704</posx>
+				<left>704</left>
 				<width>513</width>
 				<height>87</height>
 				<texture flipy="true">lists/panel.png</texture>
 				<visible>[[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek] | [[Player.Paused + Player.Caching] + !Player.Seeking] | Player.Seeking|[Player.DisplayAfterSeek + ![player.forwarding | player.rewinding] + !IsEmpty(Player.SeekOffset)]</visible>
 			</control>
 			<control type="label" id="1">
-				<posx>750</posx>
+				<left>750</left>
 				<width>420</width>
 				<height>42</height>
 				<align>center</align>

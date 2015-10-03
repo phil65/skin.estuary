@@ -7,7 +7,7 @@
 			<visible>!Window.IsActive(sliderdialog)</visible>
 			<include>Visible_Left</include>
 			<control type="image">
-				<posx>-40</posx>
+				<left>-40</left>
 				<width>820</width>
 				<height>1080</height>
 				<texture>lists/panel.png</texture>
@@ -42,8 +42,8 @@
 				<onclick>Action(close)</onclick>
 			</control>
 			<control type="grouplist" id="5">
-				<posx>0</posx>
-				<posy>100</posy>
+				<left>0</left>
+				<top>100</top>
 				<width>688</width>
 				<height>1020</height>
 				<aligny>center</aligny>
