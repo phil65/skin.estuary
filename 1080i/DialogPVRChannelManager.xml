@@ -9,7 +9,7 @@
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1720" />
-			<param name="DialogBackgroundHeight" value="855" />
+			<param name="DialogBackgroundHeight" value="830" />
 			<param name="DialogHeaderLabel" value="$VAR[PVRChannelMgrHeader]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
@@ -142,7 +142,7 @@
 					<height>60</height>
 					<textoffsetx>30</textoffsetx>
 					<font>font12</font>
-					<label>$Channel options</label>
+					<label>Channel options</label>
 					<aligny>center</aligny>
 					<textcolor>button_focus</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -181,7 +181,6 @@
 				<control type="radiobutton" id="14">
 					<description>Parental locked</description>
 					<width>700</width>
-					<height>100</height>
 					<include>SettingsItemCommon</include>
 					<label>$LOCALIZE[19267]</label>
 				</control>
@@ -270,7 +269,7 @@
 			<control type="label">
 				<description>Page Count Label</description>
 				<left>-35</left>
-				<top>410</top>
+				<top>380</top>
 				<width>330</width>
 				<height>35</height>
 				<font>font12</font>
