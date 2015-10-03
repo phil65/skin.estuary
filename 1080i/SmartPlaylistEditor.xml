@@ -43,7 +43,7 @@
 				<control type="label" id="1101">
 					<description>Name Label</description>
 					<width>600</width>
-					<label>Playlist options</label>
+					<label>$LOCALIZE[31042]</label>
 					<include>SettingsLabelCommon</include>
 				</control>
 				<control type="spincontrolex" id="16">
@@ -64,8 +64,8 @@
 				<control type="togglebutton" id="19">
 					<width>600</width>
 					<include>SettingsItemCommon</include>
-					<label>Order: $LOCALIZE[21431]</label>
-					<altlabel>Order: $LOCALIZE[21430]</altlabel>
+					<label>$LOCALIZE[31032]: $LOCALIZE[21431]</label>
+					<altlabel>$LOCALIZE[31032]: $LOCALIZE[21430]</altlabel>
 				</control>
 				<control type="spincontrolex" id="23">
 					<width>600</width>
@@ -75,7 +75,7 @@
 				<control type="radiobutton" id="24">
 					<width>600</width>
 					<include>SettingsItemCommon</include>
-					<label>Type: $LOCALIZE[21459]</label>
+					<label>$LOCALIZE[467]: $LOCALIZE[21459]</label>
 				</control>
 			</control>
 			<control type="grouplist" id="9001">
@@ -119,13 +119,13 @@
 			</control>
 			<control type="textbox">
 				<left>680</left>
-				<top>500</top>
+				<top>570</top>
 				<width>540</width>
-				<height>300</height>
-				<aligny>center</aligny>
-				<label>Some help text to explain how this dialog works. Some help text to explain how this dialog works.</label>
+				<height>248</height>
+				<aligny>top</aligny>
+				<label>$LOCALIZE[31043]</label>
 				<textcolor>grey</textcolor>
-				<font>font14</font>
+				<font>font12</font>
 			</control>
 		</control>
 	</controls>

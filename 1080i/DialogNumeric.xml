@@ -75,25 +75,23 @@
 			<orientation>vertical</orientation>
 			<itemgap>-10</itemgap>
 			<control type="grouplist">
+				<description>1 - 3 buttons</description>
 				<height>110</height>
 				<itemgap>-20</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="button" id="11">
-					<description>1 button</description>
 					<include>KeyboardButton</include>
 					<label>$LOCALIZE[12311]</label>
 					<onup>20</onup>
 					<ondown>14</ondown>
 				</control>
 				<control type="button" id="12">
-					<description>2 button</description>
 					<include>KeyboardButton</include>
 					<label>$LOCALIZE[12312]</label>
 					<onup>10</onup>
 					<ondown>15</ondown>
 				</control>
 				<control type="button" id="13">
-					<description>3 button</description>
 					<include>KeyboardButton</include>
 					<label>$LOCALIZE[12313]</label>
 					<onup>22</onup>
@@ -101,25 +99,23 @@
 				</control>
 			</control>
 			<control type="grouplist">
+				<description>4 - 6 buttons</description>
 				<height>110</height>
 				<itemgap>-20</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="button" id="14">
-					<description>4 button</description>
 					<include>KeyboardButton</include>
 					<label>$LOCALIZE[12314]</label>
 					<onup>11</onup>
 					<ondown>17</ondown>
 				</control>
 				<control type="button" id="15">
-					<description>5 button</description>
 					<include>KeyboardButton</include>
 					<label>$LOCALIZE[12315]</label>
 					<onup>12</onup>
 					<ondown>18</ondown>
 				</control>
 				<control type="button" id="16">
-					<description>6 button</description>
 					<include>KeyboardButton</include>
 					<label>$LOCALIZE[12316]</label>
 					<onup>13</onup>
