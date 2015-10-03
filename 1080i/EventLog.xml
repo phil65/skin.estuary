@@ -217,8 +217,8 @@
 			<control type="togglebutton" id="4">
 				<description>Sort asc</description>
 				<include>MediaMenuItemsCommon</include>
-				<label>Sort: Descending</label>
-				<altlabel>Sort: Ascending</altlabel>
+				<label>$LOCALIZE[31032]: $LOCALIZE[585]</label>
+				<altlabel>$LOCALIZE[31032]: $LOCALIZE[584]</altlabel>
 				<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 			</control>
 			<control type="label" id="201">
