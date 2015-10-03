@@ -11,8 +11,8 @@
 		<value condition="ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer">windows/pvr/timer.png</value>
 	</variable>
 	<variable name="ShiftLeftTextBoxVar">
-		<value condition="Window.IsActive(pictures)">$INFO[ListItem.PictureDatetime,[COLOR button_focus]Date:  [/COLOR],[CR]]$INFO[ListItem.PictureResolution,[COLOR button_focus]Resolution:  [/COLOR],[CR]]$INFO[ListItem.PictureCamMake,[COLOR button_focus]Camera manufacturer:  [/COLOR],[CR]]$INFO[ListItem.PictureCamModel,[COLOR button_focus]Camera model:  [/COLOR],[CR]]</value>
-		<value>$INFO[ListItem.Genre,[COLOR button_focus]Genre:  [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR button_focus]Director:  [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR button_focus]Writer:  [/COLOR],[CR]]$INFO[ListItem.Duration,[COLOR button_focus]Duration:  [/COLOR], minutes[CR]]</value>
+		<value condition="Window.IsActive(pictures)">$INFO[ListItem.PictureDatetime,[COLOR button_focus]$LOCALIZE[552]:  [/COLOR],[CR]]$INFO[ListItem.PictureResolution,[COLOR button_focus]$LOCALIZE[169]:  [/COLOR],[CR]]$INFO[ListItem.PictureCamMake,[COLOR button_focus]$LOCALIZE[31041]:  [/COLOR],[CR]]$INFO[ListItem.PictureCamModel,[COLOR button_focus]$LOCALIZE[21823]:  [/COLOR],[CR]]</value>
+		<value>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:  [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]:  [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]:  [/COLOR],[CR]]$INFO[ListItem.Duration,[COLOR button_focus]$LOCALIZE[180]:  [/COLOR], minutes[CR]]</value>
 	</variable>
 	<variable name="NowPlayingSublabelVar">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TvShowTitle]</value>
@@ -30,7 +30,7 @@
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="ShiftRightTextBoxVar">
-		<value condition="Window.IsActive(pictures)">$VAR[SizeVar,[COLOR button_focus]Size:  [/COLOR],[CR]]$INFO[ListItem.PictureAperture,[COLOR button_focus]Aperture:  [/COLOR],[CR]]$INFO[ListItem.PictureFocalLen,[COLOR button_focus]Focal length:  [/COLOR],[CR]]$INFO[ListItem.PictureExpTime,[COLOR button_focus]Exposure time:  [/COLOR],[CR]]</value>
+		<value condition="Window.IsActive(pictures)">$VAR[SizeVar,[COLOR button_focus]$LOCALIZE[289]:  [/COLOR],[CR]]$INFO[ListItem.PictureAperture,[COLOR button_focus]$LOCALIZE[21826]:  [/COLOR],[CR]]$INFO[ListItem.PictureFocalLen,[COLOR button_focus]$LOCALIZE[21827]:  [/COLOR],[CR]]$INFO[ListItem.PictureExpTime,[COLOR button_focus]$LOCALIZE[21830]:  [/COLOR],[CR]]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="SizeVar">
@@ -52,8 +52,8 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="MusicInfoListHeaderVar">
-		<value condition="Container.Content(albums)">Tracklist</value>
-		<value>Discography</value>
+		<value condition="Container.Content(albums)">$LOCALIZE[31037]</value>
+		<value>$LOCALIZE[21888]</value>
 	</variable>
 	<variable name="MusicInfoListLabelVar">
 		<value condition="Container.Content(artists)">$INFO[ListItem.Label]</value>
@@ -61,9 +61,9 @@
 	</variable>
 	<variable name="ListBoxInfoVar">
 		<value condition="Container.Content(addons)">$INFO[ListItem.Property(Addon.Description)]</value>
-		<value condition="Container.Content(albums)">$INFO[ListItem.Genre,[COLOR button_focus]Genre: [/COLOR],[CR]]$INFO[ListItem.Property(album_description)]</value>
-		<value condition="Container.Content(artists) + !Window.IsActive(musicinformation)">$INFO[ListItem.Property(artist_genre),[COLOR button_focus]Genre: [/COLOR],[CR]]$INFO[ListItem.Property(artist_description)]</value>
-		<value condition="Container.Content(artists)">$INFO[ListItem.Property(artist_genre),[COLOR button_focus]Genre: [/COLOR],[CR]]$INFO[ListItem.Property(artist_mood),[COLOR button_focus]Mood: [/COLOR],[CR]]</value>
+		<value condition="Container.Content(albums)">$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR],[CR]]$INFO[ListItem.Property(album_description)]</value>
+		<value condition="Container.Content(artists) + !Window.IsActive(musicinformation)">$INFO[ListItem.Property(artist_genre),[COLOR button_focus]$LOCALIZE[515]: [/COLOR],[CR]]$INFO[ListItem.Property(artist_description)]</value>
+		<value condition="Container.Content(artists)">$INFO[ListItem.Property(artist_genre),[COLOR button_focus]$LOCALIZE[515]: [/COLOR],[CR]]$INFO[ListItem.Property(artist_mood),[COLOR button_focus]Mood: [/COLOR],[CR]]</value>
 		<value>$INFO[ListItem.Genre,[COLOR button_focus]Genre: [/COLOR],[CR]]</value>
 	</variable>
 	<variable name="TVShowWidgetImageVar">
@@ -103,13 +103,13 @@
 		<value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
 	</variable>
 	<variable name="SeekLabel">
-		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">Paused</value>
+		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">$LOCALIZE[112]</value>
 		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking">$LOCALIZE[15107] $INFO[Player.CacheLevel]%</value>
-		<value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">Seeking[COLOR=grey] $INFO[Player.SeekStepSize][/COLOR]</value>
-		<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">Seeking[COLOR=grey] $INFO[Player.SeekOffset][/COLOR]</value>
-		<value condition="!Player.DisplayAfterSeek + Player.Seeking">Seeking</value>
-		<value condition="Player.Forwarding">Fast forward $VAR[VideoPlayerForwardRewindVar]</value>
-		<value condition="Player.Rewinding">Rewind $VAR[VideoPlayerForwardRewindVar]</value>
+		<value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[773][COLOR=grey] $INFO[Player.SeekStepSize][/COLOR]</value>
+		<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[773][COLOR=grey] $INFO[Player.SeekOffset][/COLOR]</value>
+		<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[773]</value>
+		<value condition="Player.Forwarding">$LOCALIZE[31039] $VAR[VideoPlayerForwardRewindVar]</value>
+		<value condition="Player.Rewinding">$LOCALIZE[31038] $VAR[VideoPlayerForwardRewindVar]</value>
 	</variable>
 	<variable name="SeekTimeLabelVar">
 		<value condition="Player.Seeking">$INFO[Player.SeekTime] - $INFO[Player.Duration]</value>
@@ -197,11 +197,11 @@
 		<value>$LOCALIZE[3]</value>
 	</variable>
 	<variable name="MusicLibraryUpdateVar">
-		<value condition="Library.IsScanningMusic">Cancel update</value>
+		<value condition="Library.IsScanningMusic">$LOCALIZE[31040]</value>
 		<value>$LOCALIZE[653]</value>
 	</variable>
 	<variable name="VideoLibraryUpdateVar">
-		<value condition="Library.IsScanningVideo">Cancel update</value>
+		<value condition="Library.IsScanningVideo">$LOCALIZE[31040]</value>
 		<value>$LOCALIZE[653]</value>
 	</variable>
 	<variable name="LibraryScanLabelVar">
