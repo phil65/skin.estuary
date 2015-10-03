@@ -369,7 +369,7 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<textcolor>white</textcolor>
-				<label>INFO[RDS.ProgStyle]</label>
+				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>!IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
 			</control>
 		</control>

@@ -119,7 +119,7 @@
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
-					<label>Go to albums</label>
+					<label>$LOCALIZE[31026]</label>
 					<onclick>Container.Update(musicdb://)</onclick>
 					<onclick>Action(close)</onclick>
 					<visible>Container.Content(artists)</visible>
@@ -128,7 +128,7 @@
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
-					<label>Go to songs</label>
+					<label>$LOCALIZE[31027]</label>
 					<onclick>Container.Update($INFO[ListItem.Path]/$INFO[ListItem.DBID])</onclick>
 					<onclick>Action(close)</onclick>
 					<visible>Container.Content(albums)</visible>
@@ -137,7 +137,7 @@
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/image.png" />
 					</include>
-					<label>Show fanart</label>
+					<label>$LOCALIZE[31028]</label>
 				</control>
 				<control type="radiobutton" id="6">
 					<include name="VideoInfoButtonsCommon">

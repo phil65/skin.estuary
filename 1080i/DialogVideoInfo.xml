@@ -196,7 +196,7 @@
 				<orientation>horizontal</orientation>
 				<scrolltime tween="quadratic">200</scrolltime>
 				<control type="radiobutton" id="8">
-					<label>Play</label>
+					<label>$LOCALIZE[208]</label>
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/launch.png" />
 					</include>
@@ -277,7 +277,7 @@
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/image.png" />
 					</include>
-					<label>Show fanart</label>
+					<label>$LOCALIZE[31028]</label>
 				</control>
 				<control type="radiobutton" id="10">
 					<include name="VideoInfoButtonsCommon">
@@ -289,7 +289,7 @@
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/update.png" />
 					</include>
-					<label>Re-scrape</label>
+					<label>Scrape</label>
 				</control>
 			</control>
 			<control type="image">
