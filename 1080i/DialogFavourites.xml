@@ -114,7 +114,7 @@
 			<height>300</height>
 			<aligny>center</aligny>
 			<align>center</align>
-			<label>No favourites found. You can add any item from media views to this list by using the context menu.</label>
+			<label>$LOCALIZE[31025]</label>
 			<font>font30_title</font>
 			<visible>Stringcompare(Container(450).NumItems,0)</visible>
 		</control>
