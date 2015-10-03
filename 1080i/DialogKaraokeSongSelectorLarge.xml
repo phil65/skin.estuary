@@ -6,35 +6,33 @@
 		<top>275</top>
 	</coordinates>
 	<controls>
-		<control type="group">
-			<include name="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="520" />
-				<param name="DialogBackgroundHeight" value="220" />
-				<param name="DialogHeaderLabel" value="Karaoke song selector" />
-				<param name="DialogHeaderId" value="1" />
-			</include>
-			<control type="label" id="401">
-				<description>Song Number Label</description>
-				<left>30</left>
-				<top>100</top>
-				<width>460</width>
-				<height>30</height>
-				<font>font28_title</font>
-				<textcolor>white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-			</control>
-			<control type="label" id="402">
-				<description>Song Name Label</description>
-				<left>30</left>
-				<top>160</top>
-				<width>460</width>
-				<height>20</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>button_focus</textcolor>
-				<scroll>true</scroll>
-			</control>
+		<include name="DialogBackgroundCommons">
+			<param name="DialogBackgroundWidth" value="520" />
+			<param name="DialogBackgroundHeight" value="220" />
+			<param name="DialogHeaderLabel" value="Karaoke song selector" />
+			<param name="DialogHeaderId" value="1" />
+		</include>
+		<control type="label" id="401">
+			<description>Song Number Label</description>
+			<left>30</left>
+			<top>100</top>
+			<width>460</width>
+			<height>30</height>
+			<font>font28_title</font>
+			<textcolor>white</textcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+		</control>
+		<control type="label" id="402">
+			<description>Song Name Label</description>
+			<left>30</left>
+			<top>160</top>
+			<width>460</width>
+			<height>20</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>button_focus</textcolor>
+			<scroll>true</scroll>
 		</control>
 	</controls>
 </window>

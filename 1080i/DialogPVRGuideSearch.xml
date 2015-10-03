@@ -14,7 +14,6 @@
 			<param name="DialogHeaderId" value="2" />
 		</include>
 		<control type="edit" id="9">
-			<description>Search string</description>
 			<left>10</left>
 			<top>80</top>
 			<width>1400</width>
@@ -22,7 +21,7 @@
 			<textcolor>white</textcolor>
 			<textoffsetx>60</textoffsetx>
 			<shadowcolor>black</shadowcolor>
-			<hinttext>Search label...</hinttext>
+			<hinttext>$LOCALIZE[137]...</hinttext>
 			<align>left</align>
 			<onleft>9000</onleft>
 			<onright>9000</onright>

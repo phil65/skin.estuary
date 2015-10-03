@@ -222,7 +222,7 @@
 				<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
 				<textwidth>345</textwidth>
 				<include>MediaMenuItemsCommon</include>
-				<label>Search</label>
+				<label>$LOCALIZE[137]</label>
 			</control>
 			<control type="radiobutton" id="199">
 				<visible>Container.CanFilterAdvanced</visible>
