@@ -165,7 +165,6 @@
 			<effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="in" />
 		</animation>
 		<control type="image">
-			<description>Menu Panel</description>
 			<left>0</left>
 			<top>80</top>
 			<width>484</width>
@@ -213,7 +212,7 @@
 			</control>
 			<control type="button" id="6052">
 				<include>MediaMenuItemsCommon</include>
-				<label>Order</label>
+				<label>$LOCALIZE[31032]</label>
 				<label2>[B]$INFO[Container.SortOrder][/B]</label2>
 				<enable>Control.IsEnabled(4)</enable>
 				<onclick>SendClick(4)</onclick>

@@ -169,7 +169,7 @@
 					<description>Memory Text</description>
 					<width>700</width>
 					<height>40</height>
-					<label>Memory used: $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
+					<label>$LOCALIZE[31030]: $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
 					<aligny>center</aligny>
 					<shadowcolor>black</shadowcolor>
 					<font>font12_title</font>
@@ -188,7 +188,7 @@
 				<height>50</height>
 				<aligny>bottom</aligny>
 				<textoffsety>10</textoffsety>
-				<label>[B]Version info:[/B]</label>
+				<label>[B]$LOCALIZE[31031]:[/B]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="grouplist">
