@@ -201,16 +201,6 @@
 						<param name="icon" value="icons/infodialogs/launch.png" />
 					</include>
 				</control>
-				<control type="radiobutton" id="20">
-					<label>Cinema Experience</label>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/cinema.png" />
-					</include>
-					<onclick>Playlist.Clear</onclick>
-					<onclick>Dialog.Close(MovieInformation)</onclick>
-					<onclick>RunScript(script.cinema.experience)</onclick>
-					<visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience) + !SubString(Container.FolderPath,plugin)</visible>
-				</control>
 				<control type="radiobutton" id="11">
 					<label>$LOCALIZE[20410]</label>
 					<include name="VideoInfoButtonsCommon">
