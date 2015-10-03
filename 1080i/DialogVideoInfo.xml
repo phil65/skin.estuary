@@ -220,22 +220,13 @@
 					<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])</onclick>
 					<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 				</control>
-				<control type="radiobutton" id="100">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/DefaultMusicSearch.png" />
-					</include>
-					<label>Video extras</label>
-					<onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-					<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
-					<onright>401</onright>
-				</control>
 				<control type="group" id="400">
 					<width>262</width>
 					<control type="button" id="7">
 						<include name="VideoInfoButtonsCommon">
 							<param name="icon" value="" />
 						</include>
-						<label>Your rating</label>
+						<label>$LOCALIZE[31033]</label>
 						<onleft>100</onleft>
 						<onright>101</onright>
 						<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
@@ -269,7 +260,7 @@
 						<param name="icon" value="icons/infodialogs/info.png" />
 					</include>
 					<onleft>401</onleft>
-					<label>Extended Info</label>
+					<label>$LOCALIZE[31034]</label>
 					<onclick>RunScript(script.extendedinfo,info=openinfodialog)</onclick>
 					<visible>System.HasAddon(script.extendedinfo)</visible>
 				</control>
@@ -289,7 +280,7 @@
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/update.png" />
 					</include>
-					<label>Scrape</label>
+					<label>$LOCALIZE[184]</label>
 				</control>
 			</control>
 			<control type="image">
