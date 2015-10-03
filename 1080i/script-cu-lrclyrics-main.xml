@@ -35,7 +35,7 @@
 					<font>font16</font>
 					<aligny>center</aligny>
 					<align>center</align>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="60">
@@ -99,7 +99,7 @@
 					<height>40</height>
 					<font>font16</font>
 					<aligny>center</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="40">
@@ -110,7 +110,7 @@
 					<height>40</height>
 					<font>font16</font>
 					<aligny>center</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
 		</control>

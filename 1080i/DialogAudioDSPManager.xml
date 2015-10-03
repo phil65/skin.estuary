@@ -43,7 +43,7 @@
 					<font>font13_title</font>
 					<aligny>center</aligny>
 					<align>center</align>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout width="350" height="110">
@@ -71,7 +71,7 @@
 					<font>font13_title</font>
 					<aligny>center</aligny>
 					<align>center</align>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
 			<content>

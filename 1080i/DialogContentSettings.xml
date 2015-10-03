@@ -88,7 +88,7 @@
 			     <height>100</height>
 			     <aligny>center</aligny>
 			     <textcolor>grey2</textcolor>
-			     <info>ListItem.Label</info>
+			     <label>$INFO[ListItem.Label]</label>
 			     </control>
 			     </itemlayout>
 			     <focusedlayout height="45">
@@ -121,7 +121,7 @@
 			     <width>290</width>
 			     <height>100</height>
 			     <aligny>center</aligny>
-			     <info>ListItem.Label</info>
+			     <label>$INFO[ListItem.Label]</label>
 			     </control>
 			     </focusedlayout>
 			     </control> -->

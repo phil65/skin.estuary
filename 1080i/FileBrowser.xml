@@ -92,7 +92,7 @@
 						<height>70</height>
 						<aligny>center</aligny>
 						<selectedcolor>green</selectedcolor>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="70" width="940">
@@ -127,7 +127,7 @@
 						<height>70</height>
 						<aligny>center</aligny>
 						<selectedcolor>green</selectedcolor>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
 			</control>
@@ -165,7 +165,7 @@
 						<height>70</height>
 						<aligny>center</aligny>
 						<selectedcolor>green</selectedcolor>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="70" width="940">
@@ -200,7 +200,7 @@
 						<height>70</height>
 						<aligny>center</aligny>
 						<selectedcolor>green</selectedcolor>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
 			</control>
