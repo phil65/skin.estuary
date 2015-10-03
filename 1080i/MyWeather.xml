@@ -41,19 +41,19 @@
 				</include>
 				<content>
 					<item id="1">
-						<label>Now</label>
+						<label>$LOCALIZE[19030]</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
-						<label>Hourly</label>
+						<label>$LOCALIZE[33036]</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="3">
-						<label>Forecast</label>
+						<label>$LOCALIZE[31019]</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="4">
-						<label>Maps</label>
+						<label>$LOCALIZE[33035]</label>
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
 					</item>

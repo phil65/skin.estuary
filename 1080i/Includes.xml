@@ -330,7 +330,7 @@
 			<left>-20</left>
 			<top>-20</top>
 			<width>$PARAM[bg_width]</width>
-			<height>740</height>
+			<height>742</height>
 			<texture border="22">dialogs/dialog-bg.png</texture>
 		</control>
 		<control type="image">
@@ -355,7 +355,7 @@
 			<left>0</left>
 			<top>72</top>
 			<width>$PARAM[width]</width>
-			<height>635</height>
+			<height>630</height>
 			<onleft>$PARAM[onleft_id]</onleft>
 			<onright>$PARAM[scrollbar_id]</onright>
 			<onup>$PARAM[list_id]</onup>

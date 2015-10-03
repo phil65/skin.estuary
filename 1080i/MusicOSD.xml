@@ -111,7 +111,6 @@
 				<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 				</control>
 				<control type="radiobutton" id="703">
-					<label>Download subtitles</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
 					</include>
@@ -119,7 +118,6 @@
 					<enable>Visualisation.HasPresets</enable>
 				</control>
 				<control type="radiobutton" id="500">
-					<label>Movie menu</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
 					</include>
