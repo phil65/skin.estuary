@@ -28,13 +28,13 @@
 					<description>Add Group</description>
 					<width>370</width>
 					<include>SettingsItemCommon</include>
-					<label>Add group</label>
+					<label>$LOCALIZE[31044]</label>
 				</control>
 				<control type="button" id="27">
 					<description>Rename Group</description>
 					<width>370</width>
 					<include>SettingsItemCommon</include>
-					<label>Rename group</label>
+					<label>$LOCALIZE[31045]</label>
 				</control>
 				<control type="radiobutton" id="25">
 					<description>Hide Group</description>
@@ -46,7 +46,7 @@
 					<description>Delete Group</description>
 					<width>370</width>
 					<include>SettingsItemCommon</include>
-					<label>Delete group</label>
+					<label>$LOCALIZE[31046]</label>
 				</control>
 				<control type="button" id="29">
 					<description>OK</description>

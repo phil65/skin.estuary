@@ -39,7 +39,7 @@
 					<textoffsetx>40</textoffsetx>
 					<font>font12</font>
 					<aligny>center</aligny>
-					<label>[COLOR button_focus]Rating: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
+					<label>[COLOR button_focus]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
 					<onclick>IncreaseRating</onclick>
 				</control>
 				<control type="button" id="135">
@@ -59,7 +59,7 @@
 					<font>font12</font>
 					<aligny>center</aligny>
 					<textcolor>button_focus</textcolor>
-					<label>Available: [COLOR white]$INFO[ListItem.Season] seasons ($INFO[ListItem.Episode] episodes)[/COLOR]</label>
+					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season] $LOCALIZE[36905] ($INFO[ListItem.Episode] episodes)[/COLOR]</label>
 					<visible>Container.Content(tvshows)</visible>
 				</control>
 			</control>
@@ -103,7 +103,6 @@
 				<orientation>horizontal</orientation>
 				<itemlayout height="400" width="245">
 					<control type="group">
-						<left>0</left>
 						<top>10</top>
 						<control type="image">
 							<top>0</top>
