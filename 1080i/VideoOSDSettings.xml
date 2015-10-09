@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol>5</defaultcontrol>
 	<include>OpenClose_Left</include>
+	<depth>DepthOSD+</depth>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsActive(sliderdialog)</visible>
