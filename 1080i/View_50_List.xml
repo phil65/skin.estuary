@@ -47,6 +47,7 @@
 						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
 						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
+						<onclick>SetFocus(50)</onclick>
 						<visible>IntegerGreaterThan(Container(4380).NumPages,1)</visible>
 					</control>
 				</control>
