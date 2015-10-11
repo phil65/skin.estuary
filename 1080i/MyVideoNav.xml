@@ -23,8 +23,8 @@
 				<param name="visible" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos)" />
 			</include>
 			<include>View_501_Banner</include>
-			<include>View_502_FanArt</include>
 		</control>
+		<include>View_502_FanArt</include>
 		<control type="group">
 			<visible>Container.Content(movies) | Container.Content(episodes)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -42,6 +42,7 @@
 			<left>106</left>
 			<visible>!Container.Content(addons)</visible>
 			<visible>!Container.Content(files)</visible>
+			<visible>!Control.IsVisible(502)</visible>
 			<visible>Control.IsVisible(50) | Control.IsVisible(51) | Window.IsActive(movieinformation)</visible>
 			<include>OpenClose_Left</include>
 			<include>Visible_Left</include>

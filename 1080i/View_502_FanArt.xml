@@ -21,6 +21,7 @@
 					<width>1774</width>
 					<height>742</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
+					<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(movieinformation) | Window.IsActive(addoninformation)">Conditional</animation>
 				</control>
 				<control type="fixedlist" id="502">
 					<left>1</left>
@@ -116,70 +117,74 @@
 								<height>682</height>
 								<fadetime>200</fadetime>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultVideo.png" colordiffuse="FF555555" background="true">$VAR[PosterVar]</texture>
+								<animation effect="fade" start="100" end="40" time="200" condition="!Window.IsActive(movieinformation)">Conditional</animation>
+								<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
 							</control>
-							<control type="image">
-								<left>490</left>
-								<top>21</top>
-								<width>1227</width>
-								<height>682</height>
-								<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
-								<aspectratio align="right">scale</aspectratio>
-							</control>
-							<control type="image">
-								<left>490</left>
-								<top>623</top>
-								<width>1227</width>
-								<height>80</height>
-								<visible>!Control.HasFocus(502)</visible>
-								<animation effect="fade" time="200">VisibleChange</animation>
-								<texture colordiffuse="A0000000">colors/black.png</texture>
-							</control>
-							<control type="image">
-								<left>490</left>
-								<top>623</top>
-								<width>1227</width>
-								<height>80</height>
-								<visible>Control.HasFocus(502)</visible>
-								<animation effect="fade" time="200">VisibleChange</animation>
-								<animation effect="fade" start="0" end="80" time="0" condition="true">Conditional</animation>
-								<texture colordiffuse="button_focus">colors/white.png</texture>
-							</control>
-							<control type="image">
-								<left>507</left>
-								<top>639</top>
-								<width>48</width>
-								<height>48</height>
-								<texture>$VAR[ListWatchedIconVar]</texture>
-							</control>
-							<control type="label">
-								<left>571</left>
-								<top>651</top>
-								<width>1160</width>
-								<height>20</height>
-								<font>font24_title</font>
-								<aligny>center</aligny>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							<control type="label">
-								<left>444</left>
-								<top>651</top>
-								<width>1160</width>
-								<height>20</height>
-								<font>font24_title</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<visible>Container.Content(movies)</visible>
-								<label>$INFO[ListItem.Year]</label>
-							</control>
-							<control type="image">
-								<right>35</right>
-								<top>638</top>
-								<width>50</width>
-								<height>50</height>
-								<aspectratio>keep</aspectratio>
-								<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
-								<texture>$VAR[MediaInfoOverlayVar]</texture>
+							<control type="group">
+								<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(movieinformation) | Window.IsActive(addoninformation)">Conditional</animation>
+								<control type="image">
+									<left>490</left>
+									<top>21</top>
+									<width>1227</width>
+									<height>682</height>
+									<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+									<aspectratio align="right">scale</aspectratio>
+								</control>
+								<control type="image">
+									<left>490</left>
+									<top>623</top>
+									<width>1227</width>
+									<height>80</height>
+									<visible>!Control.HasFocus(502)</visible>
+									<animation effect="fade" time="200">VisibleChange</animation>
+									<texture colordiffuse="A0000000">colors/black.png</texture>
+								</control>
+								<control type="image">
+									<left>490</left>
+									<top>623</top>
+									<width>1227</width>
+									<height>80</height>
+									<visible>Control.HasFocus(502)</visible>
+									<animation effect="fade" time="200">VisibleChange</animation>
+									<animation effect="fade" start="0" end="80" time="0" condition="true">Conditional</animation>
+									<texture colordiffuse="button_focus">colors/white.png</texture>
+								</control>
+								<control type="image">
+									<left>507</left>
+									<top>639</top>
+									<width>48</width>
+									<height>48</height>
+									<texture>$VAR[ListWatchedIconVar]</texture>
+								</control>
+								<control type="label">
+									<left>571</left>
+									<top>651</top>
+									<width>1160</width>
+									<height>20</height>
+									<font>font24_title</font>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+								<control type="label">
+									<left>444</left>
+									<top>651</top>
+									<width>1160</width>
+									<height>20</height>
+									<font>font24_title</font>
+									<align>right</align>
+									<aligny>center</aligny>
+									<visible>Container.Content(movies)</visible>
+									<label>$INFO[ListItem.Year]</label>
+								</control>
+								<control type="image">
+									<right>35</right>
+									<top>638</top>
+									<width>50</width>
+									<height>50</height>
+									<aspectratio>keep</aspectratio>
+									<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
+									<texture>$VAR[MediaInfoOverlayVar]</texture>
+								</control>
 							</control>
 						</control>
 					</focusedlayout>
@@ -190,6 +195,7 @@
 				<left>100</left>
 				<top>167</top>
 				<visible>Control.IsVisible(502)</visible>
+				<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(movieinformation) | Window.IsActive(addoninformation)">Conditional</animation>
 				<animation type="Visible">
 					<effect type="fade" start="0" end="100" delay="400" time="300" />
 				</animation>
