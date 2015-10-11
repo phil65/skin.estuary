@@ -33,7 +33,7 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<align>left</align>
-				<itemgap>-18</itemgap>
+				<itemgap>31</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="radiobutton" id="12">
 					<include name="VideoInfoButtonsCommon">
@@ -64,12 +64,6 @@
 						<param name="icon" value="icons/infodialogs/disable.png" />
 					</include>
 					<label>$LOCALIZE[24021]</label>
-				</control>
-				<control type="radiobutton" id="11">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/rollback.png" />
-					</include>
-					<label>$LOCALIZE[24048]</label>
 				</control>
 				<control type="radiobutton" id="10">
 					<include name="VideoInfoButtonsCommon">
