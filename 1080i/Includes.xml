@@ -1221,7 +1221,7 @@
 		</definition>
 	</include>
 	<include name="BottomBar">
-		<param name="PageLabel">$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</param>
+		<param name="PageLabel">$VAR[BottomBarPageLabel]</param>
 		<definition>
 			<control type="group">
 				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(visualisation)">WindowClose</animation>
@@ -1330,16 +1330,6 @@
 					<itemgap>10</itemgap>
 					<visible>!System.HasModalDialog</visible>
 					<animation effect="fade" delay="1" time="200">VisibleChange</animation>
-					<control type="label">
-						<width>auto</width>
-						<height>48</height>
-						<aligny>center</aligny>
-						<align>right</align>
-						<shadowcolor>text_shadow</shadowcolor>
-						<visible>Control.HasFocus(60) | Control.HasFocus(5199) | Control.HasFocus(5399) | Control.HasFocus(531) | Control.HasFocus(532)</visible>
-						<textcolor>button_focus</textcolor>
-						<label>$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages,, • ]</label>
-					</control>
 					<control type="label">
 						<width>auto</width>
 						<height>48</height>

@@ -204,6 +204,10 @@
 		<value condition="Library.IsScanningVideo">$LOCALIZE[31040]</value>
 		<value>$LOCALIZE[653]</value>
 	</variable>
+	<variable name="BottomBarPageLabel">
+		<value condition="Control.HasFocus(60) | Control.HasFocus(5199) | Control.HasFocus(5399) | Control.HasFocus(531) | Control.HasFocus(532)">[COLOR button_focus]$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages][/COLOR]</value>
+		<value>$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</value>
+	</variable>
 	<variable name="LibraryScanLabelVar">
 		<value condition="Window.IsActive(videos) + library.IsScanningVideo">$LOCALIZE[13353]</value>
 		<value condition="Window.IsActive(musiclibrary) + library.IsScanningMusic">$LOCALIZE[13353]</value>
