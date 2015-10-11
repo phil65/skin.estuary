@@ -58,17 +58,15 @@
 					<preloaditems>1</preloaditems>
 					<viewtype label="Poster">icon</viewtype>
 					<itemlayout width="317">
-						<control type="group">
-							<control type="image">
-								<left>0</left>
-								<top>8</top>
-								<width>276</width>
-								<height>394</height>
-								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-								<bordertexture border="20">overlays/shadow.png</bordertexture>
-								<bordersize>20</bordersize>
-							</control>
+						<control type="image">
+							<left>0</left>
+							<top>8</top>
+							<width>276</width>
+							<height>394</height>
+							<aspectratio>scale</aspectratio>
+							<texture fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 						</control>
 					</itemlayout>
 					<focusedlayout width="279">
@@ -128,7 +126,7 @@
 					<width>1160</width>
 					<height>40</height>
 					<label>$VAR[ListSubLabelVar]</label>
-			<animation effect="slide" start="0,0" end="70,0" time="0" condition="Container.Content(tvshows) | Container.Content(seasons)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="70,0" time="0" condition="Container.Content(tvshows) | Container.Content(seasons)">Conditional</animation>
 					<font>font30_title</font>
 					<textcolor>button_focus</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
