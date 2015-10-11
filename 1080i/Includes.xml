@@ -16,6 +16,16 @@
 	<include file="Variables.xml" />
 	<constant name="FanartCrossfadeTime">400</constant>
 	<constant name="IconCrossfadeTime">400</constant>
+	<constant name="DepthDialog">0.50</constant>
+	<constant name="DepthDialog+">0.52</constant>
+	<constant name="DepthDialog-">0.48</constant>
+	<constant name="DepthMax">0.54</constant>
+	<constant name="DepthOSD">0.40</constant>
+	<constant name="DepthOSD+">0.44</constant>
+	<constant name="DepthContentPopout">0.10</constant>
+	<constant name="DepthBars">0.12</constant>
+	<constant name="DepthBackground">-0.80</constant>
+	<constant name="DepthSideBlade">0.10</constant>
 	<include name="HiddenObject">
 		<left>-3000</left>
 		<top>-3000</top>
@@ -491,6 +501,7 @@
 			</itemlayout>
 			<focusedlayout height="270" width="440">
 				<control type="group">
+					<depth>DepthContentPopout</depth>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
 					</animation>
@@ -1027,6 +1038,7 @@
 	</include>
 	<include name="TopBar">
 		<control type="group">
+			<depth>DepthBars</depth>
 			<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo)">WindowOpen</animation>
 			<control type="image">
 				<description>InfoBarTop</description>
@@ -1188,6 +1200,7 @@
 		<param name="fanart">$VAR[MediaFanartVar]</param>
 		<definition>
 			<control type="videowindow">
+				<depth>DepthBackground</depth>
 				<include>FullScreenDimensions</include>
 				<visible>Player.HasVideo</visible>
 			</control>
@@ -1196,22 +1209,20 @@
 				<visible>Player.HasAudio</visible>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1920</width>
-				<height>1080</height>
-				<animation effect="fade" start="100" end="80" time="0" condition="Player.HasMedia">Conditional</animation>
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
 				<aspectratio>scale</aspectratio>
+				<animation effect="zoom" center="auto" end="102,102" time="0" condition="IntegerGreaterThan(System.StereoscopicMode,0)">conditional</animation>
+				<animation effect="fade" start="100" end="80" time="0" condition="Player.HasMedia">Conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo)">WindowOpen</animation>
 				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1920</width>
-				<height>1080</height>
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
 				<aspectratio>scale</aspectratio>
 				<fadetime>400</fadetime>
+				<animation effect="zoom" center="auto" end="102,102" time="0" condition="IntegerGreaterThan(System.StereoscopicMode,0)">conditional</animation>
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<animation effect="fade" time="400">VisibleChange</animation>
@@ -1224,6 +1235,7 @@
 		<param name="PageLabel">$VAR[BottomBarPageLabel]</param>
 		<definition>
 			<control type="group">
+				<depth>DepthBars</depth>
 				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(visualisation)">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(visualisation)">WindowOpen</animation>
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo)">WindowOpen</animation>

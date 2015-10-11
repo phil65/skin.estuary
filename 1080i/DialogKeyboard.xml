@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol always="true">300</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
+	<depth>DepthDialog+</depth>
 	<coordinates>
 		<left>265</left>
 		<top>186</top>

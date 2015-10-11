@@ -55,6 +55,7 @@
 				</itemlayout>
 				<focusedlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files) | Container.Content(playlists)">
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
 						</animation>

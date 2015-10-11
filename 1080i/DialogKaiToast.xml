@@ -3,8 +3,9 @@
 	<zorder>3</zorder>
 	<controls>
 		<control type="group">
-		<top>945</top>
-		<left>640</left>
+			<depth>DepthMax</depth>
+			<top>945</top>
+			<left>640</left>
 			<include>Animation_DialogPopupOpenClose</include>
 			<control type="image">
 				<left>-25</left>
