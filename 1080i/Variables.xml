@@ -116,9 +116,15 @@
 		<value>$INFO[Player.Time] - $INFO[Player.Duration]</value>
 	</variable>
 	<variable name="OSDHelpTextVar">
-		<value condition="ControlGroup(201).HasFocus">Press up to FF / RW.</value>
-		<value condition="Control.HasFocus(87)">Press left right bla</value>
-		<value>Description for this button.</value>
+		<value condition="ControlGroup(201).HasFocus">$LOCALIZE[31049]</value>
+		<value condition="Control.HasFocus(87) + Player.Rewinding">$LOCALIZE[31050]</value>
+		<value condition="Control.HasFocus(87) + Player.Forwarding">$LOCALIZE[31051]</value>
+		<value condition="Control.HasFocus(70011)">$LOCALIZE[31052]</value>
+		<value condition="Control.HasFocus(701)">$LOCALIZE[31055]</value>
+		<value condition="Control.HasFocus(702)">$LOCALIZE[31056]</value>
+		<value condition="Control.HasFocus(700)">$LOCALIZE[31057]</value>
+		<value condition="Control.HasFocus(703)">$LOCALIZE[31058]</value>
+		<value>$LOCALIZE[31054]</value>
 	</variable>
 	<variable name="VolumeIconVar">
 		<value condition="IntegerGreaterThan(Control.GetLabel(20),66)">dialogs/volume/volume.png</value>
