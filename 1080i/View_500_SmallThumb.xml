@@ -121,8 +121,7 @@
 				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
-							<animation effect="slide" end="-15,0" time="0" condition="true">Conditional</animation>
-
+				<animation effect="slide" end="-15,0" time="0" condition="true">Conditional</animation>
 			</control>
 		</itemlayout>
 		<focusedlayout height="360" width="300" condition="!Container.content(episodes)">
@@ -152,17 +151,17 @@
 					</control>
 					<control type="image">
 						<left>5</left>
-						<top>286</top>
+						<top>260</top>
 						<width>212</width>
-						<height>40</height>
+						<height>66</height>
 						<texture>colors/black.png</texture>
 						<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
 					</control>
-					<control type="label">
+					<control type="textbox">
 						<left>15</left>
-						<top>295</top>
+						<top>260</top>
 						<width>192</width>
-						<height>20</height>
+						<height>65</height>
 						<font>font12</font>
 						<align>center</align>
 						<aligny>center</aligny>
