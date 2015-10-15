@@ -120,7 +120,7 @@
 						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
 					<label>$LOCALIZE[31026]</label>
-					<onclick>Container.Update(musicdb://)</onclick>
+					<onclick>Container.Update($INFO[Container.FolderPath]$INFO[ListItem.DBID])</onclick>
 					<onclick>Action(close)</onclick>
 					<visible>Container.Content(artists)</visible>
 				</control>
