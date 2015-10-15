@@ -138,6 +138,10 @@
 						<param name="icon" value="icons/infodialogs/image.png" />
 					</include>
 					<label>$LOCALIZE[31028]</label>
+					<enable>!IsEmpty(ListItem.Art(fanart))</enable>
+					<onclick>SetProperty(fanart,$INFO[ListItem.Art(fanart)],home)</onclick>
+					<onclick>ActivateWindow(1104)</onclick>
+					<visible>Container.Content(artists)</visible>
 				</control>
 				<control type="radiobutton" id="6">
 					<include name="VideoInfoButtonsCommon">
