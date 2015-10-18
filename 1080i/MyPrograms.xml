@@ -17,11 +17,13 @@
 			<include>ListThumbInfoPanel</include>
 		</control>
 		<include>MediaMenuMouseOverlay</include>
-	   <control type="group">
+		<control type="group">
 			<include>MediaMenuCommon</include>
 			<control type="grouplist" id="9000">
 				<top>90</top>
-				<include>MediaMenuListCommon</include>
+				<include name="MediaMenuListCommon">
+					<param name="viewtype_button_vis" value="False" />
+				</include>
 			</control>
 		</control>
 		<include name="TopBar">
