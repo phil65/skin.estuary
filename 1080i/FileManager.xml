@@ -66,7 +66,7 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<textcolor>button_focus</textcolor>
 					<visible>Control.HasFocus(61)</visible>
-					<label>$INFO[Container(21).CurrentPage,, / ]$INFO[Container(21).NumPages,, • ]</label>
+					<label>$INFO[Container(21).CurrentPage,, / ]$INFO[Container(21).NumPages]</label>
 				</control>
 				<control type="label">
 					<width>auto</width>
@@ -74,6 +74,7 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<shadowcolor>text_shadow</shadowcolor>
+					<visible>!Control.HasFocus(61)</visible>
 					<label>$INFO[Container(21).CurrentItem,, / ]$INFO[Container(21).NumItems]</label>
 				</control>
 				<control type="image">
@@ -104,6 +105,7 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<shadowcolor>text_shadow</shadowcolor>
+					<visible>!Control.HasFocus(60)</visible>
 					<label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
 				</control>
 				<control type="label">
@@ -114,7 +116,7 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<textcolor>button_focus</textcolor>
 					<visible>Control.HasFocus(60)</visible>
-					<label>$INFO[Container(20).CurrentPage, • , / ]$INFO[Container(20).NumPages]</label>
+					<label>$INFO[Container(20).CurrentPage,, / ]$INFO[Container(20).NumPages]</label>
 				</control>
 			</control>
 		</control>
