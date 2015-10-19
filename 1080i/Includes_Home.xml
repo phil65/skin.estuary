@@ -614,7 +614,7 @@
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<top>45</top>
+							<top>43</top>
 							<left>25</left>
 							<width>70</width>
 							<height>70</height>
@@ -623,7 +623,7 @@
 						</control>
 						<control type="textbox">
 							<left>105</left>
-							<top>20</top>
+							<top>17</top>
 							<width>210</width>
 							<height>120</height>
 							<label>$INFO[ListItem.Label]</label>
@@ -655,7 +655,7 @@
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							</control>
 							<control type="image">
-								<top>45</top>
+								<top>43</top>
 								<left>25</left>
 								<width>70</width>
 								<height>70</height>
@@ -664,7 +664,7 @@
 							</control>
 							<control type="textbox">
 								<left>105</left>
-								<top>20</top>
+								<top>17</top>
 								<width>210</width>
 								<height>120</height>
 								<label>$INFO[ListItem.Label]</label>
