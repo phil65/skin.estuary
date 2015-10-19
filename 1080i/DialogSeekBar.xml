@@ -7,14 +7,20 @@
 	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 	<depth>DepthOSD</depth>
 	<controls>
+			<control type="image">
+				<left>10</left>
+				<top>870</top>
+				<width>1900</width>
+				<height>200</height>
+				<texture border="40">buttons/dialogbutton-nofo.png</texture>
+			</control>
 		<control type="group">
 			<visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
-			<left>705r</left>
-			<top>-6</top>
+			<left>1215</left>
 			<control type="label" id="1">
 				<description>Chapter Pos No</description>
 				<left>20</left>
-				<top>10</top>
+				<top>4</top>
 				<width>110</width>
 				<height>20</height>
 				<align>center</align>
@@ -22,12 +28,11 @@
 				<font>font12_title</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[21396]</label>
-				<visible>player.chaptercount</visible>
 			</control>
 			<control type="label" id="1">
 				<description>Chapter Pos No</description>
 				<left>20</left>
-				<top>30</top>
+				<top>24</top>
 				<width>110</width>
 				<height>20</height>
 				<align>center</align>
@@ -35,23 +40,20 @@
 				<font>font13_title</font>
 				<textcolor>grey2</textcolor>
 				<label>$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
-				<visible>player.chaptercount</visible>
 			</control>
 		</control>
 		<control type="group">
-			<left>0</left>
-			<top>1000</top>
+			<top>900</top>
 			<control type="label">
-				<left>31</left>
+				<left>51</left>
 				<top>4</top>
 				<width>40</width>
 				<height>40</height>
 				<label>$VAR[VideoPlayerForwardRewindVar]</label>
 			</control>
 			<control type="label">
-				<description>Seekbar Label</description>
-				<left>20</left>
-				<top>7</top>
+				<left>40</left>
+				<top>12</top>
 				<width>240</width>
 				<height>20</height>
 				<aligny>center</aligny>
@@ -60,10 +62,9 @@
 				<label>$VAR[SeekLabel]</label>
 			</control>
 			<control type="label">
-				<description>Elapsed Time Label</description>
-				<left>20</left>
-				<top>23</top>
-				<width>240</width>
+				<left>40</left>
+				<top>40</top>
+				<width>350</width>
 				<height>20</height>
 				<font>font13_title</font>
 				<textcolor>white</textcolor>
@@ -73,7 +74,7 @@
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>30</left>
-				<top>-10</top>
+				<top>80</top>
 				<width>1860</width>
 				<height>30</height>
 				<info>Player.ProgressCache</info>
@@ -83,7 +84,7 @@
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>30</left>
-				<top>-10</top>
+				<top>80</top>
 				<width>1860</width>
 				<height>30</height>
 				<info>Player.Progress</info>
@@ -92,7 +93,7 @@
 			</control>
 			<control type="slider" id="401">
 				<left>30</left>
-				<top>-20</top>
+				<top>70</top>
 				<width>1860</width>
 				<height>50</height>
 				<onup>8010</onup>
