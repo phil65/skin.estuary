@@ -49,8 +49,8 @@
 					<onclick>ActivateWindow(Music,Files,return)</onclick>
 				</item>
 				<item>
-					<label>uPnP sources</label>
-					<onclick>Notification(dummy item,blabla)</onclick>
+					<label>Picture sources</label>
+					<onclick>ActivateWindow(pictures,return)</onclick>
 				</item>
 			</content>
 		</control>
