@@ -4,7 +4,17 @@
 	<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
-		<control type="group" id="1">
+		<control type="button" id="22001">
+			<description>background close area</description>
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>800</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>Action(close)</onclick>
+		</control>
+		<control type="group">
 			<top>912</top>
 			<control type="image">
 				<left>10</left>
@@ -13,7 +23,7 @@
 				<height>400</height>
 				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 			</control>
-			<control type="image" id="1">
+			<control type="image">
 				<description>TV Cover</description>
 				<right>28</right>
 				<top>-191</top>
@@ -23,7 +33,7 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<visible>VideoPlayer.Content(Episodes)</visible>
 			</control>
-			<control type="image" id="1">
+			<control type="image">
 				<description>Movie Cover</description>
 				<right>28</right>
 				<top>-191</top>
@@ -33,7 +43,7 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>
-			<control type="label" id="1">
+			<control type="label">
 				<description>Heading label</description>
 				<left>49</left>
 				<top>-270</top>
@@ -178,7 +188,7 @@
 					<shadowcolor>black</shadowcolor>
 					<textcolor>white</textcolor>
 				</control>
-				<control type="label" id="1">
+				<control type="label">
 					<description>Music Info label</description>
 					<left>20</left>
 					<width>910</width>
@@ -189,7 +199,7 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(MusicVideos)</visible>
 				</control>
-				<control type="label" id="1">
+				<control type="label">
 					<description>TV Episode Information</description>
 					<left>52</left>
 					<width min="10" max="840">auto</width>
@@ -199,7 +209,7 @@
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
-				<control type="label" id="1">
+				<control type="label">
 					<description>Movie Information</description>
 					<left>52</left>
 					<font>font14</font>
@@ -210,7 +220,7 @@
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(Movies)</visible>
 				</control>
-				<control type="label" id="1">
+				<control type="label">
 					<description>Live TV Information</description>
 					<right>255</right>
 					<font>font14</font>
@@ -225,7 +235,7 @@
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd)</visible>
 				<animation effect="fade" time="400">VisibleChange</animation>
-				<control type="label" id="1">
+				<control type="label">
 					<description>Rating</description>
 					<left>20</left>
 					<width>155</width>
@@ -235,7 +245,7 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[VideoPlayer.Rating]</label>
 				</control>
-				<control type="label" id="1">
+				<control type="label">
 					<description>Rating label</description>
 					<left>20</left>
 					<top>970</top>
@@ -245,7 +255,7 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[563]</label>
 				</control>
-				<control type="label" id="1">
+				<control type="label">
 					<description>Channel Group label</description>
 					<left>50</left>
 					<top>900</top>
@@ -256,7 +266,7 @@
 					<label>$INFO[VideoPlayer.ChannelGroup,Channel Group: ]</label>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
-				<control type="label" id="1">
+				<control type="label">
 					<description>Player time</description>
 					<left>250</left>
 					<top>940</top>
@@ -267,7 +277,7 @@
 					<label>$INFO[Player.Time]$INFO[Player.Duration, / , •]  $INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, /] • $INFO[Player.FinishTime, Ends: ,]</label>
 					<visible>!Player.Seeking</visible>
 				</control>
-				<control type="grouplist" id="1">
+				<control type="grouplist">
 					<right>50</right>
 					<top>940</top>
 					<align>right</align>
@@ -275,14 +285,14 @@
 					<height>56</height>
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
-					<control type="image" id="1">
+					<control type="image">
 						<description>Video Resolution Image</description>
 						<width>150</width>
 						<height>56</height>
 						<aspectratio align="center">scale</aspectratio>
 						<texture>$INFO[VideoPlayer.VideoResolution,flags/video/,.png]</texture>
 					</control>
-					<control type="image" id="1">
+					<control type="image">
 						<description>ADSP Master Mode Image</description>
 						<width>150</width>
 						<height>56</height>
@@ -290,7 +300,7 @@
 						<visible>!IsEmpty(ADSP.MasterOwnIcon)</visible>
 						<texture>$INFO[ADSP.MasterOwnIcon]</texture>
 					</control>
-					<control type="image" id="1">
+					<control type="image">
 						<description>Audio Codec Image</description>
 						<width>150</width>
 						<height>56</height>
@@ -298,7 +308,7 @@
 						<visible>IsEmpty(ADSP.MasterOverrideIcon)</visible>
 						<texture>$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
 					</control>
-					<control type="image" id="1">
+					<control type="image">
 						<description>ADSP Audio Codec Override Image</description>
 						<width>150</width>
 						<height>56</height>
@@ -306,7 +316,7 @@
 						<visible>!IsEmpty(ADSP.MasterOverrideIcon)</visible>
 						<texture>$INFO[ADSP.MasterOverrideIcon]</texture>
 					</control>
-					<control type="image" id="1">
+					<control type="image">
 						<description>Audio Channels Image</description>
 						<width>150</width>
 						<height>56</height>
