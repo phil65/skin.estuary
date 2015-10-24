@@ -22,7 +22,7 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Window.IsActive(addoninformation)</visible>
+			<visible>Window.IsActive(addoninformation) | Control.IsVisible(50)</visible>
 			<include>Visible_Left</include>
 			<include>ListThumbInfoPanel</include>
 		</control>
