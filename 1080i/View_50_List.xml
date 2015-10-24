@@ -438,7 +438,7 @@
 			<align>left</align>
 			<font>font_textbox</font>
 			<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
-			<label fallback="$LOCALIZE[19055]">$VAR[ListBoxInfoVar]</label>
+			<label fallback="19055">$VAR[ListBoxInfoVar]</label>
 			<visible>!Window.IsActive(addoninformation)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 		</control>
