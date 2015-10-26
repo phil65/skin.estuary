@@ -1099,7 +1099,7 @@
 					<visible>!Stringcompare(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
 				</control>
 				<control type="label">
-					<label>(Filtered)</label>
+					<label> (Filtered)</label>
 					<include>BreadcrumbsLabel</include>
 					<visible>Container.Filtered</visible>
 				</control>
