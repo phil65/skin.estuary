@@ -185,7 +185,7 @@
 							<top>20</top>
 							<width>230</width>
 							<height>320</height>
-							<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
 					</control>
