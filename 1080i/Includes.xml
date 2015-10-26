@@ -1106,7 +1106,7 @@
 			</control>
 			<control type="label">
 				<top>40</top>
-				<label>$INFO[Container.SortMethod,Sort by: ]</label>
+				<label>$INFO[Container.SortMethod,$LOCALIZE[31022]: ]</label>
 				<font>font10</font>
 				<left>85</left>
 				<shadowcolor>text_shadow</shadowcolor>
