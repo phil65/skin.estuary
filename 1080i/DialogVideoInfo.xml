@@ -108,10 +108,18 @@
 							<top>0</top>
 							<width>264</width>
 							<height>357</height>
-							<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
+							<texture>DefaultActor.png</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<top>20</top>
+							<left>20</left>
+							<width>224</width>
+							<height>317</height>
+							<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
+							<aspectratio aligny="center">scale</aspectratio>
 						</control>
 						<control type="image">
 							<left>20</left>
@@ -141,10 +149,18 @@
 							<top>0</top>
 							<width>264</width>
 							<height>357</height>
-							<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
+							<texture>DefaultActor.png</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<top>20</top>
+							<left>20</left>
+							<width>224</width>
+							<height>317</height>
+							<texture>$INFO[ListItem.Thumb]</texture>
+							<aspectratio aligny="center">scale</aspectratio>
 						</control>
 						<control type="image">
 							<left>20</left>
