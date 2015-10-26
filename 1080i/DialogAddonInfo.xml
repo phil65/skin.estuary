@@ -4,7 +4,7 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<control type="button" id="13">
+			<control type="button">
 				<left>815</left>
 				<top>162</top>
 				<width>1000</width>
@@ -33,7 +33,7 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<align>left</align>
-				<itemgap>31</itemgap>
+				<itemgap>-18</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="radiobutton" id="12">
 					<include name="VideoInfoButtonsCommon">
@@ -53,11 +53,16 @@
 					</include>
 					<label>$LOCALIZE[24069]</label>
 				</control>
-				<control type="radiobutton" id="6">
+				<control type="radiobutton" id="13">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/uninstall.png" />
+						<param name="icon" value="icons/infodialogs/rating.png" />
 					</include>
-					<label>$LOCALIZE[24022]</label>
+				</control>
+				<control type="radiobutton" id="10">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/infodialogs/changelog.png" />
+					</include>
+					<label>$LOCALIZE[24036]</label>
 				</control>
 				<control type="radiobutton" id="7">
 					<include name="VideoInfoButtonsCommon">
@@ -65,11 +70,11 @@
 					</include>
 					<label>$LOCALIZE[24021]</label>
 				</control>
-				<control type="radiobutton" id="10">
+				<control type="radiobutton" id="6">
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/changelog.png" />
+						<param name="icon" value="icons/infodialogs/uninstall.png" />
 					</include>
-					<label>$LOCALIZE[24036]</label>
+					<label>$LOCALIZE[24022]</label>
 				</control>
 			</control>
 		</control>
@@ -78,25 +83,25 @@
 			<param name="sub_label" value="$INFO[ListItem.Property(addon.version),[COLOR button_focus],[/COLOR]]$INFO[ListItem.Property(addon.creator), by ]" />
 		</include>
 		<control type="group">
-				<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
-				<include>OpenClose_Fade</include>
-				<control type="image">
-					<left>114</left>
-					<top>186</top>
-					<width>461</width>
-					<height>461</height>
-					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-				</control>
-				<control type="textbox">
-					<left>130</left>
-					<top>190</top>
-					<width>420</width>
-					<align>center</align>
-					<aligny>center</aligny>
-					<height>400</height>
-					<label>$LOCALIZE[24096]</label>
-					<font>font24_title</font>
-				</control>
+			<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+			<include>OpenClose_Fade</include>
+			<control type="image">
+				<left>114</left>
+				<top>186</top>
+				<width>461</width>
+				<height>461</height>
+				<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
 			</control>
+			<control type="textbox">
+				<left>130</left>
+				<top>190</top>
+				<width>420</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<height>400</height>
+				<label>$LOCALIZE[24096]</label>
+				<font>font24_title</font>
+			</control>
+		</control>
 	</controls>
 </window>
