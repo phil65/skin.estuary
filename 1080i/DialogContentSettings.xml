@@ -41,13 +41,12 @@
 					<width>1050</width>
 					<label>$LOCALIZE[31024]:</label>
 				</control>
-				<control type="button" id="222">
+				<control type="button" id="21">
 					<description>Default Button</description>
 					<include>SettingsItemCommon</include>
 					<width>1050</width>
 					<label>Choose Scraper</label>
 					<label2>Scraper name</label2>
-					<onclick>Notification(Todo for core,Open SelectDialog with scraper list)</onclick>
 				</control>
 				<control type="button" id="22">
 					<description>Default Button</description>
@@ -56,75 +55,6 @@
 					<label>Scraper settings</label>
 				</control>
 			</control>
-			<!-- 			<control type="list" id="21">
-			     <left>400</left>
-			     <top>100</top>
-			     <width>360</width>
-			     <height>241</height>
-			     <onup>21</onup>
-			     <onleft>20</onleft>
-			     <onright>60</onright>
-			     <ondown>21</ondown>
-			     <scrolltime>200</scrolltime>
-			     <itemlayout height="45">
-			     <control type="image">
-			     <left>0</left>
-			     <top>0</top>
-			     <width>360</width>
-			     <height>100</height>
-			     <texture border="40">buttons/button-nofo.png</texture>
-			     </control>
-			     <control type="image">
-			     <left>5</left>
-			     <top>5</top>
-			     <width>35</width>
-			     <height>30</height>
-			     <texture>$INFO[Listitem.Icon]</texture>
-			     </control>
-			     <control type="label">
-			     <left>50</left>
-			     <top>0</top>
-			     <width>290</width>
-			     <height>100</height>
-			     <aligny>center</aligny>
-			     <textcolor>grey2</textcolor>
-			     <label>$INFO[ListItem.Label]</label>
-			     </control>
-			     </itemlayout>
-			     <focusedlayout height="45">
-			     <control type="image">
-			     <left>0</left>
-			     <top>0</top>
-			     <width>360</width>
-			     <height>100</height>
-			     <visible>!Control.HasFocus(21)</visible>
-			     <texture border="40">buttons/button-nofo.png</texture>
-			     </control>
-			     <control type="image">
-			     <left>0</left>
-			     <top>0</top>
-			     <width>360</width>
-			     <height>100</height>
-			     <visible>Control.HasFocus(21)</visible>
-			     <texture border="5">buttons/button-theme-fo.png</texture>
-			     </control>
-			     <control type="image">
-			     <left>5</left>
-			     <top>5</top>
-			     <width>35</width>
-			     <height>30</height>
-			     <texture>$INFO[Listitem.Icon]</texture>
-			     </control>
-			     <control type="label">
-			     <left>50</left>
-			     <top>0</top>
-			     <width>290</width>
-			     <height>100</height>
-			     <aligny>center</aligny>
-			     <label>$INFO[ListItem.Label]</label>
-			     </control>
-			     </focusedlayout>
-			     </control> -->
 			<control type="label">
 				<left>60</left>
 				<top>335</top>
