@@ -150,7 +150,7 @@
 					<onright>60</onright>
 					<onup>50</onup>
 					<ondown>50</ondown>
-					<viewtype label="List">list</viewtype>
+					<viewtype label="535">list</viewtype>
 					<preloaditems>1</preloaditems>
 					<visible>$PARAM[visible]</visible>
 					<focusedlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">

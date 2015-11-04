@@ -7,7 +7,6 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>
 			<description>TV Search group</description>
 			<visible>Control.IsVisible(50)</visible>
 			<include>OpenClose_Left</include>

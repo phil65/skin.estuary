@@ -576,7 +576,7 @@
 				<icon>icons/settings/pictures.png</icon>
 			</item>
 			<item>
-				<label>Updates available</label>
+				<label>$LOCALIZE[31059]</label>
 				<onclick>ActivateWindow(addonbrowser,addons://outdated/,return)</onclick>
 				<icon>icons/settings/update-available.png</icon>
 				<visible>!Stringcompare(Container(8000).NumItems,0)</visible>

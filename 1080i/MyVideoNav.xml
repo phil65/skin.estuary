@@ -122,7 +122,7 @@
 				<control type="button" id="612">
 					<description>Go to playlist</description>
 					<include>MediaMenuItemsCommon</include>
-					<label>Go to playlist</label>
+					<label>$LOCALIZE[31056]</label>
 					<onclick>ActivateWindow(videoplaylist)</onclick>
 					<visible>IntegerGreaterThan(Playlist.Length(video),0)</visible>
 				</control>

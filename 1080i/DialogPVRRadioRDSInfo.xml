@@ -26,7 +26,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[557]:</label>
 				<visible>IsEmpty(RDS.Band)</visible>
@@ -39,7 +38,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Artist]</label>
 				<scrollout>false</scrollout>
@@ -54,7 +52,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29901]:</label>
 				<visible>!IsEmpty(RDS.Band)</visible>
@@ -67,7 +64,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[RDS.Band]</label>
 				<scrollout>false</scrollout>
@@ -82,7 +78,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[557]:</label>
 				<visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
@@ -95,7 +90,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[RDS.Artist]</label>
 				<visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
@@ -108,7 +102,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[556]:</label>
 			</control>
@@ -120,7 +113,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Title]</label>
 				<scrollout>false</scrollout>
@@ -134,7 +126,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29902]:</label>
 				<visible>!IsEmpty(RDS.ProgStyle)</visible>
@@ -147,7 +138,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>!IsEmpty(RDS.ProgStyle)</visible>
@@ -166,7 +156,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29903]:</label>
 			</control>
@@ -178,7 +167,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Composer]</label>
 				<scrollout>false</scrollout>
@@ -192,7 +180,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[556]:</label>
 			</control>
@@ -204,7 +191,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Title]</label>
 				<scrollout>false</scrollout>
@@ -218,7 +204,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29904]:</label>
 				<visible>IsEmpty(RDS.Band) + !IsEmpty(RDS.Artist)</visible>
@@ -229,7 +214,6 @@
 				<top>66</top>
 				<width>704</width>
 				<height>29</height>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<pagecontrol>-</pagecontrol>
@@ -245,7 +229,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29901]:</label>
 				<visible>!IsEmpty(RDS.Band)</visible>
@@ -258,7 +241,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[RDS.Band]</label>
 				<scrollout>false</scrollout>
@@ -273,7 +255,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29904]:</label>
 				<visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
@@ -284,7 +265,6 @@
 				<top>70</top>
 				<width>328</width>
 				<height>100</height>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<pagecontrol>-</pagecontrol>
@@ -300,7 +280,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29905]:</label>
 				<visible>!IsEmpty(RDS.Conductor)</visible>
@@ -313,7 +292,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Conductor]</label>
 				<scrollout>false</scrollout>
@@ -328,7 +306,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29902]:</label>
 				<visible>IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
@@ -341,7 +318,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
@@ -354,7 +330,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29902]:</label>
 				<visible>!IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
@@ -367,7 +342,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>!IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
@@ -519,7 +493,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29908]:</label>
 				<visible>!IsEmpty(RDS.ProgNow) | !IsEmpty(RDS.ProgNext)</visible>
@@ -530,7 +503,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29909]:</label>
 				<visible>!IsEmpty(RDS.PhoneStudio) | !IsEmpty(RDS.EmailStudio) | !IsEmpty(RDS.SMSStudio)</visible>
@@ -548,7 +520,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[19030]:</label>
 				<visible>!IsEmpty(RDS.ProgNow)</visible>
@@ -559,7 +530,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[19031]:</label>
 				<visible>!IsEmpty(RDS.ProgNext)</visible>
@@ -570,7 +540,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29910]:</label>
 				<visible>!IsEmpty(RDS.PhoneStudio)</visible>
@@ -581,7 +550,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29911]:</label>
 				<visible>!IsEmpty(RDS.EmailStudio)</visible>
@@ -592,7 +560,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29912]:</label>
 				<visible>!IsEmpty(RDS.SMSStudio)</visible>
@@ -610,7 +577,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.ProgNow]</label>
 				<visible>!IsEmpty(RDS.ProgNow)</visible>
@@ -621,7 +587,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.ProgNext]</label>
 				<visible>!IsEmpty(RDS.ProgNext)</visible>
@@ -632,7 +597,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.PhoneStudio]</label>
 				<visible>!IsEmpty(RDS.PhoneStudio)</visible>
@@ -643,7 +607,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.EmailStudio]</label>
 				<visible>!IsEmpty(RDS.EmailStudio)</visible>
@@ -654,7 +617,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.SMSStudio]</label>
 				<visible>!IsEmpty(RDS.SMSStudio)</visible>
@@ -672,7 +634,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29913]:</label>
 				<visible>!IsEmpty(RDS.PhoneHotline) | !IsEmpty(RDS.EmailHotline)</visible>
@@ -685,7 +646,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29914]:</label>
 				<visible>!IsEmpty(RDS.ProgHomepage)</visible>
@@ -703,7 +663,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29910]:</label>
 				<visible>!IsEmpty(RDS.PhoneHotline)</visible>
@@ -714,7 +673,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29911]:</label>
 				<visible>!IsEmpty(RDS.EmailHotline)</visible>
@@ -725,7 +683,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[RDS.ProgHomepage]</label>
 				<visible>!IsEmpty(RDS.ProgHomepage)</visible>
@@ -743,7 +700,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.PhoneHotline]</label>
 				<visible>!IsEmpty(RDS.PhoneHotline)</visible>
@@ -754,7 +710,6 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.EmailHotline]</label>
 				<visible>!IsEmpty(RDS.EmailHotline)</visible>
@@ -774,7 +729,6 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[29915]:</label>
 			</control>
@@ -782,7 +736,6 @@
 				<description>Source Type</description>
 				<left>740</left>
 				<top>5</top>
-				<font>font13</font>
 				<textcolor>white</textcolor>
 				<aligny>center</aligny>
 				<label>-</label>
@@ -811,7 +764,7 @@
 				<top>30</top>
 				<width>800</width>
 				<height>120</height>
-				<font>font11</font>
+				<font>font12</font>
 				<align>justify</align>
 				<pagecontrol>60</pagecontrol>
 				<label>-</label>
