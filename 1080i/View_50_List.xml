@@ -444,7 +444,7 @@
 		</control>
 	</include>
 	<include name="SongsListLayout">
-		<focusedlayout height="70" condition="Container.Content(songs)">
+		<focusedlayout height="70" condition="Container.Content(songs) + !Skin.HasSetting(small_list)">
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -495,7 +495,7 @@
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 		</focusedlayout>
-		<itemlayout height="70" condition="Container.Content(songs)">
+		<itemlayout height="70" condition="Container.Content(songs) + !Skin.HasSetting(small_list)">
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -528,6 +528,101 @@
 				<left>90</left>
 				<top>0</top>
 				<height>70</height>
+				<width>1090</width>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<label>$INFO[ListItem.Label2]</label>
+				<textcolor>grey</textcolor>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
+		</itemlayout>
+		<focusedlayout height="50" condition="Container.Content(songs) + Skin.HasSetting(small_list)">
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1096</width>
+				<height>50</height>
+				<texture border="90,3,90,3">lists/separator.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1396</width>
+				<height>50</height>
+				<texture>lists/focus.png</texture>
+				<visible>Control.hasFocus(50)</visible>
+			</control>
+			<control type="label">
+				<left>12</left>
+				<top>-2</top>
+				<height>50</height>
+				<width>52</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font24_title</font>
+				<label>$INFO[ListItem.TrackNumber]</label>
+				<textcolor>button_focus</textcolor>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
+			<control type="label">
+				<left>95</left>
+				<top>0</top>
+				<height>50</height>
+				<width>860</width>
+				<aligny>center</aligny>
+				<scroll>true</scroll>
+				<label>$INFO[ListItem.Title]</label>
+				<font>font12</font>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
+			<control type="label">
+				<left>90</left>
+				<top>0</top>
+				<height>50</height>
+				<width>1090</width>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<label>$INFO[ListItem.Label2]</label>
+				<textcolor>grey</textcolor>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
+		</focusedlayout>
+		<itemlayout height="50" condition="Container.Content(songs) + Skin.HasSetting(small_list)">
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1396</width>
+				<height>50</height>
+				<texture border="90,3,90,3">lists/separator.png</texture>
+			</control>
+			<control type="label">
+				<left>12</left>
+				<top>-2</top>
+				<height>50</height>
+				<width>52</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font24_title</font>
+				<label>$INFO[ListItem.TrackNumber]</label>
+				<textcolor>button_focus</textcolor>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
+			<control type="label">
+				<left>95</left>
+				<top>0</top>
+				<height>50</height>
+				<width>960</width>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Title]</label>
+				<font>font12</font>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
+			<control type="label">
+				<left>90</left>
+				<top>0</top>
+				<height>50</height>
 				<width>1090</width>
 				<align>right</align>
 				<aligny>center</aligny>
