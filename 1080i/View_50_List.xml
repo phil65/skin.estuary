@@ -479,7 +479,7 @@
 				<width>860</width>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<label>$INFO[ListItem.Title]</label>
+				<label>$VAR[SongTitleVar]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="label">
@@ -521,7 +521,7 @@
 				<height>70</height>
 				<width>960</width>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
+				<label>$VAR[SongTitleVar]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="label">
@@ -572,7 +572,7 @@
 				<width>860</width>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<label>$INFO[ListItem.Title]</label>
+				<label>$VAR[SongTitleVar]</label>
 				<font>font12</font>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -615,7 +615,7 @@
 				<height>50</height>
 				<width>960</width>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
+				<label>$VAR[SongTitleVar]</label>
 				<font>font12</font>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
