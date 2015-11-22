@@ -17,7 +17,7 @@
 					<height>792</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
-				<control type="grouplist" id="9000">
+				<control type="list" id="9000">
 					<description>button area</description>
 					<left>0</left>
 					<top>160</top>
@@ -27,18 +27,22 @@
 					<onright>10000</onright>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
-					<control type="button" id="1000">
-						<description>Default Category Button</description>
-						<width>398</width>
-						<include>DefaultSettingButton</include>
-						<label>General</label>
-					</control>
-					<control type="button" id="1100">
-						<description>Default Category Button</description>
-						<width>398</width>
-						<include>DefaultSettingButton</include>
-						<label>Home screen</label>
-					</control>
+					<include name="DefaultSimpleListLayout">
+						<param name="align" value="center" />
+						<param name="width" value="400" />
+						<param name="height" value="120" />
+						<param name="list_id" value="9000" />
+					</include>
+					<content>
+						<item id="1">
+							<label>128</label>
+							<onclick>noop</onclick>
+						</item>
+						<item id="2">
+							<label>513</label>
+							<onclick>noop</onclick>
+						</item>
+					</content>
 				</control>
 			</control>
 			<control type="group" id="10000">
@@ -51,7 +55,6 @@
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="image">
-					<description>Dialog Header image</description>
 					<left>442</left>
 					<top>802</top>
 					<width>1256</width>
@@ -65,7 +68,6 @@
 					<param name="down_posy" value="910" />
 				</include>
 				<control type="grouplist" id="600">
-					<description>control area</description>
 					<left>442</left>
 					<top>160</top>
 					<width>1256</width>
@@ -74,6 +76,7 @@
 					<onright>60</onright>
 					<onup>600</onup>
 					<ondown>600</ondown>
+					<visible>Container(9000).HasFocus(1)</visible>
 					<control type="radiobutton" id="601">
 						<label>Use slide animations</label>
 						<width>1256</width>
