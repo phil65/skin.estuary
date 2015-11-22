@@ -172,7 +172,7 @@
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>30</left>
 				<top>900</top>
-				<width>1860</width>
+				<width>1858</width>
 				<height>30</height>
 				<info>Player.ProgressCache</info>
 				<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
@@ -183,7 +183,7 @@
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>30</left>
 				<top>900</top>
-				<width>1860</width>
+				<width>1858</width>
 				<height>30</height>
 				<info>Player.Progress</info>
 				<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
@@ -197,7 +197,7 @@
 			<control type="image">
 				<left>30</left>
 				<top>10</top>
-				<width>1860</width>
+				<width>1858</width>
 				<height>130</height>
 				<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
 				<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
