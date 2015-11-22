@@ -119,6 +119,13 @@
 					<altlabel>$LOCALIZE[13353]</altlabel>
 					<usealttexture>library.isscanningvideo</usealttexture>
 				</control>
+				<control type="button" id="620">
+					<description>Go-to-root button</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>$LOCALIZE[20128]</label>
+					<onclick>Container.Update(/,replace)</onclick>
+					<visible>!IsEmpty(Container.FolderPath)</visible>
+				</control>
 				<control type="button" id="612">
 					<description>Go to playlist</description>
 					<include>MediaMenuItemsCommon</include>
