@@ -54,9 +54,16 @@
 					<label>$LOCALIZE[24069]</label>
 				</control>
 				<control type="radiobutton" id="13">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/rating.png" />
-					</include>
+					<width>262</width>
+					<height>140</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textoffsetx>35</textoffsetx>
+					<textoffsety>76</textoffsety>
+					<radioposx>81</radioposx>
+					<radioposy>14</radioposy>
+					<radiowidth>100</radiowidth>
+					<font>font12</font>
 				</control>
 				<control type="radiobutton" id="10">
 					<include name="VideoInfoButtonsCommon">
