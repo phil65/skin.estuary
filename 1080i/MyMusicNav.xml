@@ -50,6 +50,13 @@
 					<include>MediaMenuLabelCommon</include>
 					<label>$LOCALIZE[31020]</label>
 				</control>
+				<control type="button" id="620">
+					<description>Go-to-root button</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>Go to root</label>
+					<onclick>Container.Update(/,replace)</onclick>
+					<visible>!IsEmpty(Container.FolderPath)</visible>
+				</control>
 				<control type="button" id="619">
 					<description>Update library</description>
 					<include>MediaMenuItemsCommon</include>
