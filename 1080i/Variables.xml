@@ -36,14 +36,10 @@
 		<value>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:  [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]:  [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]:  [/COLOR],[CR]]$INFO[ListItem.Duration,[COLOR button_focus]$LOCALIZE[180]:  [/COLOR], $LOCALIZE[31060][CR]]</value>
 	</variable>
 	<variable name="ShiftRightTextBoxVar">
-		<value condition="Window.IsActive(pictures)">$VAR[SizeVar,[COLOR button_focus]$LOCALIZE[289]:  [/COLOR],[CR]]$INFO[ListItem.PictureAperture,[COLOR button_focus]$LOCALIZE[21826]:  [/COLOR],[CR]]$INFO[ListItem.PictureFocalLen,[COLOR button_focus]$LOCALIZE[21827]:  [/COLOR],[CR]]$INFO[ListItem.PictureExpTime,[COLOR button_focus]$LOCALIZE[21830]:  [/COLOR],[CR]]</value>
+		<value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,[COLOR button_focus]$LOCALIZE[289]:  [/COLOR],[CR]]$INFO[ListItem.PictureAperture,[COLOR button_focus]$LOCALIZE[21826]:  [/COLOR],[CR]]$INFO[ListItem.PictureFocalLen,[COLOR button_focus]$LOCALIZE[21827]:  [/COLOR],[CR]]$INFO[ListItem.PictureExpTime,[COLOR button_focus]$LOCALIZE[21830]:  [/COLOR],[CR]]</value>
 		<value condition="Container.Content(artists)">$INFO[ListItem.Property(artist_description)]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Property(album_description)]</value>
 		<value>$INFO[ListItem.Plot]</value>
-	</variable>
-	<variable name="SizeVar">
-		<value condition="!Stringcompare(ListItem.Size,0 B)">$INFO[ListItem.Size]</value>
-		<value></value>
 	</variable>
 	<variable name="SelectLabel">
 		<value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31036] - $LOCALIZE[31035] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
