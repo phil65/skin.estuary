@@ -115,7 +115,6 @@
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="radiobutton" id="600">
-
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
@@ -132,6 +131,37 @@
 					<onclick>Container.Update($INFO[ListItem.Path]/$INFO[ListItem.DBID])</onclick>
 					<onclick>Action(close)</onclick>
 					<visible>Container.Content(albums)</visible>
+				</control>
+				<control type="group" id="400">
+					<width>262</width>
+					<visible>Container.Content(albums)</visible>
+					<control type="button" id="7">
+						<include name="VideoInfoButtonsCommon">
+							<param name="icon" value="" />
+						</include>
+						<label>$LOCALIZE[31033]</label>
+						<onleft>601</onleft>
+						<onright>120</onright>
+						<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
+						<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">138</onup>
+					</control>
+					<control type="label">
+						<label>$INFO[ListItem.UserRating]</label>
+						<font>font30_title</font>
+						<left>0</left>
+						<top>18</top>
+						<width>262</width>
+						<align>center</align>
+					</control>
+					<control type="image">
+						<texture>icons/infodialogs/rating.png</texture>
+						<left>107</left>
+						<top>24</top>
+						<width>48</width>
+						<height>48</height>
+						<align>center</align>
+						<visible>IsEmpty(ListItem.UserRating)</visible>
+					</control>
 				</control>
 				<control type="radiobutton" id="120">
 					<include name="VideoInfoButtonsCommon">
