@@ -40,9 +40,9 @@
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<control type="fixedlist" id="51">
-					<left>280</left>
+					<left>262</left>
 					<top>-24</top>
-					<width>1550</width>
+					<width>1588</width>
 					<height>704</height>
 					<focusposition>0</focusposition>
 					<movement>0</movement>
@@ -59,7 +59,7 @@
 					<viewtype label="Poster">icon</viewtype>
 					<itemlayout width="317">
 						<control type="image">
-							<left>40</left>
+							<left>20</left>
 							<top>8</top>
 							<width>276</width>
 							<height>394</height>
@@ -69,19 +69,21 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="group">
-							<posx>250</posx>
+							<posx>230</posx>
 							<posy>30</posy>
 							<include>UserRatingCircle</include>
 						</control>
 					</itemlayout>
-					<focusedlayout width="279">
+					<focusedlayout width="317">
 						<control type="image">
 							<left>20</left>
-							<top>28</top>
-							<width>236</width>
-							<height>354</height>
+							<top>8</top>
+							<width>276</width>
+							<height>394</height>
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 							<animation effect="fade" time="300" start="100" end="0">Focus</animation>
 							<visible>Control.IsVisible(20000)</visible>
 						</control>
