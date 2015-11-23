@@ -274,7 +274,6 @@
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/info.png" />
 					</include>
-					<onleft>401</onleft>
 					<label>$LOCALIZE[31034]</label>
 					<onclick>RunScript(script.extendedinfo,info=openinfodialog)</onclick>
 					<visible>System.HasAddon(script.extendedinfo)</visible>
