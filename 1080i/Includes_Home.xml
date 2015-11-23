@@ -57,24 +57,27 @@
 		</control>
 	</include>
 	<include name="BottomMainMenuItem">
-		<control type="radiobutton" id="$PARAM[control_id]">
-			<width>118</width>
-			<height>110</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<onclick>$PARAM[onclick]</onclick>
-			<font>-</font>
-			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-			<radioposx>38</radioposx>
-			<radioposy>0</radioposy>
-			<radiowidth>40</radiowidth>
-			<radioheight>40</radioheight>
-			<textureradioonfocus>$PARAM[icon]</textureradioonfocus>
-			<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
-			<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
-			<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
-		</control>
+		<param name="height">110</param>
+		<definition>
+			<control type="radiobutton" id="$PARAM[control_id]">
+				<width>118</width>
+				<height>$PARAM[height]</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<onclick>$PARAM[onclick]</onclick>
+				<font>-</font>
+				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+				<radioposx>38</radioposx>
+				<radioposy>0</radioposy>
+				<radiowidth>40</radiowidth>
+				<radioheight>40</radioheight>
+				<textureradioonfocus>$PARAM[icon]</textureradioonfocus>
+				<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
+				<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
+				<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
+			</control>
+		</definition>
 	</include>
 	<include name="VideoInfoButtonsCommon">
 		<width>262</width>
