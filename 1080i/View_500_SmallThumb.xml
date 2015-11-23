@@ -265,6 +265,11 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Title]</label>
 			</control>
+			<control type="group">
+				<posx>330</posx>
+				<posy>15</posy>
+				<include>UserRatingCircle</include>
+			</control>
 		</itemlayout>
 		<focusedlayout height="360" width="450" condition="Container.content(episodes)">
 			<control type="group">
@@ -279,6 +284,11 @@
 					<aspectratio>scale</aspectratio>
 					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 					<bordersize>4</bordersize>
+				</control>
+				<control type="group">
+					<posx>330</posx>
+					<posy>15</posy>
+					<include>UserRatingCircle</include>
 				</control>
 				<control type="image">
 					<left>1</left>
