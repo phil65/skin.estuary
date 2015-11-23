@@ -48,14 +48,14 @@
 					<width>42</width>
 					<height>42</height>
 					<aspectratio>keep</aspectratio>
-					<texture>overlays/circle.png</texture>
+					<texture colordiffuse="button_focus">overlays/circle.png</texture>
 				</control>
 				<control type="label">
 					<posy>6</posy>
 					<align>center</align>
 					<width>50</width>
 					<height>32</height>
-					<textcolor>black</textcolor>
+					<textcolor>white</textcolor>
 					<font>font10</font>
 					<label>$INFO[ListItem.UserRating]</label>
 				</control>
