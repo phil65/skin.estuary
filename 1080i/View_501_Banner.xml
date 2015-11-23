@@ -46,6 +46,11 @@
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
 						</control>
+						<control type="group">
+							<posx>770</posx>
+							<posy>20</posy>
+							<include>UserRatingCircle</include>
+						</control>
 					</itemlayout>
 					<focusedlayout height="183" width="900">
 						<control type="group">
@@ -60,6 +65,11 @@
 								<aspectratio aligny="center">scale</aspectratio>
 								<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 								<bordersize>4</bordersize>
+							</control>
+							<control type="group">
+								<posx>770</posx>
+								<posy>20</posy>
+								<include>UserRatingCircle</include>
 							</control>
 							<control type="image">
 								<left>1</left>
