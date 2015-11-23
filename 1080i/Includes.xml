@@ -36,6 +36,28 @@
 		<label>-</label>
 		<font>-</font>
 	</include>
+	<include name="UserRatingCircle">
+		<control type="group">
+			<visible>!IsEmpty(ListItem.UserRating)</visible>
+			<control type="image">
+				<posx>4</posx>
+				<posy>2</posy>
+				<width>42</width>
+				<height>42</height>
+				<aspectratio>keep</aspectratio>
+				<texture>overlays/circle.png</texture>
+			</control>
+			<control type="label">
+				<posy>6</posy>
+				<align>center</align>
+				<width>50</width>
+				<height>32</height>
+				<textcolor>black</textcolor>
+				<font>font10</font>
+				<label>$INFO[ListItem.UserRating]</label>
+			</control>
+		</control>
+	</include>
 	<include name="InfoList">
 		<param name="item_label">$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</param>
 		<param name="path">$INFO[ListItem.Path]</param>

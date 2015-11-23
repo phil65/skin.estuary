@@ -68,6 +68,11 @@
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="group">
+							<posx>250</posx>
+							<posy>30</posy>
+							<include>UserRatingCircle</include>
+						</control>
 					</itemlayout>
 					<focusedlayout width="279">
 						<control type="image">
@@ -79,6 +84,13 @@
 							<texture fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
 							<animation effect="fade" time="300" start="100" end="0">Focus</animation>
 							<visible>Control.IsVisible(20000)</visible>
+						</control>
+						<control type="group">
+							<animation effect="fade" time="300" start="100" end="0">Focus</animation>
+							<visible>Control.IsVisible(20000)</visible>
+							<posx>230</posx>
+							<posy>30</posy>
+							<include>UserRatingCircle</include>
 						</control>
 					</focusedlayout>
 				</control>

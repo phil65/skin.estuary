@@ -95,6 +95,10 @@
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
+							<control type="group">
+								<posx>145</posx>
+								<include>UserRatingCircle</include>
+							</control>
 						</control>
 					</itemlayout>
 					<focusedlayout width="340">
@@ -117,6 +121,10 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
+						</control>
+						<control type="group">
+							<posx>145</posx>
+							<include>UserRatingCircle</include>
 						</control>
 					</focusedlayout>
 				</control>
