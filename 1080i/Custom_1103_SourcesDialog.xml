@@ -21,7 +21,7 @@
 			<textcolor>button_focus</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>Some help text. Some help text. Some help text. Some help text. Some help text. Some help text. Some help text.</label>
+			<label>$LOCALIZE[31062]</label>
 		</control>
 		<control type="list" id="5000">
 			<left>2</left>
@@ -39,17 +39,17 @@
 			</include>
 			<content>
 				<item>
-					<label>Local video sources</label>
+					<label>$LOCALIZE[3]</label>
 					<onclick>Dialog.Close(all)</onclick>
 					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 				</item>
 				<item>
-					<label>Local audio sources</label>
+					<label>$LOCALIZE[2]</label>
 					<onclick>Dialog.Close(all)</onclick>
 					<onclick>ActivateWindow(Music,Files,return)</onclick>
 				</item>
 				<item>
-					<label>Picture sources</label>
+					<label>$LOCALIZE[1]</label>
 					<onclick>Dialog.Close(all)</onclick>
 					<onclick>ActivateWindow(pictures,root)</onclick>
 				</item>
