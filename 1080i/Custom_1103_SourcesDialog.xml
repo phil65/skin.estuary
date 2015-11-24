@@ -50,7 +50,8 @@
 				</item>
 				<item>
 					<label>Picture sources</label>
-					<onclick>ActivateWindow(pictures,return)</onclick>
+					<onclick>Dialog.Close(all)</onclick>
+					<onclick>ActivateWindow(pictures,root)</onclick>
 				</item>
 			</content>
 		</control>
