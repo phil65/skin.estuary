@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol>-</defaultcontrol>
-	<backgroundcolor>0</backgroundcolor>
+	<backgroundcolor>FF000000</backgroundcolor>
 	<controls>
 		<control type="visualisation">
 			<include>FullScreenDimensions</include>
@@ -24,7 +24,7 @@
 			<width>1920</width>
 			<height>1080</height>
 			<aspectratio align="center">scale</aspectratio>
-			<animation effect="fade" start="100" end="50" time="0" condition="!IsEmpty(Player.Art(fanart)) | !IsEmpty(Visualisation.Name)">Conditional</animation>
+			<animation effect="fade" start="100" end="75" time="0" condition="!IsEmpty(Player.Art(fanart)) | !IsEmpty(Visualisation.Name)">Conditional</animation>
 		</control>
 		<control type="group">
 			<top>-30</top>
