@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<include>Animation_DialogPopupOpenClose</include>
+	<coordinates>
+		<left>300</left>
+		<top>150</top>
+	</coordinates>
 	<controls>
-		<control type="label">
-			<description>header label</description>
-			<left>610</left>
-			<top>30</top>
-			<width>1300</width>
-			<height>30</height>
-			<font>font30_title</font>
-			<label>$ADDON[script.cu.lrclyrics 32199]</label>
-			<align>right</align>
-			<aligny>center</aligny>
-			<shadowcolor>black</shadowcolor>
-		</control>
+		<include name="DialogBackgroundCommons">
+			<param name="DialogBackgroundWidth" value="1320" />
+			<param name="DialogBackgroundHeight" value="780" />
+			<param name="DialogHeaderLabel" value="$ADDON[script.cu.lrclyrics 32199]" />
+			<param name="DialogHeaderId" value="" />
+		</include>
 		<!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
 		<control type="list" id="110">
-			<left>610</left>
-			<top>130</top>
+			<left>10</left>
+			<top>110</top>
 			<width>1300</width>
-			<height>480</height>
+			<height>600</height>
 			<onleft>111</onleft>
 			<onright>111</onright>
 			<onup>110</onup>
@@ -32,10 +30,10 @@
 					<top>0</top>
 					<width>1300</width>
 					<height>60</height>
-					<font>font16</font>
+					<font>font14</font>
 					<aligny>center</aligny>
 					<align>center</align>
-					<label>$INFO[ListItem.Label]</label>
+					<label fallback="--">$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="60">
@@ -44,11 +42,11 @@
 					<top>0</top>
 					<width>1300</width>
 					<height>60</height>
-					<font>font16</font>
+					<font>font14</font>
 					<aligny>center</aligny>
 					<align>center</align>
 					<shadowcolor>black</shadowcolor>
-					<label>$INFO[ListItem.Label]</label>
+					<label fallback="--">$INFO[ListItem.Label]</label>
 					<visible>!Control.HasFocus(110)</visible>
 				</control>
 				<control type="label">
@@ -56,7 +54,7 @@
 					<top>0</top>
 					<width>1300</width>
 					<height>60</height>
-					<font>font16</font>
+					<font>font14</font>
 					<aligny>center</aligny>
 					<align>center</align>
 					<shadowcolor>black</shadowcolor>
@@ -68,7 +66,7 @@
 		</control>
 		<control type="label" id="2">
 			<description>Pick label</description>
-			<left>610</left>
+			<left>10</left>
 			<top>130</top>
 			<width>1300</width>
 			<height>30</height>
@@ -80,10 +78,10 @@
 		</control>
 		<!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
 		<control type="list" id="120">
-			<left>610</left>
-			<top>170</top>
+			<left>10</left>
+			<top>110</top>
 			<width>1300</width>
-			<height>440</height>
+			<height>600</height>
 			<onleft>121</onleft>
 			<onright>121</onright>
 			<onup>120</onup>
@@ -97,7 +95,7 @@
 					<top>0</top>
 					<width>530</width>
 					<height>40</height>
-					<font>font16</font>
+					<font>font14</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -108,7 +106,7 @@
 					<top>0</top>
 					<width>530</width>
 					<height>40</height>
-					<font>font16</font>
+					<font>font14</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -121,17 +119,17 @@
 		</control>
 		<include name="UpDownArrows">
 			<param name="container_id" value="110" />
-			<param name="posx" value="1330" />
-			<param name="up_posy" value="40" />
-			<param name="down_posy" value="610" />
+			<param name="posx" value="640" />
+			<param name="up_posy" value="-40" />
+			<param name="down_posy" value="795" />
 		</include>
 		<control type="label">
 			<description>Scraper label</description>
-			<left>610</left>
-			<top>680</top>
+			<left>0</left>
+			<top>740</top>
 			<width>1300</width>
 			<height>30</height>
-			<label>Lyrics source - $INFO[Control.GetLabel(200)]</label>
+			<label>$LOCALIZE[21870]: $INFO[Control.GetLabel(200)]</label>
 			<font>font12_title</font>
 			<align>right</align>
 			<aligny>center</aligny>
