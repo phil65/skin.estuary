@@ -34,7 +34,7 @@
 				<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
 				<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
 				<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
-				<textureradiooffdisabled colordiffuse="88FFFFFF">$PARAM[icon]</textureradiooffdisabled>
+				<textureradiooffdisabled colordiffuse="button_focus">$PARAM[icon]</textureradiooffdisabled>
 				<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TV$PARAM[area])</onclick>
 				<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(Radio$PARAM[area])</onclick>
 				<enable>!Window.IsActive(TV$PARAM[area]) + !Window.IsActive(Radio$PARAM[area])</enable>
