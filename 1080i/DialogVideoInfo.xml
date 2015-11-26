@@ -59,7 +59,7 @@
 					<font>font12</font>
 					<aligny>center</aligny>
 					<textcolor>button_focus</textcolor>
-					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season] $LOCALIZE[36905] ($INFO[ListItem.Episode] episodes)[/COLOR]</label>
+					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season] $LOCALIZE[36905] ($INFO[ListItem.Episode] $LOCALIZE[20453])[/COLOR]</label>
 					<visible>Container.Content(tvshows)</visible>
 				</control>
 			</control>
