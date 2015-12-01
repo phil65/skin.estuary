@@ -1276,7 +1276,7 @@
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 				</control>
 				<control type="group">
-					<visible>Window.IsMedia + !Window.IsActive(eventlog) + !Window.IsActive(tvguide) + !Window.IsActive(radioguide)</visible>
+					<visible>Window.IsMedia + !Window.IsActive(eventlog) + !Window.IsActive(tvguide) + !Window.IsActive(radioguide) + !Window.IsActive(musicplaylisteditor)</visible>
 					<visible>!System.HasModalDialog</visible>
 					<animation effect="fade" time="400">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
@@ -1366,7 +1366,7 @@
 					<right>24</right>
 					<with>1200</with>
 					<itemgap>10</itemgap>
-					<visible>!System.HasModalDialog</visible>
+					<visible>!System.HasModalDialog + !Window.isActive(musicplaylisteditor)</visible>
 					<animation effect="fade" delay="1" time="200">VisibleChange</animation>
 					<control type="label">
 						<width>auto</width>
@@ -1387,6 +1387,80 @@
 				</control>
 			</control>
 		</definition>
+	</include>
+	<include name="BottomBarTwoListInfo">
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<control type="grouplist">
+				<orientation>horizontal</orientation>
+				<align>right</align>
+				<top>1015</top>
+				<itemgap>10</itemgap>
+				<right>24</right>
+				<with>1200</with>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<textcolor>button_focus</textcolor>
+					<visible>Control.HasFocus($PARAM[right_scrollbar_id])</visible>
+					<label>$INFO[Container($PARAM[right_container_id]).CurrentPage,, / ]$INFO[Container($PARAM[right_container_id]).NumPages]</label>
+				</control>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>!Control.HasFocus($PARAM[right_scrollbar_id])</visible>
+					<label>$INFO[Container($PARAM[right_container_id]).CurrentItem,, / ]$INFO[Container($PARAM[right_container_id]).NumItems]</label>
+				</control>
+				<control type="image">
+					<description>Items icon</description>
+					<width>54</width>
+					<height>44</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+				</control>
+			</control>
+			<control type="grouplist">
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<top>1015</top>
+				<left>24</left>
+				<with>1200</with>
+				<itemgap>10</itemgap>
+				<control type="image">
+					<description>Items icon</description>
+					<width>54</width>
+					<height>44</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+				</control>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>!Control.HasFocus($PARAM[left_scrollbar_id])</visible>
+					<label>$INFO[Container($PARAM[left_container_id]).CurrentItem,, / ]$INFO[Container($PARAM[left_container_id]).NumItems]</label>
+				</control>
+				<control type="label">
+					<width>auto</width>
+					<height>48</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<textcolor>button_focus</textcolor>
+					<visible>Control.HasFocus($PARAM[left_scrollbar_id])</visible>
+					<label>$INFO[Container($PARAM[left_container_id]).CurrentPage,, / ]$INFO[Container($PARAM[left_container_id]).NumPages]</label>
+				</control>
+			</control>
+		</control>
 	</include>
 	<include name="FullScreenDimensions">
 		<left>0</left>

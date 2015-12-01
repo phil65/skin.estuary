@@ -48,77 +48,11 @@
 			<param name="breadcrumbs_icon" value="icons/settings/filemanager.png" />
 		</include>
 		<include>BottomBar</include>
-		<control type="group">
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<control type="grouplist">
-				<orientation>horizontal</orientation>
-				<align>right</align>
-				<top>1015</top>
-				<itemgap>10</itemgap>
-				<right>24</right>
-				<with>1200</with>
-				<control type="label">
-					<width>auto</width>
-					<height>48</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<shadowcolor>text_shadow</shadowcolor>
-					<textcolor>button_focus</textcolor>
-					<visible>Control.HasFocus(61)</visible>
-					<label>$INFO[Container(21).CurrentPage,, / ]$INFO[Container(21).NumPages]</label>
-				</control>
-				<control type="label">
-					<width>auto</width>
-					<height>48</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<shadowcolor>text_shadow</shadowcolor>
-					<visible>!Control.HasFocus(61)</visible>
-					<label>$INFO[Container(21).CurrentItem,, / ]$INFO[Container(21).NumItems]</label>
-				</control>
-				<control type="image">
-					<description>Items icon</description>
-					<width>54</width>
-					<height>44</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
-				</control>
-			</control>
-			<control type="grouplist">
-				<orientation>horizontal</orientation>
-				<align>left</align>
-				<top>1015</top>
-				<left>24</left>
-				<with>1200</with>
-				<itemgap>10</itemgap>
-				<control type="image">
-					<description>Items icon</description>
-					<width>54</width>
-					<height>44</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
-				</control>
-				<control type="label">
-					<width>auto</width>
-					<height>48</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<shadowcolor>text_shadow</shadowcolor>
-					<visible>!Control.HasFocus(60)</visible>
-					<label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
-				</control>
-				<control type="label">
-					<width>auto</width>
-					<height>48</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<shadowcolor>text_shadow</shadowcolor>
-					<textcolor>button_focus</textcolor>
-					<visible>Control.HasFocus(60)</visible>
-					<label>$INFO[Container(20).CurrentPage,, / ]$INFO[Container(20).NumPages]</label>
-				</control>
-			</control>
-		</control>
+		<include name="BottomBarTwoListInfo">
+			<param name="left_container_id">20</param>
+			<param name="left_scrollbar_id">60</param>
+			<param name="right_container_id">21</param>
+			<param name="right_scrollbar_id">61</param>
+		</include>
 	</controls>
 </window>
