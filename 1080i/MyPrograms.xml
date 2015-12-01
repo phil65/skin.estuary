@@ -25,6 +25,7 @@
 					<param name="viewtype_button_vis" value="False" />
 				</include>
 			</control>
+			<include>MediaMenuNowPlaying</include>
 		</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[10001]" />

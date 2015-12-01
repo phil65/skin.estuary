@@ -57,7 +57,16 @@
 					<onright>50</onright>
 					<ondown>14100</ondown>
 					<onback>50</onback>
-					<defaultcontrol>6053</defaultcontrol>
+					<!-- 					<control type="button" id="6066">
+					     <description>Fake button to focus the right button once this grouplist has focus</description>
+					     <width>1</width>
+					     <height>1</height>
+					     <label>-</label>
+					     <onfocus>SetFocus(6053)</onfocus>
+					     <onclick>noop</onclick>
+					     <texturefocus>-</texturefocus>
+					     <texturenofocus>-</texturenofocus>
+					     </control> -->
 					<control type="label" id="6052">
 						<include>MediaMenuLabelCommon</include>
 						<label>Sections</label>
@@ -69,7 +78,6 @@
 						<top>906</top>
 						<height>95</height>
 						<onleft>14100</onleft>
-						<onup>9000</onup>
 						<width>1000</width>
 						<include name="PVRQuickNavItemsCommon">
 							<param name="control_id" value="100" />
@@ -204,6 +212,44 @@
 			<include>HiddenObject</include>
 		</control>
 	</include>
+	<include name="MediaMenuNowPlaying">
+		<control type="grouplist" id="14100">
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<animation effect="fade" time="300">VisibleChange</animation>
+			<orientation>horizontal</orientation>
+			<itemgap>-17</itemgap>
+			<left>5</left>
+			<top>996</top>
+			<onleft>14100</onleft>
+			<visible>Player.HasMedia + [ControlGroup(9000).HasFocus | Control.HasFocus(6130)]</visible>
+			<visible>!System.HasModalDialog</visible>
+			<include name="BottomMainMenuItem">
+				<param name="control_id" value="14101" />
+				<param name="height" value="95" />
+				<param name="onclick" value="Pause" />
+				<param name="icon" value="icons/now-playing/pause.png" />
+			</include>
+			<include name="BottomMainMenuItem">
+				<param name="control_id" value="14102" />
+				<param name="height" value="95" />
+				<param name="onclick" value="Stop" />
+				<param name="icon" value="icons/now-playing/stop.png" />
+			</include>
+			<include name="BottomMainMenuItem">
+				<param name="control_id" value="14104" />
+				<param name="height" value="95" />
+				<param name="onclick" value="Next" />
+				<param name="icon" value="icons/now-playing/next.png" />
+			</include>
+			<include name="BottomMainMenuItem">
+				<param name="control_id" value="14105" />
+				<param name="height" value="95" />
+				<param name="onclick" value="Fullscreen" />
+				<param name="icon" value="icons/now-playing/fullscreen.png" />
+			</include>
+		</control>
+	</include>
 	<include name="MediaMenuListCommon">
 		<param name="viewtype_button_vis">true</param>
 		<definition>
@@ -214,7 +260,7 @@
 			<onleft>9000</onleft>
 			<onup>9000</onup>
 			<onright>50</onright>
-			<ondown>14100</ondown>
+			<ondown>9000</ondown>
 			<onback>50</onback>
 			<control type="label" id="200">
 				<include>MediaMenuLabelCommon</include>

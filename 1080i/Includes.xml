@@ -1290,7 +1290,7 @@
 						<animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
 						<texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
-						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130) + !ControlGroup(14100).HasFocus</visible>
+						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
 					</control>
 					<control type="image">
 						<left>17</left>
@@ -1313,46 +1313,8 @@
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<animation effect="fade" time="225">VisibleChange</animation>
-						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130) + !ControlGroup(14100).HasFocus</visible>
+						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
 					</control>
-				</control>
-				<control type="grouplist" id="14100">
-					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-					<animation effect="fade" time="300">VisibleChange</animation>
-					<orientation>horizontal</orientation>
-					<itemgap>-17</itemgap>
-					<left>5</left>
-					<top>996</top>
-					<onleft>14100</onleft>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<visible>Player.HasMedia + [ControlGroup(9000).HasFocus | Control.HasFocus(6130) | ControlGroup(14100).HasFocus]</visible>
-					<visible>!System.HasModalDialog</visible>
-					<include name="BottomMainMenuItem">
-						<param name="control_id" value="14101" />
-						<param name="height" value="95" />
-						<param name="onclick" value="Pause" />
-						<param name="icon" value="icons/now-playing/pause.png" />
-					</include>
-					<include name="BottomMainMenuItem">
-						<param name="control_id" value="14102" />
-						<param name="height" value="95" />
-						<param name="onclick" value="Stop" />
-						<param name="icon" value="icons/now-playing/stop.png" />
-					</include>
-					<include name="BottomMainMenuItem">
-						<param name="control_id" value="14104" />
-						<param name="height" value="95" />
-						<param name="onclick" value="Next" />
-						<param name="icon" value="icons/now-playing/next.png" />
-					</include>
-					<include name="BottomMainMenuItem">
-						<param name="control_id" value="14105" />
-						<param name="height" value="95" />
-						<param name="onclick" value="Fullscreen" />
-						<param name="icon" value="icons/now-playing/fullscreen.png" />
-					</include>
 				</control>
 				<control type="grouplist">
 					<top>1005</top>

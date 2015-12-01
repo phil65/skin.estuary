@@ -58,6 +58,7 @@
 					<onclick>Container.Update(/,replace)</onclick>
 					<visible>!IsEmpty(Container.FolderPath)</visible>
 				</control>
+				<include>MediaMenuNowPlaying</include>
 			</control>
 		</control>
 		<include name="TopBar">

@@ -59,6 +59,7 @@
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[24034]</label>
 				</control>
+				<include>MediaMenuNowPlaying</include>
 			</control>
 		</control>
 		<include name="TopBar">

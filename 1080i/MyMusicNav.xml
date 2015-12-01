@@ -74,6 +74,7 @@
 					<onclick>ActivateWindow(musicplaylist)</onclick>
 					<visible>IntegerGreaterThan(Playlist.Length(music),0)</visible>
 				</control>
+				<include>MediaMenuNowPlaying</include>
 			</control>
 		</control>
 		<include name="TopBar">

@@ -143,6 +143,7 @@
 					<onclick>ActivateWindow(videoplaylist)</onclick>
 					<visible>IntegerGreaterThan(Playlist.Length(video),0)</visible>
 				</control>
+				<include>MediaMenuNowPlaying</include>
 			</control>
 		</control>
 		<include name="TopBar">
