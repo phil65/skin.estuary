@@ -170,6 +170,7 @@
 						<label>$LOCALIZE[842]</label>
 						<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</visible>
 					</control>
+					<include>MediaMenuNowPlaying</include>
 				</control>
 			</control>
 		</definition>
