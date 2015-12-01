@@ -13,7 +13,7 @@
 			</include>
 			<include>View_51_Poster</include>
 			<include name="View_52_IconWall">
-				<param name="visible" value="Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists)" />
+				<param name="visible" value="Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists)" />
 			</include>
 			<include name="View_500_SmallThumb">
 				<param name="layouts_include" value="SmallThumbVideoLayouts" />
@@ -94,7 +94,7 @@
 			<control type="grouplist" id="9000">
 				<top>90</top>
 				<include name="MediaMenuListCommon">
-					<param name="viewtype_button_vis" value="Container.Content(files) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)" />
+					<param name="viewtype_button_vis" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)" />
 				</include>
 				<control type="button" id="10">
 					<description>Watched Toggle</description>

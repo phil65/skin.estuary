@@ -12,7 +12,7 @@
 				<param name="visible" value="Container.Content(files) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(directors)" />
 			</include>
 			<include name="View_52_IconWall">
-				<param name="visible" value="Container.Content() | Container.Content(years) | Container.Content(files) | Container.Content(genres) | Container.Content(playlists)" />
+				<param name="visible" value="Container.Content() | Container.Content(years) | Container.Content(genres) | Container.Content(playlists)" />
 			</include>
 			<include name="View_500_SmallThumb">
 				<param name="layouts_include" value="SmallThumbMusicLayouts" />
@@ -35,7 +35,7 @@
 			<control type="grouplist" id="9000">
 				<top>90</top>
 				<include name="MediaMenuListCommon">
-					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(albums) | Container.Content(files)" />
+					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(albums)" />
 				</include>
 				<control type="radiobutton" id="710">
 					<description>Small List</description>
