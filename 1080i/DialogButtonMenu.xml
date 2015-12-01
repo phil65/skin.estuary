@@ -10,7 +10,7 @@
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="500" />
 			<param name="DialogBackgroundHeight" value="621" />
-			<param name="DialogHeaderLabel" value="Power Options" />
+			<param name="DialogHeaderLabel" value="$LOCALIZE[31072]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
 		<control type="list" id="9000">

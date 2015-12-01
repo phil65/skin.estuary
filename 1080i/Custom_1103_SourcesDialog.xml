@@ -10,7 +10,7 @@
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="500" />
 			<param name="DialogBackgroundHeight" value="550" />
-			<param name="DialogHeaderLabel" value="Add media sources" />
+			<param name="DialogHeaderLabel" value="$LOCALIZE[31070]" />
 			<param name="DialogHeaderId" value="" />
 		</include>
 		<control type="textbox">

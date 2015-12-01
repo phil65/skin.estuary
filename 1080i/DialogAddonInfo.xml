@@ -87,7 +87,7 @@
 		</control>
 		<include name="InfoDialogTopBarInfo">
 			<param name="main_label" value="$INFO[ListItem.Property(addon.name)]" />
-			<param name="sub_label" value="$INFO[ListItem.Property(addon.version),[COLOR button_focus],[/COLOR]]$INFO[ListItem.Property(addon.creator), by ]" />
+			<param name="sub_label" value="$INFO[ListItem.Property(addon.version),[COLOR button_focus],[/COLOR]]$INFO[ListItem.Property(addon.creator), $LOCALIZE[31071] ]" />
 		</include>
 		<control type="group">
 			<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
