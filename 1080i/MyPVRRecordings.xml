@@ -255,7 +255,7 @@
 		</control>
 		<include>PVRSideBar</include>
 		<include name="TopBar">
-			<param name="breadcrumbs_label" value="TV Recordings" />
+			<param name="breadcrumbs_label" value="$LOCALIZE[19017]" />
 			<param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
 		</include>
 		<control type="label" id="29">

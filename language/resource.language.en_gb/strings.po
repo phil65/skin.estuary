@@ -10,10 +10,10 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
 "Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/kodi-main/language/en_GB/)\n"
-"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: \1080i\Home.xml:920 \1080i\Home.xml:520 \1080i\DialogFullScreenInfo.xml:44
@@ -121,14 +121,13 @@ msgctxt "#31020"
 msgid "Actions"
 msgstr ""
 
-#: \1080i\AddonBrowser.xml:35 \1080i\DialogPVRChannelManager.xml:203
-#: \1080i\Includes_MediaMenu.xml:116 \1080i\EventLog.xml:228
+#: \1080i\AddonBrowser.xml:35 \1080i\DialogPVRChannelManager.xml:203 \1080i\Includes_MediaMenu.xml:116
+#: \1080i\EventLog.xml:228
 msgctxt "#31021"
 msgid "Misc options"
 msgstr ""
 
-#: \1080i\Includes_MediaMenu.xml:97 \1080i\Includes_MediaMenu.xml:221
-#: /1080i/Includes.xml:1109
+#: \1080i\Includes_MediaMenu.xml:97 \1080i\Includes_MediaMenu.xml:221 /1080i/Includes.xml:1109
 msgctxt "#31022"
 msgid "Sort by"
 msgstr ""
@@ -145,9 +144,7 @@ msgstr ""
 
 #: \1080i\DialogFavourites.xml:117
 msgctxt "#31025"
-msgid ""
-"No favourites found. You can add any item from media views to this list by "
-"using the context menu."
+msgid "No favourites found. You can add any item from media views to this list by using the context menu."
 msgstr ""
 
 #: \1080i\DialogAlbumInfo.xml:122
@@ -180,8 +177,7 @@ msgctxt "#31031"
 msgid "Version info"
 msgstr ""
 
-#: \1080i\EventLog.xml:25 \1080i\Includes_MediaMenu.xml:216
-#: \1080i\SmartPlaylistEditor.xml:67 \1080i\EventLog.xml:220
+#: \1080i\EventLog.xml:25 \1080i\Includes_MediaMenu.xml:216 \1080i\SmartPlaylistEditor.xml:67 \1080i\EventLog.xml:220
 msgctxt "#31032"
 msgid "Order"
 msgstr ""
@@ -196,9 +192,8 @@ msgctxt "#31034"
 msgid "Extended info"
 msgstr ""
 
-#: \1080i\DialogPVRChannelManager.xml:279 \1080i\DialogPVRChannelsOSD.xml:291
-#: \1080i\DialogPVRGuideOSD.xml:171 \1080i\Variables.xml:41
-#: \1080i\FileBrowser.xml:238
+#: \1080i\DialogPVRChannelManager.xml:279 \1080i\DialogPVRChannelsOSD.xml:291 \1080i\DialogPVRGuideOSD.xml:171
+#: \1080i\Variables.xml:41 \1080i\FileBrowser.xml:238
 msgctxt "#31035"
 msgid "Pages"
 msgstr ""
@@ -241,9 +236,8 @@ msgstr ""
 #: \1080i\SmartPlaylistEditor.xml:126
 msgctxt "#31043"
 msgid ""
-"Set the type and add rules to create a smart playlist. These playlists are "
-"dynamic and include all media items from your database which apply to your "
-"chosen rules."
+"Set the type and add rules to create a smart playlist. These playlists are dynamic and include all media items from "
+"your database which apply to your chosen rules."
 msgstr ""
 
 #: \1080i\DialogPVRGroupManager.xml:31
@@ -338,9 +332,7 @@ msgstr ""
 
 #: \1080i\Custom_1103_SourcesDialog.xml:24
 msgctxt "#31062"
-msgid ""
-"Shortcuts to the \"Files\" sections of each media type. Go there to add "
-"additional sources for your databases."
+msgid "Shortcuts to the \"Files\" sections of each media type. Go there to add additional sources for your databases."
 msgstr ""
 
 #: \1080i\Includes_MediaMenu.xml:52
@@ -351,4 +343,24 @@ msgstr ""
 #: \1080i\Variables.xml:36
 msgctxt "#31064"
 msgid "unwatched"
+msgstr ""
+
+#: \1080i\MyVideoPlaylist.xml:29
+msgctxt "#31065"
+msgid "Video playlist"
+msgstr ""
+
+#: \1080i\MyMusicPlaylist.xml:19
+msgctxt "#31066"
+msgid "Music playlist"
+msgstr ""
+
+#: \1080i\EventLog.xml:251
+msgctxt "#31067"
+msgid "Event log"
+msgstr ""
+
+#: \1080i\MyPVRTimers.xml:184
+msgctxt "#31068"
+msgid "Timers"
 msgstr ""

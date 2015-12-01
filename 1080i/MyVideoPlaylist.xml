@@ -26,7 +26,7 @@
 			<include>MediaFlags</include>
 		</control>
 		<include name="TopBar">
-			<param name="breadcrumbs_label" value="Video Playlist" />
+			<param name="breadcrumbs_label" value="$LOCALIZE[31065]" />
 			<param name="breadcrumbs_icon" value="icons/settings/video.png" />
 		</include>
 		<include>BottomBar</include>

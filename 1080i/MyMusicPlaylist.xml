@@ -16,7 +16,7 @@
 			<include>ListThumbInfoPanel</include>
 		</control>
 		<include name="TopBar">
-			<param name="breadcrumbs_label" value="Music Playlist" />
+			<param name="breadcrumbs_label" value="$LOCALIZE[31066]" />
 			<param name="breadcrumbs_icon" value="icons/settings/music.png" />
 		</include>
 		<include>BottomBar</include>

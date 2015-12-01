@@ -191,7 +191,7 @@
 			</control>
 		</control>
 		<include name="TopBar">
-			<param name="breadcrumbs_label" value="Visualisation" />
+			<param name="breadcrumbs_label" value="$LOCALIZE[250]" />
 			<param name="breadcrumbs_icon" value="icons/settings/music.png" />
 		</include>
 		<control type="group" id="0">
