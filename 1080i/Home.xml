@@ -56,18 +56,25 @@
 						<param name="ondown_id" value="5100"/>
 						<param name="item1_onclick" value="ActivateWindow(videos,MovieYears,return)" />
 						<param name="item1_icon" value="years.png" />
+						<param name="item1_label" value="Years" />
 						<param name="item2_onclick" value="ActivateWindow(videos,MovieSets,return)" />
 						<param name="item2_icon" value="sets.png" />
+						<param name="item2_label" value="Movie sets" />
 						<param name="item3_onclick" value="ActivateWindow(videos,MovieGenres,return)" />
 						<param name="item3_icon" value="genres.png" />
+						<param name="item3_label" value="Genres" />
 						<param name="item4_onclick" value="ActivateWindow(videos,MovieActors,return)" />
 						<param name="item4_icon" value="actors.png" />
+						<param name="item4_label" value="Actors" />
 						<param name="item5_onclick" value="ActivateWindow(videos,MovieTags,return)" />
 						<param name="item5_icon" value="tags.png" />
+						<param name="item5_label" value="Tags" />
 						<param name="item6_onclick" value="ActivateWindow(videos,library://video/movies/,return)" />
 						<param name="item6_icon" value="media.png" />
+						<param name="item6_label" value="Library root" />
 						<param name="item7_onclick" value="UpdateLibrary(video)" />
 						<param name="item7_icon" value="updatelibrary.png" />
+						<param name="item7_label" value="Update library" />
 					</include>
 					<include name="WidgetListMovies">
 						<param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
@@ -119,18 +126,25 @@
 					<param name="ondown_id" value="6100"/>
 					<param name="item1_onclick" value="ActivateWindow(Videos,TVShowYears,return)" />
 					<param name="item1_icon" value="years.png" />
+					<param name="item1_label" value="Years" />
 					<param name="item2_onclick" value="ActivateWindow(Videos,TVShowTitles,return)" />
 					<param name="item2_icon" value="title.png" />
+					<param name="item2_label" value="Titles" />
 					<param name="item3_onclick" value="ActivateWindow(Videos,TVShowGenres,return)" />
 					<param name="item3_icon" value="genres.png" />
+					<param name="item3_label" value="Genres" />
 					<param name="item4_onclick" value="ActivateWindow(Videos,TVShowActors,return)" />
 					<param name="item4_icon" value="actors.png" />
+					<param name="item4_label" value="Actors" />
 					<param name="item5_onclick" value="ActivateWindow(Videos,TVShowTags,return)" />
 					<param name="item5_icon" value="tags.png" />
+					<param name="item5_label" value="Tags" />
 					<param name="item6_onclick" value="ActivateWindow(videos,library://video/tvshows/)" />
 					<param name="item6_icon" value="media.png" />
+					<param name="item6_label" value="Library root" />
 					<param name="item7_onclick" value="UpdateLibrary(video)" />
 					<param name="item7_icon" value="updatelibrary.png" />
+					<param name="item7_label" value="Update library" />
 				</include>
 				<include name="WidgetListEpisodes">
 					<param name="content_path" value="special://skin/playlists/inprogress_tvshows.xsp"/>
