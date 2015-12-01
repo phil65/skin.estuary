@@ -88,12 +88,13 @@
 							</control>
 							<control type="textbox">
 								<left>20</left>
-								<top>445</top>
+								<top>438</top>
 								<width>300</width>
-								<height>88</height>
+								<height>100</height>
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
+								<font>font12</font>
 							</control>
 							<control type="group">
 								<posx>145</posx>
@@ -115,12 +116,13 @@
 						</control>
 						<control type="textbox">
 							<left>20</left>
-							<top>445</top>
+							<top>438</top>
 							<width>300</width>
-							<height>88</height>
+							<height>100</height>
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
+							<font>font12</font>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
 						</control>
 						<control type="group">
