@@ -83,7 +83,7 @@
 				<height>708</height>
 				<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<visible>Control.HasFocus(51)</visible>
+				<visible>Control.HasFocus(51) + !Window.IsActive(movieinformation)</visible>
 			</control>
 			<control type="group">
 				<posx>415</posx>
