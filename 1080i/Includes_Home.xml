@@ -100,6 +100,7 @@
 				<shadowcolor>text_shadow</shadowcolor>
 				<font>font24_title</font>
 				<align>right</align>
+				<animation effect="fade" time="200">VisibleChange</animation>
 				<visible>Control.HasFocus($PARAM[list_id])</visible>
 			</control>
 			<control type="panel" id="$PARAM[list_id]">

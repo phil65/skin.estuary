@@ -56,25 +56,25 @@
 						<param name="ondown_id" value="5100"/>
 						<param name="item1_onclick" value="ActivateWindow(videos,MovieYears,return)" />
 						<param name="item1_icon" value="years.png" />
-						<param name="item1_label" value="Years" />
+						<param name="item1_label" value="$LOCALIZE[652]" />
 						<param name="item2_onclick" value="ActivateWindow(videos,MovieSets,return)" />
 						<param name="item2_icon" value="sets.png" />
-						<param name="item2_label" value="Movie sets" />
+						<param name="item2_label" value="$LOCALIZE[31075]" />
 						<param name="item3_onclick" value="ActivateWindow(videos,MovieGenres,return)" />
 						<param name="item3_icon" value="genres.png" />
-						<param name="item3_label" value="Genres" />
+						<param name="item3_label" value="$LOCALIZE[135]" />
 						<param name="item4_onclick" value="ActivateWindow(videos,MovieActors,return)" />
 						<param name="item4_icon" value="actors.png" />
-						<param name="item4_label" value="Actors" />
+						<param name="item4_label" value="$LOCALIZE[344]" />
 						<param name="item5_onclick" value="ActivateWindow(videos,MovieTags,return)" />
 						<param name="item5_icon" value="tags.png" />
-						<param name="item5_label" value="Tags" />
+						<param name="item5_label" value="$LOCALIZE[20459]" />
 						<param name="item6_onclick" value="ActivateWindow(videos,library://video/movies/,return)" />
 						<param name="item6_icon" value="media.png" />
-						<param name="item6_label" value="Library root" />
+						<param name="item6_label" value="$LOCALIZE[31074]" />
 						<param name="item7_onclick" value="UpdateLibrary(video)" />
 						<param name="item7_icon" value="updatelibrary.png" />
-						<param name="item7_label" value="Update library" />
+						<param name="item7_label" value="$LOCALIZE[653]" />
 					</include>
 					<include name="WidgetListMovies">
 						<param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
@@ -126,25 +126,25 @@
 					<param name="ondown_id" value="6100"/>
 					<param name="item1_onclick" value="ActivateWindow(Videos,TVShowYears,return)" />
 					<param name="item1_icon" value="years.png" />
-					<param name="item1_label" value="Years" />
+					<param name="item1_label" value="$LOCALIZE[652]" />
 					<param name="item2_onclick" value="ActivateWindow(Videos,TVShowTitles,return)" />
 					<param name="item2_icon" value="title.png" />
-					<param name="item2_label" value="Titles" />
+					<param name="item2_label" value="$LOCALIZE[31073]" />
 					<param name="item3_onclick" value="ActivateWindow(Videos,TVShowGenres,return)" />
 					<param name="item3_icon" value="genres.png" />
-					<param name="item3_label" value="Genres" />
+					<param name="item3_label" value="$LOCALIZE[135]" />
 					<param name="item4_onclick" value="ActivateWindow(Videos,TVShowActors,return)" />
 					<param name="item4_icon" value="actors.png" />
-					<param name="item4_label" value="Actors" />
+					<param name="item4_label" value="$LOCALIZE[344]" />
 					<param name="item5_onclick" value="ActivateWindow(Videos,TVShowTags,return)" />
 					<param name="item5_icon" value="tags.png" />
-					<param name="item5_label" value="Tags" />
+					<param name="item5_label" value="$LOCALIZE[20459]" />
 					<param name="item6_onclick" value="ActivateWindow(videos,library://video/tvshows/)" />
 					<param name="item6_icon" value="media.png" />
-					<param name="item6_label" value="Library root" />
+					<param name="item6_label" value="$LOCALIZE[31074]" />
 					<param name="item7_onclick" value="UpdateLibrary(video)" />
 					<param name="item7_icon" value="updatelibrary.png" />
-					<param name="item7_label" value="Update library" />
+					<param name="item7_label" value="$LOCALIZE[653]" />
 				</include>
 				<include name="WidgetListEpisodes">
 					<param name="content_path" value="special://skin/playlists/inprogress_tvshows.xsp"/>
@@ -189,18 +189,25 @@
 					<param name="ondown_id" value="7100"/>
 					<param name="item1_onclick" value="ActivateWindow(Music,Artists,return)" />
 					<param name="item1_icon" value="artists.png" />
+					<param name="item1_label" value="$LOCALIZE[133]" />
 					<param name="item2_onclick" value="ActivateWindow(Music,Albums,return)" />
 					<param name="item2_icon" value="albums.png" />
+					<param name="item2_label" value="$LOCALIZE[132]" />
 					<param name="item3_onclick" value="ActivateWindow(Music,Top100,return)" />
 					<param name="item3_icon" value="top100.png" />
+					<param name="item3_label" value="$LOCALIZE[271]" />
 					<param name="item4_onclick" value="ActivateWindow(Music,Files,return)" />
 					<param name="item4_icon" value="files.png" />
+					<param name="item4_label" value="$LOCALIZE[744]" />
 					<param name="item5_onclick" value="ActivateWindow(music,Playlists,return)" />
 					<param name="item5_icon" value="playlists.png" />
+					<param name="item5_label" value="$LOCALIZE[136]" />
 					<param name="item6_onclick" value="ActivateWindow(Music,root)" />
 					<param name="item6_icon" value="media.png" />
+					<param name="item6_label" value="$LOCALIZE[31074]" />
 					<param name="item7_onclick" value="UpdateLibrary(music)" />
 					<param name="item7_icon" value="updatelibrary.png" />
+					<param name="item7_label" value="$LOCALIZE[653]" />
 				</include>
 				<include name="WidgetListSquare">
 					<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
@@ -256,6 +263,7 @@
 					<param name="ondown_id" value="8100"/>
 					<param name="item1_onclick" value="ActivateWindow(addonbrowser,root)" />
 					<param name="item1_icon" value="add-ons.png" />
+					<param name="item1_label" value="$LOCALIZE[10040]" />
 					<param name="item2_vis" value="False" />
 					<param name="item3_vis" value="False" />
 					<param name="item4_vis" value="False" />
@@ -316,15 +324,18 @@
 					<param name="ondown_id" value="11100"/>
 					<param name="item1_onclick" value="ActivateWindow(Videos,Files,return)" />
 					<param name="item1_icon" value="files.png" />
+					<param name="item1_label" value="$LOCALIZE[744]" />
 					<param name="item2_onclick" value="ActivateWindow(Videos,special://videoplaylists/,return)" />
 					<param name="item2_icon" value="playlists.png" />
-					<param name="item3_onclick" value="Notification(not possible yet., Fuck. - made me laugh)" />
+					<param name="item2_label" value="$LOCALIZE[136]" />
+					<param name="item3_onclick" value="PlayDVD" />
 					<param name="item3_icon" value="dvd.png" />
-					<param name="item4_onclick" value="PlayDVD" />
-					<param name="item4_icon" value="dvd.png" />
-					<param name="item4_vis" value="System.HasMediadvd" />
-					<param name="item5_onclick" value="ActivateWindow(videos,addons,return)" />
-					<param name="item5_icon" value="videos.png" />
+					<param name="item3_label" value="$LOCALIZE[31076]" />
+					<param name="item3_vis" value="System.HasMediadvd" />
+					<param name="item4_onclick" value="ActivateWindow(videos,root,return)" />
+					<param name="item4_icon" value="videos.png" />
+					<param name="item4_label" value="$LOCALIZE[31074]" />
+					<param name="item5_vis" value="False" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
 				</include>
@@ -359,14 +370,19 @@
 					<param name="ondown_id" value="12100"/>
 					<param name="item1_onclick" value="ActivateWindow(TVChannels)" />
 					<param name="item1_icon" value="channels.png" />
+					<param name="item1_label" value="$LOCALIZE[19019]" />
 					<param name="item2_onclick" value="ActivateWindow(TVGuide)" />
 					<param name="item2_icon" value="guide.png" />
+					<param name="item2_label" value="$LOCALIZE[19069]" />
 					<param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
 					<param name="item3_icon" value="recordings.png" />
+					<param name="item3_label" value="$LOCALIZE[19017]" />
 					<param name="item4_onclick" value="ActivateWindow(TVTimers)" />
 					<param name="item4_icon" value="timers.png" />
+					<param name="item4_label" value="$LOCALIZE[31068]" />
 					<param name="item5_onclick" value="ActivateWindow(TVSearch)" />
 					<param name="item5_icon" value="tv-search.png" />
+					<param name="item5_label" value="$LOCALIZE[137]" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
 				</include>
@@ -432,14 +448,19 @@
 					<param name="ondown_id" value="13100"/>
 					<param name="item1_onclick" value="ActivateWindow(RadioChannels)" />
 					<param name="item1_icon" value="channels.png" />
+					<param name="item1_label" value="$LOCALIZE[19019]" />
 					<param name="item2_onclick" value="ActivateWindow(RadioGuide)" />
 					<param name="item2_icon" value="guide.png" />
+					<param name="item2_label" value="$LOCALIZE[19069]" />
 					<param name="item3_onclick" value="ActivateWindow(RadioRecordings)" />
 					<param name="item3_icon" value="recordings.png" />
+					<param name="item3_label" value="$LOCALIZE[19017]" />
 					<param name="item4_onclick" value="ActivateWindow(RadioTimers)" />
 					<param name="item4_icon" value="timers.png" />
+					<param name="item4_label" value="$LOCALIZE[31068]" />
 					<param name="item5_onclick" value="ActivateWindow(RadioSearch)" />
 					<param name="item5_icon" value="tv-search.png" />
+					<param name="item5_label" value="$LOCALIZE[137]" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
 				</include>
@@ -472,12 +493,16 @@
 					<param name="ondown_id" value="15100"/>
 					<param name="item1_onclick" value="Weather.Refresh" />
 					<param name="item1_icon" value="updatelibrary.png" />
+					<param name="item1_label" value="$LOCALIZE[184]" />
 					<param name="item2_onclick" value="Weather.LocationPrevious" />
 					<param name="item2_icon" value="location-previous.png" />
+					<param name="item2_label" value="$LOCALIZE[31077]" />
 					<param name="item3_onclick" value="Weather.LocationNext" />
 					<param name="item3_icon" value="location-next.png" />
+					<param name="item3_label" value="$LOCALIZE[31078]" />
 					<param name="item4_onclick" value="ActivateWindow(weathersettings)" />
 					<param name="item4_icon" value="weather-settings.png" />
+					<param name="item4_label" value="$LOCALIZE[1390]" />
 					<param name="item5_vis" value="False" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
