@@ -99,7 +99,7 @@
 				<height>40</height>
 				<label>$INFO[Container($PARAM[list_id]).Listitem.Label]</label>
 				<shadowcolor>text_shadow</shadowcolor>
-				<font>font24_title</font>
+				<font>font20_title</font>
 				<align>right</align>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<visible>Control.HasFocus($PARAM[list_id])</visible>
