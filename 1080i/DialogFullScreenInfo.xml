@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">5550</defaultcontrol>
+	<defaultcontrol always="true">5553</defaultcontrol>
 	<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
@@ -56,70 +56,53 @@
 				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
 				<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
 			</control>
-
-
 			<control type="textbox">
-				<visible>![Control.HasFocus(5551) | Control.HasFocus(5553)]</visible>
+				<visible>Control.HasFocus(5553)</visible>
 				<left>52</left>
 				<top>-200</top>
 				<width>1600</width>
 				<height>290</height>
-				<label>$INFO[VideoPlayer.Plot]</label>
+				<label>$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
 				<align>justify</align>
 				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
 			</control>
-
-
-
-
-            <control type="grouplist" id="5550">
-                <right>40</right>
-                <top>-310</top>
-                <width>600</width>
-                <height>100</height>
-                <align>right</align>
-                <orientation>horizontal</orientation>
-                <itemgap>40</itemgap>
-                <onup>Close</onup>
-                <ondown>Close</ondown>
-                <usecontrolcoords>true</usecontrolcoords>
-                <control type="button" id="5551">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>100</width>
-                    <height>100</height>
-                    <texturenofocus border="100,0,0,0">buttons/button-red-fo.png</texturenofocus>
-                    <texturefocus border="100,0,0,0">buttons/button-green-fo.png</texturefocus>
-                    <onclick>SetFocus(66610)</onclick>
-                </control>
-                <control type="button" id="5552">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>100</width>
-                    <height>100</height>
-                    <texturenofocus border="100,0,0,0">buttons/button-red-fo.png</texturenofocus>
-                    <texturefocus border="100,0,0,0">buttons/button-green-fo.png</texturefocus>
-                </control>
-                <control type="button" id="5553">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>100</width>
-                    <height>100</height>
-                    <texturenofocus border="100,0,0,0">buttons/button-red-fo.png</texturenofocus>
-                    <texturefocus border="100,0,0,0">buttons/button-green-fo.png</texturefocus>
-                </control>
-                <control type="button" id="5554">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>100</width>
-                    <height>100</height>
-                    <texturenofocus border="100,0,0,0">buttons/button-red-fo.png</texturenofocus>
-                    <texturefocus border="100,0,0,0">buttons/button-green-fo.png</texturefocus>
-                    <onclick>Close</onclick>
-                </control>
-            </control>
-
-
+			<control type="grouplist" id="5550">
+				<right>15</right>
+				<top>-310</top>
+				<width>600</width>
+				<height>100</height>
+				<align>right</align>
+				<orientation>horizontal</orientation>
+				<itemgap>-10</itemgap>
+				<onup>Close</onup>
+				<ondown>Close</ondown>
+				<usecontrolcoords>true</usecontrolcoords>
+				<control type="button" id="5552">
+					<left>0</left>
+					<top>0</top>
+					<width>auto</width>
+					<height>100</height>
+					<textoffsetx>40</textoffsetx>
+					<label>Metadata</label>
+				</control>
+				<control type="button" id="5553">
+					<left>0</left>
+					<top>0</top>
+					<width>auto</width>
+					<height>100</height>
+					<textoffsetx>40</textoffsetx>
+					<label>Plot</label>
+				</control>
+				<control type="button" id="5554">
+					<left>0</left>
+					<top>0</top>
+					<width>auto</width>
+					<height>100</height>
+					<textoffsetx>40</textoffsetx>
+					<onclick>Close</onclick>
+					<label>Cast</label>
+				</control>
+			</control>
 			<!-- Progress -->
 			<control type="group">
 				<top>119</top>
