@@ -279,6 +279,7 @@
 					<param name="item5_vis" value="False" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
+					<param name="item8_vis" value="False" />
 				</include>
 				<include name="WidgetListSquare">
 					<param name="content_path" value="addons://sources/video/"/>
@@ -347,6 +348,7 @@
 					<param name="item5_vis" value="False" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
+					<param name="item8_vis" value="False" />
 				</include>
 				<include name="WidgetListText">
 					<param name="content_path" value="sources://video/"/>
@@ -394,6 +396,7 @@
 					<param name="item5_label" value="$LOCALIZE[137]" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
+					<param name="item8_vis" value="False" />
 				</include>
 				<include name="WidgetListText">
 					<param name="content_path" value="pvr://recordings/all"/>
@@ -472,6 +475,7 @@
 					<param name="item5_label" value="$LOCALIZE[137]" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
+					<param name="item8_vis" value="False" />
 				</include>
 				<include name="WidgetListText">
 					<param name="content_path" value="pvr://channels/radio/All channels/"/>
@@ -515,6 +519,7 @@
 					<param name="item5_vis" value="False" />
 					<param name="item6_vis" value="False" />
 					<param name="item7_vis" value="False" />
+					<param name="item8_vis" value="False" />
 				</include>
 				<control type="group">
 					<description>Weather info</description>
