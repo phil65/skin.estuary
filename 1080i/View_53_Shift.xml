@@ -82,7 +82,7 @@
 								<width>340</width>
 								<height>424</height>
 								<aspectratio aligny="bottom">keep</aspectratio>
-								<texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
 							</control>
@@ -110,7 +110,7 @@
 							<width>340</width>
 							<height>424</height>
 							<aspectratio aligny="bottom">keep</aspectratio>
-							<texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
