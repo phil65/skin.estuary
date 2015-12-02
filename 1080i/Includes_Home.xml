@@ -93,7 +93,7 @@
 			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6)">conditional</animation>
 			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,7)">conditional</animation>
 			<control type="label">
-				<left>345</left>
+				<left>235</left>
 				<top>53</top>
 				<width>700</width>
 				<height>40</height>
@@ -107,7 +107,7 @@
 			<control type="panel" id="$PARAM[list_id]">
 				<orientation>horizontal</orientation>
 				<onleft>9000</onleft>
-				<left>1045</left>
+				<left>935</left>
 				<top>22</top>
 				<height>90</height>
 				<width>1355</width>
