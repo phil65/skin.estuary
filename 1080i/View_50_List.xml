@@ -1,401 +1,398 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="View_50_List">
+		<include name="UpDownArrows">
+			<param name="container_id" value="50" />
+		</include>
 		<control type="group">
-			<description>List Viewtype</description>
-			<include name="UpDownArrows">
-				<param name="container_id" value="50" />
-			</include>
-			<control type="group">
-				<include>OpenClose_Right</include>
-				<left>603</left>
-				<top>182</top>
-				<visible>Control.IsVisible(50)</visible>
-				<include>Visible_Right</include>
-				<control type="image" id="5059">
-					<description>background image</description>
-					<left>-20</left>
-					<top>-20</top>
-					<width>754</width>
-					<height>746</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content()</visible>
-				</control>
-				<control type="image">
-					<description>background image</description>
-					<left>-20</left>
-					<top>-20</top>
-					<width>1254</width>
-					<height>746</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-					<visible>!Control.IsVisible(5059)</visible>
-				</control>
-				<control type="list" id="50">
-					<left>2</left>
-					<top>3</top>
-					<width>1210</width>
-					<height>700</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>vertical</orientation>
-					<pagecontrol>60</pagecontrol>
-					<onleft>9000</onleft>
-					<onright>60</onright>
-					<onup>50</onup>
-					<ondown>50</ondown>
-					<viewtype label="535">list</viewtype>
-					<preloaditems>1</preloaditems>
-					<visible>$PARAM[visible]</visible>
-					<focusedlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>710</width>
-							<height>71</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-							<visible>!Control.HasFocus(50)</visible>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>710</width>
-							<height>69</height>
-							<texture>lists/focus.png</texture>
-							<visible>Control.HasFocus(50)</visible>
-						</control>
-						<control type="label">
-							<left>70</left>
-							<top>0</top>
-							<height>70</height>
-							<width>560</width>
-							<aligny>center</aligny>
-							<scroll>true</scroll>
-							<label>$INFO[ListItem.Label]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<left>90</left>
-							<top>0</top>
-							<height>70</height>
-							<width>555</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
-							<label>$INFO[ListItem.Label2]</label>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="image">
-							<left>19</left>
-							<top>20</top>
-							<width>32</width>
-							<height>32</height>
-							<texture>$VAR[ListWatchedIconVar]</texture>
-							<animation effect="fade" start="30" end="100" time="300" delay="0" reversible="false">Focus</animation>
-						</control>
-						<control type="image">
-							<left>19</left>
-							<top>20</top>
-							<width>32</width>
-							<height>32</height>
-							<texture colordiffuse="button_focus">$VAR[ListWatchedIconVar]</texture>
-							<animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
-							<animation effect="fade" time="150">VisibleChange</animation>
-							<visible>!Control.HasFocus(50)</visible>
-						</control>
-						<control type="image">
-							<left>657</left>
-							<top>22</top>
-							<width>40</width>
-							<height>26</height>
-							<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
-							<texture>$VAR[MediaInfoOverlayVar]</texture>
-						</control>
-					</focusedlayout>
-					<itemlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>710</width>
-							<height>71</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-						</control>
-						<control type="label">
-							<left>70</left>
-							<top>0</top>
-							<height>70</height>
-							<width>560</width>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<left>90</left>
-							<top>0</top>
-							<height>70</height>
-							<width>555</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
-							<label>$INFO[ListItem.Label2]</label>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="image">
-							<left>19</left>
-							<top>20</top>
-							<width>32</width>
-							<height>32</height>
-							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
-						</control>
-						<control type="image">
-							<left>657</left>
-							<top>22</top>
-							<width>40</width>
-							<height>26</height>
-							<texture colordiffuse="grey">$VAR[MediaInfoOverlayVar]</texture>
-						</control>
-					</itemlayout>
-					<focusedlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1096</width>
-							<height>71</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-							<visible>!Control.HasFocus(50)</visible>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1396</width>
-							<height>69</height>
-							<texture>lists/focus.png</texture>
-							<visible>Control.HasFocus(50)</visible>
-						</control>
-						<control type="label">
-							<left>15</left>
-							<top>2</top>
-							<height>70</height>
-							<width>70</width>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$INFO[ListItem.Year]</label>
-							<textcolor>button_focus</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<left>95</left>
-							<top>0</top>
-							<height>70</height>
-							<width>860</width>
-							<aligny>center</aligny>
-							<scroll>true</scroll>
-							<label>$INFO[ListItem.Label]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<left>90</left>
-							<top>0</top>
-							<height>70</height>
-							<width>1090</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$INFO[ListItem.Label2]</label>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="image">
-							<left>19</left>
-							<top>20</top>
-							<width>32</width>
-							<height>32</height>
-							<visible>IsEmpty(ListItem.Year)</visible>
-							<texture>$VAR[ListWatchedIconVar]</texture>
-							<animation effect="fade" start="30" end="100" time="300" delay="0" reversible="false">Focus</animation>
-						</control>
-						<control type="image">
-							<left>19</left>
-							<top>20</top>
-							<width>32</width>
-							<visible>IsEmpty(ListItem.Year)</visible>
-							<height>32</height>
-							<texture colordiffuse="button_focus">$VAR[ListWatchedIconVar]</texture>
-							<animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
-							<visible>!Control.HasFocus(50)</visible>
-						</control>
-					</focusedlayout>
-					<itemlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1396</width>
-							<height>71</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-						</control>
-						<control type="label">
-							<left>15</left>
-							<top>2</top>
-							<height>70</height>
-							<width>70</width>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$INFO[ListItem.Year]</label>
-							<textcolor>button_focus</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<left>95</left>
-							<top>0</top>
-							<height>70</height>
-							<width>960</width>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<left>90</left>
-							<top>0</top>
-							<height>70</height>
-							<width>1090</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$INFO[ListItem.Label2]</label>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="image">
-							<left>19</left>
-							<top>20</top>
-							<visible>IsEmpty(ListItem.Year) + IsEmpty(ListItem.Property(addon.version))</visible>
-							<width>32</width>
-							<height>32</height>
-							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
-						</control>
-					</itemlayout>
-					<include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">SongsListLayout</include>
-					<include>AddonsListLayout</include>
-				</control>
-				<control type="scrollbar" id="60">
-					<animation effect="slide" start="0,0" end="500,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">conditional</animation>
-					<left>720</left>
-					<top>0</top>
-					<width>12</width>
-					<height>706</height>
-					<onleft>50</onleft>
-					<onright>4301</onright>
-					<orientation>vertical</orientation>
+			<include>OpenClose_Right</include>
+			<left>603</left>
+			<top>182</top>
+			<visible>Control.IsVisible(50)</visible>
+			<include>Visible_Right</include>
+			<control type="image" id="5059">
+				<description>background image</description>
+				<left>-20</left>
+				<top>-20</top>
+				<width>754</width>
+				<height>746</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content()</visible>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>-20</left>
+				<top>-20</top>
+				<width>1254</width>
+				<height>746</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
+				<visible>!Control.IsVisible(5059)</visible>
+			</control>
+			<control type="list" id="50">
+				<left>2</left>
+				<top>3</top>
+				<width>1210</width>
+				<height>700</height>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<orientation>vertical</orientation>
+				<pagecontrol>60</pagecontrol>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<viewtype label="535">list</viewtype>
+				<preloaditems>1</preloaditems>
+				<visible>$PARAM[visible]</visible>
+				<focusedlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>710</width>
+						<height>71</height>
+						<texture border="90,3,90,3">lists/separator.png</texture>
+						<visible>!Control.HasFocus(50)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>710</width>
+						<height>69</height>
+						<texture>lists/focus.png</texture>
+						<visible>Control.HasFocus(50)</visible>
+					</control>
+					<control type="label">
+						<left>70</left>
+						<top>0</top>
+						<height>70</height>
+						<width>560</width>
+						<aligny>center</aligny>
+						<scroll>true</scroll>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>90</left>
+						<top>0</top>
+						<height>70</height>
+						<width>555</width>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
+						<label>$INFO[ListItem.Label2]</label>
+						<textcolor>grey</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="image">
+						<left>19</left>
+						<top>20</top>
+						<width>32</width>
+						<height>32</height>
+						<texture>$VAR[ListWatchedIconVar]</texture>
+						<animation effect="fade" start="30" end="100" time="300" delay="0" reversible="false">Focus</animation>
+					</control>
+					<control type="image">
+						<left>19</left>
+						<top>20</top>
+						<width>32</width>
+						<height>32</height>
+						<texture colordiffuse="button_focus">$VAR[ListWatchedIconVar]</texture>
+						<animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+						<animation effect="fade" time="150">VisibleChange</animation>
+						<visible>!Control.HasFocus(50)</visible>
+					</control>
+					<control type="image">
+						<left>657</left>
+						<top>22</top>
+						<width>40</width>
+						<height>26</height>
+						<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
+						<texture>$VAR[MediaInfoOverlayVar]</texture>
+					</control>
+				</focusedlayout>
+				<itemlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>710</width>
+						<height>71</height>
+						<texture border="90,3,90,3">lists/separator.png</texture>
+					</control>
+					<control type="label">
+						<left>70</left>
+						<top>0</top>
+						<height>70</height>
+						<width>560</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>90</left>
+						<top>0</top>
+						<height>70</height>
+						<width>555</width>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
+						<label>$INFO[ListItem.Label2]</label>
+						<textcolor>grey</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="image">
+						<left>19</left>
+						<top>20</top>
+						<width>32</width>
+						<height>32</height>
+						<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
+					</control>
+					<control type="image">
+						<left>657</left>
+						<top>22</top>
+						<width>40</width>
+						<height>26</height>
+						<texture colordiffuse="grey">$VAR[MediaInfoOverlayVar]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1096</width>
+						<height>71</height>
+						<texture border="90,3,90,3">lists/separator.png</texture>
+						<visible>!Control.HasFocus(50)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1396</width>
+						<height>69</height>
+						<texture>lists/focus.png</texture>
+						<visible>Control.HasFocus(50)</visible>
+					</control>
+					<control type="label">
+						<left>15</left>
+						<top>2</top>
+						<height>70</height>
+						<width>70</width>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.Year]</label>
+						<textcolor>button_focus</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>95</left>
+						<top>0</top>
+						<height>70</height>
+						<width>860</width>
+						<aligny>center</aligny>
+						<scroll>true</scroll>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>90</left>
+						<top>0</top>
+						<height>70</height>
+						<width>1090</width>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.Label2]</label>
+						<textcolor>grey</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="image">
+						<left>19</left>
+						<top>20</top>
+						<width>32</width>
+						<height>32</height>
+						<visible>IsEmpty(ListItem.Year)</visible>
+						<texture>$VAR[ListWatchedIconVar]</texture>
+						<animation effect="fade" start="30" end="100" time="300" delay="0" reversible="false">Focus</animation>
+					</control>
+					<control type="image">
+						<left>19</left>
+						<top>20</top>
+						<width>32</width>
+						<visible>IsEmpty(ListItem.Year)</visible>
+						<height>32</height>
+						<texture colordiffuse="button_focus">$VAR[ListWatchedIconVar]</texture>
+						<animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+						<visible>!Control.HasFocus(50)</visible>
+					</control>
+				</focusedlayout>
+				<itemlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1396</width>
+						<height>71</height>
+						<texture border="90,3,90,3">lists/separator.png</texture>
+					</control>
+					<control type="label">
+						<left>15</left>
+						<top>2</top>
+						<height>70</height>
+						<width>70</width>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.Year]</label>
+						<textcolor>button_focus</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>95</left>
+						<top>0</top>
+						<height>70</height>
+						<width>960</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>90</left>
+						<top>0</top>
+						<height>70</height>
+						<width>1090</width>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.Label2]</label>
+						<textcolor>grey</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="image">
+						<left>19</left>
+						<top>20</top>
+						<visible>IsEmpty(ListItem.Year) + IsEmpty(ListItem.Property(addon.version))</visible>
+						<width>32</width>
+						<height>32</height>
+						<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
+					</control>
+				</itemlayout>
+				<include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">SongsListLayout</include>
+				<include>AddonsListLayout</include>
+			</control>
+			<control type="scrollbar" id="60">
+				<animation effect="slide" start="0,0" end="500,0" time="0" reversible="false" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">conditional</animation>
+				<left>720</left>
+				<top>0</top>
+				<width>12</width>
+				<height>706</height>
+				<onleft>50</onleft>
+				<onright>4301</onright>
+				<orientation>vertical</orientation>
+			</control>
+		</control>
+		<control type="group">
+			<include>OpenClose_Right</include>
+			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.DBID)</visible>
+			<include>Visible_Right</include>
+			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+			<control type="image">
+				<right>90</right>
+				<top>162</top>
+				<width>509</width>
+				<height>746</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
+			</control>
+			<control type="textbox" id="4380">
+				<right>130</right>
+				<top>194</top>
+				<width>429</width>
+				<height>346</height>
+				<align>left</align>
+				<font>font_textbox</font>
+				<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
+			</control>
+			<control type="grouplist" id="4300">
+				<left>1470</left>
+				<top>530</top>
+				<alignment>center</alignment>
+				<orientation>horizontal</orientation>
+				<width>400</width>
+				<onleft>60</onleft>
+				<onright>50</onright>
+				<control type="button" id="4301">
+					<width>auto</width>
+					<height>95</height>
+					<textoffsetx>30</textoffsetx>
+					<label>$LOCALIZE[31047]</label>
+					<font>font12</font>
+					<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
+					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+					<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
+					<onclick>SetFocus(50)</onclick>
+					<visible>IntegerGreaterThan(Container(4380).NumPages,1)</visible>
 				</control>
 			</control>
-			<control type="group">
-				<include>OpenClose_Right</include>
-				<visible>Control.IsVisible(50) + !IsEmpty(ListItem.DBID)</visible>
-				<include>Visible_Right</include>
-				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-				<control type="image">
-					<right>90</right>
-					<top>162</top>
-					<width>509</width>
-					<height>746</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-				</control>
-				<control type="textbox" id="4380">
-					<right>130</right>
-					<top>194</top>
-					<width>429</width>
-					<height>346</height>
-					<align>left</align>
-					<font>font_textbox</font>
-					<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
-				</control>
-				<control type="grouplist" id="4300">
-					<left>1470</left>
-					<top>530</top>
-					<alignment>center</alignment>
-					<orientation>horizontal</orientation>
-					<width>400</width>
-					<onleft>60</onleft>
-					<onright>50</onright>
-					<control type="button" id="4301">
-						<width>auto</width>
-						<height>95</height>
-						<textoffsetx>30</textoffsetx>
-						<label>$LOCALIZE[31047]</label>
-						<font>font12</font>
-						<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
-						<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
-						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
-						<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
-						<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
-						<onclick>SetFocus(50)</onclick>
-						<visible>IntegerGreaterThan(Container(4380).NumPages,1)</visible>
-					</control>
-				</control>
-				<control type="textbox">
-					<right>130</right>
-					<top>360</top>
-					<width>429</width>
-					<height>413</height>
-					<align>center</align>
-					<font>font24_title</font>
-					<label>$LOCALIZE[19055]</label>
-					<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline)</visible>
-				</control>
-				<control type="image">
-					<right>113</right>
-					<top>614</top>
-					<width>463</width>
-					<height>270</height>
-					<aspectratio aligny="top">scale</aspectratio>
-					<fadetime>300</fadetime>
-					<texture background="true" fallback="DefaultFolder.png">$VAR[ListInfoBoxImageVar]</texture>
-				</control>
-				<control type="image">
-					<right>113</right>
-					<top>838</top>
-					<width>463</width>
-					<height>46</height>
-					<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-				</control>
-				<control type="image">
-					<left>556r</left>
-					<top>845</top>
-					<width>32</width>
-					<height>32</height>
-					<texture colordiffuse="button_focus">lists/year.png</texture>
-					<visible>!IsEmpty(ListItem.Year)</visible>
-				</control>
-				<control type="label">
-					<left>510r</left>
-					<top>842</top>
-					<width>100</width>
-					<height>32</height>
-					<font>font_textbox</font>
-					<label>$INFO[ListItem.Year]</label>
-				</control>
-				<control type="image">
-					<left>441r</left>
-					<top>843</top>
-					<width>32</width>
-					<height>32</height>
-					<texture colordiffuse="button_focus">lists/rating.png</texture>
-					<animation effect="slide" start="0,0" end="-115,0" time="0" reversible="false" condition="IsEmpty(ListItem.Year)">conditional</animation>
-					<animation effect="fade" start="100" end="0" time="175" condition="IsEmpty(ListItem.Year)">conditional</animation>
-					<visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
-				</control>
-				<control type="label">
-					<left>395r</left>
-					<top>842</top>
-					<width>270</width>
-					<height>32</height>
-					<font>font_textbox</font>
-					<label>$INFO[ListItem.RatingAndVotes]</label>
-					<animation effect="slide" start="0,0" end="-115,0" time="0" reversible="false" condition="IsEmpty(ListItem.Year)">conditional</animation>
-					<animation effect="fade" start="100" end="0" time="175" condition="IsEmpty(ListItem.Year)">conditional</animation>
-				</control>
+			<control type="textbox">
+				<right>130</right>
+				<top>360</top>
+				<width>429</width>
+				<height>413</height>
+				<align>center</align>
+				<font>font24_title</font>
+				<label>$LOCALIZE[19055]</label>
+				<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline)</visible>
+			</control>
+			<control type="image">
+				<right>113</right>
+				<top>614</top>
+				<width>463</width>
+				<height>270</height>
+				<aspectratio aligny="top">scale</aspectratio>
+				<fadetime>300</fadetime>
+				<texture background="true" fallback="DefaultFolder.png">$VAR[ListInfoBoxImageVar]</texture>
+			</control>
+			<control type="image">
+				<right>113</right>
+				<top>838</top>
+				<width>463</width>
+				<height>46</height>
+				<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+			</control>
+			<control type="image">
+				<left>556r</left>
+				<top>845</top>
+				<width>32</width>
+				<height>32</height>
+				<texture colordiffuse="button_focus">lists/year.png</texture>
+				<visible>!IsEmpty(ListItem.Year)</visible>
+			</control>
+			<control type="label">
+				<left>510r</left>
+				<top>842</top>
+				<width>100</width>
+				<height>32</height>
+				<font>font_textbox</font>
+				<label>$INFO[ListItem.Year]</label>
+			</control>
+			<control type="image">
+				<left>441r</left>
+				<top>843</top>
+				<width>32</width>
+				<height>32</height>
+				<texture colordiffuse="button_focus">lists/rating.png</texture>
+				<animation effect="slide" start="0,0" end="-115,0" time="0" reversible="false" condition="IsEmpty(ListItem.Year)">conditional</animation>
+				<animation effect="fade" start="100" end="0" time="175" condition="IsEmpty(ListItem.Year)">conditional</animation>
+				<visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
+			</control>
+			<control type="label">
+				<left>395r</left>
+				<top>842</top>
+				<width>270</width>
+				<height>32</height>
+				<font>font_textbox</font>
+				<label>$INFO[ListItem.RatingAndVotes]</label>
+				<animation effect="slide" start="0,0" end="-115,0" time="0" reversible="false" condition="IsEmpty(ListItem.Year)">conditional</animation>
+				<animation effect="fade" start="100" end="0" time="175" condition="IsEmpty(ListItem.Year)">conditional</animation>
 			</control>
 		</control>
 	</include>
