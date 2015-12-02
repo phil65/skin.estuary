@@ -91,6 +91,7 @@
 			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
 			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
 			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6)">conditional</animation>
+			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,7)">conditional</animation>
 			<control type="label">
 				<left>345</left>
 				<top>53</top>
@@ -190,6 +191,12 @@
 						<thumb>$PARAM[item7_icon]</thumb>
 						<onclick>$PARAM[item7_onclick]</onclick>
 						<visible>$PARAM[item7_vis]</visible>
+					</item>
+					<item>
+						<label>$PARAM[item8_label]</label>
+						<thumb>$PARAM[item8_icon]</thumb>
+						<onclick>$PARAM[item8_onclick]</onclick>
+						<visible>$PARAM[item8_vis]</visible>
 					</item>
 				</content>
 			</control>
