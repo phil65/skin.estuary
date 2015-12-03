@@ -16,14 +16,6 @@
 			</include>
 			<control type="group">
 				<left>1320</left>
-				<control type="image" id="110">
-					<description>Service Logo</description>
-					<top>300</top>
-					<width>380</width>
-					<height>100</height>
-					<fadetime>200</fadetime>
-					<aspectratio>keep</aspectratio>
-				</control>
 				<control type="grouplist">
 					<top>110</top>
 					<left>-20</left>
@@ -34,11 +26,12 @@
 						<param name="id" value="160" />
 						<param name="label" value="$LOCALIZE[24120]" />
 						<param name="width" value="420" />
+						<param name="height" value="150" />
 					</include>
 				</control>
 				<control type="label" id="140">
 					<description>textarea</description>
-					<top>220</top>
+					<top>280</top>
 					<width>380</width>
 					<height>40</height>
 					<align>center</align>
@@ -251,7 +244,7 @@
 				<left>-20</left>
 				<top>-20</top>
 				<width>360</width>
-				<height>640</height>
+				<height>440</height>
 				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="label">
@@ -267,10 +260,18 @@
 				<shadowcolor>black</shadowcolor>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
+			<control type="image" id="110">
+				<description>Service Logo</description>
+				<top>460</top>
+				<width>320</width>
+				<height>90</height>
+				<fadetime>200</fadetime>
+				<aspectratio>keep</aspectratio>
+			</control>
 			<control type="list" id="150">
 				<top>0</top>
 				<width>320</width>
-				<height>580</height>
+				<height>400</height>
 				<onleft>160</onleft>
 				<onright>120</onright>
 				<onup>150</onup>
