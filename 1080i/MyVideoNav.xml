@@ -80,7 +80,7 @@
 				<left>1</left>
 				<top>1</top>
 				<width>472</width>
-				<height>708</height>
+				<height>706</height>
 				<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<visible>Control.HasFocus(51) + !Window.IsActive(movieinformation)</visible>
