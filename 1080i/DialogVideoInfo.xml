@@ -40,7 +40,7 @@
 					<font>font12</font>
 					<aligny>center</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
-					<onclick>IncreaseRating</onclick>
+					<onclick>noop</onclick>
 				</control>
 				<control type="button" id="135">
 					<width>505</width>
