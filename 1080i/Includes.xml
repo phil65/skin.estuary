@@ -842,13 +842,13 @@
 			<top>5</top>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-			<width>1018</width>
+			<width>1400</width>
 			<height>80</height>
 			<aligny>top</aligny>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
 			<control type="label">
-				<width>1018</width>
+				<width>1400</width>
 				<label>$PARAM[main_label]</label>
 				<font>font13_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
@@ -862,7 +862,7 @@
 				<left>85</left>
 				<shadowcolor>text_shadow</shadowcolor>
 				<height>100</height>
-				<width>1000</width>
+				<width>1400</width>
 				<align>left</align>
 			</control>
 		</control>
