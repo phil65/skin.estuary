@@ -855,8 +855,9 @@
 				<height>35</height>
 				<align>left</align>
 				<scroll>true</scroll>
+				<animation effect="slide" start="0,0" end="0,15" time="0" condition="IsEmpty(Control.GetLabel(33333))">Conditional</animation>
 			</control>
-			<control type="label">
+			<control type="label" id="33333">
 				<label>$PARAM[sub_label]</label>
 				<font>font10</font>
 				<left>85</left>
