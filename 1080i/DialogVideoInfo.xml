@@ -91,6 +91,25 @@
 					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
+			<control type="image">
+				<left>17</left>
+				<top>565</top>
+				<width>1210</width>
+				<height>323</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+			</control>
+			<control type="textbox">
+				<left>17</left>
+				<top>565</top>
+				<width>1210</width>
+				<height>323</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font24_title</font>
+				<label>$LOCALIZE[31079]</label>
+				<visible>StringCompare(Container(50).NumItems,0)</visible>
+			</control>
 			<control type="list" id="50">
 				<top>538</top>
 				<width>1235</width>
