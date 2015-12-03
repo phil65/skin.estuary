@@ -25,8 +25,8 @@
 			</control>
 			<control type="image">
 				<description>TV Cover</description>
-				<right>28</right>
-				<top>-191</top>
+				<right>48</right>
+				<top>-220</top>
 				<width>200</width>
 				<height>300</height>
 				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(tvshow.poster)]</texture>
@@ -35,8 +35,8 @@
 			</control>
 			<control type="image">
 				<description>Movie Cover</description>
-				<right>28</right>
-				<top>-191</top>
+				<right>48</right>
+				<top>-220</top>
 				<width>200</width>
 				<height>300</height>
 				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
@@ -57,12 +57,11 @@
 				<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
 			</control>
 			<control type="textbox">
-				<visible>Control.HasFocus(5553)</visible>
 				<left>52</left>
-				<top>-200</top>
+				<top>-204</top>
 				<width>1600</width>
 				<height>290</height>
-				<label>$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
+				<label fallback="Not available">$VAR[FullScreenInfoTextBoxVar]</label>
 				<align>justify</align>
 				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
 			</control>
