@@ -48,6 +48,7 @@
 							<width>350</width>
 							<height>88</height>
 							<label>$INFO[ListItem.Label]</label>
+							<font>font12</font>
 							<align>center</align>
 							<aligny>center</aligny>
 						</control>
@@ -94,6 +95,7 @@
 							<top>140</top>
 							<width>350</width>
 							<height>88</height>
+							<font>font12</font>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -107,7 +109,7 @@
 							<height>124</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
-									<control type="textbox">
+						<control type="textbox">
 							<left>30</left>
 							<top>22</top>
 							<width>270</width>
