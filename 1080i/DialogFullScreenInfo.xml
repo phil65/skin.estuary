@@ -122,6 +122,7 @@
 					<textoffsetx>40</textoffsetx>
 					<onclick>Close</onclick>
 					<label>Cast</label>
+					<visible>!IsEmpty(VideoPlayer.CastAndRole)</visible>
 				</control>
 			</control>
 			<!-- Progress -->
