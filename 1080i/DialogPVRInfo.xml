@@ -66,7 +66,7 @@
 				<left>640</left>
 				<top>80</top>
 				<width>1030</width>
-				<height>560</height>
+				<height>370</height>
 				<align>justify</align>
 				<label>[COLOR button_focus]$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ][/COLOR]$INFO[ListItem.EpisodeName,[B],[/B][CR]]$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:[/COLOR] ,[CR]]$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]:[/COLOR] ,[CR]]$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]:[/COLOR] ,[CR]]$INFO[ListItem.Cast,[COLOR button_focus]$LOCALIZE[206]:[/COLOR] ,[CR]][CR]$INFO[ListItem.Plot]</label>
 				<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
