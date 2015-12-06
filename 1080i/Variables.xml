@@ -35,7 +35,7 @@
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="ShiftThumbVar">
-		<value condition="Stringcompare(ListItem.Icon,DefaultFolderBack.png) + [Container.Content(albums) | Container.Content(artists)]">DefaultFolderBack.png</value>
+		<value condition="Stringcompare(ListItem.Icon,DefaultFolderBack.png)">DefaultFolderBack.png</value>
 		<value condition="IsEmpty(Listitem.Thumb) + [Container.Content(albums) | Container.Content(artists)]">DefaultAudio.png</value>
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
