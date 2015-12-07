@@ -415,7 +415,7 @@
 				<preloaditems>2</preloaditems>
 				<pagecontrol>531</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<visible>$PARAM[visible]</visible>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums)</visible>
 				<include>$PARAM[layouts_include]</include>
 			</control>
 		</control>
