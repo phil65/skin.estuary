@@ -28,13 +28,6 @@
 				<visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
 			</control>
 			<control type="label">
-				<left>51</left>
-				<top>4</top>
-				<width>40</width>
-				<height>40</height>
-				<label>$VAR[VideoPlayerForwardRewindVar]</label>
-			</control>
-			<control type="label">
 				<left>40</left>
 				<top>7</top>
 				<width>240</width>

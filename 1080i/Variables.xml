@@ -128,8 +128,8 @@
 		<value condition="Player.Rewinding">$LOCALIZE[31038] $VAR[VideoPlayerForwardRewindVar]</value>
 	</variable>
 	<variable name="SeekTimeLabelVar">
-		<value condition="Player.Seeking">$INFO[Player.SeekTime] / $INFO[Player.Duration]</value>
-		<value>$INFO[Player.Time] / $INFO[Player.Duration]</value>
+		<value condition="Player.Seeking">$INFO[Player.SeekTime]$INFO[Player.Duration, / ]</value>
+		<value>$INFO[Player.Time]$INFO[Player.Duration, / ]</value>
 	</variable>
 	<variable name="OSDHelpTextVar">
 		<value condition="ControlGroup(201).HasFocus">$LOCALIZE[31049]</value>
