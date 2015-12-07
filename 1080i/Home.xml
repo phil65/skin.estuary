@@ -50,6 +50,7 @@
 					<height>1</height>
 					<label>-</label>
 					<onfocus>SetFocus(5001)</onfocus>
+					<onfocus condition="IntegerGreaterThan(Container(5200).NumItems,0)">SetFocus(5200)</onfocus>
 					<onfocus condition="IntegerGreaterThan(Container(5100).NumItems,0)">SetFocus(5100)</onfocus>
 					<onclick>noop</onclick>
 					<texturefocus>-</texturefocus>
@@ -135,6 +136,7 @@
 					<height>1</height>
 					<label>-</label>
 					<onfocus>SetFocus(6001)</onfocus>
+					<onfocus condition="IntegerGreaterThan(Container(6200).NumItems,0)">SetFocus(6200)</onfocus>
 					<onfocus condition="IntegerGreaterThan(Container(6100).NumItems,0)">SetFocus(6100)</onfocus>
 					<onclick>noop</onclick>
 					<texturefocus>-</texturefocus>
