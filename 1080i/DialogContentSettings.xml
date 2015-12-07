@@ -35,11 +35,10 @@
 				<onright>9001</onright>
 				<onleft>9001</onleft>
 				<itemgap>-25</itemgap>
-				<control type="spincontrolex" id="20">
-					<description>Content Picker</description>
+				<control type="button" id="20">
+					<description>Content type button</description>
 					<include>SettingsItemCommon</include>
 					<width>1050</width>
-					<label>$LOCALIZE[31024]:</label>
 				</control>
 				<control type="button" id="21">
 					<description>Default Button</description>
