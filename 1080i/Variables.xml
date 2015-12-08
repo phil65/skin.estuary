@@ -159,14 +159,12 @@
 		<value>$INFO[ListItem.Year]</value>
 	</variable>
 	<variable name="VideoInfoSubLabelVar">
-		<value condition="Container.Content(movies) | Container.Content(tvshows)">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Season,[COLOR button_focus]S,[/COLOR]]$INFO[ListItem.Episode,[COLOR button_focus]E,: [/COLOR]]$INFO[ListItem.TVShowTitle]</value>
-		<value>$INFO[ListItem.Year]</value>
+		<value>$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="OSDSubLabelVar">
-		<value condition="VideoPlayer.Content(movies) | VideoPlayer.Content(tvshows)">$INFO[VideoPlayer.Genre]</value>
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season,[COLOR button_focus]S,[/COLOR]]$INFO[VideoPlayer.Episode,[COLOR button_focus]E,: [/COLOR]]$INFO[VideoPlayer.TVShowTitle]</value>
-		<value>$INFO[VideoPlayer.Year]</value>
+		<value>$INFO[VideoPlayer.Genre]</value>
 	</variable>
 	<variable name="HomeFanartVar">
 		<value condition="!IsEmpty(Container(5100).ListItem.Art(fanart)) + Control.HasFocus(5100)">$INFO[Container(5100).ListItem.Art(fanart)]</value>
