@@ -289,7 +289,7 @@
 		</include>
 		<include name="InfoDialogTopBarInfo">
 			<param name="main_label" value="$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, ([COLOR button_focus],[/COLOR])]" />
-			<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
+			<param name="sub_label" value="$VAR[OSDSubLabelVar]" />
 		</include>
 	</controls>
 </window>
