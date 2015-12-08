@@ -828,7 +828,14 @@
 					<width>382</width>
 					<height>671</height>
 					<pagecontrol>70</pagecontrol>
-					<onright>2000</onright>
+					<onright condition="Control.IsVisible(5000)">5000</onright>
+					<onright condition="Control.IsVisible(6000)">6000</onright>
+					<onright condition="Control.IsVisible(7000)">7000</onright>
+					<onright condition="Control.IsVisible(8000)">8000</onright>
+					<onright condition="Control.IsVisible(11000)">11000</onright>
+					<onright condition="Control.IsVisible(12000)">12000</onright>
+					<onright condition="Control.IsVisible(13000)">13000</onright>
+					<onright condition="Control.IsVisible(15000)">15000</onright>
 					<onup>900</onup>
 					<ondown>700</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
