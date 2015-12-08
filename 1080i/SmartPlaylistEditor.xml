@@ -16,7 +16,7 @@
 			</include>
 			<control type="grouplist" id="500">
 				<orientation>vertical</orientation>
-				<left>50</left>
+				<left>10</left>
 				<top>95</top>
 				<onright>10</onright>
 				<onleft>10</onleft>
@@ -25,55 +25,55 @@
 				<itemgap>-20</itemgap>
 				<control type="spincontrolex" id="22">
 					<description>Set Playlist type</description>
-					<width>600</width>
+					<width>660</width>
 					<include>SettingsItemCommon</include>
 					<label>$LOCALIZE[467]</label>
 				</control>
 				<control type="label" id="1100">
 					<description>Name Label</description>
-					<width>600</width>
+					<width>660</width>
 					<label>$LOCALIZE[21433]</label>
 					<include>SettingsLabelCommon</include>
 				</control>
 				<control type="edit" id="12">
 					<description>Name Button</description>
-					<width>600</width>
+					<width>660</width>
 					<include>SettingsItemCommon</include>
 				</control>
 				<control type="label" id="1101">
 					<description>Name Label</description>
-					<width>600</width>
+					<width>660</width>
 					<label>$LOCALIZE[31042]</label>
 					<include>SettingsLabelCommon</include>
 				</control>
 				<control type="spincontrolex" id="16">
-					<width>600</width>
+					<width>660</width>
 					<label>$LOCALIZE[21424]</label>
 					<include>SettingsItemCommon</include>
 				</control>
 				<control type="spincontrolex" id="17">
-					<width>600</width>
+					<width>660</width>
 					<label>$LOCALIZE[21427]</label>
 					<include>SettingsItemCommon</include>
 				</control>
 				<control type="spincontrolex" id="18">
 					<label>$LOCALIZE[21429]</label>
-					<width>600</width>
+					<width>660</width>
 					<include>SettingsItemCommon</include>
 				</control>
 				<control type="togglebutton" id="19">
-					<width>600</width>
+					<width>660</width>
 					<include>SettingsItemCommon</include>
 					<label>$LOCALIZE[31032]: $LOCALIZE[21431]</label>
 					<altlabel>$LOCALIZE[31032]: $LOCALIZE[21430]</altlabel>
 				</control>
 				<control type="spincontrolex" id="23">
-					<width>600</width>
+					<width>660</width>
 					<label>$LOCALIZE[21458]</label>
 					<include>SettingsItemCommon</include>
 				</control>
 				<control type="radiobutton" id="24">
-					<width>600</width>
+					<width>660</width>
 					<include>SettingsItemCommon</include>
 					<label>$LOCALIZE[467]: $LOCALIZE[21459]</label>
 				</control>
