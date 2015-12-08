@@ -43,7 +43,7 @@
 			<left>20</left>
 			<include>OpenClose_Right</include>
 			<control type="group" id="5000">
-				<visible>Container(9000).HasFocus(10)</visible>
+				<visible>Container(9000).HasFocus(5)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="button" id="5888">
 					<width>1</width>
@@ -129,7 +129,7 @@
 				</control>
 			</control>
 			<control type="group" id="6000">
-				<visible>Container(9000).HasFocus(11)</visible>
+				<visible>Container(9000).HasFocus(6)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="button" id="6888">
 					<width>1</width>
@@ -208,7 +208,7 @@
 				</control>
 			</control>
 			<control type="group" id="7000">
-				<visible>Container(9000).HasFocus(3)</visible>
+				<visible>Container(9000).HasFocus(7)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="button" id="7888">
 					<width>1</width>
@@ -302,7 +302,7 @@
 				</control>
 			</control>
 			<control type="group" id="8000">
-				<visible>Container(9000).HasFocus(1)</visible>
+				<visible>Container(9000).HasFocus(8)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="button" id="8888">
 					<width>1</width>
@@ -376,7 +376,7 @@
 				</control>
 			</control>
 			<control type="group" id="11000">
-				<visible>Container(9000).HasFocus(2)</visible>
+				<visible>Container(9000).HasFocus(11)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="button" id="11888">
 					<width>1</width>
@@ -584,7 +584,7 @@
 				</control>
 			</control>
 			<control type="group" id="15000">
-				<visible>Container(9000).HasFocus(7)</visible>
+				<visible>Container(9000).HasFocus(15)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="button" id="15888">
 					<width>1</width>
@@ -828,14 +828,14 @@
 					<width>382</width>
 					<height>671</height>
 					<pagecontrol>70</pagecontrol>
-					<onright condition="Control.IsVisible(5000)">5000</onright>
-					<onright condition="Control.IsVisible(6000)">6000</onright>
-					<onright condition="Control.IsVisible(7000)">7000</onright>
-					<onright condition="Control.IsVisible(8000)">8000</onright>
-					<onright condition="Control.IsVisible(11000)">11000</onright>
-					<onright condition="Control.IsVisible(12000)">12000</onright>
-					<onright condition="Control.IsVisible(13000)">13000</onright>
-					<onright condition="Control.IsVisible(15000)">15000</onright>
+					<onright condition="Container(9000).HasFocus(5) + Control.IsVisible(5000)">5000</onright>
+					<onright condition="Container(9000).HasFocus(6) + Control.IsVisible(6000)">6000</onright>
+					<onright condition="Container(9000).HasFocus(7) + Control.IsVisible(7000)">7000</onright>
+					<onright condition="Container(9000).HasFocus(8) + Control.IsVisible(8000)">8000</onright>
+					<onright condition="Container(9000).HasFocus(11) + Control.IsVisible(11000)">11000</onright>
+					<onright condition="Container(9000).HasFocus(12) + Control.IsVisible(12000)">12000</onright>
+					<onright condition="Container(9000).HasFocus(13) + Control.IsVisible(13000)">13000</onright>
+					<onright condition="Container(9000).HasFocus(15) + Control.IsVisible(15000)">15000</onright>
 					<onup>900</onup>
 					<ondown>700</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -958,21 +958,21 @@
 						</control>
 					</itemlayout>
 					<content>
-						<item id="10">
+						<item id="5">
 							<label>$LOCALIZE[342]</label>
 							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(movies.watched)] / $INFO[Window(home).Property(movies.Count)]</label2>
 							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 							<thumb>icons/home/movies.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
 						</item>
-						<item id="11">
+						<item id="6">
 							<label>$LOCALIZE[20343]</label>
 							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(episodes.watched)] / $INFO[Window(home).Property(episodes.Count)]</label2>
 							<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 							<thumb>icons/home/tv.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
 						</item>
-						<item id="3">
+						<item id="7">
 							<label>$LOCALIZE[2]</label>
 							<label2>$LOCALIZE[133]: $INFO[Window(Home).Property(Music.ArtistsCount)]</label2>
 							<onclick>ActivateWindow(Music)</onclick>
@@ -993,7 +993,7 @@
 							<thumb>icons/home/radio.png</thumb>
 							<visible>PVR.HasRadioChannels</visible>
 						</item>
-						<item id="1">
+						<item id="8">
 							<label>$LOCALIZE[24001]</label>
 							<onclick>ActivateWindow(1100)</onclick>
 							<thumb>icons/home/addons.png</thumb>
@@ -1005,13 +1005,13 @@
 							<thumb>icons/home/pictures.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 						</item>
-						<item id="2">
+						<item id="11">
 							<label>$LOCALIZE[3]</label>
 							<onclick>ActivateWindow(Videos,root)</onclick>
 							<thumb>icons/home/videos.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 						</item>
-						<item id="7">
+						<item id="15">
 							<label>$LOCALIZE[8]</label>
 							<label2>$INFO[Window(Weather).Property(WeatherProvider)]</label2>
 							<onclick>ActivateWindow(Weather)</onclick>
