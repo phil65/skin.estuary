@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="TVTimerRadioButtonTexture">
-		<value condition="!StringCompare(ListItem.Comment,$LOCALIZE[305])">buttons/radio-button-fo.png</value>
-		<value>buttons/radio-button-nf.png</value>
+		<value condition="!StringCompare(ListItem.Comment,$LOCALIZE[305])">buttons/radio-button-on.png</value>
+		<value>buttons/radio-button-off.png</value>
 	</variable>
 	<variable name="PVRStatusImageVar">
 		<value condition="ListItem.IsRecording">windows/pvr/record.png</value>
