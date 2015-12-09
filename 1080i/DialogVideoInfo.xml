@@ -41,6 +41,7 @@
 					<aligny>center</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
 					<onclick>noop</onclick>
+					<visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
 				</control>
 				<control type="button" id="135">
 					<width>505</width>
