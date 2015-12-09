@@ -181,7 +181,7 @@
 						<param name="widget_header" value="$LOCALIZE[626]"/>
 						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
 						<param name="widget_target" value="videos"/>
-						<param name="second_label" value="$LOCALIZE[16102]: $INFO[ListItem.Property(WatchedEpisodes)] / $INFO[ListItem.Property(TotalEpisodes)]" />
+						<param name="second_label" value="$LOCALIZE[16102]: $INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ]" />
 						<param name="list_id" value="6100"/>
 						<param name="onup_id" value="6900"/>
 						<param name="ondown_id" value="6200"/>
@@ -961,14 +961,14 @@
 					<content>
 						<item id="5">
 							<label>$LOCALIZE[342]</label>
-							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(movies.watched)] / $INFO[Window(home).Property(movies.Count)]</label2>
+							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(movies.watched)]$INFO[Window(home).Property(movies.Count), / ]</label2>
 							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 							<thumb>icons/home/movies.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
 						</item>
 						<item id="6">
 							<label>$LOCALIZE[20343]</label>
-							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(episodes.watched)] / $INFO[Window(home).Property(episodes.Count)]</label2>
+							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(episodes.watched)]$INFO[Window(home).Property(episodes.Count), / ]</label2>
 							<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 							<thumb>icons/home/tv.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
