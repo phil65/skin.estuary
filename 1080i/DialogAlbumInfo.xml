@@ -14,6 +14,7 @@
 				<aligny>bottom</aligny>
 				<font>font_textbox</font>
 				<label>-</label>
+				<visible>IntegerGreaterThan(Container(50).NumItems,1)</visible>
 			</control>
 			<control type="button" id="130">
 				<left>1090</left>
@@ -43,6 +44,7 @@
 				<wrapmultiline>true</wrapmultiline>
 				<align>left</align>
 				<label>$VAR[MusicInfoListHeaderVar,[B],[/B]]</label>
+				<visible>IntegerGreaterThan(Container(50).NumItems,1)</visible>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="list" id="50">
