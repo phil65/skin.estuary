@@ -43,10 +43,10 @@
 				<visible>!IsEmpty(ListItem.UserRating)</visible>
 				<animation effect="fade" time="200" condition="$PARAM[animation]">VisibleChange</animation>
 				<control type="image">
-					<posx>4</posx>
+					<posx>8</posx>
 					<posy>2</posy>
-					<width>42</width>
-					<height>42</height>
+					<width>36</width>
+					<height>36</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="button_focus">overlays/circle.png</texture>
 				</control>
@@ -56,7 +56,7 @@
 					<width>50</width>
 					<height>32</height>
 					<textcolor>white</textcolor>
-					<font>font10</font>
+					<font>font10_title</font>
 					<label>$INFO[ListItem.UserRating]</label>
 				</control>
 			</control>
