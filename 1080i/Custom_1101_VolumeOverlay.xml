@@ -2,6 +2,7 @@
 <window type="dialog" id="1101">
 	<visible>Window.IsVisible(mutebug) | Window.IsVisible(volumebar)</visible>
 	<visible>!Window.IsActive(startup)</visible>
+	<zorder>4</zorder>
 	<controls>
 		<control type="progress" id="20">
 			<include>HiddenObject</include>
