@@ -224,6 +224,10 @@
 		<value condition="Container.Content(episodes)">$LOCALIZE[20343]</value>
 		<value>$LOCALIZE[3]</value>
 	</variable>
+	<variable name="RepeatButtonColordiffuseVar">
+		<value condition="Control.HasFocus(704)">button_focus</value>
+		<value>FFFFFFFF</value>
+	</variable>
 	<variable name="MusicLibraryUpdateVar">
 		<value condition="Library.IsScanningMusic">$LOCALIZE[31040]</value>
 		<value>$LOCALIZE[653]</value>
@@ -244,5 +248,10 @@
 	<variable name="PVRChannelMgrHeader">
 		<value condition="!IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19199] - $LOCALIZE[19024]</value>
 		<value>$LOCALIZE[19199] - $LOCALIZE[19023]</value>
+	</variable>
+	<variable name="PlayerControlsRepeatImageVar">
+		<value condition="Playlist.IsRepeatOne">osd/fullscreen/buttons/repeat-one.png</value>
+		<value condition="Playlist.IsRepeat">osd/fullscreen/buttons/repeat-all.png</value>
+		<value>osd/fullscreen/buttons/repeat-off.png</value>
 	</variable>
 </includes>
