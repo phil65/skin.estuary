@@ -42,8 +42,8 @@
 				<ondown>50</ondown>
 				<viewtype label="535">list</viewtype>
 				<preloaditems>1</preloaditems>
-				<visible>Container.Content(files) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(episodes) | Substring(Container.FolderPath,plugin://,left)</visible>
-				<focusedlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<visible>Container.Content() | Container.Content(files) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(episodes) | Substring(Container.FolderPath,plugin://,left)</visible>
+				<focusedlayout height="70" condition="Container.Content() | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -110,7 +110,7 @@
 						<texture>$VAR[MediaInfoOverlayVar]</texture>
 					</control>
 				</focusedlayout>
-				<itemlayout height="70" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<itemlayout height="70" condition="Container.Content() | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
