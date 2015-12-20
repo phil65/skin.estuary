@@ -41,27 +41,36 @@
 		<control type="button" id="7">
 			<description>Default Button</description>
 			<include>DefaultSettingButton</include>
+			<width>1160</width>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
 			<include>DefaultSettingButton</include>
+			<width>1160</width>
+			<textwidth>1000</textwidth>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
 			<include>DefaultSettingButton</include>
+			<width>1160</width>
+			<textwidth>1000</textwidth>
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Slider</description>
 			<include>DefaultSettingButton</include>
+			<width>1160</width>
+			<textwidth>1000</textwidth>
 		</control>
 		<control type="image" id="11">
 			<description>separator image</description>
 			<height>3</height>
 			<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
+			<width>1160</width>
 		</control>
 		<control type="label" id="14">
 			<description>Default Label</description>
 			<include>DefaultSettingLabel</include>
+			<width>1160</width>
 		</control>
 		<control type="grouplist" id="9000">
 			<left>1210</left>
