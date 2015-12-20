@@ -22,6 +22,7 @@
 			<include>OpenClose_Left</include>
 			<visible>Window.IsActive(addoninformation) | Control.IsVisible(50)</visible>
 			<include>Visible_Left</include>
+			<visible>!Container.Content()</visible>
 			<include>ListThumbInfoPanel</include>
 		</control>
 		<include>MediaMenuMouseOverlay</include>
