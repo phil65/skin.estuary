@@ -18,17 +18,17 @@
 		<param name="height">110</param>
 		<definition>
 			<control type="radiobutton" id="$PARAM[control_id]">
-				<width>100</width>
+				<width>92</width>
 				<height>95</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>-</font>
 				<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-				<radioposx>30</radioposx>
+				<radioposx>26</radioposx>
 				<radioposy>0</radioposy>
-				<radiowidth>40</radiowidth>
-				<radioheight>40</radioheight>
+				<radiowidth>38</radiowidth>
+				<radioheight>38</radioheight>
 				<ondown>SetFocus(6053)</ondown>
 				<textureradioonfocus>$PARAM[icon]</textureradioonfocus>
 				<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
@@ -73,7 +73,7 @@
 					</control>
 					<control type="grouplist" id="6056">
 						<orientation>horizontal</orientation>
-						<itemgap>-17</itemgap>
+						<itemgap>-24</itemgap>
 						<left>5</left>
 						<top>906</top>
 						<height>95</height>
@@ -101,6 +101,11 @@
 						</include>
 						<include name="PVRQuickNavItemsCommon">
 							<param name="control_id" value="104" />
+							<param name="area" value="TimerRules" />
+							<param name="icon" value="icons/submenu/timer-rules.png" />
+						</include>
+						<include name="PVRQuickNavItemsCommon">
+							<param name="control_id" value="105" />
 							<param name="area" value="Search" />
 							<param name="icon" value="icons/submenu/tv-search.png" />
 						</include>
@@ -165,10 +170,10 @@
 						<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 					</control>
 					<control type="radiobutton" id="8">
-						<description>Group timers</description>
+						<description>Hide disabled timers</description>
 						<include>MediaMenuItemsCommon</include>
-						<label>$LOCALIZE[842]</label>
-						<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</visible>
+						<label>$LOCALIZE[19077]</label>
+						<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)</visible>
 					</control>
 					<include>MediaMenuNowPlaying</include>
 				</control>
