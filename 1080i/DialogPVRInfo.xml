@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">7</defaultcontrol>
+	<defaultcontrol always="true">5</defaultcontrol>
 	<controls>
 		<control type="group">
 			<include>OpenClose_Left</include>
@@ -95,20 +95,20 @@
 				<onright>9000</onright>
 				<onup>49</onup>
 				<ondown>49</ondown>
-				<control type="radiobutton" id="4">
-					<description>Find similar</description>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
-					</include>
-					<label>$LOCALIZE[19003]</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
-				</control>
 				<control type="radiobutton" id="5">
 					<description>Switch to Channel</description>
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
 					</include>
 					<label>$LOCALIZE[19165]</label>
+					<visible>Window.IsActive(PVRGuideInfo)</visible>
+				</control>
+				<control type="radiobutton" id="4">
+					<description>Find similar</description>
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+					</include>
+					<label>$LOCALIZE[19003]</label>
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
 				</control>
 				<control type="radiobutton" id="8">
@@ -126,13 +126,6 @@
 					</include>
 					<label>-</label>
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
-				</control>
-				<control type="radiobutton" id="7">
-					<description>OK</description>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
-					</include>
-					<label>$LOCALIZE[186]</label>
 				</control>
 			</control>
 		</control>
