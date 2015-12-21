@@ -104,7 +104,7 @@
 					<width>auto</width>
 					<height>100</height>
 					<textoffsetx>40</textoffsetx>
-					<label>Metadata</label>
+					<label>$LOCALIZE[31086]</label>
 				</control>
 				<control type="button" id="5553">
 					<left>0</left>
@@ -112,7 +112,7 @@
 					<width>auto</width>
 					<height>100</height>
 					<textoffsetx>40</textoffsetx>
-					<label>Plot</label>
+					<label>$LOCALIZE[207]</label>
 				</control>
 				<control type="button" id="5554">
 					<left>0</left>
@@ -121,7 +121,7 @@
 					<height>100</height>
 					<textoffsetx>40</textoffsetx>
 					<onclick>Close</onclick>
-					<label>Cast</label>
+					<label>$LOCALIZE[206]</label>
 					<visible>!IsEmpty(VideoPlayer.CastAndRole)</visible>
 				</control>
 			</control>
@@ -268,7 +268,7 @@
 					<height>100</height>
 					<font>font16</font>
 					<shadowcolor>text_shadow</shadowcolor>
-					<label>$INFO[VideoPlayer.ChannelGroup,Channel Group: ]</label>
+					<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31085]: ]</label>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="label">
