@@ -67,9 +67,23 @@
 					     <texturefocus>-</texturefocus>
 					     <texturenofocus>-</texturenofocus>
 					     </control> -->
-					<control type="label" id="6052">
-						<include>MediaMenuLabelCommon</include>
-						<label>Sections</label>
+					<control type="group" id="60520">
+						<height>50</height>
+						<control type="label">
+							<include>MediaMenuLabelCommon</include>
+							<label>$LOCALIZE[31063]</label>
+						</control>
+						<control type="label">
+							<width>430</width>
+							<textoffsetx>20</textoffsetx>
+							<textoffsety>15</textoffsety>
+							<height>50</height>
+							<font>font12</font>
+							<align>right</align>
+							<aligny>top</aligny>
+							<textcolor>grey</textcolor>
+							<label>$VAR[PVRAreaVar]</label>
+						</control>
 					</control>
 					<control type="grouplist" id="6056">
 						<orientation>horizontal</orientation>

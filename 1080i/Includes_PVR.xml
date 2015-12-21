@@ -370,6 +370,7 @@
 			<height>100</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.Icon]</texture>
+			<fadetime>200</fadetime>
 		</control>
 		<control type="label">
 			<top>154</top>
