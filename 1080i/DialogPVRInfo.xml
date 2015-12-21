@@ -98,7 +98,7 @@
 				<control type="radiobutton" id="5">
 					<description>Switch to Channel</description>
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/launch.png" />
 					</include>
 					<label>$LOCALIZE[19165]</label>
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
@@ -106,7 +106,7 @@
 				<control type="radiobutton" id="4">
 					<description>Find similar</description>
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/similar.png" />
 					</include>
 					<label>$LOCALIZE[19003]</label>
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
@@ -114,7 +114,7 @@
 				<control type="radiobutton" id="8">
 					<description>Play recording</description>
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/play_record.png" />
 					</include>
 					<label>$LOCALIZE[19687]</label>
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
@@ -122,7 +122,7 @@
 				<control type="radiobutton" id="6">
 					<description>Record</description>
 					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/defaulticons/DefaultMusicGenres.png" />
+						<param name="icon" value="icons/infodialogs/record.png" />
 					</include>
 					<label>-</label>
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
