@@ -102,10 +102,10 @@
 	<include name="InfoWallVideoLayouts">
 		<itemlayout height="240" width="172" condition="!Container.content(episodes)">
 			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>180</width>
-				<height>250</height>
+				<left>-7</left>
+				<top>-10</top>
+				<width>186</width>
+				<height>260</height>
 				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -125,10 +125,10 @@
 					<effect type="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="90,125" />
 				</animation>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>180</width>
-					<height>250</height>
+					<left>-7</left>
+					<top>-10</top>
+					<width>186</width>
+					<height>260</height>
 					<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
