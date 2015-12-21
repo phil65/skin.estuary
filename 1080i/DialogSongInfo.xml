@@ -228,14 +228,9 @@
 					<param name="label" value="$LOCALIZE[13405]" />
 				</include>
 				<include name="DefaultDialogButton">
-					<param name="id" value="14" />
-					<param name="label" value="Increase rating" />
-					<param name="onclick" value="IncreaseRating" />
-				</include>
-				<include name="DefaultDialogButton">
-					<param name="id" value="15" />
-					<param name="label" value="Decrease rating" />
-					<param name="onclick" value="DecreaseRating" />
+					<param name="id" value="7" />
+					<param name="label" value="$LOCALIZE[31033]" />
+					<param name="onclick" value="" />
 				</include>
 			</control>
 		</control>
