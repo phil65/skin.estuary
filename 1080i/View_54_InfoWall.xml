@@ -106,7 +106,7 @@
 				<top>-10</top>
 				<width>186</width>
 				<height>260</height>
-				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+				<texture fallback="DefaultVideo.png" background="true">$VAR[ListPosterVar]</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
@@ -129,7 +129,7 @@
 					<top>-10</top>
 					<width>186</width>
 					<height>260</height>
-					<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+					<texture fallback="DefaultVideo.png" background="true">$VAR[ListPosterVar]</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>

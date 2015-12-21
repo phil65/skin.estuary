@@ -106,6 +106,10 @@
 		<value condition="!IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<value>$INFO[ListItem.Art(poster)]</value>
 	</variable>
+	<variable name="ListPosterVar">
+		<value condition="Stringcompare(Listitem.Label,..)">DefaultFolderBack.png</value>
+		<value>$INFO[ListItem.Art(poster)]</value>
+	</variable>
 	<variable name="BannerLabel2Var">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</value>
 		<!-- <value>$INFO[ListItem.Year]</value>
