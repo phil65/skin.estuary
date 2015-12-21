@@ -3,6 +3,7 @@
 	<include name="View_52_IconWall">
 		<include name="UpDownArrows">
 			<param name="container_id" value="52" />
+			<param name="visible" value="Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists)" />
 		</include>
 		<control type="group">
 			<visible>Control.IsVisible(52)</visible>
@@ -17,7 +18,7 @@
 				<onright>52</onright>
 				<onup>52</onup>
 				<ondown>52</ondown>
-				<visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists)</visible>
+				<visible>$PARAM[visible]</visible>
 				<viewtype label="Icon Wall">icon</viewtype>
 				<itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files) | Container.Content(playlists)">
 					<control type="group">
