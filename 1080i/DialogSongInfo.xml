@@ -201,8 +201,6 @@
 						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
 					<label>$LOCALIZE[31081]</label>
-					<onclick>Container.Update($INFO[Container.FolderPath]$INFO[ListItem.DBID])</onclick>
-					<onclick>Action(close)</onclick>
 				</control>
 				<control type="group" id="420">
 					<width>262</width>
