@@ -7,7 +7,12 @@
 		<control type="image">
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture >$INFO[Window(home).Property(fanart)]</texture>
+			<texture>colors/black.png</texture>
+		</control>
+		<control type="image">
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture>$INFO[Window(home).Property(fanart)]</texture>
 		</control>
 		<control type="button" id="3000">
 			<include>HiddenObject</include>
