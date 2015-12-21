@@ -194,14 +194,14 @@
 							<width>1380</width>
 							<height>30</height>
 							<textcolor>button_focus</textcolor>
-							<font>font13</font>
-							<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]  [COLOR grey]$INFO[ListItem.Title][/COLOR]      $LOCALIZE[515]: [COLOR grey]$INFO[ListItem.Genre][/COLOR]</label>
+							<font>font12</font>
+							<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.Title,  [COLOR grey],[/COLOR]]$INFO[ListItem.Genre,      $LOCALIZE[515]: [COLOR grey],[/COLOR]]</label>
 						</control>
 						<control type="textbox">
 							<top>38</top>
 							<width>1380</width>
 							<height>150</height>
-							<font>font13</font>
+							<font>font12</font>
 							<label>$INFO[ListItem.Plot]</label>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>

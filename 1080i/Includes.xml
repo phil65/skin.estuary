@@ -68,6 +68,7 @@
 		<param name="height">235</param>
 		<param name="width">1152</param>
 		<param name="list_id">5000</param>
+		<param name="font">font13</param>
 		<definition>
 			<control type="panel" id="$PARAM[list_id]">
 				<width>$PARAM[width]</width>
@@ -81,6 +82,7 @@
 						<aligny>center</aligny>
 						<label>$PARAM[item_label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
+						<font>$PARAM[font]</font>
 					</control>
 				</focusedlayout>
 				<itemlayout height="40" width="$PARAM[width]">
@@ -91,6 +93,7 @@
 						<aligny>center</aligny>
 						<label>$PARAM[item_label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
+						<font>$PARAM[font]</font>
 					</control>
 				</itemlayout>
 				<content>$PARAM[path]</content>

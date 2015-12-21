@@ -187,7 +187,8 @@
 					<top>210</top>
 					<width>560</width>
 					<height>262</height>
-					<label>$INFO[ListItem.Genre,[COLOR button_focus]Genre:[/COLOR] ]</label>
+					<label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:[/COLOR] ]</label>
+					<font>font12</font>
 				</control>
 				<control type="textbox">
 					<top>254</top>
@@ -195,6 +196,7 @@
 					<height>362</height>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
+					<font>font12</font>
 				</control>
 			</control>
 			<control type="image">
@@ -248,6 +250,7 @@
 						<param name="path" value="$INFO[ListItem.Path]/$INFO[ListItem.Label]" />
 						<param name="height" value="362" />
 						<param name="width" value="560" />
+						<param name="font" value="font12" />
 						<param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
 					</include>
 				</control>
