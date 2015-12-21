@@ -383,6 +383,7 @@
 			<top>210</top>
 			<width>560</width>
 			<height>262</height>
+			<font>font12</font>
 			<label>$INFO[ListItem.Genre,[COLOR button_focus]Genre:[/COLOR] ]</label>
 		</control>
 		<control type="label">
@@ -405,6 +406,7 @@
 			<width>560</width>
 			<height>362</height>
 			<align>left</align>
+			<font>font12</font>
 			<label>$INFO[ListItem.Plot]</label>
 		</control>
 		<control type="textbox">
