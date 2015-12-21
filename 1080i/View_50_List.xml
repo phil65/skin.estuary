@@ -304,10 +304,21 @@
 				<right>130</right>
 				<top>194</top>
 				<width>429</width>
-				<height>346</height>
+				<height>338</height>
 				<align>left</align>
-				<font>font_textbox</font>
+				<font>font12</font>
 				<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
+				<visible>!Control.IsVisible(54)</visible>
+			</control>
+			<control type="textbox" id="4380">
+				<right>130</right>
+				<top>194</top>
+				<width>429</width>
+				<height>392</height>
+				<align>left</align>
+				<font>font12</font>
+				<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
+				<visible>Control.IsVisible(54)</visible>
 			</control>
 			<control type="grouplist" id="4300">
 				<right>130</right>
@@ -329,7 +340,7 @@
 					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 					<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
 					<onclick>SetFocus(50)</onclick>
-					<visible>IntegerGreaterThan(Container(4380).NumPages,1)</visible>
+					<visible>IntegerGreaterThan(Container(4380).NumPages,1) + !Control.IsVisible(54)</visible>
 				</control>
 			</control>
 			<control type="textbox">
