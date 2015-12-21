@@ -430,9 +430,9 @@
 			<left>120</left>
 			<top>680</top>
 			<width>449</width>
-			<height>190</height>
+			<height>188</height>
 			<align>left</align>
-			<font>font_textbox</font>
+			<font>font12</font>
 			<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
 			<label fallback="19055">$VAR[ListBoxInfoVar]</label>
 			<visible>!Window.IsActive(addoninformation)</visible>
