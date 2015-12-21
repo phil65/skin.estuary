@@ -415,7 +415,7 @@
 			<height>461</height>
 			<aspectratio aligny="top">scale</aspectratio>
 			<fadetime>300</fadetime>
-			<texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
+			<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
 		</control>
 		<control type="image">
 			<left>90</left>
