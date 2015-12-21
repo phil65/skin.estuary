@@ -29,26 +29,27 @@
 			</include>
 			<content>
 				<item>
-					<label>Visualisation: $INFO[Visualisation.Name]</label>
+					<label>$LOCALIZE[250]: [COLOR button_focus]$INFO[Visualisation.Name][/COLOR]</label>
 					<onclick>Dialog.Close(all)</onclick>
 					<onclick>SendClick(500)</onclick>
 				</item>
 				<item>
-					<label>Visualisation settings</label>
+					<label>$LOCALIZE[31084]</label>
 					<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 				</item>
 				<item>
-					<label>Choose presets</label>
+					<label>$LOCALIZE[31068]</label>
 					<onclick>ActivateWindow(visualisationpresetlist)</onclick>
 					<visible>Visualisation.HasPresets</visible>
 				</item>
 				<item>
-					<label>Choose lyrics script</label>
+					<label>$LOCALIZE[31082]: [COLOR button_focus]$INFO[Skin.String(LyricScript_Path)][/COLOR]</label>
 					<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 				</item>
 				<item>
-					<label>Lyrics script settings</label>
-					<onclick>Addon.OpenSettings(id)</onclick>
+					<label>$LOCALIZE[31083]</label>
+					<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
+					<visible>!IsEmpty(Skin.String(LyricScript_Path))</visible>
 				</item>
 			</content>
 		</control>
