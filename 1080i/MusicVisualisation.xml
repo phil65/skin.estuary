@@ -136,12 +136,13 @@
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<control type="textbox">
 					<left>600</left>
-					<top>996</top>
-					<width>1230</width>
+					<top>990</top>
+					<width>1250</width>
 					<align>right</align>
-					<height>110</height>
-					<label>[B][UPPERCASE]Next Tracks[/UPPERCASE][/B][CR]$INFO[MusicPlayer.Offset(1).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(1).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(2).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(2).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(3).Title,, - ][COLOR grey]$INFO[MusicPlayer.Offset(3).Artist,,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
+					<height>120</height>
+					<label>[B][UPPERCASE]$LOCALIZE[31024][/UPPERCASE][/B][CR]$INFO[MusicPlayer.Offset(1).Title][COLOR grey]$INFO[MusicPlayer.Offset(1).Artist, - ,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(2).Title][COLOR grey]$INFO[MusicPlayer.Offset(2).Artist, - ,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(3).Title][COLOR grey]$INFO[MusicPlayer.Offset(3).Artist, - ,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
 					<textcolor>button_focus</textcolor>
+					<font>font12</font>
 					<visible>!IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 					<visible>Player.HasAudio</visible>
 				</control>
