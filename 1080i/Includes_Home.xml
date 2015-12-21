@@ -62,24 +62,27 @@
 		</definition>
 	</include>
 	<include name="VideoInfoButtonsCommon">
-		<width>262</width>
-		<height>140</height>
-		<align>center</align>
-		<aligny>top</aligny>
-		<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
-		<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
-		<textoffsetx>35</textoffsetx>
-		<textoffsety>76</textoffsety>
-		<radioposx>110</radioposx>
-		<radioposy>14</radioposy>
-		<radiowidth>44</radiowidth>
-		<font>font12</font>
-		<textureradioonfocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonfocus>
-		<textureradioonnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonnofocus>
-		<textureradioofffocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioofffocus>
-		<textureradiooffnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradiooffnofocus>
-		<textureradiooffdisabled colordiffuse="disabled">$PARAM[icon]</textureradiooffdisabled>
-		<textureradioondisabled colordiffuse="disabled">$PARAM[icon]</textureradioondisabled>
+		<param name="width">262</param>
+		<definition>
+			<width>$PARAM[width]</width>
+			<height>140</height>
+			<align>center</align>
+			<aligny>top</aligny>
+			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<textoffsetx>35</textoffsetx>
+			<textoffsety>76</textoffsety>
+			<radioposx>110</radioposx>
+			<radioposy>14</radioposy>
+			<radiowidth>44</radiowidth>
+			<font>font12</font>
+			<textureradioonfocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonnofocus>
+			<textureradioofffocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioofffocus>
+			<textureradiooffnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradiooffnofocus>
+			<textureradiooffdisabled colordiffuse="disabled">$PARAM[icon]</textureradiooffdisabled>
+			<textureradioondisabled colordiffuse="disabled">$PARAM[icon]</textureradioondisabled>
+		</definition>
 	</include>
 	<include name="SubMenu">
 		<control type="group">
