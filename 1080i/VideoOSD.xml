@@ -157,7 +157,7 @@
 					<visible>!VideoPlayer.Content(livetv)</visible>
 				</control>
 				<control type="radiobutton" id="703">
-					<label>Download subtitles</label>
+					<label>$LOCALIZE[31091]</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
 					</include>
@@ -166,7 +166,7 @@
 					<visible>!VideoPlayer.Content(livetv)</visible>
 				</control>
 				<control type="radiobutton" id="804">
-					<label>Movie menu</label>
+					<label>$LOCALIZE[31092]</label>
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
 					</include>

@@ -245,7 +245,7 @@
 					<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
 				</control>
 				<control type="radiobutton" id="440">
-					<label>Search trailer</label>
+					<label>$LOCALIZE[31090]</label>
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/trailer.png" />
 					</include>

@@ -44,14 +44,12 @@
 					<description>Default Button</description>
 					<include>SettingsItemCommon</include>
 					<width>1050</width>
-					<label>Choose Scraper</label>
-					<label2>Scraper name</label2>
 				</control>
 				<control type="button" id="22">
 					<description>Default Button</description>
 					<include>SettingsItemCommon</include>
 					<width>1050</width>
-					<label>Scraper settings</label>
+					<label>$LOCALIZE[31087]</label>
 				</control>
 			</control>
 			<control type="label">
@@ -60,7 +58,7 @@
 				<width>320</width>
 				<height>100</height>
 				<font>font12</font>
-				<label>Content scanning options</label>
+				<label>$LOCALIZE[31088]</label>
 				<aligny>center</aligny>
 				<textcolor>button_focus</textcolor>
 				<shadowcolor>black</shadowcolor>

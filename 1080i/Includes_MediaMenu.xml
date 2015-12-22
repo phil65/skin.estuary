@@ -136,7 +136,7 @@
 					</control>
 					<control type="button" id="6055">
 						<include>MediaMenuItemsCommon</include>
-						<label>Sort</label>
+						<label>$LOCALIZE[31032]</label>
 						<label2>[B]$INFO[Container.SortOrder][/B]</label2>
 						<onclick>Container.SortDirection</onclick>
 					</control>
