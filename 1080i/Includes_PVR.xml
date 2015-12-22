@@ -13,6 +13,7 @@
 				<height>70</height>
 				<align>center</align>
 				<aligny>center</aligny>
+				<font>font12</font>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="label">
@@ -21,6 +22,7 @@
 				<height>70</height>
 				<align>center</align>
 				<aligny>center</aligny>
+				<font>font12</font>
 				<textcolor>button_focus</textcolor>
 				<label>: [COLOR white]$INFO[Container($PARAM[list_id]).Numitems][/COLOR]</label>
 			</control>

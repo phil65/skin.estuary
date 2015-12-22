@@ -68,7 +68,7 @@
 						<height>70</height>
 						<textoffsetx>40</textoffsetx>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+						<label>$INFO[ListItem.Property(Number),[B],[/B] - ]$INFO[ListItem.Property(Name)]</label>
 					</control>
 					<control type="image">
 						<left>390</left>
@@ -103,7 +103,7 @@
 						<height>70</height>
 						<textoffsetx>40</textoffsetx>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+						<label>$INFO[ListItem.Property(Number),[B],[/B] - ]$INFO[ListItem.Property(Name)]</label>
 					</control>
 					<control type="image">
 						<left>390</left>
@@ -164,7 +164,6 @@
 					<width>700</width>
 					<include>SettingsItemCommon</include>
 					<label>$LOCALIZE[19202]</label>
-					<label2>$INFO[ListItem.Icon]</label2>
 				</control>
 				<control type="radiobutton" id="12">
 					<description>EPG activated</description>
@@ -185,6 +184,15 @@
 					<label>$LOCALIZE[19267]</label>
 				</control>
 			</control>
+			<control type="image">
+				<left>600</left>
+				<top>290</top>
+				<width>70</width>
+				<height>50</height>
+				<aspectratio>keep</aspectratio>
+				<texture background="true">$INFO[Container(20).ListItem.Icon]</texture>
+			</control>
+
 			<control type="grouplist">
 				<top>565</top>
 				<itemgap>-15</itemgap>
@@ -258,14 +266,6 @@
 		<control type="group">
 			<left>1390</left>
 			<top>400</top>
-			<control type="image">
-				<left>-10</left>
-				<top>0</top>
-				<width>310</width>
-				<height>310</height>
-				<aspectratio>keep</aspectratio>
-				<texture background="true">$INFO[Container(20).ListItem.Icon]</texture>
-			</control>
 			<control type="label">
 				<left>-35</left>
 				<top>380</top>
