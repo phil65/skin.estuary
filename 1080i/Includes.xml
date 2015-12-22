@@ -850,7 +850,6 @@
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<width>1400</width>
 			<height>80</height>
-			<aligny>top</aligny>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
 			<control type="label">
@@ -1376,7 +1375,7 @@
 					<align>right</align>
 					<top>1015</top>
 					<right>24</right>
-					<with>1200</with>
+					<width>1200</width>
 					<itemgap>10</itemgap>
 					<visible>!System.HasModalDialog + !Window.isActive(musicplaylisteditor)</visible>
 					<animation effect="fade" delay="1" time="200">VisibleChange</animation>
@@ -1410,7 +1409,7 @@
 				<top>1015</top>
 				<itemgap>10</itemgap>
 				<right>24</right>
-				<with>1200</with>
+				<width>1200</width>
 				<control type="label">
 					<width>auto</width>
 					<height>48</height>
@@ -1443,7 +1442,7 @@
 				<align>left</align>
 				<top>1015</top>
 				<left>24</left>
-				<with>1200</with>
+				<width>1200</width>
 				<itemgap>10</itemgap>
 				<control type="image">
 					<description>Items icon</description>
