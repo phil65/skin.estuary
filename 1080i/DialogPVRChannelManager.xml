@@ -48,6 +48,15 @@
 						<left>0</left>
 						<top>0</top>
 						<width>600</width>
+						<height>68</height>
+						<texture colordiffuse="selected">colors/white.png</texture>
+						<animation effect="fade" end="20" time="0" condition="true">Conditional</animation>
+						<visible>!IsEmpty(ListItem.Property(Changed))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>600</width>
 						<height>70</height>
 						<texture border="5">lists/separator.png</texture>
 					</control>
@@ -70,16 +79,17 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Property(Number),[B],[/B] - ]$INFO[ListItem.Property(Name)]</label>
 					</control>
-					<control type="image">
-						<left>390</left>
-						<top>10</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>OverlayWatched.png</texture>
-						<visible>ListItem.Property(Changed)</visible>
-					</control>
 				</itemlayout>
 				<focusedlayout height="70" width="600">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>600</width>
+						<height>68</height>
+						<texture colordiffuse="selected">colors/white.png</texture>
+						<animation effect="fade" end="20" time="0" condition="true">Conditional</animation>
+						<visible>!IsEmpty(ListItem.Property(Changed))</visible>
+					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -104,14 +114,6 @@
 						<textoffsetx>40</textoffsetx>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Property(Number),[B],[/B] - ]$INFO[ListItem.Property(Name)]</label>
-					</control>
-					<control type="image">
-						<left>390</left>
-						<top>10</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>OverlayWatched.png</texture>
-						<visible>ListItem.Property(Changed)</visible>
 					</control>
 					<control type="label">
 						<left>45</left>
