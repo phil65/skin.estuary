@@ -18,6 +18,7 @@
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content()</visible>
+				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -27,6 +28,7 @@
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 				<visible>!Control.IsVisible(5059)</visible>
+				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
 			</control>
 			<control type="list" id="50">
 				<left>2</left>
