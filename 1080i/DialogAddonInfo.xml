@@ -78,10 +78,25 @@
 					<label>$LOCALIZE[24021]</label>
 				</control>
 				<control type="radiobutton" id="6">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/uninstall.png" />
-					</include>
-					<label>$LOCALIZE[24022]</label>
+					<width>262</width>
+					<height>140</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
+					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+					<textoffsetx>35</textoffsetx>
+					<textoffsety>76</textoffsety>
+					<radioposx>110</radioposx>
+					<radioposy>14</radioposy>
+					<radiowidth>44</radiowidth>
+					<font>font12</font>
+					<textureradioonfocus colordiffuse="D0FFFFFF">icons/infodialogs/uninstall.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="D0FFFFFF">icons/infodialogs/uninstall.png</textureradioonnofocus>
+					<textureradioondisabled colordiffuse="disabled">icons/infodialogs/uninstall.png</textureradioondisabled>
+					<textureradioofffocus colordiffuse="D0FFFFFF">icons/infodialogs/install.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/infodialogs/install.png</textureradiooffnofocus>
+					<textureradiooffdisabled colordiffuse="disabled">icons/infodialogs/install.png</textureradiooffdisabled>
+					<selected>ListItem.Property(addon.installed)</selected>
 				</control>
 			</control>
 		</control>
