@@ -29,19 +29,8 @@
 				<top>-220</top>
 				<width>200</width>
 				<height>300</height>
-				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(tvshow.poster)]</texture>
+				<texture fallback="DefaultVideoCover.png">$VAR[NowPlayingPosterVar]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<visible>VideoPlayer.Content(Episodes)</visible>
-			</control>
-			<control type="image">
-				<description>Movie Cover</description>
-				<right>48</right>
-				<top>-220</top>
-				<width>200</width>
-				<height>300</height>
-				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>
 			<control type="label">
 				<description>Heading label</description>
@@ -279,7 +268,7 @@
 					<height>100</height>
 					<font>font16</font>
 					<shadowcolor>text_shadow</shadowcolor>
-					<label>$INFO[Player.Time]$INFO[Player.Duration, / , •]  $INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, /] • $INFO[Player.FinishTime, Ends: ,]</label>
+					<label>$INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, /]</label>
 					<visible>!Player.Seeking</visible>
 				</control>
 				<control type="grouplist">
