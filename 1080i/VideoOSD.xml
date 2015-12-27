@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="2901">
+	<onload>Dialog.Close(fullscreeninfo)</onload>
 	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">602</defaultcontrol>
 	<controls>
