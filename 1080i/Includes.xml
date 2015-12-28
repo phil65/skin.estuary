@@ -224,12 +224,12 @@
 			<height>30</height>
 			<control type="label">
 				<description>Device</description>
-				<left>250</left>
+				<left>0</left>
 				<width>250</width>
 				<height>40</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[$PARAM[label]]:</label>
+				<label>$PARAM[label]:</label>
 				<font>font12</font>
 				<textcolor>button_focus</textcolor>
 			</control>
