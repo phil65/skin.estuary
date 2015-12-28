@@ -92,6 +92,7 @@
 						<height>215</height>
 						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 						<bordersize>4</bordersize>
+						<aspectratio>scale</aspectratio>
 						<texture border="4" fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">
@@ -140,6 +141,7 @@
 						<height>215</height>
 						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 						<bordersize>4</bordersize>
+						<aspectratio>scale</aspectratio>
 						<texture border="4" fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">

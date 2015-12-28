@@ -56,13 +56,13 @@
 						<top>25</top>
 						<width>80</width>
 						<height>78</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
+						<texture fallback="DefaultUser.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>scale</aspectratio>
 					</control>
 					<control type="label">
 						<left>130</left>
 						<top>14</top>
-						<width>580</width>
+						<width>540</width>
 						<height>60</height>
 						<font>font24_title</font>
 						<aligny>center</aligny>
@@ -71,15 +71,15 @@
 					<control type="label">
 						<left>130</left>
 						<top>58</top>
-						<width>580</width>
+						<width>540</width>
 						<height>50</height>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>grey</textcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="130" width="580">
+				<focusedlayout height="130" width="690">
 					<control type="image">
 						<left>20</left>
 						<top>20</top>
@@ -108,13 +108,13 @@
 						<top>25</top>
 						<width>80</width>
 						<height>78</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
+						<texture fallback="DefaultUser.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>scale</aspectratio>
 					</control>
 					<control type="label">
 						<left>130</left>
 						<top>14</top>
-						<width>580</width>
+						<width>540</width>
 						<height>60</height>
 						<font>font24_title</font>
 						<aligny>center</aligny>
@@ -123,9 +123,9 @@
 					<control type="label">
 						<left>130</left>
 						<top>58</top>
-						<width>580</width>
+						<width>540</width>
 						<height>50</height>
-						<font>font13</font>
+						<font>font12</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
