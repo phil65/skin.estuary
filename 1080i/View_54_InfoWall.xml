@@ -330,7 +330,7 @@
 				<preloaditems>2</preloaditems>
 				<pagecontrol>533</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				<include>$PARAM[layouts_include]</include>
 			</control>
 		</control>
