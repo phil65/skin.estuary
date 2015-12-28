@@ -245,7 +245,7 @@
 					<control type="group">
 						<control type="image">
 							<left>0</left>
-							<top>3</top>
+							<top>0</top>
 							<width>240</width>
 							<height>340</height>
 							<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
@@ -265,7 +265,7 @@
 						</animation>
 						<control type="image">
 							<left>0</left>
-							<top>3</top>
+							<top>0</top>
 							<width>240</width>
 							<height>340</height>
 							<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
@@ -273,14 +273,15 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="group">
-							<left>13</left>
+							<left>20</left>
+							<top>20</top>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							<visible>Control.HasFocus($PARAM[list_id])</visible>
 							<control type="image">
 								<left>0</left>
-								<top>267</top>
-								<width>212</width>
+								<top>244</top>
+								<width>200</width>
 								<height>57</height>
 								<texture>colors/black.png</texture>
 								<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
@@ -288,16 +289,15 @@
 							<control type="image">
 								<left>0</left>
 								<visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
-								<top>20</top>
-								<width>212</width>
+								<width>200</width>
 								<height>35</height>
 								<texture>colors/black.png</texture>
 								<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
 							</control>
 							<control type="label">
 								<left>20</left>
-								<top>265</top>
-								<width>178</width>
+								<top>244</top>
+								<width>160</width>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font10</font>
 								<shadowcolor>text_shadow</shadowcolor>
@@ -305,8 +305,8 @@
 							</control>
 							<control type="label">
 								<left>20</left>
-								<top>291</top>
-								<width>178</width>
+								<top>266</top>
+								<width>160</width>
 								<label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
 								<font>font10</font>
 								<textcolor>button_focus</textcolor>
@@ -315,17 +315,17 @@
 							</control>
 							<control type="progress">
 								<left>20</left>
-								<top>35</top>
-								<width>174</width>
+								<top>15</top>
+								<width>160</width>
 								<height>13</height>
 								<info>ListItem.PercentPlayed</info>
 								<visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
 							</control>
 							<control type="image">
-								<left>1</left>
-								<top>18</top>
-								<width>211</width>
-								<height>306</height>
+								<left>0</left>
+								<top>0</top>
+								<width>200</width>
+								<height>300</height>
 								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
