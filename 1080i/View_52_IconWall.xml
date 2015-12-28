@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="View_52_IconWall">
-		<param name="visible">Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists)</param>
 		<include name="UpDownArrows">
 			<param name="container_id" value="52" />
 		</include>
@@ -18,7 +17,7 @@
 				<onright>52</onright>
 				<onup>52</onup>
 				<ondown>52</ondown>
-				<visible>$PARAM[visible]</visible>
+				<visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists)</visible>
 				<viewtype label="Icon Wall">icon</viewtype>
 				<itemlayout height="248" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(files) | Container.Content(playlists)">
 					<control type="group">
