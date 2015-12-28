@@ -66,7 +66,7 @@
 	<include name="InfoList">
 		<param name="item_label">$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</param>
 		<param name="path">$INFO[ListItem.Path]</param>
-		<param name="height">235</param>
+		<param name="height">200</param>
 		<param name="width">1152</param>
 		<param name="list_id">5000</param>
 		<param name="font">font13</param>
