@@ -138,7 +138,7 @@
 					<description>Go-to-root button</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[20128]</label>
-					<onclick>Container.Update(/,replace)</onclick>
+					<onclick>Container.Update(" ",replace)</onclick>
 					<visible>!IsEmpty(Container.FolderPath)</visible>
 				</control>
 				<control type="button" id="612">
