@@ -37,6 +37,11 @@
 	<variable name="ShiftThumbVar">
 		<value condition="Stringcompare(ListItem.Icon,DefaultFolderBack.png)">DefaultFolderBack.png</value>
 		<value condition="IsEmpty(Listitem.Thumb) + [Container.Content(albums) | Container.Content(artists)]">DefaultAudio.png</value>
+		<value condition="ListItem.IsFolder + IsEmpty(ListItem.Thumb)">DefaultFolder.png</value>
+		<value>$INFO[ListItem.Thumb]</value>
+	</variable>
+	<variable name="IconWallThumbVar">
+		<value condition="SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
 	<variable name="ShiftLeftTextBoxVar">
