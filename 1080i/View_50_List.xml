@@ -18,8 +18,8 @@
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content()</visible>
-				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
-			</control>
+<!-- 				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
+ -->			</control>
 			<control type="image">
 				<description>background image</description>
 				<left>-20</left>
@@ -28,8 +28,8 @@
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 				<visible>!Control.IsVisible(5059)</visible>
-				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
-			</control>
+<!-- 				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
+ -->			</control>
 			<control type="list" id="50">
 				<left>2</left>
 				<top>3</top>
@@ -43,8 +43,7 @@
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<viewtype label="535">list</viewtype>
-				<preloaditems>1</preloaditems>
-				<visible>Container.Content() | Container.Content(files) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(episodes) | Substring(Container.FolderPath,plugin://,left)</visible>
+				<visible>Container.Content(files) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(episodes) | Substring(Container.FolderPath,plugin://,left)</visible>
 				<focusedlayout height="70" condition="Container.Content() | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>0</left>
