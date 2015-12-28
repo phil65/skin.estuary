@@ -10,7 +10,7 @@
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="915" />
-			<param name="DialogBackgroundHeight" value="360" />
+			<param name="DialogBackgroundHeight" value="380" />
 			<param name="DialogHeaderLabel" value="" />
 			<param name="DialogHeaderId" value="1" />
 		</include>
@@ -26,14 +26,14 @@
 		<control type="progress" id="20">
 			<description>Progressbar</description>
 			<left>45</left>
-			<top>222</top>
+			<top>242</top>
 			<width>825</width>
 			<height>24</height>
 			<info>System.Progressbar</info>
 		</control>
 		<control type="group">
 			<left>307</left>
-			<top>250</top>
+			<top>270</top>
 			<include name="DefaultDialogButton">
 				<param name="id" value="10" />
 				<param name="label" value="$LOCALIZE[186]" />
