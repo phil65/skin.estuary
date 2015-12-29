@@ -28,7 +28,7 @@
 				<onright>532</onright>
 				<onup>501</onup>
 				<ondown>501</ondown>
-				<viewtype label="Banner">Banner</viewtype>
+				<viewtype label="20445">wide</viewtype>
 				<preloaditems>2</preloaditems>
 				<pagecontrol>532</pagecontrol>
 				<scrolltime>200</scrolltime>
@@ -45,8 +45,8 @@
 						<bordersize>4</bordersize>
 					</control>
 					<control type="group">
-						<posx>770</posx>
-						<posy>20</posy>
+						<left>770</left>
+						<top>20</top>
 						<include>UserRatingCircle</include>
 					</control>
 				</itemlayout>
@@ -65,8 +65,8 @@
 							<bordersize>4</bordersize>
 						</control>
 						<control type="group">
-							<posx>770</posx>
-							<posy>20</posy>
+							<left>770</left>
+							<top>20</top>
 							<include>UserRatingCircle</include>
 						</control>
 						<control type="image">

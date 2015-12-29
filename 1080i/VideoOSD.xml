@@ -256,16 +256,16 @@
 					<visible>!Control.HasFocus(87)</visible>
 				</control>
 				<!-- <control type="slider" id="401">
-				     <description>Seek Slider</description>
-				     <left>20</left>
-				     <top>42</top>
-				     <width>1858</width>
-				     <height>12</height>
-				     <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
-				     <textureslidernib>osd/progress/nub_bar.png</textureslidernib>
-				     <textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
-				     <visible>Player.Seeking</visible>
-				     </control> -->
+					 <description>Seek Slider</description>
+					 <left>20</left>
+					 <top>42</top>
+					 <width>1858</width>
+					 <height>12</height>
+					 <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
+					 <textureslidernib>osd/progress/nub_bar.png</textureslidernib>
+					 <textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
+					 <visible>Player.Seeking</visible>
+					 </control> -->
 				<control type="slider">
 					<left>30</left>
 					<top>-20</top>

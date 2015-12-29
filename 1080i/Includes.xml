@@ -44,15 +44,15 @@
 				<visible>!IsEmpty(ListItem.UserRating)</visible>
 				<animation effect="fade" time="200" condition="$PARAM[animation]">VisibleChange</animation>
 				<control type="image">
-					<posx>8</posx>
-					<posy>2</posy>
+					<left>8</left>
+					<top>2</top>
 					<width>36</width>
 					<height>36</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="button_focus">overlays/circle.png</texture>
 				</control>
 				<control type="label">
-					<posy>6</posy>
+					<top>6</top>
 					<align>center</align>
 					<width>50</width>
 					<height>32</height>

@@ -83,8 +83,8 @@
 				<visible>Control.HasFocus(51) + !Window.IsActive(movieinformation)</visible>
 			</control>
 			<control type="group">
-				<posx>415</posx>
-				<posy>10</posy>
+				<left>415</left>
+				<top>10</top>
 				<include name="UserRatingCircle">
 					<param name="animation" value="True" />
 				</include>

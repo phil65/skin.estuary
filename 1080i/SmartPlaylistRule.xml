@@ -37,24 +37,24 @@
 				<width>900</width>
 				<include>SettingsItemCommon</include>
 			</control>
-		<control type="grouplist" id="9002">
-			<left>30</left>
-			<top>200</top>
-			<orientation>horizontal</orientation>
-			<control type="edit" id="17">
-				<description>Value Button</description>
-				<width>600</width>
-				<include>SettingsItemCommon</include>
-				<hinttext>Enter text here...</hinttext>
+			<control type="grouplist" id="9002">
+				<left>30</left>
+				<top>200</top>
+				<orientation>horizontal</orientation>
+				<control type="edit" id="17">
+					<description>Value Button</description>
+					<width>600</width>
+					<include>SettingsItemCommon</include>
+					<hinttext>$LOCALIZE[31103]</hinttext>
+				</control>
+				<control type="button" id="20">
+					<description>Browse Button</description>
+					<width>300</width>
+					<include>SettingsItemCommon</include>
+					<align>center</align>
+					<label>$LOCALIZE[1024]</label>
+				</control>
 			</control>
-			<control type="button" id="20">
-				<description>Browse Button</description>
-				<width>300</width>
-				<include>SettingsItemCommon</include>
-				<align>center</align>
-				<label>$LOCALIZE[1024]</label>
-			</control>
-		</control>
 		</control>
 
 		<control type="grouplist" id="9000">

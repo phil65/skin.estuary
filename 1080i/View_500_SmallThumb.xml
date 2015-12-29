@@ -37,8 +37,8 @@
 				<bordersize>4</bordersize>
 			</control>
 			<control type="group">
-				<posx>270</posx>
-				<posy>30</posy>
+				<left>270</left>
+				<top>30</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</itemlayout>
@@ -57,8 +57,8 @@
 					<bordersize>4</bordersize>
 				</control>
 				<control type="group">
-					<posx>270</posx>
-					<posy>30</posy>
+					<left>270</left>
+					<top>30</top>
 					<include>UserRatingCircle</include>
 				</control>
 			</control>
@@ -136,8 +136,8 @@
 				<animation effect="slide" end="-15,0" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="group">
-				<posx>170</posx>
-				<posy>20</posy>
+				<left>170</left>
+				<top>20</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</itemlayout>
@@ -155,8 +155,8 @@
 					<bordersize>4</bordersize>
 				</control>
 				<control type="group">
-					<posx>170</posx>
-					<posy>20</posy>
+					<left>170</left>
+					<top>20</top>
 					<include>UserRatingCircle</include>
 				</control>
 			</control>
@@ -288,8 +288,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>330</posx>
-				<posy>15</posy>
+				<left>330</left>
+				<top>15</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</itemlayout>
@@ -359,8 +359,8 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>330</posx>
-					<posy>15</posy>
+					<left>330</left>
+					<top>15</top>
 					<include>UserRatingCircle</include>
 				</control>
 				<control type="image">
@@ -411,7 +411,7 @@
 				<onright>531</onright>
 				<onup>500</onup>
 				<ondown>500</ondown>
-				<viewtype label="Wall">Small Thumbnail</viewtype>
+				<viewtype label="31102">icon</viewtype>
 				<preloaditems>2</preloaditems>
 				<pagecontrol>531</pagecontrol>
 				<scrolltime>200</scrolltime>
