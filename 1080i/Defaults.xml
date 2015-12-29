@@ -4,12 +4,12 @@
 		<texture>-</texture>
 		<aspectratio>stretch</aspectratio>
 	</default>
-    <default type="multiimage">
-        <aspectratio align="center">scale</aspectratio>
-        <fadetime>800</fadetime>
-        <timeperimage>7000</timeperimage>
-        <randomize>true</randomize>
-    </default>
+	<default type="multiimage">
+		<aspectratio align="center">scale</aspectratio>
+		<fadetime>800</fadetime>
+		<timeperimage>7000</timeperimage>
+		<randomize>true</randomize>
+	</default>
 	<default type="label">
 		<label>-</label>
 		<align>left</align>
