@@ -7,12 +7,12 @@
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Fifth alpha version of Estuary</summary>
-        <description lang="en">Fifth alpha version of Estuary</description>
-        <disclaimer lang="en">-</disclaimer>
+        <summary lang="en_GB">Estuary skin by phil65 and Piers. (Kodi's default skin)</summary>
+         <description lang="en_GB">Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
+        <disclaimer lang="en_GB">Estuary is the default skin for Kodi, removing it may cause issues</disclaimer>
         <platform>all</platform>
         <license>CC BY-SA 3.0</license>
-        <forum>-</forum>
-        <source>-</source>
+        <forum>http://forum.kodi.tv/</forum>
+        <source>https://github.com/xbmc/skin.estuary/</source>
     </extension>
 </addon>
