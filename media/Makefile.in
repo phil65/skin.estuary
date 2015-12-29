@@ -1,22 +1,29 @@
 TARGET=Textures.xbt
+TARGET_CURIAL=curial.xbt
+TARGET_GREEN=green.xbt
+TARGET_ORANGE=orange.xbt
 
-IMAGES := $(shell find . -name "*jpg")
-IMAGES += $(shell find . -name "*png")
-IMAGES += $(shell find . -name "*gif")
-
-all: $(TARGET)
+all: TEXTURES
 
 .PHONY: force
 
-$(TARGET): $(IMAGES)
-ifeq (@ARCH@,arm)
+TEXTURES:
+ifeq (x86_64-linux,arm)
 	@TEXTUREPACKER@ -dupecheck -use_none -input . -output $(TARGET)
+	@TEXTUREPACKER@ -dupecheck -use_none -input ../themes/curial -output $(TARGET_CURIAL)
+	@TEXTUREPACKER@ -dupecheck -use_none -input ../themes/green -output $(TARGET_GREEN)
+	@TEXTUREPACKER@ -dupecheck -use_none -input ../themes/orange -output $(TARGET_ORANGE)
 else
 	@TEXTUREPACKER@ -dupecheck -input . -output $(TARGET)
-
+	@TEXTUREPACKER@ -dupecheck -input ../themes/curial -output $(TARGET_CURIAL)
+	@TEXTUREPACKER@ -dupecheck -input ../themes/green -output $(TARGET_GREEN)
+	@TEXTUREPACKER@ -dupecheck -input ../themes/orange -output $(TARGET_ORANGE)
 endif
 
 clean:
 	rm -f $(TARGET)
-distclean: clean
+	rm -f $(TARGET_CURIAL)
+	rm -f $(TARGET_GREEN)
+	rm -f $(TARGET_ORANGE)
 
+distclean: clean
