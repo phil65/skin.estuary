@@ -101,8 +101,8 @@
 								<font>font12</font>
 							</control>
 							<control type="group">
-								<posx>145</posx>
-								<posy>383</posy>
+								<left>145</left>
+								<top>383</top>
 								<include>UserRatingCircle</include>
 							</control>
 						</control>
@@ -130,8 +130,8 @@
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
 						</control>
 						<control type="group">
-							<posx>145</posx>
-							<posy>383</posy>
+							<left>145</left>
+							<top>383</top>
 							<include>UserRatingCircle</include>
 						</control>
 					</focusedlayout>

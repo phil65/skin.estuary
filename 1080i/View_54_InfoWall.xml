@@ -13,8 +13,8 @@
 				<bordersize>4</bordersize>
 			</control>
 			<control type="group">
-				<posx>270</posx>
-				<posy>30</posy>
+				<left>270</left>
+				<top>30</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</itemlayout>
@@ -33,8 +33,8 @@
 					<bordersize>4</bordersize>
 				</control>
 				<control type="group">
-					<posx>270</posx>
-					<posy>30</posy>
+					<left>270</left>
+					<top>30</top>
 					<include>UserRatingCircle</include>
 				</control>
 			</control>
@@ -111,8 +111,8 @@
 				<bordersize>20</bordersize>
 			</control>
 			<control type="group">
-				<posx>115</posx>
-				<posy>20</posy>
+				<left>115</left>
+				<top>20</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</itemlayout>
@@ -130,8 +130,8 @@
 					<bordersize>20</bordersize>
 				</control>
 				<control type="group">
-					<posx>115</posx>
-					<posy>20</posy>
+					<left>115</left>
+					<top>20</top>
 					<include>UserRatingCircle</include>
 				</control>
 				<control type="image">
@@ -208,8 +208,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>330</posx>
-				<posy>15</posy>
+				<left>330</left>
+				<top>15</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</itemlayout>
@@ -279,8 +279,8 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>330</posx>
-					<posy>15</posy>
+					<left>330</left>
+					<top>15</top>
 					<include>UserRatingCircle</include>
 				</control>
 				<control type="image">

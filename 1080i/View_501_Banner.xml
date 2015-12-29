@@ -45,8 +45,8 @@
 						<bordersize>4</bordersize>
 					</control>
 					<control type="group">
-						<posx>770</posx>
-						<posy>20</posy>
+						<left>770</left>
+						<top>20</top>
 						<include>UserRatingCircle</include>
 					</control>
 				</itemlayout>
@@ -65,8 +65,8 @@
 							<bordersize>4</bordersize>
 						</control>
 						<control type="group">
-							<posx>770</posx>
-							<posy>20</posy>
+							<left>770</left>
+							<top>20</top>
 							<include>UserRatingCircle</include>
 						</control>
 						<control type="image">
