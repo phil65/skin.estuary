@@ -43,6 +43,14 @@
 							<height>75</height>
 							<texture colordiffuse="border_alpha">colors/black.png</texture>
 						</control>
+						<control type="image">
+							<left>329</left>
+							<top>24</top>
+							<width>50</width>
+							<height>50</height>
+							<aspectratio>keep</aspectratio>
+							<texture>$INFO[ListItem.Overlay]</texture>
+						</control>
 						<control type="textbox">
 							<left>25</left>
 							<top>140</top>
@@ -84,6 +92,14 @@
 							<texture>$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
+						</control>
+						<control type="image">
+							<left>329</left>
+							<top>24</top>
+							<width>50</width>
+							<height>50</height>
+							<aspectratio>keep</aspectratio>
+							<texture>$INFO[ListItem.Overlay]</texture>
 						</control>
 						<control type="image">
 							<left>19</left>
