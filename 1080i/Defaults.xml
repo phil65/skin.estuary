@@ -139,22 +139,6 @@
 	<default type="grouplist">
 		<itemgap>0</itemgap>
 	</default>
-	<default type="selectbutton">
-		<width>300</width>
-		<height>50</height>
-		<label>-</label>
-		<font>font13</font>
-		<texturefocus>-</texturefocus>
-		<texturenofocus>-</texturenofocus>
-		<texturebg>buttons/button-theme-fo.png</texturebg>
-		<textureleft>scroll-left.png</textureleft>
-		<textureleftfocus>scroll-left-focus.png</textureleftfocus>
-		<textureright>scroll-right.png</textureright>
-		<texturerightfocus>scroll-right-focus.png</texturerightfocus>
-		<textcolor>white</textcolor>
-		<disabledcolor>disabled</disabledcolor>
-		<aligny>center</aligny>
-	</default>
 	<default type="slider">
 		<controloffsetx>75</controloffsetx>
 		<controloffsety>0</controloffsety>
