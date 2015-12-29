@@ -354,7 +354,7 @@
 				<align>center</align>
 				<font>font24_title</font>
 				<label>$LOCALIZE[19055]</label>
-				<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline) + !Stringcompare(ListItem.Dbtype,set)</visible>
+				<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline) + !Stringcompare(ListItem.Dbtype,set) + !Stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="group">
 				<left>1350</left>
