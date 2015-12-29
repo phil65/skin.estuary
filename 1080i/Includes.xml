@@ -70,6 +70,8 @@
 		<param name="width">1152</param>
 		<param name="list_id">5000</param>
 		<param name="font">font13</param>
+		<param name="sortby"></param>
+		<param name="sortorder">ascending</param>
 		<definition>
 			<control type="panel" id="$PARAM[list_id]">
 				<width>$PARAM[width]</width>
@@ -97,7 +99,7 @@
 						<font>$PARAM[font]</font>
 					</control>
 				</itemlayout>
-				<content>$PARAM[path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]">$PARAM[path]</content>
 			</control>
 		</definition>
 	</include>

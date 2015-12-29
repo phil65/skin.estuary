@@ -17,9 +17,10 @@
 				<width>754</width>
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
-				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content()</visible>
-<!-- 				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
- -->			</control>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content()</visible>
+				<!-- 				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
+				 -->
+			</control>
 			<control type="image">
 				<description>background image</description>
 				<left>-20</left>
@@ -28,8 +29,9 @@
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 				<visible>!Control.IsVisible(5059)</visible>
-<!-- 				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
- -->			</control>
+				<!-- 				<visible>!Stringcompare(Container(50).Numitems,0)</visible>
+				 -->
+			</control>
 			<control type="list" id="50">
 				<left>2</left>
 				<top>3</top>
@@ -43,8 +45,8 @@
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<viewtype label="535">list</viewtype>
-				<visible>Container.Content(files) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(episodes) | Substring(Container.FolderPath,plugin://,left)</visible>
-				<focusedlayout height="70" condition="Container.Content() | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<visible>Container.Content(files) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(episodes) | Substring(Container.FolderPath,plugin://,left)</visible>
+				<focusedlayout height="70" condition="Container.Content() | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -111,7 +113,7 @@
 						<texture>$VAR[MediaInfoOverlayVar]</texture>
 					</control>
 				</focusedlayout>
-				<itemlayout height="70" condition="Container.Content() | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<itemlayout height="70" condition="Container.Content() | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -293,7 +295,7 @@
 			<include>OpenClose_Right</include>
 			<visible>[Control.IsVisible(50) | Control.Isvisible(54)] + !IsEmpty(ListItem.DBID)</visible>
 			<include>Visible_Right</include>
-			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+			<visible>Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 			<control type="image">
 				<right>90</right>
 				<top>162</top>
@@ -309,7 +311,7 @@
 				<align>left</align>
 				<font>font13_title</font>
 				<label>$INFO[ListItem.Label]</label>
-				<visible>Control.IsVisible(54)</visible>
+				<visible>Control.IsVisible(54) | Stringcompare(ListItem.Dbtype,set)</visible>
 			</control>
 			<control type="textbox" id="4380">
 				<right>130</right>
@@ -352,7 +354,18 @@
 				<align>center</align>
 				<font>font24_title</font>
 				<label>$LOCALIZE[19055]</label>
-				<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline)</visible>
+				<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline) + !Stringcompare(ListItem.Dbtype,set)</visible>
+			</control>
+			<control type="group">
+				<left>1350</left>
+				<top>244</top>
+				<visible>Stringcompare(Listitem.dbtype,set)</visible>
+				<include name="InfoList">
+					<param name="height" value="322" />
+					<param name="width" value="429" />
+					<param name="sortby" value="year" />
+					<param name="sortorder" value="descending" />
+				</include>
 			</control>
 			<control type="image">
 				<right>113</right>

@@ -114,7 +114,10 @@
 					<left>635</left>
 					<top>475</top>
 					<visible>Stringcompare(Listitem.dbtype,set)</visible>
-					<include>InfoList</include>
+					<include name="InfoList">
+						<param name="sortby" value="year" />
+						<param name="sortorder" value="descending" />
+					</include>
 				</control>
 				<control type="image">
 					<left>645</left>
