@@ -808,7 +808,7 @@
 						<left>15</left>
 						<top>280</top>
 						<align>center</align>
-						<label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR] - [COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
+						<label>$INFO[ListItem.Label2]</label>
 						<width>230</width>
 					</control>
 				</itemlayout>
@@ -866,7 +866,7 @@
 							<left>15</left>
 							<top>280</top>
 							<align>center</align>
-							<label>[COLOR blue]$INFO[ListItem.Property(LowTemperature)][/COLOR] - [COLOR red]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
+							<label>$INFO[ListItem.Label2]</label>
 							<width>230</width>
 						</control>
 					</control>
@@ -989,10 +989,8 @@
 	<include name="WeatherHourlyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
-			<property name="LongDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</property>
-			<property name="TempDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempDay)]</property>
-			<property name="LowTemperature">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].LowTemperature)]</property>
-			<property name="HighTemperature">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].HighTemperature)]</property>
+			<label2>[COLOR red]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)][/COLOR] - [COLOR blue]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)][/COLOR]</label2>
+			<property name="Temperature">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)]</property>
 			<property name="Outlook">$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</property>
 			<property name="Cloudiness">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Cloudiness)]</property>
 			<property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)]</property>
@@ -1005,10 +1003,9 @@
 	<include name="WeatherDailyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDay)]</label>
+			<label2>[COLOR blue]$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)][/COLOR] - [COLOR red]$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)][/COLOR]</label2>
 			<property name="LongDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</property>
 			<property name="TempDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempDay)]</property>
-			<property name="LowTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)]</property>
-			<property name="HighTemperature">$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)]</property>
 			<property name="Cloudiness">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness)]</property>
 			<property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
 			<property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)]</property>

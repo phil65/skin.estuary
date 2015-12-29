@@ -328,7 +328,7 @@
 						<width>600</width>
 						<aligny>center</aligny>
 						<font>font16</font>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="label">
@@ -337,7 +337,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font30_title</font>
-						<label>$INFO[ListItem.Property(TempDay)]</label>
+						<label>$INFO[ListItem.Property(Temperature)]</label>
 						<width>230</width>
 						<height>107</height>
 					</control>
@@ -364,7 +364,7 @@
 						<width>600</width>
 						<aligny>center</aligny>
 						<font>font16</font>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="label">
@@ -373,7 +373,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font30_title</font>
-						<label>$INFO[ListItem.Property(TempDay)]</label>
+						<label>$INFO[ListItem.Property(Temperature)]</label>
 						<width>230</width>
 						<height>107</height>
 					</control>
@@ -530,7 +530,7 @@
 					<left>660</left>
 					<top>380</top>
 					<align>right</align>
-					<label>Range: [COLOR blue]$INFO[Window(weather).Property(Current.LowTemperature)][/COLOR] - [COLOR red]$INFO[Window(weather).Property(Current.HighTemperature)][/COLOR][CR]$INFO[Weather.Conditions]</label>
+					<label>[COLOR grey]$LOCALIZE[402]: $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/COLOR][CR]$INFO[Weather.Conditions]</label>
 					<font>font16</font>
 					<width>630</width>
 				</control>
