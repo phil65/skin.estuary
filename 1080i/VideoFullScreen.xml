@@ -38,7 +38,7 @@
 			</control>
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
-					<top>310</top>
+				<top>310</top>
 				<control type="label">
 					<description>Header</description>
 					<left>50</left>
