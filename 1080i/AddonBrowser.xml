@@ -30,16 +30,6 @@
 					<include>MediaMenuLabelCommon</include>
 					<label>$LOCALIZE[31021]</label>
 				</control>
-				<control type="button" id="5">
-					<description>Addon-updates</description>
-					<include>MediaMenuItemsCommon</include>
-					<label>$LOCALIZE[24063]</label>
-				</control>
-				<control type="radiobutton" id="6">
-					<description>No notifications</description>
-					<include>MediaMenuItemsCommon</include>
-					<label>$LOCALIZE[25000]</label>
-				</control>
 				<control type="radiobutton" id="7">
 					<description>Hide foreign</description>
 					<include>MediaMenuItemsCommon</include>
@@ -54,6 +44,11 @@
 					<description>Check for repository updates</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[24034]</label>
+				</control>
+				<control type="button" id="5">
+					<description>Addon settings</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>$LOCALIZE[10004]</label>
 				</control>
 				<include>MediaMenuNowPlaying</include>
 			</control>
