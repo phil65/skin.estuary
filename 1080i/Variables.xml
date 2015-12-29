@@ -14,6 +14,10 @@
 		<value condition="Stringcompare(ListItem.Label,..)">..</value>
 		<value>$INFO[ListItem.Title]</value>
 	</variable>
+	<variable name="NowPlayingMainlabelVar">
+		<value condition="VideoPlayer.Content(LiveTV)">$INFO[Player.Title]</value>
+		<value>$INFO[Player.Time]$INFO[Player.Title, - ]</value>
+	</variable>
 	<variable name="NowPlayingSublabelVar">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TvShowTitle]</value>
 		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ]</value>

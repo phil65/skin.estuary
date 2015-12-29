@@ -1349,7 +1349,7 @@
 							<texture colordiffuse="button_focus">$VAR[NowPlayingIconVar]</texture>
 						</control>
 						<control type="label">
-							<label>$INFO[Player.Time]$INFO[Player.Title, - ]</label>
+							<label>$VAR[NowPlayingMainlabelVar]</label>
 							<font>font13_title</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<textoffsetx>0</textoffsetx>
