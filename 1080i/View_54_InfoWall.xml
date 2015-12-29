@@ -118,12 +118,8 @@
 		</itemlayout>
 		<focusedlayout height="240" width="172" condition="!Container.content(episodes)">
 			<control type="group">
-				<animation type="Focus">
-					<effect type="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="90,125" />
-				</animation>
-				<animation type="Unfocus">
-					<effect type="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="90,125" />
-				</animation>
+				<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="90,125">Focus</animation>
+				<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="90,125">UnFocus</animation>
 				<control type="image">
 					<left>-7</left>
 					<top>-10</top>
@@ -137,6 +133,15 @@
 					<posx>115</posx>
 					<posy>20</posy>
 					<include>UserRatingCircle</include>
+				</control>
+				<control type="image">
+					<left>13</left>
+					<top>10</top>
+					<width>146</width>
+					<height>220</height>
+					<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+					<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
+					<animation effect="fade" start="100" end="0" time="200" tween="sine">UnFocus</animation>
 				</control>
 			</control>
 		</focusedlayout>
