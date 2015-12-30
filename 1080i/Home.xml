@@ -66,6 +66,7 @@
 					<include name="SubMenu">
 						<param name="list_id" value="5900"/>
 						<param name="ondown_id" value="5100"/>
+						<param name="visible" value="Library.HasContent(movies)"/>
 						<param name="item1_onclick" value="ActivateWindow(videos,RecentlyAddedMovies,return)" />
 						<param name="item1_icon" value="recentlyadded.png" />
 						<param name="item1_label" value="$LOCALIZE[20386]" />
@@ -127,6 +128,17 @@
 						<param name="onup_id" value="5300"/>
 						<param name="ondown_id" value="20001"/>
 					</include>
+					<include name="ImageWidgetHeader">
+						<param name="widget_header" value="$LOCALIZE[342]" />
+						<param name="visible" value="!Library.HasContent(movies)"/>
+					</include>
+					<include name="ImageWidget">
+						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="button_label" value="$LOCALIZE[31104]" />
+						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
+						<param name="button_id" value="5500"/>
+						<param name="visible" value="!Library.HasContent(movies)"/>
+					</include>
 				</control>
 			</control>
 			<control type="group" id="6000">
@@ -151,6 +163,7 @@
 					<include name="SubMenu">
 						<param name="list_id" value="6900"/>
 						<param name="ondown_id" value="6100"/>
+						<param name="visible" value="Library.HasContent(tvshows)"/>
 						<param name="item1_onclick" value="ActivateWindow(Videos,RecentlyAddedEpisodes,return)" />
 						<param name="item1_icon" value="recentlyadded.png" />
 						<param name="item1_label" value="$LOCALIZE[20387]" />
@@ -205,6 +218,17 @@
 						<param name="list_id" value="6300"/>
 						<param name="onup_id" value="6200"/>
 						<param name="ondown_id" value="20001"/>
+					</include>
+					<include name="ImageWidgetHeader">
+						<param name="widget_header" value="$LOCALIZE[20343]" />
+						<param name="visible" value="!Library.HasContent(tvshows)"/>
+					</include>
+					<include name="ImageWidget">
+						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="button_label" value="Your library is empty. Click here Blabla. Blabla. Blabla. Blabla. Blabla. Blabla. " />
+						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
+						<param name="button_id" value="6400"/>
+						<param name="visible" value="!Library.HasContent(tvshows)"/>
 					</include>
 				</control>
 			</control>
@@ -298,7 +322,15 @@
 						<param name="widget_target" value="music"/>
 						<param name="list_id" value="7500"/>
 						<param name="onup_id" value="7400"/>
-						<param name="ondown_id" value="20001"/>
+						<param name="ondown_id" value="7600"/>
+					</include>
+					<include name="ImageWidget">
+						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="button_label" value="$LOCALIZE[31104]" />
+						<param name="button_onclick" value="ActivateWindow(music,files)"/>
+						<param name="button_id" value="7600"/>
+						<param name="onup_id" value="7500"/>
+						<param name="visible" value="!Library.HasContent(music)"/>
 					</include>
 				</control>
 			</control>
@@ -429,8 +461,16 @@
 						<param name="widget_target" value="videos"/>
 						<param name="list_id" value="11200"/>
 						<param name="onup_id" value="11100"/>
-						<param name="ondown_id" value="20001"/>
+						<param name="ondown_id" value="11300"/>
 						<param name="icon" value="icons/defaulticons/DefaultPlaylist.png"/>
+					</include>
+					<include name="ImageWidget">
+						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="button_label" value="$LOCALIZE[31105]" />
+						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
+						<param name="button_id" value="11300"/>
+						<param name="onup_id" value="11200"/>
+						<param name="visible" value="!IntegerGreaterThan(Container(11200).NumItems,0) + !IntegerGreaterThan(Container(11100).NumItems,0)"/>
 					</include>
 				</control>
 			</control>
@@ -715,40 +755,24 @@
 					</include>
 				</control>
 			</control>
-			<control type="group">
+			<control type="group" id="4000">
 				<visible>Container(9000).HasFocus(4)</visible>
+				<top>76</top>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<include>Visible_Right_Delayed</include>
-				<control type="image">
-					<top>93</top>
-					<left>480</left>
-					<width>1340</width>
-					<height>120</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-				</control>
-				<control type="label">
-					<top>93</top>
-					<left>480</left>
-					<width>1340</width>
-					<height>120</height>
-					<font>font30_title</font>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>Daily image</label>
-				</control>
-				<control type="image">
-					<top>230</top>
-					<left>480</left>
-					<width>1340</width>
-					<height>763</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-				</control>
-				<control type="multiimage">
-					<top>263</top>
-					<left>510</left>
-					<width>1280</width>
-					<height>700</height>
-					<imagepath>resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]</imagepath>
+				<control type="grouplist" id="4001">
+					<orientation>vertical</orientation>
+					<include name="ImageWidgetHeader">
+						<param name="widget_header" value="$LOCALIZE[1]" />
+						<param name="visible" value="true"/>
+					</include>
+					<include name="ImageWidget">
+						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="button_label" value="Browse your image collections" />
+						<param name="button_onclick" value="ActivateWindow(pictures)"/>
+						<param name="button_id" value="4100"/>
+						<param name="visible" value="true"/>
+					</include>
 				</control>
 			</control>
 		</control>
@@ -833,6 +857,7 @@
 					<width>382</width>
 					<height>671</height>
 					<pagecontrol>70</pagecontrol>
+					<onright condition="Container(9000).HasFocus(4) + Control.IsVisible(4000)">4000</onright>
 					<onright condition="Container(9000).HasFocus(5) + Control.IsVisible(5000)">5000</onright>
 					<onright condition="Container(9000).HasFocus(6) + Control.IsVisible(6000)">6000</onright>
 					<onright condition="Container(9000).HasFocus(7) + Control.IsVisible(7000)">7000</onright>
@@ -968,14 +993,14 @@
 							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(movies.watched)]$INFO[Window(home).Property(movies.Count), / ]</label2>
 							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 							<thumb>icons/home/movies.png</thumb>
-							<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
+							<visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
 						</item>
 						<item id="6">
 							<label>$LOCALIZE[20343]</label>
 							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(episodes.watched)]$INFO[Window(home).Property(episodes.Count), / ]</label2>
 							<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 							<thumb>icons/home/tv.png</thumb>
-							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
+							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
 						</item>
 						<item id="7">
 							<label>$LOCALIZE[2]</label>

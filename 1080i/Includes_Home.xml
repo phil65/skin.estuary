@@ -87,6 +87,7 @@
 	<include name="SubMenu">
 		<control type="group">
 			<height>110</height>
+			<visible>$PARAM[visible]</visible>
 			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">conditional</animation>
 			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
 			<animation effect="slide" end="110,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
@@ -334,6 +335,68 @@
 				<content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
 			</control>
 		</control>
+	</include>
+	<include name="ImageWidgetHeader">
+		<control type="group">
+			<height>110</height>
+			<visible>$PARAM[visible]</visible>
+			<control type="image">
+				<top>17</top>
+				<left>498</left>
+				<width>1340</width>
+				<height>114</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
+			</control>
+			<control type="label">
+				<top>10</top>
+				<left>498</left>
+				<width>1340</width>
+				<height>120</height>
+				<font>font30_title</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$PARAM[widget_header]</label>
+			</control>
+		</control>
+	</include>
+	<include name="ImageWidget">
+		<param name="onup_id">20000</param>
+		<param name="ondown_id">20001</param>
+		<definition>
+			<control type="group">
+				<visible>$PARAM[visible]</visible>
+				<control type="image">
+					<top>0</top>
+					<left>498</left>
+					<width>1340</width>
+					<height>809</height>
+					<texture border="22">dialogs/dialog-bg.png</texture>
+				</control>
+				<control type="multiimage">
+					<top>31</top>
+					<left>528</left>
+					<width>1280</width>
+					<height>746</height>
+					<imagepath>$PARAM[image_path]</imagepath>
+				</control>
+				<control type="button" id="$PARAM[button_id]">
+					<top>610</top>
+					<left>528</left>
+					<width>1280</width>
+					<height>180</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>$PARAM[button_label]</label>
+					<textoffsetx>30</textoffsetx>
+					<onclick>$PARAM[button_onclick]</onclick>
+					<align>center</align>
+					<onleft>9000</onleft>
+					<onup>$PARAM[onup_id]</onup>
+					<ondown>$PARAM[ondown_id]</ondown>
+					<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+				</control>
+			</control>
+		</definition>
 	</include>
 	<include name="WidgetListEpisodes">
 		<control type="group">
@@ -966,26 +1029,26 @@
 		</content>
 	</include>
 	<!-- <include name="WeatherDailyItem">
-		 <item id="$PARAM[item_index]">
-		 <label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</label>
-		 <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</label2>
-		 <property name="Humidity">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Humidity)]</property>
-		 <property name="Pressure">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Pressure)]</property>
-		 <property name="DewPoint">$INFO[Window(weather).Property(Daily.$PARAM[item_index].DewPoint)]</property>
-		 <property name="FeelsLike">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FeelsLike)]</property>
-		 <property name="Rain">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Rain)]</property>
-		 <property name="Snow">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Snow)]</property>
-		 <property name="TempMorn">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempMorn)]</property>
-		 <property name="TempEve">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempEve)]</property>
-		 <property name="TempNight">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempNight)]</property>
-		 <property name="WindSpeed">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)]</property>
-		 <property name="WindGust">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindGust)]</property>
-		 <property name="WindDirection">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</property>
-		 <property name="Precipitation">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Precipitation)]</property>
-		 <onclick>SetProperty(FocusedItem,$PARAM[item_index])</onclick>
-		 <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</icon>
-		 </item>
-		 </include> -->
+	     <item id="$PARAM[item_index]">
+	     <label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</label>
+	     <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</label2>
+	     <property name="Humidity">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Humidity)]</property>
+	     <property name="Pressure">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Pressure)]</property>
+	     <property name="DewPoint">$INFO[Window(weather).Property(Daily.$PARAM[item_index].DewPoint)]</property>
+	     <property name="FeelsLike">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FeelsLike)]</property>
+	     <property name="Rain">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Rain)]</property>
+	     <property name="Snow">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Snow)]</property>
+	     <property name="TempMorn">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempMorn)]</property>
+	     <property name="TempEve">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempEve)]</property>
+	     <property name="TempNight">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempNight)]</property>
+	     <property name="WindSpeed">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)]</property>
+	     <property name="WindGust">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindGust)]</property>
+	     <property name="WindDirection">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</property>
+	     <property name="Precipitation">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Precipitation)]</property>
+	     <onclick>SetProperty(FocusedItem,$PARAM[item_index])</onclick>
+	     <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</icon>
+	     </item>
+	     </include> -->
 	<include name="WeatherHourlyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
