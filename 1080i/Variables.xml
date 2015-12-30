@@ -213,10 +213,10 @@
 	</variable>
 	<variable name="ListWatchedIconVar">
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
-		<value condition="Container.Content(files) + SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
-		<value condition="IsEmpty(ListItem.DBType)">-</value>
-		<value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlays/watched/OverlayWatched-List.png</value>
-		<value>overlays/watched/OverlayEmpty-List.png</value>
+<!-- 		<value condition="Container.Content(files) + SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
+ -->		<value condition="Stringcompare(ListItem.Label,..)">-</value>
+		<value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
+ -->		<value>OverlayUnwatched.png</value>
 	</variable>
 	<variable name="SettingsSectionIcon">
 		<value condition="Window.IsActive(picturessettings)">icons/settings/pictures.png</value>
