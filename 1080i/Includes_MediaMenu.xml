@@ -152,6 +152,7 @@
 						<label>$LOCALIZE[19141]</label>
 						<label2>[B]$PARAM[group_label2][/B]</label2>
 						<onclick>NextChannelGroup</onclick>
+						<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels) | Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible>
 					</control>
 					<control type="label" id="300">
 						<label>$LOCALIZE[31021]</label>
