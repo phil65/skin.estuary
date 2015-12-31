@@ -133,7 +133,7 @@
 						<param name="visible" value="!Library.HasContent(movies)"/>
 					</include>
 					<include name="ImageWidget">
-						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
 						<param name="button_label" value="$LOCALIZE[31104]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 						<param name="button_id" value="5500"/>
@@ -224,8 +224,8 @@
 						<param name="visible" value="!Library.HasContent(tvshows)"/>
 					</include>
 					<include name="ImageWidget">
-						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
-						<param name="button_label" value="Your library is empty. Click here Blabla. Blabla. Blabla. Blabla. Blabla. Blabla. " />
+						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
+						<param name="button_label" value="$LOCALIZE[31104]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 						<param name="button_id" value="6400"/>
 						<param name="visible" value="!Library.HasContent(tvshows)"/>
@@ -325,7 +325,7 @@
 						<param name="ondown_id" value="7600"/>
 					</include>
 					<include name="ImageWidget">
-						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
 						<param name="button_label" value="$LOCALIZE[31104]" />
 						<param name="button_onclick" value="ActivateWindow(music,files)"/>
 						<param name="button_id" value="7600"/>
@@ -465,7 +465,7 @@
 						<param name="icon" value="icons/defaulticons/DefaultPlaylist.png"/>
 					</include>
 					<include name="ImageWidget">
-						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
 						<param name="button_label" value="$LOCALIZE[31105]" />
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
 						<param name="button_id" value="11300"/>
@@ -767,7 +767,7 @@
 						<param name="visible" value="true"/>
 					</include>
 					<include name="ImageWidget">
-						<param name="image_path" value="resource://resource.images.weatherfanart.multi/$INFO[Weather.FanartCode]"/>
+						<param name="image_path" value="special://skin/extras/home-images/pictures.jpg"/>
 						<param name="button_label" value="Browse your image collections" />
 						<param name="button_onclick" value="ActivateWindow(pictures)"/>
 						<param name="button_id" value="4100"/>
