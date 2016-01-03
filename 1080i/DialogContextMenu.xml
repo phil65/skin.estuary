@@ -2,6 +2,11 @@
 <window>
 	<defaultcontrol>1000</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
+	<coordinates>
+		<posx>0</posx>
+		<posy>0</posy>
+		<origin x="735" y="400">Window.IsActive(Home)</origin>
+	</coordinates>
 	<controls>
 		<control type="image">
 			<left>-1920</left>
