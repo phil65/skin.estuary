@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<backgroundcolor>FF000000</backgroundcolor>
 	<menucontrol>9000</menucontrol>
-	<views>50,52,53,500</views>
+	<views>50,52,53,55,500</views>
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
@@ -14,10 +14,11 @@
 				<param name="layouts_include" value="SmallThumbMusicLayouts" />
 			</include>
 			<include>View_53_Shift</include>
+			<include>View_55_WideList</include>
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Control.IsVisible(50) | Window.IsActive(musicinformation)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(55) | Window.IsActive(musicinformation)</visible>
 			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)</visible>
 			<include>Visible_Left</include>
 			<include>ListThumbInfoPanel</include>
