@@ -2,13 +2,12 @@
 <window>
 	<defaultcontrol always="true">100</defaultcontrol>
 	<backgroundcolor>FF000000</backgroundcolor>
-	<views>50,52,55</views>
+	<views>52,55</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group" id="100">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation)">Conditional</animation>
-			<include>View_50_List</include>
 			<include>View_52_IconWall</include>
 			<include>View_55_WideList</include>
 		</control>
