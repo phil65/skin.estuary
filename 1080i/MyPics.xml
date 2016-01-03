@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">100</defaultcontrol>
 	<backgroundcolor>FF000000</backgroundcolor>
-	<views>50,52,53</views>
+	<views>50,52,53,55</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include name="DefaultBackground">
@@ -13,10 +13,11 @@
 			<include>View_50_List</include>
 			<include>View_52_IconWall</include>
 			<include>View_53_Shift</include>
+			<include>View_55_WideList</include>
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Window.IsActive(addoninformation) | Control.IsVisible(50)</visible>
+			<visible>Window.IsActive(addoninformation) | Control.IsVisible(50) | Control.IsVisible(55)</visible>
 			<include>Visible_Left</include>
 			<visible>!Container.Content()</visible>
 			<include>ListThumbInfoPanel</include>
