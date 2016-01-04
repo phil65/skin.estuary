@@ -4,12 +4,12 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
 	<coordinates>
-		<left>80</left>
+		<left>70</left>
 		<top>140</top>
 	</coordinates>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1760" />
+			<param name="DialogBackgroundWidth" value="1780" />
 			<param name="DialogBackgroundHeight" value="700" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[15020]" />
 			<param name="DialogHeaderId" value="2" />
@@ -18,7 +18,7 @@
 			<description>processing mode selection list</description>
 			<left>0</left>
 			<top>105</top>
-			<width>350</width>
+			<width>330</width>
 			<height>700</height>
 			<onup>9000</onup>
 			<ondown>200</ondown>
@@ -26,31 +26,31 @@
 			<onright>20</onright>
 			<orientation>vertical</orientation>
 			<scrolltime tween="sine" easing="out">200</scrolltime>
-			<itemlayout width="350" height="110">
+			<itemlayout width="330" height="110">
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>350</width>
+					<width>330</width>
 					<height>130</height>
 					<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				</control>
 				<control type="label">
 					<left>0</left>
 					<top>0</top>
-					<width>350</width>
+					<width>330</width>
 					<height>130</height>
 					<textcolor>grey2</textcolor>
-					<font>font13_title</font>
+					<font>font12_title</font>
 					<aligny>center</aligny>
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout width="350" height="110">
+			<focusedlayout width="330" height="110">
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>350</width>
+					<width>330</width>
 					<height>130</height>
 					<texture border="40">buttons/dialogbutton-nofo.png</texture>
 					<visible>!Control.HasFocus(9000)</visible>
@@ -58,7 +58,7 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>350</width>
+					<width>330</width>
 					<height>130</height>
 					<visible>Control.HasFocus(9000)</visible>
 					<texture border="40">buttons/dialogbutton-fo.png</texture>
@@ -66,9 +66,9 @@
 				<control type="label">
 					<left>0</left>
 					<top>0</top>
-					<width>350</width>
+					<width>330</width>
 					<height>130</height>
-					<font>font13_title</font>
+					<font>font12_title</font>
 					<aligny>center</aligny>
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>
@@ -111,7 +111,7 @@
 			<description>available- and active mode lists</description>
 			<top>90</top>
 			<control type="group">
-				<left>340</left>
+				<left>320</left>
 				<description>available modes group</description>
 				<include name="AudioDSPModeList">
 					<param name="sublabel" value="$LOCALIZE[15050]: $INFO[Container(20).NumItems]" />
@@ -135,7 +135,7 @@
 			</control>
 		</control>
 		<control type="grouplist" id="9001">
-			<left>1280</left>
+			<left>1300</left>
 			<top>105</top>
 			<itemgap>-20</itemgap>
 			<onleft>61</onleft>
@@ -164,13 +164,13 @@
 		</control>
 		<control type="textbox">
 			<description>current mode description label</description>
-			<left>1305</left>
-			<top>330</top>
-			<width>400</width>
+			<left>1325</left>
+			<top>350</top>
+			<width>420</width>
 			<height>300</height>
 			<font>font12</font>
 			<aligny>top</aligny>
-			<label>$INFO[Container(9000).ListItem.Label2]</label>
+			<label>$VAR[DSPManagerHelpTextVar]</label>
 		</control>
 	</controls>
 </window>
