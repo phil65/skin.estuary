@@ -65,16 +65,16 @@
 		<param name="width">262</param>
 		<definition>
 			<width>$PARAM[width]</width>
-			<height>140</height>
+			<height>142</height>
 			<align>center</align>
 			<aligny>top</aligny>
 			<texturefocus border="40">buttons/button-theme-fo.png</texturefocus>
 			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 			<textoffsetx>35</textoffsetx>
-			<textoffsety>76</textoffsety>
-			<radioposx>110</radioposx>
-			<radioposy>14</radioposy>
-			<radiowidth>44</radiowidth>
+			<textoffsety>78</textoffsety>
+			<radioposx>108</radioposx>
+			<radioposy>13</radioposy>
+			<radiowidth>48</radiowidth>
 			<font>font12</font>
 			<textureradioonfocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonfocus>
 			<textureradioonnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonnofocus>
