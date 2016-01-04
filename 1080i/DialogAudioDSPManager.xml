@@ -22,7 +22,7 @@
 			<height>700</height>
 			<onup>9000</onup>
 			<ondown>200</ondown>
-			<onleft>21</onleft>
+			<onleft>9001</onleft>
 			<onright>20</onright>
 			<orientation>vertical</orientation>
 			<scrolltime tween="sine" easing="out">200</scrolltime>
@@ -118,7 +118,7 @@
 					<param name="scrollbar_id" value="60" />
 					<param name="list_id" value="20" />
 					<param name="onright" value="21" />
-					<param name="onleft" value="21" />
+					<param name="onleft" value="9000" />
 				</include>
 			</control>
 			<control type="group">
@@ -129,8 +129,8 @@
 					<param name="sublabel" value="$LOCALIZE[15051]: $INFO[Container(21).NumItems]" />
 					<param name="scrollbar_id" value="61" />
 					<param name="list_id" value="21" />
-					<param name="onright" value="20" />
-					<param name="onleft" value="20" />
+					<param name="onright" value="9001" />
+					<param name="onleft" value="60" />
 				</include>
 			</control>
 		</control>
@@ -138,8 +138,8 @@
 			<left>1280</left>
 			<top>105</top>
 			<itemgap>-20</itemgap>
-			<onleft>24</onleft>
-			<onright>23</onright>
+			<onleft>61</onleft>
+			<onright>9000</onright>
 			<include name="DefaultDialogButton">
 				<param name="id" value="22" />
 				<param name="label" value="$LOCALIZE[15064]" />
