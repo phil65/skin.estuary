@@ -127,8 +127,8 @@
 						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
 					<label>$LOCALIZE[31026]</label>
-					<onclick>Container.Update($INFO[Container.FolderPath]$INFO[ListItem.DBID])</onclick>
 					<onclick>Action(close)</onclick>
+					<onclick>Container.Update($INFO[Container.FolderPath]$INFO[ListItem.DBID])</onclick>
 					<visible>Container.Content(artists)</visible>
 				</control>
 				<control type="radiobutton" id="601">
@@ -136,8 +136,8 @@
 						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
 					<label>$LOCALIZE[31027]</label>
-					<onclick>Container.Update($INFO[ListItem.Path]/$INFO[ListItem.DBID])</onclick>
 					<onclick>Action(close)</onclick>
+					<onclick>Container.Update($INFO[Container.FolderPath]/$INFO[ListItem.DBID])</onclick>
 					<visible>Container.Content(albums)</visible>
 				</control>
 				<control type="group" id="420">
