@@ -24,6 +24,10 @@
 		<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelName]</value>
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Artist]</value>
 	</variable>
+	<variable name="GlobalFanartVar">
+		<value condition="Skin.HasSetting(use_custom_bg) + !IsEmpty(Skin.String(custom_background))">$INFO[Skin.String(custom_background)]</value>
+		<value>special://skin/extras/backgrounds/$INFO[Skin.CurrentTheme].jpg</value>
+	</variable>
 	<variable name="FullScreenInfoTextBoxVar">
 		<value condition="Control.HasFocus(5552)">$INFO[VideoPlayer.Duration,Duration: [B],[/B][CR]]</value>
 		<value condition="Control.HasFocus(5553)">$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</value>
