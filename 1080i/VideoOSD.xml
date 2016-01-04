@@ -60,7 +60,7 @@
 				<orientation>horizontal</orientation>
 				<onup>87</onup>
 				<ondown>close</ondown>
-				<onleft>70044</onleft>
+				<onleft>70043</onleft>
 				<onright>70011</onright>
 				<control type="radiobutton" id="600">
 					<include name="OSDButton">
@@ -98,6 +98,16 @@
 					<onclick>PlayerControl(Next)</onclick>
 					<visible>!VideoPlayer.Content(livetv) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
 				</control>
+				<control type="radiobutton" id="606">
+					<include name="OSDButton">
+						<param name="texture" value="osd/fullscreen/buttons/record.png"/>
+					</include>
+					<selected>Player.Recording</selected>
+					<onclick>PlayerControl(Record)</onclick>
+					<enable>Player.CanRecord</enable>
+					<visible>VideoPlayer.Content(livetv)</visible>
+					<animation effect="fade" start="100" end="50" time="80" condition="!Player.CanRecord">Conditional</animation>
+				</control>
 			</control>
 			<control type="grouplist" id="202">
 				<left>50</left>
@@ -110,7 +120,7 @@
 				<orientation>horizontal</orientation>
 				<onup>87</onup>
 				<ondown>noop</ondown>
-				<onleft>605</onleft>
+				<onleft>606</onleft>
 				<onright>600</onright>
 				<control type="radiobutton" id="70011">
 					<label>$LOCALIZE[19033]</label>
@@ -135,7 +145,7 @@
 				</control>
 				<control type="radiobutton" id="70040">
 					<include name="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+						<param name="texture" value="osd/fullscreen/buttons/channels.png"/>
 					</include>
 					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
@@ -143,7 +153,7 @@
 				</control>
 				<control type="radiobutton" id="70041">
 					<include name="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+						<param name="texture" value="osd/fullscreen/buttons/guide.png"/>
 					</include>
 					<onclick>ActivateWindow(PVROSDGuide)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
@@ -169,28 +179,18 @@
 				<control type="radiobutton" id="804">
 					<label>$LOCALIZE[31092]</label>
 					<include name="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+						<param name="texture" value="osd/fullscreen/buttons/home.png"/>
 					</include>
 					<onclick>PlayerControl(ShowVideoMenu)</onclick>
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="radiobutton" id="70043">
 					<include name="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
+						<param name="texture" value="osd/fullscreen/buttons/teletext.png"/>
 					</include>
 					<onclick>ActivateWindow(Teletext)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
 					<visible>VideoPlayer.Content(livetv)</visible>
-				</control>
-				<control type="radiobutton" id="70044">
-					<include name="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
-					</include>
-					<selected>Player.Recording</selected>
-					<onclick>PlayerControl(Record)</onclick>
-					<enable>Player.CanRecord</enable>
-					<visible>VideoPlayer.Content(livetv)</visible>
-					<animation effect="fade" start="100" end="50" time="80" condition="!Player.CanRecord">Conditional</animation>
 				</control>
 			</control>
 			<control type="group">
