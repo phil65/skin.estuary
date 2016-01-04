@@ -16,7 +16,7 @@
 		</control>
 		<control type="group">
 			<top>900</top>
-			<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings)</visible>
+			<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
 			<animation effect="fade" end="100" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
@@ -147,16 +147,16 @@
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/channels.png"/>
 					</include>
-					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
+					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 					<visible>VideoPlayer.Content(livetv)</visible>
 				</control>
 				<control type="radiobutton" id="70041">
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/guide.png"/>
 					</include>
-					<onclick>ActivateWindow(PVROSDGuide)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
+					<onclick>ActivateWindow(PVROSDGuide)</onclick>
 					<visible>VideoPlayer.Content(livetv)</visible>
 				</control>
 				<control type="radiobutton" id="700">
@@ -188,8 +188,8 @@
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/teletext.png"/>
 					</include>
-					<onclick>ActivateWindow(Teletext)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
+					<onclick>ActivateWindow(Teletext)</onclick>
 					<visible>VideoPlayer.Content(livetv)</visible>
 				</control>
 			</control>
