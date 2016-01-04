@@ -209,7 +209,7 @@
 							<param name="icon" value="" />
 						</include>
 						<label>$LOCALIZE[31033]</label>
-						<onleft>601</onleft>
+						<onleft>12</onleft>
 						<onright>120</onright>
 						<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
 						<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">138</onup>
