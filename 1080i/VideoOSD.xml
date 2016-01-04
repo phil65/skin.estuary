@@ -129,20 +129,6 @@
 					</include>
 					<onclick>ActivateWindow(fullscreeninfo)</onclick>
 				</control>
-				<control type="radiobutton" id="701">
-					<label>$LOCALIZE[13396]</label>
-					<include name="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/settings-audio.png"/>
-					</include>
-					<onclick>ActivateWindow(osdaudiosettings)</onclick>
-				</control>
-				<control type="radiobutton" id="702">
-					<label>$LOCALIZE[13395]</label>
-					<include name="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/settings-video.png"/>
-					</include>
-					<onclick>ActivateWindow(osdvideosettings)</onclick>
-				</control>
 				<control type="radiobutton" id="70040">
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/channels.png"/>
@@ -167,15 +153,6 @@
 					<onclick>ActivateWindow(videobookmarks)</onclick>
 					<visible>!VideoPlayer.Content(livetv)</visible>
 				</control>
-				<control type="radiobutton" id="703">
-					<label>$LOCALIZE[31091]</label>
-					<include name="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
-					</include>
-					<onclick>Close</onclick>
-					<onclick>ActivateWindow(SubtitleSearch)</onclick>
-					<visible>!VideoPlayer.Content(livetv)</visible>
-				</control>
 				<control type="radiobutton" id="804">
 					<label>$LOCALIZE[31092]</label>
 					<include name="OSDButton">
@@ -184,13 +161,21 @@
 					<onclick>PlayerControl(ShowVideoMenu)</onclick>
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
-				<control type="radiobutton" id="70043">
+				<control type="radiobutton" id="703">
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/teletext.png"/>
 					</include>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
 					<onclick>ActivateWindow(Teletext)</onclick>
 					<visible>VideoPlayer.Content(livetv)</visible>
+				</control>
+				<control type="radiobutton" id="70043">
+					<label>$LOCALIZE[31091]</label>
+					<include name="OSDButton">
+						<param name="texture" value="osd/fullscreen/buttons/settings.png"/>
+					</include>
+					<onclick>Close</onclick>
+					<onclick>ActivateWindow(1106)</onclick>
 				</control>
 			</control>
 			<control type="group">
