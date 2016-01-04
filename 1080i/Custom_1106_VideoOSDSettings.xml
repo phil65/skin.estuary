@@ -44,17 +44,11 @@
 					<onclick>ActivateWindow(AudioDSPManager)</onclick>
 					<visible>system.getbool(audiooutput.dspaddonsenabled)</visible>
 				</item>
-				<item>
-					<label>$LOCALIZE[15047]</label>
-					<onclick>Dialog.Close(all)</onclick>
-					<onclick>ActivateWindow(OSDAudioDSPSettings)</onclick>
-					<visible>system.getbool(audiooutput.dspaddonsenabled)</visible>
-				</item>
-				<item>
+<!-- 				<item>
 					<label>$LOCALIZE[209]</label>
 					<onclick>CycleSubtitle</onclick>
 					<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-				</item>
+				</item> -->
 				<item>
 					<label>$LOCALIZE[31091]</label>
 					<onclick>Dialog.Close(all)</onclick>

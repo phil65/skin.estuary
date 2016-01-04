@@ -169,6 +169,14 @@
 					<onclick>ActivateWindow(Teletext)</onclick>
 					<visible>VideoPlayer.Content(livetv)</visible>
 				</control>
+				<control type="radiobutton" id="704">
+					<include name="OSDButton">
+						<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
+					</include>
+					<label>$LOCALIZE[209]</label>
+					<onclick condition="VideoPlayer.HasSubtitles">showsubtitles</onclick>
+					<visible>VideoPlayer.HasSubtitles</visible>
+				</control>
 				<control type="radiobutton" id="70043">
 					<label>$LOCALIZE[31091]</label>
 					<include name="OSDButton">
