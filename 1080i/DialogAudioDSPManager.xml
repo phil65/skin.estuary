@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<zorder>1</zorder>
-	<defaultcontrol>9000</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
 	<coordinates>
-		<left>100</left>
+		<left>80</left>
 		<top>140</top>
 	</coordinates>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1720" />
+			<param name="DialogBackgroundWidth" value="1760" />
 			<param name="DialogBackgroundHeight" value="700" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[15020]" />
 			<param name="DialogHeaderId" value="2" />
@@ -140,20 +140,26 @@
 			<itemgap>-20</itemgap>
 			<onleft>61</onleft>
 			<onright>9000</onright>
-			<include name="DefaultDialogButton">
-				<param name="id" value="22" />
-				<param name="label" value="$LOCALIZE[15064]" />
-				<param name="width" value="430" />
-			</include>
+			<control type="radiobutton" id="22">
+				<width>470</width>
+				<height>90</height>
+				<label>$LOCALIZE[15064]</label>
+				<font>font12_title</font>
+				<textcolor>white</textcolor>
+				<textoffsetx>40</textoffsetx>
+				<align>left</align>
+				<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+			</control>
 			<include name="DefaultDialogButton">
 				<param name="id" value="23" />
 				<param name="label" value="$LOCALIZE[14070]" />
-				<param name="width" value="430" />
+				<param name="width" value="470" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="24" />
 				<param name="label" value="$LOCALIZE[15066]" />
-				<param name="width" value="430" />
+				<param name="width" value="470" />
 			</include>
 		</control>
 		<control type="textbox">
