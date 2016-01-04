@@ -52,15 +52,7 @@
 					<top>0</top>
 					<width>330</width>
 					<height>130</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
-					<visible>!Control.HasFocus(9000)</visible>
-				</control>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>330</width>
-					<height>130</height>
-					<visible>Control.HasFocus(9000)</visible>
+					<animation effect="fade" start="100" end="20" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 					<texture border="40">buttons/dialogbutton-fo.png</texture>
 				</control>
 				<control type="label">
