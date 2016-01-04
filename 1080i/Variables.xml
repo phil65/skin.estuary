@@ -79,6 +79,10 @@
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
+	<variable name="FanartImageVar">
+		<value condition="StringCompare(ListItem.Label,..)">DefaultBackFanart.png</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>
 	<variable name="MusicInfoListHeaderVar">
 		<value condition="Container.Content(albums)">$LOCALIZE[31037]</value>
 		<value>$LOCALIZE[21888]</value>

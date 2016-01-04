@@ -53,8 +53,8 @@
 							<top>12</top>
 							<width>1242</width>
 							<height>702</height>
-							<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
-							<aspectratio align="right">scale</aspectratio>
+							<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[FanartImageVar]</texture>
+							<aspectratio align="center">scale</aspectratio>
 						</control>
 						<control type="image">
 							<left>475</left>
@@ -127,8 +127,8 @@
 									<top>12</top>
 									<width>1242</width>
 									<height>702</height>
-									<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
-									<aspectratio align="right">scale</aspectratio>
+									<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[FanartImageVar]</texture>
+									<aspectratio align="center">scale</aspectratio>
 								</control>
 								<control type="image">
 									<left>475</left>
