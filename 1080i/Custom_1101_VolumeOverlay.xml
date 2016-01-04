@@ -18,7 +18,7 @@
 				<top>-11</top>
 				<width>100</width>
 				<height>100</height>
-				<texture>dialogs/volume/volume-back.png</texture>
+				<texture colordiffuse="button_focus">dialogs/extendedprogress/loading-back.png</texture>
 				<animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="!Window.IsVisible(volumebar)">Conditional</animation>
 			</control>
 			<control type="image">
