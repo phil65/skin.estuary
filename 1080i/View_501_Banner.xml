@@ -3,6 +3,7 @@
 	<include name="View_501_Banner">
 		<include name="UpDownArrows">
 			<param name="container_id" value="501" />
+			<param name="visible" value="!System.HasModalDialog" />
 		</include>
 		<control type="group">
 			<include>OpenClose_Right</include>
