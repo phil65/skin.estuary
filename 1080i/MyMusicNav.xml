@@ -79,7 +79,7 @@
 			</control>
 		</control>
 		<include name="TopBar">
-			<param name="breadcrumbs_label" value="$VAR[MusicBreadcrumbsVar]" />
+			<param name="breadcrumbs_label" value="$LOCALIZE[2]" />
 			<param name="breadcrumbs_icon" value="icons/settings/music.png" />
 		</include>
 		<include>BottomBar</include>

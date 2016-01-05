@@ -69,11 +69,6 @@
 		<value condition="Control.IsVisible(3)">[COLOR=button_focus]$INFO[Container(3).NumItems][/COLOR] $LOCALIZE[31036] - $LOCALIZE[31035] [COLOR=button_focus]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR]</value>
 		<value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31036] - $LOCALIZE[31035] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
 	</variable>
-	<variable name="MusicBreadcrumbsVar">
-		<!-- <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
-		 -->
-		<value>$LOCALIZE[10516]</value>
-	</variable>
 	<variable name="BannerArtVar">
 		<value condition="StringCompare(ListItem.Label,..)">DefaultBackBanner.png</value>
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
