@@ -1113,7 +1113,7 @@
 					<animation effect="fade" start="0" end="100" time="200" delay="500" reversible="true">VisibleChange</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
-				<control type="image">
+				<control type="button">
 					<top>10</top>
 					<width>80</width>
 					<height>80</height>
@@ -1121,8 +1121,9 @@
 					<animation effect="fade" start="0" end="100" time="250" reversible="true" delay="200" condition="!Control.IsVisible(23000)">Conditional</animation>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-					<aspectratio align="center">keep</aspectratio>
-					<texture colordiffuse="button_focus">$PARAM[breadcrumbs_icon]</texture>
+					<onclick>Container.Update(" ",replace)</onclick>
+					<texturefocus colordiffuse="button_focus">$PARAM[breadcrumbs_icon]</texturefocus>
+					<texturenofocus colordiffuse="button_focus">$PARAM[breadcrumbs_icon]</texturenofocus>
 				</control>
 				<control type="grouplist">
 					<left>85</left>
