@@ -66,6 +66,7 @@
 					<param name="posx" value="1045" />
 					<param name="up_posy" value="130" />
 					<param name="down_posy" value="910" />
+					<param name="visible" value="!System.HasModalDialog" />
 				</include>
 				<control type="grouplist" id="600">
 					<left>442</left>

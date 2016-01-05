@@ -150,6 +150,7 @@
 			<param name="posx" value="1141" />
 			<param name="up_posy" value="105" />
 			<param name="down_posy" value="940" />
+			<param name="visible" value="!System.HasModalDialog" />
 		</include>
 		<control type="image">
 			<description>Section header image</description>

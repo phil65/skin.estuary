@@ -3,6 +3,7 @@
 	<include name="View_50_List">
 		<include name="UpDownArrows">
 			<param name="container_id" value="50" />
+			<param name="visible" value="!System.HasModalDialog" />
 		</include>
 		<control type="group">
 			<include>OpenClose_Right</include>

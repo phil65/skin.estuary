@@ -204,6 +204,7 @@
 				<param name="posx" value="936" />
 				<param name="up_posy" value="132" />
 				<param name="down_posy" value="912" />
+				<param name="visible" value="!System.HasModalDialog" />
 			</include>
 		</control>
 		<include>PVRSideBar</include>

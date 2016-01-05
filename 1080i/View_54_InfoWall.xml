@@ -334,6 +334,7 @@
 	<include name="View_54_InfoWall">
 		<include name="UpDownArrows">
 			<param name="container_id" value="54" />
+			<param name="visible" value="!System.HasModalDialog" />
 		</include>
 		<control type="group">
 			<include>OpenClose_Right</include>

@@ -386,6 +386,7 @@
 	<include name="View_500_SmallThumb">
 		<include name="UpDownArrows">
 			<param name="container_id" value="500" />
+			<param name="visible" value="!System.HasModalDialog" />
 		</include>
 		<control type="group">
 			<include>OpenClose_Right</include>

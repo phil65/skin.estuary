@@ -889,6 +889,7 @@
 		<param name="up_posy">134</param>
 		<param name="down_posy">910</param>
 		<param name="posx">936</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="button" id="$PARAM[container_id]588">
 				<left>$PARAM[posx]</left>
@@ -903,6 +904,7 @@
 				<onclick>SetFocus($PARAM[container_id])</onclick>
 				<onclick>PageDown</onclick>
 				<visible>Container($PARAM[container_id]).HasNext + Control.IsVisible($PARAM[container_id])</visible>
+				<visible>$PARAM[visible]</visible>
 			</control>
 			<control type="button" id="$PARAM[container_id]589">
 				<left>$PARAM[posx]</left>
@@ -917,6 +919,7 @@
 				<onclick>SetFocus($PARAM[container_id])</onclick>
 				<onclick>PageUp</onclick>
 				<visible>Container($PARAM[container_id]).HasPrevious + Control.IsVisible($PARAM[container_id])</visible>
+				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
 	</include>
