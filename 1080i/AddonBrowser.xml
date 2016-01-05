@@ -13,7 +13,7 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files)</visible>
 			<include>Visible_Left</include>
 			<include>ListThumbInfoPanel</include>
