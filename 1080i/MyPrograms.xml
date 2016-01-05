@@ -26,6 +26,19 @@
 				<include name="MediaMenuListCommon">
 					<param name="viewtype_button_vis" value="False" />
 				</include>
+				<control type="label" id="203">
+					<description>Actions</description>
+					<include>MediaMenuLabelCommon</include>
+					<label>$LOCALIZE[31020]</label>
+					<visible>Control.IsVisible(621)</visible>
+				</control>
+				<control type="button" id="621">
+					<description>Get more</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>$LOCALIZE[21452]</label>
+					<onclick>ActivateWindow(addonbrowser,addons://more/executable/,return)</onclick>
+					<visible>Container.Content(addons)</visible>
+				</control>
 			</control>
 			<include>MediaMenuNowPlaying</include>
 		</control>

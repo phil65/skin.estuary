@@ -68,6 +68,13 @@
 					<onclick>ActivateWindow(musicplaylist)</onclick>
 					<visible>IntegerGreaterThan(Playlist.Length(music),0)</visible>
 				</control>
+				<control type="button" id="621">
+					<description>Get more</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>$LOCALIZE[21452]</label>
+					<onclick>ActivateWindow(addonbrowser,addons://more/audio/,return)</onclick>
+					<visible>Container.Content(addons)</visible>
+				</control>
 				<include>MediaMenuNowPlaying</include>
 			</control>
 		</control>
