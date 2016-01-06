@@ -379,21 +379,42 @@
 					<height>746</height>
 					<imagepath>$PARAM[image_path]</imagepath>
 				</control>
-				<control type="button" id="$PARAM[button_id]">
-					<top>610</top>
+				<control type="image">
+					<top>571</top>
 					<left>528</left>
 					<width>1280</width>
-					<height>180</height>
-					<wrapmultiline>true</wrapmultiline>
-					<label>$PARAM[button_label]</label>
-					<textoffsetx>30</textoffsetx>
-					<onclick>$PARAM[button_onclick]</onclick>
+					<height>206</height>
+					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+				</control>
+				<control type="grouplist" id="$PARAM[button_id]567">
+					<top>680</top>
+					<left>528</left>
+					<width>1280</width>
+					<orientation>horizontal</orientation>
 					<align>center</align>
 					<onleft>9000</onleft>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+					<control type="button" id="$PARAM[button_id]">
+						<width>auto</width>
+						<height>110</height>
+						<label>$PARAM[button_label]</label>
+						<textoffsetx>40</textoffsetx>
+						<onclick>$PARAM[button_onclick]</onclick>
+						<align>center</align>
+						<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
+						<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+						<visible>$PARAM[visible]</visible>
+					</control>
+				</control>
+				<control type="textbox" id="$PARAM[button_id]">
+					<top>590</top>
+					<left>558</left>
+					<width>1220</width>
+					<height>180</height>
+					<label>$PARAM[text_label]</label>
+					<align>center</align>
+					<font>font12</font>
 					<visible>$PARAM[visible]</visible>
 				</control>
 			</control>
