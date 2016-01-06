@@ -27,10 +27,42 @@
 			<animation effect="fade" start="100" end="75" time="0" condition="!IsEmpty(Player.Art(fanart)) | !IsEmpty(Visualisation.Name)">Conditional</animation>
 		</control>
 		<control type="group">
-			<top>-30</top>
-			<width>1920</width>
-			<height>226</height>
+			<left>8</left>
+			<top>502</top>
+			<include>OpenClose_Left</include>
+			<include>Visible_Left</include>
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
+			<control type="image">
+				<left>48</left>
+				<top>-360</top>
+				<width>530</width>
+				<height>527</height>
+				<texture border="20" colordiffuse="button_focus">thumbs/cd_shadow_glow.png</texture>
+				<animation effect="fade" start="60" end="80" time="2000" pulse="true" condition="true">conditional</animation>
+			</control>
+			<control type="group">
+				<left>25</left>
+				<top>-330</top>
+				<control type="image">
+					<width>470</width>
+					<height>470</height>
+					<fadetime>400</fadetime>
+					<texture fallback="DefaultAlbumCover.png" border="2">$INFO[MusicPlayer.Cover]</texture>
+					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+					<bordersize>4</bordersize>
+				</control>
+				<control type="image">
+					<width>470</width>
+					<height>470</height>
+					<aspectratio scalediffuse="false" align="right">scale</aspectratio>
+					<texture diffuse="thumbs/cdcover_mask2.png">thumbs/cdcover_glass_noreflect.png</texture>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<top>-30</top>
+			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
+			<include>OpenClose_Right</include>
 			<animation type="Visible">
 				<effect type="fade" time="320" end="100" />
 				<effect type="slide" time="320" start="0,226" end="0,0" tween="cubic" />
@@ -47,40 +79,8 @@
 				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="group">
-				<left>8</left>
-				<top>532</top>
-				<include>OpenClose_Left</include>
-				<control type="image">
-					<left>48</left>
-					<top>-360</top>
-					<width>530</width>
-					<height>527</height>
-					<texture border="20" colordiffuse="button_focus">thumbs/cd_shadow_glow.png</texture>
-					<animation effect="fade" start="60" end="80" time="2000" pulse="true" condition="true">conditional</animation>
-				</control>
-				<control type="group">
-					<left>25</left>
-					<top>-330</top>
-					<control type="image">
-						<width>470</width>
-						<height>470</height>
-						<fadetime>400</fadetime>
-						<texture fallback="DefaultAlbumCover.png" border="2">$INFO[MusicPlayer.Cover]</texture>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
-					</control>
-					<control type="image">
-						<width>470</width>
-						<height>470</height>
-						<aspectratio scalediffuse="false" align="right">scale</aspectratio>
-						<texture diffuse="thumbs/cdcover_mask2.png">thumbs/cdcover_glass_noreflect.png</texture>
-					</control>
-				</control>
-			</control>
-			<control type="group">
 				<left>80</left>
 				<top>717</top>
-				<include>OpenClose_Left</include>
 				<control type="label">
 					<top>0</top>
 					<width>1230</width>
@@ -139,7 +139,7 @@
 					<top>990</top>
 					<width>1250</width>
 					<align>right</align>
-					<height>120</height>
+					<height>122</height>
 					<label>[B][UPPERCASE]$LOCALIZE[31024][/UPPERCASE][/B][CR]$INFO[MusicPlayer.Offset(1).Title][COLOR grey]$INFO[MusicPlayer.Offset(1).Artist, - ,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(2).Title][COLOR grey]$INFO[MusicPlayer.Offset(2).Artist, - ,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR][CR]$INFO[MusicPlayer.Offset(3).Title][COLOR grey]$INFO[MusicPlayer.Offset(3).Artist, - ,][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
 					<textcolor>button_focus</textcolor>
 					<font>font12</font>
