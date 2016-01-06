@@ -51,6 +51,7 @@
 				<texture>colors/black.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
+				<animation effect="fade" start="100" end="0" time="100" delay="300" condition="Window.IsActive(movieinformation)" reversible="false">Conditional</animation>
 			</control>
 			<control type="image">
 				<left>4</left>
