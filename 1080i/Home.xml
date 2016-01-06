@@ -996,14 +996,16 @@
 						<item id="5">
 							<label>$LOCALIZE[342]</label>
 							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(movies.watched)]$INFO[Window(home).Property(movies.Count), / ]</label2>
-							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+							<onclick condition="Library.HasContent(movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
+							<onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,Files,return)</onclick>
 							<thumb>icons/home/movies.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
 						</item>
 						<item id="6">
 							<label>$LOCALIZE[20343]</label>
 							<label2>$LOCALIZE[16102]: $INFO[Window(home).Property(episodes.watched)]$INFO[Window(home).Property(episodes.Count), / ]</label2>
-							<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+							<onclick condition="Library.HasContent(tvshows)">ActivateWindow(Videos,TVShowTitles,return)</onclick>
+							<onclick condition="!Library.HasContent(tvshows)">ActivateWindow(Videos,Files,return)</onclick>
 							<thumb>icons/home/tv.png</thumb>
 							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
 						</item>
