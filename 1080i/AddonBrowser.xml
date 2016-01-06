@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">52</defaultcontrol>
 	<backgroundcolor>FF000000</backgroundcolor>
-	<views>52,55</views>
+	<views>50,52,55</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include>DefaultBackground</include>
@@ -45,6 +45,13 @@
 					<description>Check for repository updates</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[24034]</label>
+				</control>
+				<control type="button" id="620">
+					<description>Go-to-root button</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>$LOCALIZE[20128]</label>
+					<onclick>Container.Update(" ",replace)</onclick>
+					<visible>!IsEmpty(Container.FolderPath)</visible>
 				</control>
 				<control type="button" id="5">
 					<description>Addon settings</description>
