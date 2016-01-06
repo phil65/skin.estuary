@@ -16,15 +16,15 @@
 				<visible>Control.IsVisible(502)</visible>
 				<include>Visible_Right</include>
 				<control type="image">
-					<left>-26</left>
+					<left>-16</left>
 					<top>-10</top>
-					<width>1773</width>
+					<width>1754</width>
 					<height>758</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 					<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(movieinformation) | Window.IsActive(addoninformation)">Conditional</animation>
 				</control>
 				<control type="fixedlist" id="502">
-					<left>1</left>
+					<left>11</left>
 					<top>5</top>
 					<width>1720</width>
 					<height>732</height>
@@ -51,7 +51,7 @@
 						<control type="image">
 							<left>475</left>
 							<top>12</top>
-							<width>1242</width>
+							<width>1225</width>
 							<height>702</height>
 							<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[FanartImageVar]</texture>
 							<aspectratio align="center">scale</aspectratio>
@@ -64,7 +64,7 @@
 						<control type="image">
 							<left>475</left>
 							<top>634</top>
-							<width>1242</width>
+							<width>1225</width>
 							<height>80</height>
 							<texture colordiffuse="button_focus">colors/white.png</texture>
 						</control>
@@ -130,7 +130,7 @@
 								<control type="image">
 									<left>475</left>
 									<top>12</top>
-									<width>1242</width>
+									<width>1225</width>
 									<height>702</height>
 									<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[FanartImageVar]</texture>
 									<aspectratio align="center">scale</aspectratio>
@@ -143,7 +143,7 @@
 								<control type="image">
 									<left>475</left>
 									<top>634</top>
-									<width>1242</width>
+									<width>1225</width>
 									<height>80</height>
 									<visible>!Control.HasFocus(502)</visible>
 									<animation effect="fade" time="200">VisibleChange</animation>
@@ -152,7 +152,7 @@
 								<control type="image">
 									<left>475</left>
 									<top>634</top>
-									<width>1242</width>
+									<width>1225</width>
 									<height>80</height>
 									<visible>Control.HasFocus(502)</visible>
 									<animation effect="fade" start="0" end="80" time="0" condition="true">Conditional</animation>
