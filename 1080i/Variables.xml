@@ -251,6 +251,10 @@
 		<value condition="Container.Content(episodes)">$LOCALIZE[20343]</value>
 		<value>$LOCALIZE[3]</value>
 	</variable>
+	<variable name="BreadcrumbsPVRTimerVar">
+		<value condition="Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)">$LOCALIZE[19138]</value>
+		<value>$LOCALIZE[19040]</value>
+	</variable>
 	<variable name="RepeatButtonColordiffuseVar">
 		<value condition="Control.HasFocus(704)">button_focus</value>
 		<value>FFFFFFFF</value>

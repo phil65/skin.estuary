@@ -181,7 +181,7 @@
 		</control>
 		<include>PVRSideBar</include>
 		<include name="TopBar">
-			<param name="breadcrumbs_label" value="$LOCALIZE[19040]" />
+			<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRTimerVar]" />
 			<param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
 		</include>
 		<include>BottomBar</include>
