@@ -35,6 +35,7 @@
 	<variable name="FullScreenInfoTextBoxVar">
 		<value condition="Control.HasFocus(5552)">$INFO[VideoPlayer.Duration,Duration: [B],[/B][CR]]</value>
 		<value condition="Control.HasFocus(5553)">$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</value>
+		<value condition="Control.HasFocus(5555)">$INFO[VideoPlayer.NextPlot]</value>
 		<value>$INFO[VideoPlayer.CastAndRole]</value>
 	</variable>
 	<variable name="NowPlayingIconVar">

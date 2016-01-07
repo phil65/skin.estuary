@@ -113,6 +113,15 @@
 					<label>$LOCALIZE[206]</label>
 					<visible>!IsEmpty(VideoPlayer.CastAndRole)</visible>
 				</control>
+				<control type="button" id="5555">
+					<left>0</left>
+					<top>0</top>
+					<width>auto</width>
+					<height>100</height>
+					<textoffsetx>40</textoffsetx>
+					<label>$LOCALIZE[19031]</label>
+				</control>
+
 			</control>
 			<!-- Progress -->
 			<control type="group">
