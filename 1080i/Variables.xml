@@ -18,6 +18,10 @@
 		<value condition="VideoPlayer.Content(LiveTV)">$INFO[Player.Title]</value>
 		<value>$INFO[Player.Time]$INFO[Player.Title, - ]</value>
 	</variable>
+	<variable name="AutoCompletionContentVar">
+		<value condition="!System.HasAddon(plugin.program.autocompletion)">-</value>
+		<value>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
+	</variable>
 	<variable name="NowPlayingSublabelVar">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TvShowTitle]</value>
 		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ]</value>
