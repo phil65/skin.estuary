@@ -38,6 +38,7 @@
 				<param name="onright_id" value="21" />
 				<param name="width" value="700" />
 				<param name="bg_width" value="740" />
+				<param name="header_haspath" value="true" />
 			</include>
 		</control>
 		<control type="group">
@@ -53,6 +54,7 @@
 				<param name="onright_id" value="20" />
 				<param name="width" value="700" />
 				<param name="bg_width" value="740" />
+				<param name="header_haspath" value="true" />
 			</include>
 		</control>
 		<include name="TopBar">

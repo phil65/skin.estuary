@@ -376,127 +376,133 @@
 		</control>
 	</include>
 	<include name="FileManagerPanel">
-		<control type="image">
-			<left>-20</left>
-			<top>-20</top>
-			<width>$PARAM[bg_width]</width>
-			<height>742</height>
-			<texture border="22">dialogs/dialog-bg.png</texture>
-		</control>
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>$PARAM[width]</width>
-			<height>70</height>
-			<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
-		</control>
-		<control type="label" id="$PARAM[header_id]">
-			<textoffsetx>40</textoffsetx>
-			<top>0</top>
-			<width>$PARAM[width]</width>
-			<height>70</height>
-			<font>font13_title</font>
-			<align>left</align>
-			<aligny>center</aligny>
-			<label>$PARAM[header_label]</label>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="list" id="$PARAM[list_id]">
-			<left>0</left>
-			<top>72</top>
-			<width>$PARAM[width]</width>
-			<height>630</height>
-			<onleft>$PARAM[onleft_id]</onleft>
-			<onright>$PARAM[scrollbar_id]</onright>
-			<onup>$PARAM[list_id]</onup>
-			<ondown>$PARAM[list_id]</ondown>
-			<pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
-			<scrolltime>200</scrolltime>
-			<focusedlayout height="70">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width]</width>
-					<height>71</height>
-					<texture border="90,3,90,3">lists/separator.png</texture>
-				</control>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width]</width>
-					<height>69</height>
-					<texture>lists/focus.png</texture>
-					<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
-				</control>
-				<control type="label">
-					<left>20</left>
-					<textoffsetx>15</textoffsetx>
-					<top>0</top>
-					<height>70</height>
-					<width>$PARAM[width]</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
-				<control type="label">
-					<left>0</left>
-					<textoffsetx>15</textoffsetx>
-					<top>0</top>
-					<height>70</height>
-					<width>$PARAM[width]</width>
-					<align>right</align>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<label>$INFO[ListItem.Label2]</label>
-					<textcolor>grey</textcolor>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
-			</focusedlayout>
-			<itemlayout height="70">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width]</width>
-					<height>71</height>
-					<texture border="90,3,90,3">lists/separator.png</texture>
-				</control>
-				<control type="label">
-					<left>20</left>
-					<textoffsetx>15</textoffsetx>
-					<top>0</top>
-					<height>70</height>
-					<width>$PARAM[width]</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
-				<control type="label">
-					<left>0</left>
-					<textoffsetx>15</textoffsetx>
-					<top>0</top>
-					<height>70</height>
-					<width>$PARAM[width]</width>
-					<align>right</align>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<label>$INFO[ListItem.Label2]</label>
-					<textcolor>grey</textcolor>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
-			</itemlayout>
-		</control>
-		<control type="scrollbar" id="$PARAM[scrollbar_id]">
-			<left>$PARAM[width]</left>
-			<animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
-			<top>0</top>
-			<width>12</width>
-			<height>702</height>
-			<onleft>$PARAM[list_id]</onleft>
-			<onright>$PARAM[onright_id]</onright>
-			<orientation>vertical</orientation>
-		</control>
+		<param name="header_haspath">false</param>
+		<definition>
+			<control type="image">
+				<left>-20</left>
+				<top>-20</top>
+				<width>$PARAM[bg_width]</width>
+				<height>742</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>$PARAM[width]</width>
+				<height>70</height>
+				<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
+			</control>
+			<control type="label" id="$PARAM[header_id]">
+				<textoffsetx>40</textoffsetx>
+				<top>0</top>
+				<width>$PARAM[width]</width>
+				<height>70</height>
+				<font>font13_title</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$PARAM[header_label]</label>
+				<haspath>$PARAM[header_haspath]</haspath>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="list" id="$PARAM[list_id]">
+				<left>0</left>
+				<top>72</top>
+				<width>$PARAM[width]</width>
+				<height>630</height>
+				<onleft>$PARAM[onleft_id]</onleft>
+				<onright>$PARAM[scrollbar_id]</onright>
+				<onup>$PARAM[list_id]</onup>
+				<ondown>$PARAM[list_id]</ondown>
+				<pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<focusedlayout height="70">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>$PARAM[width]</width>
+						<height>71</height>
+						<texture border="90,3,90,3">lists/separator.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>$PARAM[width]</width>
+						<height>69</height>
+						<texture>lists/focus.png</texture>
+						<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
+					</control>
+					<control type="label">
+						<left>20</left>
+						<textoffsetx>15</textoffsetx>
+						<top>0</top>
+						<height>70</height>
+						<width>$PARAM[width]</width>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<textoffsetx>15</textoffsetx>
+						<top>0</top>
+						<height>70</height>
+						<width>$PARAM[width]</width>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.Label2]</label>
+						<textcolor>grey</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+				</focusedlayout>
+				<itemlayout height="70">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>$PARAM[width]</width>
+						<height>71</height>
+						<texture border="90,3,90,3">lists/separator.png</texture>
+					</control>
+					<control type="label">
+						<left>20</left>
+						<textoffsetx>15</textoffsetx>
+						<top>0</top>
+						<height>70</height>
+						<width>$PARAM[width]</width>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<textoffsetx>15</textoffsetx>
+						<top>0</top>
+						<height>70</height>
+						<width>$PARAM[width]</width>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<label>$INFO[ListItem.Label2]</label>
+						<textcolor>grey</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+				</itemlayout>
+			</control>
+			<control type="scrollbar" id="$PARAM[scrollbar_id]">
+				<left>$PARAM[width]</left>
+				<animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
+				<top>0</top>
+				<width>12</width>
+				<height>702</height>
+				<onleft>$PARAM[list_id]</onleft>
+				<onright>$PARAM[onright_id]</onright>
+				<orientation>vertical</orientation>
+			</control>
+		</definition>
 	</include>
 	<include name="SettingsPanel">
 		<control type="panel" id="9000">
