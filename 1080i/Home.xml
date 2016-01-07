@@ -139,6 +139,7 @@
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 						<param name="button_id" value="5500"/>
 						<param name="visible" value="!Library.HasContent(movies)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMovieButton)"/>
 					</include>
 				</control>
 			</control>
@@ -231,6 +232,7 @@
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 						<param name="button_id" value="6400"/>
 						<param name="visible" value="!Library.HasContent(tvshows)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVShowButton)"/>
 					</include>
 				</control>
 			</control>
@@ -334,6 +336,7 @@
 						<param name="button_id" value="7600"/>
 						<param name="onup_id" value="7500"/>
 						<param name="visible" value="!Library.HasContent(music)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicButton)"/>
 					</include>
 				</control>
 			</control>
@@ -475,6 +478,7 @@
 						<param name="button_id" value="11300"/>
 						<param name="onup_id" value="11200"/>
 						<param name="visible" value="!IntegerGreaterThan(Container(11200).NumItems,0) + !IntegerGreaterThan(Container(11100).NumItems,0)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoVideosButton)"/>
 					</include>
 				</control>
 			</control>
@@ -777,6 +781,7 @@
 						<param name="button_onclick" value="ActivateWindow(pictures)"/>
 						<param name="button_id" value="4100"/>
 						<param name="visible" value="true"/>
+						<param name="visible_2" value="False"/>
 					</include>
 				</control>
 			</control>
