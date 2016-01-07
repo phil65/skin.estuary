@@ -818,8 +818,7 @@
 				<ondown>9000</ondown>
 				<onright>2000</onright>
 				<aligny>center</aligny>
-				<onclick condition="System.hasAddon(script.globalsearch)">RunScript(script.globalsearch)</onclick>
-				<onclick condition="!System.hasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
+				<onclick>ActivateWindow(1107)</onclick>
 				<font>font14</font>
 				<label>-</label>
 				<radioposx>338</radioposx>
