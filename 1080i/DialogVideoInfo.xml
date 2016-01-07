@@ -386,6 +386,10 @@
 				<visible>Container(50).HasNext + Control.HasFocus(50)</visible>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Container.Content(movies) | Container.Content(episodes)</visible>
+			<include>MediaFlags</include>
+		</control>
 		<include name="InfoDialogTopBarInfo">
 			<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
 			<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
