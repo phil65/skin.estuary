@@ -2,28 +2,26 @@
 <window>
 	<defaultcontrol>5</defaultcontrol>
 	<coordinates>
-		<left>460</left>
-		<top>75</top>
+		<left>320</left>
+		<top>165</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include name="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1000" />
-			<param name="DialogBackgroundHeight" value="830" />
+			<param name="DialogBackgroundWidth" value="1280" />
+			<param name="DialogBackgroundHeight" value="750" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[20043]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
 		<control type="grouplist" id="5">
 			<description>control area</description>
-			<left>30</left>
-			<top>70</top>
+			<left>20</left>
+			<top>80</top>
 			<width>940</width>
 			<height>660</height>
 			<itemgap>-20</itemgap>
-			<onleft>28</onleft>
-			<onright>29</onright>
-			<onup>28</onup>
-			<ondown>28</ondown>
+			<onleft>9001</onleft>
+			<onright>9001</onright>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
@@ -47,14 +45,14 @@
 			<include>DefaultSettingLabel</include>
 		</control>
 		<control type="grouplist" id="9001">
-			<left>0</left>
-			<top>745</top>
-			<orientation>horizontal</orientation>
-			<width>1000</width>
-			<align>center</align>
+			<left>960</left>
+			<top>82</top>
+			<orientation>vertical</orientation>
+			<width>500</width>
+			<align>left</align>
 			<itemgap>-10</itemgap>
-			<onup>5</onup>
-			<ondown>5</ondown>
+			<onleft>5</onleft>
+			<onright>5</onright>
 			<include name="DefaultDialogButton">
 				<param name="id" value="28" />
 				<param name="label" value="$LOCALIZE[186]" />
