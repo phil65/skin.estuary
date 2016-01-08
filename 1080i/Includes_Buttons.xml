@@ -77,6 +77,7 @@
 		<param name="wrapmultiline">false</param>
 		<param name="font">font12_title</param>
 		<param name="onclick"></param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="button" id="$PARAM[id]">
 				<width>$PARAM[width]</width>
@@ -90,6 +91,7 @@
 				<align>center</align>
 				<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
 	</include>

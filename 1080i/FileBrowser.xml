@@ -39,6 +39,7 @@
 				<include name="DefaultDialogButton">
 					<param name="id" value="416" />
 					<param name="label" value="$LOCALIZE[749]" />
+					<param name="visible" value="Control.IsEnabled(416)" />
 				</include>
 			</control>
 			<control type="image">
