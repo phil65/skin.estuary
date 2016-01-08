@@ -364,7 +364,9 @@
 						<param name="item1_onclick" value="ActivateWindow(addonbrowser,root)" />
 						<param name="item1_icon" value="add-ons.png" />
 						<param name="item1_label" value="$LOCALIZE[10040]" />
-						<param name="item2_vis" value="False" />
+						<param name="item2_onclick" value="ActivateWindow(systemsettings,addons)" />
+						<param name="item2_icon" value="settings.png" />
+						<param name="item2_label" value="$LOCALIZE[1045]" />
 						<param name="item3_vis" value="False" />
 						<param name="item4_vis" value="False" />
 						<param name="item5_vis" value="False" />
