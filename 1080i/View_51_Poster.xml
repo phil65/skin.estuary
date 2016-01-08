@@ -18,23 +18,6 @@
 				<param name="right_posx" value="1849" />
 				<param name="posy" value="170" />
 			</include>
-			<control type="scrollbar" id="5199">
-				<left>110</left>
-				<top>710</top>
-				<width>1700</width>
-				<height>10</height>
-				<texturesliderbackground colordiffuse="00FFFFFF">colors/white.png</texturesliderbackground>
-				<animation effect="zoom" start="100,100" end="100,120" time="150" center="110,710" tween="cubic" easing="inout" reversible="true">Focus</animation>
-				<animation effect="zoom" start="100,120" end="100,100" time="75" center="110,710" tween="cubic" easing="inout" reversible="true">UnFocus</animation>
-				<onup>51</onup>
-				<ondown>51</ondown>
-				<orientation>horizontal</orientation>
-				<visible>Control.IsVisible(51)</visible>
-				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
-			</control>
 			<control type="group">
 				<visible>Control.IsVisible(51)</visible>
 				<include>Visible_Right</include>
