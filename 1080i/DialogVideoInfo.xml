@@ -55,7 +55,7 @@
 					<font>font12</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]: [/COLOR]]</label>
-					<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
+					<onclick condition="System.hasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
 					<visible>!IsEmpty(ListItem.Writer)</visible>
 				</control>
 				<control type="button" id="136">
