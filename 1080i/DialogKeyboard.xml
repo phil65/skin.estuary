@@ -532,23 +532,50 @@
 					</control>
 				</control>
 			</control>
-				<control type="panel" id="9010">
-					<left>20</left>
-					<top>665</top>
-					<width>1560</width>
-					<height>400</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>vertical</orientation>
-					<onleft>9010</onleft>
-					<onright>9010</onright>
-					<onup>32</onup>
-					<ondown>noop</ondown>
-					<itemlayout width="520" height="60">
+			<control type="panel" id="9010">
+				<left>20</left>
+				<top>665</top>
+				<width>1560</width>
+				<height>400</height>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<orientation>vertical</orientation>
+				<onleft>9010</onleft>
+				<onright>9010</onright>
+				<onup>32</onup>
+				<ondown>noop</ondown>
+				<itemlayout width="520" height="60">
+					<control type="image">
+						<top>0</top>
+						<width>520</width>
+						<height>90</height>
+						<texture border="40">buttons/dialogbutton-nofo.png</texture>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>0</top>
+						<width>440</width>
+						<height>90</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font12</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout width="520" height="60">
+					<control type="group">
 						<control type="image">
 							<top>0</top>
 							<width>520</width>
 							<height>90</height>
 							<texture border="40">buttons/dialogbutton-nofo.png</texture>
+						</control>
+						<control type="image">
+							<width>520</width>
+							<height>90</height>
+							<texture border="40">buttons/dialogbutton-fo.png</texture>
+							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="label">
 							<left>40</left>
@@ -561,37 +588,10 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-					</itemlayout>
-					<focusedlayout width="520" height="60">
-						<control type="group">
-							<control type="image">
-								<top>0</top>
-								<width>520</width>
-								<height>90</height>
-								<texture border="40">buttons/dialogbutton-nofo.png</texture>
-							</control>
-							<control type="image">
-								<width>520</width>
-								<height>90</height>
-								<texture border="40">buttons/dialogbutton-fo.png</texture>
-								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-							</control>
-							<control type="label">
-								<left>40</left>
-								<top>0</top>
-								<width>440</width>
-								<height>90</height>
-								<label>$INFO[ListItem.Label]</label>
-								<font>font12</font>
-								<shadowcolor>text_shadow</shadowcolor>
-								<align>left</align>
-								<aligny>center</aligny>
-							</control>
-						</control>
-					</focusedlayout>
-                	<content>$VAR[AutoCompletionContentVar]</content>
-				</control>
+					</control>
+				</focusedlayout>
+               	<content>$VAR[AutoCompletionContentVar]</content>
+			</control>
 		</control>
 		<control type="button" id="502">
 			<description>hide button</description>
