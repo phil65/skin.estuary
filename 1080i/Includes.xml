@@ -1349,7 +1349,9 @@
 					</control>
 				</control>
 				<control type="grouplist">
+					<left>450</left>
 					<top>1005</top>
+					<width>1020</width>
 					<visible>Player.HasMedia</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<itemgap>-3</itemgap>
@@ -1383,7 +1385,7 @@
 						<font>font12</font>
 						<shadowcolor>text_shadow</shadowcolor>
 						<height>25</height>
-						<width>1920</width>
+						<width>1020</width>
 						<aligny>top</aligny>
 						<textoffsetx>300</textoffsetx>
 						<align>center</align>
