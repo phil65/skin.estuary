@@ -30,7 +30,7 @@
 				<width>1610</width>
 				<height>800</height>
 				<texture border="2">dialogs/dialog-bg-solid.png</texture>
-				<visible>IntegerGreaterThan(Container(9010).NumItems,0)</visible>
+				<visible>IntegerGreaterThan(Container(9010).NumItems,0) | Control.IsVisible(313)</visible>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -44,7 +44,7 @@
 				<description>Edit Text</description>
 				<left>50</left>
 				<top>73</top>
-				<width>1290</width>
+				<width>1510</width>
 				<height>100</height>
 				<font>font16</font>
 				<align>center</align>
@@ -532,23 +532,51 @@
 					</control>
 				</control>
 			</control>
-				<control type="panel" id="9010">
-					<left>20</left>
-					<top>665</top>
-					<width>1560</width>
-					<height>400</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>vertical</orientation>
-					<onleft>9010</onleft>
-					<onright>9010</onright>
-					<onup>32</onup>
-					<ondown>noop</ondown>
-					<itemlayout width="520" height="60">
+			<control type="panel" id="9010">
+				<left>20</left>
+				<top>665</top>
+				<width>1560</width>
+				<height>400</height>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<orientation>vertical</orientation>
+				<onleft>9010</onleft>
+				<onright>9010</onright>
+				<onup>32</onup>
+				<ondown>noop</ondown>
+				<visible>!Control.IsVisible(313)</visible>
+				<itemlayout width="520" height="60">
+					<control type="image">
+						<top>0</top>
+						<width>520</width>
+						<height>90</height>
+						<texture border="40">buttons/dialogbutton-nofo.png</texture>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>0</top>
+						<width>440</width>
+						<height>90</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font12</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout width="520" height="60">
+					<control type="group">
 						<control type="image">
 							<top>0</top>
 							<width>520</width>
 							<height>90</height>
 							<texture border="40">buttons/dialogbutton-nofo.png</texture>
+						</control>
+						<control type="image">
+							<width>520</width>
+							<height>90</height>
+							<texture border="40">buttons/dialogbutton-fo.png</texture>
+							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="label">
 							<left>40</left>
@@ -561,37 +589,49 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-					</itemlayout>
-					<focusedlayout width="520" height="60">
-						<control type="group">
-							<control type="image">
-								<top>0</top>
-								<width>520</width>
-								<height>90</height>
-								<texture border="40">buttons/dialogbutton-nofo.png</texture>
-							</control>
-							<control type="image">
-								<width>520</width>
-								<height>90</height>
-								<texture border="40">buttons/dialogbutton-fo.png</texture>
-								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-							</control>
-							<control type="label">
-								<left>40</left>
-								<top>0</top>
-								<width>440</width>
-								<height>90</height>
-								<label>$INFO[ListItem.Label]</label>
-								<font>font12</font>
-								<shadowcolor>text_shadow</shadowcolor>
-								<align>left</align>
-								<aligny>center</aligny>
-							</control>
-						</control>
-					</focusedlayout>
-                	<content>$VAR[AutoCompletionContentVar]</content>
+					</control>
+				</focusedlayout>
+               	<content>$VAR[AutoCompletionContentVar]</content>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(313)</visible>
+				<control type="image">
+					<left>20</left>
+					<top>690</top>
+					<width>1560</width>
+					<height>90</height>
+					<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				</control>
+				<control type="label" id="313">
+					<left>60</left>
+					<top>690</top>
+					<width>1480</width>
+					<height>90</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>font16</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>770</top>
+					<width>1560</width>
+					<height>90</height>
+					<texture border="40">buttons/dialogbutton-nofo.png</texture>
+				</control>
+				<control type="label" id="314">
+					<left>60</left>
+					<top>770</top>
+					<width>1480</width>
+					<height>90</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>font16</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+				</control>
+			</control>
 		</control>
 		<control type="button" id="502">
 			<description>hide button</description>
