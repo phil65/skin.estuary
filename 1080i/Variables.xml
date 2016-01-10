@@ -166,8 +166,9 @@
 		<value condition="Control.HasFocus(70041)">$LOCALIZE[19069]</value>
 		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>
 		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
-		<value condition="ControlGroup(201).HasFocus">$LOCALIZE[31049]</value>
-		<value>$LOCALIZE[31054]</value>
+		<value condition="ControlGroup(201).HasFocus + Player.SeekEnabled">$LOCALIZE[31049]</value>
+		<value condition="Player.SeekEnabled">$LOCALIZE[31054]</value>
+		<value condition="!Player.SeekEnabled">$LOCALIZE[36044]</value>
 	</variable>
 	<variable name="DSPManagerHelpTextVar">
 		<value condition="Control.HasFocus(20)">$INFO[Container(20).ListItem.Property(Description)]</value>
