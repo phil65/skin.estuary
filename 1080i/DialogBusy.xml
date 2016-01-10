@@ -33,6 +33,7 @@
 				<top>503</top>
 				<width>100</width>
 				<height>100</height>
+				<aspectratio>keep</aspectratio>
 				<animation effect="rotate" end="-45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
 				<texture colordiffuse="button_focus">spinner.png</texture>
 				<animation effect="fade" end="100" time="300" delay="200">WindowOpen</animation>
@@ -43,6 +44,7 @@
 				<top>518</top>
 				<width>70</width>
 				<height>70</height>
+				<aspectratio>keep</aspectratio>
 				<animation effect="rotate" end="45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
 				<texture flipx="true" colordiffuse="button_focus">spinner.png</texture>
 				<animation effect="fade" end="100" time="300" delay="200">WindowOpen</animation>
