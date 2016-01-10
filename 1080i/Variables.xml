@@ -11,7 +11,7 @@
 		<value condition="ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer">windows/pvr/timer.png</value>
 	</variable>
 	<variable name="SongTitleVar">
-		<value condition="Stringcompare(ListItem.Label,..)">..</value>
+		<value condition="ListItem.IsParentFolder">..</value>
 		<value>$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="NowPlayingMainlabelVar">
@@ -75,12 +75,12 @@
 		<value condition="Control.IsVisible(6)">[COLOR=button_focus]$INFO[Container(6).NumItems][/COLOR] $LOCALIZE[31036] - $LOCALIZE[31035] [COLOR=button_focus]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR]</value>
 	</variable>
 	<variable name="BannerArtVar">
-		<value condition="StringCompare(ListItem.Label,..)">DefaultBackBanner.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultBackBanner.png</value>
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="FanartImageVar">
-		<value condition="StringCompare(ListItem.Label,..)">DefaultBackFanart.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultBackFanart.png</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="MusicInfoListHeaderVar">
@@ -117,7 +117,7 @@
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</value>
 	</variable>
 	<variable name="PosterVar">
-		<value condition="Stringcompare(Listitem.Label,..)">DefaultFolderBack.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 		<value condition="!IsEmpty(Container.Art(season.poster)) + Container.Content(episodes)">$INFO[Container.Art(season.poster)]</value>
 		<value condition="!IsEmpty(Container.Art(tvshow.poster)) + Container.Content(episodes)">$INFO[Container.Art(tvshow.poster)]</value>
 		<value condition="Container.Content(actors) | Container.Content(directors)">$INFO[Container.ListItem.Art(thumb)]</value>
@@ -125,7 +125,7 @@
 		<value>$INFO[ListItem.Art(poster)]</value>
 	</variable>
 	<variable name="ListPosterVar">
-		<value condition="Stringcompare(Listitem.Label,..)">DefaultFolderBack.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 		<value>$INFO[ListItem.Art(poster)]</value>
 	</variable>
 	<variable name="BannerLabel2Var">
@@ -232,7 +232,7 @@
 	<variable name="ListWatchedIconVar">
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
 <!-- 		<value condition="Container.Content(files) + SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
- -->		<value condition="Stringcompare(ListItem.Label,..)">-</value>
+ -->		<value condition="ListItem.IsParentFolder">-</value>
 		<value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
  -->		<value>OverlayUnwatched.png</value>
 	</variable>
