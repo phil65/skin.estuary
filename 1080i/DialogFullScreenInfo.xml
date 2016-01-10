@@ -113,7 +113,6 @@
 					<textoffsetx>40</textoffsetx>
 					<label>$LOCALIZE[19031]</label>
 				</control>
-
 			</control>
 			<!-- Progress -->
 			<control type="group">
@@ -170,6 +169,7 @@
 			<!-- Item details -->
 			<control type="grouplist" id="66610">
 				<visible>Control.HasFocus(5552)</visible>
+				<left>52</left>
 				<top>-143</top>
 				<control type="label">
 					<description>Duration</description>
