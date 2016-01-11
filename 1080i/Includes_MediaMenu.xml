@@ -310,6 +310,7 @@
 			</control>
 			<control type="edit" id="19">
 				<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+				<visible>!Container.Content()</visible>
 				<textwidth>345</textwidth>
 				<include>MediaMenuItemsCommon</include>
 				<label>$LOCALIZE[137]</label>
