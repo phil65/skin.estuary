@@ -79,7 +79,7 @@
 				<include name="UserRatingCircle">
 					<param name="animation" value="True" />
 				</include>
-				<visible>Control.IsVisible(51) + !Window.IsActive(movieinformation)</visible>
+				<visible>[Control.IsVisible(51) | Control.IsVisible(50)]+ !Window.IsActive(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			</control>
