@@ -36,11 +36,13 @@
 					<description>Hide foreign</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[25001]</label>
+					<visible>Control.IsEnabled(7)</visible>
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Hide incompatible</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[24999]</label>
+					<visible>Control.IsEnabled(8)</visible>
 				</control>
 				<control type="button" id="9">
 					<description>Check for repository updates</description>
