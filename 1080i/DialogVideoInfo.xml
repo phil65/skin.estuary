@@ -85,7 +85,7 @@
 					<font>font12</font>
 					<aligny>center</aligny>
 					<textcolor>button_focus</textcolor>
-					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season] $LOCALIZE[36905] ($INFO[ListItem.Episode] $LOCALIZE[20453])[/COLOR]</label>
+					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season,, $LOCALIZE[36905]]$INFO[ListItem.Episode, (, $LOCALIZE[20453])][/COLOR]</label>
 					<visible>Container.Content(tvshows)</visible>
 				</control>
 			</control>
@@ -282,6 +282,7 @@
 				</control>
 				<control type="group" id="400">
 					<width>262</width>
+					<visible>Control.IsEnabled(7)</visible>
 					<control type="button" id="7">
 						<include name="VideoInfoButtonsCommon">
 							<param name="icon" value="" />
