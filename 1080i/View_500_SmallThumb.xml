@@ -25,9 +25,9 @@
 		</control>
 	</include>
 	<include name="SmallThumbMusicLayouts">
-		<itemlayout height="360" width="460" condition="Container.Content(artists) | Container.Content(albums)">
+		<itemlayout height="360" width="450" condition="Container.Content(artists) | Container.Content(albums)">
 			<control type="image">
-				<left>1</left>
+				<left>21</left>
 				<top>15</top>
 				<width>330</width>
 				<height>330</height>
@@ -37,17 +37,17 @@
 				<bordersize>4</bordersize>
 			</control>
 			<control type="group">
-				<left>270</left>
+				<left>290</left>
 				<top>30</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</itemlayout>
-		<focusedlayout height="360" width="460" condition="Container.Content(artists) | Container.Content(albums)">
+		<focusedlayout height="360" width="450" condition="Container.Content(artists) | Container.Content(albums)">
 			<control type="group">
 				<animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
 				<animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
 				<control type="image">
-					<left>1</left>
+					<left>21</left>
 					<top>15</top>
 					<width>330</width>
 					<height>330</height>
@@ -57,7 +57,7 @@
 					<bordersize>4</bordersize>
 				</control>
 				<control type="group">
-					<left>270</left>
+					<left>290</left>
 					<top>30</top>
 					<include>UserRatingCircle</include>
 				</control>
@@ -70,13 +70,13 @@
 				</animation>
 				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 				<control type="image">
-					<left>1</left>
+					<left>21</left>
 					<width>330</width>
 					<height>330</height>
 					<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 				</control>
 				<control type="image">
-					<left>5</left>
+					<left>25</left>
 					<top>286</top>
 					<width>322</width>
 					<height>40</height>
@@ -84,7 +84,7 @@
 					<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
 				</control>
 				<control type="label">
-					<left>15</left>
+					<left>35</left>
 					<top>295</top>
 					<width>292</width>
 					<height>20</height>
@@ -95,7 +95,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<right>50</right>
+				<right>30</right>
 				<top>15</top>
 				<control type="image">
 					<right>42</right>
@@ -397,7 +397,7 @@
 			<control type="panel" id="500">
 				<left>0</left>
 				<top>0</top>
-				<width>1840</width>
+				<width>1800</width>
 				<height>720</height>
 				<onleft>9000</onleft>
 				<onright>531</onright>
