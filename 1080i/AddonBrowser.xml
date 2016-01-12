@@ -49,13 +49,6 @@
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[24034]</label>
 				</control>
-				<control type="button" id="620">
-					<description>Go-to-root button</description>
-					<include>MediaMenuItemsCommon</include>
-					<label>$LOCALIZE[20128]</label>
-					<onclick>Container.Update(" ",replace)</onclick>
-					<visible>!IsEmpty(Container.FolderPath)</visible>
-				</control>
 				<control type="button" id="5">
 					<description>Addon settings</description>
 					<include>MediaMenuItemsCommon</include>

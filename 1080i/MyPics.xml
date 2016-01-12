@@ -225,13 +225,6 @@
 					<label>$LOCALIZE[13319]</label>
 					<include>MediaMenuItemsCommon</include>
 				</control>
-				<control type="button" id="620">
-					<description>Go-to-root button</description>
-					<include>MediaMenuItemsCommon</include>
-					<label>$LOCALIZE[20128]</label>
-					<onclick>Container.Update(" ",replace)</onclick>
-					<visible>!IsEmpty(Container.FolderPath)</visible>
-				</control>
 				<control type="button" id="621">
 					<description>Get more</description>
 					<include>MediaMenuItemsCommon</include>
