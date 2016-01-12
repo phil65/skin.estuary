@@ -289,6 +289,33 @@
 			</control>
 		</control>
 	</include>
+	<include name="PicsInfoLine">
+		<control type="grouplist">
+			<visible>!IsEmpty($PARAM[value])</visible>
+			<height>40</height>
+			<orientation>horizontal</orientation>
+			<width>500</width>
+			<align>left</align>
+			<itemgap>10</itemgap>
+			<control type="label">
+				<width>auto</width>
+				<height>40</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$PARAM[label]:</label>
+				<font>font12</font>
+				<textcolor>button_focus</textcolor>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>40</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[$PARAM[value]]</label>
+				<font>font12</font>
+			</control>
+		</control>
+	</include>
 	<include name="DefaultSimpleListLayout">
 		<param name="align">left</param>
 		<param name="height">70</param>

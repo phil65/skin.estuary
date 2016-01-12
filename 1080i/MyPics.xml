@@ -40,280 +40,156 @@
 				<label>$LOCALIZE[19055]</label>
 				<visible>!ListItem.IsParentFolder + ListItem.IsFolder</visible>
 			</control>
-			<control type="panel">
+			<control type="grouplist">
 				<right>110</right>
 				<top>192</top>
-				<width>470</width>
+				<width>450</width>
 				<height>600</height>
 				<orientation>vertical</orientation>
-				<focusedlayout height="40" width="480">
-					<control type="label">
-						<left>20</left>
-						<height>50</height>
-						<width>480</width>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]:</label>
-						<shadowcolor>text_shadow</shadowcolor>
-						<font>font12</font>
-					</control>
-					<control type="label">
-						<left>0</left>
-						<height>50</height>
-						<width>450</width>
-						<aligny>center</aligny>
-						<align>right</align>
-						<textcolor>button_focus</textcolor>
-						<label>$INFO[ListItem.Label2]</label>
-						<shadowcolor>text_shadow</shadowcolor>
-						<font>font12</font>
-					</control>
-				</focusedlayout>
-				<itemlayout height="40" width="480">
-					<control type="label">
-						<left>20</left>
-						<height>50</height>
-						<width>480</width>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]:</label>
-						<shadowcolor>text_shadow</shadowcolor>
-						<font>font12</font>
-					</control>
-					<control type="label">
-						<left>0</left>
-						<height>50</height>
-						<width>450</width>
-						<aligny>center</aligny>
-						<align>right</align>
-						<textcolor>button_focus</textcolor>
-						<label>$INFO[ListItem.Label2]</label>
-						<shadowcolor>text_shadow</shadowcolor>
-						<font>font12</font>
-					</control>
-				</itemlayout>
-				<content>
-					<item>
-						<label>$LOCALIZE[552]</label>
-						<label2>$INFO[ListItem.PictureDate]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureDate)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21805]</label>
-						<label2>$INFO[ListItem.PictureResolution]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureResolution)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21826]</label>
-						<label2>$INFO[ListItem.PictureAperture]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureAperture)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21863]</label>
-						<label2>$INFO[ListItem.PictureAuthor]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureAuthor)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21867]</label>
-						<label2>$INFO[ListItem.PictureByline]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureByline)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21868]</label>
-						<label2>$INFO[ListItem.PictureBylineTitle]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureBylineTitle)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[31041]</label>
-						<label2>$INFO[ListItem.PictureCamMake]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCamMake)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21823]</label>
-						<label2>$INFO[ListItem.PictureCamModel]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCamModel)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21862]</label>
-						<label2>$INFO[ListItem.PictureCaption]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCaption)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21866]</label>
-						<label2>$INFO[ListItem.PictureCategory]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCategory)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21839]</label>
-						<label2>$INFO[ListItem.PictureCCDWidth]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCCDWidth)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21873]</label>
-						<label2>$INFO[ListItem.PictureCity]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCity)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21807]</label>
-						<label2>$INFO[ListItem.PictureColour]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureColour)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21839]</label>
-						<label2>$INFO[ListItem.PictureComment]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureComment)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21871]</label>
-						<label2>$INFO[ListItem.PictureCopyrightNotice]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCopyrightNotice)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21875]</label>
-						<label2>$INFO[ListItem.PictureCountry]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCountry)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21879]</label>
-						<label2>$INFO[ListItem.PictureCountryCode]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCountryCode)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21869]</label>
-						<label2>$INFO[ListItem.PictureCredit]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureCredit)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21820]</label>
-						<label2>$INFO[ListItem.PictureDatetime]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureDatetime)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21821]</label>
-						<label2>$INFO[ListItem.PictureDesc]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureDesc)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21838]</label>
-						<label2>$INFO[ListItem.PictureDigitalZoom]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureDigitalZoom)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21832]</label>
-						<label2>$INFO[ListItem.PictureExpMode]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureExpMode)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21829]</label>
-						<label2>$INFO[ListItem.PictureExposure]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureExposure)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21831]</label>
-						<label2>$INFO[ListItem.PictureExposureBias]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureExposureBias)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21830]</label>
-						<label2>$INFO[ListItem.PictureExpTime]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureExpTime)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21833]</label>
-						<label2>$INFO[ListItem.PictureFlashUsed]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureFlashUsed)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21827]</label>
-						<label2>$INFO[ListItem.PictureFocalLen]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureFocalLen)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21828]</label>
-						<label2>$INFO[ListItem.PictureFocusDist]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureFocusDist)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21840]</label>
-						<label2>$INFO[ListItem.PictureGPSLat]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureGPSLat)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21841]</label>
-						<label2>$INFO[ListItem.PictureGPSLon]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureGPSLon)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21842]</label>
-						<label2>$INFO[ListItem.PictureGPSAlt]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureGPSAlt)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21864]</label>
-						<label2>$INFO[ListItem.PictureHeadline]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureHeadline)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21858]</label>
-						<label2>$INFO[ListItem.PictureImageType]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureImageType)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21837]</label>
-						<label2>$INFO[ListItem.PictureISO]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureISO)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21861]</label>
-						<label2>$INFO[ListItem.PictureKeywords]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureKeywords)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21843]</label>
-						<label2>$INFO[ListItem.PictureOrientation]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureOrientation)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[21808]</label>
-						<label2>$INFO[ListItem.PictureProcess]</label2>
-						<onclick>noop</onclick>
-						<visible>!IsEmpty(ListItem.PictureProcess)</visible>
-					</item>
-				</content>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21820]"/>
+						<param name="value" value="ListItem.PictureDatetime" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21805]"/>
+						<param name="value" value="ListItem.PictureResolution" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21826]"/>
+						<param name="value" value="ListItem.PictureAperture" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21863]"/>
+						<param name="value" value="ListItem.PictureAuthor" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21867]"/>
+						<param name="value" value="ListItem.PictureByline" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21868]"/>
+						<param name="value" value="ListItem.PictureBylineTitle" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[31041]"/>
+						<param name="value" value="ListItem.PictureCamMake" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21823]"/>
+						<param name="value" value="ListItem.PictureCamModel" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21862]"/>
+						<param name="value" value="ListItem.PictureCaption" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21866]"/>
+						<param name="value" value="ListItem.PictureCategory" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21839]"/>
+						<param name="value" value="ListItem.PictureCCDWidth" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21873]"/>
+						<param name="value" value="ListItem.PictureCity" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21807]"/>
+						<param name="value" value="ListItem.PictureColour" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21839]"/>
+						<param name="value" value="ListItem.PictureComment" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21871]"/>
+						<param name="value" value="ListItem.PictureCopyrightNotice" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21875]"/>
+						<param name="value" value="ListItem.PictureCountry" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21879]"/>
+						<param name="value" value="ListItem.PictureCountryCode" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21869]"/>
+						<param name="value" value="ListItem.PictureCredit" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21821]"/>
+						<param name="value" value="ListItem.PictureDesc" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21838]"/>
+						<param name="value" value="ListItem.PictureDigitalZoom" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21832]"/>
+						<param name="value" value="ListItem.PictureExpMode" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21829]"/>
+						<param name="value" value="ListItem.PictureExposure" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21831]"/>
+						<param name="value" value="ListItem.PictureExposureBias" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21830]"/>
+						<param name="value" value="ListItem.PictureExpTime" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21833]"/>
+						<param name="value" value="ListItem.PictureFlashUsed" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21827]"/>
+						<param name="value" value="ListItem.PictureFocalLen" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21828]"/>
+						<param name="value" value="ListItem.PictureFocusDist" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21840]"/>
+						<param name="value" value="ListItem.PictureGPSLat" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21841]"/>
+						<param name="value" value="ListItem.PictureGPSLon" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21842]"/>
+						<param name="value" value="ListItem.PictureGPSAlt" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21864]"/>
+						<param name="value" value="ListItem.PictureHeadline" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21858]"/>
+						<param name="value" value="ListItem.PictureImageType" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21837]"/>
+						<param name="value" value="ListItem.PictureISO" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21861]"/>
+						<param name="value" value="ListItem.PictureKeywords" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21843]"/>
+						<param name="value" value="$INFO[ListItem.PictureOrientation]" />
+					</include>
+					<include name="PicsInfoLine">
+						<param name="label" value="$LOCALIZE[21808]"/>
+						<param name="value" value="$INFO[ListItem.PictureProcess]" />
+					</include>
 			</control>
 		</control>
 		</control>
