@@ -18,14 +18,6 @@
 				<param name="layouts_include" value="InfoWallPictureLayouts" />
 			</include>
 			<include>View_55_WideList</include>
-		</control>
-		<control type="group">
-			<include>OpenClose_Left</include>
-			<visible>Window.IsActive(addoninformation) | Control.IsVisible(50) | Control.IsVisible(55)</visible>
-			<include>Visible_Left</include>
-			<visible>!Container.Content()</visible>
-			<include>ListThumbInfoPanel</include>
-		</control>
 		<control type="group">
 			<include>OpenClose_Right</include>
 			<visible>Control.Isvisible(54)</visible>
@@ -37,6 +29,16 @@
 				<width>509</width>
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
+			</control>
+			<control type="textbox">
+				<right>130</right>
+				<top>360</top>
+				<width>429</width>
+				<height>413</height>
+				<align>center</align>
+				<font>font24_title</font>
+				<label>$LOCALIZE[19055]</label>
+				<visible>!ListItem.IsParentFolder + ListItem.IsFolder</visible>
 			</control>
 			<control type="panel">
 				<right>110</right>
@@ -89,6 +91,18 @@
 					</control>
 				</itemlayout>
 				<content>
+					<item>
+						<label>$LOCALIZE[552]</label>
+						<label2>$INFO[ListItem.PictureDate]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureDate)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21805]</label>
+						<label2>$INFO[ListItem.PictureResolution]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureResolution)</visible>
+					</item>
 					<item>
 						<label>$LOCALIZE[21826]</label>
 						<label2>$INFO[ListItem.PictureAperture]</label2>
@@ -143,8 +157,172 @@
 						<onclick>noop</onclick>
 						<visible>!IsEmpty(ListItem.PictureCCDWidth)</visible>
 					</item>
+					<item>
+						<label>$LOCALIZE[21873]</label>
+						<label2>$INFO[ListItem.PictureCity]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCity)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21807]</label>
+						<label2>$INFO[ListItem.PictureColour]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureColour)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21839]</label>
+						<label2>$INFO[ListItem.PictureComment]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureComment)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21871]</label>
+						<label2>$INFO[ListItem.PictureCopyrightNotice]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCopyrightNotice)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21875]</label>
+						<label2>$INFO[ListItem.PictureCountry]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCountry)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21879]</label>
+						<label2>$INFO[ListItem.PictureCountryCode]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCountryCode)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21869]</label>
+						<label2>$INFO[ListItem.PictureCredit]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCredit)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21820]</label>
+						<label2>$INFO[ListItem.PictureDatetime]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureDatetime)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21821]</label>
+						<label2>$INFO[ListItem.PictureDesc]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureDesc)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21838]</label>
+						<label2>$INFO[ListItem.PictureDigitalZoom]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureDigitalZoom)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21832]</label>
+						<label2>$INFO[ListItem.PictureExpMode]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureExpMode)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21829]</label>
+						<label2>$INFO[ListItem.PictureExposure]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureExposure)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21831]</label>
+						<label2>$INFO[ListItem.PictureExposureBias]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureExposureBias)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21830]</label>
+						<label2>$INFO[ListItem.PictureExpTime]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureExpTime)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21833]</label>
+						<label2>$INFO[ListItem.PictureFlashUsed]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureFlashUsed)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21827]</label>
+						<label2>$INFO[ListItem.PictureFocalLen]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureFocalLen)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21828]</label>
+						<label2>$INFO[ListItem.PictureFocusDist]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureFocusDist)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21840]</label>
+						<label2>$INFO[ListItem.PictureGPSLat]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureGPSLat)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21841]</label>
+						<label2>$INFO[ListItem.PictureGPSLon]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureGPSLon)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21842]</label>
+						<label2>$INFO[ListItem.PictureGPSAlt]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureGPSAlt)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21864]</label>
+						<label2>$INFO[ListItem.PictureHeadline]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureHeadline)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21858]</label>
+						<label2>$INFO[ListItem.PictureImageType]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureImageType)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21837]</label>
+						<label2>$INFO[ListItem.PictureISO]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureISO)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21861]</label>
+						<label2>$INFO[ListItem.PictureKeywords]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureKeywords)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21843]</label>
+						<label2>$INFO[ListItem.PictureOrientation]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureOrientation)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21808]</label>
+						<label2>$INFO[ListItem.PictureProcess]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureProcess)</visible>
+					</item>
 				</content>
 			</control>
+		</control>
+		</control>
+		<control type="group">
+			<include>OpenClose_Left</include>
+			<visible>Window.IsActive(addoninformation) | Control.IsVisible(50) | Control.IsVisible(55)</visible>
+			<include>Visible_Left</include>
+			<visible>!Container.Content()</visible>
+			<include>ListThumbInfoPanel</include>
 		</control>
 		<include>MediaMenuMouseOverlay</include>
 		<control type="group">
