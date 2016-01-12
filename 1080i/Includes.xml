@@ -29,36 +29,39 @@
 	<constant name="DepthBackground">-0.80</constant>
 	<constant name="DepthSideBlade">0.10</constant>
 	<include name="CommonScrollbars">
-		<control type="scrollbar" id="531">
-			<left>1907</left>
-			<top>80</top>
-			<width>13</width>
-			<height>919</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
-			<orientation>vertical</orientation>
-			<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
-			<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501)</visible>
-			<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
-		</control>
-		<control type="scrollbar" id="5199">
-			<left>0</left>
-			<top>988</top>
-			<width>1920</width>
-			<height>12</height>
-			<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
-			<onup>50</onup>
-			<ondown>50</ondown>
-			<orientation>horizontal</orientation>
-			<visible>Control.IsVisible(51) | Control.IsVisible(53)</visible>
-			<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
-		</control>
+		<control type="group">
+			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="System.HasModalDialog">Conditional</animation>
+			<control type="scrollbar" id="531">
+				<left>1907</left>
+				<top>80</top>
+				<width>13</width>
+				<height>919</height>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<orientation>vertical</orientation>
+				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
+				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<visible>Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501)</visible>
+				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			</control>
+			<control type="scrollbar" id="5199">
+				<left>0</left>
+				<top>988</top>
+				<width>1920</width>
+				<height>12</height>
+				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<orientation>horizontal</orientation>
+				<visible>Control.IsVisible(51) | Control.IsVisible(53)</visible>
+				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			</control>
+	</control>
 	</include>
 	<include name="HiddenObject">
 		<left>-3000</left>
