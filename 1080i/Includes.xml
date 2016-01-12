@@ -34,8 +34,8 @@
 			<top>80</top>
 			<width>13</width>
 			<height>919</height>
-			<onleft>500</onleft>
-			<onright>500</onright>
+			<onleft>50</onleft>
+			<onright>50</onright>
 			<orientation>vertical</orientation>
 			<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
 			<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
@@ -50,8 +50,8 @@
 			<width>1920</width>
 			<height>12</height>
 			<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
-			<onup>51</onup>
-			<ondown>51</ondown>
+			<onup>50</onup>
+			<ondown>50</ondown>
 			<orientation>horizontal</orientation>
 			<visible>Control.IsVisible(51) | Control.IsVisible(53)</visible>
 			<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
