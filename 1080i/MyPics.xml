@@ -26,6 +26,126 @@
 			<visible>!Container.Content()</visible>
 			<include>ListThumbInfoPanel</include>
 		</control>
+		<control type="group">
+			<include>OpenClose_Right</include>
+			<visible>Control.Isvisible(54)</visible>
+			<include>Visible_Right</include>
+			<visible>Container.Content(images)</visible>
+			<control type="image">
+				<right>90</right>
+				<top>162</top>
+				<width>509</width>
+				<height>746</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
+			</control>
+			<control type="panel">
+				<right>110</right>
+				<top>192</top>
+				<width>470</width>
+				<height>600</height>
+				<orientation>vertical</orientation>
+				<focusedlayout height="40" width="480">
+					<control type="label">
+						<left>20</left>
+						<height>50</height>
+						<width>480</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]:</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<font>font12</font>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<height>50</height>
+						<width>450</width>
+						<aligny>center</aligny>
+						<align>right</align>
+						<textcolor>button_focus</textcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<font>font12</font>
+					</control>
+				</focusedlayout>
+				<itemlayout height="40" width="480">
+					<control type="label">
+						<left>20</left>
+						<height>50</height>
+						<width>480</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]:</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<font>font12</font>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<height>50</height>
+						<width>450</width>
+						<aligny>center</aligny>
+						<align>right</align>
+						<textcolor>button_focus</textcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<font>font12</font>
+					</control>
+				</itemlayout>
+				<content>
+					<item>
+						<label>$LOCALIZE[21826]</label>
+						<label2>$INFO[ListItem.PictureAperture]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureAperture)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21863]</label>
+						<label2>$INFO[ListItem.PictureAuthor]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureAuthor)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21867]</label>
+						<label2>$INFO[ListItem.PictureByline]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureByline)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21868]</label>
+						<label2>$INFO[ListItem.PictureBylineTitle]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureBylineTitle)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31041]</label>
+						<label2>$INFO[ListItem.PictureCamMake]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCamMake)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21823]</label>
+						<label2>$INFO[ListItem.PictureCamModel]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCamModel)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21862]</label>
+						<label2>$INFO[ListItem.PictureCaption]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCaption)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21866]</label>
+						<label2>$INFO[ListItem.PictureCategory]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCategory)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21839]</label>
+						<label2>$INFO[ListItem.PictureCCDWidth]</label2>
+						<onclick>noop</onclick>
+						<visible>!IsEmpty(ListItem.PictureCCDWidth)</visible>
+					</item>
+				</content>
+			</control>
+		</control>
 		<include>MediaMenuMouseOverlay</include>
 		<control type="group">
 			<include>MediaMenuCommon</include>
