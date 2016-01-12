@@ -107,8 +107,9 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="AddonsLabel2Var">
-		<value condition="!IsEmpty(ListItem.Property(addon.broken))">[COLOR button_focus]$INFO[ListItem.Property(addon.broken)][/COLOR]</value>
-		<value condition="!IsEmpty(ListItem.Property(addon.status)) + !Stringcompare(ListItem.Property(addon.status),$LOCALIZE[305])">[COLOR button_focus]$INFO[ListItem.Property(addon.status)][/COLOR]</value>
+		<value condition="!IsEmpty(ListItem.Property(addon.broken))">[COLOR invalid]$INFO[ListItem.Property(addon.broken)][/COLOR]</value>
+		<value condition="!IsEmpty(ListItem.Property(addon.status)) + !Stringcompare(ListItem.Property(addon.status),$LOCALIZE[305])">[COLOR white]$INFO[ListItem.Property(addon.status)][/COLOR]</value>
+		<value condition="ListItem.Property(addon.isinstalled)">[COLOR button_focus]$INFO[ListItem.Property(addon.creator),, - ]$INFO[ListItem.Property(addon.version)][/COLOR]</value>
 		<value>$INFO[ListItem.Property(addon.creator),, - ]$INFO[ListItem.Property(addon.version)]</value>
 	</variable>
 	<variable name="AudioDSPIconVar">
