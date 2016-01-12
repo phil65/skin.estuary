@@ -29,10 +29,10 @@
 			</control>
 			<control type="image">
 				<depth>DepthMax</depth>
-				<left>910</left>
-				<top>503</top>
-				<width>100</width>
-				<height>100</height>
+				<left>915</left>
+				<top>508</top>
+				<width>90</width>
+				<height>90</height>
 				<aspectratio>keep</aspectratio>
 				<animation effect="rotate" end="-45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
 				<texture colordiffuse="button_focus">spinner.png</texture>
@@ -40,10 +40,10 @@
 			</control>
 			<control type="image">
 				<depth>DepthMax</depth>
-				<left>925</left>
-				<top>518</top>
-				<width>70</width>
-				<height>70</height>
+				<left>930</left>
+				<top>523</top>
+				<width>60</width>
+				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<animation effect="rotate" end="45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
 				<texture flipx="true" colordiffuse="button_focus">spinner.png</texture>
