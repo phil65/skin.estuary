@@ -12,9 +12,7 @@
 			<include>View_50_List</include>
 			<include>View_52_IconWall</include>
 			<include>View_53_Shift</include>
-			<include name="View_54_InfoWall">
-				<param name="layouts_include" value="InfoWallMusicLayouts" />
-			</include>
+			<include>View_54_InfoWall</include>
 			<include>View_55_WideList</include>
 			<include name="View_500_SmallThumb">
 				<param name="layouts_include" value="SmallThumbMusicLayouts" />
@@ -75,7 +73,7 @@
 			<control type="grouplist" id="9000">
 				<top>90</top>
 				<include name="MediaMenuListCommon">
-					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(albums)" />
+					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)" />
 				</include>
 				<control type="radiobutton" id="710">
 					<description>Small List</description>

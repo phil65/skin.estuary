@@ -14,9 +14,7 @@
 			<include>View_50_List</include>
 			<include>View_52_IconWall</include>
 			<include>View_53_Shift</include>
-			<include name="View_54_InfoWall">
-				<param name="layouts_include" value="InfoWallPictureLayouts" />
-			</include>
+			<include>View_54_InfoWall</include>
 			<include>View_55_WideList</include>
 		<control type="group">
 			<include>OpenClose_Right</include>
