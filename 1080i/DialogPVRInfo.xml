@@ -12,7 +12,7 @@
 				<aspectratio>keep</aspectratio>
 				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 				<bordersize>4</bordersize>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultTVShowsSquare.png">$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="image">
 				<left>90</left>
