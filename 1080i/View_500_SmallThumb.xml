@@ -49,7 +49,7 @@
 				<pagecontrol>531</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums)</visible>
-				<itemlayout height="360" width="300" condition="!Container.content(episodes)">
+				<itemlayout height="360" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>0</left>
 						<top>-1</top>
@@ -66,7 +66,7 @@
 						<include>UserRatingCircle</include>
 					</control>
 				</itemlayout>
-				<focusedlayout height="360" width="300" condition="!Container.content(episodes)">
+				<focusedlayout height="360" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="group">
 						<animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
 						<animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
