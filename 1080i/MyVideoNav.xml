@@ -54,7 +54,7 @@
 				<align>left</align>
 				<font>font13_title</font>
 				<label>$INFO[ListItem.Label]</label>
-				<visible>Control.IsVisible(54) | Stringcompare(ListItem.Dbtype,set)</visible>
+				<visible>Control.IsVisible(54) | ListItem.IsCollection</visible>
 			</control>
 			<control type="textbox" id="4380">
 				<right>130</right>
@@ -97,12 +97,12 @@
 				<align>center</align>
 				<font>font24_title</font>
 				<label>$LOCALIZE[19055]</label>
-				<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline) + !Stringcompare(ListItem.Dbtype,set) + !ListItem.IsParentFolder</visible>
+				<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Tagline) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="group">
 				<left>1350</left>
 				<top>244</top>
-				<visible>Stringcompare(Listitem.dbtype,set)</visible>
+				<visible>ListItem.IsCollection</visible>
 				<include name="InfoList">
 					<param name="height" value="322" />
 					<param name="width" value="429" />

@@ -96,7 +96,7 @@
 				<control type="group">
 					<left>635</left>
 					<top>475</top>
-					<visible>Stringcompare(Listitem.dbtype,set)</visible>
+					<visible>ListItem.IsCollection</visible>
 					<include name="InfoList">
 						<param name="sortby" value="year" />
 						<param name="sortorder" value="descending" />
