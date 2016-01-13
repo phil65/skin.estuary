@@ -8,7 +8,7 @@
             <top>200</top>
             <include name="DialogBackgroundCommons">
                 <param name="DialogBackgroundWidth" value="1720" />
-                <param name="DialogBackgroundHeight" value="670" />
+                <param name="DialogBackgroundHeight" value="690" />
                 <param name="DialogHeaderLabel" value="$LOCALIZE[35058]" />
                 <param name="DialogHeaderId" value="2" />
             </include>
@@ -29,7 +29,7 @@
                     <left>-5</left>
                     <top>110</top>
                     <width>370</width>
-                    <height>560</height>
+                    <height>582</height>
                     <texture border="40">buttons/dialogbutton-nofo.png</texture>
                 </control>
                 <control type="grouplist" id="3">
@@ -37,7 +37,7 @@
                     <left>15</left>
                     <top>130</top>
                     <width>330</width>
-                    <height>518</height>
+                    <height>540</height>
                     <onleft>9001</onleft>
                     <onright>5</onright>
                     <onup>3</onup>
@@ -76,7 +76,7 @@
                     <left>975</left>
                     <top>110</top>
                     <width>370</width>
-                    <height>560</height>
+                    <height>582</height>
                     <texture border="40">buttons/dialogbutton-nofo.png</texture>
                 </control>
                 <control type="grouplist" id="5">
@@ -84,7 +84,7 @@
                     <left>995</left>
                     <top>130</top>
                     <width>330</width>
-                    <height>518</height>
+                    <height>540</height>
                     <onleft>3</onleft>
                     <onright>61</onright>
                     <onup>5</onup>
@@ -95,7 +95,7 @@
                     <left>1330</left>
                     <top>130</top>
                     <width>12</width>
-                    <height>518</height>
+                    <height>540</height>
                     <onleft>5</onleft>
                     <onright>9001</onright>
                     <orientation>vertical</orientation>
