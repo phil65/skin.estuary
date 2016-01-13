@@ -7,7 +7,6 @@
 				<width>400</width>
 				<height>380</height>
 				<texture border="40">buttons/button-nofo.png</texture>
-				<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 			</control>
 			<control type="image">
 				<left>25</left>
@@ -40,12 +39,13 @@
 		</itemlayout>
 		<focusedlayout height="360" width="401" condition="Container.Content(images)">
 			<control type="group">
+				<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="190,180">Focus</animation>
+				<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="190,180">UnFocus</animation>
 				<control type="image">
 					<top>-10</top>
 					<width>400</width>
 					<height>380</height>
 					<texture border="40">buttons/button-nofo.png</texture>
-					<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 				</control>
 				<control type="image">
 					<left>25</left>
@@ -81,6 +81,7 @@
 					<width>368</width>
 					<height>348</height>
 					<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+					<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 				</control>
 			</control>
 		</focusedlayout>
@@ -93,7 +94,6 @@
 					<width>320</width>
 					<height>380</height>
 					<texture border="40">buttons/button-nofo.png</texture>
-					<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 				</control>
 				<control type="image">
 					<left>35</left>
@@ -113,25 +113,26 @@
 					<texture>colors/black.png</texture>
 				</control>
 				<control type="textbox">
-					<left>40</left>
+					<left>28</left>
 					<top>278</top>
-					<width>238</width>
+					<width>262</width>
 					<height>70</height>
 					<font>font12</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</label>
 				</control>
 			</control>
 		</itemlayout>
 		<focusedlayout height="360" width="300" condition="Container.Content(artists) | Container.Content(albums)">
 			<control type="group">
+				<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="160,180">Focus</animation>
+				<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="160,180">UnFocus</animation>
 				<control type="image">
 					<top>-10</top>
 					<width>320</width>
 					<height>380</height>
 					<texture border="40">buttons/button-nofo.png</texture>
-					<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 				</control>
 				<control type="image">
 					<left>35</left>
@@ -151,14 +152,14 @@
 					<texture>colors/black.png</texture>
 				</control>
 				<control type="textbox">
-					<left>40</left>
+					<left>28</left>
 					<top>278</top>
-					<width>238</width>
+					<width>262</width>
 					<height>70</height>
 					<font>font12</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -166,6 +167,7 @@
 					<width>288</width>
 					<height>348</height>
 					<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+					<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 				</control>
 			</control>
 		</focusedlayout>
