@@ -14,9 +14,7 @@
 			<include>View_53_Shift</include>
 			<include>View_54_InfoWall</include>
 			<include>View_55_WideList</include>
-			<include name="View_500_SmallThumb">
-				<param name="layouts_include" value="SmallThumbMusicLayouts" />
-			</include>
+			<include>View_500_SmallThumb</include>
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>

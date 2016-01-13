@@ -15,9 +15,7 @@
 			<include>View_53_Shift</include>
 			<include>View_54_InfoWall</include>
 			<include>View_55_WideList</include>
-			<include name="View_500_SmallThumb">
-				<param name="layouts_include" value="SmallThumbVideoLayouts" />
-			</include>
+			<include>View_500_SmallThumb</include>
 			<include>View_501_Banner</include>
 		</control>
 		<include>View_502_FanArt</include>
