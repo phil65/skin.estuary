@@ -91,11 +91,13 @@
 		<control type="radiobutton" id="4">
 			<description>Default RadioButton</description>
 			<include>DefaultSettingButton</include>
+			<textwidth>900</textwidth>
 		</control>
 		<control type="spincontrolex" id="5">
 			<description>Default spincontrolex</description>
 			<include>DefaultSettingButton</include>
 			<reverse>yes</reverse>
+			<textwidth>900</textwidth>
 		</control>
 		<control type="label" id="7">
 			<height>60</height>
