@@ -26,6 +26,31 @@
 				<texture fallback="DefaultVideo.png">$VAR[PosterVar]</texture>
 				<animation effect="fade" start="0" end="100" time="0" delay="300">WindowOpen</animation>
 			</control>
+			<control type="group">
+				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Thumb)</visible>
+			<control type="image">
+				<left>4</left>
+				<top>4</top>
+				<width>466</width>
+				<height>701</height>
+				<fadetime>200</fadetime>
+				<aspectratio>stretch</aspectratio>
+				<texture colordiffuse="AAFFFFFF" fallback="DefaultVideo.png">colors/black.png</texture>
+				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+			</control>
+			<control type="image">
+				<left>14</left>
+				<top>4</top>
+				<width>446</width>
+				<height>701</height>
+				<fadetime>200</fadetime>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[ListItem.Thumb]</texture>
+				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+			</control>
 		</control>
 		<control type="group">
 			<include>OpenClose_Right</include>
