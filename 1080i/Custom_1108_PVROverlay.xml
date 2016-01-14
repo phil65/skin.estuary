@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="1108">
+	<visible>Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV)</visible>
+	<defaultcontrol>-</defaultcontrol>
+	<animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+	<depth>DepthOSD</depth>
+	<controls>
+		<control type="image">
+			<left>10</left>
+			<top>830</top>
+			<width>1900</width>
+			<height>240</height>
+			<texture border="40">buttons/dialogbutton-nofo.png</texture>
+		</control>
+		<control type="image">
+			<left>30</left>
+			<top>850</top>
+			<width>200</width>
+			<height>200</height>
+			<texture>$INFO[Player.Art(thumb)]</texture>
+		</control>
+		<control type="textbox">
+			<left>260</left>
+			<top>960</top>
+			<width>200</width>
+			<height>80</height>
+			<label>$INFO[VideoPlayer.ChannelName]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font12</font>
+		</control>
+		<control type="label">
+			<left>260</left>
+			<top>860</top>
+			<width>200</width>
+			<height>100</height>
+			<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>WeatherTemp</font>
+		</control>
+		<control type="label">
+			<left>1400</left>
+			<top>860</top>
+			<width>410</width>
+			<height>25</height>
+			<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ]</label>
+			<aligny>center</aligny>
+			<font>font12</font>
+		</control>
+	<control type="label">
+			<left>530</left>
+			<top>870</top>
+			<width>850</width>
+			<height>25</height>
+			<label>$INFO[VideoPlayer.Title,$LOCALIZE[31000]: ]</label>
+			<aligny>center</aligny>
+			<font>font13_title</font>
+		</control>
+		<control type="textbox">
+			<left>530</left>
+			<top>900</top>
+			<width>850</width>
+			<height>135</height>
+			<label>$INFO[VideoPlayer.Plot,$LOCALIZE[207]: ]</label>
+			<aligny>center</aligny>
+			<font>font12</font>
+		</control>
+	</controls>
+</window>
