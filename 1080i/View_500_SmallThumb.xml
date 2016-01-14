@@ -307,104 +307,25 @@
 						<animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
 					</control>
 				</focusedlayout>
-				<itemlayout height="360" width="450" condition="Container.Content(artists) | Container.Content(albums)">
-					<control type="image">
-						<left>21</left>
-						<top>15</top>
-						<width>330</width>
-						<height>330</height>
-						<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-						<aspectratio>scale</aspectratio>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
-					</control>
-					<control type="group">
-						<left>290</left>
-						<top>30</top>
-						<include>UserRatingCircle</include>
-					</control>
+				<itemlayout height="360" width="350" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
+					<include>InfoWallMusicLayout</include>
 				</itemlayout>
-				<focusedlayout height="360" width="450" condition="Container.Content(artists) | Container.Content(albums)">
+				<focusedlayout height="360" width="350" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
-						<animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
-						<animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+						<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="160,180">Focus</animation>
+						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="160,180">UnFocus</animation>
+						<include>InfoWallMusicLayout</include>
 						<control type="image">
-							<left>21</left>
-							<top>15</top>
-							<width>330</width>
-							<height>330</height>
-							<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-							<aspectratio>scale</aspectratio>
-							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-							<bordersize>4</bordersize>
-						</control>
-						<control type="group">
-							<left>290</left>
-							<top>30</top>
-							<include>UserRatingCircle</include>
-						</control>
-					</control>
-					<control type="group">
-						<top>15</top>
-						<animation type="Focus">
-							<effect type="slide" start="0,0" end="-40,0" time="300" />
-							<effect type="fade" start="0" end="100" time="300" />
-						</animation>
-						<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
-						<control type="image">
-							<left>21</left>
-							<width>330</width>
-							<height>330</height>
+							<left>15</left>
+							<top>5</top>
+							<width>288</width>
+							<height>348</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-						</control>
-						<control type="image">
-							<left>25</left>
-							<top>286</top>
-							<width>322</width>
-							<height>40</height>
-							<texture>colors/black.png</texture>
-							<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
-						</control>
-						<control type="label">
-							<left>35</left>
-							<top>295</top>
-							<width>292</width>
-							<height>20</height>
-							<font>font12</font>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-					</control>
-					<control type="group">
-						<right>30</right>
-						<top>15</top>
-						<control type="image">
-							<right>42</right>
-							<width>70</width>
-							<height>330</height>
-							<fadetime>300</fadetime>
-							<texture colordiffuse="button_focus">colors/white.png</texture>
-							<animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
-							<animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
-						</control>
-						<control type="group">
-							<animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
-							<include name="SmallThumbInfoFlag">
-								<param name="icon" value="lists/rating.png" />
-								<param name="infolabel" value="ListItem.Rating" />
-								<param name="posy" value="50" />
-							</include>
-							<include name="SmallThumbInfoFlag">
-								<param name="icon" value="lists/year.png" />
-								<param name="infolabel" value="ListItem.Year" />
-								<param name="posy" value="200" />
-							</include>
+							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
 					</control>
 				</focusedlayout>
-			</control>
+							</control>
 		</control>
 	</include>
 </includes>
