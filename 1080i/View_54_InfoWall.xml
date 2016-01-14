@@ -103,7 +103,7 @@
 				<viewtype label="31101">icon</viewtype>
 				<preloaditems>2</preloaditems>
 				<pagecontrol>533</pagecontrol>
-				<scrolltime>200</scrolltime>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | Container.Content(images)</visible>
 				<itemlayout height="240" width="172" condition="Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
