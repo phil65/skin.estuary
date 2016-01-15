@@ -481,25 +481,25 @@
 						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
-						<left>20</left>
-						<top>260</top>
-						<width>308</width>
-						<height>60</height>
-						<texture colordiffuse="99FFFFFF">colors/black.png</texture>
+						<left>3</left>
+						<top>240</top>
+						<width>345</width>
+						<height>100</height>
+						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="label">
-						<left>40</left>
+						<left>30</left>
 						<top>260</top>
-						<width>268</width>
+						<width>288</width>
 						<label>$PARAM[second_label]</label>
 						<font>font10</font>
 						<shadowcolor>text_shadow</shadowcolor>
 						<align>center</align>
 					</control>
 					<control type="label">
-						<left>40</left>
+						<left>30</left>
 						<top>284</top>
-						<width>268</width>
+						<width>288</width>
 						<label>$INFO[ListItem.TVShowTitle]</label>
 						<font>font10</font>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -547,25 +547,25 @@
 							</control>
 						</control>
 						<control type="image">
-							<left>20</left>
-							<top>260</top>
-							<width>308</width>
-							<height>60</height>
-							<texture colordiffuse="99FFFFFF">colors/black.png</texture>
-						</control>
+						<left>3</left>
+						<top>240</top>
+						<width>345</width>
+						<height>100</height>
+						<texture border="40">buttons/button-nofo.png</texture>
+					</control>
 						<control type="label">
-							<left>40</left>
+							<left>30</left>
 							<top>260</top>
-							<width>268</width>
+							<width>288</width>
 							<label>$PARAM[second_label]</label>
 							<font>font10</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
 						<control type="label">
-							<left>40</left>
+							<left>30</left>
 							<top>284</top>
-							<width>268</width>
+							<width>288</width>
 							<label>$INFO[ListItem.TVShowTitle]</label>
 							<font>font10</font>
 							<shadowcolor>text_shadow</shadowcolor>
