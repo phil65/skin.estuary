@@ -70,6 +70,11 @@
 			<aligny>center</aligny>
 			<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</label>
 		</control>
+		<control type="group">
+			<left>230</left>
+			<top>28</top>
+			<include>UserRatingCircle</include>
+		</control>
 	</include>
 	<include name="View_54_InfoWall">
 		<include name="UpDownArrows">
