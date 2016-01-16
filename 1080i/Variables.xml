@@ -266,14 +266,6 @@
 		<value condition="Control.HasFocus(704)">button_focus</value>
 		<value>FFFFFFFF</value>
 	</variable>
-	<variable name="MusicLibraryUpdateVar">
-		<value condition="Library.IsScanningMusic">$LOCALIZE[31040]</value>
-		<value>$LOCALIZE[653]</value>
-	</variable>
-	<variable name="VideoLibraryUpdateVar">
-		<value condition="Library.IsScanningVideo">$LOCALIZE[31040]</value>
-		<value>$LOCALIZE[653]</value>
-	</variable>
 	<variable name="BottomBarPageLabel">
 		<value condition="Control.HasFocus(60) | Control.HasFocus(5199) | Control.HasFocus(531) | Control.HasFocus(533)">[COLOR button_focus]$INFO[Container.CurrentPage,, / ]$INFO[Container.NumPages][/COLOR]</value>
 		<value>$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</value>

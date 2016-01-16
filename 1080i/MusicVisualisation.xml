@@ -32,14 +32,6 @@
 			<include>OpenClose_Left</include>
 			<include>Visible_Left</include>
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
-			<control type="image">
-				<left>48</left>
-				<top>-360</top>
-				<width>530</width>
-				<height>527</height>
-				<texture border="20" colordiffuse="button_focus">thumbs/cd_shadow_glow.png</texture>
-				<animation effect="fade" start="60" end="80" time="2000" pulse="true" condition="true">conditional</animation>
-			</control>
 			<control type="group">
 				<left>25</left>
 				<top>-330</top>
@@ -50,12 +42,6 @@
 					<texture fallback="DefaultAlbumCover.png" border="2">$INFO[MusicPlayer.Cover]</texture>
 					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 					<bordersize>4</bordersize>
-				</control>
-				<control type="image">
-					<width>470</width>
-					<height>470</height>
-					<aspectratio scalediffuse="false" align="right">scale</aspectratio>
-					<texture diffuse="thumbs/cdcover_mask2.png">thumbs/cdcover_glass_noreflect.png</texture>
 				</control>
 			</control>
 		</control>
