@@ -40,7 +40,7 @@
 				<effect type="slide" end="0,-20" time="60" tween="sine" />
 				<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
 			</animation>
-			<top>-2</top>
+			<top>78</top>
 			<left>20</left>
 			<include>OpenClose_Right</include>
 			<control type="group" id="5000">
@@ -59,8 +59,7 @@
 				</control>
 				<control type="grouplist" id="5001">
 					<orientation>vertical</orientation>
-					<top>76</top>
-					<height>925</height>
+					<height>922</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<itemgap>-2</itemgap>
 					<include name="SubMenu">
@@ -159,8 +158,7 @@
 				</control>
 				<control type="grouplist" id="6001">
 					<orientation>vertical</orientation>
-					<top>76</top>
-					<height>925</height>
+					<height>922</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<include name="SubMenu">
 						<param name="list_id" value="6900"/>
@@ -251,8 +249,7 @@
 				</control>
 				<control type="grouplist" id="7001">
 					<orientation>vertical</orientation>
-					<top>76</top>
-					<height>925</height>
+					<height>922</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<include name="SubMenu">
 						<param name="list_id" value="7900"/>
@@ -355,8 +352,7 @@
 				</control>
 				<control type="grouplist" id="8001">
 					<orientation>vertical</orientation>
-					<top>76</top>
-					<height>925</height>
+					<height>922</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<include name="SubMenu">
 						<param name="list_id" value="8900"/>
@@ -431,8 +427,7 @@
 				</control>
 				<control type="grouplist" id="11001">
 					<orientation>vertical</orientation>
-					<top>76</top>
-					<height>925</height>
+					<height>922</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<include name="SubMenu">
 						<param name="list_id" value="11900"/>
@@ -499,8 +494,7 @@
 				</control>
 				<control type="grouplist" id="12001">
 					<orientation>vertical</orientation>
-					<top>76</top>
-					<height>925</height>
+					<height>922</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<usecontrolcoords>true</usecontrolcoords>
 					<include name="SubMenu">
@@ -593,8 +587,7 @@
 				</control>
 				<control type="grouplist" id="13001">
 					<orientation>vertical</orientation>
-					<top>76</top>
-					<height>925</height>
+					<height>922</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<include name="SubMenu">
 						<param name="list_id" value="13900"/>
@@ -653,8 +646,7 @@
 				</control>
 				<control type="grouplist" id="15001">
 					<orientation>vertical</orientation>
-					<top>76</top>
-					<height>925</height>
+					<height>922</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<include name="SubMenu">
 						<param name="list_id" value="15900"/>
