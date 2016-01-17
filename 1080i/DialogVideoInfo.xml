@@ -62,8 +62,8 @@
 				<itemgap>-15</itemgap>
 				<ondown>5000</ondown>
 				<onup>50</onup>
-				<onright>138</onright>
-				<onleft>138</onleft>
+				<onright>140</onright>
+				<onleft>140</onleft>
 				<control type="button" id="13">
 					<width>505</width>
 					<height>100</height>
@@ -130,8 +130,25 @@
 					<onleft>4000</onleft>
 					<onright>4000</onright>
 					<ondown>5000</ondown>
+					<visible>IntegerGreaterThan(Container(4000).NumItems,0)</visible>
 				</control>
-				<control type="textbox" id="800">
+				<control type="button" id="139">
+					<width>1245</width>
+					<height>270</height>
+					<textoffsetx>40</textoffsetx>
+					<textoffsety>20</textoffsety>
+					<aligny>bottom</aligny>
+					<label></label>
+					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
+					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+					<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
+					<onup>50</onup>
+					<onleft>4000</onleft>
+					<onright>4000</onright>
+					<ondown>5000</ondown>
+					<visible>!IntegerGreaterThan(Container(4000).NumItems,0)</visible>
+				</control>
+				<control type="textbox">
 					<left>40</left>
 					<top>25</top>
 					<width>670</width>
@@ -140,6 +157,18 @@
 					<font>font12</font>
 					<label fallback="19055">$INFO[ListItem.TagLine,[B],[CR][/B]]$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>IntegerGreaterThan(Container(4000).NumItems,0)</visible>
+				</control>
+				<control type="textbox">
+					<left>40</left>
+					<top>25</top>
+					<width>1165</width>
+					<height>217</height>
+					<align>left</align>
+					<font>font12</font>
+					<label fallback="19055">$INFO[ListItem.Plot]</label>
+					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>!IntegerGreaterThan(Container(4000).NumItems,0)</visible>
 				</control>
 			</control>
 			<control type="image">
@@ -168,7 +197,7 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>5000</onup>
-				<ondown>138</ondown>
+				<ondown>140</ondown>
 				<scrolltime>200</scrolltime>
 				<orientation>horizontal</orientation>
 				<itemlayout height="400" width="245">
@@ -269,7 +298,7 @@
 				<onleft>5000</onleft>
 				<onright>5000</onright>
 				<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
-				<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">138</onup>
+				<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">140</onup>
 				<ondown condition="Stringcompare(Container(5000).CurrentItem,1)">SetFocus(50,0)</ondown>
 				<ondown condition="Stringcompare(Container(5000).CurrentItem,2)">SetFocus(50,1)</ondown>
 				<ondown condition="Stringcompare(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>
@@ -316,7 +345,7 @@
 						<onleft>440</onleft>
 						<onright>101</onright>
 						<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
-						<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">138</onup>
+						<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">140</onup>
 						<ondown condition="Stringcompare(Container(5000).CurrentItem,1)">SetFocus(50,0)</ondown>
 						<ondown condition="Stringcompare(Container(5000).CurrentItem,2)">SetFocus(50,1)</ondown>
 						<ondown condition="Stringcompare(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>
