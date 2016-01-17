@@ -759,7 +759,6 @@
 			</control>
 			<control type="group" id="4000">
 				<visible>Stringcompare(Container(9000).ListItem.Property(id),pictures)</visible>
-				<top>76</top>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<include>Visible_Right_Delayed</include>
 				<control type="grouplist" id="4001">
