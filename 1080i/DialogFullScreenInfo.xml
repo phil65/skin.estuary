@@ -32,19 +32,6 @@
 				<texture fallback="DefaultVideoCover.png">$VAR[NowPlayingPosterVar]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 			</control>
-			<control type="label">
-				<description>Heading label</description>
-				<left>49</left>
-				<top>-270</top>
-				<width>1600</width>
-				<height>25</height>
-				<aligny>center</aligny>
-				<font>font30</font>
-				<label>[UPPERCASE]$LOCALIZE[31000][/UPPERCASE]: $INFO[Player.Title]</label>
-				<shadowcolor>black</shadowcolor>
-				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
-				<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
-			</control>
 			<control type="textbox">
 				<left>52</left>
 				<top>-204</top>
