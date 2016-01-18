@@ -110,6 +110,7 @@
 				<param name="id" value="4" />
 				<param name="label" value="$LOCALIZE[20406]" />
 				<param name="width" value="350" />
+				<param name="visible" value="Control.IsEnabled(4)" />
 			</include>
 		</control>
 		<include name="UpDownArrows">
