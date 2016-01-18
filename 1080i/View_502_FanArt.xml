@@ -122,7 +122,16 @@
 								<height>702</height>
 								<fadetime>200</fadetime>
 								<aspectratio>scale</aspectratio>
-								<animation effect="fade" start="100" end="40" time="200" condition="!Window.IsActive(movieinformation)">Conditional</animation>
+								<texture>colors/black.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>12</top>
+								<width>466</width>
+								<height>702</height>
+								<fadetime>200</fadetime>
+								<aspectratio>scale</aspectratio>
+								<animation effect="fade" start="100" end="35" time="200" condition="!Window.IsActive(movieinformation)">Conditional</animation>
 								<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
 							</control>
 							<control type="group">
@@ -227,7 +236,7 @@
 						<top>661</top>
 						<width>230</width>
 						<height>32</height>
-						<font>font_textbox</font>
+						<font>font12</font>
 						<label>$INFO[ListItem.RatingAndVotes]</label>
 					</control>
 					<control type="image">
@@ -251,7 +260,7 @@
 					<control type="textbox">
 						<left>30</left>
 						<top>35</top>
-						<width>400</width>
+						<width>420</width>
 						<height>598</height>
 						<align>left</align>
 						<font>font_textbox</font>
