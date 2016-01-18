@@ -547,12 +547,12 @@
 							</control>
 						</control>
 						<control type="image">
-						<left>3</left>
-						<top>240</top>
-						<width>345</width>
-						<height>100</height>
-						<texture border="40">buttons/button-nofo.png</texture>
-					</control>
+							<left>3</left>
+							<top>240</top>
+							<width>345</width>
+							<height>100</height>
+							<texture border="40">buttons/button-nofo.png</texture>
+						</control>
 						<control type="label">
 							<left>30</left>
 							<top>260</top>
@@ -726,13 +726,17 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<align>left</align>
 				</control>
+				<include name="LeftRightArrows">
+					<param name="posy" value="200" />
+					<param name="list_id" value="$PARAM[list_id]" />
+				</include>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>480</left>
 					<top>55</top>
 					<width>1372</width>
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>vertical</orientation>
+					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
 					<onright>noop</onright>
 					<onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
@@ -741,33 +745,33 @@
 					<ondown>$PARAM[ondown_id]</ondown>
 					<onback>SetFocus(9000)</onback>
 					<preloaditems>1</preloaditems>
-					<itemlayout width="343" height="160">
+					<itemlayout width="343" height="320">
 						<control type="image">
 							<width>340</width>
-							<height>160</height>
+							<height>320</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<top>43</top>
-							<left>25</left>
-							<width>70</width>
-							<height>70</height>
+							<top>23</top>
+							<left>62</left>
+							<width>220</width>
+							<height>180</height>
 							<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<left>105</left>
-							<top>17</top>
-							<width>208</width>
-							<height>120</height>
+							<left>42</left>
+							<top>220</top>
+							<width>260</width>
+							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
+							<align>center</align>
+							<aligny>top</aligny>
 						</control>
 					</itemlayout>
-					<focusedlayout width="343" height="160">
+					<focusedlayout width="343" height="320">
 						<control type="group">
 							<depth>DepthContentPopout</depth>
 							<animation type="Focus">
@@ -778,34 +782,169 @@
 							</animation>
 							<control type="image">
 								<width>340</width>
-								<height>160</height>
+								<height>320</height>
 								<texture border="40">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
 								<width>340</width>
-								<height>160</height>
+								<height>320</height>
+								<texture border="40">buttons/button-theme-fo.png</texture>
+								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							</control>
+						<control type="image">
+							<top>23</top>
+							<left>62</left>
+							<width>220</width>
+							<height>180</height>
+							<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>220</top>
+							<width>260</width>
+							<height>70</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+						</control>
+					</focusedlayout>
+					<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="WidgetListChannels">
+		<param name="height">600</param>
+		<param name="arrow_posy">200</param>
+		<param name="item_limit">10</param>
+		<param name="icon">icons/defaulticons/$INFO[ListItem.Icon]</param>
+		<definition>
+			<control type="group">
+				<description>Square Widget including header and arrows</description>
+				<height>$PARAM[height]</height>
+				<left>0</left>
+				<top>0</top>
+				<visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<control type="label">
+					<left>500</left>
+					<top>15</top>
+					<width>600</width>
+					<height>40</height>
+					<label>$PARAM[widget_header]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>left</align>
+				</control>
+				<include name="LeftRightArrows">
+					<param name="posy" value="300" />
+					<param name="list_id" value="$PARAM[list_id]" />
+				</include>
+				<control type="panel" id="$PARAM[list_id]">
+					<left>480</left>
+					<top>55</top>
+					<width>1372</width>
+					<height>$PARAM[height]</height>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<orientation>horizontal</orientation>
+					<onleft>9000</onleft>
+					<onright>noop</onright>
+					<onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+					<onup>$PARAM[onup_id]</onup>
+					<ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+					<ondown>$PARAM[ondown_id]</ondown>
+					<onback>SetFocus(9000)</onback>
+					<preloaditems>1</preloaditems>
+					<itemlayout width="343" height="500">
+						<control type="image">
+							<width>340</width>
+							<height>500</height>
+							<texture border="40">buttons/button-nofo.png</texture>
+						</control>
+						<control type="image">
+							<top>43</top>
+							<left>42</left>
+							<width>260</width>
+							<height>200</height>
+							<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>247</top>
+							<width>260</width>
+							<height>70</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>350</top>
+							<width>260</width>
+							<height>100</height>
+							<label>[COLOR button_focus]$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime][/COLOR][CR]$INFO[ListItem.Title]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="343" height="500">
+						<control type="group">
+							<depth>DepthContentPopout</depth>
+							<animation type="Focus">
+								<effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+							</animation>
+							<animation type="Unfocus">
+								<effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+							</animation>
+							<control type="image">
+								<width>340</width>
+								<height>500</height>
+								<texture border="40">buttons/button-nofo.png</texture>
+							</control>
+							<control type="image">
+								<width>340</width>
+								<height>500</height>
 								<texture border="40">buttons/button-theme-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							</control>
 							<control type="image">
 								<top>43</top>
-								<left>25</left>
-								<width>70</width>
-								<height>70</height>
+								<left>42</left>
+								<width>260</width>
+								<height>200</height>
 								<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="textbox">
-								<left>105</left>
-								<top>17</top>
-								<width>208</width>
-								<height>120</height>
+								<left>42</left>
+								<top>247</top>
+								<width>260</width>
+								<height>70</height>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
-								<align>left</align>
-								<aligny>center</aligny>
+								<align>center</align>
+								<aligny>top</aligny>
+							</control>
+							<control type="textbox">
+								<left>42</left>
+								<top>350</top>
+								<width>260</width>
+								<height>100</height>
+								<label>[COLOR button_focus]$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime][/COLOR][CR]$INFO[ListItem.Title]</label>
+								<font>font12</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>top</aligny>
 							</control>
 						</control>
 					</focusedlayout>

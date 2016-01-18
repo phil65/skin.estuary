@@ -499,7 +499,7 @@
 					<usecontrolcoords>true</usecontrolcoords>
 					<include name="SubMenu">
 						<param name="list_id" value="12900"/>
-						<param name="ondown_id" value="12100"/>
+						<param name="ondown_id" value="12200"/>
 						<param name="item1_onclick" value="ActivateWindow(TVChannels)" />
 						<param name="item1_icon" value="channels.png" />
 						<param name="item1_label" value="$LOCALIZE[19019]" />
@@ -521,7 +521,7 @@
 						<param name="item7_vis" value="False" />
 						<param name="item8_vis" value="False" />
 					</include>
-					<include name="WidgetListText">
+<!-- 					<include name="WidgetListText">
 						<param name="content_path" value="pvr://recordings/all"/>
 						<param name="widget_header" value="$LOCALIZE[31015]"/>
 						<param name="widget_target" value="TVRecordings"/>
@@ -532,15 +532,15 @@
 						<param name="arrow_posy" value="120"/>
 						<param name="ondown_id" value="12200"/>
 						<param name="icon" value="$INFO[ListItem.Icon]"/>
-					</include>
-					<include name="WidgetListText">
+					</include> -->
+					<include name="WidgetListChannels">
 						<param name="content_path" value="pvr://channels/tv/All channels/"/>
 						<param name="widget_header" value="$LOCALIZE[31016]"/>
 						<param name="widget_target" value="pvr"/>
 						<param name="list_id" value="12200"/>
-						<param name="onup_id" value="12100"/>
+						<param name="onup_id" value="12900"/>
 						<param name="ondown_id" value="20001"/>
-						<param name="height" value="340"/>
+						<param name="height" value="540"/>
 					</include>
 					<control type="grouplist">
 						<height>218</height>
@@ -591,7 +591,7 @@
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<include name="SubMenu">
 						<param name="list_id" value="13900"/>
-						<param name="ondown_id" value="13100"/>
+						<param name="ondown_id" value="13200"/>
 						<param name="item1_onclick" value="ActivateWindow(RadioChannels)" />
 						<param name="item1_icon" value="channels.png" />
 						<param name="item1_label" value="$LOCALIZE[19019]" />
@@ -613,20 +613,20 @@
 						<param name="item7_vis" value="False" />
 						<param name="item8_vis" value="False" />
 					</include>
-					<include name="WidgetListText">
+<!-- 					<include name="WidgetListChannels">
 						<param name="content_path" value="pvr://channels/radio/All channels/"/>
 						<param name="widget_header" value="$LOCALIZE[31017]"/>
 						<param name="widget_target" value="files"/>
 						<param name="list_id" value="13100"/>
 						<param name="onup_id" value="13900"/>
 						<param name="ondown_id" value="13200"/>
-					</include>
-					<include name="WidgetListText">
+					</include> -->
+					<include name="WidgetListChannels">
 						<param name="content_path" value="pvr://channels/radio/All channels/"/>
 						<param name="widget_header" value="$LOCALIZE[31018]"/>
 						<param name="widget_target" value="files"/>
 						<param name="list_id" value="13200"/>
-						<param name="onup_id" value="13100"/>
+						<param name="onup_id" value="13900"/>
 						<param name="ondown_id" value="20001"/>
 					</include>
 				</control>
