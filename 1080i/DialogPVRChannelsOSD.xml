@@ -78,10 +78,11 @@
 				</control>
 				<control type="image">
 					<left>5</left>
-					<top>35</top>
-					<width>30</width>
-					<height>20</height>
-					<texture>PVR-IsRecording.png</texture>
+					<top>10</top>
+					<width>70</width>
+					<height>24</height>
+					<aspectratio>keep</aspectratio>
+					<texture>windows/pvr/record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="label">
@@ -187,10 +188,11 @@
 				</control>
 				<control type="image">
 					<left>5</left>
-					<top>35</top>
-					<width>30</width>
-					<height>20</height>
-					<texture>PVR-IsRecording.png</texture>
+					<top>10</top>
+					<width>70</width>
+					<height>24</height>
+					<aspectratio>keep</aspectratio>
+					<texture>windows/pvr/record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="label">
