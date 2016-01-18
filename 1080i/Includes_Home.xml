@@ -706,7 +706,7 @@
 		</definition>
 	</include>
 	<include name="WidgetListText">
-		<param name="height">395</param>
+		<param name="height">405</param>
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">8</param>
 		<param name="icon">icons/defaulticons/$INFO[ListItem.Icon]</param>
@@ -745,10 +745,10 @@
 					<ondown>$PARAM[ondown_id]</ondown>
 					<onback>SetFocus(9000)</onback>
 					<preloaditems>1</preloaditems>
-					<itemlayout width="343" height="320">
+					<itemlayout width="343" height="340">
 						<control type="image">
 							<width>340</width>
-							<height>320</height>
+							<height>340</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
@@ -759,9 +759,16 @@
 							<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<left>20</left>
+							<top>243</top>
+							<width>298</width>
+							<height>75</height>
+							<texture>colors/black.png</texture>
+						</control>
 						<control type="textbox">
 							<left>42</left>
-							<top>220</top>
+							<top>245</top>
 							<width>260</width>
 							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
@@ -771,7 +778,7 @@
 							<aligny>top</aligny>
 						</control>
 					</itemlayout>
-					<focusedlayout width="343" height="320">
+					<focusedlayout width="343" height="340">
 						<control type="group">
 							<depth>DepthContentPopout</depth>
 							<animation type="Focus">
@@ -782,35 +789,42 @@
 							</animation>
 							<control type="image">
 								<width>340</width>
-								<height>320</height>
+								<height>340</height>
 								<texture border="40">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
 								<width>340</width>
-								<height>320</height>
+								<height>340</height>
 								<texture border="40">buttons/button-theme-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							</control>
-						<control type="image">
-							<top>23</top>
-							<left>62</left>
-							<width>220</width>
-							<height>180</height>
-							<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
-							<aspectratio>keep</aspectratio>
-						</control>
-						<control type="textbox">
-							<left>42</left>
-							<top>220</top>
-							<width>260</width>
-							<height>70</height>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font12</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
-							<aligny>top</aligny>
-						</control>
+							<control type="image">
+								<top>23</top>
+								<left>62</left>
+								<width>220</width>
+								<height>180</height>
+								<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>243</top>
+								<width>298</width>
+								<height>75</height>
+								<texture>colors/black.png</texture>
+							</control>
+							<control type="textbox">
+								<left>42</left>
+								<top>245</top>
+								<width>260</width>
+								<height>70</height>
+								<label>$INFO[ListItem.Label]</label>
+								<font>font12</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>top</aligny>
+							</control>
 						</control>
 					</focusedlayout>
 					<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
