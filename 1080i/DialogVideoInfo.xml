@@ -123,7 +123,7 @@
 					<textoffsety>20</textoffsety>
 					<aligny>bottom</aligny>
 					<label></label>
-					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
+					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 					<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
 					<onup>50</onup>
@@ -139,7 +139,7 @@
 					<textoffsety>20</textoffsety>
 					<aligny>bottom</aligny>
 					<label></label>
-					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,Plot,home)</onclick>
+					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 					<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
 					<onup>50</onup>

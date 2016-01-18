@@ -58,24 +58,25 @@
 				<onright>61</onright>
 				<ondown>9000</ondown>
 				<onup>49</onup>
-				<onclick>SetProperty(TextViewer_Header,Plot,home)</onclick>
+				<onclick>SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 				<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 				<onclick>ActivateWindow(1102)</onclick>
 			</control>
 			<control type="textbox" id="400">
-				<left>640</left>
+				<left>660</left>
 				<top>80</top>
-				<width>1030</width>
-				<height>370</height>
+				<width>1050</width>
+				<height>368</height>
 				<align>justify</align>
+				<font>font12</font>
 				<label>$INFO[ListItem.Season, [COLOR button_focus]S[/COLOR]]$INFO[ListItem.Episode, [COLOR button_focus]E[/COLOR],: ]$INFO[ListItem.EpisodeName,[B],[/B][CR]]$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:[/COLOR] ,[CR]]$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]:[/COLOR] ,[CR]]$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]:[/COLOR] ,[CR]]$INFO[ListItem.Cast,[COLOR button_focus]$LOCALIZE[206]:[/COLOR] ,[CR]][CR]$INFO[ListItem.Plot]</label>
 				<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>640</left>
+				<left>660</left>
 				<top>20</top>
-				<width>1030</width>
+				<width>1050</width>
 				<height>30</height>
 				<font>font30_title</font>
 				<label>$INFO[Listitem.Title]</label>
@@ -86,7 +87,7 @@
 			<control type="grouplist" id="9000">
 				<left>600</left>
 				<top>588</top>
-				<width>1400</width>
+				<width>1170</width>
 				<height>160</height>
 				<itemgap>-10</itemgap>
 				<align>left</align>
