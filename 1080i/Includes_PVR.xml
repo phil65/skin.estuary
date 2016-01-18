@@ -412,29 +412,29 @@
 			<font>font12</font>
 			<label>$INFO[ListItem.Plot]</label>
 		</control>
-			<control type="grouplist" id="4300">
-				<left>0</left>
-				<top>545</top>
-				<align>center</align>
-				<orientation>horizontal</orientation>
-				<width>560</width>
-				<onleft>60</onleft>
-				<onright>50</onright>
-				<control type="button" id="4301">
-					<width>auto</width>
-					<height>95</height>
-					<textoffsetx>30</textoffsetx>
-					<label>$LOCALIZE[31047]</label>
-					<font>font12</font>
-					<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
-					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
-					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
-					<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
-					<onclick>SetFocus(50)</onclick>
-					<visible>IntegerGreaterThan(Container(4380).NumPages,1)</visible>
-				</control>
+		<control type="grouplist" id="4300">
+			<left>0</left>
+			<top>545</top>
+			<align>center</align>
+			<orientation>horizontal</orientation>
+			<width>560</width>
+			<onleft>60</onleft>
+			<onright>50</onright>
+			<control type="button" id="4301">
+				<width>auto</width>
+				<height>95</height>
+				<textoffsetx>30</textoffsetx>
+				<label>$LOCALIZE[31047]</label>
+				<font>font12</font>
+				<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
+				<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+				<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
+				<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+				<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
+				<onclick>SetFocus(50)</onclick>
+				<visible>IntegerGreaterThan(Container(4380).NumPages,1)</visible>
 			</control>
+		</control>
 		<control type="textbox">
 			<top>330</top>
 			<width>560</width>
