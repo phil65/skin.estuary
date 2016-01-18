@@ -6,6 +6,7 @@
 			<top>180</top>
 			<left>106</left>
 			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
+			<visible>!Container.Content(files)</visible>
 			<control type="image">
 				<top>-16</top>
 				<left>-16</left>
@@ -28,28 +29,28 @@
 			</control>
 			<control type="group">
 				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Thumb)</visible>
-			<control type="image">
-				<left>4</left>
-				<top>4</top>
-				<width>466</width>
-				<height>701</height>
-				<fadetime>200</fadetime>
-				<aspectratio>stretch</aspectratio>
-				<texture colordiffuse="AAFFFFFF" fallback="DefaultVideo.png">colors/black.png</texture>
-				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
-			</control>
-			<control type="image">
-				<left>14</left>
-				<top>4</top>
-				<width>446</width>
-				<height>701</height>
-				<fadetime>200</fadetime>
-				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Thumb]</texture>
-				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-			</control>
+				<control type="image">
+					<left>4</left>
+					<top>4</top>
+					<width>466</width>
+					<height>701</height>
+					<fadetime>200</fadetime>
+					<aspectratio>stretch</aspectratio>
+					<texture colordiffuse="AAFFFFFF" fallback="DefaultVideo.png">colors/black.png</texture>
+					<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				</control>
+				<control type="image">
+					<left>14</left>
+					<top>4</top>
+					<width>446</width>
+					<height>701</height>
+					<fadetime>200</fadetime>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Thumb]</texture>
+					<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
 			</control>
 		</control>
 		<control type="group">
@@ -157,7 +158,7 @@
 					<font>font12</font>
 					<label fallback="19055">$INFO[ListItem.TagLine,[B],[CR][/B]]$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>IntegerGreaterThan(Container(4000).NumItems,0)</visible>
+					<visible>IntegerGreaterThan(Container(4000).NumItems,0)</visible>
 				</control>
 				<control type="textbox">
 					<left>40</left>
@@ -168,7 +169,7 @@
 					<font>font12</font>
 					<label fallback="19055">$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!IntegerGreaterThan(Container(4000).NumItems,0)</visible>
+					<visible>!IntegerGreaterThan(Container(4000).NumItems,0)</visible>
 				</control>
 			</control>
 			<control type="image">
