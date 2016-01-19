@@ -94,16 +94,16 @@
 				<pagecontrol>73</pagecontrol>
 				<pagecontrol>121</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout width="920" height="60">
+				<itemlayout width="920" height="100">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>920</width>
-						<height>60</height>
+						<height>100</height>
 						<texture>lists/separator.png</texture>
 					</control>
 					<control type="image">
-						<left>5</left>
+						<left>25</left>
 						<top>5</top>
 						<width>50</width>
 						<height>50</height>
@@ -111,54 +111,56 @@
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>70</left>
-						<top>0</top>
-						<width>90</width>
-						<height>60</height>
+						<left>0</left>
+						<top>20</top>
+						<width>100</width>
+						<height>100</height>
+						<font>font10</font>
+						<textcolor>grey</textcolor>
+						<align>center</align>
 						<aligny>center</aligny>
-						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>160</left>
-						<top>20</top>
+						<left>810</left>
+						<top>60</top>
 						<width>30</width>
 						<height>20</height>
 						<texture>windows/subtitles/icon_close_caption.png</texture>
 						<visible>ListItem.property(hearing_imp)</visible>
 					</control>
 					<control type="image">
-						<left>160</left>
-						<top>20</top>
+						<left>850</left>
+						<top>60</top>
 						<width>60</width>
 						<height>20</height>
 						<texture>windows/subtitles/icon_sync.png</texture>
 						<visible>ListItem.property(sync)</visible>
 					</control>
-					<control type="label">
-						<left>205</left>
+					<control type="textbox">
+						<left>130</left>
 						<top>0</top>
-						<width>595</width>
-						<height>60</height>
-						<font>font12</font>
+						<width>645</width>
+						<height>100</height>
 						<aligny>center</aligny>
+						<font>font12</font>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
 						<left>810</left>
 						<top>10</top>
-						<width>90</width>
-						<height>40</height>
+						<width>100</width>
+						<height>45</height>
 						<texture fallback="flags/starrating/rating0.png">flags/starrating/rating$INFO[ListItem.ActualIcon].png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout width="920" height="60">
+				<focusedlayout width="920" height="100">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>920</width>
-						<height>60</height>
+						<height>100</height>
 						<texture>lists/separator.png</texture>
 						<visible>!Control.HasFocus(120)</visible>
 					</control>
@@ -166,12 +168,12 @@
 						<left>0</left>
 						<top>0</top>
 						<width>920</width>
-						<height>60</height>
+						<height>100</height>
 						<texture>lists/focus.png</texture>
 						<visible>Control.HasFocus(120)</visible>
 					</control>
 					<control type="image">
-						<left>5</left>
+						<left>25</left>
 						<top>5</top>
 						<width>50</width>
 						<height>50</height>
@@ -179,46 +181,46 @@
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>70</left>
-						<top>0</top>
-						<width>90</width>
-						<height>60</height>
-						<font>font12</font>
+						<left>0</left>
+						<top>20</top>
+						<width>100</width>
+						<height>100</height>
+						<font>font10</font>
+						<textcolor>grey</textcolor>
+						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-						<scroll>true</scroll>
 					</control>
 					<control type="image">
-						<left>160</left>
-						<top>20</top>
+						<left>810</left>
+						<top>60</top>
 						<width>30</width>
 						<height>20</height>
 						<texture>windows/subtitles/icon_close_caption.png</texture>
 						<visible>ListItem.property(hearing_imp)</visible>
 					</control>
 					<control type="image">
-						<left>160</left>
-						<top>20</top>
+						<left>850</left>
+						<top>60</top>
 						<width>60</width>
 						<height>20</height>
 						<texture>windows/subtitles/icon_sync.png</texture>
 						<visible>ListItem.property(sync)</visible>
 					</control>
-					<control type="label">
-						<left>205</left>
+					<control type="textbox">
+						<left>130</left>
 						<top>0</top>
-						<width>595</width>
-						<height>60</height>
+						<width>645</width>
+						<height>100</height>
 						<aligny>center</aligny>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label2]</label>
-						<scroll>true</scroll>
 					</control>
 					<control type="image">
 						<left>810</left>
 						<top>10</top>
-						<width>90</width>
-						<height>40</height>
+						<width>100</width>
+						<height>45</height>
 						<texture fallback="flags/starrating/rating0.png">flags/starrating/rating$INFO[ListItem.ActualIcon].png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
@@ -243,7 +245,7 @@
 				<left>-20</left>
 				<top>-20</top>
 				<width>360</width>
-				<height>440</height>
+				<height>520</height>
 				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="label">
@@ -261,16 +263,16 @@
 			</control>
 			<control type="image" id="110">
 				<description>Service Logo</description>
-				<top>460</top>
+				<top>500</top>
 				<width>320</width>
-				<height>90</height>
+				<height>80</height>
 				<fadetime>200</fadetime>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="list" id="150">
 				<top>0</top>
 				<width>320</width>
-				<height>400</height>
+				<height>480</height>
 				<onleft>160</onleft>
 				<onright>120</onright>
 				<onup>150</onup>
