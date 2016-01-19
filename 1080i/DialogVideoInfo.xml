@@ -27,7 +27,7 @@
 				<animation effect="fade" start="0" end="100" time="0" delay="300">WindowOpen</animation>
 			</control>
 			<control type="group">
-				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Thumb)</visible>
+				<visible>[Container.Content(episodes) | Container.Content(mixed)] + !IsEmpty(ListItem.Thumb)</visible>
 				<control type="image">
 					<left>4</left>
 					<top>4</top>
@@ -444,7 +444,7 @@
 			<include>MediaFlags</include>
 		</control>
 		<include name="InfoDialogTopBarInfo">
-			<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
+			<param name="main_label" value="$VAR[VideoInfoMainLabelVar]" />
 			<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
 		</include>
 	</controls>
