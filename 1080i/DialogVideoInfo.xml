@@ -302,7 +302,7 @@
 				<ondown condition="Stringcompare(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>
 				<ondown condition="Stringcompare(Container(5000).CurrentItem,4)">SetFocus(50,3)</ondown>
 				<ondown condition="Stringcompare(Container(5000).CurrentItem,5)">SetFocus(50,4)</ondown>
-				<ondown>50</ondown>
+				<ondown condition="!IntegerGreaterThan(Container(50).NumItems,0)">50</ondown>
 				<itemgap>-16</itemgap>
 				<align>left</align>
 				<orientation>horizontal</orientation>
