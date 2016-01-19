@@ -228,7 +228,7 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="WeatherFanartVar">
-		<value condition="!IsEmpty(Container(9000).ListItem.Property(fanartcode))">$INFO[Container(9000).ListItem.Property(fanartcode),resource://resource.images.weatherfanart.single/,.jpg]</value>
+		<value condition="!IsEmpty(Window(weather).Property(current.fanartcode))">$INFO[Window(weather).Property(current.fanartcode),resource://resource.images.weatherfanart.multi/]</value>
 		<value>$INFO[Window(weather).Property(fanartcode),resource://resource.images.weatherfanart.single/,.jpg]</value>
 	</variable>
 	<variable name="ListWatchedIconVar">

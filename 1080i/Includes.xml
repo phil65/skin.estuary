@@ -1345,7 +1345,7 @@
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
 				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
 			</control>
-			<control type="image">
+			<control type="multiimage">
 				<depth>DepthBackground</depth>
 				<include>FullScreenDimensions</include>
 				<aspectratio>scale</aspectratio>
@@ -1354,7 +1354,7 @@
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<animation effect="fade" time="400">VisibleChange</animation>
-				<texture background="true" colordiffuse="32FFFFFF">$PARAM[fanart]</texture>
+				<imagepath background="true" colordiffuse="32FFFFFF">$PARAM[fanart]</imagepath>
 				<visible>!Player.HasMedia</visible>
 			</control>
 		</definition>
