@@ -1344,7 +1344,6 @@
 				<animation effect="fade" start="100" end="75" time="0" condition="Player.HasMedia">Conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
 				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
-				<fadetime>300</fadetime>
 			</control>
 			<control type="image">
 				<depth>DepthBackground</depth>
