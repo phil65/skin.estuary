@@ -1193,7 +1193,8 @@
 					<top>10</top>
 					<width>80</width>
 					<height>80</height>
-					<onclick>Container.Update(" ",replace)</onclick>
+					<onclick condition="!IsEmpty(Container.FolderPath)">Container.Update(" ",replace)</onclick>
+					<onclick condition="IsEmpty(Container.FolderPath)">Action(Back)</onclick>
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
