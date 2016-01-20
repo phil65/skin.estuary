@@ -364,7 +364,7 @@
 			<width>150</width>
 			<height>100</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$INFO[ListItem.Icon]</texture>
+			<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Art(thumb)]</texture>
 			<fadetime>200</fadetime>
 		</control>
 		<control type="label">

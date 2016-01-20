@@ -57,7 +57,7 @@
 							<top>6</top>
 							<width>60</width>
 							<height>46</height>
-							<texture>$INFO[Listitem.Icon]</texture>
+							<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Art(thumb)]</texture>
 							<aspectratio align="left">keep</aspectratio>
 						</control>
 						<control type="progress">
@@ -123,7 +123,7 @@
 							<top>6</top>
 							<width>60</width>
 							<height>46</height>
-							<texture>$INFO[Listitem.Icon]</texture>
+							<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Art(thumb)]</texture>
 							<aspectratio align="left">keep</aspectratio>
 						</control>
 						<control type="progress">
