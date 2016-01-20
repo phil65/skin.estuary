@@ -589,13 +589,12 @@
 	</include>
 	<include name="WidgetListSquare">
 		<param name="height">405</param>
-		<param name="sublabel">$INFO[ListItem.Label]$INFO[ListItem.Year,[COLOR button_focus] - ,[/COLOR]]</param>
+		<param name="sublabel">$INFO[ListItem.Label]</param>
 		<definition>
 			<control type="group">
 				<description>Square Widget including header and arrows</description>
 				<height>$PARAM[height]</height>
 				<left>0</left>
-				<top>0</top>
 				<visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<include name="LeftRightArrows">
 					<param name="posy" value="200" />
@@ -636,6 +635,35 @@
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="group">
+							<left>20</left>
+							<top>20</top>
+							<control type="image">
+								<left>0</left>
+								<top>240</top>
+								<width>300</width>
+								<height>60</height>
+								<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+							</control>
+							<control type="label">
+								<left>20</left>
+								<top>240</top>
+								<width>260</width>
+								<label>$PARAM[sublabel]</label>
+								<font>font10</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<left>20</left>
+								<top>264</top>
+								<width>260</width>
+								<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version),[COLOR button_focus],[/COLOR]]</label>
+								<font>font10</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+							</control>
+						</control>
 					</itemlayout>
 					<focusedlayout width="343" height="400">
 						<control type="group">
@@ -657,9 +685,6 @@
 								<bordersize>20</bordersize>
 							</control>
 							<control type="group">
-								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-								<visible>Control.HasFocus($PARAM[list_id])</visible>
 								<left>20</left>
 								<top>20</top>
 								<control type="image">
@@ -667,34 +692,33 @@
 									<top>240</top>
 									<width>300</width>
 									<height>60</height>
-									<texture>colors/black.png</texture>
-									<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+									<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
 								</control>
-								<control type="group">
-									<control type="label">
-										<left>20</left>
-										<top>240</top>
-										<width>260</width>
-										<label>$PARAM[sublabel]</label>
-										<font>font10</font>
-										<shadowcolor>text_shadow</shadowcolor>
-										<align>center</align>
-									</control>
-									<control type="label">
-										<left>20</left>
-										<top>264</top>
-										<width>260</width>
-										<label>$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version),[COLOR button_focus],[/COLOR]]</label>
-										<font>font10</font>
-										<shadowcolor>text_shadow</shadowcolor>
-										<align>center</align>
-									</control>
+								<control type="label">
+									<left>20</left>
+									<top>240</top>
+									<width>260</width>
+									<label>$PARAM[sublabel]</label>
+									<font>font10</font>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<left>20</left>
+									<top>264</top>
+									<width>260</width>
+									<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version),[COLOR button_focus],[/COLOR]]</label>
+									<font>font10</font>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
 								</control>
 								<control type="image">
 									<left>0</left>
 									<top>0</top>
 									<width>300</width>
 									<height>300</height>
+									<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+									<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 									<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 								</control>
 							</control>
