@@ -54,6 +54,7 @@
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
 	<variable name="IconWallThumbVar">
+		<value condition="Container.Content(studios)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
 		<value condition="SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>

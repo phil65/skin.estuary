@@ -56,16 +56,6 @@
 					<onright>50</onright>
 					<ondown>14100</ondown>
 					<onback>50</onback>
-					<!-- 										<control type="button" id="6066">
-					     <description>Fake button to focus the right button once this grouplist has focus</description>
-					     <width>1</width>
-					     <height>1</height>
-					     <label>-</label>
-					     <onfocus>SetFocus(6053)</onfocus>
-					     <onclick>noop</onclick>
-					     <texturefocus>-</texturefocus>
-					     <texturenofocus>-</texturenofocus>
-					     </control> -->
 					<control type="group" id="60520">
 						<height>50</height>
 						<control type="label">
