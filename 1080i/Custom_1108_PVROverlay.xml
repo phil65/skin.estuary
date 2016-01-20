@@ -18,6 +18,7 @@
 			<top>850</top>
 			<width>200</width>
 			<height>200</height>
+			<aspectratio aligny="center">keep</aspectratio>
 			<texture>$INFO[Player.Art(thumb)]</texture>
 		</control>
 		<control type="textbox">
@@ -40,7 +41,7 @@
 			<aligny>center</aligny>
 			<font>WeatherTemp</font>
 		</control>
-	<control type="label">
+		<control type="label">
 			<left>530</left>
 			<top>870</top>
 			<width>820</width>
