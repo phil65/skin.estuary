@@ -31,9 +31,9 @@
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<left>135</left>
+							<left>120</left>
 							<top>20</top>
-							<width>130</width>
+							<width>160</width>
 							<height>130</height>
 							<texture fallback="icons/defaulticons/DefaultStudios.png">$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
@@ -88,9 +88,9 @@
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="image">
-							<left>135</left>
+							<left>120</left>
 							<top>20</top>
-							<width>130</width>
+							<width>160</width>
 							<height>130</height>
 							<texture fallback="icons/defaulticons/DefaultStudios.png">$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
