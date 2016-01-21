@@ -138,7 +138,7 @@
 					</control>
 					<control type="button" id="6051">
 						<include>MediaMenuItemsCommon</include>
-						<label>$LOCALIZE[31023]</label>
+						<label>$LOCALIZE[456]</label>
 						<label2>[B]$INFO[Container.Viewmode][/B]</label2>
 						<onclick>Container.NextViewMode</onclick>
 						<visible>Window.IsActive(tvguide) | Window.IsActive(radioguide)</visible>
