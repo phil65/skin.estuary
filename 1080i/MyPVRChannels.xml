@@ -179,7 +179,7 @@
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<include name="PVRInfoPanel">
-					<param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]Next:[/COLOR] ]" />
+					<param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[/COLOR] ]" />
 					<param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
 				</include>
 			</control>
