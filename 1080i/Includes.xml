@@ -1190,9 +1190,9 @@
 					<texture colordiffuse="button_focus">$PARAM[breadcrumbs_icon]</texture>
 				</control>
 				<control type="button">
-					<top>10</top>
-					<width>80</width>
-					<height>80</height>
+					<top>0</top>
+					<width>120</width>
+					<height>100</height>
 					<onclick condition="!IsEmpty(Container.FolderPath)">Container.Update(" ",replace)</onclick>
 					<onclick condition="IsEmpty(Container.FolderPath)">Action(Back)</onclick>
 					<texturefocus>-</texturefocus>
