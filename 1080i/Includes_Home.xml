@@ -906,7 +906,7 @@
 							<left>42</left>
 							<width>260</width>
 							<height>200</height>
-							<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+							<texture fallback="DefaultTVShowsSquare.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
@@ -958,7 +958,7 @@
 								<left>42</left>
 								<width>260</width>
 								<height>200</height>
-								<texture fallback="icons/defaulticons/DefaultFolder.png">$PARAM[icon]</texture>
+								<texture fallback="DefaultTVShowsSquare.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="textbox">
