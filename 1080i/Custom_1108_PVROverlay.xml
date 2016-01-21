@@ -2,8 +2,8 @@
 <window type="dialog" id="1108">
 	<visible>Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)</visible>
 	<defaultcontrol>-</defaultcontrol>
-	<animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+	<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="100">WindowClose</animation>
 	<depth>DepthOSD</depth>
 	<controls>
 		<control type="image">
@@ -46,7 +46,7 @@
 			<top>870</top>
 			<width>1300</width>
 			<height>25</height>
-			<label>[COLOR button_focus]$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime]:[/COLOR] $INFO[VideoPlayer.Title]</label>
+			<label>$INFO[VideoPlayer.Title]</label>
 			<aligny>center</aligny>
 			<font>font30</font>
 		</control>
