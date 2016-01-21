@@ -1377,7 +1377,7 @@
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration) | Window.IsActive(fullscreenvideo)">WindowClose</animation>
 				</control>
 				<control type="group">
-					<visible>Window.IsMedia + !Window.IsActive(eventlog) + !Window.IsActive(tvguide) + !Window.IsActive(radioguide) + !Window.IsActive(musicplaylisteditor)</visible>
+					<visible>Window.IsMedia + !Window.IsActive(eventlog) + !Window.IsActive(musicplaylisteditor)</visible>
 					<visible>!System.HasModalDialog</visible>
 					<animation effect="fade" time="400">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
@@ -1391,6 +1391,7 @@
 						<animation effect="rotate" end="-90" center="40,1042" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
 						<texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
+						<visible>!Control.IsVisible(6160)</visible>
 						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
 					</control>
 					<control type="image">
@@ -1401,6 +1402,16 @@
 						<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>!Player.HasMedia + [ControlGroup(9000).HasFocus | Control.HasFocus(6130)]</visible>
+					</control>
+					<control type="image" id="6160">
+						<left>17</left>
+						<top>1019</top>
+						<width>44</width>
+						<height>44</height>
+						<texture colordiffuse="button_focus">icons/menu.png</texture>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<visible>[Window.IsActive(tvguide) | Window.IsActive(radioguide)] + Control.IsVisible(10)</visible>
+						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
 					</control>
 					<control type="button">
 						<top>1019</top>
