@@ -52,14 +52,6 @@
 							<texture>lists/focus.png</texture>
 							<visible>Control.hasFocus(50)</visible>
 						</control>
-						<control type="image">
-							<left>5</left>
-							<top>6</top>
-							<width>60</width>
-							<height>46</height>
-							<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Art(thumb)]</texture>
-							<aspectratio align="left">keep</aspectratio>
-						</control>
 						<control type="progress">
 							<description>Progressbar</description>
 							<left>940</left>
@@ -79,10 +71,10 @@
 							<texture>$VAR[PVRStatusImageVar]</texture>
 						</control>
 						<control type="label">
-							<left>135</left>
+							<left>105</left>
 							<top>0</top>
 							<height>58</height>
-							<width>770</width>
+							<width>800</width>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -98,7 +90,7 @@
 							<textcolor>white</textcolor>
 						</control>
 						<control type="label">
-							<left>52</left>
+							<left>12</left>
 							<top>0</top>
 							<height>58</height>
 							<width>70</width>
@@ -118,14 +110,6 @@
 							<height>58</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
-						<control type="image">
-							<left>5</left>
-							<top>6</top>
-							<width>60</width>
-							<height>46</height>
-							<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Art(thumb)]</texture>
-							<aspectratio align="left">keep</aspectratio>
-						</control>
 						<control type="progress">
 							<description>Progressbar</description>
 							<left>940</left>
@@ -144,10 +128,10 @@
 							<texture>$VAR[PVRStatusImageVar]</texture>
 						</control>
 						<control type="label">
-							<left>135</left>
+							<left>105</left>
 							<top>0</top>
 							<height>58</height>
-							<width>770</width>
+							<width>800</width>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
@@ -165,7 +149,7 @@
 							<textcolor>button_focus</textcolor>
 						</control>
 						<control type="label">
-							<left>52</left>
+							<left>12</left>
 							<top>0</top>
 							<height>58</height>
 							<width>70</width>
