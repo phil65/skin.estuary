@@ -902,7 +902,7 @@
 								<top>0</top>
 								<width>68</width>
 								<height>74</height>
-								<texture colordiffuse="51FFFFFF" border="1">colors/black.png</texture>
+								<texture colordiffuse="51FFFFFF">colors/black.png</texture>
 								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus + !Control.HasFocus(14200)">Conditional</animation>
 							</control>
 						</control>
