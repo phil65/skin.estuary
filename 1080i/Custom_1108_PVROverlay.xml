@@ -44,38 +44,62 @@
 		<control type="label">
 			<left>530</left>
 			<top>870</top>
-			<width>820</width>
+			<width>1300</width>
 			<height>25</height>
-			<label>$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime]: $INFO[VideoPlayer.Title]</label>
+			<label>[COLOR button_focus]$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime]:[/COLOR] $INFO[VideoPlayer.Title]</label>
 			<aligny>center</aligny>
-			<font>font13_title</font>
+			<font>font30</font>
 		</control>
-		<control type="textbox">
+		<control type="progress">
+			<animation effect="fade" end="0" time="200">WindowClose</animation>
 			<left>530</left>
-			<top>900</top>
-			<width>820</width>
-			<height>135</height>
-			<label>$INFO[VideoPlayer.Plot,$LOCALIZE[207]: ]</label>
-			<aligny>center</aligny>
-			<font>font12</font>
+			<top>922</top>
+			<width>1320</width>
+			<height>15</height>
+			<info>Player.ProgressCache</info>
+			<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
+			<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+			<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+		</control>
+		<control type="progress" id="23">
+			<animation effect="fade" end="0" time="200">WindowClose</animation>
+			<left>530</left>
+			<top>922</top>
+			<width>1320</width>
+			<height>15</height>
+			<info>Player.Progress</info>
+			<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
+			<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 		</control>
 		<control type="label">
-			<left>1400</left>
-			<top>870</top>
-			<width>470</width>
+			<left>530</left>
+			<top>955</top>
+			<width>1300</width>
 			<height>25</height>
-			<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ]</label>
+			<label>[COLOR button_focus]$INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime, - ,: ][/COLOR]$INFO[VideoPlayer.NextTitle]</label>
 			<aligny>center</aligny>
-			<font>font13_title</font>
+			<font>font13</font>
 		</control>
-		<control type="textbox">
-			<left>1400</left>
-			<top>900</top>
-			<width>470</width>
-			<height>135</height>
-			<label>$INFO[VideoPlayer.NextPlot,$LOCALIZE[207]: ]</label>
-			<aligny>center</aligny>
-			<font>font12</font>
+		<control type="grouplist">
+			<left>1260</left>
+			<top>990</top>
+			<width>600</width>
+			<height>100</height>
+			<align>right</align>
+			<orientation>horizontal</orientation>
+			<itemgap>10</itemgap>
+			<include name="MediaFlag">
+				<param name="texture" value="$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]" />
+			</include>
+			<include name="MediaFlag">
+				<param name="texture" value="$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]" />
+			</include>
+			<include name="MediaFlag">
+				<param name="texture" value="$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]" />
+			</include>
+			<include name="MediaFlag">
+				<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />
+			</include>
 		</control>
 	</controls>
 </window>
