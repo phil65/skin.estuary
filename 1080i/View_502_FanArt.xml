@@ -219,7 +219,7 @@
 					<effect type="fade" start="0" end="100" delay="400" time="300" />
 				</animation>
 				<control type="group">
-					<visible>!Container(502).OnScrollNext + !Container(502).OnScrollPrevious</visible>
+					<visible>!Container(502).OnNext + !Container(502).OnPrevious + !Container(502).Scrolling</visible>
 					<animation type="Visible">
 						<effect type="fade" start="0" end="100" delay="800" time="300" />
 					</animation>
