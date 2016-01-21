@@ -255,14 +255,14 @@
 								<width>350</width>
 								<height>58</height>
 								<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
-								<font>font14</font>
+								<font>font12</font>
 								<aligny>center</aligny>
 							</control>
 							<control type="label">
 								<left>378</left>
 								<width>825</width>
 								<height>58</height>
-								<font>font14</font>
+								<font>font13</font>
 								<textcolor>button_focus</textcolor>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
@@ -296,13 +296,13 @@
 								<height>58</height>
 								<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
 								<aligny>center</aligny>
-								<font>font14</font>
+								<font>font12</font>
 							</control>
 							<control type="label">
 								<left>378</left>
 								<width>825</width>
 								<height>58</height>
-								<font>font14</font>
+								<font>font13</font>
 								<textcolor>white</textcolor>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>

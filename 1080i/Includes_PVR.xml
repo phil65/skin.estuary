@@ -169,7 +169,7 @@
 							<top>5</top>
 							<width>48</width>
 							<height>48</height>
-							<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Art(thumb)]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -234,7 +234,7 @@
 							<top>5</top>
 							<width>48</width>
 							<height>48</height>
-							<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Art(thumb)]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
