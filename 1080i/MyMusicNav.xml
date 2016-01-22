@@ -92,7 +92,7 @@
 					<label>$VAR[LibraryScanLabelVar]</label>
 					<onclick>UpdateLibrary(music)</onclick>
 				</control>
-				<control type="button" id="16">
+				<control type="radiobutton" id="16">
 					<label>$LOCALIZE[589]</label>
 					<include>MediaMenuItemsCommon</include>
 				</control>
