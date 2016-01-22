@@ -145,7 +145,6 @@
 	</variable>
 	<variable name="SeekLabel">
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">$LOCALIZE[112]</value>
-		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking">$LOCALIZE[15107] $INFO[Player.CacheLevel]%</value>
 		<value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[773][COLOR=grey] $INFO[Player.SeekStepSize][/COLOR]</value>
 		<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[773][COLOR=grey] $INFO[Player.SeekOffset][/COLOR]</value>
 		<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[773]</value>
