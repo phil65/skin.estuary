@@ -43,6 +43,11 @@
 	<include name="PVRSideBar">
 		<param name="group_label2">$INFO[Control.GetLabel(29)]</param>
 		<definition>
+			<control type="button" id="28">
+				<posx>-1000</posx>
+				<label>-</label>
+				<height>1</height>
+			</control>
 			<control type="grouplist" id="9000">
 				<top>90</top>
 				<left>0</left>
@@ -124,7 +129,7 @@
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[19141]</label>
 					<label2>[B]$PARAM[group_label2][/B]</label2>
-					<onclick>NextChannelGroup</onclick>
+					<onclick>SendClick(28)</onclick>
 					<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels) | Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible>
 				</control>
 				<control type="button" id="6053">
