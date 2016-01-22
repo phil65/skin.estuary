@@ -882,7 +882,6 @@
 					<width>382</width>
 					<height>671</height>
 					<pagecontrol>70</pagecontrol>
-					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),pictures) + Control.IsVisible(4000)">4000</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),movies) + Control.IsVisible(5000)">5000</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),tv) + Control.IsVisible(6000)">6000</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),music) + Control.IsVisible(7000)">7000</onright>
