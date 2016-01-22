@@ -257,7 +257,10 @@
 				</control>
 			</control>
 		</control>
-		<include>PVRSideBar</include>
+		<control type="group">
+			<include>MediaMenuCommon</include>
+			<include>PVRSideBar</include>
+		</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[19017]" />
 			<param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />

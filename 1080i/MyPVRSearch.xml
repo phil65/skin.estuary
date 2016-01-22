@@ -177,7 +177,10 @@
 				<param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
 			</include>
 		</control>
-		<include>PVRSideBar</include>
+		<control type="group">
+			<include>MediaMenuCommon</include>
+			<include>PVRSideBar</include>
+		</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[137]" />
 			<param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />

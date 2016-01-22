@@ -339,9 +339,12 @@
 				</include>
 			</control>
 		</control>
-				<include name="PVRSideBar">
-			<param name="group_label2" value="$INFO[Control.GetLabel(30)]" />
-		</include>
+		<control type="group">
+			<include>MediaMenuCommon</include>
+			<include name="PVRSideBar">
+				<param name="group_label2" value="$INFO[Control.GetLabel(30)]" />
+			</include>
+		</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="$INFO[Control.GetLabel(29)] - $INFO[Control.GetLabel(30)]" />
 			<param name="breadcrumbs_icon" value="icons/settings/livetv.png" />
