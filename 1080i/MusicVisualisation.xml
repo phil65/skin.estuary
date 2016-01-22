@@ -24,7 +24,7 @@
 			<width>1920</width>
 			<height>1080</height>
 			<aspectratio align="center">scale</aspectratio>
-			<animation effect="fade" start="100" end="75" time="0" condition="!IsEmpty(Player.Art(fanart)) | !IsEmpty(Visualisation.Name)">Conditional</animation>
+			<animation effect="fade" start="100" end="50" time="0" condition="!IsEmpty(Player.Art(fanart)) | !IsEmpty(Visualisation.Name)">Conditional</animation>
 		</control>
 		<control type="group">
 			<left>8</left>
@@ -49,14 +49,7 @@
 			<top>-30</top>
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
 			<include>OpenClose_Right</include>
-			<animation type="Visible">
-				<effect type="fade" time="320" end="100" />
-				<effect type="slide" time="320" start="0,226" end="0,0" tween="cubic" />
-			</animation>
-			<animation type="Hidden">
-				<effect type="fade" time="320" start="100" end="0" />
-				<effect type="slide" time="320" end="0,226" easing="in" tween="cubic" />
-			</animation>
+			<include>Visible_Right</include>
 			<control type="image">
 				<left>10</left>
 				<top>680</top>
@@ -177,10 +170,15 @@
 				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 			</control>
 		</control>
-		<include name="TopBar">
-			<param name="breadcrumbs_label" value="$LOCALIZE[250]" />
-			<param name="breadcrumbs_icon" value="icons/settings/music.png" />
-		</include>
+		<control type="group">
+			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" end="0" time="200">Hidden</animation>
+			<include name="TopBar">
+				<param name="breadcrumbs_label" value="$LOCALIZE[250]" />
+				<param name="breadcrumbs_icon" value="icons/settings/music.png" />
+			</include>
+		</control>
 		<control type="group" id="0">
 			<visible>Player.ShowCodec</visible>
 			<animation effect="fade" time="400" tween="cubic" reversible="true">VisibleChange</animation>
