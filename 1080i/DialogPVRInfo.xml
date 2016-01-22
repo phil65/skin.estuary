@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">5</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<control type="group">
 			<include>OpenClose_Left</include>
@@ -89,9 +89,10 @@
 				<top>588</top>
 				<width>1170</width>
 				<height>160</height>
-				<itemgap>-10</itemgap>
-				<align>left</align>
+				<itemgap>10</itemgap>
+				<align>center</align>
 				<orientation>horizontal</orientation>
+				<defaultcontrol>5</defaultcontrol>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>49</onup>
@@ -127,6 +128,15 @@
 					</include>
 					<label>-</label>
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
+				</control>
+				<control type="radiobutton" id="5010">
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/infodialogs/play_record.png" />
+					</include>
+					<label>$LOCALIZE[19687]</label>
+					<onclick>Dialog.close(PVRRecordingInfo,true)</onclick>
+					<onclick>Action(select)</onclick>
+					<visible>Window.IsActive(PVRRecordingInfo)</visible>
 				</control>
 			</control>
 		</control>
