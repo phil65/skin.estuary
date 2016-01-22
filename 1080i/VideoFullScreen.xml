@@ -123,17 +123,19 @@
 		</control>
 		<control type="group" id="1">
 			<visible>Player.Caching</visible>
-			<animation effect="fade" time="120">Visible</animation>
-			<animation effect="fade" delay="500" time="120">Hidden</animation>
-			<left>910</left>
-			<top>490</top>
+			<animation delay="300" effect="fade" time="200">Visible</animation>
+			<animation effect="fade" delay="200" time="150">Hidden</animation>
 			<control type="image" id="1">
+				<left>910</left>
+				<top>490</top>
 				<description>Loading indicator</description>
 				<width>100</width>
 				<height>100</height>
 				<texture colordiffuse="button_focus">dialogs/extendedprogress/loading-back.png</texture>
 			</control>
 			<control type="image" id="1">
+				<left>910</left>
+				<top>490</top>
 				<description>Loading indicator</description>
 				<width>100</width>
 				<height>100</height>
