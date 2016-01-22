@@ -408,7 +408,16 @@
 						<param name="widget_target" value="pictures"/>
 						<param name="list_id" value="8500"/>
 						<param name="onup_id" value="8400"/>
-						<param name="ondown_id" value="20001"/>
+						<param name="ondown_id" value="8600"/>
+					</include>
+					<include name="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31119]" />
+						<param name="button_label" value="$LOCALIZE[31118]" />
+						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
+						<param name="button_id" value="8600"/>
+						<param name="visible" value="!IntegerGreaterThan(Container(8100).NumItems,0) + !IntegerGreaterThan(Container(8200).NumItems,0) + !IntegerGreaterThan(Container(8300).NumItems,0) + !IntegerGreaterThan(Container(8400).NumItems,0) + !IntegerGreaterThan(Container(8500).NumItems,0)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoProgramsButton)"/>
 					</include>
 				</control>
 			</control>
