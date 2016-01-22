@@ -649,6 +649,7 @@
 					<label>-</label>
 					<onfocus>SetFocus(15001)</onfocus>
 					<onfocus condition="IntegerGreaterThan(Container(15100).NumItems,0)">SetFocus(15100)</onfocus>
+					<onfocus condition="IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
 					<onclick>noop</onclick>
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
@@ -676,10 +677,12 @@
 						<param name="item6_vis" value="False" />
 						<param name="item7_vis" value="False" />
 						<param name="item8_vis" value="False" />
+						<param name="visible" value="!IsEmpty(Weather.plugin)"/>
 					</include>
-					<control type="group">
+					<control type="group" id="16678">
 						<description>Weather info</description>
 						<height>380</height>
+						<visible>!IsEmpty(Weather.plugin)</visible>
 						<control type="image">
 							<top>2</top>
 							<left>480</left>
@@ -714,38 +717,35 @@
 							<font>font35_title</font>
 							<label>$INFO[Weather.Location]</label>
 						</control>
-						<control type="group">
-							<top>180</top>
-							<control type="grouplist">
-								<top>35</top>
-								<left>540</left>
-								<orientation>horizontal</orientation>
-								<include name="WeatherIcon">
-									<param name="label" value="$INFO[Window(weather).Property(Current.Wind)]" />
-									<param name="texture" value="icons/weather/wind.png" />
-									<param name="header" value="404" />
-								</include>
-								<include name="WeatherIcon">
-									<param name="label" value="$INFO[Window(weather).Property(Current.Humidity)]" />
-									<param name="texture" value="icons/weather/humidity.png" />
-									<param name="header" value="406" />
-								</include>
-								<include name="WeatherIcon">
-									<param name="label" value="$INFO[Window(weather).Property(Current.Precipitation)]" />
-									<param name="texture" value="icons/weather/rain.png" />
-									<param name="header" value="33021" />
-								</include>
-								<include name="WeatherIcon">
-									<param name="label" value="$INFO[Window(weather).Property(Today.Sunrise)]" />
-									<param name="texture" value="icons/weather/sunrise.png" />
-									<param name="header" value="405" />
-								</include>
-								<include name="WeatherIcon">
-									<param name="label" value="$INFO[Window(weather).Property(Today.Sunset)]" />
-									<param name="texture" value="icons/weather/sunset.png" />
-									<param name="header" value="403" />
-								</include>
-							</control>
+						<control type="grouplist">
+							<top>215</top>
+							<left>540</left>
+							<orientation>horizontal</orientation>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Current.Wind)]" />
+								<param name="texture" value="icons/weather/wind.png" />
+								<param name="header" value="404" />
+							</include>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Current.Humidity)]" />
+								<param name="texture" value="icons/weather/humidity.png" />
+								<param name="header" value="406" />
+							</include>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Current.Precipitation)]" />
+								<param name="texture" value="icons/weather/rain.png" />
+								<param name="header" value="33021" />
+							</include>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Today.Sunrise)]" />
+								<param name="texture" value="icons/weather/sunrise.png" />
+								<param name="header" value="405" />
+							</include>
+							<include name="WeatherIcon">
+								<param name="label" value="$INFO[Window(weather).Property(Today.Sunset)]" />
+								<param name="texture" value="icons/weather/sunset.png" />
+								<param name="header" value="403" />
+							</include>
 						</control>
 					</control>
 					<include name="WeatherWidget">
@@ -760,9 +760,22 @@
 						<param name="content_include" value="DailyItems" />
 						<param name="list_id" value="15200" />
 						<param name="onup_id" value="15100" />
-						<param name="ondown_id" value="20001" />
+						<param name="ondown_id" value="15300" />
 						<param name="widget_header" value="$LOCALIZE[31019]"/>
 						<param name="visible" value="!IsEmpty(Window(weather).Property(Daily.IsFetched))" />
+					</include>
+					<include name="ImageWidgetHeader">
+						<param name="widget_header" value="$LOCALIZE[12600]" />
+						<param name="visible" value="IsEmpty(Weather.plugin)"/>
+					</include>
+					<include name="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31120]" />
+						<param name="button_label" value="$LOCALIZE[31121]" />
+						<param name="button_onclick" value="ActivateWindow(weathersettings)"/>
+						<param name="button_id" value="15300"/>
+						<param name="visible" value="IsEmpty(Weather.plugin)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoWeatherButton)"/>
 					</include>
 				</control>
 			</control>
@@ -1068,7 +1081,7 @@
 							<onclick>ActivateWindow(Weather)</onclick>
 							<thumb>icons/home/weather.png</thumb>
 							<property name="id">weather</property>
-							<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
+							<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
 						</item>
 					</content>
 				</control>
