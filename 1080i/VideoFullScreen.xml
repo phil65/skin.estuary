@@ -128,7 +128,6 @@
 			<control type="image" id="1">
 				<left>910</left>
 				<top>490</top>
-				<description>Loading indicator</description>
 				<width>100</width>
 				<height>100</height>
 				<texture colordiffuse="button_focus">dialogs/extendedprogress/loading-back.png</texture>
@@ -136,7 +135,14 @@
 			<control type="image" id="1">
 				<left>910</left>
 				<top>490</top>
-				<description>Loading indicator</description>
+				<width>100</width>
+				<height>100</height>
+				<texture>dialogs/volume/progress/p$INFO[Player.CacheLevel].png</texture>
+				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image" id="1">
+				<left>910</left>
+				<top>490</top>
 				<width>100</width>
 				<height>100</height>
 				<texture>dialogs/extendedprogress/loading.png</texture>
