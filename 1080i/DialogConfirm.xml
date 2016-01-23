@@ -6,10 +6,11 @@
 		<top>345</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
+	<depth>DepthDialog+</depth>
 	<controls>
 		<include name="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="915" />
-			<param name="DialogBackgroundHeight" value="360" />
+			<param name="DialogBackgroundHeight" value="380" />
 			<param name="DialogHeaderLabel" value="" />
 			<param name="DialogHeaderId" value="1" />
 		</include>
@@ -19,15 +20,20 @@
 			<top>82</top>
 			<width>855</width>
 			<height>150</height>
-			<align>left</align>
 			<label>-</label>
 			<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 		</control>
-		<control type="grouplist">
-			<orientation>horizontal</orientation>
-			<left>105</left>
-			<top>250</top>
-			<itemgap>80</itemgap>
+		<control type="progress" id="20">
+			<description>Progressbar</description>
+			<left>45</left>
+			<top>252</top>
+			<width>825</width>
+			<height>24</height>
+			<info>System.Progressbar</info>
+		</control>
+		<control type="group">
+			<left>307</left>
+			<top>280</top>
 			<include name="DefaultDialogButton">
 				<param name="id" value="11" />
 				<param name="label" value="$LOCALIZE[107]" />
@@ -36,6 +42,11 @@
 				<param name="id" value="10" />
 				<param name="label" value="$LOCALIZE[106]" />
 			</include>
+			<include name="DefaultDialogButton">
+				<param name="id" value="12" />
+				<param name="label" value="$LOCALIZE[106]" />
+			</include>
 		</control>
 	</controls>
 </window>
+
