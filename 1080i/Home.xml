@@ -792,7 +792,7 @@
 					<include name="ImageWidget">
 						<param name="image_path" value="special://skin/extras/home-images/pictures.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31111]" />
-						<param name="button_label" value="$LOCALIZE[31112]" />
+						<param name="button_label" value="" />
 						<param name="button_onclick" value="ActivateWindow(pictures)"/>
 						<param name="button_id" value="4100"/>
 						<param name="visible" value="true"/>
