@@ -178,26 +178,26 @@
 			<fadetime>300</fadetime>
 			<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
 		</control>
-		<control type="image">
-			<left>90</left>
-			<top>650</top>
-			<width>509</width>
-			<height>258</height>
-			<texture border="22">dialogs/dialog-bg.png</texture>
+		<control type="group">
 			<visible>!Window.IsActive(addoninformation)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
-		</control>
-		<control type="textbox">
-			<left>120</left>
-			<top>680</top>
-			<width>449</width>
-			<height>188</height>
-			<align>left</align>
-			<font>font12</font>
-			<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
-			<label fallback="19055">$VAR[ListBoxInfoVar]</label>
-			<visible>!Window.IsActive(addoninformation)</visible>
-			<animation effect="fade" time="200">VisibleChange</animation>
+			<control type="image">
+				<left>90</left>
+				<top>650</top>
+				<width>509</width>
+				<height>258</height>
+				<texture border="22">dialogs/dialog-bg.png</texture>
+			</control>
+			<control type="textbox">
+				<left>120</left>
+				<top>680</top>
+				<width>449</width>
+				<height>188</height>
+				<align>left</align>
+				<font>font12</font>
+				<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
+				<label fallback="19055">$VAR[ListBoxInfoVar]</label>
+			</control>
 		</control>
 	</include>
 </includes>
