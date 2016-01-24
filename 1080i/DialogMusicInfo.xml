@@ -113,16 +113,16 @@
 			<control type="grouplist" id="9000">
 				<left>585</left>
 				<top>768</top>
-				<width>1920</width>
+				<width>1260</width>
 				<height>768</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<align>left</align>
+				<align>center</align>
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
-				<control type="radiobutton" id="600">
+<!-- 				<control type="radiobutton" id="600">
 					<include name="VideoInfoButtonsCommon">
 						<param name="icon" value="icons/infodialogs/list.png" />
 					</include>
@@ -139,7 +139,7 @@
 					<onclick>Action(close)</onclick>
 					<onclick>Container.Update($INFO[Container.FolderPath]/$INFO[ListItem.DBID])</onclick>
 					<visible>Container.Content(albums)</visible>
-				</control>
+				</control> -->
 				<control type="group" id="420">
 					<width>262</width>
 					<visible>Container.Content(albums)</visible>
