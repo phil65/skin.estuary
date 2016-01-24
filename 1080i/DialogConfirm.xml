@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">10</defaultcontrol>
 	<coordinates>
 		<left>502</left>
 		<top>345</top>
@@ -31,20 +30,23 @@
 			<height>24</height>
 			<info>System.Progressbar</info>
 		</control>
-		<control type="group">
-			<left>307</left>
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>0</left>
 			<top>280</top>
+			<width>915</width>
+			<align>center</align>
 			<include name="DefaultDialogButton">
 				<param name="id" value="11" />
-				<param name="label" value="$LOCALIZE[107]" />
+				<param name="label" value="" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="10" />
-				<param name="label" value="$LOCALIZE[106]" />
+				<param name="label" value="" />
 			</include>
 			<include name="DefaultDialogButton">
 				<param name="id" value="12" />
-				<param name="label" value="$LOCALIZE[106]" />
+				<param name="label" value="" />
 			</include>
 		</control>
 	</controls>
