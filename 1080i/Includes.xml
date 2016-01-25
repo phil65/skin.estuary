@@ -1442,7 +1442,6 @@
 						<height>38</height>
 						<align>center</align>
 						<itemgap>5</itemgap>
-						<width>1020</width>
 						<usecontrolcoords>true</usecontrolcoords>
 						<animation effect="slide" start="0,0" end="0,15" time="0" condition="IsEmpty(Control.GetLabel(7700))">conditional</animation>
 						<control type="image">
@@ -1458,7 +1457,7 @@
 							<shadowcolor>text_shadow</shadowcolor>
 							<textoffsetx>0</textoffsetx>
 							<height>35</height>
-							<width>992</width>
+							<width>auto</width>
 							<align>center</align>
 							<aligny>top</aligny>
 						</control>
