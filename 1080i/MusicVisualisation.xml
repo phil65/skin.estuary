@@ -62,7 +62,7 @@
 				<top>717</top>
 				<control type="label">
 					<top>0</top>
-					<width>1230</width>
+					<width>1600</width>
 					<height>40</height>
 					<label>$INFO[MusicPlayer.Artist]</label>
 					<font>font30_title</font>
@@ -72,7 +72,7 @@
 				</control>
 				<control type="label">
 					<top>56</top>
-					<width>1230</width>
+					<width>1600</width>
 					<height>40</height>
 					<label>[COLOR grey]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
 					<font>font24_title</font>
@@ -82,7 +82,7 @@
 				</control>
 				<control type="label">
 					<top>100</top>
-					<width>1275</width>
+					<width>1600</width>
 					<height>40</height>
 					<label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[Player.Title][/COLOR]</label>
 					<font>font30_title</font>
@@ -123,7 +123,6 @@
 					<textcolor>button_focus</textcolor>
 					<font>font12</font>
 					<visible>!IsEmpty(MusicPlayer.Offset(1).Title)</visible>
-					<visible>Player.HasAudio</visible>
 				</control>
 				<control type="image">
 					<left>91</left>
@@ -131,6 +130,14 @@
 					<width>150</width>
 					<height>99</height>
 					<texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image">
+					<left>280</left>
+					<top>1022</top>
+					<width>130</width>
+					<height>65</height>
+					<texture>flags/starrating/rating$INFO[MusicPlayer.UserRating].png</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 			</control>
