@@ -323,7 +323,7 @@
 						<param name="widget_target" value="music"/>
 						<param name="list_id" value="7500"/>
 						<param name="onup_id" value="7400"/>
-						<param name="ondown_id" value="7600"/>
+						<param name="ondown_id" value="20001"/>
 					</include>
 					<include name="ImageWidget">
 						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
@@ -408,7 +408,7 @@
 						<param name="widget_target" value="pictures"/>
 						<param name="list_id" value="8500"/>
 						<param name="onup_id" value="8400"/>
-						<param name="ondown_id" value="8600"/>
+						<param name="ondown_id" value="20001"/>
 					</include>
 					<include name="ImageWidget">
 						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
@@ -473,7 +473,7 @@
 						<param name="widget_target" value="videos"/>
 						<param name="list_id" value="11200"/>
 						<param name="onup_id" value="11100"/>
-						<param name="ondown_id" value="11300"/>
+						<param name="ondown_id" value="20001"/>
 						<param name="icon" value="icons/defaulticons/DefaultPlaylist.png"/>
 					</include>
 					<include name="ImageWidget">
@@ -760,7 +760,7 @@
 						<param name="content_include" value="DailyItems" />
 						<param name="list_id" value="15200" />
 						<param name="onup_id" value="15100" />
-						<param name="ondown_id" value="15300" />
+						<param name="ondown_id" value="20001" />
 						<param name="widget_header" value="$LOCALIZE[31019]"/>
 						<param name="visible" value="!IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 					</include>
