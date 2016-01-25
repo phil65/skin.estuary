@@ -16,7 +16,7 @@
 				<left>40</left>
 				<top>85</top>
 				<width>1320</width>
-				<height>675</height>
+				<height>647</height>
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>3000</pagecontrol>
 				<font>font14</font>
@@ -50,6 +50,19 @@
 			<texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
 			<visible>Control.IsVisible(3000) + !StringCompare(Container(5).CurrentPage,Container(5).NumPages)</visible>
 			<animation delay="80" effect="fade" time="120">VisibleChange</animation>
+		</control>
+		<control type="label">
+			<left>1310</left>
+			<top>880</top>
+			<width>330</width>
+			<height>35</height>
+			<font>font12</font>
+			<textcolor>grey</textcolor>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[31035] [COLOR=button_focus]$INFO[Container(5).CurrentPage]/$INFO[Container(5).NumPages][/COLOR]</label>
+			<wrapmultiline>true</wrapmultiline>
+			<visible>IntegerGreaterThan(Container(5).CurrentPage,1)</visible>
 		</control>
 	</controls>
 </window>
