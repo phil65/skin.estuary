@@ -1454,11 +1454,8 @@
 							<label>$VAR[NowPlayingMainlabelVar]</label>
 							<font>font13_title</font>
 							<shadowcolor>text_shadow</shadowcolor>
-							<textoffsetx>0</textoffsetx>
 							<height>35</height>
-							<width>auto</width>
-							<align>center</align>
-							<aligny>top</aligny>
+							<width min="1" max="992">auto</width>
 						</control>
 					</control>
 					<control type="label" id="7700">
@@ -1468,8 +1465,6 @@
 						<shadowcolor>text_shadow</shadowcolor>
 						<height>25</height>
 						<width>1020</width>
-						<aligny>top</aligny>
-						<textoffsetx>300</textoffsetx>
 						<align>center</align>
 					</control>
 				</control>
