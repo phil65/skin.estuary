@@ -1430,13 +1430,11 @@
 						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
 					</control>
 				</control>
-				<control type="grouplist">
+				<control type="group">
 					<left>450</left>
 					<top>1005</top>
-					<width>1020</width>
 					<visible>Player.HasMedia</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
-					<itemgap>-3</itemgap>
 					<control type="grouplist">
 						<orientation>horizontal</orientation>
 						<height>38</height>
@@ -1444,6 +1442,7 @@
 						<itemgap>5</itemgap>
 						<usecontrolcoords>true</usecontrolcoords>
 						<animation effect="slide" start="0,0" end="0,15" time="0" condition="IsEmpty(Control.GetLabel(7700))">conditional</animation>
+						<width>1020</width>
 						<control type="image">
 							<top>8</top>
 							<width>28</width>
@@ -1464,6 +1463,7 @@
 					</control>
 					<control type="label" id="7700">
 						<label>$VAR[NowPlayingSublabelVar]</label>
+						<top>35</top>
 						<font>font12</font>
 						<shadowcolor>text_shadow</shadowcolor>
 						<height>25</height>
