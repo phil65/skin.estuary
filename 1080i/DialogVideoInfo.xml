@@ -297,12 +297,9 @@
 				<onright>5000</onright>
 				<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
 				<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">140</onup>
-				<ondown condition="Stringcompare(Container(5000).CurrentItem,1)">SetFocus(50,0)</ondown>
-				<ondown condition="Stringcompare(Container(5000).CurrentItem,2)">SetFocus(50,1)</ondown>
-				<ondown condition="Stringcompare(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>
-				<ondown condition="Stringcompare(Container(5000).CurrentItem,4)">SetFocus(50,3)</ondown>
-				<ondown condition="Stringcompare(Container(5000).CurrentItem,5)">SetFocus(50,4)</ondown>
-				<ondown condition="!IntegerGreaterThan(Container(50).NumItems,0)">50</ondown>
+				<ondown condition="!IntegerGreaterThan(Container(5000).Position,4)">SetFocus(50,$INFO[Container(5000).Position])</ondown>
+				<ondown condition="IntegerGreaterThan(Container(5000).Position,4)">SetFocus(50,4)</ondown>
+				<ondown condition="Stringcompare(Container(50).NumItems,0)">50</ondown>
 				<itemgap>-16</itemgap>
 				<align>left</align>
 				<orientation>horizontal</orientation>
