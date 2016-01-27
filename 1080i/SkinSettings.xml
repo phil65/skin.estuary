@@ -96,8 +96,8 @@
 						<label>$LOCALIZE[31093]</label>
 						<width>1256</width>
 						<include>DefaultSettingButton</include>
-						<onclick>Skin.ToggleSetting(no_weatherinfo)</onclick>
-						<selected>!Skin.HasSetting(no_weatherinfo)</selected>
+						<onclick>Skin.ToggleSetting(show_weatherinfo)</onclick>
+						<selected>Skin.HasSetting(show_weatherinfo)</selected>
 					</control>
 					<control type="radiobutton" id="604">
 						<label>$LOCALIZE[31094]</label>
