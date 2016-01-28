@@ -1146,31 +1146,7 @@
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration) | Window.IsActive(fullscreenvideo)">WindowClose</animation>
 					<animation effect="fade" time="150">VisibleChange</animation>
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
-					<control type="button">
-						<description>Weather label</description>
-						<include>BreadcrumbsLabel</include>
-						<animation effect="fade" time="300">VisibleChange</animation>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<aligny>top</aligny>
-						<textoffsetx>0</textoffsetx>
-						<onclick>ActivateWindow(weather)</onclick>
-						<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
-						<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
-						<visible>!Skin.HasSetting(no_weatherinfo)</visible>
-					</control>
-					<control type="image">
-						<description>Weather</description>
-						<top>4</top>
-						<width>60</width>
-						<height>50</height>
-						<fadetime>300</fadetime>
-						<aspectratio align="left">keep</aspectratio>
-						<texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
-						<animation effect="fade" time="300">VisibleChange</animation>
-						<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
-						<visible>!Skin.HasSetting(no_weatherinfo)</visible>
-					</control>
+					<include condition="Skin.HasSetting(show_weatherinfo) | Window.IsActive(skinsettings)">TopWeatherIcon</include>
 					<control type="label">
 						<description>System Time</description>
 						<include>BreadcrumbsLabel</include>
@@ -1206,6 +1182,31 @@
 				</control>
 			</control>
 		</definition>
+	</include>
+	<include name="TopWeatherIcon">
+		<control type="button">
+			<description>Weather label</description>
+			<include>BreadcrumbsLabel</include>
+			<animation effect="fade" time="300">VisibleChange</animation>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<aligny>top</aligny>
+			<textoffsetx>0</textoffsetx>
+			<onclick>ActivateWindow(weather)</onclick>
+			<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+			<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+		</control>
+		<control type="image">
+			<description>Weather</description>
+			<top>4</top>
+			<width>60</width>
+			<height>50</height>
+			<fadetime>300</fadetime>
+			<aspectratio align="left">keep</aspectratio>
+			<texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
+			<animation effect="fade" time="300">VisibleChange</animation>
+			<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+		</control>
 	</include>
 	<include name="BreadcrumbsLabel">
 		<font>font13_title</font>
