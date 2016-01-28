@@ -196,6 +196,7 @@
 						<param name="widget_target" value="videos"/>
 						<param name="second_label" value="$LOCALIZE[16102]: $INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ]" />
 						<param name="list_id" value="6100"/>
+						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[Container(6100).ListItem.Dbid])"/>
 						<param name="onup_id" value="6900"/>
 						<param name="ondown_id" value="6200"/>
 					</include>
@@ -206,6 +207,7 @@
 						<param name="widget_target" value="videos"/>
 						<param name="second_label" value="[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]" />
 						<param name="list_id" value="6200"/>
+						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Container(6200).ListItem.TvShowTitle],season=$INFO[Container(6200).ListItem.season],episode=$INFO[Container(6200).ListItem.episode])"/>
 						<param name="onup_id" value="6100"/>
 						<param name="ondown_id" value="6300"/>
 					</include>
@@ -216,6 +218,7 @@
 						<param name="widget_target" value="videos"/>
 						<param name="second_label" value="[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]" />
 						<param name="list_id" value="6300"/>
+						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Container(6300).ListItem.TvShowTitle],season=$INFO[Container(6300).ListItem.season],episode=$INFO[Container(6300).ListItem.episode])"/>
 						<param name="onup_id" value="6200"/>
 						<param name="ondown_id" value="20001"/>
 					</include>
@@ -285,8 +288,8 @@
 						<param name="item8_vis" value="Library.HasContent(music)" />
 					</include>
 					<include name="WidgetListSquare">
-						<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
-						<param name="widget_header" value="$LOCALIZE[31011]"/>
+						<param name="content_path" value="musicdb://recentlyplayedalbums"/>
+						<param name="widget_header" value="$LOCALIZE[517]"/>
 						<param name="widget_target" value="music"/>
 						<param name="list_id" value="7100"/>
 						<param name="onup_id" value="7900"/>
@@ -323,6 +326,14 @@
 						<param name="widget_target" value="music"/>
 						<param name="list_id" value="7500"/>
 						<param name="onup_id" value="7400"/>
+						<param name="ondown_id" value="7600"/>
+					</include>
+					<include name="WidgetListSquare">
+						<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
+						<param name="widget_header" value="$LOCALIZE[31011]"/>
+						<param name="widget_target" value="music"/>
+						<param name="list_id" value="7600"/>
+						<param name="onup_id" value="7500"/>
 						<param name="ondown_id" value="20001"/>
 					</include>
 					<include name="ImageWidget">
