@@ -341,15 +341,15 @@
 			<visible>$PARAM[visible]</visible>
 			<control type="image">
 				<top>13</top>
-				<left>498</left>
-				<width>1340</width>
+				<left>478</left>
+				<width>1370</width>
 				<height>114</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
 			<control type="label">
 				<top>6</top>
-				<left>498</left>
-				<width>1340</width>
+				<left>478</left>
+				<width>1370</width>
 				<height>120</height>
 				<font>font30_title</font>
 				<align>center</align>
@@ -369,29 +369,29 @@
 				<visible>$PARAM[visible]</visible>
 				<control type="image">
 					<top>0</top>
-					<left>498</left>
-					<width>1340</width>
+					<left>478</left>
+					<width>1370</width>
 					<height>806</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="multiimage">
 					<top>31</top>
-					<left>528</left>
-					<width>1280</width>
+					<left>508</left>
+					<width>1310</width>
 					<height>746</height>
 					<imagepath>$PARAM[image_path]</imagepath>
 				</control>
 				<control type="image">
 					<top>571</top>
-					<left>528</left>
-					<width>1280</width>
+					<left>508</left>
+					<width>1310</width>
 					<height>206</height>
 					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]567">
 					<top>680</top>
-					<left>528</left>
-					<width>1280</width>
+					<left>508</left>
+					<width>1310</width>
 					<orientation>horizontal</orientation>
 					<align>center</align>
 					<onleft>9000</onleft>
