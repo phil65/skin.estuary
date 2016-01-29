@@ -142,7 +142,7 @@
 				</control> -->
 				<control type="group" id="420">
 					<width>262</width>
-					<visible>Container.Content(albums)</visible>
+					<visible>Container.Content(albums) | Container.Content(songs)</visible>
 					<control type="button" id="7">
 						<include name="VideoInfoButtonsCommon">
 							<param name="icon" value="" />
