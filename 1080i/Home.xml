@@ -110,8 +110,8 @@
 						<param name="ondown_id" value="5300"/>
 					</include>
 					<include name="WidgetListMovies">
-						<param name="content_path" value="special://skin/playlists/random_movies.xsp"/>
-						<param name="widget_header" value="$LOCALIZE[31006]"/>
+						<param name="content_path" value="special://skin/playlists/unwatched_movies.xsp"/>
+						<param name="widget_header" value="$LOCALIZE[31007]"/>
 						<param name="widget_target" value="videos"/>
 						<param name="list_id" value="5300"/>
 						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5300).ListItem.Dbid])"/>
@@ -120,7 +120,7 @@
 					</include>
 					<include name="WidgetListMovies">
 						<param name="content_path" value="special://skin/playlists/random_movies.xsp"/>
-						<param name="widget_header" value="$LOCALIZE[31007]"/>
+						<param name="widget_header" value="$LOCALIZE[31006]"/>
 						<param name="widget_target" value="videos"/>
 						<param name="list_id" value="5400"/>
 						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5400).ListItem.Dbid])"/>
@@ -406,7 +406,7 @@
 						<param name="ondown_id" value="8400"/>
 					</include>
 					<include name="WidgetListSquare">
-						<param name="content_path" value="androidapps://"/>
+						<param name="content_path" value="androidapp://sources/apps/"/>
 						<param name="widget_header" value="$LOCALIZE[20244]"/>
 						<param name="widget_target" value="programs"/>
 						<param name="list_id" value="8400"/>
@@ -541,18 +541,6 @@
 						<param name="item7_vis" value="False" />
 						<param name="item8_vis" value="False" />
 					</include>
-<!-- 					<include name="WidgetListText">
-						<param name="content_path" value="pvr://recordings/all"/>
-						<param name="widget_header" value="$LOCALIZE[31015]"/>
-						<param name="widget_target" value="TVRecordings"/>
-						<param name="list_id" value="12100"/>
-						<param name="onup_id" value="12900"/>
-						<param name="height" value="200"/>
-						<param name="item_limit" value="4"/>
-						<param name="arrow_posy" value="120"/>
-						<param name="ondown_id" value="12200"/>
-						<param name="icon" value="$INFO[ListItem.Icon]"/>
-					</include> -->
 					<include name="WidgetListChannels">
 						<param name="content_path" value="pvr://channels/tv/All channels/"/>
 						<param name="widget_header" value="$LOCALIZE[31016]"/>
@@ -633,14 +621,6 @@
 						<param name="item7_vis" value="False" />
 						<param name="item8_vis" value="False" />
 					</include>
-<!-- 					<include name="WidgetListChannels">
-						<param name="content_path" value="pvr://channels/radio/All channels/"/>
-						<param name="widget_header" value="$LOCALIZE[31017]"/>
-						<param name="widget_target" value="files"/>
-						<param name="list_id" value="13100"/>
-						<param name="onup_id" value="13900"/>
-						<param name="ondown_id" value="13200"/>
-					</include> -->
 					<include name="WidgetListChannels">
 						<param name="content_path" value="pvr://channels/radio/All channels/"/>
 						<param name="widget_header" value="$LOCALIZE[31018]"/>
