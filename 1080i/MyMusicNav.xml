@@ -43,7 +43,7 @@
 				<height>388</height>
 				<align>left</align>
 				<font>font12</font>
-				<label>$INFO[ListItem.Property(artist_description)][CR]$INFO[ListItem.Property(album_description)]</label>
+				<label>$INFO[ListItem.Property(artist_description)]$INFO[ListItem.Property(album_description),[CR]]</label>
 			</control>
 			<control type="textbox">
 				<right>130</right>
@@ -53,7 +53,7 @@
 				<align>center</align>
 				<font>font24_title</font>
 				<label>$LOCALIZE[19055]</label>
-				<visible>IsEmpty(Listitem.Property(artist_description)) + IsEmpty(Listitem.Property(artist_description)) + !ListItem.IsParentFolder</visible>
+				<visible>IsEmpty(Listitem.Property(artist_description)) + IsEmpty(Listitem.Property(album_description)) + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
 				<right>113</right>
@@ -74,8 +74,7 @@
 					<param name="viewtype_button_vis" value="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)" />
 				</include>
 				<control type="radiobutton" id="710">
-					<description>Small List</description>
-					<label>Small list</label>
+					<label>$LOCALIZE[31112]</label>
 					<include>MediaMenuItemsCommon</include>
 					<onclick>Skin.ToggleSetting(small_list)</onclick>
 					<selected>Skin.HasSetting(small_list)</selected>
@@ -87,7 +86,6 @@
 					<label>$LOCALIZE[31020]</label>
 				</control>
 				<control type="button" id="619">
-					<description>Update library</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$VAR[LibraryScanLabelVar]</label>
 					<onclick>UpdateLibrary(music)</onclick>
@@ -97,14 +95,12 @@
 					<include>MediaMenuItemsCommon</include>
 				</control>
 				<control type="button" id="612">
-					<description>Go to playlist</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[31056]</label>
 					<onclick>ActivateWindow(musicplaylist)</onclick>
 					<visible>IntegerGreaterThan(Playlist.Length(music),0)</visible>
 				</control>
 				<control type="button" id="621">
-					<description>Get more</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[21452]</label>
 					<onclick>ActivateWindow(addonbrowser,addons://more/audio/,return)</onclick>
