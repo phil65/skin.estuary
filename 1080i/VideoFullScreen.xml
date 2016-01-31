@@ -37,7 +37,7 @@
 				<font>font12</font>
 			</control>
 			<control type="group">
-				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<visible>VideoPlayer.Content(LiveTV) + system.getbool(pvrplayback.signalquality)</visible>
 				<top>310</top>
 				<control type="label">
 					<description>Header</description>
