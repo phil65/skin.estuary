@@ -20,7 +20,7 @@
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
-			<control type="list" id="50">
+			<control type="panel" id="50">
 				<left>2</left>
 				<top>3</top>
 				<width>1000</width>
@@ -34,22 +34,13 @@
 				<pagecontrol>60</pagecontrol>
 				<viewtype label="List">list</viewtype>
 				<preloaditems>1</preloaditems>
-				<focusedlayout height="70">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>1486</width>
-						<height>70</height>
-						<texture border="90,3,90,3">lists/separator.png</texture>
-						<visible>!Control.HasFocus(50)</visible>
-					</control>
+				<focusedlayout height="70" width="1000">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>996</width>
 						<height>70</height>
 						<texture>lists/focus.png</texture>
-						<visible>Control.HasFocus(50)</visible>
 					</control>
 					<control type="label">
 						<left>30</left>
@@ -75,7 +66,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</focusedlayout>
-				<itemlayout height="70">
+				<itemlayout height="70" width="1000">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -108,7 +99,6 @@
 				</itemlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<description>scrollbar for active modes list</description>
 				<left>1005</left>
 				<top>0</top>
 				<width>12</width>

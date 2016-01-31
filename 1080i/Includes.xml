@@ -1268,7 +1268,7 @@
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration) | Window.IsActive(fullscreenvideo)">WindowClose</animation>
 				</control>
 				<control type="group">
-					<visible>Window.IsMedia + !Window.IsActive(eventlog) + !Window.IsActive(musicplaylisteditor)</visible>
+					<visible>Window.IsMedia + !Window.IsActive(eventlog) + !Window.IsActive(musicplaylisteditor) + !Window.IsActive(MyPlaylist.xml)</visible>
 					<visible>!System.HasModalDialog</visible>
 					<animation effect="fade" time="400">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
