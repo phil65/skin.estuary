@@ -190,7 +190,7 @@
 						<param name="item8_label" value="$LOCALIZE[653]" />
 					</include>
 					<include name="WidgetListEpisodes">
-						<param name="content_path" value="special://skin/playlists/inprogress_tvshows.xsp"/>
+						<param name="content_path" value="videodb://inprogresstvshows"/>
 						<param name="widget_header" value="$LOCALIZE[626]"/>
 						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
 						<param name="widget_target" value="videos"/>
