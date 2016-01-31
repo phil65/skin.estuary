@@ -212,13 +212,13 @@
 						<param name="ondown_id" value="6300"/>
 					</include>
 					<include name="WidgetListEpisodes">
-						<param name="content_path" value="special://skin/playlists/random_episodes.xsp"/>
-						<param name="widget_header" value="$LOCALIZE[31009]"/>
+						<param name="content_path" value="special://skin/playlists/unwatched_tvshows.xsp"/>
+						<param name="widget_header" value="$LOCALIZE[31122]"/>
 						<param name="item_image" value="$INFO[ListItem.Art(thumb)]" />
 						<param name="widget_target" value="videos"/>
-						<param name="second_label" value="[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]" />
+						<param name="second_label" value="$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)]" />
 						<param name="list_id" value="6300"/>
-						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Container(6300).ListItem.TvShowTitle],season=$INFO[Container(6300).ListItem.season],episode=$INFO[Container(6300).ListItem.episode])"/>
+						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[Container(6300).ListItem.Dbid])"/>
 						<param name="onup_id" value="6200"/>
 						<param name="ondown_id" value="20001"/>
 					</include>
