@@ -235,9 +235,11 @@
 				<orientation>horizontal</orientation>
 				<onleft>9000</onleft>
 				<onright>noop</onright>
-				<onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+				<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+				<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
 				<onup>$PARAM[onup_id]</onup>
-				<ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+				<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+				<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
 				<ondown>$PARAM[ondown_id]</ondown>
 				<onback>SetFocus(9000)</onback>
 				<preloaditems>1</preloaditems>
@@ -619,9 +621,11 @@
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
 					<onright>noop</onright>
-					<onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+					<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+					<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
 					<onup>$PARAM[onup_id]</onup>
-					<ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+					<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+					<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
 					<ondown>$PARAM[ondown_id]</ondown>
 					<onback>SetFocus(9000)</onback>
 					<preloaditems>1</preloaditems>
@@ -764,9 +768,11 @@
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
 					<onright>noop</onright>
-					<onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+					<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+					<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
 					<onup>$PARAM[onup_id]</onup>
-					<ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+					<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+					<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
 					<ondown>$PARAM[ondown_id]</ondown>
 					<onback>SetFocus(9000)</onback>
 					<preloaditems>1</preloaditems>
@@ -891,9 +897,11 @@
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
 					<onright>noop</onright>
-					<onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+					<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+					<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
 					<onup>$PARAM[onup_id]</onup>
-					<ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+					<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+					<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
 					<ondown>$PARAM[ondown_id]</ondown>
 					<onback>SetFocus(9000)</onback>
 					<preloaditems>1</preloaditems>
@@ -1038,8 +1046,11 @@
 				<orientation>horizontal</orientation>
 				<onleft>9000</onleft>
 				<onright>noop</onright>
+				<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+				<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
 				<onup>$PARAM[onup_id]</onup>
-				<ondown>Control.SetFocus(15200,$INFO[Container($PARAM[list_id]).Position])</ondown>
+				<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+				<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
 				<ondown>$PARAM[ondown_id]</ondown>
 				<onback>SetFocus(9000)</onback>
 				<preloaditems>1</preloaditems>
