@@ -49,7 +49,7 @@
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="ShiftThumbVar">
-		<value condition="Stringcompare(ListItem.Icon,DefaultFolderBack.png)">DefaultFolderBack.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 		<value condition="IsEmpty(Listitem.Thumb) + [Container.Content(albums) | Container.Content(artists)]">DefaultAudio.png</value>
 		<value condition="ListItem.IsFolder + IsEmpty(ListItem.Thumb)">DefaultFolder.png</value>
 		<value>$INFO[ListItem.Thumb]</value>
@@ -101,6 +101,7 @@
 		<value>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR],[CR]]</value>
 	</variable>
 	<variable name="TVShowWidgetImageVar">
+		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 		<value condition="!IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
