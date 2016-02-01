@@ -231,18 +231,7 @@
 				<width>1385</width>
 				<height>400</height>
 				<oninfo>$PARAM[list_oninfo]</oninfo>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<orientation>horizontal</orientation>
-				<onleft>9000</onleft>
-				<onright>noop</onright>
-				<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
-				<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
-				<onup>$PARAM[onup_id]</onup>
-				<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-				<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
-				<ondown>$PARAM[ondown_id]</ondown>
-				<onback>SetFocus(9000)</onback>
-				<preloaditems>1</preloaditems>
+				<include>WidgetListCommon</include>
 				<itemlayout width="277" height="400">
 					<control type="group">
 						<control type="image">
@@ -336,6 +325,20 @@
 				<content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
 			</control>
 		</control>
+	</include>
+	<include name="WidgetListCommon">
+		<scrolltime tween="cubic" easing="out">500</scrolltime>
+		<orientation>horizontal</orientation>
+		<onleft>9000</onleft>
+		<onright>noop</onright>
+		<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
+		<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
+		<onup>$PARAM[onup_id]</onup>
+		<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
+		<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
+		<ondown>$PARAM[ondown_id]</ondown>
+		<onback>SetFocus(9000)</onback>
+		<preloaditems>1</preloaditems>
 	</include>
 	<include name="ImageWidgetHeader">
 		<control type="group">
@@ -617,18 +620,7 @@
 					<top>55</top>
 					<width>1372</width>
 					<height>400</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
-					<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
-					<onup>$PARAM[onup_id]</onup>
-					<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-					<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
-					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>SetFocus(9000)</onback>
-					<preloaditems>1</preloaditems>
+					<include>WidgetListCommon</include>
 					<itemlayout width="343" height="400">
 						<control type="image">
 							<left>0</left>
@@ -764,18 +756,7 @@
 					<top>55</top>
 					<width>1372</width>
 					<height>$PARAM[height]</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
-					<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
-					<onup>$PARAM[onup_id]</onup>
-					<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-					<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
-					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>SetFocus(9000)</onback>
-					<preloaditems>1</preloaditems>
+					<include>WidgetListCommon</include>
 					<itemlayout width="343" height="340">
 						<control type="image">
 							<width>340</width>
@@ -893,18 +874,7 @@
 					<top>55</top>
 					<width>1372</width>
 					<height>$PARAM[height]</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
-					<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
-					<onup>$PARAM[onup_id]</onup>
-					<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-					<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
-					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>SetFocus(9000)</onback>
-					<preloaditems>1</preloaditems>
+					<include>WidgetListCommon</include>
 					<itemlayout width="343" height="500">
 						<control type="image">
 							<width>340</width>
@@ -1042,18 +1012,7 @@
 				<top>55</top>
 				<width>1365</width>
 				<height>400</height>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<orientation>horizontal</orientation>
-				<onleft>9000</onleft>
-				<onright>noop</onright>
-				<onup condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
-				<onup condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
-				<onup>$PARAM[onup_id]</onup>
-				<ondown condition="IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-				<ondown condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
-				<ondown>$PARAM[ondown_id]</ondown>
-				<onback>SetFocus(9000)</onback>
-				<preloaditems>1</preloaditems>
+				<include>WidgetListCommon</include>
 				<itemlayout width="273" height="400">
 					<control type="image">
 						<description>Menu Panel</description>
