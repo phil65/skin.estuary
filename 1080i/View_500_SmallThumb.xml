@@ -191,6 +191,7 @@
 						<label>$INFO[ListItem.Title]</label>
 					</control>
 					<control type="group">
+						<visible>!IsEmpty(ListItem.label2)</visible>
 						<visible>!Stringcompare(Container.SortMethod,$LOCALIZE[38018]) + !Stringcompare(Container.SortMethod,$LOCALIZE[20359]) + !Stringcompare(Container.SortMethod,$LOCALIZE[551])</visible>
 						<control type="image">
 							<left>5</left>
@@ -262,6 +263,7 @@
 							<label>$INFO[ListItem.Title]</label>
 						</control>
 						<control type="group">
+							<visible>!IsEmpty(ListItem.label2)</visible>
 							<visible>!Stringcompare(Container.SortMethod,$LOCALIZE[38018]) + !Stringcompare(Container.SortMethod,$LOCALIZE[20359]) + !Stringcompare(Container.SortMethod,$LOCALIZE[551])</visible>
 							<control type="image">
 								<left>5</left>
