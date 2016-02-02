@@ -179,6 +179,12 @@
 			<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
 		</control>
 		<control type="group">
+			<left>520</left>
+			<top>200</top>
+			<include>UserRatingCircle</include>
+			<visible>!Window.IsActive(musicinformation) + !Window.IsActive(songinformation)</visible>
+		</control>
+		<control type="group">
 			<visible>!Window.IsActive(addoninformation)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="image">
