@@ -191,6 +191,8 @@
 					</include>
 					<include name="WidgetListEpisodes">
 						<param name="content_path" value="videodb://inprogresstvshows"/>
+						<param name="sortby" value="lastplayed"/>
+						<param name="sortorder" value="descending"/>
 						<param name="widget_header" value="$LOCALIZE[626]"/>
 						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
 						<param name="widget_target" value="videos"/>
