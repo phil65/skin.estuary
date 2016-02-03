@@ -1163,7 +1163,8 @@
 						<height>40</height>
 						<width>40</width>
 						<texture colordiffuse="button_focus">frame/clock.png</texture>
-						<animation effect="fade" time="300">VisibleChange</animation>
+						<animation effect="fade" time="300">Visible</animation>
+						<animation effect="fade" time="150">Hidden</animation>
 						<aspectratio>keep</aspectratio>
 						<visible>!Window.IsActive(volumebar)</visible>
 						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration) | Window.IsActive(fullscreenvideo)">WindowClose</animation>
