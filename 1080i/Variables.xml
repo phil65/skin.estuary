@@ -101,11 +101,12 @@
 		<value>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR],[CR]]</value>
 	</variable>
 	<variable name="TVShowWidgetImageVar">
-		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultBackFanart.png</value>
 		<value condition="!IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="ListInfoBoxImageVar">
+		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Art(thumb)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
