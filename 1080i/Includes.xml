@@ -1354,6 +1354,7 @@
 					<height>80</height>
 					<align>center</align>
 					<textcolor>button_focus</textcolor>
+					<visible>!System.HasModalDialog</visible>
 					<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,Rating)]</visible>
 					<visible>!Container.Content(seasons)</visible>
 					<animation effect="fade" start="0" end="100" time="200" delay="500" reversible="true">VisibleChange</animation>
