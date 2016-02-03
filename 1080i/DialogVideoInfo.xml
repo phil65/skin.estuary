@@ -100,6 +100,7 @@
 					<textcolor>button_focus</textcolor>
 					<label>$LOCALIZE[20416]: [COLOR white]$INFO[ListItem.Premiered,][/COLOR]</label>
 					<visible>Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(ListItem.Premiered)</visible>
 				</control>
 				<control type="button" id="210">
 					<width>505</width>
@@ -109,6 +110,7 @@
 					<aligny>center</aligny>
 					<textcolor>button_focus</textcolor>
 					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season,, $LOCALIZE[36905]]$INFO[ListItem.Episode, (, $LOCALIZE[20453])][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.Season)</visible>
 					<visible>Container.Content(tvshows)</visible>
 				</control>
 			</control>
@@ -299,7 +301,6 @@
 				<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">140</onup>
 				<ondown condition="!IntegerGreaterThan(Container(5000).Position,4)">SetFocus(50,$INFO[Container(5000).Position])</ondown>
 				<ondown condition="IntegerGreaterThan(Container(5000).Position,4)">SetFocus(50,4)</ondown>
-				<ondown condition="Stringcompare(Container(50).NumItems,0)">50</ondown>
 				<itemgap>-16</itemgap>
 				<align>left</align>
 				<orientation>horizontal</orientation>
