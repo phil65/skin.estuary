@@ -273,6 +273,12 @@
 					<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
 					<visible>Container.Content() + !SubString(Container.FolderPath,plugin://)</visible>
 				</control>
+				<control type="button" id="623">
+					<include>MediaMenuItemsCommon</include>
+					<label>$LOCALIZE[31009]</label>
+					<onclick>InstallAddon(resource.images.studios.white)</onclick>
+					<visible>Container.Content(studios) + !System.HasAddon(resource.images.studios.white)</visible>
+				</control>
 				<include>MediaMenuNowPlaying</include>
 			</control>
 		</control>
