@@ -1054,25 +1054,10 @@
 					<texture>frame/InfoBar.png</texture>
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration) | Window.IsActive(fullscreenvideo)">WindowClose</animation>
 				</control>
-				<control type="label" id="23000">
-					<top>3</top>
-					<left>0</left>
-					<label>$INFO[ListItem.SortLetter]</label>
-					<font>font35_title</font>
-					<width>80</width>
-					<height>80</height>
-					<align>center</align>
-					<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,Rating)]</visible>
-					<visible>!Container.Content(seasons)</visible>
-					<animation effect="fade" start="0" end="100" time="200" delay="500" reversible="true">VisibleChange</animation>
-					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				</control>
 				<control type="image">
 					<top>10</top>
 					<width>80</width>
 					<height>80</height>
-					<animation effect="fade" start="100" end="0" time="250" delay="200" reversible="true" condition="Control.IsVisible(23000)">Conditional</animation>
-					<animation effect="fade" start="0" end="100" time="250" reversible="true" delay="200" condition="!Control.IsVisible(23000)">Conditional</animation>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 					<texture colordiffuse="button_focus">$PARAM[breadcrumbs_icon]</texture>
@@ -1360,6 +1345,20 @@
 						<align>center</align>
 					</control>
 				</control>
+				<control type="label" id="23000">
+					<bottom>0</bottom>
+					<right>5</right>
+					<label>$INFO[ListItem.SortLetter]</label>
+					<font>font35_title</font>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<textcolor>button_focus</textcolor>
+					<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,Rating)]</visible>
+					<visible>!Container.Content(seasons)</visible>
+					<animation effect="fade" start="0" end="100" time="200" delay="500" reversible="true">VisibleChange</animation>
+					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				</control>
 				<control type="grouplist">
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
@@ -1386,6 +1385,8 @@
 						<texture colordiffuse="button_focus">frame/item-count.png</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>!IsEmpty(Container.NumItems)</visible>
+						<animation effect="fade" start="100" end="0" time="250" delay="200" reversible="true" condition="Control.IsVisible(23000)">Conditional</animation>
+						<animation effect="fade" start="0" end="100" time="250" reversible="true" delay="200" condition="!Control.IsVisible(23000)">Conditional</animation>
 					</control>
 				</control>
 			</control>
