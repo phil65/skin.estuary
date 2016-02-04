@@ -109,7 +109,7 @@
 							<width>50</width>
 							<height>50</height>
 							<aspectratio>keep</aspectratio>
-							<animation effect="fade" start="70" end="100" time="300" delay="0" reversible="false">Focus</animation>
+							<animation effect="fade" start="70" end="100" time="300" reversible="false">Focus</animation>
 							<texture>$VAR[MediaInfoOverlayVar]</texture>
 						</control>
 					</itemlayout>

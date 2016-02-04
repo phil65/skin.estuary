@@ -911,7 +911,7 @@
 								<width>70</width>
 								<height>70</height>
 								<texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
-								<animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+								<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
 							</control>
 							<control type="image">
 								<left>-5</left>
@@ -937,7 +937,7 @@
 							<animation effect="fade" start="0" end="100" time="200" delay="200" condition="!System.HasModalDialog">Conditional</animation>
 							<animation effect="fade" start="100" end="0" time="0" condition="System.HasModalDialog">Conditional</animation>
 							<texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
-							<animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
 							<visible>!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus + !Control.HasFocus(14200)</visible>
 						</control>
 						<control type="label">

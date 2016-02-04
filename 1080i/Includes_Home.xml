@@ -286,7 +286,7 @@
 								<width>200</width>
 								<height>57</height>
 								<texture>colors/black.png</texture>
-								<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+								<animation effect="fade" start="0" end="70" time="50">Focus</animation>
 							</control>
 							<control type="image">
 								<left>0</left>
@@ -294,7 +294,7 @@
 								<width>200</width>
 								<height>35</height>
 								<texture>colors/black.png</texture>
-								<animation effect="fade" start="0" delay="0" end="70" time="50">Focus</animation>
+								<animation effect="fade" start="0" end="70" time="50">Focus</animation>
 							</control>
 							<control type="label">
 								<left>20</left>
