@@ -22,6 +22,10 @@
 		<value condition="!System.HasAddon(plugin.program.autocompletion) | System.HasHiddenInput">-</value>
 		<value>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
 	</variable>
+	<variable name="PlaylistLabel2Var">
+		<value condition="Window.IsActive(musicplaylist)">$INFO[ListItem.Duration]</value>
+		<value>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+	</variable>
 	<variable name="NowPlayingSublabelVar">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TvShowTitle]</value>
 		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ]</value>
