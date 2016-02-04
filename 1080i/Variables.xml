@@ -268,9 +268,9 @@
 	</variable>
 	<!-- Breadcrumbs -->
 	<variable name="BreadcrumbsVideoVar">
-		<value condition="Container.Content(movies)">$LOCALIZE[20342]</value>
-		<value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
-		<value condition="Container.Content(tvshows)">$LOCALIZE[20343]</value>
+		<value condition="Container.Content(movies) | Substring(container.folderpath,library://video/movies/,left) | Substring(container.folderpath,videodb://movies,left)">$LOCALIZE[20342]</value>
+		<value condition="Container.Content(musicvideos) | Substring(container.folderpath,library://video/musicvideos/,left) | Substring(container.folderpath,videodb://musicvideos,left)">$LOCALIZE[20389]</value>
+		<value condition="Container.Content(tvshows) | Substring(container.folderpath,library://video/tvshows/,left) | Substring(container.folderpath,videodb://tvshows,left)">$LOCALIZE[20343]</value>
 		<value condition="Container.Content(seasons)">$LOCALIZE[20343]</value>
 		<value condition="Container.Content(episodes)">$LOCALIZE[20343]</value>
 		<value>$LOCALIZE[3]</value>

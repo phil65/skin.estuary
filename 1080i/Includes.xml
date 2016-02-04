@@ -1110,6 +1110,7 @@
 						<label>$INFO[Container.FolderName, / ]</label>
 						<animation effect="slide" end="0,12" time="200" reversible="true" condition="IsEmpty(Container.SortMethod)">Conditional</animation>
 						<include>BreadcrumbsLabel</include>
+						<visible>![Container.Content() + Window.IsActive(videos)]</visible>
 						<visible>![Window.IsActive(PVR) | Window.IsActive(TVTimers) | Window.IsActive(RadioTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)]</visible>
 					</control>
 					<control type="label">
