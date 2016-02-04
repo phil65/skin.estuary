@@ -68,8 +68,8 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
-						<label>$INFO[ListItem.Label2]</label>
+						<animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows) | Container.Content(seasons)">conditional</animation>
+						<label>$VAR[ListLabel2Var]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -125,8 +125,8 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows)">conditional</animation>
-						<label>$INFO[ListItem.Label2]</label>
+						<animation effect="slide" end="40,0" time="0" condition="Container.Content(tvshows) | Container.Content(seasons)">conditional</animation>
+						<label>$VAR[ListLabel2Var]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
