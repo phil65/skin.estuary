@@ -49,7 +49,6 @@
 						<width>880</width>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>font14</font>
 						<label>$INFO[ListItem.Artist,[COLOR button_focus],[/COLOR] - ]$INFO[ListItem.Title]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -80,7 +79,6 @@
 						<height>70</height>
 						<width>880</width>
 						<aligny>center</aligny>
-						<font>font14</font>
 						<label>$INFO[ListItem.Artist,[COLOR button_focus],[/COLOR] - ]$INFO[ListItem.Title]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>

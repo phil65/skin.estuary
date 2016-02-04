@@ -56,7 +56,6 @@
 								<top>10</top>
 								<width>680</width>
 								<height>100</height>
-								<font>font13</font>
 								<aligny>top</aligny>
 								<label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
 							</control>
@@ -123,7 +122,6 @@
 								<top>10</top>
 								<width>680</width>
 								<height>100</height>
-								<font>font13</font>
 								<aligny>top</aligny>
 								<label>$INFO[ListItem.ChannelName]$INFO[ListItem.Label, - ]</label>
 							</control>
