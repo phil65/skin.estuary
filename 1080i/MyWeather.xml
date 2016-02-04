@@ -354,7 +354,6 @@
 						<height>107</height>
 						<width>600</width>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -390,7 +389,6 @@
 						<height>107</height>
 						<width>600</width>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Property(ShortDate)] - $INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -491,7 +489,6 @@
 					<aligny>center</aligny>
 					<height>24</height>
 					<width>800</width>
-					<font>font13</font>
 					<label>$INFO[Window(Weather).Property(Location)]</label>
 				</control>
 				<control type="image">
