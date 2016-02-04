@@ -60,7 +60,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
+						<label>$INFO[ListItem.Duration]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -90,7 +90,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
+						<label>$INFO[ListItem.Duration]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
