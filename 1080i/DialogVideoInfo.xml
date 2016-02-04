@@ -445,7 +445,7 @@
 			<param name="main_label" value="$VAR[VideoInfoMainLabelVar]" />
 			<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
 		</include>
-		<control type="image">
+<!-- 		<control type="image">
 			<top>1005</top>
 			<width>120</width>
 			<right>2</right>
@@ -454,6 +454,6 @@
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<aspectratio>keep</aspectratio>
 			<texture colordiffuse="button_focus">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
-		</control>
+		</control> -->
 	</controls>
 </window>
