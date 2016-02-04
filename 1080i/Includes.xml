@@ -141,7 +141,6 @@
 	</include>
 	<include name="AudioDSPModeList">
 		<control type="label">
-			<description>blue active modes</description>
 			<left>10</left>
 			<top>2</top>
 			<width>470</width>
@@ -161,7 +160,6 @@
 			<texture border="40">buttons/dialogbutton-nofo.png</texture>
 		</control>
 		<control type="scrollbar" id="$PARAM[scrollbar_id]">
-			<description>scrollbar for active modes list</description>
 			<left>542</left>
 			<top>30</top>
 			<width>25</width>
@@ -171,7 +169,6 @@
 			<orientation>vertical</orientation>
 		</control>
 		<control type="list" id="$PARAM[list_id]">
-			<description>active modes list</description>
 			<left>15</left>
 			<top>35</top>
 			<width>470</width>
@@ -270,7 +267,6 @@
 		<control type="group">
 			<height>30</height>
 			<control type="label">
-				<description>Device</description>
 				<left>0</left>
 				<width>250</width>
 				<height>40</height>
@@ -281,7 +277,6 @@
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="label">
-				<description>Device value</description>
 				<left>270</left>
 				<width>1000</width>
 				<height>40</height>
@@ -978,7 +973,6 @@
 	</include>
 	<include name="DialogBackgroundCommons">
 		<control type="image">
-			<description>background image</description>
 			<left>-1920</left>
 			<top>-1080</top>
 			<width>5760</width>
@@ -989,7 +983,6 @@
 			<visible>$PARAM[darken_bg]</visible>
 		</control>
 		<control type="image">
-			<description>background image</description>
 			<left>0</left>
 			<top>0</top>
 			<width>$PARAM[DialogBackgroundWidth]</width>
@@ -997,7 +990,6 @@
 			<texture border="2">dialogs/dialog-bg-solid.png</texture>
 		</control>
 		<control type="image">
-			<description>Dialog Header image</description>
 			<left>0</left>
 			<top>0</top>
 			<width>$PARAM[DialogBackgroundWidth]</width>
@@ -1005,7 +997,6 @@
 			<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
 		</control>
 		<control type="label" id="$PARAM[DialogHeaderId]">
-			<description>header label</description>
 			<textoffsetx>70</textoffsetx>
 			<left>-30</left>
 			<top>0</top>
@@ -1018,7 +1009,6 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="button" id="22001">
-			<description>background close area</description>
 			<left>-1920</left>
 			<top>-1080</top>
 			<width>5760</width>
@@ -1038,7 +1028,6 @@
 			<onclick>noop</onclick>
 		</control>
 		<control type="radiobutton" id="22000">
-			<description>logo</description>
 			<left>$PARAM[DialogBackgroundWidth]</left>
 			<top>11</top>
 			<width>48</width>
@@ -1053,8 +1042,6 @@
 			<textureradiooffnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradiooffnofocus>
 			<textureradioonfocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioonfocus>
 			<textureradioonnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradioonnofocus>
-			<!-- <selected>Control.HasFocus(22000)</selected>
-			 -->
 			<onclick>Action(close)</onclick>
 		</control>
 	</include>
@@ -1065,7 +1052,6 @@
 				<depth>DepthBars</depth>
 				<animation effect="fade" start="0" end="100" time="300" condition="[Window.Previous(fullscreenvideo) | Window.Previous(startup)] + !Window.IsVisible(1109)">WindowOpen</animation>
 				<control type="image">
-					<description>InfoBarTop</description>
 					<left>0</left>
 					<top>0</top>
 					<width>1920</width>
@@ -1153,7 +1139,6 @@
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 					<include condition="Skin.HasSetting(show_weatherinfo) | Window.IsActive(skinsettings)">TopWeatherIcon</include>
 					<control type="label">
-						<description>System Time</description>
 						<include>BreadcrumbsLabel</include>
 						<label>$INFO[System.Time]</label>
 					</control>
@@ -1161,8 +1146,8 @@
 				<control type="group">
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
+					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration) | Window.IsActive(fullscreenvideo)">WindowClose</animation>
 					<control type="image">
-						<description>System Time Clock</description>
 						<right>25</right>
 						<top>20</top>
 						<height>40</height>
@@ -1172,7 +1157,6 @@
 						<animation effect="fade" time="150">Hidden</animation>
 						<aspectratio>keep</aspectratio>
 						<visible>!Window.IsActive(volumebar)</visible>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration) | Window.IsActive(fullscreenvideo)">WindowClose</animation>
 					</control>
 					<control type="label">
 						<top>40</top>
@@ -1183,7 +1167,6 @@
 						<height>100</height>
 						<width>500</width>
 						<align>right</align>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration) | Window.IsActive(fullscreenvideo)">WindowClose</animation>
 					</control>
 				</control>
 			</control>
@@ -1191,7 +1174,6 @@
 	</include>
 	<include name="TopWeatherIcon">
 		<control type="button">
-			<description>Weather label</description>
 			<include>BreadcrumbsLabel</include>
 			<animation effect="fade" time="300">VisibleChange</animation>
 			<texturefocus>-</texturefocus>
@@ -1203,7 +1185,6 @@
 			<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
 		</control>
 		<control type="image">
-			<description>Weather</description>
 			<top>4</top>
 			<width>60</width>
 			<height>50</height>
@@ -1280,7 +1261,6 @@
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 					<control type="button">
-						<description>List Panel</description>
 						<left>17</left>
 						<top>1019</top>
 						<width>44</width>
@@ -1449,7 +1429,6 @@
 					<label>$INFO[Container($PARAM[right_container_id]).CurrentItem,, / ]$INFO[Container($PARAM[right_container_id]).NumItems]</label>
 				</control>
 				<control type="image">
-					<description>Items icon</description>
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
@@ -1464,7 +1443,6 @@
 				<width>1200</width>
 				<itemgap>10</itemgap>
 				<control type="image">
-					<description>Items icon</description>
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
