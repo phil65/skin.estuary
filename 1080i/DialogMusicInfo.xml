@@ -107,7 +107,7 @@
 				<wrapmultiline>true</wrapmultiline>
 				<align>left</align>
 				<font>font12</font>
-				<label>$INFO[ListItem.Property(Artist_Description),[B]$LOCALIZE[21887][/B][CR][COLOR=white],[/COLOR]]</label>
+				<label>$VAR[MusicInfoTextboxVar]</label>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="grouplist" id="9000">
