@@ -30,7 +30,7 @@
 				<onup>87</onup>
 				<ondown>noop</ondown>
 				<onleft>5000</onleft>
-				<onright>704</onright>
+				<onright>620</onright>
 				<control type="radiobutton" id="600">
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
@@ -87,8 +87,14 @@
 				<orientation>horizontal</orientation>
 				<onup>87</onup>
 				<ondown>noop</ondown>
-				<onleft>605</onleft>
+				<onleft>606</onleft>
 				<onright>600</onright>
+				<control type="radiobutton" id="620">
+					<include name="OSDButton">
+						<param name="texture" value="osd/fullscreen/buttons/rating.png"/>
+					</include>
+					<onclick>SetRating</onclick>
+				</control>
 				<control type="group" id="699">
 					<width>125</width>
 					<height>125</height>
@@ -102,7 +108,7 @@
 						<font>-</font>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onleft>606</onleft>
+						<onleft>620</onleft>
 						<onright>607</onright>
 						<onup>1000</onup>
 						<ondown>1000</ondown>
