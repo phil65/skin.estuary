@@ -21,7 +21,7 @@
 				<wrapmultiline>true</wrapmultiline>
 				<align>left</align>
 				<font>font12</font>
-				<label>$INFO[ListItem.Property(Addon.Summary),[B],[/B][CR]][COLOR=white]$INFO[ListItem.Property(Addon.Description)][/COLOR][COLOR=white][CR]$INFO[ListItem.Property(Addon.Disclaimer),[CR][CR]$LOCALIZE[24052]: ][/COLOR]</label>
+				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR]$INFO[ListItem.AddonDisclaimer,[CR][CR]$LOCALIZE[24052]: ][/COLOR]</label>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="grouplist" id="9000">
@@ -97,7 +97,7 @@
 					<textureradioofffocus colordiffuse="D0FFFFFF">icons/infodialogs/install.png</textureradioofffocus>
 					<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/infodialogs/install.png</textureradiooffnofocus>
 					<textureradiooffdisabled colordiffuse="disabled">icons/infodialogs/install.png</textureradiooffdisabled>
-					<selected>ListItem.Property(addon.installed)</selected>
+					<selected>ListItem.Property(addon.isinstalled)</selected>
 				</control>
 			</control>
 		</control>
@@ -108,11 +108,11 @@
 			<include>ListThumbInfoPanel</include>
 		</control>
 		<include name="InfoDialogTopBarInfo">
-			<param name="main_label" value="$INFO[ListItem.Property(addon.name)]" />
-			<param name="sub_label" value="$INFO[ListItem.Property(addon.version),[COLOR button_focus],[/COLOR]]$INFO[ListItem.Property(addon.creator), $LOCALIZE[31071] ]" />
+			<param name="main_label" value="$INFO[ListItem.AddonName]" />
+			<param name="sub_label" value="$INFO[ListItem.AddonVersion,[COLOR button_focus],[/COLOR]]$INFO[ListItem.AddonCreator, $LOCALIZE[31071] ]" />
 		</include>
 		<control type="group">
-			<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+			<visible>!IsEmpty(ListItem.AddonBroken)</visible>
 			<include>OpenClose_Fade</include>
 			<control type="image">
 				<left>114</left>

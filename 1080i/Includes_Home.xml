@@ -669,7 +669,7 @@
 								<left>20</left>
 								<top>264</top>
 								<width>260</width>
-								<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version),[COLOR button_focus],[/COLOR]]</label>
+								<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.AddonVersion,[COLOR button_focus],[/COLOR]]</label>
 								<font>font10</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -718,7 +718,7 @@
 									<left>20</left>
 									<top>264</top>
 									<width>260</width>
-									<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Version),[COLOR button_focus],[/COLOR]]</label>
+									<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.AddonVersion,[COLOR button_focus],[/COLOR]]</label>
 									<font>font10</font>
 									<shadowcolor>text_shadow</shadowcolor>
 									<align>center</align>

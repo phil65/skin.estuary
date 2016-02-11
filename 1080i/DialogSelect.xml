@@ -83,7 +83,7 @@
 						<height>60</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
-						<label>$INFO[ListItem.Property(Addon.Summary)]</label>
+						<label>$INFO[ListItem.AddonSummary]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="125" width="880">
@@ -128,7 +128,7 @@
 						<height>60</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
-						<label>$INFO[ListItem.Property(Addon.Summary)]</label>
+						<label>$INFO[ListItem.AddonSummary]</label>
 					</control>
 				</focusedlayout>
 			</control>
