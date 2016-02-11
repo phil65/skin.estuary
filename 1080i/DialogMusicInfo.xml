@@ -33,7 +33,7 @@
 				<width>703</width>
 				<height>455</height>
 				<aspectratio>scale</aspectratio>
-				<texture fallback="DefaultArtist.png">$INFO[ListItem.Art(fanart)]</texture>
+				<texture fallback="DefaultMusicSongs.png">$INFO[ListItem.Art(fanart)]</texture>
 				<visible>IsEmpty(Control.GetLabel(400))</visible>
 			</control>
 			<control type="label">
@@ -41,7 +41,6 @@
 				<top>194</top>
 				<width>680</width>
 				<height>430</height>
-				<wrapmultiline>true</wrapmultiline>
 				<align>left</align>
 				<label>$VAR[MusicInfoListHeaderVar,[B],[/B]]</label>
 				<font>font12</font>
