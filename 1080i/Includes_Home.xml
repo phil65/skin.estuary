@@ -597,6 +597,8 @@
 	<include name="WidgetListSquare">
 		<param name="height">405</param>
 		<param name="sublabel">$INFO[ListItem.Label]</param>
+		<param name="sortby"></param>
+		<param name="sortorder">ascending</param>
 		<definition>
 			<control type="group">
 				<description>Square Widget including header and arrows</description>
@@ -733,7 +735,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
