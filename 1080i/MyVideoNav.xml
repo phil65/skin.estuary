@@ -143,6 +143,11 @@
 					<param name="label" value="$INFO[ListItem.Duration,, min]" />
 				</include>
 				<include name="InfoFlag">
+					<param name="visible" value="!IsEmpty(ListItem.Property(TotalEpisodes))" />
+					<param name="icon" value="lists/played-total.png" />
+					<param name="label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
+				</include>
+				<include name="InfoFlag">
 					<param name="visible" value="!IsEmpty(ListItem.rating)" />
 					<param name="icon" value="lists/rating.png" />
 					<param name="label" value="$INFO[ListItem.Rating]" />
