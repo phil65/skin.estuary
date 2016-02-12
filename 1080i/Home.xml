@@ -388,7 +388,7 @@
 						<param name="content_path" value="addons://sources/video/"/>
 						<param name="widget_header" value="$LOCALIZE[1037]"/>
 						<param name="widget_target" value="videos"/>
-						<param name="sortby" value="addonlastused"/>
+						<param name="sortby" value="lastused"/>
 						<param name="sortorder" value="descending"/>
 						<param name="list_id" value="8100"/>
 						<param name="onup_id" value="8900"/>
@@ -398,7 +398,7 @@
 						<param name="content_path" value="addons://sources/audio/"/>
 						<param name="widget_header" value="$LOCALIZE[1038]"/>
 						<param name="widget_target" value="music"/>
-						<param name="sortby" value="addonlastused"/>
+						<param name="sortby" value="lastused"/>
 						<param name="sortorder" value="descending"/>
 						<param name="list_id" value="8200"/>
 						<param name="onup_id" value="8100"/>
@@ -408,7 +408,7 @@
 						<param name="content_path" value="addons://sources/executable/"/>
 						<param name="widget_header" value="$LOCALIZE[1043]"/>
 						<param name="widget_target" value="programs"/>
-						<param name="sortby" value="addonlastused"/>
+						<param name="sortby" value="lastused"/>
 						<param name="sortorder" value="descending"/>
 						<param name="list_id" value="8300"/>
 						<param name="onup_id" value="8200"/>
@@ -418,7 +418,7 @@
 						<param name="content_path" value="androidapp://sources/apps/"/>
 						<param name="widget_header" value="$LOCALIZE[20244]"/>
 						<param name="widget_target" value="programs"/>
-						<param name="sortby" value="addonlastused"/>
+						<param name="sortby" value="lastused"/>
 						<param name="sortorder" value="descending"/>
 						<param name="list_id" value="8400"/>
 						<param name="onup_id" value="8300"/>
@@ -428,7 +428,7 @@
 						<param name="content_path" value="addons://sources/image/"/>
 						<param name="widget_header" value="$LOCALIZE[1039]"/>
 						<param name="widget_target" value="pictures"/>
-						<param name="sortby" value="addonlastused"/>
+						<param name="sortby" value="lastused"/>
 						<param name="sortorder" value="descending"/>
 						<param name="list_id" value="8500"/>
 						<param name="onup_id" value="8400"/>
