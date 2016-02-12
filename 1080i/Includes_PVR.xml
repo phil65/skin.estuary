@@ -8,7 +8,6 @@
 			<align>center</align>
 			<width>510</width>
 			<control type="label" id="$PARAM[header_id]">
-				<description>name label</description>
 				<width>auto</width>
 				<height>70</height>
 				<align>center</align>
@@ -17,7 +16,6 @@
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="label">
-				<description>name label</description>
 				<width>auto</width>
 				<height>70</height>
 				<align>center</align>
@@ -126,7 +124,6 @@
 	</include>
 	<include name="PVRGuideListViewtype">
 		<control type="group">
-			<description>TV Guide Now</description>
 			<visible>Control.IsVisible($PARAM[container_id])</visible>
 			<top>180</top>
 			<left>110</left>
@@ -323,7 +320,6 @@
 			<left>150</left>
 			<top>40</top>
 			<control type="progress">
-				<description>Progressbar</description>
 				<top>60</top>
 				<width>360</width>
 				<height>12</height>
