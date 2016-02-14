@@ -87,7 +87,6 @@
 							<align>right</align>
 							<font>font12</font>
 							<label>$INFO[ListItem.Title]</label>
-							<textcolor>white</textcolor>
 						</control>
 						<control type="label">
 							<left>12</left>
@@ -98,7 +97,6 @@
 							<aligny>center</aligny>
 							<font>font20_title</font>
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
-							<textcolor>white</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>

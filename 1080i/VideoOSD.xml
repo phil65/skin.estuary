@@ -47,7 +47,6 @@
 				<aligny>center</aligny>
 				<label>$VAR[SeekLabel]</label>
 				<shadowcolor>black</shadowcolor>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="grouplist" id="201">
 				<left>50</left>
@@ -199,7 +198,6 @@
 					<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 					<font>font30</font>
 					<shadowcolor>black</shadowcolor>
-					<textcolor>white</textcolor>
 				</control>
 				<control type="progress">
 					<animation effect="fade" end="0" time="200">WindowClose</animation>

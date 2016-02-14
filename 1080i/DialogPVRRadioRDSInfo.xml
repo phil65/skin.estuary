@@ -19,7 +19,6 @@
 			<top>70</top>
 			<visible>IsEmpty(RDS.IsClassical)</visible>
 			<control type="label">
-				<description>Artist Title</description>
 				<left>10</left>
 				<top>0</top>
 				<width>140</width>
@@ -31,21 +30,18 @@
 				<visible>IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Artist Value</description>
 				<left>160</left>
 				<top>0</top>
 				<width>704</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Artist]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 				<visible>IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="label">
-				<description>Band Title</description>
 				<left>10</left>
 				<top>0</top>
 				<width>140</width>
@@ -57,21 +53,18 @@
 				<visible>!IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Band Value</description>
 				<left>160</left>
 				<top>0</top>
 				<width>292</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$INFO[RDS.Band]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 				<visible>!IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="label">
-				<description>Artist Name (alt pos)</description>
 				<left>385</left>
 				<top>0</top>
 				<width>140</width>
@@ -83,19 +76,16 @@
 				<visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Artist Value (alt pos)</description>
 				<left>535</left>
 				<top>0</top>
 				<width>328</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$INFO[RDS.Artist]</label>
 				<visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="label">
-				<description>Song Title</description>
 				<left>10</left>
 				<top>35</top>
 				<width>140</width>
@@ -106,20 +96,17 @@
 				<label>$LOCALIZE[556]:</label>
 			</control>
 			<control type="fadelabel">
-				<description>Song Value</description>
 				<left>160</left>
 				<top>35</top>
 				<width>704</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Title]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="label">
-				<description>Programme style Name</description>
 				<left>10</left>
 				<top>70</top>
 				<width>140</width>
@@ -131,14 +118,12 @@
 				<visible>!IsEmpty(RDS.ProgStyle)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Programme style Value</description>
 				<left>160</left>
 				<top>70</top>
 				<width>704</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>!IsEmpty(RDS.ProgStyle)</visible>
 			</control>
@@ -149,7 +134,6 @@
 			<top>70</top>
 			<visible>!IsEmpty(RDS.IsClassical)</visible>
 			<control type="label">
-				<description>Composer Title</description>
 				<left>10</left>
 				<top>0</top>
 				<width>140</width>
@@ -160,20 +144,17 @@
 				<label>$LOCALIZE[29903]:</label>
 			</control>
 			<control type="fadelabel">
-				<description>Composer Value</description>
 				<left>160</left>
 				<top>0</top>
 				<width>704</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Composer]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="label">
-				<description>Song Title</description>
 				<left>10</left>
 				<top>35</top>
 				<width>140</width>
@@ -184,20 +165,17 @@
 				<label>$LOCALIZE[556]:</label>
 			</control>
 			<control type="fadelabel">
-				<description>Song Value</description>
 				<left>160</left>
 				<top>35</top>
 				<width>704</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Title]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="label">
-				<description>Artist Title</description>
 				<left>10</left>
 				<top>70</top>
 				<width>140</width>
@@ -209,12 +187,10 @@
 				<visible>IsEmpty(RDS.Band) + !IsEmpty(RDS.Artist)</visible>
 			</control>
 			<control type="textbox">
-				<description>Artist Value</description>
 				<left>160</left>
 				<top>66</top>
 				<width>704</width>
 				<height>29</height>
-				<textcolor>white</textcolor>
 				<align>left</align>
 				<pagecontrol>-</pagecontrol>
 				<label fallback="161">$INFO[RDS.Artist]</label>
@@ -222,7 +198,6 @@
 				<visible>IsEmpty(RDS.Band) + !IsEmpty(RDS.Artist)</visible>
 			</control>
 			<control type="label">
-				<description>Band Title</description>
 				<left>10</left>
 				<top>70</top>
 				<width>140</width>
@@ -234,21 +209,18 @@
 				<visible>!IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Band Value</description>
 				<left>160</left>
 				<top>70</top>
 				<width>292</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$INFO[RDS.Band]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 				<visible>!IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="label">
-				<description>Artist Name (alt pos)</description>
 				<left>385</left>
 				<top>70</top>
 				<width>140</width>
@@ -260,12 +232,10 @@
 				<visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="textbox">
-				<description>Artist Value (alt pos)</description>
 				<left>535</left>
 				<top>70</top>
 				<width>328</width>
 				<height>100</height>
-				<textcolor>white</textcolor>
 				<align>left</align>
 				<pagecontrol>-</pagecontrol>
 				<label>$INFO[RDS.Artist]</label>
@@ -273,7 +243,6 @@
 				<visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
 			</control>
 			<control type="label">
-				<description>Conductor Title</description>
 				<left>10</left>
 				<top>105</top>
 				<width>140</width>
@@ -285,21 +254,18 @@
 				<visible>!IsEmpty(RDS.Conductor)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Conductor Value</description>
 				<left>160</left>
 				<top>105</top>
 				<width>300</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[RDS.Conductor]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 				<visible>!IsEmpty(RDS.Conductor)</visible>
 			</control>
 			<control type="label">
-				<description>Programme style Name</description>
 				<left>10</left>
 				<top>105</top>
 				<width>140</width>
@@ -311,19 +277,16 @@
 				<visible>IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Programme style Value</description>
 				<left>160</left>
 				<top>105</top>
 				<width>704</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
 			</control>
 			<control type="label">
-				<description>Programme style Name</description>
 				<left>385</left>
 				<top>105</top>
 				<width>140</width>
@@ -335,20 +298,17 @@
 				<visible>!IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Programme style Value</description>
 				<left>535</left>
 				<top>105</top>
 				<width>328</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>!IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
 			</control>
 		</control>
 		<control type="label">
-			<description>Album Title</description>
 			<left>385</left>
 			<top>175</top>
 			<width>140</width>
@@ -360,21 +320,18 @@
 			<visible>!IsEmpty(RDS.Album)</visible>
 		</control>
 		<control type="fadelabel">
-			<description>Album Value</description>
 			<left>535</left>
 			<top>175</top>
 			<width>328</width>
 			<height>25</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>white</textcolor>
 			<label>$INFO[RDS.Album]</label>
 			<scrollout>false</scrollout>
 			<pauseatend>2000</pauseatend>
 			<visible>!IsEmpty(RDS.Album)</visible>
 		</control>
 		<control type="label">
-			<description>Programme host Name</description>
 			<left>10</left>
 			<top>210</top>
 			<width>140</width>
@@ -386,19 +343,16 @@
 			<visible>!IsEmpty(RDS.ProgHost)</visible>
 		</control>
 		<control type="fadelabel">
-			<description>Programme host Value</description>
 			<left>160</left>
 			<top>210</top>
 			<width>235</width>
 			<height>25</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>white</textcolor>
 			<label>$INFO[RDS.ProgHost]</label>
 			<visible>!IsEmpty(RDS.ProgHost)</visible>
 		</control>
 		<control type="label">
-			<description>Comment Title</description>
 			<left>385</left>
 			<top>210</top>
 			<width>140</width>
@@ -410,21 +364,18 @@
 			<visible>!IsEmpty(RDS.Comment)</visible>
 		</control>
 		<control type="fadelabel">
-			<description>Comment Value</description>
 			<left>535</left>
 			<top>210</top>
 			<width>328</width>
 			<height>25</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>white</textcolor>
 			<label>$INFO[RDS.Comment]</label>
 			<scrollout>false</scrollout>
 			<pauseatend>2000</pauseatend>
 			<visible>!IsEmpty(RDS.Comment)</visible>
 		</control>
 		<control type="label">
-			<description>Channel Name</description>
 			<left>10</left>
 			<top>245</top>
 			<width>140</width>
@@ -435,18 +386,15 @@
 			<label>$LOCALIZE[19148]:</label>
 		</control>
 		<control type="fadelabel">
-			<description>Channel Value</description>
 			<left>160</left>
 			<top>245</top>
 			<width>235</width>
 			<height>25</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>white</textcolor>
 			<label>$INFO[RDS.ProgStation]</label>
 		</control>
 		<control type="label">
-			<description>Editorial Staff Name</description>
 			<left>385</left>
 			<top>245</top>
 			<width>140</width>
@@ -458,14 +406,12 @@
 			<visible>!IsEmpty(RDS.ProgEditStaff)</visible>
 		</control>
 		<control type="fadelabel">
-			<description>Editorial Staff Value</description>
 			<left>535</left>
 			<top>245</top>
 			<width>328</width>
 			<height>25</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>white</textcolor>
 			<label>$INFO[RDS.ProgEditStaff]</label>
 			<visible>!IsEmpty(RDS.ProgEditStaff)</visible>
 		</control>
@@ -505,52 +451,42 @@
 			<height>300</height>
 			<itemgap>8</itemgap>
 			<control type="label">
-				<description>Program now Name</description>
 				<width>160</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$LOCALIZE[19030]:</label>
 				<visible>!IsEmpty(RDS.ProgNow)</visible>
 			</control>
 			<control type="label">
-				<description>Program next Name</description>
 				<width>160</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$LOCALIZE[19031]:</label>
 				<visible>!IsEmpty(RDS.ProgNext)</visible>
 			</control>
 			<control type="label">
-				<description>Studio phone Name</description>
 				<width>95</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29910]:</label>
 				<visible>!IsEmpty(RDS.PhoneStudio)</visible>
 			</control>
 			<control type="label">
-				<description>Studio email Name</description>
 				<width>95</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29911]:</label>
 				<visible>!IsEmpty(RDS.EmailStudio)</visible>
 			</control>
 			<control type="label">
-				<description>Studio SMS Name</description>
 				<width>95</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29912]:</label>
 				<visible>!IsEmpty(RDS.SMSStudio)</visible>
 			</control>
@@ -562,7 +498,6 @@
 			<height>300</height>
 			<itemgap>8</itemgap>
 			<control type="fadelabel">
-				<description>Program now Value</description>
 				<width>620</width>
 				<height>25</height>
 				<align>left</align>
@@ -572,7 +507,6 @@
 				<visible>!IsEmpty(RDS.ProgNow)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Program next Value</description>
 				<width>620</width>
 				<height>25</height>
 				<align>left</align>
@@ -582,7 +516,6 @@
 				<visible>!IsEmpty(RDS.ProgNext)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Studio phone Value</description>
 				<width>215</width>
 				<height>25</height>
 				<align>left</align>
@@ -592,7 +525,6 @@
 				<visible>!IsEmpty(RDS.PhoneStudio)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Studio email Value</description>
 				<width>215</width>
 				<height>25</height>
 				<align>left</align>
@@ -602,7 +534,6 @@
 				<visible>!IsEmpty(RDS.EmailStudio)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Studio SMS Value</description>
 				<width>215</width>
 				<height>25</height>
 				<align>left</align>
@@ -619,7 +550,6 @@
 			<height>300</height>
 			<itemgap>8</itemgap>
 			<control type="label">
-				<description>Hotline basename</description>
 				<width>140</width>
 				<height>25</height>
 				<align>right</align>
@@ -629,7 +559,6 @@
 				<visible>!IsEmpty(RDS.PhoneHotline) | !IsEmpty(RDS.EmailHotline)</visible>
 			</control>
 			<control type="label">
-				<description>Homepage Name</description>
 				<left>385</left>
 				<top>420</top>
 				<width>140</width>
@@ -648,32 +577,26 @@
 			<height>300</height>
 			<itemgap>8</itemgap>
 			<control type="label">
-				<description>Hotline phone Name</description>
 				<width>160</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29910]:</label>
 				<visible>!IsEmpty(RDS.PhoneHotline)</visible>
 			</control>
 			<control type="label">
-				<description>Hotline email Name</description>
 				<width>160</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$LOCALIZE[29911]:</label>
 				<visible>!IsEmpty(RDS.EmailHotline)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Homepage Value</description>
 				<width>320</width>
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>white</textcolor>
 				<label>$INFO[RDS.ProgHomepage]</label>
 				<visible>!IsEmpty(RDS.ProgHomepage)</visible>
 			</control>
@@ -685,7 +608,6 @@
 			<height>300</height>
 			<itemgap>8</itemgap>
 			<control type="fadelabel">
-				<description>Hotline phone Value</description>
 				<width>248</width>
 				<height>25</height>
 				<align>left</align>
@@ -695,7 +617,6 @@
 				<visible>!IsEmpty(RDS.PhoneHotline)</visible>
 			</control>
 			<control type="fadelabel">
-				<description>Hotline email Value</description>
 				<width>248</width>
 				<height>25</height>
 				<align>left</align>
@@ -711,7 +632,6 @@
 			<top>455</top>
 			<visible>false</visible>
 			<control type="label">
-				<description>Info label</description>
 				<left>375</left>
 				<top>0</top>
 				<width>110</width>
@@ -725,7 +645,6 @@
 				<description>Source Type</description>
 				<left>740</left>
 				<top>5</top>
-				<textcolor>white</textcolor>
 				<aligny>center</aligny>
 				<label>-</label>
 				<textoffsetx>10</textoffsetx>
@@ -748,7 +667,7 @@
 				<showonepage>true</showonepage>
 			</control>
 			<control type="textbox" id="22">
-				<description>PLOT</description>
+				<description>Plot</description>
 				<left>0</left>
 				<top>30</top>
 				<width>800</width>

@@ -160,17 +160,14 @@
 				<left>52</left>
 				<top>-143</top>
 				<control type="label">
-					<description>Duration</description>
 					<width>1600</width>
 					<height>75</height>
 					<aligny>bottom</aligny>
 					<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
-					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
-					<description>Music Info label</description>
 					<width>1600</width>
 					<height>25</height>
 					<font>font14</font>
@@ -180,7 +177,6 @@
 					<visible>VideoPlayer.Content(MusicVideos)</visible>
 				</control>
 				<control type="label">
-					<description>TV Episode Information</description>
 					<width>1600</width>
 					<height>44</height>
 					<label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, • $LOCALIZE[20373] ,]$INFO[VideoPlayer.Episode, • $LOCALIZE[20359] ,]$INFO[VideoPlayer.Rating, • ,]</label>
@@ -188,7 +184,6 @@
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="label">
-					<description>Movie Information</description>
 					<font>font14</font>
 					<width>1600</width>
 					<height>44</height>
@@ -197,7 +192,6 @@
 					<visible>VideoPlayer.Content(Movies)</visible>
 				</control>
 				<control type="label">
-					<description>Live TV Information</description>
 					<font>font14</font>
 					<width>1600</width>
 					<height>44</height>

@@ -60,7 +60,6 @@
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 				<font>font14</font>
 				<shadowcolor>black</shadowcolor>
-				<textcolor>white</textcolor>
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
