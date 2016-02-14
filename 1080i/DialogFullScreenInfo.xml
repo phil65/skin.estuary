@@ -161,7 +161,7 @@
 				<top>-143</top>
 				<control type="label">
 					<description>Duration</description>
-					<width>910</width>
+					<width>1600</width>
 					<height>75</height>
 					<aligny>bottom</aligny>
 					<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -171,7 +171,7 @@
 				</control>
 				<control type="label">
 					<description>Music Info label</description>
-					<width>910</width>
+					<width>1600</width>
 					<height>25</height>
 					<font>font14</font>
 					<label>$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</label>
@@ -181,7 +181,7 @@
 				</control>
 				<control type="label">
 					<description>TV Episode Information</description>
-					<width>910</width>
+					<width>1600</width>
 					<height>44</height>
 					<label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, • $LOCALIZE[20373] ,]$INFO[VideoPlayer.Episode, • $LOCALIZE[20359] ,]$INFO[VideoPlayer.Rating, • ,]</label>
 					<scroll>true</scroll>
@@ -190,7 +190,7 @@
 				<control type="label">
 					<description>Movie Information</description>
 					<font>font14</font>
-					<width>910</width>
+					<width>1600</width>
 					<height>44</height>
 					<label>$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Year, • ,]$INFO[VideoPlayer.Rating, • ,]</label>
 					<scroll>true</scroll>
@@ -199,7 +199,7 @@
 				<control type="label">
 					<description>Live TV Information</description>
 					<font>font14</font>
-					<width>910</width>
+					<width>1600</width>
 					<height>44</height>
 					<label>$INFO[VideoPlayer.ChannelNumberLabel,$LOCALIZE[19029]: , ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.NextTitle, • $LOCALIZE[19031]: ]</label>
 					<scroll>true</scroll>
