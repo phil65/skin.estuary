@@ -329,31 +329,25 @@
 				<align>left</align>
 				<orientation>horizontal</orientation>
 				<scrolltime tween="quadratic">200</scrolltime>
-				<control type="radiobutton" id="8">
-					<label>$LOCALIZE[208]</label>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/launch.png" />
-					</include>
-				</control>
-				<control type="radiobutton" id="11">
-					<label>$LOCALIZE[20410]</label>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/trailer.png" />
-					</include>
-					<visible>!IsEmpty(ListItem.Trailer)</visible>
-					<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
-				</control>
-				<control type="radiobutton" id="440">
-					<label>$LOCALIZE[31090]</label>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/trailer.png" />
-					</include>
-					<visible>IsEmpty(ListItem.Trailer)</visible>
-					<onclick>Action(close)</onclick>
-					<visible>System.hasAddon(script.extendedinfo)</visible>
-					<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])</onclick>
-					<visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
-				</control>
+				<include name="InfoDialogButton">
+					<param name="id" value="8" />
+					<param name="icon" value="icons/infodialogs/launch.png" />
+					<param name="label" value="$LOCALIZE[208]" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="11" />
+					<param name="icon" value="icons/infodialogs/trailer.png" />
+					<param name="label" value="$LOCALIZE[20410]" />
+					<param name="visible" value="!IsEmpty(ListItem.Trailer) + Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="440" />
+					<param name="icon" value="icons/infodialogs/trailer.png" />
+					<param name="label" value="$LOCALIZE[31090]" />
+					<param name="onclick_1" value="Action(close)" />
+					<param name="onclick_2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])" />
+					<param name="visible" value="System.hasAddon(script.extendedinfo) + IsEmpty(ListItem.Trailer) + Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]" />
+				</include>
 				<control type="group" id="400">
 					<width>262</width>
 					<visible>Control.IsEnabled(7)</visible>
@@ -390,35 +384,31 @@
 						<visible>IsEmpty(ListItem.UserRating)</visible>
 					</control>
 				</control>
-				<control type="radiobutton" id="101">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/info.png" />
-					</include>
-					<label>$LOCALIZE[31034]</label>
-					<onclick>RunScript(script.extendedinfo,info=openinfodialog)</onclick>
-					<visible>System.HasAddon(script.extendedinfo)</visible>
-				</control>
-				<control type="radiobutton" id="102">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/image.png" />
-					</include>
-					<label>$LOCALIZE[31028]</label>
-					<enable>!IsEmpty(ListItem.Art(fanart))</enable>
-					<onclick>SetProperty(fanart,$ESCINFO[ListItem.Art(fanart)],home)</onclick>
-					<onclick>ActivateWindow(1104)</onclick>
-				</control>
-				<control type="radiobutton" id="10">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/choose_image.png" />
-					</include>
-					<label>$LOCALIZE[13511]</label>
-				</control>
-				<control type="radiobutton" id="6">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/update.png" />
-					</include>
-					<label>$LOCALIZE[184]</label>
-				</control>
+				<include name="InfoDialogButton">
+					<param name="id" value="101" />
+					<param name="icon" value="icons/infodialogs/info.png" />
+					<param name="label" value="$LOCALIZE[31034]" />
+					<param name="onclick_1" value="RunScript(script.extendedinfo,info=openinfodialog)" />
+					<param name="visible" value="System.hasAddon(script.extendedinfo)" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="102" />
+					<param name="icon" value="icons/infodialogs/image.png" />
+					<param name="label" value="$LOCALIZE[31028]" />
+					<param name="onclick_1" value="SetProperty(fanart,$ESCINFO[ListItem.Art(fanart)],home)" />
+					<param name="onclick_2" value="ActivateWindow(1104)" />
+					<param name="visible" value="!IsEmpty(ListItem.Art(fanart))" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="10" />
+					<param name="icon" value="icons/infodialogs/choose_image.png" />
+					<param name="label" value="$LOCALIZE[13511]" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="6" />
+					<param name="icon" value="icons/infodialogs/update.png" />
+					<param name="label" value="$LOCALIZE[184]" />
+				</include>
 			</control>
 			<control type="image">
 				<left>-15</left>
