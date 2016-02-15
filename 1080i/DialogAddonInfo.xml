@@ -36,24 +36,21 @@
 				<align>left</align>
 				<itemgap>-18</itemgap>
 				<orientation>horizontal</orientation>
-				<control type="radiobutton" id="12">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/launch.png" />
-					</include>
-					<label>$LOCALIZE[518]</label>
-				</control>
-				<control type="radiobutton" id="9">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/configure.png" />
-					</include>
-					<label>$LOCALIZE[24020]</label>
-				</control>
-				<control type="radiobutton" id="8">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/update.png" />
-					</include>
-					<label>$LOCALIZE[24069]</label>
-				</control>
+				<include name="InfoDialogButton">
+					<param name="id" value="12" />
+					<param name="icon" value="icons/infodialogs/launch.png" />
+					<param name="label" value="$LOCALIZE[518]" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="9" />
+					<param name="icon" value="icons/infodialogs/configure.png" />
+					<param name="label" value="$LOCALIZE[24020]" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="8" />
+					<param name="icon" value="icons/infodialogs/update.png" />
+					<param name="label" value="$LOCALIZE[24069]" />
+				</include>
 				<control type="radiobutton" id="13">
 					<width>262</width>
 					<height>140</height>
@@ -66,18 +63,16 @@
 					<radiowidth>100</radiowidth>
 					<font>font12</font>
 				</control>
-				<control type="radiobutton" id="10">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/changelog.png" />
-					</include>
-					<label>$LOCALIZE[24036]</label>
-				</control>
-				<control type="radiobutton" id="7">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/disable.png" />
-					</include>
-					<label>$LOCALIZE[24021]</label>
-				</control>
+				<include name="InfoDialogButton">
+					<param name="id" value="10" />
+					<param name="icon" value="icons/infodialogs/changelog.png" />
+					<param name="label" value="$LOCALIZE[24036]" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="7" />
+					<param name="icon" value="icons/infodialogs/disable.png" />
+					<param name="label" value="$LOCALIZE[24021]" />
+				</include>
 				<control type="radiobutton" id="6">
 					<width>262</width>
 					<height>140</height>
