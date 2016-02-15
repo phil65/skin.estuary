@@ -97,56 +97,45 @@
 				<onright>9000</onright>
 				<onup>49</onup>
 				<ondown>49</ondown>
-				<control type="radiobutton" id="5">
-					<description>Switch to Channel</description>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/launch.png" />
-					</include>
-					<label>$LOCALIZE[19165]</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
-				</control>
-				<control type="radiobutton" id="4">
-					<description>Find similar</description>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/similar.png" />
-					</include>
-					<label>$LOCALIZE[19003]</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
-				</control>
-				<control type="radiobutton" id="8">
-					<description>Play recording</description>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/play_record.png" />
-					</include>
-					<label>$LOCALIZE[19687]</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
-				</control>
-				<control type="radiobutton" id="6">
-					<description>Record</description>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/record.png" />
-					</include>
-					<label>-</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
-				</control>
-				<control type="radiobutton" id="5010">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/play_record.png" />
-					</include>
-					<label>$LOCALIZE[19687]</label>
-					<onclick>Dialog.close(PVRRecordingInfo,true)</onclick>
-					<onclick>Action(select)</onclick>
-					<visible>Window.IsActive(PVRRecordingInfo)</visible>
-				</control>
-				<control type="radiobutton" id="440">
-					<label>$LOCALIZE[31114]</label>
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/trailer.png" />
-					</include>
-					<onclick>Action(close)</onclick>
-					<visible>System.hasAddon(script.extendedinfo)</visible>
-					<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title])</onclick>
-				</control>
+				<include name="InfoDialogButton">
+					<param name="id" value="5" />
+					<param name="icon" value="icons/infodialogs/launch.png" />
+					<param name="label" value="$LOCALIZE[19165]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="4" />
+					<param name="icon" value="icons/infodialogs/similar.png" />
+					<param name="label" value="$LOCALIZE[19003]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="8" />
+					<param name="icon" value="icons/infodialogs/play_record.png" />
+					<param name="label" value="$LOCALIZE[19687]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="6" />
+					<param name="icon" value="icons/infodialogs/record.png" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="5010" />
+					<param name="icon" value="icons/infodialogs/play_record.png" />
+					<param name="label" value="$LOCALIZE[19687]" />
+					<param name="onclick_1" value="Dialog.close(PVRRecordingInfo,true)" />
+					<param name="onclick_2" value="Action(select)" />
+					<param name="visible" value="Window.IsActive(PVRRecordingInfo)" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="440" />
+					<param name="icon" value="icons/infodialogs/trailer.png" />
+					<param name="label" value="$LOCALIZE[31114]" />
+					<param name="onclick_1" value="Action(close)" />
+					<param name="onclick_2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title])" />
+					<param name="visible" value="System.hasAddon(script.extendedinfo)" />
+				</include>
 			</control>
 		</control>
 		<include name="InfoDialogTopBarInfo">
