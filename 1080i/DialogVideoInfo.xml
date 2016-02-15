@@ -27,7 +27,7 @@
 				<animation effect="fade" start="0" end="100" time="0" delay="300">WindowOpen</animation>
 			</control>
 			<control type="group">
-				<visible>[Container.Content(episodes) | Container.Content(mixed)] + !IsEmpty(ListItem.Thumb)</visible>
+				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Thumb)</visible>
 				<control type="image">
 					<left>4</left>
 					<top>4</top>
@@ -48,6 +48,30 @@
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
+			</control>
+		</control>
+		<control type="group">
+			<top>180</top>
+			<left>106</left>
+			<visible>Container.Content(mixed)</visible>
+			<include>OpenClose_Left</include>
+			<control type="image">
+				<left>4</left>
+				<top>4</top>
+				<width>466</width>
+				<height>701</height>
+				<aspectratio>stretch</aspectratio>
+				<texture colordiffuse="FF555555">DefaultVideo.png</texture>
+			</control>
+			<control type="image">
+				<left>14</left>
+				<top>4</top>
+				<width>446</width>
+				<height>701</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[ListItem.Thumb]</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
 			</control>
 		</control>
 		<control type="group">
@@ -445,15 +469,15 @@
 			<param name="main_label" value="$VAR[VideoInfoMainLabelVar]" />
 			<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
 		</include>
-<!-- 		<control type="image">
-			<top>1005</top>
-			<width>120</width>
-			<right>2</right>
-			<height>75</height>
-			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="button_focus">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
-		</control> -->
+		<!-- 		<control type="image">
+		     <top>1005</top>
+		     <width>120</width>
+		     <right>2</right>
+		     <height>75</height>
+		     <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+		     <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+		     <aspectratio>keep</aspectratio>
+		     <texture colordiffuse="button_focus">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
+		     </control> -->
 	</controls>
 </window>
