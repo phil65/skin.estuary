@@ -138,6 +138,15 @@
 					<onclick>Action(select)</onclick>
 					<visible>Window.IsActive(PVRRecordingInfo)</visible>
 				</control>
+				<control type="radiobutton" id="440">
+					<label>$LOCALIZE[31114]</label>
+					<include name="VideoInfoButtonsCommon">
+						<param name="icon" value="icons/infodialogs/trailer.png" />
+					</include>
+					<onclick>Action(close)</onclick>
+					<visible>System.hasAddon(script.extendedinfo)</visible>
+					<onclick condition="!Container.Content(songs)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title])</onclick>
+				</control>
 			</control>
 		</control>
 		<include name="InfoDialogTopBarInfo">
