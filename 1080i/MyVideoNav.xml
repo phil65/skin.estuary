@@ -29,7 +29,7 @@
 		<control type="group">
 			<include>OpenClose_Left</include>
 			<visible>Control.IsVisible(55)</visible>
-			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Container.Content(files)</visible>
+			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Container.Content(files) | Container.Content(mixed)</visible>
 			<include>Visible_Left</include>
 			<include>ListThumbInfoPanel</include>
 		</control>
@@ -157,7 +157,7 @@
 		<control type="group">
 			<top>180</top>
 			<left>106</left>
-			<visible>!Container.Content() + !Container.Content(addons) + !Container.Content(files)</visible>
+			<visible>!Container.Content() + !Container.Content(addons) + !Container.Content(files) + !Container.Content(mixed)</visible>
 			<visible>!Control.IsVisible(502)</visible>
 			<visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(55) | Window.IsActive(movieinformation)</visible>
 			<include>OpenClose_Left</include>
@@ -207,7 +207,7 @@
 			<control type="grouplist" id="9000">
 				<top>90</top>
 				<include name="MediaMenuListCommon">
-					<param name="viewtype_button_vis" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums)" />
+					<param name="viewtype_button_vis" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(mixed)" />
 				</include>
 				<control type="button" id="10">
 					<description>Watched Toggle</description>

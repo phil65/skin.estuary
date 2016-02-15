@@ -32,8 +32,8 @@
 				<onup>55</onup>
 				<ondown>55</ondown>
 				<viewtype label="$LOCALIZE[31107]">list</viewtype>
-				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)</visible>
-				<focusedlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">
+				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed)</visible>
+				<focusedlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -103,7 +103,7 @@
 						<visible>!Control.HasFocus(55)</visible>
 					</control>
 				</focusedlayout>
-				<itemlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files)">
+				<itemlayout height="70" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
