@@ -145,7 +145,7 @@
 					</include>
 					<onclick>Action(close)</onclick>
 					<visible>System.hasAddon(script.extendedinfo)</visible>
-					<onclick condition="!Container.Content(songs)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title])</onclick>
+					<onclick>RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title])</onclick>
 				</control>
 			</control>
 		</control>
