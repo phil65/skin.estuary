@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol always="true">60</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<control type="group">
 			<include>OpenClose_Left</include>
@@ -38,11 +38,18 @@
 				<param name="up_posy" value="110" />
 				<param name="down_posy" value="950" />
 			</include>
+			<control type="group" id="9000">
 			<control type="scrollbar" id="60">
 				<left>1840</left>
 				<top>150</top>
 				<width>12</width>
 				<height>780</height>
+				<onleft>Dialog.Close(all,true)</onleft>
+				<onleft>Action(left)</onleft>
+				<onleft>info</onleft>
+				<onright>Dialog.Close(all,true)</onright>
+				<onright>Action(right)</onright>
+				<onright>info</onright>
 				<orientation>vertical</orientation>
 			</control>
 			<control type="list" id="5">
@@ -51,8 +58,12 @@
 				<width>480</width>
 				<height>750</height>
 				<orientation>vertical</orientation>
-				<onleft>60</onleft>
-				<onright>60</onright>
+				<onleft>Dialog.Close(all,true)</onleft>
+				<onleft>Action(left)</onleft>
+				<onleft>info</onleft>
+				<onright>Dialog.Close(all,true)</onright>
+				<onright>Action(right)</onright>
+				<onright>info</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -104,6 +115,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</itemlayout>
+			</control>
 			</control>
 		</control>
 		<include name="InfoDialogTopBarInfo">
