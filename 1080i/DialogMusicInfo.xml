@@ -4,6 +4,8 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
+			<include>Visible_Right</include>
+			<visible>![Window.Is(songinformation) + Window.IsActive(musicinformation)]</visible>
 			<control type="button" id="131">
 				<left>584</left>
 				<top>164</top>
@@ -121,24 +123,6 @@
 				<align>center</align>
 				<itemgap>-13</itemgap>
 				<orientation>horizontal</orientation>
-<!-- 				<control type="radiobutton" id="600">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/list.png" />
-					</include>
-					<label>$LOCALIZE[31026]</label>
-					<onclick>Action(close)</onclick>
-					<onclick>Container.Update($INFO[Container.FolderPath]$INFO[ListItem.DBID])</onclick>
-					<visible>Container.Content(artists)</visible>
-				</control>
-				<control type="radiobutton" id="601">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/list.png" />
-					</include>
-					<label>$LOCALIZE[31027]</label>
-					<onclick>Action(close)</onclick>
-					<onclick>Container.Update($INFO[Container.FolderPath]/$INFO[ListItem.DBID])</onclick>
-					<visible>Container.Content(albums)</visible>
-				</control> -->
 				<control type="group" id="420">
 					<width>262</width>
 					<visible>Container.Content(albums) | Container.Content(songs)</visible>
@@ -208,7 +192,6 @@
 					<onclick condition="!Container.Content(songs)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])</onclick>
 					<onclick condition="Container.Content(songs)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])</onclick>
 				</control>
-
 			</control>
 		</control>
 		<include name="InfoDialogTopBarInfo" condition="Container.Content(artists)">
@@ -220,7 +203,7 @@
 			<param name="sub_label" value="$INFO[ListItem.Artist]" />
 		</include>
 		<control type="group">
-			<visible>Container.Content(songs)</visible>
+			<visible>Container.Content(songs) + !Window.IsActive(musicinformation)</visible>
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="[COLOR button_focus]$INFO[ListItem.TrackNumber]. [/COLOR]$INFO[ListItem.Title]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
