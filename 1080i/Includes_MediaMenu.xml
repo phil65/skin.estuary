@@ -130,28 +130,28 @@
 					<label>$LOCALIZE[19141]</label>
 					<label2>[B]$PARAM[group_label2][/B]</label2>
 					<onclick>SendClick(28)</onclick>
-					<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels) | Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible>
+					<visible>Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml)</visible>
 				</control>
 				<control type="button" id="6053">
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[31022]</label>
 					<label2>[B]$INFO[Container.SortMethod][/B]</label2>
 					<onclick>Container.NextSortMethod</onclick>
-					<visible>!Window.IsActive(tvguide) + !Window.IsActive(radioguide)</visible>
+					<visible>!Window.IsActive(MyPVRGuide.xml)</visible>
 				</control>
 				<control type="button" id="6055">
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[31032]</label>
 					<label2>[B]$INFO[Container.SortOrder][/B]</label2>
 					<onclick>Container.SortDirection</onclick>
-					<visible>!Window.IsActive(tvguide) + !Window.IsActive(radioguide)</visible>
+					<visible>!Window.IsActive(MyPVRGuide.xml)</visible>
 				</control>
 				<control type="button" id="6051">
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[456]</label>
 					<label2>[B]$INFO[Container.Viewmode][/B]</label2>
 					<onclick>Container.NextViewMode</onclick>
-					<visible>Window.IsActive(tvguide) | Window.IsActive(radioguide)</visible>
+					<visible>Window.IsActive(MyPVRGuide.xml)</visible>
 				</control>
 				<control type="label" id="300">
 					<label>$LOCALIZE[31021]</label>
@@ -163,31 +163,31 @@
 					<label>$LOCALIZE[587]</label>
 					<selected>Container.Filtered</selected>
 					<onclick>right</onclick>
-					<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+					<visible>Window.IsActive(MyPVRChannels.xml)</visible>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Group recording items by folder structure</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[19270]</label>
-					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+					<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 				</control>
 				<control type="radiobutton" id="6">
 					<description>Show hidden channels</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[19051]</label>
-					<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+					<visible>Window.IsActive(MyPVRChannels.xml)</visible>
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Show deleted recordings</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[19184]</label>
-					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+					<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Hide disabled timers</description>
 					<include>MediaMenuItemsCommon</include>
 					<label>$LOCALIZE[19077]</label>
-					<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)</visible>
+					<visible>Window.IsActive(MyPVRTimers.xml)</visible>
 				</control>
 				<control type="group" id="141000">
 					<control type="grouplist" id="14100">
