@@ -1096,7 +1096,7 @@
 						<animation effect="slide" end="0,12" time="200" reversible="true" condition="IsEmpty(Container.SortMethod)">Conditional</animation>
 						<include>BreadcrumbsLabel</include>
 						<visible>![Container.Content() + Window.IsActive(videos)]</visible>
-						<visible>![Window.IsActive(PVR) | Window.IsActive(TVTimers) | Window.IsActive(RadioTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)]</visible>
+						<visible>![Window.IsActive(PVR) | Window.IsActive(MyPVRTimers.xml)]</visible>
 					</control>
 					<control type="label">
 						<label>$INFO[Control.GetLabel(10),: ]</label>
@@ -1291,7 +1291,7 @@
 						<texturenofocus colordiffuse="button_focus">icons/menu.png</texturenofocus>
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<onclick>SetFocus(9000)</onclick>
-						<visible>[Window.IsActive(tvguide) | Window.IsActive(radioguide)] + Control.IsVisible(10)</visible>
+						<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
 						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
 					</control>
 					<control type="button">
