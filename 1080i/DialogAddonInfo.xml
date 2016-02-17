@@ -92,7 +92,7 @@
 					<textureradioofffocus colordiffuse="D0FFFFFF">icons/infodialogs/install.png</textureradioofffocus>
 					<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/infodialogs/install.png</textureradiooffnofocus>
 					<textureradiooffdisabled colordiffuse="disabled">icons/infodialogs/install.png</textureradiooffdisabled>
-					<selected>ListItem.Property(addon.isinstalled)</selected>
+					<selected>ListItem.Property(addon.isinstalled) | !Window.IsActive(addonbrowser)</selected>
 				</control>
 			</control>
 		</control>
