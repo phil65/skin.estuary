@@ -18,23 +18,27 @@
 				<height>100</height>
 				<texture colordiffuse="button_focus">dialogs/extendedprogress/loading-back.png</texture>
 			</control>
-			<control type="image">
-				<description>Loading indicator</description>
-				<left>-4</left>
-				<top>-11</top>
-				<width>100</width>
-				<height>100</height>
-				<texture>dialogs/volume/progress/p$INFO[Control.GetLabel(32)].png</texture>
-				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<description>Loading indicator</description>
-				<left>-4</left>
-				<top>-11</top>
-				<width>100</width>
-				<height>100</height>
-				<texture>dialogs/extendedprogress/loading.png</texture>
-				<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+			<control type="group">
+				<visible>!Window.IsActive(volumebar)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<control type="image">
+					<description>Loading indicator</description>
+					<left>-4</left>
+					<top>-11</top>
+					<width>100</width>
+					<height>100</height>
+					<texture>dialogs/volume/progress/p$INFO[Control.GetLabel(32)].png</texture>
+					<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<description>Loading indicator</description>
+					<left>-4</left>
+					<top>-11</top>
+					<width>100</width>
+					<height>100</height>
+					<texture>dialogs/extendedprogress/loading.png</texture>
+					<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+				</control>
 			</control>
 			<control type="grouplist">
 				<left>-800</left>
