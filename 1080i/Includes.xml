@@ -933,7 +933,7 @@
 				<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 				<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-				<visible>Container($PARAM[list_id]).IsVisible + Container($PARAM[list_id]).HasPrevious</visible>
+				<visible>Control.IsVisible($PARAM[list_id]) + Container($PARAM[list_id]).HasPrevious</visible>
 				<visible>!System.HasModalDialog</visible>
 			</control>
 			<control type="image">
@@ -945,7 +945,7 @@
 				<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 				<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-				<visible>Container($PARAM[list_id]).IsVisible + Container($PARAM[list_id]).HasNext</visible>
+				<visible>Control.IsVisible($PARAM[list_id]) + Container($PARAM[list_id]).HasNext</visible>
 				<visible>!System.HasModalDialog</visible>
 			</control>
 			<control type="button" id="$PARAM[list_id]500">
