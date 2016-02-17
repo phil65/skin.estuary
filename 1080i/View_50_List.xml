@@ -68,7 +68,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<animation effect="slide" end="40,0" time="0" condition="IsEmpty(ListItem.VideoResolution) + !ListItem.IsCollecction">conditional</animation>
+						<animation effect="slide" end="40,0" time="0" condition="IsEmpty(ListItem.VideoResolution) + !ListItem.IsCollection">conditional</animation>
 						<label>$VAR[ListLabel2Var]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -125,7 +125,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<animation effect="slide" end="40,0" time="0" condition="IsEmpty(ListItem.VideoResolution) + !ListItem.IsCollecction">conditional</animation>
+						<animation effect="slide" end="40,0" time="0" condition="IsEmpty(ListItem.VideoResolution) + !ListItem.IsCollection">conditional</animation>
 						<label>$VAR[ListLabel2Var]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
