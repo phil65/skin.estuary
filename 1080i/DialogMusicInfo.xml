@@ -55,7 +55,6 @@
 					<height>455</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<aspectratio>scale</aspectratio>
 					<font>font30_title</font>
 					<label>$LOCALIZE[19055]</label>
 				</control>
@@ -213,17 +212,17 @@
 				</control>
 			</control>
 		</control>
-		<include content="InfoDialogTopBarInfo" condition="Container.Content(artists)">
+		<include name="InfoDialogTopBarInfo" condition="Container.Content(artists)">
 			<param name="main_label" value="$INFO[ListItem.Artist]" />
 			<param name="sub_label" value="$INFO[ListItem.Genre]" />
 		</include>
-		<include content="InfoDialogTopBarInfo" condition="Container.Content(albums)">
+		<include name="InfoDialogTopBarInfo" condition="Container.Content(albums)">
 			<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
 			<param name="sub_label" value="$INFO[ListItem.Artist]" />
 		</include>
 		<control type="group">
 			<visible>Container.Content(songs) + !Window.IsActive(musicinformation)</visible>
-			<include content="InfoDialogTopBarInfo">
+			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="[COLOR button_focus]$INFO[ListItem.TrackNumber]. [/COLOR]$INFO[ListItem.Title]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
 			</include>
