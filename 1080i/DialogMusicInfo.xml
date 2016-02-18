@@ -35,8 +35,30 @@
 				<width>703</width>
 				<height>455</height>
 				<aspectratio>scale</aspectratio>
-				<texture fallback="DefaultMusicSongs.png">$INFO[ListItem.Art(fanart)]</texture>
+				<texture fallback="special://skin/extras/home-images/music.jpg">$INFO[ListItem.Art(fanart)]</texture>
 				<visible>IsEmpty(Control.GetLabel(400))</visible>
+			</control>
+			<control type="group">
+				<visible>IsEmpty(Control.GetLabel(400)) + IsEmpty(ListItem.Art(fanart))</visible>
+				<control type="image">
+					<left>1117</left>
+					<top>190</top>
+					<width>703</width>
+					<height>455</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+				</control>
+				<control type="textbox">
+					<left>1117</left>
+					<top>190</top>
+					<width>703</width>
+					<height>455</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<aspectratio>scale</aspectratio>
+					<font>font30_title</font>
+					<label>$LOCALIZE[19055]</label>
+				</control>
 			</control>
 			<control type="label">
 				<left>620</left>
@@ -194,17 +216,17 @@
 				</control>
 			</control>
 		</control>
-		<include name="InfoDialogTopBarInfo" condition="Container.Content(artists)">
+		<include content="InfoDialogTopBarInfo" condition="Container.Content(artists)">
 			<param name="main_label" value="$INFO[ListItem.Artist]" />
 			<param name="sub_label" value="$INFO[ListItem.Genre]" />
 		</include>
-		<include name="InfoDialogTopBarInfo" condition="Container.Content(albums)">
+		<include content="InfoDialogTopBarInfo" condition="Container.Content(albums)">
 			<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
 			<param name="sub_label" value="$INFO[ListItem.Artist]" />
 		</include>
 		<control type="group">
 			<visible>Container.Content(songs) + !Window.IsActive(musicinformation)</visible>
-			<include name="InfoDialogTopBarInfo">
+			<include content="InfoDialogTopBarInfo">
 				<param name="main_label" value="[COLOR button_focus]$INFO[ListItem.TrackNumber]. [/COLOR]$INFO[ListItem.Title]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
 			</include>
