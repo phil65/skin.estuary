@@ -186,24 +186,21 @@
 					<onclick>ActivateWindow(1104)</onclick>
 					<visible>Container.Content(artists)</visible>
 				</control>
-				<control type="radiobutton" id="6">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/update.png" />
-					</include>
-					<label>$LOCALIZE[184]</label>
-				</control>
-				<control type="radiobutton" id="10">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/choose_image.png" />
-					</include>
-					<label>$LOCALIZE[13405]</label>
-				</control>
-				<control type="radiobutton" id="12">
-					<include name="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/choose_image.png" />
-					</include>
-					<label>$LOCALIZE[20413]</label>
-				</control>
+				<include name="InfoDialogButton">
+					<param name="id" value="6" />
+					<param name="icon" value="icons/infodialogs/update.png" />
+					<param name="label" value="$LOCALIZE[184]" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="10" />
+					<param name="icon" value="icons/infodialogs/choose_image.png" />
+					<param name="label" value="$LOCALIZE[13405]" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="12" />
+					<param name="icon" value="icons/infodialogs/choose_image.png" />
+					<param name="label" value="$LOCALIZE[20413]" />
+				</include>
 				<control type="radiobutton" id="440">
 					<label>$LOCALIZE[31114]</label>
 					<include name="VideoInfoButtonsCommon">
