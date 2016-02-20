@@ -19,7 +19,6 @@
 				<width>900</width>
 				<height>396</height>
 				<wrapmultiline>true</wrapmultiline>
-				<align>left</align>
 				<font>font12</font>
 				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR]$INFO[ListItem.AddonDisclaimer,[CR][CR]$LOCALIZE[24052]: ][/COLOR]</label>
 				<textcolor>button_focus</textcolor>

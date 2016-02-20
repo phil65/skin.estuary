@@ -52,7 +52,6 @@
 				<top>194</top>
 				<width>429</width>
 				<height>338</height>
-				<align>left</align>
 				<font>font13_title</font>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>Control.IsVisible(54) | ListItem.IsCollection</visible>
@@ -62,7 +61,6 @@
 				<top>194</top>
 				<width>429</width>
 				<height>338</height>
-				<align>left</align>
 				<font>font12</font>
 				<animation effect="slide" start="0,0" end="0,50" time="0" reversible="false" condition="Control.IsVisible(54)">conditional</animation>
 				<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>

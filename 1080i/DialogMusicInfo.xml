@@ -64,7 +64,6 @@
 				<top>194</top>
 				<width>680</width>
 				<height>430</height>
-				<align>left</align>
 				<label>$VAR[MusicInfoListHeaderVar,[B],[/B]]</label>
 				<font>font12</font>
 				<visible>IntegerGreaterThan(Container(50).NumItems,1)</visible>
@@ -127,7 +126,6 @@
 				<width>680</width>
 				<height>410</height>
 				<wrapmultiline>true</wrapmultiline>
-				<align>left</align>
 				<font>font12</font>
 				<label>$VAR[MusicInfoTextboxVar]</label>
 				<textcolor>button_focus</textcolor>

@@ -112,7 +112,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="SubMenu">
 		<control type="group">
 			<height>110</height>
@@ -253,7 +252,6 @@
 				<height>40</height>
 				<label>$PARAM[widget_header]</label>
 				<shadowcolor>text_shadow</shadowcolor>
-				<align>left</align>
 			</control>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>484</left>
@@ -487,7 +485,6 @@
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
-					<align>left</align>
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>480</left>
@@ -646,7 +643,6 @@
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
-					<align>left</align>
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>480</left>
@@ -789,7 +785,6 @@
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
-					<align>left</align>
 				</control>
 				<include name="LeftRightArrows">
 					<param name="posy" value="200" />
@@ -918,7 +913,6 @@
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
-					<align>left</align>
 				</control>
 				<include name="LeftRightArrows">
 					<param name="posy" value="300" />

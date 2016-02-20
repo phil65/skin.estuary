@@ -559,7 +559,6 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>font12</font>
 						<shadowcolor>text_shadow</shadowcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 					</control>
 				</itemlayout>
@@ -586,7 +585,6 @@
 							<label>$INFO[ListItem.Label]</label>
 							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
-							<align>left</align>
 							<aligny>center</aligny>
 						</control>
 					</control>
@@ -601,7 +599,6 @@
 				<label>$INFO[ListItem.Label]</label>
 				<font>font16</font>
 				<shadowcolor>text_shadow</shadowcolor>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="group">
@@ -628,7 +625,6 @@
 					<label>$INFO[ListItem.Label]</label>
 					<font>font16</font>
 					<shadowcolor>text_shadow</shadowcolor>
-					<align>left</align>
 					<aligny>center</aligny>
 				</control>
 			</control>

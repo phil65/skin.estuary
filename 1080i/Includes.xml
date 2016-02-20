@@ -61,7 +61,7 @@
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			</control>
-	</control>
+		</control>
 	</include>
 	<include name="HiddenObject">
 		<left>-3000</left>
@@ -213,7 +213,6 @@
 					<textcolor>grey2</textcolor>
 					<label>$INFO[ListItem.Property(Name)]</label>
 				</control>
-
 			</itemlayout>
 			<focusedlayout height="80" width="470">
 				<control type="image">
@@ -279,7 +278,6 @@
 				<left>270</left>
 				<width>1000</width>
 				<height>40</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$PARAM[value]</label>
 				<font>font12</font>
@@ -297,7 +295,6 @@
 			<control type="label">
 				<width>auto</width>
 				<height>40</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$PARAM[label]:</label>
 				<font>font12</font>
@@ -473,7 +470,6 @@
 				<width>$PARAM[width]</width>
 				<height>70</height>
 				<font>font13_title</font>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$PARAM[header_label]</label>
 				<haspath>$PARAM[header_haspath]</haspath>
@@ -512,7 +508,6 @@
 						<top>0</top>
 						<height>70</height>
 						<width>$PARAM[width]</width>
-						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -546,7 +541,6 @@
 						<top>0</top>
 						<height>70</height>
 						<width>$PARAM[width]</width>
-						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -837,7 +831,6 @@
 				<font>font13_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<height>35</height>
-				<align>left</align>
 				<scroll>true</scroll>
 				<animation effect="slide" start="0,0" end="0,15" time="0" condition="IsEmpty(Control.GetLabel(33333))">Conditional</animation>
 			</control>
@@ -848,7 +841,6 @@
 				<shadowcolor>text_shadow</shadowcolor>
 				<height>100</height>
 				<width>1400</width>
-				<align>left</align>
 			</control>
 		</control>
 	</include>
@@ -1117,7 +1109,6 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
 					<width>auto</width>
-					<align>left</align>
 					<visible>!IsEmpty(Container.SortMethod)</visible>
 					<visible>!Window.isActive(movieinformation) + !Window.isActive(addoninformation) + !Window.isActive(pictureinfo) + !Window.isActive(musicinformation) + !Window.isActive(songinformation) + !Window.IsActive(pvrguideinfo) + !Window.IsActive(pvrrecordinginfo)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
@@ -1299,7 +1290,6 @@
 						<left>74</left>
 						<width>300</width>
 						<height>44</height>
-						<align>left</align>
 						<shadowcolor>text_shadow</shadowcolor>
 						<label>$LOCALIZE[33063]</label>
 						<onclick>SetFocus(9000)</onclick>

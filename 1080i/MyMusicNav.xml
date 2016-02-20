@@ -41,7 +41,6 @@
 				<top>194</top>
 				<width>429</width>
 				<height>388</height>
-				<align>left</align>
 				<font>font12</font>
 				<label>$INFO[ListItem.Property(artist_description)]$INFO[ListItem.Property(album_description),[CR]]</label>
 			</control>

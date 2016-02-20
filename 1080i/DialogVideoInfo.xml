@@ -177,7 +177,6 @@
 					<top>25</top>
 					<width>670</width>
 					<height>217</height>
-					<align>left</align>
 					<font>font12</font>
 					<label fallback="19055">$INFO[ListItem.TagLine,[B],[CR][/B]]$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -188,7 +187,6 @@
 					<top>25</top>
 					<width>1165</width>
 					<height>217</height>
-					<align>left</align>
 					<font>font12</font>
 					<label fallback="19055">$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>

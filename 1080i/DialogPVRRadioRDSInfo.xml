@@ -34,7 +34,6 @@
 				<top>0</top>
 				<width>704</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label fallback="161">$INFO[RDS.Artist]</label>
 				<scrollout>false</scrollout>
@@ -57,7 +56,6 @@
 				<top>0</top>
 				<width>292</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.Band]</label>
 				<scrollout>false</scrollout>
@@ -80,7 +78,6 @@
 				<top>0</top>
 				<width>328</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.Artist]</label>
 				<visible>!IsEmpty(RDS.Artist) + !IsEmpty(RDS.Band)</visible>
@@ -100,7 +97,6 @@
 				<top>35</top>
 				<width>704</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label fallback="161">$INFO[RDS.Title]</label>
 				<scrollout>false</scrollout>
@@ -122,7 +118,6 @@
 				<top>70</top>
 				<width>704</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>!IsEmpty(RDS.ProgStyle)</visible>
@@ -148,7 +143,6 @@
 				<top>0</top>
 				<width>704</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label fallback="161">$INFO[RDS.Composer]</label>
 				<scrollout>false</scrollout>
@@ -169,7 +163,6 @@
 				<top>35</top>
 				<width>704</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label fallback="161">$INFO[RDS.Title]</label>
 				<scrollout>false</scrollout>
@@ -191,7 +184,6 @@
 				<top>66</top>
 				<width>704</width>
 				<height>29</height>
-				<align>left</align>
 				<pagecontrol>-</pagecontrol>
 				<label fallback="161">$INFO[RDS.Artist]</label>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
@@ -213,7 +205,6 @@
 				<top>70</top>
 				<width>292</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.Band]</label>
 				<scrollout>false</scrollout>
@@ -236,7 +227,6 @@
 				<top>70</top>
 				<width>328</width>
 				<height>100</height>
-				<align>left</align>
 				<pagecontrol>-</pagecontrol>
 				<label>$INFO[RDS.Artist]</label>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
@@ -258,7 +248,6 @@
 				<top>105</top>
 				<width>300</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label fallback="161">$INFO[RDS.Conductor]</label>
 				<scrollout>false</scrollout>
@@ -281,7 +270,6 @@
 				<top>105</top>
 				<width>704</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
@@ -302,7 +290,6 @@
 				<top>105</top>
 				<width>328</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.ProgStyle]</label>
 				<visible>!IsEmpty(RDS.Conductor) + !IsEmpty(RDS.ProgStyle)</visible>
@@ -453,7 +440,6 @@
 			<control type="label">
 				<width>160</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[19030]:</label>
 				<visible>!IsEmpty(RDS.ProgNow)</visible>
@@ -461,7 +447,6 @@
 			<control type="label">
 				<width>160</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[19031]:</label>
 				<visible>!IsEmpty(RDS.ProgNext)</visible>
@@ -469,7 +454,6 @@
 			<control type="label">
 				<width>95</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[29910]:</label>
 				<visible>!IsEmpty(RDS.PhoneStudio)</visible>
@@ -477,7 +461,6 @@
 			<control type="label">
 				<width>95</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[29911]:</label>
 				<visible>!IsEmpty(RDS.EmailStudio)</visible>
@@ -485,7 +468,6 @@
 			<control type="label">
 				<width>95</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[29912]:</label>
 				<visible>!IsEmpty(RDS.SMSStudio)</visible>
@@ -500,7 +482,6 @@
 			<control type="fadelabel">
 				<width>620</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.ProgNow]</label>
@@ -509,7 +490,6 @@
 			<control type="fadelabel">
 				<width>620</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.ProgNext]</label>
@@ -518,7 +498,6 @@
 			<control type="fadelabel">
 				<width>215</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.PhoneStudio]</label>
@@ -527,7 +506,6 @@
 			<control type="fadelabel">
 				<width>215</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.EmailStudio]</label>
@@ -536,7 +514,6 @@
 			<control type="fadelabel">
 				<width>215</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.SMSStudio]</label>
@@ -579,7 +556,6 @@
 			<control type="label">
 				<width>160</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[29910]:</label>
 				<visible>!IsEmpty(RDS.PhoneHotline)</visible>
@@ -587,7 +563,6 @@
 			<control type="label">
 				<width>160</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[29911]:</label>
 				<visible>!IsEmpty(RDS.EmailHotline)</visible>
@@ -595,7 +570,6 @@
 			<control type="fadelabel">
 				<width>320</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.ProgHomepage]</label>
 				<visible>!IsEmpty(RDS.ProgHomepage)</visible>
@@ -610,7 +584,6 @@
 			<control type="fadelabel">
 				<width>248</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.PhoneHotline]</label>
@@ -619,7 +592,6 @@
 			<control type="fadelabel">
 				<width>248</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>grey</textcolor>
 				<label>$INFO[RDS.EmailHotline]</label>

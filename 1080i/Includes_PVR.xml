@@ -331,7 +331,6 @@
 				<top>24</top>
 				<width>560</width>
 				<height>262</height>
-				<align>left</align>
 				<font>font12</font>
 				<visible>!StringCompare(ListItem.StartTime,ListItem.EndTime)</visible>
 				<label>$INFO[ListItem.StartTime]</label>
