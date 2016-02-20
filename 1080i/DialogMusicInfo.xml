@@ -6,18 +6,29 @@
 			<include>OpenClose_Right</include>
 			<include>Visible_Right</include>
 			<visible>![Window.Is(songinformation) + Window.IsActive(musicinformation)]</visible>
-			<!-- 		<control type="button" id="131">
-			     <left>586</left>
-			     <top>424</top>
-			     <width>520</width>
-			     <height>509</height>
-			     <textoffsetx>40</textoffsetx>
-			     <textoffsety>20</textoffsety>
-			     <aligny>bottom</aligny>
-			     <font>font_textbox</font>
-			     <label>-</label>
-			     <visible>IntegerGreaterThan(Container(50).NumItems,1)</visible>
-			     </control> -->
+			<control type="group">
+				<animation effect="fade" start="0" end="100" time="100" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
+				<control type="image">
+					<left>90</left>
+					<top>162</top>
+					<width>509</width>
+					<height>509</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="border_alpha">colors/black.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>114</left>
+					<top>186</top>
+					<width>461</width>
+					<height>461</height>
+					<aspectratio aligny="top">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
+				</control>
+			</control>
 			<control type="group">
 				<visible>StringCompare(Container(50).NumItems,0)</visible>
 				<top>160</top>
@@ -193,7 +204,7 @@
 					</control>
 					<control type="textbox">
 						<left>28</left>
-						<top>205</top>
+						<top>207</top>
 						<width>196</width>
 						<height>65</height>
 						<font>font10</font>
@@ -229,7 +240,7 @@
 						</control>
 						<control type="textbox">
 							<left>28</left>
-							<top>205</top>
+							<top>207</top>
 							<width>196</width>
 							<height>65</height>
 							<font>font10</font>
@@ -246,7 +257,7 @@
 							<left>15</left>
 							<top>5</top>
 							<width>230</width>
-							<height>270</height>
+							<height>276</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
