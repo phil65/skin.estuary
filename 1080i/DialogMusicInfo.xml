@@ -77,7 +77,7 @@
 			</control>
 			<control type="group">
 				<visible>!StringCompare(Container(50).NumItems,0)</visible>
-				<top>162</top>
+				<top>454</top>
 				<control type="button" id="130">
 					<onup>50</onup>
 					<ondown>9000</ondown>
@@ -123,7 +123,7 @@
 			</control>
 			<control type="label" id="400">
 				<left>620</left>
-				<top>190</top>
+				<top>480</top>
 				<width>1170</width>
 				<height>240</height>
 				<wrapmultiline>true</wrapmultiline>
@@ -133,7 +133,7 @@
 			</control>
 			<control type="panel" id="50">
 				<left>585</left>
-				<top>605</top>
+				<top>170</top>
 				<width>1260</width>
 				<height>360</height>
 				<ondown>130</ondown>
@@ -266,7 +266,7 @@
 			</control>
 			<control type="grouplist" id="9000">
 				<left>585</left>
-				<top>460</top>
+				<top>768</top>
 				<width>1260</width>
 				<height>768</height>
 				<onleft>9000</onleft>
@@ -348,7 +348,7 @@
 				<param name="list_id" value="50" />
 				<param name="left_posx" value="574" />
 				<param name="right_posx" value="1840" />
-				<param name="posy" value="735" />
+				<param name="posy" value="300" />
 				<param name="visible" value="true" />
 			</include>
 		</control>
