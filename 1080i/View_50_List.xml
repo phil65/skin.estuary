@@ -167,7 +167,6 @@
 			<texture colordiffuse="border_alpha">colors/black.png</texture>
 			<bordertexture border="20">overlays/shadow.png</bordertexture>
 			<bordersize>20</bordersize>
-			<animation effect="fade" time="300">VisibleChange</animation>
 		</control>
 		<control type="image">
 			<left>114</left>
