@@ -915,6 +915,7 @@
 		<param name="left_posx">445</param>
 		<param name="right_posx">1843</param>
 		<param name="posy">936</param>
+		<param name="visible">!System.HasModalDialog</param>
 		<definition>
 			<control type="image">
 				<left>$PARAM[left_posx]</left>
@@ -926,7 +927,7 @@
 				<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
 				<visible>Control.IsVisible($PARAM[list_id]) + Container($PARAM[list_id]).HasPrevious</visible>
-				<visible>!System.HasModalDialog</visible>
+				<visible>$PARAM[visible]</visible>
 			</control>
 			<control type="image">
 				<left>$PARAM[right_posx]</left>
@@ -938,7 +939,7 @@
 				<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
 				<visible>Control.IsVisible($PARAM[list_id]) + Container($PARAM[list_id]).HasNext</visible>
-				<visible>!System.HasModalDialog</visible>
+				<visible>$PARAM[visible]</visible>
 			</control>
 			<control type="button" id="$PARAM[list_id]500">
 				<left>$PARAM[left_posx]</left>

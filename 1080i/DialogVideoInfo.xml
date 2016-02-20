@@ -408,46 +408,20 @@
 					<param name="label" value="$LOCALIZE[184]" />
 				</include>
 			</control>
-			<control type="image">
-				<left>-15</left>
-				<top>480</top>
-				<width>28</width>
-				<height>28</height>
-				<texture colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texture>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-				<visible>Container(5000).HasPrevious + ControlGroup(5000).HasFocus</visible>
-			</control>
-			<control type="image">
-				<left>1240</left>
-				<top>480</top>
-				<width>28</width>
-				<height>28</height>
-				<texture colordiffuse="button_focus">overlays/arrowright.png</texture>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-				<visible>Container(5000).HasNext + ControlGroup(5000).HasFocus</visible>
-			</control>
-			<control type="image">
-				<left>-15</left>
-				<top>720</top>
-				<width>28</width>
-				<height>28</height>
-				<texture colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texture>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-				<visible>Container(50).HasPrevious + Control.HasFocus(50)</visible>
-			</control>
-			<control type="image">
-				<left>1240</left>
-				<top>720</top>
-				<width>28</width>
-				<height>28</height>
-				<texture colordiffuse="button_focus">overlays/arrowright.png</texture>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
-				<visible>Container(50).HasNext + Control.HasFocus(50)</visible>
-			</control>
+			<include name="LeftRightArrows">
+				<param name="list_id" value="5000" />
+				<param name="left_posx" value="-15" />
+				<param name="right_posx" value="1240" />
+				<param name="posy" value="480" />
+				<param name="visible" value="true" />
+			</include>
+			<include name="LeftRightArrows">
+				<param name="list_id" value="50" />
+				<param name="left_posx" value="-15" />
+				<param name="right_posx" value="1240" />
+				<param name="posy" value="720" />
+				<param name="visible" value="true" />
+			</include>
 		</control>
 		<control type="group">
 			<visible>Container.Content(movies) | Container.Content(episodes)</visible>
