@@ -212,14 +212,20 @@
 				</control>
 			</control>
 		</control>
-		<include name="InfoDialogTopBarInfo" condition="Container.Content(artists)">
-			<param name="main_label" value="$INFO[ListItem.Artist]" />
-			<param name="sub_label" value="$INFO[ListItem.Genre]" />
-		</include>
-		<include name="InfoDialogTopBarInfo" condition="Container.Content(albums)">
-			<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
-			<param name="sub_label" value="$INFO[ListItem.Artist]" />
-		</include>
+		<control type="group">
+			<visible>Container.Content(artists)</visible>
+			<include name="InfoDialogTopBarInfo">
+				<param name="main_label" value="$INFO[ListItem.Artist]" />
+				<param name="sub_label" value="$INFO[ListItem.Genre]" />
+			</include>
+		</control>
+		<control type="group">
+			<visible>Container.Content(albums)</visible>
+			<include name="InfoDialogTopBarInfo">
+				<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
+				<param name="sub_label" value="$INFO[ListItem.Artist]" />
+			</include>
+		</control>
 		<control type="group">
 			<visible>Container.Content(songs) + !Window.IsActive(musicinformation)</visible>
 			<include name="InfoDialogTopBarInfo">
