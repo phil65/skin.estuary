@@ -1121,6 +1121,7 @@
 						<top>280</top>
 						<align>center</align>
 						<label>$INFO[ListItem.Label2]</label>
+						<font>font12</font>
 						<width>230</width>
 					</control>
 				</itemlayout>
@@ -1179,6 +1180,7 @@
 							<top>280</top>
 							<align>center</align>
 							<label>$INFO[ListItem.Label2]</label>
+							<font>font12</font>
 							<width>230</width>
 						</control>
 					</control>
@@ -1301,7 +1303,7 @@
 	<include name="WeatherHourlyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
-			<label2>[COLOR red]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)][/COLOR] - [COLOR blue]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)][/COLOR]</label2>
+			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)] - $INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)]</label2>
 			<property name="Temperature">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)]</property>
 			<property name="Outlook">$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</property>
 			<property name="Cloudiness">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Cloudiness)]</property>
