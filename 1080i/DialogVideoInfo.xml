@@ -80,7 +80,7 @@
 			<control type="grouplist" id="4000">
 				<orientation>vertical</orientation>
 				<left>736</left>
-				<top>163</top>
+				<top>508</top>
 				<itemgap>-15</itemgap>
 				<ondown>5000</ondown>
 				<onup>50</onup>
@@ -139,7 +139,7 @@
 				</control>
 			</control>
 			<control type="group" id="140">
-				<top>163</top>
+				<top>508</top>
 				<control type="button" id="138">
 					<width>750</width>
 					<height>270</height>
@@ -195,7 +195,7 @@
 			</control>
 			<control type="image">
 				<left>17</left>
-				<top>565</top>
+				<top>185</top>
 				<width>1210</width>
 				<height>323</height>
 				<aspectratio>scale</aspectratio>
@@ -203,7 +203,7 @@
 			</control>
 			<control type="textbox">
 				<left>17</left>
-				<top>565</top>
+				<top>185</top>
 				<width>1210</width>
 				<height>323</height>
 				<align>center</align>
@@ -213,7 +213,7 @@
 				<visible>StringCompare(Container(50).NumItems,0)</visible>
 			</control>
 			<control type="list" id="50">
-				<top>538</top>
+				<top>158</top>
 				<width>1235</width>
 				<height>600</height>
 				<onleft>50</onleft>
@@ -314,7 +314,7 @@
 			</control>
 			<control type="grouplist" id="5000">
 				<left>0</left>
-				<top>420</top>
+				<top>764</top>
 				<width>1246</width>
 				<height>400</height>
 				<onleft>5000</onleft>
@@ -412,14 +412,14 @@
 				<param name="list_id" value="5000" />
 				<param name="left_posx" value="-15" />
 				<param name="right_posx" value="1240" />
-				<param name="posy" value="480" />
+				<param name="posy" value="824" />
 				<param name="visible" value="true" />
 			</include>
 			<include name="LeftRightArrows">
 				<param name="list_id" value="50" />
 				<param name="left_posx" value="-15" />
 				<param name="right_posx" value="1240" />
-				<param name="posy" value="720" />
+				<param name="posy" value="340" />
 				<param name="visible" value="true" />
 			</include>
 		</control>
