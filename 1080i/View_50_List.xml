@@ -70,7 +70,7 @@
 						<font>font12</font>
 						<animation effect="slide" end="40,0" time="0" condition="IsEmpty(ListItem.VideoResolution) + !ListItem.IsCollection">conditional</animation>
 						<label>$VAR[ListLabel2Var]</label>
-						<textcolor>grey</textcolor>
+						<animation effect="fade" start="70" end="100" time="300" reversible="false">Focus</animation>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="image">
