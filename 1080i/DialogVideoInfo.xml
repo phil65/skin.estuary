@@ -77,67 +77,6 @@
 		<control type="group">
 			<include>OpenClose_Right</include>
 			<left>590</left>
-			<control type="grouplist" id="4000">
-				<orientation>vertical</orientation>
-				<left>736</left>
-				<top>508</top>
-				<itemgap>-15</itemgap>
-				<ondown>5000</ondown>
-				<onup>50</onup>
-				<onright>140</onright>
-				<onleft>140</onleft>
-				<control type="button" id="13">
-					<width>505</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
-					<visible>!IsEmpty(ListItem.Director)</visible>
-				</control>
-				<control type="button" id="131">
-					<width>505</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]: [/COLOR]]</label>
-					<onclick condition="System.hasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
-					<visible>!IsEmpty(ListItem.Writer)</visible>
-				</control>
-				<control type="button" id="136">
-					<width>505</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
-					<onclick>noop</onclick>
-					<visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
-				</control>
-				<control type="button" id="135">
-					<width>505</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<textcolor>button_focus</textcolor>
-					<label>$LOCALIZE[20416]: [COLOR white]$INFO[ListItem.Premiered,][/COLOR]</label>
-					<visible>Container.Content(tvshows)</visible>
-					<visible>!IsEmpty(ListItem.Premiered)</visible>
-				</control>
-				<control type="button" id="210">
-					<width>505</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<textcolor>button_focus</textcolor>
-					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season,, $LOCALIZE[36905]]$INFO[ListItem.Episode, (, $LOCALIZE[20453])][/COLOR]</label>
-					<visible>!IsEmpty(ListItem.Season)</visible>
-					<visible>Container.Content(tvshows)</visible>
-				</control>
-			</control>
 			<control type="group" id="140">
 				<top>508</top>
 				<control type="button" id="138">
@@ -151,9 +90,17 @@
 					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 					<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
 					<onup>50</onup>
-					<onleft>4000</onleft>
-					<onright>4000</onright>
+					<onleft>138</onleft>
+					<onright>138</onright>
 					<ondown>5000</ondown>
+					<visible>IntegerGreaterThan(Container(4000).NumItems,0)</visible>
+				</control>
+				<control type="image">
+					<left>730</left>
+					<width>515</width>
+					<height>270</height>
+					<aligny>bottom</aligny>
+					<texture border="40">buttons/button-nofo.png</texture>
 					<visible>IntegerGreaterThan(Container(4000).NumItems,0)</visible>
 				</control>
 				<control type="button" id="139">
@@ -167,8 +114,8 @@
 					<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 					<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
 					<onup>50</onup>
-					<onleft>4000</onleft>
-					<onright>4000</onright>
+					<onleft>139</onleft>
+					<onright>139</onright>
 					<ondown>5000</ondown>
 					<visible>!IntegerGreaterThan(Container(4000).NumItems,0)</visible>
 				</control>
@@ -191,6 +138,113 @@
 					<label fallback="19055">$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!IntegerGreaterThan(Container(4000).NumItems,0)</visible>
+				</control>
+			</control>
+			<control type="grouplist" id="4000">
+				<orientation>vertical</orientation>
+				<left>730</left>
+				<top>528</top>
+				<itemgap>-15</itemgap>
+				<ondown>5000</ondown>
+				<onup>50</onup>
+				<onright>140</onright>
+				<onleft>140</onleft>
+				<control type="button" id="147">
+					<width>505</width>
+					<height>45</height>
+					<textoffsetx>40</textoffsetx>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
+					<visible>!IsEmpty(ListItem.Director)</visible>
+				</control>
+				<control type="button" id="131">
+					<width>505</width>
+					<height>45</height>
+					<textoffsetx>40</textoffsetx>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]: [/COLOR]]</label>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onclick condition="System.hasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
+					<visible>!IsEmpty(ListItem.Writer)</visible>
+				</control>
+				<control type="button" id="136">
+					<width>505</width>
+					<height>45</height>
+					<textoffsetx>40</textoffsetx>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<label>[COLOR button_focus]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onclick>noop</onclick>
+					<visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
+				</control>
+				<control type="button" id="144">
+					<width>505</width>
+					<height>45</height>
+					<textoffsetx>40</textoffsetx>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<label>[COLOR button_focus]$LOCALIZE[180]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[31060]</label>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onclick>noop</onclick>
+					<visible>!IsEmpty(ListItem.Duration)</visible>
+				</control>
+				<control type="button" id="145">
+					<width>505</width>
+					<height>45</height>
+					<textoffsetx>40</textoffsetx>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<label>[COLOR button_focus]$LOCALIZE[21875]: [/COLOR]$INFO[ListItem.Country]</label>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onclick>noop</onclick>
+					<visible>!IsEmpty(ListItem.Country)</visible>
+				</control>
+				<control type="button" id="146">
+					<width>505</width>
+					<height>45</height>
+					<textoffsetx>40</textoffsetx>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<label>[COLOR button_focus]$LOCALIZE[29909]: [/COLOR]$INFO[ListItem.Studio]</label>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onclick>noop</onclick>
+					<visible>!IsEmpty(ListItem.Studio)</visible>
+				</control>
+				<control type="button" id="135">
+					<width>505</width>
+					<height>45</height>
+					<textoffsetx>40</textoffsetx>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<textcolor>button_focus</textcolor>
+					<label>$LOCALIZE[20416]: [COLOR white]$INFO[ListItem.Premiered,][/COLOR]</label>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<visible>Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(ListItem.Premiered)</visible>
+				</control>
+				<control type="button" id="210">
+					<width>505</width>
+					<height>45</height>
+					<textoffsetx>40</textoffsetx>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<textcolor>button_focus</textcolor>
+					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season,, $LOCALIZE[36905]]$INFO[ListItem.Episode, (, $LOCALIZE[20453])][/COLOR]</label>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<visible>!IsEmpty(ListItem.Season)</visible>
+					<visible>Container.Content(tvshows)</visible>
 				</control>
 			</control>
 			<control type="image">
@@ -319,8 +373,7 @@
 				<height>400</height>
 				<onleft>5000</onleft>
 				<onright>5000</onright>
-				<onup condition="IntegerGreaterThan(Container(5000).CurrentItem,3)">210</onup>
-				<onup condition="!IntegerGreaterThan(Container(5000).CurrentItem,3)">140</onup>
+				<onup>140</onup>
 				<ondown condition="!IntegerGreaterThan(Container(5000).Position,4)">SetFocus(50,$INFO[Container(5000).Position])</ondown>
 				<ondown condition="IntegerGreaterThan(Container(5000).Position,4)">SetFocus(50,4)</ondown>
 				<itemgap>-16</itemgap>
@@ -396,6 +449,11 @@
 					<param name="onclick_1" value="SetProperty(fanart,$ESCINFO[ListItem.Art(fanart)],home)" />
 					<param name="onclick_2" value="ActivateWindow(1104)" />
 					<param name="visible" value="!IsEmpty(ListItem.Art(fanart))" />
+				</include>
+				<include name="InfoDialogButton">
+					<param name="id" value="13" />
+					<param name="icon" value="icons/infodialogs/director.png" />
+					<param name="label" value="$LOCALIZE[31123]" />
 				</include>
 				<include name="InfoDialogButton">
 					<param name="id" value="10" />
