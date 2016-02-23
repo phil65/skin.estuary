@@ -816,33 +816,36 @@
 		</definition>
 	</include>
 	<include name="InfoDialogTopBarInfo">
-		<control type="grouplist">
-			<left>85</left>
-			<top>5</top>
-			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-			<width>1400</width>
-			<height>80</height>
-			<itemgap>0</itemgap>
-			<orientation>vertical</orientation>
-			<control type="label">
-				<width>1400</width>
-				<label>$PARAM[main_label]</label>
-				<font>font13_title</font>
-				<shadowcolor>text_shadow</shadowcolor>
-				<height>35</height>
-				<scroll>true</scroll>
-				<animation effect="slide" start="0,0" end="0,15" time="0" condition="IsEmpty(Control.GetLabel(33333))">Conditional</animation>
-			</control>
-			<control type="label" id="33333">
-				<label>$PARAM[sub_label]</label>
-				<font>font10</font>
+		<param name="id">33333</param>
+		<definition>
+			<control type="grouplist">
 				<left>85</left>
-				<shadowcolor>text_shadow</shadowcolor>
-				<height>100</height>
+				<top>5</top>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<width>1400</width>
+				<height>80</height>
+				<itemgap>0</itemgap>
+				<orientation>vertical</orientation>
+				<control type="label">
+					<width>1400</width>
+					<label>$PARAM[main_label]</label>
+					<font>font13_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<height>35</height>
+					<scroll>true</scroll>
+					<animation effect="slide" start="0,0" end="0,15" time="0" condition="IsEmpty(Control.GetLabel($PARAM[id]))">Conditional</animation>
+				</control>
+				<control type="label" id="$PARAM[id]">
+					<label>$PARAM[sub_label]</label>
+					<font>font10</font>
+					<left>85</left>
+					<shadowcolor>text_shadow</shadowcolor>
+					<height>100</height>
+					<width>1400</width>
+				</control>
 			</control>
-		</control>
+		</definition>
 	</include>
 	<include name="UpDownArrows">
 		<param name="up_posy">134</param>

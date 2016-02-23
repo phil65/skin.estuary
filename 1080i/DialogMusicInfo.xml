@@ -357,6 +357,7 @@
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="$INFO[ListItem.Artist]" />
 				<param name="sub_label" value="$INFO[ListItem.Genre]" />
+				<param name="id" value="33333" />
 			</include>
 		</control>
 		<control type="group">
@@ -364,6 +365,7 @@
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist]" />
+				<param name="id" value="33334" />
 			</include>
 		</control>
 		<control type="group">
@@ -371,6 +373,7 @@
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="[COLOR button_focus]$INFO[ListItem.TrackNumber]. [/COLOR]$INFO[ListItem.Title]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
+				<param name="id" value="33335" />
 			</include>
 		</control>
 	</controls>
