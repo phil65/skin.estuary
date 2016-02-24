@@ -156,7 +156,7 @@
 						<top>10</top>
 						<width>380</width>
 						<height>250</height>
-						<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+						<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[ListInfoBoxImageVar]</texture>
 						<aspectratio>scale</aspectratio>
 						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 						<bordersize>4</bordersize>
@@ -188,7 +188,7 @@
 						<selectedcolor>white</selectedcolor>
 						<align>center</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Title]</label>
+						<label>$VAR[SongTitleVar]</label>
 					</control>
 					<control type="group">
 						<visible>!IsEmpty(ListItem.label2)</visible>
@@ -227,7 +227,7 @@
 							<top>10</top>
 							<width>380</width>
 							<height>250</height>
-							<texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+							<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[ListInfoBoxImageVar]</texture>
 							<aspectratio>scale</aspectratio>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
@@ -259,7 +259,7 @@
 							<selectedcolor>white</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Title]</label>
+							<label>$VAR[SongTitleVar]</label>
 						</control>
 						<control type="group">
 							<visible>!IsEmpty(ListItem.label2)</visible>
