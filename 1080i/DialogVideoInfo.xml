@@ -264,7 +264,16 @@
 				<aligny>center</aligny>
 				<font>font24_title</font>
 				<label>$LOCALIZE[31079]</label>
-				<visible>StringCompare(Container(50).NumItems,0)</visible>
+				<visible>StringCompare(Container(50).NumItems,0) + IsEmpty(ListItem.Art(tvshow.banner)) + IsEmpty(ListItem.Art(banner))</visible>
+			</control>
+			<control type="image">
+				<left>77</left>
+				<top>185</top>
+				<width>1090</width>
+				<height>323</height>
+				<fadetime>150</fadetime>
+				<aspectratio>keep</aspectratio>
+				<texture>$VAR[BannerVar]</texture>
 			</control>
 			<control type="list" id="50">
 				<top>158</top>

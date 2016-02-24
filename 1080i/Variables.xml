@@ -136,6 +136,10 @@
 		<value condition="Player.HasVideo">$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</value>
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</value>
 	</variable>
+	<variable name="BannerVar">
+		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+		<value>$INFO[ListItem.Art(tvshow.banner)]</value>
+	</variable>
 	<variable name="PosterVar">
 		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 		<value condition="!IsEmpty(Container.Art(season.poster)) + Container.Content(episodes)">$INFO[Container.Art(season.poster)]</value>
