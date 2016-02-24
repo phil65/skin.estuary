@@ -386,7 +386,7 @@
 				<ondown condition="!IntegerGreaterThan(Container(5000).Position,4)">SetFocus(50,$INFO[Container(5000).Position])</ondown>
 				<ondown condition="IntegerGreaterThan(Container(5000).Position,4)">SetFocus(50,4)</ondown>
 				<itemgap>-16</itemgap>
-				<align>left</align>
+				<align>center</align>
 				<orientation>horizontal</orientation>
 				<scrolltime tween="quadratic">200</scrolltime>
 				<include name="InfoDialogButton">
