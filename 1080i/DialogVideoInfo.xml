@@ -463,6 +463,7 @@
 					<param name="id" value="13" />
 					<param name="icon" value="icons/infodialogs/director.png" />
 					<param name="label" value="$LOCALIZE[31123]" />
+					<param name="visible" value="!IsEmpty(ListItem.Director)" />
 				</include>
 				<include name="InfoDialogButton">
 					<param name="id" value="10" />
@@ -473,6 +474,7 @@
 					<param name="id" value="6" />
 					<param name="icon" value="icons/infodialogs/update.png" />
 					<param name="label" value="$LOCALIZE[184]" />
+					<param name="visible" value="Control.IsEnabled(6)" />
 				</include>
 			</control>
 			<include name="LeftRightArrows">
