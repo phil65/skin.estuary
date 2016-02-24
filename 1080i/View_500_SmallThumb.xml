@@ -152,25 +152,23 @@
 				</focusedlayout>
 				<itemlayout height="360" width="450" condition="Container.content(episodes)">
 					<control type="image">
-						<left>1</left>
-						<top>10</top>
-						<width>380</width>
-						<height>250</height>
-						<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[ListInfoBoxImageVar]</texture>
-						<aspectratio>scale</aspectratio>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
+						<left>-10</left>
+						<top>-2</top>
+						<width>400</width>
+						<height>362</height>
+						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="image">
-						<left>1</left>
-						<top>265</top>
-						<width>380</width>
-						<height>80</height>
-						<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+						<left>11</left>
+						<top>19</top>
+						<width>356</width>
+						<height>230</height>
+						<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[ListInfoBoxImageVar]</texture>
+						<aspectratio>scale</aspectratio>
 					</control>
 					<control type="label">
 						<left>10</left>
-						<top>277</top>
+						<top>272</top>
 						<width>360</width>
 						<height>20</height>
 						<font>font30_title</font>
@@ -181,7 +179,7 @@
 					</control>
 					<control type="label">
 						<left>15</left>
-						<top>313</top>
+						<top>310</top>
 						<width>360</width>
 						<height>20</height>
 						<font>font12</font>
@@ -223,25 +221,23 @@
 						<animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
 						<animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
 						<control type="image">
-							<left>1</left>
-							<top>10</top>
-							<width>380</width>
-							<height>250</height>
-							<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[ListInfoBoxImageVar]</texture>
-							<aspectratio>scale</aspectratio>
-							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-							<bordersize>4</bordersize>
+							<left>-10</left>
+							<top>-2</top>
+							<width>400</width>
+							<height>362</height>
+							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<left>1</left>
-							<top>265</top>
-							<width>380</width>
-							<height>80</height>
-							<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
+							<left>11</left>
+							<top>19</top>
+							<width>356</width>
+							<height>230</height>
+							<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[ListInfoBoxImageVar]</texture>
+							<aspectratio>scale</aspectratio>
 						</control>
 						<control type="label">
 							<left>10</left>
-							<top>277</top>
+							<top>272</top>
 							<width>360</width>
 							<height>20</height>
 							<font>font30_title</font>
@@ -252,7 +248,7 @@
 						</control>
 						<control type="label">
 							<left>15</left>
-							<top>313</top>
+							<top>310</top>
 							<width>360</width>
 							<height>20</height>
 							<font>font12</font>
@@ -289,9 +285,9 @@
 							<include>UserRatingCircle</include>
 						</control>
 						<control type="image">
-							<left>1</left>
+							<left>4</left>
 							<top>11</top>
-							<width>380</width>
+							<width>370</width>
 							<height>333</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 						</control>
