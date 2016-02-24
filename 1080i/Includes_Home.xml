@@ -504,25 +504,23 @@
 					<preloaditems>1</preloaditems>
 					<itemlayout width="341" height="400">
 						<control type="image">
-							<left>3</left>
-							<top>5</top>
-							<width>342</width>
-							<height>260</height>
-							<aspectratio>scale</aspectratio>
-							<texture fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
+							<left>0</left>
+							<top>1</top>
+							<width>348</width>
+							<height>340</height>
+							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<left>3</left>
-							<top>240</top>
-							<width>345</width>
-							<height>100</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<left>24</left>
+							<top>25</top>
+							<width>298</width>
+							<height>220</height>
+							<aspectratio>scale</aspectratio>
+							<texture fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>260</top>
+							<top>255</top>
 							<width>288</width>
 							<label>$PARAM[second_label]</label>
 							<font>font10</font>
@@ -531,7 +529,7 @@
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>284</top>
+							<top>279</top>
 							<width>288</width>
 							<label>$INFO[ListItem.TVShowTitle]</label>
 							<font>font10</font>
@@ -549,14 +547,19 @@
 								<effect type="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="233,90" />
 							</animation>
 							<control type="image">
-								<left>3</left>
-								<top>5</top>
-								<width>342</width>
-								<height>260</height>
+								<left>0</left>
+								<top>1</top>
+								<width>348</width>
+								<height>340</height>
+								<texture border="40">buttons/button-nofo.png</texture>
+							</control>
+							<control type="image">
+								<left>24</left>
+								<top>25</top>
+								<width>298</width>
+								<height>220</height>
 								<aspectratio>scale</aspectratio>
 								<texture fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-								<bordertexture border="20">overlays/shadow.png</bordertexture>
-								<bordersize>20</bordersize>
 							</control>
 							<control type="group">
 								<left>20</left>
@@ -579,16 +582,9 @@
 									<info>ListItem.PercentPlayed</info>
 								</control>
 							</control>
-							<control type="image">
-								<left>3</left>
-								<top>240</top>
-								<width>345</width>
-								<height>100</height>
-								<texture border="40">buttons/button-nofo.png</texture>
-							</control>
 							<control type="label">
 								<left>30</left>
-								<top>260</top>
+								<top>255</top>
 								<width>288</width>
 								<label>$PARAM[second_label]</label>
 								<font>font10</font>
@@ -597,7 +593,7 @@
 							</control>
 							<control type="label">
 								<left>30</left>
-								<top>284</top>
+								<top>279</top>
 								<width>288</width>
 								<label>$INFO[ListItem.TVShowTitle]</label>
 								<font>font10</font>
@@ -605,9 +601,9 @@
 								<align>center</align>
 							</control>
 							<control type="image">
-								<left>20</left>
+								<left>17</left>
 								<top>17</top>
-								<width>310</width>
+								<width>312</width>
 								<height>306</height>
 								<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
