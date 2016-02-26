@@ -506,23 +506,37 @@
 			<visible>Control.HasFocus(50)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<top>1019</top>
-			<control type="button">
+			<control type="image">
 				<left>17</left>
 				<width>44</width>
 				<height>44</height>
 				<animation effect="rotate" end="-90" center="40,23" time="0" condition="true">Conditional</animation>
-				<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
-				<texturenofocus colordiffuse="button_focus">frame/menu-nofo.png</texturenofocus>
+				<texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
 			</control>
-			<control type="button">
+			<control type="label">
 				<left>74</left>
 				<width>500</width>
 				<height>44</height>
 				<shadowcolor>text_shadow</shadowcolor>
 				<label>$LOCALIZE[31125]</label>
-				<onclick>noop</onclick>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.HasFocus(138)</visible>
+			<animation effect="fade" time="200">VisibleChange</animation>
+			<top>1019</top>
+			<control type="image">
+				<left>17</left>
+				<width>44</width>
+				<height>44</height>
+				<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
+			</control>
+			<control type="label">
+				<left>74</left>
+				<width>500</width>
+				<height>44</height>
+				<shadowcolor>text_shadow</shadowcolor>
+				<label>Press OK to read plot</label>
 			</control>
 		</control>
 	</controls>
