@@ -315,15 +315,26 @@
 							<texture>colors/black.png</texture>
 							<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 						</control>
-						<control type="textbox">
+						<control type="label">
 							<left>25</left>
 							<width>214</width>
 							<height>67</height>
-							<top>230</top>
+							<top>218</top>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font10</font>
-							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR][COLOR grey],[/COLOR]]</label>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>25</left>
+							<width>214</width>
+							<height>67</height>
+							<top>245</top>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font10</font>
+							<textcolor>grey</textcolor>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</control>
 				</itemlayout>
@@ -356,15 +367,28 @@
 							<texture>colors/black.png</texture>
 							<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 						</control>
-						<control type="textbox">
+						<control type="label">
 							<left>25</left>
 							<width>214</width>
 							<height>67</height>
-							<top>230</top>
+							<top>218</top>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font10</font>
-							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR][COLOR grey],[/COLOR]]</label>
+							<scroll>true</scroll>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>25</left>
+							<width>214</width>
+							<height>67</height>
+							<top>245</top>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font10</font>
+							<textcolor>grey</textcolor>
+							<scroll>true</scroll>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
 							<left>18</left>
