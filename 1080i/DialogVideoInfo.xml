@@ -282,7 +282,8 @@
 				<height>370</height>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onup>
+				<onup condition="System.hasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onup>
+				<onup condition="!System.hasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onup>
 				<ondown>140</ondown>
 				<scrolltime>200</scrolltime>
 				<orientation>horizontal</orientation>
