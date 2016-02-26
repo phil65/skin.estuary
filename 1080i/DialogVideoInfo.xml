@@ -78,10 +78,10 @@
 			<include>OpenClose_Right</include>
 			<left>590</left>
 			<control type="group" id="140">
-				<top>508</top>
+				<top>468</top>
 				<control type="button" id="138">
-					<width>750</width>
-					<height>270</height>
+					<width>754</width>
+					<height>310</height>
 					<textoffsetx>40</textoffsetx>
 					<textoffsety>20</textoffsety>
 					<aligny>bottom</aligny>
@@ -96,16 +96,16 @@
 					<visible>IntegerGreaterThan(Container(4000).NumItems,0)</visible>
 				</control>
 				<control type="image">
-					<left>730</left>
-					<width>515</width>
-					<height>270</height>
+					<left>735</left>
+					<width>513</width>
+					<height>310</height>
 					<aligny>bottom</aligny>
 					<texture border="40">buttons/button-nofo.png</texture>
 					<visible>IntegerGreaterThan(Container(4000).NumItems,0)</visible>
 				</control>
 				<control type="button" id="139">
 					<width>1245</width>
-					<height>270</height>
+					<height>310</height>
 					<textoffsetx>40</textoffsetx>
 					<textoffsety>20</textoffsety>
 					<aligny>bottom</aligny>
@@ -123,7 +123,7 @@
 					<left>40</left>
 					<top>25</top>
 					<width>670</width>
-					<height>217</height>
+					<height>242</height>
 					<font>font12</font>
 					<label fallback="19055">$INFO[ListItem.TagLine,[B],[CR][/B]]$INFO[ListItem.Plot]</label>
 					<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -143,7 +143,7 @@
 			<control type="grouplist" id="4000">
 				<orientation>vertical</orientation>
 				<left>730</left>
-				<top>528</top>
+				<top>488</top>
 				<itemgap>-15</itemgap>
 				<ondown>5000</ondown>
 				<onup>50</onup>
@@ -251,7 +251,7 @@
 				<left>17</left>
 				<top>185</top>
 				<width>1210</width>
-				<height>323</height>
+				<height>283</height>
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
 			</control>
@@ -259,7 +259,7 @@
 				<left>17</left>
 				<top>185</top>
 				<width>1210</width>
-				<height>323</height>
+				<height>283</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font24_title</font>
@@ -270,7 +270,7 @@
 				<left>77</left>
 				<top>185</top>
 				<width>1090</width>
-				<height>323</height>
+				<height>283</height>
 				<fadetime>150</fadetime>
 				<aspectratio>keep</aspectratio>
 				<texture>$VAR[BannerVar]</texture>
@@ -291,7 +291,7 @@
 						<control type="image">
 							<top>0</top>
 							<width>264</width>
-							<height>357</height>
+							<height>317</height>
 							<texture>DefaultActor.png</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
@@ -301,15 +301,15 @@
 							<top>20</top>
 							<left>20</left>
 							<width>224</width>
-							<height>317</height>
+							<height>277</height>
 							<texture fallback="DefaultActor.png">$INFO[ListItem.Thumb]</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 						</control>
 						<control type="image">
 							<left>20</left>
 							<width>224</width>
-							<height>70</height>
-							<top>267</top>
+							<height>62</height>
+							<top>235</top>
 							<texture>colors/black.png</texture>
 							<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 						</control>
@@ -317,10 +317,10 @@
 							<left>25</left>
 							<width>214</width>
 							<height>69</height>
-							<top>267</top>
+							<top>230</top>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>font12</font>
+							<font>font10</font>
 							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR][COLOR grey],[/COLOR]]</label>
 						</control>
 					</control>
@@ -332,7 +332,7 @@
 						<control type="image">
 							<top>0</top>
 							<width>264</width>
-							<height>357</height>
+							<height>317</height>
 							<texture>DefaultActor.png</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
@@ -342,15 +342,15 @@
 							<top>20</top>
 							<left>20</left>
 							<width>224</width>
-							<height>317</height>
+							<height>277</height>
 							<texture>$INFO[ListItem.Thumb]</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 						</control>
 						<control type="image">
 							<left>20</left>
 							<width>224</width>
-							<height>70</height>
-							<top>267</top>
+							<height>62</height>
+							<top>235</top>
 							<texture>colors/black.png</texture>
 							<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 						</control>
@@ -358,17 +358,17 @@
 							<left>25</left>
 							<width>214</width>
 							<height>69</height>
-							<top>267</top>
+							<top>230</top>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>font12</font>
+							<font>font10</font>
 							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR][COLOR grey],[/COLOR]]</label>
 						</control>
 						<control type="image">
 							<left>18</left>
 							<top>20</top>
 							<width>230</width>
-							<height>320</height>
+							<height>280</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
@@ -488,7 +488,7 @@
 				<param name="list_id" value="50" />
 				<param name="left_posx" value="-15" />
 				<param name="right_posx" value="1240" />
-				<param name="posy" value="340" />
+				<param name="posy" value="320" />
 				<param name="visible" value="true" />
 			</include>
 		</control>
