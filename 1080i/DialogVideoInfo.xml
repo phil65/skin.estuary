@@ -274,6 +274,7 @@
 				<fadetime>150</fadetime>
 				<aspectratio>keep</aspectratio>
 				<texture>$VAR[BannerVar]</texture>
+				<visible>StringCompare(Container(50).NumItems,0)</visible>
 			</control>
 			<control type="list" id="50">
 				<top>158</top>
