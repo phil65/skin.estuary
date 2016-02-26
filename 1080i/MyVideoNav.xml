@@ -28,7 +28,7 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Control.IsVisible(55)</visible>
+			<visible>Control.IsVisible(55) | [Control.IsVisible(500) + Window.IsActive(addoninformation)]</visible>
 			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Container.Content(files) | Container.Content(mixed)</visible>
 			<visible>!Window.IsActive(movieinformation)</visible>
 			<include>Visible_Left</include>
