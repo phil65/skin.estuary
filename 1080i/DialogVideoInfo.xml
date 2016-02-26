@@ -313,7 +313,7 @@
 							<height>62</height>
 							<top>235</top>
 							<texture>colors/black.png</texture>
-							<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
+							<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 						</control>
 						<control type="textbox">
 							<left>25</left>
@@ -354,7 +354,7 @@
 							<height>62</height>
 							<top>235</top>
 							<texture>colors/black.png</texture>
-							<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
+							<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 						</control>
 						<control type="textbox">
 							<left>25</left>

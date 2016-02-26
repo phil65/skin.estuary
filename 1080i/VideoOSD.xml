@@ -106,7 +106,7 @@
 					<onclick>PlayerControl(Record)</onclick>
 					<enable>Player.CanRecord</enable>
 					<visible>VideoPlayer.Content(livetv)</visible>
-					<animation effect="fade" start="100" end="50" time="80" condition="!Player.CanRecord">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
 				</control>
 			</control>
 			<control type="grouplist" id="202">
