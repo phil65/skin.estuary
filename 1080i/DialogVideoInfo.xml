@@ -144,7 +144,7 @@
 				<orientation>vertical</orientation>
 				<left>730</left>
 				<top>488</top>
-				<itemgap>-15</itemgap>
+				<itemgap>-5</itemgap>
 				<ondown>5000</ondown>
 				<onup>50</onup>
 				<onright>140</onright>
@@ -154,7 +154,7 @@
 					<height>45</height>
 					<textoffsetx>40</textoffsetx>
 					<aligny>center</aligny>
-					<font>font12</font>
+					<font>font10</font>
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
@@ -164,7 +164,7 @@
 					<width>505</width>
 					<height>45</height>
 					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
+					<font>font10</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Writer,[COLOR button_focus]$LOCALIZE[20417]: [/COLOR]]</label>
 					<texturefocus>-</texturefocus>
@@ -176,7 +176,7 @@
 					<width>505</width>
 					<height>45</height>
 					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
+					<font>font10</font>
 					<aligny>center</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
 					<texturefocus>-</texturefocus>
@@ -188,7 +188,7 @@
 					<width>505</width>
 					<height>45</height>
 					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
+					<font>font10</font>
 					<aligny>center</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[180]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[31060]</label>
 					<texturefocus>-</texturefocus>
@@ -200,7 +200,7 @@
 					<width>505</width>
 					<height>45</height>
 					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
+					<font>font10</font>
 					<aligny>center</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[21875]: [/COLOR]$INFO[ListItem.Country]</label>
 					<texturefocus>-</texturefocus>
@@ -212,7 +212,7 @@
 					<width>505</width>
 					<height>45</height>
 					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
+					<font>font10</font>
 					<aligny>center</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[29909]: [/COLOR]$INFO[ListItem.Studio]</label>
 					<texturefocus>-</texturefocus>
@@ -224,7 +224,7 @@
 					<width>505</width>
 					<height>45</height>
 					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
+					<font>font10</font>
 					<aligny>center</aligny>
 					<textcolor>button_focus</textcolor>
 					<label>$LOCALIZE[20416]: [COLOR white]$INFO[ListItem.Premiered,][/COLOR]</label>
@@ -237,7 +237,7 @@
 					<width>505</width>
 					<height>45</height>
 					<textoffsetx>40</textoffsetx>
-					<font>font12</font>
+					<font>font10</font>
 					<aligny>center</aligny>
 					<textcolor>button_focus</textcolor>
 					<label>$LOCALIZE[31048]: [COLOR white]$INFO[ListItem.Season,, $LOCALIZE[36905]]$INFO[ListItem.Episode, (, $LOCALIZE[20453])][/COLOR]</label>
