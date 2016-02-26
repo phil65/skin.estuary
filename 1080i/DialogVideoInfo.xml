@@ -282,7 +282,7 @@
 				<height>370</height>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>5000</onup>
+				<onup>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onup>
 				<ondown>140</ondown>
 				<scrolltime>200</scrolltime>
 				<orientation>horizontal</orientation>
@@ -501,15 +501,28 @@
 			<param name="main_label" value="$VAR[VideoInfoMainLabelVar]" />
 			<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
 		</include>
-		<!-- 		<control type="image">
-		     <top>1005</top>
-		     <width>120</width>
-		     <right>2</right>
-		     <height>75</height>
-		     <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-		     <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-		     <aspectratio>keep</aspectratio>
-		     <texture colordiffuse="button_focus">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
-		     </control> -->
+		<control type="group">
+			<visible>Control.HasFocus(50)</visible>
+			<animation effect="fade" time="200">VisibleChange</animation>
+			<top>1019</top>
+			<control type="button">
+				<left>17</left>
+				<width>44</width>
+				<height>44</height>
+				<animation effect="rotate" end="-90" center="40,23" time="0" condition="true">Conditional</animation>
+				<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
+				<texturenofocus colordiffuse="button_focus">frame/menu-nofo.png</texturenofocus>
+			</control>
+			<control type="button">
+				<left>74</left>
+				<width>500</width>
+				<height>44</height>
+				<shadowcolor>text_shadow</shadowcolor>
+				<label>$LOCALIZE[31125]</label>
+				<onclick>noop</onclick>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+			</control>
+		</control>
 	</controls>
 </window>
