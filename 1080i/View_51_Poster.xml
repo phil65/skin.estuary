@@ -150,7 +150,7 @@
 						<height>38</height>
 						<label>$INFO[ListItem.Duration,[COLOR button_focus]$LOCALIZE[180]: [/COLOR], $LOCALIZE[31060]]</label>
 						<shadowcolor>text_shadow</shadowcolor>
-						<visible>!IsEmpty(ListItem.Genre)</visible>
+						<visible>!IsEmpty(ListItem.Duration)</visible>
 					</control>
 					<control type="label">>
 						<font>font12</font>
