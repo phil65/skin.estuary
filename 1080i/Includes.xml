@@ -419,10 +419,10 @@
 			<width>1720</width>
 			<align>right</align>
 			<include name="MediaFlag">
-				<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+				<param name="texture" value="$INFO[ListItem.VideoCodec,flags/videocodec/,.png]" />
 			</include>
 			<include name="MediaFlag">
-				<param name="texture" value="$INFO[ListItem.VideoCodec,flags/videocodec/,.png]" />
+				<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
 			</include>
 		</control>
 	</include>
