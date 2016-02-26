@@ -148,7 +148,7 @@
 						<font>font12</font>
 						<width>1160</width>
 						<height>38</height>
-						<label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR]]</label>
+						<label>$INFO[ListItem.Duration,[COLOR button_focus]$LOCALIZE[180]: [/COLOR], $LOCALIZE[31060]]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<visible>!IsEmpty(ListItem.Genre)</visible>
 					</control>
