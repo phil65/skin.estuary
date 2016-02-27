@@ -619,9 +619,10 @@
 	</include>
 	<include name="WidgetListSquare">
 		<param name="height">405</param>
-		<param name="sublabel">$INFO[ListItem.Label]</param>
+		<param name="sub_label">$INFO[ListItem.Label]</param>
 		<param name="sortby"></param>
 		<param name="sortorder">ascending</param>
+		<param name="main_label">$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.AddonVersion,[COLOR button_focus],[/COLOR]]</param>
 		<definition>
 			<control type="group">
 				<description>Square Widget including header and arrows</description>
@@ -682,7 +683,7 @@
 								<left>20</left>
 								<top>240</top>
 								<width>260</width>
-								<label>$PARAM[sublabel]</label>
+								<label>$PARAM[sub_label]</label>
 								<font>font10</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -691,7 +692,18 @@
 								<left>20</left>
 								<top>264</top>
 								<width>260</width>
-								<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.AddonVersion,[COLOR button_focus],[/COLOR]]</label>
+								<label>$PARAM[main_label]</label>
+								<font>font10</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+							</control>
+							<control type="textbox">
+								<left>20</left>
+								<top>240</top>
+								<width>260</width>
+								<height>60</height>
+								<aligny>center</aligny>
+								<label>$PARAM[single_label]</label>
 								<font>font10</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -731,7 +743,7 @@
 									<left>20</left>
 									<top>240</top>
 									<width>260</width>
-									<label>$PARAM[sublabel]</label>
+									<label>$PARAM[sub_label]</label>
 									<font>font10</font>
 									<shadowcolor>text_shadow</shadowcolor>
 									<align>center</align>
@@ -740,7 +752,18 @@
 									<left>20</left>
 									<top>264</top>
 									<width>260</width>
-									<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]$INFO[ListItem.AddonVersion,[COLOR button_focus],[/COLOR]]</label>
+									<font>font10</font>
+									<label>$PARAM[main_label]</label>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
+								</control>
+								<control type="textbox">
+									<left>20</left>
+									<top>240</top>
+									<width>260</width>
+									<height>60</height>
+									<aligny>center</aligny>
+									<label>$PARAM[single_label]</label>
 									<font>font10</font>
 									<shadowcolor>text_shadow</shadowcolor>
 									<align>center</align>

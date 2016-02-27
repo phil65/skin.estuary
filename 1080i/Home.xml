@@ -321,7 +321,9 @@
 						<param name="list_id" value="7400"/>
 						<param name="onup_id" value="7300"/>
 						<param name="ondown_id" value="7500"/>
-						<param name="sublabel" value="$INFO[ListItem.Property(Artist_Genre)]"/>
+						<param name="single_label" value="$INFO[ListItem.Label]"/>
+						<param name="main_label" value=""/>
+						<param name="sub_label" value=""/>
 					</include>
 					<include name="WidgetListSquare">
 						<param name="content_path" value="special://skin/playlists/unplayed_albums.xsp"/>
