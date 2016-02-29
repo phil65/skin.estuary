@@ -20,7 +20,6 @@
 		</control>
 		<include>View_502_FanArt</include>
 		<control type="group">
-			<visible>Container.Content(movies) | Container.Content(episodes)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<include>MediaFlags</include>
