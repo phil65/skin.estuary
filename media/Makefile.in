@@ -10,21 +10,12 @@ all: TEXTURES
 .PHONY: force
 
 TEXTURES:
-ifeq (x86_64-linux,arm)
-	@TEXTUREPACKER@ -dupecheck -use_none -input . -output $(TARGET)
-	@TEXTUREPACKER@ -dupecheck -use_none -input ../themes/curial -output $(TARGET_CURIAL)
-	@TEXTUREPACKER@ -dupecheck -use_none -input ../themes/green -output $(TARGET_GREEN)
-	@TEXTUREPACKER@ -dupecheck -use_none -input ../themes/orange -output $(TARGET_ORANGE)
-	@TEXTUREPACKER@ -dupecheck -use_none -input ../themes/pink -output $(TARGET_PINK)
-	@TEXTUREPACKER@ -dupecheck -use_none -input ../themes/maroon -output $(TARGET_MAROON)
-else
 	@TEXTUREPACKER@ -dupecheck -input . -output $(TARGET)
 	@TEXTUREPACKER@ -dupecheck -input ../themes/curial -output $(TARGET_CURIAL)
 	@TEXTUREPACKER@ -dupecheck -input ../themes/green -output $(TARGET_GREEN)
 	@TEXTUREPACKER@ -dupecheck -input ../themes/orange -output $(TARGET_ORANGE)
 	@TEXTUREPACKER@ -dupecheck -input ../themes/pink -output $(TARGET_PINK)
 	@TEXTUREPACKER@ -dupecheck -input ../themes/maroon -output $(TARGET_MAROON)
-endif
 
 clean:
 	rm -f $(TARGET)
