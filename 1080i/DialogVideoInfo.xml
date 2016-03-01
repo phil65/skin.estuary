@@ -227,7 +227,6 @@
 					<label>$LOCALIZE[20416]: [COLOR white]$INFO[ListItem.Premiered,][/COLOR]</label>
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<visible>Container.Content(tvshows)</visible>
 					<visible>!IsEmpty(ListItem.Premiered)</visible>
 				</control>
 				<control type="button" id="210">
@@ -241,7 +240,6 @@
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<visible>!IsEmpty(ListItem.Season)</visible>
-					<visible>Container.Content(tvshows)</visible>
 				</control>
 			</control>
 			<control type="image">
