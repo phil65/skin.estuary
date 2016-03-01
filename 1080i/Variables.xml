@@ -198,6 +198,7 @@
 		<value condition="Control.HasFocus(70040)">$LOCALIZE[19019]</value>
 		<value condition="Control.HasFocus(70041)">$LOCALIZE[19069]</value>
 		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>
+		<value condition="Control.HasFocus(255)">$LOCALIZE[5]</value>
 		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
 		<value condition="ControlGroup(201).HasFocus + Player.SeekEnabled">$LOCALIZE[31049]</value>
 		<value condition="Player.SeekEnabled">$LOCALIZE[31054]</value>
