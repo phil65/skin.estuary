@@ -419,7 +419,7 @@
 					<param name="id" value="11" />
 					<param name="icon" value="icons/infodialogs/trailer.png" />
 					<param name="label" value="$LOCALIZE[20410]" />
-					<param name="visible" value="!IsEmpty(ListItem.Trailer) + Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]" />
+					<param name="visible" value="!IsEmpty(ListItem.Trailer) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]" />
 				</include>
 				<include name="InfoDialogButton">
 					<param name="id" value="440" />
@@ -427,7 +427,7 @@
 					<param name="label" value="$LOCALIZE[31090]" />
 					<param name="onclick_1" value="Action(close)" />
 					<param name="onclick_2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])" />
-					<param name="visible" value="System.hasAddon(script.extendedinfo) + IsEmpty(ListItem.Trailer) + Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]" />
+					<param name="visible" value="System.hasAddon(script.extendedinfo) + Container.Content(movies) + !Control.IsVisible(11)" />
 				</include>
 				<control type="group" id="400">
 					<width>262</width>
@@ -555,7 +555,7 @@
 				<width>500</width>
 				<height>44</height>
 				<shadowcolor>text_shadow</shadowcolor>
-				<label>Press OK to read plot</label>
+				<label>$LOCALIZE[31126]</label>
 			</control>
 		</control>
 	</controls>
