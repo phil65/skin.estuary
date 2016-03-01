@@ -788,8 +788,10 @@
 	<include name="WidgetListText">
 		<param name="height">405</param>
 		<param name="arrow_posy">200</param>
-		<param name="item_limit">8</param>
+		<param name="item_limit">12</param>
 		<param name="icon">icons/defaulticons/$INFO[ListItem.Icon]</param>
+		<param name="sortby">label</param>
+		<param name="sortorder">ascending</param>
 		<definition>
 			<control type="group">
 				<description>Square Widget including header and arrows</description>
@@ -908,7 +910,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
