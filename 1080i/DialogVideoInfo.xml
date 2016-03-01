@@ -514,7 +514,6 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>Container.Content(movies) | Container.Content(episodes)</visible>
 			<include>MediaFlags</include>
 		</control>
 		<include name="InfoDialogTopBarInfo">
