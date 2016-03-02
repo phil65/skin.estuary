@@ -185,7 +185,7 @@
 		<value condition="Player.Seeking">$INFO[Player.SeekTime]$INFO[Player.Duration, / ]</value>
 		<value>$INFO[Player.Time]$INFO[Player.Duration, / ]</value>
 	</variable>
-	<variable name="OSDHelpTextVar">
+	<variable name="VideoOSDHelpTextVar">
 		<value condition="Control.HasFocus(87) + Player.Rewinding">$LOCALIZE[31050]</value>
 		<value condition="Control.HasFocus(87) + Player.Forwarding">$LOCALIZE[31051]</value>
 		<value condition="Control.HasFocus(70011)">$LOCALIZE[20060]</value>
@@ -203,6 +203,13 @@
 		<value condition="ControlGroup(201).HasFocus + Player.SeekEnabled">$LOCALIZE[31049]</value>
 		<value condition="Player.SeekEnabled">$LOCALIZE[31054]</value>
 		<value condition="!Player.SeekEnabled">$LOCALIZE[36044]</value>
+	</variable>
+	<variable name="MusicOSDHelpTextVar">
+		<value condition="Control.HasFocus(70011)">$LOCALIZE[20060]</value>
+		<value condition="Control.HasFocus(701)">$LOCALIZE[13396]</value>
+		<value condition="Control.HasFocus(702)">$LOCALIZE[13395]</value>
+		<value condition="Control.HasFocus(700)">$LOCALIZE[298]</value>
+		<value condition="Control.HasFocus(703)">$LOCALIZE[31106]</value>
 	</variable>
 	<variable name="DSPManagerHelpTextVar">
 		<value condition="Control.HasFocus(20)">$INFO[Container(20).ListItem.Property(Description)]</value>
@@ -254,8 +261,8 @@
 		<value condition="!IsEmpty(Container(8200).ListItem.Art(fanart)) + Control.HasFocus(8200)">$INFO[Container(8200).ListItem.Art(fanart)]</value>
 		<value condition="!IsEmpty(Container(8300).ListItem.Art(fanart)) + Control.HasFocus(8300)">$INFO[Container(8300).ListItem.Art(fanart)]</value>
 		<value condition="!IsEmpty(Container(8400).ListItem.Art(fanart)) + Control.HasFocus(8400)">$INFO[Container(8400).ListItem.Art(fanart)]</value>
-		<value condition="!IsEmpty(Container(15100).ListItem.Property(FanartCode)) + Control.HasFocus(15100)">resource://resource.images.weatherfanart.multi/$INFO[Container(15100).ListItem.Property(FanartCode)]</value>
-		<value condition="!IsEmpty(Container(15200).ListItem.Property(FanartCode)) + Control.HasFocus(15200)">resource://resource.images.weatherfanart.multi/$INFO[Container(15200).ListItem.Property(FanartCode)]</value>
+		<value condition="!IsEmpty(Container(15100).ListItem.Property(FanartCode)) + Control.HasFocus(15100)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15100).ListItem.Property(FanartCode)]</value>
+		<value condition="!IsEmpty(Container(15200).ListItem.Property(FanartCode)) + Control.HasFocus(15200)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15200).ListItem.Property(FanartCode)]</value>
 		<value>-</value>
 	</variable>
 	<variable name="MediaFanartVar">
@@ -265,8 +272,8 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="WeatherFanartVar">
-		<value condition="!IsEmpty(Window(weather).Property(current.fanartcode))">$INFO[Window(weather).Property(current.fanartcode),resource://resource.images.weatherfanart.multi/]</value>
-		<value>$INFO[Window(weather).Property(fanartcode),resource://resource.images.weatherfanart.single/,.jpg]</value>
+		<value condition="!IsEmpty(Window(weather).Property(current.fanartcode)) + Skin.HasSetting(WeatherFanart.multi)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Window(weather).Property(current.fanartcode)]</value>
+		<value>$INFO[Skin.String(WeatherFanart.path)]$INFO[Window(weather).Property(fanartcode)]$INFO[Skin.String(WeatherFanart.ext)]</value>
 	</variable>
 	<variable name="ListWatchedIconVar">
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
