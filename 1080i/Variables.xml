@@ -205,11 +205,11 @@
 		<value condition="!Player.SeekEnabled">$LOCALIZE[36044]</value>
 	</variable>
 	<variable name="MusicOSDHelpTextVar">
-		<value condition="Control.HasFocus(70011)">$LOCALIZE[20060]</value>
-		<value condition="Control.HasFocus(701)">$LOCALIZE[13396]</value>
-		<value condition="Control.HasFocus(702)">$LOCALIZE[13395]</value>
-		<value condition="Control.HasFocus(700)">$LOCALIZE[298]</value>
-		<value condition="Control.HasFocus(703)">$LOCALIZE[31106]</value>
+		<value condition="Control.HasFocus(620)">$LOCALIZE[31033]$INFO[MusicPlayer.UserRating, : ]</value>
+		<value condition="Control.HasFocus(704)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>
+		<value condition="Control.HasFocus(607)">$LOCALIZE[590]$INFO[Playlist.Random, : ]</value>
+		<value condition="Control.HasFocus(703)">$LOCALIZE[24013]</value>
+		<value condition="Control.HasFocus(5000)">$LOCALIZE[10004]</value>
 	</variable>
 	<variable name="DSPManagerHelpTextVar">
 		<value condition="Control.HasFocus(20)">$INFO[Container(20).ListItem.Property(Description)]</value>

@@ -95,7 +95,7 @@
 						<top>0</top>
 						<width>74</width>
 						<height>74</height>
-						<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
+						<label></label>
 						<font>-</font>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -130,7 +130,7 @@
 					<texturenofocus>-</texturenofocus>
 					<radioposx>0</radioposx>
 					<radioposy>0</radioposy>
-					<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
+					<label></label>
 					<animation center="62,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
 					<selected>Playlist.IsRandom</selected>
 					<visible>!MusicPlayer.Content(LiveTV)</visible>
@@ -164,6 +164,16 @@
 				<font>font30</font>
 				<shadowcolor>black</shadowcolor>
 				<textcolor>white</textcolor>
+			</control>
+			<control type="label">
+				<right>30</right>
+				<top>-90</top>
+				<textoffsetx>20</textoffsetx>
+				<aligny>center</aligny>
+				<align>right</align>
+				<width>1858</width>
+				<height>60</height>
+				<label>$VAR[MusicOSDHelpTextVar]</label>
 			</control>
 			<control type="button" id="87">
 				<include>HiddenObject</include>
