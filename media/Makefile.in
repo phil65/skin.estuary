@@ -26,6 +26,6 @@ clean:
 	rm -f $(TARGET_ORANGE)
 	rm -f $(TARGET_PINK)
 	rm -f $(TARGET_MAROON)
-	rm -f $(TARGET_charcoal)
+	rm -f $(TARGET_CHARCOAL)
 
 distclean: clean
