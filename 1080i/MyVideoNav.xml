@@ -158,7 +158,7 @@
 		<control type="group">
 			<top>180</top>
 			<left>106</left>
-			<visible>!Container.Content() + !Container.Content(addons) + !Container.Content(files) + !Container.Content(mixed) + !Container.Content(musicvideos)</visible>
+			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(actors) | Container.Content(directors)</visible>
 			<visible>!Control.IsVisible(502)</visible>
 			<visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(55) | Window.IsActive(movieinformation)</visible>
 			<include>OpenClose_Left</include>
