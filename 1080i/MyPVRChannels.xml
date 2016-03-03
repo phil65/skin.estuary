@@ -176,10 +176,11 @@
 							<visible>Control.hasFocus(50)</visible>
 						</control>
 						<control type="image">
-							<left>920</left>
+							<left>900</left>
 							<top>10</top>
-							<width>60</width>
+							<width>80</width>
 							<height>60</height>
+							<aspectratio align="right">keep</aspectratio>
 							<texture>$INFO[listitem.icon]</texture>
 						</control>
 						<control type="progress">
@@ -243,10 +244,11 @@
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
 						<control type="image">
-							<left>920</left>
+							<left>900</left>
 							<top>10</top>
-							<width>60</width>
+							<width>80</width>
 							<height>60</height>
+							<aspectratio align="right">keep</aspectratio>
 							<texture>$INFO[listitem.icon]</texture>
 						</control>
 						<control type="progress">
