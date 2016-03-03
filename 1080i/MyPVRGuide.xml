@@ -343,7 +343,7 @@
 		</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="$INFO[Control.GetLabel(29)] - $INFO[Control.GetLabel(30)]" />
-			<param name="breadcrumbs_icon" value="icons/settings/livetv.png" />
+			<param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
 		</include>
 		<include name="BottomBar">
 			<param name="PageLabel" value="$INFO[Container.NumItems,$LOCALIZE[19019]: ]" />

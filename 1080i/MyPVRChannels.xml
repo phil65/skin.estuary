@@ -196,7 +196,7 @@
 		</control>
 		<include name="TopBar">
 			<param name="breadcrumbs_label" value="TV$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), / ]" />
-			<param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
+			<param name="breadcrumbs_icon" value="icons/settings/tvremote.png" />
 		</include>
 		<include>BottomBar</include>
 		<control type="label" id="29">
