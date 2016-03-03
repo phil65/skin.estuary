@@ -210,7 +210,7 @@
 					<height>30</height>
 					<font>font10</font>
 					<aligny>center</aligny>
-					<textcolor>grey2</textcolor>
+					<textcolor>grey</textcolor>
 					<label>$INFO[ListItem.Property(Name)]</label>
 				</control>
 			</itemlayout>
@@ -255,7 +255,7 @@
 					<height>30</height>
 					<font>font10</font>
 					<aligny>center</aligny>
-					<textcolor>grey2</textcolor>
+					<textcolor>grey</textcolor>
 					<label>$INFO[ListItem.Property(Name)]</label>
 				</control>
 			</focusedlayout>
