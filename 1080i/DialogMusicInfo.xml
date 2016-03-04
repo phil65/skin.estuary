@@ -295,7 +295,7 @@
 				<orientation>horizontal</orientation>
 				<control type="group" id="420">
 					<width>262</width>
-					<visible>Container.Content(albums) | Container.Content(songs)</visible>
+					<visible>Stringcompare(ListItem.DBType,album) | Stringcompare(ListItem.DBType,song)</visible>
 					<control type="button" id="7">
 						<include name="VideoInfoButtonsCommon">
 							<param name="icon" value="" />
@@ -333,7 +333,7 @@
 					<enable>!IsEmpty(ListItem.Art(fanart))</enable>
 					<onclick>SetProperty(fanart,$ESCINFO[ListItem.Art(fanart)],home)</onclick>
 					<onclick>ActivateWindow(1104)</onclick>
-					<visible>Container.Content(artists) | Container.Content(albums)</visible>
+					<visible>Stringcompare(ListItem.DBType,artist) | Stringcompare(ListItem.DBType,album)</visible>
 				</control>
 				<include name="InfoDialogButton">
 					<param name="id" value="6" />
@@ -357,8 +357,8 @@
 					</include>
 					<onclick>Action(close)</onclick>
 					<visible>System.hasAddon(script.extendedinfo)</visible>
-					<onclick condition="!Container.Content(songs)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])</onclick>
-					<onclick condition="Container.Content(songs)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])</onclick>
+					<onclick condition="!Stringcompare(ListItem.DBType,song)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])</onclick>
+					<onclick condition="Stringcompare(ListItem.DBType,song)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])</onclick>
 				</control>
 			</control>
 			<include name="LeftRightArrows">
@@ -370,7 +370,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>Container.Content(artists)</visible>
+			<visible>Stringcompare(ListItem.DBType,artist)</visible>
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="$INFO[ListItem.Artist]" />
 				<param name="sub_label" value="$INFO[ListItem.Genre]" />
@@ -378,7 +378,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>Container.Content(albums)</visible>
+			<visible>Stringcompare(ListItem.DBType,album)</visible>
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist]" />
@@ -386,7 +386,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<visible>Container.Content(songs) + !Window.IsActive(musicinformation)</visible>
+			<visible>Stringcompare(ListItem.DBType,song) + !Window.IsActive(musicinformation)</visible>
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="[COLOR button_focus]$INFO[ListItem.TrackNumber]. [/COLOR]$INFO[ListItem.Title]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
