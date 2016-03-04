@@ -98,26 +98,21 @@
 							<height>58</height>
 							<texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
 						</control>
-						<control type="image" id="2">
-							<width>58</width>
-							<height>58</height>
-							<texture border="8">buttons/thumbnail_focused.png</texture>
-							<visible>ListItem.HasTimer | ListItem.HasTimerSchedule</visible>
-						</control>
-						<control type="image" id="2">
-							<width>58</width>
-							<height>58</height>
-							<texture border="8" colordiffuse="red">buttons/thumbnail_focused.png</texture>
-							<visible>ListItem.IsRecording</visible>
-						</control>
 						<control type="label" id="1">
 							<left>6</left>
 							<top>0</top>
 							<width>50</width>
-							<height>58</height>
+							<height>36</height>
 							<aligny>center</aligny>
-							<font>font10</font>
+							<font>font10_title</font>
 							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="image">
+							<left>6</left>
+							<top>32</top>
+							<width>20</width>
+							<height>20</height>
+							<texture>$VAR[PVRTimerIcon]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="58" width="60">
@@ -132,6 +127,11 @@
 						<control type="image" id="2">
 							<width>58</width>
 							<height>58</height>
+							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+						</control>
+						<control type="image" id="2">
+							<width>58</width>
+							<height>58</height>
 							<top>0</top>
 							<texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
 							<visible>!Control.HasFocus(10)</visible>
@@ -140,22 +140,17 @@
 							<left>6</left>
 							<top>0</top>
 							<width>50</width>
-							<height>58</height>
+							<height>36</height>
 							<aligny>center</aligny>
-							<font>font10</font>
+							<font>font10_title</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
-						<control type="image" id="2">
-							<width>58</width>
-							<height>58</height>
-							<texture border="8">buttons/thumbnail_focused.png</texture>
-							<visible>ListItem.HasTimer | ListItem.HasTimerSchedule</visible>
-						</control>
-						<control type="image" id="2">
-							<width>58</width>
-							<height>58</height>
-							<texture border="8" colordiffuse="red">buttons/thumbnail_focused.png</texture>
-							<visible>ListItem.IsRecording</visible>
+						<control type="image">
+							<left>6</left>
+							<top>32</top>
+							<width>20</width>
+							<height>20</height>
+							<texture>$VAR[PVRTimerIcon]</texture>
 						</control>
 					</focusedlayout>
 				</control>
