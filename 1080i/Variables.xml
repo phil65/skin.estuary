@@ -27,8 +27,8 @@
 		<value>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 	</variable>
 	<variable name="MusicInfoTextboxVar">
-		<value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole,[B]Contributors[/B][CR][COLOR=white],[/COLOR]]</value>
-		<value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description),[B]Contributors[/B][CR][COLOR=white],[/COLOR]]</value>
+		<value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole,[B]$LOCALIZE[31128][/B][CR][COLOR=white],[/COLOR]]</value>
+		<value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description),[B]$LOCALIZE[183][/B][CR][COLOR=white],[/COLOR]]</value>
 		<value>$INFO[ListItem.Property(Artist_Description),[B]$LOCALIZE[21887][/B][CR][COLOR=white],[/COLOR]]</value>
 	</variable>
 	<variable name="NowPlayingSublabelVar">

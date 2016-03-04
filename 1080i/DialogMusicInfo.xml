@@ -30,7 +30,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>StringCompare(Container(50).NumItems,0)</visible>
+				<visible>StringCompare(Container(50).NumItems,0) + IsEmpty(Control.GetLabel(400))</visible>
 				<top>160</top>
 				<control type="button" id="130">
 					<left>586</left>
@@ -76,8 +76,22 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!StringCompare(Container(50).NumItems,0)</visible>
+				<visible>!StringCompare(Container(50).NumItems,0) | !IsEmpty(Control.GetLabel(400))</visible>
 				<top>454</top>
+				<control type="button" id="130">
+					<onup>50</onup>
+					<ondown>9000</ondown>
+					<left>586</left>
+					<top>-295</top>
+					<width>1254</width>
+					<height>320</height>
+					<textoffsetx>40</textoffsetx>
+					<textoffsety>20</textoffsety>
+					<aligny>bottom</aligny>
+					<font>font_textbox</font>
+					<label>-</label>
+					<visible>StringCompare(Container(50).NumItems,0)</visible>
+				</control>
 				<control type="button" id="130">
 					<onup>50</onup>
 					<ondown>9000</ondown>
@@ -90,34 +104,37 @@
 					<font>font_textbox</font>
 					<label>-</label>
 				</control>
-				<control type="image">
-					<left>614</left>
-					<top>30</top>
-					<width>1194</width>
-					<height>260</height>
-					<aspectratio aligny="top">scale</aspectratio>
-					<texture fallback="special://skin/extras/home-images/music.jpg">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(Control.GetLabel(400))</visible>
-				</control>
 				<control type="group">
-					<visible>IsEmpty(Control.GetLabel(400)) + IsEmpty(ListItem.Art(fanart))</visible>
+					<animation effect="slide" start="0,0" end="0,-295" time="0" condition="StringCompare(Container(50).NumItems,0)">Conditional</animation>
+					<visible>[!StringCompare(Container(50).NumItems,0) + IsEmpty(Control.GetLabel(400))] | [StringCompare(Container(50).NumItems,0) + !IsEmpty(Control.GetLabel(400))]</visible>
 					<control type="image">
 						<left>614</left>
 						<top>30</top>
 						<width>1194</width>
 						<height>260</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+						<aspectratio aligny="top">scale</aspectratio>
+						<texture fallback="special://skin/extras/home-images/music.jpg">$INFO[ListItem.Art(fanart)]</texture>
 					</control>
-					<control type="textbox">
-						<left>614</left>
-						<top>30</top>
-						<width>1194</width>
-						<height>260</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font30_title</font>
-						<label>$LOCALIZE[19055]</label>
+					<control type="group">
+						<visible>IsEmpty(ListItem.Art(fanart))</visible>
+						<control type="image">
+							<left>614</left>
+							<top>30</top>
+							<width>1194</width>
+							<height>260</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+						</control>
+						<control type="textbox">
+							<left>614</left>
+							<top>30</top>
+							<width>1194</width>
+							<height>260</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font30_title</font>
+							<label>$LOCALIZE[19055]</label>
+						</control>
 					</control>
 				</control>
 			</control>
