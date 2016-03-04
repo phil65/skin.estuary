@@ -28,7 +28,7 @@
 				<animation effect="fade" start="0" end="100" time="0" delay="300" condition="!Window.IsActive(home)">WindowOpen</animation>
 			</control>
 			<control type="group">
-				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Thumb)</visible>
+				<visible>Stringcompare(ListItem.DBType,episode) + !IsEmpty(ListItem.Thumb)</visible>
 				<control type="image">
 					<left>4</left>
 					<top>4</top>
@@ -428,7 +428,7 @@
 					<param name="label" value="$LOCALIZE[31090]" />
 					<param name="onclick_1" value="Action(close)" />
 					<param name="onclick_2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])" />
-					<param name="visible" value="System.hasAddon(script.extendedinfo) + Container.Content(movies) + !Control.IsVisible(11)" />
+					<param name="visible" value="System.hasAddon(script.extendedinfo) + Stringcompare(ListItem.DBType,movie) + !Control.IsVisible(11)" />
 				</include>
 				<control type="group" id="400">
 					<width>262</width>
