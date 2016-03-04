@@ -7,6 +7,7 @@
 			<left>106</left>
 			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<visible>!Container.Content(files)</visible>
+			<include condition="Window.IsActive(home)">OpenClose_Left</include>
 			<control type="image">
 				<top>-16</top>
 				<left>-16</left>
@@ -15,7 +16,7 @@
 				<texture>colors/black.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
-				<animation effect="fade" start="0" end="100" time="100" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="100" delay="300" condition="!Window.IsActive(home)">WindowOpen</animation>
 			</control>
 			<control type="image">
 				<left>4</left>
@@ -24,7 +25,7 @@
 				<height>701</height>
 				<aspectratio>scale</aspectratio>
 				<texture fallback="DefaultVideo.png">$VAR[PosterVar]</texture>
-				<animation effect="fade" start="0" end="100" time="0" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="0" delay="300" condition="!Window.IsActive(home)">WindowOpen</animation>
 			</control>
 			<control type="group">
 				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Thumb)</visible>
@@ -35,7 +36,7 @@
 					<height>701</height>
 					<aspectratio>stretch</aspectratio>
 					<texture colordiffuse="AAFFFFFF" fallback="DefaultVideo.png">colors/black.png</texture>
-					<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+					<animation effect="fade" start="0" end="100" time="300" delay="300" condition="!Window.IsActive(home)">WindowOpen</animation>
 				</control>
 				<control type="image">
 					<left>14</left>
@@ -44,7 +45,7 @@
 					<height>701</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Thumb]</texture>
-					<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+					<animation effect="fade" start="0" end="100" time="300" delay="300" condition="!Window.IsActive(home)">WindowOpen</animation>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
