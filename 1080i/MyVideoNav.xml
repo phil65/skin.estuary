@@ -62,7 +62,7 @@
 				<height>338</height>
 				<font>font12</font>
 				<animation effect="slide" start="0,0" end="0,50" time="0" reversible="false" condition="Control.IsVisible(54)">conditional</animation>
-				<label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
+				<label>$INFO[ListItem.Premiered,[COLOR button_focus]$LOCALIZE[20416]: [/COLOR],[CR]]$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
 			</control>
 			<control type="grouplist" id="4300">
 				<right>130</right>
@@ -133,7 +133,7 @@
 					<orientation>horizontal</orientation>
 					<width>470</width>
 					<include name="InfoFlag">
-						<param name="visible" value="!IsEmpty(ListItem.Year)" />
+						<param name="visible" value="!IsEmpty(ListItem.Year) + IsEmpty(ListItem.Premiered)" />
 						<param name="icon" value="lists/year.png" />
 						<param name="label" value="$INFO[ListItem.Year]" />
 					</include>
