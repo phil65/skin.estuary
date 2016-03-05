@@ -57,12 +57,12 @@
 			</control>
 			<control type="textbox">
 				<right>130</right>
-				<top>194</top>
+				<top>245</top>
 				<width>429</width>
 				<height>338</height>
 				<font>font12</font>
 				<visible>Control.IsVisible(54)</visible>
-				<label>$INFO[ListItem.Premiered,[COLOR button_focus]$LOCALIZE[20416]: [/COLOR],[CR]]$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
+				<label>$INFO[ListItem.Premiered,[COLOR button_focus]$LOCALIZE[20416]: [/COLOR],[CR]]$INFO[ListItem.Plot]</label>
 			</control>
 			<control type="textbox">
 				<right>130</right>
