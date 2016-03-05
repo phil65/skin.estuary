@@ -135,7 +135,7 @@
 		<value condition="!IsEmpty(ListItem.Property(addon.orphaned))">icons/infodialogs/update.png</value> -->
 		<value condition="ListItem.IsParentFolder">-</value>
 		<value condition="ListItem.Property(addon.downloading)">icons/infodialogs/install.png</value>
-		<value condition="!ListItem.Property(addon.isenabled) + Window.IsActive(addonbrowser)">icons/infodialogs/disable.png</value>
+		<value condition="ListItem.Property(addon.isinstalled) + !ListItem.Property(addon.isenabled) + Window.IsActive(addonbrowser)">icons/infodialogs/disable.png</value>
 		<value condition="ListItem.Property(addon.hasupdate)">icons/infodialogs/update.png</value>
 		<value condition="ListItem.Property(addon.isinstalled)">OverlayWatched.png</value>
 		<value>OverlayUnwatched.png</value>
