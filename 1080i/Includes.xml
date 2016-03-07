@@ -1196,7 +1196,6 @@
 		<align>left</align>
 	</include>
 	<include name="DefaultBackground">
-		<param name="fanart">$VAR[MediaFanartVar]</param>
 		<definition>
 			<control type="videowindow">
 				<depth>DepthBackground</depth>
@@ -1225,7 +1224,7 @@
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<animation effect="fade" time="400">VisibleChange</animation>
-				<texture background="true" colordiffuse="40FFFFFF">$PARAM[fanart]</texture>
+				<texture background="true" colordiffuse="40FFFFFF">$VAR[MediaFanartVar]</texture>
 				<visible>!Player.HasMedia | !IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			</control>
 		</definition>

@@ -269,6 +269,7 @@
 	</variable>
 	<variable name="MediaFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
+		<value condition="Window.IsActive(pictures) + IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.FolderPath]</value>
 		<value condition="!IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
 		<value condition="!IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
 		<value condition="!IsEmpty(Container.Art(fanart))">$INFO[Container.Art(fanart)]</value>
