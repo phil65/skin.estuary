@@ -414,7 +414,7 @@
 		</control>
 		<control type="grouplist">
 			<orientation>horizontal</orientation>
-			<left>100</left>
+			<right>100</right>
 			<itemgap>5</itemgap>
 			<width>1720</width>
 			<align>right</align>
@@ -1121,7 +1121,7 @@
 				</control>
 				<control type="grouplist">
 					<description>Right side of top bar</description>
-					<left>1340</left>
+					<right>85</right>
 					<width>500</width>
 					<height>100</height>
 					<align>right</align>
