@@ -227,13 +227,8 @@
 					<top>660</top>
 					<left>40</left>
 					<orientation>horizontal</orientation>
-					<width>470</width>
+					<width>380</width>
 					<align>center</align>
-					<include name="InfoFlag">
-						<param name="visible" value="!IsEmpty(ListItem.Year)" />
-						<param name="icon" value="lists/year.png" />
-						<param name="label" value="$INFO[ListItem.Year]" />
-					</include>
 					<include name="InfoFlag">
 						<param name="visible" value="!IsEmpty(ListItem.duration)" />
 						<param name="icon" value="frame/clock.png" />
@@ -245,9 +240,14 @@
 						<param name="label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
 					</include>
 					<include name="InfoFlag">
-						<param name="visible" value="!IsEmpty(ListItem.rating)" />
-						<param name="icon" value="lists/rating.png" />
-						<param name="label" value="$INFO[ListItem.Rating]" />
+						<param name="visible" value="!IsEmpty(ListItem.Year) + IsEmpty(ListItem.Premiered)" />
+						<param name="icon" value="lists/year.png" />
+						<param name="label" value="$INFO[ListItem.Year]" />
+					</include>
+					<include name="InfoFlag">
+						<param name="visible" value="!IsEmpty(ListItem.Premiered)" />
+						<param name="icon" value="lists/year.png" />
+						<param name="label" value="$INFO[ListItem.Premiered]" />
 					</include>
 				</control>
 					<control type="textbox">
