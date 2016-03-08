@@ -429,6 +429,7 @@
 	<include name="WeatherIcon">
 		<control type="group">
 			<width>268</width>
+			<visible>!IsEmpty($PARAM[label])</visible>
 			<control type="image">
 				<left>50</left>
 				<width>60</width>
@@ -442,7 +443,7 @@
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$PARAM[label]</label>
+				<label>$INFO[$PARAM[label]]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
