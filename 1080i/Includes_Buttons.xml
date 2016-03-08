@@ -19,7 +19,7 @@
 		<radioposy>0</radioposy>
 	</include>
 	<include name="DefaultSettingButton">
-		<param name="height">75</param>
+		<param name="height">63</param>
 		<param name="textoffsetx">40</param>
 		<definition>
 			<textoffsetx>$PARAM[textoffsetx]</textoffsetx>
@@ -31,7 +31,7 @@
 			<invalidcolor>invalid</invalidcolor>
 			<selectedcolor>selected</selectedcolor>
 			<texturefocus>lists/focus.png</texturefocus>
-			<texturenofocus border="40">lists/separator.png</texturenofocus>
+			<texturenofocus border="5">lists/separator.png</texturenofocus>
 		</definition>
 	</include>
 	<include name="DefaultSettingLabel">
