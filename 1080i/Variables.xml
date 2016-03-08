@@ -283,6 +283,7 @@
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
 <!-- 		<value condition="Container.Content(files) + SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
  -->		<value condition="ListItem.IsParentFolder">-</value>
+			<value condition="ListItem.IsResumable">overlays/watched/resume.png</value>
 		<value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
  -->		<value>OverlayUnwatched.png</value>
 	</variable>
