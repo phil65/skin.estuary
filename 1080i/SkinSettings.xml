@@ -126,7 +126,7 @@
 						<width>1256</width>
 						<include>DefaultSettingButton</include>
 						<onclick>Skin.SetImage(custom_background)</onclick>
-						<enable>!Skin.HasSetting(use_custom_bg)</enable>
+						<enable>Skin.HasSetting(use_custom_bg)</enable>
 					</control>
 				</control>
 				<control type="grouplist" id="610">
