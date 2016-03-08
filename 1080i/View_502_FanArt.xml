@@ -223,40 +223,33 @@
 					<animation type="Visible">
 						<effect type="fade" start="0" end="100" delay="800" time="300" />
 					</animation>
-					<control type="image">
-						<left>30</left>
-						<top>664</top>
-						<width>32</width>
-						<height>32</height>
-						<texture>lists/rating.png</texture>
-						<visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
-					</control>
-					<control type="label">
-						<left>76</left>
-						<top>661</top>
-						<width>230</width>
-						<height>32</height>
-						<font>font12</font>
-						<label>$INFO[ListItem.RatingAndVotes]</label>
-					</control>
-					<control type="image">
-						<right>135</right>
-						<top>663</top>
-						<width>32</width>
-						<height>32</height>
-						<texture>lists/played-total.png</texture>
-						<visible>Stringcompare(Listitem.dbtype,tvshow)</visible>
-					</control>
-					<control type="label">
-						<right>197</right>
-						<top>667</top>
-						<width>800</width>
-						<height>20</height>
-						<font>font24_title</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$VAR[BannerLabel2Var]</label>
-					</control>
+				<control type="grouplist">
+					<top>660</top>
+					<left>40</left>
+					<orientation>horizontal</orientation>
+					<width>470</width>
+					<align>center</align>
+					<include name="InfoFlag">
+						<param name="visible" value="!IsEmpty(ListItem.Year) + IsEmpty(ListItem.Premiered)" />
+						<param name="icon" value="lists/year.png" />
+						<param name="label" value="$INFO[ListItem.Year]" />
+					</include>
+					<include name="InfoFlag">
+						<param name="visible" value="!IsEmpty(ListItem.duration)" />
+						<param name="icon" value="frame/clock.png" />
+						<param name="label" value="$INFO[ListItem.Duration,, min]" />
+					</include>
+					<include name="InfoFlag">
+						<param name="visible" value="!IsEmpty(ListItem.Property(TotalEpisodes))" />
+						<param name="icon" value="lists/played-total.png" />
+						<param name="label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
+					</include>
+					<include name="InfoFlag">
+						<param name="visible" value="!IsEmpty(ListItem.rating)" />
+						<param name="icon" value="lists/rating.png" />
+						<param name="label" value="$INFO[ListItem.Rating]" />
+					</include>
+				</control>
 					<control type="textbox">
 						<left>30</left>
 						<top>35</top>
