@@ -230,7 +230,7 @@
 					<width>470</width>
 					<align>center</align>
 					<include name="InfoFlag">
-						<param name="visible" value="!IsEmpty(ListItem.Year) + IsEmpty(ListItem.Premiered)" />
+						<param name="visible" value="!IsEmpty(ListItem.Year)" />
 						<param name="icon" value="lists/year.png" />
 						<param name="label" value="$INFO[ListItem.Year]" />
 					</include>
