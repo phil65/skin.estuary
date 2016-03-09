@@ -25,9 +25,7 @@
 			<include>MediaMenuCommon</include>
 			<control type="grouplist" id="9000">
 				<top>90</top>
-				<include name="MediaMenuListCommon">
-					<param name="viewtype_button_vis" value="False" />
-				</include>
+				<include>MediaMenuListCommon</include>
 				<control type="label" id="201">
 					<include>MediaMenuLabelCommon</include>
 					<label>$LOCALIZE[31021]</label>

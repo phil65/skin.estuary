@@ -194,9 +194,7 @@
 			<include>MediaMenuCommon</include>
 			<control type="grouplist" id="9000">
 				<top>90</top>
-				<include name="MediaMenuListCommon">
-					<param name="viewtype_button_vis" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(mixed) | Container.Content(musicvideos) | Container.Content(addons)" />
-				</include>
+				<include>MediaMenuListCommon</include>
 				<control type="button" id="10">
 					<description>Watched Toggle</description>
 					<include>MediaMenuItemsCommon</include>
