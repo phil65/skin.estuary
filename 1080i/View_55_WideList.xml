@@ -67,7 +67,7 @@
 						<height>63</height>
 						<width>960</width>
 						<aligny>center</aligny>
-						<font>font12</font>
+						<font>fontContextMenu</font>
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -129,7 +129,7 @@
 						<height>63</height>
 						<width>960</width>
 						<aligny>center</aligny>
-						<font>font12</font>
+						<font>fontContextMenu</font>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -195,7 +195,7 @@
 				<width>860</width>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<font>font12</font>
+				<font>fontContextMenu</font>
 				<label>$VAR[SongTitleVar]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -238,7 +238,7 @@
 				<height>63</height>
 				<width>960</width>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>fontContextMenu</font>
 				<label>$VAR[SongTitleVar]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -287,7 +287,7 @@
 				<width>820</width>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<font>font12</font>
+				<font>fontContextMenu</font>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
@@ -324,7 +324,7 @@
 				<width>820</width>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<font>font12</font>
+				<font>fontContextMenu</font>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">

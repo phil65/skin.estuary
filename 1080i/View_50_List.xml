@@ -57,7 +57,7 @@
 						<width>560</width>
 						<aligny>center</aligny>
 						<scroll>true</scroll>
-						<font>font12</font>
+						<font>fontContextMenu</font>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -106,7 +106,7 @@
 						<height>63</height>
 						<width>560</width>
 						<aligny>center</aligny>
-						<font>font12</font>
+						<font>fontContextMenu</font>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
