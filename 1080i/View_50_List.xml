@@ -171,6 +171,7 @@
 		<control type="group">
 			<visible>!Window.IsActive(addoninformation)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="fade" start="100" end="0" time="0" condition="Control.IsVisible(500) + Container.Content(addons)">Conditional</animation>
 			<control type="image">
 				<left>90</left>
 				<top>650</top>
