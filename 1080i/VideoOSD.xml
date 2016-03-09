@@ -244,16 +244,16 @@
 				</control>
 				<control type="slider">
 					<left>30</left>
-					<top>-20</top>
+					<top>-10</top>
 					<width>1858</width>
-					<height>50</height>
+					<height>30</height>
 					<onup>8010</onup>
 					<ondown>650</ondown>
 					<controloffsetx>75</controloffsetx>
 					<controloffsety>0</controloffsety>
-					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
-					<textureslidernib>osd/progress/nub_bar.png</textureslidernib>
-					<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
+					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+					<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
 					<info>Player.Progress</info>
 					<action>seek</action>
 					<visible>!Control.HasFocus(87)</visible>
@@ -264,23 +264,23 @@
 					 <top>42</top>
 					 <width>1858</width>
 					 <height>12</height>
-					 <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
-					 <textureslidernib>osd/progress/nub_bar.png</textureslidernib>
-					 <textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
+					 <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+					 <textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
+					 <textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
 					 <visible>Player.Seeking</visible>
 					 </control> -->
 				<control type="slider">
 					<left>30</left>
-					<top>-20</top>
+					<top>-10</top>
 					<width>1858</width>
-					<height>50</height>
+					<height>30</height>
 					<onup>8010</onup>
 					<ondown>650</ondown>
 					<controloffsetx>75</controloffsetx>
 					<controloffsety>0</controloffsety>
-					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
-					<textureslidernib colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernib>
-					<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
+					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+					<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
 					<info>Player.Progress</info>
 					<action>seek</action>
 					<visible>Control.HasFocus(87)</visible>
