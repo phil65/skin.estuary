@@ -101,6 +101,13 @@
 						<onclick>PlayerControl(Next)</onclick>
 						<visible>!VideoPlayer.Content(livetv) + IntegerGreaterThan(Playlist.Length(video),1)</visible>
 					</control>
+					<control type="radiobutton" id="804">
+						<include name="OSDButton">
+							<param name="texture" value="osd/fullscreen/buttons/home.png"/>
+						</include>
+						<onclick>PlayerControl(ShowVideoMenu)</onclick>
+						<visible>VideoPlayer.HasMenu</visible>
+					</control>
 					<control type="radiobutton" id="606">
 						<textureradioonfocus colordiffuse="button_focus">osd/fullscreen/buttons/record-white.png</textureradioonfocus>
 						<textureradioonnofocus>osd/fullscreen/buttons/record-white.png</textureradioonnofocus>
@@ -165,13 +172,6 @@
 						</include>
 						<onclick>ActivateWindow(videobookmarks)</onclick>
 						<visible>!VideoPlayer.Content(livetv)</visible>
-					</control>
-					<control type="radiobutton" id="804">
-						<include name="OSDButton">
-							<param name="texture" value="osd/fullscreen/buttons/home.png"/>
-						</include>
-						<onclick>PlayerControl(ShowVideoMenu)</onclick>
-						<visible>VideoPlayer.HasMenu</visible>
 					</control>
 					<control type="radiobutton" id="703">
 						<include name="OSDButton">
