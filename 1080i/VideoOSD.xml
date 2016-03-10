@@ -415,6 +415,7 @@
 						<width>470</width>
 						<include>DefaultSettingButton</include>
 						<label>$LOCALIZE[31004]</label>
+						<label2>$INFO[VideoPlayer.StereoscopicMode]</label2>
 						<onclick>StereoMode</onclick>
 					</control>
 					<control type="radiobutton" id="13103">
