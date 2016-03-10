@@ -279,12 +279,12 @@
 			</control>
 			<control type="group" id="11000">
 				<left>1400</left>
-				<top>583</top>
+				<top>520</top>
 				<visible>Control.hasFocus(70043) | ControlGroup(11000).HasFocus</visible>
 				<include>Visible_Right</include>
 				<control type="image">
 					<width>510</width>
-					<height>234</height>
+					<height>297</height>
 					<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				</control>
 				<control type="grouplist" id="11100">
@@ -315,6 +315,13 @@
 						<include>DefaultSettingButton</include>
 						<label>$LOCALIZE[15020]</label>
 						<onclick>ActivateWindow(AudioDSPManager)</onclick>
+					</control>
+					<control type="button" id="11104">
+						<width>470</width>
+						<include>DefaultSettingButton</include>
+						<label>$LOCALIZE[31112]</label>
+						<label2>[COLOR button_focus]$INFO[VideoPlayer.AudioLanguage][/COLOR]</label2>
+						<onclick>AudioNextLanguage</onclick>
 					</control>
 				</control>
 			</control>
@@ -360,7 +367,7 @@
 						<width>470</width>
 						<include>DefaultSettingButton</include>
 						<label>$LOCALIZE[31051]</label>
-						<label2>$INFO[VideoPlayer.SubtitlesLanguage]</label2>
+						<label2>[COLOR button_focus]$INFO[VideoPlayer.SubtitlesLanguage][/COLOR]</label2>
 						<onclick>CycleSubtitle</onclick>
 						<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
 					</control>
