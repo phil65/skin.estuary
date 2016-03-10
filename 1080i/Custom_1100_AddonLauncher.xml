@@ -5,7 +5,7 @@
 		<include>DefaultBackground</include>
 		<control type="group">
 			<left>90</left>
-			<top>180</top>
+			<top>185</top>
 			<include>OpenClose_Left</include>
 			<control type="image">
 				<left>-20</left>
@@ -127,7 +127,7 @@
 					</item>
 					<item id="5">
 						<label>$LOCALIZE[1039]</label>
-						<onclick>ActivateWindow(programs,addons://sources/picture/,return)</onclick>
+						<onclick>ActivateWindow(programs,addons://sources/image/,return)</onclick>
 						<thumb>icons/settings/pictures.png</thumb>
 						<property name="id">picture</property>
 						<property name="path">addons://sources/executable/</property>
@@ -145,7 +145,7 @@
 			<orientation>horizontal</orientation>
 			<itemgap>-22</itemgap>
 			<left>70</left>
-			<top>790</top>
+			<top>795</top>
 			<onup>SetFocus(9000,99)</onup>
 			<onup>9000</onup>
 			<ondown>14200</ondown>
