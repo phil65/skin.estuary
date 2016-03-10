@@ -353,7 +353,7 @@
 					<include>DefaultSettingButton</include>
 					<label>$LOCALIZE[22006]</label>
 					<onclick>SubtitleDelay</onclick>
-					<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+					<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
 				</control>
 				<control type="button" id="12103">
 					<width>470</width>
@@ -361,7 +361,7 @@
 					<label>$LOCALIZE[31051]</label>
 					<label2>$INFO[VideoPlayer.SubtitlesLanguage]</label2>
 					<onclick>CycleSubtitle</onclick>
-					<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+					<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
 				</control>
 				<control type="radiobutton" id="12104">
 					<width>470</width>
@@ -369,8 +369,8 @@
 					<label>$LOCALIZE[449]</label>
 					<radioposx>350</radioposx>
 					<onclick>ShowSubtitles</onclick>
-					<selected>VideoPlayer.SubtitlesEnabled</selected>
-					<visible>VideoPlayer.HasSubtitles</visible>
+					<selected>VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles</selected>
+					<enable>VideoPlayer.HasSubtitles</enable>
 				</control>
 			</control>
 		</control>
