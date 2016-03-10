@@ -76,7 +76,7 @@
 							<height>58</height>
 							<width>800</width>
 							<aligny>center</aligny>
-							<font>font12</font>
+							<font>fontContextMenu</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -132,7 +132,7 @@
 							<height>58</height>
 							<width>800</width>
 							<aligny>center</aligny>
-							<font>font12</font>
+							<font>fontContextMenu</font>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
