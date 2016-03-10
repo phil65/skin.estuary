@@ -235,9 +235,8 @@
 					</control>
 					<control type="button" id="87">
 						<include>HiddenObject</include>
-						<onup condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onup>
 						<onup>201</onup>
-						<ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
+						<onunfocus condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onunfocus>
 						<ondown>201</ondown>
 						<onright>PlayerControl(Forward)</onright>
 						<onleft>PlayerControl(Rewind)</onleft>
