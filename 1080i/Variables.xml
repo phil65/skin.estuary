@@ -145,6 +145,11 @@
 		<value condition="Player.HasVideo">$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</value>
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</value>
 	</variable>
+	<variable name="ResolutionFlagVar">
+		<value condition="ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
+		<value condition="IntegerGreaterThan(ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
+		<value>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</value>
+	</variable>
 	<variable name="BannerVar">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value>$INFO[ListItem.Art(tvshow.banner)]</value>
@@ -218,11 +223,6 @@
 		<value condition="player.passthrough">dialogs/volume/volume.png</value>
 		<value condition="Player.Muted">dialogs/volume/mute.png</value>
 		<value>dialogs/volume/volume1.png</value>
-	</variable>
-	<variable name="MediaInfoOverlayVar">
-		<value condition="ListItem.IsCollection">icons/lists/Set.png</value>
-		<value condition="ListItem.IsStereoscopic">icons/lists/3D.png</value>
-		<value>$INFO[ListItem.VideoResolution,icons/lists/,.png]</value>
 	</variable>
 	<variable name="ListSubLabelVar">
 		<value condition="ListItem.IsCollection">$INFO[Container(5000).NumItems]</value>
