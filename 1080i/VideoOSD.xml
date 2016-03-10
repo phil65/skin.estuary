@@ -187,8 +187,8 @@
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/stereoscopic.png"/>
 					</include>
-<!-- 					<visible>VideoPlayer.IsStereoscopic</visible>
- -->				</control>
+					<visible>VideoPlayer.IsStereoscopic</visible>
+				</control>
 				<control type="radiobutton" id="70043">
 					<include name="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/settings.png"/>
