@@ -26,6 +26,19 @@
 		<value condition="Window.IsActive(musicplaylist)">$INFO[ListItem.Duration]</value>
 		<value>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 	</variable>
+	<variable name="AddonCountLabel">
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,10)">&gt;9</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,9)">9</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,8)">8</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,7)">7</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,6)">6</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,5)">5</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,4)">4</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,3)">3</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,2)">2</value>
+		<value condition="IntegerGreaterThan(Container(8000).NumItems,1)">1</value>
+		<value>[COLOR grey]0[/COLOR]</value>
+	</variable>
 	<variable name="MusicInfoTextboxVar">
 		<value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole,[B]$LOCALIZE[31128][/B][CR][COLOR=white],[/COLOR]]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description),[B]$LOCALIZE[183][/B][CR][COLOR=white],[/COLOR]]</value>

@@ -95,7 +95,7 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Window.IsActive(eventlog) | Window.IsActive(home)</visible>
+			<visible>Window.IsActive(eventlog) | Window.IsActive(home) | Window.IsActive(1100)</visible>
 			<include>Visible_Left</include>
 			<include>ListThumbInfoPanel</include>
 		</control>
