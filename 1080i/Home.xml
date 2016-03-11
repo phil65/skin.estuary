@@ -743,6 +743,8 @@
 							<top>215</top>
 							<left>540</left>
 							<orientation>horizontal</orientation>
+							<align>justify</align>
+							<itemgap>-50</itemgap>
 							<include name="WeatherIcon">
 								<param name="label" value="Window(weather).Property(Current.Wind)" />
 								<param name="texture" value="icons/weather/wind.png" />
