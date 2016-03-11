@@ -259,6 +259,8 @@
 		<value condition="!IsEmpty(Container(501).ListItem.Art(fanart)) + Control.HasFocus(501)">$INFO[Container(501).ListItem.Art(fanart)]</value>
 		<value condition="!IsEmpty(Container(502).ListItem.Art(fanart)) + Control.HasFocus(502)">$INFO[Container(502).ListItem.Art(fanart)]</value>
 		<value condition="!IsEmpty(Container(503).ListItem.Art(fanart)) + Control.HasFocus(503)">$INFO[Container(503).ListItem.Art(fanart)]</value>
+		<value condition="!IsEmpty(Container(504).ListItem.Art(fanart)) + Control.HasFocus(504)">$INFO[Container(504).ListItem.Art(fanart)]</value>
+		<value condition="!IsEmpty(Container(505).ListItem.Art(fanart)) + Control.HasFocus(505)">$INFO[Container(505).ListItem.Art(fanart)]</value>
 		<value>-</value>
 	</variable>
 	<variable name="HomeFanartVar">
