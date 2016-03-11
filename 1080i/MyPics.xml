@@ -243,6 +243,8 @@
 			<param name="breadcrumbs_label" value="$LOCALIZE[1213]" />
 			<param name="breadcrumbs_icon" value="icons/settings/pictures.png" />
 		</include>
-		<include>BottomBar</include>
+		<include name="BottomBar">
+			<param name="info_visible" value="true" />
+		</include>
 	</controls>
 </window>

@@ -264,6 +264,8 @@
 			<param name="breadcrumbs_label" value="$VAR[BreadcrumbsVideoVar]" />
 			<param name="breadcrumbs_icon" value="icons/settings/video.png" />
 		</include>
-		<include>BottomBar</include>
+		<include name="BottomBar">
+			<param name="info_visible" value="true" />
+		</include>
 	</controls>
 </window>
