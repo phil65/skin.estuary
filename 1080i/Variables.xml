@@ -253,6 +253,14 @@
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season,[COLOR button_focus]S,[/COLOR]]$INFO[VideoPlayer.Episode,[COLOR button_focus]E,: [/COLOR]]$INFO[VideoPlayer.TVShowTitle]</value>
 		<value>$INFO[VideoPlayer.Genre]</value>
 	</variable>
+	<variable name="AddonsFanartVar">
+		<value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
+		<value condition="!IsEmpty(Container(500).ListItem.Art(fanart)) + Control.HasFocus(500)">$INFO[Container(500).ListItem.Art(fanart)]</value>
+		<value condition="!IsEmpty(Container(501).ListItem.Art(fanart)) + Control.HasFocus(501)">$INFO[Container(501).ListItem.Art(fanart)]</value>
+		<value condition="!IsEmpty(Container(502).ListItem.Art(fanart)) + Control.HasFocus(502)">$INFO[Container(502).ListItem.Art(fanart)]</value>
+		<value condition="!IsEmpty(Container(503).ListItem.Art(fanart)) + Control.HasFocus(503)">$INFO[Container(503).ListItem.Art(fanart)]</value>
+		<value>-</value>
+	</variable>
 	<variable name="HomeFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
 		<value condition="!IsEmpty(Container(5100).ListItem.Art(fanart)) + Control.HasFocus(5100)">$INFO[Container(5100).ListItem.Art(fanart)]</value>
