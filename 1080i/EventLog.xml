@@ -79,19 +79,19 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="116" width="1260">
+					<itemlayout height="90" width="1260">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1260</width>
-							<height>116</height>
+							<height>90</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>5</left>
 							<top>5</top>
-							<width>105</width>
-							<height>105</height>
+							<width>80</width>
+							<height>80</height>
 							<texture border="4" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>scale</aspectratio>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
@@ -101,25 +101,26 @@
 							<left>125</left>
 							<top>0</top>
 							<width>870</width>
-							<height>50</height>
+							<height>35</height>
 							<aligny>center</aligny>
-							<label>[B]$INFO[ListItem.Label][/B]</label>
+							<font>font12</font>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="textbox">
 							<left>125</left>
-							<top>40</top>
+							<top>34</top>
 							<width>870</width>
-							<height>70</height>
-							<font>font10</font>
+							<height>60</height>
+							<font>font10_title</font>
 							<textcolor>grey</textcolor>
-							<aligny>center</aligny>
+							<aligny>top</aligny>
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label">
 							<left>125</left>
 							<top>0</top>
 							<width>1120</width>
-							<height>50</height>
+							<height>35</height>
 							<font>font12</font>
 							<textcolor>button_focus</textcolor>
 							<align>right</align>
@@ -127,12 +128,12 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="116" width="1260">
+					<focusedlayout height="90" width="1260">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1260</width>
-							<height>116</height>
+							<height>90</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 							<visible>!Control.HasFocus(50)</visible>
 						</control>
@@ -140,15 +141,15 @@
 							<left>0</left>
 							<top>0</top>
 							<width>1260</width>
-							<height>116</height>
+							<height>90</height>
 							<texture>lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
 						<control type="image">
 							<left>5</left>
 							<top>5</top>
-							<width>105</width>
-							<height>105</height>
+							<width>80</width>
+							<height>80</height>
 							<texture border="4" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>scale</aspectratio>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
@@ -158,25 +159,26 @@
 							<left>125</left>
 							<top>0</top>
 							<width>870</width>
-							<height>50</height>
+							<height>35</height>
 							<aligny>center</aligny>
-							<label>[B]$INFO[ListItem.Label][/B]</label>
+							<font>font12</font>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="textbox">
 							<left>125</left>
-							<top>40</top>
+							<top>34</top>
 							<width>870</width>
-							<height>70</height>
-							<font>font10</font>
+							<height>60</height>
+							<font>font10_title</font>
 							<textcolor>grey</textcolor>
-							<aligny>center</aligny>
+							<aligny>top</aligny>
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label">
 							<left>125</left>
 							<top>0</top>
 							<width>1120</width>
-							<height>50</height>
+							<height>35</height>
 							<font>font12</font>
 							<textcolor>button_focus</textcolor>
 							<align>right</align>
