@@ -610,52 +610,6 @@
 			<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[container_target]">$PARAM[container_path]</content>
 		</control>
 	</include>
-	<include name="PlaylistWindowButtons">
-		<param name="width">350</param>
-		<definition>
-			<control type="group">
-				<include>OpenClose_Left</include>
-				<control type="grouplist" id="700">
-					<orientation>vertical</orientation>
-					<itemgap>-9</itemgap>
-					<left>100</left>
-					<top>165</top>
-					<onup>700</onup>
-					<ondown>700</ondown>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<include name="PlaylistWindowButton">
-						<param name="control_id" value="20" />
-						<param name="onclick" value="" />
-						<param name="label" value="$LOCALIZE[191]$INFO[Playlist.Random, : ]" />
-						<param name="icon" value="osd/fullscreen/buttons/random-on.png" />
-						<param name="width" value="$PARAM[width]" />
-					</include>
-					<include name="PlaylistWindowButton">
-						<param name="control_id" value="26" />
-						<param name="onclick" value="" />
-						<param name="label" value="" />
-						<param name="icon" value="osd/fullscreen/buttons/repeat-all.png" />
-						<param name="width" value="$PARAM[width]" />
-					</include>
-					<include name="PlaylistWindowButton">
-						<param name="control_id" value="21" />
-						<param name="onclick" value="" />
-						<param name="label" value="$LOCALIZE[190]" />
-						<param name="icon" value="icons/playlist/save.png" />
-						<param name="width" value="$PARAM[width]" />
-					</include>
-					<include name="PlaylistWindowButton">
-						<param name="control_id" value="22" />
-						<param name="onclick" value="" />
-						<param name="label" value="$LOCALIZE[192]" />
-						<param name="icon" value="DefaultIconError.png" />
-						<param name="width" value="$PARAM[width]" />
-					</include>
-				</control>
-			</control>
-		</definition>
-	</include>
 	<include name="InfoDialogTopBarInfo">
 		<param name="id">33333</param>
 		<definition>
