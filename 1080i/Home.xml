@@ -145,7 +145,7 @@
 				</control>
 			</control>
 			<control type="group" id="6000">
-				<visible>Stringcompare(Container(9000).ListItem.Property(id),tv)</visible>
+				<visible>Stringcompare(Container(9000).ListItem.Property(id),tvshows)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="button" id="6888">
 					<width>1</width>
@@ -464,7 +464,7 @@
 				</control>
 			</control>
 			<control type="group" id="11000">
-				<visible>Stringcompare(Container(9000).ListItem.Property(id),videos)</visible>
+				<visible>Stringcompare(Container(9000).ListItem.Property(id),video)</visible>
 				<include>Visible_Right_Delayed</include>
 				<control type="button" id="11888">
 					<width>1</width>
@@ -1052,7 +1052,7 @@
 							<onclick condition="Library.HasContent(tvshows)">ActivateWindow(Videos,TVShowTitles,return)</onclick>
 							<onclick condition="!Library.HasContent(tvshows)">ActivateWindow(Videos,Files,return)</onclick>
 							<thumb>icons/home/tv.png</thumb>
-							<property name="id">tv</property>
+							<property name="id">tvshows</property>
 							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
 						</item>
 						<item>
@@ -1095,7 +1095,7 @@
 							<label>$LOCALIZE[3]</label>
 							<onclick>ActivateWindow(Videos,root)</onclick>
 							<thumb>icons/home/videos.png</thumb>
-							<property name="id">videos</property>
+							<property name="id">video</property>
 							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 						</item>
 						<item>

@@ -288,6 +288,7 @@
 		<value condition="!IsEmpty(Container(8500).ListItem.Art(fanart)) + Control.HasFocus(8500)">$INFO[Container(8500).ListItem.Art(fanart)]</value>
 		<value condition="!IsEmpty(Container(15100).ListItem.Property(FanartCode)) + Control.HasFocus(15100)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15100).ListItem.Property(FanartCode)]</value>
 		<value condition="!IsEmpty(Container(15200).ListItem.Property(FanartCode)) + Control.HasFocus(15200)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15200).ListItem.Property(FanartCode)]</value>
+		<value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(id)]$INFO[Skin.String(HomeFanart.ext)]</value>
 		<value>-</value>
 	</variable>
 	<variable name="MediaFanartVar">
