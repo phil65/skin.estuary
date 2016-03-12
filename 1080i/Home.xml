@@ -908,10 +908,10 @@
 					<height>671</height>
 					<pagecontrol>70</pagecontrol>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),movies) + Control.IsVisible(5000)">5000</onright>
-					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),tv) + Control.IsVisible(6000)">6000</onright>
+					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),tvshows) + Control.IsVisible(6000)">6000</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),music) + Control.IsVisible(7000)">7000</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),addons) + Control.IsVisible(8000)">8000</onright>
-					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),videos) + Control.IsVisible(11000)">11000</onright>
+					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),video) + Control.IsVisible(11000)">11000</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),livetv) + Control.IsVisible(12000)">12000</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),radio) + Control.IsVisible(13000)">13000</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),weather) + Control.IsVisible(15000)">15000</onright>
