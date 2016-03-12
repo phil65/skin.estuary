@@ -71,7 +71,7 @@
 					<left>230</left>
 					<top>182</top>
 					<width>1260</width>
-					<height>9000</height>
+					<height>700</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
 					<onup>50</onup>
@@ -79,12 +79,12 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="115" width="1260">
+					<itemlayout height="116" width="1260">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1260</width>
-							<height>115</height>
+							<height>116</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
 						<control type="image">
@@ -127,12 +127,12 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="115" width="1260">
+					<focusedlayout height="116" width="1260">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1260</width>
-							<height>115</height>
+							<height>116</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 							<visible>!Control.HasFocus(50)</visible>
 						</control>
@@ -140,7 +140,7 @@
 							<left>0</left>
 							<top>0</top>
 							<width>1260</width>
-							<height>115</height>
+							<height>116</height>
 							<texture>lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
