@@ -39,7 +39,7 @@
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),video) + Control.IsVisible(500)">500</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),music) + Control.IsVisible(501)">501</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),addons) + Control.IsVisible(502)">502</onright>
-					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),picture) + Control.IsVisible(503)">503</onright>
+					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),pictures) + Control.IsVisible(503)">503</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),outdated) + Control.IsVisible(504)">504</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),android) + Control.IsVisible(506)">506</onright>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
