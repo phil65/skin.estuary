@@ -38,7 +38,7 @@
 					<ondown>700</ondown>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),video) + Control.IsVisible(500)">500</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),music) + Control.IsVisible(501)">501</onright>
-					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),program) + Control.IsVisible(502)">502</onright>
+					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),addons) + Control.IsVisible(502)">502</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),picture) + Control.IsVisible(503)">503</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),outdated) + Control.IsVisible(504)">504</onright>
 					<onright condition="Stringcompare(Container(9000).ListItem.Property(id),android) + Control.IsVisible(506)">506</onright>
@@ -141,7 +141,7 @@
 						</item>
 						<item id="5">
 							<label>$LOCALIZE[1039]</label>
-							<onclick>ActivateWindow(programs,addons://sources/image/,return)</onclick>
+							<onclick>ActivateWindow(pictures,addons://sources/image/,return)</onclick>
 							<thumb>icons/settings/pictures.png</thumb>
 							<property name="id">pictures</property>
 							<property name="path">addons://sources/executable/</property>
