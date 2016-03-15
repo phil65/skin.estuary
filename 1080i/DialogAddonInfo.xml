@@ -5,14 +5,14 @@
 		<control type="group">
 			<include>OpenClose_Right</include>
 			<control type="button">
-				<left>815</left>
+				<left>840</left>
 				<top>162</top>
 				<width>1000</width>
 				<height>509</height>
 				<label>-</label>
 			</control>
 			<control type="label">
-				<left>865</left>
+				<left>890</left>
 				<top>200</top>
 				<width>900</width>
 				<height>396</height>
@@ -22,15 +22,15 @@
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="grouplist" id="9000">
-				<left>88</left>
+				<left>90</left>
 				<top>770</top>
-				<width>1920</width>
+				<width>1740</width>
 				<height>768</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<align>left</align>
+				<align>center</align>
 				<itemgap>-18</itemgap>
 				<orientation>horizontal</orientation>
 				<include name="InfoDialogButton">
@@ -59,6 +59,7 @@
 					<radioposy>14</radioposy>
 					<radiowidth>100</radiowidth>
 					<font>font12</font>
+					<visible>Control.IsEnabled(13)</visible>
 				</control>
 				<include name="InfoDialogButton">
 					<param name="id" value="10" />
