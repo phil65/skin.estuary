@@ -68,8 +68,8 @@
 				</include>
 				<include name="InfoDialogToggleButton">
 					<param name="id" value="7" />
-					<param name="icon_on" value="icons/infodialogs/enabled.png" />
-					<param name="icon_off" value="icons/infodialogs/disable.png" />
+					<param name="icon_on" value="icons/infodialogs/disable.png" />
+					<param name="icon_off" value="icons/infodialogs/enabled.png" />
 					<param name="selected" value="ListItem.Property(addon.isenabled)" />
 					<param name="label" value="" />
 				</include>
