@@ -98,7 +98,6 @@
 						<param name="widget_header" value="$LOCALIZE[31010]"/>
 						<param name="widget_target" value="videos"/>
 						<param name="list_id" value="5100"/>
-						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5100).ListItem.Dbid])"/>
 						<param name="onup_id" value="5900"/>
 						<param name="ondown_id" value="5200"/>
 					</include>
@@ -107,7 +106,6 @@
 						<param name="widget_header" value="$LOCALIZE[20386]"/>
 						<param name="widget_target" value="videos"/>
 						<param name="list_id" value="5200"/>
-						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5200).ListItem.Dbid])"/>
 						<param name="onup_id" value="5100"/>
 						<param name="ondown_id" value="5300"/>
 					</include>
@@ -116,7 +114,6 @@
 						<param name="widget_header" value="$LOCALIZE[31007]"/>
 						<param name="widget_target" value="videos"/>
 						<param name="list_id" value="5300"/>
-						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5300).ListItem.Dbid])"/>
 						<param name="onup_id" value="5200"/>
 						<param name="ondown_id" value="5400"/>
 					</include>
@@ -125,7 +122,6 @@
 						<param name="widget_header" value="$LOCALIZE[31006]"/>
 						<param name="widget_target" value="videos"/>
 						<param name="list_id" value="5400"/>
-						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[Container(5400).ListItem.Dbid])"/>
 						<param name="onup_id" value="5300"/>
 						<param name="ondown_id" value="20001"/>
 					</include>
@@ -200,7 +196,6 @@
 						<param name="widget_target" value="videos"/>
 						<param name="second_label" value="$LOCALIZE[16102]: $INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ]" />
 						<param name="list_id" value="6100"/>
-						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[Container(6100).ListItem.Dbid])"/>
 						<param name="onup_id" value="6900"/>
 						<param name="ondown_id" value="6200"/>
 					</include>
@@ -211,7 +206,6 @@
 						<param name="widget_target" value="videos"/>
 						<param name="second_label" value="[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]" />
 						<param name="list_id" value="6200"/>
-						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Container(6200).ListItem.TvShowTitle],season=$INFO[Container(6200).ListItem.season],episode=$INFO[Container(6200).ListItem.episode])"/>
 						<param name="onup_id" value="6100"/>
 						<param name="ondown_id" value="6300"/>
 					</include>
@@ -222,7 +216,6 @@
 						<param name="widget_target" value="videos"/>
 						<param name="second_label" value="$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)]" />
 						<param name="list_id" value="6300"/>
-						<param name="list_oninfo" value="RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[Container(6300).ListItem.Dbid])"/>
 						<param name="onup_id" value="6200"/>
 						<param name="ondown_id" value="20001"/>
 					</include>

@@ -183,7 +183,6 @@
 				<top>60</top>
 				<width>1385</width>
 				<height>400</height>
-				<oninfo>$PARAM[list_oninfo]</oninfo>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>horizontal</orientation>
 				<onleft>9000</onleft>
@@ -424,7 +423,6 @@
 					<onup>Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-					<oninfo>$PARAM[list_oninfo]</oninfo>]
 					<ondown>$PARAM[ondown_id]</ondown>
 					<onback>SetFocus(9000)</onback>
 					<preloaditems>1</preloaditems>
