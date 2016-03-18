@@ -163,7 +163,7 @@
 						<aspectratio align="center" aligny="top">keep</aspectratio>
 						<fadetime>400</fadetime>
 						<texture>$INFO[ListItem.PlotOutline]</texture>
-						<visible>SubString(ListItem.PlotOutline,http://,Left) | SubString(ListItem.PlotOutline,https://,Left)</visible>
+						<visible>String.StartsWith(ListItem.PlotOutline,http://) | String.StartsWith(ListItem.PlotOutline,https://)</visible>
 					</control>
 					<control type="image">
 						<left>125</left>

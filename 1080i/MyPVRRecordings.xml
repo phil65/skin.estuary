@@ -215,7 +215,7 @@
 				<label>$INFO[PVR.backenddiskspace]</label>
 				<shadowcolor>black</shadowcolor>
 				<font>font12</font>
-				<visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
+				<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
 			</control>
 			<control type="progress">
 				<description>Disk usage bar</description>
@@ -224,7 +224,7 @@
 				<width>100</width>
 				<height>12</height>
 				<info>PVR.backenddiskspaceprogr</info>
-				<visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
+				<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
 			</control>
 			<control type="group">
 				<visible>ListItem.IsFolder</visible>

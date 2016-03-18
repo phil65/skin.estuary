@@ -90,7 +90,7 @@
 							<width>32</width>
 							<height>32</height>
 							<texture>lists/played-total.png</texture>
-							<visible>Stringcompare(Listitem.dbtype,tvshow)</visible>
+							<visible>String.IsEqual(Listitem.dbtype,tvshow)</visible>
 						</control>
 						<control type="label">
 							<left>514</left>
@@ -100,7 +100,7 @@
 							<font>font24_title</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<visible>Stringcompare(Listitem.dbtype,movie)</visible>
+							<visible>String.IsEqual(Listitem.dbtype,movie)</visible>
 							<label>$INFO[ListItem.Year]</label>
 						</control>
 					</itemlayout>
@@ -183,7 +183,7 @@
 									<font>font24_title</font>
 									<align>right</align>
 									<aligny>center</aligny>
-									<visible>Stringcompare(Listitem.dbtype,movie)</visible>
+									<visible>String.IsEqual(Listitem.dbtype,movie)</visible>
 									<label>$INFO[ListItem.Year]</label>
 								</control>
 							</control>
