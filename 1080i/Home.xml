@@ -862,7 +862,8 @@
 				<aligny>center</aligny>
 				<onclick>ActivateWindow(1107)</onclick>
 				<font>font14</font>
-				<label>-</label>
+				<label>$LOCALIZE[31001]...</label>
+				<textwidth>300</textwidth>
 				<radioposx>338</radioposx>
 				<textoffsetx>40</textoffsetx>
 				<radioposy>0</radioposy>
@@ -872,17 +873,6 @@
 				<textureradioonnofocus>icons/search.png</textureradioonnofocus>
 				<textureradioofffocus>icons/search.png</textureradioofffocus>
 				<textureradiooffnofocus>icons/search.png</textureradiooffnofocus>
-			</control>
-			<control type="label">
-				<left>77</left>
-				<top>91</top>
-				<width>520</width>
-				<height>110</height>
-				<aligny>center</aligny>
-				<font>font14</font>
-				<scrollout>false</scrollout>
-				<pauseatend>5000</pauseatend>
-				<label>$LOCALIZE[31001]...</label>
 			</control>
 			<control type="group">
 				<left>53</left>
