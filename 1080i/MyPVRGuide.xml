@@ -329,19 +329,19 @@
 					<param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
 				</include>
 			</control>
-		<control type="group">
-			<include>MediaMenuCommon</include>
-			<include name="PVRSideBar">
-				<param name="group_label2" value="$INFO[Control.GetLabel(30)]" />
+			<control type="group">
+				<include>MediaMenuCommon</include>
+				<include name="PVRSideBar">
+					<param name="group_label2" value="$INFO[Control.GetLabel(30)]" />
+				</include>
+			</control>
+			<include name="TopBar">
+				<param name="breadcrumbs_label" value="$INFO[Control.GetLabel(29)] - $INFO[Control.GetLabel(30)]" />
+				<param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
 			</include>
-		</control>
-		<include name="TopBar">
-			<param name="breadcrumbs_label" value="$INFO[Control.GetLabel(29)] - $INFO[Control.GetLabel(30)]" />
-			<param name="breadcrumbs_icon" value="icons/settings/tvguide.png" />
-		</include>
-		<include name="BottomBar">
-			<param name="PageLabel" value="$INFO[Container.NumItems,$LOCALIZE[19019]: ]" />
-		</include>
+			<include name="BottomBar">
+				<param name="PageLabel" value="$INFO[Container.NumItems,$LOCALIZE[19019]: ]" />
+			</include>
 		</control>
 		<control type="label" id="29">
 			<font>-</font>
