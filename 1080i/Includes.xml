@@ -883,6 +883,11 @@
 						<include>BreadcrumbsLabel</include>
 					</control>
 					<control type="label">
+						<label>$INFO[Container.ShowTitle, / ]</label>
+						<include>BreadcrumbsLabel</include>
+						<visible>!IsEmpty(Container.ShowTitle) + !String.IsEqual(Container.ShowTitle,Container.FolderName)</visible>
+					</control>
+					<control type="label">
 						<label>$INFO[Container.FolderName, / ]</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>![Container.Content() + Window.IsActive(videos)]</visible>
