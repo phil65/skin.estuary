@@ -18,6 +18,20 @@
 		<radioposx>0</radioposx>
 		<radioposy>0</radioposy>
 	</include>
+	<include name="InfoDialogMetadata">
+		<control type="button" id="$PARAM[control_id]">
+			<width>505</width>
+			<height>45</height>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<font>font10</font>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>noop</onclick>
+			<label>$PARAM[label]</label>
+			<visible>$PARAM[visible]</visible>
+		</control>
+	</include>
 	<include name="DefaultSettingButton">
 		<param name="height">63</param>
 		<param name="textoffsetx">40</param>

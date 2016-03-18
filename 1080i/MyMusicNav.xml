@@ -7,7 +7,7 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>CommonScrollbars</include>
-		<control type="group" id="100">
+		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(musicinformation) | Window.IsActive(songinformation)">Conditional</animation>
 			<include>View_50_List</include>
 			<include>View_52_IconWall</include>
@@ -15,17 +15,15 @@
 			<include>View_54_InfoWall</include>
 			<include>View_55_WideList</include>
 			<include>View_500_SmallThumb</include>
-		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Control.IsVisible(50) | Control.IsVisible(55) | Window.IsActive(musicinformation) | [Control.IsVisible(500) + Window.IsActive(addoninformation)]</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(55)| [Control.IsVisible(500) + Window.IsActive(addoninformation)]</visible>
 			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files) | Container.Content(directors)</visible>
 			<include>Visible_Left</include>
 			<include>ListThumbInfoPanel</include>
 		</control>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(musicinformation) | Window.IsActive(addoninformation)">Conditional</animation>
 			<visible>[Control.IsVisible(50) | Control.Isvisible(54)] + !IsEmpty(ListItem.DBID)</visible>
 			<include>Visible_Right</include>
 			<visible>Container.Content(albums) | Container.Content(artists)</visible>
@@ -122,5 +120,6 @@
 		<include name="BottomBar">
 			<param name="info_visible" value="true" />
 		</include>
+		</control>
 	</controls>
 </window>

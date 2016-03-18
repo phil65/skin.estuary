@@ -9,6 +9,7 @@
 		<control type="group">
 			<left>110</left>
 			<top>180</top>
+			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)">Conditional</animation>
 			<include>OpenClose_Left</include>
 			<control type="image">
 				<description>background image</description>
@@ -18,7 +19,6 @@
 				<height>746</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
-			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)">Conditional</animation>
 			<control type="list" id="50">
 				<left>2</left>
 				<top>3</top>

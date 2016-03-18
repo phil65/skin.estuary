@@ -7,7 +7,7 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>CommonScrollbars</include>
-		<control type="group" id="100">
+		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation)">Conditional</animation>
 			<include>View_50_List</include>
 			<include>View_52_IconWall</include>
@@ -17,7 +17,7 @@
 		<control type="group">
 			<include>OpenClose_Left</include>
 			<include>Visible_Left</include>
-			<visible>Control.IsVisible(55) | Window.IsActive(addoninformation)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<include>ListThumbInfoPanel</include>
 		</control>
 		<include>MediaMenuMouseOverlay</include>
@@ -45,15 +45,16 @@
 					<onclick>ActivateWindow(addonbrowser,addons://more/executable/,return)</onclick>
 					<visible>Container.Content(addons)</visible>
 				</control>
+				</control>
+				<include>MediaMenuNowPlaying</include>
 			</control>
-			<include>MediaMenuNowPlaying</include>
-		</control>
-		<include name="TopBar">
-			<param name="breadcrumbs_label" value="$LOCALIZE[10001]" />
-			<param name="breadcrumbs_icon" value="icons/settings/addons.png" />
-		</include>
+			<include name="TopBar">
+				<param name="breadcrumbs_label" value="$LOCALIZE[10001]" />
+				<param name="breadcrumbs_icon" value="icons/settings/addons.png" />
+			</include>
 		<include name="BottomBar">
 			<param name="info_visible" value="true" />
 		</include>
+		</control>
 	</controls>
 </window>
