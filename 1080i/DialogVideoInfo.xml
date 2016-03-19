@@ -199,7 +199,7 @@
 				<include name="InfoDialogMetadata">
 					<param name="control_id" value="154" />
 					<param name="label" value="[COLOR button_focus]$LOCALIZE[31048]: [/COLOR]$INFO[ListItem.Season,, $LOCALIZE[36905]]$INFO[ListItem.Episode, (, $LOCALIZE[20453])]" />
-					<param name="visible" value="!IsEmpty(ListItem.Season)" />
+					<param name="visible" value="!IsEmpty(ListItem.Season) + !Stringcompare(ListItem.DBType,episode)" />
 				</include>
 				<include name="InfoDialogMetadata">
 					<param name="control_id" value="155" />
