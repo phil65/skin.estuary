@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1102">
-	<defaultcontrol always="true">3000</defaultcontrol>
+	<defaultcontrol always="true">1000</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="group">
@@ -27,6 +27,12 @@
 				<ondown>3000</ondown>
 				<onup>3000</onup>
 			</control>
+		</control>
+		<control type="button" id="1000">
+			<include>HiddenObject</include>
+			<onclick>Action(Close)</onclick>
+			<onup>PageUp(3000)</onup>
+			<ondown>PageDown(3000)</ondown>
 		</control>
 		<control type="button">
 			<left>936</left>
