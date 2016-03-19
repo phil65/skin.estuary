@@ -66,7 +66,7 @@
 		<control type="group">
 			<top>184</top>
 			<left>70</left>
-			<visible>Container.Content(mixed)</visible>
+			<visible>Stringcompare(ListItem.DBType,musicvideo)</visible>
 			<include>OpenClose_Left</include>
 			<control type="image">
 				<width>526</width>
