@@ -398,7 +398,7 @@
 	</include>
 	<include name="MediaFlags">
 		<top>898</top>
-		<visible>Skin.HasSetting(show_mediaflags) | Window.IsActive(movieinformation)</visible>
+		<visible>Skin.HasSetting(show_mediaflags)</visible>
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<control type="grouplist">
 			<orientation>horizontal</orientation>

@@ -17,7 +17,7 @@
 			<include>View_500_SmallThumb</include>
 			<control type="group">
 				<include>OpenClose_Left</include>
-				<visible>Control.IsVisible(50) | Control.IsVisible(55)| [Control.IsVisible(500) + Window.IsActive(addoninformation)]</visible>
+				<visible>Control.IsVisible(50) | Control.IsVisible(55)</visible>
 				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files) | Container.Content(directors)</visible>
 				<include>Visible_Left</include>
 				<include>ListThumbInfoPanel</include>
