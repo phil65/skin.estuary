@@ -610,7 +610,7 @@
 			<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[container_target]">$PARAM[container_path]</content>
 		</control>
 	</include>
-	<include name="InfoDialogTopBarInfo">
+	<include name="LeftAlignedInfo">
 		<param name="id">33333</param>
 		<definition>
 			<control type="grouplist">
@@ -642,6 +642,41 @@
 			</control>
 		</definition>
 	</include>
+	<include name="InfoDialogTopBarInfo">
+		<param name="id">33333</param>
+		<definition>
+			<control type="grouplist">
+				<left>60</left>
+				<top>20</top>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<width>1800</width>
+				<height>150</height>
+				<itemgap>0</itemgap>
+				<orientation>vertical</orientation>
+				<control type="label">
+					<width>1800</width>
+					<label>$PARAM[main_label]</label>
+					<font>font35_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<height>65</height>
+					<align>center</align>
+					<scroll>true</scroll>
+					<animation effect="slide" start="0,0" end="0,15" time="0" condition="IsEmpty(Control.GetLabel($PARAM[id]))">Conditional</animation>
+				</control>
+				<control type="label" id="$PARAM[id]">
+					<label>$PARAM[sub_label]</label>
+					<font>font13</font>
+					<left>85</left>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>center</align>
+					<height>100</height>
+					<width>1800</width>
+				</control>
+			</control>
+		</definition>
+	</include>
+
 	<include name="UpDownArrows">
 		<param name="up_posy">134</param>
 		<param name="down_posy">910</param>
@@ -873,7 +908,6 @@
 					<height>100</height>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
-					<visible>!Window.isActive(movieinformation) + !Window.isActive(addoninformation) + !Window.isActive(pictureinfo) + !Window.isActive(musicinformation) + !Window.isActive(songinformation) + !Window.IsActive(pvrguideinfo) + !Window.IsActive(pvrrecordinginfo)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
@@ -913,7 +947,6 @@
 					<height>100</height>
 					<width>auto</width>
 					<visible>!IsEmpty(Container.SortMethod)</visible>
-					<visible>!Window.isActive(movieinformation) + !Window.isActive(addoninformation) + !Window.isActive(pictureinfo) + !Window.isActive(musicinformation) + !Window.isActive(songinformation) + !Window.IsActive(pvrguideinfo) + !Window.IsActive(pvrrecordinginfo)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>

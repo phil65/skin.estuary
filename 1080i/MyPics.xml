@@ -7,7 +7,7 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>CommonScrollbars</include>
-		<control type="group" id="100">
+		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsActive(addoninformation) | Window.IsActive(pictureinfo)">Conditional</animation>
 			<include>View_50_List</include>
 			<include>View_52_IconWall</include>
@@ -192,7 +192,7 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Window.IsActive(addoninformation) | Control.IsVisible(50) | Control.IsVisible(55)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(55)</visible>
 			<include>Visible_Left</include>
 			<visible>!Container.Content()</visible>
 			<include>ListThumbInfoPanel</include>
@@ -247,8 +247,6 @@
 			<param name="breadcrumbs_label" value="$LOCALIZE[1213]" />
 			<param name="breadcrumbs_icon" value="icons/settings/pictures.png" />
 		</include>
-		<include name="BottomBar">
-			<param name="info_visible" value="true" />
-		</include>
+		<include>BottomBar</include>
 	</controls>
 </window>
