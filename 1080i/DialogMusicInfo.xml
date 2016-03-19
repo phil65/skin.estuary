@@ -129,7 +129,7 @@
 			<control type="label" id="400">
 				<left>620</left>
 				<top>480</top>
-				<width>1170</width>
+				<width>1100</width>
 				<height>240</height>
 				<wrapmultiline>true</wrapmultiline>
 				<font>font12</font>
@@ -139,15 +139,15 @@
 			<control type="panel" id="50">
 				<left>585</left>
 				<top>170</top>
-				<width>1260</width>
+				<width>1190</width>
 				<height>360</height>
 				<ondown>130</ondown>
 				<onup>9000</onup>
 				<orientation>horizontal</orientation>
-				<itemlayout height="72.5" width="630" condition="Container.Content(albums)">
+				<itemlayout height="72.5" width="595" condition="Container.Content(albums)">
 					<control type="image">
 						<top>-10</top>
-						<width>626</width>
+						<width>595</width>
 						<height>100</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
@@ -166,11 +166,11 @@
 						<include>UserRatingCircle</include>
 					</control>
 				</itemlayout>
-				<focusedlayout height="72.5" width="630" condition="Container.Content(albums)">
+				<focusedlayout height="72.5" width="595" condition="Container.Content(albums)">
 					<control type="group">
 						<control type="image">
 							<top>-10</top>
-							<width>626</width>
+							<width>595</width>
 							<height>100</height>
 							<texture border="40">buttons/button-theme-fo.png</texture>
 						</control>
@@ -190,18 +190,18 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="360" width="249" condition="Container.Content(artists)">
+				<itemlayout height="360" width="236" condition="Container.Content(artists)">
 					<control type="image">
 						<top>-10</top>
-						<width>262</width>
+						<width>250</width>
 						<height>312</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="image">
-						<left>35</left>
+						<left>30</left>
 						<top>21</top>
-						<width>188</width>
-						<height>188</height>
+						<width>190</width>
+						<height>190</height>
 						<texture border="2" fallback="DefaultFolderSquare.png" background="true">$INFO[ListItem.Thumb]</texture>
 						<aspectratio>keep</aspectratio>
 						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
@@ -223,21 +223,21 @@
 						<include>UserRatingCircle</include>
 					</control>
 				</itemlayout>
-				<focusedlayout height="360" width="249" condition="Container.Content(artists)">
+				<focusedlayout height="360" width="236" condition="Container.Content(artists)">
 					<control type="group">
 						<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="160,180">Focus</animation>
 						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="160,180">UnFocus</animation>
 						<control type="image">
 							<top>-10</top>
-							<width>262</width>
+							<width>250</width>
 							<height>312</height>
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<left>35</left>
+							<left>30</left>
 							<top>21</top>
-							<width>188</width>
-							<height>188</height>
+							<width>190</width>
+							<height>190</height>
 							<texture border="2" fallback="DefaultFolderSquare.png" background="true">$INFO[ListItem.Thumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
@@ -352,7 +352,7 @@
 			<include name="LeftRightArrows">
 				<param name="list_id" value="50" />
 				<param name="left_posx" value="574" />
-				<param name="right_posx" value="1840" />
+				<param name="right_posx" value="1780" />
 				<param name="posy" value="300" />
 				<param name="visible" value="true" />
 			</include>
