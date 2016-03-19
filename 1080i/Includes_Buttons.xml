@@ -265,6 +265,7 @@
 				<onclick>$PARAM[onclick_1]</onclick>
 				<onclick>$PARAM[onclick_2]</onclick>
 				<visible>$PARAM[visible]</visible>
+				<animation effect="fade" start="100" end="0" time="300" delay="300">Hidden</animation>
 			</control>
 		</definition>
 	</include>
