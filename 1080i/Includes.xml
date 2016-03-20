@@ -58,7 +58,7 @@
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<orientation>horizontal</orientation>
-				<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)</visible>
+				<visible>Control.IsVisible(51) | Control.IsVisible(53)</visible>
 				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			</control>
