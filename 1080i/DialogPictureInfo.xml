@@ -44,12 +44,6 @@
 				<top>20</top>
 				<width>12</width>
 				<height>780</height>
-				<onleft>Dialog.Close(all,true)</onleft>
-				<onleft>Action(left)</onleft>
-				<onleft>info</onleft>
-				<onright>Dialog.Close(all,true)</onright>
-				<onright>Action(right)</onright>
-				<onright>info</onright>
 				<orientation>vertical</orientation>
 			</control>
 			<control type="list" id="5">
