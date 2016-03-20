@@ -118,7 +118,7 @@
 						<include name="InfoFlag">
 							<param name="visible" value="!IsEmpty(ListItem.duration)" />
 							<param name="icon" value="frame/clock.png" />
-							<param name="label" value="$INFO[ListItem.Duration,, min]" />
+							<param name="label" value="$INFO[ListItem.Duration,, $LOCALIZE[31132]]" />
 						</include>
 						<include name="InfoFlag">
 							<param name="visible" value="!IsEmpty(ListItem.Property(TotalEpisodes))" />
