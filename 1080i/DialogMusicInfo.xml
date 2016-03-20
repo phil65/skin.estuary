@@ -368,7 +368,7 @@
 		<control type="group">
 			<visible>String.IsEqual(ListItem.DBType,album)</visible>
 			<include name="InfoDialogTopBarInfo">
-				<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
+				<param name="main_label" value="$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]" />
 				<param name="sub_label" value="$INFO[ListItem.Artist]" />
 				<param name="id" value="33334" />
 			</include>
@@ -377,7 +377,7 @@
 			<visible>String.IsEqual(ListItem.DBType,song) + !Window.IsActive(musicinformation)</visible>
 			<include name="InfoDialogTopBarInfo">
 				<param name="main_label" value="[COLOR button_focus]$INFO[ListItem.TrackNumber]. [/COLOR]$INFO[ListItem.Title]" />
-				<param name="sub_label" value="$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]" />
+				<param name="sub_label" value="$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]" />
 				<param name="id" value="33335" />
 			</include>
 		</control>

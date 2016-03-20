@@ -246,11 +246,11 @@
 		<value>$INFO[ListItem.Year]</value>
 	</variable>
 	<variable name="VideoInfoMainLabelVar">
-		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]</value>
-		<value>$INFO[ListItem.Label]$INFO[ListItem.Year, ([COLOR button_focus],[/COLOR])]</value>
+		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
+		<value>$INFO[ListItem.Label]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
 	</variable>
 	<variable name="VideoInfoSubLabelVar">
-		<value condition="Stringcompare(ListItem.DBType,episode)">$INFO[ListItem.Season]$INFO[ListItem.Episode,[COLOR button_focus]x[/COLOR],: ]$INFO[ListItem.TVShowTitle]</value>
+		<value condition="Stringcompare(ListItem.DBType,episode)">$INFO[ListItem.Season]$INFO[ListItem.Episode,[COLOR grey]x[/COLOR],: ]$INFO[ListItem.TVShowTitle]</value>
 		<value condition="Stringcompare(ListItem.DBType,movie)">$INFO[ListItem.Tagline]</value>
 		<value>$INFO[ListItem.Genre]</value>
 	</variable>

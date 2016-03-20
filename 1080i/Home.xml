@@ -336,6 +336,8 @@
 						<param name="list_id" value="7600"/>
 						<param name="onup_id" value="7500"/>
 						<param name="ondown_id" value="20001"/>
+						<param name="sortby" value="playcount"/>
+						<param name="sortorder" value="descending"/>
 					</include>
 					<include name="ImageWidget">
 						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
