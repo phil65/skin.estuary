@@ -208,22 +208,22 @@
 					<width>380</width>
 					<align>center</align>
 					<include name="InfoFlag">
-						<param name="visible" value="!IsEmpty(ListItem.duration)" />
+						<param name="visible" value="!String.IsEmpty(ListItem.duration)" />
 						<param name="icon" value="frame/clock.png" />
 						<param name="label" value="$INFO[ListItem.Duration,, $LOCALIZE[31132]]" />
 					</include>
 					<include name="InfoFlag">
-						<param name="visible" value="!IsEmpty(ListItem.Property(TotalEpisodes))" />
+						<param name="visible" value="!String.IsEmpty(ListItem.Property(TotalEpisodes))" />
 						<param name="icon" value="lists/played-total.png" />
 						<param name="label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
 					</include>
 					<include name="InfoFlag">
-						<param name="visible" value="!IsEmpty(ListItem.Year) + IsEmpty(ListItem.Premiered)" />
+						<param name="visible" value="!String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Premiered)" />
 						<param name="icon" value="lists/year.png" />
 						<param name="label" value="$INFO[ListItem.Year]" />
 					</include>
 					<include name="InfoFlag">
-						<param name="visible" value="!IsEmpty(ListItem.Premiered)" />
+						<param name="visible" value="!String.IsEmpty(ListItem.Premiered)" />
 						<param name="icon" value="lists/year.png" />
 						<param name="label" value="$INFO[ListItem.Premiered]" />
 					</include>

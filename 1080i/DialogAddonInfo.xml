@@ -112,7 +112,7 @@
 			<param name="sub_label" value="$INFO[ListItem.AddonVersion,[COLOR grey],[/COLOR]]$INFO[ListItem.AddonCreator, $LOCALIZE[31071] ]" />
 		</include>
 		<control type="group">
-			<visible>!IsEmpty(ListItem.AddonBroken)</visible>
+			<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
 			<include>OpenClose_Fade</include>
 			<control type="image">
 				<left>114</left>

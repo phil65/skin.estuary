@@ -30,7 +30,7 @@
 			<left>80</left>
 			<visible>![Window.Is(songinformation) + Window.IsActive(musicinformation)]</visible>
 			<control type="group">
-				<visible>Integer.IsEqual(Container(50).NumItems,0) + IsEmpty(Control.GetLabel(400))</visible>
+				<visible>Integer.IsEqual(Container(50).NumItems,0) + String.IsEmpty(Control.GetLabel(400))</visible>
 				<top>160</top>
 				<control type="button" id="130">
 					<left>586</left>
@@ -47,10 +47,10 @@
 					<height>550</height>
 					<aspectratio aligny="top">scale</aspectratio>
 					<texture fallback="special://skin/extras/home-images/music.jpg">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(Control.GetLabel(400))</visible>
+					<visible>String.IsEmpty(Control.GetLabel(400))</visible>
 				</control>
 				<control type="group">
-					<visible>IsEmpty(Control.GetLabel(400)) + IsEmpty(ListItem.Art(fanart))</visible>
+					<visible>String.IsEmpty(Control.GetLabel(400)) + String.IsEmpty(ListItem.Art(fanart))</visible>
 					<control type="image">
 						<left>614</left>
 						<top>30</top>
@@ -72,7 +72,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!Integer.IsEqual(Container(50).NumItems,0) | !IsEmpty(Control.GetLabel(400))</visible>
+				<visible>!Integer.IsEqual(Container(50).NumItems,0) | !String.IsEmpty(Control.GetLabel(400))</visible>
 				<top>454</top>
 				<control type="button" id="130">
 					<onup>50</onup>
@@ -94,7 +94,7 @@
 				</control>
 				<control type="group">
 					<animation effect="slide" start="0,0" end="0,-295" time="0" condition="Integer.IsEqual(Container(50).NumItems,0)">Conditional</animation>
-					<visible>[!Integer.IsEqual(Container(50).NumItems,0) + IsEmpty(Control.GetLabel(400))] | [Integer.IsEqual(Container(50).NumItems,0) + !IsEmpty(Control.GetLabel(400))]</visible>
+					<visible>[!Integer.IsEqual(Container(50).NumItems,0) + String.IsEmpty(Control.GetLabel(400))] | [Integer.IsEqual(Container(50).NumItems,0) + !String.IsEmpty(Control.GetLabel(400))]</visible>
 					<control type="image">
 						<left>614</left>
 						<top>30</top>
@@ -104,7 +104,7 @@
 						<texture fallback="special://skin/extras/home-images/music.jpg">$INFO[ListItem.Art(fanart)]</texture>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Art(fanart))</visible>
+						<visible>String.IsEmpty(ListItem.Art(fanart))</visible>
 						<control type="image">
 							<left>614</left>
 							<top>30</top>
@@ -310,7 +310,7 @@
 						<width>48</width>
 						<height>48</height>
 						<align>center</align>
-						<visible>IsEmpty(ListItem.UserRating)</visible>
+						<visible>String.IsEmpty(ListItem.UserRating)</visible>
 					</control>
 				</control>
 				<control type="radiobutton" id="120">
@@ -318,7 +318,7 @@
 						<param name="icon" value="icons/infodialogs/image.png" />
 					</include>
 					<label>$LOCALIZE[31028]</label>
-					<enable>!IsEmpty(ListItem.Art(fanart))</enable>
+					<enable>!String.IsEmpty(ListItem.Art(fanart))</enable>
 					<onclick>SetProperty(fanart,$ESCINFO[ListItem.Art(fanart)],home)</onclick>
 					<onclick>ActivateWindow(1104)</onclick>
 					<visible>String.IsEqual(ListItem.DBType,artist) | String.IsEqual(ListItem.DBType,album)</visible>
