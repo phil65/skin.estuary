@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="View_502_FanArt">
-		<include name="LeftRightArrows">
-			<param name="list_id" value="502" />
-			<param name="left_posx" value="45" />
-			<param name="right_posx" value="1849" />
-			<param name="posy" value="513" />
+		<include name="UpDownArrows">
+			<param name="container_id" value="502" />
+			<param name="visible" value="!System.HasModalDialog" />
 		</include>
 		<control type="group">
 			<description>Fanart Viewtype</description>
