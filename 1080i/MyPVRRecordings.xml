@@ -239,7 +239,7 @@
 						<top>10</top>
 						<width>560</width>
 						<height>262</height>
-						<label>Folder ($INFO[Container(5000).NumItems,[B],[/B] items])</label>
+						<label>$LOCALIZE[19076] ($INFO[Container(5000).NumItems,[B],[/B] $LOCALIZE[31036]])</label>
 						<font>font16</font>
 						<visible>ListItem.IsFolder</visible>
 					</control>

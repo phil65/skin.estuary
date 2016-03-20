@@ -334,16 +334,16 @@
 				<param name="down_posy" value="912" />
 				<param name="visible" value="!System.HasModalDialog" />
 			</include>
-		<include>MediaMenuMouseOverlay</include>
-		<control type="group">
-			<include>MediaMenuCommon</include>
-			<include>PVRSideBar</include>
-		</control>
-		<include name="TopBar">
-			<param name="breadcrumbs_label" value="TV$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), / ]" />
-			<param name="breadcrumbs_icon" value="icons/settings/tvremote.png" />
-		</include>
-		<include>BottomBar</include>
+			<include>MediaMenuMouseOverlay</include>
+			<control type="group">
+				<include>MediaMenuCommon</include>
+				<include>PVRSideBar</include>
+			</control>
+			<include name="TopBar">
+				<param name="breadcrumbs_label" value="TV$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), / ]" />
+				<param name="breadcrumbs_icon" value="icons/settings/tvremote.png" />
+			</include>
+			<include>BottomBar</include>
 		</control>
 		<control type="label" id="29">
 			<font>-</font>

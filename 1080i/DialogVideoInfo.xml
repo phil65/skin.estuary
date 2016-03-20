@@ -378,7 +378,7 @@
 					<param name="id" value="11" />
 					<param name="icon" value="icons/infodialogs/trailer.png" />
 					<param name="label" value="$LOCALIZE[20410]" />
-					<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.contains(Container.FolderPath,trailer)]" />
+					<param name="visible" value="!IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]" />
 				</include>
 				<include name="InfoDialogButton">
 					<param name="id" value="441" />
@@ -483,7 +483,7 @@
 		<control type="group">
 			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-			<posy>980</posy>
+			<top>980</top>
 			<include>MediaFlags</include>
 			<control type="group">
 				<visible>Control.HasFocus(50)</visible>

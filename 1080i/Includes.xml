@@ -936,7 +936,7 @@
 						<visible>!String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
 					</control>
 					<control type="label">
-						<label>($LOCALIZE[31052])</label>
+						<label> ($LOCALIZE[31052])</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>Container.Filtered</visible>
 					</control>
@@ -1009,7 +1009,7 @@
 			<textoffsetx>0</textoffsetx>
 			<onclick>ActivateWindow(weather)</onclick>
 			<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
-			<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+			<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
 		</control>
 		<control type="image">
 			<top>4</top>
@@ -1018,7 +1018,7 @@
 			<fadetime>300</fadetime>
 			<aspectratio align="left">keep</aspectratio>
 			<texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
-			<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+			<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
 		</control>
 	</include>
 	<include name="BreadcrumbsLabel">
