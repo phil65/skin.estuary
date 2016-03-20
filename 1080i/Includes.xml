@@ -28,10 +28,15 @@
 	<constant name="DepthBars">0.12</constant>
 	<constant name="DepthBackground">-0.80</constant>
 	<constant name="DepthSideBlade">0.10</constant>
+	<constant name="bg_alpha_hex">35FFFFFF</constant>
+	<constant name="bg_alpha">21</constant>
 	<expression name="infodialog_active">Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo)</expression>
+	<expression name="sidebar_focused">[ControlGroup(9000).HasFocus | Control.HasFocus(6130)]</expression>
 	<include name="CommonScrollbars">
 		<control type="group">
+			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="System.HasModalDialog">Conditional</animation>
+			<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 			<control type="scrollbar" id="531">
 				<left>1907</left>
 				<top>80</top>
@@ -44,8 +49,6 @@
 				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 				<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501)</visible>
-				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			</control>
 			<control type="scrollbar" id="5199">
 				<left>0</left>
@@ -59,8 +62,6 @@
 				<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)</visible>
 				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			</control>
 		</control>
 	</include>
@@ -678,7 +679,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="UpDownArrows">
 		<param name="up_posy">134</param>
 		<param name="down_posy">910</param>
@@ -936,7 +936,7 @@
 						<visible>!String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
 					</control>
 					<control type="label">
-						<label> ($LOCALIZE[31052])</label>
+						<label>($LOCALIZE[31052])</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>Container.Filtered</visible>
 					</control>
@@ -1040,26 +1040,29 @@
 				<include>FullScreenDimensions</include>
 				<visible>Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			</control>
-			<control type="image">
-				<depth>DepthBackground</depth>
-				<include>FullScreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
-				<animation effect="fade" start="100" end="75" time="0" condition="Player.HasMedia + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))">Conditional</animation>
-				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
-				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
+				<visible>Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			</control>
-			<control type="image">
-				<depth>DepthBackground</depth>
-				<include>FullScreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<fadetime>400</fadetime>
-				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
-				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-				<animation effect="fade" time="400">VisibleChange</animation>
-				<texture background="true" colordiffuse="40FFFFFF">$VAR[MediaFanartVar]</texture>
-				<visible>!Player.HasMedia | !String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
+			<control type="group">
+				<animation effect="zoom" center="960,540" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
+				<control type="image">
+					<depth>DepthBackground</depth>
+					<include>FullScreenDimensions</include>
+					<aspectratio>scale</aspectratio>
+					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+					<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
+				</control>
+				<control type="image">
+					<depth>DepthBackground</depth>
+					<include>FullScreenDimensions</include>
+					<aspectratio>scale</aspectratio>
+					<fadetime>400</fadetime>
+					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+					<animation effect="fade" time="400">VisibleChange</animation>
+					<texture background="true" colordiffuse="bg_alpha_hex">$VAR[MediaFanartVar]</texture>
+					<visible>!Player.HasMedia | !IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
+				</control>
 			</control>
 		</definition>
 	</include>
@@ -1087,17 +1090,40 @@
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 					<top>1019</top>
-					<control type="button">
-						<left>17</left>
-						<width>44</width>
-						<height>44</height>
-						<animation effect="rotate" end="-90" center="40,23" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
-						<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
-						<texturenofocus colordiffuse="button_focus">frame/menu-nofo.png</texturenofocus>
-						<animation effect="fade" time="200">VisibleChange</animation>
-						<onclick>SetFocus(9000)</onclick>
-						<visible>!Control.IsVisible(6160)</visible>
-						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
+					<control type="group">
+						<visible>!$EXP[sidebar_focused]</visible>
+						<control type="button">
+							<left>17</left>
+							<width>44</width>
+							<height>44</height>
+							<animation effect="rotate" end="-90" center="40,23" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
+							<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
+							<texturenofocus colordiffuse="button_focus">frame/menu-nofo.png</texturenofocus>
+							<animation effect="fade" time="200">VisibleChange</animation>
+							<onclick>SetFocus(9000)</onclick>
+							<visible>!Control.IsVisible(6160)</visible>
+						</control>
+						<control type="button" id="6160">
+							<left>17</left>
+							<width>44</width>
+							<height>44</height>
+							<texturefocus colordiffuse="button_focus">icons/menu.png</texturefocus>
+							<texturenofocus colordiffuse="button_focus">icons/menu.png</texturenofocus>
+							<animation effect="fade" time="200">VisibleChange</animation>
+							<onclick>SetFocus(9000)</onclick>
+							<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
+						</control>
+						<control type="button">
+							<left>74</left>
+							<width>300</width>
+							<height>44</height>
+							<shadowcolor>text_shadow</shadowcolor>
+							<label>$LOCALIZE[33063]</label>
+							<onclick>SetFocus(9000)</onclick>
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<animation effect="fade" time="225">VisibleChange</animation>
+						</control>
 					</control>
 					<control type="image">
 						<left>17</left>
@@ -1105,31 +1131,8 @@
 						<height>44</height>
 						<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
-						<visible>ControlGroup(9000).HasFocus | Control.HasFocus(6130)</visible>
-						<visible>!Player.HasMedia | !String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
-					</control>
-					<control type="button" id="6160">
-						<left>17</left>
-						<width>44</width>
-						<height>44</height>
-						<texturefocus colordiffuse="button_focus">icons/menu.png</texturefocus>
-						<texturenofocus colordiffuse="button_focus">icons/menu.png</texturenofocus>
-						<animation effect="fade" time="200">VisibleChange</animation>
-						<onclick>SetFocus(9000)</onclick>
-						<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
-						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
-					</control>
-					<control type="button">
-						<left>74</left>
-						<width>300</width>
-						<height>44</height>
-						<shadowcolor>text_shadow</shadowcolor>
-						<label>$LOCALIZE[33063]</label>
-						<onclick>SetFocus(9000)</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<animation effect="fade" time="225">VisibleChange</animation>
-						<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6130)</visible>
+						<visible>$EXP[sidebar_focused]</visible>
+						<visible>!Player.HasMedia | !IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 					</control>
 				</control>
 				<control type="group">
