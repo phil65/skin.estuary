@@ -308,37 +308,37 @@
 				<param name="breadcrumbs_icon" value="icons/settings/addons.png" />
 			</include>
 			<include>BottomBar</include>
+			<include name="UpDownArrows">
+				<param name="container_id" value="500" />
+				<param name="visible" value="!System.HasModalDialog" />
+			</include>
+			<include name="UpDownArrows">
+				<param name="container_id" value="501" />
+				<param name="visible" value="!System.HasModalDialog" />
+			</include>
+			<include name="UpDownArrows">
+				<param name="container_id" value="502" />
+				<param name="visible" value="!System.HasModalDialog" />
+			</include>
+			<include name="UpDownArrows">
+				<param name="container_id" value="503" />
+				<param name="visible" value="!System.HasModalDialog" />
+			</include>
+			<include name="UpDownArrows">
+				<param name="container_id" value="504" />
+				<param name="visible" value="!System.HasModalDialog" />
+			</include>
+			<include name="UpDownArrows">
+				<param name="container_id" value="505" />
+				<param name="visible" value="!System.HasModalDialog" />
+			</include>
+			<include name="InfoList">
+				<param name="path" value="addons://outdated/" />
+				<param name="height" value="1" />
+				<param name="width" value="1" />
+				<param name="list_id" value="8000" />
+				<param name="item_label" value="" />
+			</include>
 		</control>
-		<include name="UpDownArrows">
-			<param name="container_id" value="500" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
-		<include name="UpDownArrows">
-			<param name="container_id" value="501" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
-		<include name="UpDownArrows">
-			<param name="container_id" value="502" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
-		<include name="UpDownArrows">
-			<param name="container_id" value="503" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
-		<include name="UpDownArrows">
-			<param name="container_id" value="504" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
-		<include name="UpDownArrows">
-			<param name="container_id" value="505" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
-		<include name="InfoList">
-			<param name="path" value="addons://outdated/" />
-			<param name="height" value="1" />
-			<param name="width" value="1" />
-			<param name="list_id" value="8000" />
-			<param name="item_label" value="" />
-		</include>
 	</controls>
 </window>
