@@ -378,7 +378,7 @@
 					<param name="id" value="11" />
 					<param name="icon" value="icons/infodialogs/trailer.png" />
 					<param name="label" value="$LOCALIZE[20410]" />
-					<param name="visible" value="!IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]" />
+					<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]" />
 				</include>
 				<include name="InfoDialogButton">
 					<param name="id" value="441" />

@@ -668,7 +668,7 @@
 						<label>-</label>
 						<onfocus>SetFocus(15001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(15100).NumItems,0)">SetFocus(15100)</onfocus>
-						<onfocus condition="IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
+						<onfocus condition="String.IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
 						<onclick>noop</onclick>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -696,12 +696,12 @@
 							<param name="item6_vis" value="False" />
 							<param name="item7_vis" value="False" />
 							<param name="item8_vis" value="False" />
-							<param name="visible" value="!IsEmpty(Weather.plugin)"/>
+							<param name="visible" value="!String.IsEmpty(Weather.plugin)"/>
 						</include>
 						<control type="group" id="16678">
 							<description>Weather info</description>
 							<height>380</height>
-							<visible>!IsEmpty(Weather.plugin)</visible>
+							<visible>!String.IsEmpty(Weather.plugin)</visible>
 							<control type="image">
 								<top>2</top>
 								<left>480</left>
@@ -775,7 +775,7 @@
 							<param name="onup_id" value="15900" />
 							<param name="ondown_id" value="15200" />
 							<param name="widget_header" value="$LOCALIZE[33036]"/>
-							<param name="visible" value="!IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
+							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
 						</include>
 						<include name="WeatherWidget">
 							<param name="content_include" value="DailyItems" />
@@ -783,11 +783,11 @@
 							<param name="onup_id" value="15100" />
 							<param name="ondown_id" value="20001" />
 							<param name="widget_header" value="$LOCALIZE[31019]"/>
-							<param name="visible" value="!IsEmpty(Window(weather).Property(Daily.IsFetched))" />
+							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 						</include>
 						<include name="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[12600]" />
-							<param name="visible" value="IsEmpty(Weather.plugin)"/>
+							<param name="visible" value="String.IsEmpty(Weather.plugin)"/>
 						</include>
 						<include name="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
@@ -795,7 +795,7 @@
 							<param name="button_label" value="$LOCALIZE[31121]" />
 							<param name="button_onclick" value="ActivateWindow(weathersettings)"/>
 							<param name="button_id" value="15300"/>
-							<param name="visible" value="IsEmpty(Weather.plugin)"/>
+							<param name="visible" value="String.IsEmpty(Weather.plugin)"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoWeatherButton)"/>
 						</include>
 					</control>
@@ -964,7 +964,7 @@
 								<font>font14</font>
 								<label>$INFO[ListItem.Label]</label>
 								<shadowcolor>text_shadow</shadowcolor>
-								<visible>!IsEmpty(ListItem.Label2)</visible>
+								<visible>!String.IsEmpty(ListItem.Label2)</visible>
 								<animation effect="slide" start="0,0" end="0,-13" time="150" delay="400">Focus</animation>
 								<animation effect="slide" start="0,-13" end="0,0" time="300" delay="200">UnFocus</animation>
 							</control>
