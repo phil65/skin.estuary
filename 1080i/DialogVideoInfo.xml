@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">8</defaultcontrol>
+	<onload>SetProperty(infobackground,$INFO[ListItem.Art(fanart)],home)</onload>
+	<onunload>ClearProperty(infobackground,home)</onunload>
 	<controls>
-		<!-- 		<control type="group">
-		     <animation effect="zoom" center="auto" end="102,102" time="0" condition="IntegerGreaterThan(System.StereoscopicMode,0)">conditional</animation>
-		     <depth>DepthBackground</depth>
-		     <control type="image">
-		     <include>FullScreenDimensions</include>
-		     <aspectratio>scale</aspectratio>
-		     <animation effect="fade" start="0" end="100" delay="300" time="0">WindowOpen</animation>
-		     <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-		     <texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
-		     </control>
-		     <control type="image">
-		     <include>FullScreenDimensions</include>
-		     <aspectratio>scale</aspectratio>
-		     <animation effect="fade" start="0" end="100" delay="300" time="0">WindowOpen</animation>
-		     <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-		     <texture colordiffuse="40FFFFFF">$INFO[ListItem.Art(fanart)]</texture>
-		     </control>
-		     </control> -->
 		<control type="group">
 			<top>150</top>
 			<left>66</left>
