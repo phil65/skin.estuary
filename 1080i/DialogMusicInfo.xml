@@ -91,6 +91,9 @@
 					<width>1190</width>
 					<height>320</height>
 					<label>-</label>
+					<onclick>SetProperty(TextViewer_Header,$LOCALIZE[21821],home)</onclick>
+					<onclick>SetProperty(TextViewer_Text,$ESCVAR[MusicInfoTextboxVar],home)</onclick>
+					<onclick>ActivateWindow(1102)</onclick>
 				</control>
 				<control type="group">
 					<animation effect="slide" start="0,0" end="0,-295" time="0" condition="Integer.IsEqual(Container(50).NumItems,0)">Conditional</animation>
@@ -132,7 +135,7 @@
 				<width>1100</width>
 				<height>240</height>
 				<wrapmultiline>true</wrapmultiline>
-				<font>font12</font>
+				<font>font_textbox</font>
 				<label>$VAR[MusicInfoTextboxVar]</label>
 				<textcolor>button_focus</textcolor>
 			</control>

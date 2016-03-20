@@ -15,12 +15,12 @@
 				<label>-</label>
 			</control>
 			<control type="label">
-				<left>860</left>
+				<left>840</left>
 				<top>200</top>
 				<width>900</width>
 				<height>446</height>
 				<wrapmultiline>true</wrapmultiline>
-				<font>font12</font>
+				<font>font_textbox</font>
 				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR]$INFO[ListItem.AddonDisclaimer,[CR][CR]$LOCALIZE[24052]: ][/COLOR]</label>
 				<textcolor>button_focus</textcolor>
 			</control>
