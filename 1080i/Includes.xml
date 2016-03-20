@@ -28,7 +28,7 @@
 	<constant name="DepthBars">0.12</constant>
 	<constant name="DepthBackground">-0.80</constant>
 	<constant name="DepthSideBlade">0.10</constant>
-	<expression name="infodialog_active">Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo)</expression>
+	<expression name="infodialog_active">Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo)</expression>
 	<include name="CommonScrollbars">
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="System.HasModalDialog">Conditional</animation>
