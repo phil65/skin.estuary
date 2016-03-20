@@ -131,7 +131,7 @@
 							<param name="label" value="$INFO[ListItem.Year]" />
 						</include>
 						<include name="InfoFlag">
-							<param name="visible" value="!IsEmpty(ListItem.Premiered)" />
+							<param name="visible" value="!IsEmpty(ListItem.Premiered) + IsEmpty(ListItem.Property(TotalEpisodes))" />
 							<param name="icon" value="lists/year.png" />
 							<param name="label" value="$INFO[ListItem.Premiered]" />
 						</include>
