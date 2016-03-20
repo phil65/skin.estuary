@@ -303,6 +303,11 @@
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			</control>
+			<include name="TopBar">
+				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
+				<param name="breadcrumbs_icon" value="icons/settings/addons.png" />
+			</include>
+			<include>BottomBar</include>
 		</control>
 		<include name="UpDownArrows">
 			<param name="container_id" value="500" />
@@ -328,10 +333,6 @@
 			<param name="container_id" value="505" />
 			<param name="visible" value="!System.HasModalDialog" />
 		</include>
-		<include name="TopBar">
-			<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
-			<param name="breadcrumbs_icon" value="icons/settings/addons.png" />
-		</include>
 		<include name="InfoList">
 			<param name="path" value="addons://outdated/" />
 			<param name="height" value="1" />
@@ -339,6 +340,5 @@
 			<param name="list_id" value="8000" />
 			<param name="item_label" value="" />
 		</include>
-		<include>BottomBar</include>
 	</controls>
 </window>
