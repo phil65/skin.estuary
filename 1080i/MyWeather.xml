@@ -81,7 +81,7 @@
 					<item id="4">
 						<label>$LOCALIZE[33035]</label>
 						<onclick>noop</onclick>
-						<visible>!IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
+						<visible>!String.IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
 					</item>
 				</content>
 			</control>

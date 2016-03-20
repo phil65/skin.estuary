@@ -294,7 +294,7 @@
 		<control type="group">
 			<left>1220</left>
 			<top>180</top>
-			<visible>!IsEmpty(ListItem.Date)</visible>
+			<visible>!String.IsEmpty(ListItem.Date)</visible>
 			<visible>Control.IsVisible($PARAM[container_id])</visible>
 			<include>Visible_Right</include>
 			<include>OpenClose_Right</include>
@@ -416,9 +416,9 @@
 				<font>font12</font>
 				<texturefocus border="40">buttons/dialogbutton-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
-				<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
-				<onclick condition="!IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
-				<onclick condition="!IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
+				<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
+				<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+				<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
 				<onclick>SetFocus(50)</onclick>
 				<visible>Integer.IsGreater(Container(4380).NumPages,1)</visible>
 			</control>
@@ -430,7 +430,7 @@
 			<align>center</align>
 			<font>font24_title</font>
 			<label>$LOCALIZE[19055]</label>
-			<visible>IsEmpty(Listitem.Plot) + IsEmpty(Listitem.Genre)</visible>
+			<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Genre)</visible>
 		</control>
 	</include>
 </includes>

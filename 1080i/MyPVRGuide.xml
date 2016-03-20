@@ -320,7 +320,7 @@
 			<control type="group">
 				<left>1220</left>
 				<top>150</top>
-				<visible>!IsEmpty(ListItem.ChannelName)</visible>
+				<visible>!String.IsEmpty(ListItem.ChannelName)</visible>
 				<visible>Control.IsVisible(13)</visible>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
