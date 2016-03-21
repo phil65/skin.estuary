@@ -21,14 +21,6 @@
                 <height>80</height>
                 <texture colordiffuse="button_focus">icons/settings/video.png</texture>
             </control>
-            <control type="button">
-                <top>0</top>
-                <width>120</width>
-                <height>100</height>
-                <onclick>Action(Back)</onclick>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-            </control>
             <control type="grouplist">
                 <left>85</left>
                 <description>Left side of top bar</description>
