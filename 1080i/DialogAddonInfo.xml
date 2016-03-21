@@ -14,15 +14,31 @@
 				<height>559</height>
 				<label>-</label>
 			</control>
-			<control type="label">
+			<control type="textbox">
 				<left>840</left>
 				<top>200</top>
 				<width>900</width>
-				<height>446</height>
-				<wrapmultiline>true</wrapmultiline>
+				<height>380</height>
 				<font>font_textbox</font>
-				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR]$INFO[ListItem.AddonDisclaimer,[CR][CR]$LOCALIZE[24052]: ][/COLOR]</label>
+				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR][/COLOR]</label>
 				<textcolor>button_focus</textcolor>
+			</control>
+			<control type="textbox">
+				<left>840</left>
+				<top>610</top>
+				<width>900</width>
+				<height>70</height>
+				<font>font_textbox</font>
+				<label fallback="No disclaimer">$INFO[ListItem.AddonDisclaimer,$LOCALIZE[24052]: ]</label>
+				<textcolor>button_focus</textcolor>
+			</control>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>790</left>
+				<top>600</top>
+				<width>1000</width>
+				<height>3</height>
+				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>90</left>
