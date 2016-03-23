@@ -61,7 +61,7 @@
 							<width>680</width>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<label>$INFO[ListItem.Artist,[COLOR button_focus],[/COLOR] - ]$INFO[ListItem.Title]</label>
+							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
@@ -92,7 +92,7 @@
 							<width>680</width>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<label>$INFO[ListItem.Artist,[COLOR button_focus],[/COLOR] - ]$INFO[ListItem.Title]</label>
+							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
