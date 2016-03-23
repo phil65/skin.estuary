@@ -29,7 +29,7 @@
 				<width>900</width>
 				<height>70</height>
 				<font>font_textbox</font>
-				<label fallback="No disclaimer">$INFO[ListItem.AddonDisclaimer,$LOCALIZE[24052]: ]</label>
+				<label fallback="31008">$INFO[ListItem.AddonDisclaimer,$LOCALIZE[24052]: ]</label>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="image">
