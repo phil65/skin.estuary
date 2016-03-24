@@ -33,7 +33,6 @@
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="image">
-				<description>Dialog Header image</description>
 				<left>790</left>
 				<top>600</top>
 				<width>1000</width>
@@ -122,31 +121,32 @@
 				<fadetime>300</fadetime>
 				<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
 			</control>
+			<control type="group">
+							<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+
+				<include>OpenClose_Fade</include>
+				<control type="image">
+					<left>24</left>
+					<top>186</top>
+					<width>511</width>
+					<height>511</height>
+					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+				</control>
+				<control type="textbox">
+					<left>24</left>
+					<top>186</top>
+					<width>511</width>
+					<height>511</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[24096]</label>
+					<font>font24_title</font>
+				</control>
+			</control>
 		</control>
 		<include name="InfoDialogTopBarInfo">
 			<param name="main_label" value="$INFO[ListItem.AddonName]" />
 			<param name="sub_label" value="$INFO[ListItem.AddonVersion,[COLOR grey],[/COLOR]]$INFO[ListItem.AddonCreator, $LOCALIZE[31071] ]" />
 		</include>
-		<control type="group">
-			<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
-			<include>OpenClose_Fade</include>
-			<control type="image">
-				<left>114</left>
-				<top>186</top>
-				<width>461</width>
-				<height>461</height>
-				<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-			</control>
-			<control type="textbox">
-				<left>130</left>
-				<top>190</top>
-				<width>420</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<height>400</height>
-				<label>$LOCALIZE[24096]</label>
-				<font>font24_title</font>
-			</control>
-		</control>
 	</controls>
 </window>
