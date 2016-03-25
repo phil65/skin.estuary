@@ -122,8 +122,7 @@
 				<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
 			</control>
 			<control type="group">
-							<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
-
+				<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
 				<include>OpenClose_Fade</include>
 				<control type="image">
 					<left>24</left>
