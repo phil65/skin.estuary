@@ -413,8 +413,7 @@
 							<label>$LOCALIZE[31033]</label>
 							<onleft>440</onleft>
 							<onright>101</onright>
-							<onup condition="Integer.IsGreater(Container(5000).CurrentItem,3)">210</onup>
-							<onup condition="!Integer.IsGreater(Container(5000).CurrentItem,3)">140</onup>
+							<onup>140</onup>
 							<ondown condition="Integer.IsEqual(Container(5000).CurrentItem,1)">SetFocus(50,0)</ondown>
 							<ondown condition="Integer.IsEqual(Container(5000).CurrentItem,2)">SetFocus(50,1)</ondown>
 							<ondown condition="Integer.IsEqual(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>
