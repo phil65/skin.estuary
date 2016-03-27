@@ -40,7 +40,7 @@
 			<ondown>$PARAM[list_id]</ondown>
 			<viewtype label="$PARAM[viewtype_label]">list</viewtype>
 			<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-			<focusedlayout height="63" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
+			<focusedlayout height="63">
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -99,7 +99,7 @@
 					<visible>!Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 			</focusedlayout>
-			<itemlayout height="63" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
+			<itemlayout height="63">
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
