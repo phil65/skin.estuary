@@ -547,6 +547,7 @@
 		<param name="height">405</param>
 		<param name="sub_label">$INFO[ListItem.Label]</param>
 		<param name="sortby"></param>
+		<param name="visible">True</param>
 		<param name="sortorder">ascending</param>
 		<param name="main_label">$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]</param>
 		<definition>
@@ -554,6 +555,7 @@
 				<description>Square Widget including header and arrows</description>
 				<height>$PARAM[height]</height>
 				<left>0</left>
+				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<include name="LeftRightArrows">
 					<param name="posy" value="200" />

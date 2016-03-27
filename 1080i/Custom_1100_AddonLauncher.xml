@@ -264,7 +264,7 @@
 					<param name="container_path" value="addons://sources/executable/" />
 					<param name="container_target" value="programs" />
 				</include>
-				<include name="AddonLauncherPanel">
+				<include name="AddonLauncherPanel" condition="System.Platform.Android">
 					<param name="container_id" value="506" />
 					<param name="visible" value="Container(9000).HasFocus(4)" />
 					<param name="container_path" value="androidapps://" />

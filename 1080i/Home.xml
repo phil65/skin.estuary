@@ -435,6 +435,7 @@
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
+							<param name="visible" value="System.Platform.Android"/>
 						</include>
 						<include name="WidgetListSquare">
 							<param name="content_path" value="addons://sources/image/"/>
