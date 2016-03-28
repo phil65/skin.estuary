@@ -260,6 +260,7 @@
 	</variable>
 	<variable name="AddonsFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
+		<value condition="$EXP[infodialog_active]">$INFO[Window(home).Property(infobackground)]</value>
 		<value condition="!String.IsEmpty(Container(500).ListItem.Art(fanart)) + Control.HasFocus(500)">$INFO[Container(500).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(501).ListItem.Art(fanart)) + Control.HasFocus(501)">$INFO[Container(501).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(502).ListItem.Art(fanart)) + Control.HasFocus(502)">$INFO[Container(502).ListItem.Art(fanart)]</value>
@@ -271,7 +272,7 @@
 	</variable>
 	<variable name="HomeFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
-		<value condition="!String.IsEmpty(Window(home).Property(infobackground))">$INFO[Window(home).Property(infobackground)]</value>
+		<value condition="$EXP[infodialog_active]">$INFO[Window(home).Property(infobackground)]</value>
 		<value condition="!String.IsEmpty(Container(5100).ListItem.Art(fanart)) + Control.HasFocus(5100)">$INFO[Container(5100).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(5200).ListItem.Art(fanart)) + Control.HasFocus(5200)">$INFO[Container(5200).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(5300).ListItem.Art(fanart)) + Control.HasFocus(5300)">$INFO[Container(5300).ListItem.Art(fanart)]</value>
@@ -296,7 +297,7 @@
 	</variable>
 	<variable name="MediaFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
-		<value condition="!String.IsEmpty(Window(home).Property(infobackground))">$INFO[Window(home).Property(infobackground)]</value>
+		<value condition="$EXP[infodialog_active]">$INFO[Window(home).Property(infobackground)]</value>
 		<value condition="Window.IsActive(pictures) + String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.FolderPath]</value>
 		<value condition="!String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
 		<value condition="!String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
