@@ -108,7 +108,7 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="FanartImageVar">
-		<value condition="ListItem.IsParentFolder">DefaultBackFanart.png</value>
+		<value condition="ListItem.IsParentFolder">special://skin/extras/home-images/movie.jpg</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="MusicInfoListHeaderVar">
