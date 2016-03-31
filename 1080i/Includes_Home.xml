@@ -187,11 +187,10 @@
 				<orientation>horizontal</orientation>
 				<onleft>9000</onleft>
 				<onright>noop</onright>
-				<onup condition="Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
-				<onup condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
+				<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+				<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+				<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 				<onup>$PARAM[onup_id]</onup>
-				<ondown condition="Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-				<ondown condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
 				<ondown>$PARAM[ondown_id]</ondown>
 				<onback>SetFocus(9000)</onback>
 				<preloaditems>1</preloaditems>
@@ -578,11 +577,10 @@
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
 					<onright>noop</onright>
-					<onup condition="Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
-					<onup condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
+					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 					<onup>$PARAM[onup_id]</onup>
-					<ondown condition="Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-					<ondown condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
 					<ondown>$PARAM[ondown_id]</ondown>
 					<onback>SetFocus(9000)</onback>
 					<preloaditems>1</preloaditems>
@@ -750,11 +748,10 @@
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
 					<onright>noop</onright>
-					<onup condition="Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
-					<onup condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
+					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 					<onup>$PARAM[onup_id]</onup>
-					<ondown condition="Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[list_id]).Position])</ondown>
-					<ondown condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[ondown_id],$INFO[Container($PARAM[onup_id]).Position])</ondown>
 					<ondown>$PARAM[ondown_id]</ondown>
 					<onback>SetFocus(9000)</onback>
 					<preloaditems>1</preloaditems>
