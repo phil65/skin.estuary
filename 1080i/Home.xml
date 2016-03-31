@@ -596,7 +596,7 @@
 									<param name="label2" value="$INFO[PVR.NowRecordingTitle][CR][COLOR=grey]$INFO[PVR.NowRecordingChannel][/COLOR]" />
 								</include>
 							</control>
-							<control type="group">>
+							<control type="group">
 								<visible>PVR.HasNonRecordingTimer</visible>
 								<width>680</width>
 								<include name="PVRWidget">
