@@ -47,7 +47,7 @@
 						<top>0</top>
 						<width>1396</width>
 						<height>63</height>
-						<texture>lists/focus.png</texture>
+						<texture colordiffuse="button_focus">lists/focus.png</texture>
 						<visible>Control.HasFocus(55)</visible>
 					</control>
 					<control type="label">
@@ -173,7 +173,7 @@
 				<top>0</top>
 				<width>1396</width>
 				<height>63</height>
-				<texture>lists/focus.png</texture>
+				<texture colordiffuse="button_focus">lists/focus.png</texture>
 				<visible>Control.hasFocus(55)</visible>
 			</control>
 			<control type="label">
@@ -270,7 +270,7 @@
 				<top>0</top>
 				<width>1396</width>
 				<height>63</height>
-				<texture>lists/focus.png</texture>
+				<texture colordiffuse="button_focus">lists/focus.png</texture>
 				<visible>Control.hasFocus(55)</visible>
 			</control>
 			<control type="image">
