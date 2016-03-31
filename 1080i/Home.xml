@@ -892,6 +892,7 @@
 						<width>382</width>
 						<height>671</height>
 						<pagecontrol>70</pagecontrol>
+						<onfocus>ClearProperty(listposition,home)</onfocus>
 						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),movies) + Control.IsVisible(5000)">5000</onright>
 						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),tvshows) + Control.IsVisible(6000)">6000</onright>
 						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),music) + Control.IsVisible(7000)">7000</onright>
