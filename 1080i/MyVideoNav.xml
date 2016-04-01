@@ -111,9 +111,9 @@
 					</control>
 					<control type="grouplist">
 						<top>845</top>
-						<right>140</right>
+						<right>150</right>
 						<orientation>horizontal</orientation>
-						<width>380</width>
+						<width>360</width>
 						<align>center</align>
 						<include name="InfoFlag">
 							<param name="visible" value="!String.IsEmpty(ListItem.duration)" />
