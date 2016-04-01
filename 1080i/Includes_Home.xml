@@ -722,7 +722,7 @@
 		<param name="sortby">label</param>
 		<param name="sortorder">ascending</param>
 		<definition>
-			<control type="group">
+			<control type="group" id="$PARAM[list_id]0">
 				<description>Square Widget including header and arrows</description>
 				<height>$PARAM[height]</height>
 				<left>0</left>

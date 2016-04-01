@@ -523,7 +523,7 @@
 							<param name="button_onclick" value="ActivateWindow(videos,root)"/>
 							<param name="button_id" value="11300"/>
 							<param name="onup_id" value="11200"/>
-							<param name="visible" value="!Control.IsVisible(11100) + !Control.IsVisible(11200)"/>
+							<param name="visible" value="!Control.IsVisible(111000) + !Control.IsVisible(112000)"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoVideosButton)"/>
 						</include>
 					</control>
