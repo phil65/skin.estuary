@@ -6,7 +6,6 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
-			<description>Timers group</description>
 			<visible>Control.IsVisible(50)</visible>
 			<control type="group">
 				<include>OpenClose_Left</include>
