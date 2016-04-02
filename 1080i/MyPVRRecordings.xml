@@ -61,6 +61,7 @@
 							<height>70</height>
 							<width>1050</width>
 							<aligny>center</aligny>
+							<scroll>true</scroll>
 							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 						</control>
 						<control type="label">
