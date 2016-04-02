@@ -1105,6 +1105,11 @@
 					<ondown>14200</ondown>
 					<onright>2000</onright>
 					<include name="BottomMainMenuItem">
+						<param name="control_id" value="803" />
+						<param name="onclick" value="ActivateWindow(favourites)" />
+						<param name="icon" value="icons/favourites.png" />
+					</include>
+					<include name="BottomMainMenuItem">
 						<param name="control_id" value="801" />
 						<param name="onclick" value="ActivateWindow(filemanager)" />
 						<param name="icon" value="icons/filemanager.png" />
@@ -1113,11 +1118,6 @@
 						<param name="control_id" value="802" />
 						<param name="onclick" value="ActivateWindow(settings)" />
 						<param name="icon" value="icons/settings.png" />
-					</include>
-					<include name="BottomMainMenuItem">
-						<param name="control_id" value="803" />
-						<param name="onclick" value="ActivateWindow(favourites)" />
-						<param name="icon" value="icons/favourites.png" />
 					</include>
 					<include name="BottomMainMenuItem">
 						<param name="control_id" value="804" />
