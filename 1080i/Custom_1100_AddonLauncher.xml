@@ -77,7 +77,7 @@
 								<width>382</width>
 								<aspectratio>keep</aspectratio>
 								<height>120</height>
-								<texture>$INFO[ListItem.Art(thumb)]</texture>
+								<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 							</control>
 						</control>
 					</focusedlayout>
@@ -106,7 +106,7 @@
 							<width>382</width>
 							<aspectratio>keep</aspectratio>
 							<height>120</height>
-							<texture>$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 						</control>
 					</itemlayout>
 					<content>
