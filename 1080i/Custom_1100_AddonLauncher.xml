@@ -162,7 +162,7 @@
 				<top>795</top>
 				<onup>SetFocus(9000,99)</onup>
 				<onup>9000</onup>
-				<ondown>14200</ondown>
+				<ondown>SetFocus(9000,0)</ondown>
 				<include>OpenClose_Left</include>
 				<onright>400</onright>
 				<usecontrolcoords>true</usecontrolcoords>
