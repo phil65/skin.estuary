@@ -930,6 +930,11 @@
 						<visible>![Window.IsActive(PVR) | Window.IsActive(MyPVRTimers.xml)]</visible>
 					</control>
 					<control type="label">
+						<label>$INFO[Container.PluginCategory, / ]</label>
+						<include>BreadcrumbsLabel</include>
+						<visible>!IsEmpty(Container.PluginCategory)</visible>
+					</control>
+					<control type="label">
 						<label>$INFO[Control.GetLabel(10),: ]</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>!String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
