@@ -144,8 +144,7 @@
 		<value>$INFO[ListItem.AddonCreator,, - ]$INFO[ListItem.AddonVersion]</value>
 	</variable>
 	<variable name="AddonsListIconVar">
-<!-- 		<value condition="!String.IsEmpty(ListItem.AddonBroken)">icons/infodialogs/update.png</value>
-		<value condition="!String.IsEmpty(ListItem.Property(addon.orphaned))">icons/infodialogs/update.png</value> -->
+		<value condition="!String.IsEmpty(ListItem.AddonBroken)">icons/addonstatus/disable.png</value>
 		<value condition="ListItem.IsParentFolder">-</value>
 		<value condition="ListItem.Property(addon.orphaned)">icons/addonstatus/orphan.png</value>
 		<value condition="ListItem.Property(addon.downloading)">icons/addonstatus/install.png</value>
