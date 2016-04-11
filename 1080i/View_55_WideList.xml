@@ -58,7 +58,6 @@
 						<aligny>center</aligny>
 						<font>font12</font>
 						<label>$INFO[ListItem.Year]</label>
-						<textcolor>button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="label">
@@ -81,7 +80,6 @@
 						<aligny>center</aligny>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label2]</label>
-						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="image">
@@ -196,7 +194,6 @@
 				<aligny>center</aligny>
 				<font>font12</font>
 				<label>$INFO[ListItem.Label2]</label>
-				<textcolor>grey</textcolor>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 		</focusedlayout>
@@ -274,7 +271,6 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
 				<label>$VAR[AddonsLabel2Var]</label>
 			</control>
 		</focusedlayout>
