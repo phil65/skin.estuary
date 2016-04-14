@@ -127,7 +127,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="124" width="348" condition="Container.Content(genres) | Container.Content(years) | Container.Content(countries) | [Container.Content(studios) + !System.HasAddon(resource.images.studios.white)]">
+				<itemlayout height="124" width="348" condition="Container.Content(genres) | Container.Content(years) | Container.Content(roles) | Container.Content(countries) | [Container.Content(studios) + !System.HasAddon(resource.images.studios.white)]">
 					<control type="group">
 						<control type="image">
 							<width>330</width>
@@ -147,7 +147,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="124" width="348" condition="Container.Content(genres) | Container.Content(years) | Container.Content(countries) | [Container.Content(studios) + !System.HasAddon(resource.images.studios.white)]">
+				<focusedlayout height="124" width="348" condition="Container.Content(genres) | Container.Content(years) | Container.Content(roles) | Container.Content(countries) | [Container.Content(studios) + !System.HasAddon(resource.images.studios.white)]">
 					<control type="group">
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
