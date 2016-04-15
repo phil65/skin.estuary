@@ -73,6 +73,7 @@
 					<item id="2">
 						<label>$LOCALIZE[33036]</label>
 						<onclick>noop</onclick>
+						<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
 					</item>
 					<item id="3">
 						<label>$LOCALIZE[31019]</label>
