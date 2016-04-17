@@ -249,6 +249,12 @@
 						<onclick>InstallAddon(resource.images.studios.white)</onclick>
 						<visible>Container.Content(studios) + !System.HasAddon(resource.images.studios.white)</visible>
 					</control>
+					<control type="button" id="624">
+						<include>MediaMenuItemsCommon</include>
+						<label>$LOCALIZE[10140]</label>
+						<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
+						<visible>!String.IsEmpty(Container.PluginName)</visible>
+					</control>
 					<include>MediaMenuNowPlaying</include>
 				</control>
 			</control>
