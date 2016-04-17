@@ -32,7 +32,8 @@
 			</control>
 			<control type="group">
 				<include>OpenClose_Right</include>
-				<visible>[Control.IsVisible(50) | Control.Isvisible(54)] + !String.IsEmpty(ListItem.DBID)</visible>
+				<visible>[Control.IsVisible(50) | Control.Isvisible(54)]</visible>
+				<visible>!ListItem.IsParentFolder</visible>
 				<include>Visible_Right</include>
 				<visible>Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 				<control type="image">
