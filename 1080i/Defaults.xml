@@ -142,9 +142,9 @@
 	<default type="slider">
 		<controloffsetx>75</controloffsetx>
 		<controloffsety>0</controloffsety>
-		<texturesliderbar border="10">dialogs/mediasource/slider-back.png</texturesliderbar>
-		<textureslidernib>dialogs/mediasource/slider-nib-nf.png</textureslidernib>
-		<textureslidernibfocus colordiffuse="button_focus">dialogs/mediasource/slider-nib-nf.png</textureslidernibfocus>
+		<texturesliderbar border="10">buttons/slider-back.png</texturesliderbar>
+		<textureslidernib>buttons/slider-nib-nf.png</textureslidernib>
+		<textureslidernibfocus colordiffuse="button_focus">buttons/slider-nib-nf.png</textureslidernibfocus>
 	</default>
 	<default type="sliderex">
 		<height>35</height>
@@ -154,9 +154,9 @@
 		<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 		<sliderwidth>150</sliderwidth>
 		<sliderheight>28</sliderheight>
-		<texturesliderbar>dialogs/mediasource/slider-back.png</texturesliderbar>
-		<textureslidernib>dialogs/mediasource/slider-nib-nf.png</textureslidernib>
-		<textureslidernibfocus colordiffuse="button_focus">dialogs/mediasource/slider-nib-nf.png</textureslidernibfocus>
+		<texturesliderbar>buttons/slider-back.png</texturesliderbar>
+		<textureslidernib>buttons/slider-nib-nf.png</textureslidernib>
+		<textureslidernibfocus colordiffuse="button_focus">buttons/slider-nib-nf.png</textureslidernibfocus>
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>disabled</disabledcolor>
