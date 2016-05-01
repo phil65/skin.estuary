@@ -424,7 +424,7 @@
 							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare">
-							<param name="content_path" value="androidapp://sources/apps/"/>
+							<param name="content_path" value="$VAR[AndroidAppPathVar]"/>
 							<param name="widget_header" value="$LOCALIZE[20244]"/>
 							<param name="widget_target" value="programs"/>
 							<param name="sortby" value="lastused"/>
@@ -435,7 +435,6 @@
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
-							<param name="visible" value="System.Platform.Android"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/image/"/>
