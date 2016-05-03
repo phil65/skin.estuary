@@ -591,7 +591,7 @@
 			<pagecontrol>531</pagecontrol>
 			<scrolltime tween="cubic" easing="out">500</scrolltime>
 			<itemlayout height="360" width="320">
-			<include>InfoWallMusicLayout</include>
+				<include>InfoWallMusicLayout</include>
 			</itemlayout>
 			<focusedlayout height="360" width="320">
 				<control type="group">
