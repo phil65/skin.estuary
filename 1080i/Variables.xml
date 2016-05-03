@@ -326,15 +326,13 @@
 		<value>OverlayUnwatched.png</value>
 	</variable>
 	<variable name="SettingsSectionIcon">
-		<value condition="Window.IsActive(picturessettings)">icons/settings/pictures.png</value>
-		<value condition="Window.IsActive(programssettings)">icons/settings/programs.png</value>
-		<value condition="Window.IsActive(weathersettings)">icons/settings/weather.png</value>
+		<value condition="Window.IsActive(playersettings)">icons/settings/video.png</value>
+		<value condition="Window.IsActive(librarysettings)">icons/settings/library.png</value>
+		<value condition="Window.IsActive(pvrsettings)">icons/settings/livetv.png</value>
+		<value condition="Window.IsActive(servicesettings)">icons/settings/network.png</value>
+		<value condition="Window.IsActive(interfacesettings)">icons/settings/appearance.png</value>
 		<value condition="Window.IsActive(musicsettings)">icons/settings/music.png</value>
 		<value condition="Window.IsActive(systemsettings)">icons/settings/system.png</value>
-		<value condition="Window.IsActive(videossettings)">icons/settings/video.png</value>
-		<value condition="Window.IsActive(servicesettings)">icons/settings/network.png</value>
-		<value condition="Window.IsActive(appearancesettings)">icons/settings/appearance.png</value>
-		<value condition="Window.IsActive(pvrsettings)">icons/settings/livetv.png</value>
 	</variable>
 	<!-- Breadcrumbs -->
 	<variable name="BreadcrumbsVideoVar">
