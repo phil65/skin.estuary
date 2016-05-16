@@ -74,8 +74,6 @@
 					<control type="image">
 						<width>130</width>
 						<height>110</height>
-						<align>center</align>
-						<aligny>center</aligny>
 						<texture border="40">buttons/button-nofo.png</texture>
 					</control>
 					<control type="image">
@@ -83,8 +81,6 @@
 						<top>35</top>
 						<width>40</width>
 						<height>40</height>
-						<align>center</align>
-						<aligny>center</aligny>
 						<texture>icons/submenu/$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 				</itemlayout>
@@ -92,8 +88,6 @@
 					<control type="image">
 						<width>130</width>
 						<height>110</height>
-						<align>center</align>
-						<aligny>center</aligny>
 						<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
 					</control>
 					<control type="image">
@@ -101,8 +95,6 @@
 						<top>35</top>
 						<width>40</width>
 						<height>40</height>
-						<align>center</align>
-						<aligny>center</aligny>
 						<texture>icons/submenu/$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 				</focusedlayout>
