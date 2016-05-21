@@ -82,8 +82,8 @@
 	</variable>
 	<variable name="IconWallThumbVar">
 		<value condition="Container.Content(studios)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
-		<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
-		<value>$INFO[ListItem.Icon]</value>
+		<value condition="String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
+		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
 	<variable name="ListLabel2Var">
 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[556])">$INFO[ListItem.Year]</value>
