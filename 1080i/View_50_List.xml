@@ -164,7 +164,7 @@
 			<top>186</top>
 			<width>461</width>
 			<height>461</height>
-			<aspectratio aligny="top">scale</aspectratio>
+			<aspectratio aligny="center">scale</aspectratio>
 			<fadetime>300</fadetime>
 			<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
 		</control>
