@@ -75,15 +75,15 @@
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="ShiftThumbVar">
-		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultFolderSquare.png</value>
 		<value condition="String.IsEmpty(Listitem.Thumb) + [Container.Content(albums) | Container.Content(artists)]">DefaultAudio.png</value>
-		<value condition="ListItem.IsFolder + String.IsEmpty(ListItem.Thumb)">DefaultFolder.png</value>
+		<value condition="ListItem.IsFolder + String.IsEmpty(ListItem.Thumb)">DefaultFolderSquare.png</value>
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
 	<variable name="IconWallThumbVar">
 		<value condition="Container.Content(studios)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
-		<value condition="String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon,icons/defaulticons/]</value>
-		<value>$INFO[ListItem.Thumb]</value>
+		<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="ListLabel2Var">
 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[556])">$INFO[ListItem.Year]</value>
@@ -167,7 +167,7 @@
 		<value>$INFO[ListItem.Art(tvshow.banner)]</value>
 	</variable>
 	<variable name="PosterVar">
-		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultFolderBackPoster.png</value>
 		<value condition="!String.IsEmpty(Container.Art(season.poster)) + Container.Content(episodes)">$INFO[Container.Art(season.poster)]</value>
 		<value condition="!String.IsEmpty(Container.Art(tvshow.poster)) + Container.Content(episodes)">$INFO[Container.Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(Container.Art(tvshow.poster)) + Container.Content(seasons) + Window.IsActive(movieinformation)">$INFO[Container.Art(tvshow.poster)]</value>
