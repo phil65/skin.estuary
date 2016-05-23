@@ -892,14 +892,7 @@
 						<height>671</height>
 						<pagecontrol>70</pagecontrol>
 						<onfocus>ClearProperty(listposition,home)</onfocus>
-						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),movies) + Control.IsVisible(5000)">5000</onright>
-						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),tvshows) + Control.IsVisible(6000)">6000</onright>
-						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),music) + Control.IsVisible(7000)">7000</onright>
-						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),addons) + Control.IsVisible(8000)">8000</onright>
-						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),video) + Control.IsVisible(11000)">11000</onright>
-						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),livetv) + Control.IsVisible(12000)">12000</onright>
-						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),radio) + Control.IsVisible(13000)">13000</onright>
-						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),weather) + Control.IsVisible(15000)">15000</onright>
+						<onright>SetFocus($INFO[Container(9000).Property(menu_id)])</onright>
 						<onup>900</onup>
 						<ondown>700</ondown>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -1029,6 +1022,7 @@
 								<onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
 								<thumb>icons/home/movies.png</thumb>
 								<property name="id">movies</property>
+								<property name="menu_id">$NUMBER[5000]</property>
 								<visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
 							</item>
 							<item>
@@ -1038,6 +1032,7 @@
 								<onclick condition="!Library.HasContent(tvshows)">ActivateWindow(Videos,sources://video/,return)</onclick>
 								<thumb>icons/home/tv.png</thumb>
 								<property name="id">tvshows</property>
+								<property name="menu_id">$NUMBER[5000]</property>
 								<visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
 							</item>
 							<item>
@@ -1046,6 +1041,7 @@
 								<onclick>ActivateWindow(Music,root,return)</onclick>
 								<thumb>icons/home/music.png</thumb>
 								<property name="id">music</property>
+								<property name="menu_id">$NUMBER[6000]</property>
 								<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 							</item>
 							<item>
@@ -1053,6 +1049,7 @@
 								<onclick>ActivateWindow(TVChannels)</onclick>
 								<thumb>icons/home/livetv.png</thumb>
 								<property name="id">livetv</property>
+								<property name="menu_id">$NUMBER[7000]</property>
 								<visible>PVR.HasTVChannels</visible>
 							</item>
 							<item>
@@ -1060,6 +1057,7 @@
 								<onclick>ActivateWindow(RadioChannels)</onclick>
 								<thumb>icons/home/radio.png</thumb>
 								<property name="id">radio</property>
+								<property name="menu_id">$NUMBER[12000]</property>
 								<visible>PVR.HasRadioChannels</visible>
 							</item>
 							<item>
@@ -1067,6 +1065,7 @@
 								<onclick>ActivateWindow(1100)</onclick>
 								<thumb>icons/home/addons.png</thumb>
 								<property name="id">addons</property>
+								<property name="menu_id">$NUMBER[9000]</property>
 								<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 							</item>
 							<item>
@@ -1074,6 +1073,7 @@
 								<onclick>ActivateWindow(Pictures)</onclick>
 								<thumb>icons/home/pictures.png</thumb>
 								<property name="id">pictures</property>
+								<property name="menu_id">$NUMBER[10000]</property>
 								<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 							</item>
 							<item>
@@ -1081,6 +1081,7 @@
 								<onclick>ActivateWindow(Videos,root)</onclick>
 								<thumb>icons/home/videos.png</thumb>
 								<property name="id">video</property>
+								<property name="menu_id">$NUMBER[11000]</property>
 								<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 							</item>
 							<item>
@@ -1088,6 +1089,7 @@
 								<onclick>ActivateWindow(Weather)</onclick>
 								<thumb>icons/home/weather.png</thumb>
 								<property name="id">weather</property>
+								<property name="menu_id">$NUMBER[12000]</property>
 								<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
 							</item>
 						</content>
