@@ -75,7 +75,7 @@
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="ShiftThumbVar">
-		<value condition="ListItem.IsParentFolder">DefaultFolderSquare.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultFolderBackSquare.png</value>
 		<value condition="String.IsEmpty(Listitem.Thumb) + [Container.Content(albums) | Container.Content(artists)]">DefaultAudio.png</value>
 		<value condition="ListItem.IsFolder + String.IsEmpty(ListItem.Thumb)">DefaultFolderSquare.png</value>
 		<value>$INFO[ListItem.Thumb]</value>
