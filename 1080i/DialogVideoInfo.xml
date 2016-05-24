@@ -271,7 +271,7 @@
 								<left>20</left>
 								<width>224</width>
 								<height>277</height>
-								<texture fallback="DefaultActor.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="DefaultActorSolid.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 							</control>
 							<control type="image">
@@ -313,7 +313,7 @@
 								<top>0</top>
 								<width>264</width>
 								<height>317</height>
-								<texture>DefaultActor.png</texture>
+								<texture>DefaultActorSolid.png</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -323,7 +323,7 @@
 								<left>20</left>
 								<width>224</width>
 								<height>277</height>
-								<texture fallback="DefaultActor.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="DefaultActorSolid.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 							</control>
 							<control type="image">
