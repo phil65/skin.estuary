@@ -129,7 +129,7 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="ListInfoBoxImageVar">
-		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultBackFanart.png</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Art(thumb)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
