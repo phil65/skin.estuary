@@ -261,7 +261,7 @@
 							<param name="item1_label" value="$LOCALIZE[359]" />
 							<param name="item1_vis" value="Library.HasContent(music)" />
 							<param name="item2_onclick" value="ActivateWindow(Music,Artists,return)" />
-							<param name="item2_icon" value="actors.png" />
+							<param name="item2_icon" value="artists.png" />
 							<param name="item2_label" value="$LOCALIZE[133]" />
 							<param name="item2_vis" value="Library.HasContent(music)" />
 							<param name="item3_onclick" value="ActivateWindow(Music,Albums,return)" />
