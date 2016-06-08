@@ -852,9 +852,9 @@
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<control type="radiobutton" id="900">
-					<left>37</left>
+					<left>33</left>
 					<top>94</top>
-					<width>420</width>
+					<width>424</width>
 					<height>110</height>
 					<onup>14200</onup>
 					<ondown>SetFocus(9000,0)</ondown>
@@ -1095,8 +1095,8 @@
 				</control>
 				<control type="grouplist" id="700">
 					<orientation>horizontal</orientation>
-					<itemgap>-17</itemgap>
-					<left>36</left>
+					<itemgap>-16</itemgap>
+					<left>33</left>
 					<top>878</top>
 					<onup>SetFocus(9000,99)</onup>
 					<onup>9000</onup>
