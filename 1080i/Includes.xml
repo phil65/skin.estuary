@@ -50,7 +50,7 @@
 			<control type="scrollbar" id="5199">
 				<left>0</left>
 				<top>988</top>
-				<width>1920</width>
+				<width>100%</width>
 				<height>12</height>
 				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
 				<onup>50</onup>
@@ -880,7 +880,7 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>2000</width>
+					<width>110%</width>
 					<height>83</height>
 					<texture>frame/InfoBar.png</texture>
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
@@ -990,7 +990,7 @@
 							<top>40</top>
 							<label>$PARAM[time_sublabel]</label>
 							<font>font10</font>
-							<left>1340</left>
+							<right>85</right>
 							<shadowcolor>text_shadow</shadowcolor>
 							<height>100</height>
 							<width>500</width>
@@ -1077,7 +1077,7 @@
 				<control type="image">
 					<left>0</left>
 					<top>995</top>
-					<width>2000</width>
+					<width>110%</width>
 					<height>85</height>
 					<texture flipy="true">frame/InfoBar.png</texture>
 				</control>
@@ -1296,7 +1296,7 @@
 	<include name="FullScreenDimensions">
 		<left>0</left>
 		<top>0</top>
-		<width>1920</width>
-		<height>1080</height>
+		<width>100%</width>
+		<height>100%</height>
 	</include>
 </includes>

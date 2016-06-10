@@ -10,8 +10,8 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<width>100%</width>
+			<height>100%</height>
 			<aspectratio>scale</aspectratio>
 			<fadetime>400</fadetime>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
@@ -20,8 +20,8 @@
 		</control>
 		<control type="image">
 			<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
-			<width>1920</width>
-			<height>1080</height>
+			<width>100%</width>
+			<height>100%</height>
 			<aspectratio align="center">scale</aspectratio>
 			<animation effect="fade" start="100" end="50" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | !String.IsEmpty(Visualisation.Name)">Conditional</animation>
 		</control>
