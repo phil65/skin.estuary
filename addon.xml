@@ -5,6 +5,7 @@
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="bg_BG">Estuary облик от phil65 и Piers. (стандартния облик на Kodi)</summary>
