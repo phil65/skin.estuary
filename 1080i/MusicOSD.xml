@@ -154,18 +154,6 @@
 				</control>
 			</control>
 			<control type="label">
-				<left>30</left>
-				<top>40</top>
-				<width>1858</width>
-				<height>75</height>
-				<align>center</align>
-				<aligny>bottom</aligny>
-				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-				<font>font30</font>
-				<shadowcolor>black</shadowcolor>
-				<textcolor>white</textcolor>
-			</control>
-			<control type="label">
 				<right>30</right>
 				<top>-90</top>
 				<textoffsetx>20</textoffsetx>
