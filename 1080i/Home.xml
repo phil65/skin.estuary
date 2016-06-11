@@ -690,7 +690,7 @@
 							<param name="item3_onclick" value="Weather.LocationNext" />
 							<param name="item3_icon" value="location-next.png" />
 							<param name="item3_label" value="$LOCALIZE[31078]" />
-							<param name="item4_onclick" value="ActivateWindow(weathersettings)" />
+							<param name="item4_onclick" value="ActivateWindow(servicesettings,weather)" />
 							<param name="item4_icon" value="weather-settings.png" />
 							<param name="item4_label" value="$LOCALIZE[1390]" />
 							<param name="item5_vis" value="False" />
@@ -794,7 +794,7 @@
 							<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31120]" />
 							<param name="button_label" value="$LOCALIZE[31121]" />
-							<param name="button_onclick" value="ActivateWindow(weathersettings)"/>
+							<param name="button_onclick" value="ActivateWindow(servicesettings,weather)"/>
 							<param name="button_id" value="15300"/>
 							<param name="visible" value="String.IsEmpty(Weather.plugin)"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoWeatherButton)"/>
