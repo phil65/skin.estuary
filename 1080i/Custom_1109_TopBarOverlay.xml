@@ -79,6 +79,7 @@
                     <height>100</height>
                     <width>500</width>
                     <align>right</align>
+                    <visible>!VideoPlayer.Content(LiveTV) | VideoPlayer.HasEpg</visible>
                 </control>
             </control>
         </control>

@@ -124,6 +124,7 @@
 					<height>99</height>
 					<texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
 					<aspectratio>keep</aspectratio>
+					<visible>!Player.ChannelPreviewActive</visible>
 				</control>
 				<control type="image">
 					<left>280</left>
@@ -158,6 +159,7 @@
 				<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+				<visible>!Player.ChannelPreviewActive</visible>
 			</control>
 			<control type="progress" id="23">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
@@ -168,6 +170,7 @@
 				<info>Player.Progress</info>
 				<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+				<visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
 			</control>
 		</control>
 		<control type="group">
