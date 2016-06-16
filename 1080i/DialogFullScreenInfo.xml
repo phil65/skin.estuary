@@ -49,7 +49,7 @@
 				<align>left</align>
 				<orientation>horizontal</orientation>
 				<itemgap>10</itemgap>
-				<visible>Control.HasFocus(5552)</visible>
+				<visible>Control.HasFocus(5552) + !Player.ChannelPreviewActive</visible>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]" />
 				</include>
