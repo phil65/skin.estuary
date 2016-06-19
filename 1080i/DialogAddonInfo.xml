@@ -25,7 +25,7 @@
 				<width>900</width>
 				<height>380</height>
 				<font>font_textbox</font>
-				<label>$INFO[ListItem.AddonDescription,,[CR][CR]][I]Click here to see latest changes...[/I]</label>
+				<label>$INFO[ListItem.AddonDescription,,[CR][CR]][I]$LOCALIZE[31136][/I]</label>
 				<textcolor>white</textcolor>
 				<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
 			</control>
@@ -35,7 +35,7 @@
 				<width>900</width>
 				<height>70</height>
 				<font>font_textbox</font>
-				<label fallback="31008">$INFO[ListItem.AddonDisclaimer,$LOCALIZE[24052]: ]</label>
+				<label fallback="31008">$LOCALIZE[31135]: $INFO[ListItem.AddonOrigin][CR]$INFO[ListItem.AddonDisclaimer,$LOCALIZE[24052]: ]</label>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="image">
