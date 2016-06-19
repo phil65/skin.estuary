@@ -7,12 +7,17 @@
 	<controls>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<control type="button">
+			<control type="button" id="5000">
 				<left>770</left>
 				<top>162</top>
 				<width>1040</width>
 				<height>559</height>
 				<label>-</label>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<onclick>SetProperty(TextViewer_Header,Changes for version $INFO[ListItem.AddonVersion],home)</onclick>
+				<onclick>SetProperty(TextViewer_Text,$ESCINFO[ListItem.AddonNews],home)</onclick>
+				<onclick>ActivateWindow(1102)</onclick>
 			</control>
 			<control type="textbox">
 				<left>840</left>
@@ -20,8 +25,9 @@
 				<width>900</width>
 				<height>380</height>
 				<font>font_textbox</font>
-				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR][/COLOR]</label>
-				<textcolor>button_focus</textcolor>
+				<label>$INFO[ListItem.AddonDescription,,[CR][CR]][I]Click here to see latest changes...[/I]</label>
+				<textcolor>white</textcolor>
+				<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
 			</control>
 			<control type="textbox">
 				<left>840</left>
@@ -46,8 +52,8 @@
 				<height>300</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
+				<onup>5000</onup>
+				<ondown>5000</ondown>
 				<align>center</align>
 				<itemgap>-18</itemgap>
 				<orientation>horizontal</orientation>
@@ -79,11 +85,11 @@
 					<font>font12</font>
 					<visible>Control.IsEnabled(13)</visible>
 				</control>
-				<include content="InfoDialogButton">
+<!-- 				<include content="InfoDialogButton">
 					<param name="id" value="10" />
 					<param name="icon" value="icons/infodialogs/changelog.png" />
 					<param name="label" value="$LOCALIZE[24036]" />
-				</include>
+				</include> -->
 				<include content="InfoDialogToggleButton">
 					<param name="id" value="7" />
 					<param name="icon_on" value="icons/infodialogs/disable.png" />
