@@ -258,6 +258,7 @@
 	</variable>
 	<variable name="OSDSubLabelVar">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season,[COLOR button_focus]S,[/COLOR]]$INFO[VideoPlayer.Episode,[COLOR button_focus]E,: [/COLOR]]$INFO[VideoPlayer.TVShowTitle]</value>
+		<value condition="VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording">$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.EpisodeName, (,)]</value>
 		<value>$INFO[VideoPlayer.Genre]</value>
 	</variable>
 	<variable name="AddonsFanartVar">
