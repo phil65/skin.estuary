@@ -457,6 +457,7 @@
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="addons://repository.xbmc.org/"/>
+							<param name="widget_header" value="Kodi $LOCALIZE[24011]"/>
 							<param name="widget_target" value="addonbrowser"/>
 							<param name="sortby" value="label"/>
 							<param name="sortorder" value="ascending"/>
