@@ -450,24 +450,10 @@
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8500"/>
 							<param name="onup_id" value="8400"/>
-							<param name="ondown_id" value="8600"/>
-							<param name="single_label" value="$INFO[ListItem.Label]"/>
-							<param name="main_label" value=""/>
-							<param name="sub_label" value=""/>
-						</include>
-						<include content="WidgetListSquare">
-							<param name="content_path" value="addons://repository.xbmc.org/"/>
-							<param name="widget_header" value="Kodi $LOCALIZE[24011]"/>
-							<param name="widget_target" value="addonbrowser"/>
-							<param name="sortby" value="label"/>
-							<param name="sortorder" value="ascending"/>
-							<param name="list_id" value="8600"/>
-							<param name="onup_id" value="8500"/>
 							<param name="ondown_id" value="20001"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
-							<param name="widget_limit" value="20"/>
 						</include>
 					</control>
 				</control>
@@ -582,6 +568,8 @@
 						</include>
 						<include content="WidgetListChannels">
 							<param name="content_path" value="pvr://channels/tv/All channels/"/>
+							<param name="sortby" value="lastplayed"/>
+							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31016]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12200"/>
@@ -662,6 +650,8 @@
 						</include>
 						<include content="WidgetListChannels">
 							<param name="content_path" value="pvr://channels/radio/All channels/"/>
+							<param name="sortby" value="lastplayed"/>
+							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31018]"/>
 							<param name="widget_target" value="files"/>
 							<param name="list_id" value="13200"/>
