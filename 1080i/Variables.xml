@@ -295,6 +295,7 @@
 		<value condition="Control.HasFocus(802)">$INFO[Skin.String(HomeFanart.path)]settings$INFO[Skin.String(HomeFanart.ext)]</value>
 		<value condition="Control.HasFocus(803)">$INFO[Skin.String(HomeFanart.path)]favorites$INFO[Skin.String(HomeFanart.ext)]</value>
 		<value condition="Control.HasFocus(801)">$INFO[Skin.String(HomeFanart.path)]filemanager$INFO[Skin.String(HomeFanart.ext)]</value>
+		<value condition="Control.HasFocus(900)">$INFO[Skin.String(HomeFanart.path)]search$INFO[Skin.String(HomeFanart.ext)]</value>
 		<value condition="!String.IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(id)]$INFO[Skin.String(HomeFanart.ext)]</value>
 	</variable>
 	<variable name="MediaFanartVar">
