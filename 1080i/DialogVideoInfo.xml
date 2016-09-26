@@ -28,7 +28,7 @@
 					<texture fallback="DefaultVideo.png">$VAR[InfoDialogPosterVar]</texture>
 				</control>
 				<control type="group">
-					<visible>String.IsEqual(ListItem.DBType,episode)</visible>
+					<visible>String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,video)</visible>
 					<visible>!String.IsEmpty(ListItem.Thumb) + !String.IsEqual(ListItem.Thumb,ListItem.Art(poster))</visible>
 					<control type="image">
 						<left>4</left>
