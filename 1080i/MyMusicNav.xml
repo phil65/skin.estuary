@@ -79,7 +79,7 @@
 						<include>MediaMenuItemsCommon</include>
 						<label>$LOCALIZE[653]</label>
 						<onclick>UpdateLibrary(music)</onclick>
-						<visible>!Container.Content(addons)</visible>
+						<visible>!Container.Content(addons)+ String.IsEmpty(Container.PluginName)</visible>
 						<altlabel>$LOCALIZE[13353]</altlabel>
 						<usealttexture>library.isscanningmusic</usealttexture>
 					</control>
