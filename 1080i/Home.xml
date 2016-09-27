@@ -1062,7 +1062,7 @@
 								<font>font14</font>
 								<label>$INFO[ListItem.Label]</label>
 								<shadowcolor>text_shadow</shadowcolor>
-								<visible>IsEmpty(ListItem.Label2)</visible>
+								<visible>String.IsEmpty(ListItem.Label2)</visible>
 							</control>
 							<control type="label">
 								<left>74</left>

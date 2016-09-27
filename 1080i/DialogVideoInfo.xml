@@ -411,7 +411,7 @@
 					</include>
 					<control type="group" id="400">
 						<width>262</width>
-						<visible>Control.IsEnabled(7) | !IsEmpty(ListItem.UserRating)</visible>
+						<visible>Control.IsEnabled(7) | !String.IsEmpty(ListItem.UserRating)</visible>
 						<control type="button" id="7">
 							<include content="VideoInfoButtonsCommon">
 								<param name="icon" value="" />
@@ -420,7 +420,7 @@
 							<onleft>440</onleft>
 							<onright>101</onright>
 							<onup>140</onup>
-							<enable>IsEmpty(Container.PluginName)</enable>
+							<enable>String.IsEmpty(Container.PluginName)</enable>
 							<ondown condition="Integer.IsEqual(Container(5000).CurrentItem,1)">SetFocus(50,0)</ondown>
 							<ondown condition="Integer.IsEqual(Container(5000).CurrentItem,2)">SetFocus(50,1)</ondown>
 							<ondown condition="Integer.IsEqual(Container(5000).CurrentItem,3)">SetFocus(50,2)</ondown>

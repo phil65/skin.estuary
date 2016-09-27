@@ -118,7 +118,7 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="ListBoxInfoVar">
-		<value condition="Stringcompare(Container.FolderPath,addons://outdated/) + !IsEmpty(ListItem.Addonnews)">$INFO[ListItem.Addonnews]</value>
+		<value condition="String.IsEqual(Container.FolderPath,addons://outdated/) + !String.IsEmpty(ListItem.Addonnews)">$INFO[ListItem.Addonnews]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonDescription]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Property(album_description)]</value>
 		<value condition="Container.Content(mixed) | Container.Content(videos)">$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR],[CR]]$INFO[ListItem.Plot]</value>
@@ -249,8 +249,8 @@
 		<value>$INFO[ListItem.Label]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
 	</variable>
 	<variable name="VideoInfoSubLabelVar">
-		<value condition="Stringcompare(ListItem.DBType,episode)">$INFO[ListItem.Season]$INFO[ListItem.Episode,[COLOR grey]x[/COLOR],: ]$INFO[ListItem.TVShowTitle]</value>
-		<value condition="Stringcompare(ListItem.DBType,movie)">$INFO[ListItem.Tagline]</value>
+		<value condition="String.IsEqual(ListItem.DBType,episode)">$INFO[ListItem.Season]$INFO[ListItem.Episode,[COLOR grey]x[/COLOR],: ]$INFO[ListItem.TVShowTitle]</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie)">$INFO[ListItem.Tagline]</value>
 		<value>$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="OSDSubLabelVar">
