@@ -213,7 +213,7 @@
 						<description>Unlock Shares</description>
 						<include>MediaMenuItemsCommon</include>
 						<label>$LOCALIZE[20336]</label>
-						<onclick>xbmc.mastermode</onclick>
+						<onclick>mastermode</onclick>
 						<selected>system.ismaster</selected>
 						<visible>system.haslocks</visible>
 					</control>
