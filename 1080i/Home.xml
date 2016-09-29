@@ -377,14 +377,20 @@
 						<include content="SubMenu">
 							<param name="list_id" value="8900"/>
 							<param name="ondown_id" value="8100"/>
-							<param name="item1_onclick" value="ActivateWindow(addonbrowser,root)" />
-							<param name="item1_icon" value="add-ons.png" />
-							<param name="item1_label" value="$LOCALIZE[10040]" />
-							<param name="item2_onclick" value="ActivateWindow(systemsettings,addons)" />
-							<param name="item2_icon" value="settings.png" />
-							<param name="item2_label" value="$LOCALIZE[5]" />
-							<param name="item3_vis" value="False" />
-							<param name="item4_vis" value="False" />
+							<param name="item1_onclick" value="ActivateWindow(addonbrowser,addons://user/,return)" />
+							<param name="item1_icon" value="recordings.png" />
+							<param name="item1_label" value="$LOCALIZE[31143]" />
+							<param name="item2_onclick" value="ActivateWindow(addonbrowser,addons://repos/,return)" />
+							<param name="item2_icon" value="add-ons.png" />
+							<param name="item2_label" value="$LOCALIZE[31144]" />
+							<param name="item3_onclick" value="ActivateWindow(addonbrowser,addons://search/,return)" />
+							<param name="item3_icon" value="tv-search.png" />
+							<param name="item3_label" value="$LOCALIZE[137]" />
+							<param name="item3_vis" value="true" />
+							<param name="item4_onclick" value="ActivateWindow(systemsettings,addons)" />
+							<param name="item4_icon" value="settings.png" />
+							<param name="item4_label" value="$LOCALIZE[5]" />
+							<param name="item4_vis" value="true" />
 							<param name="item5_vis" value="False" />
 							<param name="item6_vis" value="False" />
 							<param name="item7_vis" value="False" />
