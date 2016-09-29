@@ -1170,7 +1170,8 @@
 							</item>
 							<item>
 								<label>$LOCALIZE[8]</label>
-								<onclick>ActivateWindow(Weather)</onclick>
+								<onclick condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(Weather)</onclick>
+								<onclick condition="String.IsEmpty(Weather.Plugin)">ReplaceWindow(servicesettings,weather)</onclick>
 								<thumb>icons/home/weather.png</thumb>
 								<property name="id">weather</property>
 								<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
