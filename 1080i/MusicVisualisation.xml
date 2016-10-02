@@ -149,6 +149,20 @@
 				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 			</control>
+			<control type="label">
+				<left>1450</left>
+				<top>770</top>
+				<width>400</width>
+				<height>45</height>
+				<align>right</align>
+				<aligny>bottom</aligny>
+				<label>$VAR[SeekLabel]</label>
+				<font>font30_title</font>
+				<shadowcolor>black</shadowcolor>
+				<textcolor>grey</textcolor>
+				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>30</left>
