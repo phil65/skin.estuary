@@ -60,6 +60,18 @@
 						<bordersize>20</bordersize>
 						<animation effect="slide" end="-15,0" time="0" condition="true">Conditional</animation>
 					</control>
+					<control type="textbox">
+						<left>15</left>
+						<top>210</top>
+						<width>200</width>
+						<height>100</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font12_title</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<visible>String.IsEmpty(ListItem.Art(poster)) + !ListItem.IsParentFolder</visible>
+					</control>
 					<control type="group">
 						<left>170</left>
 						<top>20</top>
