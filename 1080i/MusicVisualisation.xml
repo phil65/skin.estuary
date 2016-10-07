@@ -95,7 +95,7 @@
 				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 				<bordersize>4</bordersize>
 				<visible>!String.IsEmpty(Player.Art(fanart))</visible>
-				<visible>![Window.IsActive(VisualisationSettings) | Window.IsActive(VisualisationPresetList)]</visible>
+				<visible>!Window.IsActive(VisualisationPresetList)</visible>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
 				<animation effect="fade" end="0" time="200">Hidden</animation>
 			</control>
