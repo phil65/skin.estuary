@@ -1049,7 +1049,7 @@
 							<left>17</left>
 							<width>44</width>
 							<height>44</height>
-							<animation effect="rotate" end="-90" center="40,23" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(502)">Conditional</animation>
+							<animation effect="rotate" end="-90" center="40,23" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53)">Conditional</animation>
 							<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
 							<texturenofocus colordiffuse="button_focus">frame/menu-nofo.png</texturenofocus>
 							<animation effect="fade" time="200">VisibleChange</animation>
