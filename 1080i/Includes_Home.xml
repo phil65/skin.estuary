@@ -271,7 +271,7 @@
 								<width>180</width>
 								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
-								<font>font10</font>
+								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -280,7 +280,7 @@
 								<top>266</top>
 								<width>180</width>
 								<label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
-								<font>font10</font>
+								<font>font12</font>
 								<textcolor>button_focus</textcolor>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -309,17 +309,17 @@
 	</include>
 	<include name="ImageWidgetHeader">
 		<control type="group">
-			<height>190</height>
+			<height>210</height>
 			<visible>$PARAM[visible]</visible>
 			<control type="image">
-				<top>93</top>
+				<top>113</top>
 				<left>478</left>
 				<width>1370</width>
 				<height>114</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
 			<control type="label">
-				<top>86</top>
+				<top>106</top>
 				<left>478</left>
 				<width>1370</width>
 				<height>120</height>
@@ -400,7 +400,7 @@
 					<height>180</height>
 					<label>$PARAM[text_label]</label>
 					<align>center</align>
-					<font>font12</font>
+					<font>font14</font>
 					<visible>$PARAM[visible]</visible>
 				</control>
 			</control>
@@ -465,7 +465,7 @@
 							<top>253</top>
 							<width>288</width>
 							<label>$PARAM[second_label]</label>
-							<font>font10</font>
+							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -474,7 +474,7 @@
 							<top>279</top>
 							<width>288</width>
 							<label>$INFO[ListItem.TVShowTitle]</label>
-							<font>font10</font>
+							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
@@ -530,7 +530,7 @@
 								<width>288</width>
 								<label>$PARAM[second_label]</label>
 								<scroll>true</scroll>
-								<font>font10</font>
+								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -540,7 +540,7 @@
 								<width>288</width>
 								<scroll>true</scroll>
 								<label>$INFO[ListItem.TVShowTitle]</label>
-								<font>font10</font>
+								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -629,7 +629,7 @@
 								<top>238</top>
 								<width>260</width>
 								<label>$PARAM[sub_label]</label>
-								<font>font10</font>
+								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -638,7 +638,7 @@
 								<top>266</top>
 								<width>260</width>
 								<label>$PARAM[main_label]</label>
-								<font>font10</font>
+								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -649,7 +649,7 @@
 								<height>60</height>
 								<aligny>center</aligny>
 								<label>$PARAM[single_label]</label>
-								<font>font10</font>
+								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -689,7 +689,7 @@
 									<top>238</top>
 									<width>280</width>
 									<label>$PARAM[sub_label]</label>
-									<font>font10</font>
+									<font>font12</font>
 									<scroll>true</scroll>
 									<shadowcolor>text_shadow</shadowcolor>
 									<align>center</align>
@@ -698,7 +698,7 @@
 									<left>10</left>
 									<top>266</top>
 									<width>280</width>
-									<font>font10</font>
+									<font>font12</font>
 									<scroll>true</scroll>
 									<label>$PARAM[main_label]</label>
 									<shadowcolor>text_shadow</shadowcolor>
@@ -711,7 +711,7 @@
 									<height>60</height>
 									<aligny>center</aligny>
 									<label>$PARAM[single_label]</label>
-									<font>font10</font>
+									<font>font12</font>
 									<shadowcolor>text_shadow</shadowcolor>
 									<align>center</align>
 								</control>

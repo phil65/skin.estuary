@@ -4,16 +4,16 @@
 		<width>430</width>
 		<textoffsetx>20</textoffsetx>
 		<top>0</top>
-		<height>70</height>
+		<height>80</height>
 		<radioposx>330</radioposx>
 		<textwidth>320</textwidth>
 		<aligny>center</aligny>
 		<textcolor>white</textcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-		<texturenofocus border="30">lists/separator.png</texturenofocus>
+		<texturenofocus></texturenofocus>
 		<alttexturefocus colordiffuse="button_focus">lists/focus.png</alttexturefocus>
-		<alttexturenofocus border="30">lists/separator.png</alttexturenofocus>
+		<alttexturenofocus></alttexturenofocus>
 	</include>
 	<include name="PVRQuickNavItemsCommon">
 		<param name="height">110</param>

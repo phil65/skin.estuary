@@ -936,12 +936,14 @@
 					<height>1080</height>
 					<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 				</control>
-				<control type="list" id="9000">
+				<control type="fixedlist" id="9000">
 					<left>0</left>
 					<top>240</top>
 					<width>462</width>
 					<height>850</height>
 					<pagecontrol>70</pagecontrol>
+					<movement>6</movement>
+					<focusposition>1</focusposition>
 					<onfocus>ClearProperty(listposition,home)</onfocus>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),movies) + Control.IsVisible(5000)">5000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),tvshows) + Control.IsVisible(6000)">6000</onright>
@@ -1120,7 +1122,6 @@
 			<include>BottomBar</include>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="" />
-				<param name="breadcrumbs_icon" value="" />
 			</include>
 			<control type="group">
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>

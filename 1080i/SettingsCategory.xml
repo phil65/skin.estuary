@@ -15,21 +15,20 @@
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
 		<control type="group">
-			<left>110</left>
 			<include>OpenClose_Left</include>
-			<control type="image">
-				<left>-20</left>
-				<top>138</top>
-				<width>440</width>
-				<height>792</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
-			</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>530</width>
+					<height>1080</height>
+					<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
+				</control>
 			<control type="grouplist" id="3">
 				<description>button area</description>
 				<left>0</left>
 				<top>160</top>
-				<width>400</width>
-				<height>700</height>
+				<width>470</width>
+				<height>720</height>
 				<usecontrolcoords>true</usecontrolcoords>
 				<onleft>5</onleft>
 				<onright>5</onright>
@@ -38,27 +37,27 @@
 			</control>
 			<control type="button" id="10">
 				<description>Default Category Button</description>
-				<left>2</left>
-				<height>75</height>
-				<width>396</width>
-				<textoffsetx>20</textoffsetx>
+				<left>0</left>
+				<height>90</height>
+				<width>470</width>
+				<textoffsetx>40</textoffsetx>
 				<aligny>center</aligny>
-				<font>font13_title</font>
+				<font>font16</font>
 				<textcolor>white</textcolor>
 				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 				<texturenofocus border="2">lists/separator.png</texturenofocus>
 			</control>
 			<control type="radiobutton" id="20">
 				<width>400</width>
-				<left>0</left>
-				<top>792</top>
+				<left>30</left>
+				<top>892</top>
 				<height>120</height>
 				<aligny>center</aligny>
 				<onclick>SettingsLevelChange</onclick>
 				<textoffsetx>100</textoffsetx>
 				<textoffsety>0</textoffsety>
 				<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
-				<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
+				<texturenofocus></texturenofocus>
 				<radioposx>40</radioposx>
 				<radioposy>0</radioposy>
 				<radiowidth>40</radiowidth>
@@ -78,15 +77,15 @@
 			<include>OpenClose_Right</include>
 			<control type="image">
 				<left>420</left>
-				<top>138</top>
+				<top>100</top>
 				<width>1300</width>
-				<height>792</height>
+				<height>880</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
 				<left>442</left>
-				<top>802</top>
+				<top>842</top>
 				<width>1256</width>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
@@ -94,10 +93,10 @@
 			<control type="grouplist" id="5">
 				<description>control area</description>
 				<left>442</left>
-				<top>160</top>
+				<top>122</top>
 				<pagecontrol>60</pagecontrol>
 				<width>1256</width>
-				<height>640</height>
+				<height>700</height>
 				<onleft>3</onleft>
 				<onright>60</onright>
 				<onup>5</onup>
@@ -106,7 +105,7 @@
 			<control type="textbox" id="6">
 				<description>description area</description>
 				<left>480</left>
-				<top>810</top>
+				<top>850</top>
 				<width>1150</width>
 				<height>90</height>
 				<font>font12</font>
@@ -155,13 +154,6 @@
 			<textcolor>grey</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
-		<include content="UpDownArrows">
-			<param name="container_id" value="5" />
-			<param name="posx" value="1141" />
-			<param name="up_posy" value="105" />
-			<param name="down_posy" value="940" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
 		<control type="scrollbar" id="60">
 			<right>0</right>
 			<top>80</top>
@@ -173,9 +165,15 @@
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[5]$INFO[Control.GetLabel(2), / ]" />
-			<param name="breadcrumbs_icon" value="$VAR[SettingsSectionIcon]" />
 		</include>
 		<include>BottomBar</include>
+		<include content="UpDownArrows">
+			<param name="container_id" value="5" />
+			<param name="posx" value="1141" />
+			<param name="up_posy" value="70" />
+			<param name="down_posy" value="980" />
+			<param name="visible" value="!System.HasModalDialog" />
+		</include>
 		<control type="label" id="2">
 			<description>breadcrumbs label</description>
 			<visible>False</visible>

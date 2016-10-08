@@ -146,11 +146,9 @@
 		</control>
 		<include content="TopBar" condition="Window.IsActive(videoplaylist)">
 			<param name="breadcrumbs_label" value="$LOCALIZE[31065]" />
-			<param name="breadcrumbs_icon" value="icons/settings/video.png" />
 		</include>
 		<include content="TopBar" condition="Window.IsActive(musicplaylist)">
 			<param name="breadcrumbs_label" value="$LOCALIZE[31066]" />
-			<param name="breadcrumbs_icon" value="icons/settings/music.png" />
 		</include>
 		<include>BottomBar</include>
 	</controls>

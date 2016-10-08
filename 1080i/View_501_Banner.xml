@@ -25,21 +25,17 @@
 		</control>
 	</include>
 	<include name="View_501_Banner">
-		<include content="UpDownArrows">
-			<param name="container_id" value="501" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
 		<control type="group">
 			<include>OpenClose_Right</include>
 			<left>100</left>
-			<top>167</top>
+			<top>0</top>
 			<visible>Control.IsVisible(501)</visible>
 			<include>Visible_Right</include>
 			<control type="panel" id="501">
 				<left>0</left>
 				<top>0</top>
 				<width>1800</width>
-				<height>732</height>
+				<height>1080</height>
 				<onleft>9000</onleft>
 				<onright>531</onright>
 				<onup>501</onup>
@@ -49,39 +45,43 @@
 				<pagecontrol>531</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<visible>Container.Content(tvshows)</visible>
-				<itemlayout height="183" width="900">
-					<control type="image">
-						<left>1</left>
-						<top>15</top>
-						<width>820</width>
-						<height>155</height>
-						<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[BannerArtVar]</texture>
-						<aspectratio aligny="center">scale</aspectratio>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
-					</control>
-					<control type="label">
-						<left>30</left>
-						<top>20</top>
-						<width>700</width>
-						<height>145</height>
-						<label>$INFO[ListItem.Label]</label>
-						<font>font35_title</font>
-						<shadowcolor>text_shadow</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<visible>String.IsEmpty(ListItem.Art(banner)) + !Listitem.IsParentFolder</visible>
-					</control>
+				<itemlayout height="220" width="900">
 					<control type="group">
-						<left>770</left>
-						<top>20</top>
-						<include>UserRatingCircle</include>
+						<posy>100</posy>
+						<control type="image">
+							<left>1</left>
+							<top>15</top>
+							<width>820</width>
+							<height>155</height>
+							<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[BannerArtVar]</texture>
+							<aspectratio aligny="center">scale</aspectratio>
+							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+							<bordersize>4</bordersize>
+						</control>
+						<control type="label">
+							<left>30</left>
+							<top>20</top>
+							<width>700</width>
+							<height>145</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font35_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(banner)) + !Listitem.IsParentFolder</visible>
+						</control>
+						<control type="group">
+							<left>770</left>
+							<top>20</top>
+							<include>UserRatingCircle</include>
+						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="183" width="900">
+				<focusedlayout height="220" width="900">
 					<control type="group">
 						<animation effect="slide" start="0,0" end="-37,0" time="300">Focus</animation>
 						<animation effect="slide" start="-37,0" end="0,0" time="125">UnFocus</animation>
+						<posy>100</posy>
 						<control type="image">
 							<left>1</left>
 							<top>15</top>
@@ -168,7 +168,7 @@
 					</control>
 					<control type="image">
 						<right>39</right>
-						<top>15</top>
+						<top>115</top>
 						<width>70</width>
 						<height>155</height>
 						<texture colordiffuse="button_focus">colors/white.png</texture>
@@ -178,7 +178,7 @@
 					<control type="group">
 						<animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
 						<animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
-						<top>13</top>
+						<top>113</top>
 						<right>0</right>
 						<include content="BannerInfoFlag">
 							<param name="icon" value="lists/rating.png" />

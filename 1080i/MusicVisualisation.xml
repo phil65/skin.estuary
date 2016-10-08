@@ -193,7 +193,6 @@
 			<animation effect="fade" end="0" time="200">Hidden</animation>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$LOCALIZE[250]" />
-				<param name="breadcrumbs_icon" value="icons/settings/music.png" />
 			</include>
 		</control>
 	</controls>

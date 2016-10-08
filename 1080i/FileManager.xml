@@ -47,7 +47,6 @@
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[7]" />
-			<param name="breadcrumbs_icon" value="icons/settings/filemanager.png" />
 		</include>
 		<include>BottomBar</include>
 		<include content="BottomBarTwoListInfo">

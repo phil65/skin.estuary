@@ -12,7 +12,7 @@
 				<height>70</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="label">
@@ -20,7 +20,7 @@
 				<height>70</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>: [COLOR white]$INFO[Container($PARAM[list_id]).Numitems][/COLOR]</label>
 			</control>
@@ -123,22 +123,8 @@
 		</control>
 	</include>
 	<include name="PVRInfoPanel">
-		<control type="image">
-			<left>-40</left>
-			<top>-20</top>
-			<width>644</width>
-			<height>170</height>
-			<texture border="22">dialogs/dialog-bg.png</texture>
-		</control>
-		<control type="image">
-			<left>-40</left>
-			<top>130</top>
-			<width>644</width>
-			<height>596</height>
-			<texture border="22">dialogs/dialog-bg.png</texture>
-		</control>
 		<control type="group">
-			<left>150</left>
+			<left>0</left>
 			<top>40</top>
 			<control type="progress">
 				<top>60</top>
@@ -152,7 +138,7 @@
 				<top>24</top>
 				<width>560</width>
 				<height>262</height>
-				<font>font12</font>
+				<font>font13</font>
 				<visible>!String.IsEqual(ListItem.StartTime,ListItem.EndTime)</visible>
 				<label>$INFO[ListItem.StartTime]</label>
 			</control>
@@ -161,7 +147,7 @@
 				<width>360</width>
 				<height>262</height>
 				<align>right</align>
-				<font>font12</font>
+				<font>font13</font>
 				<visible>!String.IsEqual(ListItem.StartTime,ListItem.EndTime)</visible>
 				<label>$INFO[ListItem.EndTime]</label>
 			</control>
@@ -195,21 +181,21 @@
 			<top>210</top>
 			<width>560</width>
 			<height>262</height>
-			<font>font12</font>
+			<font>font13</font>
 			<label>$INFO[ListItem.EpisodeName]</label>
 		</control>
 		<control type="label">
 			<top>254</top>
 			<width>560</width>
 			<height>262</height>
-			<font>font12</font>
+			<font>font13</font>
 			<label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:[/COLOR] ]</label>
 		</control>
 		<control type="label">
 			<top>660</top>
 			<width>500</width>
 			<height>262</height>
-			<font>font12</font>
+			<font>font13</font>
 			<label>$PARAM[bottom_label1]</label>
 		</control>
 		<control type="label">
@@ -217,15 +203,15 @@
 			<width>560</width>
 			<height>262</height>
 			<align>right</align>
-			<font>font12</font>
+			<font>font13</font>
 			<label>$PARAM[bottom_label2]</label>
 		</control>
 		<control type="textbox">
 			<top>298</top>
-			<width>560</width>
-			<height>330</height>
+			<width>700</width>
+			<height>350</height>
 			<align>left</align>
-			<font>font12</font>
+			<font>font13</font>
 			<label>$INFO[ListItem.Plot]</label>
 		</control>
 		<control type="textbox">

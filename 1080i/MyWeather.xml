@@ -40,15 +40,15 @@
 				<visible>!Player.HasMedia</visible>
 			</control>
 		<control type="group">
-			<left>110</left>
+			<left>0</left>
 			<top>0</top>
 			<include>OpenClose_Left</include>
 			<control type="image">
-				<left>-20</left>
-				<top>138</top>
-				<width>380</width>
-				<height>792</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
+				<left>0</left>
+				<top>0</top>
+				<width>500</width>
+				<height>1080</height>
+				<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="list" id="300">
 				<left>0</left>
@@ -104,7 +104,7 @@
 				<onup>300</onup>
 				<ondown>SetFocus(300,0)</ondown>
 				<ondown>300</ondown>
-				<font>font12</font>
+				<font>font13</font>
 				<onclick>Weather.LocationNext</onclick>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
 			</control>
@@ -170,7 +170,7 @@
 						<height>107</height>
 						<width>600</width>
 						<aligny>top</aligny>
-						<font>font12</font>
+						<font>font13</font>
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 						<textcolor>button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -191,7 +191,7 @@
 						<width>600</width>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font12</font>
+						<font>font13</font>
 						<label>$INFO[ListItem.Label2]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -227,7 +227,7 @@
 						<height>107</height>
 						<width>600</width>
 						<aligny>top</aligny>
-						<font>font12</font>
+						<font>font13</font>
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 						<textcolor>button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -248,7 +248,7 @@
 						<width>600</width>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font12</font>
+						<font>font13</font>
 						<label>$INFO[ListItem.Label2]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -596,7 +596,7 @@
 						<width>1280</width>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font12</font>
+						<font>font13</font>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -674,7 +674,6 @@
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[8]" />
-			<param name="breadcrumbs_icon" value="icons/settings/weather.png" />
 		</include>
 		<include>BottomBar</include>
 	</controls>

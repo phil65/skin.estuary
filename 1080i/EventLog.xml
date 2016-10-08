@@ -223,7 +223,6 @@
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[31067]" />
-			<param name="breadcrumbs_icon" value="icons/settings/video.png" />
 		</include>
 		<include>BottomBar</include>
 	</controls>

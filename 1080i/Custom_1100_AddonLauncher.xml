@@ -169,7 +169,7 @@
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
 					<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+					<texturenofocus></texturenofocus>
 					<radioposx>55</radioposx>
 					<radioposy>0</radioposy>
 					<radiowidth>40</radiowidth>
@@ -190,7 +190,7 @@
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
 					<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+					<texturenofocus></texturenofocus>
 					<radioposx>35</radioposx>
 					<radioposy>0</radioposy>
 					<radiowidth>40</radiowidth>
@@ -214,7 +214,7 @@
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
 					<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
-					<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+					<texturenofocus></texturenofocus>
 					<radioposx>55</radioposx>
 					<radioposy>0</radioposy>
 					<radiowidth>40</radiowidth>
@@ -297,7 +297,6 @@
 			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
-				<param name="breadcrumbs_icon" value="icons/settings/addons.png" />
 			</include>
 			<include>BottomBar</include>
 			<include content="InfoList">
