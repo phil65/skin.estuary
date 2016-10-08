@@ -45,11 +45,11 @@
 				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
 				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-				<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501)</visible>
+				<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54)</visible>
 			</control>
 			<control type="scrollbar" id="5199">
 				<left>0</left>
-				<top>988</top>
+				<top>1067</top>
 				<width>100%</width>
 				<height>12</height>
 				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
@@ -374,12 +374,12 @@
 		</definition>
 	</include>
 	<include name="MediaFlags">
-		<top>898</top>
+		<top>1000</top>
 		<visible>Skin.HasSetting(show_mediaflags)</visible>
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<control type="grouplist">
 			<orientation>horizontal</orientation>
-			<left>100</left>
+			<left>1420</left>
 			<itemgap>5</itemgap>
 			<width>1720</width>
 			<include content="MediaFlag">
@@ -388,13 +388,6 @@
 			<include content="MediaFlag">
 				<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
 			</include>
-		</control>
-		<control type="grouplist">
-			<orientation>horizontal</orientation>
-			<right>100</right>
-			<itemgap>5</itemgap>
-			<width>1720</width>
-			<align>right</align>
 			<include content="MediaFlag">
 				<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
 			</include>
@@ -555,9 +548,9 @@
 		<definition>
 			<control type="panel" id="$PARAM[container_id]">
 				<left>520</left>
-				<top>175</top>
-				<width>1360</width>
-				<height>720</height>
+				<top>0</top>
+				<width>1400</width>
+				<height>1200</height>
 				<onleft>9000</onleft>
 				<onright>531</onright>
 				<include>Visible_Right_Delayed</include>
@@ -567,13 +560,17 @@
 				<preloaditems>1</preloaditems>
 				<pagecontrol>531</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<itemlayout height="360" width="320">
-					<include content="InfoWallMusicLayout">
-						<param name="fallback_image" value="DefaultAddon.png" />
-					</include>
-				</itemlayout>
-				<focusedlayout height="360" width="320">
+				<itemlayout height="401" width="350">
 					<control type="group">
+						<top>150</top>
+						<include content="InfoWallMusicLayout">
+							<param name="fallback_image" value="DefaultAddon.png" />
+						</include>
+					</control>
+				</itemlayout>
+				<focusedlayout height="401" width="350">
+					<control type="group">
+						<top>150</top>
 						<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="160,180">Focus</animation>
 						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="160,180">UnFocus</animation>
 						<include content="InfoWallMusicLayout">
@@ -836,7 +833,7 @@
 					<left>0</left>
 					<top>0</top>
 					<width>110%</width>
-					<height>83</height>
+					<height>113</height>
 					<texture>frame/InfoBar.png</texture>
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 				</control>
@@ -893,15 +890,15 @@
 						<visible>!String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
 					</control>
 					<control type="label">
-						<label> ($LOCALIZE[31052])</label>
+						<label>($LOCALIZE[31052])</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>Container.Filtered</visible>
 					</control>
 				</control>
 				<control type="label">
-					<top>40</top>
-					<label>$INFO[Container.SortMethod,$LOCALIZE[31022]: ]</label>
-					<font>font10</font>
+					<top>55</top>
+					<label>$INFO[Container.SortMethod,$LOCALIZE[31022]: ]  ∙  $INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</label>
+					<font>font13</font>
 					<left>85</left>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
@@ -911,47 +908,18 @@
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
-				<control type="group">
+				<control type="label">
+					<font>font_clock</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<top>10</top>
+					<right>350</right>
+					<height>200</height>
+					<width>auto</width>
+					<align>left</align>
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
-					<control type="grouplist">
-						<description>Right side of top bar</description>
-						<right>85</right>
-						<width>500</width>
-						<height>100</height>
-						<align>right</align>
-						<orientation>horizontal</orientation>
-						<usecontrolcoords>true</usecontrolcoords>
-						<include condition="Skin.HasSetting(show_weatherinfo) | Window.IsActive(skinsettings)">TopWeatherIcon</include>
-						<control type="label">
-							<include>BreadcrumbsLabel</include>
-							<label>$INFO[System.Time]</label>
-						</control>
-					</control>
-					<control type="group">
-						<control type="image">
-							<right>25</right>
-							<top>20</top>
-							<height>40</height>
-							<width>40</width>
-							<texture colordiffuse="button_focus">frame/clock.png</texture>
-							<animation effect="fade" time="300">Visible</animation>
-							<animation effect="fade" time="150">Hidden</animation>
-							<aspectratio>keep</aspectratio>
-							<visible>!Window.IsActive(volumebar)</visible>
-						</control>
-						<control type="label">
-							<top>40</top>
-							<label>$PARAM[time_sublabel]</label>
-							<font>font10</font>
-							<right>85</right>
-							<shadowcolor>text_shadow</shadowcolor>
-							<height>100</height>
-							<width>500</width>
-							<align>right</align>
-						</control>
-					</control>
+					<label>$INFO[System.Time]</label>
 				</control>
 			</control>
 		</definition>
@@ -978,7 +946,7 @@
 		</control>
 	</include>
 	<include name="BreadcrumbsLabel">
-		<font>font13_title</font>
+		<font>font30</font>
 		<shadowcolor>text_shadow</shadowcolor>
 		<top>7</top>
 		<height>100</height>
@@ -1004,7 +972,7 @@
 					<aspectratio>scale</aspectratio>
 					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">Conditional</animation>
 					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
-					<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
+					<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="FF888888">$VAR[GlobalFanartVar]</texture>
 				</control>
 				<control type="image">
 					<depth>DepthBackground</depth>
@@ -1014,7 +982,7 @@
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 					<animation effect="fade" time="400">VisibleChange</animation>
-					<texture background="true" colordiffuse="35FFFFFF">$VAR[MediaFanartVar]</texture>
+					<texture background="true" colordiffuse="55FFFFFF">$VAR[MediaFanartVar]</texture>
 					<visible>!Player.HasMedia | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 				</control>
 			</control>
@@ -1031,9 +999,9 @@
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup) | Window.Previous(visualisation)">WindowOpen</animation>
 				<control type="image">
 					<left>0</left>
-					<top>995</top>
+					<top>965</top>
 					<width>110%</width>
-					<height>85</height>
+					<height>115</height>
 					<texture flipy="true">frame/InfoBar.png</texture>
 				</control>
 				<control type="group">
@@ -1077,15 +1045,6 @@
 							<texturenofocus></texturenofocus>
 							<animation effect="fade" time="225">VisibleChange</animation>
 						</control>
-					</control>
-					<control type="image">
-						<left>17</left>
-						<width>44</width>
-						<height>44</height>
-						<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
-						<animation effect="fade" time="200">VisibleChange</animation>
-						<visible>$EXP[sidebar_focused]</visible>
-						<visible>!Player.HasMedia | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -1161,16 +1120,6 @@
 						<align>right</align>
 						<shadowcolor>text_shadow</shadowcolor>
 						<label>$PARAM[PageLabel]</label>
-					</control>
-					<control type="image">
-						<width>54</width>
-						<height>44</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="button_focus">frame/item-count.png</texture>
-						<animation effect="fade" time="200">VisibleChange</animation>
-						<visible>!String.IsEmpty(Container.NumItems)</visible>
-						<animation effect="fade" start="100" end="0" time="250" delay="200" reversible="true" condition="Control.IsVisible(23000)">Conditional</animation>
-						<animation effect="fade" start="0" end="100" time="250" reversible="true" delay="200" condition="!Control.IsVisible(23000)">Conditional</animation>
 					</control>
 				</control>
 			</control>

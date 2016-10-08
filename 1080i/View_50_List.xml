@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="View_50_List">
-		<include content="UpDownArrows">
-			<param name="container_id" value="50" />
-			<param name="visible" value="!System.HasModalDialog" />
-		</include>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<left>603</left>
-			<top>182</top>
+			<left>594</left>
+			<top>0</top>
 			<visible>Control.IsVisible(50)</visible>
 			<include>Visible_Right</include>
 			<include content="ListContainer">
@@ -16,21 +12,53 @@
 				<param name="viewtype_label" value="$LOCALIZE[535]" />
 			</include>
 		</control>
+		<control type="group">
+			<include>OpenClose_Right</include>
+			<left>1350</left>
+			<visible>Control.IsVisible(50)</visible>
+			<include>Visible_Right</include>
+				<control type="image">
+					<right>0</right>
+					<top>0</top>
+					<width>670</width>
+					<height>1080</height>
+					<texture colordiffuse="99FFFFFF" flipx="true">lists/panel.png</texture>
+				</control>
+			<control type="image">
+				<top>134</top>
+				<left>-16</left>
+				<width>596</width>
+				<height>876</height>
+				<texture>colors/black.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<left>4</left>
+				<top>154</top>
+				<width>556</width>
+				<height>836</height>
+				<fadetime>200</fadetime>
+				<aspectratio>scale</aspectratio>
+				<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
+			</control>
+			<control type="group">
+				<left>415</left>
+				<top>160</top>
+				<include content="UserRatingCircle">
+					<param name="animation" value="True" />
+				</include>
+			</control>
+		</control>
 	</include>
 	<include name="ListContainer">
-		<control type="image">
-			<description>background image</description>
-			<left>-20</left>
-			<top>-20</top>
-			<width>754</width>
-			<height>746</height>
-			<texture border="22">dialogs/dialog-bg.png</texture>
-		</control>
-		<control type="list" id="$PARAM[list_id]">
+		<control type="fixedlist" id="$PARAM[list_id]">
 			<left>2</left>
-			<top>3</top>
-			<width>710</width>
-			<height>700</height>
+			<top>0</top>
+			<width>730</width>
+			<height>1080</height>
+			<movement>5</movement>
+			<focusposition>7</focusposition>
 			<scrolltime tween="cubic" easing="out">500</scrolltime>
 			<orientation>vertical</orientation>
 			<pagecontrol>$PARAM[list_id]600</pagecontrol>
@@ -40,19 +68,11 @@
 			<ondown>$PARAM[list_id]</ondown>
 			<viewtype label="$PARAM[viewtype_label]">list</viewtype>
 			<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-			<focusedlayout height="63">
+			<focusedlayout height="70">
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>710</width>
-					<height>63</height>
-					<texture border="90,3,90,3">lists/separator.png</texture>
-					<visible>!Control.HasFocus($PARAM[list_id])</visible>
-				</control>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>710</width>
+					<width>730</width>
 					<height>69</height>
 					<texture colordiffuse="button_focus">lists/focus.png</texture>
 					<visible>Control.HasFocus($PARAM[list_id])</visible>
@@ -60,8 +80,8 @@
 				<control type="label">
 					<left>70</left>
 					<top>0</top>
-					<height>63</height>
-					<width>560</width>
+					<height>70</height>
+					<width>580</width>
 					<aligny>center</aligny>
 					<scroll>true</scroll>
 					<font>fontContextMenu</font>
@@ -69,9 +89,9 @@
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 				<control type="label">
-					<left>135</left>
+					<left>155</left>
 					<top>0</top>
-					<height>63</height>
+					<height>70</height>
 					<width>555</width>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -99,28 +119,21 @@
 					<visible>!Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 			</focusedlayout>
-			<itemlayout height="63">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>710</width>
-					<height>63</height>
-					<texture border="90,3,90,3">lists/separator.png</texture>
-				</control>
+			<itemlayout height="70">
 				<control type="label">
 					<left>70</left>
 					<top>0</top>
-					<height>63</height>
-					<width>560</width>
+					<height>70</height>
+					<width>580</width>
 					<aligny>center</aligny>
 					<font>fontContextMenu</font>
 					<label>$INFO[ListItem.Label]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 				<control type="label">
-					<left>135</left>
+					<left>155</left>
 					<top>0</top>
-					<height>63</height>
+					<height>70</height>
 					<width>555</width>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -139,10 +152,10 @@
 			</itemlayout>
 		</control>
 		<control type="scrollbar" id="$PARAM[list_id]600">
-			<left>720</left>
+			<left>732</left>
 			<top>0</top>
 			<width>12</width>
-			<height>706</height>
+			<height>1080</height>
 			<onleft>$PARAM[list_id]</onleft>
 			<onright>$PARAM[list_id]</onright>
 			<orientation>vertical</orientation>

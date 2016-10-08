@@ -12,22 +12,24 @@
 				<onclick>noop</onclick>
 				<visible>Control.IsVisible(51)</visible>
 			</control>
-			<include content="LeftRightArrows">
-				<param name="list_id" value="51" />
-				<param name="left_posx" value="45" />
-				<param name="right_posx" value="1849" />
-				<param name="posy" value="170" />
-			</include>
+				<control type="image">
+					<left>0</left>
+					<top>-20</top>
+					<width>3000</width>
+					<height>400</height>
+					<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
+				<visible>Control.IsVisible(51)</visible>
+				</control>
 			<control type="group">
 				<visible>Control.IsVisible(51)</visible>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<control type="fixedlist" id="51">
-					<left>262</left>
+					<left>0</left>
 					<top>-24</top>
-					<width>1588</width>
+					<width>2100</width>
 					<height>704</height>
-					<focusposition>0</focusposition>
+					<focusposition>1</focusposition>
 					<movement>0</movement>
 					<pagecontrol>5199</pagecontrol>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -41,83 +43,89 @@
 					<preloaditems>1</preloaditems>
 					<viewtype label="20021">icon</viewtype>
 					<itemlayout width="317">
-						<control type="image">
-							<left>20</left>
-							<top>8</top>
-							<width>276</width>
-							<height>394</height>
-							<aspectratio>scale</aspectratio>
-							<texture fallback="DefaultVideo.png">$VAR[ListPosterVar]</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
-						<control type="textbox">
-							<left>51</left>
-							<top>252</top>
-							<width>214</width>
-							<height>100</height>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font12_title</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
-						</control>
 						<control type="group">
-							<left>230</left>
-							<top>30</top>
-							<include>UserRatingCircle</include>
+							<left>-220</left>
+							<control type="image">
+								<left>20</left>
+								<top>8</top>
+								<width>276</width>
+								<height>394</height>
+								<aspectratio>scale</aspectratio>
+								<texture fallback="DefaultVideo.png">$VAR[ListPosterVar]</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
+							</control>
+							<control type="textbox">
+								<left>51</left>
+								<top>252</top>
+								<width>214</width>
+								<height>100</height>
+								<label>$INFO[ListItem.Label]</label>
+								<font>font12_title</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
+							</control>
+							<control type="group">
+								<left>230</left>
+								<top>30</top>
+								<include>UserRatingCircle</include>
+							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout width="317">
-						<control type="image">
-							<left>20</left>
-							<top>8</top>
-							<width>276</width>
-							<height>394</height>
-							<aspectratio>scale</aspectratio>
-							<texture fallback="DefaultVideo.png">$VAR[ListPosterVar]</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-							<animation effect="fade" time="300" start="100" end="0">Focus</animation>
-							<visible>Control.IsVisible(20000)</visible>
-						</control>
-						<control type="textbox">
-							<left>51</left>
-							<top>252</top>
-							<width>214</width>
-							<height>100</height>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font12_title</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
-						</control>
+					<focusedlayout width="490">
 						<control type="group">
-							<animation effect="fade" time="300" start="100" end="0">Focus</animation>
-							<visible>Control.IsVisible(20000)</visible>
-							<left>230</left>
-							<top>30</top>
-							<include>UserRatingCircle</include>
+							<left>-220</left>
+							<control type="image">
+								<left>20</left>
+								<top>8</top>
+								<width>276</width>
+								<height>394</height>
+								<aspectratio>scale</aspectratio>
+								<texture fallback="DefaultVideo.png">$VAR[ListPosterVar]</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
+								<visible>Container.OnScrollPrevious</visible>
+								<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
+ 								<visible>Control.IsVisible(20000)</visible>
+							</control>
+							<control type="image">
+								<left>173</left>
+								<top>8</top>
+								<width>276</width>
+								<height>394</height>
+								<aspectratio>scale</aspectratio>
+								<texture fallback="DefaultVideo.png">$VAR[ListPosterVar]</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
+								<visible>Container.OnScrollNext</visible>
+								<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
+								<visible>Control.IsVisible(20000)</visible>
+							</control>
+							<control type="textbox">
+								<left>51</left>
+								<top>252</top>
+								<width>214</width>
+								<height>100</height>
+								<label>$INFO[ListItem.Label]</label>
+								<font>font12_title</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
+							</control>
+							<control type="group">
+								<animation effect="fade" time="300" start="100" end="0">Focus</animation>
+								<visible>Control.IsVisible(20000)</visible>
+								<left>230</left>
+								<top>30</top>
+								<include>UserRatingCircle</include>
+							</control>
 						</control>
 					</focusedlayout>
 				</control>
 				<control type="group">
-					<control type="image">
-						<left>598</left>
-						<top>375</top>
-						<width>1232</width>
-						<height>110</height>
-						<texture border="22">dialogs/dialog-bg.png</texture>
-					</control>
-					<control type="image">
-						<left>598</left>
-						<top>455</top>
-						<width>1232</width>
-						<height>272</height>
-						<texture border="22">dialogs/dialog-bg.png</texture>
-					</control>
 					<control type="group">
 						<left>635</left>
 						<top>475</top>
@@ -159,9 +167,9 @@
 						<orientation>vertical</orientation>
 						<left>645</left>
 						<top>480</top>
-						<height>195</height>
+						<height>275</height>
 						<control type="label">
-							<font>font12</font>
+							<font>font14</font>
 							<width>1160</width>
 							<height>38</height>
 							<label>$INFO[ListItem.Duration,[COLOR button_focus]$LOCALIZE[180]: [/COLOR], $LOCALIZE[31060]]</label>
@@ -169,7 +177,7 @@
 							<visible>!String.IsEmpty(ListItem.Duration)</visible>
 						</control>
 						<control type="label">
-							<font>font12</font>
+							<font>font14</font>
 							<width>1160</width>
 							<height>38</height>
 							<label>$INFO[ListItem.Director,[COLOR button_focus]$LOCALIZE[20339]: [/COLOR]]</label>
@@ -177,7 +185,7 @@
 							<visible>!String.IsEmpty(ListItem.Director)</visible>
 						</control>
 						<control type="label">
-							<font>font12</font>
+							<font>font14</font>
 							<width>1160</width>
 							<height>38</height>
 							<label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]: [/COLOR]]</label>
@@ -185,7 +193,7 @@
 							<visible>[String.IsEmpty(ListItem.Director) | String.IsEmpty(ListItem.Duration)] + !String.IsEmpty(ListItem.Genre)</visible>
 						</control>
 						<control type="label">
-							<font>font12</font>
+							<font>font14</font>
 							<width>1160</width>
 							<height>38</height>
 							<label>$INFO[ListItem.Season,[COLOR button_focus]$LOCALIZE[33054]: [/COLOR],]$INFO[ListItem.Episode,  •  [COLOR button_focus] $LOCALIZE[20360]: [/COLOR],]</label>
@@ -194,8 +202,8 @@
 						</control>
 						<control type="textbox">
 							<width>1150</width>
-							<height max="195">auto</height>
-							<font>font12</font>
+							<height max="275">auto</height>
+							<font>font14</font>
 							<autoscroll time="3000" delay="3000" repeat="5000">!System.HasModalDialog</autoscroll>
 							<label>$INFO[ListItem.Plot]</label>
 							<shadowcolor>text_shadow</shadowcolor>

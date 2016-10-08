@@ -39,7 +39,7 @@
 	</include>
 	<include name="SubMenu">
 		<control type="group">
-			<height>110</height>
+			<height>210</height>
 			<visible>$PARAM[visible]</visible>
 			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">conditional</animation>
 			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
@@ -51,7 +51,7 @@
 			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,7)">conditional</animation>
 			<control type="label">
 				<left>235</left>
-				<top>53</top>
+				<top>133</top>
 				<width>700</width>
 				<height>40</height>
 				<label>$INFO[Container($PARAM[list_id]).Listitem.Label]</label>
@@ -65,7 +65,7 @@
 				<orientation>horizontal</orientation>
 				<onleft>9000</onleft>
 				<left>935</left>
-				<top>22</top>
+				<top>102</top>
 				<height>110</height>
 				<width>1355</width>
 				<onup>20000</onup>
@@ -309,17 +309,17 @@
 	</include>
 	<include name="ImageWidgetHeader">
 		<control type="group">
-			<height>110</height>
+			<height>190</height>
 			<visible>$PARAM[visible]</visible>
 			<control type="image">
-				<top>13</top>
+				<top>93</top>
 				<left>478</left>
 				<width>1370</width>
 				<height>114</height>
 				<texture border="22">dialogs/dialog-bg.png</texture>
 			</control>
 			<control type="label">
-				<top>6</top>
+				<top>86</top>
 				<left>478</left>
 				<width>1370</width>
 				<height>120</height>

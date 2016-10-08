@@ -5,7 +5,7 @@
 			<description>Poster Viewtype</description>
 			<height>424</height>
 			<left>0</left>
-			<top>180</top>
+			<top>100</top>
 			<include content="LeftRightArrows">
 				<param name="list_id" value="53" />
 				<param name="left_posx" value="45" />
@@ -18,32 +18,32 @@
 				<include>OpenClose_Right</include>
 				<top>160</top>
 				<control type="image">
-					<left>90</left>
-					<top>415</top>
-					<width>1740</width>
+					<left>-40</left>
+					<top>580</top>
+					<width>2000</width>
 					<height>150</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="image">
-					<left>800</left>
-					<top>435</top>
-					<width>320</width>
+					<left>600</left>
+					<top>600</top>
+					<width>340</width>
 					<height>110</height>
 					<visible>Control.HasFocus(53)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<texture colordiffuse="button_focus">colors/white.png</texture>
-					<animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,1) | Integer.IsEqual(Container.Position,0)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-344,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,0)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="344,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,3) | Integer.IsEqual(Container.Position,4)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="344,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-364,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,1) | Integer.IsEqual(Container.Position,0)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-364,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,0)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="364,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,3) | Integer.IsEqual(Container.Position,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="364,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,4)">Conditional</animation>
 				</control>
 				<control type="fixedlist" id="53">
-					<left>110</left>
+					<left>-150</left>
 					<top>0</top>
-					<width>1700</width>
-					<height>600</height>
+					<width>2120</width>
+					<height>690</height>
 					<focusposition>2</focusposition>
-					<movement>2</movement>
+					<movement>1</movement>
 					<pagecontrol>5199</pagecontrol>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
@@ -54,13 +54,14 @@
 					<onright>53</onright>
 					<preloaditems>1</preloaditems>
 					<viewtype label="31100">icon</viewtype>
-					<itemlayout width="340">
+					<itemlayout width="370">
 						<control type="group">
+							<left>0</left>
 							<control type="image">
 								<left>0</left>
-								<top>3</top>
-								<width>340</width>
-								<height>424</height>
+								<top>100</top>
+								<width>370</width>
+								<height>480</height>
 								<aspectratio aligny="bottom">keep</aspectratio>
 								<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
@@ -68,13 +69,13 @@
 							</control>
 							<control type="textbox">
 								<left>20</left>
-								<top>438</top>
+								<top>603</top>
 								<width>300</width>
 								<height>100</height>
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
-								<font>font12</font>
+								<font>font13</font>
 							</control>
 							<control type="group">
 								<left>145</left>
@@ -83,12 +84,14 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout width="340">
+					<focusedlayout width="370">
+						<control type="group">
+							<left>0</left>
 						<control type="image">
 							<left>0</left>
-							<top>3</top>
-							<width>340</width>
-							<height>424</height>
+							<top>100</top>
+							<width>370</width>
+							<height>480</height>
 							<aspectratio aligny="bottom">keep</aspectratio>
 							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
@@ -96,19 +99,20 @@
 						</control>
 						<control type="textbox">
 							<left>20</left>
-							<top>438</top>
+							<top>603</top>
 							<width>300</width>
 							<height>100</height>
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font12</font>
+							<font>font13</font>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
 						</control>
 						<control type="group">
 							<left>145</left>
 							<top>383</top>
 							<include>UserRatingCircle</include>
+						</control>
 						</control>
 					</focusedlayout>
 				</control>
@@ -122,7 +126,7 @@
 					<param name="textbox_content" value="$VAR[ShiftLeftTextBoxVar]" />
 				</include>
 				<control type="group">
-					<left>860</left>
+					<left>960</left>
 					<include content="ShiftTextbox">
 						<param name="textbox_id" value="53300" />
 						<param name="textbox_content" value="$VAR[ShiftRightTextBoxVar]" />
@@ -135,20 +139,13 @@
 		<control type="group">
 			<animation effect="fade" time="200" start="0" end="100" condition="!String.IsEmpty(Control.GetLabel($PARAM[textbox_id]))">Conditional</animation>
 			<animation effect="fade" time="200" start="100" end="0" condition="String.IsEmpty(Control.GetLabel($PARAM[textbox_id]))">Conditional</animation>
-			<control type="image">
-				<top>-20</top>
-				<left>90</left>
-				<width>880</width>
-				<height>192</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
-			</control>
 			<control type="textbox" id="$PARAM[textbox_id]">
-				<left>130</left>
-				<top>15</top>
-				<width>790</width>
-				<height>123</height>
+				<left>30</left>
+				<top>45</top>
+				<width>890</width>
+				<height>150</height>
 				<label>$PARAM[textbox_content]</label>
-				<font>font12</font>
+				<font>font13</font>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 		</control>

@@ -18,20 +18,20 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
-				<left>90</left>
-				<top>185</top>
+				<left>0</left>
+				<top>0</top>
 				<include>OpenClose_Left</include>
 				<control type="image">
-					<left>-20</left>
-					<top>-20</top>
-					<width>424</width>
-					<height>660</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
+					<left>0</left>
+					<top>0</top>
+					<width>520</width>
+					<height>1080</height>
+					<texture>lists/panel.png</texture>
 				</control>
 				<control type="list" id="9000">
 					<left>1</left>
-					<top>1</top>
-					<width>382</width>
+					<top>300</top>
+					<width>462</width>
 					<height>671</height>
 					<pagecontrol>70</pagecontrol>
 					<onup>700</onup>
@@ -43,70 +43,62 @@
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),outdated) + Control.IsVisible(504)">504</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),android) + Control.IsVisible(506)">506</onright>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<focusedlayout height="120">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>382</width>
-							<height>120</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-						</control>
+					<focusedlayout height="85">
 						<control type="group">
+							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
-								<width>382</width>
-								<height>120</height>
+								<width>462</width>
+								<height>85</height>
 								<texture colordiffuse="button_focus">lists/focus.png</texture>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus + !Control.HasFocus(14200)">Conditional</animation>
 							</control>
-							<control type="label">
-								<left>20</left>
-								<top>55</top>
-								<height>70</height>
-								<width>350</width>
-								<aligny>center</aligny>
-								<align>center</align>
-								<font>font12</font>
-								<label>$INFO[ListItem.Label]</label>
-								<shadowcolor>text_shadow</shadowcolor>
+							<control type="image">
+								<left>-3</left>
+								<top>1</top>
+								<width>85</width>
+								<height>85</height>
+								<texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
+								<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
 							</control>
 							<control type="image">
 								<left>0</left>
-								<top>-10</top>
-								<width>382</width>
-								<aspectratio>keep</aspectratio>
-								<height>120</height>
-								<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+								<top>0</top>
+								<width>85</width>
+								<height>85</height>
+								<texture colordiffuse="51FFFFFF">colors/black.png</texture>
+								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus + !Control.HasFocus(14200)">Conditional</animation>
 							</control>
 						</control>
-					</focusedlayout>
-					<itemlayout height="120">
 						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>382</width>
-							<height>120</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
+							<left>-3</left>
+							<top>1</top>
+							<width>85</width>
+							<height>85</height>
+							<texture>$INFO[ListItem.Art(thumb)]</texture>
 						</control>
 						<control type="label">
-							<left>20</left>
-							<top>55</top>
-							<height>70</height>
-							<width>350</width>
+							<left>104</left>
+							<top>0</top>
+							<height>85</height>
+							<width>560</width>
 							<aligny>center</aligny>
-							<align>center</align>
-							<font>font12</font>
+							<font>font14</font>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
-						<control type="image">
-							<left>0</left>
-							<top>-10</top>
-							<width>382</width>
-							<aspectratio>keep</aspectratio>
-							<height>120</height>
-							<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+					</focusedlayout>
+					<itemlayout height="85">
+						<control type="label">
+							<left>104</left>
+							<top>0</top>
+							<height>85</height>
+							<width>560</width>
+							<aligny>center</aligny>
+							<font>font14</font>
+							<label>$INFO[ListItem.Label]</label>
+							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</itemlayout>
 					<content>
@@ -147,19 +139,19 @@
 							<property name="path">addons://sources/executable/</property>
 						</item>
 						<!-- 					<item id="6">
-						     <label>Available Updates</label>
-						     <onclick>ActivateWindow(addonbrowser,addons://outdated/,return)</onclick>
-						     <thumb>icons/settings/update-available.png</thumb>
-						     <property name="id">outdated</property>
-						     </item> -->
+												     <label>Available Updates</label>
+												     <onclick>ActivateWindow(addonbrowser,addons://outdated/,return)</onclick>
+												     <thumb>icons/settings/update-available.png</thumb>
+												     <property name="id">outdated</property>
+												     </item> -->
 					</content>
 				</control>
 			</control>
 			<control type="grouplist" id="700">
 				<orientation>horizontal</orientation>
 				<itemgap>-22</itemgap>
-				<left>70</left>
-				<top>795</top>
+				<left>20</left>
+				<top>135</top>
 				<onup>SetFocus(9000,99)</onup>
 				<onup>9000</onup>
 				<ondown>SetFocus(9000,0)</ondown>
@@ -277,17 +269,17 @@
 					<param name="container_target" value="pictures" />
 				</include>
 				<!-- 			<include content="AddonLauncherPanel">
-				     <param name="container_id" value="504" />
-				     <param name="visible" value="Container(9000).HasFocus(6)" />
-				     <param name="container_path" value="addons://outdated/" />
-				     <param name="container_target" value="" />
-				     </include>
-				     <include content="AddonLauncherPanel">
-				     <param name="container_id" value="505" />
-				     <param name="visible" value="Container(9000).HasFocus(7)" />
-				     <param name="container_path" value="addons://all/" />
-				     <param name="container_target" value="" />
-				     </include> -->
+								     <param name="container_id" value="504" />
+								     <param name="visible" value="Container(9000).HasFocus(6)" />
+								     <param name="container_path" value="addons://outdated/" />
+								     <param name="container_target" value="" />
+								     </include>
+								     <include content="AddonLauncherPanel">
+								     <param name="container_id" value="505" />
+								     <param name="visible" value="Container(9000).HasFocus(7)" />
+								     <param name="container_path" value="addons://all/" />
+								     <param name="container_target" value="" />
+								     </include> -->
 			</control>
 			<control type="scrollbar" id="531">
 				<left>1907</left>
@@ -308,30 +300,6 @@
 				<param name="breadcrumbs_icon" value="icons/settings/addons.png" />
 			</include>
 			<include>BottomBar</include>
-			<include content="UpDownArrows">
-				<param name="container_id" value="500" />
-				<param name="visible" value="!System.HasModalDialog" />
-			</include>
-			<include content="UpDownArrows">
-				<param name="container_id" value="501" />
-				<param name="visible" value="!System.HasModalDialog" />
-			</include>
-			<include content="UpDownArrows">
-				<param name="container_id" value="502" />
-				<param name="visible" value="!System.HasModalDialog" />
-			</include>
-			<include content="UpDownArrows">
-				<param name="container_id" value="503" />
-				<param name="visible" value="!System.HasModalDialog" />
-			</include>
-			<include content="UpDownArrows">
-				<param name="container_id" value="504" />
-				<param name="visible" value="!System.HasModalDialog" />
-			</include>
-			<include content="UpDownArrows">
-				<param name="container_id" value="505" />
-				<param name="visible" value="!System.HasModalDialog" />
-			</include>
 			<include content="InfoList">
 				<param name="path" value="addons://outdated/" />
 				<param name="height" value="1" />
