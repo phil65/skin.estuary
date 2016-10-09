@@ -781,7 +781,7 @@
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<top>23</top>
+							<top>40</top>
 							<left>62</left>
 							<width>220</width>
 							<height>180</height>
@@ -789,9 +789,9 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
-							<left>20</left>
+							<left>22</left>
 							<top>243</top>
-							<width>298</width>
+							<width>296</width>
 							<height>75</height>
 							<texture>colors/black.png</texture>
 						</control>
@@ -829,7 +829,7 @@
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							</control>
 							<control type="image">
-								<top>23</top>
+								<top>40</top>
 								<left>62</left>
 								<width>220</width>
 								<height>180</height>
@@ -837,9 +837,9 @@
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="image">
-								<left>20</left>
+								<left>22</left>
 								<top>243</top>
-								<width>298</width>
+								<width>296</width>
 								<height>75</height>
 								<texture>colors/black.png</texture>
 							</control>
