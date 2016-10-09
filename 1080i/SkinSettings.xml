@@ -17,15 +17,14 @@
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
 		<control type="group">
-			<left>110</left>
+			<left>0</left>
 			<include>OpenClose_Left</include>
 			<control type="image">
-				<description>Menu Panel</description>
-				<left>-20</left>
-				<top>138</top>
-				<width>440</width>
-				<height>792</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
+				<left>0</left>
+				<top>0</top>
+				<width>530</width>
+				<height>1080</height>
+				<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="list" id="9000">
 				<description>button area</description>

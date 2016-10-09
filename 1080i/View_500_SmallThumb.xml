@@ -66,12 +66,16 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="360" width="350" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
-					<include content="InfoWallMusicLayout">
-						<param name="fallback_image" value="DefaultMusicSongs.png" />
-					</include>
+					<control type="group">
+						<top>150</top>
+						<include content="InfoWallMusicLayout">
+							<param name="fallback_image" value="DefaultMusicSongs.png" />
+						</include>
+					</control>
 				</itemlayout>
 				<focusedlayout height="360" width="350" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
+						<top>150</top>
 						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>
 						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="160,300">UnFocus</animation>
 						<include content="InfoWallMusicLayout">
@@ -88,12 +92,16 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="360" width="350" condition="Container.Content(addons)">
-					<include content="InfoWallMusicLayout">
-						<param name="fallback_image" value="DefaultAddon.png" />
-					</include>
+					<control type="group">
+						<top>150</top>
+						<include content="InfoWallMusicLayout">
+							<param name="fallback_image" value="DefaultAddon.png" />
+						</include>
+					</control>
 				</itemlayout>
 				<focusedlayout height="360" width="350" condition="Container.Content(addons)">
 					<control type="group">
+						<top>150</top>
 						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>
 						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="160,300">UnFocus</animation>
 						<include content="InfoWallMusicLayout">
