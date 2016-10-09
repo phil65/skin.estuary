@@ -2,7 +2,7 @@
 <includes>
 	<include name="PVRWidget">
 		<control type="image">
-			<top>0</top>
+			<top>30</top>
 			<left>0</left>
 			<width>690</width>
 			<height>225</height>
@@ -10,7 +10,7 @@
 		</control>
 		<control type="image">
 			<left>40</left>
-			<top>42</top>
+			<top>72</top>
 			<width>140</width>
 			<height>140</height>
 			<aspectratio>keep</aspectratio>
@@ -18,7 +18,7 @@
 		</control>
 		<control type="label">
 			<left>210</left>
-			<top>47</top>
+			<top>77</top>
 			<height>25</height>
 			<width>420</width>
 			<label>$PARAM[header]</label>
@@ -29,7 +29,7 @@
 		</control>
 		<control type="label">
 			<left>210</left>
-			<top>92</top>
+			<top>122</top>
 			<height>105</height>
 			<width>420</width>
 			<label>$PARAM[label1][CR]$PARAM[label2]</label>
@@ -39,7 +39,7 @@
 	</include>
 	<include name="SubMenu">
 		<control type="group">
-			<height>210</height>
+			<height>280</height>
 			<visible>$PARAM[visible]</visible>
 			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">conditional</animation>
 			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
@@ -154,13 +154,12 @@
 	<include name="WidgetListMovies">
 		<control type="group">
 			<description>Poster Widget including header and arrows</description>
-			<height>404</height>
+			<height>524</height>
 			<left>0</left>
-			<top>0</top>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 			<control type="label">
 				<left>500</left>
-				<top>20</top>
+				<top>70</top>
 				<width>900</width>
 				<height>40</height>
 				<label>$PARAM[widget_header]</label>
@@ -168,7 +167,7 @@
 			</control>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>442</left>
-				<top>60</top>
+				<top>110</top>
 				<width>1460</width>
 				<height>400</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -410,13 +409,13 @@
 		<definition>
 			<control type="group">
 				<description>Episode Widget including header and arrows</description>
-				<height>405</height>
+				<height>524</height>
 				<left>0</left>
 				<top>0</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
-					<top>15</top>
+					<top>70</top>
 					<width>900</width>
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
@@ -424,7 +423,7 @@
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
-					<top>60</top>
+					<top>110</top>
 					<width>1460</width>
 					<height>400</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -560,7 +559,7 @@
 		</definition>
 	</include>
 	<include name="WidgetListSquare">
-		<param name="height">405</param>
+		<param name="height">524</param>
 		<param name="sub_label">$INFO[ListItem.Label]</param>
 		<param name="sortby"></param>
 		<param name="visible">True</param>
@@ -575,7 +574,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
-					<top>15</top>
+					<top>70</top>
 					<width>900</width>
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
@@ -583,7 +582,7 @@
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
-					<top>55</top>
+					<top>110</top>
 					<width>1460</width>
 					<height>400</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -727,7 +726,7 @@
 		</definition>
 	</include>
 	<include name="WidgetListText">
-		<param name="height">405</param>
+		<param name="height">524</param>
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">12</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
@@ -742,7 +741,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
-					<top>15</top>
+					<top>70</top>
 					<width>900</width>
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
@@ -750,7 +749,7 @@
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
-					<top>55</top>
+					<top>110</top>
 					<width>1460</width>
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -869,7 +868,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
-					<top>15</top>
+					<top>70</top>
 					<width>900</width>
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
@@ -877,7 +876,7 @@
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
-					<top>55</top>
+					<top>110</top>
 					<width>1460</width>
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>

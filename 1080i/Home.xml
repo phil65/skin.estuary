@@ -66,7 +66,7 @@
 						<orientation>vertical</orientation>
 						<height>1080</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-2</itemgap>
+						<itemgap>-120</itemgap>
 						<include content="SubMenu">
 							<param name="list_id" value="5900"/>
 							<param name="ondown_id" value="5100"/>
@@ -160,6 +160,7 @@
 					<control type="grouplist" id="6001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
+						<itemgap>-120</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="SubMenu">
 							<param name="list_id" value="6900"/>
@@ -253,6 +254,7 @@
 					<control type="grouplist" id="7001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
+						<itemgap>-120</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="SubMenu">
 							<param name="list_id" value="7900"/>
@@ -375,6 +377,7 @@
 						<orientation>vertical</orientation>
 						<height>1080</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<itemgap>-120</itemgap>
 						<include content="SubMenu">
 							<param name="list_id" value="8900"/>
 							<param name="ondown_id" value="8100"/>
@@ -490,6 +493,7 @@
 					<control type="grouplist" id="11001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
+						<itemgap>-120</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="SubMenu">
 							<param name="list_id" value="11900"/>
@@ -558,6 +562,7 @@
 						<orientation>vertical</orientation>
 						<height>1080</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<itemgap>-120</itemgap>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="SubMenu">
 							<param name="list_id" value="12900"/>
@@ -589,7 +594,7 @@
 							<param name="visible" value="!System.HasPVRAddon"/>
 						</include>
 						<control type="grouplist">
-							<height>218</height>
+							<height>310</height>
 							<left>478</left>
 							<top>36</top>
 							<orientation>horizontal</orientation>
@@ -635,7 +640,7 @@
 							<param name="list_id" value="12200"/>
 							<param name="onup_id" value="12900"/>
 							<param name="ondown_id" value="12300"/>
-							<param name="height" value="550"/>
+							<param name="height" value="740"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListRecordings">
@@ -647,7 +652,7 @@
 							<param name="list_id" value="12300"/>
 							<param name="onup_id" value="12200"/>
 							<param name="ondown_id" value="20001"/>
-							<param name="height" value="550"/>
+							<param name="height" value="740"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
@@ -668,6 +673,7 @@
 					<control type="grouplist" id="13001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
+						<itemgap>-120</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="SubMenu">
@@ -746,7 +752,7 @@
 							<param name="list_id" value="13200"/>
 							<param name="onup_id" value="13900"/>
 							<param name="ondown_id" value="13300"/>
-							<param name="height" value="550"/>
+							<param name="height" value="740"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListRecordings">
@@ -758,7 +764,7 @@
 							<param name="list_id" value="13300"/>
 							<param name="onup_id" value="13200"/>
 							<param name="ondown_id" value="20001"/>
-							<param name="height" value="550"/>
+							<param name="height" value="740"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
@@ -781,6 +787,7 @@
 						<orientation>vertical</orientation>
 						<height>1080</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<itemgap>-120</itemgap>
 						<include content="SubMenu">
 							<param name="list_id" value="15900"/>
 							<param name="ondown_id" value="15100"/>
@@ -910,6 +917,7 @@
 					<include>Visible_Right_Delayed</include>
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
+						<itemgap>-120</itemgap>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[1]" />
 							<param name="visible" value="true"/>
