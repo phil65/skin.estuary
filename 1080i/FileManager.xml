@@ -14,39 +14,41 @@
 			<animation effect="fade" start="100" end="0" time="160">WindowClose</animation>
 		</control>
 		<control type="group">
-			<left>12</left>
+			<left>0</left>
 			<include>OpenClose_Left</include>
 			<control type="image">
-				<left>-12</left>
+				<left>0</left>
 				<top>0</top>
-				<width>900</width>
+				<width>914</width>
 				<height>1080</height>
 				<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="scrollbar" id="60">
-				<animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
 				<top>0</top>
-				<left>-12</left>
+				<left>0</left>
 				<width>12</width>
 				<height>1080</height>
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<orientation>vertical</orientation>
 			</control>
+		<control type="group">
+			<left>12</left>
 			<include content="FileManagerPanel">
 				<param name="header_id" value="101" />
 				<param name="header_label" value="" />
 				<param name="list_id" value="20" />
 				<param name="scrollbar_id" value="60" />
-				<param name="onleft_id" value="50" />
+				<param name="onleft_id" value="60" />
 				<param name="onright_id" value="21" />
 				<param name="width" value="800" />
 				<param name="bg_width" value="840" />
 				<param name="header_haspath" value="true" />
 			</include>
+</control>
 		</control>
 		<control type="group">
-			<left>1100</left>
+			<left>1102</left>
 			<include>OpenClose_Right</include>
 			<control type="image">
 				<left>-100</left>
@@ -56,7 +58,7 @@
 				<texture colordiffuse="99FFFFFF" flipx="true">lists/panel.png</texture>
 			</control>
 			<control type="scrollbar" id="61">
-				<left>800</left>
+				<left>796</left>
 				<animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
 				<top>0</top>
 				<width>12</width>
@@ -70,8 +72,8 @@
 				<param name="header_label" value="" />
 				<param name="list_id" value="21" />
 				<param name="scrollbar_id" value="61" />
-				<param name="onleft_id" value="60" />
-				<param name="onright_id" value="20" />
+				<param name="onleft_id" value="20" />
+				<param name="onright_id" value="61" />
 				<param name="width" value="800" />
 				<param name="bg_width" value="840" />
 				<param name="header_haspath" value="true" />

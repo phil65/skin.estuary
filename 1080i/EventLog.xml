@@ -80,106 +80,106 @@
 				<visible>Control.IsVisible(50)</visible>
 				<include>OpenClose_Right</include>
 				<control type="fixedlist" id="50">
-					<left>230</left>
+					<left>190</left>
 					<top>0</top>
-					<width>1260</width>
+					<width>1430</width>
 					<height>1080</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
 					<onup>50</onup>
-					<movement>3</movement>
+					<movement>2</movement>
 					<focusposition>4</focusposition>
 					<ondown>50</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="108" width="1260">
+					<itemlayout height="141" width="1260">
 						<control type="image">
-							<left>5</left>
-							<top>5</top>
-							<width>80</width>
-							<height>80</height>
+							<left>10</left>
+						<top>10</top>
+							<width>120</width>
+							<height>120</height>
 							<texture border="4" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>scale</aspectratio>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
 						</control>
 						<control type="label">
-							<left>125</left>
+							<left>160</left>
 							<top>0</top>
 							<width>870</width>
 							<height>35</height>
 							<aligny>center</aligny>
-							<font>font12</font>
+							<font>font13_title</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="textbox">
-							<left>125</left>
+							<left>160</left>
 							<top>34</top>
 							<width>870</width>
 							<height>60</height>
-							<font>font10_title</font>
-							<textcolor>grey</textcolor>
+							<font>font12</font>
+							<textcolor>white</textcolor>
 							<aligny>top</aligny>
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label">
-							<left>125</left>
+							<left>0</left>
 							<top>0</top>
-							<width>1120</width>
+							<width>1400</width>
 							<height>35</height>
-							<font>font12</font>
-							<textcolor>button_focus</textcolor>
+							<font>font13</font>
+							<textcolor>white</textcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="108" width="1260">
+					<focusedlayout height="141" width="1260">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1260</width>
-							<height>108</height>
+							<width>1430</width>
+							<height>141</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
 						<control type="image">
-							<left>5</left>
-							<top>5</top>
-							<width>80</width>
-							<height>80</height>
+							<left>10</left>
+							<top>10</top>
+							<width>120</width>
+							<height>120</height>
 							<texture border="4" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>scale</aspectratio>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
 						</control>
 						<control type="label">
-							<left>125</left>
+							<left>160</left>
 							<top>0</top>
 							<width>870</width>
 							<height>35</height>
 							<aligny>center</aligny>
-							<font>font12</font>
+							<font>font13_title</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="textbox">
-							<left>125</left>
+							<left>160</left>
 							<top>34</top>
 							<width>870</width>
 							<height>60</height>
-							<font>font10_title</font>
-							<textcolor>grey</textcolor>
+							<font>font12</font>
+							<textcolor>white</textcolor>
 							<aligny>top</aligny>
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label">
-							<left>125</left>
+							<left>0</left>
 							<top>0</top>
-							<width>1120</width>
+							<width>1400</width>
 							<height>35</height>
-							<font>font12</font>
-							<textcolor>button_focus</textcolor>
+							<font>font13</font>
+							<textcolor>white</textcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
@@ -187,10 +187,6 @@
 					</focusedlayout>
 				</control>
 			</control>
-			<include content="UpDownArrows">
-				<param name="container_id" value="50" />
-				<param name="visible" value="!System.HasModalDialog" />
-			</include>
 			<control type="scrollbar" id="60">
 				<right>0</right>
 				<top>80</top>

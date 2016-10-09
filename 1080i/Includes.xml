@@ -311,7 +311,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="$PARAM[height]">
+			<focusedlayout height="$PARAM[height]" width="600">
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -393,7 +393,7 @@
 					<height>50</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Duration,, min]</label>
+					<label>$INFO[ListItem.Duration,, $LOCALIZE[31132]]</label>
 					<font>font_Flag</font>
 					<textcolor>white</textcolor>
 				</control>
