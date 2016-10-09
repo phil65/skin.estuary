@@ -141,8 +141,8 @@
 					<control type="group">
 						<top>150</top>
 						<left>80</left>
-						<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="124,179">Focus</animation>
-						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="124,179">UnFocus</animation>
+						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="210,332">Focus</animation>
+						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="210,332">UnFocus</animation>
 						<control type="image">
 							<left>-5</left>
 							<top>0</top>
@@ -188,8 +188,8 @@
 				</itemlayout>
 				<focusedlayout height="410" width="340" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
-						<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="160,180">Focus</animation>
-						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="160,180">UnFocus</animation>
+						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="160,180">Focus</animation>
+						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="160,180">UnFocus</animation>
 						<include>InfoWallMusicLayout</include>
 						<top>150</top>
 						<control type="image">
@@ -207,8 +207,8 @@
 				</itemlayout>
 				<focusedlayout height="360" width="401" condition="Container.Content(images)">
 					<control type="group">
-						<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="190,180">Focus</animation>
-						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="190,180">UnFocus</animation>
+						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="190,180">Focus</animation>
+						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="190,180">UnFocus</animation>
 						<include>InfoWallPictureLayout</include>
 						<control type="image">
 							<left>15</left>

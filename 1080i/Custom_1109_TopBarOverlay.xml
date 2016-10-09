@@ -59,17 +59,6 @@
 						<label>$INFO[System.Time]</label>
 					</control>
 				</control>
-				<control type="image">
-					<right>25</right>
-					<top>20</top>
-					<height>40</height>
-					<width>40</width>
-					<texture colordiffuse="button_focus">frame/clock.png</texture>
-					<animation effect="fade" time="300">Visible</animation>
-					<animation effect="fade" time="150">Hidden</animation>
-					<aspectratio>keep</aspectratio>
-					<visible>!Window.IsActive(volumebar)</visible>
-				</control>
 				<control type="label">
 					<top>40</top>
 					<label>$INFO[Player.FinishTime,$LOCALIZE[31080]: ]</label>

@@ -374,7 +374,7 @@
 		</definition>
 	</include>
 	<include name="MediaFlags">
-		<top>1000</top>
+		<top>1010</top>
 		<visible>Skin.HasSetting(show_mediaflags)</visible>
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<control type="grouplist">
@@ -439,20 +439,6 @@
 	<include name="FileManagerPanel">
 		<param name="header_haspath">false</param>
 		<definition>
-			<control type="image">
-				<left>-20</left>
-				<top>-20</top>
-				<width>$PARAM[bg_width]</width>
-				<height>742</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>$PARAM[width]</width>
-				<height>70</height>
-				<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
-			</control>
 			<control type="label" id="$PARAM[header_id]">
 				<textoffsetx>40</textoffsetx>
 				<top>0</top>
@@ -464,25 +450,20 @@
 				<haspath>$PARAM[header_haspath]</haspath>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="list" id="$PARAM[list_id]">
+			<control type="fixedlist" id="$PARAM[list_id]">
 				<left>0</left>
-				<top>72</top>
+				<top>0</top>
 				<width>$PARAM[width]</width>
-				<height>630</height>
+				<height>1080</height>
+				<focusposition>7</focusposition>
+				<movement>5</movement>
 				<onleft>$PARAM[onleft_id]</onleft>
-				<onright>$PARAM[scrollbar_id]</onright>
+				<onright>$PARAM[onright_id]</onright>
 				<onup>$PARAM[list_id]</onup>
 				<ondown>$PARAM[list_id]</ondown>
 				<pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusedlayout height="70">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>$PARAM[width]</width>
-						<height>71</height>
-						<texture border="90,3,90,3">lists/separator.png</texture>
-					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -516,13 +497,6 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="70">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>$PARAM[width]</width>
-						<height>71</height>
-						<texture border="90,3,90,3">lists/separator.png</texture>
-					</control>
 					<control type="label">
 						<left>20</left>
 						<textoffsetx>15</textoffsetx>
@@ -548,16 +522,6 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</itemlayout>
-			</control>
-			<control type="scrollbar" id="$PARAM[scrollbar_id]">
-				<left>$PARAM[width]</left>
-				<animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
-				<top>0</top>
-				<width>12</width>
-				<height>702</height>
-				<onleft>$PARAM[list_id]</onleft>
-				<onright>$PARAM[onright_id]</onright>
-				<orientation>vertical</orientation>
 			</control>
 		</definition>
 	</include>
@@ -1028,7 +992,7 @@
 							<height>44</height>
 							<animation effect="rotate" end="-90" center="40,23" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53)">Conditional</animation>
 							<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
-							<texturenofocus colordiffuse="button_focus">frame/menu-nofo.png</texturenofocus>
+							<texturenofocus colordiffuse="FFCCCCCC">frame/menu-nofo.png</texturenofocus>
 							<animation effect="fade" time="200">VisibleChange</animation>
 							<onclick>SetFocus(9000)</onclick>
 							<visible>!Control.IsVisible(6160)</visible>
@@ -1038,7 +1002,7 @@
 							<width>44</width>
 							<height>44</height>
 							<texturefocus colordiffuse="button_focus">icons/menu.png</texturefocus>
-							<texturenofocus colordiffuse="button_focus">icons/menu.png</texturenofocus>
+							<texturenofocus colordiffuse="FFCCCCCC">icons/menu.png</texturenofocus>
 							<animation effect="fade" time="200">VisibleChange</animation>
 							<onclick>SetFocus(9000)</onclick>
 							<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
@@ -1096,14 +1060,14 @@
 					</control>
 				</control>
 				<control type="label" id="23000">
-					<bottom>0</bottom>
-					<left>5</left>
+					<top>10</top>
+					<left>0</left>
 					<label>$INFO[ListItem.SortLetter]</label>
-					<font>font35_title</font>
-					<width>80</width>
+					<font>font_MainMenu</font>
+					<width>1920</width>
 					<height>80</height>
 					<align>center</align>
-					<textcolor>button_focus</textcolor>
+					<textcolor>white</textcolor>
 					<visible>!System.HasModalDialog</visible>
 					<visible>Container.Scrolling</visible>
 					<visible>!Container.Content(seasons)</visible>

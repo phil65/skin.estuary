@@ -6,11 +6,18 @@
 		<include>DefaultBackground</include>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>550</width>
+				<height>1080</height>
+				<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
+			</control>
 			<control type="grouplist" id="9000">
 				<include>OpenClose_Left</include>
 				<orientation>vertical</orientation>
 				<itemgap>-8.5</itemgap>
-				<left>90</left>
+				<left>0</left>
 				<top>162</top>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
@@ -18,27 +25,20 @@
 				<onright>50</onright>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="togglebutton" id="4">
-					<width>420</width>
+					<width>487</width>
 					<height>110</height>
 					<align>left</align>
 					<aligny>top</aligny>
-					<font>font12</font>
-					<textoffsetx>100</textoffsetx>
+					<font>font13</font>
+					<textoffsetx>40</textoffsetx>
+					<texturenofocus></texturenofocus>
+		<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<alttexturenofocus></alttexturenofocus>
+		<alttexturefocus colordiffuse="button_focus">lists/focus.png</alttexturefocus>
 					<textwidth>300</textwidth>
 					<textoffsety>35</textoffsety>
 					<label>$LOCALIZE[31032]: $LOCALIZE[584]</label>
 					<altlabel>$LOCALIZE[31032]: $LOCALIZE[585]</altlabel>
-				</control>
-				<control type="group" id="4100">
-					<height>0</height>
-					<control type="image">
-						<left>40</left>
-						<top>-68</top>
-						<width>350</width>
-						<height>40</height>
-						<aspectratio align="left">keep</aspectratio>
-						<texture>icons/eventlog/order.png</texture>
-					</control>
 				</control>
 				<include content="PlaylistWindowButton">
 					<param name="control_id" value="21" />
@@ -47,15 +47,16 @@
 					<param name="icon" value="icons/eventlog/settings.png" />
 				</include>
 				<control type="radiobutton" id="22">
-					<width>420</width>
+					<width>487</width>
 					<height>110</height>
 					<align>left</align>
 					<aligny>top</aligny>
-					<font>font12</font>
-					<textoffsetx>100</textoffsetx>
+					<font>font13</font>
+					<texturenofocus></texturenofocus>
+		<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<textoffsetx>40</textoffsetx>
 					<textoffsety>35</textoffsety>
 					<textwidth>300</textwidth>
-					<radioposx>-1</radioposx>
 				</control>
 				<include content="PlaylistWindowButton">
 					<param name="control_id" value="20" />
