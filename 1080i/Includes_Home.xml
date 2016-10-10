@@ -936,10 +936,10 @@
 							<depth>DepthContentPopout</depth>
 							<left>70</left>
 							<animation type="Focus">
-								<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="220,70" />
+								<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="240,100" />
 							</animation>
 							<animation type="Unfocus">
-								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="220,70" />
+								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="240,100" />
 							</animation>
 							<control type="image">
 								<width>340</width>
