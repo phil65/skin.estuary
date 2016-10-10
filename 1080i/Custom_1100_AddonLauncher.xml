@@ -43,6 +43,7 @@
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),outdated) + Control.IsVisible(504)">504</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),android) + Control.IsVisible(506)">506</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),download) + Control.IsVisible(507)">507</onright>
+					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),manage) + Control.IsVisible(508)">508</onright>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<focusedlayout height="85">
 						<control type="group">

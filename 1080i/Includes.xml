@@ -540,7 +540,7 @@
 				<visible>$PARAM[visible]</visible>
 				<onup>$PARAM[container_id]</onup>
 				<ondown>$PARAM[container_id]</ondown>
-				<preloaditems>1</preloaditems>
+				<preloaditems>2</preloaditems>
 				<pagecontrol>531</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<itemlayout height="401" width="350">
