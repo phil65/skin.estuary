@@ -640,7 +640,7 @@
 							<param name="list_id" value="12200"/>
 							<param name="onup_id" value="12900"/>
 							<param name="ondown_id" value="12300"/>
-							<param name="height" value="740"/>
+							<param name="height" value="660"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListRecordings">
@@ -652,7 +652,7 @@
 							<param name="list_id" value="12300"/>
 							<param name="onup_id" value="12200"/>
 							<param name="ondown_id" value="20001"/>
-							<param name="height" value="740"/>
+							<param name="height" value="660"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
@@ -752,7 +752,7 @@
 							<param name="list_id" value="13200"/>
 							<param name="onup_id" value="13900"/>
 							<param name="ondown_id" value="13300"/>
-							<param name="height" value="740"/>
+							<param name="height" value="660"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListRecordings">
@@ -764,7 +764,7 @@
 							<param name="list_id" value="13300"/>
 							<param name="onup_id" value="13200"/>
 							<param name="ondown_id" value="20001"/>
-							<param name="height" value="740"/>
+							<param name="height" value="660"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
@@ -811,7 +811,7 @@
 						</include>
 						<control type="group" id="16678">
 							<description>Weather info</description>
-							<height>380</height>
+							<height>520</height>
 							<visible>!String.IsEmpty(Weather.plugin)</visible>
 							<control type="image">
 								<top>2</top>

@@ -24,7 +24,6 @@
 			<label>$PARAM[header]</label>
 			<aligny>center</aligny>
 			<font>font24_title</font>
-			<textcolor>button_focus</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="label">
@@ -70,7 +69,7 @@
 				<width>1355</width>
 				<onup>20000</onup>
 				<ondown>$PARAM[ondown_id]</ondown>
-				<itemlayout width="110" height="120">
+				<itemlayout width="110" height="115">
 					<control type="image">
 						<width>130</width>
 						<height>110</height>
@@ -84,7 +83,7 @@
 						<texture>icons/submenu/$INFO[ListItem.Art(thumb)]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout width="110" height="120">
+				<focusedlayout width="110" height="115">
 					<control type="image">
 						<width>130</width>
 						<height>110</height>
@@ -212,10 +211,10 @@
 						<depth>DepthContentPopout</depth>
 						<posx>70</posx>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,130" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,130" />
 						</animation>
 						<control type="image">
 							<left>0</left>
@@ -480,10 +479,10 @@
 							<posx>70</posx>
 							<depth>DepthContentPopout</depth>
 							<animation type="Focus">
-								<effect type="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="233,90" />
+								<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="233,120" />
 							</animation>
 							<animation type="Unfocus">
-								<effect type="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="233,90" />
+								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="233,120" />
 							</animation>
 							<control type="image">
 								<left>0</left>
@@ -652,10 +651,10 @@
 							<depth>DepthContentPopout</depth>
 							<left>70</left>
 							<animation type="Focus">
-								<effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+								<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="170,120" />
 							</animation>
 							<animation type="Unfocus">
-								<effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="170,120" />
 							</animation>
 							<control type="image">
 								<left>0</left>
@@ -804,10 +803,10 @@
 							<depth>DepthContentPopout</depth>
 							<left>70</left>
 							<animation type="Focus">
-								<effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+								<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="220,70" />
 							</animation>
 							<animation type="Unfocus">
-								<effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="220,70" />
 							</animation>
 							<control type="image">
 								<width>340</width>
@@ -895,7 +894,7 @@
 							<left>70</left>
 							<control type="image">
 								<width>340</width>
-								<height>500</height>
+								<height>420</height>
 								<texture border="40">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
@@ -919,10 +918,10 @@
 							</control>
 							<control type="textbox">
 								<left>42</left>
-								<top>350</top>
+								<top>320</top>
 								<width>260</width>
 								<height>100</height>
-								<label>[COLOR button_focus]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/COLOR][CR]$INFO[ListItem.Title]</label>
+								<label>[COLOR grey]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/COLOR][CR]$INFO[ListItem.Title]</label>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -935,19 +934,19 @@
 							<depth>DepthContentPopout</depth>
 							<left>70</left>
 							<animation type="Focus">
-								<effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+								<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="220,70" />
 							</animation>
 							<animation type="Unfocus">
-								<effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="220,70" />
 							</animation>
 							<control type="image">
 								<width>340</width>
-								<height>500</height>
+								<height>420</height>
 								<texture border="40">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
 								<width>340</width>
-								<height>500</height>
+								<height>420</height>
 								<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
@@ -973,10 +972,10 @@
 							</control>
 							<control type="textbox">
 								<left>42</left>
-								<top>350</top>
+								<top>320</top>
 								<width>260</width>
 								<height>100</height>
-								<label>[COLOR button_focus]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/COLOR][CR]$INFO[ListItem.Title]</label>
+								<label>[COLOR grey]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/COLOR][CR]$INFO[ListItem.Title]</label>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -1070,10 +1069,10 @@
 							<depth>DepthContentPopout</depth>
 							<left>70</left>
 							<animation type="Focus">
-								<effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+								<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="220,70" />
 							</animation>
 							<animation type="Unfocus">
-								<effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="220,70" />
 							</animation>
 							<control type="image">
 								<width>340</width>
@@ -1127,7 +1126,7 @@
 	<include name="WeatherWidget">
 		<control type="group">
 			<description>Square Weather Widget including header and arrows</description>
-			<height>432</height>
+			<height>530</height>
 			<left>0</left>
 			<top>0</top>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -1204,10 +1203,10 @@
 						<left>70</left>
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="110,130" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+							<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="110,130" />
 						</animation>
 						<control type="image">
 							<left>0</left>
