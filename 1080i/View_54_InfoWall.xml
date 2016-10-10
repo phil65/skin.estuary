@@ -183,15 +183,15 @@
 				<itemlayout height="410" width="340" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
 						<top>150</top>
-					<include>InfoWallMusicLayout</include>
-				</control>
+						<include>InfoWallMusicLayout</include>
+					</control>
 				</itemlayout>
 				<focusedlayout height="410" width="340" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
-						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="160,180">Focus</animation>
-						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="160,180">UnFocus</animation>
-						<include>InfoWallMusicLayout</include>
+						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="160,330">Focus</animation>
+						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="160,330">UnFocus</animation>
 						<top>150</top>
+						<include>InfoWallMusicLayout</include>
 						<control type="image">
 							<left>15</left>
 							<top>5</top>
@@ -202,13 +202,17 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="360" width="401" condition="Container.Content(images)">
-					<include>InfoWallPictureLayout</include>
-				</itemlayout>
-				<focusedlayout height="360" width="401" condition="Container.Content(images)">
+				<itemlayout height="400" width="401" condition="Container.Content(images)">
 					<control type="group">
-						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="190,180">Focus</animation>
-						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="190,180">UnFocus</animation>
+						<top>150</top>
+						<include>InfoWallPictureLayout</include>
+					</control>
+				</itemlayout>
+				<focusedlayout height="400" width="401" condition="Container.Content(images)">
+					<control type="group">
+						<top>150</top>
+						<animation effect="zoom" start="100" end="120" time="200" tween="sine" easing="inout" center="200,330">Focus</animation>
+						<animation effect="zoom" start="120" end="100" time="200" tween="sine" easing="inout" center="200,330">UnFocus</animation>
 						<include>InfoWallPictureLayout</include>
 						<control type="image">
 							<left>15</left>

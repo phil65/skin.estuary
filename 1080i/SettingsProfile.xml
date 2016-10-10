@@ -19,12 +19,11 @@
 		<control type="group">
 			<include>OpenClose_Left</include>
 			<control type="image">
-				<description>background image</description>
-				<left>90</left>
-				<top>170</top>
-				<width>390</width>
-				<height>746</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
+				<left>0</left>
+				<top>0</top>
+				<width>530</width>
+				<height>1080</height>
+				<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="list" id="9000">
 				<left>111</left>

@@ -7,6 +7,7 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="image">
+				<include>OpenClose_Left</include>
 				<left>0</left>
 				<top>0</top>
 				<width>550</width>
@@ -88,7 +89,7 @@
 					<onright>60</onright>
 					<onup>50</onup>
 					<movement>2</movement>
-					<focusposition>4</focusposition>
+					<focusposition>3</focusposition>
 					<ondown>50</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
@@ -110,22 +111,22 @@
 							<width>870</width>
 							<height>35</height>
 							<aligny>center</aligny>
-							<font>font13_title</font>
+							<font>font16</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="textbox">
 							<left>160</left>
-							<top>34</top>
+							<top>43</top>
 							<width>870</width>
 							<height>60</height>
-							<font>font12</font>
+							<font>font13</font>
 							<textcolor>white</textcolor>
 							<aligny>top</aligny>
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
-							<top>0</top>
+							<top>10</top>
 							<width>1400</width>
 							<height>35</height>
 							<font>font13</font>
@@ -156,19 +157,19 @@
 						</control>
 						<control type="label">
 							<left>160</left>
-							<top>0</top>
+							<top>10</top>
 							<width>870</width>
 							<height>35</height>
 							<aligny>center</aligny>
-							<font>font13_title</font>
+							<font>font16</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="textbox">
 							<left>160</left>
-							<top>34</top>
+							<top>43</top>
 							<width>870</width>
 							<height>60</height>
-							<font>font12</font>
+							<font>font13</font>
 							<textcolor>white</textcolor>
 							<aligny>top</aligny>
 							<label>$INFO[ListItem.Property(Event.Description)]</label>

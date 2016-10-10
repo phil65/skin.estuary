@@ -42,6 +42,7 @@
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),pictures) + Control.IsVisible(503)">503</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),outdated) + Control.IsVisible(504)">504</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),android) + Control.IsVisible(506)">506</onright>
+					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),download) + Control.IsVisible(507)">507</onright>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<focusedlayout height="85">
 						<control type="group">
@@ -52,11 +53,11 @@
 								<width>462</width>
 								<height>85</height>
 								<texture colordiffuse="button_focus">lists/focus.png</texture>
-								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus + !Control.HasFocus(14200)">Conditional</animation>
+								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus">Conditional</animation>
 							</control>
 							<control type="image">
 								<left>-3</left>
-								<top>1</top>
+								<top>10</top>
 								<width>85</width>
 								<height>85</height>
 								<texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
@@ -68,12 +69,12 @@
 								<width>85</width>
 								<height>85</height>
 								<texture colordiffuse="51FFFFFF">colors/black.png</texture>
-								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus + !Control.HasFocus(14200)">Conditional</animation>
+								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000) + !Control.HasFocus(900) + !ControlGroup(700).HasFocus">Conditional</animation>
 							</control>
 						</control>
 						<control type="image">
 							<left>-3</left>
-							<top>1</top>
+							<top>10</top>
 							<width>85</width>
 							<height>85</height>
 							<texture>$INFO[ListItem.Art(thumb)]</texture>
@@ -136,14 +137,22 @@
 							<onclick>ActivateWindow(pictures,addons://sources/image/,return)</onclick>
 							<thumb>icons/settings/pictures.png</thumb>
 							<property name="id">pictures</property>
-							<property name="path">addons://sources/executable/</property>
+							<property name="path">addons://sources/image/</property>
 						</item>
-						<!-- 					<item id="6">
-												     <label>Available Updates</label>
-												     <onclick>ActivateWindow(addonbrowser,addons://outdated/,return)</onclick>
-												     <thumb>icons/settings/update-available.png</thumb>
-												     <property name="id">outdated</property>
-												     </item> -->
+						<item id="7">
+							<label>Manage</label>
+							<onclick>ActivateWindow(addonbrowser,addons://user/,return)</onclick>
+							<thumb>icons/settings/system.png</thumb>
+							<property name="id">manage</property>
+							<property name="path">addons://user/</property>
+						</item>
+						<item id="6">
+							<label>$LOCALIZE[33003]</label>
+							<onclick>ActivateWindow(addonbrowser,addons://all/,return)</onclick>
+							<thumb>icons/settings/addons.png</thumb>
+							<property name="id">download</property>
+							<property name="path">addons://all/</property>
+						</item>
 					</content>
 				</control>
 			</control>
@@ -268,18 +277,18 @@
 					<param name="container_path" value="addons://sources/image/" />
 					<param name="container_target" value="pictures" />
 				</include>
-				<!-- 			<include content="AddonLauncherPanel">
-								     <param name="container_id" value="504" />
-								     <param name="visible" value="Container(9000).HasFocus(6)" />
-								     <param name="container_path" value="addons://outdated/" />
-								     <param name="container_target" value="" />
-								     </include>
-								     <include content="AddonLauncherPanel">
-								     <param name="container_id" value="505" />
-								     <param name="visible" value="Container(9000).HasFocus(7)" />
-								     <param name="container_path" value="addons://all/" />
-								     <param name="container_target" value="" />
-								     </include> -->
+				<include content="AddonLauncherPanel">
+					<param name="container_id" value="507" />
+					<param name="visible" value="Container(9000).HasFocus(6)" />
+					<param name="container_path" value="addons://all/" />
+					<param name="container_target" value="addonbrowser" />
+				</include>
+				<include content="AddonLauncherPanel">
+					<param name="container_id" value="508" />
+					<param name="visible" value="Container(9000).HasFocus(7)" />
+					<param name="container_path" value="addons://user/" />
+					<param name="container_target" value="addonbrowser" />
+				</include>
 			</control>
 			<control type="scrollbar" id="531">
 				<left>1907</left>
