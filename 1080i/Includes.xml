@@ -264,9 +264,9 @@
 	<include name="PicsInfoLine">
 		<control type="grouplist">
 			<visible>!String.IsEmpty($PARAM[value])</visible>
-			<height>40</height>
+			<height>45</height>
 			<orientation>horizontal</orientation>
-			<width>500</width>
+			<width>570</width>
 			<align>left</align>
 			<itemgap>10</itemgap>
 			<control type="label">
@@ -274,7 +274,7 @@
 				<height>40</height>
 				<aligny>center</aligny>
 				<label>$PARAM[label]:</label>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="label">
@@ -283,7 +283,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$INFO[$PARAM[value]]</label>
-				<font>font12</font>
+				<font>font13</font>
 			</control>
 		</control>
 	</include>

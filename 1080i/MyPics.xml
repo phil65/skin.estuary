@@ -12,7 +12,10 @@
 			<include>View_50_List</include>
 			<include>View_52_IconWall</include>
 			<include>View_53_Shift</include>
+			<control type="group">
+				<posx>50</posx>
 			<include>View_54_InfoWall</include>
+		</control>
 			<include>View_55_WideList</include>
 			<include>View_500_SmallThumb</include>
 			<control type="group">
@@ -23,7 +26,7 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>550</width>
+					<width>600</width>
 					<height>1080</height>
 					<texture>lists/panel.png</texture>
 				</control>
@@ -39,9 +42,9 @@
 				</control>
 				<control type="grouplist">
 					<left>20</left>
-					<top>192</top>
-					<width>450</width>
-					<height>600</height>
+					<top>152</top>
+					<width>480</width>
+					<height>700</height>
 					<orientation>vertical</orientation>
 					<include content="PicsInfoLine">
 						<param name="label" value="$LOCALIZE[21820]"/>

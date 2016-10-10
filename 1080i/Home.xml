@@ -640,10 +640,10 @@
 							<param name="list_id" value="12200"/>
 							<param name="onup_id" value="12900"/>
 							<param name="ondown_id" value="12300"/>
-							<param name="height" value="660"/>
+							<param name="height" value="620"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
-						<include content="WidgetListRecordings">
+						<include content="WidgetListChannels">
 							<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
@@ -652,7 +652,9 @@
 							<param name="list_id" value="12300"/>
 							<param name="onup_id" value="12200"/>
 							<param name="ondown_id" value="20001"/>
-							<param name="height" value="660"/>
+							<param name="height" value="620"/>
+							<param name="label" value="$INFO[ListItem.ChannelName]"/>
+							<param name="label2" value="[COLOR button_focus]$INFO[ListItem.DateTime][/COLOR][CR]$INFO[ListItem.Title]"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
@@ -707,7 +709,7 @@
 						</include>
 						<control type="grouplist">
 							<height>218</height>
-							<left>478</left>
+							<left>538</left>
 							<top>36</top>
 							<orientation>horizontal</orientation>
 							<align>right</align>
@@ -755,7 +757,7 @@
 							<param name="height" value="660"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
-						<include content="WidgetListRecordings">
+						<include content="WidgetListChannels">
 							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
@@ -764,6 +766,8 @@
 							<param name="list_id" value="13300"/>
 							<param name="onup_id" value="13200"/>
 							<param name="ondown_id" value="20001"/>
+							<param name="label" value="$INFO[ListItem.ChannelName]"/>
+							<param name="label2" value="[COLOR button_focus]$INFO[ListItem.DateTime][/COLOR][CR]$INFO[ListItem.Title]"/>
 							<param name="height" value="660"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
@@ -814,22 +818,22 @@
 							<height>520</height>
 							<visible>!String.IsEmpty(Weather.plugin)</visible>
 							<control type="image">
-								<top>2</top>
-								<left>480</left>
+								<top>42</top>
+								<left>510</left>
 								<width>1360</width>
 								<height>380</height>
 								<texture border="22">dialogs/dialog-bg.png</texture>
 							</control>
 							<control type="image">
-								<top>20</top>
-								<left>530</left>
+								<top>60</top>
+								<left>560</left>
 								<width>150</width>
 								<height>150</height>
 								<texture>$INFO[Weather.conditions]</texture>
 							</control>
 							<control type="label">
-								<left>990</left>
-								<top>110</top>
+								<left>1020</left>
+								<top>150</top>
 								<aligny>center</aligny>
 								<height>24</height>
 								<width>800</width>
@@ -838,8 +842,8 @@
 								<label>$INFO[Weather.Conditions] ∙ $INFO[Weather.Temperature]</label>
 							</control>
 							<control type="label">
-								<left>990</left>
-								<top>50</top>
+								<left>1020</left>
+								<top>90</top>
 								<aligny>center</aligny>
 								<height>24</height>
 								<width>800</width>
@@ -848,8 +852,8 @@
 								<label>$INFO[Weather.Location]</label>
 							</control>
 							<control type="grouplist">
-								<top>215</top>
-								<left>540</left>
+								<top>255</top>
+								<left>570</left>
 								<width>1330</width>
 								<orientation>horizontal</orientation>
 								<align>justify</align>
@@ -1135,17 +1139,17 @@
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+					<top>30</top>
+					<left>40</left>
 				<control type="image">
-					<left>20</left>
-					<top>10</top>
 					<aspectratio>keep</aspectratio>
 					<width>56</width>
 					<height>56</height>
 					<texture colordiffuse="button_focus">icons/logo.png</texture>
 				</control>
 				<control type="image">
-					<left>60</left>
-					<top>20</top>
+					<left>40</left>
+					<top>10</top>
 					<aspectratio>keep</aspectratio>
 					<width>192</width>
 					<height>36</height>
