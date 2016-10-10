@@ -14,22 +14,22 @@
 				<include>OpenClose_Right</include>
 				<include>Visible_Right</include>
 				<top>140</top>
-				<left>50</left>
+				<left>0</left>
 				<control type="image">
 					<left>-20</left>
 					<top>-20</top>
-					<width>1740</width>
-					<height>552</height>
+					<width>1980</width>
+					<height>644</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="epggrid" id="10">
 					<left>0</left>
 					<top>0</top>
-					<width>1700</width>
-					<height>510</height>
+					<width>1908</width>
+					<height>600</height>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
-					<timeblocks>36</timeblocks>
+					<timeblocks>34</timeblocks>
 					<rulerunit>6</rulerunit>
 					<onleft>9000</onleft>
 					<onright>60</onright>
@@ -47,7 +47,7 @@
 							<textcolor>button_focus</textcolor>
 						</control>
 					</rulerlayout>
-					<channellayout height="58" width="350">
+					<channellayout height="62" width="350">
 						<control type="label">
 							<left>2</left>
 							<top>-2</top>
@@ -69,7 +69,7 @@
 							<textoffsetx>10</textoffsetx>
 						</control>
 					</channellayout>
-					<focusedchannellayout height="58" width="350">
+					<focusedchannellayout height="62" width="350">
 						<control type="label">
 							<left>2</left>
 							<top>-2</top>
@@ -93,7 +93,7 @@
 							<textoffsetx>10</textoffsetx>
 						</control>
 					</focusedchannellayout>
-					<itemlayout height="58" width="60">
+					<itemlayout height="62" width="60">
 						<control type="image" id="2">
 							<width>58</width>
 							<height>58</height>
@@ -105,18 +105,18 @@
 							<width>50</width>
 							<height>36</height>
 							<aligny>center</aligny>
-							<font>font10_title</font>
+							<font>font12</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
 							<left>6</left>
-							<top>32</top>
+							<top>35</top>
 							<width>20</width>
 							<height>20</height>
 							<texture>$VAR[PVRTimerIcon]</texture>
 						</control>
 					</itemlayout>
-					<focusedlayout height="58" width="60">
+					<focusedlayout height="62" width="60">
 						<control type="image" id="2">
 							<top>2</top>
 							<left>2</left>
@@ -143,12 +143,12 @@
 							<width>50</width>
 							<height>36</height>
 							<aligny>center</aligny>
-							<font>font10_title</font>
+							<font>font12</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
 							<left>6</left>
-							<top>32</top>
+							<top>35</top>
 							<width>20</width>
 							<height>20</height>
 							<texture>$VAR[PVRTimerIcon]</texture>
@@ -156,9 +156,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<right>85</right>
+					<right>0</right>
 					<top>45</top>
-					<width>13</width>
+					<width>12</width>
 					<height>465</height>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -167,8 +167,8 @@
 					<animation effect="fade" start="100" end="40" time="0" condition="!system.getbool(input.enablemouse)">Conditional</animation>
 				</control>
 				<control type="group">
-					<top>540</top>
-					<left>-120</left>
+					<top>630</top>
+					<left>0</left>
 					<control type="image" id="82">
 						<width>450</width>
 						<height>240</height>
@@ -179,16 +179,16 @@
 					</control>
 					<control type="image">
 						<left>125</left>
-						<width>250</width>
-						<height>250</height>
-						<aspectratio>keep</aspectratio>
+						<width>240</width>
+						<height>200</height>
+						<aspectratio align="right">keep</aspectratio>
 						<fadetime>400</fadetime>
 						<texture>$INFO[Container(10).ListItem.Icon]</texture>
 						<visible>!Control.IsVisible(82)</visible>
 					</control>
 					<control type="group">
 						<left>410</left>
-						<top>0</top>
+						<top>-9</top>
 						<control type="label">
 							<width>1380</width>
 							<height>30</height>
@@ -199,7 +199,7 @@
 						<control type="textbox">
 							<top>38</top>
 							<width>1380</width>
-							<height>170</height>
+							<height>179</height>
 							<font>font13</font>
 							<label>$INFO[ListItem.Plot]</label>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -217,7 +217,7 @@
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRGuideVar]" />
 			</include>
 			<include content="BottomBar">
-				<param name="PageLabel" value="$INFO[Container.NumItems,$LOCALIZE[19019]: ]" />
+				<param name="PageLabel" value="" />
 				<param name="info_visible" value="true" />
 			</include>
 		</control>
