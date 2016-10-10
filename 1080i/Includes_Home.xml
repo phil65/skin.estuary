@@ -966,7 +966,7 @@
 								<top>247</top>
 								<width>260</width>
 								<height>70</height>
-								<label>$INFO[ListItem.Label]</label>
+								<label>$PARAM[label]</label>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -977,7 +977,7 @@
 								<top>320</top>
 								<width>260</width>
 								<height>65</height>
-								<label>[COLOR grey]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/COLOR][CR]$INFO[ListItem.Title]</label>
+								<label>$PARAM[label2]</label>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
