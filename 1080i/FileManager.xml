@@ -32,20 +32,19 @@
 				<onright>20</onright>
 				<orientation>vertical</orientation>
 			</control>
-		<control type="group">
-			<left>12</left>
-			<include content="FileManagerPanel">
-				<param name="header_id" value="101" />
-				<param name="header_label" value="" />
-				<param name="list_id" value="20" />
-				<param name="scrollbar_id" value="60" />
-				<param name="onleft_id" value="60" />
-				<param name="onright_id" value="21" />
-				<param name="width" value="800" />
-				<param name="bg_width" value="840" />
-				<param name="header_haspath" value="true" />
-			</include>
-</control>
+			<control type="group">
+				<left>12</left>
+				<include content="FileManagerPanel">
+					<param name="header_label" value="" />
+					<param name="list_id" value="20" />
+					<param name="scrollbar_id" value="60" />
+					<param name="onleft_id" value="60" />
+					<param name="onright_id" value="21" />
+					<param name="width" value="800" />
+					<param name="bg_width" value="840" />
+					<param name="header_haspath" value="true" />
+				</include>
+			</control>
 		</control>
 		<control type="group">
 			<left>1102</left>
@@ -83,11 +82,52 @@
 			<param name="breadcrumbs_label" value="$LOCALIZE[7]" />
 		</include>
 		<include>BottomBar</include>
-		<include content="BottomBarTwoListInfo">
-			<param name="left_container_id">20</param>
-			<param name="left_scrollbar_id">60</param>
-			<param name="right_container_id">21</param>
-			<param name="right_scrollbar_id">61</param>
-		</include>
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+		<control type="label">
+				<top>1015</top>
+				<right>730</right>
+				<width>400</width>
+				<height>48</height>
+				<aligny>center</aligny>
+				<align>right</align>
+				<shadowcolor>text_shadow</shadowcolor>
+				<label>$INFO[Container(21).CurrentItem,, / ]$INFO[Container(21).NumItems]</label>
+			</control>
+			<control type="label" id="102">
+				<top>1015</top>
+				<right>40</right>
+				<width>600</width>
+				<height>48</height>
+				<font>font13_title</font>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$PARAM[header_label]</label>
+				<haspath>$PARAM[header_haspath]</haspath>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<top>1015</top>
+				<left>730</left>
+				<width>400</width>
+				<height>48</height>
+				<aligny>center</aligny>
+				<align>left</align>
+				<shadowcolor>text_shadow</shadowcolor>
+				<label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
+			</control>
+			<control type="label" id="101">
+				<top>1015</top>
+				<left>40</left>
+				<width>600</width>
+				<height>48</height>
+				<font>font13_title</font>
+				<aligny>center</aligny>
+				<label>$PARAM[header_label]</label>
+				<haspath>$PARAM[header_haspath]</haspath>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
 	</controls>
 </window>

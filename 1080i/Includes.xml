@@ -440,17 +440,6 @@
 	<include name="FileManagerPanel">
 		<param name="header_haspath">false</param>
 		<definition>
-			<control type="label" id="$PARAM[header_id]">
-				<textoffsetx>40</textoffsetx>
-				<top>0</top>
-				<width>$PARAM[width]</width>
-				<height>70</height>
-				<font>font13_title</font>
-				<aligny>center</aligny>
-				<label>$PARAM[header_label]</label>
-				<haspath>$PARAM[header_haspath]</haspath>
-				<shadowcolor>black</shadowcolor>
-			</control>
 			<control type="fixedlist" id="$PARAM[list_id]">
 				<left>0</left>
 				<top>0</top>
@@ -1116,17 +1105,6 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<shadowcolor>text_shadow</shadowcolor>
-					<textcolor>button_focus</textcolor>
-					<visible>Control.HasFocus($PARAM[right_scrollbar_id])</visible>
-					<label>$INFO[Container($PARAM[right_container_id]).CurrentPage,, / ]$INFO[Container($PARAM[right_container_id]).NumPages]</label>
-				</control>
-				<control type="label">
-					<width>auto</width>
-					<height>48</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<shadowcolor>text_shadow</shadowcolor>
-					<visible>!Control.HasFocus($PARAM[right_scrollbar_id])</visible>
 					<label>$INFO[Container($PARAM[right_container_id]).CurrentItem,, / ]$INFO[Container($PARAM[right_container_id]).NumItems]</label>
 				</control>
 				<control type="image">
@@ -1155,18 +1133,7 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<shadowcolor>text_shadow</shadowcolor>
-					<visible>!Control.HasFocus($PARAM[left_scrollbar_id])</visible>
 					<label>$INFO[Container($PARAM[left_container_id]).CurrentItem,, / ]$INFO[Container($PARAM[left_container_id]).NumItems]</label>
-				</control>
-				<control type="label">
-					<width>auto</width>
-					<height>48</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<shadowcolor>text_shadow</shadowcolor>
-					<textcolor>button_focus</textcolor>
-					<visible>Control.HasFocus($PARAM[left_scrollbar_id])</visible>
-					<label>$INFO[Container($PARAM[left_container_id]).CurrentPage,, / ]$INFO[Container($PARAM[left_container_id]).NumPages]</label>
 				</control>
 			</control>
 		</control>

@@ -15,8 +15,8 @@
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
 		<control type="panel" id="9000">
-			<left>92</left>
-			<top>140</top>
+			<left>50</left>
+			<top>130</top>
 			<width>1850</width>
 			<height>870</height>
 			<onleft>9000</onleft>
@@ -24,21 +24,21 @@
 			<onup>9000</onup>
 			<ondown>9000</ondown>
 			<include>OpenClose_Right</include>
-			<itemlayout height="290" width="440">
+			<itemlayout height="290" width="460">
 				<control type="image">
-					<width>400</width>
-					<height>250</height>
+					<width>430</width>
+					<height>270</height>
 					<texture border="40">buttons/button-nofo.png</texture>
 				</control>
 				<control type="image">
 					<left>21</left>
 					<top>179</top>
-					<width>358</width>
-					<height>50</height>
+					<width>388</width>
+					<height>70</height>
 					<texture colordiffuse="border_alpha">colors/black.png</texture>
 				</control>
 				<control type="image">
-					<left>80</left>
+					<left>95</left>
 					<top>10</top>
 					<width>240</width>
 					<height>240</height>
@@ -46,16 +46,16 @@
 					<align>center</align>
 				</control>
 				<control type="label">
-					<left>0</left>
-					<top>182</top>
-					<width>400</width>
+					<left>30</left>
+					<top>190</top>
+					<width>370</width>
 					<height>400</height>
 					<font>font13</font>
 					<label>$INFO[ListItem.Label]</label>
 					<align>center</align>
 				</control>
 			</itemlayout>
-			<focusedlayout height="290" width="440">
+			<focusedlayout height="290" width="460">
 				<control type="group">
 					<depth>DepthContentPopout</depth>
 					<animation type="Focus" reversible="false">
@@ -65,27 +65,27 @@
 						<effect type="zoom" center="200,125" start="108" end="100" time="250" tween="sine" />
 					</animation>
 					<control type="image">
-						<width>400</width>
-						<height>250</height>
+						<width>430</width>
+						<height>270</height>
 						<texture border="40">buttons/button-nofo.png</texture>
 						<animation effect="fade" start="0" end="100" time="0">Unfocus</animation>
 						<animation effect="fade" start="100" end="0" time="0">Focus</animation>
 					</control>
 					<control type="image">
-						<width>400</width>
-						<height>250</height>
+						<width>430</width>
+						<height>270</height>
 						<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
 						<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 					</control>
 					<control type="image">
 						<left>21</left>
 						<top>179</top>
-						<width>358</width>
-						<height>50</height>
+						<width>388</width>
+						<height>70</height>
 						<texture colordiffuse="border_alpha">colors/black.png</texture>
 					</control>
 					<control type="image">
-						<left>80</left>
+						<left>95</left>
 						<top>10</top>
 						<width>240</width>
 						<height>240</height>
@@ -93,9 +93,9 @@
 						<align>center</align>
 					</control>
 					<control type="label">
-						<left>0</left>
-						<top>182</top>
-						<width>400</width>
+						<left>30</left>
+						<top>190</top>
+						<width>370</width>
 						<height>400</height>
 						<font>font13</font>
 						<label>$INFO[ListItem.Label]</label>
