@@ -349,11 +349,11 @@
 				<left>0</left>
 				<width>32</width>
 				<height>32</height>
-				<texture colordiffuse="button_focus">$PARAM[icon]</texture>
+				<texture colordiffuse="grey">$PARAM[icon]</texture>
 			</control>
 			<control type="label">
 				<left>40</left>
-				<width>150</width>
+				<width>180</width>
 				<height>32</height>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -378,11 +378,33 @@
 		<top>1010</top>
 		<visible>Skin.HasSetting(show_mediaflags)</visible>
 		<animation effect="fade" time="200">VisibleChange</animation>
+		<control type="group">
+			<left>1800</left>
+			<top>-5</top>
+			<visible>String.IsEqual(ListItem.DBtype,tvshow)</visible>
+			<include content="MediaFlag">
+				<param name="texture" value="$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]" />
+			</include>
+		</control>
+		<control type="group">
+			<left>1590</left>
+			<top>10</top>
+			<include content="InfoFlag">
+				<param name="visible" value="!String.IsEmpty(ListItem.Property(TotalEpisodes))" />
+				<param name="icon" value="lists/played-total.png" />
+				<param name="label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
+			</include>
+			<include content="InfoFlag">
+				<param name="visible" value="!String.IsEmpty(ListItem.Premiered) + String.IsEmpty(ListItem.Property(TotalEpisodes))" />
+				<param name="icon" value="lists/year.png" />
+				<param name="label" value="$INFO[ListItem.Premiered]" />
+			</include>
+		</control>
 		<control type="grouplist">
 			<orientation>horizontal</orientation>
 			<right>30</right>
 			<align>right</align>
-			<itemgap>5</itemgap>
+			<itemgap>15</itemgap>
 			<width>1580</width>
 			<control type="group">
 				<width>115</width>
@@ -407,9 +429,9 @@
 			<include content="MediaFlag">
 				<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
 			</include>
-<!-- 			<include content="MediaFlag">
-				<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-			</include> -->
+			<!-- 			<include content="MediaFlag">
+										<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+									</include> -->
 			<include content="MediaFlag">
 				<param name="texture" value="$VAR[ResolutionFlagVar]" />
 			</include>

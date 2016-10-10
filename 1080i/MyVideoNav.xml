@@ -102,19 +102,9 @@
 						<width>468</width>
 						<align>center</align>
 						<include content="InfoFlag">
-							<param name="visible" value="!String.IsEmpty(ListItem.Property(TotalEpisodes))" />
-							<param name="icon" value="lists/played-total.png" />
-							<param name="label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
-						</include>
-						<include content="InfoFlag">
 							<param name="visible" value="!String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Premiered)" />
 							<param name="icon" value="lists/year.png" />
 							<param name="label" value="$INFO[ListItem.Year]" />
-						</include>
-						<include content="InfoFlag">
-							<param name="visible" value="!String.IsEmpty(ListItem.Premiered) + String.IsEmpty(ListItem.Property(TotalEpisodes))" />
-							<param name="icon" value="lists/year.png" />
-							<param name="label" value="$INFO[ListItem.Premiered]" />
 						</include>
 					</control>
 				</control>
