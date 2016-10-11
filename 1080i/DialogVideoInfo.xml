@@ -169,11 +169,6 @@
 						<param name="visible" value="!String.IsEmpty(ListItem.Genre) + Stringcompare(ListItem.DBType,movie)" />
 					</include>
 					<include content="InfoDialogMetadata">
-						<param name="control_id" value="151" />
-						<param name="label" value="[COLOR button_focus]$LOCALIZE[180]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[31060]" />
-						<param name="visible" value="!String.IsEmpty(ListItem.Duration)" />
-					</include>
-					<include content="InfoDialogMetadata">
 						<param name="control_id" value="152" />
 						<param name="label" value="[COLOR button_focus]$LOCALIZE[21875]: [/COLOR]$INFO[ListItem.Country]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Country)" />
