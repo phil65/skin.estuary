@@ -162,7 +162,7 @@
 							<font>font13</font>
 							<width>1160</width>
 							<height>38</height>
-							<label>$INFO[ListItem.Season,[COLOR button_focus]$LOCALIZE[33054]: [/COLOR],]$INFO[ListItem.Episode,  •  [COLOR button_focus] $LOCALIZE[20360]: [/COLOR],]</label>
+							<label>$INFO[ListItem.Season,[COLOR button_focus]$LOCALIZE[33054]: [/COLOR],]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 							<visible>!String.IsEmpty(ListItem.Season)</visible>
 						</control>

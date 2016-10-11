@@ -395,7 +395,7 @@
 				<param name="label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
 			</include>
 			<include content="InfoFlag">
-				<param name="visible" value="!String.IsEmpty(ListItem.Premiered) + String.IsEmpty(ListItem.Property(TotalEpisodes))" />
+				<param name="visible" value="String.IsEqual(ListItem.DBtype,tvshow) + !String.IsEmpty(ListItem.Premiered) + String.IsEmpty(ListItem.Property(TotalEpisodes))" />
 				<param name="icon" value="lists/year.png" />
 				<param name="label" value="$INFO[ListItem.Premiered]" />
 			</include>
