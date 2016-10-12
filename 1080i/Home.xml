@@ -1015,6 +1015,13 @@
 						</control>
 					</focusedlayout>
 					<itemlayout height="95">
+						<control type="image">
+							<left>-3</left>
+							<top>1</top>
+							<width>95</width>
+							<height>95</height>
+							<texture colordiffuse="44FFFFFF">$INFO[ListItem.Art(thumb)]</texture>
+						</control>
 						<control type="label">
 							<left>104</left>
 							<top>0</top>
