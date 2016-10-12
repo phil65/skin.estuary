@@ -43,8 +43,8 @@
 					<height>338</height>
 					<font>font24_title</font>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>ListItem.IsCollection | Control.IsVisible(54)</visible>
-				</control>
+<!-- 					<visible>ListItem.IsCollection</visible>
+ -->				</control>
 				<control type="textbox">
 					<left>30</left>
 					<top>220</top>
