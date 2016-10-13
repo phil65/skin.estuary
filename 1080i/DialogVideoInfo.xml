@@ -507,19 +507,19 @@
 			<control type="group">
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<top>980</top>
+				<top>1010</top>
 				<include>MediaFlags</include>
 				<control type="group">
 					<visible>Control.HasFocus(50)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
-					<top>19</top>
-					<left>700</left>
+					<top>10</top>
+					<left>0</left>
 					<control type="image">
 						<left>17</left>
 						<width>44</width>
 						<height>44</height>
 						<animation effect="rotate" end="-90" center="40,23" time="0" condition="true">Conditional</animation>
-						<texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
+						<texture colordiffuse="grey">frame/menu-nofo.png</texture>
 					</control>
 					<control type="label">
 						<left>74</left>
@@ -532,13 +532,13 @@
 				<control type="group">
 					<visible>Control.HasFocus(138)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
-					<top>19</top>
-					<left>700</left>
+					<top>10</top>
+					<left>0</left>
 					<control type="image">
 						<left>17</left>
 						<width>44</width>
 						<height>44</height>
-						<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
+						<texture colordiffuse="grey">frame/menu-fo.png</texture>
 					</control>
 					<control type="label">
 						<left>74</left>
