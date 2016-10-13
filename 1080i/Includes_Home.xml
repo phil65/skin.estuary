@@ -350,10 +350,10 @@
 					<imagepath>$PARAM[image_path]</imagepath>
 				</control>
 				<control type="image">
-					<top>571</top>
+					<top>551</top>
 					<left>528</left>
 					<width>1310</width>
-					<height>206</height>
+					<height>226</height>
 					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]567">
@@ -390,13 +390,13 @@
 					</control>
 				</control>
 				<control type="textbox" id="$PARAM[button_id]">
-					<top>590</top>
+					<top>570</top>
 					<left>578</left>
 					<width>1220</width>
 					<height>180</height>
 					<label>$PARAM[text_label]</label>
 					<align>center</align>
-					<font>font14</font>
+					<font>font12</font>
 					<visible>$PARAM[visible]</visible>
 				</control>
 			</control>
