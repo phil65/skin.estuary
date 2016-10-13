@@ -187,8 +187,8 @@
 				</itemlayout>
 				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="160,330">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="160,330">UnFocus</animation>
+						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="240,330">Focus</animation>
+						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="240,330">UnFocus</animation>
 						<top>150</top>
 						<left>80</left>
 						<include>InfoWallMusicLayout</include>
