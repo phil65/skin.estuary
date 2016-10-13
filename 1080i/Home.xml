@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- 	<menucontrol>9000</menucontrol>
-		 -->
+					 -->
 	<defaultcontrol>9000</defaultcontrol>
 	<!-- 	<onload condition="ControlGroup(700).HasFocus">SetFocus(9000,0)</onload>
-			 -->
+						 -->
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<control type="button" id="20000">
@@ -773,6 +773,122 @@
 						</include>
 					</control>
 				</control>
+				<control type="group" id="14000">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(id),favorites)</visible>
+					<include>Visible_Right_Delayed</include>
+					<control type="grouplist" id="14001">
+						<orientation>vertical</orientation>
+						<height>1080</height>
+						<itemgap>-120</itemgap>
+						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<usecontrolcoords>true</usecontrolcoords>
+						<control type="group">
+							<visible>Integer.IsGreater(Container(14100).NumItems,0) | Container(14100).IsUpdating</visible>
+							<height>1080</height>
+							<control type="panel" id="14100">
+								<left>520</left>
+								<top>0</top>
+								<width>1600</width>
+								<height>1080</height>
+								<onleft>9000</onleft>
+								<onright>9000</onright>
+								<onup>14100</onup>
+								<ondown>14100</ondown>
+								<onclick>$INFO[ListItem.FileNameAndPath]</onclick>
+								<preloaditems>2</preloaditems>
+								<pagecontrol>60</pagecontrol>
+								<scrolltime tween="sine">200</scrolltime>
+								<orientation>vertical</orientation>
+								<itemlayout width="340" height="361">
+									<control type="group">
+										<top>130</top>
+										<control type="image">
+											<left>0</left>
+											<top>0</top>
+											<width>320</width>
+											<height>320</height>
+											<aspectratio>scale</aspectratio>
+											<texture border="4" fallback="DefaultFavourites.png">$INFO[ListItem.Art(thumb)]</texture>
+											<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+											<bordersize>4</bordersize>
+										</control>
+										<control type="image">
+											<left>4</left>
+											<top>276</top>
+											<width>312</width>
+											<height>40</height>
+											<aspectratio>scale</aspectratio>
+											<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+										</control>
+										<control type="label">
+											<left>4</left>
+											<top>276</top>
+											<width>312</width>
+											<height>40</height>
+											<align>center</align>
+											<font>font13</font>
+											<label>$INFO[ListItem.Label]</label>
+										</control>
+									</control>
+								</itemlayout>
+								<focusedlayout width="340" height="361">
+									<control type="group">
+										<top>130</top>
+										<control type="image">
+											<left>0</left>
+											<top>0</top>
+											<width>320</width>
+											<height>320</height>
+											<aspectratio>scale</aspectratio>
+											<texture border="4" fallback="DefaultFavourites.png">$INFO[ListItem.Art(thumb)]</texture>
+											<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+											<bordersize>4</bordersize>
+										</control>
+										<control type="image">
+											<left>4</left>
+											<top>276</top>
+											<width>312</width>
+											<height>40</height>
+											<aspectratio>scale</aspectratio>
+											<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+										</control>
+										<control type="label">
+											<left>4</left>
+											<top>276</top>
+											<width>312</width>
+											<height>40</height>
+											<align>center</align>
+											<font>font13</font>
+											<label>$INFO[ListItem.Label]</label>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>0</top>
+											<width>320</width>
+											<height>320</height>
+											<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+										</control>
+									</control>
+								</focusedlayout>
+								<content>favourites://</content>
+							</control>
+						</control>
+						<include content="ImageWidgetHeader">
+							<param name="widget_header" value="$LOCALIZE[10134]" />
+							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0)"/>
+						</include>
+						<include content="ImageWidget">
+							<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
+							<param name="text_label" value="$LOCALIZE[31025]" />
+							<param name="button_label" value="$LOCALIZE[31116]" />
+							<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
+							<param name="button_id" value="5500"/>
+							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0)"/>
+							<param name="visible_1" value="false"/>
+							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNFavButton)"/>
+						</include>
+					</control>
+				</control>
 				<control type="group" id="15000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),weather)</visible>
 					<include>Visible_Right_Delayed</include>
@@ -964,6 +1080,7 @@
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),video) + Control.IsVisible(11000)">11000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),livetv) + Control.IsVisible(12000)">12000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),radio) + Control.IsVisible(13000)">13000</onright>
+					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),favorites) + Control.IsVisible(14000)">14000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),weather) + Control.IsVisible(15000)">15000</onright>
 					<onup>700</onup>
 					<ondown>700</ondown>
@@ -1093,9 +1210,16 @@
 							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 						</item>
 						<item>
+							<label>$LOCALIZE[10134]</label>
+							<onclick>ActivateWindow(favourites)</onclick>
+							<thumb>icons/home/favourites.png</thumb>
+							<property name="id">favorites</property>
+							<visible>!Skin.HasSetting(HomeMenuNofavButton)</visible>
+						</item>
+						<item>
 							<label>$LOCALIZE[8]</label>
-								<onclick condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(Weather)</onclick>
-								<onclick condition="String.IsEmpty(Weather.Plugin)">ReplaceWindow(servicesettings,weather)</onclick>
+							<onclick condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(Weather)</onclick>
+							<onclick condition="String.IsEmpty(Weather.Plugin)">ReplaceWindow(servicesettings,weather)</onclick>
 							<thumb>icons/home/weather.png</thumb>
 							<property name="id">weather</property>
 							<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
@@ -1125,12 +1249,6 @@
 						<param name="label" value="$LOCALIZE[21417]" />
 					</include>
 					<include content="BottomMainMenuItem">
-						<param name="control_id" value="803" />
-						<param name="onclick" value="ActivateWindow(favourites)" />
-						<param name="icon" value="icons/favourites.png" />
-						<param name="label" value="$LOCALIZE[10134]" />
-					</include>
-					<include content="BottomMainMenuItem">
 						<param name="control_id" value="801" />
 						<param name="onclick" value="ActivateWindow(1107)" />
 						<param name="icon" value="icons/search.png" />
@@ -1146,8 +1264,8 @@
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-					<top>30</top>
-					<left>40</left>
+				<top>30</top>
+				<left>40</left>
 				<control type="image">
 					<aspectratio>keep</aspectratio>
 					<width>56</width>
