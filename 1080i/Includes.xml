@@ -208,7 +208,7 @@
 					<top>37</top>
 					<width>388</width>
 					<height>30</height>
-					<font>font10</font>
+					<font>font12</font>
 					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[ListItem.Label2]</label>
@@ -253,7 +253,7 @@
 					<top>37</top>
 					<width>388</width>
 					<height>30</height>
-					<font>font10</font>
+					<font>font12</font>
 					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[ListItem.Label2]</label>
@@ -606,7 +606,7 @@
 				</control>
 				<control type="label" id="$PARAM[id]">
 					<label>$PARAM[sub_label]</label>
-					<font>font10</font>
+					<font>font12</font>
 					<left>85</left>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
