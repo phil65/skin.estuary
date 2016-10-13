@@ -17,52 +17,10 @@
 			<include>View_500_SmallThumb</include>
 			<control type="group">
 				<include>OpenClose_Left</include>
-				<visible>Control.IsVisible(50) | Control.IsVisible(55)</visible>
+				<visible>Control.Isvisible(54) | Control.IsVisible(55)</visible>
 				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files) | Container.Content(directors) | Container.Content()</visible>
 				<include>Visible_Left</include>
 				<include>ListThumbInfoPanel</include>
-			</control>
-			<control type="group">
-				<include>OpenClose_Right</include>
-				<visible>[Control.IsVisible(50) | Control.Isvisible(54)] + !String.IsEmpty(ListItem.DBID)</visible>
-				<include>Visible_Right</include>
-				<visible>Container.Content(albums) | Container.Content(artists)</visible>
-				<control type="image">
-					<right>90</right>
-					<top>162</top>
-					<width>509</width>
-					<height>746</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-				</control>
-				<control type="textbox">
-					<right>130</right>
-					<top>194</top>
-					<width>429</width>
-					<height>388</height>
-					<font>font12</font>
-					<label>$INFO[ListItem.Property(artist_description)]$INFO[ListItem.Property(album_description),[CR]]</label>
-					<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-				</control>
-				<control type="textbox">
-					<right>130</right>
-					<top>360</top>
-					<width>429</width>
-					<height>413</height>
-					<align>center</align>
-					<font>font36_title</font>
-					<label>$LOCALIZE[19055]</label>
-					<visible>String.IsEmpty(Listitem.Property(artist_description)) + String.IsEmpty(Listitem.Property(album_description)) + !ListItem.IsParentFolder</visible>
-					<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-				</control>
-				<control type="image">
-					<right>113</right>
-					<top>614</top>
-					<width>463</width>
-					<height>270</height>
-					<aspectratio aligny="top">scale</aspectratio>
-					<fadetime>300</fadetime>
-					<texture background="true" fallback="DefaultFolder.png">$VAR[ListInfoBoxImageVar]</texture>
-				</control>
 			</control>
 			<include>MediaMenuMouseOverlay</include>
 			<control type="group">
