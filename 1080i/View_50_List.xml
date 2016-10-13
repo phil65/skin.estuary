@@ -170,35 +170,19 @@
 			<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 		</control>
 		<control type="image">
-			<left>20</left>
-			<top>162</top>
-			<width>509</width>
-			<height>509</height>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="BFFFFFFF">colors/black.png</texture>
-			<bordertexture border="20">overlays/shadow.png</bordertexture>
-			<bordersize>20</bordersize>
-		</control>
-		<control type="image">
 			<left>44</left>
-			<top>186</top>
-			<width>461</width>
-			<height>461</height>
-			<aspectratio aligny="center">scale</aspectratio>
+			<top>140</top>
+			<width>470</width>
+			<height>470</height>
+			<aspectratio aligny="bottom">keep</aspectratio>
 			<fadetime>300</fadetime>
 			<texture background="true" fallback="DefaultFolderSquare.png">$VAR[IconWallThumbVar]</texture>
 		</control>
-		<control type="group">
-			<left>520</left>
-			<top>200</top>
-			<include>UserRatingCircle</include>
-		</control>
 		<control type="textbox">
-			<animation effect="fade" start="100" end="0" time="0" condition="Control.IsVisible(500) + Container.Content(addons)">Conditional</animation>
-			<left>50</left>
-			<top>680</top>
-			<width>520</width>
-			<height>280</height>
+			<left>30</left>
+			<top>640</top>
+			<width>525</width>
+			<height>323</height>
 			<font>font13</font>
 			<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
 			<label fallback="19055">$VAR[ListBoxInfoVar]</label>
