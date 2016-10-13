@@ -1083,7 +1083,7 @@
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),favorites) + Control.IsVisible(14000)">14000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),weather) + Control.IsVisible(15000)">15000</onright>
 					<onup>700</onup>
-					<ondown>700</ondown>
+					<ondown>noop</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<focusedlayout height="95">
 						<control type="group">
@@ -1231,9 +1231,7 @@
 					<itemgap>20</itemgap>
 					<left>13</left>
 					<top>100</top>
-					<ondown>SetFocus(9000,0)</ondown>
-					<onup>SetFocus(9000,99)</onup>
-					<onup>9000</onup>
+					<onup>noop</onup>
 					<ondown>9000</ondown>
 					<onright>2000</onright>
 					<include content="BottomMainMenuItem">
