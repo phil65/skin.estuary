@@ -9,17 +9,16 @@
 			<visible>Control.IsVisible(50)</visible>
 			<control type="group">
 				<include>OpenClose_Left</include>
-				<left>110</left>
-				<top>180</top>
+				<left>0</left>
+				<top>0</top>
 				<control type="image">
-					<description>background image</description>
-					<left>-20</left>
-					<top>-20</top>
-					<width>1090</width>
-					<height>746</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
+					<left>0</left>
+					<top>0</top>
+					<width>1130</width>
+					<height>1080</height>
+					<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 				</control>
-				<control type="list" id="50">
+				<control type="fixedlist" id="50">
 					<left>0</left>
 					<top>0</top>
 					<width>1050</width>
@@ -28,6 +27,8 @@
 					<ondown>50</ondown>
 					<onleft>9000</onleft>
 					<onright>73</onright>
+					<movement>4</movement>
+					<focusposition>7</focusposition>
 					<pagecontrol>73</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="100">

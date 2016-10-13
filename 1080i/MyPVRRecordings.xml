@@ -9,18 +9,17 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
-				<left>110</left>
-				<top>180</top>
+				<left>0</left>
+				<top>0</top>
 				<include>OpenClose_Left</include>
 				<control type="image">
-					<description>background image</description>
-					<left>-20</left>
-					<top>-20</top>
-					<width>1090</width>
-					<height>746</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
+					<left>0</left>
+					<top>0</top>
+					<width>1130</width>
+					<height>1080</height>
+					<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 				</control>
-				<control type="list" id="50">
+				<control type="fixedlist" id="50">
 					<left>2</left>
 					<top>3</top>
 					<width>1046</width>
@@ -29,6 +28,8 @@
 					<onright>73</onright>
 					<onup>50</onup>
 					<ondown>50</ondown>
+					<movement>4</movement>
+					<focusposition>7</focusposition>
 					<pagecontrol>73</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<focusedlayout height="70">
