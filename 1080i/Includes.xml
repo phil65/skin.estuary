@@ -376,7 +376,6 @@
 	</include>
 	<include name="MediaFlags">
 		<top>1010</top>
-		<visible>Skin.HasSetting(show_mediaflags)</visible>
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<control type="group">
 			<left>1800</left>
@@ -840,7 +839,7 @@
 					<texturenofocus></texturenofocus>
 				</control>
 				<control type="grouplist">
-					<left>55</left>
+					<left>35</left>
 					<description>Left side of top bar</description>
 					<width>900</width>
 					<top>-3</top>
@@ -885,7 +884,7 @@
 					<top>55</top>
 					<label>$INFO[Container.SortMethod,$LOCALIZE[31022]: ]  ∙  $INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</label>
 					<font>font13</font>
-					<left>55</left>
+					<left>35</left>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
 					<width>auto</width>
