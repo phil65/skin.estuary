@@ -22,7 +22,7 @@
 				<height>20</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font12_title</font>
+				<font>font25_title</font>
 				<label>[COLOR button_focus]$LOCALIZE[21396]:  [/COLOR]$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
 				<visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
 			</control>
@@ -32,7 +32,7 @@
 				<width>240</width>
 				<height>20</height>
 				<aligny>center</aligny>
-				<font>font12_title</font>
+				<font>font25_title</font>
 				<textcolor>button_focus</textcolor>
 				<label>$VAR[SeekLabel]</label>
 			</control>
@@ -43,7 +43,7 @@
 				<height>20</height>
 				<aligny>center</aligny>
 				<align>center</align>
-				<font>font12_title</font>
+				<font>font25_title</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[31080]</label>
 			</control>
@@ -54,7 +54,7 @@
 				<height>20</height>
 				<aligny>center</aligny>
 				<align>center</align>
-				<font>font13_title</font>
+				<font>font45_title</font>
 				<label>$INFO[Player.FinishTime]</label>
 			</control>
 			<control type="label">
@@ -64,7 +64,7 @@
 				<height>20</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13_title</font>
+				<font>font45_title</font>
 				<label>[COLOR button_focus]$LOCALIZE[31134]:  [/COLOR]$INFO[Player.TimeRemaining]</label>
 			</control>
 			<control type="label">
@@ -72,7 +72,7 @@
 				<top>40</top>
 				<width>350</width>
 				<height>20</height>
-				<font>font13_title</font>
+				<font>font45_title</font>
 				<aligny>center</aligny>
 				<label>$VAR[SeekTimeLabelVar]</label>
 			</control>

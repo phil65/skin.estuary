@@ -165,7 +165,7 @@
 							<width>560</width>
 							<height>262</height>
 							<textcolor>button_focus</textcolor>
-							<font>font24_title</font>
+							<font>font36_title</font>
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</control>
@@ -183,7 +183,7 @@
 						<width>560</width>
 						<height>262</height>
 						<textcolor>button_focus</textcolor>
-						<font>font24_title</font>
+						<font>font36_title</font>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
 					<control type="label">
@@ -243,7 +243,7 @@
 						<width>560</width>
 						<height>262</height>
 						<label>$LOCALIZE[19076] ($INFO[Container(5000).NumItems,[B],[/B] $LOCALIZE[31036]])</label>
-						<font>font16</font>
+						<font>font37</font>
 						<visible>ListItem.IsFolder + !ListItem.IsParentFolder</visible>
 					</control>
 					<control type="group">

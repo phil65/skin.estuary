@@ -43,7 +43,7 @@
 							<top>0</top>
 							<width>250</width>
 							<height>100</height>
-							<font>font24_title</font>
+							<font>font36_title</font>
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Date)</visible>
 							<label>$INFO[ListItem.Label]</label>
@@ -111,7 +111,7 @@
 							<top>0</top>
 							<width>250</width>
 							<height>100</height>
-							<font>font24_title</font>
+							<font>font36_title</font>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>String.IsEmpty(ListItem.Date)</visible>

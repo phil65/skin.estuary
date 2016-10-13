@@ -47,7 +47,7 @@
 				<top>73</top>
 				<width>1510</width>
 				<height>100</height>
-				<font>font16</font>
+				<font>font37</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>button_focus</textcolor>
@@ -484,7 +484,7 @@
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font16</font>
+						<font>font37</font>
 						<onup>166</onup>
 						<ondown condition="!System.HasAddon(plugin.program.autocompletion)">106</ondown>
 						<ondown condition="System.HasAddon(plugin.program.autocompletion)">9010</ondown>
@@ -498,7 +498,7 @@
 						<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font16</font>
+						<font>font37</font>
 						<onup>167</onup>
 						<ondown condition="!System.HasAddon(plugin.program.autocompletion)">107</ondown>
 						<ondown condition="System.HasAddon(plugin.program.autocompletion)">9010</ondown>
@@ -598,7 +598,7 @@
 				<width>1480</width>
 				<height>90</height>
 				<label>$INFO[ListItem.Label]</label>
-				<font>font16</font>
+				<font>font37</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<aligny>center</aligny>
 			</control>
@@ -624,7 +624,7 @@
 					<width>1480</width>
 					<height>90</height>
 					<label>$INFO[ListItem.Label]</label>
-					<font>font16</font>
+					<font>font37</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<aligny>center</aligny>
 				</control>

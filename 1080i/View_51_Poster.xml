@@ -61,7 +61,7 @@
 								<width>214</width>
 								<height>100</height>
 								<label>$INFO[ListItem.Label]</label>
-								<font>font12_title</font>
+								<font>font25_title</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -109,7 +109,7 @@
 								<width>214</width>
 								<height>100</height>
 								<label>$INFO[ListItem.Label]</label>
-								<font>font12_title</font>
+								<font>font25_title</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -150,7 +150,7 @@
 						<width>1160</width>
 						<height>40</height>
 						<label>$INFO[ListItem.Label]$VAR[ListSubLabelVar]</label>
-						<font>font30_title</font>
+						<font>font45_title</font>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="grouplist">

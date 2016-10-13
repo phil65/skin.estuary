@@ -208,7 +208,7 @@
 					<width>155</width>
 					<top>925</top>
 					<align>center</align>
-					<font>font30_title</font>
+					<font>font45_title</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[VideoPlayer.Rating]</label>
 				</control>
@@ -227,7 +227,7 @@
 					<top>900</top>
 					<width>1000</width>
 					<height>100</height>
-					<font>font16</font>
+					<font>font37</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31085]: ]</label>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
@@ -237,7 +237,7 @@
 					<top>940</top>
 					<width>100%</width>
 					<height>100</height>
-					<font>font16</font>
+					<font>font37</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, /]</label>
 					<visible>!Player.Seeking</visible>

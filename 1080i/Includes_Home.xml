@@ -23,7 +23,7 @@
 			<width>420</width>
 			<label>$PARAM[header]</label>
 			<aligny>center</aligny>
-			<font>font24_title</font>
+			<font>font36_title</font>
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="label">
@@ -55,7 +55,7 @@
 				<height>40</height>
 				<label>$INFO[Container($PARAM[list_id]).Listitem.Label]</label>
 				<shadowcolor>text_shadow</shadowcolor>
-				<font>font20_title</font>
+				<font>font32_title</font>
 				<align>right</align>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<visible>Control.HasFocus($PARAM[list_id])</visible>
@@ -198,7 +198,7 @@
 							<width>200</width>
 							<height>100</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font12_title</font>
+							<font>font25_title</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -231,7 +231,7 @@
 							<width>200</width>
 							<height>100</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font12_title</font>
+							<font>font25_title</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -319,7 +319,7 @@
 				<left>498</left>
 				<width>1370</width>
 				<height>120</height>
-				<font>font30_title</font>
+				<font>font45_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$PARAM[widget_header]</label>

@@ -150,7 +150,7 @@
 						<aligny>top</aligny>
 						<textoffsety>40</textoffsety>
 						<shadowcolor>black</shadowcolor>
-						<font>font12_title</font>
+						<font>font25_title</font>
 					</control>
 					<control type="progress">
 						<description>CPU BAR</description>
@@ -165,7 +165,7 @@
 						<label>$LOCALIZE[31030]: $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
 						<aligny>center</aligny>
 						<shadowcolor>black</shadowcolor>
-						<font>font12_title</font>
+						<font>font25_title</font>
 					</control>
 					<control type="progress">
 						<description>Memory BAR</description>
@@ -183,7 +183,7 @@
 					<textoffsety>10</textoffsety>
 					<label>$LOCALIZE[31031]:</label>
 					<shadowcolor>black</shadowcolor>
-					<font>font12_title</font>
+					<font>font25_title</font>
 				</control>
 				<control type="grouplist">
 					<description>Kodi build version</description>

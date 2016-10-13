@@ -179,7 +179,7 @@
 						<left>340</left>
 						<top>13</top>
 						<align>right</align>
-						<font>font13_title</font>
+						<font>font45_title</font>
 						<label>[COLOR grey]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR white]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
 						<width>175</width>
 					</control>
@@ -236,7 +236,7 @@
 						<left>340</left>
 						<top>13</top>
 						<align>right</align>
-						<font>font13_title</font>
+						<font>font45_title</font>
 						<label>[COLOR grey]$INFO[ListItem.Property(LowTemperature)][/COLOR][CR][COLOR white]$INFO[ListItem.Property(HighTemperature)][/COLOR]</label>
 						<width>175</width>
 					</control>
@@ -360,7 +360,7 @@
 						<top>0</top>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font30_title</font>
+						<font>font45_title</font>
 						<label>$INFO[ListItem.Property(Temperature)]</label>
 						<width>230</width>
 						<height>107</height>
@@ -395,7 +395,7 @@
 						<top>0</top>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font30_title</font>
+						<font>font45_title</font>
 						<label>$INFO[ListItem.Property(Temperature)]</label>
 						<width>230</width>
 						<height>107</height>
@@ -478,7 +478,7 @@
 					<aligny>center</aligny>
 					<height>24</height>
 					<width>800</width>
-					<font>font24_title</font>
+					<font>font36_title</font>
 					<label>$INFO[System.Time] - $INFO[System.Date]</label>
 				</control>
 				<control type="label">
@@ -553,7 +553,7 @@
 					<top>380</top>
 					<align>right</align>
 					<label>[COLOR grey]$LOCALIZE[402]: $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/COLOR][CR]$INFO[Weather.Conditions]</label>
-					<font>font16</font>
+					<font>font37</font>
 					<width>630</width>
 				</control>
 			</control>
@@ -641,7 +641,7 @@
 						<height>55</height>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font13_title</font>
+						<font>font45_title</font>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">

@@ -55,7 +55,7 @@
 		<label></label>
 		<align>center</align>
 		<aligny>center</aligny>
-		<font>font12_title</font>
+		<font>font25_title</font>
 		<textcolor>grey</textcolor>
 		<shadowcolor>black</shadowcolor>
 	</include>
@@ -80,7 +80,7 @@
 		<param name="width">300</param>
 		<param name="height">90</param>
 		<param name="wrapmultiline">false</param>
-		<param name="font">font12_title</param>
+		<param name="font">font25_title</param>
 		<param name="onclick"></param>
 		<param name="visible">true</param>
 		<definition>
@@ -107,7 +107,7 @@
 		<texturenofocus border="40">buttons/button-alt-nofo.png</texturenofocus>
 		<align>center</align>
 		<aligny>center</aligny>
-		<font>font16</font>
+		<font>font37</font>
 	</include>
 	<include name="PlaylistWindowButton">
 		<param name="width">487</param>

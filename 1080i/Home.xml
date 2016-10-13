@@ -964,7 +964,7 @@
 								<height>24</height>
 								<width>800</width>
 								<align>right</align>
-								<font>font35_title</font>
+								<font>font52_title</font>
 								<label>$INFO[Weather.Location]</label>
 							</control>
 							<control type="grouplist">
@@ -1126,7 +1126,7 @@
 							<height>95</height>
 							<width>560</width>
 							<aligny>center</aligny>
-							<font>font16</font>
+							<font>font37</font>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
@@ -1145,7 +1145,7 @@
 							<height>95</height>
 							<width>560</width>
 							<aligny>center</aligny>
-							<font>font16</font>
+							<font>font37</font>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>

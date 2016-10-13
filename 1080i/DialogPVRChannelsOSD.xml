@@ -92,7 +92,7 @@
 							<width>70</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>font20_title</font>
+							<font>font32_title</font>
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
@@ -152,7 +152,7 @@
 							<width>70</width>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>font20_title</font>
+							<font>font32_title</font>
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
@@ -192,7 +192,7 @@
 			<top>0</top>
 			<width>830</width>
 			<height>70</height>
-			<font>font13_title</font>
+			<font>font45_title</font>
 			<aligny>center</aligny>
 			<label>&lt; $INFO[VideoPlayer.ChannelGroup] &gt;</label>
 			<shadowcolor>black</shadowcolor>

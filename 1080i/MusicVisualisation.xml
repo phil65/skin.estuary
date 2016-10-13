@@ -58,7 +58,7 @@
 					<width>1600</width>
 					<height>40</height>
 					<label>$INFO[MusicPlayer.Artist]</label>
-					<font>font30</font>
+					<font>font45</font>
 					<shadowcolor>black</shadowcolor>
 					<textcolor>button_focus</textcolor>
 					<scroll>true</scroll>
@@ -68,7 +68,7 @@
 					<width>1600</width>
 					<height>40</height>
 					<label>[COLOR grey]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
-					<font>font16</font>
+					<font>font37</font>
 					<shadowcolor>black</shadowcolor>
 					<textcolor>button_focus</textcolor>
 					<scroll>true</scroll>
@@ -78,7 +78,7 @@
 					<width>1600</width>
 					<height>40</height>
 					<label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[Player.Title][/COLOR]</label>
-					<font>font30</font>
+					<font>font45</font>
 					<shadowcolor>black</shadowcolor>
 					<textcolor>grey</textcolor>
 					<scroll>true</scroll>
@@ -143,7 +143,7 @@
 				<align>right</align>
 				<aligny>bottom</aligny>
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-				<font>font30_title</font>
+				<font>font45_title</font>
 				<shadowcolor>black</shadowcolor>
 				<textcolor>grey</textcolor>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
@@ -157,7 +157,7 @@
 				<align>right</align>
 				<aligny>bottom</aligny>
 				<label>$VAR[SeekLabel]</label>
-				<font>font30_title</font>
+				<font>font45_title</font>
 				<shadowcolor>black</shadowcolor>
 				<textcolor>grey</textcolor>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>

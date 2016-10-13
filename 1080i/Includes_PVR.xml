@@ -67,7 +67,7 @@
 					<width>390</width>
 					<height>70</height>
 					<aligny>center</aligny>
-					<font>fontContextMenu</font>
+					<font>font27</font>
 					<textcolor>grey</textcolor>
 					<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName]</label>
 				</control>
@@ -104,7 +104,7 @@
 					<top>0</top>
 					<width>390</width>
 					<height>70</height>
-					<font>fontContextMenu</font>
+					<font>font27</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName]</label>
 				</control>
@@ -156,7 +156,7 @@
 				<width>430</width>
 				<height>262</height>
 				<textcolor>button_focus</textcolor>
-				<font>font24_title</font>
+				<font>font36_title</font>
 				<label>$INFO[ListItem.ChannelName]</label>
 			</control>
 		</control>
@@ -174,7 +174,7 @@
 			<width>560</width>
 			<height>262</height>
 			<textcolor>button_focus</textcolor>
-			<font>font24_title</font>
+			<font>font36_title</font>
 			<label>$INFO[ListItem.EpgEventTitle]</label>
 		</control>
 		<control type="label">
@@ -219,7 +219,7 @@
 			<width>560</width>
 			<height>362</height>
 			<align>center</align>
-			<font>font24_title</font>
+			<font>font36_title</font>
 			<label>$LOCALIZE[19055]</label>
 			<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Genre)</visible>
 		</control>
