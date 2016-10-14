@@ -76,7 +76,6 @@
 							<top>0</top>
 							<width>332</width>
 							<height>478</height>
-							<aspectratio>keep</aspectratio>
 							<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -678,8 +677,8 @@
 							<control type="image">
 								<left>20</left>
 								<top>183</top>
-								<width>298</width>
-								<height>75</height>
+								<width>300</width>
+								<height>76</height>
 								<texture>colors/black.png</texture>
 							</control>
 							<control type="textbox">
@@ -728,8 +727,8 @@
 							<control type="image">
 								<left>20</left>
 								<top>183</top>
-								<width>298</width>
-								<height>75</height>
+								<width>300</width>
+								<height>76</height>
 								<texture>colors/black.png</texture>
 							</control>
 							<control type="textbox">
