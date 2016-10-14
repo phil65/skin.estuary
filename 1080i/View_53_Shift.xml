@@ -55,6 +55,33 @@
 					<preloaditems>1</preloaditems>
 					<viewtype label="31100">icon</viewtype>
 					<itemlayout width="370">
+						<control type="image">
+							<left>0</left>
+							<top>100</top>
+							<width>370</width>
+							<height>480</height>
+							<aspectratio aligny="bottom">keep</aspectratio>
+							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>603</top>
+							<width>300</width>
+							<height>100</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font13</font>
+						</control>
+						<control type="group">
+							<left>145</left>
+							<top>383</top>
+							<include>UserRatingCircle</include>
+						</control>
+					</itemlayout>
+					<focusedlayout width="370">
 						<control type="group">
 							<left>0</left>
 							<control type="image">
@@ -76,43 +103,13 @@
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font13</font>
+								<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
 							</control>
 							<control type="group">
 								<left>145</left>
 								<top>383</top>
 								<include>UserRatingCircle</include>
 							</control>
-						</control>
-					</itemlayout>
-					<focusedlayout width="370">
-						<control type="group">
-							<left>0</left>
-						<control type="image">
-							<left>0</left>
-							<top>100</top>
-							<width>370</width>
-							<height>480</height>
-							<aspectratio aligny="bottom">keep</aspectratio>
-							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
-						<control type="textbox">
-							<left>20</left>
-							<top>603</top>
-							<width>300</width>
-							<height>100</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font13</font>
-							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
-						</control>
-						<control type="group">
-							<left>145</left>
-							<top>383</top>
-							<include>UserRatingCircle</include>
-						</control>
 						</control>
 					</focusedlayout>
 				</control>

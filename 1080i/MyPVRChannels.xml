@@ -10,8 +10,6 @@
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
 				<include>OpenClose_Left</include>
-				<left>0</left>
-				<top>0</top>
 				<include>Visible_Left</include>
 				<control type="image">
 					<left>0</left>
