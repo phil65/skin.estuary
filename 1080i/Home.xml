@@ -55,7 +55,7 @@
 						<orientation>vertical</orientation>
 						<height>1080</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://video/movies/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
@@ -117,7 +117,7 @@
 					<control type="grouplist" id="6001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://video/tvshows/"/>
@@ -180,7 +180,7 @@
 					<control type="grouplist" id="7001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://music/"/>
@@ -268,7 +268,7 @@
 						<orientation>vertical</orientation>
 						<height>1080</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
@@ -360,7 +360,7 @@
 					<control type="grouplist" id="11001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://video/"/>
@@ -370,7 +370,7 @@
 							<param name="onup_id" value="20000"/>
 							<param name="ondown_id" value="11100"/>
 						</include>
-						<include content="WidgetListText">
+						<include content="WidgetListCategories">
 							<param name="content_path" value="sources://video/"/>
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="videos"/>
@@ -378,7 +378,7 @@
 							<param name="onup_id" value="11900"/>
 							<param name="ondown_id" value="11200"/>
 						</include>
-						<include content="WidgetListText">
+						<include content="WidgetListCategories">
 							<param name="content_path" value="special://videoplaylists/"/>
 							<param name="widget_header" value="$LOCALIZE[136]"/>
 							<param name="widget_target" value="videos"/>
@@ -406,7 +406,7 @@
 						<orientation>vertical</orientation>
 						<height>1080</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="SubMenu">
 							<param name="list_id" value="12900"/>
@@ -507,7 +507,7 @@
 					<control type="grouplist" id="13001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="SubMenu">
@@ -609,7 +609,7 @@
 					<control type="grouplist" id="14001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<control type="group">
@@ -657,7 +657,7 @@
 						</control>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[10134]" />
-							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0)"/>
+							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0) + !Container(14100).IsUpdating"/>
 						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
@@ -665,7 +665,7 @@
 							<param name="button_label" value="$LOCALIZE[31116]" />
 							<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 							<param name="button_id" value="5500"/>
-							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0)"/>
+							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0) + !Container(14100).IsUpdating"/>
 							<param name="visible_1" value="false"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNFavButton)"/>
 						</include>
@@ -678,7 +678,7 @@
 						<orientation>vertical</orientation>
 						<height>1080</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<control type="group" id="16678">
 							<description>Weather info</description>
 							<height>560</height>
@@ -787,7 +787,7 @@
 					<include>Visible_Right_Delayed</include>
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
-						<itemgap>-120</itemgap>
+						<itemgap>-160</itemgap>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[1]" />
 							<param name="visible" value="true"/>

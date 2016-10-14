@@ -153,12 +153,12 @@
 	<include name="WidgetListMovies">
 		<control type="group">
 			<description>Poster Widget including header</description>
-			<height>690</height>
+			<height>710</height>
 			<left>0</left>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 			<control type="label">
 				<left>500</left>
-				<top>70</top>
+				<top>80</top>
 				<width>900</width>
 				<height>40</height>
 				<label>$PARAM[widget_header]</label>
@@ -166,7 +166,7 @@
 			</control>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>442</left>
-				<top>110</top>
+				<top>120</top>
 				<width>1460</width>
 				<height>500</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -249,7 +249,7 @@
 							<visible>Control.HasFocus($PARAM[list_id])</visible>
 							<control type="image">
 								<left>0</left>
-								<top>324</top>
+								<top>387</top>
 								<width>292</width>
 								<height>57</height>
 								<texture>colors/black.png</texture>
@@ -265,7 +265,7 @@
 							</control>
 							<control type="label">
 								<left>10</left>
-								<top>322</top>
+								<top>385</top>
 								<width>272</width>
 								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
@@ -275,7 +275,7 @@
 							</control>
 							<control type="label">
 								<left>10</left>
-								<top>346</top>
+								<top>409</top>
 								<width>272</width>
 								<label>$INFO[ListItem.Rating,, [COLOR=44FFFFFF]/[/COLOR] ]$INFO[ListItem.Year]</label>
 								<font>font12</font>
@@ -295,7 +295,7 @@
 								<left>0</left>
 								<top>0</top>
 								<width>292</width>
-								<height>380</height>
+								<height>443</height>
 								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
@@ -410,13 +410,13 @@
 		<definition>
 			<control type="group">
 				<description>Episode Widget including header</description>
-				<height>524</height>
+				<height>564</height>
 				<left>0</left>
 				<top>0</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
-					<top>70</top>
+					<top>80</top>
 					<width>900</width>
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
@@ -424,7 +424,7 @@
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
-					<top>110</top>
+					<top>120</top>
 					<width>1460</width>
 					<height>400</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -562,7 +562,7 @@
 		</definition>
 	</include>
 	<include name="WidgetListSquare">
-		<param name="height">590</param>
+		<param name="height">630</param>
 		<param name="sub_label">$INFO[ListItem.Label]</param>
 		<param name="sortby"></param>
 		<param name="visible">True</param>
@@ -577,7 +577,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
-					<top>70</top>
+					<top>80</top>
 					<width>900</width>
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
@@ -585,7 +585,7 @@
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
-					<top>110</top>
+					<top>120</top>
 					<width>1460</width>
 					<height>500</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -730,139 +730,8 @@
 			</control>
 		</definition>
 	</include>
-	<include name="WidgetListText">
-		<param name="height">524</param>
-		<param name="arrow_posy">200</param>
-		<param name="item_limit">12</param>
-		<param name="icon">$INFO[ListItem.Icon]</param>
-		<param name="sortby">label</param>
-		<param name="sortorder">ascending</param>
-		<definition>
-			<control type="group" id="$PARAM[list_id]0">
-				<description>Square Widget including header</description>
-				<height>$PARAM[height]</height>
-				<left>0</left>
-				<top>0</top>
-				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<control type="label">
-					<left>500</left>
-					<top>70</top>
-					<width>900</width>
-					<height>40</height>
-					<label>$PARAM[widget_header]</label>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
-				<control type="panel" id="$PARAM[list_id]">
-					<left>442</left>
-					<top>110</top>
-					<width>1460</width>
-					<height>$PARAM[height]</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
-					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
-					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
-					<onup>$PARAM[onup_id]</onup>
-					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<preloaditems>2</preloaditems>
-					<itemlayout width="330" height="340">
-						<control type="group">
-							<left>70</left>
-							<control type="image">
-								<width>340</width>
-								<height>340</height>
-								<texture border="40">buttons/button-nofo.png</texture>
-							</control>
-							<control type="image">
-								<top>23</top>
-								<left>62</left>
-								<width>220</width>
-								<height>180</height>
-								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<left>20</left>
-								<top>243</top>
-								<width>298</width>
-								<height>75</height>
-								<texture>colors/black.png</texture>
-							</control>
-							<control type="textbox">
-								<left>42</left>
-								<top>245</top>
-								<width>260</width>
-								<height>70</height>
-								<label>$INFO[ListItem.Label]</label>
-								<font>font12</font>
-								<shadowcolor>text_shadow</shadowcolor>
-								<align>center</align>
-								<aligny>top</aligny>
-							</control>
-						</control>
-					</itemlayout>
-					<focusedlayout width="330" height="340">
-						<control type="group">
-							<depth>DepthContentPopout</depth>
-							<left>70</left>
-							<animation type="Focus">
-								<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="240,70" />
-							</animation>
-							<animation type="Unfocus">
-								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="240,70" />
-							</animation>
-							<control type="image">
-								<width>340</width>
-								<height>340</height>
-								<texture border="40">buttons/button-nofo.png</texture>
-							</control>
-							<control type="image">
-								<width>340</width>
-								<height>340</height>
-								<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
-								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-							</control>
-							<control type="image">
-								<top>23</top>
-								<left>62</left>
-								<width>220</width>
-								<height>180</height>
-								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<left>20</left>
-								<top>243</top>
-								<width>298</width>
-								<height>75</height>
-								<texture>colors/black.png</texture>
-							</control>
-							<control type="textbox">
-								<left>42</left>
-								<top>245</top>
-								<width>260</width>
-								<height>70</height>
-								<label>$INFO[ListItem.Label]</label>
-								<font>font12</font>
-								<shadowcolor>text_shadow</shadowcolor>
-								<align>center</align>
-								<aligny>top</aligny>
-							</control>
-						</control>
-					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
-				</control>
-			</control>
-		</definition>
-	</include>
 	<include name="WidgetListCategories">
-		<param name="height">464</param>
+		<param name="height">484</param>
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">12</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
@@ -877,7 +746,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
-					<top>70</top>
+					<top>80</top>
 					<width>900</width>
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
@@ -885,7 +754,7 @@
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
-					<top>110</top>
+					<top>120</top>
 					<width>1460</width>
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -993,7 +862,7 @@
 		</definition>
 	</include>
 	<include name="WidgetListChannels">
-		<param name="height">540</param>
+		<param name="height">560</param>
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">10</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
@@ -1008,7 +877,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
-					<top>70</top>
+					<top>80</top>
 					<width>900</width>
 					<height>40</height>
 					<label>$PARAM[widget_header]</label>
@@ -1016,7 +885,7 @@
 				</control>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
-					<top>110</top>
+					<top>120</top>
 					<width>1460</width>
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -1037,7 +906,7 @@
 							<left>70</left>
 							<control type="image">
 								<width>340</width>
-								<height>360</height>
+								<height>340</height>
 								<texture border="40">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
@@ -1061,7 +930,7 @@
 							</control>
 							<control type="label">
 								<left>42</left>
-								<top>280</top>
+								<top>277</top>
 								<width>260</width>
 								<height>65</height>
 								<label>$PARAM[label2]</label>
@@ -1084,12 +953,12 @@
 							</animation>
 							<control type="image">
 								<width>340</width>
-								<height>360</height>
+								<height>340</height>
 								<texture border="40">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
 								<width>340</width>
-								<height>360</height>
+								<height>340</height>
 								<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
@@ -1115,7 +984,7 @@
 							</control>
 							<control type="label">
 								<left>42</left>
-								<top>280</top>
+								<top>277</top>
 								<width>260</width>
 								<height>65</height>
 								<label>$PARAM[label2]</label>
@@ -1134,14 +1003,14 @@
 	<include name="WeatherWidget">
 		<control type="group">
 			<description>Square Weather Widget including header</description>
-			<height>530</height>
+			<height>570</height>
 			<left>0</left>
 			<top>0</top>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 			<visible>$PARAM[visible]</visible>
 			<control type="label">
 				<left>500</left>
-				<top>30</top>
+				<top>80</top>
 				<width>900</width>
 				<height>40</height>
 				<label>$PARAM[widget_header]</label>
@@ -1150,7 +1019,7 @@
 			</control>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>442</left>
-				<top>55</top>
+				<top>120</top>
 				<width>1460</width>
 				<height>400</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -1213,10 +1082,10 @@
 						<left>70</left>
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="110,130" />
+							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="180,130" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+							<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="180,130" />
 						</animation>
 						<control type="image">
 							<left>0</left>
