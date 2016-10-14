@@ -217,7 +217,6 @@
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRGuideVar]" />
 			</include>
 			<include content="BottomBar">
-				<param name="PageLabel" value="" />
 				<param name="info_visible" value="true" />
 			</include>
 		</control>
