@@ -211,10 +211,10 @@
 						<depth>DepthContentPopout</depth>
 						<posx>70</posx>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="110,130" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="190,130" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="190,130" />
 						</animation>
 						<control type="image">
 							<left>0</left>
