@@ -62,7 +62,7 @@
 						</control>
 						<control type="progress">
 							<left>105</left>
-							<top>48</top>
+							<top>58</top>
 							<width>50</width>
 							<height>12</height>
 							<midtexture border="3">progress/texturebg_white.png</midtexture>
@@ -78,17 +78,18 @@
 						</control>
 						<control type="label">
 							<left>105</left>
-							<top>0</top>
+							<top>8</top>
 							<height>90</height>
 							<width>750</width>
 							<aligny>top</aligny>
+							<font>font14</font>
 							<animation effect="slide" start="0,0" end="0,18" time="0">Conditional</animation>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
 							<left>165</left>
-							<top>36</top>
+							<top>46</top>
 							<height>90</height>
 							<width>750</width>
 							<aligny>top</aligny>
@@ -127,7 +128,7 @@
 						</control>
 						<control type="progress">
 							<left>105</left>
-							<top>48</top>
+							<top>58</top>
 							<width>50</width>
 							<height>12</height>
 							<colordiffuse>88FFFFFF</colordiffuse>
@@ -143,17 +144,18 @@
 						</control>
 						<control type="label">
 							<left>105</left>
-							<top>0</top>
+							<top>8</top>
 							<height>90</height>
 							<width>750</width>
 							<aligny>top</aligny>
+							<font>font14</font>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,18" time="0">Conditional</animation>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
 							<left>165</left>
-							<top>36</top>
+							<top>46</top>
 							<height>90</height>
 							<width>750</width>
 							<aligny>top</aligny>
