@@ -619,8 +619,6 @@
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">12</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
-		<param name="sortby">label</param>
-		<param name="sortorder">ascending</param>
 		<param name="pvr_submenu">false</param>
 		<param name="pvr_type">TV</param>
 		<definition>
@@ -743,8 +741,6 @@
 						</control>
 					</focusedlayout>
 					<include condition="!$PARAM[pvr_submenu]" content="SubmenuContent">
-						<param name="sortby" value="$PARAM[sortby]"/>
-						<param name="sortorder" value="$PARAM[sortorder]"/>
 						<param name="widget_target" value="$PARAM[widget_target]"/>
 						<param name="item_limit" value="$PARAM[item_limit]"/>
 						<param name="content_path" value="$PARAM[content_path]"/>
@@ -757,7 +753,7 @@
 		</definition>
 	</include>
 	<include name="SubmenuContent">
-		<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
+		<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
 	</include>
 	<include name="PVRSubMenuContent">
 		<content>
