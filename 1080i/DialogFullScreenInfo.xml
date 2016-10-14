@@ -112,7 +112,7 @@
 					<left>29</left>
 					<top>-10</top>
 					<width>1862</width>
-					<height>30</height>
+					<height>15</height>
 					<info>Player.ProgressCache</info>
 					<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
 					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
@@ -123,7 +123,7 @@
 					<left>29</left>
 					<top>-10</top>
 					<width>1862</width>
-					<height>30</height>
+					<height>15</height>
 					<info>Player.Progress</info>
 					<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
 					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
@@ -141,9 +141,9 @@
 				</control>
 				<control type="slider">
 					<left>29</left>
-					<top>-10</top>
+					<top>-15</top>
 					<width>1862</width>
-					<height>30</height>
+					<height>25</height>
 					<onup>8010</onup>
 					<ondown>650</ondown>
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
