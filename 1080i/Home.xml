@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- 	<menucontrol>9000</menucontrol>
-						 -->
+							 -->
 	<defaultcontrol>9000</defaultcontrol>
 	<!-- 	<onload condition="ControlGroup(700).HasFocus">SetFocus(9000,0)</onload>
-							 -->
+								 -->
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<control type="button" id="20000">
@@ -802,71 +802,23 @@
 								<itemlayout width="340" height="361">
 									<control type="group">
 										<top>130</top>
-										<control type="image">
-											<left>0</left>
-											<top>0</top>
-											<width>320</width>
-											<height>320</height>
-											<aspectratio>scale</aspectratio>
-											<texture border="4" fallback="DefaultFavourites.png">$INFO[ListItem.Art(thumb)]</texture>
-											<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-											<bordersize>4</bordersize>
-										</control>
-										<control type="image">
-											<left>4</left>
-											<top>276</top>
-											<width>312</width>
-											<height>40</height>
-											<aspectratio>scale</aspectratio>
-											<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
-										</control>
-										<control type="label">
-											<left>4</left>
-											<top>276</top>
-											<width>312</width>
-											<height>40</height>
-											<align>center</align>
-											<font>font13</font>
-											<label>$INFO[ListItem.Label]</label>
-										</control>
+										<include content="InfoWallMusicLayout">
+											<param name="fallback_image" value="DefaultFavourites.png" />
+										</include>
 									</control>
 								</itemlayout>
 								<focusedlayout width="340" height="361">
 									<control type="group">
 										<top>130</top>
+										<include content="InfoWallMusicLayout">
+											<param name="fallback_image" value="DefaultFavourites.png" />
+										</include>
 										<control type="image">
-											<left>0</left>
-											<top>0</top>
-											<width>320</width>
-											<height>320</height>
-											<aspectratio>scale</aspectratio>
-											<texture border="4" fallback="DefaultFavourites.png">$INFO[ListItem.Art(thumb)]</texture>
-											<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-											<bordersize>4</bordersize>
-										</control>
-										<control type="image">
-											<left>4</left>
-											<top>276</top>
-											<width>312</width>
-											<height>40</height>
-											<aspectratio>scale</aspectratio>
-											<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
-										</control>
-										<control type="label">
-											<left>4</left>
-											<top>276</top>
-											<width>312</width>
-											<height>40</height>
-											<align>center</align>
-											<font>font13</font>
-											<label>$INFO[ListItem.Label]</label>
-										</control>
-										<control type="image">
-											<left>0</left>
-											<top>0</top>
-											<width>320</width>
-											<height>320</height>
-											<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+											<left>15</left>
+											<top>5</top>
+											<width>288</width>
+											<height>348</height>
+											<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 										</control>
 									</control>
 								</focusedlayout>
