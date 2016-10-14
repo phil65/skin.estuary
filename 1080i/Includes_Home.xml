@@ -184,7 +184,10 @@
 				<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 				<onup>$PARAM[onup_id]</onup>
 				<ondown>$PARAM[ondown_id]</ondown>
-				<onback>SetFocus(9000)</onback>
+				<onback>PageUp</onback>
+				<onback>PageUp</onback>
+				<onback>PageUp</onback>
+				<onback>PageUp</onback>
 				<preloaditems>1</preloaditems>
 				<itemlayout width="277" height="400">
 					<control type="group">
@@ -442,7 +445,10 @@
 					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>SetFocus(9000)</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
 					<preloaditems>1</preloaditems>
 					<itemlayout width="341" height="400">
 						<control type="image">
@@ -601,7 +607,10 @@
 					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>SetFocus(9000)</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
 					<preloaditems>1</preloaditems>
 					<itemlayout width="343" height="400">
 						<control type="image">
@@ -772,7 +781,10 @@
 					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>SetFocus(9000)</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
 					<preloaditems>1</preloaditems>
 					<itemlayout width="343" height="340">
 						<control type="image">
@@ -899,7 +911,10 @@
 					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>SetFocus(9000)</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
 					<preloaditems>1</preloaditems>
 					<itemlayout width="343" height="500">
 						<control type="image">
@@ -1034,7 +1049,10 @@
 					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>SetFocus(9000)</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
+					<onback>PageUp</onback>
 					<preloaditems>1</preloaditems>
 					<itemlayout width="343" height="500">
 						<control type="image">
@@ -1182,7 +1200,10 @@
 				<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 				<onup>$PARAM[onup_id]</onup>
 				<ondown>$PARAM[ondown_id]</ondown>
-				<onback>SetFocus(9000)</onback>
+				<onback>PageUp</onback>
+				<onback>PageUp</onback>
+				<onback>PageUp</onback>
+				<onback>PageUp</onback>
 				<preloaditems>1</preloaditems>
 				<itemlayout width="273" height="400">
 					<control type="image">
