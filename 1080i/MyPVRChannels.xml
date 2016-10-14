@@ -53,10 +53,10 @@
 							<visible>Control.hasFocus(50)</visible>
 						</control>
 						<control type="image">
-							<left>900</left>
+							<left>910</left>
 							<top>10</top>
 							<width>80</width>
-							<height>60</height>
+							<height>70</height>
 							<aspectratio align="right">keep</aspectratio>
 							<texture>$INFO[listitem.icon]</texture>
 						</control>
@@ -71,7 +71,7 @@
 						</control>
 						<control type="image">
 							<left>870</left>
-							<top>20</top>
+							<top>25</top>
 							<width>40</width>
 							<height>40</height>
 							<texture>$VAR[PVRStatusImageVar]</texture>
@@ -118,10 +118,10 @@
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
 						<control type="image">
-							<left>900</left>
+							<left>910</left>
 							<top>10</top>
 							<width>80</width>
-							<height>60</height>
+							<height>70</height>
 							<aspectratio align="right">keep</aspectratio>
 							<texture>$INFO[listitem.icon]</texture>
 						</control>
@@ -136,7 +136,7 @@
 						</control>
 						<control type="image">
 							<left>870</left>
-							<top>20</top>
+							<top>25</top>
 							<width>40</width>
 							<height>40</height>
 							<texture>$VAR[PVRStatusImageVar]</texture>
