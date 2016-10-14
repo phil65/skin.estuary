@@ -185,21 +185,14 @@
 			<label>$INFO[ListItem.EpisodeName]</label>
 		</control>
 		<control type="label">
-			<top>254</top>
-			<width>560</width>
-			<height>262</height>
-			<font>font13</font>
-			<label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:[/COLOR] ]</label>
-		</control>
-		<control type="label">
-			<top>660</top>
+			<top>760</top>
 			<width>500</width>
 			<height>262</height>
 			<font>font13</font>
 			<label>$PARAM[bottom_label1]</label>
 		</control>
 		<control type="label">
-			<top>660</top>
+			<top>760</top>
 			<width>560</width>
 			<height>262</height>
 			<align>right</align>
@@ -207,9 +200,9 @@
 			<label>$PARAM[bottom_label2]</label>
 		</control>
 		<control type="textbox">
-			<top>298</top>
-			<width>700</width>
-			<height>350</height>
+			<top>400</top>
+			<width>820</width>
+			<height>325</height>
 			<align>left</align>
 			<font>font13</font>
 			<label>$INFO[ListItem.Plot]</label>

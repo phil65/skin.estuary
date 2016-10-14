@@ -21,41 +21,43 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>530</width>
+				<width>500</width>
 				<height>1080</height>
 				<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="list" id="9000">
-				<left>111</left>
+				<left>0</left>
 				<top>192</top>
-				<width>348</width>
+				<width>444</width>
 				<height>567</height>
 				<onleft>9100</onleft>
 				<onright>9100</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<scrolltime>300</scrolltime>
-				<itemlayout height="74" width="348">
+				<itemlayout height="120" width="348">
 					<control type="label">
-						<left>30</left>
-						<width>306</width>
-						<height>74</height>
+						<textoffsetx>30</textoffsetx>
+						<width>444</width>
+						<height>120</height>
 						<label>$INFO[ListItem.Label]</label>
+						<font>font37</font>
 						<aligny>center</aligny>
 						<textcolor>grey</textcolor>
 					</control>
 				</itemlayout>
-				<focusedlayout height="74" width="348">
+				<focusedlayout height="120" width="348">
 					<control type="image">
-						<width>348</width>
-						<height>74</height>
+						<width>444</width>
+						<height>120</height>
 						<texture colordiffuse="button_focus">lists/focus.png</texture>
 						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
-						<left>30</left>
-						<width>306</width>
-						<height>74</height>
+						<textoffsetx>30</textoffsetx>
+						<width>444</width>
+						<height>120</height>
+						<font>font37</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
