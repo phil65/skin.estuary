@@ -7,11 +7,18 @@
 	<depth>DepthOSD</depth>
 	<controls>
 		<control type="image">
-			<left>10</left>
-			<top>860</top>
-			<width>1900</width>
-			<height>200</height>
-			<texture border="40">buttons/dialogbutton-nofo.png</texture>
+			<left>0</left>
+			<top>-30</top>
+			<width>110%</width>
+			<height>210</height>
+			<texture flipy="true">frame/InfoBar.png</texture>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>110%</width>
+			<height>180</height>
+			<texture flipy="true">frame/InfoBar.png</texture>
 		</control>
 		<control type="group">
 			<top>890</top>
@@ -22,7 +29,7 @@
 				<height>20</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font25_title</font>
+				<font>font25</font>
 				<label>[COLOR button_focus]$LOCALIZE[21396]:  [/COLOR]$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
 				<visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
 			</control>
@@ -32,7 +39,7 @@
 				<width>240</width>
 				<height>20</height>
 				<aligny>center</aligny>
-				<font>font25_title</font>
+				<font>font25</font>
 				<textcolor>button_focus</textcolor>
 				<label>$VAR[SeekLabel]</label>
 			</control>
@@ -43,7 +50,7 @@
 				<height>20</height>
 				<aligny>center</aligny>
 				<align>center</align>
-				<font>font25_title</font>
+				<font>font25</font>
 				<textcolor>button_focus</textcolor>
 				<label>$LOCALIZE[31080]</label>
 			</control>
@@ -54,7 +61,7 @@
 				<height>20</height>
 				<aligny>center</aligny>
 				<align>center</align>
-				<font>font30_title</font>
+				<font>font30</font>
 				<label>$INFO[Player.FinishTime]</label>
 			</control>
 			<control type="label">
@@ -64,7 +71,7 @@
 				<height>20</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font30_title</font>
+				<font>font30</font>
 				<label>[COLOR button_focus]$LOCALIZE[31134]:  [/COLOR]$INFO[Player.TimeRemaining]</label>
 			</control>
 			<control type="label">
@@ -72,35 +79,35 @@
 				<top>40</top>
 				<width>350</width>
 				<height>20</height>
-				<font>font30_title</font>
+				<font>font30</font>
 				<aligny>center</aligny>
 				<label>$VAR[SeekTimeLabelVar]</label>
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<left>30</left>
+				<left>0</left>
 				<top>80</top>
-				<width>1858</width>
-				<height>30</height>
+				<width>1920</width>
+				<height>15</height>
 				<info>Player.ProgressCache</info>
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<left>30</left>
+				<left>0</left>
 				<top>80</top>
-				<width>1858</width>
-				<height>30</height>
+				<width>1920</width>
+				<height>15</height>
 				<info>Player.Progress</info>
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 			</control>
 			<control type="slider" id="401">
-				<left>30</left>
-				<top>70</top>
-				<width>1858</width>
-				<height>50</height>
+				<left>0</left>
+				<top>75</top>
+				<width>1920</width>
+				<height>25</height>
 				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
 				<textureslidernib colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
