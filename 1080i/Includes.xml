@@ -429,8 +429,8 @@
 				<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
 			</include>
 			<!-- 			<include content="MediaFlag">
-										<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-									</include> -->
+													<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+												</include> -->
 			<include content="MediaFlag">
 				<param name="texture" value="$VAR[ResolutionFlagVar]" />
 			</include>
@@ -1144,5 +1144,64 @@
 		<top>0</top>
 		<width>100%</width>
 		<height>100%</height>
+	</include>
+	<include name="FocusableProgressBar">
+		<param name="width">1920</param>
+		<param name="onunfocus_id">200</param>
+		<definition>
+		<control type="progress">
+			<animation effect="fade" end="0" time="200">WindowClose</animation>
+			<left>0</left>
+			<width>$PARAM[width]</width>
+			<height>15</height>
+			<info>Player.ProgressCache</info>
+			<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
+			<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+			<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+		</control>
+		<control type="progress" id="23">
+			<animation effect="fade" end="0" time="200">WindowClose</animation>
+			<left>0</left>
+			<width>$PARAM[width]</width>
+			<height>15</height>
+			<info>Player.Progress</info>
+			<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
+			<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+		</control>
+		<control type="button" id="87">
+			<include>HiddenObject</include>
+			<onup>$PARAM[onunfocus_id]</onup>
+			<onunfocus condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onunfocus>
+			<ondown>$PARAM[onunfocus_id]</ondown>
+			<onright condition="!Player.Forwarding32x">PlayerControl(Forward)</onright>
+			<onleft condition="!Player.Rewinding32x">PlayerControl(Rewind)</onleft>
+			<visible>Player.SeekEnabled</visible>
+			<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
+		</control>
+		<control type="slider">
+			<top>-5</top>
+			<left>0</left>
+			<width>$PARAM[width]</width>
+			<height>25</height>
+			<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+			<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
+			<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
+			<info>Player.Progress</info>
+			<action>seek</action>
+			<visible>!Control.HasFocus(87) + Player.SeekEnabled</visible>
+		</control>
+		<control type="slider">
+			<top>-5</top>
+			<left>0</left>
+			<width>$PARAM[width]</width>
+			<height>25</height>
+			<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+			<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
+			<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
+			<info>Player.Progress</info>
+			<action>seek</action>
+			<visible>Control.HasFocus(87) + Player.SeekEnabled</visible>
+		</control>
+	</definition>
 	</include>
 </includes>

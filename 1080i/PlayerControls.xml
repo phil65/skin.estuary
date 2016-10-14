@@ -61,66 +61,10 @@
 				<font>font14</font>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="progress">
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<left>0</left>
-				<top>-10</top>
-				<width>800</width>
-				<height>30</height>
-				<info>Player.ProgressCache</info>
-				<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="progress" id="23">
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<left>0</left>
-				<top>-10</top>
-				<width>800</width>
-				<height>30</height>
-				<info>Player.Progress</info>
-				<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-			</control>
-			<control type="button" id="87">
-				<include>HiddenObject</include>
-				<onup condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onup>
-				<onup>201</onup>
-				<ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
-				<ondown>201</ondown>
-				<onright>PlayerControl(Forward)</onright>
-				<onleft>PlayerControl(Rewind)</onleft>
-				<visible>Player.SeekEnabled</visible>
-				<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
-			</control>
-			<control type="slider">
-				<left>0</left>
-				<top>-10</top>
-				<width>800</width>
-				<height>30</height>
-				<onup>8010</onup>
-				<ondown>650</ondown>
-				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
-				<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
-				<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
-				<info>Player.Progress</info>
-				<action>seek</action>
-				<visible>!Control.HasFocus(87) + Player.SeekEnabled</visible>
-			</control>
-			<control type="slider">
-				<left>0</left>
-				<top>-10</top>
-				<width>800</width>
-				<height>30</height>
-				<onup>8010</onup>
-				<ondown>650</ondown>
-				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
-				<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
-				<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
-				<info>Player.Progress</info>
-				<action>seek</action>
-				<visible>Control.HasFocus(87) + Player.SeekEnabled</visible>
-			</control>
+			<include content="FocusableProgressBar">
+				<param name="width" value="800"/>
+				<param name="onunfocus_id" value="201"/>
+			</include>
 		</control>
 		<control type="grouplist" id="201">
 			<left>-20</left>
