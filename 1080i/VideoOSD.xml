@@ -27,11 +27,18 @@
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<control type="image">
-					<left>10</left>
-					<top>-110</top>
-					<width>1900</width>
-					<height>270</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
+					<left>0</left>
+					<top>-30</top>
+					<width>110%</width>
+					<height>210</height>
+					<texture flipy="true">frame/InfoBar.png</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>110%</width>
+					<height>180</height>
+					<texture flipy="true">frame/InfoBar.png</texture>
 				</control>
 				<control type="label">
 					<left>30</left>
@@ -45,7 +52,7 @@
 				</control>
 				<control type="label">
 					<left>30</left>
-					<top>20</top>
+					<top>40</top>
 					<width>1858</width>
 					<height>60</height>
 					<align>center</align>
@@ -56,15 +63,15 @@
 				<control type="group" id="200">
 					<control type="grouplist" id="201">
 						<left>20</left>
-						<top>-90</top>
+						<top>40</top>
 						<width>1920</width>
 						<height>135</height>
 						<align>left</align>
 						<itemgap>-20</itemgap>
 						<scrolltime tween="sine">200</scrolltime>
 						<orientation>horizontal</orientation>
-						<ondown condition="Player.SeekEnabled">87</ondown>
-						<onup>noop</onup>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown>noop</ondown>
 						<onleft>70043</onleft>
 						<onright>70011</onright>
 						<control type="radiobutton" id="600">
@@ -134,17 +141,17 @@
 					</control>
 					<control type="grouplist" id="202">
 						<right>50</right>
-						<top>-90</top>
+						<top>40</top>
 						<width>1800</width>
 						<height>135</height>
 						<align>right</align>
 						<itemgap>-20</itemgap>
 						<scrolltime tween="sine">200</scrolltime>
 						<orientation>horizontal</orientation>
-						<ondown condition="Player.SeekEnabled">87</ondown>
-						<onup condition="Control.HasFocus(70043)">11104</onup>
-						<onup condition="Control.HasFocus(704)">12104</onup>
-						<onup condition="Control.HasFocus(255)">13103</onup>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="Control.HasFocus(70043)">11104</ondown>
+						<ondown condition="Control.HasFocus(704)">12104</ondown>
+						<ondown condition="Control.HasFocus(255)">13103</ondown>
 						<onleft>606</onleft>
 						<onright>600</onright>
 						<control type="radiobutton" id="70011">
@@ -205,10 +212,10 @@
 					</control>
 				</control>
 				<control type="group" id="6000">
-					<top>90</top>
+					<top>30</top>
 					<control type="label">
 						<left>30</left>
-						<top>-140</top>
+						<top>50</top>
 						<width>1858</width>
 						<height>75</height>
 						<align>center</align>
@@ -219,10 +226,9 @@
 					</control>
 					<control type="progress">
 						<animation effect="fade" end="0" time="200">WindowClose</animation>
-						<left>30</left>
-						<top>-10</top>
-						<width>1858</width>
-						<height>30</height>
+						<left>0</left>
+						<width>1920</width>
+						<height>15</height>
 						<info>Player.ProgressCache</info>
 						<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
 						<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
@@ -230,10 +236,9 @@
 					</control>
 					<control type="progress" id="23">
 						<animation effect="fade" end="0" time="200">WindowClose</animation>
-						<left>30</left>
-						<top>-10</top>
-						<width>1858</width>
-						<height>30</height>
+						<left>0</left>
+						<width>1920</width>
+						<height>15</height>
 						<info>Player.Progress</info>
 						<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
 						<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
@@ -249,10 +254,9 @@
 						<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
 					</control>
 					<control type="slider">
-						<left>30</left>
-						<top>-10</top>
-						<width>1858</width>
-						<height>30</height>
+						<left>0</left>
+						<width>1920</width>
+						<height>15</height>
 						<onup>8010</onup>
 						<ondown>650</ondown>
 						<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
@@ -263,10 +267,9 @@
 						<visible>!Control.HasFocus(87) + Player.SeekEnabled</visible>
 					</control>
 					<control type="slider">
-						<left>30</left>
-						<top>-10</top>
-						<width>1858</width>
-						<height>30</height>
+						<left>0</left>
+						<width>1920</width>
+						<height>15</height>
 						<onup>8010</onup>
 						<ondown>650</ondown>
 						<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>

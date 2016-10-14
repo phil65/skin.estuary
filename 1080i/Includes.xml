@@ -909,27 +909,6 @@
 			</control>
 		</definition>
 	</include>
-	<include name="TopWeatherIcon">
-		<control type="button">
-			<include>BreadcrumbsLabel</include>
-			<texturefocus></texturefocus>
-			<texturenofocus></texturenofocus>
-			<aligny>top</aligny>
-			<textoffsetx>0</textoffsetx>
-			<onclick>ActivateWindow(weather)</onclick>
-			<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
-			<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
-		</control>
-		<control type="image">
-			<top>4</top>
-			<width>60</width>
-			<height>50</height>
-			<fadetime>300</fadetime>
-			<aspectratio align="left">keep</aspectratio>
-			<texture colordiffuse="button_focus">weather/small/$INFO[Weather.FanartCode].png</texture>
-			<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
-		</control>
-	</include>
 	<include name="BreadcrumbsLabel">
 		<font>font45</font>
 		<shadowcolor>text_shadow</shadowcolor>
