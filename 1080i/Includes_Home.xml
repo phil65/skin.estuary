@@ -766,32 +766,32 @@
 			<item>
 				<label>$LOCALIZE[19019]</label>
 				<onclick>ActivateWindow($PARAM[pvr_type]Channels)</onclick>
-				<thumb>icons/submenu/channels.png</thumb>
+				<thumb>DefaultAddonPeripheral.png</thumb>
 			</item>
 			<item>
 				<label>$LOCALIZE[19069]</label>
 				<onclick>ActivateWindow($PARAM[pvr_type]Guide)</onclick>
-				<thumb>icons/submenu/guide.png</thumb>
+				<thumb>icons/pvr/epg.png</thumb>
 			</item>
 			<item>
 				<label>$LOCALIZE[19017]</label>
 				<onclick>ActivateWindow($PARAM[pvr_type]Recordings)</onclick>
-				<thumb>icons/submenu/recordings.png</thumb>
+				<thumb>icons/pvr/recording.png</thumb>
 			</item>
 			<item>
 				<label>$LOCALIZE[19040]</label>
 				<onclick>ActivateWindow($PARAM[pvr_type]Timers)</onclick>
-				<thumb>icons/submenu/timers.png</thumb>
+				<thumb>icons/pvr/timer.png</thumb>
 			</item>
 			<item>
 				<label>$LOCALIZE[19138]</label>
 				<onclick>ActivateWindow($PARAM[pvr_type]TimerRules)</onclick>
-				<thumb>icons/submenu/timer-rules.png</thumb>
+				<thumb>icons/pvr/timer-rule.png</thumb>
 			</item>
 			<item>
 				<label>$LOCALIZE[137]</label>
 				<onclick>ActivateWindow($PARAM[pvr_type]Search)</onclick>
-				<thumb>icons/submenu/tv-search.png</thumb>
+				<thumb>DefaultAddonsSearch.png</thumb>
 			</item>
 		</content>
 	</include>
