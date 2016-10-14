@@ -53,18 +53,47 @@
 			<control type="list" id="300">
 				<left>0</left>
 				<top>158</top>
-				<width>340</width>
+				<width>444</width>
 				<height>700</height>
 				<onup>20</onup>
 				<ondown>20</ondown>
 				<onleft>16001</onleft>
 				<onright>16001</onright>
-				<include content="DefaultSimpleListLayout">
-					<param name="align" value="center" />
-					<param name="width" value="340" />
-					<param name="height" value="120" />
-					<param name="list_id" value="300" />
-				</include>
+			<itemlayout height="120">
+				<control type="label">
+					<left>0</left>
+					<textoffsetx>20</textoffsetx>
+					<top>0</top>
+					<width>444</width>
+					<height>120</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>grey</textcolor>
+					<font>font37</font>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="120" width="600">
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>444</width>
+					<height>120</height>
+					<texture colordiffuse="button_focus">lists/focus.png</texture>
+					<visible>Control.HasFocus(300)</visible>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<textoffsetx>20</textoffsetx>
+					<top>0</top>
+					<width>444</width>
+					<height>120</height>
+					<align>left</align>
+					<font>font37</font>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
 				<content>
 					<item id="1">
 						<label>$LOCALIZE[19030]</label>
@@ -89,7 +118,7 @@
 			<control type="button" id="20">
 				<width>340</width>
 				<left>0</left>
-				<top>792</top>
+				<top>892</top>
 				<height>120</height>
 				<align>center</align>
 				<aligny>center</aligny>
