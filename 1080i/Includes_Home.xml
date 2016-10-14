@@ -448,7 +448,6 @@
 		</definition>
 	</include>
 	<include name="WidgetListSquare">
-		<param name="height">630</param>
 		<param name="sub_label">$INFO[ListItem.Label]</param>
 		<param name="sortby"></param>
 		<param name="visible">True</param>
@@ -457,7 +456,7 @@
 		<definition>
 			<control type="group">
 				<description>Square Widget including header</description>
-				<height>$PARAM[height]</height>
+				<height>630</height>
 				<left>0</left>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -617,7 +616,6 @@
 		</definition>
 	</include>
 	<include name="WidgetListCategories">
-		<param name="height">484</param>
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">12</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
@@ -628,7 +626,7 @@
 		<definition>
 			<control type="group" id="$PARAM[list_id]0">
 				<description>Square Widget including header</description>
-				<height>$PARAM[height]</height>
+				<height>500</height>
 				<left>0</left>
 				<top>0</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
@@ -796,7 +794,6 @@
 		</content>
 	</include>
 	<include name="WidgetListChannels">
-		<param name="height">560</param>
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">10</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
@@ -805,7 +802,7 @@
 		<definition>
 			<control type="group">
 				<description>Square Widget including header</description>
-				<height>$PARAM[height]</height>
+				<height>560</height>
 				<left>0</left>
 				<top>0</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
