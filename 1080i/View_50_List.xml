@@ -30,7 +30,7 @@
 				<width>556</width>
 				<height>836</height>
 				<fadetime>200</fadetime>
-				<aspectratio>scale</aspectratio>
+				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
 			</control>
 			<control type="group">
