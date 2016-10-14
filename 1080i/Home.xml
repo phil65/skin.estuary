@@ -408,30 +408,13 @@
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<itemgap>-160</itemgap>
 						<usecontrolcoords>true</usecontrolcoords>
-						<include content="SubMenu">
+						<include content="WidgetListCategories">
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
+							<param name="onup_id" value="20000"/>
 							<param name="ondown_id" value="12200"/>
-							<param name="item1_onclick" value="ActivateWindow(TVChannels)" />
-							<param name="item1_icon" value="channels.png" />
-							<param name="item1_label" value="$LOCALIZE[19019]" />
-							<param name="item2_onclick" value="ActivateWindow(TVGuide)" />
-							<param name="item2_icon" value="guide.png" />
-							<param name="item2_label" value="$LOCALIZE[19069]" />
-							<param name="item3_onclick" value="ActivateWindow(TVRecordings)" />
-							<param name="item3_icon" value="recordings.png" />
-							<param name="item3_label" value="$LOCALIZE[19017]" />
-							<param name="item4_onclick" value="ActivateWindow(TVTimers)" />
-							<param name="item4_icon" value="timers.png" />
-							<param name="item4_label" value="$LOCALIZE[19040]" />
-							<param name="item5_onclick" value="ActivateWindow(TVTimerRules)" />
-							<param name="item5_icon" value="timer-rules.png" />
-							<param name="item5_label" value="$LOCALIZE[19138]" />
-							<param name="item6_onclick" value="ActivateWindow(TVSearch)" />
-							<param name="item6_icon" value="tv-search.png" />
-							<param name="item6_label" value="$LOCALIZE[137]" />
-							<param name="item7_vis" value="False" />
-							<param name="item8_vis" value="False" />
-							<param name="visible" value="System.HasPVRAddon"/>
+							<param name="pvr_submenu" value="true"/>
+							<param name="pvr_type" value="TV"/>
 						</include>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[19020]" />
@@ -510,30 +493,13 @@
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
-						<include content="SubMenu">
+						<include content="WidgetListCategories">
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
+							<param name="onup_id" value="20000"/>
 							<param name="ondown_id" value="13200"/>
-							<param name="item1_onclick" value="ActivateWindow(RadioChannels)" />
-							<param name="item1_icon" value="channels.png" />
-							<param name="item1_label" value="$LOCALIZE[19019]" />
-							<param name="item2_onclick" value="ActivateWindow(RadioGuide)" />
-							<param name="item2_icon" value="guide.png" />
-							<param name="item2_label" value="$LOCALIZE[19069]" />
-							<param name="item3_onclick" value="ActivateWindow(RadioRecordings)" />
-							<param name="item3_icon" value="recordings.png" />
-							<param name="item3_label" value="$LOCALIZE[19017]" />
-							<param name="item4_onclick" value="ActivateWindow(RadioTimers)" />
-							<param name="item4_icon" value="timers.png" />
-							<param name="item4_label" value="$LOCALIZE[19040]" />
-							<param name="item5_onclick" value="ActivateWindow(RadioTimerRules)" />
-							<param name="item5_icon" value="timer-rules.png" />
-							<param name="item5_label" value="$LOCALIZE[19138]" />
-							<param name="item6_onclick" value="ActivateWindow(RadioSearch)" />
-							<param name="item6_icon" value="tv-search.png" />
-							<param name="item6_label" value="$LOCALIZE[137]" />
-							<param name="item7_vis" value="False" />
-							<param name="item8_vis" value="False" />
-							<param name="visible" value="System.HasPVRAddon"/>
+							<param name="pvr_submenu" value="true"/>
+							<param name="pvr_type" value="Radio"/>
 						</include>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[19021]" />

@@ -36,120 +36,6 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 	</include>
-	<include name="SubMenu">
-		<control type="group">
-			<height>280</height>
-			<visible>$PARAM[visible]</visible>
-			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">conditional</animation>
-			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,6)">conditional</animation>
-			<animation effect="slide" end="110,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,7)">conditional</animation>
-			<control type="label">
-				<left>235</left>
-				<top>133</top>
-				<width>700</width>
-				<height>40</height>
-				<label>$INFO[Container($PARAM[list_id]).Listitem.Label]</label>
-				<shadowcolor>text_shadow</shadowcolor>
-				<font>font32_title</font>
-				<align>right</align>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<visible>Control.HasFocus($PARAM[list_id])</visible>
-			</control>
-			<control type="panel" id="$PARAM[list_id]">
-				<orientation>horizontal</orientation>
-				<onleft>9000</onleft>
-				<left>935</left>
-				<top>102</top>
-				<height>110</height>
-				<width>1355</width>
-				<onup>20000</onup>
-				<ondown>$PARAM[ondown_id]</ondown>
-				<itemlayout width="110" height="115">
-					<control type="image">
-						<width>130</width>
-						<height>110</height>
-						<texture border="40">buttons/button-nofo.png</texture>
-					</control>
-					<control type="image">
-						<left>45</left>
-						<top>35</top>
-						<width>40</width>
-						<height>40</height>
-						<texture>icons/submenu/$INFO[ListItem.Art(thumb)]</texture>
-					</control>
-				</itemlayout>
-				<focusedlayout width="110" height="115">
-					<control type="image">
-						<width>130</width>
-						<height>110</height>
-						<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
-					</control>
-					<control type="image">
-						<left>45</left>
-						<top>35</top>
-						<width>40</width>
-						<height>40</height>
-						<texture>icons/submenu/$INFO[ListItem.Art(thumb)]</texture>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>$PARAM[item1_label]</label>
-						<thumb>$PARAM[item1_icon]</thumb>
-						<onclick>$PARAM[item1_onclick]</onclick>
-						<visible>$PARAM[item1_vis]</visible>
-					</item>
-					<item>
-						<label>$PARAM[item2_label]</label>
-						<thumb>$PARAM[item2_icon]</thumb>
-						<onclick>$PARAM[item2_onclick]</onclick>
-						<visible>$PARAM[item2_vis]</visible>
-					</item>
-					<item>
-						<label>$PARAM[item3_label]</label>
-						<thumb>$PARAM[item3_icon]</thumb>
-						<onclick>$PARAM[item3_onclick]</onclick>
-						<visible>$PARAM[item3_vis]</visible>
-					</item>
-					<item>
-						<label>$PARAM[item4_label]</label>
-						<thumb>$PARAM[item4_icon]</thumb>
-						<onclick>$PARAM[item4_onclick]</onclick>
-						<visible>$PARAM[item4_vis]</visible>
-					</item>
-					<item>
-						<label>$PARAM[item5_label]</label>
-						<thumb>$PARAM[item5_icon]</thumb>
-						<onclick>$PARAM[item5_onclick]</onclick>
-						<visible>$PARAM[item5_vis]</visible>
-					</item>
-					<item>
-						<label>$PARAM[item6_label]</label>
-						<thumb>$PARAM[item6_icon]</thumb>
-						<onclick>$PARAM[item6_onclick]</onclick>
-						<visible>$PARAM[item6_vis]</visible>
-					</item>
-					<item>
-						<label>$PARAM[item7_label]</label>
-						<thumb>$PARAM[item7_icon]</thumb>
-						<onclick>$PARAM[item7_onclick]</onclick>
-						<visible>$PARAM[item7_vis]</visible>
-					</item>
-					<item>
-						<label>$PARAM[item8_label]</label>
-						<thumb>$PARAM[item8_icon]</thumb>
-						<onclick>$PARAM[item8_onclick]</onclick>
-						<visible>$PARAM[item8_vis]</visible>
-					</item>
-				</content>
-			</control>
-		</control>
-	</include>
 	<include name="WidgetListMovies">
 		<control type="group">
 			<description>Poster Widget including header</description>
@@ -189,7 +75,8 @@
 							<left>0</left>
 							<top>0</top>
 							<width>332</width>
-							<height>478</height><aspectratio>keep</aspectratio>
+							<height>478</height>
+							<aspectratio>keep</aspectratio>
 							<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -737,6 +624,8 @@
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="sortby">label</param>
 		<param name="sortorder">ascending</param>
+		<param name="pvr_submenu">false</param>
+		<param name="pvr_type">TV</param>
 		<definition>
 			<control type="group" id="$PARAM[list_id]0">
 				<description>Square Widget including header</description>
@@ -856,10 +745,56 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
+					<include condition="!$PARAM[pvr_submenu]" content="SubmenuContent">
+						<param name="sortby" value="$PARAM[sortby]"/>
+						<param name="sortorder" value="$PARAM[sortorder]"/>
+						<param name="widget_target" value="$PARAM[widget_target]"/>
+						<param name="item_limit" value="$PARAM[item_limit]"/>
+						<param name="content_path" value="$PARAM[content_path]"/>
+					</include>
+					<include condition="$PARAM[pvr_submenu]" content="PVRSubMenuContent">
+						<param name="pvr_type" value="$PARAM[pvr_type]"/>
+					</include>
 				</control>
 			</control>
 		</definition>
+	</include>
+	<include name="SubmenuContent">
+		<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
+	</include>
+	<include name="PVRSubMenuContent">
+		<content>
+			<item>
+				<label>$LOCALIZE[19019]</label>
+				<onclick>ActivateWindow($PARAM[pvr_type]Channels)</onclick>
+				<thumb>icons/submenu/channels.png</thumb>
+			</item>
+			<item>
+				<label>$LOCALIZE[19069]</label>
+				<onclick>ActivateWindow($PARAM[pvr_type]Guide)</onclick>
+				<thumb>icons/submenu/guide.png</thumb>
+			</item>
+			<item>
+				<label>$LOCALIZE[19017]</label>
+				<onclick>ActivateWindow($PARAM[pvr_type]Recordings)</onclick>
+				<thumb>icons/submenu/recordings.png</thumb>
+			</item>
+			<item>
+				<label>$LOCALIZE[19040]</label>
+				<onclick>ActivateWindow($PARAM[pvr_type]Timers)</onclick>
+				<thumb>icons/submenu/timers.png</thumb>
+			</item>
+			<item>
+				<label>$LOCALIZE[19138]</label>
+				<onclick>ActivateWindow($PARAM[pvr_type]TimerRules)</onclick>
+				<thumb>icons/submenu/timer-rules.png</thumb>
+			</item>
+			<item>
+				<label>$LOCALIZE[137]</label>
+				<onclick>ActivateWindow($PARAM[pvr_type]Search)</onclick>
+				<thumb>icons/submenu/tv-search.png</thumb>
+			</item>
+		</content>
 	</include>
 	<include name="WidgetListChannels">
 		<param name="height">560</param>
