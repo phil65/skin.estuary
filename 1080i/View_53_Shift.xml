@@ -75,11 +75,6 @@
 							<label>$INFO[ListItem.Label]</label>
 							<font>font13</font>
 						</control>
-						<control type="group">
-							<left>145</left>
-							<top>383</top>
-							<include>UserRatingCircle</include>
-						</control>
 					</itemlayout>
 					<focusedlayout width="370">
 						<control type="group">
@@ -104,11 +99,6 @@
 								<label>$INFO[ListItem.Label]</label>
 								<font>font13</font>
 								<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
-							</control>
-							<control type="group">
-								<left>145</left>
-								<top>383</top>
-								<include>UserRatingCircle</include>
 							</control>
 						</control>
 					</focusedlayout>

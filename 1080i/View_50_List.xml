@@ -34,7 +34,7 @@
 				<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
 			</control>
 			<control type="group">
-				<left>415</left>
+				<left>485</left>
 				<top>160</top>
 				<include content="UserRatingCircle">
 					<param name="animation" value="True" />
