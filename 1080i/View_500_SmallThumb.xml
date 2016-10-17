@@ -23,7 +23,7 @@
 				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(images)</visible>
 				<itemlayout height="425" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)">
 					<control type="image">
-						<left>160</left>
+						<left>144</left>
 						<top>500</top>
 						<width>32</width>
 						<height>32</height>
@@ -36,7 +36,7 @@
 				</itemlayout>
 				<focusedlayout height="425" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)">
 					<control type="image">
-						<left>160</left>
+						<left>144</left>
 						<top>500</top>
 						<width>32</width>
 						<height>32</height>
