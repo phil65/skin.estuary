@@ -63,6 +63,7 @@
 							<param name="list_id" value="5900"/>
 							<param name="onup_id" value="20000"/>
 							<param name="ondown_id" value="5100"/>
+							<param name="visible" value="Library.HasContent(movies)"/>
 						</include>
 						<include content="WidgetListMovies">
 							<param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
@@ -126,6 +127,7 @@
 							<param name="list_id" value="6900"/>
 							<param name="onup_id" value="20000"/>
 							<param name="ondown_id" value="6100"/>
+							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
 						<include content="WidgetListMovies">
 							<param name="content_path" value="videodb://inprogresstvshows"/>
@@ -189,6 +191,7 @@
 							<param name="list_id" value="7900"/>
 							<param name="onup_id" value="20000"/>
 							<param name="ondown_id" value="7100"/>
+							<param name="visible" value="Library.HasContent(music)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="musicdb://recentlyplayedalbums"/>
@@ -408,14 +411,6 @@
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<itemgap>-160</itemgap>
 						<usecontrolcoords>true</usecontrolcoords>
-						<include content="WidgetListCategories">
-							<param name="widget_header" value="$LOCALIZE[31148]"/>
-							<param name="list_id" value="12900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="12200"/>
-							<param name="pvr_submenu" value="true"/>
-							<param name="pvr_type" value="TV"/>
-						</include>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[19020]" />
 							<param name="visible" value="!System.HasPVRAddon"/>
@@ -458,6 +453,15 @@
 							<param name="visible" value="!System.HasPVRAddon"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVButton)"/>
 						</include>
+						<include content="WidgetListCategories">
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="list_id" value="12900"/>
+							<param name="onup_id" value="20000"/>
+							<param name="ondown_id" value="12200"/>
+							<param name="pvr_submenu" value="true"/>
+							<param name="pvr_type" value="TV"/>
+							<param name="visible" value="System.HasPVRAddon"/>
+						</include>
 						<include content="WidgetListChannels">
 							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
 							<param name="sortby" value="lastplayed"/>
@@ -493,14 +497,6 @@
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
-						<include content="WidgetListCategories">
-							<param name="widget_header" value="$LOCALIZE[31148]"/>
-							<param name="list_id" value="13900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="13200"/>
-							<param name="pvr_submenu" value="true"/>
-							<param name="pvr_type" value="Radio"/>
-						</include>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[19021]" />
 							<param name="visible" value="!System.HasPVRAddon"/>
@@ -542,6 +538,15 @@
 							<param name="button_id" value="13400"/>
 							<param name="visible" value="!System.HasPVRAddon"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoRadioButton)"/>
+						</include>
+						<include content="WidgetListCategories">
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="list_id" value="13900"/>
+							<param name="onup_id" value="20000"/>
+							<param name="ondown_id" value="13200"/>
+							<param name="pvr_submenu" value="true"/>
+							<param name="pvr_type" value="Radio"/>
+							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListChannels">
 							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
