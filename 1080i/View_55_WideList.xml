@@ -61,7 +61,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13</font>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$VAR[ActorLabel2]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="image">
@@ -114,7 +114,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13</font>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$VAR[ActorLabel2]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>

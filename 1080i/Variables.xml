@@ -37,6 +37,10 @@
 		<value condition="Integer.IsGreater(Container(8000).NumItems,0)">1</value>
 		<value>[COLOR grey]0[/COLOR]</value>
 	</variable>
+	<variable name="ActorLabel2">
+		<value condition="!IsEmpty(ListItem.Appearances)">$INFO[ListItem.Appearances]</value>
+		<value>$INFO[ListItem.Label2]</value>
+	</variable>
 	<variable name="MusicInfoTextboxVar">
 		<value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole,[B]$LOCALIZE[31128][/B][CR][COLOR=white],[/COLOR]]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description),[B]$LOCALIZE[21821][/B][CR][COLOR=white],[/COLOR]]</value>
