@@ -621,12 +621,14 @@
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="pvr_submenu">false</param>
 		<param name="pvr_type">TV</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="group" id="$PARAM[list_id]0">
 				<description>Square Widget including header</description>
 				<height>500</height>
 				<left>0</left>
 				<top>0</top>
+				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="label">
 					<left>500</left>
