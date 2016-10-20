@@ -17,18 +17,18 @@
 			<animation delay="300" effect="fade" time="200">Visible</animation>
 			<animation effect="fade" delay="200" time="150">Hidden</animation>
 			<control type="image" id="1">
-				<left>860</left>
-				<top>440</top>
-				<width>200</width>
-				<height>200</height>
+				<left>880</left>
+				<top>460</top>
+				<width>160</width>
+				<height>160</height>
 				<texture>dialogs/volume/progress/p100.png</texture>
 				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
 			</control>
  			<control type="image" id="1">
-				<left>860</left>
-				<top>440</top>
-				<width>200</width>
-				<height>200</height>
+				<left>880</left>
+				<top>460</top>
+				<width>160</width>
+				<height>160</height>
 				<texture colordiffuse="button_focus">dialogs/volume/progress/p$INFO[Player.CacheLevel].png</texture>
 			</control>
 			<control type="label" id="1">
@@ -40,21 +40,21 @@
 				<height>200</height>
 				<aligny>center</aligny>
 				<align>center</align>
-				<font>font25_title</font>
-				<textcolor>button_focus</textcolor>
+				<font>font10</font>
+				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label" id="2">
 				<description>buffering label</description>
 				<label>$LOCALIZE[15107]</label>
 				<left>860</left>
-				<top>620</top>
+				<top>600</top>
 				<width>200</width>
 				<height>20</height>
 				<aligny>center</aligny>
 				<align>center</align>
-				<font>font25_title</font>
-				<textcolor>button_focus</textcolor>
+				<font>font27</font>
+				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
