@@ -6,22 +6,22 @@
 	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 	<depth>DepthOSD</depth>
 	<controls>
+		<control type="group">
+			<top>890</top>
 		<control type="image">
 			<left>0</left>
 			<top>-30</top>
 			<width>110%</width>
-			<height>210</height>
+			<height>200</height>
 			<texture flipy="true">frame/InfoBar.png</texture>
 		</control>
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>110%</width>
-			<height>180</height>
+			<height>200</height>
 			<texture flipy="true">frame/InfoBar.png</texture>
 		</control>
-		<control type="group">
-			<top>890</top>
 			<control type="label">
 				<top>110</top>
 				<right>51</right>
