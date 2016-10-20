@@ -111,6 +111,7 @@
 							<param name="content_path" value="videodb://movies/sets/"/>
 							<param name="widget_header" value="$LOCALIZE[31075]"/>
 							<param name="widget_target" value="videos"/>
+							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
 							<param name="onup_id" value="5500"/>
 							<param name="ondown_id" value="20001"/>
