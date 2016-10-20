@@ -10,6 +10,7 @@
 		<control type="group">
 			<include>Animation_DialogPopupVisible</include>
 			<visible>!Window.IsVisible(sliderdialog)</visible>
+			<visible>![Window.IsActive(osdaudiodspsettings) + Window.Is(osdaudiosettings)]</visible>
 			<include content="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="1520" />
 				<param name="DialogBackgroundHeight" value="870" />
