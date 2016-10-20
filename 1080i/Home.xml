@@ -103,9 +103,17 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5500"/>
 							<param name="onup_id" value="5400"/>
-							<param name="ondown_id" value="20001"/>
+							<param name="ondown_id" value="5600"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]"/>
 							<param name="visible" value="Library.HasContent(movies)"/>
+						</include>
+						<include content="WidgetListMovies">
+							<param name="content_path" value="videodb://movies/sets/"/>
+							<param name="widget_header" value="$LOCALIZE[31075]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="5600"/>
+							<param name="onup_id" value="5500"/>
+							<param name="ondown_id" value="20001"/>
 						</include>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[342]" />
