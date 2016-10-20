@@ -23,7 +23,7 @@
 		<control type="group">
 			<top>890</top>
 			<control type="label">
-				<top>5</top>
+				<top>110</top>
 				<right>51</right>
 				<width>400</width>
 				<height>20</height>
@@ -35,7 +35,7 @@
 			</control>
 			<control type="label">
 				<left>40</left>
-				<top>7</top>
+				<top>112</top>
 				<width>240</width>
 				<height>20</height>
 				<aligny>center</aligny>
@@ -44,28 +44,7 @@
 				<label>$VAR[SeekLabel]</label>
 			</control>
 			<control type="label">
-				<left>850</left>
-				<top>7</top>
-				<width>240</width>
-				<height>20</height>
-				<aligny>center</aligny>
-				<align>center</align>
-				<font>font25</font>
-				<textcolor>button_focus</textcolor>
-				<label>$LOCALIZE[31080]</label>
-			</control>
-			<control type="label">
-				<left>850</left>
-				<top>40</top>
-				<width>240</width>
-				<height>20</height>
-				<aligny>center</aligny>
-				<align>center</align>
-				<font>font30</font>
-				<label>$INFO[Player.FinishTime]</label>
-			</control>
-			<control type="label">
-				<top>40</top>
+				<top>145</top>
 				<right>51</right>
 				<width>400</width>
 				<height>20</height>
@@ -76,7 +55,7 @@
 			</control>
 			<control type="label">
 				<left>40</left>
-				<top>40</top>
+				<top>145</top>
 				<width>350</width>
 				<height>20</height>
 				<font>font30</font>
