@@ -23,7 +23,7 @@
 			<aspectratio>keep</aspectratio>
 			<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 			<bordersize>4</bordersize>
-			<texture fallback="DefaultTVShowsSquare.png">$INFO[ListItem.Icon]</texture>
+			<texture fallback="DefaultTVShows.png">$INFO[ListItem.Icon]</texture>
 		</control>
 		<control type="group">
 			<top>230</top>

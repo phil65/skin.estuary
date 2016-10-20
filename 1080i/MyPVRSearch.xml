@@ -57,7 +57,7 @@
 								<top>10</top>
 								<width>80</width>
 								<height>80</height>
-								<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.ActualIcon]</texture>
+								<texture fallback="DefaultTVShows.png">$INFO[Listitem.ActualIcon]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>!String.IsEmpty(ListItem.ActualIcon)</visible>
 							</control>
@@ -121,7 +121,7 @@
 								<top>10</top>
 								<width>80</width>
 								<height>80</height>
-								<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.ActualIcon]</texture>
+								<texture fallback="DefaultTVShows.png">$INFO[Listitem.ActualIcon]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>!String.IsEmpty(ListItem.ActualIcon)</visible>
 							</control>
