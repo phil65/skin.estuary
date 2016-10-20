@@ -22,8 +22,8 @@
 				<control type="fixedlist" id="50">
 					<left>0</left>
 					<top>0</top>
-					<width>1050</width>
-					<height>700</height>
+					<width>1000</width>
+					<height>1080</height>
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<onleft>9000</onleft>
@@ -36,7 +36,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1050</width>
+							<width>1000</width>
 							<height>101</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
@@ -91,7 +91,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1050</width>
+							<width>1000</width>
 							<height>101</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 							<visible>!Control.HasFocus(50)</visible>
@@ -99,7 +99,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1050</width>
+							<width>1000</width>
 							<height>101</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
@@ -153,10 +153,10 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="77">
-					<left>1055</left>
+					<left>1010</left>
 					<top>0</top>
 					<width>12</width>
-					<height>710</height>
+					<height>1080</height>
 					<onleft>50</onleft>
 					<onright>104</onright>
 					<orientation>vertical</orientation>
