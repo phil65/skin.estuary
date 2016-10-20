@@ -77,37 +77,6 @@
 						<param name="font" value="font13" />
 					</include>
 				</control>
-	<!-- 			<control type="image">
-					<left>10</left>
-					<top>614</top>
-					<width>581</width>
-					<height>351</height>
-					<aspectratio aligny="top">scale</aspectratio>
-					<fadetime>300</fadetime>
-					<texture background="true" fallback="colors/black.png">$VAR[ListInfoBoxImageVar]</texture>
-				</control>
-				<control type="group">
-					<visible>!ListItem.IsCollection</visible>
-					<top>919</top>
-					<control type="image">
-						<left>10</left>
-						<width>581</width>
-						<height>46</height>
-						<texture colordiffuse="B0FFFFFF">colors/black.png</texture>
-					</control>
-					<control type="grouplist">
-						<top>7</top>
-						<left>80</left>
-						<orientation>horizontal</orientation>
-						<width>468</width>
-						<align>center</align>
-						<include content="InfoFlag">
-							<param name="visible" value="!String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Premiered)" />
-							<param name="icon" value="lists/year.png" />
-							<param name="label" value="$INFO[ListItem.Year]" />
-						</include>
-					</control>
-				</control> -->
 			</control>
 			<control type="group">
 				<top>180</top>
