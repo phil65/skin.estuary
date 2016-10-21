@@ -21,10 +21,10 @@
 	<include name="InfoDialogMetadata">
 		<control type="button" id="$PARAM[control_id]">
 			<width>505</width>
-			<height>45</height>
+			<height>49</height>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
-			<font>font12</font>
+			<font>font13</font>
 			<texturefocus></texturefocus>
 			<texturenofocus></texturenofocus>
 			<onclick>noop</onclick>
