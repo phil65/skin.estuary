@@ -111,14 +111,6 @@
 				<top>-143</top>
 				<control type="label">
 					<width>1600</width>
-					<height>75</height>
-					<aligny>bottom</aligny>
-					<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-					<font>font14</font>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<width>1600</width>
 					<height>25</height>
 					<font>font14</font>
 					<label>$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</label>
