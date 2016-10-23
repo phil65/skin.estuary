@@ -290,6 +290,7 @@
 	<include name="DefaultSimpleListLayout">
 		<param name="align">left</param>
 		<param name="height">70</param>
+		<param name="font">font13</param>
 		<definition>
 			<itemlayout height="$PARAM[height]">
 				<control type="image">
@@ -306,6 +307,7 @@
 					<width>$PARAM[width]</width>
 					<height>$PARAM[height]</height>
 					<align>$PARAM[align]</align>
+					<font>$PARAM[font]</font>
 					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$INFO[ListItem.Label]</label>
@@ -335,6 +337,7 @@
 					<width>$PARAM[width]</width>
 					<height>$PARAM[height]</height>
 					<align>$PARAM[align]</align>
+					<font>$PARAM[font]</font>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
