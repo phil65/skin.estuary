@@ -291,6 +291,7 @@
 		<param name="align">left</param>
 		<param name="height">70</param>
 		<param name="font">font13</param>
+		<param name="fontcolor">grey</param>
 		<definition>
 			<itemlayout height="$PARAM[height]">
 				<control type="image">
@@ -309,7 +310,7 @@
 					<align>$PARAM[align]</align>
 					<font>$PARAM[font]</font>
 					<aligny>center</aligny>
-					<textcolor>grey</textcolor>
+					<textcolor>$PARAM[fontcolor]</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
