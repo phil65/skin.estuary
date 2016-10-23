@@ -106,18 +106,18 @@
 				<width>330</width>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font25_title</font>
+				<font>font27</font>
 				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 				<texturenofocus>lists/separator.png</texturenofocus>
 			</control>
 			<control type="label" id="8">
 				<description>Feature group title</description>
-				<height>60</height>
 				<width>330</width>
-				<label></label>
 				<align>center</align>
+				<top>0</top>
+				<height>40</height>
 				<aligny>center</aligny>
-				<font>font25_title</font>
+				<font>font20_title</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
