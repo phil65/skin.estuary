@@ -158,7 +158,7 @@
 						<description>CPU Text</description>
 						<width>650</width>
 						<height>80</height>
-						<label>$INFO[System.CPUUsage]</label>
+						<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 						<aligny>top</aligny>
 						<textoffsety>40</textoffsety>
 						<shadowcolor>black</shadowcolor>
