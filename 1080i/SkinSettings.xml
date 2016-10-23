@@ -36,14 +36,33 @@
 				<onright>10000</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<include content="DefaultSimpleListLayout">
-					<param name="align" value="left" />
-					<param name="width" value="470" />
-					<param name="height" value="90" />
-					<param name="list_id" value="9000" />
-					<param name="font" value="font37" />
-					<param name="fontcolor" value="white" />
-				</include>
+				<itemlayout height="90" width="470">
+					<control type="label">
+						<textoffsetx>30</textoffsetx>
+						<width>470</width>
+						<height>90</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font37</font>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="90" width="470">
+					<control type="image">
+						<width>470</width>
+						<height>90</height>
+						<texture colordiffuse="button_focus">lists/focus.png</texture>
+						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+					</control>
+					<control type="label">
+						<textoffsetx>30</textoffsetx>
+						<width>470</width>
+						<height>90</height>
+						<font>font37</font>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
 				<content>
 					<item id="1">
 						<label>$LOCALIZE[128]</label>
