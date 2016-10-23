@@ -26,20 +26,6 @@
 				<animation effect="fade" end="100" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<control type="image">
-					<left>0</left>
-					<top>-30</top>
-					<width>110%</width>
-					<height>210</height>
-					<texture flipy="true">frame/InfoBar.png</texture>
-				</control>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>110%</width>
-					<height>180</height>
-					<texture flipy="true">frame/InfoBar.png</texture>
-				</control>
 				<control type="label">
 					<left>30</left>
 					<top>-10</top>
@@ -230,7 +216,40 @@
 						<font>font45</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<include>FocusableProgressBar</include>
+					<control type="button" id="87">
+						<include>HiddenObject</include>
+						<onup>200</onup>
+						<onunfocus condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onunfocus>
+						<ondown>200</ondown>
+						<onright>StepForward</onright>
+						<onleft>StepBack</onleft>
+						<visible>Player.SeekEnabled</visible>
+						<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
+					</control>
+					<control type="slider">
+						<top>-5</top>
+						<left>0</left>
+						<width>1920</width>
+						<height>25</height>
+						<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+						<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
+						<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
+						<info>Player.Progress</info>
+						<action>seek</action>
+						<visible>!Control.HasFocus(87) + Player.SeekEnabled</visible>
+					</control>
+					<control type="slider">
+						<top>-5</top>
+						<left>0</left>
+						<width>1920</width>
+						<height>25</height>
+						<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+						<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
+						<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
+						<info>Player.Progress</info>
+						<action>seek</action>
+						<visible>Control.HasFocus(87) + Player.SeekEnabled</visible>
+					</control>
 				</control>
 			</control>
 		</control>

@@ -22,45 +22,48 @@
 				<height>200</height>
 				<texture flipy="true">frame/InfoBar.png</texture>
 			</control>
-			<control type="label">
-				<top>110</top>
-				<right>51</right>
-				<width>400</width>
-				<height>20</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font25</font>
-				<label>[COLOR button_focus]$LOCALIZE[21396]:  [/COLOR]$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
-				<visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>112</top>
-				<width>240</width>
-				<height>20</height>
-				<aligny>center</aligny>
-				<font>font25</font>
-				<textcolor>button_focus</textcolor>
-				<label>$VAR[SeekLabel]</label>
-			</control>
-			<control type="label">
-				<top>145</top>
-				<right>51</right>
-				<width>400</width>
-				<height>20</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font30</font>
-				<label>[COLOR button_focus]$LOCALIZE[31134]:  [/COLOR]$INFO[Player.TimeRemaining]</label>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>145</top>
-				<width>350</width>
-				<height>20</height>
-				<font>font30</font>
-				<aligny>center</aligny>
-				<label>$VAR[SeekTimeLabelVar]</label>
+			<control type="group">
+				<visible>!Window.IsVisible(videoosd)</visible>
+				<control type="label">
+					<top>110</top>
+					<right>51</right>
+					<width>400</width>
+					<height>20</height>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font25</font>
+					<label>[COLOR button_focus]$LOCALIZE[21396]:  [/COLOR]$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
+					<visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
+				</control>
+				<control type="label">
+					<left>40</left>
+					<top>112</top>
+					<width>240</width>
+					<height>20</height>
+					<aligny>center</aligny>
+					<font>font25</font>
+					<textcolor>button_focus</textcolor>
+					<label>$VAR[SeekLabel]</label>
+				</control>
+				<control type="label">
+					<top>145</top>
+					<right>51</right>
+					<width>400</width>
+					<height>20</height>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<label>[COLOR button_focus]$LOCALIZE[31134]:  [/COLOR]$INFO[Player.TimeRemaining]</label>
+				</control>
+				<control type="label">
+					<left>40</left>
+					<top>145</top>
+					<width>350</width>
+					<height>20</height>
+					<font>font30</font>
+					<aligny>center</aligny>
+					<label>$VAR[SeekTimeLabelVar]</label>
+				</control>
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
