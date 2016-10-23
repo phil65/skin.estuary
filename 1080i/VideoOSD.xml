@@ -196,6 +196,8 @@
 							<include content="OSDButton">
 								<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
 							</include>
+							<onclick>SetProperty(settingslist_content,subtitle,home)</onclick>
+							<onclick>ActivateWindow(1101)</onclick>
 							<visible>!VideoPlayer.Content(LiveTV) | VideoPlayer.HasSubtitles</visible>
 						</control>
 						<control type="radiobutton" id="255">
@@ -203,12 +205,15 @@
 								<param name="texture" value="osd/fullscreen/buttons/stereoscopic.png"/>
 							</include>
 							<visible>VideoPlayer.IsStereoscopic</visible>
+							<onclick>SetProperty(settingslist_content,3d,home)</onclick>
+							<onclick>ActivateWindow(1101)</onclick>
 						</control>
 						<control type="radiobutton" id="70043">
 							<include content="OSDButton">
 								<param name="texture" value="osd/fullscreen/buttons/settings.png"/>
 							</include>
-							<onclick>SetFocus(11000)</onclick>
+							<onclick>SetProperty(settingslist_content,osd,home)</onclick>
+							<onclick>ActivateWindow(1101)</onclick>
 						</control>
 					</control>
 				</control>
@@ -226,165 +231,6 @@
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<include>FocusableProgressBar</include>
-				</control>
-			</control>
-			<control type="group" id="11000">
-				<left>1400</left>
-				<top>520</top>
-				<visible>Control.hasFocus(70043) | ControlGroup(11000).HasFocus</visible>
-				<include>Visible_Right</include>
-				<control type="image">
-					<width>510</width>
-					<height>297</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
-				</control>
-				<control type="grouplist" id="11100">
-					<left>20</left>
-					<top>20</top>
-					<width>470</width>
-					<height>260</height>
-					<itemgap>0</itemgap>
-					<onleft>70043</onleft>
-					<onright>70043</onright>
-					<onup>70043</onup>
-					<ondown>70043</ondown>
-					<orientation>vertical</orientation>
-					<control type="button" id="11101">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[13396]</label>
-						<onclick>ActivateWindow(osdaudiosettings)</onclick>
-					</control>
-					<control type="button" id="11102">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[13395]</label>
-						<onclick>ActivateWindow(osdvideosettings)</onclick>
-					</control>
-					<control type="button" id="11105">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[36560]</label>
-						<onclick>ActivateWindow(osdcmssettings)</onclick>
-						<visible>System.HasCMS</visible>
-					</control>
-					<control type="button" id="11103">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[15020]</label>
-						<onclick>ActivateWindow(AudioDSPManager)</onclick>
-						<visible>ADSP.HasModes</visible>
-					</control>
-					<control type="button" id="11104">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[31112]</label>
-						<label2>[COLOR button_focus]$INFO[VideoPlayer.AudioLanguage][/COLOR]</label2>
-						<onclick>AudioNextLanguage</onclick>
-					</control>
-				</control>
-			</control>
-			<control type="group" id="12000">
-				<left>1400</left>
-				<top>520</top>
-				<visible>Control.HasFocus(704) | ControlGroup(12000).HasFocus</visible>
-				<include>Visible_Right</include>
-				<control type="image">
-					<width>510</width>
-					<height>297</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
-				</control>
-				<control type="grouplist" id="12100">
-					<left>20</left>
-					<top>20</top>
-					<width>470</width>
-					<height>260</height>
-					<itemgap>0</itemgap>
-					<onleft>704</onleft>
-					<onright>704</onright>
-					<onup>704</onup>
-					<ondown>704</ondown>
-					<orientation>vertical</orientation>
-					<control type="button" id="12101">
-						<description>Download with Subtitles script</description>
-						<width>470</width>
-						<label>33003</label>
-						<include>DefaultSettingButton</include>
-						<onclick>Close</onclick>
-						<onclick>Dialog.Close(VideoOSD)</onclick>
-						<onclick>ActivateWindow(SubtitleSearch)</onclick>
-						<enable>!VideoPlayer.Content(LiveTV)</enable>
-					</control>
-					<control type="button" id="12102">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[22006]</label>
-						<onclick>SubtitleDelay</onclick>
-						<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
-					</control>
-					<control type="button" id="12103">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[31051]</label>
-						<label2>[COLOR button_focus]$INFO[VideoPlayer.SubtitlesLanguage][/COLOR]</label2>
-						<onclick>CycleSubtitle</onclick>
-						<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
-					</control>
-					<control type="radiobutton" id="12104">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[449]</label>
-						<radioposx>350</radioposx>
-						<onclick>ShowSubtitles</onclick>
-						<selected>VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles</selected>
-						<enable>VideoPlayer.HasSubtitles</enable>
-					</control>
-				</control>
-			</control>
-			<control type="group" id="13000">
-				<left>1400</left>
-				<top>583</top>
-				<visible>Control.HasFocus(255) | ControlGroup(13000).HasFocus</visible>
-				<include>Visible_Right</include>
-				<control type="image">
-					<width>510</width>
-					<height>234</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
-				</control>
-				<control type="grouplist" id="13100">
-					<left>20</left>
-					<top>20</top>
-					<width>470</width>
-					<height>260</height>
-					<itemgap>0</itemgap>
-					<onleft>255</onleft>
-					<onright>255</onright>
-					<onup>255</onup>
-					<ondown>255</ondown>
-					<orientation>vertical</orientation>
-					<control type="radiobutton" id="13101">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<radioposx>350</radioposx>
-						<label>$LOCALIZE[24022]</label>
-						<onclick>ToggleStereoMode</onclick>
-						<selected>Integer.IsGreater(System.StereoscopicMode,0)</selected>
-					</control>
-					<control type="button" id="13102">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<label>$LOCALIZE[31004]</label>
-						<label2>$INFO[VideoPlayer.StereoscopicMode]</label2>
-						<onclick>StereoMode</onclick>
-					</control>
-					<control type="radiobutton" id="13103">
-						<width>470</width>
-						<include>DefaultSettingButton</include>
-						<radioposx>350</radioposx>
-						<label>$LOCALIZE[31005]</label>
-						<onclick>StereoModeToMono</onclick>
-						<selected>Integer.IsEqual(System.StereoscopicMode,9)</selected>
-					</control>
 				</control>
 			</control>
 		</control>
