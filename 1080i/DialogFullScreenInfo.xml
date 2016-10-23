@@ -46,7 +46,7 @@
 			<control type="grouplist">
 				<left>45</left>
 				<top>50</top>
-				<width>600</width>
+				<width>1000</width>
 				<height>100</height>
 				<align>left</align>
 				<orientation>horizontal</orientation>
@@ -126,106 +126,14 @@
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="label">
-					<font>font14</font>
+					<visible>!Window.IsVisible(videoosd)</visible>
+					<animation effect="fade" time="400">VisibleChange</animation>
 					<width>1600</width>
 					<height>44</height>
-					<label>$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Year, • ,]$INFO[VideoPlayer.Rating, • ,]</label>
-					<scroll>true</scroll>
-					<visible>VideoPlayer.Content(Movies)</visible>
-				</control>
-				<control type="label">
-					<font>font14</font>
-					<width>1600</width>
-					<height>44</height>
-					<label>$INFO[VideoPlayer.ChannelNumberLabel,$LOCALIZE[19029]: , ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.NextTitle, • $LOCALIZE[19031]: ]</label>
-					<scroll>true</scroll>
-					<visible>VideoPlayer.Content(LiveTV)</visible>
-				</control>
-			</control>
-			<control type="group">
-				<visible>!Window.IsVisible(videoosd)</visible>
-				<animation effect="fade" time="400">VisibleChange</animation>
-				<control type="label">
-					<left>20</left>
-					<width>155</width>
-					<top>925</top>
-					<align>center</align>
-					<font>font45_title</font>
-					<shadowcolor>text_shadow</shadowcolor>
-					<label>$INFO[VideoPlayer.Rating]</label>
-				</control>
-				<control type="label">
-					<description>Rating label</description>
-					<left>20</left>
-					<top>970</top>
-					<width>155</width>
-					<align>center</align>
-					<font>font12</font>
-					<shadowcolor>text_shadow</shadowcolor>
-					<label>$LOCALIZE[563]</label>
-				</control>
-				<control type="label">
-					<left>50</left>
-					<top>900</top>
-					<width>1000</width>
-					<height>100</height>
-					<font>font37</font>
-					<shadowcolor>text_shadow</shadowcolor>
 					<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31085]: ]</label>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
-				<control type="label">
-					<left>250</left>
-					<top>940</top>
-					<width>100%</width>
-					<height>100</height>
-					<font>font37</font>
-					<shadowcolor>text_shadow</shadowcolor>
-					<label>$INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, /]</label>
-					<visible>!Player.Seeking</visible>
-				</control>
-				<control type="grouplist">
-					<right>50</right>
-					<top>940</top>
-					<align>right</align>
-					<width>785</width>
-					<height>56</height>
-					<itemgap>10</itemgap>
-					<orientation>horizontal</orientation>
-					<control type="image">
-						<width>150</width>
-						<height>56</height>
-						<aspectratio align="center">scale</aspectratio>
-						<texture>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</texture>
-					</control>
-					<control type="image">
-						<width>150</width>
-						<height>56</height>
-						<aspectratio align="right">scale</aspectratio>
-						<visible>!String.IsEmpty(ADSP.MasterOwnIcon)</visible>
-						<texture>$INFO[ADSP.MasterOwnIcon]</texture>
-					</control>
-					<control type="image">
-						<width>150</width>
-						<height>56</height>
-						<aspectratio align="center">scale</aspectratio>
-						<visible>String.IsEmpty(ADSP.MasterOverrideIcon)</visible>
-						<texture>$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</texture>
-					</control>
-					<control type="image">
-						<width>150</width>
-						<height>56</height>
-						<aspectratio align="right">scale</aspectratio>
-						<visible>!String.IsEmpty(ADSP.MasterOverrideIcon)</visible>
-						<texture>$INFO[ADSP.MasterOverrideIcon]</texture>
-					</control>
-					<control type="image">
-						<width>150</width>
-						<height>56</height>
-						<aspectratio align="center">scale</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]</texture>
-					</control>
-				</control>
+
 			</control>
 		</control>
 	</controls>
