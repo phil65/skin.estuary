@@ -26,44 +26,49 @@
 				<visible>!Window.IsVisible(videoosd)</visible>
 				<control type="label">
 					<top>110</top>
-					<right>51</right>
+					<left>20</left>
 					<width>400</width>
-					<height>20</height>
-					<align>right</align>
+					<height>50</height>
+					<align>left</align>
 					<aligny>center</aligny>
-					<font>font25</font>
-					<label>[COLOR button_focus]$LOCALIZE[21396]:  [/COLOR]$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
-					<visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
+					<font>font30</font>
+					<wrapmultiline>true</wrapmultiline>
+					<label>[COLOR button_focus]$LOCALIZE[21396]:[CR][/COLOR]$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
+					<visible>player.chaptercount</visible>
 				</control>
 				<control type="label">
-					<left>40</left>
-					<top>112</top>
-					<width>240</width>
-					<height>20</height>
-					<aligny>center</aligny>
-					<font>font25</font>
-					<textcolor>button_focus</textcolor>
-					<label>$VAR[SeekLabel]</label>
-				</control>
-				<control type="label">
-					<top>145</top>
-					<right>51</right>
+					<top>110</top>
+					<right>20</right>
 					<width>400</width>
-					<height>20</height>
+					<height>50</height>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font30</font>
-					<label>[COLOR button_focus]$LOCALIZE[31134]:  [/COLOR]$INFO[Player.TimeRemaining]</label>
+					<wrapmultiline>true</wrapmultiline>
+					<label>[COLOR button_focus]$LOCALIZE[31134]:[CR][/COLOR]$INFO[Player.TimeRemaining]</label>
 				</control>
-				<control type="label">
-					<left>40</left>
-					<top>145</top>
-					<width>350</width>
-					<height>20</height>
-					<font>font30</font>
-					<aligny>center</aligny>
-					<label>$VAR[SeekTimeLabelVar]</label>
-				</control>
+			</control>
+			<control type="label">
+				<left>30</left>
+				<top>110</top>
+				<width>1858</width>
+				<height>75</height>
+				<align>center</align>
+				<aligny>bottom</aligny>
+				<animation delay="0" effect="slide" time="120" start="0,0" end="0,-20" tween="sine" easing="inout" condition="!String.IsEmpty(Control.GetLabel(40000))">Conditional</animation>
+				<label>$VAR[SeekTimeLabelVar]</label>
+				<font>font45</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label" id="40000">
+				<left>30</left>
+				<top>134</top>
+				<width>1858</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$VAR[SeekLabel]</label>
+				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>

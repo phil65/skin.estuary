@@ -28,23 +28,13 @@
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<control type="label">
 					<left>30</left>
-					<top>-10</top>
+					<top>0</top>
 					<align>right</align>
 					<textoffsetx>20</textoffsetx>
 					<aligny>center</aligny>
 					<width>1858</width>
 					<height>60</height>
 					<label>$VAR[VideoOSDHelpTextVar]</label>
-				</control>
-				<control type="label">
-					<left>30</left>
-					<top>62</top>
-					<width>1858</width>
-					<height>60</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$VAR[SeekLabel]</label>
-					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="group" id="200">
 					<control type="grouplist" id="201">
@@ -205,17 +195,7 @@
 				</control>
 				<control type="group" id="6000">
 					<top>60</top>
-					<control type="label">
-						<left>30</left>
-						<top>40</top>
-						<width>1858</width>
-						<height>75</height>
-						<align>center</align>
-						<aligny>bottom</aligny>
-						<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-						<font>font45</font>
-						<shadowcolor>black</shadowcolor>
-					</control>
+
 					<control type="button" id="87">
 						<include>HiddenObject</include>
 						<onup>200</onup>
