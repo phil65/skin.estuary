@@ -72,7 +72,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>70</left>
+			<left>60</left>
 			<top>70</top>
 			<include>OpenClose_Right</include>
 			<control type="grouplist">
@@ -81,59 +81,59 @@
 				<height>550</height>
 				<orientation>vertical</orientation>
 				<control type="label" id="2">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="3">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="4">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="5">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="6">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="7">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="8">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="9">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="10">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="11">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 				<control type="label" id="12">
-					<height>45</height>
-					<width>1220</width>
-					<font>Mono28</font>
+					<height>47</height>
+					<width>1370</width>
+					<font>Mono30</font>
 				</control>
 			</control>
 			<control type="group">
@@ -146,11 +146,11 @@
 						<description>CPU Text</description>
 						<width>650</width>
 						<height>80</height>
-						<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+						<label>$INFO[System.CPUUsage]</label>
 						<aligny>top</aligny>
 						<textoffsety>40</textoffsety>
 						<shadowcolor>black</shadowcolor>
-						<font>font25_title</font>
+						<font>font27</font>
 					</control>
 					<control type="progress">
 						<description>CPU BAR</description>
@@ -165,7 +165,7 @@
 						<label>$LOCALIZE[31030]: $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
 						<aligny>center</aligny>
 						<shadowcolor>black</shadowcolor>
-						<font>font25_title</font>
+						<font>font27</font>
 					</control>
 					<control type="progress">
 						<description>Memory BAR</description>
