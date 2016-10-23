@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(fullscreeninfo)</visible>
-	<visible>!Window.IsActive(videoosd) + Window.IsActive(fullscreenvideo)</visible>
+	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(fullscreeninfo) | Window.IsActive(videoosd)</visible>
+	<visible>Window.IsActive(fullscreenvideo)</visible>
 	<animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 	<depth>DepthOSD</depth>
+	<zorder>0</zorder>
 	<controls>
 		<control type="group">
 			<top>890</top>
@@ -64,7 +65,7 @@
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>0</left>
-				<top>80</top>
+				<top>70</top>
 				<width>1920</width>
 				<height>15</height>
 				<info>Player.ProgressCache</info>
@@ -74,7 +75,7 @@
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>0</left>
-				<top>80</top>
+				<top>70</top>
 				<width>1920</width>
 				<height>15</height>
 				<info>Player.Progress</info>
@@ -83,7 +84,7 @@
 			</control>
 			<control type="slider" id="401">
 				<left>0</left>
-				<top>75</top>
+				<top>65</top>
 				<width>1920</width>
 				<height>25</height>
 				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
