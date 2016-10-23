@@ -21,42 +21,42 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>500</width>
+				<width>530</width>
 				<height>1080</height>
 				<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="list" id="9000">
 				<left>0</left>
-				<top>192</top>
-				<width>444</width>
+				<top>160</top>
+				<width>470</width>
 				<height>567</height>
 				<onleft>9100</onleft>
 				<onright>9100</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<scrolltime>300</scrolltime>
-				<itemlayout height="120" width="348">
+				<itemlayout height="90" width="348">
 					<control type="label">
 						<textoffsetx>30</textoffsetx>
-						<width>444</width>
-						<height>120</height>
+						<width>470</width>
+						<height>90</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font37</font>
 						<aligny>center</aligny>
-						<textcolor>grey</textcolor>
+						<textcolor>white</textcolor>
 					</control>
 				</itemlayout>
-				<focusedlayout height="120" width="348">
+				<focusedlayout height="90" width="348">
 					<control type="image">
-						<width>444</width>
-						<height>120</height>
+						<width>470</width>
+						<height>90</height>
 						<texture colordiffuse="button_focus">lists/focus.png</texture>
 						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
 						<textoffsetx>30</textoffsetx>
-						<width>444</width>
-						<height>120</height>
+						<width>470</width>
+						<height>90</height>
 						<font>font37</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -78,19 +78,12 @@
 		</control>
 		<control type="group" id="9100">
 			<include>OpenClose_Right</include>
-			<control type="image">
-				<description>background image</description>
-				<left>490</left>
-				<top>170</top>
-				<width>1340</width>
-				<height>746</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
-			</control>
+			<left>470</left>
 			<control type="panel" id="2">
-				<left>510</left>
 				<top>192</top>
+				<left>30</left>
 				<visible>Container(9000).Hasfocus(2)</visible>
-				<width>1300</width>
+				<width>1438</width>
 				<height>700</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -98,6 +91,12 @@
 				<ondown>2</ondown>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="350" width="325">
+					<control type="image">
+						<top>-10</top>
+						<width>320</width>
+						<height>380</height>
+						<texture border="40">buttons/button-nofo.png</texture>
+					</control>
 					<control type="image">
 						<left>55</left>
 						<top>23</top>
@@ -141,58 +140,69 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="350" width="325">
-					<control type="image">
-						<width>325</width>
-						<height>352</height>
-						<texture colordiffuse="button_focus">lists/focus.png</texture>
-						<visible>Control.HasFocus(2)</visible>
-					</control>
-					<control type="image">
-						<left>55</left>
-						<top>23</top>
-						<width>215</width>
-						<height>215</height>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
-						<aspectratio>scale</aspectratio>
-						<texture border="4" fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
-					</control>
-					<control type="label">
-						<left>10</left>
-						<top>240</top>
-						<width>305</width>
-						<height>100</height>
-						<align>center</align>
-						<aligny>top</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<left>10</left>
-						<top>275</top>
-						<width>305</width>
-						<height>100</height>
-						<font>font12</font>
-						<align>center</align>
-						<aligny>top</aligny>
-						<label>$LOCALIZE[31029]:</label>
-					</control>
-					<control type="label">
-						<left>10</left>
-						<top>300</top>
-						<width>305</width>
-						<height>100</height>
-						<font>font12</font>
-						<align>center</align>
-						<aligny>top</aligny>
-						<label fallback="13170">$INFO[ListItem.Label2]</label>
+					<control type="group">
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="160,190">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="160,190">UnFocus</animation>
+						<control type="image">
+							<top>-10</top>
+							<width>320</width>
+							<height>380</height>
+							<texture border="40">buttons/button-nofo.png</texture>
+						</control>
+						<control type="image">
+							<left>55</left>
+							<top>23</top>
+							<width>215</width>
+							<height>215</height>
+							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+							<bordersize>4</bordersize>
+							<aspectratio>scale</aspectratio>
+							<texture border="4" fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<top>240</top>
+							<width>305</width>
+							<height>100</height>
+							<align>center</align>
+							<aligny>top</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<top>275</top>
+							<width>305</width>
+							<height>100</height>
+							<font>font12</font>
+							<align>center</align>
+							<aligny>top</aligny>
+							<label>$LOCALIZE[31029]:</label>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<top>300</top>
+							<width>305</width>
+							<height>100</height>
+							<font>font12</font>
+							<align>center</align>
+							<aligny>top</aligny>
+							<label fallback="13170">$INFO[ListItem.Label2]</label>
+						</control>
+						<control type="image">
+							<left>15</left>
+							<top>5</top>
+							<width>290</width>
+							<height>348</height>
+							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
+						</control>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="grouplist" id="9001">
 				<visible>Container(9000).Hasfocus(1)</visible>
-				<width>1300</width>
+				<width>1438</width>
 				<height>735</height>
-				<left>510</left>
 				<top>192</top>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -201,13 +211,13 @@
 				<control type="radiobutton" id="4">
 					<label>$LOCALIZE[31057]</label>
 					<include>DefaultSettingButton</include>
-					<width>1300</width>
+					<width>1438</width>
 				</control>
 				<control type="button" id="5">
 					<label>$LOCALIZE[31058]</label>
 					<label2>[B]$INFO[System.ProfileAutoLogin][/B]</label2>
 					<include>DefaultSettingButton</include>
-					<width>1300</width>
+					<width>1438</width>
 					<enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
 				</control>
 			</control>
@@ -216,5 +226,24 @@
 			<param name="breadcrumbs_label" value="$LOCALIZE[10034]" />
 		</include>
 		<include>BottomBar</include>
+		<control type="group">
+			<include>OpenClose_Right</include>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>470</left>
+				<top>160</top>
+				<width>1436</width>
+				<height>3</height>
+				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+			</control>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>470</left>
+				<top>943</top>
+				<width>1436</width>
+				<height>3</height>
+				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+			</control>
+		</control>
 	</controls>
 </window>
