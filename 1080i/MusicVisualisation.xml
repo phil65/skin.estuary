@@ -44,11 +44,11 @@
 			<include>OpenClose_Right</include>
 			<include>Visible_Right</include>
 			<control type="image">
-				<left>10</left>
-				<top>680</top>
-				<width>1900</width>
-				<height>420</height>
-				<texture border="40">buttons/dialogbutton-nofo.png</texture>
+				<top>920</top>
+				<left>0</left>
+				<width>110%</width>
+				<height>200</height>
+				<texture flipy="true">frame/InfoBar.png</texture>
 			</control>
 			<control type="group">
 				<left>80</left>
@@ -135,65 +135,78 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 			</control>
-			<control type="label">
-				<left>1450</left>
-				<top>720</top>
-				<width>400</width>
-				<height>45</height>
-				<align>right</align>
-				<aligny>bottom</aligny>
-				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-				<font>font45_title</font>
-				<shadowcolor>black</shadowcolor>
-				<textcolor>grey</textcolor>
-				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
+			<control type="group">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
-			</control>
-			<control type="label">
-				<left>1450</left>
-				<top>770</top>
-				<width>400</width>
-				<height>45</height>
-				<align>right</align>
-				<aligny>bottom</aligny>
-				<label>$VAR[SeekLabel]</label>
-				<font>font45_title</font>
-				<shadowcolor>black</shadowcolor>
-				<textcolor>grey</textcolor>
-				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
-			</control>
-			<control type="progress">
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<left>30</left>
-				<top>900</top>
-				<width>1858</width>
-				<height>30</height>
-				<info>Player.ProgressCache</info>
-				<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-				<visible>!Player.ChannelPreviewActive</visible>
-			</control>
-			<control type="progress" id="23">
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<left>30</left>
-				<top>900</top>
-				<width>1858</width>
-				<height>30</height>
-				<info>Player.Progress</info>
-				<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-				<visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
+				<control type="label">
+					<left>1450</left>
+					<top>720</top>
+					<width>400</width>
+					<height>45</height>
+					<align>right</align>
+					<aligny>bottom</aligny>
+					<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+					<font>font45_title</font>
+					<shadowcolor>black</shadowcolor>
+					<textcolor>grey</textcolor>
+					<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
+				</control>
+				<control type="label">
+					<left>1450</left>
+					<top>770</top>
+					<width>400</width>
+					<height>45</height>
+					<align>right</align>
+					<aligny>bottom</aligny>
+					<label>$VAR[SeekLabel]</label>
+					<font>font45_title</font>
+					<shadowcolor>black</shadowcolor>
+					<textcolor>grey</textcolor>
+					<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>950</top>
+					<width>1920</width>
+					<height>15</height>
+					<info>Player.ProgressCache</info>
+					<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
+					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+					<visible>!Player.ChannelPreviewActive</visible>
+				</control>
+				<control type="progress" id="23">
+					<left>0</left>
+					<top>950</top>
+					<width>1920</width>
+					<height>15</height>
+					<info>Player.Progress</info>
+					<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
+					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+					<visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
+				</control>
 			</control>
 		</control>
 		<control type="group">
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 			<animation effect="fade" end="0" time="200">Hidden</animation>
-			<include content="TopBar">
-				<param name="breadcrumbs_label" value="$LOCALIZE[250]" />
-			</include>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>110%</width>
+				<height>150</height>
+				<texture>frame/InfoBar.png</texture>
+				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+			</control>
+			<control type="label">
+				<font>font_clock</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<height>200</height>
+				<width>1900</width>
+				<align>right</align>
+				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+				<label>$INFO[System.Time]</label>
+			</control>
 		</control>
 	</controls>
 </window>

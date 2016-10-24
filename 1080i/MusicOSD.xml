@@ -13,7 +13,7 @@
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group">
-			<top>900</top>
+			<top>950</top>
 			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(playerprocessinfo)</visible>
 			<animation effect="fade" end="100" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -175,10 +175,10 @@
 				<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
 			</control>
 			<control type="slider">
-				<left>30</left>
-				<top>-30</top>
-				<width>1858</width>
-				<height>30</height>
+				<left>0</left>
+				<top>-35</top>
+				<width>1920</width>
+				<height>25</height>
 				<onup>8010</onup>
 				<ondown>650</ondown>
 				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
@@ -189,10 +189,10 @@
 				<visible>!Control.HasFocus(87)</visible>
 			</control>
 			<control type="slider">
-				<left>30</left>
-				<top>-30</top>
-				<width>1858</width>
-				<height>30</height>
+				<left>0</left>
+				<top>-35</top>
+				<width>1920</width>
+				<height>25</height>
 				<onup>8010</onup>
 				<ondown>650</ondown>
 				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
