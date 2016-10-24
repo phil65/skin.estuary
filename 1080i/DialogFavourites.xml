@@ -3,13 +3,13 @@
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
 		<left>160</left>
-		<top>150</top>
+		<top>130</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include content="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1600" />
-			<param name="DialogBackgroundHeight" value="800" />
+			<param name="DialogBackgroundHeight" value="820" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[1036]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
