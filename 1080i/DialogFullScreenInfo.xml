@@ -44,11 +44,11 @@
 				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
 			</control>
 			<control type="grouplist">
-				<left>15</left>
+				<left>900</left>
 				<top>155</top>
 				<width>1000</width>
 				<height>100</height>
-				<align>left</align>
+				<align>right</align>
 				<orientation>horizontal</orientation>
 				<itemgap>10</itemgap>
 				<visible>!Player.ChannelPreviewActive</visible>

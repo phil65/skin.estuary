@@ -24,6 +24,7 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="label">
 					<top>110</top>
 					<left>20</left>
@@ -45,6 +46,8 @@
 					<aligny>center</aligny>
 					<font>font30</font>
 					<wrapmultiline>true</wrapmultiline>
+					<visible>!Window.IsActive(fullscreeninfo)</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
 					<label>[COLOR button_focus]$LOCALIZE[31134]:[CR][/COLOR]$INFO[Player.TimeRemaining]</label>
 				</control>
 			</control>
