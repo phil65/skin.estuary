@@ -16,18 +16,16 @@
 				<height>150</height>
 				<texture>frame/InfoBar.png</texture>
 			</control>
-			<control type="grouplist">
-				<left>30</left>
-				<description>Left side of top bar</description>
-				<width>900</width>
-				<height>100</height>
-				<orientation>horizontal</orientation>
-				<usecontrolcoords>true</usecontrolcoords>
 				<control type="label">
 					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, ([COLOR button_focus],[/COLOR])]</label>
-					<include>BreadcrumbsLabel</include>
+				<left>30</left>
+		<font>font45</font>
+		<shadowcolor>text_shadow</shadowcolor>
+		<top>7</top>
+		<height>100</height>
+		<width>900</width>
+		<align>left</align>
 				</control>
-			</control>
 			<control type="label">
 				<top>62</top>
 				<label>$VAR[OSDSubLabelVar]</label>
