@@ -897,33 +897,32 @@
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
-				<control type="group">
+				<control type="grouplist">
 					<top>0</top>
+					<align>right</align>
+					<left>1000</left>
+					<height>200</height>
+					<orientation>horizontal</orientation>
+					<width>900</width>
+					<itemgap>10</itemgap>
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
-					<control type="label">
-						<font>font_clock</font>
-						<shadowcolor>text_shadow</shadowcolor>
-						<right>30</right>
-						<height>200</height>
-						<width>600</width>
-						<align>right</align>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
-						<label>$INFO[System.Time]</label>
-					</control>
+
 					<control type="group">
-						<left>995</left>
-						<top>13</top>
+						<width>600</width>
 						<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<control type="grouplist">
+							<left>-75</left>
 							<orientation>horizontal</orientation>
 							<height>38</height>
+							<top>14</top>
 							<align>right</align>
+							<width>660</width>
 							<itemgap>5</itemgap>
 							<usecontrolcoords>true</usecontrolcoords>
 <!-- 							<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
- -->							<width>630</width>
+ -->
 							<control type="image">
 								<top>8</top>
 								<width>28</width>
@@ -941,7 +940,8 @@
 						</control>
 						<control type="label" id="7700">
 							<label>$VAR[NowPlayingSublabelVar]</label>
-							<top>31</top>
+							<left>-45</left>
+							<top>44</top>
 							<font>font12</font>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
@@ -950,6 +950,15 @@
 							<align>right</align>
 						</control>
 					</control>
+				<control type="label">
+						<font>font_clock</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<height>200</height>
+						<width>auto</width>
+						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+						<label>$INFO[System.Time]</label>
+					</control>
+
 				</control>
 			</control>
 		</definition>
