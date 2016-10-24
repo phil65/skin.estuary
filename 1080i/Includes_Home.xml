@@ -187,7 +187,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="15">$PARAM[content_path]</content>
 			</control>
 		</control>
 	</include>
@@ -442,7 +442,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="10">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="15">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -617,7 +617,7 @@
 	</include>
 	<include name="WidgetListCategories">
 		<param name="arrow_posy">200</param>
-		<param name="item_limit">12</param>
+		<param name="item_limit">20</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="pvr_submenu">false</param>
 		<param name="pvr_type">TV</param>
@@ -793,7 +793,7 @@
 	</include>
 	<include name="WidgetListChannels">
 		<param name="arrow_posy">200</param>
-		<param name="item_limit">10</param>
+		<param name="item_limit">15</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="label">$INFO[ListItem.Label]</param>
 		<param name="label2">$INFO[ListItem.Title]</param>
