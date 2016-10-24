@@ -829,7 +829,7 @@
 					<left>0</left>
 					<top>0</top>
 					<width>110%</width>
-					<height>150</height>
+					<height>130</height>
 					<texture>frame/InfoBar.png</texture>
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 				</control>
@@ -846,7 +846,7 @@
 					<left>35</left>
 					<description>Left side of top bar</description>
 					<width>900</width>
-					<top>-3</top>
+					<top>-7</top>
 					<height>100</height>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
@@ -885,7 +885,7 @@
 					</control>
 				</control>
 				<control type="label">
-					<top>55</top>
+					<top>50</top>
 					<label>$INFO[Container.SortMethod,$LOCALIZE[31022]: ]  ∙  $INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</label>
 					<font>font13</font>
 					<left>35</left>
@@ -1065,7 +1065,7 @@
 					</control>
 				</control>
 				<control type="label" id="23000">
-					<top>10</top>
+					<top>0</top>
 					<left>0</left>
 					<label>$INFO[ListItem.SortLetter]</label>
 					<font>font_MainMenu</font>
