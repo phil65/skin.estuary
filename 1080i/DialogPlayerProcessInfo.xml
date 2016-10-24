@@ -5,7 +5,7 @@
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
 		<control type="group">
-			<top>912</top>
+			<top>800</top>
 			<control type="image">
 				<left>10</left>
 				<top>-240</top>
@@ -136,7 +136,7 @@
 					<label>$INFO[Player.Process(videodecoder),[COLOR button_focus]$LOCALIZE[31139]:[/COLOR] ]$VAR[VideoHWDecoder, (,)]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
-					<visible>Player.HasVideo</visible>					
+					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="label">
 					<width>1600</width>
@@ -145,7 +145,7 @@
 					<label>$INFO[Player.Process(pixformat),[COLOR button_focus]$LOCALIZE[31140]:[/COLOR] ]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
-					<visible>Player.HasVideo</visible>					
+					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="label">
 					<width>1600</width>
@@ -154,7 +154,7 @@
 					<label>$INFO[Player.Process(deintmethod),[COLOR button_focus]$LOCALIZE[16038]:[/COLOR] ]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
-					<visible>Player.HasVideo</visible>					
+					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="label">
 					<width>1600</width>
@@ -163,7 +163,7 @@
 					<label>$INFO[Player.Process(videowidth),[COLOR button_focus]$LOCALIZE[38031]:[/COLOR] ,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
 					<font>font14</font>
 					<shadowcolor>black</shadowcolor>
-					<visible>Player.HasVideo</visible>					
+					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="label">
 					<width>1600</width>
@@ -205,56 +205,6 @@
 					<height>100</height>
 					<textoffsetx>40</textoffsetx>
 					<label>$LOCALIZE[31138]</label>
-				</control>
-			</control>
-			<!-- Progress -->
-			<control type="group">
-				<top>119</top>
-				<control type="progress">
-					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<left>29</left>
-					<top>-10</top>
-					<width>1862</width>
-					<height>30</height>
-					<info>Player.ProgressCache</info>
-					<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-				</control>
-				<control type="progress" id="23">
-					<animation effect="fade" end="0" time="200">WindowClose</animation>
-					<left>29</left>
-					<top>-10</top>
-					<width>1862</width>
-					<height>30</height>
-					<info>Player.Progress</info>
-					<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-				</control>
-				<control type="button" id="87">
-					<include>HiddenObject</include>
-					<onup condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onup>
-					<onup>201</onup>
-					<ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
-					<ondown>201</ondown>
-					<onright>PlayerControl(Forward)</onright>
-					<onleft>PlayerControl(Rewind)</onleft>
-					<visible>Player.SeekEnabled</visible>
-					<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
-				</control>
-				<control type="slider">
-					<left>29</left>
-					<top>-10</top>
-					<width>1862</width>
-					<height>30</height>
-					<onup>8010</onup>
-					<ondown>650</ondown>
-					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
-					<textureslidernib>osd/progress/nub_bar.png</textureslidernib>
-					<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
-					<info>Player.Progress</info>
-					<action>seek</action>
-					<visible>!Control.HasFocus(87)</visible>
 				</control>
 			</control>
 		</control>
