@@ -10,10 +10,6 @@
 		<value condition="ListItem.IsParentFolder">..</value>
 		<value>$INFO[ListItem.Title]</value>
 	</variable>
-	<variable name="NowPlayingMainlabelVar">
-		<value condition="VideoPlayer.Content(LiveTV)">$INFO[Player.Title]</value>
-		<value>$INFO[Player.Time]$INFO[Player.Title, - ]</value>
-	</variable>
 	<variable name="AutoCompletionContentVar">
 		<value condition="System.HasAddon(plugin.program.autocompletion) + !System.HasHiddenInput">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
 	</variable>

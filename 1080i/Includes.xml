@@ -433,8 +433,8 @@
 				<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
 			</include>
 			<!-- 			<include content="MediaFlag">
-													<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-												</include> -->
+																<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+															</include> -->
 			<include content="MediaFlag">
 				<param name="texture" value="$VAR[ResolutionFlagVar]" />
 			</include>
@@ -879,7 +879,7 @@
 						<visible>!String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
 					</control>
 					<control type="label">
-						<label>($LOCALIZE[31052])</label>
+						<label> ($LOCALIZE[31052])</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>Container.Filtered</visible>
 					</control>
@@ -897,18 +897,59 @@
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
-				<control type="label">
-					<font>font_clock</font>
-					<shadowcolor>text_shadow</shadowcolor>
-					<top>2</top>
-					<right>30</right>
-					<height>200</height>
-					<width>600</width>
-					<align>right</align>
+				<control type="group">
+					<top>0</top>
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
-					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
-					<label>$INFO[System.Time]</label>
+					<control type="label">
+						<font>font_clock</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<right>30</right>
+						<height>200</height>
+						<width>600</width>
+						<align>right</align>
+						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+						<label>$INFO[System.Time]</label>
+					</control>
+					<control type="group">
+						<left>995</left>
+						<top>13</top>
+						<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<control type="grouplist">
+							<orientation>horizontal</orientation>
+							<height>38</height>
+							<align>right</align>
+							<itemgap>5</itemgap>
+							<usecontrolcoords>true</usecontrolcoords>
+<!-- 							<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
+ -->							<width>630</width>
+							<control type="image">
+								<top>8</top>
+								<width>28</width>
+								<height>26</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="button_focus">$VAR[NowPlayingIconVar]</texture>
+							</control>
+							<control type="label">
+								<label>$INFO[Player.Title]</label>
+								<font>font27</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<height>35</height>
+								<width min="1" max="602">auto</width>
+							</control>
+						</control>
+						<control type="label" id="7700">
+							<label>$VAR[NowPlayingSublabelVar]</label>
+							<top>33</top>
+							<font>font12</font>
+							<textcolor>grey</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<height>25</height>
+							<width>630</width>
+							<align>right</align>
+						</control>
+					</control>
 				</control>
 			</control>
 		</definition>
@@ -1014,45 +1055,6 @@
 						</control>
 					</control>
 				</control>
-				<control type="group">
-					<left>450</left>
-					<top>1005</top>
-					<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
-					<animation effect="fade" time="200">VisibleChange</animation>
-					<control type="grouplist">
-						<orientation>horizontal</orientation>
-						<height>38</height>
-						<align>center</align>
-						<itemgap>5</itemgap>
-						<usecontrolcoords>true</usecontrolcoords>
-						<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
-						<width>1020</width>
-						<control type="image">
-							<top>8</top>
-							<width>28</width>
-							<height>28</height>
-							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="button_focus">$VAR[NowPlayingIconVar]</texture>
-						</control>
-						<control type="label">
-							<label>$VAR[NowPlayingMainlabelVar]</label>
-							<font>font30_title</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<height>35</height>
-							<width min="1" max="992">auto</width>
-						</control>
-					</control>
-					<control type="label" id="7700">
-						<label>$VAR[NowPlayingSublabelVar]</label>
-						<top>35</top>
-						<font>font12</font>
-						<textoffsetx>100</textoffsetx>
-						<shadowcolor>text_shadow</shadowcolor>
-						<height>25</height>
-						<width>1020</width>
-						<align>center</align>
-					</control>
-				</control>
 				<control type="label" id="23000">
 					<top>10</top>
 					<left>0</left>
@@ -1132,59 +1134,59 @@
 		<param name="width">1920</param>
 		<param name="onunfocus_id">200</param>
 		<definition>
-		<control type="progress">
-			<animation effect="fade" end="0" time="200">WindowClose</animation>
-			<left>0</left>
-			<width>$PARAM[width]</width>
-			<height>15</height>
-			<info>Player.ProgressCache</info>
-			<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-			<midtexture>colors/white50.png</midtexture>
-			<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-		</control>
-		<control type="progress" id="23">
-			<animation effect="fade" end="0" time="200">WindowClose</animation>
-			<left>0</left>
-			<width>$PARAM[width]</width>
-			<height>15</height>
-			<info>Player.Progress</info>
-			<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-			<midtexture colordiffuse="button_focus">colors/white.png</midtexture>
-		</control>
-		<control type="button" id="87">
-			<include>HiddenObject</include>
-			<onup>$PARAM[onunfocus_id]</onup>
-			<onunfocus condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onunfocus>
-			<ondown>$PARAM[onunfocus_id]</ondown>
-			<onright condition="!Player.Forwarding32x">PlayerControl(Forward)</onright>
-			<onleft condition="!Player.Rewinding32x">PlayerControl(Rewind)</onleft>
-			<visible>Player.SeekEnabled</visible>
-			<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
-		</control>
-		<control type="slider">
-			<top>-5</top>
-			<left>0</left>
-			<width>$PARAM[width]</width>
-			<height>25</height>
-			<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
-			<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
-			<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
-			<info>Player.Progress</info>
-			<action>seek</action>
-			<visible>!Control.HasFocus(87) + Player.SeekEnabled</visible>
-		</control>
-		<control type="slider">
-			<top>-5</top>
-			<left>0</left>
-			<width>$PARAM[width]</width>
-			<height>25</height>
-			<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
-			<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
-			<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
-			<info>Player.Progress</info>
-			<action>seek</action>
-			<visible>Control.HasFocus(87) + Player.SeekEnabled</visible>
-		</control>
-	</definition>
+			<control type="progress">
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<left>0</left>
+				<width>$PARAM[width]</width>
+				<height>15</height>
+				<info>Player.ProgressCache</info>
+				<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
+				<midtexture>colors/white50.png</midtexture>
+				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="progress" id="23">
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<left>0</left>
+				<width>$PARAM[width]</width>
+				<height>15</height>
+				<info>Player.Progress</info>
+				<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
+				<midtexture colordiffuse="button_focus">colors/white.png</midtexture>
+			</control>
+			<control type="button" id="87">
+				<include>HiddenObject</include>
+				<onup>$PARAM[onunfocus_id]</onup>
+				<onunfocus condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onunfocus>
+				<ondown>$PARAM[onunfocus_id]</ondown>
+				<onright condition="!Player.Forwarding32x">PlayerControl(Forward)</onright>
+				<onleft condition="!Player.Rewinding32x">PlayerControl(Rewind)</onleft>
+				<visible>Player.SeekEnabled</visible>
+				<onclick condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onclick>
+			</control>
+			<control type="slider">
+				<top>-5</top>
+				<left>0</left>
+				<width>$PARAM[width]</width>
+				<height>25</height>
+				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+				<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
+				<info>Player.Progress</info>
+				<action>seek</action>
+				<visible>!Control.HasFocus(87) + Player.SeekEnabled</visible>
+			</control>
+			<control type="slider">
+				<top>-5</top>
+				<left>0</left>
+				<width>$PARAM[width]</width>
+				<height>25</height>
+				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+				<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
+				<info>Player.Progress</info>
+				<action>seek</action>
+				<visible>Control.HasFocus(87) + Player.SeekEnabled</visible>
+			</control>
+		</definition>
 	</include>
 </includes>

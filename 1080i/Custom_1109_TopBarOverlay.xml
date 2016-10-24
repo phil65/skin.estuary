@@ -31,7 +31,7 @@
 			<control type="label">
 				<top>62</top>
 				<label>$VAR[OSDSubLabelVar]</label>
-				<font>font12</font>
+				<font>font13</font>
 				<left>30</left>
 				<shadowcolor>text_shadow</shadowcolor>
 				<height>100</height>
@@ -43,7 +43,7 @@
 				<control type="label">
 					<font>font_clock</font>
 					<shadowcolor>text_shadow</shadowcolor>
-					<top>2</top>
+					<top>0</top>
 					<right>30</right>
 					<height>200</height>
 					<width>600</width>
@@ -56,7 +56,7 @@
 				<control type="label">
 					<top>80</top>
 					<label>$INFO[Player.FinishTime,$LOCALIZE[31080]: ]</label>
-					<font>font12</font>
+					<font>font13</font>
 					<right>32</right>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
