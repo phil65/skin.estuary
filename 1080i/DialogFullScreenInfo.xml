@@ -44,14 +44,14 @@
 				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
 			</control>
 			<control type="grouplist">
-				<left>45</left>
-				<top>50</top>
+				<left>15</left>
+				<top>155</top>
 				<width>1000</width>
 				<height>100</height>
 				<align>left</align>
 				<orientation>horizontal</orientation>
 				<itemgap>10</itemgap>
-				<visible>Control.HasFocus(5552) + !Player.ChannelPreviewActive</visible>
+				<visible>!Player.ChannelPreviewActive</visible>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]" />
 				</include>
@@ -76,12 +76,6 @@
 				<onup>Close</onup>
 				<ondown>Close</ondown>
 				<usecontrolcoords>true</usecontrolcoords>
-				<control type="button" id="5552">
-					<width>auto</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<label>$LOCALIZE[31086]</label>
-				</control>
 				<control type="button" id="5553">
 					<width>auto</width>
 					<height>100</height>
@@ -103,37 +97,6 @@
 					<label>$LOCALIZE[19031]</label>
 					<visible>VideoPlayer.Content(livetv)</visible>
 				</control>
-			</control>
-			<!-- Item details -->
-			<control type="grouplist" id="66610">
-				<visible>Control.HasFocus(5552)</visible>
-				<left>52</left>
-				<top>-143</top>
-				<control type="label">
-					<width>1600</width>
-					<height>25</height>
-					<font>font14</font>
-					<label>$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</label>
-					<textcolor>grey</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<visible>VideoPlayer.Content(MusicVideos)</visible>
-				</control>
-				<control type="label">
-					<width>1600</width>
-					<height>44</height>
-					<label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, • $LOCALIZE[20373] ,]$INFO[VideoPlayer.Episode, • $LOCALIZE[20359] ,]$INFO[VideoPlayer.Rating, • ,]</label>
-					<scroll>true</scroll>
-					<visible>VideoPlayer.Content(Episodes)</visible>
-				</control>
-				<control type="label">
-					<visible>!Window.IsVisible(videoosd)</visible>
-					<animation effect="fade" time="400">VisibleChange</animation>
-					<width>1600</width>
-					<height>44</height>
-					<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31085]: ]</label>
-					<visible>VideoPlayer.Content(LiveTV)</visible>
-				</control>
-
 			</control>
 		</control>
 	</controls>
