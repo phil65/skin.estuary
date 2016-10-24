@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1109">
 	<visible>Window.IsActive(fullscreenvideo)</visible>
-	<visible>Window.IsActive(videoosd) | Window.IsActive(fullscreeninfo) | Window.IsActive(seekbar) | Window.IsActive(playerprocessinfo) | [Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV)]</visible>
+	<visible>Window.IsActive(seekbar) | [Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV)]</visible>
 	<depth>DepthOSD</depth>
 	<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="100">WindowClose</animation>
@@ -48,9 +48,6 @@
 					<height>200</height>
 					<width>600</width>
 					<align>right</align>
-					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
-					<animation effect="fade" time="150">VisibleChange</animation>
-					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 					<label>$INFO[System.Time]</label>
 				</control>
 				<control type="label">
