@@ -126,6 +126,14 @@
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<enable>!Skin.HasSetting(no_fanart)</enable>
 				</control>
+				<control type="button" id="6066">
+					<label>$LOCALIZE[31149]</label>
+					<label2>$INFO[Skin.String(MovieGenreFanart.Name)]</label2>
+					<width>1438</width>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=MovieGenreFanart&amp;type=resource.images.moviegenrefanart)</onclick>
+				</control>
 				<control type="radiobutton" id="606">
 					<label>$LOCALIZE[31108]</label>
 					<width>1438</width>
