@@ -17,6 +17,13 @@
 			<animation delay="300" effect="fade" time="200">Visible</animation>
 			<animation effect="fade" delay="200" time="150">Hidden</animation>
 			<control type="image" id="1">
+				<left>860</left>
+				<top>450</top>
+				<width>200</width>
+				<height>200</height>
+				<texture>osd/buffer-bg.png</texture>
+			</control>
+			<control type="image" id="1">
 				<left>880</left>
 				<top>460</top>
 				<width>160</width>
