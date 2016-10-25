@@ -370,13 +370,15 @@
 	<include name="MediaFlag">
 		<param name="width">115</param>
 		<param name="height">60</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="image">
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
-				<fadetime>200</fadetime>
+				<fadetime>0</fadetime>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
 				<texture>$PARAM[texture]</texture>
+				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
 	</include>
