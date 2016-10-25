@@ -25,7 +25,7 @@
 				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 				<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia">Conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
-				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
+				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="FF606060">$VAR[GlobalFanartVar]</texture>
 			</control>
 			<control type="multiimage">
 				<depth>DepthBackground</depth>
@@ -143,13 +143,6 @@
 			<left>400</left>
 			<visible>Container(300).HasFocus(3)</visible>
 			<include>Visible_Right_Delayed</include>
-			<control type="image">
-				<left>80</left>
-				<top>138</top>
-				<width>1370</width>
-				<height>796</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
-			</control>
 			<control type="panel" id="9000">
 				<description>button area</description>
 				<left>110</left>
@@ -334,13 +327,6 @@
 			<left>400</left>
 			<visible>Container(300).HasFocus(2)</visible>
 			<include>Visible_Right_Delayed</include>
-			<control type="image">
-				<left>80</left>
-				<top>138</top>
-				<width>1370</width>
-				<height>796</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
-			</control>
 			<control type="panel" id="8000">
 				<description>button area</description>
 				<left>110</left>
@@ -488,12 +474,6 @@
 				<description>Weather info</description>
 				<height>380</height>
 				<control type="image">
-					<top>20</top>
-					<width>1370</width>
-					<height>200</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-				</control>
-				<control type="image">
 					<left>840</left>
 					<top>65</top>
 					<width>450</width>
@@ -519,12 +499,6 @@
 					<label>$INFO[Window(Weather).Property(Location)]</label>
 				</control>
 				<control type="image">
-					<top>220</top>
-					<width>1370</width>
-					<height>392</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-				</control>
-				<control type="image">
 					<top>232</top>
 					<left>50</left>
 					<width>300</width>
@@ -540,12 +514,6 @@
 					<align>right</align>
 					<font>WeatherTemp</font>
 					<label>$INFO[Weather.Temperature]</label>
-				</control>
-				<control type="image">
-					<top>612</top>
-					<width>1370</width>
-					<height>200</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="grouplist">
 					<top>650</top>
@@ -593,12 +561,6 @@
 			<include>Visible_Right_Delayed</include>
 			<left>480</left>
 			<top>120</top>
-			<control type="image">
-				<top>20</top>
-				<width>1370</width>
-				<height>792</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
-			</control>
 			<control type="list" id="16001">
 				<orientation>vertical</orientation>
 				<height>925</height>
