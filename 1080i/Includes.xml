@@ -409,10 +409,10 @@
 		</control>
 		<control type="grouplist">
 			<orientation>horizontal</orientation>
-			<right>30</right>
+			<left>0</left>
 			<align>right</align>
 			<itemgap>15</itemgap>
-			<width>1580</width>
+			<width>1900</width>
 			<control type="group">
 				<width>115</width>
 				<visible>!String.IsEmpty(ListItem.Duration)</visible>
@@ -431,15 +431,18 @@
 			</control>
 			<include content="MediaFlag">
 				<param name="texture" value="$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]" />
+				<param name="visible" value="!String.IsEmpty(ListItem.AudioChannels)" />
 			</include>
 			<include content="MediaFlag">
 				<param name="texture" value="$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]" />
+				<param name="visible" value="!String.IsEmpty(ListItem.AudioCodec)" />
 			</include>
 			<!-- 			<include content="MediaFlag">
 																<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
 															</include> -->
 			<include content="MediaFlag">
 				<param name="texture" value="$VAR[ResolutionFlagVar]" />
+				<param name="visible" value="!String.IsEmpty(ListItem.VideoResolution)" />
 			</include>
 		</control>
 	</include>
