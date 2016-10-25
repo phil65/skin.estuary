@@ -7,25 +7,15 @@
 			<top>0</top>
 			<visible>Control.IsVisible(50)</visible>
 			<include>Visible_Right</include>
-			<include content="ListContainer">
-				<param name="list_id" value="50" />
-				<param name="viewtype_label" value="$LOCALIZE[535]" />
-			</include>
-		</control>
-		<control type="group">
-			<include>OpenClose_Right</include>
-			<left>1350</left>
-			<visible>Control.IsVisible(50)</visible>
-			<include>Visible_Right</include>
 			<control type="image">
-				<right>0</right>
+				<left>657</left>
 				<top>0</top>
 				<width>670</width>
 				<height>1080</height>
 				<texture colordiffuse="99FFFFFF" flipx="true">lists/panel.png</texture>
 			</control>
 			<control type="image">
-				<left>4</left>
+				<left>760</left>
 				<top>140</top>
 				<width>556</width>
 				<height>836</height>
@@ -33,8 +23,12 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
 			</control>
+			<include content="ListContainer">
+				<param name="list_id" value="50" />
+				<param name="viewtype_label" value="$LOCALIZE[535]" />
+			</include>
 			<control type="group">
-				<left>485</left>
+				<left>1241</left>
 				<top>160</top>
 				<include content="UserRatingCircle">
 					<param name="animation" value="True" />
