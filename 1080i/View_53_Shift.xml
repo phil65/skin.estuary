@@ -68,12 +68,19 @@
 						<control type="textbox">
 							<left>20</left>
 							<top>603</top>
-							<width>300</width>
+							<width>330</width>
 							<height>100</height>
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<font>font13</font>
+						</control>
+						<control type="image">
+							<left>169</left>
+							<top>565</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[WallWatchedIconVar]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout width="370">
@@ -92,13 +99,20 @@
 							<control type="textbox">
 								<left>20</left>
 								<top>603</top>
-								<width>300</width>
+								<width>330</width>
 								<height>100</height>
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font13</font>
 								<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
+							</control>
+							<control type="image">
+								<left>169</left>
+								<top>565</top>
+								<width>32</width>
+								<height>32</height>
+								<texture>$VAR[WallWatchedIconVar]</texture>
 							</control>
 						</control>
 					</focusedlayout>
