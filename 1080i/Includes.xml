@@ -415,7 +415,6 @@
 			<width>1580</width>
 			<control type="group">
 				<width>115</width>
-				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 				<visible>!String.IsEmpty(ListItem.Duration)</visible>
 				<control type="label">
 					<width>115</width>
