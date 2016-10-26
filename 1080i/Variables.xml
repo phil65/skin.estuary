@@ -6,10 +6,6 @@
 		<value condition="ListItem.HasTimerSchedule + !ListItem.IsRecording">windows/pvr/timer.png</value>
 		<value condition="ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer">windows/pvr/timer.png</value>
 	</variable>
-	<variable name="SongTitleVar">
-		<value condition="ListItem.IsParentFolder">..</value>
-		<value>$INFO[ListItem.Title]</value>
-	</variable>
 	<variable name="AutoCompletionContentVar">
 		<value condition="System.HasAddon(plugin.program.autocompletion) + !System.HasHiddenInput">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
 	</variable>
@@ -318,14 +314,6 @@
 		<value condition="ListItem.IsResumable">overlays/watched/resume.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0)">$INFO[ListItem.Overlay]</value>
 	</variable>
-	<variable name="SettingsSectionIcon">
-		<value condition="Window.IsActive(playersettings)">icons/settings/video.png</value>
-		<value condition="Window.IsActive(mediasettings)">icons/settings/library.png</value>
-		<value condition="Window.IsActive(pvrsettings)">icons/settings/livetv.png</value>
-		<value condition="Window.IsActive(servicesettings)">icons/settings/network.png</value>
-		<value condition="Window.IsActive(interfacesettings)">icons/settings/appearance.png</value>
-		<value condition="Window.IsActive(systemsettings)">icons/settings/system.png</value>
-	</variable>
 	<!-- Breadcrumbs -->
 	<variable name="BreadcrumbsVideoVar">
 		<value condition="Container.Content(movies) | String.StartsWith(container.folderpath,library://video/movies/) | String.StartsWith(container.folderpath,videodb://movies)">$LOCALIZE[20342]</value>
@@ -411,13 +399,5 @@
 	</variable>
 	<variable name="AddonNewsVar">
 		<value condition="!String.IsEmpty(ListItem.AddonNews)">$LOCALIZE[31136]</value>
-	</variable>
-	<variable name="VideoLibraryScanLabel">
-		<value condition="Library.IsScanningVideo">$LOCALIZE[13353]</value>
-		<value>$LOCALIZE[653]</value>
-	</variable>
-	<variable name="MusicLibraryScanLabel">
-		<value condition="Library.IsScanningMusic">$LOCALIZE[13353]</value>
-		<value>$LOCALIZE[653]</value>
 	</variable>
 </includes>
