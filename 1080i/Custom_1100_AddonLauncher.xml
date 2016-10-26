@@ -56,7 +56,7 @@
 							</control>
 							<control type="image">
 								<left>-3</left>
-								<top>10</top>
+								<top>1</top>
 								<width>95</width>
 								<height>95</height>
 								<texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
@@ -73,7 +73,7 @@
 						</control>
 						<control type="image">
 							<left>-3</left>
-							<top>10</top>
+							<top>1</top>
 							<width>95</width>
 							<height>95</height>
 							<texture>$INFO[ListItem.Art(thumb)]</texture>
@@ -102,7 +102,7 @@
 						</control>
 						<control type="image">
 							<left>-3</left>
-							<top>10</top>
+							<top>1</top>
 							<width>95</width>
 							<height>95</height>
 							<texture colordiffuse="44FFFFFF">$INFO[ListItem.Art(thumb)]</texture>
@@ -112,7 +112,7 @@
 						<item id="1">
 							<label>$LOCALIZE[1037]</label>
 							<onclick>ActivateWindow(videos,addons://sources/video/,return)</onclick>
-							<thumb>icons/settings/video.png</thumb>
+							<thumb>icons/sidemenu/videos.png</thumb>
 							<property name="id">video</property>
 							<property name="path">addons://sources/video/</property>
 							<!-- <visible>Integer.IsGreater(Container(500).NumItems,0)</visible> -->
@@ -120,7 +120,7 @@
 						<item id="2">
 							<label>$LOCALIZE[1038]</label>
 							<onclick>ActivateWindow(music,addons://sources/audio/,return)</onclick>
-							<thumb>icons/settings/music.png</thumb>
+							<thumb>icons/sidemenu/music.png</thumb>
 							<property name="id">music</property>
 							<property name="path">addons://sources/audio/</property>
 							<!-- <visible>Integer.IsGreater(Container(501).NumItems,0)</visible> -->
@@ -128,7 +128,7 @@
 						<item id="3">
 							<label>$LOCALIZE[1043]</label>
 							<onclick>ActivateWindow(programs,addons://sources/executable/,return)</onclick>
-							<thumb>icons/settings/appearance.png</thumb>
+							<thumb>icons/sidemenu/programs.png</thumb>
 							<property name="id">addons</property>
 							<property name="path">addons://sources/executable/</property>
 							<!-- <visible>Integer.IsGreater(Container(502).NumItems,0)</visible> -->
@@ -136,7 +136,7 @@
 						<item id="4">
 							<label>$LOCALIZE[20244]</label>
 							<onclick>ActivateWindow(programs,androidapp://sources/apps/,return)</onclick>
-							<thumb>icons/settings/android.png</thumb>
+							<thumb>icons/sidemenu/android.png</thumb>
 							<property name="id">android</property>
 							<property name="path">androidapp://sources/apps/</property>
 							<visible>System.Platform.Android</visible>
@@ -144,7 +144,7 @@
 						<item id="5">
 							<label>$LOCALIZE[1039]</label>
 							<onclick>ActivateWindow(pictures,addons://sources/image/,return)</onclick>
-							<thumb>icons/settings/pictures.png</thumb>
+							<thumb>icons/sidemenu/pictures.png</thumb>
 							<property name="id">pictures</property>
 							<property name="path">addons://sources/image/</property>
 <!-- 							<visible>Integer.IsGreater(Container(503).NumItems,0)</visible>
@@ -152,14 +152,14 @@
 						<item id="7">
 							<label>Manage</label>
 							<onclick>ActivateWindow(addonbrowser,addons://user/,return)</onclick>
-							<thumb>icons/settings/system.png</thumb>
+							<thumb>icons/sidemenu/manage.png</thumb>
 							<property name="id">manage</property>
 							<property name="path">addons://user/</property>
 						</item>
 						<item id="6">
 							<label>$LOCALIZE[33003]</label>
 							<onclick>ActivateWindow(addonbrowser,addons://all/,return)</onclick>
-							<thumb>icons/settings/addons.png</thumb>
+							<thumb>icons/sidemenu/download.png</thumb>
 							<property name="id">download</property>
 							<property name="path">addons://all/</property>
 						</item>
