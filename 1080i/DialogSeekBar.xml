@@ -2,8 +2,7 @@
 <window>
 	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(fullscreeninfo) | Window.IsActive(videoosd) | Window.IsActive(playerprocessinfo)</visible>
 	<visible>Window.IsActive(fullscreenvideo)</visible>
-	<animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+	<include>Animation_BottomSlide</include>
 	<depth>DepthOSD</depth>
 	<zorder>0</zorder>
 	<controls>

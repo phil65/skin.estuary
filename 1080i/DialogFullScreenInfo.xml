@@ -49,6 +49,7 @@
 				<width>1000</width>
 				<height>100</height>
 				<align>right</align>
+				<include>Animation_BottomSlide</include>
 				<orientation>horizontal</orientation>
 				<itemgap>10</itemgap>
 				<visible>!Player.ChannelPreviewActive</visible>

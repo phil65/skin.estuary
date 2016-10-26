@@ -4,6 +4,7 @@
 	<onload condition="VideoPlayer.Content(LiveTV) + !Player.PauseEnabled">SetFocus(603)</onload>
 	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">602</defaultcontrol>
+	<include>Animation_BottomSlide</include>
 	<controls>
 		<control type="button" id="22001">
 			<description>background close area</description>
@@ -17,15 +18,11 @@
 		</control>
 		<control type="group">
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(playerprocessinfo)]</visible>
-			<animation effect="fade" end="100" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>
-			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<control type="group">
 				<top>900</top>
 				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(osdcmssettings) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
-				<animation effect="fade" end="100" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<control type="label">
 					<left>30</left>
 					<top>0</top>

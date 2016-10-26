@@ -156,42 +156,49 @@
 					</itemlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>876</left>
+					<left>868</left>
 					<top>0</top>
 					<width>12</width>
 					<height>1080</height>
 					<onleft>11</onleft>
+					<texturesliderbackground></texturesliderbackground>
 					<onright>NextChannelGroup</onright>
 					<ondown>61</ondown>
 					<onup>61</onup>
+					<animation effect="zoom" start="100,100" end="50,100" center="881,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 					<orientation>vertical</orientation>
 				</control>
+				<control type="image">
+					<left>0</left>
+					<top>965</top>
+					<width>880</width>
+					<height>115</height>
+					<texture flipy="true">frame/InfoBar.png</texture>
+				</control>
 			</control>
-			<control type="label">
-				<description>Page Count Label</description>
-				<left>310</left>
-				<top>960</top>
-				<width>450</width>
-				<height>20</height>
-				<font>font13</font>
-				<textcolor>grey</textcolor>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>[COLOR=button_focus]$INFO[Container(11).NumItems][/COLOR] $LOCALIZE[19019] - $LOCALIZE[31035] [COLOR=button_focus]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</label>
+			<control type="group">
+				<include>Animation_TopSlide</include>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>110%</width>
+					<height>110</height>
+					<texture>frame/InfoBar.png</texture>
+					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+				</control>
+				<control type="label" id="2">
+					<description>header label</description>
+					<textoffsetx>40</textoffsetx>
+					<top>0</top>
+					<width>830</width>
+					<height>70</height>
+					<font>font45</font>
+					<aligny>center</aligny>
+					<label>&lt; $INFO[VideoPlayer.ChannelGroup] &gt;</label>
+					<shadowcolor>black</shadowcolor>
+				</control>
 			</control>
-		</control>
-		<include>TopBar</include>
-		<include>BottomBar</include>
-		<control type="label" id="2">
-			<description>header label</description>
-			<textoffsetx>40</textoffsetx>
-			<top>0</top>
-			<width>830</width>
-			<height>70</height>
-			<font>font45_title</font>
-			<aligny>center</aligny>
-			<label>&lt; $INFO[VideoPlayer.ChannelGroup] &gt;</label>
-			<shadowcolor>black</shadowcolor>
+
 		</control>
 	</controls>
 </window>
