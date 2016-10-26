@@ -913,7 +913,6 @@
 					<itemgap>10</itemgap>
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
-
 					<control type="group">
 						<width>600</width>
 						<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
@@ -956,7 +955,7 @@
 							<align>right</align>
 						</control>
 					</control>
-				<control type="label">
+					<control type="label">
 						<font>font_clock</font>
 						<shadowcolor>text_shadow</shadowcolor>
 						<height>200</height>
@@ -964,7 +963,6 @@
 						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 						<label>$INFO[System.Time]</label>
 					</control>
-
 				</control>
 			</control>
 		</definition>
