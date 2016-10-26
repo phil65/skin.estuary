@@ -291,6 +291,10 @@
 							<param name="sortorder" value="descending"/>
 							<param name="widget_limit" value="10"/>
 						</include>
+						<include content="ImageWidgetHeader">
+							<param name="widget_header" value="$LOCALIZE[10005]" />
+							<param name="visible" value="!Library.HasContent(music)"/>
+						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31104]" />
@@ -318,6 +322,7 @@
 							<param name="list_id" value="8900"/>
 							<param name="onup_id" value="20000"/>
 							<param name="ondown_id" value="8100"/>
+							<param name="visible" value="Integer.IsGreater(Container(8100).NumItems,0) | Integer.IsGreater(Container(8200).NumItems,0) | Integer.IsGreater(Container(8300).NumItems,0) | Integer.IsGreater(Container(8400).NumItems,0) | Integer.IsGreater(Container(8500).NumItems,0)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/video/"/>
@@ -383,6 +388,10 @@
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
+						</include>
+						<include content="ImageWidgetHeader">
+							<param name="widget_header" value="$LOCALIZE[24001]" />
+							<param name="visible" value="!Integer.IsGreater(Container(8100).NumItems,0) + !Integer.IsGreater(Container(8200).NumItems,0) + !Integer.IsGreater(Container(8300).NumItems,0) + !Integer.IsGreater(Container(8400).NumItems,0) + !Integer.IsGreater(Container(8500).NumItems,0)"/>
 						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>

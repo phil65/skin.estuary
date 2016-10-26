@@ -19,7 +19,7 @@
 			<texture background="true" colordiffuse="35FFFFFF">$INFO[Player.Art(fanart)]</texture>
 		</control>
 		<control type="image">
-			<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
+			<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="FF707070">$VAR[GlobalFanartVar]</texture>
 			<width>100%</width>
 			<height>100%</height>
 			<aspectratio align="center">scale</aspectratio>
