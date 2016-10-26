@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1109">
 	<visible>Window.IsActive(fullscreenvideo)</visible>
-	<visible>Window.IsActive(seekbar) | [Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV)]</visible>
+	<visible>Window.IsActive(seekbar) | [Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV)] | Window.IsActive(pvrosdchannels)</visible>
 	<depth>DepthOSD</depth>
 	<include>Animation_TopSlide</include>
 	<include>Animation_BottomSlide</include>
+	<zorder>0</zorder>
 	<controls>
 		<control type="group">
 			<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
@@ -16,24 +17,28 @@
 				<height>150</height>
 				<texture>frame/InfoBar.png</texture>
 			</control>
-			<control type="label">
-				<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, ([COLOR button_focus],[/COLOR])]</label>
-				<left>30</left>
-				<font>font45</font>
-				<shadowcolor>text_shadow</shadowcolor>
-				<top>7</top>
-				<height>100</height>
-				<width>900</width>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<top>60</top>
-				<label>$VAR[OSDSubLabelVar]</label>
-				<font>font13</font>
-				<left>30</left>
-				<shadowcolor>text_shadow</shadowcolor>
-				<height>100</height>
-				<width>1100</width>
+			<control type="group">
+				<visible>!Window.IsActive(pvrosdchannels)</visible>
+				<animation effect="fade" time="150">VisibleChange</animation>
+				<control type="label">
+					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, ([COLOR button_focus],[/COLOR])]</label>
+					<left>30</left>
+					<font>font45</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<top>7</top>
+					<height>100</height>
+					<width>900</width>
+					<align>left</align>
+				</control>
+				<control type="label">
+					<top>60</top>
+					<label>$VAR[OSDSubLabelVar]</label>
+					<font>font13</font>
+					<left>30</left>
+					<shadowcolor>text_shadow</shadowcolor>
+					<height>100</height>
+					<width>1100</width>
+				</control>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(extendedprogressdialog)</visible>

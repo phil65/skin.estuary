@@ -181,10 +181,9 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>110%</width>
+					<width>880</width>
 					<height>110</height>
 					<texture>frame/InfoBar.png</texture>
-					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 				</control>
 				<control type="label" id="2">
 					<description>header label</description>
