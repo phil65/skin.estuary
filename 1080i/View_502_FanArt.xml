@@ -10,7 +10,7 @@
 				<visible>Control.IsVisible(502)</visible>
 				<include>Visible_Right</include>
 				<control type="image">
-					<left>740</left>
+					<left>727</left>
 					<top>0</top>
 					<width>1500</width>
 					<height>1080</height>
@@ -19,8 +19,8 @@
 				<control type="image">
 					<left>747</left>
 					<top>24</top>
-					<width>1172</width>
-					<height>758</height>
+					<width>1156</width>
+					<height>749</height>
 					<fadetime>300</fadetime>
 					<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[FanartImageVar]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
