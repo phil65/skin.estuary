@@ -164,7 +164,7 @@
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="label">
-						<top>154</top>
+						<top>195</top>
 						<width>750</width>
 						<height>262</height>
 						<textcolor>button_focus</textcolor>
@@ -180,25 +180,6 @@
 						<font>font13</font>
 						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
-				</control>
-				<control type="label">
-					<description>Disk usage text</description>
-					<top>660</top>
-					<width>600</width>
-					<height>20</height>
-					<label>$INFO[PVR.backenddiskspace]</label>
-					<shadowcolor>black</shadowcolor>
-					<font>font13</font>
-					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
-				</control>
-				<control type="progress">
-					<description>Disk usage bar</description>
-					<left>460</left>
-					<top>673</top>
-					<width>100</width>
-					<height>12</height>
-					<info>PVR.backenddiskspaceprogr</info>
-					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
 				</control>
 				<control type="group">
 					<visible>ListItem.IsFolder</visible>
@@ -242,6 +223,28 @@
 			<include content="BottomBar">
 				<param name="info_visible" value="true" />
 			</include>
+				<control type="group">
+					<left>1100</left>
+				<control type="label">
+					<description>Disk usage text</description>
+					<top>1020</top>
+					<width>600</width>
+					<height>20</height>
+					<label>$INFO[PVR.backenddiskspace]</label>
+					<shadowcolor>black</shadowcolor>
+					<font>font13</font>
+					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
+				</control>
+				<control type="progress">
+					<description>Disk usage bar</description>
+					<left>570</left>
+					<top>1033</top>
+					<width>200</width>
+					<height>12</height>
+					<info>PVR.backenddiskspaceprogr</info>
+					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
+				</control>
+				</control>
 		</control>
 	</controls>
 </window>

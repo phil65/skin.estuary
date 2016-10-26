@@ -12,14 +12,14 @@
 				<onclick>noop</onclick>
 				<visible>Control.IsVisible(51)</visible>
 			</control>
-				<control type="image">
-					<left>0</left>
-					<top>4</top>
-					<width>3000</width>
-					<height>400</height>
-					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
+			<control type="image">
+				<left>0</left>
+				<top>4</top>
+				<width>3000</width>
+				<height>400</height>
+				<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
 				<visible>Control.IsVisible(51)</visible>
-				</control>
+			</control>
 			<control type="group">
 				<visible>Control.IsVisible(51)</visible>
 				<include>Visible_Right</include>
@@ -88,7 +88,7 @@
 								<bordersize>20</bordersize>
 								<visible>Container.OnScrollPrevious</visible>
 								<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
- 								<visible>Control.IsVisible(20000)</visible>
+								<visible>Control.IsVisible(20000)</visible>
 							</control>
 							<control type="image">
 								<left>173</left>
@@ -129,7 +129,7 @@
 					<top>25</top>
 					<control type="group">
 						<left>635</left>
-						<top>475</top>
+						<top>480</top>
 						<visible>ListItem.IsCollection</visible>
 						<include content="InfoList">
 							<param name="sortby" value="year" />
@@ -153,27 +153,15 @@
 						<font>font45_title</font>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
-					<control type="grouplist">
-						<orientation>vertical</orientation>
+					<control type="textbox">
 						<left>645</left>
 						<top>480</top>
-						<height>275</height>
-						<control type="label">
-							<font>font13</font>
-							<width>1160</width>
-							<height>38</height>
-							<label>$INFO[ListItem.Season,[COLOR button_focus]$LOCALIZE[33054]: [/COLOR],]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-							<visible>!String.IsEmpty(ListItem.Season)</visible>
-						</control>
-						<control type="textbox">
-							<width>1150</width>
-							<height max="252">auto</height>
-							<font>font13</font>
-							<autoscroll time="3000" delay="3000" repeat="5000">!System.HasModalDialog</autoscroll>
-							<label>$INFO[ListItem.Plot]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
+						<height>250</height>
+						<font>font13</font>
+						<width>1160</width>
+						<autoscroll time="3000" delay="3000" repeat="5000">!System.HasModalDialog</autoscroll>
+						<label>$INFO[ListItem.Plot]</label>
+						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</control>
 			</control>
