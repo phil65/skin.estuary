@@ -21,7 +21,7 @@
 				<height>836</height>
 				<fadetime>200</fadetime>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
+				<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
 			</control>
 			<include content="ListContainer">
 				<param name="list_id" value="50" />

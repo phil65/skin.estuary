@@ -10,7 +10,7 @@
 			<control type="fixedlist" id="55">
 				<left>0</left>
 				<top>3</top>
-				<width>1312</width>
+				<width>1325</width>
 				<height>1080</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
@@ -27,7 +27,7 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>1396</width>
+						<width>1325</width>
 						<height>80</height>
 						<texture colordiffuse="button_focus">lists/focus.png</texture>
 						<visible>Control.HasFocus(55)</visible>
