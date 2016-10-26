@@ -14,7 +14,7 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>1130</width>
+					<width>1180</width>
 					<height>1080</height>
 					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
 				</control>
@@ -28,7 +28,7 @@
 					<onleft>9000</onleft>
 					<onright>73</onright>
 					<movement>4</movement>
-					<focusposition>7</focusposition>
+					<focusposition>5</focusposition>
 					<pagecontrol>73</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="100">
@@ -160,17 +160,17 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="73">
-					<left>1055</left>
+					<left>1050</left>
 					<top>0</top>
 					<width>12</width>
-					<height>706</height>
+					<height>1080</height>
 					<onleft>50</onleft>
 					<onright>103</onright>
 					<orientation>vertical</orientation>
 				</control>
 			</control>
 			<control type="group">
-				<left>1050</left>
+				<left>1080</left>
 				<top>180</top>
 				<visible>!String.IsEmpty(ListItem.Date)</visible>
 				<include>Visible_Right</include>
@@ -179,6 +179,13 @@
 					<param name="bottom_label1" value="$INFO[PVR.NextTimer]" />
 					<param name="bottom_label2" value="" />
 				</include>
+				<control type="label">
+					<top>760</top>
+					<width>500</width>
+					<height>262</height>
+					<font>font13</font>
+					<label>$INFO[PVR.NextTimer]</label>
+				</control>
 			</control>
 		</control>
 		<control type="group">

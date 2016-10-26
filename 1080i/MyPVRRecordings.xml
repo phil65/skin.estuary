@@ -13,7 +13,7 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>1130</width>
+					<width>1180</width>
 					<height>1080</height>
 					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
 				</control>
@@ -27,28 +27,28 @@
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<movement>4</movement>
-					<focusposition>7</focusposition>
+					<focusposition>6</focusposition>
 					<pagecontrol>73</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<focusedlayout height="70">
+					<focusedlayout height="90">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1050</width>
-							<height>70</height>
+							<height>90</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1050</width>
-							<height>70</height>
+							<height>90</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
 						</control>
 						<control type="image">
 							<left>21</left>
-							<top>20</top>
+							<top>30</top>
 							<width>32</width>
 							<height>32</height>
 							<texture colordiffuse="white">$VAR[ListWatchedIconVar]</texture>
@@ -58,7 +58,7 @@
 							<left>60</left>
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
-							<height>70</height>
+							<height>90</height>
 							<width>1050</width>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
@@ -68,26 +68,26 @@
 							<left>0</left>
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
-							<height>70</height>
+							<height>90</height>
 							<width>1050</width>
 							<align>right</align>
 							<aligny>center</aligny>
-							<font>font12</font>
+							<font>font13</font>
 							<label>$INFO[ListItem.Date]</label>
 							<textcolor>white</textcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="70">
+					<itemlayout height="90">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1050</width>
-							<height>70</height>
+							<height>90</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>21</left>
-							<top>20</top>
+							<top>30</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
@@ -96,7 +96,7 @@
 							<left>60</left>
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
-							<height>70</height>
+							<height>90</height>
 							<width>1050</width>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
@@ -105,11 +105,11 @@
 							<left>0</left>
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
-							<height>70</height>
+							<height>90</height>
 							<width>1050</width>
 							<align>right</align>
 							<aligny>center</aligny>
-							<font>font12</font>
+							<font>font13</font>
 							<label>$INFO[ListItem.Date]</label>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
@@ -117,36 +117,22 @@
 					</itemlayout>
 				</control>
 				<control type="scrollbar" id="73">
-					<left>1055</left>
-					<top>1</top>
+					<left>1050</left>
+					<top>0</top>
 					<width>12</width>
-					<height>704</height>
+					<height>1080</height>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<orientation>vertical</orientation>
 				</control>
 			</control>
 			<control type="group">
-				<left>1220</left>
+				<left>1120</left>
 				<top>180</top>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<control type="group">
 					<visible>!ListItem.IsFolder</visible>
-					<control type="image">
-						<left>-40</left>
-						<top>-20</top>
-						<width>644</width>
-						<height>170</height>
-						<texture border="22">dialogs/dialog-bg.png</texture>
-					</control>
-					<control type="image">
-						<left>-40</left>
-						<top>130</top>
-						<width>644</width>
-						<height>520</height>
-						<texture border="22">dialogs/dialog-bg.png</texture>
-					</control>
 					<control type="group">
 						<left>150</left>
 						<top>40</top>
@@ -155,7 +141,7 @@
 							<width>560</width>
 							<height>262</height>
 							<align>left</align>
-							<font>font12</font>
+							<font>font13</font>
 							<wrapmultiline>true</wrapmultiline>
 							<label>$INFO[ListItem.Date][CR]$INFO[ListItem.Duration]</label>
 						</control>
@@ -179,35 +165,21 @@
 					</control>
 					<control type="label">
 						<top>154</top>
-						<width>560</width>
+						<width>750</width>
 						<height>262</height>
 						<textcolor>button_focus</textcolor>
 						<font>font36_title</font>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
-					<control type="label">
-						<top>210</top>
-						<width>560</width>
-						<height>262</height>
-						<label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515]:[/COLOR] ]</label>
-						<font>font12</font>
-					</control>
 					<control type="textbox">
 						<top>254</top>
-						<width>560</width>
+						<width>750</width>
 						<height>362</height>
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
-						<font>font12</font>
+						<font>font13</font>
 						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
-				</control>
-				<control type="image">
-					<left>-40</left>
-					<top>632</top>
-					<width>644</width>
-					<height>94</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="label">
 					<description>Disk usage text</description>
@@ -216,7 +188,7 @@
 					<height>20</height>
 					<label>$INFO[PVR.backenddiskspace]</label>
 					<shadowcolor>black</shadowcolor>
-					<font>font12</font>
+					<font>font13</font>
 					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
 				</control>
 				<control type="progress">
@@ -230,13 +202,6 @@
 				</control>
 				<control type="group">
 					<visible>ListItem.IsFolder</visible>
-					<control type="image">
-						<left>-40</left>
-						<top>-20</top>
-						<width>644</width>
-						<height>670</height>
-						<texture border="22">dialogs/dialog-bg.png</texture>
-					</control>
 					<control type="label">
 						<top>10</top>
 						<width>560</width>
@@ -252,8 +217,8 @@
 						<include content="InfoList">
 							<param name="path" value="$INFO[ListItem.Path]/$INFO[ListItem.Label]" />
 							<param name="height" value="362" />
-							<param name="width" value="560" />
-							<param name="font" value="font12" />
+							<param name="width" value="760" />
+							<param name="font" value="font13" />
 							<param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
 						</include>
 					</control>

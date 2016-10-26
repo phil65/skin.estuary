@@ -131,7 +131,7 @@
 								<width>890</width>
 								<height>100</height>
 								<aligny>top</aligny>
-								<label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
+								<label>$INFO[ListItem.ChannelName]$INFO[ListItem.Label, - ]</label>
 							</control>
 							<control type="label">
 								<left>120</left>
