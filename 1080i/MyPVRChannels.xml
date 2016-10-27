@@ -333,18 +333,18 @@
 				<top>182</top>
 				<include>OpenClose_Right</include>
 				<control type="group">
-					<left>140</left>
+					<left>0</left>
 					<top>20</top>
 					<control type="progress">
-						<top>60</top>
-						<width>360</width>
+						<top>125</top>
+						<width>520</width>
 						<height>12</height>
 						<colordiffuse>88FFFFFF</colordiffuse>
 						<visible>ListItem.HasEpg</visible>
 						<info>ListItem.Progress</info>
 					</control>
 					<control type="label">
-						<top>24</top>
+						<top>89</top>
 						<width>560</width>
 						<height>262</height>
 						<font>font13</font>
@@ -352,8 +352,8 @@
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="label">
-						<top>24</top>
-						<width>360</width>
+						<top>89</top>
+						<width>520</width>
 						<height>262</height>
 						<align>right</align>
 						<font>font13</font>
@@ -361,20 +361,36 @@
 						<label>$INFO[ListItem.EndTime]</label>
 					</control>
 					<control type="label">
-						<top>-30</top>
-						<width>430</width>
+						<top>-80</top>
+						<width>540</width>
 						<height>262</height>
-						<textcolor>button_focus</textcolor>
-						<font>font36_title</font>
+						<textcolor>white</textcolor>
+						<font>font45</font>
 						<label>$INFO[ListItem.ChannelName]</label>
+					</control>
+					<control type="label">
+						<top>20</top>
+						<width>540</width>
+						<height>625</height>
+						<align>left</align>
+						<font>font13</font>
+						<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ]</label>
+					</control>
+					<control type="label">
+						<top>-20</top>
+						<width>540</width>
+						<height>625</height>
+						<align>left</align>
+						<font>font13</font>
+						<label>[B]$INFO[ListItem.EpgEventTitle,,[CR]][/B]</label>
 					</control>
 				</control>
 				<control type="image">
-					<left>-20</left>
-					<top>-5</top>
-					<width>150</width>
-					<height>100</height>
-					<aspectratio>keep</aspectratio>
+					<left>520</left>
+					<top>-60</top>
+					<width>270</width>
+					<height>220</height>
+					<aspectratio align="right">keep</aspectratio>
 					<texture fallback="DefaultTVShows.png">$INFO[Listitem.Icon]</texture>
 					<fadetime>200</fadetime>
 				</control>
@@ -384,7 +400,7 @@
 					<height>625</height>
 					<align>left</align>
 					<font>font13</font>
-					<label>[B]$INFO[ListItem.EpgEventTitle,,[CR]]$INFO[ListItem.EpisodeName,,[CR]][/B]$INFO[ListItem.Plot]</label>
+					<label>[B]$INFO[ListItem.EpisodeName,,[CR]][/B]$INFO[ListItem.Plot]</label>
 				</control>
 				<control type="textbox">
 					<top>430</top>
