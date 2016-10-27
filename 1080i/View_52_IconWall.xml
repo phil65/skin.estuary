@@ -23,9 +23,9 @@
 					<control type="group">
 						<top>150</top>
 						<control type="image">
-							<width>400</width>
+							<width>396</width>
 							<height>245</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<texture border="40">dialogs/dialog-bg-small.png</texture>
 						</control>
 						<control type="image">
 							<left>120</left>
@@ -37,9 +37,9 @@
 							<align>center</align>
 						</control>
 						<control type="image">
-							<left>21</left>
-							<top>149</top>
-							<width>358</width>
+							<left>20</left>
+							<top>150</top>
+							<width>356</width>
 							<height>75</height>
 							<texture colordiffuse="border_alpha">colors/black.png</texture>
 						</control>
@@ -54,11 +54,11 @@
 						</control>
 						<control type="textbox">
 							<left>25</left>
-							<top>146</top>
+							<top>148</top>
 							<width>350</width>
 							<height>74</height>
-							<label>$INFO[ListItem.Label]</label>
 							<font>font12</font>
+							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 						</control>
@@ -75,16 +75,17 @@
 						</animation>
 						<top>150</top>
 						<control type="image">
-							<width>400</width>
+							<width>396</width>
 							<height>245</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<texture border="40">dialogs/dialog-bg-small.png</texture>
 							<animation effect="fade" start="0" end="100" time="0">Unfocus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Focus</animation>
 						</control>
 						<control type="image">
-							<width>400</width>
-							<height>245</height>
-							<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<left>-3</left>
+							<width>402</width>
+							<height>248</height>
+							<texture border="24" colordiffuse="button_focus">buttons/button-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="image">
@@ -106,15 +107,15 @@
 							<visible>!String.EndsWith(ListItem.Overlay,watched.png)</visible>
 						</control>
 						<control type="image">
-							<left>21</left>
-							<top>149</top>
-							<width>358</width>
+							<left>20</left>
+							<top>150</top>
+							<width>356</width>
 							<height>75</height>
 							<texture colordiffuse="border_alpha">colors/black.png</texture>
 						</control>
 						<control type="textbox">
 							<left>25</left>
-							<top>146</top>
+							<top>148</top>
 							<width>350</width>
 							<height>74</height>
 							<font>font12</font>

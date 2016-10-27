@@ -3,28 +3,28 @@
 	<include name="InfoWallPictureLayout">
 		<control type="image">
 			<top>-10</top>
-			<width>400</width>
+			<width>396</width>
 			<height>380</height>
-			<texture border="40">buttons/button-nofo.png</texture>
+			<texture border="40">dialogs/dialog-bg-small.png</texture>
 		</control>
 		<control type="image">
-			<left>25</left>
-			<top>18</top>
-			<width>350</width>
+			<left>30</left>
+			<top>20</top>
+			<width>336</width>
 			<height>280</height>
 			<texture border="2" background="true">$VAR[InfoWallThumbVar]</texture>
 			<aspectratio>keep</aspectratio>
 		</control>
 		<control type="image">
 			<left>20</left>
-			<top>308</top>
-			<width>358</width>
+			<top>310</top>
+			<width>356</width>
 			<height>40</height>
 			<texture>colors/black.png</texture>
 		</control>
 		<control type="label">
 			<left>20</left>
-			<top>315</top>
+			<top>318</top>
 			<width>358</width>
 			<textoffsetx>20</textoffsetx>
 			<height>20</height>
@@ -44,19 +44,19 @@
 		<definition>
 			<control type="image">
 				<top>-10</top>
-				<width>320</width>
+				<width>316</width>
 				<height>380</height>
 				<texture border="40">dialogs/dialog-bg-small.png</texture>
 			</control>
 			<control type="image">
-				<left>33</left>
-				<top>21</top>
-				<width>250</width>
-				<height>250</height>
+				<left>18</left>
+				<top>7</top>
+				<width>280</width>
+				<height>280</height>
 				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>keep</aspectratio>
-				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-				<bordersize>4</bordersize>
+				<bordertexture border="24">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -86,41 +86,62 @@
 		<param name="fallback_image">DefaultFolder.png</param>
 		<definition>
 			<control type="image">
+				<left>15</left>
 				<top>-10</top>
-				<width>320</width>
-				<height>395</height>
-				<texture border="40">buttons/button-nofo.png</texture>
+				<width>290</width>
+				<height>400</height>
+				<texture border="21">dialogs/dialog-bg-small.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 			</control>
 			<control type="image">
-				<left>35</left>
-				<top>21</top>
-				<width>250</width>
-				<height>300</height>
+				<left>26</left>
+				<top>0</top>
+				<width>270</width>
+				<height>290</height>
 				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>keep</aspectratio>
-				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-				<bordersize>4</bordersize>
+				<bordertexture border="24">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!ListItem.IsParentFolder</visible>
+				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 			</control>
 			<control type="image">
-				<left>20</left>
-				<top>326</top>
-				<width>278</width>
-				<height>37</height>
-				<texture>colors/black.png</texture>
+				<left>15</left>
+				<top>-10</top>
+				<width>290</width>
+				<height>400</height>
+				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+				<aspectratio>scale</aspectratio>
+				<bordertexture border="24">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!ListItem.IsParentFolder</visible>
+				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 			</control>
-			<control type="label">
-				<left>28</left>
-				<top>308</top>
-				<width>262</width>
-				<height>70</height>
-				<font>font12</font>
+			<control type="image">
+				<left>34</left>
+				<top>20</top>
+				<width>250</width>
+				<height>300</height>
+				<texture>$VAR[InfoWallThumbVar]</texture>
+				<aspectratio>keep</aspectratio>
+				<texture>DefaultFolderBack.png</texture>
+				<visible>ListItem.IsParentFolder</visible>
+			</control>
+			<control type="textbox">
+				<left>40</left>
+				<top>270</top>
+				<width>242</width>
+				<height>100</height>
+				<font>font27</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
+				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 			</control>
 			<control type="group">
 				<left>230</left>
-				<top>28</top>
+				<top>20</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</definition>
@@ -162,11 +183,11 @@
 						</control>
 						<control type="textbox">
 							<left>20</left>
-							<top>220</top>
+							<top>230</top>
 							<width>209</width>
 							<height>100</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font25_title</font>
+							<font>font27</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -212,11 +233,11 @@
 						</control>
 						<control type="textbox">
 							<left>20</left>
-							<top>220</top>
+							<top>230</top>
 							<width>209</width>
 							<height>100</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font25_title</font>
+							<font>font27</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -241,7 +262,7 @@
 				<itemlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
 						<top>150</top>
-						<left>80</left>
+						<left>90</left>
 						<include>InfoWallMusicLayout</include>
 					</control>
 				</itemlayout>
@@ -250,12 +271,12 @@
 						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="240,330">Focus</animation>
 						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="240,330">UnFocus</animation>
 						<top>150</top>
-						<left>80</left>
+						<left>90</left>
 						<include>InfoWallMusicLayout</include>
 						<control type="image">
 							<left>15</left>
 							<top>5</top>
-							<width>288</width>
+							<width>284</width>
 							<height>348</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
@@ -264,12 +285,14 @@
 				</focusedlayout>
 				<itemlayout height="400" width="401" condition="Container.Content(images)">
 					<control type="group">
+						<left>30</left>
 						<top>150</top>
 						<include>InfoWallPictureLayout</include>
 					</control>
 				</itemlayout>
 				<focusedlayout height="400" width="401" condition="Container.Content(images)">
 					<control type="group">
+						<left>30</left>
 						<top>150</top>
 						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,330">Focus</animation>
 						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,330">UnFocus</animation>
@@ -277,7 +300,7 @@
 						<control type="image">
 							<left>15</left>
 							<top>5</top>
-							<width>368</width>
+							<width>364</width>
 							<height>348</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>

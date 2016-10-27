@@ -332,7 +332,7 @@
 							<control type="image">
 								<left>0</left>
 								<top>1</top>
-								<width>348</width>
+								<width>344</width>
 								<height>340</height>
 								<texture border="40">dialogs/dialog-bg-small.png</texture>
 							</control>
@@ -377,7 +377,7 @@
 							<control type="image">
 								<left>0</left>
 								<top>1</top>
-								<width>348</width>
+								<width>344</width>
 								<height>340</height>
 								<texture border="40">dialogs/dialog-bg-small.png</texture>
 							</control>
@@ -667,7 +667,7 @@
 						<control type="group">
 							<left>70</left>
 							<control type="image">
-								<width>340</width>
+								<width>336</width>
 								<height>280</height>
 								<texture border="21">dialogs/dialog-bg-small.png</texture>
 							</control>
@@ -692,7 +692,7 @@
 							<control type="image">
 								<left>20</left>
 								<top>184</top>
-								<width>295</width>
+								<width>296</width>
 								<height>76</height>
 								<texture>colors/black.png</texture>
 							</control>
@@ -720,13 +720,13 @@
 								<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="240,70" />
 							</animation>
 							<control type="image">
-								<width>340</width>
+								<width>336</width>
 								<height>280</height>
 								<texture border="21">dialogs/dialog-bg-small.png</texture>
 							</control>
 							<control type="image">
 								<left>-2</left>
-								<width>339</width>
+								<width>340</width>
 								<height>282</height>
 								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
@@ -753,7 +753,7 @@
 							<control type="image">
 								<left>20</left>
 								<top>184</top>
-								<width>295</width>
+								<width>296</width>
 								<height>76</height>
 								<texture>colors/black.png</texture>
 							</control>
@@ -862,7 +862,7 @@
 						<control type="group">
 							<left>70</left>
 							<control type="image">
-								<width>340</width>
+								<width>334</width>
 								<height>340</height>
 								<texture border="21">dialogs/dialog-bg-small.png</texture>
 							</control>
@@ -909,7 +909,7 @@
 								<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="240,100" />
 							</animation>
 							<control type="image">
-								<width>340</width>
+								<width>334</width>
 								<height>340</height>
 								<texture border="21">dialogs/dialog-bg-small.png</texture>
 							</control>
@@ -1000,7 +1000,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>20</top>
-							<width>260</width>
+							<width>254</width>
 							<height>350</height>
 							<texture border="21">dialogs/dialog-bg-small.png</texture>
 						</control>
@@ -1049,14 +1049,14 @@
 						<control type="image">
 							<left>0</left>
 							<top>20</top>
-							<width>260</width>
+							<width>254</width>
 							<height>350</height>
 							<texture border="21">dialogs/dialog-bg-small.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>20</top>
-							<width>260</width>
+							<width>254</width>
 							<height>350</height>
 							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>

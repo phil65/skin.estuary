@@ -150,7 +150,7 @@
 		<value>$INFO[ListItem.Art(tvshow.banner)]</value>
 	</variable>
 	<variable name="PosterVar">
-		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultFolderBackPoster.png</value>
 		<value condition="!String.IsEmpty(Container.Art(season.poster)) + Container.Content(episodes)">$INFO[Container.Art(season.poster)]</value>
 		<value condition="!String.IsEmpty(Container.Art(tvshow.poster)) + Container.Content(episodes)">$INFO[Container.Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(Container.Art(tvshow.poster)) + Container.Content(seasons) + Window.IsActive(movieinformation)">$INFO[Container.Art(tvshow.poster)]</value>
@@ -164,7 +164,7 @@
 		<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 	</variable>
 	<variable name="ListPosterVar">
-		<value condition="ListItem.IsParentFolder">DefaultFolderBackSquare.png</value>
+		<value condition="ListItem.IsParentFolder">DefaultFolderBackPoster.png</value>
 		<value>$INFO[ListItem.Art(poster)]</value>
 	</variable>
 	<variable name="BannerLabel2Var">
