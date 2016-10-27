@@ -178,7 +178,7 @@
 						<visible>String.StartsWith(ListItem.PlotOutline,http://) | String.StartsWith(ListItem.PlotOutline,https://)</visible>
 					</control>
 					<control type="image">
-						<left>125</left>
+						<left>10</left>
 						<width>240</width>
 						<height>200</height>
 						<aspectratio align="right">keep</aspectratio>
@@ -187,10 +187,10 @@
 						<visible>!Control.IsVisible(82)</visible>
 					</control>
 					<control type="group">
-						<left>410</left>
+						<left>300</left>
 						<top>-9</top>
 						<control type="label">
-							<width>1380</width>
+							<width>1550</width>
 							<height>30</height>
 							<textcolor>button_focus</textcolor>
 							<font>font13</font>
@@ -198,7 +198,7 @@
 						</control>
 						<control type="textbox">
 							<top>38</top>
-							<width>1380</width>
+							<width>1550</width>
 							<height>179</height>
 							<font>font13</font>
 							<label>$INFO[ListItem.Plot]</label>
