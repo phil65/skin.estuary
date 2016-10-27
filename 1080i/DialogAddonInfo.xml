@@ -24,8 +24,8 @@
 				<left>670</left>
 				<top>435</top>
 				<width>1050</width>
-				<height>300</height>
-				<font>font_textbox</font>
+				<height>293</height>
+				<font>font13</font>
 				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR][/COLOR]$VAR[AddonNewsVar,[CR][CR]]</label>
 				<textcolor>button_focus</textcolor>
 				<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
@@ -207,7 +207,7 @@
 				<top>515</top>
 				<width>446</width>
 				<height>80</height>
-				<font>font_textbox</font>
+				<font>font13</font>
 				<label fallback="31008">$INFO[ListItem.AddonDisclaimer,$LOCALIZE[24052]: ]</label>
 				<textcolor>button_focus</textcolor>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
