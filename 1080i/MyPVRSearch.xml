@@ -22,7 +22,7 @@
 				<control type="fixedlist" id="50">
 					<left>0</left>
 					<top>0</top>
-					<width>1000</width>
+					<width>1004</width>
 					<height>1080</height>
 					<onup>50</onup>
 					<ondown>50</ondown>
@@ -36,7 +36,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1000</width>
+							<width>1004</width>
 							<height>101</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
@@ -64,7 +64,7 @@
 							<control type="label">
 								<left>120</left>
 								<top>10</top>
-								<width>890</width>
+								<width>860</width>
 								<height>100</height>
 								<aligny>top</aligny>
 								<label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
@@ -91,7 +91,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1000</width>
+							<width>1004</width>
 							<height>101</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 							<visible>!Control.HasFocus(50)</visible>
@@ -99,7 +99,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1000</width>
+							<width>1004</width>
 							<height>101</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
@@ -128,7 +128,7 @@
 							<control type="label">
 								<left>120</left>
 								<top>10</top>
-								<width>890</width>
+								<width>860</width>
 								<height>100</height>
 								<aligny>top</aligny>
 								<label>$INFO[ListItem.ChannelName]$INFO[ListItem.Label, - ]</label>
@@ -153,13 +153,14 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="77">
-					<left>1010</left>
+					<left>1005</left>
 					<top>0</top>
 					<width>12</width>
 					<height>1080</height>
 					<onleft>50</onleft>
-					<onright>104</onright>
+					<onright>50</onright>
 					<orientation>vertical</orientation>
+					<animation effect="zoom" start="100,100" end="50,100" center="1005,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(77)">conditional</animation>
 				</control>
 			</control>
 			<control type="group">
