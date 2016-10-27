@@ -79,7 +79,7 @@
 					<top>468</top>
 					<control type="button" id="138">
 						<width>754</width>
-						<height>410</height>
+						<height>418</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
@@ -97,14 +97,14 @@
 					<control type="image">
 						<left>735</left>
 						<width>512</width>
-						<height>410</height>
+						<height>418</height>
 						<aligny>bottom</aligny>
 						<texture border="40">dialogs/dialog-bg.png</texture>
 						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="button" id="139">
 						<width>1245</width>
-						<height>410</height>
+						<height>418</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
@@ -123,7 +123,7 @@
 						<left>40</left>
 						<top>25</top>
 						<width>670</width>
-						<height>343</height>
+						<height>363</height>
 						<font>font13</font>
 						<label fallback="19055">$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -133,7 +133,7 @@
 						<left>40</left>
 						<top>25</top>
 						<width>1165</width>
-						<height>343</height>
+						<height>363</height>
 						<font>font13</font>
 						<label fallback="19055">$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
