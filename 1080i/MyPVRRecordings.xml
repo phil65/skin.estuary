@@ -59,7 +59,7 @@
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
 							<height>90</height>
-							<width>1050</width>
+							<width>980</width>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
 							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
@@ -73,7 +73,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<font>font13</font>
-							<label>$INFO[ListItem.Date]</label>
+							<label>$INFO[ListItem.Label2]</label>
 							<textcolor>white</textcolor>
 						</control>
 					</focusedlayout>
@@ -97,7 +97,7 @@
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
 							<height>90</height>
-							<width>1050</width>
+							<width>980</width>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 						</control>
@@ -110,7 +110,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<font>font13</font>
-							<label>$INFO[ListItem.Date]</label>
+							<label>$INFO[ListItem.Label2]</label>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
@@ -124,26 +124,27 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<orientation>vertical</orientation>
+					<animation effect="zoom" start="100,100" end="50,100" center="1050,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
 				</control>
 			</control>
 			<control type="group">
-				<left>1120</left>
+				<left>1100</left>
 				<top>180</top>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<control type="group">
 					<visible>!ListItem.IsFolder</visible>
 					<control type="group">
-						<left>150</left>
+						<left>170</left>
 						<top>40</top>
 						<control type="label">
 							<top>20</top>
 							<width>560</width>
 							<height>262</height>
 							<align>left</align>
-							<font>font13</font>
+							<font>font27</font>
 							<wrapmultiline>true</wrapmultiline>
-							<label>$INFO[ListItem.Date][CR]$INFO[ListItem.Duration]</label>
+							<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ][CR]$INFO[ListItem.Date,$LOCALIZE[552]: ]</label>
 						</control>
 						<control type="label">
 							<top>-30</top>
@@ -158,7 +159,7 @@
 						<left>-20</left>
 						<top>15</top>
 						<width>150</width>
-						<height>100</height>
+						<height>120</height>
 						<fadetime>200</fadetime>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
@@ -174,7 +175,7 @@
 					<control type="textbox">
 						<top>254</top>
 						<width>750</width>
-						<height>362</height>
+						<height>526</height>
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
 						<font>font13</font>
@@ -198,8 +199,8 @@
 						<include content="InfoList">
 							<param name="path" value="$INFO[ListItem.Path]/$INFO[ListItem.Label]" />
 							<param name="height" value="362" />
+							<param name="item_height" value="45" />
 							<param name="width" value="760" />
-							<param name="font" value="font13" />
 							<param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
 						</include>
 					</control>
@@ -228,17 +229,18 @@
 				<control type="label">
 					<description>Disk usage text</description>
 					<top>1020</top>
-					<width>600</width>
+					<width>550</width>
 					<height>20</height>
 					<label>$INFO[PVR.backenddiskspace]</label>
 					<shadowcolor>black</shadowcolor>
-					<font>font13</font>
+					<align>right</align>
+					<font>font30_title</font>
 					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
 				</control>
 				<control type="progress">
 					<description>Disk usage bar</description>
 					<left>570</left>
-					<top>1033</top>
+					<top>1037</top>
 					<width>200</width>
 					<height>12</height>
 					<info>PVR.backenddiskspaceprogr</info>
