@@ -122,7 +122,7 @@
 							<font>font13</font>
 							<textcolor>white</textcolor>
 							<aligny>top</aligny>
-							<label>$INFO[ListItem.Property(Event.Description)]</label>
+							<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
@@ -172,7 +172,7 @@
 							<font>font13</font>
 							<textcolor>white</textcolor>
 							<aligny>top</aligny>
-							<label>$INFO[ListItem.Property(Event.Description)]</label>
+							<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
