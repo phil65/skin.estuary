@@ -161,6 +161,7 @@
 				</control>
 				<control type="scrollbar" id="73">
 					<left>1050</left>
+					<animation effect="zoom" start="100,100" end="50,100" center="1050,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
 					<top>0</top>
 					<width>12</width>
 					<height>1080</height>
@@ -170,22 +171,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1080</left>
+				<left>1110</left>
 				<top>180</top>
 				<visible>!String.IsEmpty(ListItem.Date)</visible>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
-				<include content="PVRInfoPanel">
-					<param name="bottom_label1" value="$INFO[PVR.NextTimer]" />
-					<param name="bottom_label2" value="" />
-				</include>
-				<control type="label">
-					<top>760</top>
-					<width>500</width>
-					<height>262</height>
-					<font>font13</font>
-					<label>$INFO[PVR.NextTimer]</label>
-				</control>
+				<include>PVRInfoPanel</include>
 			</control>
 		</control>
 		<control type="group">
@@ -198,6 +189,21 @@
 		<include content="BottomBar">
 			<param name="info_visible" value="true" />
 		</include>
+		<control type="group">
+			<left>1100</left>
+			<include>OpenClose_Right</include>
+			<control type="label">
+				<description>Disk usage text</description>
+				<top>1020</top>
+				<width>800</width>
+				<height>20</height>
+				<label>$INFO[PVR.NextTimer]</label>
+				<shadowcolor>black</shadowcolor>
+				<align>right</align>
+				<wrapmultiline>true</wrapmultiline>
+				<font>font27</font>
+			</control>
+		</control>
 		<control type="label" id="29">
 			<font>-</font>
 			<include>HiddenObject</include>

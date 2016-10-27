@@ -331,10 +331,92 @@
 				<left>1050</left>
 				<top>182</top>
 				<include>OpenClose_Right</include>
-				<include content="PVRInfoPanel">
-					<param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[/COLOR] ]" />
-					<param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
-				</include>
+				<control type="group">
+					<left>140</left>
+					<top>20</top>
+					<control type="progress">
+						<top>60</top>
+						<width>360</width>
+						<height>12</height>
+						<colordiffuse>88FFFFFF</colordiffuse>
+						<visible>ListItem.HasEpg</visible>
+						<info>ListItem.Progress</info>
+					</control>
+					<control type="label">
+						<top>24</top>
+						<width>560</width>
+						<height>262</height>
+						<font>font13</font>
+						<visible>!String.IsEqual(ListItem.StartTime,ListItem.EndTime)</visible>
+						<label>$INFO[ListItem.StartTime]</label>
+					</control>
+					<control type="label">
+						<top>24</top>
+						<width>360</width>
+						<height>262</height>
+						<align>right</align>
+						<font>font13</font>
+						<visible>!String.IsEqual(ListItem.StartTime,ListItem.EndTime)</visible>
+						<label>$INFO[ListItem.EndTime]</label>
+					</control>
+					<control type="label">
+						<top>-30</top>
+						<width>430</width>
+						<height>262</height>
+						<textcolor>button_focus</textcolor>
+						<font>font36_title</font>
+						<label>$INFO[ListItem.ChannelName]</label>
+					</control>
+				</control>
+				<control type="image">
+					<left>-20</left>
+					<top>-5</top>
+					<width>150</width>
+					<height>100</height>
+					<aspectratio>keep</aspectratio>
+					<texture fallback="DefaultTVShows.png">$INFO[Listitem.Icon]</texture>
+					<fadetime>200</fadetime>
+				</control>
+				<control type="label">
+					<top>154</top>
+					<width>560</width>
+					<height>262</height>
+					<textcolor>button_focus</textcolor>
+					<font>font36_title</font>
+					<label>$INFO[ListItem.EpgEventTitle]</label>
+				</control>
+				<control type="label">
+					<top>210</top>
+					<width>560</width>
+					<height>262</height>
+					<font>font13</font>
+					<label>$INFO[ListItem.EpisodeName]</label>
+				</control>
+				<control type="textbox">
+					<top>760</top>
+					<width>800</width>
+					<height>262</height>
+					<font>font13</font>
+					<visible>!IsEmpty(ListItem.NextTitle)</visible>
+					<label>$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[CR][/COLOR]] $INFO[ListItem.NextStartTime]</label>
+				</control>
+				<control type="textbox">
+					<top>400</top>
+					<width>820</width>
+					<height>325</height>
+					<align>left</align>
+					<font>font13</font>
+					<label>$INFO[ListItem.Plot]</label>
+				</control>
+				<control type="textbox">
+					<top>330</top>
+					<width>560</width>
+					<height>362</height>
+					<align>center</align>
+					<font>font36_title</font>
+					<label>$LOCALIZE[19055]</label>
+					<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Genre)</visible>
+				</control>
 			</control>
 			<include>MediaMenuMouseOverlay</include>
 			<control type="group">
