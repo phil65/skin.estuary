@@ -144,6 +144,7 @@
 			<onleft>$PARAM[list_id]</onleft>
 			<onright>$PARAM[list_id]</onright>
 			<orientation>vertical</orientation>
+			<animation effect="zoom" end="50,100" time="300" tween="sine" center="732,0" easing="inout" condition="!Control.HasFocus($PARAM[list_id]600)">conditional</animation>
 		</control>
 	</include>
 	<include name="ListThumbInfoPanel">
