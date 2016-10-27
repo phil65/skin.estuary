@@ -11,7 +11,7 @@
 				<left>605</left>
 				<top>400</top>
 				<width>1235</width>
-				<height>375</height>
+				<height>435</height>
 				<label></label>
 				<onup>50</onup>
 				<ondown>9000</ondown>
@@ -24,7 +24,7 @@
 				<left>670</left>
 				<top>435</top>
 				<width>1050</width>
-				<height>293</height>
+				<height>365</height>
 				<font>font13</font>
 				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR][/COLOR]$VAR[AddonNewsVar,[CR][CR]]</label>
 				<textcolor>button_focus</textcolor>
@@ -120,7 +120,7 @@
 			</include>
 			<control type="grouplist" id="9000">
 				<left>90</left>
-				<top>820</top>
+				<top>850</top>
 				<width>1740</width>
 				<height>300</height>
 				<onleft>9000</onleft>
@@ -197,19 +197,19 @@
 			</control>
 			<control type="button">
 				<left>-3</left>
-				<top>490</top>
+				<top>495</top>
 				<width>511</width>
-				<height>128</height>
+				<height>180</height>
 				<label></label>
 			</control>
 			<control type="textbox">
-				<left>30</left>
-				<top>515</top>
+				<left>40</left>
+				<top>520</top>
 				<width>446</width>
-				<height>80</height>
+				<height>120</height>
 				<font>font13</font>
-				<label fallback="31008">$INFO[ListItem.AddonDisclaimer,$LOCALIZE[24052]: ]</label>
-				<textcolor>button_focus</textcolor>
+				<label fallback="31008">$INFO[ListItem.AddonDisclaimer,[COLOR button_focus]$LOCALIZE[24052]:[/COLOR] ]</label>
+				<textcolor>white</textcolor>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 			</control>
 			<control type="group">
