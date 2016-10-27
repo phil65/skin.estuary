@@ -627,6 +627,7 @@
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="pvr_submenu">false</param>
 		<param name="pvr_type">TV</param>
+		<param name="smaller_icon">false</param>
 		<param name="visible">true</param>
 		<definition>
 			<control type="group" id="$PARAM[list_id]0">
@@ -677,6 +678,16 @@
 								<height>180</height>
 								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
+								<visible>!$PARAM[smaller_icon]</visible>
+							</control>
+							<control type="image">
+								<top>42</top>
+								<left>62</left>
+								<width>220</width>
+								<height>120</height>
+								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+								<aspectratio>keep</aspectratio>
+								<visible>$PARAM[smaller_icon]</visible>
 							</control>
 							<control type="image">
 								<left>20</left>
@@ -728,6 +739,16 @@
 								<height>180</height>
 								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
+								<visible>!$PARAM[smaller_icon]</visible>
+							</control>
+							<control type="image">
+								<top>42</top>
+								<left>62</left>
+								<width>220</width>
+								<height>120</height>
+								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+								<aspectratio>keep</aspectratio>
+								<visible>$PARAM[smaller_icon]</visible>
 							</control>
 							<control type="image">
 								<left>20</left>

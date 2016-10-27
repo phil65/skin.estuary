@@ -109,6 +109,7 @@
 							<param name="onup_id" value="5400"/>
 							<param name="ondown_id" value="5600"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]"/>
+							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(movies)"/>
 						</include>
 						<include content="WidgetListMovies">
@@ -193,6 +194,7 @@
 							<param name="onup_id" value="6300"/>
 							<param name="ondown_id" value="6500"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]"/>
+							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
 						<include content="WidgetListCategories">
@@ -203,6 +205,7 @@
 							<param name="onup_id" value="6400"/>
 							<param name="ondown_id" value="20001"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]"/>
+							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
 						<include content="ImageWidgetHeader">
