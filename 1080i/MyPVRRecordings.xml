@@ -224,8 +224,9 @@
 			<include content="BottomBar">
 				<param name="info_visible" value="true" />
 			</include>
-				<control type="group">
-					<left>1100</left>
+			<control type="group">
+				<left>1100</left>
+				<include>OpenClose_Right</include>
 				<control type="label">
 					<description>Disk usage text</description>
 					<top>1020</top>
@@ -246,7 +247,7 @@
 					<info>PVR.backenddiskspaceprogr</info>
 					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
 				</control>
-				</control>
+			</control>
 		</control>
 	</controls>
 </window>
