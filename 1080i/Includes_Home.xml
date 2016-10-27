@@ -39,7 +39,7 @@
 	<include name="WidgetListMovies">
 		<control type="group">
 			<description>Poster Widget including header</description>
-			<height>710</height>
+			<height>675</height>
 			<left>0</left>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 			<control type="label">
@@ -72,18 +72,18 @@
 					<control type="group">
 						<posx>70</posx>
 						<control type="image">
-							<left>0</left>
+							<left>10</left>
 							<top>0</top>
-							<width>332</width>
-							<height>478</height>
+							<width>312</width>
+							<height>448</height>
 							<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="textbox">
-							<left>20</left>
+							<left>30</left>
 							<top>280</top>
-							<width>292</width>
+							<width>272</width>
 							<height>100</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>font25_title</font>
@@ -99,24 +99,24 @@
 						<depth>DepthContentPopout</depth>
 						<posx>70</posx>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="190,130" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="236,130" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="190,130" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="236,130" />
 						</animation>
 						<control type="image">
-							<left>0</left>
+							<left>10</left>
 							<top>0</top>
-							<width>332</width>
-							<height>478</height>
+							<width>312</width>
+							<height>448</height>
 							<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="textbox">
-							<left>20</left>
+							<left>30</left>
 							<top>280</top>
-							<width>292</width>
+							<width>272</width>
 							<height>100</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>font25_title</font>
@@ -128,15 +128,15 @@
 							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
-							<left>20</left>
+							<left>30</left>
 							<top>20</top>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							<visible>Control.HasFocus($PARAM[list_id])</visible>
 							<control type="image">
 								<left>0</left>
-								<top>381</top>
-								<width>292</width>
+								<top>351</top>
+								<width>272</width>
 								<height>57</height>
 								<texture>colors/black.png</texture>
 								<animation effect="fade" start="0" end="70" time="50">Focus</animation>
@@ -144,15 +144,15 @@
 							<control type="image">
 								<left>0</left>
 								<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
-								<width>292</width>
+								<width>272</width>
 								<height>35</height>
 								<texture>colors/black.png</texture>
 								<animation effect="fade" start="0" end="70" time="50">Focus</animation>
 							</control>
 							<control type="label">
 								<left>10</left>
-								<top>378</top>
-								<width>272</width>
+								<top>348</top>
+								<width>252</width>
 								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font12</font>
@@ -161,8 +161,8 @@
 							</control>
 							<control type="label">
 								<left>10</left>
-								<top>405</top>
-								<width>272</width>
+								<top>375</top>
+								<width>252</width>
 								<label>$PARAM[second_label]</label>
 								<font>font12</font>
 								<textcolor>button_focus</textcolor>
@@ -172,7 +172,7 @@
 							<control type="progress">
 								<left>20</left>
 								<top>13</top>
-								<width>252</width>
+								<width>232</width>
 								<height>13</height>
 								<info>ListItem.PercentPlayed</info>
 								<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
@@ -180,8 +180,8 @@
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
-								<width>292</width>
-								<height>442</height>
+								<width>272</width>
+								<height>412</height>
 								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
