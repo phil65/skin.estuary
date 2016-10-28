@@ -41,13 +41,6 @@
 		<control type="group">
 			<top>-30</top>
 			<include>Animation_BottomSlide</include>
-			<control type="image">
-				<top>920</top>
-				<left>0</left>
-				<width>110%</width>
-				<height>200</height>
-				<texture flipy="true">frame/InfoBar.png</texture>
-			</control>
 			<control type="group">
 				<top>-46</top>
 				<visible>!Window.IsActive(musicosd)</visible>
@@ -63,71 +56,6 @@
 					<textcolor>button_focus</textcolor>
 					<font>font12</font>
 					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
-				</control>
-				<control type="image">
-					<left>91</left>
-					<top>1030</top>
-					<width>120</width>
-					<height>99</height>
-					<texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>!Player.ChannelPreviewActive</visible>
-				</control>
-				<control type="image">
-					<left>280</left>
-					<top>1022</top>
-					<width>256</width>
-					<height>65</height>
-					<texture>flags/starrating/$INFO[MusicPlayer.UserRating].png</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			<control type="label">
-				<left>30</left>
-				<top>1000</top>
-				<width>1858</width>
-				<height>75</height>
-				<align>center</align>
-				<aligny>bottom</aligny>
-				<animation effect="slide" end="0,30" time="150" condition="Window.IsActive(musicosd)">conditional</animation>
-				<animation delay="0" effect="slide" time="120" start="0,0" end="0,-20" tween="sine" easing="inout" condition="!String.IsEmpty(Control.GetLabel(40000))">Conditional</animation>
-				<label>$VAR[SeekTimeLabelVar]</label>
-				<font>font45</font>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label" id="40000">
-				<left>30</left>
-				<top>1018</top>
-				<width>1858</width>
-				<height>60</height>
-				<align>center</align>
-				<animation effect="slide" end="0,30" time="150" condition="Window.IsActive(musicosd)">conditional</animation>
-				<aligny>center</aligny>
-				<label>$VAR[SeekLabel]</label>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="group">
-				<animation effect="slide" end="0,80" time="150" condition="!Window.IsActive(musicosd)">conditional</animation>
-				<control type="progress">
-					<left>0</left>
-					<top>990</top>
-					<width>1920</width>
-					<height>15</height>
-					<info>Player.ProgressCache</info>
-					<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-					<visible>!Player.ChannelPreviewActive</visible>
-				</control>
-				<control type="progress" id="23">
-					<left>0</left>
-					<top>990</top>
-					<width>1920</width>
-					<height>15</height>
-					<info>Player.Progress</info>
-					<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
-					<visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
 				</control>
 			</control>
 		</control>

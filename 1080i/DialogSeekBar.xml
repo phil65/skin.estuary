@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(fullscreeninfo) | Window.IsActive(videoosd) | Window.IsActive(playerprocessinfo)</visible>
-	<visible>Window.IsActive(fullscreenvideo)</visible>
+	<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)</visible>
 	<include>Animation_BottomSlide</include>
 	<depth>DepthOSD</depth>
 	<zorder>0</zorder>
@@ -22,7 +22,28 @@
 				<texture flipy="true">frame/InfoBar.png</texture>
 			</control>
 			<control type="group">
-				<visible>!Window.IsVisible(videoosd)</visible>
+				<visible>!Window.IsActive(musicosd)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<control type="image">
+					<left>91</left>
+					<top>90</top>
+					<width>120</width>
+					<height>99</height>
+					<texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!Player.ChannelPreviewActive</visible>
+				</control>
+				<control type="image">
+					<left>280</left>
+					<top>82</top>
+					<width>256</width>
+					<height>65</height>
+					<texture>flags/starrating/$INFO[MusicPlayer.UserRating].png</texture>
+					<aspectratio>keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="label">
 					<top>110</top>
