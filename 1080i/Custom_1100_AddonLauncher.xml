@@ -300,11 +300,15 @@
 					<param name="container_target" value="addonbrowser" />
 				</include>
 			</control>
+			<include content="TopBar">
+				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
+			</include>
+			<include>BottomBar</include>
 			<control type="scrollbar" id="531">
 				<right>0</right>
-				<top>80</top>
-				<width>13</width>
-				<height>919</height>
+				<top>0</top>
+				<width>12</width>
+				<height>1080</height>
 				<orientation>vertical</orientation>
 				<texturesliderbackground></texturesliderbackground>
 				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
@@ -316,10 +320,6 @@
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			</control>
-			<include content="TopBar">
-				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
-			</include>
-			<include>BottomBar</include>
 			<include content="InfoList">
 				<param name="path" value="addons://outdated/" />
 				<param name="height" value="1" />
