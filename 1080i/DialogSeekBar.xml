@@ -73,7 +73,6 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="progress">
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>0</left>
 				<top>70</top>
 				<width>1920</width>
@@ -83,7 +82,6 @@
 				<midtexture>colors/white50.png</midtexture>
 			</control>
 			<control type="progress">
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>0</left>
 				<top>70</top>
 				<width>1920</width>
