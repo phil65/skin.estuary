@@ -177,7 +177,6 @@
 			<width>110%</width>
 			<height>150</height>
 			<texture>frame/InfoBar.png</texture>
-			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 		</control>
 		<control type="label">
 			<font>font_clock</font>
@@ -185,7 +184,6 @@
 			<height>200</height>
 			<width>1900</width>
 			<align>right</align>
-			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 			<label>$INFO[System.Time]</label>
 		</control>
 	</controls>
