@@ -353,13 +353,14 @@
 			<width>180</width>
 			<visible>$PARAM[visible]</visible>
 			<control type="image">
+				<top>-3</top>
 				<left>0</left>
-				<width>32</width>
-				<height>32</height>
+				<width>40</width>
+				<height>40</height>
 				<texture colordiffuse="grey">$PARAM[icon]</texture>
 			</control>
 			<control type="label">
-				<left>40</left>
+				<left>50</left>
 				<width>180</width>
 				<height>32</height>
 				<aligny>center</aligny>
