@@ -130,6 +130,7 @@
 	</include>
 	<include name="BottomMainMenuItem">
 		<param name="height">110</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="radiobutton" id="$PARAM[control_id]">
 				<width>118</width>
@@ -149,6 +150,7 @@
 				<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
 				<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
 				<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
+				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
 	</include>
