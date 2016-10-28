@@ -7,127 +7,115 @@
 		<include>DefaultBackground</include>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
+			<control type="group">
 			<include>OpenClose_Left</include>
-			<control type="grouplist" id="700">
-				<orientation>vertical</orientation>
-				<itemgap>-9</itemgap>
-				<left>100</left>
-				<top>165</top>
-				<onup>700</onup>
-				<ondown>700</ondown>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<include content="PlaylistWindowButton">
-					<param name="control_id" value="20" />
-					<param name="label" value="$LOCALIZE[191]$INFO[Playlist.Random, : ]" />
-					<param name="width" value="400" />
-				</include>
-				<include content="PlaylistWindowButton">
-					<param name="control_id" value="26" />
-					<param name="label" value="" />
-					<param name="width" value="400" />
-				</include>
-				<include content="PlaylistWindowButton">
-					<param name="control_id" value="21" />
-					<param name="label" value="$LOCALIZE[190]" />
-					<param name="width" value="400" />
-				</include>
-				<include content="PlaylistWindowButton">
-					<param name="control_id" value="22" />
-					<param name="label" value="$LOCALIZE[192]" />
-					<param name="width" value="400" />
-				</include>
-			</control>
-			<control type="group">
-				<include>OpenClose_Left</include>
 				<control type="image">
-					<left>100</left>
-					<top>550</top>
-					<width>400</width>
-					<height>358</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
+					<left>0</left>
+					<top>0</top>
+					<width>450</width>
+					<height>1080</height>
+					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
 				</control>
-			</control>
-			<control type="group">
-				<include>OpenClose_Right</include>
-				<left>510</left>
-				<top>182</top>
-				<control type="image">
-					<description>background image</description>
-					<left>-20</left>
-					<top>-20</top>
-					<width>843</width>
-					<height>746</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
+				<control type="grouplist" id="700">
+					<orientation>vertical</orientation>
+					<itemgap>-9</itemgap>
+					<left>0</left>
+					<top>165</top>
+					<onup>700</onup>
+					<ondown>700</ondown>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<include content="PlaylistWindowButton">
+						<param name="control_id" value="20" />
+						<param name="label" value="$LOCALIZE[191]$INFO[Playlist.Random, : ]" />
+						<param name="width" value="400" />
+					</include>
+					<include content="PlaylistWindowButton">
+						<param name="control_id" value="26" />
+						<param name="label" value="" />
+						<param name="width" value="400" />
+					</include>
+					<include content="PlaylistWindowButton">
+						<param name="control_id" value="21" />
+						<param name="label" value="$LOCALIZE[190]" />
+						<param name="width" value="400" />
+					</include>
+					<include content="PlaylistWindowButton">
+						<param name="control_id" value="22" />
+						<param name="label" value="$LOCALIZE[192]" />
+						<param name="width" value="400" />
+					</include>
 				</control>
-				<control type="panel" id="50">
-					<left>2</left>
+				<control type="fixedlist" id="50">
+					<left>402</left>
 					<top>3</top>
-					<width>800</width>
-					<height>700</height>
+					<width>924</width>
+					<height>1080</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>vertical</orientation>
 					<onleft>700</onleft>
 					<onright>60</onright>
+					<movement>3</movement>
+					<focusposition>4</focusposition>
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<pagecontrol>60</pagecontrol>
 					<viewtype label="List">list</viewtype>
 					<preloaditems>1</preloaditems>
-					<focusedlayout height="63" width="800">
+					<focusedlayout height="80" width="924">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>800</width>
-							<height>63</height>
+							<width>924</width>
+							<height>80</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 						</control>
 						<control type="label">
-							<left>30</left>
+							<textoffsetx>30</textoffsetx>
 							<top>0</top>
-							<height>63</height>
-							<width>680</width>
+							<height>80</height>
+							<width>924</width>
 							<aligny>center</aligny>
 							<font>font12</font>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
-							<left>90</left>
+							<textoffsetx>30</textoffsetx>
 							<top>0</top>
-							<height>63</height>
-							<width>680</width>
+							<height>80</height>
+							<width>924</width>
 							<align>right</align>
 							<aligny>center</aligny>
 							<font>font12</font>
 							<label>$VAR[PlaylistLabel2Var]</label>
-							<textcolor>grey</textcolor>
+							<textcolor>white</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="63" width="800">
+					<itemlayout height="80" width="924">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>800</width>
-							<height>63</height>
+							<width>924</width>
+							<height>80</height>
 							<texture border="90,3,90,3">lists/separator.png</texture>
 						</control>
 						<control type="label">
-							<left>30</left>
+							<textoffsetx>30</textoffsetx>
 							<top>0</top>
-							<height>63</height>
-							<width>680</width>
+							<height>80</height>
+							<width>924</width>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$INFO[ListItem.TVShowtitle,,: ]$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
-							<left>90</left>
+							<textoffsetx>30</textoffsetx>
 							<top>0</top>
-							<height>63</height>
-							<width>680</width>
+							<height>80</height>
+							<width>924</width>
 							<align>right</align>
 							<aligny>center</aligny>
 							<font>font12</font>
@@ -137,39 +125,23 @@
 						</control>
 					</itemlayout>
 				</control>
+			</control>
+			<control type="group">
+				<left>1340</left>
+				<include>OpenClose_Right</include>
+				<include content="ListThumbInfoPanel">
+					<param name="flip_bg" value="true" />
+				</include>
 				<control type="scrollbar" id="60">
-					<left>810</left>
+					<left>-13</left>
 					<top>0</top>
 					<width>12</width>
-					<height>704</height>
+					<height>1080</height>
 					<onleft>50</onleft>
 					<onright>700</onright>
+					<animation effect="zoom" end="50,100" time="300" tween="sine" center="-13,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 					<orientation>vertical</orientation>
 				</control>
-			</control>
-			<control type="image">
-				<include>OpenClose_Right</include>
-				<visible>Window.IsActive(videoplaylist)</visible>
-				<top>163</top>
-				<left>1324</left>
-				<width>506</width>
-				<height>742</height>
-				<fadetime>200</fadetime>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-			</control>
-			<control type="group">
-				<left>1230</left>
-				<visible>Window.IsActive(musicplaylist)</visible>
-				<include>OpenClose_Right</include>
-				<include>ListThumbInfoPanel</include>
-			</control>
-			<control type="group">
-				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<include>MediaFlags</include>
 			</control>
 		</control>
 		<include content="TopBar" condition="Window.IsActive(videoplaylist)">
@@ -179,5 +151,10 @@
 			<param name="breadcrumbs_label" value="$LOCALIZE[31066]" />
 		</include>
 		<include>BottomBar</include>
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<include>MediaFlags</include>
+		</control>
 	</controls>
 </window>
