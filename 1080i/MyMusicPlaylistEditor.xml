@@ -9,7 +9,7 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>450</width>
+				<width>338</width>
 				<height>1080</height>
 				<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
 			</control>
@@ -25,54 +25,43 @@
 					<include content="DefaultSettingButton">
 						<param name="height" value="120" />
 					</include>
-					<width>400</width>
+					<width>300</width>
 					<label>$LOCALIZE[502]</label>
 				</control>
 				<control type="button" id="7">
 					<include content="DefaultSettingButton">
 						<param name="height" value="120" />
 					</include>
-					<width>400</width>
+					<width>300</width>
 					<label>$LOCALIZE[190]</label>
 				</control>
 				<control type="button" id="8">
 					<include content="DefaultSettingButton">
 						<param name="height" value="120" />
 					</include>
-					<width>400</width>
+					<width>300</width>
 					<label>$LOCALIZE[192]</label>
 				</control>
 			</control>
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<left>402</left>
+			<left>302</left>
 			<include content="FileManagerPanel">
 				<param name="header_id" value="22" />
 				<param name="header_label" value="$LOCALIZE[20094]" />
 				<param name="list_id" value="50" />
 				<param name="scrollbar_id" value="60" />
 				<param name="onleft_id" value="9000" />
-				<param name="onright_id" value="100" />
-				<param name="width" value="740" />
-				<param name="bg_width" value="780" />
+				<param name="onright_id" value="60" />
+				<param name="width" value="770" />
 			</include>
-			<control type="scrollbar" id="60">
-				<left>796</left>
-				<animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
-				<top>0</top>
-				<width>12</width>
-				<height>1080</height>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<orientation>vertical</orientation>
-			</control>
 		</control>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<left>1180</left>
+			<left>1075</left>
 			<control type="image">
-				<left>-110</left>
+				<left>-123</left>
 				<top>0</top>
 				<width>1100</width>
 				<height>1080</height>
@@ -84,10 +73,32 @@
 				<param name="list_id" value="100" />
 				<param name="scrollbar_id" value="61" />
 				<param name="onleft_id" value="60" />
-				<param name="onright_id" value="9000" />
-				<param name="width" value="740" />
-				<param name="bg_width" value="780" />
+				<param name="onright_id" value="61" />
+				<param name="width" value="850" />
 			</include>
+			<control type="scrollbar" id="60">
+				<left>0</left>
+				<top>0</top>
+				<width>12</width>
+				<height>1080</height>
+				<onleft>50</onleft>
+				<onright>100</onright>
+<animation effect="zoom" end="50,100" time="300" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+
+				<orientation>vertical</orientation>
+			</control>
+			<control type="scrollbar" id="61">
+				<left>834</left>
+				<top>0</top>
+				<width>12</width>
+				<height>1080</height>
+				<onleft>100</onleft>
+				<onright>9000</onright>
+				<animation effect="zoom" end="50,100" time="300" tween="sine" center="848,0" easing="inout" condition="!Control.HasFocus(61)">conditional</animation>
+
+				<orientation>vertical</orientation>
+			</control>
+
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[10503][COLOR=button_focus][/COLOR]" />

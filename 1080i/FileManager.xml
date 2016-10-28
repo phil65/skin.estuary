@@ -23,6 +23,15 @@
 				<height>1080</height>
 				<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
 			</control>
+			<include content="FileManagerPanel">
+				<param name="header_label" value="" />
+				<param name="list_id" value="20" />
+				<param name="scrollbar_id" value="60" />
+				<param name="onleft_id" value="60" />
+				<param name="onright_id" value="21" />
+				<param name="width" value="812" />
+				<param name="header_haspath" value="true" />
+			</include>
 			<control type="scrollbar" id="60">
 				<top>0</top>
 				<left>0</left>
@@ -31,40 +40,19 @@
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<orientation>vertical</orientation>
-			</control>
-			<control type="group">
-				<left>12</left>
-				<include content="FileManagerPanel">
-					<param name="header_label" value="" />
-					<param name="list_id" value="20" />
-					<param name="scrollbar_id" value="60" />
-					<param name="onleft_id" value="60" />
-					<param name="onright_id" value="21" />
-					<param name="width" value="800" />
-					<param name="bg_width" value="840" />
-					<param name="header_haspath" value="true" />
-				</include>
+				<animation effect="zoom" end="50,100" time="300" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+				<texturesliderbackground></texturesliderbackground>
 			</control>
 		</control>
 		<control type="group">
 			<left>1102</left>
 			<include>OpenClose_Right</include>
 			<control type="image">
-				<left>-100</left>
+				<left>-103</left>
 				<top>0</top>
-				<width>900</width>
+				<width>920</width>
 				<height>1080</height>
 				<texture colordiffuse="99FFFFFF" flipx="true">lists/panel.png</texture>
-			</control>
-			<control type="scrollbar" id="61">
-				<left>796</left>
-				<animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
-				<top>0</top>
-				<width>12</width>
-				<height>1080</height>
-				<onleft>21</onleft>
-				<onright>21</onright>
-				<orientation>vertical</orientation>
 			</control>
 			<include content="FileManagerPanel">
 				<param name="header_id" value="102" />
@@ -73,10 +61,21 @@
 				<param name="scrollbar_id" value="61" />
 				<param name="onleft_id" value="20" />
 				<param name="onright_id" value="61" />
-				<param name="width" value="800" />
-				<param name="bg_width" value="840" />
+				<param name="width" value="817" />
 				<param name="header_haspath" value="true" />
 			</include>
+			<control type="scrollbar" id="61">
+				<left>800</left>
+				<animation effect="slide" end="5,0" time="0" condition="true">Conditional</animation>
+				<top>0</top>
+				<width>12</width>
+				<height>1080</height>
+				<onleft>21</onleft>
+				<onright>21</onright>
+				<animation effect="zoom" end="50,100" time="300" tween="sine" center="812,0" easing="inout" condition="!Control.HasFocus(61)">conditional</animation>
+				<texturesliderbackground></texturesliderbackground>
+				<orientation>vertical</orientation>
+			</control>
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[7]" />
@@ -85,7 +84,7 @@
 		<control type="group">
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-		<control type="label">
+			<control type="label">
 				<top>1015</top>
 				<right>730</right>
 				<width>400</width>
