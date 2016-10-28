@@ -234,6 +234,10 @@
 		<value condition="ListItem.IsCollection"></value>
 		<value>[COLOR grey]$INFO[ListItem.Year, (,)][/COLOR]</value>
 	</variable>
+	<variable name="NowPlayingBreadcrumbsVar">
+		<value condition="MusicPartyMode.Enabled">$LOCALIZE[589]</value>
+		<value>$LOCALIZE[31000]</value>
+	</variable>
 	<variable name="VideoInfoMainLabelVar">
 		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
 		<value>$INFO[ListItem.Label]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>

@@ -106,6 +106,18 @@
 			<height>150</height>
 			<texture>frame/InfoBar.png</texture>
 		</control>
+		<control type="group">
+			<control type="label">
+				<label>$VAR[NowPlayingBreadcrumbsVar]</label>
+				<left>30</left>
+				<font>font45</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<top>7</top>
+				<height>100</height>
+				<width>900</width>
+				<align>left</align>
+			</control>
+		</control>
 		<control type="label">
 			<font>font_clock</font>
 			<shadowcolor>text_shadow</shadowcolor>

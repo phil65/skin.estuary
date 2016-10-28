@@ -12,7 +12,7 @@
 			<texturenofocus></texturenofocus>
 			<onclick>Action(close)</onclick>
 		</control>
-		<control type="group">
+		<control type="group" id="200">
 			<top>960</top>
 			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(playerprocessinfo)</visible>
 			<include>Animation_BottomSlide</include>
@@ -25,7 +25,7 @@
 				<effect type="slide" start="0,0" end="0,200" time="300" tween="cubic" easing="out" />
 			</animation>
 			<control type="grouplist" id="201">
-				<left>50</left>
+				<left>0</left>
 				<top>10</top>
 				<width>100%</width>
 				<height>135</height>
@@ -76,7 +76,7 @@
 			<control type="grouplist" id="202">
 				<left>50</left>
 				<top>10</top>
-				<width>1820</width>
+				<width>1850</width>
 				<height>135</height>
 				<align>right</align>
 				<itemgap>-20</itemgap>
@@ -107,8 +107,8 @@
 						<texturenofocus></texturenofocus>
 						<onleft>620</onleft>
 						<onright>607</onright>
-						<onup>1000</onup>
-						<ondown>1000</ondown>
+						<onup>87</onup>
+						<ondown>noop</ondown>
 						<onclick>PlayerControl(Repeat)</onclick>
 					</control>
 					<control type="image">
@@ -161,7 +161,7 @@
 			</control>
 			<control type="label">
 				<right>30</right>
-				<top>-90</top>
+				<top>-60</top>
 				<textoffsetx>20</textoffsetx>
 				<aligny>center</aligny>
 				<align>right</align>
@@ -179,7 +179,7 @@
 				<onup condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</onup>
 				<onup>201</onup>
 				<ondown condition="Player.Forwarding | Player.Rewinding">PlayerControl(Play)</ondown>
-				<ondown>201</ondown>
+				<ondown>200</ondown>
 				<onright condition="!Player.Forwarding32x">PlayerControl(Forward)</onright>
 				<onleft condition="!Player.Rewinding32x">PlayerControl(Rewind)</onleft>
 				<visible>Player.SeekEnabled</visible>

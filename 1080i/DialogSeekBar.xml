@@ -25,7 +25,7 @@
 				<visible>!Window.IsActive(musicosd)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="image">
-					<left>91</left>
+					<left>30</left>
 					<top>90</top>
 					<width>120</width>
 					<height>99</height>
@@ -34,8 +34,8 @@
 					<visible>!Player.ChannelPreviewActive</visible>
 				</control>
 				<control type="image">
-					<left>280</left>
-					<top>82</top>
+					<left>200</left>
+					<top>110</top>
 					<width>256</width>
 					<height>65</height>
 					<texture>flags/starrating/$INFO[MusicPlayer.UserRating].png</texture>
