@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1109">
-	<visible>Window.IsActive(fullscreenvideo)</visible>
+	<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)</visible>
 	<visible>Window.IsActive(seekbar) | [Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV)] | Window.IsActive(pvrosdchannels)</visible>
 	<depth>DepthOSD</depth>
 	<include>Animation_TopSlide</include>
-	<include>Animation_BottomSlide</include>
 	<zorder>0</zorder>
 	<controls>
 		<control type="group">
@@ -21,7 +20,7 @@
 				<visible>!Window.IsActive(pvrosdchannels)</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
 				<control type="label">
-					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, ([COLOR button_focus],[/COLOR])]</label>
+					<label>$VAR[NowPlayingBreadcrumbsVar]</label>
 					<left>30</left>
 					<font>font45</font>
 					<shadowcolor>text_shadow</shadowcolor>
