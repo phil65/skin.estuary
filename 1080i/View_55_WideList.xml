@@ -75,7 +75,7 @@
 					</control>
 					<control type="image">
 						<left>26</left>
-						<top>20</top>
+						<top>25</top>
 						<width>32</width>
 						<height>32</height>
 						<visible>String.IsEmpty(ListItem.Year)</visible>
@@ -84,7 +84,7 @@
 					</control>
 					<control type="image">
 						<left>26</left>
-						<top>20</top>
+						<top>25</top>
 						<width>32</width>
 						<visible>String.IsEmpty(ListItem.Year)</visible>
 						<height>32</height>
@@ -138,7 +138,7 @@
 					</control>
 					<control type="image">
 						<left>26</left>
-						<top>20</top>
+						<top>25</top>
 						<visible>String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.AddonVersion)</visible>
 						<width>32</width>
 						<height>32</height>
