@@ -11,17 +11,10 @@
 				<include>OpenClose_Left</include>
 				<left>0</left>
 				<top>0</top>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>1180</width>
-					<height>1080</height>
-					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
-				</control>
 				<control type="fixedlist" id="50">
 					<left>0</left>
 					<top>0</top>
-					<width>1050</width>
+					<width>1060</width>
 					<height>1080</height>
 					<onup>50</onup>
 					<ondown>50</ondown>
@@ -35,7 +28,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1700</width>
+							<width>1060</width>
 							<height>101</height>
 							<texture border="5">lists/separator.png</texture>
 						</control>
@@ -94,7 +87,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1700</width>
+							<width>1060</width>
 							<height>101</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
@@ -102,7 +95,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1700</width>
+							<width>1060</width>
 							<height>101</height>
 							<texture border="5">lists/separator.png</texture>
 							<visible>!Control.HasFocus(50)</visible>
@@ -159,22 +152,27 @@
 						</control>
 					</focusedlayout>
 				</control>
-				<control type="scrollbar" id="73">
-					<left>1050</left>
-					<animation effect="zoom" start="100,100" end="50,100" center="1050,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
-					<top>0</top>
-					<width>12</width>
-					<height>1080</height>
-					<onleft>50</onleft>
-					<onright>103</onright>
-					<orientation>vertical</orientation>
-				</control>
 			</control>
 			<control type="group">
 				<left>1110</left>
 				<top>180</top>
-				<visible>!String.IsEmpty(ListItem.Date)</visible>
-				<include>Visible_Right</include>
+				<control type="image">
+					<left>-182</left>
+					<top>-180</top>
+					<width>1180</width>
+					<height>1080</height>
+					<texture colordiffuse="AAFFFFFF" flipx="true">lists/panel.png</texture>
+				</control>
+				<control type="scrollbar" id="73">
+					<left>-50</left>
+					<top>-180</top>
+					<width>12</width>
+					<height>1080</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<orientation>vertical</orientation>
+					<animation effect="zoom" start="100,100" end="50,100" center="-50,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
+				</control>
 				<include>OpenClose_Right</include>
 				<include>PVRInfoPanel</include>
 			</control>

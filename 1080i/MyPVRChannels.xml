@@ -11,13 +11,6 @@
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<include>Visible_Left</include>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>1130</width>
-					<height>1080</height>
-					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
-				</control>
 				<control type="fixedlist" id="50">
 					<left>2</left>
 					<top>0</top>
@@ -317,21 +310,29 @@
 						</control>
 					</itemlayout>
 				</control>
-				<control type="scrollbar" id="60">
-					<left>1005</left>
-					<top>0</top>
-					<width>12</width>
-					<height>1080</height>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<orientation>vertical</orientation>
-					<animation effect="zoom" start="100,100" end="50,100" center="1005,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
-				</control>
 			</control>
 			<control type="group">
 				<left>1050</left>
 				<top>182</top>
 				<include>OpenClose_Right</include>
+				<control type="image">
+					<left>-172</left>
+					<top>-182</top>
+					<width>1130</width>
+					<height>1080</height>
+					<texture colordiffuse="AAFFFFFF" flipx="true">lists/panel.png</texture>
+				</control>
+				<control type="scrollbar" id="60">
+					<left>-46</left>
+					<top>-182</top>
+					<width>12</width>
+					<height>1080</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<orientation>vertical</orientation>
+					<animation effect="zoom" start="100,100" end="50,100" center="-46,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+				</control>
+
 				<control type="group">
 					<left>0</left>
 					<top>20</top>

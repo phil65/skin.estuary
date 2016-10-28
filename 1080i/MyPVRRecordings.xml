@@ -10,13 +10,6 @@
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
 				<include>OpenClose_Left</include>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>1180</width>
-					<height>1080</height>
-					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
-				</control>
 				<control type="fixedlist" id="50">
 					<left>2</left>
 					<top>3</top>
@@ -30,19 +23,19 @@
 					<focusposition>6</focusposition>
 					<pagecontrol>73</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<focusedlayout height="90">
+					<focusedlayout height="80">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1050</width>
-							<height>90</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
+							<height>80</height>
+							<texture border="80,3,80,3">lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1050</width>
-							<height>90</height>
+							<height>80</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
 						</control>
@@ -58,7 +51,7 @@
 							<left>60</left>
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
-							<height>90</height>
+							<height>80</height>
 							<width>980</width>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
@@ -68,7 +61,7 @@
 							<left>0</left>
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
-							<height>90</height>
+							<height>80</height>
 							<width>1050</width>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -77,13 +70,13 @@
 							<textcolor>white</textcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="90">
+					<itemlayout height="80">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>1050</width>
-							<height>90</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
+							<height>80</height>
+							<texture border="80,3,80,3">lists/separator.png</texture>
 						</control>
 						<control type="image">
 							<left>21</left>
@@ -96,7 +89,7 @@
 							<left>60</left>
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
-							<height>90</height>
+							<height>80</height>
 							<width>980</width>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
@@ -105,7 +98,7 @@
 							<left>0</left>
 							<textoffsetx>15</textoffsetx>
 							<top>0</top>
-							<height>90</height>
+							<height>80</height>
 							<width>1050</width>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -116,21 +109,27 @@
 						</control>
 					</itemlayout>
 				</control>
+			</control>
+			<control type="group">
+				<left>1100</left>
+				<top>180</top>
+				<control type="image">
+					<left>-182</left>
+					<top>-180</top>
+					<width>1180</width>
+					<height>1080</height>
+					<texture colordiffuse="AAFFFFFF" flipx="true">lists/panel.png</texture>
+				</control>
 				<control type="scrollbar" id="73">
-					<left>1050</left>
-					<top>0</top>
+					<left>-50</left>
+					<top>-180</top>
 					<width>12</width>
 					<height>1080</height>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<orientation>vertical</orientation>
-					<animation effect="zoom" start="100,100" end="50,100" center="1050,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
+					<animation effect="zoom" start="100,100" end="50,100" center="-50,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
 				</control>
-			</control>
-			<control type="group">
-				<left>1100</left>
-				<top>180</top>
-				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<control type="group">
 					<visible>!ListItem.IsFolder</visible>
