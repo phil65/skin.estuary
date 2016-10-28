@@ -67,7 +67,7 @@
 				<height>1080</height>
 				<texture colordiffuse="AAFFFFFF" flipx="true">lists/panel.png</texture>
 			</control>
-			 <include content="FileManagerPanel">
+			<include content="FileManagerPanel">
 				<param name="header_id" value="23" />
 				<param name="header_label" value="$LOCALIZE[13350]" />
 				<param name="list_id" value="100" />
@@ -83,8 +83,7 @@
 				<height>1080</height>
 				<onleft>50</onleft>
 				<onright>100</onright>
-<animation effect="zoom" end="50,100" time="300" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
-
+				<animation effect="zoom" end="50,100" time="300" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 				<orientation>vertical</orientation>
 			</control>
 			<control type="scrollbar" id="61">
@@ -95,10 +94,8 @@
 				<onleft>100</onleft>
 				<onright>9000</onright>
 				<animation effect="zoom" end="50,100" time="300" tween="sine" center="848,0" easing="inout" condition="!Control.HasFocus(61)">conditional</animation>
-
 				<orientation>vertical</orientation>
 			</control>
-
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[10503][COLOR=button_focus][/COLOR]" />
