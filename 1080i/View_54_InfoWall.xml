@@ -41,6 +41,7 @@
 	</include>
 	<include name="InfoWallMusicLayout">
 		<param name="fallback_image">DefaultFolder.png</param>
+		<param name="label">$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</param>
 		<definition>
 			<control type="image">
 				<top>-10</top>
@@ -73,7 +74,7 @@
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</label>
+				<label>$PARAM[label]</label>
 			</control>
 			<control type="group">
 				<left>230</left>
