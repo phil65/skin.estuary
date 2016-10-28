@@ -70,7 +70,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/next.png"/>
 					</include>
 					<onclick>PlayerControl(Next)</onclick>
-					<visible>Integer.IsGreater(Playlist.Length(music),1)</visible>
+					<visible>MusicPlayer.HasNext</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="202">
