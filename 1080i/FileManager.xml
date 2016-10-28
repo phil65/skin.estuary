@@ -30,7 +30,6 @@
 				<param name="onleft_id" value="60" />
 				<param name="onright_id" value="21" />
 				<param name="width" value="812" />
-				<param name="header_haspath" value="true" />
 			</include>
 			<control type="scrollbar" id="60">
 				<top>0</top>
@@ -62,7 +61,6 @@
 				<param name="onleft_id" value="20" />
 				<param name="onright_id" value="61" />
 				<param name="width" value="817" />
-				<param name="header_haspath" value="true" />
 			</include>
 			<control type="scrollbar" id="61">
 				<left>800</left>
@@ -103,7 +101,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$PARAM[header_label]</label>
-				<haspath>$PARAM[header_haspath]</haspath>
+				<haspath>true</haspath>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
@@ -124,7 +122,7 @@
 				<font>font30_title</font>
 				<aligny>center</aligny>
 				<label>$PARAM[header_label]</label>
-				<haspath>$PARAM[header_haspath]</haspath>
+				<haspath>true</haspath>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>

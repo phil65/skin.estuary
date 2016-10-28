@@ -470,7 +470,6 @@
 		</control>
 	</include>
 	<include name="FileManagerPanel">
-		<param name="header_haspath">false</param>
 		<definition>
 			<control type="fixedlist" id="$PARAM[list_id]">
 				<left>0</left>
