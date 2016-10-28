@@ -27,7 +27,7 @@
 		</control>
 		<control type="image">
 			<left>33</left>
-			<top>172</top>
+			<top>200</top>
 			<include>OpenClose_Left</include>
 			<include>Visible_Left</include>
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
@@ -65,36 +65,36 @@
 			<include>OpenClose_Left</include>
 			<include>Visible_Left</include>
 			<control type="group">
-				<left>80</left>
-				<top>717</top>
+				<left>30</left>
+				<top>740</top>
 				<control type="label">
 					<top>0</top>
 					<width>1600</width>
 					<height>40</height>
 					<label>$INFO[MusicPlayer.Artist]</label>
-					<font>font45</font>
+					<font>font60</font>
 					<shadowcolor>black</shadowcolor>
-					<textcolor>button_focus</textcolor>
+					<textcolor>white</textcolor>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
-					<top>56</top>
+					<top>75</top>
 					<width>1600</width>
 					<height>40</height>
-					<label>[COLOR grey]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
+					<label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year,[COLOR button_focus] [,][/COLOR]]</label>
 					<font>font37</font>
 					<shadowcolor>black</shadowcolor>
-					<textcolor>button_focus</textcolor>
+					<textcolor>white</textcolor>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
-					<top>100</top>
+					<top>117</top>
 					<width>1600</width>
 					<height>40</height>
-					<label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[Player.Title][/COLOR]</label>
+					<label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=white]$INFO[Player.Title][/COLOR]</label>
 					<font>font45</font>
 					<shadowcolor>black</shadowcolor>
-					<textcolor>grey</textcolor>
+					<textcolor>button_focus</textcolor>
 					<scroll>true</scroll>
 				</control>
 			</control>

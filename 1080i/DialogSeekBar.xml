@@ -29,7 +29,7 @@
 					<top>90</top>
 					<width>120</width>
 					<height>99</height>
-					<texture colordiffuse="grey" fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+					<texture>$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>!Player.ChannelPreviewActive</visible>
 				</control>
