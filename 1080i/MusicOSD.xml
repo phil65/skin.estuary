@@ -13,11 +13,17 @@
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group">
-			<top>950</top>
+			<top>960</top>
 			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(playerprocessinfo)</visible>
-			<animation effect="fade" end="100" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">VisibleChange</animation>
-			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<include>Animation_BottomSlide</include>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="300"/>
+				<effect type="slide" start="0,200" end="0,0" time="300" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300"/>
+				<effect type="slide" start="0,0" end="0,200" time="300" tween="cubic" easing="out" />
+			</animation>
 			<control type="grouplist" id="201">
 				<left>50</left>
 				<top>10</top>
@@ -176,7 +182,7 @@
 			</control>
 			<control type="slider">
 				<left>0</left>
-				<top>-35</top>
+				<top>-5</top>
 				<width>1920</width>
 				<height>25</height>
 				<onup>8010</onup>
@@ -185,12 +191,13 @@
 				<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
 				<info>Player.Progress</info>
+				<visible>Player.SeekEnabled</visible>
 				<action>seek</action>
 				<visible>!Control.HasFocus(87)</visible>
 			</control>
 			<control type="slider">
 				<left>0</left>
-				<top>-35</top>
+				<top>-5</top>
 				<width>1920</width>
 				<height>25</height>
 				<onup>8010</onup>
@@ -199,6 +206,7 @@
 				<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
 				<info>Player.Progress</info>
+				<visible>Player.SeekEnabled</visible>
 				<action>seek</action>
 				<visible>Control.HasFocus(87)</visible>
 			</control>
