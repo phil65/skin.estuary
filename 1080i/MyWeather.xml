@@ -25,7 +25,7 @@
 				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 				<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia">Conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
-				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="FF707070">$VAR[GlobalFanartVar]</texture>
+				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="bg_image">$VAR[GlobalFanartVar]</texture>
 			</control>
 			<control type="multiimage">
 				<depth>DepthBackground</depth>

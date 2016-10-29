@@ -5,7 +5,7 @@
 	<onunload>ClearProperty(infobackground,home)</onunload>
 	<controls>
 		<control type="image">
-			<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="FF707070">$VAR[GlobalFanartVar]</texture>
+			<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="bg_image">$VAR[GlobalFanartVar]</texture>
 			<width>100%</width>
 			<height>100%</height>
 			<aspectratio align="center">scale</aspectratio>
