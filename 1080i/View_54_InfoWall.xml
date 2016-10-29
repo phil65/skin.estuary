@@ -86,33 +86,34 @@
 	<include name="InfoWallMovieLayout">
 		<param name="fallback_image">DefaultFolder.png</param>
 		<definition>
+			<control type="group">
+				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+				<control type="image">
+					<left>15</left>
+					<top>-10</top>
+					<width>290</width>
+					<height>400</height>
+					<texture border="21">dialogs/dialog-bg-small.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+				</control>
+				<control type="image">
+					<left>26</left>
+					<top>0</top>
+					<width>270</width>
+					<height>290</height>
+					<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="24">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>!ListItem.IsParentFolder</visible>
+				</control>
+			</control>
 			<control type="image">
 				<left>15</left>
 				<top>-10</top>
 				<width>290</width>
 				<height>400</height>
-				<texture border="21">dialogs/dialog-bg-small.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
-			</control>
-			<control type="image">
-				<left>26</left>
-				<top>0</top>
-				<width>270</width>
-				<height>290</height>
-				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
-				<aspectratio>keep</aspectratio>
-				<bordertexture border="24">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-				<visible>!ListItem.IsParentFolder</visible>
-				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
-			</control>
-			<control type="image">
-				<left>15</left>
-				<top>-10</top>
-				<width>290</width>
-				<height>400</height>
-				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Art(poster)]</texture>
 				<aspectratio>scale</aspectratio>
 				<bordertexture border="24">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -147,7 +148,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="View_54_InfoWall">
 		<control type="group">
 			<include>OpenClose_Right</include>
