@@ -25,7 +25,7 @@
 				<control type="epggrid" id="10">
 					<left>0</left>
 					<top>0</top>
-					<width>1908</width>
+					<width>1900</width>
 					<height>600</height>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
@@ -157,9 +157,9 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<right>0</right>
-					<top>45</top>
+					<top>47</top>
 					<width>12</width>
-					<height>465</height>
+					<height>550</height>
 					<onleft>10</onleft>
 					<onright>10</onright>
 					<orientation>vertical</orientation>
