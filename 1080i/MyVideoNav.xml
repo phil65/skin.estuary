@@ -36,46 +36,52 @@
 					<height>1080</height>
 					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
 				</control>
-				<control type="label">
+				<control type="grouplist" id="9000">
 					<left>30</left>
 					<top>144</top>
-					<width>550</width>
-					<height>338</height>
-					<font>font36_title</font>
-					<label>$INFO[ListItem.Label]</label>
-<!-- 					<visible>ListItem.IsCollection</visible>
- -->				</control>
-				<control type="textbox">
-					<left>30</left>
-					<top>220</top>
-					<width>525</width>
-					<height>730</height>
-					<font>font13</font>
-					<visible>!ListItem.IsCollection</visible>
-					<label>$INFO[ListItem.Tagline,[I],[/I][CR][CR]]$INFO[ListItem.Plot]</label>
-					<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-				</control>
-				<control type="textbox">
-					<left>30</left>
-					<top>360</top>
-					<width>550</width>
-					<height>413</height>
-					<align>center</align>
-					<font>font36_title</font>
-					<label>$LOCALIZE[19055]</label>
-					<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Tagline) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
-				</control>
-				<control type="group">
-					<left>20</left>
-					<top>225</top>
-					<visible>ListItem.IsCollection</visible>
-					<include content="InfoList">
-						<param name="height" value="322" />
-						<param name="width" value="550" />
-						<param name="sortby" value="year" />
-						<param name="sortorder" value="descending" />
-						<param name="font" value="font13" />
-					</include>
+					<height>800</height>
+					<orientation>vertical</orientation>
+					<itemgap>10</itemgap>
+					<control type="textbox">
+						<width>550</width>
+						<height min="0" max="680">auto</height>
+						<font>font36_title</font>
+						<label>$INFO[ListItem.Label]</label>
+						<!-- 					<visible>ListItem.IsCollection</visible>
+						 -->
+					</control>
+					<control type="textbox">
+						<left>30</left>
+						<top>220</top>
+						<width>525</width>
+						<height>740</height>
+						<font>font13</font>
+						<visible>!ListItem.IsCollection</visible>
+						<label>$INFO[ListItem.Tagline,[I],[/I][CR][CR]]$INFO[ListItem.Plot][CR][CR]</label>
+						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+					</control>
+					<control type="textbox">
+						<left>30</left>
+						<top>360</top>
+						<width>550</width>
+						<height>413</height>
+						<align>center</align>
+						<font>font36_title</font>
+						<label>$LOCALIZE[19055]</label>
+						<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Tagline) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
+					</control>
+					<control type="group">
+						<left>20</left>
+						<top>225</top>
+						<visible>ListItem.IsCollection</visible>
+						<include content="InfoList">
+							<param name="height" value="740" />
+							<param name="width" value="540" />
+							<param name="sortby" value="year" />
+							<param name="sortorder" value="descending" />
+							<param name="font" value="font13" />
+						</include>
+					</control>
 				</control>
 			</control>
 			<include>MediaMenuMouseOverlay</include>
