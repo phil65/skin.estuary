@@ -120,7 +120,7 @@
 			</include>
 			<control type="grouplist" id="9000">
 				<left>90</left>
-				<top>850</top>
+				<top>840</top>
 				<width>1740</width>
 				<height>300</height>
 				<onleft>9000</onleft>
@@ -222,24 +222,35 @@
 				<height>180</height>
 				<label></label>
 			</control>
-			<control type="textbox">
+			<control type="grouplist">
 				<left>40</left>
 				<top>520</top>
-				<width>446</width>
-				<height>120</height>
-				<font>font13</font>
-				<label>$INFO[ListItem.AddonSize,[COLOR button_focus]$LOCALIZE[22031]:[/COLOR] ,[CR]]$INFO[ListItem.AddonOrigin,[COLOR button_focus]$LOCALIZE[31150]:[/COLOR] ]</label>
-				<textcolor>white</textcolor>
-				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+				<control type="label">
+					<width>446</width>
+					<height>40</height>
+					<font>font13</font>
+					<label>$INFO[ListItem.AddonSize,[COLOR button_focus]$LOCALIZE[22031]:[/COLOR] ,[CR]]</label>
+					<textcolor>white</textcolor>
+					<visible>!String.IsEmpty(ListItem.AddonSize)</visible>
+				</control>
+				<control type="label">
+					<width>446</width>
+					<height>40</height>
+					<font>font13</font>
+					<label>$INFO[ListItem.AddonOrigin,[COLOR button_focus]$LOCALIZE[31150]:[/COLOR] ]</label>
+					<textcolor>white</textcolor>
+					<visible>!String.IsEmpty(ListItem.AddonOrigin)</visible>
+				</control>
 			</control>
 		</control>
 		<control type="textbox">
 			<left>150</left>
-			<top>1000</top>
+			<top>980</top>
 			<width>1620</width>
 			<height>82</height>
 			<font>font13</font>
 			<align>center</align>
+			<aligny>center</aligny>
 			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<label>[I]$INFO[ListItem.AddonDisclaimer][/I]</label>
