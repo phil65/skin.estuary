@@ -129,7 +129,7 @@
 	</variable>
 	<variable name="WidgetGenreIconVar">
 		<value condition="System.HasAddon(resource.images.moviegenreicons.transparent)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]</value>
-		<value>$INFO[ListItem.Icon]</value>
+		<value>DefaultGenre.png</value>
 	</variable>
 	<variable name="AddonsLabel2Var">
 		<value condition="ListItem.Property(addon.downloading)">$INFO[ListItem.Property(addon.status)]</value>
