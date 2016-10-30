@@ -199,8 +199,8 @@
 							<param name="path" value="$INFO[ListItem.Path]/$INFO[ListItem.Label]" />
 							<param name="height" value="362" />
 							<param name="item_height" value="45" />
-							<param name="width" value="760" />
-							<param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
+							<param name="width" value="780" />
+							<param name="item_label" value="$INFO[ListItem.Date,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]" />
 						</include>
 					</control>
 				</control>
