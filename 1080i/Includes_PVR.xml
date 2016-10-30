@@ -141,6 +141,7 @@
 			<width>150</width>
 			<height>100</height>
 			<aspectratio>keep</aspectratio>
+			<visible>!IsEmpty(ListItem.Title)</visible> <!-- to hide icon for "search..." -->
 			<texture fallback="DefaultTVShows.png">$INFO[Listitem.Icon]</texture>
 			<fadetime>200</fadetime>
 		</control>
