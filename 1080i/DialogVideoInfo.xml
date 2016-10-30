@@ -517,10 +517,10 @@
 					<top>10</top>
 					<left>0</left>
 					<control type="image">
-						<left>17</left>
-						<width>44</width>
-						<height>44</height>
-						<animation effect="rotate" end="-90" center="40,23" time="0" condition="true">Conditional</animation>
+						<left>21</left>
+						<width>36</width>
+						<height>36</height>
+						<animation effect="rotate" end="-90" center="36,19" time="0" condition="true">Conditional</animation>
 						<texture colordiffuse="grey">frame/menu-nofo.png</texture>
 					</control>
 					<control type="label">
@@ -537,9 +537,10 @@
 					<top>10</top>
 					<left>0</left>
 					<control type="image">
+						<top>4</top>
 						<left>17</left>
-						<width>44</width>
-						<height>44</height>
+						<width>36</width>
+						<height>36</height>
 						<texture colordiffuse="grey">frame/menu-fo.png</texture>
 					</control>
 					<control type="label">
