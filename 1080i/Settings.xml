@@ -28,12 +28,12 @@
 				<control type="image">
 					<width>430</width>
 					<height>270</height>
-					<texture border="40">buttons/button-nofo.png</texture>
+					<texture border="40">dialogs/dialog-bg-small.png</texture>
 				</control>
 				<control type="image">
-					<left>21</left>
-					<top>179</top>
-					<width>388</width>
+					<left>20</left>
+					<top>180</top>
+					<width>390</width>
 					<height>70</height>
 					<texture colordiffuse="border_alpha">colors/black.png</texture>
 				</control>
@@ -67,20 +67,21 @@
 					<control type="image">
 						<width>430</width>
 						<height>270</height>
-						<texture border="40">buttons/button-nofo.png</texture>
+						<texture border="40">dialogs/dialog-bg-small.png</texture>
 						<animation effect="fade" start="0" end="100" time="0">Unfocus</animation>
 						<animation effect="fade" start="100" end="0" time="0">Focus</animation>
 					</control>
 					<control type="image">
-						<width>430</width>
-						<height>270</height>
+						<left>-2</left>
+						<width>434</width>
+						<height>272</height>
 						<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
 						<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 					</control>
 					<control type="image">
-						<left>21</left>
-						<top>179</top>
-						<width>388</width>
+						<left>20</left>
+						<top>180</top>
+						<width>390</width>
 						<height>70</height>
 						<texture colordiffuse="border_alpha">colors/black.png</texture>
 					</control>

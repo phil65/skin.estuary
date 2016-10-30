@@ -3,7 +3,7 @@
 	<include name="View_55_WideList">
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<left>595</left>
+			<left>594</left>
 			<top>0</top>
 			<visible>Control.IsVisible(55)</visible>
 			<include>Visible_Right</include>
@@ -74,7 +74,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="image">
-						<left>26</left>
+						<left>35</left>
 						<top>25</top>
 						<width>32</width>
 						<height>32</height>
@@ -83,7 +83,7 @@
 						<animation effect="fade" start="30" end="100" time="300" reversible="false">Focus</animation>
 					</control>
 					<control type="image">
-						<left>26</left>
+						<left>35</left>
 						<top>25</top>
 						<width>32</width>
 						<visible>String.IsEmpty(ListItem.Year)</visible>
@@ -137,7 +137,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="image">
-						<left>26</left>
+						<left>35</left>
 						<top>25</top>
 						<visible>String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.AddonVersion)</visible>
 						<width>32</width>
@@ -219,10 +219,10 @@
 				<visible>Control.hasFocus(55)</visible>
 			</control>
 			<control type="image">
-				<left>15</left>
-				<top>25</top>
-				<width>40</width>
-				<height>40</height>
+				<left>20</left>
+				<top>30</top>
+				<width>32</width>
+				<height>32</height>
 				<texture>$VAR[AddonsListIconVar]</texture>
 			</control>
 			<control type="label">
@@ -248,10 +248,10 @@
 		</focusedlayout>
 		<itemlayout height="90" condition="Container.Content(addons)">
 			<control type="image">
-				<left>15</left>
-				<top>25</top>
-				<width>40</width>
-				<height>40</height>
+				<left>20</left>
+				<top>30</top>
+				<width>32</width>
+				<height>32</height>
 				<texture>$VAR[AddonsListIconVar]</texture>
 			</control>
 			<control type="label">
