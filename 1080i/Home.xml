@@ -539,7 +539,7 @@
 							<param name="onup_id" value="12200"/>
 							<param name="ondown_id" value="20001"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, - ]"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
@@ -625,7 +625,7 @@
 							<param name="onup_id" value="13200"/>
 							<param name="ondown_id" value="20001"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, - ]"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
