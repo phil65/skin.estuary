@@ -54,7 +54,7 @@
 						<left>30</left>
 						<top>220</top>
 						<width>525</width>
-						<height>740</height>
+						<height min="0" max="740">auto</height>
 						<font>font13</font>
 						<visible>!ListItem.IsCollection</visible>
 						<label>$INFO[ListItem.Tagline,[I],[/I][CR][CR]]$INFO[ListItem.Plot][CR][CR]</label>
@@ -66,6 +66,7 @@
 						<width>550</width>
 						<height>413</height>
 						<align>center</align>
+						<aligny>center</aligny>
 						<font>font36_title</font>
 						<label>$LOCALIZE[19055]</label>
 						<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Tagline) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
