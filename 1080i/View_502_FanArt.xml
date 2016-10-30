@@ -33,7 +33,7 @@
 				<control type="image">
 					<left>747</left>
 					<top>782</top>
-					<width>1172</width>
+					<width>1156</width>
 					<height>400</height>
 					<texture colordiffuse="A0000000">colors/black.png</texture>
 				</control>
@@ -44,6 +44,18 @@
 					<height>203</height>
 					<font>font13</font>
 					<label>$INFO[ListItem.Plot]</label>
+				</control>
+				<control type="group">
+					<left>760</left>
+					<top>790</top>
+					<visible>ListItem.IsCollection</visible>
+					<include content="InfoList">
+						<param name="height" value="300" />
+						<param name="width" value="1000" />
+						<param name="sortby" value="year" />
+						<param name="sortorder" value="descending" />
+						<param name="font" value="font13" />
+					</include>
 				</control>
 			</control>
 			<control type="group">

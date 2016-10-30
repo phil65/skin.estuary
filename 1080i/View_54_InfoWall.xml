@@ -57,7 +57,6 @@
 				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>keep</aspectratio>
 				<bordersize>20</bordersize>
-				<visible>String.IsEmpty(ListItem.Icon)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>

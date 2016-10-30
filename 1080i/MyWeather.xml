@@ -116,7 +116,7 @@
 				</content>
 			</control>
 			<control type="button" id="20">
-				<width>340</width>
+				<width>444</width>
 				<left>0</left>
 				<top>892</top>
 				<height>120</height>
@@ -132,7 +132,7 @@
 				<onup>300</onup>
 				<ondown>SetFocus(300,0)</ondown>
 				<ondown>300</ondown>
-				<font>font13</font>
+				<font>font12</font>
 				<onclick>Weather.LocationNext</onclick>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
 			</control>

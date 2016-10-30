@@ -24,7 +24,7 @@
 				<itemlayout height="435" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>144</left>
-						<top>492</top>
+						<top>500</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>$VAR[WallWatchedIconVar]</texture>
@@ -37,7 +37,7 @@
 				<focusedlayout height="435" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>144</left>
-						<top>492</top>
+						<top>500</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>$VAR[WallWatchedIconVar]</texture>
