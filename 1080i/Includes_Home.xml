@@ -14,7 +14,7 @@
 			<width>140</width>
 			<height>140</height>
 			<aspectratio>keep</aspectratio>
-			<texture background="true" fallback="DefaultVideoCover.png">$PARAM[icon]</texture>
+			<texture background="true" fallback="DefaultVideo.png">$PARAM[icon]</texture>
 		</control>
 		<control type="label">
 			<left>245</left>
