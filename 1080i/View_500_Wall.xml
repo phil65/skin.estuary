@@ -33,6 +33,11 @@
 						<top>120</top>
 						<include>InfoWallMovieLayout</include>
 					</control>
+					<control type="group">
+						<left>130</left>
+						<top>100</top>
+						<include>UserRatingCircle</include>
+					</control>
 				</itemlayout>
 				<focusedlayout height="435" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
@@ -56,6 +61,11 @@
 							<height>363</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
+						</control>
+						<control type="group">
+							<left>130</left>
+							<top>-20</top>
+							<include>UserRatingCircle</include>
 						</control>
 					</control>
 				</focusedlayout>

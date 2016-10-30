@@ -70,8 +70,8 @@
 								<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
 							</control>
 							<control type="group">
-								<left>230</left>
-								<top>30</top>
+								<left>133</left>
+								<top>360</top>
 								<include>UserRatingCircle</include>
 							</control>
 						</control>
@@ -118,10 +118,10 @@
 								<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
 							</control>
 							<control type="group">
-								<animation effect="fade" time="300" start="100" end="0">Focus</animation>
+								<animation effect="fade" time="100" start="100" end="0">Focus</animation>
 								<visible>Control.IsVisible(20000)</visible>
-								<left>230</left>
-								<top>30</top>
+								<left>306</left>
+								<top>360</top>
 								<include>UserRatingCircle</include>
 							</control>
 						</control>
@@ -200,8 +200,8 @@
 				<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 			</control>
 			<control type="group">
-				<left>425</left>
-				<top>10</top>
+				<left>216</left>
+				<top>696</top>
 				<include content="UserRatingCircle">
 					<param name="animation" value="True" />
 				</include>

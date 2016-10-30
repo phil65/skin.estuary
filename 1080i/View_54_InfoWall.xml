@@ -33,11 +33,6 @@
 			<aligny>center</aligny>
 			<label>$INFO[ListItem.Label]</label>
 		</control>
-		<control type="group">
-			<left>320</left>
-			<top>20</top>
-			<include>UserRatingCircle</include>
-		</control>
 	</include>
 	<include name="InfoWallMusicLayout">
 		<param name="fallback_image">DefaultFolder.png</param>
@@ -74,11 +69,6 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$PARAM[label]</label>
-			</control>
-			<control type="group">
-				<left>230</left>
-				<top>28</top>
-				<include>UserRatingCircle</include>
 			</control>
 		</definition>
 	</include>
@@ -138,11 +128,6 @@
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(poster))</visible>
 			</control>
-			<control type="group">
-				<left>230</left>
-				<top>20</top>
-				<include>UserRatingCircle</include>
-			</control>
 		</definition>
 	</include>
 	<include name="View_54_InfoWall">
@@ -192,8 +177,8 @@
 							<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
 						</control>
 						<control type="group">
-							<left>179</left>
-							<top>30</top>
+							<left>100</left>
+							<top>-6</top>
 							<include>UserRatingCircle</include>
 						</control>
 						<control type="image">
@@ -241,11 +226,6 @@
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
 						</control>
-						<control type="group">
-							<left>179</left>
-							<top>30</top>
-							<include>UserRatingCircle</include>
-						</control>
 						<control type="image">
 							<left>15</left>
 							<top>20</top>
@@ -255,6 +235,11 @@
 							<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="200" tween="sine">UnFocus</animation>
 						</control>
+						<control type="group">
+							<left>100</left>
+							<top>-6</top>
+							<include>UserRatingCircle</include>
+						</control>
 					</control>
 				</focusedlayout>
 				<itemlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
@@ -262,6 +247,11 @@
 						<top>150</top>
 						<left>90</left>
 						<include>InfoWallMusicLayout</include>
+						<control type="group">
+							<left>133</left>
+							<top>-16</top>
+							<include>UserRatingCircle</include>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
@@ -278,6 +268,11 @@
 							<height>348</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
+						</control>
+						<control type="group">
+							<left>133</left>
+							<top>-16</top>
+							<include>UserRatingCircle</include>
 						</control>
 					</control>
 				</focusedlayout>

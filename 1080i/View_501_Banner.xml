@@ -71,8 +71,8 @@
 							<visible>String.IsEmpty(ListItem.Art(banner)) + !Listitem.IsParentFolder</visible>
 						</control>
 						<control type="group">
-							<left>780</left>
-							<top>30</top>
+							<left>405</left>
+							<top>-8</top>
 							<include>UserRatingCircle</include>
 						</control>
 					</control>
@@ -104,17 +104,17 @@
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Art(banner)) + !Listitem.IsParentFolder</visible>
 						</control>
-						<control type="group">
-							<left>780</left>
-							<top>30</top>
-							<include>UserRatingCircle</include>
-						</control>
 						<control type="image">
 							<left>20</left>
 							<top>20</top>
 							<width>820</width>
 							<height>155</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+						</control>
+						<control type="group">
+							<left>405</left>
+							<top>-8</top>
+							<include>UserRatingCircle</include>
 						</control>
 						<control type="group">
 							<animation type="Focus">

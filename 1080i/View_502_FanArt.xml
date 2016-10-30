@@ -18,16 +18,16 @@
 				</control>
 				<control type="image">
 					<left>747</left>
-					<top>24</top>
+					<top>124</top>
 					<width>1156</width>
-					<height>749</height>
+					<height>650</height>
 					<fadetime>300</fadetime>
 					<texture border="2" fallback="special://skin/extras/home-images/movie.jpg" background="true">$VAR[FanartImageVar]</texture>
-					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">scale</aspectratio>
 				</control>
 				<control type="group">
-					<left>1680</left>
-					<top>30</top>
+					<left>1300</left>
+					<top>94</top>
 					<include>UserRatingCircle</include>
 				</control>
 				<control type="image">
