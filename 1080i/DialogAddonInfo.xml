@@ -197,7 +197,6 @@
 			</control>
 			<control type="group">
 				<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
-				<include>OpenClose_Fade</include>
 				<control type="image">
 					<left>24</left>
 					<top>24</top>
