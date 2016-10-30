@@ -23,7 +23,7 @@
 			<width>100%</width>
 			<height>100%</height>
 			<aspectratio align="center">scale</aspectratio>
-			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | !String.IsEmpty(Visualisation.Name)">Conditional</animation>
+			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>
 		</control>
 		<control type="image">
 			<left>33</left>
