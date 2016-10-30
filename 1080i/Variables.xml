@@ -127,6 +127,10 @@
 		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
+	<variable name="WidgetGenreIconVar">
+		<value condition="System.HasAddon(resource.images.moviegenreicons.transparent)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
 	<variable name="AddonsLabel2Var">
 		<value condition="ListItem.Property(addon.downloading)">$INFO[ListItem.Property(addon.status)]</value>
 		<value condition="!String.IsEqual(Container.SortMethod,$LOCALIZE[551])">$INFO[ListItem.Label2]</value>

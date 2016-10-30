@@ -108,7 +108,7 @@
 							<param name="list_id" value="5500"/>
 							<param name="onup_id" value="5400"/>
 							<param name="ondown_id" value="5600"/>
-							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]"/>
+							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(movies)"/>
 						</include>
@@ -193,7 +193,7 @@
 							<param name="list_id" value="6400"/>
 							<param name="onup_id" value="6300"/>
 							<param name="ondown_id" value="6500"/>
-							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]"/>
+							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
