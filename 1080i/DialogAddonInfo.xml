@@ -193,24 +193,7 @@
 				<height>457</height>
 				<aspectratio aligny="top">scale</aspectratio>
 				<fadetime>300</fadetime>
-				<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
-			</control>
-			<control type="button">
-				<left>-3</left>
-				<top>495</top>
-				<width>511</width>
-				<height>180</height>
-				<label></label>
-			</control>
-			<control type="textbox">
-				<left>40</left>
-				<top>520</top>
-				<width>446</width>
-				<height>120</height>
-				<font>font13</font>
-				<label fallback="31008">$INFO[ListItem.AddonDisclaimer,[COLOR button_focus]$LOCALIZE[24052]:[/COLOR] ]</label>
-				<textcolor>white</textcolor>
-				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+				<texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
 			</control>
 			<control type="group">
 				<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
@@ -232,6 +215,23 @@
 					<label>$LOCALIZE[24096]</label>
 					<font>font36_title</font>
 				</control>
+			</control>
+			<control type="button">
+				<left>-3</left>
+				<top>495</top>
+				<width>511</width>
+				<height>180</height>
+				<label></label>
+			</control>
+			<control type="textbox">
+				<left>40</left>
+				<top>520</top>
+				<width>446</width>
+				<height>120</height>
+				<font>font13</font>
+				<label fallback="31008">$INFO[ListItem.AddonDisclaimer,[COLOR button_focus]$LOCALIZE[24052]:[/COLOR] ]</label>
+				<textcolor>white</textcolor>
+				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 			</control>
 		</control>
 		<include content="InfoDialogTopBarInfo">
