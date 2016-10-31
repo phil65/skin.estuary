@@ -17,8 +17,9 @@
 				<top>4</top>
 				<width>3000</width>
 				<height>400</height>
-				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="200">VisibleChange</animation>
 				<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
 				<visible>Control.IsVisible(51)</visible>
 			</control>
