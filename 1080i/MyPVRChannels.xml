@@ -408,7 +408,8 @@
 					<width>800</width>
 					<height>362</height>
 					<align>center</align>
-					<font>font36_title</font>
+					<font>font27</font>
+					<textcolor>80FFFFFF</textcolor>
 					<label>$LOCALIZE[19055]</label>
 					<visible>String.IsEmpty(Listitem.Plot)</visible>
 				</control>

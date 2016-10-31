@@ -63,11 +63,12 @@
 					<control type="textbox">
 						<left>30</left>
 						<top>360</top>
-						<width>550</width>
+						<width>530</width>
 						<height>413</height>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font36_title</font>
+						<font>font27</font>
+						<textcolor>80FFFFFF</textcolor>
 						<label>$LOCALIZE[19055]</label>
 						<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Tagline) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
 					</control>

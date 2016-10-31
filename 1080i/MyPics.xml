@@ -36,7 +36,9 @@
 					<width>429</width>
 					<height>413</height>
 					<align>center</align>
-					<font>font36_title</font>
+					<aligny>center</aligny>
+					<font>font27</font>
+					<textcolor>80FFFFFF</textcolor>
 					<label>$LOCALIZE[19055]</label>
 					<visible>!ListItem.IsParentFolder + ListItem.IsFolder</visible>
 				</control>
@@ -44,7 +46,7 @@
 					<left>20</left>
 					<top>152</top>
 					<width>480</width>
-					<height>700</height>
+					<height>760</height>
 					<orientation>vertical</orientation>
 					<include content="PicsInfoLine">
 						<param name="label" value="$LOCALIZE[21820]"/>
