@@ -5,18 +5,18 @@
 	<depth>DepthDialog+</depth>
 	<coordinates>
 		<left>688</left>
-		<top>213</top>
+		<top>210</top>
 	</coordinates>
 	<controls>
 		<include content="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="545" />
-			<param name="DialogBackgroundHeight" value="600" />
-			<param name="DialogHeaderLabel" value="" />
-			<param name="DialogHeaderId" value="1" />
+			<param name="DialogBackgroundHeight" value="660" />
+			<param name="DialogHeaderLabel" value="$LOCALIZE[31151]" />
+			<param name="DialogHeaderId" value="" />
 		</include>
 		<control type="image">
 			<left>44</left>
-			<top>101</top>
+			<top>181</top>
 			<width>457</width>
 			<height>60</height>
 			<texture colordiffuse="32FFFFFF" border="2">colors/white.png</texture>
@@ -24,7 +24,7 @@
 		<control type="label" id="4">
 			<description>Edit Text</description>
 			<left>34</left>
-			<top>90</top>
+			<top>170</top>
 			<width>477</width>
 			<height>80</height>
 			<font>font16</font>
@@ -32,9 +32,19 @@
 			<align>center</align>
 			<aligny>center</aligny>
 		</control>
+		<control type="textbox" id="1">
+			<left>20</left>
+			<top>80</top>
+			<width>505</width>
+			<height>90</height>
+			<font>font13</font>
+			<textcolor>button_focus</textcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+		</control>
 		<control type="grouplist">
 			<left>350</left>
-			<top>160</top>
+			<top>240</top>
 			<height>1000</height>
 			<orientation>vertical</orientation>
 			<itemgap>-20</itemgap>
@@ -69,7 +79,7 @@
 		</control>
 		<control type="grouplist" id="4000">
 			<left>30</left>
-			<top>160</top>
+			<top>240</top>
 			<height>1000</height>
 			<onleft>23</onleft>
 			<onright>23</onright>
@@ -163,7 +173,7 @@
 					<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font16</font>
+					<font>font37</font>
 					<label>&lt;</label>
 					<onup>17</onup>
 					<ondown>11</ondown>
@@ -183,7 +193,7 @@
 					<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font16</font>
+					<font>font37</font>
 					<label>&gt;</label>
 					<onup>19</onup>
 					<ondown>13</ondown>
