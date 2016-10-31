@@ -8,16 +8,29 @@
 			<top>100</top>
 			<control type="group">
 				<visible>Control.IsVisible(53)</visible>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<control type="image">
+					<left>0</left>
+					<top>760</top>
+					<width>3000</width>
+					<height>110</height>
+					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>35</top>
+					<width>3000</width>
+					<height>190</height>
+					<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(53)</visible>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<top>160</top>
-				<control type="image">
-					<left>-40</left>
-					<top>580</top>
-					<width>2000</width>
-					<height>150</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-				</control>
 				<control type="image">
 					<left>600</left>
 					<top>600</top>
@@ -36,8 +49,8 @@
 					<top>0</top>
 					<width>2120</width>
 					<height>695</height>
-					<focusposition>2</focusposition>
-					<movement>1</movement>
+					<focusposition>1</focusposition>
+					<movement>0</movement>
 					<pagecontrol>5199</pagecontrol>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
@@ -51,10 +64,10 @@
 					<itemlayout width="370">
 						<control type="image">
 							<left>0</left>
-							<top>100</top>
+							<top>90</top>
 							<width>370</width>
 							<height>480</height>
-							<aspectratio aligny="bottom">keep</aspectratio>
+							<aspectratio aligny="center">keep</aspectratio>
 							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -71,7 +84,7 @@
 						</control>
 						<control type="image">
 							<left>169</left>
-							<top>565</top>
+							<top>560</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
@@ -82,10 +95,10 @@
 							<left>0</left>
 							<control type="image">
 								<left>0</left>
-								<top>100</top>
+								<top>90</top>
 								<width>370</width>
 								<height>480</height>
-								<aspectratio aligny="bottom">keep</aspectratio>
+								<aspectratio aligny="center">keep</aspectratio>
 								<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -103,7 +116,7 @@
 							</control>
 							<control type="image">
 								<left>169</left>
-								<top>565</top>
+								<top>560</top>
 								<width>32</width>
 								<height>32</height>
 								<texture>$VAR[WallWatchedIconVar]</texture>
