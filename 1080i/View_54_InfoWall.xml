@@ -73,7 +73,7 @@
 		</definition>
 	</include>
 	<include name="InfoWallMovieLayout">
-		<param name="fallback_image">DefaultFolder.png</param>
+		<param name="fallback_image">DefaultVideo.png</param>
 		<definition>
 			<control type="group">
 				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
