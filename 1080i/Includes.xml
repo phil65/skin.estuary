@@ -968,6 +968,17 @@
 						<label>$INFO[System.Time]</label>
 					</control>
 				</control>
+					<control type="label">
+						<top>77</top>
+						<label>$INFO[System.AlarmPos,$LOCALIZE[13005]: ]</label>
+						<font>font13</font>
+						<right>22</right>
+						<shadowcolor>text_shadow</shadowcolor>
+						<height>100</height>
+						<width>500</width>
+						<align>right</align>
+						<visible>System.HasAlarm(shutdowntimer)</visible>
+					</control>
 			</control>
 		</definition>
 	</include>

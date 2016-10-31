@@ -87,7 +87,7 @@
 					<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
 				</item>
 				<item>
-					<label>$LOCALIZE[20151]</label>
+					<label>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</label>
 					<onclick>CancelAlarm(shutdowntimer)</onclick>
 					<visible>System.HasAlarm(shutdowntimer)</visible>
 				</item>
