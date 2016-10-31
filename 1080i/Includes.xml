@@ -82,21 +82,22 @@
 				<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 				<animation effect="fade" time="0" condition="$PARAM[animation]">VisibleChange</animation>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>50</width>
-					<height>50</height>
+					<left>3</left>
+					<top>-3</top>
+					<width>44</width>
+					<height>44</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="button_focus">overlays/badge.png</texture>
 				</control>
 				<control type="label">
-					<top>0</top>
+					<left>3</left>
+					<top>-3</top>
 					<align>center</align>
 					<aligny>center</aligny>
-					<width>50</width>
-					<height>50</height>
+					<width>44</width>
+					<height>44</height>
 					<font>font20_title</font>
-					<textcolor>FFFFFFFF</textcolor>
+					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.UserRating]</label>
 				</control>
 			</control>
