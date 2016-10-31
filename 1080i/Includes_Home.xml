@@ -141,14 +141,6 @@
 								<texture>colors/black.png</texture>
 								<animation effect="fade" start="0" end="70" time="50">Focus</animation>
 							</control>
-							<control type="image">
-								<left>0</left>
-								<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
-								<width>272</width>
-								<height>35</height>
-								<texture>colors/black.png</texture>
-								<animation effect="fade" start="0" end="70" time="50">Focus</animation>
-							</control>
 							<control type="label">
 								<left>10</left>
 								<top>348</top>
