@@ -375,14 +375,27 @@
 								<height>340</height>
 								<texture border="40">dialogs/dialog-bg-small.png</texture>
 							</control>
-							<control type="image">
-								<left>-2</left>
-								<width>348</width>
-								<height>342</height>
-								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<control type="group">
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+								<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
+								<control type="image">
+									<left>-2</left>
+									<width>348</width>
+									<height>342</height>
+									<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+								</control>
+								<control type="progress">
+									<left>18</left>
+									<top>302</top>
+									<width>310</width>
+									<height>1</height>
+									<texturebg></texturebg>
+									<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
+									<info>ListItem.PercentPlayed</info>
+									<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+								</control>
 							</control>
+
 							<control type="image">
 								<left>24</left>
 								<top>60</top>
@@ -390,27 +403,6 @@
 								<height>220</height>
 								<aspectratio>scale</aspectratio>
 								<texture fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
-							</control>
-							<control type="group">
-								<left>24</left>
-								<top>20</top>
-								<visible>!Integer.IsEqual(ListItem.PercentPlayed,0) + Control.HasFocus($PARAM[list_id])</visible>
-								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
-								<control type="image">
-									<left>0</left>
-									<top>40</top>
-									<width>297</width>
-									<height>30</height>
-									<texture colordiffuse="99FFFFFF">colors/black.png</texture>
-								</control>
-								<control type="progress">
-									<left>24</left>
-									<top>49</top>
-									<width>250</width>
-									<height>13</height>
-									<info>ListItem.PercentPlayed</info>
-								</control>
 							</control>
 							<control type="label">
 								<left>30</left>

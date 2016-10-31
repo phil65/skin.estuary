@@ -28,8 +28,8 @@
 				<texturenofocus></texturenofocus>
 				<radioposx>26</radioposx>
 				<radioposy>0</radioposy>
-				<radiowidth>38</radiowidth>
-				<radioheight>38</radioheight>
+				<radiowidth>40</radiowidth>
+				<radioheight>40</radioheight>
 				<textureradioonfocus>$PARAM[icon]</textureradioonfocus>
 				<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
 				<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
@@ -87,7 +87,7 @@
 					<control type="grouplist" id="6056">
 						<orientation>horizontal</orientation>
 						<itemgap>-24</itemgap>
-						<left>5</left>
+						<left>0</left>
 						<height>120</height>
 						<onleft>6056</onleft>
 						<onright condition="!Window.IsActive(MyPVRGuide.xml)">50</onright>
