@@ -151,93 +151,52 @@
 				<pagecontrol>531</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | Container.Content(images)</visible>
-				<itemlayout height="425" width="256" condition="Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
-					<control type="group">
-						<top>150</top>
-						<left>80</left>
-						<control type="image">
-							<left>-5</left>
-							<top>0</top>
-							<width>259</width>
-							<height>364</height>
-							<texture fallback="DefaultVideo.png" background="true">$VAR[ListPosterVar]</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
-						<control type="textbox">
-							<left>20</left>
-							<top>230</top>
-							<width>209</width>
-							<height>100</height>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font27</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
-						</control>
-						<control type="group">
-							<left>100</left>
-							<top>-6</top>
-							<include>UserRatingCircle</include>
-						</control>
-						<control type="image">
-							<left>110</left>
-							<top>356</top>
-							<width>32</width>
-							<height>32</height>
-							<texture>$VAR[WallWatchedIconVar]</texture>
-						</control>
-					</control>
-				</itemlayout>
-				<focusedlayout height="425" width="256" condition="Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<itemlayout height="435" width="320" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
-						<left>190</left>
-						<top>506</top>
+						<left>224</left>
+						<top>500</top>
 						<width>32</width>
 						<height>32</height>
-						<animation effect="slide" end="0,20" time="200" tween="sine" easing="inout">Focus</animation>
-						<animation effect="slide" start="0,20" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
 						<texture>$VAR[WallWatchedIconVar]</texture>
 					</control>
 					<control type="group">
-						<top>150</top>
 						<left>80</left>
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="210,332">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="210,332">UnFocus</animation>
+						<top>120</top>
+						<include>InfoWallMovieLayout</include>
+					</control>
+					<control type="group">
+						<left>210</left>
+						<top>100</top>
+						<include>UserRatingCircle</include>
+					</control>
+				</itemlayout>
+				<focusedlayout height="435" width="320" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
+					<control type="image">
+						<left>224</left>
+						<top>500</top>
+						<width>32</width>
+						<height>32</height>
+						<texture>$VAR[WallWatchedIconVar]</texture>
+						<animation effect="slide" end="0,16" time="200" tween="sine" easing="inout">Focus</animation>
+						<animation effect="slide" start="0,16" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
+					</control>
+					<control type="group">
+						<left>80</left>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="240,300">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="240,300">UnFocus</animation>
+						<top>120</top>
+						<include>InfoWallMovieLayout</include>
 						<control type="image">
-							<left>-5</left>
-							<top>0</top>
-							<width>259</width>
-							<height>364</height>
-							<texture fallback="DefaultVideo.png" background="true">$VAR[ListPosterVar]</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
-						<control type="textbox">
-							<left>20</left>
-							<top>230</top>
-							<width>209</width>
-							<height>100</height>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font27</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
-						</control>
-						<control type="image">
-							<left>15</left>
-							<top>20</top>
-							<width>219</width>
-							<height>325</height>
+							<left>32</left>
+							<top>8</top>
+							<width>256</width>
+							<height>363</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-							<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="200" tween="sine">UnFocus</animation>
+							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
 						<control type="group">
-							<left>100</left>
-							<top>-6</top>
+							<left>210</left>
+							<top>-20</top>
 							<include>UserRatingCircle</include>
 						</control>
 					</control>
