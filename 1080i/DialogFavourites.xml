@@ -2,14 +2,14 @@
 <window>
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
-		<left>210</left>
-		<top>150</top>
+		<left>160</left>
+		<top>130</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include content="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1500" />
-			<param name="DialogBackgroundHeight" value="800" />
+			<param name="DialogBackgroundWidth" value="1600" />
+			<param name="DialogBackgroundHeight" value="820" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[1036]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
@@ -32,7 +32,7 @@
 			<left>35</left>
 			<top>100</top>
 			<width>1600</width>
-			<height>700</height>
+			<height>706</height>
 			<onleft>60</onleft>
 			<onright>60</onright>
 			<onup>450</onup>
@@ -41,69 +41,21 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime tween="sine">200</scrolltime>
 			<orientation>vertical</orientation>
-			<itemlayout width="365" height="350">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>320</width>
-					<height>320</height>
-					<aspectratio>scale</aspectratio>
-					<texture border="4" fallback="DefaultFavourites.png">$INFO[ListItem.Art(thumb)]</texture>
-					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-					<bordersize>4</bordersize>
-				</control>
-				<control type="image">
-					<left>4</left>
-					<top>276</top>
-					<width>312</width>
-					<height>40</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
-				</control>
-				<control type="label">
-					<left>4</left>
-					<top>276</top>
-					<width>312</width>
-					<height>40</height>
-					<align>center</align>
-					<font>font12</font>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
+			<itemlayout width="300" height="350">
+				<include content="InfoWallMusicLayout">
+					<param name="fallback_image" value="DefaultFavourites.png" />
+				</include>
 			</itemlayout>
-			<focusedlayout width="365" height="350">
+			<focusedlayout width="300" height="350">
+				<include content="InfoWallMusicLayout">
+					<param name="fallback_image" value="DefaultFavourites.png" />
+				</include>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>320</width>
-					<height>320</height>
-					<aspectratio>scale</aspectratio>
-					<texture border="4" fallback="DefaultFavourites.png">$INFO[ListItem.Art(thumb)]</texture>
-					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-					<bordersize>4</bordersize>
-				</control>
-				<control type="image">
-					<left>4</left>
-					<top>276</top>
-					<width>312</width>
-					<height>40</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
-				</control>
-				<control type="label">
-					<left>4</left>
-					<top>276</top>
-					<width>312</width>
-					<height>40</height>
-					<align>center</align>
-					<font>font12</font>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>320</width>
-					<height>320</height>
-					<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+					<left>16</left>
+					<top>5</top>
+					<width>283</width>
+					<height>348</height>
+					<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 				</control>
 			</focusedlayout>
 		</control>
