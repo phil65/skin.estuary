@@ -149,7 +149,13 @@
 				</control>
 			</control>
 			<control type="image">
-				<description>Dialog Header image</description>
+				<left>360</left>
+				<top>90</top>
+				<width>1510</width>
+				<height>3</height>
+				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+			</control>
+			<control type="image">
 				<left>360</left>
 				<top>770</top>
 				<width>1510</width>
