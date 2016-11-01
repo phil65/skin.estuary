@@ -2,23 +2,23 @@
 <includes>
 	<include name="PVRWidget">
 		<control type="image">
-			<top>30</top>
-			<left>35</left>
+			<top>80</top>
+			<left>15</left>
 			<width>690</width>
 			<height>225</height>
 			<texture border="22">dialogs/dialog-bg.png</texture>
 		</control>
 		<control type="image">
-			<left>75</left>
-			<top>72</top>
+			<left>55</left>
+			<top>122</top>
 			<width>140</width>
 			<height>140</height>
 			<aspectratio>keep</aspectratio>
 			<texture background="true" fallback="DefaultVideo.png">$PARAM[icon]</texture>
 		</control>
 		<control type="label">
-			<left>245</left>
-			<top>77</top>
+			<left>225</left>
+			<top>127</top>
 			<height>25</height>
 			<width>420</width>
 			<label>$PARAM[header]</label>
@@ -27,8 +27,8 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="label">
-			<left>245</left>
-			<top>122</top>
+			<left>225</left>
+			<top>172</top>
 			<height>105</height>
 			<width>420</width>
 			<label>$PARAM[label1][CR]$PARAM[label2]</label>
