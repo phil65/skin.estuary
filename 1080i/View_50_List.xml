@@ -166,15 +166,27 @@
 				<fadetime>300</fadetime>
 				<texture background="true" fallback="DefaultFolderSquare.png">$VAR[IconWallThumbVar]</texture>
 			</control>
-			<control type="textbox">
+			<control type="textbox" id="15500">
 				<left>30</left>
 				<top>640</top>
 				<width>525</width>
 				<height>323</height>
 				<font>font13</font>
 				<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
-				<label fallback="19055">$VAR[ListBoxInfoVar]</label>
+				<label>$VAR[ListBoxInfoVar]</label>
 				<visible>!Container.Content() | !IsEmpty(ListItem.Plot)</visible>
+			</control>
+			<control type="textbox">
+				<left>30</left>
+				<top>460</top>
+				<width>530</width>
+				<height>413</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font27</font>
+				<textcolor>80FFFFFF</textcolor>
+				<label>$LOCALIZE[19055]</label>
+				<visible>String.IsEmpty(Control.GetLabel(15500)) + !Container.Content() | !IsEmpty(ListItem.Plot)</visible>
 			</control>
 		</definition>
 	</include>
