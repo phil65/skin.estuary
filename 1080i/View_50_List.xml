@@ -186,7 +186,7 @@
 				<font>font27</font>
 				<textcolor>80FFFFFF</textcolor>
 				<label>$LOCALIZE[19055]</label>
-				<visible>String.IsEmpty(Control.GetLabel(15500)) + !Container.Content() | !IsEmpty(ListItem.Plot)</visible>
+				<visible>String.IsEmpty(Control.GetLabel(15500)) + [!Container.Content() | !IsEmpty(ListItem.Plot)]</visible>
 			</control>
 		</definition>
 	</include>
