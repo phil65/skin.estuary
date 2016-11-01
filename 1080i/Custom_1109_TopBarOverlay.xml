@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1109">
 	<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)</visible>
-	<visible>Window.IsActive(seekbar) | [Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV)] | Window.IsActive(pvrosdchannels)</visible>
+	<visible>Window.IsActive(seekbar) | [Player.ShowInfo + !System.HasModalDialog + VideoPlayer.Content(LiveTV)] | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrosdguide)</visible>
 	<depth>DepthOSD</depth>
 	<include>Animation_TopSlide</include>
 	<zorder>0</zorder>
@@ -17,7 +17,7 @@
 				<texture>frame/InfoBar.png</texture>
 			</control>
 			<control type="group">
-				<visible>!Window.IsActive(pvrosdchannels)</visible>
+				<visible>!Window.IsActive(pvrosdchannels) + !Window.IsActive(pvrosdguide)</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
 				<control type="label">
 					<label>$VAR[NowPlayingBreadcrumbsVar]</label>
