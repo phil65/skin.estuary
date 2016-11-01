@@ -159,7 +159,6 @@
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[626]"/>
-							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
 							<param name="widget_target" value="videos"/>
 							<param name="second_label" value="$LOCALIZE[16101]: $INFO[ListItem.Property(UnwatchedEpisodes)]" />
 							<param name="list_id" value="6100"/>
@@ -179,7 +178,6 @@
 						<include content="WidgetListMovies">
 							<param name="content_path" value="special://skin/playlists/unwatched_tvshows.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31122]"/>
-							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
 							<param name="widget_target" value="videos"/>
 							<param name="second_label" value="$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)]" />
 							<param name="list_id" value="6300"/>
