@@ -30,7 +30,7 @@
 		<value>[COLOR grey]0[/COLOR]</value>
 	</variable>
 	<variable name="ActorLabel2">
-		<value condition="!IsEmpty(ListItem.Appearances)">$INFO[ListItem.Appearances]</value>
+		<value condition="!IsEmpty(ListItem.Appearances)">$LOCALIZE[38026]: $INFO[ListItem.Appearances]</value>
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="MusicInfoTextboxVar">
