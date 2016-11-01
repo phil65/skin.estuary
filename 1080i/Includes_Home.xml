@@ -76,9 +76,17 @@
 							<top>0</top>
 							<width>312</width>
 							<height>448</height>
-							<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+							<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>50</left>
+							<top>40</top>
+							<width>232</width>
+							<height>232</height>
+							<texture>$VAR[MediaTypeIconVar]</texture>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 						</control>
 						<control type="textbox">
 							<left>36</left>
@@ -109,9 +117,17 @@
 							<top>0</top>
 							<width>312</width>
 							<height>448</height>
-							<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+							<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>50</left>
+							<top>40</top>
+							<width>232</width>
+							<height>232</height>
+							<texture>$VAR[MediaTypeIconVar]</texture>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 						</control>
 						<control type="textbox">
 							<left>36</left>
@@ -124,8 +140,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
-							<animation effect="fade" start="0" end="100" time="200" reversible="true">Unfocus</animation>
-							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
 							<left>30</left>
@@ -328,7 +342,7 @@
 								<top>1</top>
 								<width>344</width>
 								<height>340</height>
-								<texture border="40">dialogs/dialog-bg-small.png</texture>
+								<texture border="21">dialogs/dialog-bg-small.png</texture>
 							</control>
 							<control type="image">
 								<left>24</left>
@@ -373,7 +387,7 @@
 								<top>1</top>
 								<width>344</width>
 								<height>340</height>
-								<texture border="40">dialogs/dialog-bg-small.png</texture>
+								<texture border="21">dialogs/dialog-bg-small.png</texture>
 							</control>
 							<control type="group">
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
@@ -476,9 +490,17 @@
 								<width>340</width>
 								<height>340</height>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+								<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
+							</control>
+							<control type="image">
+								<left>40</left>
+								<top>40</top>
+								<width>260</width>
+								<height>260</height>
+								<texture>$VAR[MediaTypeIconVar]</texture>
+								<visible>String.IsEmpty(ListItem.Art(thumb))</visible>
 							</control>
 							<control type="image">
 								<left>20</left>
@@ -534,10 +556,18 @@
 								<width>340</width>
 								<height>340</height>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+								<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
-							</control>
+								</control>
+								<control type="image">
+									<left>40</left>
+									<top>40</top>
+									<width>260</width>
+									<height>260</height>
+									<texture>$VAR[MediaTypeIconVar]</texture>
+									<visible>String.IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
 							<control type="group">
 								<left>20</left>
 								<top>20</top>
@@ -843,7 +873,7 @@
 							</control>
 							<control type="image">
 								<top>43</top>
-								<left>42</left>
+								<left>38</left>
 								<width>260</width>
 								<height>200</height>
 								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
@@ -897,7 +927,7 @@
 							</control>
 							<control type="image">
 								<top>43</top>
-								<left>42</left>
+								<left>38</left>
 								<width>260</width>
 								<height>200</height>
 								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>

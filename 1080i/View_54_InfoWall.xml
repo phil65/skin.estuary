@@ -42,7 +42,7 @@
 				<top>-10</top>
 				<width>316</width>
 				<height>380</height>
-				<texture border="40">dialogs/dialog-bg-small.png</texture>
+				<texture border="21">dialogs/dialog-bg-small.png</texture>
 			</control>
 			<control type="image">
 				<left>18</left>
@@ -83,7 +83,6 @@
 					<width>290</width>
 					<height>400</height>
 					<texture border="21">dialogs/dialog-bg-small.png</texture>
-					<bordertexture border="20">overlays/shadow.png</bordertexture>
 				</control>
 				<control type="image">
 					<left>26</left>

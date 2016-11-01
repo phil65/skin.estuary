@@ -21,7 +21,7 @@
 				<top>0</top>
 				<width>914</width>
 				<height>1080</height>
-				<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
+				<texture colordiffuse="E6FFFFFF">lists/panel.png</texture>
 			</control>
 			<include content="FileManagerPanel">
 				<param name="header_label" value="" />
@@ -51,7 +51,7 @@
 				<top>0</top>
 				<width>920</width>
 				<height>1080</height>
-				<texture colordiffuse="99FFFFFF" flipx="true">lists/panel.png</texture>
+				<texture colordiffuse="E6FFFFFF" flipx="true">lists/panel.png</texture>
 			</control>
 			<include content="FileManagerPanel">
 				<param name="header_id" value="102" />

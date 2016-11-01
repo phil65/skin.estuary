@@ -53,7 +53,7 @@
 							<top>0</top>
 							<width>860</width>
 							<height>195</height>
-							<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[BannerArtVar]</texture>
+							<texture border="2" fallback="dialogs/dialog-bg-nobo.png" background="true">$VAR[BannerArtVar]</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="24">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -87,7 +87,7 @@
 							<top>0</top>
 							<width>860</width>
 							<height>195</height>
-							<texture border="2" fallback="DefaultVideo.png" background="true">$VAR[BannerArtVar]</texture>
+							<texture border="2" fallback="dialogs/dialog-bg-nobo.png" background="true">$VAR[BannerArtVar]</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="24">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>

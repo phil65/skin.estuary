@@ -11,7 +11,7 @@
 				<top>0</top>
 				<width>338</width>
 				<height>1080</height>
-				<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
+				<texture colordiffuse="E6FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>0</left>
@@ -65,7 +65,7 @@
 				<top>0</top>
 				<width>1100</width>
 				<height>1080</height>
-				<texture colordiffuse="AAFFFFFF" flipx="true">lists/panel.png</texture>
+				<texture colordiffuse="E6FFFFFF" flipx="true">lists/panel.png</texture>
 			</control>
 			<include content="FileManagerPanel">
 				<param name="header_id" value="23" />
