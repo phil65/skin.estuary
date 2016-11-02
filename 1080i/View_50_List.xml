@@ -7,12 +7,26 @@
 			<top>0</top>
 			<visible>Control.IsVisible(50)</visible>
 			<include>Visible_Right</include>
+			<include content="ListContainer">
+				<param name="list_id" value="50" />
+				<param name="viewtype_label" value="$LOCALIZE[535]" />
+			</include>
 			<control type="image">
 				<left>657</left>
 				<top>0</top>
 				<width>670</width>
 				<height>1080</height>
 				<texture colordiffuse="E6FFFFFF" flipx="true">lists/panel.png</texture>
+			</control>
+			<control type="scrollbar" id="50600">
+				<left>732</left>
+				<top>0</top>
+				<width>12</width>
+				<height>1080</height>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<orientation>vertical</orientation>
+				<animation effect="zoom" end="50,100" time="300" tween="sine" center="732,0" easing="inout" condition="!Control.HasFocus(50600)">conditional</animation>
 			</control>
 			<control type="image">
 				<left>760</left>
@@ -23,10 +37,6 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
 			</control>
-			<include content="ListContainer">
-				<param name="list_id" value="50" />
-				<param name="viewtype_label" value="$LOCALIZE[535]" />
-			</include>
 			<control type="group">
 				<left>1013</left>
 				<top>950</top>
@@ -135,16 +145,6 @@
 					<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
 				</control>
 			</itemlayout>
-		</control>
-		<control type="scrollbar" id="$PARAM[list_id]600">
-			<left>732</left>
-			<top>0</top>
-			<width>12</width>
-			<height>1080</height>
-			<onleft>$PARAM[list_id]</onleft>
-			<onright>$PARAM[list_id]</onright>
-			<orientation>vertical</orientation>
-			<animation effect="zoom" end="50,100" time="300" tween="sine" center="732,0" easing="inout" condition="!Control.HasFocus($PARAM[list_id]600)">conditional</animation>
 		</control>
 	</include>
 	<include name="ListThumbInfoPanel">

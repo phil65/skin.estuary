@@ -6,15 +6,26 @@
 			<left>0</left>
 			<top>0</top>
 			<control type="group">
+				<include>OpenClose_Left</include>
+				<top>0</top>
+				<left>-5</left>
+				<visible>Control.IsVisible(502)</visible>
+				<include>Visible_Left</include>
+				<include content="ListContainer">
+					<param name="list_id" value="502" />
+					<param name="viewtype_label" value="$LOCALIZE[20445]" />
+				</include>
+			</control>
+			<control type="group">
 				<include>OpenClose_Right</include>
 				<visible>Control.IsVisible(502)</visible>
 				<include>Visible_Right</include>
 				<control type="image">
-					<left>727</left>
+					<left>561</left>
 					<top>0</top>
 					<width>1500</width>
 					<height>1080</height>
-					<texture colordiffuse="E6FFFFFF">lists/panel.png</texture>
+					<texture flipx="true" colordiffuse="E6FFFFFF">lists/panel.png</texture>
 				</control>
 				<control type="image">
 					<left>747</left>
@@ -38,6 +49,16 @@
 					<font>font13</font>
 					<label>$INFO[ListItem.Plot]</label>
 				</control>
+				<control type="scrollbar" id="502600">
+					<left>726</left>
+					<top>0</top>
+					<width>12</width>
+					<height>1080</height>
+					<onleft>502</onleft>
+					<onright>502</onright>
+					<orientation>vertical</orientation>
+					<animation effect="zoom" end="50,100" time="300" tween="sine" center="732,0" easing="inout" condition="!Control.HasFocus(502600)">conditional</animation>
+				</control>
 				<control type="group">
 					<left>760</left>
 					<top>790</top>
@@ -50,17 +71,6 @@
 						<param name="font" value="font13" />
 					</include>
 				</control>
-			</control>
-			<control type="group">
-				<include>OpenClose_Left</include>
-				<top>0</top>
-				<left>-5</left>
-				<visible>Control.IsVisible(502)</visible>
-				<include>Visible_Left</include>
-				<include content="ListContainer">
-					<param name="list_id" value="502" />
-					<param name="viewtype_label" value="$LOCALIZE[20445]" />
-				</include>
 			</control>
 		</control>
 	</include>

@@ -14,6 +14,59 @@
 			<imagepath colordiffuse="35FFFFFF">$INFO[Skin.String(HomeFanart.path)]settings$INFO[Skin.String(HomeFanart.ext)]</imagepath>
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
+		<control type="grouplist" id="5">
+			<description>control area</description>
+			<top>163</top>
+			<include>OpenClose_Right</include>
+			<left>472</left>
+			<pagecontrol>60</pagecontrol>
+			<width>1436</width>
+			<height>780</height>
+			<onleft>3</onleft>
+			<onright>60</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+		</control>
+		<control type="button" id="7">
+			<description>Default Button</description>
+			<width>1256</width>
+			<include>DefaultSettingButton</include>
+		</control>
+		<control type="radiobutton" id="8">
+			<description>Default RadioButton</description>
+			<width>1256</width>
+			<include>DefaultSettingButton</include>
+		</control>
+		<control type="spincontrolex" id="9">
+			<description>Default SpinControlex</description>
+			<width>1256</width>
+			<include>DefaultSettingButton</include>
+			<aligny>center</aligny>
+		</control>
+		<control type="sliderex" id="13">
+			<description>Default Slider</description>
+			<width>1256</width>
+			<include>DefaultSettingButton</include>
+			<aligny>center</aligny>
+		</control>
+		<control type="image" id="11">
+			<description>separator image</description>
+			<height>3</height>
+			<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
+		</control>
+		<control type="label" id="14">
+			<description>Default Label</description>
+			<width>1256</width>
+			<textoffsetx>45</textoffsetx>
+			<top>0</top>
+			<height>50</height>
+			<label></label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font25_title</font>
+			<textcolor>grey</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
 			<control type="image">
@@ -71,59 +124,6 @@
 				<textureradioofffocus>icons/settings.png</textureradioofffocus>
 				<textureradiooffnofocus>icons/settings.png</textureradiooffnofocus>
 			</control>
-		</control>
-		<control type="grouplist" id="5">
-			<description>control area</description>
-			<top>163</top>
-			<include>OpenClose_Right</include>
-			<left>472</left>
-			<pagecontrol>60</pagecontrol>
-			<width>1436</width>
-			<height>780</height>
-			<onleft>3</onleft>
-			<onright>60</onright>
-			<onup>5</onup>
-			<ondown>5</ondown>
-		</control>
-		<control type="button" id="7">
-			<description>Default Button</description>
-			<width>1256</width>
-			<include>DefaultSettingButton</include>
-		</control>
-		<control type="radiobutton" id="8">
-			<description>Default RadioButton</description>
-			<width>1256</width>
-			<include>DefaultSettingButton</include>
-		</control>
-		<control type="spincontrolex" id="9">
-			<description>Default SpinControlex</description>
-			<width>1256</width>
-			<include>DefaultSettingButton</include>
-			<aligny>center</aligny>
-		</control>
-		<control type="sliderex" id="13">
-			<description>Default Slider</description>
-			<width>1256</width>
-			<include>DefaultSettingButton</include>
-			<aligny>center</aligny>
-		</control>
-		<control type="image" id="11">
-			<description>separator image</description>
-			<height>3</height>
-			<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-		</control>
-		<control type="label" id="14">
-			<description>Default Label</description>
-			<width>1256</width>
-			<textoffsetx>45</textoffsetx>
-			<top>0</top>
-			<height>50</height>
-			<label></label>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font25_title</font>
-			<textcolor>grey</textcolor>
-			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="scrollbar" id="60">
 			<right>0</right>
