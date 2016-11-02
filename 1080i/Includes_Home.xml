@@ -285,6 +285,8 @@
 	<include name="WidgetListEpisodes">
 		<param name="sortby"></param>
 		<param name="sortorder">ascending</param>
+		<param name="first_label">$INFO[ListItem.TVShowTitle]</param>
+		<param name="item_image">$INFO[ListItem.Art(thumb)]</param>
 		<definition>
 			<control type="group">
 				<description>Episode Widget including header</description>
@@ -342,7 +344,7 @@
 								<left>30</left>
 								<top>22</top>
 								<width>288</width>
-								<label>$INFO[ListItem.TVShowTitle]</label>
+								<label>$PARAM[first_label]</label>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -407,7 +409,7 @@
 								<left>30</left>
 								<top>22</top>
 								<width>288</width>
-								<label>$INFO[ListItem.TVShowTitle]</label>
+								<label>$PARAM[first_label]</label>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
