@@ -147,9 +147,9 @@
 				<radiowidth>40</radiowidth>
 				<radioheight>40</radioheight>
 				<textureradioonfocus>$PARAM[icon]</textureradioonfocus>
-				<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
+				<textureradioonnofocus colordiffuse="grey">$PARAM[icon]</textureradioonnofocus>
 				<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
-				<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
+				<textureradiooffnofocus colordiffuse="grey">$PARAM[icon]</textureradiooffnofocus>
 				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
