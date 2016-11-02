@@ -968,17 +968,17 @@
 						<label>$INFO[System.Time]</label>
 					</control>
 				</control>
-					<control type="label">
-						<top>77</top>
-						<label>$INFO[System.AlarmPos,$LOCALIZE[13005]: ]</label>
-						<font>font13</font>
-						<right>22</right>
-						<shadowcolor>text_shadow</shadowcolor>
-						<height>100</height>
-						<width>500</width>
-						<align>right</align>
-						<visible>System.HasAlarm(shutdowntimer)</visible>
-					</control>
+				<control type="label">
+					<top>77</top>
+					<label>$INFO[System.AlarmPos,$LOCALIZE[13005]: ]</label>
+					<font>font13</font>
+					<right>22</right>
+					<shadowcolor>text_shadow</shadowcolor>
+					<height>100</height>
+					<width>500</width>
+					<align>right</align>
+					<visible>System.HasAlarm(shutdowntimer)</visible>
+				</control>
 			</control>
 		</definition>
 	</include>
@@ -1011,16 +1011,31 @@
 					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
 					<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="bg_image">$VAR[GlobalFanartVar]</texture>
 				</control>
-				<control type="image">
+				<control type="group">
+					<visible>![Player.HasVideo | [Player.HasAudio + Visualisation.Enabled]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 					<depth>DepthBackground</depth>
-					<include>FullScreenDimensions</include>
-					<aspectratio>scale</aspectratio>
-					<fadetime>400</fadetime>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 					<animation effect="fade" time="400">VisibleChange</animation>
-					<texture background="true" colordiffuse="37FFFFFF">$VAR[MediaFanartVar]</texture>
-					<visible>![Player.HasVideo | [Player.HasAudio + Visualisation.Enabled]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+					<control type="image">
+						<include>FullScreenDimensions</include>
+						<aspectratio>scale</aspectratio>
+						<fadetime>400</fadetime>
+						<animation effect="fade" time="400">VisibleChange</animation>
+						<texture background="true" colordiffuse="37FFFFFF">$VAR[MediaFanartVar]</texture>
+						<visible>!Control.IsVisible(502)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>720</width>
+						<height>1080</height>
+						<aspectratio>scale</aspectratio>
+						<fadetime>400</fadetime>
+						<animation effect="fade" time="400">VisibleChange</animation>
+						<texture background="true" colordiffuse="37FFFFFF">$VAR[PosterVar]</texture>
+						<visible>Control.IsVisible(502)</visible>
+					</control>
 				</control>
 			</control>
 		</definition>
