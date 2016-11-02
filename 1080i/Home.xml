@@ -245,7 +245,6 @@
 							<param name="list_id" value="7100"/>
 							<param name="onup_id" value="7900"/>
 							<param name="ondown_id" value="7200"/>
-							<param name="widget_limit" value="10"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="musicdb://recentlyaddedalbums/"/>
@@ -254,7 +253,6 @@
 							<param name="list_id" value="7200"/>
 							<param name="onup_id" value="7100"/>
 							<param name="ondown_id" value="7300"/>
-							<param name="widget_limit" value="10"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/random_albums.xsp"/>
@@ -263,7 +261,6 @@
 							<param name="list_id" value="7300"/>
 							<param name="onup_id" value="7200"/>
 							<param name="ondown_id" value="7400"/>
-							<param name="widget_limit" value="10"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/random_artists.xsp"/>
@@ -275,7 +272,6 @@
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
-							<param name="widget_limit" value="10"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/unplayed_albums.xsp"/>
@@ -284,7 +280,6 @@
 							<param name="list_id" value="7500"/>
 							<param name="onup_id" value="7400"/>
 							<param name="ondown_id" value="7600"/>
-							<param name="widget_limit" value="10"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
@@ -295,7 +290,6 @@
 							<param name="ondown_id" value="20001"/>
 							<param name="sortby" value="playcount"/>
 							<param name="sortorder" value="descending"/>
-							<param name="widget_limit" value="10"/>
 						</include>
 						<include content="ImageWidgetHeader">
 							<param name="widget_header" value="$LOCALIZE[10005]" />

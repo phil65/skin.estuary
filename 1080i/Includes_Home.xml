@@ -433,6 +433,7 @@
 		<param name="sortby"></param>
 		<param name="visible">True</param>
 		<param name="sortorder">ascending</param>
+		<param name="widget_limit">15</param>
 		<param name="fallback_icon">DefaultAudio.png</param>
 		<param name="main_label">$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]</param>
 		<definition>
