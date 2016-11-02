@@ -71,6 +71,12 @@
 	</variable>
 	<variable name="InfoWallThumbVar">
 		<value condition="!String.IsEmpty(Listitem.Art(poster))">$INFO[Listitem.Art(poster)]</value>
+		<value condition="String.IsEqual(ListItem.DbType,movie)">DefaultMovies.png</value>
+		<value condition="String.IsEqual(ListItem.DbType,set)">DefaultSets.png</value>
+		<value condition="String.IsEqual(ListItem.DbType,tvshow)">DefaultTVShows.png</value>
+		<value condition="String.IsEqual(ListItem.DbType,song)">DefaultMusicSongs.png</value>
+		<value condition="String.IsEqual(ListItem.DbType,album)">DefaultMusicAlbums.png</value>
+		<value condition="String.IsEqual(ListItem.DbType,artist)">DefaultMusicArtists.png</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="IconWallThumbVar">

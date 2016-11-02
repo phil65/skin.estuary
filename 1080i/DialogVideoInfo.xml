@@ -91,7 +91,7 @@
 						<onleft>138</onleft>
 						<onright>138</onright>
 						<ondown>5000</ondown>
-						<texturenofocus border="40">dialogs/dialog-bg.png</texturenofocus>
+						<texturenofocus border="21">dialogs/dialog-bg.png</texturenofocus>
 						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="image">
@@ -99,7 +99,7 @@
 						<width>512</width>
 						<height>418</height>
 						<aligny>bottom</aligny>
-						<texture border="40">dialogs/dialog-bg.png</texture>
+						<texture border="21">dialogs/dialog-bg.png</texture>
 						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="button" id="139">

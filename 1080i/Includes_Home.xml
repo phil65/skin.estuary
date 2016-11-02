@@ -124,8 +124,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
-							<animation effect="fade" start="0" end="100" time="200" reversible="true">Unfocus</animation>
-							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
 							<left>30</left>
@@ -162,9 +160,9 @@
 								<align>center</align>
 							</control>
 							<control type="progress">
-								<left>0</left>
+								<left>-2</left>
 								<top>390</top>
-								<width>272</width>
+								<width>276</width>
 								<height>1</height>
 								<texturebg></texturebg>
 								<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
@@ -172,10 +170,10 @@
 								<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>272</width>
-								<height>412</height>
+								<left>-2</left>
+								<top>-2</top>
+								<width>276</width>
+								<height>414</height>
 								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
@@ -328,7 +326,9 @@
 								<top>1</top>
 								<width>344</width>
 								<height>340</height>
-								<texture border="40">dialogs/dialog-bg-small.png</texture>
+								<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
 							</control>
 							<control type="image">
 								<left>24</left>
@@ -373,7 +373,7 @@
 								<top>1</top>
 								<width>344</width>
 								<height>340</height>
-								<texture border="40">dialogs/dialog-bg-small.png</texture>
+								<texture border="21">dialogs/dialog-bg-small.png</texture>
 							</control>
 							<control type="group">
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
@@ -474,18 +474,27 @@
 								<left>0</left>
 								<top>0</top>
 								<width>340</width>
-								<height>340</height>
+								<height>400</height>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+								<texture>dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
 							</control>
 							<control type="image">
 								<left>20</left>
-								<top>320</top>
+								<top>20</top>
 								<width>300</width>
-								<height>60</height>
-								<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+								<height>300</height>
+								<aspectratio>scale</aspectratio>
+								<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+							</control>
+							<control type="image">
+								<left>40</left>
+								<top>40</top>
+								<width>260</width>
+								<height>260</height>
+								<texture>$VAR[MediaTypeIconVar]</texture>
+								<visible>String.IsEmpty(ListItem.Art(thumb))</visible>
 							</control>
 							<control type="label">
 								<left>40</left>
@@ -532,22 +541,23 @@
 								<left>0</left>
 								<top>0</top>
 								<width>340</width>
-								<height>340</height>
+								<height>400</height>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+								<texture>dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>20</top>
+								<width>300</width>
+								<height>300</height>
+								<aspectratio>scale</aspectratio>
+								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 							</control>
 							<control type="group">
 								<left>20</left>
 								<top>20</top>
-								<control type="image">
-									<left>0</left>
-									<top>300</top>
-									<width>300</width>
-									<height>60</height>
-									<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-								</control>
 								<control type="label">
 									<left>10</left>
 									<top>298</top>
@@ -580,10 +590,10 @@
 									<align>center</align>
 								</control>
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>300</width>
-									<height>300</height>
+									<left>-2</left>
+									<top>-2</top>
+									<width>304</width>
+									<height>364</height>
 									<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 									<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 									<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
@@ -644,7 +654,9 @@
 							<control type="image">
 								<width>336</width>
 								<height>280</height>
-								<texture border="21">dialogs/dialog-bg-small.png</texture>
+								<texture>dialogs/dialog-bg-nobo.png</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
 							</control>
 							<control type="image">
 								<top>18</top>
@@ -697,12 +709,15 @@
 							<control type="image">
 								<width>336</width>
 								<height>280</height>
-								<texture border="21">dialogs/dialog-bg-small.png</texture>
+								<texture>dialogs/dialog-bg-nobo.png</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
 							</control>
 							<control type="image">
+								<top>-2</top>
 								<left>-2</left>
 								<width>340</width>
-								<height>282</height>
+								<height>284</height>
 								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
@@ -839,11 +854,13 @@
 							<control type="image">
 								<width>334</width>
 								<height>340</height>
-								<texture border="21">dialogs/dialog-bg-small.png</texture>
+								<texture>dialogs/dialog-bg-nobo.png</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
 							</control>
 							<control type="image">
 								<top>43</top>
-								<left>42</left>
+								<left>38</left>
 								<width>260</width>
 								<height>200</height>
 								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
@@ -886,18 +903,22 @@
 							<control type="image">
 								<width>334</width>
 								<height>340</height>
-								<texture border="21">dialogs/dialog-bg-small.png</texture>
+								<texture>dialogs/dialog-bg-nobo.png</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
 							</control>
 							<control type="image">
-								<width>336</width>
-								<height>340</height>
+								<top>-2</top>
+								<left>-2</left>
+								<width>338</width>
+								<height>344</height>
 								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							</control>
 							<control type="image">
 								<top>43</top>
-								<left>42</left>
+								<left>38</left>
 								<width>260</width>
 								<height>200</height>
 								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
@@ -977,7 +998,9 @@
 							<top>20</top>
 							<width>254</width>
 							<height>350</height>
-							<texture border="21">dialogs/dialog-bg-small.png</texture>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
 							<left>60</left>
@@ -1026,13 +1049,15 @@
 							<top>20</top>
 							<width>254</width>
 							<height>350</height>
-							<texture border="21">dialogs/dialog-bg-small.png</texture>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<left>0</left>
-							<top>20</top>
-							<width>254</width>
-							<height>350</height>
+							<left>-2</left>
+							<top>18</top>
+							<width>258</width>
+							<height>354</height>
 							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							<visible>Control.HasFocus($PARAM[list_id])</visible>

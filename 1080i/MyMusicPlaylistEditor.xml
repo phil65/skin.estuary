@@ -6,12 +6,25 @@
 		<include>DefaultBackground</include>
 		<control type="group">
 			<include>OpenClose_Left</include>
+			<left>302</left>
+			<include content="FileManagerPanel">
+				<param name="header_id" value="22" />
+				<param name="header_label" value="$LOCALIZE[20094]" />
+				<param name="list_id" value="50" />
+				<param name="scrollbar_id" value="60" />
+				<param name="onleft_id" value="9000" />
+				<param name="onright_id" value="60" />
+				<param name="width" value="770" />
+			</include>
+		</control>
+		<control type="group">
+			<include>OpenClose_Left</include>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
 				<width>338</width>
 				<height>1080</height>
-				<texture colordiffuse="AAFFFFFF">lists/panel.png</texture>
+				<texture colordiffuse="E6FFFFFF">lists/panel.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>0</left>
@@ -45,19 +58,6 @@
 			</control>
 		</control>
 		<control type="group">
-			<include>OpenClose_Left</include>
-			<left>302</left>
-			<include content="FileManagerPanel">
-				<param name="header_id" value="22" />
-				<param name="header_label" value="$LOCALIZE[20094]" />
-				<param name="list_id" value="50" />
-				<param name="scrollbar_id" value="60" />
-				<param name="onleft_id" value="9000" />
-				<param name="onright_id" value="60" />
-				<param name="width" value="770" />
-			</include>
-		</control>
-		<control type="group">
 			<include>OpenClose_Right</include>
 			<left>1075</left>
 			<control type="image">
@@ -65,7 +65,7 @@
 				<top>0</top>
 				<width>1100</width>
 				<height>1080</height>
-				<texture colordiffuse="AAFFFFFF" flipx="true">lists/panel.png</texture>
+				<texture colordiffuse="E6FFFFFF" flipx="true">lists/panel.png</texture>
 			</control>
 			<include content="FileManagerPanel">
 				<param name="header_id" value="23" />
@@ -78,21 +78,23 @@
 			</include>
 			<control type="scrollbar" id="60">
 				<left>0</left>
-				<top>0</top>
+				<top>80</top>
 				<width>12</width>
-				<height>1080</height>
+				<height>920</height>
 				<onleft>50</onleft>
 				<onright>100</onright>
+				<texturesliderbackground></texturesliderbackground>
 				<animation effect="zoom" end="50,100" time="300" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 				<orientation>vertical</orientation>
 			</control>
 			<control type="scrollbar" id="61">
 				<left>834</left>
-				<top>0</top>
+				<top>80</top>
 				<width>12</width>
-				<height>1080</height>
+				<height>920</height>
 				<onleft>100</onleft>
 				<onright>9000</onright>
+				<texturesliderbackground></texturesliderbackground>
 				<animation effect="zoom" end="50,100" time="300" tween="sine" center="848,0" easing="inout" condition="!Control.HasFocus(61)">conditional</animation>
 				<orientation>vertical</orientation>
 			</control>
