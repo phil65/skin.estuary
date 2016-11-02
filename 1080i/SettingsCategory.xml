@@ -14,18 +14,36 @@
 			<imagepath colordiffuse="35FFFFFF">$INFO[Skin.String(HomeFanart.path)]settings$INFO[Skin.String(HomeFanart.ext)]</imagepath>
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
-		<control type="grouplist" id="5">
-			<description>control area</description>
-			<top>163</top>
+		<control type="group">
 			<include>OpenClose_Right</include>
-			<left>472</left>
-			<pagecontrol>60</pagecontrol>
-			<width>1450</width>
-			<height>780</height>
-			<onleft>3</onleft>
-			<onright>60</onright>
-			<onup>5</onup>
-			<ondown>5</ondown>
+			<control type="grouplist" id="5">
+				<description>control area</description>
+				<top>163</top>
+				<left>472</left>
+				<pagecontrol>60</pagecontrol>
+				<width>1450</width>
+				<height>780</height>
+				<onleft>3</onleft>
+				<onright>60</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>472</left>
+				<top>160</top>
+				<width>1450</width>
+				<height>3</height>
+				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+			</control>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>472</left>
+				<top>943</top>
+				<width>1450</width>
+				<height>3</height>
+				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+			</control>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
@@ -143,22 +161,6 @@
 		<include>BottomBar</include>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<control type="image">
-				<description>Dialog Header image</description>
-				<left>472</left>
-				<top>160</top>
-				<width>1450</width>
-				<height>3</height>
-				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
-			</control>
-			<control type="image">
-				<description>Dialog Header image</description>
-				<left>472</left>
-				<top>943</top>
-				<width>1450</width>
-				<height>3</height>
-				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
-			</control>
 			<control type="textbox" id="6">
 				<description>description area</description>
 				<left>510</left>
