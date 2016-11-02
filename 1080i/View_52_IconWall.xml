@@ -25,7 +25,7 @@
 						<control type="image">
 							<width>396</width>
 							<height>245</height>
-							<texture border="40">dialogs/dialog-bg-nobo.png</texture>
+							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
@@ -135,7 +135,9 @@
 						<control type="image">
 							<width>330</width>
 							<height>140</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 						</control>
 						<control type="textbox">
 							<left>30</left>
@@ -162,7 +164,9 @@
 						<control type="image">
 							<width>330</width>
 							<height>140</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 							<animation effect="fade" start="0" end="100" time="0">Unfocus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Focus</animation>
 						</control>
