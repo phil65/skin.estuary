@@ -84,16 +84,6 @@
 		<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
-	<variable name="MediaTypeIconVar">
-		<value condition="String.IsEqual(ListItem.DbType,movie)">DefaultMovies.png</value>
-		<value condition="String.IsEqual(ListItem.DbType,set)">DefaultSets.png</value>
-		<value condition="String.IsEqual(ListItem.DbType,tvshow)">DefaultTVShows.png</value>
-		<value condition="String.IsEqual(ListItem.DbType,song)">DefaultMusicSongs.png</value>
-		<value condition="String.IsEqual(ListItem.DbType,album)">DefaultMusicAlbums.png</value>
-		<value condition="String.IsEqual(ListItem.DbType,artist)">DefaultMusicArtists.png</value>
-		<value condition="!String.IsEmpty(ListItem.AddonName)">DefaultAddon.png</value>
-		<value>DefaultFolder.png</value>
-	</variable>
 	<variable name="ListLabel2Var">
 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[556])">$INFO[ListItem.Year]</value>
 		<value>$INFO[ListItem.Label2]</value>
