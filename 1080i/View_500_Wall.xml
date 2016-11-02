@@ -121,14 +121,14 @@
 				</itemlayout>
 				<focusedlayout height="425" width="442" condition="Container.Content(images)">
 					<control type="group">
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="222,300">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="222,300">UnFocus</animation>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,330">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="220,330">UnFocus</animation>
 						<left>40</left>
 						<top>150</top>
 						<include>InfoWallPictureLayout</include>
 						<control type="image">
-							<left>15</left>
-							<top>5</top>
+							<left>16</left>
+							<top>6</top>
 							<width>364</width>
 							<height>348</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
@@ -147,8 +147,8 @@
 				<focusedlayout height="400" width="300" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
 						<top>150</top>
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="160,300">UnFocus</animation>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="140,300">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="140,300">UnFocus</animation>
 						<include content="InfoWallMusicLayout">
 							<param name="fallback_image" value="DefaultMusicSongs.png" />
 						</include>
@@ -173,15 +173,15 @@
 				<focusedlayout height="390" width="300" condition="Container.Content(addons)">
 					<control type="group">
 						<top>150</top>
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="160,300">UnFocus</animation>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="150,320">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="150,320">UnFocus</animation>
 						<include content="InfoWallMusicLayout">
 							<param name="fallback_image" value="DefaultAddon.png" />
 						</include>
 						<control type="image">
-							<left>17</left>
+							<left>16</left>
 							<top>8</top>
-							<width>286</width>
+							<width>282</width>
 							<height>344</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>

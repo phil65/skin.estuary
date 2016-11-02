@@ -244,6 +244,7 @@
 							<param name="list_id" value="7100"/>
 							<param name="onup_id" value="7900"/>
 							<param name="ondown_id" value="7200"/>
+							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="musicdb://recentlyaddedalbums/"/>
@@ -252,6 +253,7 @@
 							<param name="list_id" value="7200"/>
 							<param name="onup_id" value="7100"/>
 							<param name="ondown_id" value="7300"/>
+							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/random_albums.xsp"/>
@@ -260,6 +262,7 @@
 							<param name="list_id" value="7300"/>
 							<param name="onup_id" value="7200"/>
 							<param name="ondown_id" value="7400"/>
+							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/random_artists.xsp"/>
@@ -268,6 +271,7 @@
 							<param name="list_id" value="7400"/>
 							<param name="onup_id" value="7300"/>
 							<param name="ondown_id" value="7500"/>
+							<param name="fallback_icon" value="DefaultMusicArtists.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
@@ -279,6 +283,7 @@
 							<param name="list_id" value="7500"/>
 							<param name="onup_id" value="7400"/>
 							<param name="ondown_id" value="7600"/>
+							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
@@ -287,6 +292,7 @@
 							<param name="list_id" value="7600"/>
 							<param name="onup_id" value="7500"/>
 							<param name="ondown_id" value="20001"/>
+							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 							<param name="sortby" value="playcount"/>
 							<param name="sortorder" value="descending"/>
 						</include>
@@ -662,15 +668,18 @@
 								<focusedlayout width="340" height="361">
 									<control type="group">
 										<top>130</top>
+										<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="170,320">Focus</animation>
+										<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="170,320">UnFocus</animation>
 										<include content="InfoWallMusicLayout">
 											<param name="fallback_image" value="DefaultFavourites.png" />
 										</include>
 										<control type="image">
-											<left>16</left>
-											<top>5</top>
-											<width>283</width>
+											<left>15</left>
+											<top>6</top>
+											<width>284</width>
 											<height>348</height>
 											<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+											<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 										</control>
 									</control>
 								</focusedlayout>
@@ -1046,8 +1055,8 @@
 						</item>
 						<item>
 							<label>$LOCALIZE[20389]</label>
-							<onclick>ActivateWindow(Music,musicvideos,return)</onclick>
-							<thumb>icons/sidemenu/music.png</thumb>
+							<onclick>ActivateWindow(Videos,musicvideos,return)</onclick>
+							<thumb>icons/sidemenu/musicvideos.png</thumb>
 							<property name="id">musicvideos</property>
 							<visible>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
 						</item>

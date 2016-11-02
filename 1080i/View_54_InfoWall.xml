@@ -5,7 +5,9 @@
 			<top>-10</top>
 			<width>396</width>
 			<height>380</height>
-			<texture border="40">dialogs/dialog-bg-small.png</texture>
+			<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+			<bordertexture border="20">overlays/shadow.png</bordertexture>
+			<bordersize>20</bordersize>
 		</control>
 		<control type="image">
 			<left>30</left>
@@ -42,7 +44,9 @@
 				<top>-10</top>
 				<width>316</width>
 				<height>380</height>
-				<texture border="21">dialogs/dialog-bg-small.png</texture>
+				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
 				<left>18</left>
@@ -82,7 +86,9 @@
 					<top>-10</top>
 					<width>290</width>
 					<height>400</height>
-					<texture border="21">dialogs/dialog-bg-small.png</texture>
+					<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
 					<left>26</left>
@@ -102,7 +108,7 @@
 				<height>400</height>
 				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Art(poster)]</texture>
 				<aspectratio>scale</aspectratio>
-				<bordertexture border="24">overlays/shadow.png</bordertexture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Art(poster))</visible>
 			</control>
@@ -190,7 +196,7 @@
 							<left>32</left>
 							<top>8</top>
 							<width>256</width>
-							<height>363</height>
+							<height>366</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
@@ -208,21 +214,21 @@
 						<include>InfoWallMusicLayout</include>
 						<control type="group">
 							<left>133</left>
-							<top>-16</top>
+							<top>-12</top>
 							<include>UserRatingCircle</include>
 						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="240,330">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="240,330">UnFocus</animation>
+						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="250,330">Focus</animation>
+						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="250,330">UnFocus</animation>
 						<top>150</top>
 						<left>90</left>
 						<include>InfoWallMusicLayout</include>
 						<control type="image">
-							<left>15</left>
-							<top>5</top>
+							<left>16</left>
+							<top>6</top>
 							<width>284</width>
 							<height>348</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
@@ -230,7 +236,7 @@
 						</control>
 						<control type="group">
 							<left>133</left>
-							<top>-16</top>
+							<top>-12</top>
 							<include>UserRatingCircle</include>
 						</control>
 					</control>
@@ -246,12 +252,12 @@
 					<control type="group">
 						<left>30</left>
 						<top>150</top>
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,330">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,330">UnFocus</animation>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,330">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="220,330">UnFocus</animation>
 						<include>InfoWallPictureLayout</include>
 						<control type="image">
-							<left>15</left>
-							<top>5</top>
+							<left>16</left>
+							<top>6</top>
 							<width>364</width>
 							<height>348</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
