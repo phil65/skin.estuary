@@ -905,7 +905,7 @@
 							<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 							<param name="button_id" value="16800"/>
 							<param name="visible" value="!Library.HasContent(musicvideos)"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMovieButton)"/>
+							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicVideoButton)"/>
 						</include>
 					</control>
 				</control>
