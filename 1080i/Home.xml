@@ -895,7 +895,7 @@
 							<param name="visible" value="Library.HasContent(musicvideos)"/>
 						</include>
 						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[342]" />
+							<param name="widget_header" value="$LOCALIZE[20389]" />
 							<param name="visible" value="!Library.HasContent(musicvideos)"/>
 						</include>
 						<include content="ImageWidget">
