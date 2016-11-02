@@ -433,6 +433,7 @@
 		<param name="sortby"></param>
 		<param name="visible">True</param>
 		<param name="sortorder">ascending</param>
+		<param name="fallback_icon">DefaultAudio.png</param>
 		<param name="main_label">$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Artist]</param>
 		<definition>
 			<control type="group">
@@ -486,7 +487,7 @@
 								<width>300</width>
 								<height>300</height>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+								<texture fallback="$PARAM[fallback_icon]" background="true">$INFO[ListItem.Art(thumb)]</texture>
 							</control>
 							<control type="image">
 								<left>40</left>
@@ -553,7 +554,7 @@
 								<width>300</width>
 								<height>300</height>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+								<texture fallback="$PARAM[fallback_icon]" background="true">$INFO[ListItem.Art(thumb)]</texture>
 							</control>
 							<control type="group">
 								<left>20</left>

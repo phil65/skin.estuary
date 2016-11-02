@@ -339,6 +339,7 @@
 							<param name="list_id" value="8100"/>
 							<param name="onup_id" value="8900"/>
 							<param name="ondown_id" value="8200"/>
+							<param name="fallback_icon" value="DefaultAddon.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
@@ -352,6 +353,7 @@
 							<param name="list_id" value="8200"/>
 							<param name="onup_id" value="8100"/>
 							<param name="ondown_id" value="8300"/>
+							<param name="fallback_icon" value="DefaultAddon.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
@@ -365,6 +367,7 @@
 							<param name="list_id" value="8300"/>
 							<param name="onup_id" value="8200"/>
 							<param name="ondown_id" value="8400"/>
+							<param name="fallback_icon" value="DefaultAddon.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
@@ -378,6 +381,7 @@
 							<param name="list_id" value="8400"/>
 							<param name="onup_id" value="8300"/>
 							<param name="ondown_id" value="8500"/>
+							<param name="fallback_icon" value="DefaultAddon.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
