@@ -20,7 +20,7 @@
 			<include>OpenClose_Right</include>
 			<left>472</left>
 			<pagecontrol>60</pagecontrol>
-			<width>1436</width>
+			<width>1450</width>
 			<height>780</height>
 			<onleft>3</onleft>
 			<onright>60</onright>
@@ -29,23 +29,19 @@
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
-			<width>1256</width>
 			<include>DefaultSettingButton</include>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
-			<width>1256</width>
 			<include>DefaultSettingButton</include>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
-			<width>1256</width>
 			<include>DefaultSettingButton</include>
 			<aligny>center</aligny>
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Slider</description>
-			<width>1256</width>
 			<include>DefaultSettingButton</include>
 			<aligny>center</aligny>
 		</control>
@@ -56,7 +52,7 @@
 		</control>
 		<control type="label" id="14">
 			<description>Default Label</description>
-			<width>1256</width>
+			<width>1450</width>
 			<textoffsetx>45</textoffsetx>
 			<top>0</top>
 			<height>50</height>
@@ -127,12 +123,19 @@
 		</control>
 		<control type="scrollbar" id="60">
 			<right>0</right>
-			<top>80</top>
+			<top>163</top>
 			<width>12</width>
-			<height>920</height>
+			<height>780</height>
+			<orientation>vertical</orientation>
+			<texturesliderbackground></texturesliderbackground>
+			<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 			<onleft>5</onleft>
 			<onright>5</onright>
-			<orientation>vertical</orientation>
+			<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
+			<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[5]$INFO[Control.GetLabel(2), / ]" />
@@ -144,7 +147,7 @@
 				<description>Dialog Header image</description>
 				<left>472</left>
 				<top>160</top>
-				<width>1436</width>
+				<width>1450</width>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>
@@ -152,7 +155,7 @@
 				<description>Dialog Header image</description>
 				<left>472</left>
 				<top>943</top>
-				<width>1436</width>
+				<width>1450</width>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>

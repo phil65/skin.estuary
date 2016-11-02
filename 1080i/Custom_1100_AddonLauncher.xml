@@ -306,9 +306,9 @@
 			<include>BottomBar</include>
 			<control type="scrollbar" id="531">
 				<right>0</right>
-				<top>0</top>
+				<top>80</top>
 				<width>12</width>
-				<height>1080</height>
+				<height>920</height>
 				<orientation>vertical</orientation>
 				<texturesliderbackground></texturesliderbackground>
 				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>

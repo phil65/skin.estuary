@@ -8,44 +8,7 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
-			<include>OpenClose_Left</include>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>450</width>
-					<height>1080</height>
-					<texture colordiffuse="E6FFFFFF">lists/panel.png</texture>
-				</control>
-				<control type="grouplist" id="700">
-					<orientation>vertical</orientation>
-					<itemgap>-9</itemgap>
-					<left>0</left>
-					<top>165</top>
-					<onup>700</onup>
-					<ondown>700</ondown>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<include content="PlaylistWindowButton">
-						<param name="control_id" value="20" />
-						<param name="label" value="$LOCALIZE[191]$INFO[Playlist.Random, : ]" />
-						<param name="width" value="400" />
-					</include>
-					<include content="PlaylistWindowButton">
-						<param name="control_id" value="26" />
-						<param name="label" value="" />
-						<param name="width" value="400" />
-					</include>
-					<include content="PlaylistWindowButton">
-						<param name="control_id" value="21" />
-						<param name="label" value="$LOCALIZE[190]" />
-						<param name="width" value="400" />
-					</include>
-					<include content="PlaylistWindowButton">
-						<param name="control_id" value="22" />
-						<param name="label" value="$LOCALIZE[192]" />
-						<param name="width" value="400" />
-					</include>
-				</control>
+				<include>OpenClose_Left</include>
 				<control type="fixedlist" id="50">
 					<left>402</left>
 					<top>3</top>
@@ -126,6 +89,43 @@
 					</itemlayout>
 				</control>
 			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>450</width>
+				<height>1080</height>
+				<texture colordiffuse="E6FFFFFF">lists/panel.png</texture>
+			</control>
+			<control type="grouplist" id="700">
+				<orientation>vertical</orientation>
+				<itemgap>-9</itemgap>
+				<left>0</left>
+				<top>165</top>
+				<onup>700</onup>
+				<ondown>700</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<include content="PlaylistWindowButton">
+					<param name="control_id" value="20" />
+					<param name="label" value="$LOCALIZE[191]$INFO[Playlist.Random, : ]" />
+					<param name="width" value="400" />
+				</include>
+				<include content="PlaylistWindowButton">
+					<param name="control_id" value="26" />
+					<param name="label" value="" />
+					<param name="width" value="400" />
+				</include>
+				<include content="PlaylistWindowButton">
+					<param name="control_id" value="21" />
+					<param name="label" value="$LOCALIZE[190]" />
+					<param name="width" value="400" />
+				</include>
+				<include content="PlaylistWindowButton">
+					<param name="control_id" value="22" />
+					<param name="label" value="$LOCALIZE[192]" />
+					<param name="width" value="400" />
+				</include>
+			</control>
 			<control type="group">
 				<left>1340</left>
 				<include>OpenClose_Right</include>
@@ -134,10 +134,11 @@
 				</include>
 				<control type="scrollbar" id="60">
 					<left>-13</left>
-					<top>0</top>
+					<top>80</top>
 					<width>12</width>
-					<height>1080</height>
+					<height>920</height>
 					<onleft>50</onleft>
+					<texturesliderbackground></texturesliderbackground>
 					<onright>700</onright>
 					<animation effect="zoom" end="50,100" time="300" tween="sine" center="-13,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 					<orientation>vertical</orientation>
