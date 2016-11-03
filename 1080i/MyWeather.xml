@@ -2,9 +2,23 @@
 <window>
 	<defaultcontrol always="true">15100</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
-	<menucontrol>20000</menucontrol>
+	<menucontrol>10000</menucontrol>
 	<controls>
 		<control type="button" id="20000">
+			<include>HiddenObject</include>
+			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
+			<onfocus>SetFocus(2000)</onfocus>
+			<onclick>noop</onclick>
+			<visible allowhiddenfocus="true">Control.HasFocus(20000)</visible>
+		</control>
+		<control type="button" id="20001">
+			<include>HiddenObject</include>
+			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
+			<onfocus>SetFocus(2000)</onfocus>
+			<onclick>noop</onclick>
+			<visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
+		</control>
+		<control type="button" id="10000">
 			<include>HiddenObject</include>
 			<onfocus>ActivateWindow(servicesettings,weather)</onfocus>
 			<onclick>noop</onclick>
@@ -39,11 +53,19 @@
 			<imagepath background="true" colordiffuse="35FFFFFF">$VAR[WeatherFanartVar]</imagepath>
 			<visible>!Player.HasMedia</visible>
 		</control>
-		<control type="grouplist" id="15001">
+		<control type="grouplist" id="2000">
 			<orientation>vertical</orientation>
 			<top>0</top>
 			<height>1080</height>
 			<left>0</left>
+			<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
+				<effect type="slide" end="0,20" time="60" tween="sine" />
+				<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
+			</animation>
+			<animation type="Conditional" condition="Control.IsVisible(20001)" reversible="false">
+				<effect type="slide" end="0,-20" time="60" tween="sine" />
+				<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
+			</animation>
 			<scrolltime tween="cubic" easing="out">500</scrolltime>
 			<include>OpenClose_Right</include>
 			<itemgap>-130</itemgap>
@@ -51,14 +73,14 @@
 				<description>Weather info</description>
 				<height>380</height>
 				<!-- 		<control type="label">
-									<left>60</left>
-									<top>150</top>
-									<aligny>center</aligny>
-									<height>24</height>
-									<width>800</width>
-									<font>font36_title</font>
-									<label>$INFO[System.Date]</label>
-								</control> -->
+													<left>60</left>
+													<top>150</top>
+													<aligny>center</aligny>
+													<height>24</height>
+													<width>800</width>
+													<font>font36_title</font>
+													<label>$INFO[System.Date]</label>
+												</control> -->
 				<control type="image">
 					<left>50</left>
 					<top>100</top>
@@ -79,7 +101,7 @@
 					<textoffsety>0</textoffsety>
 					<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
 					<texturenofocus></texturenofocus>
-					<onup>noop</onup>
+					<onup>20000</onup>
 					<ondown>15100</ondown>
 					<font>font12</font>
 					<onclick>Weather.LocationNext</onclick>
@@ -157,18 +179,28 @@
 			</include>
 			<include content="WeatherMapItem">
 				<param name="item_id" value="1" />
+				<param name="onup_id" value="15100" />
+				<param name="ondown_id" value="70020" />
 			</include>
 			<include content="WeatherMapItem">
 				<param name="item_id" value="2" />
+				<param name="onup_id" value="70010" />
+				<param name="ondown_id" value="70030" />
 			</include>
 			<include content="WeatherMapItem">
 				<param name="item_id" value="3" />
+				<param name="onup_id" value="70020" />
+				<param name="ondown_id" value="70040" />
 			</include>
 			<include content="WeatherMapItem">
 				<param name="item_id" value="4" />
+				<param name="onup_id" value="70030" />
+				<param name="ondown_id" value="70050" />
 			</include>
 			<include content="WeatherMapItem">
 				<param name="item_id" value="5" />
+				<param name="onup_id" value="70040" />
+				<param name="ondown_id" value="20001" />
 			</include>
 		</control>
 		<include content="TopBar">
