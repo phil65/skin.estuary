@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">5553</defaultcontrol>
-	<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
 		<control type="button" id="22001">
 			<description>background close area</description>
@@ -20,28 +18,68 @@
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="image">
 				<left>10</left>
-				<top>-240</top>
-				<width>1902</width>
-				<height>350</height>
-				<texture border="40">buttons/dialogbutton-nofo.png</texture>
-			</control>
-			<control type="image">
-				<description>TV Cover</description>
-				<right>48</right>
-				<top>-220</top>
-				<width>200</width>
-				<height>300</height>
-				<texture fallback="DefaultVideo.png">$VAR[NowPlayingPosterVar]</texture>
+				<top>-490</top>
+				<width>400</width>
+				<height>600</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture fallback="DefaultVideo.png" background="true">$VAR[NowPlayingPosterVar]</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<include>OpenClose_Left</include>
 			</control>
-			<control type="textbox">
-				<left>52</left>
-				<top>-204</top>
-				<width>1600</width>
-				<height>290</height>
-				<label fallback="416">$VAR[FullScreenInfoTextBoxVar]</label>
-				<align>justify</align>
-				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
+			<control type="group">
+				<include>OpenClose_Right</include>
+				<control type="image">
+					<left>400</left>
+					<top>-240</top>
+					<width>1500</width>
+					<height>350</height>
+					<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="textbox">
+					<left>443</left>
+					<top>-207</top>
+					<width>1400</width>
+					<height>290</height>
+					<label fallback="416">$VAR[FullScreenInfoTextBoxVar]</label>
+					<align>justify</align>
+					<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
+				</control>
+				<control type="grouplist" id="5550">
+					<right>20</right>
+					<top>-310</top>
+					<width>1000</width>
+					<height>100</height>
+					<align>right</align>
+					<orientation>horizontal</orientation>
+					<itemgap>-10</itemgap>
+					<onup>Close</onup>
+					<ondown>Close</ondown>
+					<usecontrolcoords>true</usecontrolcoords>
+					<control type="button" id="5553">
+						<width>auto</width>
+						<height>100</height>
+						<textoffsetx>80</textoffsetx>
+						<label>$LOCALIZE[207]</label>
+					</control>
+					<control type="button" id="5554">
+						<width>auto</width>
+						<height>100</height>
+						<textoffsetx>80</textoffsetx>
+						<onclick>Close</onclick>
+						<label>$LOCALIZE[206]</label>
+						<visible>!String.IsEmpty(VideoPlayer.CastAndRole)</visible>
+					</control>
+					<control type="button" id="5555">
+						<width>auto</width>
+						<height>100</height>
+						<textoffsetx>80</textoffsetx>
+						<label>$LOCALIZE[19031]</label>
+						<visible>VideoPlayer.Content(livetv)</visible>
+					</control>
+				</control>
 			</control>
 			<control type="grouplist">
 				<left>900</left>
@@ -65,39 +103,6 @@
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />
 				</include>
-			</control>
-			<control type="grouplist" id="5550">
-				<right>15</right>
-				<top>-310</top>
-				<width>1000</width>
-				<height>100</height>
-				<align>right</align>
-				<orientation>horizontal</orientation>
-				<itemgap>-10</itemgap>
-				<onup>Close</onup>
-				<ondown>Close</ondown>
-				<usecontrolcoords>true</usecontrolcoords>
-				<control type="button" id="5553">
-					<width>auto</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<label>$LOCALIZE[207]</label>
-				</control>
-				<control type="button" id="5554">
-					<width>auto</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<onclick>Close</onclick>
-					<label>$LOCALIZE[206]</label>
-					<visible>!String.IsEmpty(VideoPlayer.CastAndRole)</visible>
-				</control>
-				<control type="button" id="5555">
-					<width>auto</width>
-					<height>100</height>
-					<textoffsetx>40</textoffsetx>
-					<label>$LOCALIZE[19031]</label>
-					<visible>VideoPlayer.Content(livetv)</visible>
-				</control>
 			</control>
 		</control>
 	</controls>
