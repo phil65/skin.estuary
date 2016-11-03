@@ -5,17 +5,18 @@
 		<control type="group">
 			<depth>DepthMax</depth>
 			<top>945</top>
-			<left>640</left>
-			<animation effect="slide" end="600,-850" time="500" tween="sine" easing="inout" condition="Window.IsActive(fullscreenvideo)">conditional</animation>
+			<left>600</left>
+			<animation effect="slide" end="600,-850" time="400" tween="sine" easing="inout" condition="Window.IsActive(fullscreenvideo)">conditional</animation>
 			<include>Animation_DialogPopupOpenClose</include>
 			<visible>String.IsEmpty(Window(Home).Property(script.cinemavision.running))</visible>
 			<control type="image">
 				<left>-25</left>
 				<top>-25</top>
-				<width>690</width>
+				<width>770</width>
 				<height>150</height>
-				<colordiffuse>EEFFFFFF</colordiffuse>
-				<texture border="22">dialogs/dialog-bg.png</texture>
+				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
 			</control>
 			<control type="image" id="400">
 				<description>avatar</description>
@@ -29,7 +30,7 @@
 				<description>Line 1 Label</description>
 				<left>105</left>
 				<top>20</top>
-				<width>520</width>
+				<width>600</width>
 				<height>18</height>
 				<font>font36_title</font>
 				<aligny>center</aligny>
@@ -40,7 +41,7 @@
 				<description>Line 2 Label</description>
 				<left>106</left>
 				<top>55</top>
-				<width>520</width>
+				<width>600</width>
 				<height>20</height>
 				<font>font12</font>
 				<aligny>center</aligny>
