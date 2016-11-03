@@ -830,6 +830,7 @@
 		</control>
 	</include>
 	<include name="TopBar">
+		<param name="sublabel">$INFO[Container.SortMethod,$LOCALIZE[31022]: ,  ∙  ]$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</param>
 		<definition>
 			<control type="group">
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
@@ -862,7 +863,7 @@
 					<usecontrolcoords>true</usecontrolcoords>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-					<animation effect="slide" end="0,12" time="200" reversible="true" condition="String.IsEmpty(Container.SortMethod)">Conditional</animation>
+					<animation effect="slide" end="0,10" time="200" reversible="true" condition="String.IsEmpty(Control.GetLabel(18900))">Conditional</animation>
 					<control type="label">
 						<label>$PARAM[breadcrumbs_label]</label>
 						<include>BreadcrumbsLabel</include>
@@ -894,16 +895,16 @@
 						<visible>Container.Filtered</visible>
 					</control>
 				</control>
-				<control type="label">
+				<control type="label" id="18900">
 					<top>50</top>
-					<label>$INFO[Container.SortMethod,$LOCALIZE[31022]: ]  ∙  $INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</label>
+					<label>$PARAM[sublabel]</label>
 					<font>font13</font>
 					<left>35</left>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
 					<width>auto</width>
-					<visible>!String.IsEmpty(Container.SortMethod)</visible>
-					<animation effect="fade" time="150">VisibleChange</animation>
+<!-- 					<visible>!String.IsEmpty(Container.SortMethod)</visible>
+ -->					<animation effect="fade" time="150">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
