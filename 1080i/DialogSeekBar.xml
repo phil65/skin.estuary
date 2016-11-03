@@ -67,7 +67,7 @@
 					<wrapmultiline>true</wrapmultiline>
 					<visible>!Window.IsActive(fullscreeninfo)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
-					<label>[COLOR button_focus]$LOCALIZE[31134]:[CR][/COLOR]$INFO[Player.TimeRemaining]</label>
+					<label>$INFO[Player.TimeRemaining,[COLOR button_focus]$LOCALIZE[31134]:[CR][/COLOR]]</label>
 				</control>
 			</control>
 			<control type="label">
