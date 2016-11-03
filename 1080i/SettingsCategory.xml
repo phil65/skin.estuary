@@ -19,7 +19,7 @@
 			<control type="grouplist" id="5">
 				<description>control area</description>
 				<top>163</top>
-				<left>472</left>
+				<left>470</left>
 				<pagecontrol>60</pagecontrol>
 				<width>1450</width>
 				<height>780</height>
@@ -30,18 +30,18 @@
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
-				<left>472</left>
+				<left>470</left>
 				<top>160</top>
 				<width>1450</width>
-				<height>3</height>
+				<height>2</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
-				<left>472</left>
+				<left>470</left>
 				<top>943</top>
 				<width>1450</width>
-				<height>3</height>
+				<height>2</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>
 		</control>
