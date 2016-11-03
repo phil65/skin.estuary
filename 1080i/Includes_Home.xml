@@ -1068,6 +1068,7 @@
 								<height>354</height>
 								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+								<animation effect="fade" start="0" end="100" time="0" delay="30">Visible</animation>
 								<visible>Control.HasFocus($PARAM[list_id])</visible>
 							</control>
 							<control type="image">
@@ -1239,23 +1240,6 @@
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
-			<control type="button" id="700$PARAM[item_id]0">
-				<left>50</left>
-				<top>100</top>
-				<width>1820</width>
-				<height>920</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textoffsetx>40</textoffsetx>
-				<textoffsety>0</textoffsety>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
-				<texturenofocus></texturenofocus>
-				<onup>$PARAM[onup_id]</onup>
-				<ondown>$PARAM[ondown_id]</ondown>
-				<font>font12</font>
-				<onclick>Weather.LocationNext</onclick>
-				<label></label>
-			</control>
 			<control type="image">
 				<left>120</left>
 				<top>160</top>
@@ -1287,24 +1271,22 @@
 				<height>55</height>
 				<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
 			</control>
-			<control type="label">
-				<description>legend image</description>
+			<control type="button" id="700$PARAM[item_id]0">
 				<left>30</left>
 				<top>580</top>
 				<width>350</width>
 				<height>55</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font45_title</font>
+				<textoffsetx>40</textoffsetx>
+				<textoffsety>0</textoffsety>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+				<texturenofocus></texturenofocus>
+				<onup>$PARAM[onup_id]</onup>
+				<ondown>$PARAM[ondown_id]</ondown>
+				<font>font30_title</font>
+				<onclick>Weather.LocationNext</onclick>
 				<label>$INFO[Window(weather).Property(Map.$PARAM[item_id].Heading)]</label>
-			</control>
-			<control type="image">
-				<left>20</left>
-				<top>100</top>
-				<width>1240</width>
-				<height>550</height>
-				<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-				<visible>Control.HasFocus(16001)</visible>
 			</control>
 		</control>
 	</include>
