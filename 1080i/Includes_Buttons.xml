@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="OSDButton">
-		<textureradioonfocus colordiffuse="button_focus">$PARAM[texture]</textureradioonfocus>
+		<textureradioonfocus colordiffuse="white">$PARAM[texture]</textureradioonfocus>
 		<textureradioonnofocus>$PARAM[texture]</textureradioonnofocus>
-		<textureradioofffocus colordiffuse="button_focus">$PARAM[texture]</textureradioofffocus>
+		<textureradioofffocus colordiffuse="white">$PARAM[texture]</textureradioofffocus>
 		<textureradiooffnofocus>$PARAM[texture]</textureradiooffnofocus>
 		<textureradioondisabled colordiffuse="disabled">$PARAM[texture]</textureradioondisabled>
 		<textureradiooffdisabled colordiffuse="disabled">$PARAM[texture]</textureradiooffdisabled>
-		<texturefocus></texturefocus>
-		<width>125</width>
-		<animation center="77,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
-		<height>123</height>
+		<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>
+		<width>76</width>
+		<animation center="38,38" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
+		<height>76</height>
 		<radiowidth>74</radiowidth>
 		<radioheight>74</radioheight>
 		<font></font>
 		<texturenofocus></texturenofocus>
-		<radioposx>0</radioposx>
+		<radioposx>1</radioposx>
 		<radioposy>0</radioposy>
 	</include>
 	<include name="InfoDialogMetadata">

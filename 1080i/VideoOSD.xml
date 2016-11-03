@@ -36,11 +36,11 @@
 				<control type="group" id="200">
 					<control type="grouplist" id="201">
 						<left>20</left>
-						<top>70</top>
+						<top>90</top>
 						<width>1920</width>
 						<height>135</height>
 						<align>left</align>
-						<itemgap>-20</itemgap>
+						<itemgap>20</itemgap>
 						<scrolltime tween="sine">200</scrolltime>
 						<orientation>horizontal</orientation>
 						<onup condition="Player.SeekEnabled">87</onup>
@@ -55,18 +55,20 @@
 							<visible>!VideoPlayer.Content(livetv)</visible>
 						</control>
 						<control type="radiobutton" id="602">
-							<textureradioonfocus colordiffuse="button_focus">osd/fullscreen/buttons/play.png</textureradioonfocus>
+							<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/play.png</textureradioonfocus>
 							<textureradioonnofocus>osd/fullscreen/buttons/play.png</textureradioonnofocus>
-							<textureradioofffocus colordiffuse="button_focus">osd/fullscreen/buttons/pause.png</textureradioofffocus>
+							<textureradioofffocus colordiffuse="white">osd/fullscreen/buttons/pause.png</textureradioofffocus>
 							<textureradiooffnofocus>osd/fullscreen/buttons/pause.png</textureradiooffnofocus>
-							<texturefocus></texturefocus>
-							<width>125</width>
-							<animation center="77,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
-							<height>123</height>
+							<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>
+							<width>76</width>
+							<animation center="38,38" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
+							<height>76</height>
 							<radiowidth>74</radiowidth>
 							<radioheight>74</radioheight>
 							<font></font>
 							<texturenofocus></texturenofocus>
+							<radioposx>1</radioposx>
+							<radioposy>0</radioposy>
 							<selected>Player.Paused</selected>
 							<onclick>PlayerControl(Play)</onclick>
 							<visible>Player.PauseEnabled</visible>
@@ -92,19 +94,19 @@
 							<visible>VideoPlayer.HasMenu</visible>
 						</control>
 						<control type="radiobutton" id="606">
-							<textureradioonfocus colordiffuse="button_focus">osd/fullscreen/buttons/record-white.png</textureradioonfocus>
+							<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/record-white.png</textureradioonfocus>
 							<textureradioonnofocus>osd/fullscreen/buttons/record-white.png</textureradioonnofocus>
-							<textureradioofffocus colordiffuse="button_focus">osd/fullscreen/buttons/record.png</textureradioofffocus>
+							<textureradioofffocus colordiffuse="white">osd/fullscreen/buttons/record.png</textureradioofffocus>
 							<textureradiooffnofocus>osd/fullscreen/buttons/record.png</textureradiooffnofocus>
-							<texturefocus></texturefocus>
-							<width>125</width>
-							<animation center="77,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
-							<height>123</height>
+							<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>
+							<width>76</width>
+							<animation center="38,38" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
+							<height>76</height>
 							<radiowidth>74</radiowidth>
 							<radioheight>74</radioheight>
 							<font></font>
 							<texturenofocus></texturenofocus>
-							<radioposx>0</radioposx>
+							<radioposx>1</radioposx>
 							<radioposy>0</radioposy>
 							<selected>!Player.Recording | Control.HasFocus(606)</selected>
 							<onclick>PlayerControl(Record)</onclick>
@@ -114,11 +116,11 @@
 					</control>
 					<control type="grouplist" id="202">
 						<right>50</right>
-						<top>70</top>
+						<top>90</top>
 						<width>1800</width>
 						<height>135</height>
 						<align>right</align>
-						<itemgap>-20</itemgap>
+						<itemgap>20</itemgap>
 						<scrolltime tween="sine">200</scrolltime>
 						<orientation>horizontal</orientation>
 						<onup condition="Player.SeekEnabled">87</onup>
@@ -192,7 +194,6 @@
 				</control>
 				<control type="group" id="6000">
 					<top>60</top>
-
 					<control type="button" id="87">
 						<include>HiddenObject</include>
 						<onup>200</onup>
