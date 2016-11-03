@@ -1032,6 +1032,7 @@
 						<height>1080</height>
 						<aspectratio>scale</aspectratio>
 						<fadetime>400</fadetime>
+						<include>OpenClose_Left</include>
 						<animation effect="fade" time="400">VisibleChange</animation>
 						<texture background="true" colordiffuse="37FFFFFF">$VAR[PosterVar]</texture>
 						<visible>Control.IsVisible(502)</visible>
