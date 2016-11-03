@@ -290,8 +290,8 @@
 		<value condition="!String.IsEmpty(Container(8300).ListItem.Art(fanart)) + Control.HasFocus(8300)">$INFO[Container(8300).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(8400).ListItem.Art(fanart)) + Control.HasFocus(8400)">$INFO[Container(8400).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(8500).ListItem.Art(fanart)) + Control.HasFocus(8500)">$INFO[Container(8500).ListItem.Art(fanart)]</value>
-		<value condition="!String.IsEmpty(Container(15100).ListItem.Property(FanartCode)) + Control.HasFocus(15100)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15100).ListItem.Property(FanartCode)]</value>
-		<value condition="!String.IsEmpty(Container(15200).ListItem.Property(FanartCode)) + Control.HasFocus(15200)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15200).ListItem.Property(FanartCode)]</value>
+		<value condition="!String.IsEmpty(Container(15100).ListItem.Property(FanartCode)) + Control.HasFocus(15100)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15100).ListItem.Property(FanartCode)]$INFO[Skin.String(WeatherFanart.ext)]</value>
+		<value condition="!String.IsEmpty(Container(15200).ListItem.Property(FanartCode)) + Control.HasFocus(15200)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15200).ListItem.Property(FanartCode)]$INFO[Skin.String(WeatherFanart.ext)]</value>
 		<value condition="!String.IsEmpty(Skin.String(HomeFanart.path)) + Control.HasFocus(804)">$INFO[Skin.String(HomeFanart.path)]power$INFO[Skin.String(HomeFanart.ext)]</value>
 		<value condition="!String.IsEmpty(Skin.String(HomeFanart.path)) + Control.HasFocus(802)">$INFO[Skin.String(HomeFanart.path)]settings$INFO[Skin.String(HomeFanart.ext)]</value>
 		<value condition="!String.IsEmpty(Skin.String(HomeFanart.path)) + Control.HasFocus(803)">$INFO[Skin.String(HomeFanart.path)]favorites$INFO[Skin.String(HomeFanart.ext)]</value>
