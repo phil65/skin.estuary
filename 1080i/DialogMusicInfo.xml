@@ -23,7 +23,7 @@
 				<height>567</height>
 				<aspectratio aligny="top">scale</aspectratio>
 				<fadetime>300</fadetime>
-				<texture background="true" fallback="DefaultFolderSquare.png">$INFO[ListItem.Art(thumb)]</texture>
+				<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Art(thumb)]</texture>
 			</control>
 		</control>
 		<control type="group">
@@ -207,7 +207,7 @@
 						<top>21</top>
 						<width>190</width>
 						<height>190</height>
-						<texture border="2" fallback="DefaultFolderSquare.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
 						<aspectratio>keep</aspectratio>
 						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 						<bordersize>4</bordersize>
@@ -243,7 +243,7 @@
 							<top>21</top>
 							<width>190</width>
 							<height>190</height>
-							<texture border="2" fallback="DefaultFolderSquare.png" background="true">$INFO[ListItem.Thumb]</texture>
+							<texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
