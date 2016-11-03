@@ -157,11 +157,13 @@
 				<left>1110</left>
 				<top>180</top>
 				<control type="image">
-					<left>-178</left>
-					<top>-180</top>
-					<width>1180</width>
-					<height>1080</height>
-					<texture colordiffuse="E6FFFFFF" flipx="true">lists/panel.png</texture>
+					<left>-72</left>
+					<top>-200</top>
+					<width>920</width>
+					<height>1120</height>
+					<texture>lists/panel.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 				</control>
 				<control type="scrollbar" id="73">
 					<left>-50</left>

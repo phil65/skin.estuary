@@ -21,11 +21,13 @@
 				<visible>Control.IsVisible(502)</visible>
 				<include>Visible_Right</include>
 				<control type="image">
-					<left>561</left>
-					<top>0</top>
+					<left>707</left>
+					<top>-20</top>
 					<width>1500</width>
-					<height>1080</height>
-					<texture flipx="true" colordiffuse="E6FFFFFF">lists/panel.png</texture>
+					<height>1120</height>
+					<texture>lists/panel.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
 					<left>747</left>
@@ -50,14 +52,14 @@
 					<label>$INFO[ListItem.Plot]</label>
 				</control>
 				<control type="scrollbar" id="502600">
-					<left>726</left>
+					<left>727</left>
 					<top>0</top>
 					<width>12</width>
 					<height>1080</height>
 					<onleft>502</onleft>
 					<onright>502</onright>
 					<orientation>vertical</orientation>
-					<animation effect="zoom" end="50,100" time="300" tween="sine" center="732,0" easing="inout" condition="!Control.HasFocus(502600)">conditional</animation>
+					<animation effect="zoom" end="50,100" time="300" tween="sine" center="727,0" easing="inout" condition="!Control.HasFocus(502600)">conditional</animation>
 				</control>
 				<control type="group">
 					<left>760</left>

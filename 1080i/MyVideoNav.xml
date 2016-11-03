@@ -30,11 +30,13 @@
 				<include>Visible_Left</include>
 				<visible>Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>670</width>
-					<height>1080</height>
-					<texture colordiffuse="E6FFFFFF">lists/panel.png</texture>
+					<left>-20</left>
+					<top>-20</top>
+					<width>636</width>
+					<height>1120</height>
+					<texture>lists/panel.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 				</control>
 				<control type="grouplist">
 					<left>30</left>
