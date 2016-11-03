@@ -1227,13 +1227,85 @@
 		</item>
 	</include>
 	<include name="WeatherMapItem">
-		<item>
-			<label>$INFO[Window(weather).Property(Map.$PARAM[item_id].Heading)]</label>
-			<label2>$INFO[Window(weather).Property(Map.$PARAM[item_id].Legend)]</label2>
-			<icon>$INFO[Window(weather).Property(Map.$PARAM[item_id].Area)]</icon>
-			<property name="Layer">$INFO[Window(weather).Property(Map.$PARAM[item_id].Layer)]</property>
-			<onclick>noop</onclick>
+		<control type="group" id="700$PARAM[item_id]">
+			<height>1070</height>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window(weather).Property(Map.$PARAM[item_id].Area)) + !String.IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
-		</item>
+			<control type="image">
+				<left>50</left>
+				<top>100</top>
+				<width>1820</width>
+				<height>920</height>
+				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="button" id="700$PARAM[item_id]0">
+				<left>50</left>
+				<top>100</top>
+				<width>1820</width>
+				<height>920</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textoffsetx>40</textoffsetx>
+				<textoffsety>0</textoffsety>
+				<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+				<texturenofocus></texturenofocus>
+				<onup>15200</onup>
+				<ondown>15100</ondown>
+				<font>font12</font>
+				<onclick>Weather.LocationNext</onclick>
+				<label></label>
+			</control>
+			<control type="image">
+				<left>120</left>
+				<top>160</top>
+				<width>1680</width>
+				<height>800</height>
+				<texture>$INFO[Window(weather).Property(Map.$PARAM[item_id].Area)]</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<left>120</left>
+				<top>160</top>
+				<width>1680</width>
+				<height>800</height>
+				<texture>$INFO[Window(weather).Property(Map.$PARAM[item_id].Layer)]</texture>
+				<aspectratio>scale</aspectratio>
+				<colordiffuse>70FFFFFF</colordiffuse>
+			</control>
+			<control type="image">
+				<left>1340</left>
+				<top>880</top>
+				<width>350</width>
+				<height>55</height>
+				<texture>$INFO[Window(weather).Property(Map.$PARAM[item_id].Legend)]</texture>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>580</top>
+				<width>350</width>
+				<height>55</height>
+				<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+			</control>
+			<control type="label">
+				<description>legend image</description>
+				<left>30</left>
+				<top>580</top>
+				<width>350</width>
+				<height>55</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font45_title</font>
+				<label>$INFO[Window(weather).Property(Map.$PARAM[item_id].Heading)]</label>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>100</top>
+				<width>1240</width>
+				<height>550</height>
+				<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+				<visible>Control.HasFocus(16001)</visible>
+			</control>
+		</control>
 	</include>
 </includes>
