@@ -45,19 +45,18 @@
 			<animation delay="300" effect="fade" time="200">Visible</animation>
 			<animation effect="fade" delay="200" time="150">Hidden</animation>
 			<control type="image" id="1">
-				<left>860</left>
-				<top>450</top>
-				<width>200</width>
-				<height>200</height>
-				<texture>osd/buffer-bg.png</texture>
+				<left>906</left>
+				<top>485</top>
+				<width>110</width>
+				<height>110</height>
+				<texture colordiffuse="BFFFFFFF">osd/buffer-bg.png</texture>
 			</control>
 			<control type="image" id="1">
-				<left>880</left>
-				<top>460</top>
-				<width>160</width>
-				<height>160</height>
-				<texture>dialogs/volume/progress/p100.png</texture>
-				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
+				<left>915</left>
+				<top>494</top>
+				<width>92</width>
+				<height>92</height>
+				<texture colordiffuse="1AFFFFFF">dialogs/extendedprogress/loading-placeholder.png</texture>
 			</control>
  			<control type="image" id="1">
 				<left>880</left>
@@ -68,29 +67,15 @@
 			</control>
 			<control type="label" id="1">
 				<description>buffering value</description>
-				<label>$INFO[Player.CacheLevel]%</label>
+				<label>$INFO[Player.CacheLevel]</label>
 				<left>860</left>
 				<top>440</top>
 				<width>200</width>
 				<height>200</height>
 				<aligny>center</aligny>
 				<align>center</align>
-				<font>font10</font>
+				<font>font11</font>
 				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label" id="2">
-				<description>buffering label</description>
-				<label>$LOCALIZE[15107]</label>
-				<left>830</left>
-				<top>600</top>
-				<width>260</width>
-				<height>20</height>
-				<aligny>center</aligny>
-				<align>center</align>
-				<font>font27</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
 	</controls>

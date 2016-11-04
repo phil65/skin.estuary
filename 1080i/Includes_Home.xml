@@ -325,7 +325,7 @@
 							<posx>70</posx>
 							<control type="image">
 								<left>0</left>
-								<top>1</top>
+								<top>0</top>
 								<width>344</width>
 								<height>340</height>
 								<texture border="21">dialogs/dialog-bg-nobo.png</texture>
@@ -334,15 +334,15 @@
 							</control>
 							<control type="image">
 								<left>24</left>
-								<top>30</top>
-								<width>297</width>
+								<top>24</top>
+								<width>296</width>
 								<height>220</height>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
+								<texture fallback="DefaultTVShows.png" background="true">$PARAM[item_image]</texture>
 							</control>
 							<control type="label">
 								<left>30</left>
-								<top>253</top>
+								<top>248</top>
 								<width>288</width>
 								<label>$PARAM[first_label]</label>
 								<font>font12</font>
@@ -351,10 +351,10 @@
 							</control>
 							<control type="label">
 								<left>30</left>
-								<top>282</top>
+								<top>280</top>
 								<width>288</width>
 								<label>$PARAM[second_label]</label>
-								<font>font12</font>
+								<font>font10</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
@@ -372,7 +372,7 @@
 							</animation>
 							<control type="image">
 								<left>0</left>
-								<top>1</top>
+								<top>0</top>
 								<width>344</width>
 								<height>340</height>
 								<texture border="21">dialogs/dialog-bg-small.png</texture>
@@ -382,6 +382,7 @@
 								<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 								<control type="image">
 									<left>-2</left>
+									<top>-2</top>
 									<width>348</width>
 									<height>342</height>
 									<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
@@ -399,15 +400,15 @@
 							</control>
 							<control type="image">
 								<left>24</left>
-								<top>30</top>
-								<width>297</width>
+								<top>24</top>
+								<width>296</width>
 								<height>220</height>
 								<aspectratio>scale</aspectratio>
-								<texture fallback="DefaultVideo.png" background="true">$PARAM[item_image]</texture>
+								<texture fallback="DefaultTVShows.png" background="true">$PARAM[item_image]</texture>
 							</control>
 							<control type="label">
 								<left>30</left>
-								<top>253</top>
+								<top>248</top>
 								<width>288</width>
 								<label>$PARAM[first_label]</label>
 								<font>font12</font>
@@ -416,10 +417,10 @@
 							</control>
 							<control type="label">
 								<left>30</left>
-								<top>282</top>
+								<top>280</top>
 								<width>288</width>
 								<label>$PARAM[second_label]</label>
-								<font>font12</font>
+								<font>font10</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
 							</control>
