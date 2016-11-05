@@ -51,7 +51,7 @@
 			<font>font13</font>
 			<align>center</align>
 			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-			<texturenofocus colordiffuse="00FFFFFF">dialogs/dialog-bg-solid.png</texturenofocus>
+			<texturenofocus></texturenofocus>
 		</control>
 		<include content="UpDownArrows">
 			<param name="container_id" value="996" />
