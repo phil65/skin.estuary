@@ -29,9 +29,9 @@
 		<control type="image" id="999">
 			<description>background image</description>
 			<left>0</left>
-			<top>0</top>
+			<top>10</top>
 			<width>450</width>
-			<height>830</height>
+			<height>820</height>
 			<texture border="2">dialogs/dialog-bg-solid.png</texture>
 		</control>
 		<control type="grouplist" id="996">
@@ -51,13 +51,13 @@
 			<font>font13</font>
 			<align>center</align>
 			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-			<texturenofocus>lists/separator.png</texturenofocus>
+			<texturenofocus colordiffuse="00FFFFFF">dialogs/dialog-bg-solid.png</texturenofocus>
 		</control>
 		<include content="UpDownArrows">
 			<param name="container_id" value="996" />
 			<param name="posx" value="201" />
-			<param name="up_posy" value="-40" />
-			<param name="down_posy" value="840" />
+			<param name="up_posy" value="-30" />
+			<param name="down_posy" value="850" />
 		</include>
 	</controls>
 </window>
