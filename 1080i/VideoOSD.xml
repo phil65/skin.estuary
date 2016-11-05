@@ -172,6 +172,7 @@
 								<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
 							</include>
 							<onclick>SetProperty(settingslist_content,subtitle,home)</onclick>
+							<onclick>SetProperty(settingslist_header,$LOCALIZE[24012],home)</onclick>
 							<onclick>ActivateWindow(1101)</onclick>
 							<visible>!VideoPlayer.Content(LiveTV) | VideoPlayer.HasSubtitles</visible>
 						</control>
@@ -181,6 +182,7 @@
 							</include>
 							<visible>VideoPlayer.IsStereoscopic</visible>
 							<onclick>SetProperty(settingslist_content,3d,home)</onclick>
+							<onclick>SetProperty(settingslist_header,$LOCALIZE[36501],home)</onclick>
 							<onclick>ActivateWindow(1101)</onclick>
 						</control>
 						<control type="radiobutton" id="70043">
@@ -188,6 +190,7 @@
 								<param name="texture" value="osd/fullscreen/buttons/settings.png"/>
 							</include>
 							<onclick>SetProperty(settingslist_content,osd,home)</onclick>
+							<onclick>SetProperty(settingslist_header,$LOCALIZE[5],home)</onclick>
 							<onclick>ActivateWindow(1101)</onclick>
 						</control>
 					</control>
