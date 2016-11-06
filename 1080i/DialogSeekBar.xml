@@ -21,7 +21,7 @@
 				<texture flipy="true">frame/InfoBar.png</texture>
 			</control>
 			<control type="group">
-				<visible>!Window.IsActive(musicosd)</visible>
+				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="image">
 					<left>30</left>
@@ -40,10 +40,6 @@
 					<texture>$INFO[MusicPlayer.UserRating,flags/starrating/,.png]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
-			</control>
-			<control type="group">
-				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="label">
 					<top>110</top>
 					<left>20</left>
