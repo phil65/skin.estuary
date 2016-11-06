@@ -91,7 +91,7 @@
 			<control type="progress">
 				<left>0</left>
 				<top>70</top>
-				<width>1920</width>
+				<width>100%</width>
 				<height>15</height>
 				<info>Player.ProgressCache</info>
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
@@ -100,7 +100,7 @@
 			<control type="progress">
 				<left>0</left>
 				<top>70</top>
-				<width>1920</width>
+				<width>100%</width>
 				<height>15</height>
 				<info>Player.Progress</info>
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
@@ -109,7 +109,7 @@
 			<control type="slider" id="401">
 				<left>5</left>
 				<top>65</top>
-				<width>1920</width>
+				<width>100%</width>
 				<height>25</height>
 				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
 				<textureslidernib colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernib>

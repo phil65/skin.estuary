@@ -1179,7 +1179,7 @@
 		<height>100%</height>
 	</include>
 	<include name="FocusableProgressBar">
-		<param name="width">1920</param>
+		<param name="width">100%</param>
 		<param name="onunfocus_id">200</param>
 		<definition>
 			<control type="progress">

@@ -10,7 +10,7 @@
 			<description>background close area</description>
 			<left>0</left>
 			<top>0</top>
-			<width>1920</width>
+			<width>100%</width>
 			<height>800</height>
 			<texturefocus></texturefocus>
 			<texturenofocus></texturenofocus>
@@ -37,7 +37,7 @@
 					<control type="grouplist" id="201">
 						<left>20</left>
 						<top>90</top>
-						<width>1920</width>
+						<width>100%</width>
 						<height>135</height>
 						<align>left</align>
 						<itemgap>20</itemgap>
@@ -210,7 +210,7 @@
 					<control type="slider">
 						<top>-5</top>
 						<left>0</left>
-						<width>1920</width>
+						<width>100%</width>
 						<height>25</height>
 						<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
 						<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
@@ -222,7 +222,7 @@
 					<control type="slider">
 						<top>-5</top>
 						<left>0</left>
-						<width>1920</width>
+						<width>100%</width>
 						<height>25</height>
 						<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
 						<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
