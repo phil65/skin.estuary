@@ -13,6 +13,7 @@
 				<width>1235</width>
 				<height>435</height>
 				<label></label>
+				<texturenofocus border="21">dialogs/dialog-bg.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>9000</ondown>
 				<onclick>SetProperty(TextViewer_Header,$LOCALIZE[31141] $INFO[ListItem.AddonVersion],home)</onclick>
@@ -31,89 +32,99 @@
 				<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
 			</control>
 			<control type="group">
-				<left>625</left>
-				<top>176</top>
+				<left>606</left>
+				<top>160</top>
 				<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
 				<control type="image">
-					<width>385</width>
-					<height>220</height>
-					<texture border="2" background="true">DefaultNoPreview.png</texture>
+					<width>425</width>
+					<height>260</height>
+					<texture background="true">DefaultNoPreview.png</texture>
 					<aspectratio>scale</aspectratio>
-					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-					<bordersize>4</bordersize>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
 					<left>405</left>
-					<width>385</width>
-					<height>220</height>
-					<texture border="2" background="true">DefaultNoPreview.png</texture>
+					<width>425</width>
+					<height>260</height>
+					<texture background="true">DefaultNoPreview.png</texture>
 					<aspectratio>scale</aspectratio>
-					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-					<bordersize>4</bordersize>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
 					<left>810</left>
-					<width>385</width>
-					<height>220</height>
-					<texture border="2" background="true">DefaultNoPreview.png</texture>
+					<width>425</width>
+					<height>260</height>
+					<texture background="true">DefaultNoPreview.png</texture>
 					<aspectratio>scale</aspectratio>
-					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-					<bordersize>4</bordersize>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 				</control>
 			</control>
 			<control type="panel" id="50">
-				<left>625</left>
-				<top>176</top>
+				<left>618</left>
+				<top>160</top>
 				<width>1215</width>
-				<height>233</height>
+				<height>273</height>
 				<ondown>5000</ondown>
 				<onup>9000</onup>
 				<orientation>horizontal</orientation>
 				<itemlayout height="225" width="405">
 					<control type="image">
-						<width>385</width>
-						<height>220</height>
-						<texture border="2" background="true">DefaultNoPreview.png</texture>
+						<left>-12</left>
+						<top>0</top>
+						<width>425</width>
+						<height>260</height>
+						<texture background="true">DefaultNoPreview.png</texture>
 						<aspectratio>scale</aspectratio>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
+						<bordertexture border="20">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
-						<width>385</width>
-						<height>220</height>
-						<texture border="2" background="true">$INFO[ListItem.Icon]</texture>
+						<left>-12</left>
+						<top>0</top>
+						<width>425</width>
+						<height>260</height>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio>scale</aspectratio>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
+						<bordertexture border="20">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 					</control>
 				</itemlayout>
 				<focusedlayout height="225" width="405">
 					<control type="image">
-						<width>385</width>
-						<height>220</height>
-						<texture border="2" background="true">DefaultNoPreview.png</texture>
+						<left>-12</left>
+						<top>0</top>
+						<width>425</width>
+						<height>260</height>
+						<texture background="true">DefaultNoPreview.png</texture>
 						<aspectratio>scale</aspectratio>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
+						<bordertexture border="20">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
-						<width>385</width>
-						<height>220</height>
-						<texture border="2" background="true">$INFO[ListItem.Icon]</texture>
+						<left>-12</left>
+						<top>0</top>
+						<width>425</width>
+						<height>260</height>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio>scale</aspectratio>
-						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-						<bordersize>4</bordersize>
+						<bordertexture border="20">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
-						<width>385</width>
-						<height>220</height>
+						<left>4</left>
+						<top>16</top>
+						<width>393</width>
+						<height>228</height>
 						<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 					</control>
 				</focusedlayout>
 			</control>
 			<include content="LeftRightArrows">
 				<param name="list_id" value="50" />
-				<param name="left_posx" value="580" />
+				<param name="left_posx" value="590" />
 				<param name="right_posx" value="1840" />
 				<param name="posy" value="280" />
 				<param name="visible" value="true" />
@@ -153,7 +164,7 @@
 					<textoffsetx>35</textoffsetx>
 					<textoffsety>76</textoffsety>
 					<radioposx>81</radioposx>
-					<radioposy>14</radioposy>
+					<radioposy>17</radioposy>
 					<radiowidth>100</radiowidth>
 					<font>font12</font>
 					<visible>Control.IsEnabled(13)</visible>
@@ -179,11 +190,12 @@
 			<top>158</top>
 			<left>80</left>
 			<control type="image">
-				<left>-10</left>
-				<width>548</width>
-				<height>548</height>
+				<left>-6</left>
+				<top>4</top>
+				<width>540</width>
+				<height>540</height>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="border_alpha">colors/black.png</texture>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
@@ -194,7 +206,7 @@
 				<height>500</height>
 				<aspectratio aligny="top">scale</aspectratio>
 				<fadetime>300</fadetime>
-				<texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
+				<texture fallback="DefaultAddon.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 			</control>
 			<control type="group">
 				<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
@@ -222,6 +234,7 @@
 				<width>540</width>
 				<height>150</height>
 				<label></label>
+				<texturenofocus border="21">dialogs/dialog-bg-small.png</texturenofocus>
 			</control>
 			<control type="grouplist">
 				<left>30</left>

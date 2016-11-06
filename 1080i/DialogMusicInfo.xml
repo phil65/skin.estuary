@@ -9,10 +9,12 @@
 			<top>158</top>
 			<left>40</left>
 			<control type="image">
-				<width>615</width>
-				<height>615</height>
+				<left>4</left>
+				<top>4</top>
+				<width>607</width>
+				<height>607</height>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="border_alpha">colors/black.png</texture>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
@@ -304,14 +306,14 @@
 						<label>$INFO[ListItem.UserRating]</label>
 						<font>font45_title</font>
 						<left>0</left>
-						<top>18</top>
+						<top>24</top>
 						<width>262</width>
 						<align>center</align>
 					</control>
 					<control type="image">
 						<texture>icons/infodialogs/rating.png</texture>
 						<left>107</left>
-						<top>24</top>
+						<top>30</top>
 						<width>48</width>
 						<height>48</height>
 						<align>center</align>
@@ -331,7 +333,7 @@
 				<control type="radiobutton" id="440">
 					<label>$LOCALIZE[31114]</label>
 					<include content="VideoInfoButtonsCommon">
-						<param name="icon" value="icons/infodialogs/trailer.png" />
+						<param name="icon" value="icons/infodialogs/youtube.png" />
 					</include>
 					<onclick>Action(close)</onclick>
 					<visible>System.hasAddon(script.extendedinfo)</visible>
@@ -350,7 +352,7 @@
 				</include>
 				<include content="InfoDialogButton">
 					<param name="id" value="12" />
-					<param name="icon" value="icons/infodialogs/choose_image.png" />
+					<param name="icon" value="icons/infodialogs/info.png" />
 					<param name="label" value="$LOCALIZE[20413]" />
 				</include>
 			</control>
