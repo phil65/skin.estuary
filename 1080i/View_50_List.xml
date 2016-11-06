@@ -168,7 +168,7 @@
 				<height>470</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<fadetime>300</fadetime>
-				<texture background="true" fallback="DefaultFolderSquare.png">$VAR[IconWallThumbVar]</texture>
+				<texture background="true">$VAR[IconWallThumbVar]</texture>
 			</control>
 			<control type="textbox" id="15500">
 				<left>30</left>
