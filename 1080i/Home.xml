@@ -122,10 +122,6 @@
 							<param name="onup_id" value="5500"/>
 							<param name="ondown_id" value="20001"/>
 						</include>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[342]" />
-							<param name="visible" value="!Library.HasContent(movies)"/>
-						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31104]" />
@@ -204,10 +200,6 @@
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]"/>
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
-						</include>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[20343]" />
-							<param name="visible" value="!Library.HasContent(tvshows)"/>
 						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
@@ -295,10 +287,6 @@
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 							<param name="sortby" value="playcount"/>
 							<param name="sortorder" value="descending"/>
-						</include>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[10005]" />
-							<param name="visible" value="!Library.HasContent(music)"/>
 						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
@@ -398,10 +386,6 @@
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
 						</include>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[24001]" />
-							<param name="visible" value="!Integer.IsGreater(Container(8100).NumItems,0) + !Integer.IsGreater(Container(8200).NumItems,0) + !Integer.IsGreater(Container(8300).NumItems,0) + !Integer.IsGreater(Container(8400).NumItems,0) + !Integer.IsGreater(Container(8500).NumItems,0)"/>
-						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31119]" />
@@ -468,10 +452,6 @@
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<itemgap>-160</itemgap>
 						<usecontrolcoords>true</usecontrolcoords>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[19020]" />
-							<param name="visible" value="!System.HasPVRAddon"/>
-						</include>
 						<control type="grouplist">
 							<height>390</height>
 							<left>478</left>
@@ -554,10 +534,6 @@
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[19021]" />
-							<param name="visible" value="!System.HasPVRAddon"/>
-						</include>
 						<control type="grouplist">
 							<height>390</height>
 							<left>538</left>
@@ -686,10 +662,6 @@
 								<content>favourites://</content>
 							</control>
 						</control>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[10134]" />
-							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0) + !Container(14100).IsUpdating"/>
-						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31025]" />
@@ -798,10 +770,6 @@
 							<param name="widget_header" value="$LOCALIZE[31019]"/>
 							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 						</include>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[12600]" />
-							<param name="visible" value="String.IsEmpty(Weather.plugin)"/>
-						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31120]" />
@@ -894,10 +862,6 @@
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(musicvideos)"/>
 						</include>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[20389]" />
-							<param name="visible" value="!Library.HasContent(musicvideos)"/>
-						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31104]" />
@@ -916,10 +880,6 @@
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
 						<itemgap>-160</itemgap>
-						<include content="ImageWidgetHeader">
-							<param name="widget_header" value="$LOCALIZE[1]" />
-							<param name="visible" value="true"/>
-						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/pictures.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31111]" />

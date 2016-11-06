@@ -183,29 +183,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="ImageWidgetHeader">
-		<control type="group">
-			<height>370</height>
-			<visible>$PARAM[visible]</visible>
-			<control type="image">
-				<top>113</top>
-				<left>498</left>
-				<width>1370</width>
-				<height>114</height>
-				<texture border="22">dialogs/dialog-bg.png</texture>
-			</control>
-			<control type="label">
-				<top>106</top>
-				<left>498</left>
-				<width>1370</width>
-				<height>120</height>
-				<font>font45_title</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$PARAM[widget_header]</label>
-			</control>
-		</control>
-	</include>
 	<include name="ImageWidget">
 		<param name="onup_id">20000</param>
 		<param name="ondown_id">20001</param>
@@ -215,29 +192,23 @@
 		<definition>
 			<control type="group">
 				<visible>$PARAM[visible]</visible>
-				<control type="image">
-					<top>0</top>
-					<left>498</left>
-					<width>1370</width>
-					<height>806</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
-				</control>
 				<control type="multiimage">
-					<top>31</top>
-					<left>528</left>
-					<width>1310</width>
-					<height>746</height>
+					<top>0</top>
+					<left>440</left>
+					<width>1600</width>
+					<height>1080</height>
+					<aspectratio>keep</aspectratio>
 					<imagepath>$PARAM[image_path]</imagepath>
 				</control>
 				<control type="image">
-					<top>551</top>
-					<left>528</left>
-					<width>1310</width>
-					<height>226</height>
+					<top>0</top>
+					<left>440</left>
+					<width>1600</width>
+					<height>330</height>
 					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]567">
-					<top>680</top>
+					<top>230</top>
 					<left>528</left>
 					<width>1310</width>
 					<orientation>horizontal</orientation>
@@ -270,7 +241,7 @@
 					</control>
 				</control>
 				<control type="textbox" id="$PARAM[button_id]">
-					<top>570</top>
+					<top>120</top>
 					<left>578</left>
 					<width>1220</width>
 					<height>180</height>
