@@ -50,6 +50,7 @@
 					<height>203</height>
 					<font>font13</font>
 					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="scrollbar" id="502600">
 					<left>727</left>

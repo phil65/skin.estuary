@@ -176,7 +176,7 @@
 				<width>525</width>
 				<height>323</height>
 				<font>font13</font>
-				<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog</autoscroll>
+				<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 				<label>$VAR[ListBoxInfoVar]</label>
 				<visible>!Container.Content() | !IsEmpty(ListItem.Plot)</visible>
 			</control>
