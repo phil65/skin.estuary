@@ -199,6 +199,7 @@
 					<height>1080</height>
 					<aspectratio>scale</aspectratio>
 					<imagepath colordiffuse="33FFFFFF">$PARAM[image_path]</imagepath>
+					<visible>String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]577">
 					<orientation>vertical</orientation>
