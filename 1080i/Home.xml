@@ -454,14 +454,14 @@
 						<usecontrolcoords>true</usecontrolcoords>
 						<control type="grouplist">
 							<height>390</height>
-							<left>478</left>
+							<left>465</left>
 							<top>36</top>
 							<orientation>horizontal</orientation>
 							<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
 							<align>right</align>
 							<width>1360</width>
 							<control type="group">
-								<width>680</width>
+								<width>660</width>
 								<visible>PVR.IsRecordingTV</visible>
 								<include content="PVRWidget">
 									<param name="icon" value="$INFO[PVR.TVNowRecordingChannelIcon]" />
@@ -472,7 +472,7 @@
 							</control>
 							<control type="group">
 								<visible>PVR.HasNonRecordingTVTimer</visible>
-								<width>680</width>
+								<width>670</width>
 								<include content="PVRWidget">
 									<param name="icon" value="$INFO[PVR.TVNextRecordingChannelIcon]" />
 									<param name="header" value="$LOCALIZE[19157]" />
