@@ -95,7 +95,7 @@
 					<top>0</top>
 					<width>270</width>
 					<height>290</height>
-					<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+					<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<bordersize>20</bordersize>
 					<visible>!ListItem.IsParentFolder</visible>
@@ -117,9 +117,8 @@
 				<top>20</top>
 				<width>250</width>
 				<height>300</height>
-				<texture>$VAR[InfoWallThumbVar]</texture>
+				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
-				<texture>DefaultFolderBack.png</texture>
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="textbox">
