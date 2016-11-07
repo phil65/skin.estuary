@@ -99,6 +99,17 @@
 					<aspectratio>keep</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
+				<control type="textbox">
+					<left>40</left>
+					<top>270</top>
+					<width>242</width>
+					<height>90</height>
+					<font>font27</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>!ListItem.IsParentFolder</visible>
+				</control>
 			</control>
 			<control type="image">
 				<left>15</left>
@@ -110,17 +121,6 @@
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
-			</control>
-			<control type="textbox">
-				<left>40</left>
-				<top>270</top>
-				<width>242</width>
-				<height>90</height>
-				<font>font27</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.Art(poster))</visible>
 			</control>
 		</definition>
 	</include>
