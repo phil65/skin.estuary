@@ -80,6 +80,31 @@
 					<font>Mono30</font>
 				</control>
 			</control>
+			<control type="textbox" id="30">
+				<left>430</left>
+				<width>1370</width>
+				<top>100</top>
+				<height>665</height>
+				<pagecontrol>60</pagecontrol>
+				<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
+			</control>
+			<control type="scrollbar" id="60">
+				<right>0</right>
+				<top>93</top>
+				<width>12</width>
+				<height>675</height>
+				<orientation>vertical</orientation>
+				<texturesliderbackground></texturesliderbackground>
+				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<visible>Control.IsVisible(30)</visible>
+				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
+				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			</control>
 			<control type="image">
 				<left>360</left>
 				<top>90</top>
@@ -216,9 +241,10 @@
 				<left>0</left>
 				<top>160</top>
 				<width>420</width>
-				<height>540</height>
+				<height>1080</height>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
+				<onright>60</onright>
 				<control type="button" id="95">
 					<description>Button Summary Values</description>
 					<include content="DefaultSettingButton">
@@ -266,6 +292,14 @@
 					</include>
 					<width>420</width>
 					<label>$LOCALIZE[19191]</label>
+				</control>
+				<control type="button" id="100">
+					<description>Button Privacy policy</description>
+					<include content="DefaultSettingButton">
+						<param name="height" value="88" />
+					</include>
+					<width>420</width>
+					<label>$LOCALIZE[12389]</label>
 				</control>
 			</control>
 		</control>
