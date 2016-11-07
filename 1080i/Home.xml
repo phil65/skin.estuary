@@ -879,15 +879,13 @@
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
 						<itemgap>-160</itemgap>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/pictures.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31111]" />
-							<param name="button_label" value="" />
-							<param name="button_onclick" value="ActivateWindow(pictures)"/>
-							<param name="button_id" value="4100"/>
-							<param name="visible" value="true"/>
-							<param name="visible_1" value="False"/>
-							<param name="visible_2" value="False"/>
+						<include content="WidgetListCategories">
+							<param name="content_path" value="sources://pictures/"/>
+							<param name="widget_header" value="$LOCALIZE[20094]"/>
+							<param name="widget_target" value="pictures"/>
+							<param name="list_id" value="4100"/>
+							<param name="onup_id" value="20000"/>
+							<param name="ondown_id" value="20001"/>
 						</include>
 					</control>
 				</control>
@@ -912,6 +910,7 @@
 					<movement>6</movement>
 					<focusposition>1</focusposition>
 					<onfocus>ClearProperty(listposition,home)</onfocus>
+					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),pictures) + Control.IsVisible(4000)">4000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),movies) + Control.IsVisible(5000)">5000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),tvshows) + Control.IsVisible(6000)">6000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),music) + Control.IsVisible(7000)">7000</onright>
