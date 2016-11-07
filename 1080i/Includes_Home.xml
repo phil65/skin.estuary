@@ -204,51 +204,58 @@
 					<top>0</top>
 					<left>442</left>
 					<width>1478</width>
-					<height>330</height>
-					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
+					<height>360</height>
+					<texture>frame/InfoBar.png</texture>
 				</control>
-				<control type="grouplist" id="$PARAM[button_id]567">
-					<top>230</top>
-					<left>528</left>
-					<width>1310</width>
-					<orientation>horizontal</orientation>
-					<align>center</align>
-					<onleft>9000</onleft>
-					<onup>$PARAM[onup_id]</onup>
-					<ondown>$PARAM[ondown_id]</ondown>
-					<control type="button" id="$PARAM[button_id]">
-						<width>auto</width>
-						<height>110</height>
-						<label>$PARAM[button_label]</label>
-						<textoffsetx>40</textoffsetx>
-						<onclick>$PARAM[button_onclick]</onclick>
-						<align>center</align>
-						<texturefocus border="23" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texturefocus>
-						<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
-						<visible>$PARAM[visible_1]</visible>
-					</control>
-					<control type="button" id="$PARAM[button_id]568">
-						<width>auto</width>
-						<height>110</height>
-						<label>$LOCALIZE[31116]</label>
-						<textoffsetx>40</textoffsetx>
-						<onclick>$PARAM[button2_onclick]</onclick>
-						<onclick>SetFocus(9000)</onclick>
-						<align>center</align>
-						<texturefocus border="23" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texturefocus>
-						<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
-						<visible>$PARAM[visible_2]</visible>
-					</control>
+				<control type="image">
+					<top>0</top>
+					<left>442</left>
+					<width>1478</width>
+					<height>360</height>
+					<texture>frame/InfoBar.png</texture>
 				</control>
-				<control type="textbox">
+				<control type="grouplist" id="$PARAM[button_id]577">
+					<orientation>vertical</orientation>
 					<top>120</top>
 					<left>578</left>
-					<width>1220</width>
-					<height>180</height>
-					<label>$PARAM[text_label]</label>
-					<align>center</align>
-					<font>font12</font>
-					<visible>$PARAM[visible]</visible>
+					<control type="textbox">
+						<width>1220</width>
+						<height min="0" max="180">auto</height>
+						<label>$PARAM[text_label]</label>
+						<align>center</align>
+						<font>font12</font>
+					</control>
+					<control type="grouplist" id="$PARAM[button_id]567">
+						<width>1220</width>
+						<orientation>horizontal</orientation>
+						<align>center</align>
+						<onleft>9000</onleft>
+						<onup>$PARAM[onup_id]</onup>
+						<ondown>$PARAM[ondown_id]</ondown>
+						<control type="button" id="$PARAM[button_id]">
+							<width>auto</width>
+							<height>110</height>
+							<label>$PARAM[button_label]</label>
+							<textoffsetx>40</textoffsetx>
+							<onclick>$PARAM[button_onclick]</onclick>
+							<align>center</align>
+							<texturefocus border="23" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texturefocus>
+							<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+							<visible>$PARAM[visible_1]</visible>
+						</control>
+						<control type="button" id="$PARAM[button_id]568">
+							<width>auto</width>
+							<height>110</height>
+							<label>$LOCALIZE[31116]</label>
+							<textoffsetx>40</textoffsetx>
+							<onclick>$PARAM[button2_onclick]</onclick>
+							<onclick>SetFocus(9000)</onclick>
+							<align>center</align>
+							<texturefocus border="23" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texturefocus>
+							<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+							<visible>$PARAM[visible_2]</visible>
+						</control>
+					</control>
 				</control>
 			</control>
 		</definition>
