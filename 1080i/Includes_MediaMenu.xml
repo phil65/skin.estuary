@@ -265,9 +265,8 @@
 			<height>1080</height>
 			<aspectratio>scale</aspectratio>
 			<texture colordiffuse="80FFFFFF">colors/black.png</texture>
-			<animation type="Conditional" condition="!$EXP[sidebar_focused]" reversible="true">
-				<effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-			</animation>
+			<visible>$EXP[sidebar_focused] + !System.HasModalDialog</visible>
+			<animation effect="fade" time="200">VisibleChange</animation>
 		</control>
 		<control type="image">
 			<left>0</left>
