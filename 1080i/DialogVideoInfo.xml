@@ -212,12 +212,12 @@
 					</include>
 				</control>
 				<control type="image">
-					<left>17</left>
-					<top>185</top>
-					<width>1210</width>
-					<height>283</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+					<left>0</left>
+					<top>164</top>
+					<width>1245</width>
+					<height>328</height>
+					<texture border="21">dialogs/dialog-bg.png</texture>
+					<visible>Integer.IsEqual(Container(50).NumItems,0) + String.IsEmpty(ListItem.Art(tvshow.banner)) + String.IsEmpty(ListItem.Art(banner))</visible>
 				</control>
 				<control type="textbox">
 					<left>17</left>
@@ -355,10 +355,10 @@
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 							<control type="image">
-								<left>18</left>
-								<top>20</top>
-								<width>230</width>
-								<height>280</height>
+								<left>16</left>
+								<top>16</top>
+								<width>232</width>
+								<height>285</height>
 								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 								<visible>Control.HasFocus(50)</visible>
 							</control>

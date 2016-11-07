@@ -95,6 +95,7 @@
 					<width>1190</width>
 					<height>320</height>
 					<label></label>
+					<texturenofocus border="21">dialogs/dialog-bg.png</texturenofocus>
 					<onclick>SetProperty(TextViewer_Header,$LOCALIZE[21821],home)</onclick>
 					<onclick>SetProperty(TextViewer_Text,$ESCVAR[MusicInfoTextboxVar],home)</onclick>
 					<onclick>ActivateWindow(1102)</onclick>
@@ -216,9 +217,9 @@
 					</control>
 					<control type="textbox">
 						<left>28</left>
-						<top>207</top>
+						<top>212</top>
 						<width>196</width>
-						<height>65</height>
+						<height>62</height>
 						<font>font27_narrow</font>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -252,12 +253,13 @@
 						</control>
 						<control type="textbox">
 							<left>28</left>
-							<top>207</top>
+							<top>212</top>
 							<width>196</width>
-							<height>65</height>
+							<height>62</height>
 							<font>font27_narrow</font>
 							<align>center</align>
 							<aligny>center</aligny>
+							<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
 							<label>$INFO[ListItem.Label2,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</label>
 						</control>
 						<control type="group">
@@ -266,10 +268,10 @@
 							<include>UserRatingCircle</include>
 						</control>
 						<control type="image">
-							<left>15</left>
-							<top>5</top>
-							<width>220</width>
-							<height>278</height>
+							<left>16</left>
+							<top>6</top>
+							<width>218</width>
+							<height>280</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>

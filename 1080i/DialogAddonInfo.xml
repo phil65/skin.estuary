@@ -228,13 +228,14 @@
 					<font>font36_title</font>
 				</control>
 			</control>
-			<control type="button">
+			<control type="image">
 				<left>-5</left>
 				<top>525</top>
 				<width>540</width>
 				<height>150</height>
-				<label></label>
-				<texturenofocus border="21">dialogs/dialog-bg-small.png</texturenofocus>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
 			</control>
 			<control type="grouplist">
 				<left>30</left>

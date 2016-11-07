@@ -4,7 +4,7 @@
 		<control type="image">
 			<top>80</top>
 			<left>15</left>
-			<width>690</width>
+			<width>680</width>
 			<height>225</height>
 			<texture border="22">dialogs/dialog-bg.png</texture>
 		</control>
@@ -346,7 +346,9 @@
 								<top>0</top>
 								<width>344</width>
 								<height>340</height>
-								<texture border="21">dialogs/dialog-bg-small.png</texture>
+								<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
 							</control>
 							<control type="group">
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
@@ -355,7 +357,7 @@
 									<left>-2</left>
 									<top>-2</top>
 									<width>348</width>
-									<height>342</height>
+									<height>344</height>
 									<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								</control>
 								<control type="progress">

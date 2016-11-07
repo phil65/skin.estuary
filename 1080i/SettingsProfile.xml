@@ -49,7 +49,9 @@
 						<top>5</top>
 						<width>320</width>
 						<height>380</height>
-						<texture border="40">dialogs/dialog-bg-small.png</texture>
+						<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="20">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
 						<left>51</left>
@@ -101,13 +103,15 @@
 							<top>5</top>
 							<width>320</width>
 							<height>380</height>
-							<texture border="40">dialogs/dialog-bg-small.png</texture>
+							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<left>0</left>
-							<top>5</top>
-							<width>320</width>
-							<height>380</height>
+							<left>-2</left>
+							<top>2</top>
+							<width>324</width>
+							<height>385</height>
 							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
