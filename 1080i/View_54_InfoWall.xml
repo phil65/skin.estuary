@@ -98,7 +98,6 @@
 					<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<bordersize>20</bordersize>
-					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 			</control>
 			<control type="image">
@@ -111,15 +110,6 @@
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Art(poster))</visible>
-			</control>
-			<control type="image">
-				<left>34</left>
-				<top>20</top>
-				<width>250</width>
-				<height>300</height>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="textbox">
 				<left>40</left>
