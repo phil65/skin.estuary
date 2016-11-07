@@ -197,7 +197,7 @@
 					<left>440</left>
 					<width>1600</width>
 					<height>1080</height>
-					<aspectratio>keep</aspectratio>
+					<aspectratio>scale</aspectratio>
 					<imagepath>$PARAM[image_path]</imagepath>
 				</control>
 				<control type="image">
