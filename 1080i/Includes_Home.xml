@@ -198,25 +198,11 @@
 					<width>1478</width>
 					<height>1080</height>
 					<aspectratio>scale</aspectratio>
-					<imagepath>$PARAM[image_path]</imagepath>
-				</control>
-				<control type="image">
-					<top>0</top>
-					<left>442</left>
-					<width>1478</width>
-					<height>360</height>
-					<texture>frame/InfoBar.png</texture>
-				</control>
-				<control type="image">
-					<top>0</top>
-					<left>442</left>
-					<width>1478</width>
-					<height>360</height>
-					<texture>frame/InfoBar.png</texture>
+					<imagepath colordiffuse="33FFFFFF">$PARAM[image_path]</imagepath>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]577">
 					<orientation>vertical</orientation>
-					<top>120</top>
+					<top>420</top>
 					<left>578</left>
 					<control type="textbox">
 						<width>1220</width>
