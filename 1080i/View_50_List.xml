@@ -193,22 +193,39 @@
 					<textcolor>80FFFFFF</textcolor>
 					<label>$LOCALIZE[19055]</label>
 					<visible>!ListItem.IsParentFolder</visible>
-					<visible>!Integer.IsGreater(Container(42000).NumItems,0)</visible>
+					<visible>!Integer.IsGreater(Container(42000).NumItems,0) + !Integer.IsGreater(Container(43000).NumItems,0)</visible>
 					<visible>!Container.Content() | !String.isempty(ListItem.Plot)</visible>
 				</control>
 				<control type="group">
 					<left>20</left>
 					<top>640</top>
-					<visible>Container.Content(artists)</visible>
-					<include content="InfoList">
-						<param name="list_id" value="42000" />
-						<param name="height" value="320" />
-						<param name="width" value="540" />
-						<param name="sortby" value="year" />
-						<param name="sortorder" value="descending" />
-						<param name="font" value="font13" />
-						<param name="path" value="$INFO[ListItem.FolderPath]" />
-					</include>
+					<visible>!ListItem.IsParentFolder</visible>
+					<control type="group">
+						<visible>Container.Content(artists)</visible>
+						<include content="InfoList">
+							<param name="list_id" value="42000" />
+							<param name="height" value="320" />
+							<param name="width" value="540" />
+							<param name="sortby" value="year" />
+							<param name="sortorder" value="descending" />
+							<param name="font" value="font13" />
+							<param name="path" value="$INFO[ListItem.FolderPath]" />
+							<param name="item_label" value="$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
+						</include>
+					</control>
+					<control type="group">
+						<visible>Container.Content(albums)</visible>
+						<include content="InfoList">
+							<param name="list_id" value="43000" />
+							<param name="height" value="320" />
+							<param name="width" value="540" />
+							<param name="sortby" value="track" />
+							<param name="sortorder" value="ascending" />
+							<param name="font" value="font13" />
+							<param name="path" value="$INFO[ListItem.FolderPath]" />
+							<param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
+						</include>
+					</control>
 				</control>
 			</control>
 		</definition>
