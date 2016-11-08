@@ -641,10 +641,10 @@
 								<visible>!$PARAM[smaller_icon]</visible>
 							</control>
 							<control type="image">
-								<top>42</top>
+								<top>37</top>
 								<left>62</left>
 								<width>220</width>
-								<height>70</height>
+								<height>90</height>
 								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>$PARAM[smaller_icon]</visible>
@@ -698,10 +698,10 @@
 								<visible>!$PARAM[smaller_icon]</visible>
 							</control>
 							<control type="image">
-								<top>42</top>
+								<top>37</top>
 								<left>62</left>
 								<width>220</width>
-								<height>70</height>
+								<height>90</height>
 								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>$PARAM[smaller_icon]</visible>
