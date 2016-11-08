@@ -590,7 +590,7 @@
 		<definition>
 			<control type="group" id="$PARAM[list_id]0">
 				<description>Square Widget including header</description>
-				<height>500</height>
+				<height>450</height>
 				<left>0</left>
 				<top>0</top>
 				<visible>$PARAM[visible]</visible>
@@ -607,7 +607,7 @@
 					<left>442</left>
 					<top>120</top>
 					<width>1460</width>
-					<height>400</height>
+					<height>350</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
 					<onleft>9000</onleft>
@@ -626,7 +626,7 @@
 							<left>70</left>
 							<control type="image">
 								<width>336</width>
-								<height>280</height>
+								<height>230</height>
 								<texture>dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -635,7 +635,7 @@
 								<top>18</top>
 								<left>62</left>
 								<width>220</width>
-								<height>180</height>
+								<height>130</height>
 								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>!$PARAM[smaller_icon]</visible>
@@ -644,21 +644,14 @@
 								<top>42</top>
 								<left>62</left>
 								<width>220</width>
-								<height>120</height>
+								<height>70</height>
 								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>$PARAM[smaller_icon]</visible>
 							</control>
-							<control type="image">
-								<left>20</left>
-								<top>184</top>
-								<width>296</width>
-								<height>76</height>
-								<texture colordiffuse="border_alpha">colors/black.png</texture>
-							</control>
 							<control type="textbox">
 								<left>42</left>
-								<top>185</top>
+								<top>135</top>
 								<width>260</width>
 								<height>70</height>
 								<label>$INFO[ListItem.Label]</label>
@@ -681,7 +674,7 @@
 							</animation>
 							<control type="image">
 								<width>336</width>
-								<height>280</height>
+								<height>230</height>
 								<texture>dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -690,7 +683,7 @@
 								<top>-2</top>
 								<left>-2</left>
 								<width>340</width>
-								<height>284</height>
+								<height>234</height>
 								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
@@ -699,7 +692,7 @@
 								<top>18</top>
 								<left>62</left>
 								<width>220</width>
-								<height>180</height>
+								<height>130</height>
 								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>!$PARAM[smaller_icon]</visible>
@@ -708,21 +701,14 @@
 								<top>42</top>
 								<left>62</left>
 								<width>220</width>
-								<height>120</height>
+								<height>70</height>
 								<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>$PARAM[smaller_icon]</visible>
 							</control>
-							<control type="image">
-								<left>20</left>
-								<top>184</top>
-								<width>296</width>
-								<height>76</height>
-								<texture colordiffuse="border_alpha">colors/black.png</texture>
-							</control>
 							<control type="textbox">
 								<left>42</left>
-								<top>185</top>
+								<top>135</top>
 								<width>260</width>
 								<height>70</height>
 								<label>$INFO[ListItem.Label]</label>
