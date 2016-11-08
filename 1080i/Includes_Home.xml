@@ -590,7 +590,7 @@
 		<definition>
 			<control type="group" id="$PARAM[list_id]0">
 				<description>Square Widget including header</description>
-				<height>450</height>
+				<height>430</height>
 				<left>0</left>
 				<top>0</top>
 				<visible>$PARAM[visible]</visible>
@@ -626,7 +626,7 @@
 							<left>70</left>
 							<control type="image">
 								<width>336</width>
-								<height>230</height>
+								<height>210</height>
 								<texture>dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -649,9 +649,9 @@
 								<aspectratio>keep</aspectratio>
 								<visible>$PARAM[smaller_icon]</visible>
 							</control>
-							<control type="textbox">
+							<control type="label">
 								<left>42</left>
-								<top>135</top>
+								<top>125</top>
 								<width>260</width>
 								<height>70</height>
 								<label>$INFO[ListItem.Label]</label>
@@ -674,7 +674,7 @@
 							</animation>
 							<control type="image">
 								<width>336</width>
-								<height>230</height>
+								<height>210</height>
 								<texture>dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -683,7 +683,7 @@
 								<top>-2</top>
 								<left>-2</left>
 								<width>340</width>
-								<height>234</height>
+								<height>214</height>
 								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
@@ -706,9 +706,9 @@
 								<aspectratio>keep</aspectratio>
 								<visible>$PARAM[smaller_icon]</visible>
 							</control>
-							<control type="textbox">
+							<control type="label">
 								<left>42</left>
-								<top>135</top>
+								<top>125</top>
 								<width>260</width>
 								<height>70</height>
 								<label>$INFO[ListItem.Label]</label>
