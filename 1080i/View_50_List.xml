@@ -180,18 +180,36 @@
 				<label>$VAR[ListBoxInfoVar]</label>
 				<visible>!Container.Content() | !IsEmpty(ListItem.Plot)</visible>
 			</control>
-			<control type="textbox">
-				<left>30</left>
-				<top>460</top>
-				<width>530</width>
-				<height>413</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font27</font>
-				<textcolor>80FFFFFF</textcolor>
-				<label>$LOCALIZE[19055]</label>
-				<visible>!ListItem.IsParentFolder</visible>
-				<visible>String.IsEmpty(Control.GetLabel(15500)) + [!Container.Content() | !IsEmpty(ListItem.Plot)]</visible>
+			<control type="group">
+				<visible>String.IsEmpty(Control.GetLabel(15500))</visible>
+				<control type="textbox">
+					<left>30</left>
+					<top>460</top>
+					<width>530</width>
+					<height>413</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font27</font>
+					<textcolor>80FFFFFF</textcolor>
+					<label>$LOCALIZE[19055]</label>
+					<visible>!ListItem.IsParentFolder</visible>
+					<visible>!Integer.IsGreater(Container(42000).NumItems,0)</visible>
+					<visible>!Container.Content() | !IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="group">
+					<left>20</left>
+					<top>640</top>
+					<visible>Container.Content(artists)</visible>
+					<include content="InfoList">
+						<param name="list_id" value="42000" />
+						<param name="height" value="320" />
+						<param name="width" value="540" />
+						<param name="sortby" value="year" />
+						<param name="sortorder" value="descending" />
+						<param name="font" value="font13" />
+						<param name="path" value="$INFO[ListItem.FolderPath]" />
+					</include>
+				</control>
 			</control>
 		</definition>
 	</include>
