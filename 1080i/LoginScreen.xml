@@ -7,16 +7,23 @@
 			<include>OpenClose_Right</include>
 			<control type="image">
 				<description>LOGO</description>
-				<left>1015</left>
-				<top>200</top>
-				<width>750</width>
-				<height>100</height>
+				<left>1240</left>
+				<top>280</top>
+				<width>112</width>
+				<height>112</height>
 				<aspectratio aligny="top" align="center">keep</aspectratio>
-				<texture>icons/logo.png</texture>
+				<texture colordiffuse="button_focus">icons/logo.png</texture>
+			</control>
+			<control type="image">
+				<left>1400</left>
+				<top>316</top>
+				<width>112</width>
+				<height>36</height>
+				<texture>icons/logo-text.png</texture>
 			</control>
 			<control type="textbox">
 				<left>1015</left>
-				<top>300</top>
+				<top>390</top>
 				<width>750</width>
 				<height>300</height>
 				<align>center</align>
@@ -27,7 +34,7 @@
 			<control type="button" id="20">
 				<description>Power push button</description>
 				<left>1150</left>
-				<top>600</top>
+				<top>690</top>
 				<width>500</width>
 				<height>130</height>
 				<label>$LOCALIZE[31072]</label>
