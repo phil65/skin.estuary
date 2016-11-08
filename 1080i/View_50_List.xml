@@ -178,7 +178,7 @@
 				<font>font13</font>
 				<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 				<label>$VAR[ListBoxInfoVar]</label>
-				<visible>!Container.Content() | !IsEmpty(ListItem.Plot)</visible>
+				<visible>!Container.Content() | !String.isempty(ListItem.Plot)</visible>
 			</control>
 			<control type="group">
 				<visible>String.IsEmpty(Control.GetLabel(15500))</visible>
@@ -194,7 +194,7 @@
 					<label>$LOCALIZE[19055]</label>
 					<visible>!ListItem.IsParentFolder</visible>
 					<visible>!Integer.IsGreater(Container(42000).NumItems,0)</visible>
-					<visible>!Container.Content() | !IsEmpty(ListItem.Plot)</visible>
+					<visible>!Container.Content() | !String.isempty(ListItem.Plot)</visible>
 				</control>
 				<control type="group">
 					<left>20</left>

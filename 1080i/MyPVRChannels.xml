@@ -433,7 +433,7 @@
 				<height>262</height>
 				<font>font13</font>
 				<align>right</align>
-				<visible>!IsEmpty(ListItem.NextTitle)</visible>
+				<visible>!String.isempty(ListItem.NextTitle)</visible>
 				<label>$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[CR][/COLOR]] $INFO[ListItem.NextStartTime]</label>
 				<include>OpenClose_Right</include>
 			</control>

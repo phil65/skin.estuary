@@ -882,7 +882,7 @@
 					<control type="label">
 						<label>$INFO[Container.PluginCategory, / ]</label>
 						<include>BreadcrumbsLabel</include>
-						<visible>!IsEmpty(Container.PluginCategory)</visible>
+						<visible>!String.isempty(Container.PluginCategory)</visible>
 					</control>
 					<control type="label">
 						<label>$INFO[Control.GetLabel(10),: ]</label>

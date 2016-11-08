@@ -30,7 +30,7 @@
 		<value>[COLOR grey]0[/COLOR]</value>
 	</variable>
 	<variable name="ActorLabel2">
-		<value condition="!IsEmpty(ListItem.Appearances)">$LOCALIZE[38026]: $INFO[ListItem.Appearances]</value>
+		<value condition="!String.isempty(ListItem.Appearances)">$LOCALIZE[38026]: $INFO[ListItem.Appearances]</value>
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="MusicInfoTextboxVar">
@@ -75,7 +75,7 @@
 	</variable>
 	<variable name="IconWallThumbVar">
 		<value condition="Container.Content(studios)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
-		<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+		<value condition="!String.isempty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="ListLabel2Var">
@@ -106,7 +106,7 @@
 	<variable name="BannerArtVar">
 		<value condition="ListItem.IsParentFolder">DefaultBackBanner.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-		<value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.isempty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value>dialogs/dialog-bg-nobo.png</value>
 	</variable>
 	<variable name="FanartImageVar">

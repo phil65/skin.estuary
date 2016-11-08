@@ -70,7 +70,7 @@
 				<preloaditems>2</preloaditems>
 				<itemlayout width="330" height="500">
 					<control type="group">
-						<posx>70</posx>
+						<left>70</left>
 						<control type="image">
 							<left>10</left>
 							<top>0</top>
@@ -97,7 +97,7 @@
 				<focusedlayout width="330" height="500">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<posx>70</posx>
+						<left>70</left>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="236,130" />
 						</animation>
@@ -288,7 +288,7 @@
 					<preloaditems>2</preloaditems>
 					<itemlayout width="330" height="400">
 						<control type="group">
-							<posx>70</posx>
+							<left>70</left>
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
@@ -328,7 +328,7 @@
 					</itemlayout>
 					<focusedlayout width="330" height="400">
 						<control type="group">
-							<posx>70</posx>
+							<left>70</left>
 							<depth>DepthContentPopout</depth>
 							<animation type="Focus">
 								<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="233,120" />

@@ -61,7 +61,7 @@
 					<height>100</height>
 					<width>500</width>
 					<align>right</align>
-					<visible>!IsEmpty(Player.Duration)</visible>
+					<visible>!String.isempty(Player.Duration)</visible>
 					<visible>!VideoPlayer.Content(LiveTV) | VideoPlayer.HasEpg</visible>
 				</control>
 			</control>
