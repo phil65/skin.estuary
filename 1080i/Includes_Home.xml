@@ -205,12 +205,13 @@
 					<orientation>vertical</orientation>
 					<top>420</top>
 					<left>578</left>
+					<align>center</align>
 					<control type="textbox">
 						<width>1220</width>
-						<height min="0" max="180">auto</height>
+						<height min="0" max="300">auto</height>
 						<label>$PARAM[text_label]</label>
 						<align>center</align>
-						<font>font12</font>
+						<font>font14</font>
 					</control>
 					<control type="grouplist" id="$PARAM[button_id]567">
 						<width>1220</width>
