@@ -143,11 +143,12 @@
 			</control>
 			<control type="panel">
 				<left>20</left>
-				<top>50</top>
+				<top>48</top>
 				<width>1880</width>
 				<height>180</height>
 				<orientation>horizontal</orientation>
 				<visible>ListItem.IsCollection</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
 				<focusedlayout height="40" width="628">
 					<control type="label">
 						<left>10</left>
