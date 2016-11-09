@@ -141,6 +141,37 @@
 					</include>
 				</control>
 			</control>
+			<control type="panel">
+				<left>20</left>
+				<top>50</top>
+				<width>1880</width>
+				<height>180</height>
+				<orientation>horizontal</orientation>
+				<visible>ListItem.IsCollection</visible>
+				<focusedlayout height="40" width="628">
+					<control type="label">
+						<left>10</left>
+						<height>40</height>
+						<width>800</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Title]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<font>font13</font>
+					</control>
+				</focusedlayout>
+				<itemlayout height="40" width="628">
+					<control type="label">
+						<left>10</left>
+						<height>40</height>
+						<width>800</width>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Title]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<font>font13</font>
+					</control>
+				</itemlayout>
+				<content sortby="year" sortorder="descending">$INFO[ListItem.Path]</content>
+			</control>
 		</control>
 	</include>
 	<include name="ShiftTextbox">
