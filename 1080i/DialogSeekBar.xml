@@ -11,14 +11,7 @@
 				<left>0</left>
 				<width>110%</width>
 				<height>200</height>
-				<texture flipy="true">frame/InfoBar.png</texture>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>110%</width>
-				<height>200</height>
-				<texture flipy="true">frame/InfoBar.png</texture>
+				<texture flipy="true">frame/osdfade.png</texture>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
