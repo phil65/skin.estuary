@@ -17,6 +17,51 @@
 		</control>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
+			<control type="group" id="400">
+				<include>OpenClose_Right</include>
+				<include content="AddonLauncherPanel">
+					<param name="container_id" value="500" />
+					<param name="id" value="video" />
+					<param name="container_path" value="addons://sources/video/" />
+					<param name="container_target" value="videos" />
+				</include>
+				<include content="AddonLauncherPanel">
+					<param name="container_id" value="501" />
+					<param name="id" value="music" />
+					<param name="container_path" value="addons://sources/audio/" />
+					<param name="container_target" value="music" />
+				</include>
+				<include content="AddonLauncherPanel">
+					<param name="container_id" value="502" />
+					<param name="id" value="addons" />
+					<param name="container_path" value="addons://sources/executable/" />
+					<param name="container_target" value="programs" />
+				</include>
+				<include content="AddonLauncherPanel" condition="System.Platform.Android">
+					<param name="container_id" value="506" />
+					<param name="id" value="android" />
+					<param name="container_path" value="androidapp://sources/apps/" />
+					<param name="container_target" value="programs" />
+				</include>
+				<include content="AddonLauncherPanel">
+					<param name="container_id" value="503" />
+					<param name="id" value="pictures" />
+					<param name="container_path" value="addons://sources/image/" />
+					<param name="container_target" value="pictures" />
+				</include>
+				<include content="AddonLauncherPanel">
+					<param name="container_id" value="507" />
+					<param name="id" value="download" />
+					<param name="container_path" value="addons://all/" />
+					<param name="container_target" value="addonbrowser" />
+				</include>
+				<include content="AddonLauncherPanel">
+					<param name="container_id" value="508" />
+					<param name="id" value="manage" />
+					<param name="container_path" value="addons://user/" />
+					<param name="container_target" value="addonbrowser" />
+				</include>
+			</control>
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<control type="image">
@@ -257,51 +302,6 @@
 					<label>$VAR[AddonCountLabel]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
-			</control>
-			<control type="group" id="400">
-				<include>OpenClose_Right</include>
-				<include content="AddonLauncherPanel">
-					<param name="container_id" value="500" />
-					<param name="id" value="video" />
-					<param name="container_path" value="addons://sources/video/" />
-					<param name="container_target" value="videos" />
-				</include>
-				<include content="AddonLauncherPanel">
-					<param name="container_id" value="501" />
-					<param name="id" value="music" />
-					<param name="container_path" value="addons://sources/audio/" />
-					<param name="container_target" value="music" />
-				</include>
-				<include content="AddonLauncherPanel">
-					<param name="container_id" value="502" />
-					<param name="id" value="addons" />
-					<param name="container_path" value="addons://sources/executable/" />
-					<param name="container_target" value="programs" />
-				</include>
-				<include content="AddonLauncherPanel" condition="System.Platform.Android">
-					<param name="container_id" value="506" />
-					<param name="id" value="android" />
-					<param name="container_path" value="androidapp://sources/apps/" />
-					<param name="container_target" value="programs" />
-				</include>
-				<include content="AddonLauncherPanel">
-					<param name="container_id" value="503" />
-					<param name="id" value="pictures" />
-					<param name="container_path" value="addons://sources/image/" />
-					<param name="container_target" value="pictures" />
-				</include>
-				<include content="AddonLauncherPanel">
-					<param name="container_id" value="507" />
-					<param name="id" value="download" />
-					<param name="container_path" value="addons://all/" />
-					<param name="container_target" value="addonbrowser" />
-				</include>
-				<include content="AddonLauncherPanel">
-					<param name="container_id" value="508" />
-					<param name="id" value="manage" />
-					<param name="container_path" value="addons://user/" />
-					<param name="container_target" value="addonbrowser" />
-				</include>
 			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
