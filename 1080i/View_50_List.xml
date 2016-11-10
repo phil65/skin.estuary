@@ -181,7 +181,19 @@
 				<visible>!Container.Content() | !String.isempty(ListItem.Plot)</visible>
 			</control>
 			<control type="group">
-				<visible>String.IsEmpty(Control.GetLabel(15500))</visible>
+				<left>20</left>
+				<top>640</top>
+				<visible>ListItem.IsCollection</visible>
+				<include content="InfoList">
+					<param name="height" value="320" />
+					<param name="width" value="540" />
+					<param name="sortby" value="year" />
+					<param name="sortorder" value="descending" />
+					<param name="font" value="font13" />
+				</include>
+			</control>
+			<control type="group">
+				<visible>String.IsEmpty(Control.GetLabel(15500)) + !ListItem.IsCollection</visible>
 				<control type="textbox">
 					<left>30</left>
 					<top>460</top>
