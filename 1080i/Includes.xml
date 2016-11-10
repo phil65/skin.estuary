@@ -560,8 +560,10 @@
 				<height>1200</height>
 				<onleft>9000</onleft>
 				<onright>531</onright>
-				<include>Visible_Right_Delayed</include>
-				<visible>$PARAM[visible]</visible>
+				<include content="Visible_Right_Delayed">
+					<param name="id" value="$PARAM[id]"/>
+				</include>
+				<visible>StringCompare(Container(9000).ListItem.Property(id),$PARAM[id])</visible>
 				<onup>$PARAM[container_id]</onup>
 				<ondown>$PARAM[container_id]</ondown>
 				<preloaditems>2</preloaditems>
