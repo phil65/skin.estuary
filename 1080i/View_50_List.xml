@@ -211,6 +211,7 @@
 				<control type="group">
 					<left>20</left>
 					<top>640</top>
+					<visible>!String.IsEmpty(ListItem.DBID)</visible>
 					<control type="group">
 						<visible>String.IsEqual(ListItem.DBType,artist)</visible>
 						<include content="InfoList">
