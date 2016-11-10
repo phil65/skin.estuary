@@ -679,14 +679,14 @@
 							</control>
 						</control>
 						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
+							<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
 							<param name="text_label" value="$LOCALIZE[31025]" />
 							<param name="button_label" value="$LOCALIZE[31116]" />
-							<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
+							<param name="button_onclick" value=""/>
 							<param name="button_id" value="5500"/>
 							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0) + !Container(14100).IsUpdating"/>
 							<param name="visible_1" value="false"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNFavButton)"/>
+							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoFavButton)"/>
 						</include>
 					</control>
 				</control>
