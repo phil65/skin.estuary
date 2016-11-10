@@ -203,7 +203,7 @@
 <!-- 							<visible>Integer.IsGreater(Container(503).NumItems,0)</visible>
  -->						</item>
 						<item id="7">
-							<label>Manage</label>
+							<label>$LOCALIZE[24998]</label>
 							<onclick>ActivateWindow(addonbrowser,addons://user/,return)</onclick>
 							<thumb>icons/sidemenu/manage.png</thumb>
 							<property name="id">manage</property>
