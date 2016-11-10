@@ -559,7 +559,7 @@
 				<width>1400</width>
 				<height>1200</height>
 				<onleft>9000</onleft>
-				<onright>531</onright>
+				<onright>$PARAM[container_id]30</onright>
 				<include content="Visible_Right_Delayed">
 					<param name="id" value="$PARAM[id]"/>
 				</include>
@@ -596,6 +596,22 @@
 					</control>
 				</focusedlayout>
 				<content sortby="lastused" sortorder="descending" target="$PARAM[container_target]">$PARAM[container_path]</content>
+			</control>
+			<control type="scrollbar" id="$PARAM[container_id]30">
+				<right>0</right>
+				<top>80</top>
+				<width>12</width>
+				<height>920</height>
+				<orientation>vertical</orientation>
+				<texturesliderbackground></texturesliderbackground>
+				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+				<onleft>$PARAM[container_id]</onleft>
+				<onright>noop</onright>
+				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
+				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			</control>
 		</definition>
 	</include>
