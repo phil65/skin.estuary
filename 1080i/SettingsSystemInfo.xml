@@ -127,7 +127,7 @@
 					<orientation>vertical</orientation>
 					<control type="label">
 						<description>CPU Text</description>
-						<width>650</width>
+						<width>730</width>
 						<height>80</height>
 						<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 						<aligny>top</aligny>
@@ -137,13 +137,13 @@
 					</control>
 					<control type="progress">
 						<description>CPU BAR</description>
-						<width>650</width>
+						<width>730</width>
 						<height>16</height>
 						<info>System.CPUUsage</info>
 					</control>
 					<control type="label">
 						<description>Memory Text</description>
-						<width>650</width>
+						<width>730</width>
 						<height>40</height>
 						<label>$LOCALIZE[31030]: $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
 						<aligny>center</aligny>
@@ -152,14 +152,14 @@
 					</control>
 					<control type="progress">
 						<description>Memory BAR</description>
-						<width>650</width>
+						<width>730</width>
 						<height>16</height>
 						<info>system.memory(used)</info>
 					</control>
 				</control>
 				<control type="label">
 					<top>664</top>
-					<left>720</left>
+					<left>780</left>
 					<width>auto</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
@@ -172,7 +172,7 @@
 					<description>Kodi build version</description>
 					<itemgap>10</itemgap>
 					<top>710</top>
-					<left>720</left>
+					<left>780</left>
 					<width>800</width>
 					<align>left</align>
 					<height>45</height>
@@ -203,7 +203,7 @@
 					<itemgap>10</itemgap>
 					<top>755</top>
 					<align>left</align>
-					<left>720</left>
+					<left>780</left>
 					<width>800</width>
 					<orientation>horizontal</orientation>
 					<control type="label">
