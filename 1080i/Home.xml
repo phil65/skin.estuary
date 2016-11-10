@@ -50,7 +50,9 @@
 				<include>OpenClose_Right</include>
 				<control type="group" id="5000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="movies"/>
+					</include>
 					<control type="grouplist" id="5001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -135,7 +137,9 @@
 				</control>
 				<control type="group" id="6000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),tvshows)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="tvshows"/>
+					</include>
 					<control type="grouplist" id="6001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -214,7 +218,9 @@
 				</control>
 				<control type="group" id="7000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),music)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="music"/>
+					</include>
 					<control type="grouplist" id="7001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -302,7 +308,9 @@
 				</control>
 				<control type="group" id="8000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),addons)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="addons"/>
+					</include>
 					<control type="grouplist" id="8001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -400,7 +408,9 @@
 				</control>
 				<control type="group" id="11000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),video)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="video"/>
+					</include>
 					<control type="grouplist" id="11001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -445,7 +455,9 @@
 				</control>
 				<control type="group" id="12000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),livetv)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="livetv"/>
+					</include>
 					<control type="grouplist" id="12001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -527,7 +539,9 @@
 				</control>
 				<control type="group" id="13000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),radio)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="radio"/>
+					</include>
 					<control type="grouplist" id="13001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -609,7 +623,9 @@
 				</control>
 				<control type="group" id="14000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),favorites)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="favorites"/>
+					</include>
 					<control type="grouplist" id="14001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -676,7 +692,9 @@
 				</control>
 				<control type="group" id="15000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),weather)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="weather"/>
+					</include>
 					<control type="grouplist" id="15001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -783,7 +801,9 @@
 				</control>
 				<control type="group" id="16000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),musicvideos)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="musicvideos"/>
+					</include>
 					<control type="grouplist" id="16001">
 						<orientation>vertical</orientation>
 						<height>1080</height>
@@ -874,7 +894,9 @@
 				</control>
 				<control type="group" id="4000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),pictures)</visible>
-					<include>Visible_Right_Delayed</include>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="pictures"/>
+					</include>
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
 						<itemgap>-160</itemgap>
