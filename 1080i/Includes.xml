@@ -393,7 +393,7 @@
 			<orientation>horizontal</orientation>
 			<left>0</left>
 			<align>right</align>
-			<itemgap>15</itemgap>
+			<itemgap>28</itemgap>
 			<width>1900</width>
 			<usecontrolcoords>true</usecontrolcoords>
 			<control type="group">
@@ -427,7 +427,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Duration,, $LOCALIZE[31132]]</label>
-					<font>font_Flag</font>
+					<font>font_flag</font>
 					<textcolor>white</textcolor>
 				</control>
 				<include content="MediaFlag">
