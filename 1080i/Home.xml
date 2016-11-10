@@ -775,7 +775,7 @@
 						<include content="WeatherWidget">
 							<param name="content_include" value="HourlyItems" />
 							<param name="list_id" value="15100" />
-							<param name="onup_id" value="15900" />
+							<param name="onup_id" value="20000" />
 							<param name="ondown_id" value="15200" />
 							<param name="widget_header" value="$LOCALIZE[33036]"/>
 							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
