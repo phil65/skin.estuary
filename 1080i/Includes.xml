@@ -616,7 +616,7 @@
 				<control type="group">
 					<left>20</left>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+						<param name="image_path" value="$PARAM[imagewidget_image]"/>
 						<param name="text_label" value="You do not have any add-ons of this type installed. Enter the add-on browser to download add-ons created by our community." />
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="$PARAM[imagewidget_onclick]"/>

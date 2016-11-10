@@ -25,6 +25,7 @@
 					<param name="container_path" value="addons://sources/video/" />
 					<param name="container_target" value="videos" />
 					<param name="imagewidget_onclick" value="ActivateWindow(addonbrowser,addons://all/xbmc.addon.video,return)" />
+					<param name="imagewidget_image" value="special://skin/extras/home-images/movie.jpg" />
 				</include>
 				<include content="AddonLauncherPanel">
 					<param name="group_id" value="501" />
@@ -32,6 +33,7 @@
 					<param name="container_path" value="addons://sources/audio/" />
 					<param name="container_target" value="music" />
 					<param name="imagewidget_onclick" value="ActivateWindow(addonbrowser,addons://all/xbmc.addon.audio,return)" />
+					<param name="imagewidget_image" value="special://skin/extras/home-images/music.jpg" />
 				</include>
 				<include content="AddonLauncherPanel">
 					<param name="group_id" value="502" />
@@ -39,6 +41,7 @@
 					<param name="container_path" value="addons://sources/executable/" />
 					<param name="container_target" value="programs" />
 					<param name="imagewidget_onclick" value="ActivateWindow(addonbrowser,addons://all/xbmc.addon.executable,return)" />
+					<param name="imagewidget_image" value="special://skin/extras/home-images/add-ons.jpg" />
 				</include>
 				<include content="AddonLauncherPanel" condition="System.Platform.Android">
 					<param name="group_id" value="506" />
@@ -52,6 +55,7 @@
 					<param name="container_path" value="addons://sources/image/" />
 					<param name="container_target" value="pictures" />
 					<param name="imagewidget_onclick" value="ActivateWindow(addonbrowser,addons://all/xbmc.addon.image,return)" />
+					<param name="imagewidget_image" value="special://skin/extras/home-images/pictures.jpg" />
 				</include>
 				<include content="AddonLauncherPanel">
 					<param name="group_id" value="507" />
