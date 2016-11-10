@@ -567,7 +567,7 @@
 				<onup>$PARAM[container_id]</onup>
 				<ondown>$PARAM[container_id]</ondown>
 				<preloaditems>2</preloaditems>
-				<pagecontrol>531</pagecontrol>
+				<pagecontrol>$PARAM[container_id]30</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<itemlayout height="401" width="350">
 					<control type="group">
