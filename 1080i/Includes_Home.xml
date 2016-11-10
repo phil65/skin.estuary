@@ -1233,18 +1233,11 @@
 				<height>55</height>
 				<texture>$INFO[Window(weather).Property(Map.$PARAM[item_id].Legend)]</texture>
 			</control>
-			<control type="image">
-				<left>30</left>
-				<top>580</top>
-				<width>350</width>
-				<height>55</height>
-				<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-			</control>
 			<control type="button" id="700$PARAM[item_id]0">
-				<left>30</left>
-				<top>580</top>
-				<width>350</width>
-				<height>55</height>
+				<left>1000</left>
+				<top>860</top>
+				<width>340</width>
+				<height>100</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>40</textoffsetx>
