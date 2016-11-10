@@ -307,22 +307,6 @@
 				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
 			</include>
 			<include>BottomBar</include>
-			<control type="scrollbar" id="531">
-				<right>0</right>
-				<top>80</top>
-				<width>12</width>
-				<height>920</height>
-				<orientation>vertical</orientation>
-				<texturesliderbackground></texturesliderbackground>
-				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
-				<onleft>400</onleft>
-				<onright>noop</onright>
-				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
-				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
-			</control>
 			<include content="InfoList">
 				<param name="path" value="addons://outdated/" />
 				<param name="height" value="1" />
