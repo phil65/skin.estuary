@@ -461,14 +461,6 @@
 								<aspectratio>scale</aspectratio>
 								<texture fallback="$PARAM[fallback_icon]" background="true">$INFO[ListItem.Art(thumb)]</texture>
 							</control>
-							<control type="image">
-								<left>40</left>
-								<top>40</top>
-								<width>260</width>
-								<height>260</height>
-								<texture>$VAR[MediaTypeIconVar]</texture>
-								<visible>String.IsEmpty(ListItem.Art(thumb))</visible>
-							</control>
 							<control type="label">
 								<left>40</left>
 								<top>318</top>
