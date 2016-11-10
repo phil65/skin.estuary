@@ -167,6 +167,7 @@
 				</itemlayout>
 				<focusedlayout height="445" width="320" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
+					
 						<left>224</left>
 						<top>498</top>
 						<width>32</width>
@@ -176,6 +177,7 @@
 						<animation effect="slide" start="0,16" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
 					</control>
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<left>80</left>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="240,300">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="240,300">UnFocus</animation>
@@ -210,6 +212,7 @@
 				</itemlayout>
 				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="250,330">Focus</animation>
 						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="250,330">UnFocus</animation>
 						<top>150</top>
@@ -239,6 +242,7 @@
 				</itemlayout>
 				<focusedlayout height="400" width="401" condition="Container.Content(images)">
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<left>30</left>
 						<top>150</top>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,330">Focus</animation>

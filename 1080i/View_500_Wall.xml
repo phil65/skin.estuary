@@ -51,6 +51,7 @@
 						<animation effect="slide" start="0,16" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
 					</control>
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="160,300">UnFocus</animation>
 						<top>120</top>
@@ -96,6 +97,7 @@
 						<animation effect="slide" start="0,30" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
 					</control>
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="160,300">UnFocus</animation>
 						<top>150</top>
@@ -121,6 +123,7 @@
 				</itemlayout>
 				<focusedlayout height="425" width="442" condition="Container.Content(images)">
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,330">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="220,330">UnFocus</animation>
 						<left>40</left>
@@ -146,6 +149,7 @@
 				</itemlayout>
 				<focusedlayout height="400" width="300" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<top>150</top>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="140,300">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="140,300">UnFocus</animation>
@@ -172,6 +176,7 @@
 				</itemlayout>
 				<focusedlayout height="390" width="300" condition="Container.Content(addons)">
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<top>150</top>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="150,320">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="150,320">UnFocus</animation>

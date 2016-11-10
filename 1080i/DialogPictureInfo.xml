@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
+	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>SetProperty(infobackground,$INFO[ListItem.FolderPath],home)</onload>
 	<onunload>ClearProperty(infobackground,home)</onunload>

@@ -97,6 +97,7 @@
 				</control>
 			</control>
 			<control type="group">
+				<depth>DepthContentPanel</depth>
 				<left>1100</left>
 				<top>180</top>
 				<control type="image">
@@ -214,6 +215,7 @@
 				<param name="info_visible" value="true" />
 			</include>
 			<control type="group">
+				<depth>DepthBars</depth>
 				<left>1100</left>
 				<include>OpenClose_Right</include>
 				<control type="label">

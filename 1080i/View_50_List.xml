@@ -11,40 +11,44 @@
 				<param name="list_id" value="50" />
 				<param name="viewtype_label" value="$LOCALIZE[535]" />
 			</include>
-			<control type="image">
-				<left>712</left>
-				<top>-20</top>
-				<width>670</width>
-				<height>1120</height>
-				<texture>lists/panel.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-			</control>
-			<control type="scrollbar" id="50600">
-				<left>732</left>
-				<top>0</top>
-				<width>12</width>
-				<height>1080</height>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<orientation>vertical</orientation>
-				<animation effect="zoom" end="50,100" time="300" tween="sine" center="732,0" easing="inout" condition="!Control.HasFocus(50600)">conditional</animation>
-			</control>
-			<control type="image">
-				<left>754</left>
-				<top>140</top>
-				<width>556</width>
-				<height>836</height>
-				<fadetime>200</fadetime>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
-			</control>
 			<control type="group">
-				<left>1013</left>
-				<top>950</top>
-				<include content="UserRatingCircle">
-					<param name="animation" value="True" />
-				</include>
+				<depth>DepthContentPanel</depth>
+				<control type="image">
+					<left>712</left>
+					<top>-20</top>
+					<width>670</width>
+					<height>1120</height>
+					<texture>lists/panel.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="scrollbar" id="50600">
+					<left>732</left>
+					<top>0</top>
+					<width>12</width>
+					<height>1080</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<orientation>vertical</orientation>
+					<animation effect="zoom" end="50,100" time="300" tween="sine" center="732,0" easing="inout" condition="!Control.HasFocus(50600)">conditional</animation>
+				</control>
+				<control type="image">
+					<depth>DepthContentPopout</depth>
+					<left>754</left>
+					<top>140</top>
+					<width>556</width>
+					<height>836</height>
+					<fadetime>200</fadetime>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
+				</control>
+				<control type="group">
+					<left>1013</left>
+					<top>950</top>
+					<include content="UserRatingCircle">
+						<param name="animation" value="True" />
+					</include>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -152,14 +156,49 @@
 	<include name="ListThumbInfoPanel">
 		<param name="flip_bg">false</param>
 		<definition>
-			<control type="image">
-				<left>-20</left>
-				<top>-20</top>
-				<width>634</width>
-				<height>1120</height>
-				<texture>lists/panel.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
+			<control type="group">
+				<depth>DepthContentPanel</depth>
+				<control type="image">
+					<left>-20</left>
+					<top>-20</top>
+					<width>634</width>
+					<height>1120</height>
+					<texture>lists/panel.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>60</left>
+					<top>140</top>
+					<width>470</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true">$VAR[IconWallThumbVar]</texture>
+				</control>
+				<control type="textbox" id="15500">
+					<left>30</left>
+					<top>640</top>
+					<width>525</width>
+					<height>323</height>
+					<font>font13</font>
+					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+					<label>$VAR[ListBoxInfoVar]</label>
+					<visible>!Container.Content() | !IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="textbox">
+					<left>30</left>
+					<top>460</top>
+					<width>530</width>
+					<height>413</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font27</font>
+					<textcolor>80FFFFFF</textcolor>
+					<label>$LOCALIZE[19055]</label>
+					<visible>!ListItem.IsParentFolder</visible>
+					<visible>String.IsEmpty(Control.GetLabel(15500)) + [!Container.Content() | !IsEmpty(ListItem.Plot)]</visible>
+				</control>
 			</control>
 			<control type="image">
 				<left>30</left>
