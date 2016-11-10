@@ -553,66 +553,79 @@
 	<include name="AddonLauncherPanel">
 		<param name="fallback_image">DefaultFolder.png</param>
 		<definition>
-			<control type="panel" id="$PARAM[container_id]">
-				<left>520</left>
-				<top>0</top>
-				<width>1400</width>
-				<height>1200</height>
-				<onleft>9000</onleft>
-				<onright>$PARAM[container_id]30</onright>
+			<control type="group" id="$PARAM[group_id]">
 				<include content="Visible_Right_Delayed">
 					<param name="id" value="$PARAM[id]"/>
 				</include>
 				<visible>StringCompare(Container(9000).ListItem.Property(id),$PARAM[id])</visible>
-				<onup>$PARAM[container_id]</onup>
-				<ondown>$PARAM[container_id]</ondown>
-				<preloaditems>2</preloaditems>
-				<pagecontrol>$PARAM[container_id]30</pagecontrol>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<itemlayout height="401" width="350">
-					<control type="group">
-						<top>150</top>
-						<include content="InfoWallMusicLayout">
-							<param name="fallback_image" value="DefaultAddon.png" />
-						</include>
+				<control type="group">
+					<visible>Integer.IsGreater(Container($PARAM[group_id]50).NumItems,0) | Container($PARAM[group_id]50).IsUpdating</visible>
+					<control type="panel" id="$PARAM[group_id]50">
+						<left>520</left>
+						<top>0</top>
+						<width>1400</width>
+						<height>1200</height>
+						<onleft>9000</onleft>
+						<onright>$PARAM[group_id]30</onright>
+						<onup>$PARAM[group_id]50</onup>
+						<ondown>$PARAM[group_id]50</ondown>
+						<preloaditems>2</preloaditems>
+						<pagecontrol>$PARAM[group_id]30</pagecontrol>
+						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<itemlayout height="401" width="350">
+							<control type="group">
+								<top>150</top>
+								<include content="InfoWallMusicLayout">
+									<param name="fallback_image" value="DefaultAddon.png" />
+								</include>
+							</control>
+						</itemlayout>
+						<focusedlayout height="401" width="350">
+							<control type="group">
+								<top>150</top>
+								<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="150,320">Focus</animation>
+								<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="150,320">UnFocus</animation>
+								<include content="InfoWallMusicLayout">
+									<param name="fallback_image" value="DefaultAddon.png" />
+								</include>
+								<control type="image">
+									<left>16</left>
+									<top>8</top>
+									<width>282</width>
+									<height>344</height>
+									<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+									<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
+								</control>
+							</control>
+						</focusedlayout>
+						<content sortby="lastused" sortorder="descending" target="$PARAM[container_target]">$PARAM[container_path]</content>
 					</control>
-				</itemlayout>
-				<focusedlayout height="401" width="350">
-					<control type="group">
-						<top>150</top>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="150,320">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="150,320">UnFocus</animation>
-						<include content="InfoWallMusicLayout">
-							<param name="fallback_image" value="DefaultAddon.png" />
-						</include>
-						<control type="image">
-							<left>16</left>
-							<top>8</top>
-							<width>282</width>
-							<height>344</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
-						</control>
+					<control type="scrollbar" id="$PARAM[group_id]30">
+						<right>0</right>
+						<top>80</top>
+						<width>12</width>
+						<height>920</height>
+						<orientation>vertical</orientation>
+						<texturesliderbackground></texturesliderbackground>
+						<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+						<onleft>$PARAM[group_id]50</onleft>
+						<onright>noop</onright>
+						<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
 					</control>
-				</focusedlayout>
-				<content sortby="lastused" sortorder="descending" target="$PARAM[container_target]">$PARAM[container_path]</content>
-			</control>
-			<control type="scrollbar" id="$PARAM[container_id]30">
-				<right>0</right>
-				<top>80</top>
-				<width>12</width>
-				<height>920</height>
-				<orientation>vertical</orientation>
-				<texturesliderbackground></texturesliderbackground>
-				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
-				<onleft>$PARAM[container_id]</onleft>
-				<onright>noop</onright>
-				<visible>StringCompare(Container(9000).ListItem.Property(id),$PARAM[id])</visible>
-				<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
-				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				</control>
+				<control type="group">
+					<left>20</left>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+						<param name="text_label" value="You do not have any add-ons of this type installed. Enter the add-on browser to download add-ons created by our community." />
+						<param name="button_label" value="$LOCALIZE[31144]" />
+						<param name="button_onclick" value="$PARAM[imagewidget_onclick]"/>
+						<param name="button_id" value="$PARAM[group_id]333"/>
+						<param name="visible_2" value="false"/>
+						<param name="visible" value="![Integer.IsGreater(Container($PARAM[group_id]50).NumItems,0) | Container($PARAM[group_id]50).IsUpdating]"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVShowButton)"/>
+					</include>
+				</control>
 			</control>
 		</definition>
 	</include>

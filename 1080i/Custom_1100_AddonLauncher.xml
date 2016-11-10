@@ -20,45 +20,49 @@
 			<control type="group" id="400">
 				<include>OpenClose_Right</include>
 				<include content="AddonLauncherPanel">
-					<param name="container_id" value="500" />
+					<param name="group_id" value="500" />
 					<param name="id" value="video" />
 					<param name="container_path" value="addons://sources/video/" />
 					<param name="container_target" value="videos" />
+					<param name="imagewidget_onclick" value="ActivateWindow(addonbrowser,addons://all/xbmc.addon.video,return)" />
 				</include>
 				<include content="AddonLauncherPanel">
-					<param name="container_id" value="501" />
+					<param name="group_id" value="501" />
 					<param name="id" value="music" />
 					<param name="container_path" value="addons://sources/audio/" />
 					<param name="container_target" value="music" />
+					<param name="imagewidget_onclick" value="ActivateWindow(addonbrowser,addons://all/xbmc.addon.audio,return)" />
 				</include>
 				<include content="AddonLauncherPanel">
-					<param name="container_id" value="502" />
+					<param name="group_id" value="502" />
 					<param name="id" value="addons" />
 					<param name="container_path" value="addons://sources/executable/" />
 					<param name="container_target" value="programs" />
+					<param name="imagewidget_onclick" value="ActivateWindow(addonbrowser,addons://all/xbmc.addon.executable,return)" />
 				</include>
 				<include content="AddonLauncherPanel" condition="System.Platform.Android">
-					<param name="container_id" value="506" />
+					<param name="group_id" value="506" />
 					<param name="id" value="android" />
 					<param name="container_path" value="androidapp://sources/apps/" />
 					<param name="container_target" value="programs" />
 				</include>
 				<include content="AddonLauncherPanel">
-					<param name="container_id" value="503" />
+					<param name="group_id" value="503" />
 					<param name="id" value="pictures" />
 					<param name="container_path" value="addons://sources/image/" />
 					<param name="container_target" value="pictures" />
+					<param name="imagewidget_onclick" value="ActivateWindow(addonbrowser,addons://all/xbmc.addon.image,return)" />
 				</include>
 				<include content="AddonLauncherPanel">
-					<param name="container_id" value="507" />
+					<param name="group_id" value="507" />
 					<param name="id" value="download" />
 					<param name="container_path" value="addons://all/" />
 					<param name="container_target" value="addonbrowser" />
 				</include>
 				<include content="AddonLauncherPanel">
-					<param name="container_id" value="508" />
+					<param name="group_id" value="508" />
 					<param name="id" value="manage" />
-					<param name="container_path" value="addons://user/" />
+					<param name="container_path" value="addons://user" />
 					<param name="container_target" value="addonbrowser" />
 				</include>
 			</control>
