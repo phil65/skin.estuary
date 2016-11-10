@@ -30,8 +30,8 @@
 		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	</include>
 	<include name="Visible_Right_Delayed">
-		<include condition="Skin.HasSetting(no_slide_animations)">Visible_Fade</include>
-		<include condition="!Skin.HasSetting(no_slide_animations)">Vis_FadeSlide_Right_Delayed</include>
+		<animation effect="fade" end="100" time="500">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 	</include>
 	<include name="Vis_FadeSlide_Right_Delayed">
 		<animation type="Visible">
