@@ -55,20 +55,11 @@
 				<top>120</top>
 				<width>1460</width>
 				<height>500</height>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<orientation>horizontal</orientation>
-				<onleft>9000</onleft>
-				<onright>noop</onright>
-				<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
-				<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
-				<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
 				<onup>$PARAM[onup_id]</onup>
 				<ondown>$PARAM[ondown_id]</ondown>
-				<onback>PageUp</onback>
-				<onback>PageUp</onback>
-				<onback>PageUp</onback>
-				<onback>PageUp</onback>
-				<preloaditems>2</preloaditems>
 				<itemlayout width="330" height="500">
 					<control type="group">
 						<left>70</left>
@@ -274,20 +265,11 @@
 					<top>120</top>
 					<width>1460</width>
 					<height>400</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
-					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
-					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<preloaditems>2</preloaditems>
+					<include content="WidgetListCommon">
+						<param name="list_id" value="$PARAM[list_id]"/>
+					</include>
 					<itemlayout width="330" height="400">
 						<control type="group">
 							<left>70</left>
@@ -429,20 +411,11 @@
 					<top>120</top>
 					<width>1460</width>
 					<height>500</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
-					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
-					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+					<include content="WidgetListCommon">
+						<param name="list_id" value="$PARAM[list_id]"/>
+					</include>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<preloaditems>2</preloaditems>
 					<itemlayout width="330" height="500">
 						<control type="group">
 							<left>70</left>
@@ -603,20 +576,11 @@
 					<top>120</top>
 					<width>1460</width>
 					<height>350</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
-					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
-					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+					<include content="WidgetListCommon">
+						<param name="list_id" value="$PARAM[list_id]"/>
+					</include>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<preloaditems>2</preloaditems>
 					<itemlayout width="330" height="340">
 						<control type="group">
 							<left>70</left>
@@ -791,20 +755,11 @@
 					<top>120</top>
 					<width>1460</width>
 					<height>400</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
-					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
-					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+					<include content="WidgetListCommon">
+						<param name="list_id" value="$PARAM[list_id]"/>
+					</include>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<preloaditems>2</preloaditems>
 					<itemlayout width="325" height="500">
 						<control type="group">
 							<left>70</left>
@@ -951,20 +906,11 @@
 					<top>120</top>
 					<width>$PARAM[width]</width>
 					<height>400</height>
-					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
-					<onright>noop</onright>
-					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
-					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
-					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+					<include content="WidgetListCommon">
+						<param name="list_id" value="$PARAM[list_id]"/>
+					</include>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<onback>PageUp</onback>
-					<preloaditems>2</preloaditems>
 					<itemlayout width="260" height="400">
 						<control type="group">
 							<left>70</left>
@@ -1249,5 +1195,19 @@
 				<label>$INFO[Window(weather).Property(Map.$PARAM[item_id].Heading)]</label>
 			</control>
 		</control>
+	</include>
+	<include name="WidgetListCommon">
+		<scrolltime tween="cubic" easing="out">500</scrolltime>
+		<orientation>horizontal</orientation>
+		<onleft>9000</onleft>
+		<onright>noop</onright>
+		<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+		<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+		<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+		<onback>PageUp</onback>
+		<onback>PageUp</onback>
+		<onback>PageUp</onback>
+		<onback>PageUp</onback>
+		<preloaditems>2</preloaditems>
 	</include>
 </includes>
