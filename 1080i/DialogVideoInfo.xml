@@ -447,7 +447,7 @@
 						<param name="icon" value="icons/infodialogs/info.png" />
 						<param name="label" value="$LOCALIZE[31034]" />
 						<param name="onclick_1" value="RunScript(script.extendedinfo,info=openinfodialog)" />
-						<param name="visible" value="System.hasAddon(script.extendedinfo)" />
+						<param name="visible" value="System.hasAddon(script.extendedinfo) + [Stringcompare(ListItem.DbType,movie) | Stringcompare(ListItem.DbType,tvshow) | Stringcompare(ListItem.DbType,season) | Stringcompare(ListItem.DbType,episode)]" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="102" />
