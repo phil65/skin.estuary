@@ -2,73 +2,19 @@
 <window>
 	<defaultcontrol>9000</defaultcontrol>
 	<coordinates>
-		<left>710</left>
+		<left>655</left>
 		<top>213</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<include content="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="500" />
+			<param name="DialogBackgroundWidth" value="600" />
 			<param name="DialogBackgroundHeight" value="80" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[31072]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
 		<control type="list" id="9000">
-			<left>0</left>
-			<top>80</top>
-			<width>500</width>
-			<height>700</height>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
-			<itemlayout height="70">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>500</width>
-					<height>70</height>
-					<texture>dialogs/dialog-bg-solid.png</texture>
-				</control>
-				<control type="label">
-					<left>0</left>
-					<textoffsetx>20</textoffsetx>
-					<top>0</top>
-					<width>500</width>
-					<height>70</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<textcolor>grey</textcolor>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-			</itemlayout>
-			<focusedlayout height="70">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>500</width>
-					<height>70</height>
-					<texture>dialogs/dialog-bg-solid.png</texture>
-				</control>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>500</width>
-					<height>70</height>
-					<texture colordiffuse="button_focus">lists/focus.png</texture>
-					<visible>Control.HasFocus(9000)</visible>
-				</control>
-				<control type="label">
-					<left>0</left>
-					<textoffsetx>20</textoffsetx>
-					<top>0</top>
-					<width>500</width>
-					<height>70</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-			</focusedlayout>
+			<include>ButtonMenuList</include>
 			<content>
 				<item>
 					<label>$LOCALIZE[13012]</label>

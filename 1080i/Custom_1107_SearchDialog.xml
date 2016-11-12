@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1107">
-	<defaultcontrol always="true">5000</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<coordinates>
 		<left>660</left>
 		<top>270</top>
@@ -9,24 +9,12 @@
 	<controls>
 		<include content="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="600" />
-			<param name="DialogBackgroundHeight" value="410" />
+			<param name="DialogBackgroundHeight" value="80" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[137]" />
 			<param name="DialogHeaderId" value="" />
 		</include>
-		<control type="list" id="5000">
-			<left>2</left>
-			<top>107</top>
-			<width>596</width>
-			<height>660</height>
-			<onup>5000</onup>
-			<ondown>5000</ondown>
-			<onleft>99</onleft>
-			<onright>61</onright>
-			<include content="DefaultSimpleListLayout">
-				<param name="width" value="600" />
-				<param name="list_id" value="5000" />
-				<param name="align" value="center" />
-			</include>
+		<control type="list" id="9000">
+			<include>ButtonMenuList</include>
 			<content>
 				<item>
 					<label>$LOCALIZE[31113]</label>
