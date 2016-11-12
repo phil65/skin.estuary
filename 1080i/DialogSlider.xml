@@ -9,11 +9,13 @@
 	</coordinates>
 	<controls>
 		<control type="image">
-			<left>0</left>
-			<top>-10</top>
-			<width>800</width>
-			<height>130</height>
-			<texture border="12">dialogs/dialog-bg-solid.png</texture>
+			<left>-20</left>
+			<top>-30</top>
+			<width>840</width>
+			<height>155</height>
+			<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+			<bordertexture border="20">overlays/shadow.png</bordertexture>
+			<bordersize>20</bordersize>
 		</control>
 		<control type="label" id="10">
 			<description>Dialog header</description>
