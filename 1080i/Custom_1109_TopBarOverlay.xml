@@ -19,24 +19,23 @@
 			<control type="group">
 				<visible>!Window.IsActive(pvrosdchannels) + !Window.IsActive(pvrosdguide)</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
+				<left>30</left>
 				<control type="label">
 					<label>$VAR[NowPlayingBreadcrumbsVar]</label>
-					<left>30</left>
 					<font>font45</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<top>7</top>
 					<height>100</height>
-					<width>900</width>
+					<width>1300</width>
 					<align>left</align>
 				</control>
 				<control type="label">
 					<top>60</top>
 					<label>$VAR[OSDSubLabelVar]</label>
 					<font>font13</font>
-					<left>30</left>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
-					<width>1100</width>
+					<width>1300</width>
 				</control>
 			</control>
 			<control type="group">
