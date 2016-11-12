@@ -198,6 +198,8 @@
 				<top>1</top>
 				<width>482</width>
 				<height>721</height>
+				<visible>Control.HasFocus(51)</visible>
+				<animation effect="fade" time="100">VisibleChange</animation>
 				<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 			</control>
 			<control type="group">
