@@ -129,14 +129,14 @@
 					<param name="flip_bg" value="true" />
 				</include>
 				<control type="scrollbar" id="60">
-					<left>-13</left>
+					<left>0</left>
 					<top>80</top>
 					<width>12</width>
 					<height>920</height>
 					<onleft>50</onleft>
 					<texturesliderbackground></texturesliderbackground>
 					<onright>700</onright>
-					<animation effect="zoom" end="50,100" time="300" tween="sine" center="-13,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+					<animation effect="zoom" end="50,100" time="300" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 					<orientation>vertical</orientation>
 				</control>
 			</control>
