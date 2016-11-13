@@ -40,7 +40,7 @@
 		<param name="left_icon">lists/rating.png</param>
 		<param name="right_icon">lists/duration.png</param>
 		<param name="first_label">$INFO[ListItem.Rating]</param>
-		<param name="second_label">$INFO[ListItem.Duration]$LOCALIZE[31132]</param>
+		<param name="second_label">$INFO[ListItem.Duration,, $LOCALIZE[31132]]</param>
 		<definition>
 			<control type="group">
 				<description>Poster Widget including header</description>
@@ -147,7 +147,7 @@
 									<align>left</align>
 								</control>
 								<control type="label">
-									<left>34</left>
+									<left>30</left>
 									<top>372</top>
 									<width>200</width>
 									<label>$PARAM[second_label]</label>
