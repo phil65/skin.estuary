@@ -259,12 +259,12 @@
 	<variable name="AddonsFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
 		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window(home).Property(infobackground)]</value>
-		<value condition="!String.IsEmpty(Container(500).ListItem.Art(fanart)) + Control.HasFocus(500)">$INFO[Container(500).ListItem.Art(fanart)]</value>
-		<value condition="!String.IsEmpty(Container(501).ListItem.Art(fanart)) + Control.HasFocus(501)">$INFO[Container(501).ListItem.Art(fanart)]</value>
-		<value condition="!String.IsEmpty(Container(502).ListItem.Art(fanart)) + Control.HasFocus(502)">$INFO[Container(502).ListItem.Art(fanart)]</value>
-		<value condition="!String.IsEmpty(Container(503).ListItem.Art(fanart)) + Control.HasFocus(503)">$INFO[Container(503).ListItem.Art(fanart)]</value>
-		<value condition="!String.IsEmpty(Container(504).ListItem.Art(fanart)) + Control.HasFocus(504)">$INFO[Container(504).ListItem.Art(fanart)]</value>
-		<value condition="!String.IsEmpty(Container(505).ListItem.Art(fanart)) + Control.HasFocus(505)">$INFO[Container(505).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(50050).ListItem.Art(fanart)) + Control.HasFocus(50050)">$INFO[Container(50050).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(50150).ListItem.Art(fanart)) + Control.HasFocus(50150)">$INFO[Container(50150).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(50250).ListItem.Art(fanart)) + Control.HasFocus(50250)">$INFO[Container(50250).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(50350).ListItem.Art(fanart)) + Control.HasFocus(50350)">$INFO[Container(50350).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(50450).ListItem.Art(fanart)) + Control.HasFocus(50450)">$INFO[Container(50450).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(50550).ListItem.Art(fanart)) + Control.HasFocus(50550)">$INFO[Container(50550).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(id)]$INFO[Skin.String(HomeFanart.ext)]</value>
 	</variable>
 	<variable name="HomeFanartVar">
