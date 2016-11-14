@@ -362,7 +362,7 @@
 		<top>1010</top>
 		<control type="grouplist">
 			<orientation>horizontal</orientation>
-			<left>0</left>
+			<right>20</right>
 			<align>right</align>
 			<itemgap>28</itemgap>
 			<width>1900</width>
@@ -1108,7 +1108,7 @@
 					<left>0</left>
 					<label>$INFO[ListItem.SortLetter]</label>
 					<font>font_MainMenu</font>
-					<width>1920</width>
+					<width>100%</width>
 					<height>80</height>
 					<align>center</align>
 					<textcolor>white</textcolor>
