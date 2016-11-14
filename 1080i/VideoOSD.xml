@@ -24,12 +24,12 @@
 				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(osdcmssettings) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="label">
-					<left>30</left>
+					<right>30</right>
 					<top>0</top>
 					<align>right</align>
 					<textoffsetx>20</textoffsetx>
 					<aligny>center</aligny>
-					<width>1858</width>
+					<width>1000</width>
 					<height>60</height>
 					<label>$VAR[VideoOSDHelpTextVar]</label>
 				</control>
