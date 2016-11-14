@@ -159,7 +159,7 @@
 			</control>
 			<include content="WeatherWidget">
 				<param name="left" value="-20" />
-				<param name="width" value="1940" />
+				<param name="width" value="101%" />
 				<param name="content_include" value="DailyItems" />
 				<param name="list_id" value="15100" />
 				<param name="onup_id" value="20" />
@@ -169,7 +169,7 @@
 			</include>
 			<include content="WeatherWidget">
 				<param name="left" value="-20" />
-				<param name="width" value="1940" />
+				<param name="width" value="101%" />
 				<param name="content_include" value="HourlyItems" />
 				<param name="list_id" value="15200" />
 				<param name="onup_id" value="15100" />
