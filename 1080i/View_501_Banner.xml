@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="BannerInfoFlag">
-		<control type="group">
-			<top>$PARAM[posy]</top>
-			<control type="image">
-				<top>0</top>
-				<right>41</right>
-				<width>70</width>
-				<height>32</height>
-				<fadetime>300</fadetime>
-				<aspectratio align="center">keep</aspectratio>
-				<texture>$PARAM[icon]</texture>
-			</control>
-			<control type="label">
-				<right>41</right>
-				<top>35</top>
-				<width>70</width>
-				<height>32</height>
-				<align>center</align>
-				<font>font12</font>
-				<selectedcolor>white</selectedcolor>
-				<label fallback="">$INFO[$PARAM[infolabel]]</label>
-			</control>
-		</control>
-	</include>
 	<include name="View_501_Banner">
 		<control type="group">
 			<include>OpenClose_Right</include>
@@ -79,8 +55,13 @@
 				</itemlayout>
 				<focusedlayout height="220" width="900">
 					<control type="group">
-						<animation effect="slide" start="0,0" end="-37,0" time="300">Focus</animation>
-						<animation effect="slide" start="-37,0" end="0,0" time="125">UnFocus</animation>
+						<depth>DepthContentPopout</depth>
+						<animation type="Focus">
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="450,180" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="450,180" />
+						</animation>
 						<posy>100</posy>
 						<control type="image">
 							<left>0</left>
@@ -123,7 +104,7 @@
 							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 							<control type="image">
 								<left>22</left>
-								<top>134</top>
+								<top>135</top>
 								<width>816</width>
 								<height>40</height>
 								<texture>colors/black.png</texture>
@@ -148,6 +129,26 @@
 								<visible>!Listitem.IsParentFolder</visible>
 							</control>
 							<control type="image">
+								<right>220</right>
+								<top>143</top>
+								<width>22</width>
+								<height>22</height>
+								<texture>lists/rating.png</texture>
+								<visible>!String.IsEmpty(ListItem.Rating)</visible>
+							</control>
+							<control type="label">
+								<right>258</right>
+								<top>144</top>
+								<width>800</width>
+								<height>20</height>
+								<font>font12</font>
+								<textcolor>button_focus</textcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Rating]</label>
+								<visible>!String.IsEmpty(ListItem.Rating)</visible>
+							</control>
+							<control type="image">
 								<right>73</right>
 								<top>143</top>
 								<width>22</width>
@@ -157,7 +158,7 @@
 							</control>
 							<control type="label">
 								<right>103</right>
-								<top>142</top>
+								<top>144</top>
 								<width>800</width>
 								<height>20</height>
 								<font>font12</font>
@@ -167,31 +168,6 @@
 								<label>$VAR[BannerLabel2Var]</label>
 							</control>
 						</control>
-					</control>
-					<control type="image">
-						<right>19</right>
-						<top>118</top>
-						<width>70</width>
-						<height>160</height>
-						<texture colordiffuse="button_focus">colors/white.png</texture>
-						<animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
-						<animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
-					</control>
-					<control type="group">
-						<animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
-						<animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
-						<top>120</top>
-						<right>-22</right>
-						<include content="BannerInfoFlag">
-							<param name="icon" value="lists/rating.png" />
-							<param name="infolabel" value="ListItem.Rating" />
-							<param name="posy" value="5" />
-						</include>
-						<include content="BannerInfoFlag">
-							<param name="icon" value="lists/year.png" />
-							<param name="infolabel" value="ListItem.Year" />
-							<param name="posy" value="84" />
-						</include>
 					</control>
 				</focusedlayout>
 			</control>
