@@ -2,36 +2,33 @@
 <window>
 	<defaultcontrol always="true">2</defaultcontrol>
 	<coordinates>
-		<left>210</left>
-		<top>150</top>
+		<left>0</left>
+		<top>510</top>
 	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
-		<include content="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1500" />
-			<param name="DialogBackgroundHeight" value="800" />
-			<param name="DialogHeaderLabel" value="$LOCALIZE[298]" />
-			<param name="DialogHeaderId" value="" />
-		</include>
 		<control type="image">
-			<left>10</left>
-			<top>80</top>
-			<width>1130</width>
-			<height>720</height>
-			<texture border="40">buttons/dialogbutton-nofo.png</texture>
+			<left>0</left>
+			<top>24</top>
+			<width>100%</width>
+			<height>410</height>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
 		</control>
 		<control type="panel" id="11">
-			<left>40</left>
+			<left>0</left>
 			<top>105</top>
-			<width>1110</width>
-			<height>680</height>
-			<onleft>9001</onleft>
-			<onright>9001</onright>
+			<width>1920</width>
+			<height>400</height>
+			<onup>9001</onup>
+			<ondown>9001</ondown>
 			<preloaditems>2</preloaditems>
 			<scrolltime tween="sine">200</scrolltime>
-			<orientation>vertical</orientation>
-			<itemlayout width="370" height="340">
+			<orientation>horizontal</orientation>
+			<itemlayout width="360" height="340">
 				<control type="group">
+					<left>70</left>
 					<control type="image">
 						<left>0</left>
 						<top>5</top>
@@ -54,8 +51,9 @@
 					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout width="370" height="340">
+			<focusedlayout width="360" height="340">
 				<control type="group">
+					<left>70</left>
 					<control type="image">
 						<left>0</left>
 						<top>5</top>
@@ -65,13 +63,6 @@
 						<texture border="4" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
 						<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 						<bordersize>4</bordersize>
-					</control>
-					<control type="image">
-						<left>0</left>
-						<top>5</top>
-						<width>330</width>
-						<height>250</height>
-						<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 					</control>
 					<control type="label">
 						<left>20</left>
@@ -83,17 +74,25 @@
 						<shadowcolor>text_shadow</shadowcolor>
 						<align>center</align>
 					</control>
+					<control type="image">
+						<left>0</left>
+						<top>5</top>
+						<width>330</width>
+						<height>250</height>
+						<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+					</control>
 				</control>
 			</focusedlayout>
 		</control>
 		<control type="grouplist" id="9001">
-			<orientation>vertical</orientation>
-			<left>1140</left>
-			<top>85</top>
-			<width>1500</width>
+			<orientation>horizontal</orientation>
+			<left>0</left>
+			<top>20</top>
+			<width>1920</width>
+			<align>center</align>
 			<height>800</height>
-			<onleft>11</onleft>
-			<onright>11</onright>
+			<onup>11</onup>
+			<ondown>11</ondown>
 			<include content="DefaultDialogButton">
 				<param name="id" value="2" />
 				<param name="label" value="$LOCALIZE[294]" />
