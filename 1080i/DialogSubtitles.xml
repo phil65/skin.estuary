@@ -96,13 +96,6 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout width="920" height="100">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>920</width>
-						<height>100</height>
-						<texture>lists/separator.png</texture>
-					</control>
-					<control type="image">
 						<left>25</left>
 						<top>5</top>
 						<width>50</width>
@@ -156,14 +149,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="920" height="100">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>920</width>
-						<height>100</height>
-						<texture>lists/separator.png</texture>
-						<visible>!Control.HasFocus(120)</visible>
-					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>

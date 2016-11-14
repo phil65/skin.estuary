@@ -26,13 +26,6 @@
 					<pagecontrol>77</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="100">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1004</width>
-							<height>101</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-						</control>
 						<control type="label">
 							<visible>String.IsEmpty(ListItem.Date)</visible>
 							<left>120</left>
@@ -81,14 +74,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="100">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1004</width>
-							<height>101</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-							<visible>!Control.HasFocus(50)</visible>
-						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>

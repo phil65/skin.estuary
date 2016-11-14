@@ -45,13 +45,6 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout height="70">
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>470</width>
-					<height>70</height>
-					<texture border="40">lists/separator.png</texture>
-				</control>
-				<control type="image">
 					<width>60</width>
 					<height>60</height>
 					<left>405</left>
@@ -73,14 +66,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="70">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>470</width>
-					<height>70</height>
-					<texture border="40">lists/separator.png</texture>
-					<visible>!Control.HasFocus($PARAM[list_id])</visible>
-				</control>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>

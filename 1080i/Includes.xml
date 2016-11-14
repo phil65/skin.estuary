@@ -186,13 +186,6 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout height="80" width="470">
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>470</width>
-					<height>80</height>
-					<texture border="38">lists/separator.png</texture>
-				</control>
-				<control type="image">
 					<left>8</left>
 					<top>8</top>
 					<width>64</width>
@@ -221,14 +214,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="80" width="470">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>470</width>
-					<height>80</height>
-					<texture border="38">lists/separator.png</texture>
-					<visible>!Control.HasFocus($PARAM[list_id])</visible>
-				</control>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -300,13 +285,6 @@
 		<param name="fontcolor">grey</param>
 		<definition>
 			<itemlayout height="$PARAM[height]">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width]</width>
-					<height>$PARAM[height]</height>
-					<texture border="40">lists/separator.png</texture>
-				</control>
 				<control type="label">
 					<left>0</left>
 					<textoffsetx>20</textoffsetx>
@@ -321,14 +299,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="$PARAM[height]" width="600">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width]</width>
-					<height>$PARAM[height]</height>
-					<texture border="40">lists/separator.png</texture>
-					<visible>!Control.HasFocus($PARAM[list_id])</visible>
-				</control>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>

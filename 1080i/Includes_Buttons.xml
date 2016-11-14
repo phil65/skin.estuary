@@ -45,7 +45,7 @@
 			<invalidcolor>invalid</invalidcolor>
 			<selectedcolor>selected</selectedcolor>
 			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-			<texturenofocus border="5">lists/separator.png</texturenofocus>
+			<texturenofocus></texturenofocus>
 		</definition>
 	</include>
 	<include name="DialogSettingButton">

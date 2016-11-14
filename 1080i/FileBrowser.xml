@@ -73,13 +73,6 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="70" width="940">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>940</width>
-						<height>71</height>
-						<texture border="40">lists/separator.png</texture>
-					</control>
-					<control type="image">
 						<left>10</left>
 						<top>10</top>
 						<width>50</width>
@@ -98,14 +91,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="70" width="940">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>940</width>
-						<height>71</height>
-						<visible>!Control.HasFocus(450)</visible>
-						<texture border="40">lists/separator.png</texture>
-					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -146,13 +131,6 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="70" width="940">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>940</width>
-						<height>71</height>
-						<texture border="40">lists/separator.png</texture>
-					</control>
-					<control type="image">
 						<left>10</left>
 						<top>10</top>
 						<width>50</width>
@@ -171,14 +149,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="70" width="940">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>940</width>
-						<height>71</height>
-						<visible>!Control.HasFocus(451)</visible>
-						<texture border="40">lists/separator.png</texture>
-					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>

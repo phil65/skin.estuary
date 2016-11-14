@@ -45,13 +45,6 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout height="70">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>820</width>
-					<height>60</height>
-					<texture border="40">lists/separator.png</texture>
-				</control>
 				<control type="label">
 					<left>10</left>
 					<top>0</top>
@@ -63,14 +56,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="70">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>820</width>
-					<height>60</height>
-					<visible>!Control.HasFocus(10)</visible>
-					<texture border="40">lists/separator.png</texture>
-				</control>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>

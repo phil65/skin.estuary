@@ -33,13 +33,6 @@
 					<movement>4</movement>
 					<focusposition>5</focusposition>
 					<itemlayout height="90" width="1600">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>780</width>
-							<height>90</height>
-							<texture border="40">lists/separator.png</texture>
-						</control>
 						<control type="label">
 							<left>20</left>
 							<top>0</top>
@@ -68,14 +61,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="90" width="1600">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>780</width>
-							<height>90</height>
-							<texture border="5">lists/separator.png</texture>
-							<visible>!Control.HasFocus(11)</visible>
-						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>

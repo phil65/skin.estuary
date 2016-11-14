@@ -54,13 +54,6 @@
 						<visible>!String.IsEmpty(ListItem.Property(Changed))</visible>
 					</control>
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>600</width>
-						<height>70</height>
-						<texture border="5">lists/separator.png</texture>
-					</control>
-					<control type="image">
 						<left>15</left>
 						<top>10</top>
 						<width>50</width>

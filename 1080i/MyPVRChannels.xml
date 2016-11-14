@@ -33,13 +33,6 @@
 							<top>0</top>
 							<width>1000</width>
 							<height>90</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1000</width>
-							<height>90</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<visible>Control.hasFocus(50)</visible>
 						</control>
@@ -102,13 +95,6 @@
 						</control>
 					</focusedlayout>
 					<itemlayout height="90">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1000</width>
-							<height>90</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-						</control>
 						<control type="image">
 							<left>910</left>
 							<top>10</top>
@@ -192,13 +178,6 @@
 							<top>0</top>
 							<width>1000</width>
 							<height>70</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1000</width>
-							<height>70</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<visible>Control.hasFocus(51)</visible>
 						</control>
@@ -251,13 +230,6 @@
 						</control>
 					</focusedlayout>
 					<itemlayout height="70">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1000</width>
-							<height>70</height>
-							<texture border="90,3,90,3">lists/separator.png</texture>
-						</control>
 						<control type="progress">
 							<left>940</left>
 							<top>25</top>

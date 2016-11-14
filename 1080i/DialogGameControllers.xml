@@ -51,7 +51,7 @@
 				<aligny>center</aligny>
 				<font>font25_title</font>
 				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-				<texturenofocus>lists/separator.png</texturenofocus>
+				<texturenofocus></texturenofocus>
 			</control>
 			<control type="gamecontroller" id="31">
 				<left>390</left>
@@ -108,7 +108,7 @@
 				<aligny>center</aligny>
 				<font>font27</font>
 				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-				<texturenofocus>lists/separator.png</texturenofocus>
+				<texturenofocus></texturenofocus>
 			</control>
 			<control type="label" id="8">
 				<description>Feature group title</description>
