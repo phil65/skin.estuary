@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">3</defaultcontrol>
-	<coordinates>
-		<left>350</left>
-		<top>120</top>
-	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<depth>DepthOSD</depth>
 	<controls>
 		<control type="group">
+			<top>120</top>
+			<centerleft>50%</centerleft>
+			<width>1220</width>
 			<include content="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="1220" />
 				<param name="DialogBackgroundHeight" value="742" />
