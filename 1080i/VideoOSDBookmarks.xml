@@ -16,11 +16,22 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
 		</control>
-		<control type="panel" id="11">
+		<control type="textbox">
+			<left>0</left>
+			<top>25</top>
+			<width>1920</width>
+			<height>410</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font45_title</font>
+			<label>$LOCALIZE[31155]</label>
+			<visible>Integer.IsEqual(Container(11).NumItems,0)</visible>
+		</control>
+		<control type="list" id="11">
 			<left>0</left>
 			<top>105</top>
 			<width>1920</width>
-			<height>400</height>
+			<height>350</height>
 			<onup>9001</onup>
 			<ondown>9001</ondown>
 			<preloaditems>2</preloaditems>
