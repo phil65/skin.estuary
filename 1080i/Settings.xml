@@ -15,7 +15,7 @@
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
 		<control type="panel" id="9000">
-			<left>50</left>
+			<centerleft>50%</centerleft>
 			<top>130</top>
 			<width>1850</width>
 			<height>870</height>
