@@ -118,74 +118,77 @@
 					</focusedlayout>
 				</control>
 			</control>
-			<control type="image">
-				<include>OpenClose_Left</include>
-				<left>-20</left>
-				<top>-20</top>
-				<width>527</width>
-				<height>1120</height>
-				<texture>lists/panel.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-			</control>
-			<control type="grouplist" id="9000">
-				<include>OpenClose_Left</include>
-				<orientation>vertical</orientation>
-				<itemgap>-8.5</itemgap>
-				<left>0</left>
-				<top>162</top>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<usecontrolcoords>true</usecontrolcoords>
-				<control type="togglebutton" id="4">
-					<width>487</width>
-					<height>110</height>
-					<align>left</align>
-					<aligny>top</aligny>
-					<font>font13</font>
-					<textoffsetx>40</textoffsetx>
-					<texturenofocus></texturenofocus>
-					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-					<alttexturenofocus></alttexturenofocus>
-					<alttexturefocus colordiffuse="button_focus">lists/focus.png</alttexturefocus>
-					<textwidth>300</textwidth>
-					<textoffsety>35</textoffsety>
-					<label>$LOCALIZE[31032]: $LOCALIZE[584]</label>
-					<altlabel>$LOCALIZE[31032]: $LOCALIZE[585]</altlabel>
-				</control>
-				<include content="PlaylistWindowButton">
-					<param name="control_id" value="21" />
-					<param name="onclick" value="" />
-					<param name="label" value="" />
-				</include>
-				<control type="radiobutton" id="22">
-					<width>487</width>
-					<height>110</height>
-					<align>left</align>
-					<aligny>top</aligny>
-					<font>font13</font>
-					<texturenofocus></texturenofocus>
-					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-					<textoffsetx>40</textoffsetx>
-					<textoffsety>35</textoffsety>
-					<textwidth>300</textwidth>
-				</control>
-				<include content="PlaylistWindowButton">
-					<param name="control_id" value="20" />
-					<param name="onclick" value="" />
-					<param name="label" value="$LOCALIZE[192]" />
-				</include>
+			<control type="group">
+				<depth>DepthContentPanel</depth>
 				<control type="image">
-					<left>40</left>
-					<top>0</top>
-					<width>340</width>
-					<height>360</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+					<include>OpenClose_Left</include>
+					<left>-20</left>
+					<top>-20</top>
+					<width>527</width>
+					<height>1120</height>
+					<texture>lists/panel.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
+				</control>
+				<control type="grouplist" id="9000">
+					<include>OpenClose_Left</include>
+					<orientation>vertical</orientation>
+					<itemgap>-8.5</itemgap>
+					<left>0</left>
+					<top>162</top>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<usecontrolcoords>true</usecontrolcoords>
+					<control type="togglebutton" id="4">
+						<width>487</width>
+						<height>110</height>
+						<align>left</align>
+						<aligny>top</aligny>
+						<font>font13</font>
+						<textoffsetx>40</textoffsetx>
+						<texturenofocus></texturenofocus>
+						<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+						<alttexturenofocus></alttexturenofocus>
+						<alttexturefocus colordiffuse="button_focus">lists/focus.png</alttexturefocus>
+						<textwidth>300</textwidth>
+						<textoffsety>35</textoffsety>
+						<label>$LOCALIZE[31032]: $LOCALIZE[584]</label>
+						<altlabel>$LOCALIZE[31032]: $LOCALIZE[585]</altlabel>
+					</control>
+					<include content="PlaylistWindowButton">
+						<param name="control_id" value="21" />
+						<param name="onclick" value="" />
+						<param name="label" value="" />
+					</include>
+					<control type="radiobutton" id="22">
+						<width>487</width>
+						<height>110</height>
+						<align>left</align>
+						<aligny>top</aligny>
+						<font>font13</font>
+						<texturenofocus></texturenofocus>
+						<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+						<textoffsetx>40</textoffsetx>
+						<textoffsety>35</textoffsety>
+						<textwidth>300</textwidth>
+					</control>
+					<include content="PlaylistWindowButton">
+						<param name="control_id" value="20" />
+						<param name="onclick" value="" />
+						<param name="label" value="$LOCALIZE[192]" />
+					</include>
+					<control type="image">
+						<left>40</left>
+						<top>0</top>
+						<width>340</width>
+						<height>360</height>
+						<aspectratio aligny="bottom">keep</aspectratio>
+						<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="20">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
 				</control>
 			</control>
 			<control type="scrollbar" id="60">

@@ -660,6 +660,7 @@
 								</itemlayout>
 								<focusedlayout width="340" height="361">
 									<control type="group">
+										<depth>DepthContentPopout</depth>
 										<top>130</top>
 										<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="170,320">Focus</animation>
 										<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="170,320">UnFocus</animation>
@@ -913,6 +914,7 @@
 				</control>
 			</control>
 			<control type="group">
+				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Left</include>
 				<control type="image">
 					<left>-20</left>
@@ -1138,6 +1140,7 @@
 				<param name="breadcrumbs_label" value="" />
 			</include>
 			<control type="group">
+				<depth>DepthBars</depth>
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>

@@ -17,6 +17,7 @@
 				</include>
 			</control>
 			<control type="group">
+				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Right</include>
 				<visible>Control.IsVisible(502)</visible>
 				<include>Visible_Right</include>

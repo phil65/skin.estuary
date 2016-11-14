@@ -18,6 +18,7 @@
 			<include>View_501_Banner</include>
 			<include>View_502_FanArt</include>
 			<control type="group">
+				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Left</include>
 				<visible>Control.IsVisible(55)</visible>
 <!-- 				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Container.Content(files) | Container.Content(mixed) | Container.Content(musicvideos) | Container.Content(videos) | Container.Content() | Container.Content(episodes)</visible>
@@ -25,6 +26,7 @@
 				<include>ListThumbInfoPanel</include>
 			</control>
 			<control type="group">
+				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Left</include>
 				<visible>[Control.IsVisible(50) | Control.Isvisible(54)]</visible>
 				<include>Visible_Left</include>
@@ -171,6 +173,7 @@
 				<param name="info_visible" value="true" />
 			</include>
 			<control type="group">
+				<depth>DepthBars</depth>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" start="100" end="50" time="200" condition="$EXP[sidebar_focused]">Conditional</animation>

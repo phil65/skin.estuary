@@ -82,6 +82,7 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="group">
+			<depth>DepthContentPanel</depth>
 			<include>OpenClose_Left</include>
 			<control type="image">
 				<left>-20</left>

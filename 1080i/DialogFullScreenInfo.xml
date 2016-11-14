@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">5553</defaultcontrol>
 	<controls>
 		<control type="button" id="22001">
@@ -17,6 +18,7 @@
 			<visible>!Window.IsVisible(playerprocessinfo)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="image">
+				<depth>DepthOSD+</depth>
 				<left>10</left>
 				<top>-490</top>
 				<width>400</width>

@@ -5,11 +5,12 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
+				<depth>DepthOSD</depth>
 				<include>OpenClose_Left</include>
 				<control type="image">
-					<left>-20</left>
+					<left>-40</left>
 					<top>-20</top>
-					<width>921</width>
+					<width>941</width>
 					<height>1120</height>
 					<texture>lists/panel.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
@@ -179,6 +180,7 @@
 				</control>
 			</control>
 			<control type="group">
+				<depth>DepthOSD</depth>
 				<include>Animation_TopSlide</include>
 				<control type="image">
 					<left>0</left>

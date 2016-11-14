@@ -154,6 +154,7 @@
 				</itemlayout>
 				<focusedlayout height="181" width="348" condition="Container.Content(genres) | Container.Content(years) | Container.Content(roles) | Container.Content(countries) | [Container.Content(studios) + !System.HasAddon(resource.images.studios.white)]">
 					<control type="group">
+						<depth>DepthContentPopout</depth>
 						<top>120</top>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="100" end="108" time="250" tween="sine" />
