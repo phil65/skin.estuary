@@ -110,11 +110,5 @@
 				<param name="visible" value="Control.IsEnabled(4)" />
 			</include>
 		</control>
-		<include content="UpDownArrows">
-			<param name="container_id" value="11" />
-			<param name="posx" value="726" />
-			<param name="up_posy" value="-40" />
-			<param name="down_posy" value="820" />
-		</include>
 	</controls>
 </window>
