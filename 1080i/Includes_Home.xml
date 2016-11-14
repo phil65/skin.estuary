@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="CategoryLabel">
+		<control type="label">
+			<left>500</left>
+			<top>80</top>
+			<width>900</width>
+			<height>40</height>
+			<label>$PARAM[label]</label>
+			<textcolor>white</textcolor>
+			<shadowcolor>text_shadow</shadowcolor>
+		</control>
+	</include>
 	<include name="PVRWidget">
 		<control type="image">
 			<top>80</top>
@@ -47,14 +58,9 @@
 				<height>675</height>
 				<left>0</left>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<control type="label">
-					<left>500</left>
-					<top>80</top>
-					<width>900</width>
-					<height>40</height>
-					<label>$PARAM[widget_header]</label>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
+				<include content="CategoryLabel">
+					<param name="label">$PARAM[widget_header]</param>
+				</include>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
@@ -272,14 +278,9 @@
 				<left>0</left>
 				<top>0</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<control type="label">
-					<left>500</left>
-					<top>80</top>
-					<width>900</width>
-					<height>40</height>
-					<label>$PARAM[widget_header]</label>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
+				<include content="CategoryLabel">
+					<param name="label">$PARAM[widget_header]</param>
+				</include>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
@@ -418,14 +419,9 @@
 				<left>0</left>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<control type="label">
-					<left>500</left>
-					<top>80</top>
-					<width>900</width>
-					<height>40</height>
-					<label>$PARAM[widget_header]</label>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
+				<include content="CategoryLabel">
+					<param name="label">$PARAM[widget_header]</param>
+				</include>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
@@ -583,14 +579,9 @@
 				<top>0</top>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<control type="label">
-					<left>500</left>
-					<top>80</top>
-					<width>900</width>
-					<height>40</height>
-					<label>$PARAM[widget_header]</label>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
+				<include content="CategoryLabel">
+					<param name="label">$PARAM[widget_header]</param>
+				</include>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
@@ -762,14 +753,9 @@
 				<left>0</left>
 				<top>0</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<control type="label">
-					<left>500</left>
-					<top>80</top>
-					<width>900</width>
-					<height>40</height>
-					<label>$PARAM[widget_header]</label>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
+				<include content="CategoryLabel">
+					<param name="label">$PARAM[widget_header]</param>
+				</include>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
@@ -910,16 +896,9 @@
 				<left>0</left>
 				<top>0</top>
 				<visible>$PARAM[visible]</visible>
-				<control type="label">
-					<left>$PARAM[left]</left>
-					<textoffsetx>58</textoffsetx>
-					<top>80</top>
-					<width>900</width>
-					<height>40</height>
-					<label>$PARAM[widget_header]</label>
-					<font>font14</font>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
+				<include content="CategoryLabel">
+					<param name="label">$PARAM[widget_header]</param>
+				</include>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>$PARAM[left]</left>
 					<top>120</top>
