@@ -229,15 +229,9 @@
 			<top>0</top>
 			<depth>DepthContentPanel</depth>
 			<include>OpenClose_Left</include>
-			<control type="image">
-				<left>-20</left>
-				<top>-20</top>
-				<width>460</width>
-				<height>1120</height>
-				<texture>lists/panel.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-			</control>
+			<include content="ContentPanel">
+				<param name="width" value="480" />
+			</include>
 			<control type="grouplist" id="9000">
 				<left>0</left>
 				<top>160</top>

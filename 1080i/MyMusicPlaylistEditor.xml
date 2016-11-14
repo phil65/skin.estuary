@@ -19,15 +19,9 @@
 		</control>
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<control type="image">
-				<left>-20</left>
-				<top>-20</top>
-				<width>340</width>
-				<height>1120</height>
-				<texture>lists/panel.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-			</control>
+			<include content="ContentPanel">
+				<param name="width" value="360" />
+			</include>
 			<control type="grouplist" id="9000">
 				<left>0</left>
 				<top>160</top>
@@ -63,15 +57,10 @@
 			<include>OpenClose_Right</include>
 			<width>845</width>
 			<right>0</right>
-			<control type="image">
-				<left>-21</left>
-				<top>-20</top>
-				<width>1100</width>
-				<height>1120</height>
-				<texture>lists/panel.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-			</control>
+			<include content="ContentPanel">
+				<param name="width" value="1100" />
+				<param name="left" value="-21" />
+			</include>
 			<include content="FileManagerPanel">
 				<param name="header_id" value="23" />
 				<param name="header_label" value="$LOCALIZE[13350]" />

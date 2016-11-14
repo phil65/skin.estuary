@@ -23,15 +23,9 @@
 				<visible>Control.Isvisible(54)</visible>
 				<include>Visible_Right</include>
 				<visible>Container.Content(images)</visible>
-				<control type="image">
-					<left>-20</left>
-					<top>-20</top>
-					<width>570</width>
-					<height>1120</height>
-					<texture>lists/panel.png</texture>
-					<bordertexture border="20">overlays/shadow.png</bordertexture>
-					<bordersize>20</bordersize>
-				</control>
+				<include content="ContentPanel">
+					<param name="width" value="590" />
+				</include>
 				<control type="textbox">
 					<left>40</left>
 					<top>360</top>

@@ -137,15 +137,12 @@
 				<right>0</right>
 				<top>180</top>
 				<include>OpenClose_Right</include>
-				<control type="image">
-					<left>-68</left>
-					<top>-200</top>
-					<width>1000</width>
-					<height>1120</height>
-					<texture>lists/panel.png</texture>
-					<bordertexture border="20">overlays/shadow.png</bordertexture>
-					<bordersize>20</bordersize>
-				</control>
+				<include content="ContentPanel">
+					<param name="left" value="-68" />
+					<param name="width" value="970" />
+					<param name="top" value="-182" />
+					<param name="flipx" value="true" />
+				</include>
 				<control type="scrollbar" id="77">
 					<left>-45</left>
 					<top>-180</top>

@@ -1243,4 +1243,24 @@
 			</control>
 		</definition>
 	</include>
+	<include name="ContentPanel">
+		<param name="width">500</param>
+		<param name="left">-40</param>
+		<param name="right"></param>
+		<param name="top">-10%</param>
+		<param name="height">120%</param>
+		<param name="flipx">false</param>
+		<definition>
+			<control type="image">
+				<texture colordiffuse="panel" flipx="$PARAM[flipx]">lists/panel.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<width>$PARAM[width]</width>
+				<left>$PARAM[left]</left>
+				<right>$PARAM[right]</right>
+				<top>$PARAM[top]</top>
+				<height>$PARAM[height]</height>
+			</control>
+		</definition>
+	</include>
 </includes>
