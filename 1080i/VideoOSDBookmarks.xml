@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol always="true">2</defaultcontrol>
-	<coordinates>
-		<left>0</left>
-		<top>510</top>
-	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="image">
 			<left>0</left>
-			<top>24</top>
+			<top>534</top>
 			<width>100%</width>
 			<height>410</height>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
@@ -18,7 +14,7 @@
 		</control>
 		<control type="textbox">
 			<left>0</left>
-			<top>25</top>
+			<top>535</top>
 			<width>1920</width>
 			<height>410</height>
 			<align>center</align>
@@ -29,8 +25,8 @@
 		</control>
 		<control type="list" id="11">
 			<left>0</left>
-			<top>105</top>
-			<width>1920</width>
+			<top>615</top>
+			<width>100%</width>
 			<height>350</height>
 			<onup>9001</onup>
 			<ondown>9001</ondown>
@@ -98,8 +94,8 @@
 		<control type="grouplist" id="9001">
 			<orientation>horizontal</orientation>
 			<left>0</left>
-			<top>20</top>
-			<width>1920</width>
+			<top>530</top>
+			<width>100%</width>
 			<align>center</align>
 			<height>800</height>
 			<onup>11</onup>
