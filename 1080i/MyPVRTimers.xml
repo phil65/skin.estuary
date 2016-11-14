@@ -77,6 +77,14 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="100">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1060</width>
+							<height>101</height>
+							<texture colordiffuse="button_focus">lists/focus.png</texture>
+							<visible>Control.HasFocus(50)</visible>
+						</control>
 						<control type="label">
 							<left>30</left>
 							<top>0</top>
