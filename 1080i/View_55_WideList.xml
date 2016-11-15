@@ -171,10 +171,10 @@
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="label">
-				<left>90</left>
+				<textoffsetx>40</textoffsetx>
 				<top>0</top>
 				<height>80</height>
-				<width>1200</width>
+				<width>widelist_width</width>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -194,10 +194,10 @@
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 			<control type="label">
-				<left>90</left>
+				<textoffsetx>40</textoffsetx>
 				<top>0</top>
 				<height>80</height>
-				<width>1200</width>
+				<width>widelist_width</width>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
