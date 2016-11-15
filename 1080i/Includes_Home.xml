@@ -1164,6 +1164,9 @@
 		<control type="group" id="700$PARAM[item_id]">
 			<height>1070</height>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window(weather).Property(Map.$PARAM[item_id].Area)) + !String.IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
+			<control type="group">
+				<centerleft>50%</centerleft>
+				<width>1920</width>
 			<control type="image">
 				<left>50</left>
 				<top>100</top>
@@ -1213,6 +1216,7 @@
 				<font>font30_title</font>
 				<onclick>Weather.LocationNext</onclick>
 				<label>$INFO[Window(weather).Property(Map.$PARAM[item_id].Heading)]</label>
+			</control>
 			</control>
 		</control>
 	</include>
