@@ -9,7 +9,7 @@
 			<description>background close area</description>
 			<left>0</left>
 			<top>0</top>
-			<width>1920</width>
+			<width>100%</width>
 			<height>800</height>
 			<texturefocus></texturefocus>
 			<texturenofocus></texturenofocus>
@@ -20,6 +20,8 @@
 			<animation effect="fade" end="100" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<centerleft>50%</centerleft>
+			<width>1920</width>
 			<control type="group">
 				<top>900</top>
 				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(osdcmssettings) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
