@@ -18,16 +18,16 @@
 				<control type="group">
 					<depth>DepthContentPanel</depth>
 					<control type="image">
-						<left>-20</left>
-						<top>-20</top>
-						<width>1980</width>
-						<height>644</height>
-						<texture border="22">dialogs/dialog-bg.png</texture>
+						<left>0</left>
+						<top>-10</top>
+						<width>100%</width>
+						<height>614</height>
+						<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
 					</control>
 					<control type="epggrid" id="10">
 						<left>0</left>
 						<top>0</top>
-						<width>1900</width>
+						<width>99%</width>
 						<height>600</height>
 						<pagecontrol>60</pagecontrol>
 						<scrolltime tween="quadratic" easing="out">200</scrolltime>
