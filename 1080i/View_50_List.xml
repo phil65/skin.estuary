@@ -13,41 +13,45 @@
 			</include>
 			<control type="group">
 				<depth>DepthContentPanel</depth>
-				<control type="image">
-					<left>712</left>
-					<top>-20</top>
-					<width>670</width>
-					<height>1120</height>
-					<texture>lists/panel.png</texture>
-					<bordertexture border="20">overlays/shadow.png</bordertexture>
-					<bordersize>20</bordersize>
-				</control>
-				<control type="scrollbar" id="50600">
-					<left>732</left>
-					<top>0</top>
-					<width>12</width>
-					<height>100%</height>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<orientation>vertical</orientation>
-					<animation effect="zoom" end="50,100" time="300" tween="sine" center="732,0" easing="inout" condition="!Control.HasFocus(50600)">conditional</animation>
-				</control>
-				<control type="image">
-					<depth>DepthContentPopout</depth>
-					<left>754</left>
-					<top>140</top>
-					<width>556</width>
-					<height>836</height>
-					<fadetime>200</fadetime>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
-				</control>
 				<control type="group">
-					<left>1013</left>
-					<top>950</top>
-					<include content="UserRatingCircle">
-						<param name="animation" value="True" />
-					</include>
+					<right>-20</right>
+					<top>-20</top>
+					<width>636</width>
+					<height>1120</height>
+					<control type="image">
+						<width>636</width>
+						<height>1120</height>
+						<texture>lists/panel.png</texture>
+						<bordertexture border="20">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="scrollbar" id="50600">
+						<left>20</left>
+						<top>20</top>
+						<width>12</width>
+						<height>100%</height>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<orientation>vertical</orientation>
+						<animation effect="zoom" end="50,100" time="300" tween="sine" center="20,0" easing="inout" condition="!Control.HasFocus(50600)">conditional</animation>
+					</control>
+					<control type="image">
+						<depth>DepthContentPopout</depth>
+						<left>44</left>
+						<top>140</top>
+						<width>556</width>
+						<height>836</height>
+						<fadetime>200</fadetime>
+						<aspectratio aligny="bottom">keep</aspectratio>
+						<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
+					</control>
+					<control type="group">
+						<left>1013</left>
+						<top>950</top>
+						<include content="UserRatingCircle">
+							<param name="animation" value="True" />
+						</include>
+					</control>
 				</control>
 			</control>
 		</control>
