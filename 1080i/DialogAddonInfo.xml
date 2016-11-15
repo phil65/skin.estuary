@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload condition="!ListItem.Property(addon.isinstalled) + Window.IsActive(addonbrowser)">SetFocus(6)</onload>
-	<onload>SetProperty(infobackground,$INFO[ListItem.Art(fanart)],home)</onload>
+	<onload>SetProperty(infobackground,$ESCINFO[ListItem.Art(fanart)],home)</onload>
 	<onunload>ClearProperty(infobackground,home)</onunload>
 	<controls>
 		<control type="group">
