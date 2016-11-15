@@ -5,6 +5,8 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
+			<centerleft>50%</centerleft>
+			<width>1920</width>
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="grouplist" id="9000">
 				<include>OpenClose_Left</include>
@@ -68,6 +70,7 @@
 					<top>0</top>
 					<width>340</width>
 					<height>360</height>
+					<fadetime>200</fadetime>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
@@ -85,7 +88,7 @@
 					<height>746</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
 				</control>
-				<control type="list" id="50">
+				<control type="panel" id="50">
 					<left>230</left>
 					<top>182</top>
 					<width>1260</width>
@@ -188,7 +191,7 @@
 							<width>870</width>
 							<height>60</height>
 							<font>font10_title</font>
-							<textcolor>grey</textcolor>
+							<textcolor>white</textcolor>
 							<aligny>top</aligny>
 							<label>$INFO[ListItem.Property(Event.Description)]</label>
 						</control>
@@ -198,7 +201,7 @@
 							<width>1120</width>
 							<height>35</height>
 							<font>font12</font>
-							<textcolor>button_focus</textcolor>
+							<textcolor>white</textcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>

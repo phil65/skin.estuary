@@ -1089,7 +1089,8 @@
 					</control>
 				</control>
 				<control type="group">
-					<left>450</left>
+					<centerleft>50%</centerleft>
+					<width>54%</width>
 					<top>1005</top>
 					<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
@@ -1100,7 +1101,7 @@
 						<itemgap>5</itemgap>
 						<usecontrolcoords>true</usecontrolcoords>
 						<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
-						<width>1020</width>
+						<width>100%</width>
 						<control type="image">
 							<top>8</top>
 							<width>28</width>
@@ -1123,7 +1124,7 @@
 						<textoffsetx>100</textoffsetx>
 						<shadowcolor>text_shadow</shadowcolor>
 						<height>25</height>
-						<width>1020</width>
+						<width>100%</width>
 						<align>center</align>
 					</control>
 				</control>
