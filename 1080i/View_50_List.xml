@@ -60,7 +60,7 @@
 		<control type="fixedlist" id="$PARAM[list_id]">
 			<left>2</left>
 			<top>0</top>
-			<width>730</width>
+			<width>list_width</width>
 			<height>100%</height>
 			<movement>5</movement>
 			<focusposition>7</focusposition>
@@ -77,16 +77,16 @@
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>730</width>
+					<width>list_width</width>
 					<height>69</height>
 					<texture colordiffuse="button_focus">lists/focus.png</texture>
 					<visible>Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 				<control type="label">
-					<left>70</left>
+					<textoffsetx>70</textoffsetx>
 					<top>0</top>
 					<height>70</height>
-					<width>580</width>
+					<width>list_width</width>
 					<aligny>center</aligny>
 					<scroll>true</scroll>
 					<font>font27</font>
@@ -94,10 +94,10 @@
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 				<control type="label">
-					<left>155</left>
+					<textoffsetx>20</textoffsetx>
 					<top>0</top>
 					<height>70</height>
-					<width>555</width>
+					<width>list_width</width>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
@@ -136,10 +136,10 @@
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 				<control type="label">
-					<left>155</left>
+					<textoffsetx>20</textoffsetx>
 					<top>0</top>
 					<height>70</height>
-					<width>555</width>
+					<width>list_width</width>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
