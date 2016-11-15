@@ -82,18 +82,18 @@
 													<label>$INFO[System.Date]</label>
 												</control> -->
 				<control type="image">
-					<left>50</left>
+					<left>2.5%</left>
 					<top>100</top>
-					<width>1820</width>
+					<width>95%</width>
 					<height>220</height>
 					<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
 				<control type="button" id="20">
-					<left>50</left>
+					<left>2.5%</left>
 					<top>100</top>
-					<width>1820</width>
+					<width>95%</width>
 					<height>220</height>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -108,7 +108,7 @@
 					<label></label>
 				</control>
 				<control type="label">
-					<left>1330</left>
+					<right>100</right>
 					<top>190</top>
 					<aligny>center</aligny>
 					<height>24</height>
@@ -118,7 +118,7 @@
 					<label>$INFO[Weather.Temperature]</label>
 				</control>
 				<control type="label">
-					<left>900</left>
+					<right>400</right>
 					<top>160</top>
 					<align>right</align>
 					<label>[COLOR grey]$LOCALIZE[402]: $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/COLOR][CR]$INFO[Weather.Conditions]</label>
@@ -128,7 +128,8 @@
 				<control type="grouplist">
 					<top>150</top>
 					<left>90</left>
-					<itemgap>-90</itemgap>
+					<width>list_width</width>
+					<align>justify</align>
 					<orientation>horizontal</orientation>
 					<include content="WeatherIcon">
 						<param name="label" value="Window(weather).Property(Current.Wind)" />
