@@ -235,10 +235,10 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<left>590</left>
+				<textoffsetx>40</textoffsetx>
 				<top>0</top>
 				<height>80</height>
-				<width>700</width>
+				<width>widelist_width</width>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font27</font>
@@ -264,10 +264,10 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<left>590</left>
+				<textoffsetx>40</textoffsetx>
 				<top>0</top>
 				<height>80</height>
-				<width>700</width>
+				<width>widelist_width</width>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font27</font>
