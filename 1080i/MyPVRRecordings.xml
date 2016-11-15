@@ -122,26 +122,24 @@
 				<include>OpenClose_Right</include>
 				<control type="group">
 					<visible>!ListItem.IsFolder</visible>
-					<control type="group">
+					<control type="label">
 						<left>170</left>
-						<top>40</top>
-						<control type="label">
-							<top>20</top>
-							<width>560</width>
-							<height>262</height>
-							<align>left</align>
-							<font>font27</font>
-							<wrapmultiline>true</wrapmultiline>
-							<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ][CR]$INFO[ListItem.Date,$LOCALIZE[552]: ]</label>
-						</control>
-						<control type="label">
-							<top>-30</top>
-							<width>560</width>
-							<height>262</height>
-							<textcolor>button_focus</textcolor>
-							<font>font36_title</font>
-							<label>$INFO[ListItem.ChannelName]</label>
-						</control>
+						<top>60</top>
+						<width>560</width>
+						<height>262</height>
+						<align>left</align>
+						<font>font27</font>
+						<wrapmultiline>true</wrapmultiline>
+						<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ][CR]$INFO[ListItem.Date,$LOCALIZE[552]: ]</label>
+					</control>
+					<control type="label">
+						<left>170</left>
+						<top>10</top>
+						<width>560</width>
+						<height>262</height>
+						<textcolor>button_focus</textcolor>
+						<font>font36_title</font>
+						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="image">
 						<left>-20</left>
