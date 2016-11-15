@@ -48,7 +48,7 @@
 							<width>980</width>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
-							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
@@ -78,7 +78,7 @@
 							<height>80</height>
 							<width>980</width>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
@@ -148,7 +148,7 @@
 						<height>120</height>
 						<fadetime>200</fadetime>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.ActualIcon]</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
 						<top>195</top>
@@ -158,8 +158,15 @@
 						<font>font36_title</font>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
+					<control type="label">
+						<top>240</top>
+						<width>750</width>
+						<height>70</height>
+						<font>font13</font>
+						<label>[I]$INFO[ListItem.EpisodeName][/I]</label>
+					</control>
 					<control type="textbox">
-						<top>254</top>
+						<top>284</top>
 						<width>750</width>
 						<height>526</height>
 						<align>justify</align>
