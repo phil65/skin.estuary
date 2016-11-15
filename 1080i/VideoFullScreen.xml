@@ -17,7 +17,7 @@
 			<animation delay="300" effect="fade" time="200">Visible</animation>
 			<animation effect="fade" delay="200" time="150">Hidden</animation>
 			<control type="image" id="1">
-				<left>860</left>
+				<centerleft>50%</centerleft>
 				<top>440</top>
 				<width>200</width>
 				<height>200</height>
@@ -25,7 +25,7 @@
 				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
 			</control>
  			<control type="image" id="1">
-				<left>860</left>
+				<centerleft>50%</centerleft>
 				<top>440</top>
 				<width>200</width>
 				<height>200</height>
@@ -34,7 +34,7 @@
 			<control type="label" id="1">
 				<description>buffering value</description>
 				<label>$INFO[Player.CacheLevel]%</label>
-				<left>860</left>
+				<centerleft>50%</centerleft>
 				<top>440</top>
 				<width>200</width>
 				<height>200</height>
@@ -47,7 +47,7 @@
 			<control type="label" id="2">
 				<description>buffering label</description>
 				<label>$LOCALIZE[15107]</label>
-				<left>860</left>
+				<centerleft>50%</centerleft>
 				<top>620</top>
 				<width>200</width>
 				<height>20</height>

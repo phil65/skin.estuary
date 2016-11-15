@@ -30,7 +30,7 @@
 			</control>
 			<control type="image">
 				<depth>DepthMax</depth>
-				<left>920</left>
+				<centerleft>50%</centerleft>
 				<top>513</top>
 				<width>80</width>
 				<height>80</height>
@@ -41,7 +41,7 @@
 			</control>
 			<control type="image">
 				<depth>DepthMax</depth>
-				<left>935</left>
+				<centerleft>50%</centerleft>
 				<top>528</top>
 				<width>50</width>
 				<height>50</height>
@@ -51,7 +51,7 @@
 				<animation effect="fade" end="100" time="300" delay="200">WindowOpen</animation>
 			</control>
 			<control type="progress" id="10">
-				<left>920</left>
+				<centerleft>50%</centerleft>
 				<top>620</top>
 				<width>80</width>
 				<height>24</height>
