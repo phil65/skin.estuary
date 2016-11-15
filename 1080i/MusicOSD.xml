@@ -14,6 +14,8 @@
 		</control>
 		<control type="group">
 			<top>900</top>
+			<centerleft>50%</centerleft>
+			<width>1920</width>
 			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(playerprocessinfo)</visible>
 			<animation effect="fade" end="100" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>

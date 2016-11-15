@@ -6,6 +6,8 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
+			<centerleft>50%</centerleft>
+			<width>1920</width>
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<include content="PlaylistWindowButtons">
 				<param name="width" value="400" />
