@@ -136,7 +136,7 @@
 					<param name="textbox_content" value="$VAR[ShiftLeftTextBoxVar]" />
 				</include>
 				<control type="group">
-					<left>960</left>
+					<left>50%</left>
 					<include content="ShiftTextbox">
 						<param name="textbox_id" value="53300" />
 						<param name="textbox_content" value="$VAR[ShiftRightTextBoxVar]" />
