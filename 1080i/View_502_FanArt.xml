@@ -18,12 +18,10 @@
 			<include>Visible_Right</include>
 			<control type="group">
 				<right>-20</right>
-				<top>-20</top>
 				<width>1233</width>
-				<height>1120</height>
 				<control type="image">
 					<left>0</left>
-					<top>0</top>
+					<top>-20</top>
 					<width>1233</width>
 					<height>1120</height>
 					<texture>lists/panel.png</texture>
@@ -32,7 +30,7 @@
 				</control>
 				<control type="image">
 					<left>40</left>
-					<top>124</top>
+					<top>104</top>
 					<width>1156</width>
 					<height>650</height>
 					<fadetime>300</fadetime>
@@ -41,12 +39,12 @@
 				</control>
 				<control type="group">
 					<left>600</left>
-					<top>102</top>
+					<top>82</top>
 					<include>UserRatingCircle</include>
 				</control>
 				<control type="textbox">
 					<left>40</left>
-					<top>789</top>
+					<top>769</top>
 					<width>1152</width>
 					<height>203</height>
 					<font>font13</font>
@@ -55,9 +53,9 @@
 				</control>
 				<control type="scrollbar" id="502600">
 					<left>20</left>
-					<top>20</top>
+					<top>0</top>
 					<width>12</width>
-					<height>1080</height>
+					<height>100%</height>
 					<onleft>502</onleft>
 					<onright>502</onright>
 					<orientation>vertical</orientation>
@@ -65,7 +63,7 @@
 				</control>
 				<control type="group">
 					<left>40</left>
-					<top>790</top>
+					<top>770</top>
 					<visible>ListItem.IsCollection</visible>
 					<include content="InfoList">
 						<param name="height" value="300" />
