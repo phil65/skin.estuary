@@ -3,12 +3,11 @@
 	<defaultcontrol always="true">300</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
 	<depth>DepthDialog+</depth>
-	<coordinates>
-		<left>155</left>
-		<top>186</top>
-	</coordinates>
 	<controls>
 		<control type="group">
+			<top>186</top>
+			<centerleft>50%</centerleft>
+			<width>1610</width>
 			<include>Animation_DialogPopupVisible</include>
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<animation type="Conditional" condition="Control.HasFocus(502)">
