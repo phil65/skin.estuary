@@ -85,7 +85,9 @@
 				<control type="group">
 					<depth>DepthContentPanel</depth>
 					<control type="image">
-						<include>ContentPanel</include>
+						<texture>lists/panel.png</texture>
+						<bordertexture border="20">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 						<left>-20</left>
 						<top>-20</top>
 						<width>442</width>
