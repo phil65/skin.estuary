@@ -647,7 +647,6 @@
 								<ondown>14100</ondown>
 								<onclick>$INFO[ListItem.FileNameAndPath]</onclick>
 								<preloaditems>2</preloaditems>
-								<pagecontrol>60</pagecontrol>
 								<scrolltime tween="sine">200</scrolltime>
 								<orientation>vertical</orientation>
 								<itemlayout width="330" height="396">
@@ -930,7 +929,6 @@
 					<top>240</top>
 					<width>462</width>
 					<height>850</height>
-					<pagecontrol>70</pagecontrol>
 					<movement>6</movement>
 					<focusposition>1</focusposition>
 					<onfocus>ClearProperty(listposition,home)</onfocus>
@@ -1174,6 +1172,7 @@
 					<width>100%</width>
 					<font>font12</font>
 					<urlset>1</urlset>
+					<hitrect x="-100" y="0" w="1" h="1" />
 					<titlecolor>button_focus</titlecolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<headlinecolor>FFC0C0C0</headlinecolor>
