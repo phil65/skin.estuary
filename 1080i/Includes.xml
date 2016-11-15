@@ -1030,11 +1030,11 @@
 						<visible>!Control.IsVisible(502) | $EXP[infodialog_active]</visible>
 					</control>
 					<control type="image">
-						<left>0</left>
+						<left>-3</left>
 						<top>0</top>
-						<width>727</width>
+						<width>list_width</width>
 						<height>100%</height>
-						<aspectratio>scale</aspectratio>
+						<aspectratio aligny="top">scale</aspectratio>
 						<fadetime>400</fadetime>
 						<include>OpenClose_Left</include>
 						<animation effect="fade" time="400">VisibleChange</animation>
