@@ -2,84 +2,79 @@
 <includes>
 	<include name="View_502_FanArt">
 		<control type="group">
-			<description>Fanart Viewtype</description>
-			<left>0</left>
+			<include>OpenClose_Left</include>
 			<top>0</top>
+			<left>-5</left>
+			<visible>Control.IsVisible(502)</visible>
+			<include>Visible_Left</include>
+			<include content="ListContainer">
+				<param name="list_id" value="502" />
+				<param name="viewtype_label" value="$LOCALIZE[20445]" />
+			</include>
+		</control>
+		<control type="group">
+			<depth>DepthContentPanel</depth>
+			<include>OpenClose_Right</include>
+			<visible>Control.IsVisible(502)</visible>
+			<include>Visible_Right</include>
 			<control type="group">
-				<include>OpenClose_Left</include>
-				<top>0</top>
-				<left>-5</left>
-				<visible>Control.IsVisible(502)</visible>
-				<include>Visible_Left</include>
-				<include content="ListContainer">
-					<param name="list_id" value="502" />
-					<param name="viewtype_label" value="$LOCALIZE[20445]" />
-				</include>
-			</control>
-			<control type="group">
-				<depth>DepthContentPanel</depth>
-				<include>OpenClose_Right</include>
-				<visible>Control.IsVisible(502)</visible>
-				<include>Visible_Right</include>
-				<control type="group">
-					<right>-20</right>
-					<top>-20</top>
+				<right>-20</right>
+				<top>-20</top>
+				<width>1233</width>
+				<height>1120</height>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
 					<width>1233</width>
 					<height>1120</height>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>1233</width>
-						<height>1120</height>
-						<texture>lists/panel.png</texture>
-						<bordertexture border="20">overlays/shadow.png</bordertexture>
-						<bordersize>20</bordersize>
-					</control>
-					<control type="image">
-						<left>40</left>
-						<top>124</top>
-						<width>1156</width>
-						<height>650</height>
-						<fadetime>300</fadetime>
-						<texture border="2" fallback="special://skin/extras/home-images/movie.jpg" background="true">$VAR[FanartImageVar]</texture>
-						<aspectratio align="center" aligny="bottom">scale</aspectratio>
-					</control>
-					<control type="group">
-						<left>600</left>
-						<top>102</top>
-						<include>UserRatingCircle</include>
-					</control>
-					<control type="textbox">
-						<left>40</left>
-						<top>789</top>
-						<width>1152</width>
-						<height>203</height>
-						<font>font13</font>
-						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-					</control>
-					<control type="scrollbar" id="502600">
-						<left>20</left>
-						<top>0</top>
-						<width>12</width>
-						<height>100%</height>
-						<onleft>502</onleft>
-						<onright>502</onright>
-						<orientation>vertical</orientation>
-						<animation effect="zoom" end="50,100" time="300" tween="sine" center="20,0" easing="inout" condition="!Control.HasFocus(502600)">conditional</animation>
-					</control>
-					<control type="group">
-						<left>40</left>
-						<top>790</top>
-						<visible>ListItem.IsCollection</visible>
-						<include content="InfoList">
-							<param name="height" value="300" />
-							<param name="width" value="1000" />
-							<param name="sortby" value="year" />
-							<param name="sortorder" value="descending" />
-							<param name="font" value="font13" />
-						</include>
-					</control>
+					<texture>lists/panel.png</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>40</left>
+					<top>124</top>
+					<width>1156</width>
+					<height>650</height>
+					<fadetime>300</fadetime>
+					<texture border="2" fallback="special://skin/extras/home-images/movie.jpg" background="true">$VAR[FanartImageVar]</texture>
+					<aspectratio align="center" aligny="bottom">scale</aspectratio>
+				</control>
+				<control type="group">
+					<left>600</left>
+					<top>102</top>
+					<include>UserRatingCircle</include>
+				</control>
+				<control type="textbox">
+					<left>40</left>
+					<top>789</top>
+					<width>1152</width>
+					<height>203</height>
+					<font>font13</font>
+					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+				<control type="scrollbar" id="502600">
+					<left>20</left>
+					<top>0</top>
+					<width>12</width>
+					<height>100%</height>
+					<onleft>502</onleft>
+					<onright>502</onright>
+					<orientation>vertical</orientation>
+					<animation effect="zoom" end="50,100" time="300" tween="sine" center="20,0" easing="inout" condition="!Control.HasFocus(502600)">conditional</animation>
+				</control>
+				<control type="group">
+					<left>40</left>
+					<top>790</top>
+					<visible>ListItem.IsCollection</visible>
+					<include content="InfoList">
+						<param name="height" value="300" />
+						<param name="width" value="1000" />
+						<param name="sortby" value="year" />
+						<param name="sortorder" value="descending" />
+						<param name="font" value="font13" />
+					</include>
 				</control>
 			</control>
 		</control>
