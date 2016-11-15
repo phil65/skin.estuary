@@ -58,7 +58,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>1460</width>
+					<width>widget_width</width>
 					<height>500</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
@@ -283,7 +283,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>1460</width>
+					<width>widget_width</width>
 					<height>400</height>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
@@ -429,7 +429,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>1460</width>
+					<width>widget_width</width>
 					<height>500</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
@@ -594,7 +594,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>1460</width>
+					<width>widget_width</width>
 					<height>350</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
@@ -773,7 +773,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>1460</width>
+					<width>widget_width</width>
 					<height>400</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
@@ -903,7 +903,7 @@
 	</include>
 	<include name="WeatherWidget">
 		<param name="left">442</param>
-		<param name="width">1460</param>
+		<param name="width">widget_width</param>
 		<definition>
 			<control type="group">
 				<description>Square Weather Widget including header</description>
