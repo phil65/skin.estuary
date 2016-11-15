@@ -208,7 +208,7 @@
 					<top>0</top>
 					<left>442</left>
 					<width>widget_width</width>
-					<height>1080</height>
+					<height>100%</height>
 					<aspectratio>scale</aspectratio>
 					<imagepath colordiffuse="33FFFFFF">$PARAM[image_path]</imagepath>
 					<visible>String.IsEmpty(Skin.String(HomeFanart.path))</visible>

@@ -452,7 +452,7 @@
 				<left>0</left>
 				<top>0</top>
 				<width>$PARAM[width]</width>
-				<height>1080</height>
+				<height>100%</height>
 				<focusposition>4</focusposition>
 				<movement>3</movement>
 				<onleft>$PARAM[onleft_id]</onleft>
@@ -1033,7 +1033,7 @@
 						<left>0</left>
 						<top>0</top>
 						<width>727</width>
-						<height>1080</height>
+						<height>100%</height>
 						<aspectratio>scale</aspectratio>
 						<fadetime>400</fadetime>
 						<include>OpenClose_Left</include>

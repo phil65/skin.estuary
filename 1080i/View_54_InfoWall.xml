@@ -135,7 +135,7 @@
 				<left>440</left>
 				<top>0</top>
 				<width>80%</width>
-				<height>1080</height>
+				<height>100%</height>
 				<onleft>9000</onleft>
 				<onright>531</onright>
 				<onup condition="Integer.IsGreater(Container.NumPages,1)">54</onup>
@@ -167,7 +167,7 @@
 				</itemlayout>
 				<focusedlayout height="445" width="320" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
-					
+
 						<left>224</left>
 						<top>498</top>
 						<width>32</width>

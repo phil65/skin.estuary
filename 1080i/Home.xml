@@ -55,7 +55,7 @@
 					</include>
 					<control type="grouplist" id="5001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<itemgap>-160</itemgap>
 						<include content="WidgetListCategories">
@@ -137,7 +137,7 @@
 					</include>
 					<control type="grouplist" id="6001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="WidgetListCategories">
@@ -224,7 +224,7 @@
 					</include>
 					<control type="grouplist" id="7001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="WidgetListCategories">
@@ -314,7 +314,7 @@
 					</include>
 					<control type="grouplist" id="8001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<itemgap>-160</itemgap>
 						<include content="WidgetListCategories">
@@ -414,7 +414,7 @@
 					</include>
 					<control type="grouplist" id="11001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<include content="WidgetListCategories">
@@ -461,7 +461,7 @@
 					</include>
 					<control type="grouplist" id="12001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<itemgap>-160</itemgap>
 						<usecontrolcoords>true</usecontrolcoords>
@@ -545,7 +545,7 @@
 					</include>
 					<control type="grouplist" id="13001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
@@ -629,18 +629,18 @@
 					</include>
 					<control type="grouplist" id="14001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<control type="group">
 							<visible>Integer.IsGreater(Container(14100).NumItems,0) | Container(14100).IsUpdating</visible>
-							<height>1080</height>
+							<height>100%</height>
 							<control type="panel" id="14100">
 								<left>520</left>
 								<top>0</top>
 								<width>1600</width>
-								<height>1080</height>
+								<height>100%</height>
 								<onleft>9000</onleft>
 								<onright>9000</onright>
 								<onup>14100</onup>
@@ -699,7 +699,7 @@
 					</include>
 					<control type="grouplist" id="15001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<itemgap>-160</itemgap>
 						<control type="group" id="16678">
@@ -808,7 +808,7 @@
 					</include>
 					<control type="grouplist" id="16001">
 						<orientation>vertical</orientation>
-						<height>1080</height>
+						<height>100%</height>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<itemgap>-160</itemgap>
 						<include content="WidgetListCategories">

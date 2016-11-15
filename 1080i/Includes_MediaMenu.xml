@@ -262,7 +262,7 @@
 		</animation>
 		<control type="image">
 			<width>4000</width>
-			<height>1080</height>
+			<height>100%</height>
 			<aspectratio>scale</aspectratio>
 			<texture colordiffuse="80FFFFFF">colors/black.png</texture>
 			<visible>$EXP[sidebar_focused] + !System.HasModalDialog</visible>
@@ -272,7 +272,7 @@
 			<left>0</left>
 			<top>0</top>
 			<width>484</width>
-			<height>1080</height>
+			<height>100%</height>
 			<texture>lists/panel-mediamenu.png</texture>
 		</control>
 		<control type="button" id="3">

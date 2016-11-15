@@ -56,7 +56,7 @@
 		<control type="grouplist" id="2000">
 			<orientation>vertical</orientation>
 			<top>0</top>
-			<height>1080</height>
+			<height>100%</height>
 			<left>0</left>
 			<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
 				<effect type="slide" end="0,20" time="60" tween="sine" />
