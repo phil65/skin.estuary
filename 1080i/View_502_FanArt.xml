@@ -3,7 +3,6 @@
 	<include name="View_502_FanArt">
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<top>0</top>
 			<left>-5</left>
 			<visible>Control.IsVisible(502)</visible>
 			<include>Visible_Left</include>
@@ -56,9 +55,9 @@
 				</control>
 				<control type="scrollbar" id="502600">
 					<left>20</left>
-					<top>0</top>
+					<top>20</top>
 					<width>12</width>
-					<height>100%</height>
+					<height>1080</height>
 					<onleft>502</onleft>
 					<onright>502</onright>
 					<orientation>vertical</orientation>
