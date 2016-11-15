@@ -37,21 +37,21 @@
 			<animation delay="300" effect="fade" time="200">Visible</animation>
 			<animation effect="fade" delay="200" time="150">Hidden</animation>
 			<control type="image" id="1">
-				<left>906</left>
+				<centerleft>50%</centerleft>
 				<top>485</top>
 				<width>110</width>
 				<height>110</height>
 				<texture colordiffuse="BFFFFFFF">osd/buffer-bg.png</texture>
 			</control>
 			<control type="image" id="1">
-				<left>915</left>
+				<centerleft>50%</centerleft>
 				<top>494</top>
 				<width>92</width>
 				<height>92</height>
 				<texture colordiffuse="1AFFFFFF">dialogs/extendedprogress/loading-placeholder.png</texture>
 			</control>
  			<control type="image" id="1">
-				<left>880</left>
+				<centerleft>50%</centerleft>
 				<top>460</top>
 				<width>160</width>
 				<height>160</height>
@@ -60,7 +60,7 @@
 			<control type="label" id="1">
 				<description>buffering value</description>
 				<label>$INFO[Player.CacheLevel]</label>
-				<left>860</left>
+				<centerleft>50%</centerleft>
 				<top>440</top>
 				<width>200</width>
 				<height>200</height>
