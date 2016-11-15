@@ -9,59 +9,63 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<include>CommonScrollbars</include>
-			<include>View_50_List</include>
-			<include>View_52_IconWall</include>
-			<include>View_53_Shift</include>
-			<include>View_54_InfoWall</include>
-			<include>View_55_WideList</include>
-			<include>View_500_SmallThumb</include>
 			<control type="group">
-				<include>OpenClose_Left</include>
-				<visible>Control.IsVisible(50) | Control.IsVisible(55)</visible>
-				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files) | Container.Content(directors) | Container.Content()</visible>
-				<include>Visible_Left</include>
-				<include>ListThumbInfoPanel</include>
-			</control>
-			<control type="group">
-				<include>OpenClose_Right</include>
-				<visible>[Control.IsVisible(50) | Control.Isvisible(54)] + !String.IsEmpty(ListItem.DBID)</visible>
-				<include>Visible_Right</include>
-				<visible>Container.Content(albums) | Container.Content(artists)</visible>
-				<control type="image">
-					<right>90</right>
-					<top>162</top>
-					<width>509</width>
-					<height>746</height>
-					<texture border="22">dialogs/dialog-bg.png</texture>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
+				<include>View_50_List</include>
+				<include>View_52_IconWall</include>
+				<include>View_53_Shift</include>
+				<include>View_54_InfoWall</include>
+				<include>View_55_WideList</include>
+				<include>View_500_SmallThumb</include>
+				<control type="group">
+					<include>OpenClose_Left</include>
+					<visible>Control.IsVisible(50) | Control.IsVisible(55)</visible>
+					<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(files) | Container.Content(directors) | Container.Content()</visible>
+					<include>Visible_Left</include>
+					<include>ListThumbInfoPanel</include>
 				</control>
-				<control type="textbox">
-					<right>130</right>
-					<top>194</top>
-					<width>429</width>
-					<height>388</height>
-					<font>font12</font>
-					<label>$INFO[ListItem.Property(artist_description)]$INFO[ListItem.Property(album_description),[CR]]</label>
-					<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-				</control>
-				<control type="textbox">
-					<right>130</right>
-					<top>360</top>
-					<width>429</width>
-					<height>413</height>
-					<align>center</align>
-					<font>font24_title</font>
-					<label>$LOCALIZE[19055]</label>
-					<visible>String.IsEmpty(Listitem.Property(artist_description)) + String.IsEmpty(Listitem.Property(album_description)) + !ListItem.IsParentFolder</visible>
-					<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-				</control>
-				<control type="image">
-					<right>113</right>
-					<top>614</top>
-					<width>463</width>
-					<height>270</height>
-					<aspectratio aligny="top">scale</aspectratio>
-					<fadetime>300</fadetime>
-					<texture background="true" fallback="DefaultFolder.png">$VAR[ListInfoBoxImageVar]</texture>
+				<control type="group">
+					<include>OpenClose_Right</include>
+					<visible>[Control.IsVisible(50) | Control.Isvisible(54)] + !String.IsEmpty(ListItem.DBID)</visible>
+					<include>Visible_Right</include>
+					<visible>Container.Content(albums) | Container.Content(artists)</visible>
+					<control type="image">
+						<right>90</right>
+						<top>162</top>
+						<width>509</width>
+						<height>746</height>
+						<texture border="22">dialogs/dialog-bg.png</texture>
+					</control>
+					<control type="textbox">
+						<right>130</right>
+						<top>194</top>
+						<width>429</width>
+						<height>388</height>
+						<font>font12</font>
+						<label>$INFO[ListItem.Property(artist_description)]$INFO[ListItem.Property(album_description),[CR]]</label>
+						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+					</control>
+					<control type="textbox">
+						<right>130</right>
+						<top>360</top>
+						<width>429</width>
+						<height>413</height>
+						<align>center</align>
+						<font>font24_title</font>
+						<label>$LOCALIZE[19055]</label>
+						<visible>String.IsEmpty(Listitem.Property(artist_description)) + String.IsEmpty(Listitem.Property(album_description)) + !ListItem.IsParentFolder</visible>
+						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+					</control>
+					<control type="image">
+						<right>113</right>
+						<top>614</top>
+						<width>463</width>
+						<height>270</height>
+						<aspectratio aligny="top">scale</aspectratio>
+						<fadetime>300</fadetime>
+						<texture background="true" fallback="DefaultFolder.png">$VAR[ListInfoBoxImageVar]</texture>
+					</control>
 				</control>
 			</control>
 			<include>MediaMenuMouseOverlay</include>
