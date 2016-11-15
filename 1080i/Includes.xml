@@ -1000,9 +1000,11 @@
 				<depth>DepthBackground</depth>
 				<include>FullScreenDimensions</include>
 				<visible>Player.HasVideo</visible>
+				<visible>!Slideshow.IsActive</visible>
 			</control>
 			<control type="visualisation">
 				<include>FullScreenDimensions</include>
+				<visible>!Slideshow.IsActive</visible>
 				<visible>Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + Visualisation.Enabled</visible>
 			</control>
 			<control type="group">
