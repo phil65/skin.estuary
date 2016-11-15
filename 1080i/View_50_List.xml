@@ -15,10 +15,9 @@
 				<depth>DepthContentPanel</depth>
 				<control type="group">
 					<right>-20</right>
-					<top>-20</top>
 					<width>636</width>
-					<height>1120</height>
 					<control type="image">
+						<top>-20</top>
 						<width>636</width>
 						<height>1120</height>
 						<texture>lists/panel.png</texture>
@@ -27,7 +26,7 @@
 					</control>
 					<control type="scrollbar" id="50600">
 						<left>20</left>
-						<top>20</top>
+						<top>0</top>
 						<width>12</width>
 						<height>1080</height>
 						<onleft>50</onleft>
@@ -38,7 +37,7 @@
 					<control type="image">
 						<depth>DepthContentPopout</depth>
 						<left>44</left>
-						<top>140</top>
+						<top>120</top>
 						<width>556</width>
 						<height>836</height>
 						<fadetime>200</fadetime>
@@ -47,7 +46,7 @@
 					</control>
 					<control type="group">
 						<left>310</left>
-						<top>956</top>
+						<top>936</top>
 						<include content="UserRatingCircle">
 							<param name="animation" value="True" />
 						</include>
