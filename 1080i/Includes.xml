@@ -639,16 +639,16 @@
 		<param name="posy">20</param>
 		<definition>
 			<control type="grouplist">
-				<left>60</left>
+				<left>3%</left>
 				<top>$PARAM[posy]</top>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<width>1800</width>
+				<width>94%</width>
 				<height>150</height>
 				<itemgap>0</itemgap>
 				<orientation>vertical</orientation>
 				<control type="label">
-					<width>1800</width>
+					<width>100%</width>
 					<label>$PARAM[main_label]</label>
 					<font>font52_title</font>
 					<shadowcolor>text_shadow</shadowcolor>
@@ -664,7 +664,7 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<align>center</align>
 					<height>100</height>
-					<width>1800</width>
+					<width>100%</width>
 				</control>
 			</control>
 		</definition>
