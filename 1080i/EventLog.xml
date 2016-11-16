@@ -213,16 +213,18 @@
 				<param name="container_id" value="50" />
 				<param name="visible" value="!System.HasModalDialog" />
 			</include>
-			<control type="scrollbar" id="60">
-				<right>0</right>
-				<top>80</top>
-				<width>12</width>
-				<height>920</height>
-				<onleft>50</onleft>
-				<onright>9000</onright>
-				<orientation>vertical</orientation>
-				<visible>Control.IsVisible(50)</visible>
-			</control>
+		</control>
+		<control type="scrollbar" id="60">
+			<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			<right>0</right>
+			<top>80</top>
+			<width>12</width>
+			<height>920</height>
+			<onleft>50</onleft>
+			<onright>9000</onright>
+			<orientation>vertical</orientation>
+			<visible>Control.IsVisible(50)</visible>
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[31067]" />
