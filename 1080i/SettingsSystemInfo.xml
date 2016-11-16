@@ -82,7 +82,7 @@
 			</control>
 			<control type="textbox" id="30">
 				<left>430</left>
-				<width>1370</width>
+				<right>50</right>
 				<top>100</top>
 				<height>665</height>
 				<pagecontrol>60</pagecontrol>
@@ -108,14 +108,14 @@
 			<control type="image">
 				<left>360</left>
 				<top>90</top>
-				<width>1510</width>
+				<right>0</right>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="image">
 				<left>360</left>
 				<top>770</top>
-				<width>1510</width>
+				<right>0</right>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>
