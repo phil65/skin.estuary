@@ -140,7 +140,9 @@
 			</control>
 			<control type="group">
 				<depth>DepthContentPanel</depth>
-				<left>1110</left>
+				<include>OpenClose_Right</include>
+				<width>810</width>
+				<right>0</right>
 				<top>180</top>
 				<control type="image">
 					<left>-72</left>
@@ -161,7 +163,6 @@
 					<orientation>vertical</orientation>
 					<animation effect="zoom" start="100,100" end="50,100" center="-50,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
 				</control>
-				<include>OpenClose_Right</include>
 				<include>PVRInfoPanel</include>
 			</control>
 		</control>
@@ -176,7 +177,8 @@
 			<param name="info_visible" value="true" />
 		</include>
 		<control type="group">
-			<left>1100</left>
+			<width>810</width>
+			<right>20</right>
 			<include>OpenClose_Right</include>
 			<control type="label">
 				<description>Disk usage text</description>
