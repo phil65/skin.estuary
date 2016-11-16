@@ -763,10 +763,10 @@
 		<control type="group">
 			<width>$PARAM[DialogBackgroundWidth]</width>
 			<control type="image">
-				<left>-1920</left>
-				<top>-1080</top>
-				<width>5760</width>
-				<height>3240</height>
+				<left>-100%</left>
+				<top>-100%</top>
+				<width>300%</width>
+				<height>300%</height>
 				<animation effect="fade" time="300">VisibleChange</animation>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
@@ -776,22 +776,21 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>$PARAM[DialogBackgroundWidth]</width>
+				<right>0</right>
 				<height>$PARAM[DialogBackgroundHeight]</height>
 				<texture border="2">dialogs/dialog-bg-solid.png</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>$PARAM[DialogBackgroundWidth]</width>
+				<right>0</right>
 				<height>70</height>
 				<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
 			</control>
 			<control type="label" id="$PARAM[DialogHeaderId]">
-				<textoffsetx>70</textoffsetx>
-				<left>-30</left>
+				<left>40</left>
 				<top>0</top>
-				<width>$PARAM[DialogBackgroundWidth]</width>
+				<right>100</right>
 				<height>70</height>
 				<font>font32_title</font>
 				<label>$PARAM[DialogHeaderLabel]</label>
