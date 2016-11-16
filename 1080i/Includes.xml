@@ -1008,7 +1008,8 @@
 				<visible>Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + Visualisation.Enabled</visible>
 			</control>
 			<control type="group">
-				<animation effect="zoom" center="width_center,540" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
+				<include>FullScreenDimensions</include>
+				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 				<control type="image">
 					<depth>DepthBackground</depth>
 					<include>FullScreenDimensions</include>
@@ -1034,7 +1035,7 @@
 					<control type="image">
 						<left>-3</left>
 						<top>0</top>
-						<width>list_width</width>
+						<right>1187</right>
 						<height>100%</height>
 						<aspectratio aligny="center">scale</aspectratio>
 						<fadetime>400</fadetime>
