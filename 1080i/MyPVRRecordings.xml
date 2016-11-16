@@ -48,7 +48,7 @@
 							<width>980</width>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
@@ -78,7 +78,7 @@
 							<height>80</height>
 							<width>980</width>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
