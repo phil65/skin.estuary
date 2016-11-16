@@ -284,7 +284,8 @@
 			</control>
 			<control type="group">
 				<depth>DepthContentPanel</depth>
-				<left>1050</left>
+				<width>870</width>
+				<right>0</right>
 				<include>OpenClose_Right</include>
 				<control type="image">
 					<left>-68</left>
@@ -400,7 +401,7 @@
 			<control type="textbox">
 				<top>980</top>
 				<width>800</width>
-				<left>1080</left>
+				<right>40</right>
 				<height>262</height>
 				<font>font13</font>
 				<align>right</align>

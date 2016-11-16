@@ -45,9 +45,8 @@
 		<param name="group_label2">$INFO[Control.GetLabel(29)]</param>
 		<definition>
 			<control type="button" id="28">
-				<left>-1000</left>
 				<label></label>
-				<height>1</height>
+				<include>HiddenObject</include>
 			</control>
 			<control type="grouplist" id="9000">
 				<top>130</top>
