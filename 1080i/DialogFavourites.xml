@@ -1,74 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol always="true">450</defaultcontrol>
-	<coordinates>
-		<left>160</left>
-		<top>130</top>
-	</coordinates>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
-		<include content="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1600" />
-			<param name="DialogBackgroundHeight" value="820" />
-			<param name="DialogHeaderLabel" value="$LOCALIZE[1036]" />
-			<param name="DialogHeaderId" value="2" />
-		</include>
-		<include content="UpDownArrows">
-			<param name="container_id" value="450" />
-			<param name="posx" value="726" />
-			<param name="up_posy" value="-40" />
-			<param name="down_posy" value="820" />
-		</include>
-		<control type="scrollbar" id="60">
-			<left>1465</left>
-			<top>100</top>
-			<width>12</width>
-			<height>670</height>
-			<onleft>450</onleft>
-			<onright>450</onright>
-			<orientation>vertical</orientation>
-		</control>
-		<control type="panel" id="450">
-			<left>35</left>
-			<top>100</top>
+		<control type="group">
+			<top>130</top>
+			<centerleft>50%</centerleft>
 			<width>1600</width>
-			<height>706</height>
-			<onleft>60</onleft>
-			<onright>60</onright>
-			<onup>450</onup>
-			<ondown>450</ondown>
-			<preloaditems>2</preloaditems>
-			<pagecontrol>60</pagecontrol>
-			<scrolltime tween="sine">200</scrolltime>
-			<orientation>vertical</orientation>
-			<itemlayout width="300" height="350">
-				<include content="InfoWallMusicLayout">
-					<param name="fallback_image" value="DefaultFavourites.png" />
-				</include>
-			</itemlayout>
-			<focusedlayout width="300" height="350">
-				<include content="InfoWallMusicLayout">
-					<param name="fallback_image" value="DefaultFavourites.png" />
-				</include>
-				<control type="image">
-					<left>16</left>
-					<top>5</top>
-					<width>283</width>
-					<height>348</height>
-					<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-				</control>
-			</focusedlayout>
-		</control>
-		<control type="textbox">
-			<left>300</left>
-			<top>200</top>
-			<width>900</width>
-			<height>300</height>
-			<aligny>center</aligny>
-			<align>center</align>
-			<label>$LOCALIZE[31025]</label>
-			<font>font30_title</font>
-			<visible>Integer.IsEqual(Container(450).NumItems,0)</visible>
+			<include content="DialogBackgroundCommons">
+				<param name="DialogBackgroundWidth" value="1600" />
+				<param name="DialogBackgroundHeight" value="820" />
+				<param name="DialogHeaderLabel" value="$LOCALIZE[1036]" />
+				<param name="DialogHeaderId" value="2" />
+			</include>
+			<include content="UpDownArrows">
+				<param name="container_id" value="450" />
+				<param name="posx" value="726" />
+				<param name="up_posy" value="-40" />
+				<param name="down_posy" value="820" />
+			</include>
+			<control type="scrollbar" id="60">
+				<left>1465</left>
+				<top>100</top>
+				<width>12</width>
+				<height>670</height>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<orientation>vertical</orientation>
+			</control>
+			<control type="panel" id="450">
+				<left>35</left>
+				<top>100</top>
+				<width>1600</width>
+				<height>706</height>
+				<onleft>60</onleft>
+				<onright>60</onright>
+				<onup>450</onup>
+				<ondown>450</ondown>
+				<preloaditems>2</preloaditems>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime tween="sine">200</scrolltime>
+				<orientation>vertical</orientation>
+				<itemlayout width="300" height="350">
+					<include content="InfoWallMusicLayout">
+						<param name="fallback_image" value="DefaultFavourites.png" />
+					</include>
+				</itemlayout>
+				<focusedlayout width="300" height="350">
+					<include content="InfoWallMusicLayout">
+						<param name="fallback_image" value="DefaultFavourites.png" />
+					</include>
+					<control type="image">
+						<left>16</left>
+						<top>5</top>
+						<width>283</width>
+						<height>348</height>
+						<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="textbox">
+				<left>300</left>
+				<top>200</top>
+				<width>900</width>
+				<height>300</height>
+				<aligny>center</aligny>
+				<align>center</align>
+				<label>$LOCALIZE[31025]</label>
+				<font>font30_title</font>
+				<visible>Integer.IsEqual(Container(450).NumItems,0)</visible>
+			</control>
 		</control>
 	</controls>
 </window>
