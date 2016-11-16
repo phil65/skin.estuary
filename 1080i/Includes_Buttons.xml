@@ -149,7 +149,7 @@
 		<param name="visible">true</param>
 		<definition>
 			<control type="radiobutton" id="$PARAM[control_id]">
-				<width>118</width>
+				<width>110</width>
 				<height>$PARAM[height]</height>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -158,7 +158,7 @@
 				<label>$PARAM[label]</label>
 				<texturefocus colordiffuse="button_focus">buttons/keyboardbutton-fo.png</texturefocus>
 				<texturenofocus></texturenofocus>
-				<radioposx>38</radioposx>
+				<radioposx>35</radioposx>
 				<radioposy>0</radioposy>
 				<radiowidth>40</radiowidth>
 				<radioheight>40</radioheight>
