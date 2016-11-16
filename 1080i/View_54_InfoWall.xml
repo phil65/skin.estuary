@@ -41,34 +41,34 @@
 		<param name="label">$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</param>
 		<definition>
 			<control type="image">
-				<top>-10</top>
+				<top>0</top>
 				<width>316</width>
-				<height>380</height>
+				<height>386</height>
 				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<left>18</left>
-				<top>7</top>
-				<width>280</width>
-				<height>280</height>
+				<left>0</left>
+				<top>0</top>
+				<width>316</width>
+				<height>316</height>
 				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>keep</aspectratio>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>280</top>
+				<top>296</top>
 				<width>276</width>
 				<height>70</height>
-				<texture>colors/black.png</texture>
+				<texture colordiffuse="4DFFFFFF">colors/black.png</texture>
 			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>268</top>
+				<top>290</top>
 				<width>262</width>
-				<height>90</height>
+				<height>80</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -167,7 +167,6 @@
 				</itemlayout>
 				<focusedlayout height="445" width="320" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
-
 						<left>224</left>
 						<top>498</top>
 						<width>32</width>
@@ -213,15 +212,15 @@
 				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="250,330">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="250,330">UnFocus</animation>
+						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="250,350">Focus</animation>
+						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="250,350">UnFocus</animation>
 						<top>150</top>
 						<left>90</left>
 						<include>InfoWallMusicLayout</include>
 						<control type="image">
 							<left>16</left>
-							<top>6</top>
-							<width>284</width>
+							<top>20</top>
+							<width>283</width>
 							<height>348</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
