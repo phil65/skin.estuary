@@ -34,7 +34,7 @@
 				<control type="image">
 					<left>400</left>
 					<top>-240</top>
-					<width>1500</width>
+					<right>20</right>
 					<height>350</height>
 					<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
@@ -43,7 +43,7 @@
 				<control type="textbox">
 					<left>443</left>
 					<top>-207</top>
-					<width>1400</width>
+					<right>80</right>
 					<height>290</height>
 					<label fallback="416">$VAR[FullScreenInfoTextBoxVar]</label>
 					<align>justify</align>
