@@ -180,7 +180,7 @@
 			<width>150</width>
 			<height>100</height>
 			<aspectratio>keep</aspectratio>
-			<texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Icon]</texture>
+			<texture fallback="DefaultTVShows.png">$INFO[Listitem.Icon]</texture>
 			<fadetime>200</fadetime>
 		</control>
 		<control type="label">
