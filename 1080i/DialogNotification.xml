@@ -5,7 +5,8 @@
 		<control type="group">
 			<depth>DepthMax</depth>
 			<top>945</top>
-			<left>640</left>
+			<centerleft>50%</centerleft>
+			<width>640</width>
 			<animation effect="slide" end="600,-850" time="500" tween="sine" easing="inout" condition="Window.IsActive(fullscreenvideo)">conditional</animation>
 			<include>Animation_DialogPopupOpenClose</include>
 			<visible>String.IsEmpty(Window(Home).Property(script.cinemavision.running))</visible>
