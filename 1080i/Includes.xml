@@ -799,10 +799,10 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="button" id="22001">
-				<left>-1920</left>
-				<top>-1080</top>
-				<width>5760</width>
-				<height>3240</height>
+				<left>-100%</left>
+				<top>-100%</top>
+				<width>300%</width>
+				<height>300%</height>
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
 				<onclick>Action(close)</onclick>
@@ -811,7 +811,7 @@
 				<description>button overlay to avoid closing in dialog area</description>
 				<left>0</left>
 				<top>0</top>
-				<width>$PARAM[DialogBackgroundWidth]</width>
+				<right>0</right>
 				<height>$PARAM[DialogBackgroundHeight]</height>
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
