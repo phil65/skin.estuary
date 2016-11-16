@@ -5,7 +5,7 @@
 		<include>DefaultBackground</include>
 		<control type="image">
 			<description>Dialog Header image</description>
-			<left>926</left>
+			<centerleft>50%</centerleft>
 			<top>495</top>
 			<width>68</width>
 			<height>68</height>
@@ -46,7 +46,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>1102</left>
+			<width>818</width>
+			<right>0</right>
 			<include>OpenClose_Right</include>
 			<control type="image">
 				<left>-20</left>
