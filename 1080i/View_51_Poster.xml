@@ -150,7 +150,7 @@
 					<control type="label">
 						<left>695</left>
 						<top>400</top>
-						<width>1160</width>
+						<right>115</right>
 						<height>40</height>
 						<label>$INFO[ListItem.Label]$VAR[ListSubLabelVar]</label>
 						<font>font45_title</font>
@@ -161,7 +161,7 @@
 						<top>480</top>
 						<height>250</height>
 						<font>font13</font>
-						<width>1160</width>
+						<right>115</right>
 						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$INFO[ListItem.Plot]</label>
 						<shadowcolor>text_shadow</shadowcolor>
