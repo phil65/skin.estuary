@@ -22,14 +22,14 @@
 			<control type="image">
 				<description>Dialog Header image</description>
 				<top>160</top>
-				<width>1448</width>
+				<right>0</right>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
 				<top>943</top>
-				<width>1448</width>
+				<right>0</right>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
 			</control>
@@ -37,7 +37,7 @@
 				<top>163</top>
 				<left>30</left>
 				<visible>Container(9000).Hasfocus(2)</visible>
-				<width>1450</width>
+				<right>0</right>
 				<height>780</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -160,7 +160,7 @@
 			</control>
 			<control type="grouplist" id="9001">
 				<visible>Container(9000).Hasfocus(1)</visible>
-				<width>1450</width>
+				<right>0</right>
 				<height>735</height>
 				<top>163</top>
 				<onleft>9000</onleft>
@@ -170,13 +170,11 @@
 				<control type="radiobutton" id="4">
 					<label>$LOCALIZE[31057]</label>
 					<include>DefaultSettingButton</include>
-					<width>1450</width>
 				</control>
 				<control type="button" id="5">
 					<label>$LOCALIZE[31058]</label>
 					<label2>[B]$INFO[System.ProfileAutoLogin][/B]</label2>
 					<include>DefaultSettingButton</include>
-					<width>1450</width>
 					<enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
 				</control>
 			</control>
