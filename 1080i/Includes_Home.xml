@@ -58,7 +58,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>widget_width</width>
+					<right>0</right>
 					<height>500</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
@@ -207,7 +207,7 @@
 				<control type="multiimage">
 					<top>0</top>
 					<left>442</left>
-					<width>widget_width</width>
+					<right>0</right>
 					<height>100%</height>
 					<aspectratio>scale</aspectratio>
 					<imagepath colordiffuse="33FFFFFF">$PARAM[image_path]</imagepath>
@@ -283,7 +283,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>widget_width</width>
+					<right>0</right>
 					<height>400</height>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
@@ -429,7 +429,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>widget_width</width>
+					<right>0</right>
 					<height>500</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
@@ -594,7 +594,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>widget_width</width>
+					<right>0</right>
 					<height>350</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
@@ -773,7 +773,7 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>442</left>
 					<top>120</top>
-					<width>widget_width</width>
+					<right>0</right>
 					<height>400</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
@@ -903,7 +903,6 @@
 	</include>
 	<include name="WeatherWidget">
 		<param name="left">442</param>
-		<param name="width">widget_width</param>
 		<definition>
 			<control type="group">
 				<description>Square Weather Widget including header</description>
@@ -924,14 +923,14 @@
 				<control type="panel" id="$PARAM[list_id]">
 					<left>$PARAM[left]</left>
 					<top>120</top>
-					<width>$PARAM[width]</width>
+					<right>0</right>
 					<height>400</height>
 					<include content="WidgetListCommon">
 						<param name="list_id" value="$PARAM[list_id]"/>
 					</include>
 					<onup>$PARAM[onup_id]</onup>
 					<ondown>$PARAM[ondown_id]</ondown>
-					<itemlayout width="260" height="400">
+					<itemlayout width="263" height="400">
 						<control type="group">
 							<left>70</left>
 							<control type="image">
@@ -975,7 +974,7 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout width="260" height="400">
+					<focusedlayout width="263" height="400">
 						<control type="group">
 							<left>70</left>
 							<depth>DepthContentPopout</depth>

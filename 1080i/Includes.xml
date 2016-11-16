@@ -536,7 +536,7 @@
 					<control type="panel" id="$PARAM[group_id]50">
 						<left>540</left>
 						<top>0</top>
-						<width>widget_width</width>
+						<right>50</right>
 						<height>1200</height>
 						<onleft>9000</onleft>
 						<onright>$PARAM[group_id]30</onright>
