@@ -6,12 +6,12 @@
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
 		<control type="group">
-			<top>800</top>
+			<top>830</top>
 			<control type="image">
 				<left>10</left>
 				<top>-240</top>
-				<width>1902</width>
-				<height>400</height>
+				<right>10</right>
+				<height>370</height>
 				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="grouplist">
