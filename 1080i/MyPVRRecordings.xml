@@ -11,9 +11,9 @@
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<control type="fixedlist" id="50">
-					<left>2</left>
-					<top>3</top>
-					<width>1046</width>
+					<left>0</left>
+					<top>0</top>
+					<right>778</right>
 					<height>100%</height>
 					<onleft>9000</onleft>
 					<onright>73</onright>
@@ -24,74 +24,76 @@
 					<pagecontrol>73</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<focusedlayout height="80">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1050</width>
-							<height>80</height>
-							<texture colordiffuse="button_focus">lists/focus.png</texture>
-							<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
-						</control>
-						<control type="image">
-							<left>21</left>
-							<top>30</top>
-							<width>32</width>
-							<height>32</height>
-							<texture colordiffuse="white">$VAR[ListWatchedIconVar]</texture>
-							<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
-						</control>
-						<control type="label">
-							<left>60</left>
-							<textoffsetx>15</textoffsetx>
-							<top>0</top>
-							<height>80</height>
-							<width>980</width>
-							<aligny>center</aligny>
-							<scroll>true</scroll>
-							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<textoffsetx>15</textoffsetx>
-							<top>0</top>
-							<height>80</height>
-							<width>1050</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font13</font>
-							<label>$INFO[ListItem.Label2]</label>
-							<textcolor>white</textcolor>
+						<control type="group">
+							<width>tvrecordings_width</width>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<height>80</height>
+								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(50)">Conditional</animation>
+							</control>
+							<control type="image">
+								<left>21</left>
+								<top>30</top>
+								<width>32</width>
+								<height>32</height>
+								<texture colordiffuse="white">$VAR[ListWatchedIconVar]</texture>
+								<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
+							</control>
+							<control type="label">
+								<left>75</left>
+								<top>0</top>
+								<height>80</height>
+								<right>30</right>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							</control>
+							<control type="label">
+								<left>15</left>
+								<top>0</top>
+								<height>80</height>
+								<right>20</right>
+								<align>right</align>
+								<aligny>center</aligny>
+								<font>font13</font>
+								<label>$INFO[ListItem.Label2]</label>
+								<textcolor>white</textcolor>
+							</control>
 						</control>
 					</focusedlayout>
 					<itemlayout height="80">
-						<control type="image">
-							<left>21</left>
-							<top>30</top>
-							<width>32</width>
-							<height>32</height>
-							<texture>$VAR[ListWatchedIconVar]</texture>
-						</control>
-						<control type="label">
-							<left>60</left>
-							<textoffsetx>15</textoffsetx>
-							<top>0</top>
-							<height>80</height>
-							<width>980</width>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<textoffsetx>15</textoffsetx>
-							<top>0</top>
-							<height>80</height>
-							<width>1050</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font13</font>
-							<label>$INFO[ListItem.Label2]</label>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
+						<control type="group">
+							<width>tvrecordings_width</width>
+							<control type="image">
+								<left>21</left>
+								<top>30</top>
+								<width>32</width>
+								<height>32</height>
+								<texture>$VAR[ListWatchedIconVar]</texture>
+							</control>
+							<control type="label">
+								<left>75</left>
+								<top>0</top>
+								<height>80</height>
+								<right>30</right>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							</control>
+							<control type="label">
+								<left>15</left>
+								<top>0</top>
+								<height>80</height>
+								<right>20</right>
+								<align>right</align>
+								<aligny>center</aligny>
+								<font>font13</font>
+								<label>$INFO[ListItem.Label2]</label>
+								<textcolor>grey</textcolor>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
 						</control>
 					</itemlayout>
 				</control>
@@ -122,11 +124,10 @@
 					<top>180</top>
 					<control type="label">
 						<left>170</left>
-						<top>60</top>
+						<top>57</top>
 						<width>560</width>
 						<height>262</height>
 						<align>left</align>
-						<font>font27</font>
 						<wrapmultiline>true</wrapmultiline>
 						<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ][CR]$INFO[ListItem.Date,$LOCALIZE[552]: ]</label>
 					</control>
@@ -160,7 +161,6 @@
 						<top>240</top>
 						<width>750</width>
 						<height>70</height>
-						<font>font13</font>
 						<label>[I]$INFO[ListItem.EpisodeName][/I]</label>
 					</control>
 					<control type="textbox">
@@ -169,7 +169,6 @@
 						<height>526</height>
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
-						<font>font13</font>
 						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
 				</control>
