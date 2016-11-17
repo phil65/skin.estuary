@@ -490,6 +490,7 @@
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
+						<scroll>true</scroll>
 					</control>
 					<control type="label">
 						<left>0</left>
