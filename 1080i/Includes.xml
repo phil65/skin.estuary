@@ -1081,6 +1081,7 @@
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 						<visible>!Control.IsVisible(66000)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 				</control>
 				<control type="group" id="66000">
