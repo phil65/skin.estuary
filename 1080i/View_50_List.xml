@@ -158,7 +158,9 @@
 			<control type="group">
 				<depth>DepthContentPanel</depth>
 				<include content="ContentPanel">
+					<param name="left" value="-20" />
 					<param name="width" value="654" />
+					<param name="flipx" value="flip_bg" />
 				</include>
 				<control type="image">
 					<left>30</left>
