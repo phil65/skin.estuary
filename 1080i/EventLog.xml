@@ -7,11 +7,10 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
-				<left>300</left>
 				<visible>Control.IsVisible(50)</visible>
 				<include>OpenClose_Right</include>
 				<control type="fixedlist" id="50">
-					<left>190</left>
+					<left>490</left>
 					<top>0</top>
 					<right>0</right>
 					<height>100%</height>
@@ -24,96 +23,102 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="141" width="1260">
-						<control type="image">
-							<left>10</left>
-							<top>10</top>
-							<width>120</width>
-							<height>120</height>
-							<texture border="4" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
-							<aspectratio>scale</aspectratio>
-							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-							<bordersize>4</bordersize>
-						</control>
-						<control type="label">
-							<left>160</left>
-							<top>10</top>
-							<width>870</width>
-							<height>35</height>
-							<aligny>center</aligny>
-							<font>font37</font>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="textbox">
-							<left>160</left>
-							<top>45</top>
-							<width>870</width>
-							<height>60</height>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<aligny>top</aligny>
-							<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>10</top>
-							<width>1400</width>
-							<height>35</height>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label2]</label>
+					<itemlayout height="141" width="eventloglist_width">
+						<control type="group">
+							<width>eventloglist_width</width>
+							<control type="image">
+								<left>10</left>
+								<top>10</top>
+								<width>120</width>
+								<height>120</height>
+								<texture border="4" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
+								<aspectratio>scale</aspectratio>
+								<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+								<bordersize>4</bordersize>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<right>400</right>
+								<top>10</top>
+								<height>35</height>
+								<aligny>center</aligny>
+								<font>font37</font>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="textbox">
+								<left>160</left>
+								<top>45</top>
+								<right>20</right>
+								<height>60</height>
+								<font>font13</font>
+								<textcolor>white</textcolor>
+								<aligny>top</aligny>
+								<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
+							</control>
+							<control type="label">
+								<left>0</left>
+								<right>30</right>
+								<top>10</top>
+								<height>35</height>
+								<font>font13</font>
+								<textcolor>white</textcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout height="141" width="1260">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1430</width>
-							<height>141</height>
-							<texture colordiffuse="button_focus">lists/focus.png</texture>
-							<visible>Control.HasFocus(50)</visible>
-						</control>
-						<control type="image">
-							<left>10</left>
-							<top>10</top>
-							<width>120</width>
-							<height>120</height>
-							<texture border="4" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
-							<aspectratio>scale</aspectratio>
-							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-							<bordersize>4</bordersize>
-						</control>
-						<control type="label">
-							<left>160</left>
-							<top>10</top>
-							<width>870</width>
-							<height>35</height>
-							<aligny>center</aligny>
-							<font>font37</font>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="textbox">
-							<left>160</left>
-							<top>45</top>
-							<width>870</width>
-							<height>60</height>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<aligny>top</aligny>
-							<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>10</top>
-							<width>1400</width>
-							<height>35</height>
-							<font>font13</font>
-							<textcolor>white</textcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label2]</label>
+					<focusedlayout height="141" width="eventloglist_width">
+						<control type="group">
+							<width>eventloglist_width</width>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>eventloglist_width</width>
+								<height>141</height>
+								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<visible>Control.HasFocus(50)</visible>
+							</control>
+							<control type="image">
+								<left>10</left>
+								<top>10</top>
+								<width>120</width>
+								<height>120</height>
+								<texture border="4" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
+								<aspectratio>scale</aspectratio>
+								<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+								<bordersize>4</bordersize>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<right>400</right>
+								<top>10</top>
+								<height>35</height>
+								<aligny>center</aligny>
+								<font>font37</font>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="textbox">
+								<left>160</left>
+								<top>45</top>
+								<right>20</right>
+								<height>60</height>
+								<font>font13</font>
+								<textcolor>white</textcolor>
+								<aligny>top</aligny>
+								<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
+							</control>
+							<control type="label">
+								<left>0</left>
+								<right>30</right>
+								<top>10</top>
+								<height>35</height>
+								<font>font13</font>
+								<textcolor>white</textcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
 						</control>
 					</focusedlayout>
 				</control>
@@ -177,6 +182,7 @@
 						<top>0</top>
 						<width>340</width>
 						<height>360</height>
+						<fadetime>300</fadetime>
 						<aspectratio aligny="bottom">keep</aspectratio>
 						<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="20">overlays/shadow.png</bordertexture>
@@ -192,6 +198,7 @@
 				<onleft>50</onleft>
 				<onright>9000</onright>
 				<orientation>vertical</orientation>
+				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 				<visible>Control.IsVisible(50)</visible>
 			</control>
 		</control>
