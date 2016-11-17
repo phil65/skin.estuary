@@ -923,48 +923,6 @@
 					<itemgap>10</itemgap>
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
-					<control type="group">
-						<width>600</width>
-						<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
-						<animation effect="fade" time="200">VisibleChange</animation>
-						<control type="grouplist">
-							<left>-75</left>
-							<orientation>horizontal</orientation>
-							<height>38</height>
-							<top>14</top>
-							<align>right</align>
-							<width>660</width>
-							<itemgap>5</itemgap>
-							<usecontrolcoords>true</usecontrolcoords>
-<!-- 							<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
- -->
-							<control type="image">
-								<top>8</top>
-								<width>28</width>
-								<height>26</height>
-								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="button_focus">$VAR[NowPlayingIconVar]</texture>
-							</control>
-							<control type="label">
-								<label>$INFO[Player.Title]</label>
-								<font>font27</font>
-								<shadowcolor>text_shadow</shadowcolor>
-								<height>35</height>
-								<width min="1" max="602">auto</width>
-							</control>
-						</control>
-						<control type="label" id="7700">
-							<label>$VAR[NowPlayingSublabelVar]</label>
-							<left>-45</left>
-							<top>44</top>
-							<font>font12</font>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-							<height>25</height>
-							<width>630</width>
-							<align>right</align>
-						</control>
-					</control>
 					<control type="label">
 						<font>font_clock</font>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -1106,7 +1064,7 @@
 						<onclick>SetFocus(9000)</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
-						</control>
+						<visible>!Control.IsVisible(66000)</visible>
 					</control>
 				</control>
 				<control type="label" id="23000">
@@ -1124,6 +1082,50 @@
 					<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
 					<animation effect="fade" start="0" end="100" time="200" reversible="true">VisibleChange</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				</control>
+				<control type="group" id="66000">
+					<top>995</top>
+					<width>600</width>
+					<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<animation effect="slide" start="0,0" end="-50,0" time="300" condition="$EXP[sidebar_focused]">conditional</animation>
+					<control type="grouplist">
+						<left>70</left>
+						<orientation>horizontal</orientation>
+						<height>38</height>
+						<top>14</top>
+						<align>left</align>
+						<width>660</width>
+						<itemgap>5</itemgap>
+						<usecontrolcoords>true</usecontrolcoords>
+						<!-- 							<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
+												 -->
+						<control type="image">
+							<top>8</top>
+							<width>28</width>
+							<height>26</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="button_focus">$VAR[NowPlayingIconVar]</texture>
+						</control>
+						<control type="label">
+							<label>$INFO[Player.Title]</label>
+							<font>font27</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<height>35</height>
+							<width min="1" max="602">auto</width>
+						</control>
+					</control>
+					<control type="label" id="7700">
+						<label>$VAR[NowPlayingSublabelVar]</label>
+						<left>70</left>
+						<top>44</top>
+						<font>font12</font>
+						<textcolor>grey</textcolor>
+						<shadowcolor>text_shadow</shadowcolor>
+						<height>25</height>
+						<width>630</width>
+						<align>left</align>
+					</control>
 				</control>
 			</control>
 		</definition>
