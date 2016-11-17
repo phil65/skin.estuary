@@ -306,6 +306,7 @@
 				<param name="control_id" value="14102" />
 				<param name="height" value="95" />
 				<param name="onclick" value="Stop" />
+				<param name="onclick_2" value="SetFocus(50)" />
 				<param name="icon" value="icons/now-playing/stop.png" />
 			</include>
 			<include content="BottomMainMenuItem">

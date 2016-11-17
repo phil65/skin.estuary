@@ -154,6 +154,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<onclick>$PARAM[onclick]</onclick>
+				<onclick>$PARAM[onclick_2]</onclick>
 				<font></font>
 				<label>$PARAM[label]</label>
 				<texturefocus colordiffuse="button_focus">buttons/keyboardbutton-fo.png</texturefocus>
