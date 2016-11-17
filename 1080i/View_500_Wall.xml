@@ -74,7 +74,7 @@
 				<itemlayout height="400" width="300" condition="Container.Content(episodes)">
 					<control type="image">
 						<left>144</left>
-						<top>500</top>
+						<top>516</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>$VAR[WallWatchedIconVar]</texture>
@@ -89,26 +89,26 @@
 				<focusedlayout height="400" width="300" condition="Container.Content(episodes)">
 					<control type="image">
 						<left>144</left>
-						<top>500</top>
+						<top>516</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>$VAR[WallWatchedIconVar]</texture>
-						<animation effect="slide" end="0,30" time="200" tween="sine" easing="inout">Focus</animation>
-						<animation effect="slide" start="0,30" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
+						<animation effect="slide" end="0,16" time="200" tween="sine" easing="inout">Focus</animation>
+						<animation effect="slide" start="0,16" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
 					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="160,300">UnFocus</animation>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="160,380">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="160,380">UnFocus</animation>
 						<top>150</top>
 						<include content="InfoWallMusicLayout">
 							<param name="label" value="$INFO[ListItem.Label]" />
 						</include>
 						<control type="image">
-							<left>15</left>
-							<top>8</top>
-							<width>286</width>
-							<height>346</height>
+							<left>20</left>
+							<top>20</top>
+							<width>276</width>
+							<height>347</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
@@ -151,16 +151,16 @@
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<top>150</top>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="140,300">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="140,300">UnFocus</animation>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="140,350">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="140,350">UnFocus</animation>
 						<include content="InfoWallMusicLayout">
 							<param name="fallback_image" value="DefaultMusicSongs.png" />
 						</include>
 						<control type="image">
-							<left>15</left>
-							<top>6</top>
-							<width>284</width>
-							<height>348</height>
+							<left>20</left>
+							<top>20</top>
+							<width>276</width>
+							<height>347</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
@@ -178,16 +178,16 @@
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<top>150</top>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="150,320">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="150,320">UnFocus</animation>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="150,350">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="150,350">UnFocus</animation>
 						<include content="InfoWallMusicLayout">
 							<param name="fallback_image" value="DefaultAddon.png" />
 						</include>
 						<control type="image">
-							<left>16</left>
-							<top>8</top>
-							<width>282</width>
-							<height>344</height>
+							<left>20</left>
+							<top>20</top>
+							<width>276</width>
+							<height>347</height>
 							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
