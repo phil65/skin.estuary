@@ -943,6 +943,22 @@
 					<align>right</align>
 					<visible>System.HasAlarm(shutdowntimer)</visible>
 				</control>
+				<control type="label" id="23000">
+					<top>0</top>
+					<left>0</left>
+					<label>$INFO[ListItem.SortLetter]</label>
+					<font>font_MainMenu</font>
+					<width>100%</width>
+					<height>80</height>
+					<align>center</align>
+					<textcolor>white</textcolor>
+					<visible>!System.HasModalDialog</visible>
+					<visible>Container.Scrolling</visible>
+					<visible>!Container.Content(seasons)</visible>
+					<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
+					<animation effect="fade" start="0" end="100" time="200" reversible="true">VisibleChange</animation>
+					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				</control>
 			</control>
 		</definition>
 	</include>
@@ -1066,22 +1082,6 @@
 						<texturenofocus></texturenofocus>
 						<visible>!Control.IsVisible(66000)</visible>
 					</control>
-				</control>
-				<control type="label" id="23000">
-					<top>0</top>
-					<left>0</left>
-					<label>$INFO[ListItem.SortLetter]</label>
-					<font>font_MainMenu</font>
-					<width>100%</width>
-					<height>80</height>
-					<align>center</align>
-					<textcolor>white</textcolor>
-					<visible>!System.HasModalDialog</visible>
-					<visible>Container.Scrolling</visible>
-					<visible>!Container.Content(seasons)</visible>
-					<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
-					<animation effect="fade" start="0" end="100" time="200" reversible="true">VisibleChange</animation>
-					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
 				<control type="group" id="66000">
 					<top>995</top>
