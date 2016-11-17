@@ -478,6 +478,7 @@
 						<width>$PARAM[width]</width>
 						<aligny>center</aligny>
 						<font>font13</font>
+						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -1252,7 +1253,7 @@
 		<param name="flipx">false</param>
 		<definition>
 			<control type="image">
-				<texture colordiffuse="panel" flipx="$PARAM[flipx]">lists/panel.png</texture>
+				<texture flipx="$PARAM[flipx]">lists/panel.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<width>$PARAM[width]</width>
