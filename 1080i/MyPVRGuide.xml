@@ -171,8 +171,6 @@
 				</control>
 				<control type="group">
 					<top>630</top>
-					<centerleft>50%</centerleft>
-					<width>1920</width>
 					<control type="image" id="82">
 						<width>450</width>
 						<height>240</height>
@@ -190,24 +188,23 @@
 						<texture>$INFO[Container(10).ListItem.Icon]</texture>
 						<visible>!Control.IsVisible(82)</visible>
 					</control>
-					<control type="group">
-						<left>300</left>
+					<control type="label">
 						<top>-9</top>
-						<control type="label">
-							<width>1550</width>
-							<height>30</height>
-							<textcolor>button_focus</textcolor>
-							<font>font13</font>
-							<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.EpgEventTitle,  [COLOR grey],[/COLOR]]$INFO[ListItem.EpisodeName, [COLOR grey](,)[/COLOR]]$INFO[ListItem.Genre,      $LOCALIZE[515]: [COLOR grey],[/COLOR]]</label>
-						</control>
-						<control type="textbox">
-							<top>38</top>
-							<width>1550</width>
-							<height>179</height>
-							<font>font13</font>
-							<label>$INFO[ListItem.Plot]</label>
-							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-						</control>
+						<left>300</left>
+						<right>60</right>
+						<height>30</height>
+						<textcolor>button_focus</textcolor>
+						<font>font13</font>
+						<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.EpgEventTitle,  [COLOR grey],[/COLOR]]$INFO[ListItem.EpisodeName, [COLOR grey](,)[/COLOR]]$INFO[ListItem.Genre,      $LOCALIZE[515]: [COLOR grey],[/COLOR]]</label>
+					</control>
+					<control type="textbox">
+						<left>300</left>
+						<top>38</top>
+						<right>60</right>
+						<height>179</height>
+						<font>font13</font>
+						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 				</control>
 			</control>
