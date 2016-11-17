@@ -1071,42 +1071,41 @@
 					<animation effect="fade" time="400">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-					<top>1005</top>
-					<control type="group">
-						<visible>!$EXP[sidebar_focused]</visible>
-						<control type="button">
-							<top>10</top>
-							<left>12</left>
-							<width>36</width>
-							<height>36</height>
-							<animation effect="rotate" end="-90" center="30,28" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53)">Conditional</animation>
-							<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
-							<texturenofocus colordiffuse="FFCCCCCC">frame/menu-nofo.png</texturenofocus>
-							<animation effect="fade" time="200">VisibleChange</animation>
-							<onclick>SetFocus(9000)</onclick>
-							<visible>!Control.IsVisible(6160)</visible>
-						</control>
-						<control type="button" id="6160">
-							<top>10</top>
-							<left>12</left>
-							<width>36</width>
-							<height>36</height>
-							<texturefocus colordiffuse="button_focus">icons/menu.png</texturefocus>
-							<texturenofocus colordiffuse="FFCCCCCC">icons/menu.png</texturenofocus>
-							<animation effect="fade" time="200">VisibleChange</animation>
-							<onclick>SetFocus(9000)</onclick>
-							<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
-						</control>
-						<control type="button">
-							<top>6</top>
-							<left>64</left>
-							<width>300</width>
-							<height>44</height>
-							<shadowcolor>text_shadow</shadowcolor>
-							<label>$LOCALIZE[33063]</label>
-							<onclick>SetFocus(9000)</onclick>
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
+					<top>1015</top>
+					<visible>!$EXP[sidebar_focused]</visible>
+					<control type="button">
+						<top>10</top>
+						<left>12</left>
+						<width>36</width>
+						<height>36</height>
+						<animation effect="rotate" end="-90" center="30,28" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53)">Conditional</animation>
+						<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
+						<texturenofocus colordiffuse="FFCCCCCC">frame/menu-nofo.png</texturenofocus>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<onclick>SetFocus(9000)</onclick>
+						<visible>!Control.IsVisible(6160)</visible>
+					</control>
+					<control type="button" id="6160">
+						<top>10</top>
+						<left>12</left>
+						<width>36</width>
+						<height>36</height>
+						<texturefocus colordiffuse="button_focus">icons/menu.png</texturefocus>
+						<texturenofocus colordiffuse="FFCCCCCC">icons/menu.png</texturenofocus>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<onclick>SetFocus(9000)</onclick>
+						<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
+					</control>
+					<control type="button">
+						<top>6</top>
+						<left>64</left>
+						<width>300</width>
+						<height>44</height>
+						<shadowcolor>text_shadow</shadowcolor>
+						<label>$LOCALIZE[33063]</label>
+						<onclick>SetFocus(9000)</onclick>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 						</control>
 					</control>
 				</control>
