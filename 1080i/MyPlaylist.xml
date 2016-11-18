@@ -12,7 +12,7 @@
 				<control type="fixedlist" id="50">
 					<left>402</left>
 					<top>3</top>
-					<width>924</width>
+					<right>594</right>
 					<height>100%</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>vertical</orientation>
@@ -26,54 +26,60 @@
 					<viewtype label="List">list</viewtype>
 					<preloaditems>1</preloaditems>
 					<focusedlayout height="80" width="924">
-						<control type="image">
-							<left>0</left>
-							<width>924</width>
-							<height>80</height>
-							<texture colordiffuse="button_focus">lists/focus.png</texture>
-							<visible>Control.HasFocus(50)</visible>
-						</control>
-						<control type="label">
-							<textoffsetx>30</textoffsetx>
-							<height>80</height>
-							<width>924</width>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$INFO[ListItem.Label]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<textoffsetx>30</textoffsetx>
-							<height>80</height>
-							<width>924</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$VAR[PlaylistLabel2Var]</label>
-							<textcolor>white</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
+						<control type="group">
+							<width>playlistlist_width</width>
+							<control type="image">
+								<left>0</left>
+								<right>0</right>
+								<height>80</height>
+								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<visible>Control.HasFocus(50)</visible>
+							</control>
+							<control type="label">
+								<textoffsetx>30</textoffsetx>
+								<height>80</height>
+								<right>0</right>
+								<aligny>center</aligny>
+								<font>font12</font>
+								<label>$INFO[ListItem.Label]</label>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
+							<control type="label">
+								<textoffsetx>30</textoffsetx>
+								<height>80</height>
+								<right>0</right>
+								<align>right</align>
+								<aligny>center</aligny>
+								<font>font12</font>
+								<label>$VAR[PlaylistLabel2Var]</label>
+								<textcolor>white</textcolor>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
 						</control>
 					</focusedlayout>
 					<itemlayout height="80" width="924">
-						<control type="label">
-							<textoffsetx>30</textoffsetx>
-							<height>80</height>
-							<width>924</width>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$INFO[ListItem.TVShowtitle,,: ]$INFO[ListItem.Label]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<textoffsetx>30</textoffsetx>
-							<height>80</height>
-							<width>924</width>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<label>$VAR[PlaylistLabel2Var]</label>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
+						<control type="group">
+							<width>playlistlist_width</width>
+							<control type="label">
+								<textoffsetx>30</textoffsetx>
+								<height>80</height>
+								<right>0</right>
+								<aligny>center</aligny>
+								<font>font12</font>
+								<label>$INFO[ListItem.TVShowtitle,,: ]$INFO[ListItem.Label]</label>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
+							<control type="label">
+								<textoffsetx>30</textoffsetx>
+								<height>80</height>
+								<right>0</right>
+								<align>right</align>
+								<aligny>center</aligny>
+								<font>font12</font>
+								<label>$VAR[PlaylistLabel2Var]</label>
+								<textcolor>grey</textcolor>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
 						</control>
 					</itemlayout>
 				</control>
@@ -116,7 +122,8 @@
 			</control>
 			<control type="group">
 				<depth>DepthContentPanel</depth>
-				<left>1327</left>
+				<right>0</right>
+				<width>593</width>
 				<include>OpenClose_Right</include>
 				<include content="ListThumbInfoPanel">
 					<param name="flip_bg" value="true" />
