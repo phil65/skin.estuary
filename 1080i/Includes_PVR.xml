@@ -12,7 +12,6 @@
 				<height>70</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="label">
@@ -20,7 +19,6 @@
 				<height>70</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 				<label>: [COLOR white]$INFO[Container($PARAM[list_id]).Numitems][/COLOR]</label>
 			</control>
@@ -138,7 +136,6 @@
 			<width>820</width>
 			<height>625</height>
 			<align>left</align>
-			<font>font13</font>
 			<label>[B]$INFO[ListItem.EpisodeName,,[CR]][/B]$INFO[ListItem.Plot]</label>
 		</control>
 		<control type="textbox">
