@@ -50,7 +50,6 @@
 								<top>45</top>
 								<right>20</right>
 								<height>60</height>
-								<font>font13</font>
 								<textcolor>white</textcolor>
 								<aligny>top</aligny>
 								<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
@@ -60,7 +59,6 @@
 								<right>30</right>
 								<top>10</top>
 								<height>35</height>
-								<font>font13</font>
 								<textcolor>white</textcolor>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -103,7 +101,6 @@
 								<top>45</top>
 								<right>20</right>
 								<height>60</height>
-								<font>font13</font>
 								<textcolor>white</textcolor>
 								<aligny>top</aligny>
 								<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
@@ -113,7 +110,6 @@
 								<right>30</right>
 								<top>10</top>
 								<height>35</height>
-								<font>font13</font>
 								<textcolor>white</textcolor>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -144,7 +140,6 @@
 						<height>110</height>
 						<align>left</align>
 						<aligny>top</aligny>
-						<font>font13</font>
 						<textoffsetx>40</textoffsetx>
 						<texturenofocus></texturenofocus>
 						<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
@@ -165,7 +160,6 @@
 						<height>110</height>
 						<align>left</align>
 						<aligny>top</aligny>
-						<font>font13</font>
 						<texturenofocus></texturenofocus>
 						<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 						<textoffsetx>40</textoffsetx>

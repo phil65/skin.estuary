@@ -36,7 +36,6 @@
 						<height>80</height>
 						<width>80</width>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Year]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<visible>!Container.Content(episodes) + !Container.Content(movies)</visible>
@@ -55,7 +54,6 @@
 						<height>80</height>
 						<width>960</width>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -67,7 +65,6 @@
 						<width>widelist_width</width>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$VAR[ActorLabel2]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -98,7 +95,6 @@
 						<height>80</height>
 						<width>80</width>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Year]</label>
 						<textcolor>button_focus</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -118,7 +114,6 @@
 						<height>80</height>
 						<width>960</width>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -129,7 +124,6 @@
 						<width>widelist_width</width>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$VAR[ActorLabel2]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -164,7 +158,6 @@
 				<width>1200</width>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<font>font13</font>
 				<label>$INFO[ListItem.Label]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -175,7 +168,6 @@
 				<width>widelist_width</width>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<label>$INFO[ListItem.Label2]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -187,7 +179,6 @@
 				<height>80</height>
 				<width>1200</width>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<label>$INFO[ListItem.Label]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -198,7 +189,6 @@
 				<width>widelist_width</width>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<label>$INFO[ListItem.Label2]</label>
 				<textcolor>grey</textcolor>
 				<shadowcolor>text_shadow</shadowcolor>
@@ -229,7 +219,6 @@
 				<width>820</width>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<font>font13</font>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
@@ -258,7 +247,6 @@
 				<width>820</width>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
-				<font>font13</font>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">

@@ -29,7 +29,6 @@
 					<top>435</top>
 					<width>1050</width>
 					<height>365</height>
-					<font>font13</font>
 					<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR][/COLOR]$VAR[AddonNewsVar,[CR][CR]]</label>
 					<textcolor>button_focus</textcolor>
 					<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
@@ -246,16 +245,14 @@
 					<control type="label">
 						<width>470</width>
 						<height>40</height>
-						<font>font13</font>
-						<label>$INFO[ListItem.AddonSize,[COLOR button_focus]$LOCALIZE[22031]:[/COLOR] ,[CR]]</label>
+							<label>$INFO[ListItem.AddonSize,[COLOR button_focus]$LOCALIZE[22031]:[/COLOR] ,[CR]]</label>
 						<textcolor>white</textcolor>
 						<visible>!String.IsEmpty(ListItem.AddonSize)</visible>
 					</control>
 					<control type="label">
 						<width>470</width>
 						<height>40</height>
-						<font>font13</font>
-						<label>$INFO[ListItem.AddonOrigin,[COLOR button_focus]$LOCALIZE[31150]:[/COLOR] ]</label>
+							<label>$INFO[ListItem.AddonOrigin,[COLOR button_focus]$LOCALIZE[31150]:[/COLOR] ]</label>
 						<textcolor>white</textcolor>
 						<visible>!String.IsEmpty(ListItem.AddonOrigin)</visible>
 					</control>
@@ -266,7 +263,6 @@
 				<top>980</top>
 				<width>1620</width>
 				<height>82</height>
-				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>

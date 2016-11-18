@@ -211,7 +211,6 @@
 								<height>70</height>
 								<right>90</right>
 								<aligny>center</aligny>
-								<font>font13</font>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
@@ -221,7 +220,6 @@
 								<right>90</right>
 								<aligny>center</aligny>
 								<align>right</align>
-								<font>font13</font>
 								<label>$INFO[ListItem.Title]</label>
 							</control>
 							<control type="label">
@@ -262,7 +260,6 @@
 								<height>70</height>
 								<right>90</right>
 								<aligny>center</aligny>
-								<font>font13</font>
 								<label>$INFO[ListItem.Label]</label>
 								<shadowcolor>text_shadow</shadowcolor>
 							</control>
@@ -273,7 +270,6 @@
 								<right>90</right>
 								<aligny>center</aligny>
 								<align>right</align>
-								<font>font13</font>
 								<label>$INFO[ListItem.Title]</label>
 								<shadowcolor>text_shadow</shadowcolor>
 								<textcolor>button_focus</textcolor>
@@ -330,7 +326,6 @@
 						<top>82</top>
 						<width>560</width>
 						<height>262</height>
-						<font>font13</font>
 						<visible>!String.IsEqual(ListItem.StartTime,ListItem.EndTime)</visible>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
@@ -339,7 +334,6 @@
 						<width>520</width>
 						<height>262</height>
 						<align>right</align>
-						<font>font13</font>
 						<visible>!String.IsEqual(ListItem.StartTime,ListItem.EndTime)</visible>
 						<label>$INFO[ListItem.EndTime]</label>
 					</control>
@@ -356,7 +350,6 @@
 						<width>540</width>
 						<height>625</height>
 						<align>left</align>
-						<font>font13</font>
 						<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ]</label>
 					</control>
 					<control type="label">
@@ -364,7 +357,6 @@
 						<width>540</width>
 						<height>625</height>
 						<align>left</align>
-						<font>font13</font>
 						<label>[B]$INFO[ListItem.EpgEventTitle,,[CR]][/B]</label>
 					</control>
 				</control>
@@ -382,7 +374,6 @@
 					<width>820</width>
 					<height>625</height>
 					<align>left</align>
-					<font>font13</font>
 					<label>[B]$INFO[ListItem.EpisodeName,,[CR]][/B]$INFO[ListItem.Plot]</label>
 				</control>
 				<control type="textbox">
@@ -412,7 +403,6 @@
 				<width>800</width>
 				<right>40</right>
 				<height>262</height>
-				<font>font13</font>
 				<align>right</align>
 				<visible>!String.isempty(ListItem.NextTitle)</visible>
 				<label>$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[CR][/COLOR]] $INFO[ListItem.NextStartTime]</label>
