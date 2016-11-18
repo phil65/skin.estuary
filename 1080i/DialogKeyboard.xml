@@ -23,7 +23,7 @@
 				<left>0</left>
 				<bottom>0</bottom>
 				<width>100%</width>
-				<height>48%</height>
+				<height>470</height>
 				<texture colordiffuse="F7FFFFFF">dialogs/dialog-bg-solid.png</texture>
 			</control>
 			<control type="label" id="311">
@@ -68,7 +68,7 @@
 			</control>
 			<control type="group" id="78500">
 				<centerleft>54%</centerleft>
-				<top>559</top>
+				<top>600</top>
 				<width>1920</width>
 				<!-- 1st row -->
 				<control type="grouplist">
@@ -164,7 +164,7 @@
 				<!-- 2nd row -->
 				<control type="grouplist">
 					<left>320</left>
-					<top>100</top>
+					<top>90</top>
 					<itemgap>-30</itemgap>
 					<orientation>horizontal</orientation>
 					<onright>95200</onright>
@@ -244,7 +244,7 @@
 				<!-- 3rd row -->
 				<control type="grouplist">
 					<left>320</left>
-					<top>200</top>
+					<top>180</top>
 					<orientation>horizontal</orientation>
 					<onright>95200</onright>
 					<itemgap>-30</itemgap>
@@ -324,7 +324,7 @@
 				<!-- 4th row -->
 				<control type="grouplist">
 					<left>320</left>
-					<top>300</top>
+					<top>270</top>
 					<itemgap>-30</itemgap>
 					<orientation>horizontal</orientation>
 					<onright>95200</onright>
@@ -404,13 +404,13 @@
 				<!-- 5th row -->
 				<control type="grouplist">
 					<left>320</left>
-					<top>400</top>
+					<top>360</top>
 					<itemgap>-30</itemgap>
 					<orientation>horizontal</orientation>
 					<onright>95200</onright>
 					<control type="radiobutton" id="304">
 						<description>Symbols button</description>
-						<width>128</width>
+						<width>120</width>
 						<height>125</height>
 						<onup>160</onup>
 						<ondown>100</ondown>
@@ -420,13 +420,13 @@
 						<textureradioonnofocus colordiffuse="FFFFFFFF">icons/keyboard/letters.png</textureradioonnofocus>
 						<textureradioofffocus colordiffuse="FFFFFFFF">icons/keyboard/symbols.png</textureradioofffocus>
 						<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/keyboard/symbols.png</textureradiooffnofocus>
-						<radioposx>37</radioposx>
+						<radioposx>33</radioposx>
 						<radiowidth>56</radiowidth>
 						<radioheight>36</radioheight>
 					</control>
 					<control type="radiobutton" id="303">
 						<description>CAPS LOCK button</description>
-						<width>128</width>
+						<width>120</width>
 						<height>125</height>
 						<onup>161</onup>
 						<ondown>101</ondown>
@@ -436,14 +436,14 @@
 						<textureradioonnofocus colordiffuse="button_focus">icons/keyboard/capslock.png</textureradioonnofocus>
 						<textureradioofffocus colordiffuse="FFFFFFFF">icons/keyboard/capslock.png</textureradioofffocus>
 						<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/keyboard/capslock.png</textureradiooffnofocus>
-						<radioposx>44</radioposx>
+						<radioposx>40</radioposx>
 						<radioposy>44</radioposy>
 						<radiowidth>42</radiowidth>
 						<radioheight>47</radioheight>
 					</control>
 					<control type="radiobutton" id="302">
 						<description>SHIFT button</description>
-						<width>128</width>
+						<width>120</width>
 						<height>125</height>
 						<onup>162</onup>
 						<ondown>102</ondown>
@@ -453,13 +453,13 @@
 						<textureradioonnofocus colordiffuse="button_focus">icons/keyboard/shift.png</textureradioonnofocus>
 						<textureradioofffocus colordiffuse="FFFFFFFF">icons/keyboard/shift.png</textureradioofffocus>
 						<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/keyboard/shift.png</textureradiooffnofocus>
-						<radioposx>46</radioposx>
+						<radioposx>42</radioposx>
 						<radiowidth>36</radiowidth>
 						<radioheight>36</radioheight>
 					</control>
 					<control type="radiobutton" id="32">
 						<description>SPACE button</description>
-						<width>422</width>
+						<width>390</width>
 						<height>125</height>
 						<onup>164</onup>
 						<ondown>104</ondown>
@@ -469,13 +469,13 @@
 						<textureradioonnofocus colordiffuse="FFFFFFFF">icons/keyboard/spacebar.png</textureradioonnofocus>
 						<textureradioofffocus colordiffuse="button_focus">icons/keyboard/spacebar.png</textureradioofffocus>
 						<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/keyboard/spacebar.png</textureradiooffnofocus>
-						<radioposx>46</radioposx>
+						<radioposx>34</radioposx>
 						<radiowidth>328</radiowidth>
 						<radioheight>36</radioheight>
 					</control>
 					<control type="radiobutton" id="305">
 						<description>previous button</description>
-						<width>128</width>
+						<width>120</width>
 						<height>125</height>
 						<ondown>107</ondown>
 						<onup>167</onup>
@@ -491,7 +491,7 @@
 					</control>
 					<control type="radiobutton" id="306">
 						<description>next button</description>
-						<width>128</width>
+						<width>120</width>
 						<height>125</height>
 						<ondown>108</ondown>
 						<onup>168</onup>
@@ -501,13 +501,13 @@
 						<textureradioonnofocus colordiffuse="FFFFFFFF">icons/keyboard/arrowright.png</textureradioonnofocus>
 						<textureradioofffocus colordiffuse="FFFFFFFF">icons/keyboard/arrowright.png</textureradioofffocus>
 						<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/keyboard/arrowright.png</textureradiooffnofocus>
-						<radioposx>48</radioposx>
+						<radioposx>42</radioposx>
 						<radiowidth>36</radiowidth>
 						<radioheight>36</radioheight>
 					</control>
 					<control type="radiobutton" id="8">
 						<description>BACKSPACE button</description>
-						<width>128</width>
+						<width>120</width>
 						<height>125</height>
 						<onup>169</onup>
 						<ondown>109</ondown>
@@ -517,14 +517,14 @@
 						<textureradioonnofocus colordiffuse="FFFFFFFF">icons/keyboard/backspace.png</textureradioonnofocus>
 						<textureradioofffocus colordiffuse="FFFFFFFF">icons/keyboard/backspace.png</textureradioofffocus>
 						<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/keyboard/backspace.png</textureradiooffnofocus>
-						<radioposx>35</radioposx>
+						<radioposx>31</radioposx>
 						<radiowidth>51</radiowidth>
 						<radioheight>36</radioheight>
 					</control>
 				</control>
 			</control>
 			<control type="grouplist" id="95200">
-				<top>590</top>
+				<top>630</top>
 				<right>10</right>
 				<itemgap>-10</itemgap>
 				<onup>95200</onup>
@@ -557,7 +557,7 @@
 			</control>
 			<control type="panel" id="9010">
 				<centerleft>50%</centerleft>
-				<bottom>540</bottom>
+				<bottom>490</bottom>
 				<width>1500</width>
 				<height>200</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
