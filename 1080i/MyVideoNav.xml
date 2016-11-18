@@ -53,7 +53,6 @@
 						<top>220</top>
 						<width>525</width>
 						<height min="0" max="740">auto</height>
-						<font>font13</font>
 						<visible>!ListItem.IsCollection</visible>
 						<label>$INFO[ListItem.Tagline,[I],[/I][CR][CR]]$INFO[ListItem.Plot][CR][CR]</label>
 						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>

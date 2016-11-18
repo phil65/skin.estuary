@@ -160,7 +160,6 @@
 						<left>645</left>
 						<top>480</top>
 						<height>250</height>
-						<font>font13</font>
 						<right>115</right>
 						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$INFO[ListItem.Plot]</label>

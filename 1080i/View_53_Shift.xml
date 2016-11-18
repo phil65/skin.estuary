@@ -81,7 +81,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font13</font>
 						</control>
 						<control type="image">
 							<left>169</left>
@@ -113,7 +112,6 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
-								<font>font13</font>
 								<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
 							</control>
 							<control type="image">
@@ -158,7 +156,6 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Title]</label>
 							<shadowcolor>text_shadow</shadowcolor>
-							<font>font13</font>
 						</control>
 					</focusedlayout>
 					<itemlayout height="40" width="628">
@@ -169,7 +166,6 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Title]</label>
 							<shadowcolor>text_shadow</shadowcolor>
-							<font>font13</font>
 						</control>
 					</itemlayout>
 					<content sortby="year" sortorder="descending">$INFO[ListItem.Path]</content>
@@ -187,7 +183,6 @@
 				<width>890</width>
 				<height>163</height>
 				<label>$PARAM[textbox_content]</label>
-				<font>font13</font>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 		</control>
