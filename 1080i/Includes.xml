@@ -1034,7 +1034,15 @@
 					<aspectratio>scale</aspectratio>
 					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">Conditional</animation>
 					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
-					<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="bg_image">$VAR[GlobalFanartVar]</texture>
+					<texture colordiffuse="primary_background">special://skin/extras/backgrounds/primary.jpg</texture>
+				</control>
+				<control type="image">
+					<depth>DepthBackground</depth>
+					<include>FullScreenDimensions</include>
+					<aspectratio>scale</aspectratio>
+					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+					<texture colordiffuse="secondary_background">special://skin/extras/backgrounds/secondary.png</texture>
 				</control>
 				<control type="group">
 					<visible>![Player.HasVideo | [Player.HasAudio + Visualisation.Enabled]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
