@@ -42,7 +42,6 @@
 							<label>$INFO[ListItem.Label]</label>
 							<font>font52_title</font>
 							<shadowcolor>text_shadow</shadowcolor>
-							<align>left</align>
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Art(banner)) + !Listitem.IsParentFolder</visible>
 						</control>
@@ -81,7 +80,6 @@
 							<label>$INFO[ListItem.Label]</label>
 							<font>font52_title</font>
 							<shadowcolor>text_shadow</shadowcolor>
-							<align>left</align>
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Art(banner)) + !Listitem.IsParentFolder</visible>
 						</control>

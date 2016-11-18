@@ -105,7 +105,6 @@
 				<width>400</width>
 				<height>48</height>
 				<aligny>center</aligny>
-				<align>left</align>
 				<shadowcolor>text_shadow</shadowcolor>
 				<label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
 			</control>

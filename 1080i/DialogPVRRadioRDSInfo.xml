@@ -303,7 +303,6 @@
 				<top>175</top>
 				<width>328</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.Album]</label>
 				<scrollout>false</scrollout>
@@ -326,7 +325,6 @@
 				<top>210</top>
 				<width>235</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.ProgHost]</label>
 				<visible>!String.IsEmpty(RDS.ProgHost)</visible>
@@ -347,7 +345,6 @@
 				<top>210</top>
 				<width>328</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.Comment]</label>
 				<scrollout>false</scrollout>
@@ -369,7 +366,6 @@
 				<top>245</top>
 				<width>235</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.ProgStation]</label>
 			</control>
@@ -389,7 +385,6 @@
 				<top>245</top>
 				<width>328</width>
 				<height>25</height>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[RDS.ProgEditStaff]</label>
 				<visible>!String.IsEmpty(RDS.ProgEditStaff)</visible>
