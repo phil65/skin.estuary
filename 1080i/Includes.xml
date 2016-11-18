@@ -1012,6 +1012,20 @@
 		<width>auto</width>
 		<align>left</align>
 	</include>
+	<include name="ColoredBackgroundImages">
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="primary_background">special://skin/extras/backgrounds/primary.jpg</texture>
+		</control>
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="secondary_background">special://skin/extras/backgrounds/secondary.png</texture>
+		</control>
+	</include>
 	<include name="DefaultBackground">
 		<definition>
 			<control type="videowindow">
@@ -1028,21 +1042,10 @@
 			<control type="group">
 				<include>FullScreenDimensions</include>
 				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
-				<control type="image">
-					<depth>DepthBackground</depth>
-					<include>FullScreenDimensions</include>
-					<aspectratio>scale</aspectratio>
+				<control type="group">
 					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">Conditional</animation>
 					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
-					<texture colordiffuse="primary_background">special://skin/extras/backgrounds/primary.jpg</texture>
-				</control>
-				<control type="image">
-					<depth>DepthBackground</depth>
-					<include>FullScreenDimensions</include>
-					<aspectratio>scale</aspectratio>
-					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">Conditional</animation>
-					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
-					<texture colordiffuse="secondary_background">special://skin/extras/backgrounds/secondary.png</texture>
+					<include>ColoredBackgroundImages</include>
 				</control>
 				<control type="group">
 					<visible>![Player.HasVideo | [Player.HasAudio + Visualisation.Enabled]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>

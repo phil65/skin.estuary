@@ -70,19 +70,6 @@
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=MovieGenreFanart&amp;type=resource.images.moviegenrefanart)</onclick>
 				</control>
-				<control type="radiobutton" id="606">
-					<label>$LOCALIZE[31108]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(use_custom_bg)</onclick>
-					<selected>Skin.HasSetting(use_custom_bg)</selected>
-				</control>
-				<control type="button" id="607">
-					<label>$LOCALIZE[31109]</label>
-					<label2>$INFO[Skin.String(custom_background)]</label2>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.SetImage(custom_background)</onclick>
-					<enable>Skin.HasSetting(use_custom_bg)</enable>
-				</control>
 			</control>
 			<control type="grouplist" id="610">
 				<top>160</top>

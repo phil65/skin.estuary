@@ -5,18 +5,15 @@
 	<onunload>ClearProperty(infobackground,home)</onunload>
 	<controls>
 		<control type="group">
+			<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="100">WindowClose</animation>
+			<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
+			<visible>Window.isActive(fullscreenvideo)</visible>
+			<include>ColoredBackgroundImages</include>
+		</control>
+		<control type="group">
 			<centerleft>50%</centerleft>
 			<width>1920</width>
-			<control type="image">
-				<texture colordiffuse="bg_image">$VAR[GlobalFanartVar]</texture>
-				<width>100%</width>
-				<height>100%</height>
-				<aspectratio align="center">scale</aspectratio>
-				<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="100">WindowClose</animation>
-				<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
-				<visible>Window.isActive(fullscreenvideo)</visible>
-			</control>
 			<control type="image">
 				<include>OpenClose_Left</include>
 				<left>114</left>
