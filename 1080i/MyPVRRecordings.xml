@@ -153,7 +153,7 @@
 						</control>
 						<control type="group">
 							<left>150</left>
-							<top>40</top>
+							<top>35</top>
 							<control type="label">
 								<top>20</top>
 								<width>560</width>
@@ -173,13 +173,13 @@
 							</control>
 						</control>
 						<control type="image">
-							<left>-20</left>
+							<left>-10</left>
 							<top>15</top>
 							<width>150</width>
 							<height>100</height>
 							<fadetime>200</fadetime>
 							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.ActualIcon]</texture>
+							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<top>154</top>
