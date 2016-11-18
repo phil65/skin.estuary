@@ -227,8 +227,8 @@
 				<onright>400</onright>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="radiobutton" id="801">
-					<width>110</width>
-					<height>110</height>
+					<width>120</width>
+					<height>120</height>
 					<align>right</align>
 					<aligny>center</aligny>
 					<onclick>ActivateWindow(addonbrowser,root)</onclick>
@@ -236,9 +236,9 @@
 					<label></label>
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
-					<texturefocus colordiffuse="button_focus">buttons/keyboardbutton-fo.png</texturefocus>
+					<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
 					<texturenofocus />
-					<radioposx>35</radioposx>
+					<radioposx>39</radioposx>
 					<radioposy>0</radioposy>
 					<radiowidth>40</radiowidth>
 					<radioheight>40</radioheight>
@@ -249,7 +249,7 @@
 				</control>
 				<control type="radiobutton" id="802">
 					<width>157</width>
-					<height>110</height>
+					<height>120</height>
 					<align>right</align>
 					<aligny>center</aligny>
 					<onclick>ActivateWindow(addonbrowser,addons://outdated/,return)</onclick>
@@ -257,7 +257,7 @@
 					<label></label>
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
-					<texturefocus colordiffuse="button_focus">buttons/keyboardbutton-fo.png</texturefocus>
+					<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
 					<texturenofocus />
 					<radioposx>35</radioposx>
 					<radioposy>0</radioposy>
@@ -272,8 +272,8 @@
 					<textureradiooffdisabled colordiffuse="disabled">icons/submenu/updatelibrary.png</textureradiooffdisabled>
 				</control>
 				<control type="radiobutton" id="803">
-					<width>110</width>
-					<height>110</height>
+					<width>120</width>
+					<height>120</height>
 					<align>right</align>
 					<aligny>center</aligny>
 					<onclick>ActivateWindow(systemsettings,addons)</onclick>
@@ -281,9 +281,9 @@
 					<label></label>
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
-					<texturefocus colordiffuse="button_focus">buttons/keyboardbutton-fo.png</texturefocus>
+					<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
 					<texturenofocus />
-					<radioposx>35</radioposx>
+					<radioposx>40</radioposx>
 					<radioposy>0</radioposy>
 					<radiowidth>40</radiowidth>
 					<radioheight>40</radioheight>
@@ -294,7 +294,7 @@
 				</control>
 				<control type="label" id="804">
 					<left>-217</left>
-					<top>18</top>
+					<top>22</top>
 					<height>70</height>
 					<width>100</width>
 					<aligny>center</aligny>

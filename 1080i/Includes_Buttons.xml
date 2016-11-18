@@ -120,7 +120,7 @@
 		<width>120</width>
 		<height>120</height>
 		<textoffsety>27</textoffsety>
-		<texturefocus colordiffuse="button_focus">buttons/keyboardbutton-fo.png</texturefocus>
+		<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
 		<texturenofocus></texturenofocus>
 		<align>center</align>
 		<aligny>top</aligny>
@@ -146,11 +146,11 @@
 		</definition>
 	</include>
 	<include name="BottomMainMenuItem">
-		<param name="height">110</param>
+		<param name="height">120</param>
 		<param name="visible">true</param>
 		<definition>
 			<control type="radiobutton" id="$PARAM[control_id]">
-				<width>110</width>
+				<width>120</width>
 				<height>$PARAM[height]</height>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -158,9 +158,9 @@
 				<onclick>$PARAM[onclick_2]</onclick>
 				<font></font>
 				<label>$PARAM[label]</label>
-				<texturefocus colordiffuse="button_focus">buttons/keyboardbutton-fo.png</texturefocus>
+				<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
 				<texturenofocus></texturenofocus>
-				<radioposx>35</radioposx>
+				<radioposx>40</radioposx>
 				<radioposy>0</radioposy>
 				<radiowidth>40</radiowidth>
 				<radioheight>40</radioheight>
@@ -173,19 +173,19 @@
 		</definition>
 	</include>
 	<include name="BottomMainMenuToggleItem">
-		<param name="height">110</param>
+		<param name="height">120</param>
 		<definition>
 			<control type="radiobutton" id="$PARAM[control_id]">
-				<width>118</width>
+				<width>120</width>
 				<height>$PARAM[height]</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<onclick>$PARAM[onclick]</onclick>
 				<font></font>
 				<label>$PARAM[label]</label>
-				<texturefocus colordiffuse="button_focus">buttons/keyboardbutton-fo.png</texturefocus>
+				<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
 				<texturenofocus></texturenofocus>
-				<radioposx>38</radioposx>
+				<radioposx>40</radioposx>
 				<radioposy>0</radioposy>
 				<radiowidth>40</radiowidth>
 				<radioheight>40</radioheight>
