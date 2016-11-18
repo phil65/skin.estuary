@@ -12,7 +12,6 @@
 				</include>
 				<control type="fixedlist" id="11">
 					<left>0</left>
-					<top>0</top>
 					<width>875</width>
 					<height>100%</height>
 					<onleft>PreviousChannelGroup</onleft>
@@ -26,7 +25,6 @@
 					<focusedlayout height="90" width="1000">
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
 							<width>1000</width>
 							<height>90</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
@@ -80,7 +78,6 @@
 						</control>
 						<control type="label">
 							<left>12</left>
-							<top>0</top>
 							<height>90</height>
 							<width>70</width>
 							<align>center</align>
@@ -140,7 +137,6 @@
 						</control>
 						<control type="label">
 							<left>12</left>
-							<top>0</top>
 							<height>90</height>
 							<width>70</width>
 							<align>center</align>
@@ -154,7 +150,6 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>868</left>
-					<top>0</top>
 					<width>12</width>
 					<height>100%</height>
 					<onleft>11</onleft>
@@ -178,7 +173,6 @@
 				<include>Animation_TopSlide</include>
 				<control type="image">
 					<left>0</left>
-					<top>0</top>
 					<width>880</width>
 					<height>110</height>
 					<texture>frame/InfoBar.png</texture>
@@ -186,7 +180,6 @@
 				<control type="label" id="2">
 					<description>header label</description>
 					<textoffsetx>40</textoffsetx>
-					<top>0</top>
 					<width>830</width>
 					<height>70</height>
 					<font>font45</font>
@@ -195,7 +188,6 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
-
 		</control>
 	</controls>
 </window>

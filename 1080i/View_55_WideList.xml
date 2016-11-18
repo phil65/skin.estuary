@@ -24,7 +24,6 @@
 				<focusedlayout height="80" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed) | Container.Content(videos) | Container.Content(episodes) | Container.Content(movies)">
 					<control type="image">
 						<left>0</left>
-						<top>0</top>
 						<width>widelist_width</width>
 						<height>80</height>
 						<texture colordiffuse="button_focus">lists/focus.png</texture>
@@ -50,7 +49,6 @@
 					</control>
 					<control type="label">
 						<left>105</left>
-						<top>0</top>
 						<height>80</height>
 						<width>960</width>
 						<aligny>center</aligny>
@@ -60,7 +58,6 @@
 					</control>
 					<control type="label">
 						<textoffsetx>40</textoffsetx>
-						<top>0</top>
 						<height>80</height>
 						<width>widelist_width</width>
 						<align>right</align>
@@ -110,7 +107,6 @@
 					</control>
 					<control type="label">
 						<left>105</left>
-						<top>0</top>
 						<height>80</height>
 						<width>960</width>
 						<aligny>center</aligny>
@@ -119,7 +115,6 @@
 					</control>
 					<control type="label">
 						<textoffsetx>40</textoffsetx>
-						<top>0</top>
 						<height>80</height>
 						<width>widelist_width</width>
 						<align>right</align>
@@ -145,7 +140,6 @@
 		<focusedlayout height="80" condition="Container.Content(songs)">
 			<control type="image">
 				<left>0</left>
-				<top>0</top>
 				<width>widelist_width</width>
 				<height>80</height>
 				<texture colordiffuse="button_focus">lists/focus.png</texture>
@@ -153,7 +147,6 @@
 			</control>
 			<control type="label">
 				<left>35</left>
-				<top>0</top>
 				<height>80</height>
 				<width>1200</width>
 				<aligny>center</aligny>
@@ -163,7 +156,6 @@
 			</control>
 			<control type="label">
 				<textoffsetx>40</textoffsetx>
-				<top>0</top>
 				<height>80</height>
 				<width>widelist_width</width>
 				<align>right</align>
@@ -175,7 +167,6 @@
 		<itemlayout height="80" condition="Container.Content(songs)">
 			<control type="label">
 				<left>35</left>
-				<top>0</top>
 				<height>80</height>
 				<width>1200</width>
 				<aligny>center</aligny>
@@ -184,7 +175,6 @@
 			</control>
 			<control type="label">
 				<textoffsetx>40</textoffsetx>
-				<top>0</top>
 				<height>80</height>
 				<width>widelist_width</width>
 				<align>right</align>
@@ -199,7 +189,6 @@
 		<focusedlayout height="80" condition="Container.Content(addons)">
 			<control type="image">
 				<left>0</left>
-				<top>0</top>
 				<width>widelist_width</width>
 				<height>80</height>
 				<texture colordiffuse="button_focus">lists/focus.png</texture>
@@ -214,7 +203,6 @@
 			</control>
 			<control type="label">
 				<left>75</left>
-				<top>0</top>
 				<height>80</height>
 				<width>820</width>
 				<aligny>center</aligny>
@@ -223,7 +211,6 @@
 			</control>
 			<control type="label">
 				<textoffsetx>40</textoffsetx>
-				<top>0</top>
 				<height>80</height>
 				<width>widelist_width</width>
 				<align>right</align>
@@ -242,7 +229,6 @@
 			</control>
 			<control type="label">
 				<left>75</left>
-				<top>0</top>
 				<height>80</height>
 				<width>820</width>
 				<aligny>center</aligny>
@@ -251,7 +237,6 @@
 			</control>
 			<control type="label">
 				<textoffsetx>40</textoffsetx>
-				<top>0</top>
 				<height>80</height>
 				<width>widelist_width</width>
 				<align>right</align>

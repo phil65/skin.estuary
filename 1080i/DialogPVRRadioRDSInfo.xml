@@ -20,7 +20,6 @@
 				<visible>String.IsEmpty(RDS.IsClassical)</visible>
 				<control type="label">
 					<left>10</left>
-					<top>0</top>
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
@@ -31,7 +30,6 @@
 				</control>
 				<control type="fadelabel">
 					<left>160</left>
-					<top>0</top>
 					<width>704</width>
 					<height>25</height>
 					<aligny>center</aligny>
@@ -42,7 +40,6 @@
 				</control>
 				<control type="label">
 					<left>10</left>
-					<top>0</top>
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
@@ -53,7 +50,6 @@
 				</control>
 				<control type="fadelabel">
 					<left>160</left>
-					<top>0</top>
 					<width>292</width>
 					<height>25</height>
 					<aligny>center</aligny>
@@ -64,7 +60,6 @@
 				</control>
 				<control type="label">
 					<left>385</left>
-					<top>0</top>
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
@@ -75,7 +70,6 @@
 				</control>
 				<control type="fadelabel">
 					<left>535</left>
-					<top>0</top>
 					<width>328</width>
 					<height>25</height>
 					<aligny>center</aligny>
@@ -130,7 +124,6 @@
 				<visible>!String.IsEmpty(RDS.IsClassical)</visible>
 				<control type="label">
 					<left>10</left>
-					<top>0</top>
 					<width>140</width>
 					<height>25</height>
 					<align>right</align>
@@ -140,7 +133,6 @@
 				</control>
 				<control type="fadelabel">
 					<left>160</left>
-					<top>0</top>
 					<width>704</width>
 					<height>25</height>
 					<aligny>center</aligny>
@@ -605,7 +597,6 @@
 				<visible>false</visible>
 				<control type="label">
 					<left>375</left>
-					<top>0</top>
 					<width>110</width>
 					<height>25</height>
 					<align>right</align>

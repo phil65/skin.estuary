@@ -12,7 +12,6 @@
 				</include>
 				<control type="fixedlist" id="11">
 					<left>0</left>
-					<top>0</top>
 					<width>1600</width>
 					<height>100%</height>
 					<onleft>60</onleft>
@@ -26,7 +25,6 @@
 					<itemlayout height="90" width="1600">
 						<control type="label">
 							<left>20</left>
-							<top>0</top>
 							<width>150</width>
 							<height>90</height>
 							<aligny>center</aligny>
@@ -42,7 +40,6 @@
 						</control>
 						<control type="label">
 							<left>150</left>
-							<top>0</top>
 							<width>610</width>
 							<height>90</height>
 							<align>right</align>
@@ -53,16 +50,14 @@
 					<focusedlayout height="90" width="1600">
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
 							<width>780</width>
 							<height>90</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<visible>Control.HasFocus(11)</visible>
- 							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 						</control>
 						<control type="label">
 							<left>20</left>
-							<top>0</top>
 							<width>150</width>
 							<height>90</height>
 							<aligny>center</aligny>
@@ -77,7 +72,6 @@
 						</control>
 						<control type="label">
 							<left>150</left>
-							<top>0</top>
 							<width>610</width>
 							<height>90</height>
 							<align>right</align>
@@ -86,7 +80,7 @@
 						</control>
 						<control type="group">
 							<visible>!String.IsEmpty(ListItem.Plot) + Control.HasFocus(11)</visible>
- 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<control type="image">
 								<left>782</left>
 								<top>-100</top>
@@ -106,7 +100,6 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>768</left>
-					<top>0</top>
 					<width>12</width>
 					<height>100%</height>
 					<onleft>11</onleft>
@@ -129,7 +122,6 @@
 				<include>Animation_TopSlide</include>
 				<control type="image">
 					<left>0</left>
-					<top>0</top>
 					<width>780</width>
 					<height>110</height>
 					<texture>frame/InfoBar.png</texture>
@@ -137,7 +129,6 @@
 				<control type="label" id="2">
 					<description>header label</description>
 					<textoffsetx>40</textoffsetx>
-					<top>0</top>
 					<width>1300</width>
 					<height>70</height>
 					<font>font45</font>
