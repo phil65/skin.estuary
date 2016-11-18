@@ -4,14 +4,13 @@
 	<controls>
 		<control type="group">
 			<depth>DepthMax</depth>
-			<top>945</top>
-			<centerleft>50%</centerleft>
-			<width>820</width>
-			<animation effect="slide" end="500,-850" time="400" tween="sine" easing="inout" condition="Window.IsActive(fullscreenvideo)">conditional</animation>
-			<include>Animation_DialogPopupOpenClose</include>
+			<top>110</top>
+			<right>0</right>
+			<width>770</width>
+			<include>OpenClose_Right</include>
 			<visible>String.IsEmpty(Window(Home).Property(script.cinemavision.running))</visible>
 			<control type="image">
-				<left>-25</left>
+				<left>0</left>
 				<top>-25</top>
 				<width>770</width>
 				<height>150</height>
@@ -21,7 +20,7 @@
 			</control>
 			<control type="image" id="400">
 				<description>avatar</description>
-				<left>10</left>
+				<left>35</left>
 				<top>10</top>
 				<width>80</width>
 				<height>80</height>
@@ -29,18 +28,18 @@
 			</control>
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
-				<left>105</left>
+				<left>130</left>
 				<top>20</top>
 				<width>600</width>
 				<height>18</height>
-				<font>font36_title</font>
+				<font>font37</font>
 				<aligny>center</aligny>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="fadelabel" id="402">
 				<description>Line 2 Label</description>
-				<left>106</left>
+				<left>131</left>
 				<top>55</top>
 				<width>600</width>
 				<height>20</height>
