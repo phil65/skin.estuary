@@ -261,7 +261,6 @@
 			<height>45</height>
 			<orientation>horizontal</orientation>
 			<width>570</width>
-			<align>left</align>
 			<itemgap>10</itemgap>
 			<control type="label">
 				<width>auto</width>
@@ -804,7 +803,6 @@
 				<height>70</height>
 				<font>font32_title</font>
 				<label>$PARAM[DialogHeaderLabel]</label>
-				<align>left</align>
 				<aligny>center</aligny>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -1010,7 +1008,6 @@
 		<top>7</top>
 		<height>100</height>
 		<width>auto</width>
-		<align>left</align>
 	</include>
 	<include name="ColoredBackgroundImages">
 		<control type="image">
@@ -1166,7 +1163,6 @@
 			</control>
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
-				<align>left</align>
 				<top>1015</top>
 				<left>24</left>
 				<width>1200</width>
