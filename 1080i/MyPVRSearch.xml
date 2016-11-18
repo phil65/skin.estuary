@@ -15,7 +15,7 @@
 				<control type="fixedlist" id="50">
 					<left>0</left>
 					<top>0</top>
-					<width>1004</width>
+					<right>918</right>
 					<height>100%</height>
 					<onup>50</onup>
 					<ondown>50</ondown>
@@ -26,106 +26,112 @@
 					<pagecontrol>77</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="100">
-						<control type="label">
-							<visible>String.IsEmpty(ListItem.Date)</visible>
-							<left>120</left>
-							<top>0</top>
-							<width>650</width>
-							<height>100</height>
-							<font>font36_title</font>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
 						<control type="group">
-							<visible>!String.IsEmpty(ListItem.Date)</visible>
-							<control type="image">
-								<left>25</left>
-								<top>10</top>
-								<width>80</width>
-								<height>80</height>
-								<texture fallback="DefaultTVShows.png">$INFO[Listitem.ActualIcon]</texture>
-								<aspectratio>keep</aspectratio>
-								<visible>!String.IsEmpty(ListItem.ActualIcon)</visible>
-							</control>
+							<width>tvchannelslist_width</width>
 							<control type="label">
+								<visible>String.IsEmpty(ListItem.Date)</visible>
 								<left>120</left>
-								<top>10</top>
-								<width>860</width>
+								<top>0</top>
+								<right>30</right>
 								<height>100</height>
-								<aligny>top</aligny>
-								<label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
-							</control>
-							<control type="label">
-								<left>120</left>
-								<top>20</top>
-								<width>350</width>
-								<height>100</height>
-								<font>font12</font>
+								<font>font36_title</font>
 								<aligny>center</aligny>
-								<label>$INFO[ListItem.Date]</label>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
-							<control type="image">
-								<left>980</left>
-								<top>50</top>
-								<width>50</width>
-								<height>50</height>
-								<texture>$VAR[PVRStatusImageVar]</texture>
+							<control type="group">
+								<visible>!String.IsEmpty(ListItem.Date)</visible>
+								<control type="image">
+									<left>25</left>
+									<top>10</top>
+									<width>80</width>
+									<height>80</height>
+									<texture fallback="DefaultTVShows.png">$INFO[Listitem.ActualIcon]</texture>
+									<aspectratio>keep</aspectratio>
+									<visible>!String.IsEmpty(ListItem.ActualIcon)</visible>
+								</control>
+								<control type="label">
+									<left>120</left>
+									<top>10</top>
+									<right>30</right>
+									<height>100</height>
+									<aligny>top</aligny>
+									<label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
+								</control>
+								<control type="label">
+									<left>120</left>
+									<top>20</top>
+									<width>350</width>
+									<height>100</height>
+									<font>font12</font>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Date]</label>
+								</control>
+								<control type="image">
+									<left>980</left>
+									<top>50</top>
+									<width>50</width>
+									<height>50</height>
+									<texture>$VAR[PVRStatusImageVar]</texture>
+								</control>
 							</control>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1004</width>
-							<height>101</height>
-							<texture colordiffuse="button_focus">lists/focus.png</texture>
-							<visible>Control.HasFocus(50)</visible>
-						</control>
-						<control type="label">
-							<visible>String.IsEmpty(ListItem.Date)</visible>
-							<left>120</left>
-							<top>0</top>
-							<width>650</width>
-							<height>100</height>
-							<font>font36_title</font>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
 						<control type="group">
-							<visible>!String.IsEmpty(ListItem.Date)</visible>
+							<width>tvchannelslist_width</width>
 							<control type="image">
-								<left>25</left>
-								<top>10</top>
-								<width>80</width>
-								<height>80</height>
-								<texture fallback="DefaultTVShows.png">$INFO[Listitem.ActualIcon]</texture>
-								<aspectratio>keep</aspectratio>
-								<visible>!String.IsEmpty(ListItem.ActualIcon)</visible>
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<height>101</height>
+								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<visible>Control.HasFocus(50)</visible>
 							</control>
 							<control type="label">
+								<visible>String.IsEmpty(ListItem.Date)</visible>
 								<left>120</left>
-								<top>10</top>
-								<width>860</width>
+								<top>0</top>
+									<right>30</right>
 								<height>100</height>
-								<aligny>top</aligny>
-								<label>$INFO[ListItem.ChannelName]$INFO[ListItem.Label, - ]</label>
-							</control>
-							<control type="label">
-								<left>120</left>
-								<top>20</top>
-								<width>350</width>
-								<height>100</height>
-								<font>font12</font>
+								<font>font36_title</font>
 								<aligny>center</aligny>
-								<label>$INFO[ListItem.Date]</label>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
-							<control type="image">
-								<left>980</left>
-								<top>50</top>
-								<width>50</width>
-								<height>50</height>
-								<texture>$VAR[PVRStatusImageVar]</texture>
+							<control type="group">
+								<visible>!String.IsEmpty(ListItem.Date)</visible>
+								<control type="image">
+									<left>25</left>
+									<top>10</top>
+									<width>80</width>
+									<height>80</height>
+									<texture fallback="DefaultTVShows.png">$INFO[Listitem.ActualIcon]</texture>
+									<aspectratio>keep</aspectratio>
+									<visible>!String.IsEmpty(ListItem.ActualIcon)</visible>
+								</control>
+								<control type="label">
+									<left>120</left>
+									<top>10</top>
+									<right>30</right>
+									<height>100</height>
+									<aligny>top</aligny>
+									<label>$INFO[ListItem.ChannelName]$INFO[ListItem.Label, - ]</label>
+								</control>
+								<control type="label">
+									<left>120</left>
+									<top>20</top>
+									<width>350</width>
+									<height>100</height>
+									<font>font12</font>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Date]</label>
+								</control>
+								<control type="image">
+									<left>980</left>
+									<top>50</top>
+									<width>50</width>
+									<height>50</height>
+									<texture>$VAR[PVRStatusImageVar]</texture>
+								</control>
 							</control>
 						</control>
 					</focusedlayout>
