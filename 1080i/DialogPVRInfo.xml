@@ -8,7 +8,7 @@
 			<centerleft>50%</centerleft>
 			<width>1920</width>
 			<control type="image">
-				<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg" colordiffuse="bg_image">$VAR[GlobalFanartVar]</texture>
+				<texture colordiffuse="bg_image">$VAR[GlobalFanartVar]</texture>
 				<width>100%</width>
 				<height>100%</height>
 				<aspectratio align="center">scale</aspectratio>
