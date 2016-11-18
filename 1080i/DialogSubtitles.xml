@@ -132,7 +132,6 @@
 						</control>
 						<control type="textbox">
 							<left>130</left>
-							<top>0</top>
 							<width>645</width>
 							<height>100</height>
 							<aligny>center</aligny>
@@ -151,7 +150,6 @@
 					<focusedlayout width="920" height="100">
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
 							<width>920</width>
 							<height>100</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
@@ -194,7 +192,6 @@
 						</control>
 						<control type="textbox">
 							<left>130</left>
-							<top>0</top>
 							<width>645</width>
 							<height>100</height>
 							<aligny>center</aligny>
@@ -213,7 +210,6 @@
 				</control>
 				<control type="scrollbar" id="73">
 					<left>925</left>
-					<top>0</top>
 					<width>12</width>
 					<height>600</height>
 					<onleft>120</onleft>
@@ -255,7 +251,6 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="list" id="150">
-					<top>0</top>
 					<width>320</width>
 					<height>480</height>
 					<onleft>160</onleft>

@@ -90,7 +90,6 @@
 							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 							<control type="image">
 								<left>0</left>
-								<top>0</top>
 								<width>462</width>
 								<height>95</height>
 								<texture colordiffuse="button_focus">lists/focus.png</texture>
@@ -106,7 +105,6 @@
 							</control>
 							<control type="image">
 								<left>0</left>
-								<top>0</top>
 								<width>95</width>
 								<height>95</height>
 								<texture colordiffuse="51FFFFFF">colors/black.png</texture>
@@ -122,7 +120,6 @@
 						</control>
 						<control type="label">
 							<left>104</left>
-							<top>0</top>
 							<height>95</height>
 							<width>560</width>
 							<aligny>center</aligny>
@@ -134,7 +131,6 @@
 					<itemlayout height="95">
 						<control type="label">
 							<left>104</left>
-							<top>0</top>
 							<height>95</height>
 							<width>560</width>
 							<aligny>center</aligny>
@@ -194,8 +190,9 @@
 							<property name="id">pictures</property>
 							<property name="path">addons://sources/image/</property>
 							<property name="menu_id">$NUMBER[503]</property>
-<!-- 							<visible>Integer.IsGreater(Container(503).NumItems,0)</visible>
- -->						</item>
+							<!-- 							<visible>Integer.IsGreater(Container(503).NumItems,0)</visible>
+							 -->
+						</item>
 						<item id="7">
 							<label>$LOCALIZE[24998]</label>
 							<onclick>ActivateWindow(addonbrowser,addons://user/,return)</onclick>

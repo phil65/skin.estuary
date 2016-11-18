@@ -4,7 +4,6 @@
 		<control type="grouplist">
 			<orientation>horizontal</orientation>
 			<left>0</left>
-			<top>0</top>
 			<align>center</align>
 			<width>510</width>
 			<control type="label" id="$PARAM[header_id]">
@@ -54,7 +53,6 @@
 				</control>
 				<control type="label">
 					<left>20</left>
-					<top>0</top>
 					<width>390</width>
 					<height>70</height>
 					<aligny>center</aligny>
@@ -66,7 +64,6 @@
 			<focusedlayout height="70">
 				<control type="image">
 					<left>0</left>
-					<top>0</top>
 					<width>470</width>
 					<height>70</height>
 					<texture colordiffuse="button_focus">lists/focus.png</texture>
@@ -84,7 +81,6 @@
 				</control>
 				<control type="label">
 					<left>20</left>
-					<top>0</top>
 					<width>390</width>
 					<height>70</height>
 					<font>font27</font>
