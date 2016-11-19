@@ -159,6 +159,7 @@
 							<param name="right_icon" value="lists/rating.png" />
 							<param name="first_label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
 							<param name="second_label" value="$INFO[ListItem.Rating]" />
+							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6100"/>
 							<param name="onup_id" value="6900"/>
 							<param name="ondown_id" value="6200"/>
@@ -180,6 +181,7 @@
 							<param name="right_icon" value="lists/rating.png" />
 							<param name="first_label" value="$INFO[ListItem.Property(TotalEpisodes)]" />
 							<param name="second_label" value="$INFO[ListItem.Rating]" />
+							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6300"/>
 							<param name="onup_id" value="6200"/>
 							<param name="ondown_id" value="6400"/>
