@@ -218,19 +218,19 @@
 							<param name="icon_off" value="icons/now-playing/pause.png" />
 							<param name="selected" value="Player.Paused" />
 						</include>
-						<include content="BottomMainMenuItem">
+						<include content="IconButton">
 							<param name="control_id" value="14102" />
 							<param name="height" value="95" />
 							<param name="onclick" value="Stop" />
 							<param name="icon" value="icons/now-playing/stop.png" />
 						</include>
-						<include content="BottomMainMenuItem">
+						<include content="IconButton">
 							<param name="control_id" value="14104" />
 							<param name="height" value="95" />
 							<param name="onclick" value="Next" />
 							<param name="icon" value="icons/now-playing/next.png" />
 						</include>
-						<include content="BottomMainMenuItem">
+						<include content="IconButton">
 							<param name="control_id" value="14105" />
 							<param name="height" value="95" />
 							<param name="onclick" value="Fullscreen" />
@@ -301,20 +301,20 @@
 				<param name="icon_off" value="icons/now-playing/pause.png" />
 				<param name="selected" value="Player.Paused" />
 			</include>
-			<include content="BottomMainMenuItem">
+			<include content="IconButton">
 				<param name="control_id" value="14102" />
 				<param name="height" value="95" />
 				<param name="onclick" value="Stop" />
 				<param name="onclick_2" value="SetFocus(50)" />
 				<param name="icon" value="icons/now-playing/stop.png" />
 			</include>
-			<include content="BottomMainMenuItem">
+			<include content="IconButton">
 				<param name="control_id" value="14104" />
 				<param name="height" value="95" />
 				<param name="onclick" value="PlayerControl(Next)" />
 				<param name="icon" value="icons/now-playing/next.png" />
 			</include>
-			<include content="BottomMainMenuItem">
+			<include content="IconButton">
 				<param name="control_id" value="14105" />
 				<param name="height" value="95" />
 				<param name="onclick" value="Fullscreen" />
