@@ -67,9 +67,11 @@
 				<texturenofocus></texturenofocus>
 			</control>
 			<control type="group" id="78500">
-				<centerleft>54%</centerleft>
+				<centerleft>59%</centerleft>
 				<top>600</top>
 				<width>1920</width>
+				<animation effect="slide" end="-60,0" time="200" tween="sine" easing="inout" condition="Control.IsVisible(110) | Control.IsVisible(130) | Control.IsVisible(150) | Control.IsVisible(170)">conditional</animation>
+				<animation effect="slide" end="-110,0" time="200" tween="sine" easing="inout" condition="Control.IsVisible(111) | Control.IsVisible(131) | Control.IsVisible(151) | Control.IsVisible(171)">conditional</animation>
 				<!-- 1st row -->
 				<control type="grouplist">
 					<left>320</left>
@@ -525,7 +527,7 @@
 			</control>
 			<control type="grouplist" id="95200">
 				<top>630</top>
-				<right>10</right>
+				<centerleft>86%</centerleft>
 				<itemgap>-10</itemgap>
 				<onup>95200</onup>
 				<ondown>95200</ondown>
