@@ -23,13 +23,6 @@
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(images)</visible>
 				<itemlayout height="445" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
-					<control type="image">
-						<left>144</left>
-						<top>500</top>
-						<width>32</width>
-						<height>32</height>
-						<texture>$VAR[WallWatchedIconVar]</texture>
-					</control>
 					<control type="group">
 						<top>120</top>
 						<include>InfoWallMovieLayout</include>
@@ -41,15 +34,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="445" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
-					<control type="image">
-						<left>144</left>
-						<top>500</top>
-						<width>32</width>
-						<height>32</height>
-						<texture>$VAR[WallWatchedIconVar]</texture>
-						<animation effect="slide" end="0,16" time="200" tween="sine" easing="inout">Focus</animation>
-						<animation effect="slide" start="0,16" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>

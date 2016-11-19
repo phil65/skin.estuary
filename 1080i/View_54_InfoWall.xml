@@ -121,6 +121,21 @@
 				<bordersize>20</bordersize>
 				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 			</control>
+			<control type="image">
+				<left>35</left>
+				<top>316</top>
+				<width>54</width>
+				<height>54</height>
+				<texture>overlays/overlay-bg.png</texture>
+				<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+			</control>
+			<control type="image">
+				<left>33</left>
+				<top>337</top>
+				<width>32</width>
+				<height>32</height>
+				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
 		</definition>
 	</include>
 	<include name="View_54_InfoWall">
@@ -146,13 +161,6 @@
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | Container.Content(images)</visible>
 				<itemlayout height="445" width="320" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
-					<control type="image">
-						<left>224</left>
-						<top>498</top>
-						<width>32</width>
-						<height>32</height>
-						<texture>$VAR[WallWatchedIconVar]</texture>
-					</control>
 					<control type="group">
 						<left>80</left>
 						<top>120</top>
@@ -165,16 +173,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="445" width="320" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
-					<control type="image">
-
-						<left>224</left>
-						<top>498</top>
-						<width>32</width>
-						<height>32</height>
-						<texture>$VAR[WallWatchedIconVar]</texture>
-						<animation effect="slide" end="0,16" time="200" tween="sine" easing="inout">Focus</animation>
-						<animation effect="slide" start="0,16" end="0,0" time="200" tween="sine" easing="inout">UnFocus</animation>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>80</left>
