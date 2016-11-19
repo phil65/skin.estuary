@@ -52,6 +52,7 @@
 		<param name="right_icon">lists/duration.png</param>
 		<param name="first_label">$INFO[ListItem.Rating]</param>
 		<param name="second_label">$INFO[ListItem.Duration,, $LOCALIZE[31132]]</param>
+		<param name="fallback_image">DefaultMovies.png</param>
 		<definition>
 			<control type="group">
 				<description>Poster Widget including header</description>
@@ -74,26 +75,48 @@
 					<itemlayout width="330" height="500">
 						<control type="group">
 							<left>70</left>
+							<control type="group">
+								<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+								<control type="image">
+									<left>10</left>
+									<top>0</top>
+									<width>312</width>
+									<height>448</height>
+									<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+									<bordertexture border="20">overlays/shadow.png</bordertexture>
+									<bordersize>20</bordersize>
+								</control>
+								<control type="image">
+									<left>40</left>
+									<top>30</top>
+									<width>252</width>
+									<height>250</height>
+									<aspectratio>keep</aspectratio>
+									<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Art(poster)]</texture>
+								</control>
+								<control type="textbox">
+									<left>46</left>
+									<top>272</top>
+									<width>240</width>
+									<height>120</height>
+									<label>$INFO[ListItem.Label]</label>
+									<font>font27</font>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+								</control>
+							</control>
 							<control type="image">
 								<left>10</left>
 								<top>0</top>
 								<width>312</width>
 								<height>448</height>
-								<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+								<aspectratio>scale</aspectratio>
+								<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+								<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
-							</control>
-							<control type="textbox">
-								<left>36</left>
-								<top>280</top>
-								<width>260</width>
-								<height>100</height>
-								<label>$INFO[ListItem.Label]</label>
-								<font>font25_title</font>
-								<shadowcolor>text_shadow</shadowcolor>
-								<align>center</align>
-								<aligny>center</aligny>
-								<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 							</control>
 						</control>
 					</itemlayout>
@@ -107,26 +130,48 @@
 							<animation type="Unfocus">
 								<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="236,130" />
 							</animation>
+							<control type="group">
+								<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+								<control type="image">
+									<left>10</left>
+									<top>0</top>
+									<width>312</width>
+									<height>448</height>
+									<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+									<bordertexture border="20">overlays/shadow.png</bordertexture>
+									<bordersize>20</bordersize>
+								</control>
+								<control type="image">
+									<left>40</left>
+									<top>30</top>
+									<width>252</width>
+									<height>250</height>
+									<aspectratio>keep</aspectratio>
+									<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Art(poster)]</texture>
+								</control>
+								<control type="textbox">
+									<left>46</left>
+									<top>272</top>
+									<width>240</width>
+									<height>120</height>
+									<label>$INFO[ListItem.Label]</label>
+									<font>font27</font>
+									<shadowcolor>text_shadow</shadowcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+								</control>
+							</control>
 							<control type="image">
 								<left>10</left>
 								<top>0</top>
 								<width>312</width>
 								<height>448</height>
-								<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+								<aspectratio>scale</aspectratio>
+								<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+								<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
-							</control>
-							<control type="textbox">
-								<left>36</left>
-								<top>280</top>
-								<width>260</width>
-								<height>100</height>
-								<label>$INFO[ListItem.Label]</label>
-								<font>font25_title</font>
-								<shadowcolor>text_shadow</shadowcolor>
-								<align>center</align>
-								<aligny>center</aligny>
-								<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 							</control>
 							<control type="group">
 								<left>30</left>
@@ -136,10 +181,25 @@
 								<visible>Control.HasFocus($PARAM[list_id])</visible>
 								<control type="image">
 									<left>0</left>
-									<top>370</top>
+									<top>0</top>
+									<width>80</width>
+									<height>80</height>
+									<texture flipy="true">overlays/overlay-bg.png</texture>
+									<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+								</control>
+								<control type="image">
+									<left>0</left>
+									<top>0</top>
+									<width>32</width>
+									<height>32</height>
+									<texture>$VAR[WallWatchedIconVar]</texture>
+								</control>
+								<control type="image">
+									<left>0</left>
+									<bottom>72</bottom>
 									<width>272</width>
-									<height>38</height>
-									<texture>colors/black.png</texture>
+									<height>80</height>
+									<texture>overlays/overlayfade.png</texture>
 									<animation effect="fade" start="0" end="70" time="50">Focus</animation>
 								</control>
 								<control type="label">
