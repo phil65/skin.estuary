@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
+	<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="multiimage">
@@ -52,7 +53,7 @@
                     <label2>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</label2>
                     <include>DefaultSettingButton</include>
                     <onclick condition="String.IsEqual(Skin.String(background_overlay),1)">Skin.SetString(background_overlay,2)</onclick>
-                    <onclick condition="String.IsEqual(Skin.String(background_overlay),5) | String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onclick>
+                    <onclick condition="String.IsEqual(Skin.String(background_overlay),5)">Skin.SetString(background_overlay,1)</onclick>
                     <onclick condition="String.IsEqual(Skin.String(background_overlay),4)">Skin.SetString(background_overlay,5)</onclick>
                     <onclick condition="String.IsEqual(Skin.String(background_overlay),3)">Skin.SetString(background_overlay,4)</onclick>
                     <onclick condition="String.IsEqual(Skin.String(background_overlay),2)">Skin.SetString(background_overlay,3)</onclick>
