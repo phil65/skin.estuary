@@ -196,21 +196,9 @@
 					</control>
 				</control>
 			</control>
-			<control type="group">
-				<include>MediaMenuCommon</include>
-				<include>PVRSideBar</include>
-			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRRecordingsVar]" />
 			</include>
-			<control type="label" id="29">
-				<font></font>
-				<include>HiddenObject</include>
-			</control>
-			<control type="label" id="30">
-				<font></font>
-				<include>HiddenObject</include>
-			</control>
 			<include content="BottomBar">
 				<param name="info_visible" value="true" />
 			</include>
@@ -240,6 +228,18 @@
 					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
 				</control>
 			</control>
+			<control type="group">
+				<include>MediaMenuCommon</include>
+				<include>PVRSideBar</include>
+			</control>
+		</control>
+		<control type="label" id="29">
+			<font></font>
+			<include>HiddenObject</include>
+		</control>
+		<control type="label" id="30">
+			<font></font>
+			<include>HiddenObject</include>
 		</control>
 	</controls>
 </window>

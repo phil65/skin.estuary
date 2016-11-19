@@ -166,10 +166,6 @@
 				<include>PVRInfoPanel</include>
 			</control>
 		</control>
-		<control type="group">
-			<include>MediaMenuCommon</include>
-			<include>PVRSideBar</include>
-		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRTimersVar]" />
 		</include>
@@ -191,6 +187,10 @@
 				<wrapmultiline>true</wrapmultiline>
 				<font>font27</font>
 			</control>
+		</control>
+		<control type="group">
+			<include>MediaMenuCommon</include>
+			<include>PVRSideBar</include>
 		</control>
 		<control type="label" id="29">
 			<font>-</font>

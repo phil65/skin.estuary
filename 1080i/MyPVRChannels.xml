@@ -382,11 +382,6 @@
 					<visible>String.IsEmpty(Listitem.Plot)</visible>
 				</control>
 			</control>
-			<include>MediaMenuMouseOverlay</include>
-			<control type="group">
-				<include>MediaMenuCommon</include>
-				<include>PVRSideBar</include>
-			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRChannelsVar]" />
 			</include>
@@ -402,6 +397,11 @@
 				<visible>!String.isempty(ListItem.NextTitle)</visible>
 				<label>$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[CR][/COLOR]] $INFO[ListItem.NextStartTime]</label>
 				<include>OpenClose_Right</include>
+			</control>
+			<include>MediaMenuMouseOverlay</include>
+			<control type="group">
+				<include>MediaMenuCommon</include>
+				<include>PVRSideBar</include>
 			</control>
 		</control>
 		<control type="label" id="29">

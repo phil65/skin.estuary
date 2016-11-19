@@ -160,16 +160,16 @@
 				</control>
 				<include>PVRInfoPanel</include>
 			</control>
-			<control type="group">
-				<include>MediaMenuCommon</include>
-				<include>PVRSideBar</include>
-			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRSearchVar]" />
 			</include>
 			<include content="BottomBar">
 				<param name="info_visible" value="true" />
 			</include>
+			<control type="group">
+				<include>MediaMenuCommon</include>
+				<include>PVRSideBar</include>
+			</control>
 		</control>
 	</controls>
 </window>

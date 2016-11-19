@@ -18,6 +18,12 @@
 				<visible>Control.IsVisible(55)</visible>
 				<include>ListThumbInfoPanel</include>
 			</control>
+			<include content="TopBar">
+				<param name="breadcrumbs_label" value="$LOCALIZE[10001]" />
+			</include>
+			<include content="BottomBar">
+				<param name="info_visible" value="true" />
+			</include>
 			<include>CommonScrollbars</include>
 			<include>MediaMenuMouseOverlay</include>
 			<control type="group">
@@ -47,12 +53,6 @@
 				</control>
 				<include>MediaMenuNowPlaying</include>
 			</control>
-			<include content="TopBar">
-				<param name="breadcrumbs_label" value="$LOCALIZE[10001]" />
-			</include>
-			<include content="BottomBar">
-				<param name="info_visible" value="true" />
-			</include>
 		</control>
 	</controls>
 </window>
