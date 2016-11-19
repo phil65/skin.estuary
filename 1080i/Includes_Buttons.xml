@@ -61,7 +61,7 @@
 			<invalidcolor>invalid</invalidcolor>
 			<selectedcolor>selected</selectedcolor>
 			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-			<texturenofocus>dialogs/dialog-bg-solid.png</texturenofocus>
+			<texturenofocus colordiffuse="dialog_tint">dialogs/dialog-bg-solid.png</texturenofocus>
 		</definition>
 	</include>
 	<include name="DefaultSettingLabel">
