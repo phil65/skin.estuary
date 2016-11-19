@@ -72,8 +72,23 @@
 							</control>
 							<control type="group">
 								<left>133</left>
-								<top>360</top>
+								<top>10</top>
 								<include>UserRatingCircle</include>
+							</control>
+							<control type="image">
+								<left>40</left>
+								<top>328</top>
+								<width>54</width>
+								<height>54</height>
+								<texture>overlays/overlay-bg.png</texture>
+								<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+							</control>
+							<control type="image">
+								<left>38</left>
+								<top>349</top>
+								<width>32</width>
+								<height>32</height>
+								<texture>$VAR[WallWatchedIconVar]</texture>
 							</control>
 						</control>
 					</itemlayout>
@@ -117,13 +132,6 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
-							</control>
-							<control type="group">
-								<animation effect="fade" time="100" start="100" end="0">Focus</animation>
-								<visible>Control.IsVisible(20000)</visible>
-								<left>306</left>
-								<top>360</top>
-								<include>UserRatingCircle</include>
 							</control>
 						</control>
 					</focusedlayout>
@@ -204,7 +212,7 @@
 			</control>
 			<control type="group">
 				<left>216</left>
-				<top>696</top>
+				<top>-18</top>
 				<include content="UserRatingCircle">
 					<param name="animation" value="True" />
 				</include>
