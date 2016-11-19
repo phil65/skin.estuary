@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="MediaMenuItemsCommon">
-		<width>430</width>
+		<width>470</width>
 		<textoffsetx>20</textoffsetx>
 		<top>0</top>
 		<height>80</height>
-		<radioposx>330</radioposx>
+		<radioposx>370</radioposx>
 		<textwidth>320</textwidth>
 		<aligny>center</aligny>
 		<textcolor>white</textcolor>
@@ -51,7 +51,7 @@
 			<control type="grouplist" id="9000">
 				<top>50</top>
 				<left>0</left>
-				<width>430</width>
+				<width>470</width>
 				<height>100%</height>
 				<onleft>9000</onleft>
 				<onup>9000</onup>
@@ -70,7 +70,7 @@
 						<label>$LOCALIZE[31063]</label>
 					</control>
 					<control type="label">
-						<width>430</width>
+						<width>470</width>
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>15</textoffsety>
 						<height>50</height>
@@ -85,7 +85,7 @@
 					<height>95</height>
 					<control type="grouplist" id="6056">
 						<orientation>horizontal</orientation>
-						<itemgap>-24</itemgap>
+						<itemgap>-18</itemgap>
 						<left>0</left>
 						<height>120</height>
 						<onleft>6056</onleft>
@@ -242,7 +242,7 @@
 		</definition>
 	</include>
 	<include name="MediaMenuLabelCommon">
-		<width>430</width>
+		<width>470</width>
 		<textoffsetx>20</textoffsetx>
 		<textoffsety>15</textoffsety>
 		<height>50</height>
@@ -269,9 +269,9 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>484</width>
+			<width>520</width>
 			<height>100%</height>
-			<texture>lists/panel-mediamenu.png</texture>
+			<texture border="0,0,52,0">lists/panel-mediamenu.png</texture>
 		</control>
 		<control type="button" id="3">
 			<description>Viewtype Toggle</description>
@@ -326,7 +326,7 @@
 		<definition>
 			<left>0</left>
 			<top>100</top>
-			<width>430</width>
+			<width>470</width>
 			<height>100%</height>
 			<onleft>9000</onleft>
 			<onup>9000</onup>
