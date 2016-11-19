@@ -119,6 +119,18 @@
 					<selected>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoMusicVideoButton)</onclick>
 				</control>
+				<control type="radiobutton" id="618">
+					<label>$LOCALIZE[19020]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(HomeMenuNoTVButton)</selected>
+					<onclick>Skin.ToggleSetting(HomeMenuNoTVButton)</onclick>
+				</control>
+				<control type="radiobutton" id="619">
+					<label>$LOCALIZE[19021]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(HomeMenuNoRadioButton)</selected>
+					<onclick>Skin.ToggleSetting(HomeMenuNoRadioButton)</onclick>
+				</control>
 				<control type="radiobutton" id="614">
 					<label>$LOCALIZE[24001]</label>
 					<include>DefaultSettingButton</include>
@@ -137,23 +149,17 @@
 					<selected>!Skin.HasSetting(HomeMenuNoVideosButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
 				</control>
+				<control type="radiobutton" id="6160">
+					<label>$LOCALIZE[10134]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(HomeMenuNoFavouritesButton)</selected>
+					<onclick>Skin.ToggleSetting(HomeMenuNoFavouritesButton)</onclick>
+				</control>
 				<control type="radiobutton" id="617">
 					<label>$LOCALIZE[8]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
-				</control>
-				<control type="radiobutton" id="618">
-					<label>$LOCALIZE[19020]</label>
-					<include>DefaultSettingButton</include>
-					<selected>!Skin.HasSetting(HomeMenuNoTVButton)</selected>
-					<onclick>Skin.ToggleSetting(HomeMenuNoTVButton)</onclick>
-				</control>
-				<control type="radiobutton" id="619">
-					<label>$LOCALIZE[19021]</label>
-					<include>DefaultSettingButton</include>
-					<selected>!Skin.HasSetting(HomeMenuNoRadioButton)</selected>
-					<onclick>Skin.ToggleSetting(HomeMenuNoRadioButton)</onclick>
 				</control>
 			</control>
 			<control type="image">

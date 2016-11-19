@@ -1076,7 +1076,7 @@
 							<property name="menu_id">$NUMBER[14000]</property>
 							<thumb>icons/sidemenu/favourites.png</thumb>
 							<property name="id">favorites</property>
-							<visible>!Skin.HasSetting(HomeMenuNofavButton)</visible>
+							<visible>!Skin.HasSetting(HomeMenuNoFavouritesButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[8]</label>
