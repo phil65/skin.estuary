@@ -184,15 +184,35 @@
 						<left>-10</left>
 						<top>60</top>
 						<visible>ListItem.IsFolder + !ListItem.IsParentFolder</visible>
-						<include content="InfoList">
-							<param name="path" value="$INFO[ListItem.FilenameAndPath]" />
-							<param name="height" value="362" />
-							<param name="sortby" value="date" />
-							<param name="sortorder" value="descending" />
-							<param name="item_height" value="45" />
-							<param name="width" value="780" />
-							<param name="item_label" value="$INFO[ListItem.Date,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]" />
-						</include>
+						<control type="panel" id="5000">
+							<top>20</top>
+							<width>780</width>
+							<bottom>200</bottom>
+							<orientation>vertical</orientation>
+							<focusedlayout height="100" width="780">
+								<control type="label">
+									<left>10</left>
+									<height>90</height>
+									<width>780</width>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Date,[COLOR button_focus],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+									<shadowcolor>text_shadow</shadowcolor>
+									<font>font13</font>
+								</control>
+							</focusedlayout>
+							<itemlayout height="100" width="780">
+								<control type="label">
+									<left>10</left>
+									<height>90</height>
+									<width>$PARAM[width]</width>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Date,[COLOR button_focus],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+									<shadowcolor>text_shadow</shadowcolor>
+									<font>font13</font>
+								</control>
+							</itemlayout>
+							<content sortby="date" sortorder="descending">$INFO[ListItem.FilenameAndPath]</content>
+						</control>
 					</control>
 				</control>
 			</control>

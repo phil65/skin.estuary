@@ -38,7 +38,7 @@
 						<top>120</top>
 						<bottom>124</bottom>
 						<fadetime>200</fadetime>
-						<aspectratio aligny="bottom">keep</aspectratio>
+						<aspectratio aligny="center">keep</aspectratio>
 						<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
 					</control>
 					<control type="group">
