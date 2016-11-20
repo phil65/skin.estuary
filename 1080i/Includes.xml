@@ -360,10 +360,11 @@
 		</definition>
 	</include>
 	<include name="MediaFlags">
-		<top>1010</top>
 		<control type="grouplist">
 			<orientation>horizontal</orientation>
 			<right>20</right>
+			<top>0</top>
+			<height>70</height>
 			<align>right</align>
 			<itemgap>28</itemgap>
 			<width>1900</width>
@@ -1082,9 +1083,10 @@
 				<depth>DepthBars</depth>
 				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(visualisation) | Window.Next(screencalibration)">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup) | Window.Previous(visualisation)">WindowOpen</animation>
+				<bottom>0</bottom>
 				<control type="image">
 					<left>0</left>
-					<top>965</top>
+					<bottom>0</bottom>
 					<width>110%</width>
 					<height>115</height>
 					<texture flipy="true">frame/InfoBar.png</texture>
@@ -1095,13 +1097,12 @@
 					<animation effect="fade" time="400">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-					<top>1015</top>
 					<control type="button">
-						<top>10</top>
+						<bottom>20</bottom>
 						<left>12</left>
 						<width>36</width>
 						<height>36</height>
-						<animation effect="rotate" end="-90" center="30,28" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53)">Conditional</animation>
+						<animation effect="rotate" end="-90" center="auto" time="200" reversible="true" condition="Control.IsVisible(51) | Control.IsVisible(53)">Conditional</animation>
 						<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
 						<texturenofocus colordiffuse="FFCCCCCC">frame/menu-nofo.png</texturenofocus>
 						<animation effect="fade" time="200">VisibleChange</animation>
@@ -1109,7 +1110,7 @@
 						<visible>!Control.IsVisible(6160)</visible>
 					</control>
 					<control type="button" id="6160">
-						<top>10</top>
+						<bottom>20</bottom>
 						<left>12</left>
 						<width>36</width>
 						<height>36</height>
@@ -1120,7 +1121,7 @@
 						<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
 					</control>
 					<control type="button">
-						<top>6</top>
+						<bottom>16</bottom>
 						<left>64</left>
 						<width>300</width>
 						<height>44</height>
