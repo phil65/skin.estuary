@@ -28,7 +28,7 @@
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
-				<top>943</top>
+				<bottom>134</bottom>
 				<right>0</right>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
@@ -38,13 +38,13 @@
 				<left>30</left>
 				<visible>Container(9000).Hasfocus(2)</visible>
 				<right>0</right>
-				<height>780</height>
+				<bottom>137</bottom>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>2</onup>
 				<ondown>2</ondown>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="390" width="356">
+				<itemlayout height="390" width="354">
 					<control type="image">
 						<top>5</top>
 						<width>320</width>
@@ -95,7 +95,7 @@
 						<visible>!String.Contains(Listitem.Label,$LOCALIZE[20058])</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="390" width="325">
+				<focusedlayout height="390" width="354">
 					<control type="group">
 						<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="160,190">Focus</animation>
 						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="160,190">UnFocus</animation>

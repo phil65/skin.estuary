@@ -1142,7 +1142,8 @@
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
 				<align>right</align>
-				<top>1015</top>
+				<bottom>0</bottom>
+				<height>65</height>
 				<itemgap>10</itemgap>
 				<right>24</right>
 				<width>1200</width>
@@ -1163,7 +1164,8 @@
 			</control>
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
-				<top>1015</top>
+				<bottom>0</bottom>
+				<height>65</height>
 				<left>24</left>
 				<width>1200</width>
 				<itemgap>10</itemgap>
