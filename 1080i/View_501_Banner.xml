@@ -102,11 +102,11 @@
 							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 							<control type="image">
 								<left>22</left>
-								<top>135</top>
+								<top>115</top>
 								<width>816</width>
-								<height>40</height>
-								<texture>colors/black.png</texture>
-								<animation effect="fade" start="0" end="70" time="50">Focus</animation>
+								<height>60</height>
+								<texture>overlays/overlayfade.png</texture>
+								<animation effect="fade" start="0" end="80" time="50">Focus</animation>
 								<visible>!Listitem.IsParentFolder</visible>
 							</control>
 							<control type="image">
