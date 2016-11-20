@@ -14,7 +14,8 @@
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group" id="200">
-			<top>960</top>
+			<bottom>0</bottom>
+			<height>120</height>
 			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(playerprocessinfo)</visible>
 			<include>Animation_BottomSlide</include>
 			<animation type="Visible" reversible="false">

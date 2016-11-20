@@ -13,33 +13,38 @@
 				<animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
 			</control>
-			<control type="image">
+			<control type="group">
 				<depth>DepthMax</depth>
 				<centerleft>50%</centerleft>
-				<top>513</top>
+				<centertop>50%</centertop>
 				<width>80</width>
 				<height>80</height>
-				<aspectratio>keep</aspectratio>
-				<animation effect="rotate" end="-45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
-				<texture colordiffuse="button_focus">spinner.png</texture>
-			</control>
-			<control type="image">
-				<depth>DepthMax</depth>
-				<centerleft>50%</centerleft>
-				<top>528</top>
-				<width>50</width>
-				<height>50</height>
-				<aspectratio>keep</aspectratio>
-				<animation effect="rotate" end="45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
-				<texture flipx="true" colordiffuse="button_focus">spinner.png</texture>
-			</control>
-			<control type="progress" id="10">
-				<centerleft>50%</centerleft>
-				<top>620</top>
-				<width>80</width>
-				<height>24</height>
-				<animation effect="fade" time="400">VisibleChange</animation>
-				<visible>Integer.IsGreater(Control.GetLabel(10),0)</visible>
+				<control type="image">
+					<centerleft>50%</centerleft>
+					<centertop>50%</centertop>
+					<width>80</width>
+					<height>80</height>
+					<aspectratio>keep</aspectratio>
+					<animation effect="rotate" end="-45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
+					<texture colordiffuse="button_focus">spinner.png</texture>
+				</control>
+				<control type="image">
+					<centerleft>50%</centerleft>
+					<centertop>50%</centertop>
+					<width>50</width>
+					<height>50</height>
+					<aspectratio>keep</aspectratio>
+					<animation effect="rotate" end="45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
+					<texture flipx="true" colordiffuse="button_focus">spinner.png</texture>
+				</control>
+				<control type="progress" id="10">
+					<centerleft>50%</centerleft>
+					<top>90</top>
+					<width>80</width>
+					<height>24</height>
+					<animation effect="fade" time="400">VisibleChange</animation>
+					<visible>Integer.IsGreater(Control.GetLabel(10),0)</visible>
+				</control>
 			</control>
 		</control>
 	</controls>
