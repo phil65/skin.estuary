@@ -6,7 +6,7 @@
 		<control type="image">
 			<description>Dialog Header image</description>
 			<centerleft>50%</centerleft>
-			<top>495</top>
+			<centertop>50%</centertop>
 			<width>68</width>
 			<height>68</height>
 			<texture colordiffuse="button_focus" border="2">icons/file-manager/left-right.png</texture>
@@ -75,10 +75,11 @@
 		</include>
 		<include>BottomBar</include>
 		<control type="group">
+			<bottom>0</bottom>
+			<height>65</height>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<control type="label">
-				<top>1015</top>
 				<right>730</right>
 				<width>400</width>
 				<height>48</height>
@@ -88,7 +89,6 @@
 				<label>$INFO[Container(21).CurrentItem,, / ]$INFO[Container(21).NumItems]</label>
 			</control>
 			<control type="label" id="102">
-				<top>1015</top>
 				<right>40</right>
 				<width>600</width>
 				<height>48</height>
@@ -100,7 +100,6 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<top>1015</top>
 				<left>730</left>
 				<width>400</width>
 				<height>48</height>
@@ -109,7 +108,6 @@
 				<label>$INFO[Container(20).CurrentItem,, / ]$INFO[Container(20).NumItems]</label>
 			</control>
 			<control type="label" id="101">
-				<top>1015</top>
 				<left>40</left>
 				<width>600</width>
 				<height>48</height>
