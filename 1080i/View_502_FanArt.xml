@@ -62,7 +62,7 @@
 					<top>770</top>
 					<visible>ListItem.IsCollection</visible>
 					<include content="InfoList">
-						<param name="height" value="300" />
+						<param name="bottom" value="108" />
 						<param name="width" value="1000" />
 						<param name="sortby" value="year" />
 						<param name="sortorder" value="descending" />

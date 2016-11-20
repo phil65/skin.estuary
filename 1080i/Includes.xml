@@ -110,7 +110,7 @@
 		<param name="item_label">$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</param>
 		<param name="path">$INFO[ListItem.Path]</param>
 		<param name="item_height">40</param>
-		<param name="height">200</param>
+		<param name="bottom">100</param>
 		<param name="width">1152</param>
 		<param name="list_id">5000</param>
 		<param name="font">font13</param>
@@ -118,8 +118,9 @@
 		<param name="sortorder">ascending</param>
 		<definition>
 			<control type="panel" id="$PARAM[list_id]">
+				<top>0</top>
 				<width>$PARAM[width]</width>
-				<height>$PARAM[height]</height>
+				<bottom>$PARAM[bottom]</bottom>
 				<orientation>vertical</orientation>
 				<focusedlayout height="$PARAM[item_height]" width="$PARAM[width]">
 					<control type="label">
@@ -1094,6 +1095,7 @@
 				<control type="group">
 					<visible>$PARAM[info_visible]</visible>
 					<visible>!System.HasModalDialog</visible>
+					<visible>!Skin.HasSetting(touchmode)</visible>
 					<animation effect="fade" time="400">VisibleChange</animation>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
@@ -1131,6 +1133,40 @@
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
+				</control>
+				<control type="grouplist" id="700">
+					<orientation>horizontal</orientation>
+					<visible>Skin.HasSetting(touchmode)</visible>
+					<visible>!Window.IsActive(home)</visible>
+					<animation effect="fade" start="0" end="100" time="400" condition="Window.Previous(home)">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(home)">WindowClose</animation>
+					<itemgap>0</itemgap>
+					<left>-8</left>
+					<width>480</width>
+					<height>110</height>
+					<bottom>0</bottom>
+					<onup>noop</onup>
+					<ondown>9000</ondown>
+					<onright>2000</onright>
+					<align>justify</align>
+					<include content="IconButton">
+						<param name="control_id" value="804" />
+						<param name="onclick" value="SetFocus(9000)" />
+						<param name="icon" value="icons/settings.png" />
+						<param name="label" value="$LOCALIZE[10004]" />
+					</include>
+					<include content="IconButton">
+						<param name="control_id" value="802" />
+						<param name="onclick" value="ActivateWindow(favourites)" />
+						<param name="icon" value="icons/favourites.png" />
+						<param name="label" value="$LOCALIZE[10134]" />
+					</include>
+					<include content="IconButton">
+						<param name="control_id" value="803" />
+						<param name="onclick" value="ActivateWindow(shutdownmenu)" />
+						<param name="icon" value="icons/power.png" />
+						<param name="label" value="$LOCALIZE[33060]" />
+					</include>
 				</control>
 			</control>
 		</definition>

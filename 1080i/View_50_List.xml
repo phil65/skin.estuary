@@ -190,7 +190,7 @@
 					<top>640</top>
 					<visible>ListItem.IsCollection</visible>
 					<include content="InfoList">
-						<param name="height" value="320" />
+						<param name="bottom" value="100" />
 						<param name="width" value="540" />
 						<param name="sortby" value="year" />
 						<param name="sortorder" value="descending" />
@@ -221,7 +221,7 @@
 							<visible>String.IsEqual(ListItem.DBType,artist)</visible>
 							<include content="InfoList">
 								<param name="list_id" value="42000" />
-								<param name="height" value="320" />
+								<param name="bottom" value="100" />
 								<param name="width" value="540" />
 								<param name="sortby" value="year" />
 								<param name="sortorder" value="descending" />
@@ -234,7 +234,7 @@
 							<visible>String.IsEqual(ListItem.DBType,album)</visible>
 							<include content="InfoList">
 								<param name="list_id" value="43000" />
-								<param name="height" value="320" />
+								<param name="bottom" value="100" />
 								<param name="width" value="540" />
 								<param name="sortby" value="track" />
 								<param name="sortorder" value="ascending" />

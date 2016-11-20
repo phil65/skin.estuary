@@ -157,8 +157,10 @@
 					<control type="group">
 						<left>635</left>
 						<top>480</top>
+						<height>245</height>
 						<visible>ListItem.IsCollection</visible>
 						<include content="InfoList">
+							<param name="bottom" value="0" />
 							<param name="sortby" value="year" />
 							<param name="sortorder" value="descending" />
 							<param name="font" value="font13" />

@@ -154,9 +154,9 @@
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<focusedlayout height="40" width="628">
 						<control type="label">
-							<left>10</left>
+							<textoffsetx>10</textoffsetx>
 							<height>40</height>
-							<width>800</width>
+							<width>628</width>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Title]</label>
 							<shadowcolor>text_shadow</shadowcolor>
@@ -164,9 +164,9 @@
 					</focusedlayout>
 					<itemlayout height="40" width="628">
 						<control type="label">
-							<left>10</left>
+							<textoffsetx>10</textoffsetx>
 							<height>40</height>
-							<width>800</width>
+							<width>628</width>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Title]</label>
 							<shadowcolor>text_shadow</shadowcolor>

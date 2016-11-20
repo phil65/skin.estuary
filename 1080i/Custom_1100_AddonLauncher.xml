@@ -305,13 +305,16 @@
 				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
 			</include>
 			<include>BottomBar</include>
-			<include content="InfoList">
-				<param name="path" value="addons://outdated/" />
-				<param name="height" value="1" />
-				<param name="width" value="1" />
-				<param name="list_id" value="8000" />
-				<param name="item_label" value="" />
-			</include>
+			<control type="group">
+				<left>-10000</left>
+				<include content="InfoList">
+					<param name="path" value="addons://outdated/" />
+					<param name="bottom" value="1" />
+					<param name="width" value="1" />
+					<param name="list_id" value="8000" />
+					<param name="item_label" value="" />
+				</include>
+			</control>
 		</control>
 	</controls>
 </window>

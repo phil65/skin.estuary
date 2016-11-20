@@ -34,16 +34,14 @@
 				<include content="ContentPanel">
 					<param name="width" value="656" />
 				</include>
-				<control type="grouplist">
-					<left>30</left>
-					<top>144</top>
+				<control type="group">
 					<width>550</width>
-					<bottom>136</bottom>
-					<orientation>vertical</orientation>
-					<itemgap>10</itemgap>
 					<control type="textbox">
+						<top>120</top>
+						<left>30</left>
 						<width>550</width>
-						<height min="0" max="680">auto</height>
+						<aligny>center</aligny>
+						<height>110</height>
 						<font>font36_title</font>
 						<label>$INFO[ListItem.Label]</label>
 						<!-- 					<visible>ListItem.IsCollection</visible>
@@ -51,9 +49,9 @@
 					</control>
 					<control type="textbox">
 						<left>30</left>
-						<top>220</top>
+						<top>240</top>
 						<width>525</width>
-						<height min="0" max="740">auto</height>
+						<bottom>100</bottom>
 						<visible>!ListItem.IsCollection</visible>
 						<label>$INFO[ListItem.Tagline,[I],[/I][CR][CR]]$INFO[ListItem.Plot][CR][CR]</label>
 						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
@@ -72,10 +70,10 @@
 					</control>
 					<control type="group">
 						<left>20</left>
-						<top>225</top>
+						<top>245</top>
 						<visible>ListItem.IsCollection</visible>
 						<include content="InfoList">
-							<param name="height" value="740" />
+							<param name="bottom" value="100" />
 							<param name="width" value="540" />
 							<param name="sortby" value="year" />
 							<param name="sortorder" value="descending" />
