@@ -180,7 +180,7 @@
 					<left>30</left>
 					<top>640</top>
 					<width>525</width>
-					<height>323</height>
+					<bottom>117</bottom>
 					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 					<label>$VAR[ListBoxInfoVar]</label>
 					<visible>!Container.Content() | !String.isempty(ListItem.Plot)</visible>
