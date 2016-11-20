@@ -34,6 +34,7 @@
 				<width>500</width>
 				<height>500</height>
 				<fadetime>400</fadetime>
+				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture fallback="DefaultAlbumCover.png" border="2">$INFO[MusicPlayer.Cover]</texture>
 				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 				<bordersize>4</bordersize>
