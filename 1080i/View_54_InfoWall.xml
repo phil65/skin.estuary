@@ -19,10 +19,10 @@
 		</control>
 		<control type="image">
 			<left>20</left>
-			<top>310</top>
+			<top>290</top>
 			<width>356</width>
-			<height>40</height>
-			<texture>colors/black.png</texture>
+			<height>60</height>
+			<texture colordiffuse="80FFFFFF">overlays/overlayfade.png</texture>
 		</control>
 		<control type="label">
 			<left>20</left>
@@ -58,10 +58,10 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>296</top>
+				<top>266</top>
 				<width>276</width>
-				<height>70</height>
-				<texture colordiffuse="4DFFFFFF">colors/black.png</texture>
+				<height>100</height>
+				<texture colordiffuse="80FFFFFF">overlays/overlayfade.png</texture>
 			</control>
 			<control type="textbox">
 				<left>28</left>

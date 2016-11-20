@@ -256,7 +256,7 @@
 					<ondown>140</ondown>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
-					<itemlayout height="370" width="245">
+					<itemlayout height="317" width="245">
 						<control type="group">
 							<top>10</top>
 							<control type="image">
@@ -279,9 +279,9 @@
 							<control type="image">
 								<left>20</left>
 								<width>224</width>
-								<height>62</height>
-								<top>235</top>
-								<texture>colors/black.png</texture>
+								<height>80</height>
+								<bottom>10</bottom>
+								<texture>overlays/overlayfade.png</texture>
 								<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 							</control>
 							<control type="label">
@@ -307,7 +307,7 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout height="370" width="245">
+					<focusedlayout height="317" width="245">
 						<control type="group">
 							<left>0</left>
 							<top>10</top>
@@ -331,10 +331,9 @@
 							<control type="image">
 								<left>20</left>
 								<width>224</width>
-								<height>62</height>
-								<top>235</top>
-								<texture>colors/black.png</texture>
-								<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+								<height>80</height>
+								<bottom>10</bottom>
+								<texture>overlays/overlayfade.png</texture>
 							</control>
 							<control type="label">
 								<left>25</left>
