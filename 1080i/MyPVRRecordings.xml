@@ -163,7 +163,7 @@
 					<control type="textbox">
 						<top>284</top>
 						<width>750</width>
-						<height>526</height>
+						<bottom>270</bottom>
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
@@ -207,9 +207,10 @@
 				<right>0</right>
 				<width>820</width>
 				<include>OpenClose_Right</include>
+				<bottom>0</bottom>
+				<height>60</height>
 				<control type="label">
 					<description>Disk usage text</description>
-					<top>1020</top>
 					<width>550</width>
 					<height>20</height>
 					<label>$INFO[PVR.backenddiskspace]</label>
@@ -221,7 +222,7 @@
 				<control type="progress">
 					<description>Disk usage bar</description>
 					<left>570</left>
-					<top>1037</top>
+					<top>17</top>
 					<width>200</width>
 					<height>12</height>
 					<info>PVR.backenddiskspaceprogr</info>

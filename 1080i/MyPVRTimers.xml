@@ -172,21 +172,19 @@
 		<include content="BottomBar">
 			<param name="info_visible" value="true" />
 		</include>
-		<control type="group">
-			<width>810</width>
+		<control type="label">
 			<right>20</right>
+			<description>Disk usage text</description>
 			<include>OpenClose_Right</include>
-			<control type="label">
-				<description>Disk usage text</description>
-				<top>1020</top>
-				<width>800</width>
-				<height>20</height>
-				<label>$INFO[PVR.NextTimer]</label>
-				<shadowcolor>black</shadowcolor>
-				<align>right</align>
-				<wrapmultiline>true</wrapmultiline>
-				<font>font27</font>
-			</control>
+			<bottom>10</bottom>
+			<width>800</width>
+			<height>60</height>
+			<label>$INFO[PVR.NextTimer]</label>
+			<shadowcolor>black</shadowcolor>
+			<align>right</align>
+			<aligny>center</aligny>
+			<wrapmultiline>true</wrapmultiline>
+			<font>font27</font>
 		</control>
 		<control type="group">
 			<include>MediaMenuCommon</include>
