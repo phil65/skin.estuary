@@ -511,57 +511,60 @@
 				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			</control>
-			<control type="group">
-				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<bottom>0</bottom>
-				<height>70</height>
-				<include>MediaFlags</include>
-				<control type="group">
-					<visible>Control.HasFocus(50)</visible>
-					<animation effect="fade" time="200">VisibleChange</animation>
-					<top>10</top>
-					<left>0</left>
-					<control type="image">
-						<left>21</left>
-						<width>36</width>
-						<height>36</height>
-						<animation effect="rotate" end="-90" center="36,19" time="0" condition="true">Conditional</animation>
-						<texture colordiffuse="grey">frame/menu-nofo.png</texture>
-					</control>
-					<control type="label">
-						<left>74</left>
-						<width>500</width>
-						<height>44</height>
-						<shadowcolor>text_shadow</shadowcolor>
-						<label>$LOCALIZE[31125]</label>
-					</control>
-				</control>
-				<control type="group">
-					<visible>Control.HasFocus(138)</visible>
-					<animation effect="fade" time="200">VisibleChange</animation>
-					<top>10</top>
-					<left>0</left>
-					<control type="image">
-						<top>4</top>
-						<left>17</left>
-						<width>36</width>
-						<height>36</height>
-						<texture colordiffuse="grey">lists/played-total.png</texture>
-					</control>
-					<control type="label">
-						<left>74</left>
-						<width>500</width>
-						<height>44</height>
-						<shadowcolor>text_shadow</shadowcolor>
-						<label>$LOCALIZE[31126]</label>
-					</control>
-				</control>
-			</control>
 			<include content="InfoDialogTopBarInfo">
 				<param name="main_label" value="$VAR[VideoInfoMainLabelVar]" />
 				<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
 			</include>
+		</control>
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<centerleft>50%</centerleft>
+			<width>1920</width>
+			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">Conditional</animation>
+			<bottom>0</bottom>
+			<height>70</height>
+			<include>MediaFlags</include>
+			<control type="group">
+				<visible>Control.HasFocus(50)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<top>10</top>
+				<left>0</left>
+				<control type="image">
+					<left>21</left>
+					<width>36</width>
+					<height>36</height>
+					<animation effect="rotate" end="-90" center="36,19" time="0" condition="true">Conditional</animation>
+					<texture colordiffuse="grey">frame/menu-nofo.png</texture>
+				</control>
+				<control type="label">
+					<left>74</left>
+					<width>500</width>
+					<height>44</height>
+					<shadowcolor>text_shadow</shadowcolor>
+					<label>$LOCALIZE[31125]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.HasFocus(138)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<top>10</top>
+				<left>0</left>
+				<control type="image">
+					<top>4</top>
+					<left>17</left>
+					<width>36</width>
+					<height>36</height>
+					<texture colordiffuse="grey">lists/played-total.png</texture>
+				</control>
+				<control type="label">
+					<left>74</left>
+					<width>500</width>
+					<height>44</height>
+					<shadowcolor>text_shadow</shadowcolor>
+					<label>$LOCALIZE[31126]</label>
+				</control>
+			</control>
 		</control>
 	</controls>
 </window>
