@@ -144,113 +144,125 @@
 	</include>
 	<include name="SongsListLayout">
 		<focusedlayout height="80" condition="Container.Content(songs)">
-			<control type="image">
-				<left>0</left>
+			<control type="group">
 				<width>widelist_width</width>
-				<height>80</height>
-				<texture colordiffuse="button_focus">lists/focus.png</texture>
-				<visible>Control.hasFocus(55)</visible>
-			</control>
-			<control type="label">
-				<left>35</left>
-				<height>80</height>
-				<width>1200</width>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<label>$INFO[ListItem.Label]</label>
-				<shadowcolor>text_shadow</shadowcolor>
-			</control>
-			<control type="label">
-				<textoffsetx>40</textoffsetx>
-				<height>80</height>
-				<width>widelist_width</width>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label2]</label>
-				<shadowcolor>text_shadow</shadowcolor>
+				<control type="image">
+					<left>0</left>
+					<right>0</right>
+					<height>80</height>
+					<texture colordiffuse="button_focus">lists/focus.png</texture>
+					<visible>Control.hasFocus(55)</visible>
+				</control>
+				<control type="label">
+					<left>35</left>
+					<height>80</height>
+					<width>1200</width>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
+					<label>$INFO[ListItem.Label]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
+				<control type="label">
+					<left>40</left>
+					<height>80</height>
+					<right>40</right>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
 			</control>
 		</focusedlayout>
 		<itemlayout height="80" condition="Container.Content(songs)">
-			<control type="label">
-				<left>35</left>
-				<height>80</height>
-				<width>1200</width>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<shadowcolor>text_shadow</shadowcolor>
-			</control>
-			<control type="label">
-				<textoffsetx>40</textoffsetx>
-				<height>80</height>
+			<control type="group">
 				<width>widelist_width</width>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label2]</label>
-				<textcolor>grey</textcolor>
-				<shadowcolor>text_shadow</shadowcolor>
+				<control type="label">
+					<left>35</left>
+					<height>80</height>
+					<width>1200</width>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
+				<control type="label">
+					<left>40</left>
+					<height>80</height>
+					<right>40</right>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<textcolor>grey</textcolor>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
 			</control>
 		</itemlayout>
 	</include>
 	<include name="AddonsListLayout">
 		<focusedlayout height="80" condition="Container.Content(addons)">
-			<control type="image">
-				<left>0</left>
+			<control type="group">
 				<width>widelist_width</width>
-				<height>80</height>
-				<texture colordiffuse="button_focus">lists/focus.png</texture>
-				<visible>Control.hasFocus(55)</visible>
-			</control>
-			<control type="image">
-				<left>20</left>
-				<top>25</top>
-				<width>32</width>
-				<height>32</height>
-				<texture>$VAR[AddonsListIconVar]</texture>
-			</control>
-			<control type="label">
-				<left>75</left>
-				<height>80</height>
-				<width>820</width>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<label>$INFO[ListItem.Label]</label>
-			</control>
-			<control type="label">
-				<textoffsetx>40</textoffsetx>
-				<height>80</height>
-				<width>widelist_width</width>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font27</font>
-				<label>$VAR[AddonsLabel2Var]</label>
+				<control type="image">
+					<left>0</left>
+					<right>0</right>
+					<height>80</height>
+					<texture colordiffuse="button_focus">lists/focus.png</texture>
+					<visible>Control.hasFocus(55)</visible>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>25</top>
+					<width>32</width>
+					<height>32</height>
+					<texture>$VAR[AddonsListIconVar]</texture>
+				</control>
+				<control type="label">
+					<left>75</left>
+					<height>80</height>
+					<right>100</right>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<left>40</left>
+					<height>80</height>
+					<right>40</right>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font27</font>
+					<label>$VAR[AddonsLabel2Var]</label>
+				</control>
 			</control>
 		</focusedlayout>
 		<itemlayout height="80" condition="Container.Content(addons)">
-			<control type="image">
-				<left>20</left>
-				<top>25</top>
-				<width>32</width>
-				<height>32</height>
-				<texture>$VAR[AddonsListIconVar]</texture>
-			</control>
-			<control type="label">
-				<left>75</left>
-				<height>80</height>
-				<width>820</width>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<label>$INFO[ListItem.Label]</label>
-			</control>
-			<control type="label">
-				<textoffsetx>40</textoffsetx>
-				<height>80</height>
+			<control type="group">
 				<width>widelist_width</width>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font27</font>
-				<label>$VAR[AddonsLabel2Var]</label>
-				<textcolor>grey</textcolor>
-				<shadowcolor>text_shadow</shadowcolor>
+				<control type="image">
+					<left>20</left>
+					<top>25</top>
+					<width>32</width>
+					<height>32</height>
+					<texture>$VAR[AddonsListIconVar]</texture>
+				</control>
+				<control type="label">
+					<left>75</left>
+					<height>80</height>
+					<right>100</right>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<left>40</left>
+					<height>80</height>
+					<right>40</right>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font27</font>
+					<label>$VAR[AddonsLabel2Var]</label>
+					<textcolor>grey</textcolor>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
 			</control>
 		</itemlayout>
 	</include>
