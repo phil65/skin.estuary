@@ -3,9 +3,9 @@
 	<include name="View_53_Shift">
 		<control type="group">
 			<description>Poster Viewtype</description>
-			<height>424</height>
+			<centertop>50%</centertop>
 			<left>0</left>
-			<top>100</top>
+			<height>880</height>
 			<control type="group">
 				<visible>Control.IsVisible(53)</visible>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
