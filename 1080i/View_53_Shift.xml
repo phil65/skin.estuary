@@ -129,12 +129,16 @@
 				<visible>Control.IsVisible(53)</visible>
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
-				<include content="ShiftTextbox">
-					<param name="textbox_id" value="53200" />
-					<param name="textbox_content" value="$VAR[ShiftLeftTextBoxVar]" />
-				</include>
+				<control type="group">
+					<width>50%</width>
+					<include content="ShiftTextbox">
+						<param name="textbox_id" value="53200" />
+						<param name="textbox_content" value="$VAR[ShiftLeftTextBoxVar]" />
+					</include>
+				</control>
 				<control type="group">
 					<left>50%</left>
+					<width>50%</width>
 					<include content="ShiftTextbox">
 						<param name="textbox_id" value="53300" />
 						<param name="textbox_content" value="$VAR[ShiftRightTextBoxVar]" />
@@ -180,7 +184,7 @@
 			<control type="textbox" id="$PARAM[textbox_id]">
 				<left>30</left>
 				<top>45</top>
-				<width>890</width>
+				<right>30</right>
 				<height>163</height>
 				<label>$PARAM[textbox_content]</label>
 				<shadowcolor>text_shadow</shadowcolor>
