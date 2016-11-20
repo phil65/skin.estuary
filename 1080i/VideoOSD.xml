@@ -108,7 +108,7 @@
 							<texturenofocus></texturenofocus>
 							<radioposx>1</radioposx>
 							<radioposy>0</radioposy>
-							<selected>!Player.Recording | Control.HasFocus(606)</selected>
+							<selected>!Player.Recording</selected>
 							<onclick>PlayerControl(Record)</onclick>
 							<visible>Player.CanRecord</visible>
 							<visible>VideoPlayer.Content(livetv)</visible>
