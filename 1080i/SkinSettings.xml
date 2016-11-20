@@ -24,7 +24,7 @@
 				<top>160</top>
 				<left>0</left>
 				<right>0</right>
-				<height>780</height>
+				<bottom>140</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>600</onup>
@@ -88,7 +88,7 @@
 				<top>160</top>
 				<left>0</left>
 				<right>0</right>
-				<height>780</height>
+				<bottom>140</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>610</onup>
@@ -193,7 +193,7 @@
 			<control type="image">
 				<description>Dialog Header image</description>
 				<left>0</left>
-				<top>943</top>
+				<bottom>134</bottom>
 				<right>0</right>
 				<height>3</height>
 				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
@@ -263,7 +263,7 @@
 			<include>OpenClose_Right</include>
 			<description>description area</description>
 			<left>510</left>
-			<top>953</top>
+			<bottom>27</bottom>
 			<width>1350</width>
 			<height>100</height>
 			<font>font12</font>
