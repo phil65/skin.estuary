@@ -5,8 +5,9 @@
 	<depth>DepthOSD</depth>
 	<controls>
 		<control type="group">
-			<top>120</top>
+			<centertop>50%</centertop>
 			<centerleft>50%</centerleft>
+			<height>742</height>
 			<width>1220</width>
 			<include content="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="1220" />

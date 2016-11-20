@@ -5,7 +5,8 @@
 	<controls>
 		<control type="group">
 			<left>13%</left>
-			<top>150</top>
+			<centertop>50%</centertop>
+			<height>770</height>
 			<include content="DialogBackgroundCommons">
 				<param name="DialogBackgroundWidth" value="84%" />
 				<param name="DialogBackgroundHeight" value="770" />
