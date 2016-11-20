@@ -269,11 +269,9 @@
 		<definition>
 			<control type="group">
 				<visible>$PARAM[visible]</visible>
-				<left>442</left>
-				<right>0</right>
 				<control type="multiimage">
 					<top>0</top>
-					<left>0</left>
+					<left>442</left>
 					<right>0</right>
 					<height>100%</height>
 					<aspectratio>scale</aspectratio>
@@ -283,7 +281,7 @@
 				<control type="grouplist" id="$PARAM[button_id]577">
 					<orientation>vertical</orientation>
 					<top>420</top>
-					<centerleft>50%</centerleft>
+					<left>700</left>
 					<width>1000</width>
 					<align>center</align>
 					<control type="textbox">
