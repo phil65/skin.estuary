@@ -631,17 +631,18 @@
 					</include>
 					<control type="grouplist" id="14001">
 						<orientation>vertical</orientation>
-						<height>100%</height>
+						<top>0</top>
+						<bottom>0</bottom>
 						<itemgap>-160</itemgap>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<control type="group">
 							<visible>Integer.IsGreater(Container(14100).NumItems,0) | Container(14100).IsUpdating</visible>
-							<height>100%</height>
+							<height>1080</height>
 							<control type="panel" id="14100">
 								<left>520</left>
 								<top>0</top>
 								<width>80%</width>
-								<height>100%</height>
+								<bottom>0</bottom>
 								<onleft>9000</onleft>
 								<onright>9000</onright>
 								<onup>14100</onup>
