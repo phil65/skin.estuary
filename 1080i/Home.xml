@@ -629,15 +629,12 @@
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="favorites"/>
 					</include>
-					<control type="grouplist" id="14001">
-						<orientation>vertical</orientation>
+					<control type="group" id="14001">
 						<top>0</top>
 						<bottom>0</bottom>
-						<itemgap>-160</itemgap>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<control type="group">
 							<visible>Integer.IsGreater(Container(14100).NumItems,0) | Container(14100).IsUpdating</visible>
-							<height>1080</height>
+							<height>100%</height>
 							<control type="panel" id="14100">
 								<left>520</left>
 								<top>0</top>
