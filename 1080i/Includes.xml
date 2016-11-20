@@ -1096,7 +1096,6 @@
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 					<top>1015</top>
-					<visible>!$EXP[sidebar_focused]</visible>
 					<control type="button">
 						<top>10</top>
 						<left>12</left>
