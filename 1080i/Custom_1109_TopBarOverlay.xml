@@ -13,8 +13,8 @@
 				<left>0</left>
 				<top>0</top>
 				<width>100%</width>
-				<height>150</height>
-				<texture>frame/InfoBar.png</texture>
+				<height>170</height>
+				<texture>frame/osdfade.png</texture>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(pvrosdchannels) + !Window.IsActive(pvrosdguide)</visible>
