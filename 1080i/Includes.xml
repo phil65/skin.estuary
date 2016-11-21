@@ -897,8 +897,8 @@
 					<top>0</top>
 					<width>500</width>
 					<height>100</height>
-					<onclick condition="!String.IsEmpty(Container.FolderPath)">Container.Update($INFO[Container.FolderPath],replace)</onclick>
-					<onclick condition="String.IsEmpty(Container.FolderPath)">Action(Back)</onclick>
+					<label></label>
+					<onclick>Action(Back)</onclick>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
 				</control>
