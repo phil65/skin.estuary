@@ -334,6 +334,7 @@
 								<height>80</height>
 								<bottom>10</bottom>
 								<texture>overlays/overlayfade.png</texture>
+								<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 							</control>
 							<control type="label">
 								<left>25</left>
