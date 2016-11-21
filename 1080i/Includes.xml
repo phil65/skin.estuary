@@ -1297,7 +1297,7 @@
 		<definition>
 			<control type="image">
 				<texture flipx="$PARAM[flipx]">lists/panel.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<width>$PARAM[width]</width>
 				<left>$PARAM[left]</left>
