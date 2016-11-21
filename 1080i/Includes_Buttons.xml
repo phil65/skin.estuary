@@ -289,7 +289,8 @@
 		<onright>9000</onright>
 		<onup>9000</onup>
 		<ondown>9000</ondown>
-		<itemlayout height="70">
+		<orientation>vertical</orientation>
+		<itemlayout height="70" width="600">
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -309,7 +310,7 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="70">
+		<focusedlayout height="70" width="600">
 			<control type="image">
 				<left>0</left>
 				<top>0</top>

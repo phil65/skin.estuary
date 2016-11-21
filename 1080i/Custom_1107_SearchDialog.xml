@@ -14,7 +14,7 @@
 				<param name="DialogHeaderLabel" value="$LOCALIZE[137]" />
 				<param name="DialogHeaderId" value="" />
 			</include>
-			<control type="list" id="9000">
+			<control type="panel" id="9000">
 				<include>ButtonMenuList</include>
 				<content>
 					<item>
