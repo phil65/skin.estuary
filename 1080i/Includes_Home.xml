@@ -797,7 +797,7 @@
 				<left>442</left>
 				<top>120</top>
 				<right>0</right>
-				<height>400</height>
+				<height>430</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
@@ -931,9 +931,9 @@
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>$PARAM[left]</left>
-				<top>120</top>
+				<top>100</top>
 				<right>0</right>
-				<height>400</height>
+				<height>480</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
