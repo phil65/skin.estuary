@@ -23,30 +23,10 @@
 				<aspectratio aligny="center">keep</aspectratio>
 				<texture>$INFO[Player.Art(thumb)]</texture>
 			</control>
-			<control type="textbox">
+			<control type="label">
 				<left>260</left>
-				<top>130</top>
-				<width>200</width>
-				<height>80</height>
-				<label>$INFO[VideoPlayer.ChannelName]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-			</control>
-			<control type="label">
-				<left>250</left>
-				<top>30</top>
-				<width>220</width>
-				<height>100</height>
-				<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>WeatherTemp</font>
-			</control>
-			<control type="label">
-				<left>530</left>
 				<top>40</top>
-				<width>1300</width>
+				<right>100</right>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.EpisodeName, (,)]</label>
 				<aligny>center</aligny>
@@ -54,7 +34,7 @@
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<left>530</left>
+				<left>260</left>
 				<top>92</top>
 				<width>1320</width>
 				<height>15</height>
@@ -78,7 +58,7 @@
 			<control type="label">
 				<left>530</left>
 				<top>125</top>
-				<width>1300</width>
+				<right>100</right>
 				<height>25</height>
 				<label>[COLOR button_focus]$INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime, - ,: ][/COLOR]$INFO[VideoPlayer.NextTitle]</label>
 				<aligny>center</aligny>
