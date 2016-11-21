@@ -178,8 +178,8 @@
 				<control type="radiobutton" id="6160">
 					<label>$LOCALIZE[10134]</label>
 					<include>DefaultSettingButton</include>
-					<selected>!Skin.HasSetting(HomeMenuNoFavouritesButton)</selected>
-					<onclick>Skin.ToggleSetting(HomeMenuNoFavouritesButton)</onclick>
+					<selected>!Skin.HasSetting(HomeMenuNoFavButton)</selected>
+					<onclick>Skin.ToggleSetting(HomeMenuNoFavButton)</onclick>
 				</control>
 				<control type="radiobutton" id="617">
 					<label>$LOCALIZE[8]</label>

@@ -265,8 +265,6 @@
 		</definition>
 	</include>
 	<include name="ImageWidget">
-		<param name="onup_id">20000</param>
-		<param name="ondown_id">20001</param>
 		<param name="visible_1">true</param>
 		<param name="visible_2">true</param>
 		<param name="button2_onclick">true</param>
@@ -297,6 +295,8 @@
 					</control>
 					<control type="grouplist" id="$PARAM[button_id]567">
 						<width>100%</width>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
 						<orientation>horizontal</orientation>
 						<align>center</align>
 						<onleft>9000</onleft>

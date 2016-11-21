@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- 	<menucontrol>9000</menucontrol>
-								 -->
+											 -->
 	<defaultcontrol>9000</defaultcontrol>
 	<!-- 	<onload condition="ControlGroup(700).HasFocus">SetFocus(9000,0)</onload>
-									 -->
+												 -->
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<control type="button" id="20000">
@@ -102,16 +102,16 @@
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
 						</include>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31104]" />
-							<param name="button_label" value="$LOCALIZE[31110]" />
-							<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
-							<param name="button_id" value="5500"/>
-							<param name="visible" value="!Library.HasContent(movies)"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMovieButton)"/>
-						</include>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31104]" />
+						<param name="button_label" value="$LOCALIZE[31110]" />
+						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
+						<param name="button_id" value="5500"/>
+						<param name="visible" value="!Library.HasContent(movies)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMovieButton)"/>
+					</include>
 				</control>
 				<control type="group" id="6000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),tvshows)</visible>
@@ -416,15 +416,6 @@
 								</include>
 							</control>
 						</control>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31143]" />
-							<param name="button_label" value="$LOCALIZE[31144]" />
-							<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
-							<param name="button_id" value="12400"/>
-							<param name="visible" value="!System.HasPVRAddon"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVButton)"/>
-						</include>
 						<include content="WidgetListCategories">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
@@ -453,6 +444,15 @@
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31143]" />
+						<param name="button_label" value="$LOCALIZE[31144]" />
+						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
+						<param name="button_id" value="12400"/>
+						<param name="visible" value="!System.HasPVRAddon"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVButton)"/>
+					</include>
 				</control>
 				<control type="group" id="13000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),radio)</visible>
@@ -490,15 +490,6 @@
 								</include>
 							</control>
 						</control>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31143]" />
-							<param name="button_label" value="$LOCALIZE[31144]" />
-							<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
-							<param name="button_id" value="13400"/>
-							<param name="visible" value="!System.HasPVRAddon"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoRadioButton)"/>
-						</include>
 						<include content="WidgetListCategories">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
@@ -527,6 +518,15 @@
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31143]" />
+						<param name="button_label" value="$LOCALIZE[31144]" />
+						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
+						<param name="button_id" value="13400"/>
+						<param name="visible" value="!System.HasPVRAddon"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoRadioButton)"/>
+					</include>
 				</control>
 				<control type="group" id="14000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),favorites)</visible>
@@ -685,16 +685,16 @@
 							<param name="widget_header" value="$LOCALIZE[31019]"/>
 							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 						</include>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31120]" />
-							<param name="button_label" value="$LOCALIZE[31121]" />
-							<param name="button_onclick" value="ActivateWindow(servicesettings,weather)"/>
-							<param name="button_id" value="15300"/>
-							<param name="visible" value="String.IsEmpty(Weather.plugin)"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoWeatherButton)"/>
-						</include>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31120]" />
+						<param name="button_label" value="$LOCALIZE[31121]" />
+						<param name="button_onclick" value="ActivateWindow(servicesettings,weather)"/>
+						<param name="button_id" value="15300"/>
+						<param name="visible" value="String.IsEmpty(Weather.plugin)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoWeatherButton)"/>
+					</include>
 				</control>
 				<control type="group" id="16000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),musicvideos)</visible>
@@ -761,16 +761,16 @@
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(musicvideos)"/>
 						</include>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31104]" />
-							<param name="button_label" value="$LOCALIZE[31110]" />
-							<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
-							<param name="button_id" value="16800"/>
-							<param name="visible" value="!Library.HasContent(musicvideos)"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicVideoButton)"/>
-						</include>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31104]" />
+						<param name="button_label" value="$LOCALIZE[31110]" />
+						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
+						<param name="button_id" value="16800"/>
+						<param name="visible" value="!Library.HasContent(musicvideos)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicVideoButton)"/>
+					</include>
 				</control>
 				<control type="group" id="4000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),pictures)</visible>
@@ -952,7 +952,7 @@
 							<property name="menu_id">$NUMBER[14000]</property>
 							<thumb>icons/sidemenu/favourites.png</thumb>
 							<property name="id">favorites</property>
-							<visible>!Skin.HasSetting(HomeMenuNoFavouritesButton)</visible>
+							<visible>!Skin.HasSetting(HomeMenuNoFavButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[8]</label>
