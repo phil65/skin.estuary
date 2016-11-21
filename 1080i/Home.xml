@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- 	<menucontrol>9000</menucontrol>
-							 -->
+								 -->
 	<defaultcontrol>9000</defaultcontrol>
 	<!-- 	<onload condition="ControlGroup(700).HasFocus">SetFocus(9000,0)</onload>
-								 -->
+									 -->
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<control type="button" id="20000">
@@ -54,17 +54,12 @@
 						<param name="id" value="movies"/>
 					</include>
 					<control type="grouplist" id="5001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-160</itemgap>
+						<include>WidgetGroupListCommon</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://video/movies/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="5100"/>
 							<param name="visible" value="Library.HasContent(movies)"/>
 						</include>
 						<include content="WidgetListMovies">
@@ -72,40 +67,30 @@
 							<param name="widget_header" value="$LOCALIZE[31010]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5100"/>
-							<param name="onup_id" value="5900"/>
-							<param name="ondown_id" value="5200"/>
 						</include>
 						<include content="WidgetListMovies">
 							<param name="content_path" value="special://skin/playlists/recent_unwatched_movies.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[20386]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5200"/>
-							<param name="onup_id" value="5100"/>
-							<param name="ondown_id" value="5300"/>
 						</include>
 						<include content="WidgetListMovies">
 							<param name="content_path" value="special://skin/playlists/unwatched_movies.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31007]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5300"/>
-							<param name="onup_id" value="5200"/>
-							<param name="ondown_id" value="5400"/>
 						</include>
 						<include content="WidgetListMovies">
 							<param name="content_path" value="special://skin/playlists/random_movies.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31006]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5400"/>
-							<param name="onup_id" value="5300"/>
-							<param name="ondown_id" value="5500"/>
 						</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="videodb://movies/genres/"/>
 							<param name="widget_header" value="$LOCALIZE[135]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5500"/>
-							<param name="onup_id" value="5400"/>
-							<param name="ondown_id" value="5600"/>
 							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(movies)"/>
@@ -116,8 +101,6 @@
 							<param name="widget_target" value="videos"/>
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
-							<param name="onup_id" value="5500"/>
-							<param name="ondown_id" value="20001"/>
 						</include>
 						<include content="ImageWidget">
 							<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
@@ -136,17 +119,12 @@
 						<param name="id" value="tvshows"/>
 					</include>
 					<control type="grouplist" id="6001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<itemgap>-160</itemgap>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<include>WidgetGroupListCommon</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://video/tvshows/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="6100"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
 						<include content="WidgetListMovies">
@@ -161,8 +139,6 @@
 							<param name="second_label" value="$INFO[ListItem.Rating]" />
 							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6100"/>
-							<param name="onup_id" value="6900"/>
-							<param name="ondown_id" value="6200"/>
 						</include>
 						<include content="WidgetListEpisodes">
 							<param name="content_path" value="special://skin/playlists/recent_unwatched_episodes.xsp"/>
@@ -170,8 +146,6 @@
 							<param name="widget_target" value="videos"/>
 							<param name="second_label" value="[COLOR button_focus]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/COLOR] $INFO[ListItem.Title]" />
 							<param name="list_id" value="6200"/>
-							<param name="onup_id" value="6100"/>
-							<param name="ondown_id" value="6300"/>
 						</include>
 						<include content="WidgetListMovies">
 							<param name="content_path" value="special://skin/playlists/unwatched_tvshows.xsp"/>
@@ -183,16 +157,12 @@
 							<param name="second_label" value="$INFO[ListItem.Rating]" />
 							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6300"/>
-							<param name="onup_id" value="6200"/>
-							<param name="ondown_id" value="6400"/>
 						</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="videodb://tvshows/genres/"/>
 							<param name="widget_header" value="$LOCALIZE[135]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6400"/>
-							<param name="onup_id" value="6300"/>
-							<param name="ondown_id" value="6500"/>
 							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
@@ -202,8 +172,6 @@
 							<param name="widget_header" value="$LOCALIZE[20388]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6500"/>
-							<param name="onup_id" value="6400"/>
-							<param name="ondown_id" value="20001"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]"/>
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
@@ -225,17 +193,12 @@
 						<param name="id" value="music"/>
 					</include>
 					<control type="grouplist" id="7001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<itemgap>-160</itemgap>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<include>WidgetGroupListCommon</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="7100"/>
 							<param name="visible" value="Library.HasContent(music)"/>
 						</include>
 						<include content="WidgetListSquare">
@@ -243,8 +206,6 @@
 							<param name="widget_header" value="$LOCALIZE[517]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7100"/>
-							<param name="onup_id" value="7900"/>
-							<param name="ondown_id" value="7200"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
 						<include content="WidgetListSquare">
@@ -252,8 +213,6 @@
 							<param name="widget_header" value="$LOCALIZE[359]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7200"/>
-							<param name="onup_id" value="7100"/>
-							<param name="ondown_id" value="7300"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
 						<include content="WidgetListSquare">
@@ -261,8 +220,6 @@
 							<param name="widget_header" value="$LOCALIZE[31012]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7300"/>
-							<param name="onup_id" value="7200"/>
-							<param name="ondown_id" value="7400"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
 						<include content="WidgetListSquare">
@@ -270,8 +227,6 @@
 							<param name="widget_header" value="$LOCALIZE[31013]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7400"/>
-							<param name="onup_id" value="7300"/>
-							<param name="ondown_id" value="7500"/>
 							<param name="fallback_icon" value="DefaultMusicArtists.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
@@ -282,8 +237,6 @@
 							<param name="widget_header" value="$LOCALIZE[31014]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7500"/>
-							<param name="onup_id" value="7400"/>
-							<param name="ondown_id" value="7600"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
 						<include content="WidgetListSquare">
@@ -291,8 +244,6 @@
 							<param name="widget_header" value="$LOCALIZE[31011]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7600"/>
-							<param name="onup_id" value="7500"/>
-							<param name="ondown_id" value="20001"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 							<param name="sortby" value="playcount"/>
 							<param name="sortorder" value="descending"/>
@@ -303,7 +254,6 @@
 							<param name="button_label" value="$LOCALIZE[31110]" />
 							<param name="button_onclick" value="ActivateWindow(music,files)"/>
 							<param name="button_id" value="7600"/>
-							<param name="onup_id" value="7500"/>
 							<param name="visible" value="!Library.HasContent(music)"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicButton)"/>
 						</include>
@@ -315,17 +265,12 @@
 						<param name="id" value="addons"/>
 					</include>
 					<control type="grouplist" id="8001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-160</itemgap>
+						<include>WidgetGroupListCommon</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
 							<param name="list_id" value="8900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="8100"/>
 							<param name="visible" value="Integer.IsGreater(Container(8100).NumItems,0) | Integer.IsGreater(Container(8200).NumItems,0) | Integer.IsGreater(Container(8300).NumItems,0) | Integer.IsGreater(Container(8400).NumItems,0) | Integer.IsGreater(Container(8500).NumItems,0)"/>
 						</include>
 						<include content="WidgetListSquare">
@@ -335,8 +280,6 @@
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8100"/>
-							<param name="onup_id" value="8900"/>
-							<param name="ondown_id" value="8200"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
@@ -349,8 +292,6 @@
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8200"/>
-							<param name="onup_id" value="8100"/>
-							<param name="ondown_id" value="8300"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
@@ -363,8 +304,6 @@
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8300"/>
-							<param name="onup_id" value="8200"/>
-							<param name="ondown_id" value="8400"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
@@ -377,8 +316,6 @@
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8400"/>
-							<param name="onup_id" value="8300"/>
-							<param name="ondown_id" value="8500"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
@@ -391,8 +328,6 @@
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8500"/>
-							<param name="onup_id" value="8400"/>
-							<param name="ondown_id" value="20001"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
@@ -403,7 +338,6 @@
 							<param name="button_label" value="$LOCALIZE[31118]" />
 							<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
 							<param name="button_id" value="8600"/>
-							<param name="onup_id" value="8100"/>
 							<param name="visible" value="!Integer.IsGreater(Container(8100).NumItems,0) + !Integer.IsGreater(Container(8200).NumItems,0) + !Integer.IsGreater(Container(8300).NumItems,0) + !Integer.IsGreater(Container(8400).NumItems,0) + !Integer.IsGreater(Container(8500).NumItems,0)"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoProgramsButton)"/>
 						</include>
@@ -415,33 +349,24 @@
 						<param name="id" value="video"/>
 					</include>
 					<control type="grouplist" id="11001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<itemgap>-160</itemgap>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<include>WidgetGroupListCommon</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://video/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="11900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="11100"/>
 						</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="sources://video/"/>
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="11100"/>
-							<param name="onup_id" value="11900"/>
-							<param name="ondown_id" value="11200"/>
 						</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="special://videoplaylists/"/>
 							<param name="widget_header" value="$LOCALIZE[136]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="11200"/>
-							<param name="onup_id" value="11100"/>
-							<param name="ondown_id" value="20001"/>
 							<param name="icon" value="DefaultPlaylist.png"/>
 						</include>
 						<include content="ImageWidget">
@@ -450,8 +375,7 @@
 							<param name="button_label" value="$LOCALIZE[31110]" />
 							<param name="button_onclick" value="ActivateWindow(videos,root)"/>
 							<param name="button_id" value="11300"/>
-							<param name="onup_id" value="11200"/>
-							<param name="visible" value="!Control.IsVisible(111000) + !Control.IsVisible(112000) + !Control.IsVisible(119000)"/>
+							<param name="visible" value="!Control.IsVisible(11100) + !Control.IsVisible(11200) + !Control.IsVisible(11900)"/>
 							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoVideosButton)"/>
 						</include>
 					</control>
@@ -462,11 +386,7 @@
 						<param name="id" value="livetv"/>
 					</include>
 					<control type="grouplist" id="12001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-160</itemgap>
-						<usecontrolcoords>true</usecontrolcoords>
+						<include>WidgetGroupListCommon</include>
 						<control type="grouplist">
 							<height>390</height>
 							<left>465</left>
@@ -508,8 +428,6 @@
 						<include content="WidgetListCategories">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="12200"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="TV"/>
 							<param name="visible" value="System.HasPVRAddon"/>
@@ -521,8 +439,6 @@
 							<param name="widget_header" value="$LOCALIZE[31016]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12200"/>
-							<param name="onup_id" value="12900"/>
-							<param name="ondown_id" value="12300"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListChannels">
@@ -532,8 +448,6 @@
 							<param name="widget_header" value="$LOCALIZE[31015]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12300"/>
-							<param name="onup_id" value="12200"/>
-							<param name="ondown_id" value="20001"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 							<param name="visible" value="System.HasPVRAddon"/>
@@ -546,11 +460,7 @@
 						<param name="id" value="radio"/>
 					</include>
 					<control type="grouplist" id="13001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<itemgap>-160</itemgap>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<usecontrolcoords>true</usecontrolcoords>
+						<include>WidgetGroupListCommon</include>
 						<control type="grouplist">
 							<height>390</height>
 							<left>538</left>
@@ -592,8 +502,6 @@
 						<include content="WidgetListCategories">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="13200"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="Radio"/>
 							<param name="visible" value="System.HasPVRAddon"/>
@@ -605,8 +513,6 @@
 							<param name="widget_header" value="$LOCALIZE[31018]"/>
 							<param name="widget_target" value="files"/>
 							<param name="list_id" value="13200"/>
-							<param name="onup_id" value="13900"/>
-							<param name="ondown_id" value="13300"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListChannels">
@@ -616,8 +522,6 @@
 							<param name="widget_header" value="$LOCALIZE[31015]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="13300"/>
-							<param name="onup_id" value="13200"/>
-							<param name="ondown_id" value="20001"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 							<param name="visible" value="System.HasPVRAddon"/>
@@ -696,10 +600,7 @@
 						<param name="id" value="weather"/>
 					</include>
 					<control type="grouplist" id="15001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-160</itemgap>
+						<include>WidgetGroupListCommon</include>
 						<control type="group" id="16678">
 							<description>Weather info</description>
 							<height>560</height>
@@ -775,16 +676,12 @@
 						<include content="WeatherWidget">
 							<param name="content_include" value="HourlyItems" />
 							<param name="list_id" value="15100" />
-							<param name="onup_id" value="20000" />
-							<param name="ondown_id" value="15200" />
 							<param name="widget_header" value="$LOCALIZE[33036]"/>
 							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
 						</include>
 						<include content="WeatherWidget">
 							<param name="content_include" value="DailyItems" />
 							<param name="list_id" value="15200" />
-							<param name="onup_id" value="15100" />
-							<param name="ondown_id" value="20001" />
 							<param name="widget_header" value="$LOCALIZE[31019]"/>
 							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 						</include>
@@ -805,17 +702,12 @@
 						<param name="id" value="musicvideos"/>
 					</include>
 					<control type="grouplist" id="16001">
-						<orientation>vertical</orientation>
-						<height>100%</height>
-						<scrolltime tween="cubic" easing="out">500</scrolltime>
-						<itemgap>-160</itemgap>
+						<include>WidgetGroupListCommon</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="library://video/musicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="16900"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="16100"/>
 							<param name="visible" value="Library.HasContent(musicvideos)"/>
 						</include>
 						<include content="WidgetListEpisodes">
@@ -825,16 +717,12 @@
 							<param name="first_label" value="$INFO[ListItem.Title]" />
 							<param name="second_label" value="$INFO[ListItem.Artist]" />
 							<param name="list_id" value="16100"/>
-							<param name="onup_id" value="16900"/>
-							<param name="ondown_id" value="16200"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/random_musicvideo_artists.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31013]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="16200"/>
-							<param name="onup_id" value="16100"/>
-							<param name="ondown_id" value="16300"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
@@ -847,8 +735,6 @@
 							<param name="first_label" value="$INFO[ListItem.Title]" />
 							<param name="second_label" value="$INFO[ListItem.Artist]" />
 							<param name="list_id" value="16300"/>
-							<param name="onup_id" value="16200"/>
-							<param name="ondown_id" value="16400"/>
 						</include>
 						<include content="WidgetListEpisodes">
 							<param name="content_path" value="special://skin/playlists/unwatched_musicvideos.xsp"/>
@@ -857,8 +743,6 @@
 							<param name="first_label" value="$INFO[ListItem.Title]" />
 							<param name="second_label" value="$INFO[ListItem.Artist]" />
 							<param name="list_id" value="16400"/>
-							<param name="onup_id" value="16300"/>
-							<param name="ondown_id" value="16500"/>
 						</include>
 						<include content="WidgetListEpisodes">
 							<param name="content_path" value="special://skin/playlists/random_musicvideos.xsp"/>
@@ -867,16 +751,12 @@
 							<param name="first_label" value="$INFO[ListItem.Title]" />
 							<param name="second_label" value="$INFO[ListItem.Artist]" />
 							<param name="list_id" value="16500"/>
-							<param name="onup_id" value="16400"/>
-							<param name="ondown_id" value="16600"/>
 						</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="videodb://musicvideos/studios/"/>
 							<param name="widget_header" value="$LOCALIZE[20388]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="16600"/>
-							<param name="onup_id" value="16500"/>
-							<param name="ondown_id" value="20001"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]"/>
 							<param name="smaller_icon" value="true"/>
 							<param name="visible" value="Library.HasContent(musicvideos)"/>
@@ -898,15 +778,12 @@
 						<param name="id" value="pictures"/>
 					</include>
 					<control type="grouplist" id="4001">
-						<orientation>vertical</orientation>
-						<itemgap>-160</itemgap>
+						<include>WidgetGroupListCommon</include>
 						<include content="WidgetListCategories">
 							<param name="content_path" value="sources://pictures/"/>
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="pictures"/>
 							<param name="list_id" value="4100"/>
-							<param name="onup_id" value="20000"/>
-							<param name="ondown_id" value="20001"/>
 						</include>
 					</control>
 				</control>
