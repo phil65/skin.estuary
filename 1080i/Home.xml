@@ -309,8 +309,8 @@
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
 						</include>
-						<include content="WidgetListSquare">
-							<param name="content_path" value="$VAR[AndroidAppPathVar]"/>
+						<include content="WidgetListSquare" condition="System.Platform.Android">
+							<param name="content_path" value="androidapp://sources/apps/"/>
 							<param name="widget_header" value="$LOCALIZE[20244]"/>
 							<param name="widget_target" value="programs"/>
 							<param name="sortby" value="lastused"/>
