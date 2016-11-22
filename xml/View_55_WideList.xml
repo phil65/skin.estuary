@@ -20,8 +20,8 @@
 				<onup>55</onup>
 				<ondown>55</ondown>
 				<viewtype label="$LOCALIZE[31107]">list</viewtype>
-				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed) | Container.Content(musicvideos) | Container.Content(videos) | Container.Content() | Container.Content(episodes) | Container.Content(movies)</visible>
-				<focusedlayout height="80" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed) | Container.Content(videos) | Container.Content(episodes) | Container.Content(movies)">
+				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed) | Container.Content(musicvideos) | Container.Content(videos) | Container.Content() | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+				<focusedlayout height="80" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed) | Container.Content(videos) | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="group">
 						<width>widelist_width</width>
 						<control type="image">
@@ -88,7 +88,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="80" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed) | Container.Content(videos) | Container.Content(episodes) | Container.Content(movies)">
+				<itemlayout height="80" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed) | Container.Content(videos) | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="group">
 						<width>widelist_width</width>
 						<control type="label">
