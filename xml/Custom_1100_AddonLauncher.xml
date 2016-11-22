@@ -215,7 +215,7 @@
 			</control>
 			<control type="grouplist" id="700">
 				<orientation>horizontal</orientation>
-				<left>42</left>
+				<left>32</left>
 				<top>135</top>
 				<height>120</height>
 				<onup>SetFocus(9000,99)</onup>
@@ -246,8 +246,9 @@
 					<textureradiooffnofocus>icons/submenu/add-ons.png</textureradiooffnofocus>
 				</control>
 				<control type="radiobutton" id="802">
+					<top>5</top>
 					<width>157</width>
-					<height>120</height>
+					<height>110</height>
 					<align>right</align>
 					<aligny>center</aligny>
 					<onclick>ActivateWindow(addonbrowser,addons://outdated/,return)</onclick>
@@ -255,7 +256,7 @@
 					<label></label>
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
-					<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
+					<texturefocus border="30" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texturefocus>
 					<texturenofocus />
 					<radioposx>35</radioposx>
 					<radioposy>0</radioposy>

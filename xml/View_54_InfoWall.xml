@@ -10,19 +10,12 @@
 			<bordersize>20</bordersize>
 		</control>
 		<control type="image">
-			<left>30</left>
-			<top>20</top>
-			<width>336</width>
-			<height>280</height>
+			<left>20</left>
+			<top>10</top>
+			<width>356</width>
+			<height>300</height>
 			<texture border="2" background="true">$VAR[InfoWallThumbVar]</texture>
 			<aspectratio>keep</aspectratio>
-		</control>
-		<control type="image">
-			<left>20</left>
-			<top>290</top>
-			<width>356</width>
-			<height>60</height>
-			<texture colordiffuse="80FFFFFF">overlays/overlayfade.png</texture>
 		</control>
 		<control type="label">
 			<left>20</left>
@@ -48,24 +41,17 @@
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<left>3</left>
-				<top>3</top>
-				<width>310</width>
-				<height>310</height>
+				<left>0</left>
+				<top>0</top>
+				<width>316</width>
+				<height>316</height>
 				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>keep</aspectratio>
 				<bordersize>20</bordersize>
 			</control>
-			<control type="image">
-				<left>20</left>
-				<top>266</top>
-				<width>276</width>
-				<height>100</height>
-				<texture colordiffuse="80FFFFFF">overlays/overlayfade.png</texture>
-			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>290</top>
+				<top>288</top>
 				<width>262</width>
 				<height>80</height>
 				<font>font12</font>
