@@ -24,7 +24,7 @@
 				<bottom>0</bottom>
 				<width>100%</width>
 				<height>470</height>
-				<texture colordiffuse="dialog_tint">dialogs/dialog-bg-solid.png</texture>
+				<texture colordiffuse="dialog_tint">colors/white.png</texture>
 			</control>
 			<control type="label" id="311">
 				<centerleft>50%</centerleft>
@@ -43,7 +43,7 @@
 				<top>184</top>
 				<width>1542</width>
 				<height>100</height>
-				<texture colordiffuse="dialog_tint">dialogs/dialog-bg-solid.png</texture>
+				<texture colordiffuse="dialog_tint">colors/white.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -576,7 +576,7 @@
 						<top>0</top>
 						<width>480</width>
 						<height>50</height>
-						<texture colordiffuse="dialog_tint">dialogs/dialog-bg-solid.png</texture>
+						<texture colordiffuse="dialog_tint">colors/white.png</texture>
 					</control>
 					<control type="label">
 						<left>30</left>
@@ -596,7 +596,7 @@
 							<top>0</top>
 							<width>480</width>
 							<height>50</height>
-							<texture colordiffuse="dialog_tint">dialogs/dialog-bg-solid.png</texture>
+							<texture colordiffuse="dialog_tint">colors/white.png</texture>
 						</control>
 						<control type="image">
 							<left>10</left>

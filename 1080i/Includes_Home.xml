@@ -147,6 +147,17 @@
 								<bordersize>20</bordersize>
 							</control>
 							<control type="image">
+								<left>10</left>
+								<top>0</top>
+								<width>312</width>
+								<height>448</height>
+								<texture border="21" colordiffuse="button_focus">colors/white.png</texture>
+								<bordersize>20</bordersize>
+								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+								<visible>Control.HasFocus($PARAM[list_id])</visible>
+							</control>
+							<control type="image">
 								<left>40</left>
 								<top>30</top>
 								<width>252</width>
@@ -193,8 +204,8 @@
 								<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
+								<left>4</left>
+								<top>4</top>
 								<width>32</width>
 								<height>32</height>
 								<texture>$VAR[WallWatchedIconVar]</texture>
@@ -209,7 +220,7 @@
 							</control>
 							<control type="label">
 								<left>38</left>
-								<top>372</top>
+								<top>370</top>
 								<width>200</width>
 								<label>$PARAM[first_label]</label>
 								<font>font10</font>
@@ -217,8 +228,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 							</control>
 							<control type="label">
-								<left>30</left>
-								<top>372</top>
+								<right>-4</right>
+								<top>370</top>
 								<width>200</width>
 								<label>$PARAM[second_label]</label>
 								<font>font10</font>
@@ -228,22 +239,22 @@
 							</control>
 							<control type="image">
 								<left>8</left>
-								<top>377</top>
+								<top>376</top>
 								<width>24</width>
 								<height>24</height>
 								<texture>$PARAM[left_icon]</texture>
 							</control>
 							<control type="image">
 								<left>240</left>
-								<top>377</top>
+								<top>376</top>
 								<width>24</width>
 								<height>24</height>
 								<texture>$PARAM[right_icon]</texture>
 							</control>
 							<control type="progress">
-								<left>-2</left>
+								<left>0</left>
 								<top>390</top>
-								<width>276</width>
+								<width>272</width>
 								<height>1</height>
 								<texturebg></texturebg>
 								<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
@@ -251,11 +262,12 @@
 								<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 							</control>
 							<control type="image">
-								<left>-2</left>
-								<top>-2</top>
-								<width>276</width>
-								<height>414</height>
+								<left>0</left>
+								<top>0</top>
+								<width>272</width>
+								<height>408</height>
 								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+								<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 							</control>
 						</control>
 					</control>
@@ -402,24 +414,17 @@
 							<top>0</top>
 							<width>344</width>
 							<height>340</height>
-							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+							<texture border="21" colordiffuse="button_focus">colors/white.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="group">
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
-							<control type="image">
-								<left>-2</left>
-								<top>-2</top>
-								<width>348</width>
-								<height>344</height>
-								<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
-							</control>
 							<control type="progress">
-								<left>18</left>
+								<left>20</left>
 								<top>302</top>
-								<width>310</width>
+								<width>306</width>
 								<height>1</height>
 								<texturebg></texturebg>
 								<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
@@ -555,6 +560,18 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
+							<left>-4</left>
+							<top>-4</top>
+							<width>348</width>
+							<height>408</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="button_focus">colors/white.png</texture>
+							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+						</control>
+						<control type="image">
 							<left>20</left>
 							<top>20</top>
 							<width>300</width>
@@ -595,15 +612,6 @@
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
-							</control>
-							<control type="image">
-								<left>-2</left>
-								<top>-2</top>
-								<width>304</width>
-								<height>364</height>
-								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-								<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
 					</control>
@@ -694,11 +702,10 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<top>-2</top>
-							<left>-2</left>
-							<width>340</width>
-							<height>214</height>
-							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<width>336</width>
+							<height>210</height>
+							<texture colordiffuse="button_focus">colors/white.png</texture>
+							<bordersize>20</bordersize>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
@@ -869,11 +876,10 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<top>-2</top>
-							<left>-2</left>
-							<width>338</width>
-							<height>344</height>
-							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<width>334</width>
+							<height>340</height>
+							<texture colordiffuse="button_focus">colors/white.png</texture>
+							<bordersize>20</bordersize>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
@@ -1002,11 +1008,12 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<left>-2</left>
-							<top>18</top>
-							<width>258</width>
-							<height>354</height>
-							<texture border="23" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<left>0</left>
+							<top>20</top>
+							<width>254</width>
+							<height>350</height>
+							<texture colordiffuse="button_focus">colors/white.png</texture>
+							<bordersize>20</bordersize>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							<animation effect="fade" start="0" end="100" time="0" delay="30">Visible</animation>
 							<visible>Control.HasFocus($PARAM[list_id])</visible>

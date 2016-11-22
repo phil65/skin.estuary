@@ -17,7 +17,7 @@
 		</control>
 		<control type="panel" id="9000">
 			<centerleft>50%</centerleft>
-			<width>1850</width>
+			<width>1720</width>
 			<centertop>50%</centertop>
 			<height>870</height>
 			<onleft>9000</onleft>
@@ -25,7 +25,7 @@
 			<onup>9000</onup>
 			<ondown>9000</ondown>
 			<include>OpenClose_Right</include>
-			<itemlayout height="290" width="460">
+			<itemlayout height="290" width="430">
 				<control type="image">
 					<width>430</width>
 					<height>270</height>
@@ -57,7 +57,7 @@
 					<align>center</align>
 				</control>
 			</itemlayout>
-			<focusedlayout height="290" width="460">
+			<focusedlayout height="290" width="430">
 				<control type="group">
 					<depth>DepthContentPopout</depth>
 					<animation type="Focus" reversible="false">
@@ -72,14 +72,12 @@
 						<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 						<bordertexture border="20">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
-						<animation effect="fade" start="0" end="100" time="0">Unfocus</animation>
-						<animation effect="fade" start="100" end="0" time="0">Focus</animation>
 					</control>
 					<control type="image">
-						<left>-2</left>
-						<width>434</width>
-						<height>272</height>
-						<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+						<width>430</width>
+						<height>270</height>
+						<texture colordiffuse="button_focus">colors/white.png</texture>
+						<bordersize>20</bordersize>
 						<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 					</control>
 					<control type="image">
