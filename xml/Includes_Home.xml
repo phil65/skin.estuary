@@ -418,13 +418,22 @@
 							<top>0</top>
 							<width>344</width>
 							<height>340</height>
-							<texture border="21" colordiffuse="button_focus">colors/white.png</texture>
+							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="group">
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>344</width>
+								<height>340</height>
+								<texture border="21" colordiffuse="button_focus">colors/white.png</texture>
+								<bordertexture border="20">overlays/shadow.png</bordertexture>
+								<bordersize>20</bordersize>
+							</control>
 							<control type="progress">
 								<left>20</left>
 								<top>302</top>
