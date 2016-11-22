@@ -10,8 +10,11 @@
 		<usecontrolcoords>true</usecontrolcoords>
 	</include>
 	<include name="CategoryLabel">
+		<param name="left">442</param>
+		<definition>
 		<control type="label" id="$PARAM[list_id]666">
-			<left>500</left>
+			<left>$PARAM[left]</left>
+			<textoffsetx>58</textoffsetx>
 			<top>80</top>
 			<width>900</width>
 			<height>90</height>
@@ -20,6 +23,7 @@
 			<shadowcolor>text_shadow</shadowcolor>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 		</control>
+	</definition>
 	</include>
 	<include name="PVRWidget">
 		<control type="image">
@@ -928,6 +932,7 @@
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="left" value="$PARAM[left]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>$PARAM[left]</left>

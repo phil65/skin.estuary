@@ -55,6 +55,8 @@
 			<top>0</top>
 			<height>100%</height>
 			<left>0</left>
+			<ondown>20001</ondown>
+			<usecontrolcoords>true</usecontrolcoords>
 			<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
 				<effect type="slide" end="0,20" time="60" tween="sine" />
 				<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
@@ -66,18 +68,9 @@
 			<scrolltime tween="cubic" easing="out">500</scrolltime>
 			<include>OpenClose_Right</include>
 			<itemgap>-130</itemgap>
-			<control type="group">
+			<control type="group" id="567">
 				<description>Weather info</description>
 				<height>380</height>
-				<!-- 		<control type="label">
-													<left>60</left>
-													<top>150</top>
-													<aligny>center</aligny>
-													<height>24</height>
-													<width>800</width>
-													<font>font36_title</font>
-													<label>$INFO[System.Date]</label>
-												</control> -->
 				<control type="image">
 					<left>2.5%</left>
 					<top>100</top>
@@ -159,8 +152,6 @@
 				<param name="left" value="-20" />
 				<param name="content_include" value="DailyItems" />
 				<param name="list_id" value="15100" />
-				<param name="onup_id" value="20" />
-				<param name="ondown_id" value="15200" />
 				<param name="widget_header" value="$LOCALIZE[31019]"/>
 				<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 			</include>
@@ -168,8 +159,6 @@
 				<param name="left" value="-20" />
 				<param name="content_include" value="HourlyItems" />
 				<param name="list_id" value="15200" />
-				<param name="onup_id" value="15100" />
-				<param name="ondown_id" value="70010" />
 				<param name="widget_header" value="$LOCALIZE[33036]"/>
 				<param name="visible" value="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
 			</include>
