@@ -387,7 +387,7 @@
 					</include>
 					<control type="grouplist" id="12001">
 						<include>WidgetGroupListCommon</include>
-						<control type="grouplist">
+						<control type="grouplist" id="12855">
 							<height>390</height>
 							<left>465</left>
 							<top>36</top>
@@ -461,7 +461,7 @@
 					</include>
 					<control type="grouplist" id="13001">
 						<include>WidgetGroupListCommon</include>
-						<control type="grouplist">
+						<control type="grouplist" id="13855">
 							<height>390</height>
 							<left>538</left>
 							<top>36</top>
