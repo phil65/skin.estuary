@@ -142,7 +142,7 @@
 								<font>font12</font>
 								<label>$INFO[ListItem.Title]</label>
 								<shadowcolor>text_shadow</shadowcolor>
-								<textcolor>button_focus</textcolor>
+								<textcolor>grey</textcolor>
 							</control>
 							<control type="label">
 								<left>12</left>
@@ -270,7 +270,7 @@
 								<align>right</align>
 								<label>$INFO[ListItem.Title]</label>
 								<shadowcolor>text_shadow</shadowcolor>
-								<textcolor>button_focus</textcolor>
+								<textcolor>grey</textcolor>
 							</control>
 							<control type="label">
 								<left>12</left>
@@ -395,7 +395,7 @@
 				<height>80</height>
 				<align>right</align>
 				<visible>!String.isempty(ListItem.NextTitle)</visible>
-				<label>$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[CR][/COLOR]] $INFO[ListItem.NextStartTime]</label>
+				<label>$INFO[ListItem.NextTitle,[COLOR grey]$LOCALIZE[19031]:[CR][/COLOR]] $INFO[ListItem.NextStartTime]</label>
 				<include>OpenClose_Right</include>
 			</control>
 			<include>MediaMenuMouseOverlay</include>
