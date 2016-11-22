@@ -170,17 +170,17 @@
 						<param name="onclick" value="" />
 						<param name="label" value="$LOCALIZE[192]" />
 					</include>
-					<control type="image">
-						<left>40</left>
-						<top>0</top>
-						<width>340</width>
-						<height>360</height>
-						<fadetime>300</fadetime>
-						<aspectratio aligny="bottom">keep</aspectratio>
-						<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="20">overlays/shadow.png</bordertexture>
-						<bordersize>20</bordersize>
-					</control>
+				</control>
+				<control type="image">
+					<left>40</left>
+					<bottom>100</bottom>
+					<width>340</width>
+					<height>360</height>
+					<fadetime>300</fadetime>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
