@@ -111,7 +111,7 @@
 					<right>400</right>
 					<top>160</top>
 					<align>right</align>
-					<label>[COLOR grey]$LOCALIZE[402]: $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/COLOR][CR]$INFO[Weather.Conditions]</label>
+					<label>[I]$LOCALIZE[402]: $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/I][CR]$INFO[Weather.Conditions]</label>
 					<font>font14</font>
 					<width>630</width>
 				</control>
