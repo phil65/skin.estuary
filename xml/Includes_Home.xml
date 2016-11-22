@@ -11,6 +11,7 @@
 	</include>
 	<include name="CategoryLabel">
 		<param name="left">442</param>
+		<param name="visible">true</param>
 		<definition>
 		<control type="label" id="$PARAM[list_id]666">
 			<left>$PARAM[left]</left>
@@ -21,6 +22,7 @@
 			<label>$PARAM[label]</label>
 			<textcolor>white</textcolor>
 			<shadowcolor>text_shadow</shadowcolor>
+			<visible>$PARAM[visible]</visible>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 		</control>
 	</definition>
@@ -645,6 +647,7 @@
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>442</left>
