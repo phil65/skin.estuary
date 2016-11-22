@@ -428,16 +428,15 @@
 							<param name="pvr_type" value="TV"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
-						<include content="WidgetListChannels">
+						<include content="WidgetListChannels" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31016]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12200"/>
-							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
-						<include content="WidgetListChannels">
+						<include content="WidgetListChannels" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
@@ -446,7 +445,6 @@
 							<param name="list_id" value="12300"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
-							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
 					<include content="ImageWidget">
@@ -502,16 +500,15 @@
 							<param name="pvr_type" value="Radio"/>
 							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
-						<include content="WidgetListChannels">
+						<include content="WidgetListChannels" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31018]"/>
 							<param name="widget_target" value="files"/>
 							<param name="list_id" value="13200"/>
-							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
-						<include content="WidgetListChannels">
+						<include content="WidgetListChannels" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
@@ -520,7 +517,6 @@
 							<param name="list_id" value="13300"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
-							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 					</control>
 					<include content="ImageWidget">
