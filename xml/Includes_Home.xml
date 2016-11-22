@@ -378,16 +378,16 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<left>24</left>
-							<top>24</top>
-							<width>296</width>
-							<height>220</height>
+							<left>20</left>
+							<top>20</top>
+							<width>304</width>
+							<height>228</height>
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultTVShows.png" background="true">$PARAM[item_image]</texture>
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>248</top>
+							<top>250</top>
 							<width>288</width>
 							<label>$PARAM[first_label]</label>
 							<font>font12</font>
@@ -396,7 +396,7 @@
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>280</top>
+							<top>282</top>
 							<width>288</width>
 							<label>$PARAM[second_label]</label>
 							<font>font10</font>
@@ -426,12 +426,12 @@
 						</control>
 						<control type="group">
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
+							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>344</width>
-								<height>340</height>
+								<left>-4</left>
+								<top>-4</top>
+								<width>352</width>
+								<height>348</height>
 								<texture border="21" colordiffuse="button_focus">colors/white.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
@@ -448,16 +448,16 @@
 							</control>
 						</control>
 						<control type="image">
-							<left>24</left>
-							<top>24</top>
-							<width>296</width>
-							<height>220</height>
+							<left>20</left>
+							<top>20</top>
+							<width>304</width>
+							<height>228</height>
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultTVShows.png" background="true">$PARAM[item_image]</texture>
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>248</top>
+							<top>250</top>
 							<width>288</width>
 							<label>$PARAM[first_label]</label>
 							<font>font12</font>
@@ -466,7 +466,7 @@
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>280</top>
+							<top>282</top>
 							<width>288</width>
 							<label>$PARAM[second_label]</label>
 							<font>font10</font>
@@ -543,7 +543,7 @@
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>317</top>
+							<top>318</top>
 							<width>280</width>
 							<height>60</height>
 							<aligny>center</aligny>
@@ -619,7 +619,7 @@
 							</control>
 							<control type="label">
 								<left>10</left>
-								<top>297</top>
+								<top>298</top>
 								<width>280</width>
 								<height>60</height>
 								<aligny>center</aligny>
