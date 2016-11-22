@@ -133,7 +133,6 @@
 						<top>10</top>
 						<width>560</width>
 						<height>262</height>
-						<textcolor>button_focus</textcolor>
 						<font>font36_title</font>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
@@ -150,7 +149,6 @@
 						<top>195</top>
 						<width>750</width>
 						<height>262</height>
-						<textcolor>button_focus</textcolor>
 						<font>font36_title</font>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
@@ -195,7 +193,7 @@
 									<height>90</height>
 									<width>780</width>
 									<aligny>center</aligny>
-									<label>$INFO[ListItem.Date,[COLOR button_focus],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+									<label>$INFO[ListItem.Date,[COLOR grey],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 									<shadowcolor>text_shadow</shadowcolor>
 									<font>font13</font>
 								</control>
@@ -206,7 +204,7 @@
 									<height>90</height>
 									<width>$PARAM[width]</width>
 									<aligny>center</aligny>
-									<label>$INFO[ListItem.Date,[COLOR button_focus],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+									<label>$INFO[ListItem.Date,[COLOR grey],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 									<shadowcolor>text_shadow</shadowcolor>
 									<font>font13</font>
 								</control>
