@@ -560,6 +560,7 @@
 										<top>130</top>
 										<include content="InfoWallMusicLayout">
 											<param name="fallback_image" value="DefaultFavourites.png" />
+											<param name="focused" value="false" />
 										</include>
 									</control>
 								</itemlayout>
@@ -571,15 +572,8 @@
 										<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="170,320">UnFocus</animation>
 										<include content="InfoWallMusicLayout">
 											<param name="fallback_image" value="DefaultFavourites.png" />
+											<param name="focused" value="true" />
 										</include>
-										<control type="image">
-											<left>20</left>
-											<top>20</top>
-											<width>276</width>
-											<height>346</height>
-											<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-											<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
-										</control>
 									</control>
 								</focusedlayout>
 								<content>favourites://</content>
