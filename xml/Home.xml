@@ -99,6 +99,8 @@
 							<param name="content_path" value="videodb://movies/sets/"/>
 							<param name="widget_header" value="$LOCALIZE[31075]"/>
 							<param name="widget_target" value="videos"/>
+							<param name="right_icon" value="" />
+							<param name="fallback_image" value="DefaultSets.png" />
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
 						</include>
