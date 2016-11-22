@@ -3,12 +3,12 @@
 	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">5553</defaultcontrol>
 	<controls>
-		<control type="button" id="22001">
+		<control type="button">
 			<description>background close area</description>
 			<left>0</left>
 			<top>0</top>
 			<width>100%</width>
-			<height>800</height>
+			<bottom>280</bottom>
 			<texturefocus></texturefocus>
 			<texturenofocus></texturenofocus>
 			<onclick>Action(close)</onclick>
