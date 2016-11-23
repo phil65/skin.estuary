@@ -80,6 +80,17 @@
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
+			<control type="label">
+				<top>310</top>
+				<left>10%</left>
+				<width>80%</width>
+				<align>center</align>
+				<height>44</height>
+				<shadowcolor>text_shadow</shadowcolor>
+				<label>$LOCALIZE[31154]</label>
+				<visible>Control.HasFocus(20)</visible>
+				<animation effect="fade" time="400">VisibleChange</animation>
+			</control>
 				<control type="button" id="20">
 					<left>2.5%</left>
 					<top>100</top>
@@ -193,28 +204,5 @@
 			<param name="sublabel" value="$INFO[Window(weather).Property(WeatherProvider)]" />
 		</include>
 		<include>BottomBar</include>
-		<control type="group">
-			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>()
-			<visible>Control.HasFocus(20)</visible>
-			<animation effect="fade" time="200">VisibleChange</animation>
-			<height>60</height>
-			<bottom>0</bottom>
-			<left>0</left>
-			<control type="image">
-				<top>4</top>
-				<left>17</left>
-				<width>36</width>
-				<height>36</height>
-				<texture colordiffuse="grey">frame/menu-fo.png</texture>
-			</control>
-			<control type="label">
-				<left>74</left>
-				<width>800</width>
-				<height>44</height>
-				<shadowcolor>text_shadow</shadowcolor>
-				<label>$LOCALIZE[31154]</label>
-			</control>
-		</control>
 	</controls>
 </window>
