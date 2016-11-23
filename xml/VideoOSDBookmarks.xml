@@ -3,6 +3,16 @@
 	<defaultcontrol always="true">2</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
+		<control type="button">
+			<description>background close area</description>
+			<left>0</left>
+			<top>0</top>
+			<width>100%</width>
+			<bottom>546</bottom>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
+			<onclick>Action(close)</onclick>
+		</control>
 		<control type="group">
 			<bottom>0</bottom>
 			<height>546</height>
@@ -25,7 +35,33 @@
 				<label>$LOCALIZE[31155]</label>
 				<visible>Integer.IsEqual(Container(11).NumItems,0)</visible>
 			</control>
-			<control type="list" id="11">
+			<control type="grouplist" id="9001">
+				<orientation>horizontal</orientation>
+				<left>0</left>
+				<top>-4</top>
+				<width>100%</width>
+				<align>center</align>
+				<height>100</height>
+				<onup>11</onup>
+				<ondown>11</ondown>
+				<include content="DefaultDialogButton">
+					<param name="id" value="2" />
+					<param name="label" value="$LOCALIZE[294]" />
+					<param name="width" value="350" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="3" />
+					<param name="label" value="$LOCALIZE[296]" />
+					<param name="width" value="350" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="4" />
+					<param name="label" value="$LOCALIZE[20406]" />
+					<param name="width" value="350" />
+					<param name="visible" value="Control.IsEnabled(4)" />
+				</include>
+			</control>
+			<control type="panel" id="11">
 				<left>0</left>
 				<top>81</top>
 				<width>100%</width>
@@ -88,37 +124,11 @@
 							<top>5</top>
 							<width>330</width>
 							<height>250</height>
-							<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							<visible>Control.HasFocus(11)</visible>
 						</control>
 					</control>
 				</focusedlayout>
-			</control>
-			<control type="grouplist" id="9001">
-				<orientation>horizontal</orientation>
-				<left>0</left>
-				<top>-4</top>
-				<width>100%</width>
-				<align>center</align>
-				<height>100</height>
-				<onup>11</onup>
-				<ondown>11</ondown>
-				<include content="DefaultDialogButton">
-					<param name="id" value="2" />
-					<param name="label" value="$LOCALIZE[294]" />
-					<param name="width" value="350" />
-				</include>
-				<include content="DefaultDialogButton">
-					<param name="id" value="3" />
-					<param name="label" value="$LOCALIZE[296]" />
-					<param name="width" value="350" />
-				</include>
-				<include content="DefaultDialogButton">
-					<param name="id" value="4" />
-					<param name="label" value="$LOCALIZE[20406]" />
-					<param name="width" value="350" />
-					<param name="visible" value="Control.IsEnabled(4)" />
-				</include>
 			</control>
 		</control>
 	</controls>
