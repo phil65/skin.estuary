@@ -171,7 +171,7 @@
 							<height>60</height>
 							<font>font12</font>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.TrackNumber,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</label>
+							<label>$INFO[ListItem.TrackNumber,[COLOR grey], - [/COLOR]]$INFO[ListItem.Label]</label>
 						</control>
 						<control type="group">
 							<left>230</left>
@@ -194,7 +194,7 @@
 								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
-								<label>$INFO[ListItem.TrackNumber,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</label>
+								<label>$INFO[ListItem.TrackNumber,[COLOR white], - [/COLOR]]$INFO[ListItem.Label]</label>
 							</control>
 							<control type="group">
 								<left>230</left>
