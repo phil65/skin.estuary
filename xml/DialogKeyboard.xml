@@ -603,8 +603,7 @@
 							<width>480</width>
 							<height>50</height>
 							<texture colordiffuse="button_focus">colors/grey.png</texture>
-							<animation effect="fade" start="0" end="80" time="200">Focus</animation>
-							<animation effect="fade" start="80" end="0" time="0">Unfocus</animation>
+							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="label">
 							<left>30</left>

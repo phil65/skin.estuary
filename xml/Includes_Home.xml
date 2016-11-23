@@ -157,7 +157,7 @@
 								<top>0</top>
 								<width>312</width>
 								<height>448</height>
-								<texture border="21" colordiffuse="button_focus">colors/white.png</texture>
+								<texture border="21" colordiffuse="button_focus">colors/grey.png</texture>
 								<bordersize>20</bordersize>
 								<include>Animation_FocusTextureFade</include>
 								<visible>Control.HasFocus($PARAM[list_id])</visible>
@@ -430,7 +430,7 @@
 								<top>-4</top>
 								<width>352</width>
 								<height>348</height>
-								<texture border="21" colordiffuse="button_focus">colors/white.png</texture>
+								<texture border="21" colordiffuse="button_focus">colors/grey.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
 							</control>
