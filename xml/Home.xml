@@ -605,7 +605,7 @@
 							<control type="image">
 								<top>102</top>
 								<left>510</left>
-								<width>1360</width>
+								<right>50</right>
 								<height>380</height>
 								<texture border="22">dialogs/dialog-bg.png</texture>
 							</control>
@@ -621,7 +621,7 @@
 								<top>210</top>
 								<aligny>center</aligny>
 								<height>24</height>
-								<width>800</width>
+								<right>100</right>
 								<align>right</align>
 								<font>font14</font>
 								<label>$INFO[Weather.Conditions,, ∙ ]$INFO[Weather.Temperature]</label>
@@ -631,7 +631,7 @@
 								<top>150</top>
 								<aligny>center</aligny>
 								<height>24</height>
-								<width>800</width>
+								<right>100</right>
 								<align>right</align>
 								<font>font52_title</font>
 								<label>$INFO[Weather.Location]</label>
@@ -639,7 +639,7 @@
 							<control type="grouplist">
 								<top>315</top>
 								<left>570</left>
-								<width>1330</width>
+								<right>20</right>
 								<orientation>horizontal</orientation>
 								<align>justify</align>
 								<itemgap>-50</itemgap>
