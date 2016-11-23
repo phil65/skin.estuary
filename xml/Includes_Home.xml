@@ -282,6 +282,7 @@
 		</definition>
 	</include>
 	<include name="ImageWidget">
+		<param name="visible">true</param>
 		<param name="visible_1">true</param>
 		<param name="visible_2">true</param>
 		<param name="button2_onclick">true</param>

@@ -423,12 +423,11 @@
 								</include>
 							</control>
 						</control>
-						<include content="WidgetListCategories">
+						<include content="WidgetListCategories" condition="System.HasPVRAddon">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="TV"/>
-							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListChannels" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
@@ -449,13 +448,12 @@
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 						</include>
 					</control>
-					<include content="ImageWidget">
+					<include content="ImageWidget" condition="!System.HasPVRAddon">
 						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
 						<param name="button_id" value="12400"/>
-						<param name="visible" value="!System.HasPVRAddon"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVButton)"/>
 					</include>
 				</control>
@@ -495,12 +493,11 @@
 								</include>
 							</control>
 						</control>
-						<include content="WidgetListCategories">
+						<include content="WidgetListCategories" condition="System.HasPVRAddon">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="Radio"/>
-							<param name="visible" value="System.HasPVRAddon"/>
 						</include>
 						<include content="WidgetListChannels" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
@@ -521,13 +518,12 @@
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 						</include>
 					</control>
-					<include content="ImageWidget">
+					<include content="ImageWidget" condition="!System.HasPVRAddon">
 						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
 						<param name="button_id" value="13400"/>
-						<param name="visible" value="!System.HasPVRAddon"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoRadioButton)"/>
 					</include>
 				</control>
