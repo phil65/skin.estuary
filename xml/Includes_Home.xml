@@ -636,7 +636,6 @@
 		</definition>
 	</include>
 	<include name="WidgetListCategories">
-		<param name="arrow_posy">200</param>
 		<param name="item_limit">20</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="icon_height">130</param>
@@ -786,7 +785,6 @@
 		</content>
 	</include>
 	<include name="WidgetListChannels">
-		<param name="arrow_posy">200</param>
 		<param name="item_limit">15</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="label">$INFO[ListItem.Label]</param>
