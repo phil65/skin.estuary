@@ -165,14 +165,13 @@
 							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
-							<animation effect="fade" start="0" end="100" time="0">Unfocus</animation>
-							<animation effect="fade" start="100" end="0" time="0">Focus</animation>
 						</control>
 						<control type="image">
 							<width>330</width>
 							<height>140</height>
 							<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
-							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
+							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 						</control>
 						<control type="textbox">
 							<left>30</left>

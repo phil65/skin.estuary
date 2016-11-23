@@ -146,7 +146,7 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused] + !String.IsEmpty(ListItem.Art(poster))</visible>
 				<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
-				<animation effect="fade" start="0" end="100" time="0" tween="sine">UnFocus</animation>
+				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 			</control>
 			<control type="image">
 				<left>15</left>
