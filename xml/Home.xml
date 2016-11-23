@@ -37,6 +37,7 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group" id="2000">
+				<left>462</left>
 				<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
 					<effect type="slide" end="0,20" time="60" tween="sine" />
 					<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
@@ -45,8 +46,6 @@
 					<effect type="slide" end="0,-20" time="60" tween="sine" />
 					<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
 				</animation>
-				<top>0</top>
-				<left>20</left>
 				<include>OpenClose_Right</include>
 				<control type="group" id="5000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies)</visible>
@@ -533,9 +532,9 @@
 						<param name="id" value="favorites"/>
 					</include>
 					<control type="panel" id="14100">
-						<left>520</left>
+						<left>65</left>
 						<top>0</top>
-						<width>80%</width>
+						<right>0</right>
 						<bottom>0</bottom>
 						<onleft>9000</onleft>
 						<onright>9000</onright>
@@ -593,20 +592,20 @@
 							<visible>!String.IsEmpty(Weather.plugin)</visible>
 							<control type="image">
 								<top>102</top>
-								<left>510</left>
+								<left>68</left>
 								<right>50</right>
 								<height>380</height>
 								<texture border="22">dialogs/dialog-bg.png</texture>
 							</control>
 							<control type="image">
 								<top>120</top>
-								<left>560</left>
+								<left>118</left>
 								<width>150</width>
 								<height>150</height>
 								<texture>$INFO[Weather.conditions]</texture>
 							</control>
 							<control type="label">
-								<left>1020</left>
+								<left>578</left>
 								<top>210</top>
 								<aligny>center</aligny>
 								<height>24</height>
@@ -616,7 +615,7 @@
 								<label>$INFO[Weather.Conditions,, ∙ ]$INFO[Weather.Temperature]</label>
 							</control>
 							<control type="label">
-								<left>1020</left>
+								<left>578</left>
 								<top>150</top>
 								<aligny>center</aligny>
 								<height>24</height>
@@ -627,7 +626,7 @@
 							</control>
 							<control type="grouplist">
 								<top>315</top>
-								<left>570</left>
+								<left>128</left>
 								<right>20</right>
 								<orientation>horizontal</orientation>
 								<align>justify</align>

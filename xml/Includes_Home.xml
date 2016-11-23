@@ -10,7 +10,7 @@
 		<usecontrolcoords>true</usecontrolcoords>
 	</include>
 	<include name="CategoryLabel">
-		<param name="left">442</param>
+		<param name="left">0</param>
 		<param name="visible">true</param>
 		<definition>
 			<control type="label" id="$PARAM[list_id]666">
@@ -75,7 +75,7 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="list" id="$PARAM[list_id]">
-				<left>442</left>
+				<left>0</left>
 				<top>120</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<right>0</right>
@@ -291,7 +291,7 @@
 				<visible>$PARAM[visible]</visible>
 				<control type="multiimage">
 					<top>0</top>
-					<left>442</left>
+					<left>0</left>
 					<right>0</right>
 					<height>100%</height>
 					<aspectratio>scale</aspectratio>
@@ -357,7 +357,7 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>442</left>
+				<left>0</left>
 				<top>120</top>
 				<right>0</right>
 				<height>450</height>
@@ -492,7 +492,7 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>442</left>
+				<left>0</left>
 				<top>120</top>
 				<right>0</right>
 				<height>500</height>
@@ -647,7 +647,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>442</left>
+				<left>0</left>
 				<top>120</top>
 				<right>0</right>
 				<height>300</height>
@@ -792,7 +792,7 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>442</left>
+				<left>0</left>
 				<top>120</top>
 				<right>0</right>
 				<height>430</height>
@@ -919,7 +919,6 @@
 		</definition>
 	</include>
 	<include name="WeatherWidget">
-		<param name="left">442</param>
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
@@ -928,7 +927,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>$PARAM[left]</left>
+				<left>0</left>
 				<top>100</top>
 				<right>0</right>
 				<height>480</height>
