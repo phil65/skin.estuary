@@ -10,12 +10,10 @@
 		<usecontrolcoords>true</usecontrolcoords>
 	</include>
 	<include name="CategoryLabel">
-		<param name="left">0</param>
 		<param name="visible">true</param>
 		<definition>
 			<control type="label" id="$PARAM[list_id]666">
-				<left>$PARAM[left]</left>
-				<textoffsetx>58</textoffsetx>
+				<left>55</left>
 				<top>80</top>
 				<width>900</width>
 				<height>90</height>
@@ -923,7 +921,6 @@
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="left" value="$PARAM[left]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
