@@ -532,60 +532,53 @@
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="favorites"/>
 					</include>
-					<control type="group" id="14001">
+					<control type="panel" id="14100">
+						<left>520</left>
 						<top>0</top>
+						<width>80%</width>
 						<bottom>0</bottom>
-						<control type="group">
-							<visible>Integer.IsGreater(Container(14100).NumItems,0) | Container(14100).IsUpdating</visible>
-							<height>100%</height>
-							<control type="panel" id="14100">
-								<left>520</left>
-								<top>0</top>
-								<width>80%</width>
-								<bottom>0</bottom>
-								<onleft>9000</onleft>
-								<onright>9000</onright>
-								<onup>14100</onup>
-								<ondown>14100</ondown>
-								<onclick>$INFO[ListItem.FileNameAndPath]</onclick>
-								<preloaditems>2</preloaditems>
-								<scrolltime tween="sine">200</scrolltime>
-								<orientation>vertical</orientation>
-								<itemlayout width="330" height="396">
-									<control type="group">
-										<top>130</top>
-										<include content="InfoWallMusicLayout">
-											<param name="fallback_image" value="DefaultFavourites.png" />
-											<param name="focused" value="false" />
-										</include>
-									</control>
-								</itemlayout>
-								<focusedlayout width="330" height="396">
-									<control type="group">
-										<depth>DepthContentPopout</depth>
-										<top>130</top>
-										<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="170,320">Focus</animation>
-										<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="170,320">UnFocus</animation>
-										<include content="InfoWallMusicLayout">
-											<param name="fallback_image" value="DefaultFavourites.png" />
-											<param name="focused" value="true" />
-										</include>
-									</control>
-								</focusedlayout>
-								<content>favourites://</content>
+						<onleft>9000</onleft>
+						<onright>9000</onright>
+						<onup>14100</onup>
+						<ondown>14100</ondown>
+						<onclick>$INFO[ListItem.FileNameAndPath]</onclick>
+						<preloaditems>2</preloaditems>
+						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<orientation>vertical</orientation>
+						<visible>Integer.IsGreater(Container(14100).NumItems,0) | Container(14100).IsUpdating</visible>
+						<itemlayout width="330" height="396">
+							<control type="group">
+								<top>130</top>
+								<include content="InfoWallMusicLayout">
+									<param name="fallback_image" value="DefaultFavourites.png" />
+									<param name="focused" value="false" />
+								</include>
 							</control>
-						</control>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31025]" />
-							<param name="button_label" value="$LOCALIZE[31116]" />
-							<param name="button_onclick" value=""/>
-							<param name="button_id" value="5500"/>
-							<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0) + !Container(14100).IsUpdating"/>
-							<param name="visible_1" value="false"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoFavButton)"/>
-						</include>
+						</itemlayout>
+						<focusedlayout width="330" height="396">
+							<control type="group">
+								<depth>DepthContentPopout</depth>
+								<top>130</top>
+								<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="170,320">Focus</animation>
+								<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="170,320">UnFocus</animation>
+								<include content="InfoWallMusicLayout">
+									<param name="fallback_image" value="DefaultFavourites.png" />
+									<param name="focused" value="true" />
+								</include>
+							</control>
+						</focusedlayout>
+						<content>favourites://</content>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31025]" />
+						<param name="button_label" value="$LOCALIZE[31116]" />
+						<param name="button_onclick" value=""/>
+						<param name="button_id" value="5500"/>
+						<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0) + !Container(14100).IsUpdating"/>
+						<param name="visible_1" value="false"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoFavButton)"/>
+					</include>
 				</control>
 				<control type="group" id="15000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),weather)</visible>
