@@ -638,7 +638,7 @@
 	<include name="WidgetListCategories">
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">20</param>
-		<param name="icon">$INFO[ListItem.ActualIcon]</param>
+		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="icon_height">130</param>
 		<param name="pvr_submenu">false</param>
 		<param name="pvr_type">TV</param>
