@@ -892,7 +892,7 @@
 					<left>35</left>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
-					<width>auto</width>
+					<width>900</width>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
@@ -919,8 +919,6 @@
 							<width>660</width>
 							<itemgap>5</itemgap>
 							<usecontrolcoords>true</usecontrolcoords>
-							<!-- 							<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
-							 -->
 							<control type="image">
 								<top>8</top>
 								<width>28</width>
