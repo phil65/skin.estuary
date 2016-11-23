@@ -159,8 +159,7 @@
 								<height>448</height>
 								<texture border="21" colordiffuse="button_focus">colors/white.png</texture>
 								<bordersize>20</bordersize>
-								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+								<include>Animation_FocusTextureFade</include>
 								<visible>Control.HasFocus($PARAM[list_id])</visible>
 							</control>
 							<control type="image">
@@ -425,8 +424,7 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="group">
-							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							<include>Animation_FocusTextureFade</include>
 							<control type="image">
 								<left>-4</left>
 								<top>-4</top>
@@ -583,8 +581,7 @@
 							<texture colordiffuse="button_focus">colors/white.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
-							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
 							<left>20</left>
@@ -711,8 +708,7 @@
 							<height>210</height>
 							<texture colordiffuse="button_focus">colors/white.png</texture>
 							<bordersize>20</bordersize>
-							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
 							<centertop>83</centertop>
@@ -874,8 +870,7 @@
 							<height>340</height>
 							<texture colordiffuse="button_focus">colors/white.png</texture>
 							<bordersize>20</bordersize>
-							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
 							<top>43</top>
@@ -1010,9 +1005,7 @@
 							<height>350</height>
 							<texture colordiffuse="button_focus">colors/white.png</texture>
 							<bordersize>20</bordersize>
-							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
-							<animation effect="fade" start="0" end="100" time="0" delay="30">Visible</animation>
-							<visible>Control.HasFocus($PARAM[list_id])</visible>
+							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
 							<left>60</left>

@@ -20,8 +20,7 @@
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
-				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+				<include>Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -65,8 +64,7 @@
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
-				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+				<include>Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -112,8 +110,7 @@
 					<texture colordiffuse="button_focus">colors/white.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
-					<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
-					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+					<include>Animation_FocusTextureFade</include>
 				</control>
 				<control type="image">
 					<left>26</left>
@@ -145,8 +142,7 @@
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused] + !String.IsEmpty(ListItem.Art(poster))</visible>
-				<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
-				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+				<include>Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
 				<left>15</left>
