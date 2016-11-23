@@ -236,7 +236,7 @@
 				<top>90</top>
 				<onleft>9002</onleft>
 				<onright>20</onright>
-				<itemgap>-20</itemgap>
+				<itemgap>dialogbuttons_itemgap</itemgap>
 				<include content="DefaultDialogButton">
 					<param name="width" value="350" />
 					<param name="id" value="4" />

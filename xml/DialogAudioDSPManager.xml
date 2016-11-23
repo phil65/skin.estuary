@@ -96,8 +96,9 @@
 			</control>
 			<control type="grouplist" id="9001">
 				<left>1300</left>
+				<width>470</width>
 				<top>105</top>
-				<itemgap>-20</itemgap>
+				<itemgap>dialogbuttons_itemgap</itemgap>
 				<onleft>61</onleft>
 				<onright>9000</onright>
 				<control type="radiobutton" id="22">
