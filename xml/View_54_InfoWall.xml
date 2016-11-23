@@ -16,7 +16,7 @@
 				<left>-4</left>
 				<width>404</width>
 				<height>388</height>
-				<texture colordiffuse="button_focus">colors/white.png</texture>
+				<texture colordiffuse="button_focus">colors/grey.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
@@ -60,7 +60,7 @@
 				<left>-4</left>
 				<width>324</width>
 				<height>394</height>
-				<texture colordiffuse="button_focus">colors/white.png</texture>
+				<texture colordiffuse="button_focus">colors/grey.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
@@ -107,7 +107,7 @@
 					<top>-10</top>
 					<width>290</width>
 					<height>400</height>
-					<texture colordiffuse="button_focus">colors/white.png</texture>
+					<texture colordiffuse="button_focus">colors/grey.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include>Animation_FocusTextureFade</include>
@@ -138,7 +138,7 @@
 				<top>-14</top>
 				<width>298</width>
 				<height>408</height>
-				<texture colordiffuse="button_focus">colors/white.png</texture>
+				<texture colordiffuse="button_focus">colors/grey.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused] + !String.IsEmpty(ListItem.Art(poster))</visible>

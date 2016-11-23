@@ -578,7 +578,7 @@
 							<width>348</width>
 							<height>408</height>
 							<aspectratio>scale</aspectratio>
-							<texture colordiffuse="button_focus">colors/white.png</texture>
+							<texture colordiffuse="button_focus">colors/grey.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
@@ -706,7 +706,7 @@
 						<control type="image">
 							<width>336</width>
 							<height>210</height>
-							<texture colordiffuse="button_focus">colors/white.png</texture>
+							<texture colordiffuse="button_focus">colors/grey.png</texture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
 						</control>
@@ -868,7 +868,7 @@
 						<control type="image">
 							<width>334</width>
 							<height>340</height>
-							<texture colordiffuse="button_focus">colors/white.png</texture>
+							<texture colordiffuse="button_focus">colors/grey.png</texture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
 						</control>
@@ -1003,7 +1003,7 @@
 							<top>20</top>
 							<width>254</width>
 							<height>350</height>
-							<texture colordiffuse="button_focus">colors/white.png</texture>
+							<texture colordiffuse="button_focus">colors/grey.png</texture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
 						</control>
