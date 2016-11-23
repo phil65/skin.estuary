@@ -71,7 +71,6 @@
 		<aligny>center</aligny>
 		<font>font25_title</font>
 		<textcolor>grey</textcolor>
-		<shadowcolor>black</shadowcolor>
 	</include>
 	<include name="SettingsItemCommon">
 		<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
@@ -88,7 +87,6 @@
 		<textoffsetx>30</textoffsetx>
 		<textoffsety>10</textoffsety>
 		<textcolor>button_focus</textcolor>
-		<shadowcolor>black</shadowcolor>
 	</include>
 	<include name="DefaultDialogButton">
 		<param name="width">300</param>
