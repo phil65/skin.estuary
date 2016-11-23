@@ -638,10 +638,10 @@
 	<include name="WidgetListCategories">
 		<param name="arrow_posy">200</param>
 		<param name="item_limit">20</param>
-		<param name="icon">$INFO[ListItem.Icon]</param>
+		<param name="icon">$INFO[ListItem.ActualIcon]</param>
+		<param name="icon_height">130</param>
 		<param name="pvr_submenu">false</param>
 		<param name="pvr_type">TV</param>
-		<param name="smaller_icon">false</param>
 		<param name="visible">true</param>
 		<definition>
 			<include content="CategoryLabel">
@@ -670,22 +670,12 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<top>18</top>
+							<centertop>83</centertop>
 							<left>62</left>
 							<width>220</width>
-							<height>130</height>
+							<height>$PARAM[icon_height]</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<visible>!$PARAM[smaller_icon]</visible>
-						</control>
-						<control type="image">
-							<top>37</top>
-							<left>62</left>
-							<width>220</width>
-							<height>90</height>
-							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
-							<aspectratio>keep</aspectratio>
-							<visible>$PARAM[smaller_icon]</visible>
 						</control>
 						<control type="label">
 							<left>42</left>
@@ -726,22 +716,12 @@
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="image">
-							<top>18</top>
+							<centertop>83</centertop>
 							<left>62</left>
 							<width>220</width>
-							<height>130</height>
+							<height>$PARAM[icon_height]</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<visible>!$PARAM[smaller_icon]</visible>
-						</control>
-						<control type="image">
-							<top>37</top>
-							<left>62</left>
-							<width>220</width>
-							<height>90</height>
-							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
-							<aspectratio>keep</aspectratio>
-							<visible>$PARAM[smaller_icon]</visible>
 						</control>
 						<control type="label">
 							<left>42</left>
