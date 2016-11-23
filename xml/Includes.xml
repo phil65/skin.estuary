@@ -561,15 +561,8 @@
 								<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="150,320">UnFocus</animation>
 								<include content="InfoWallMusicLayout">
 									<param name="fallback_image" value="DefaultAddon.png" />
+									<param name="focused" value="true" />
 								</include>
-								<control type="image">
-									<left>20</left>
-									<top>20</top>
-									<width>276</width>
-									<height>347</height>
-									<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-									<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
-								</control>
 							</control>
 						</focusedlayout>
 						<content sortby="lastused" sortorder="descending" target="$PARAM[container_target]">$PARAM[container_path]</content>

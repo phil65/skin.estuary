@@ -1,36 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="InfoWallPictureLayout">
-		<control type="image">
-			<top>-10</top>
-			<width>396</width>
-			<height>380</height>
-			<texture border="21">dialogs/dialog-bg-nobo.png</texture>
-			<bordertexture border="20">overlays/shadow.png</bordertexture>
-			<bordersize>20</bordersize>
-		</control>
-		<control type="image">
-			<left>20</left>
-			<top>10</top>
-			<width>356</width>
-			<height>300</height>
-			<texture border="2" background="true">$VAR[InfoWallThumbVar]</texture>
-			<aspectratio>keep</aspectratio>
-		</control>
-		<control type="label">
-			<left>20</left>
-			<top>318</top>
-			<width>358</width>
-			<textoffsetx>20</textoffsetx>
-			<height>20</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<label>$INFO[ListItem.Label]</label>
-		</control>
+		<param name="focused">false</param>
+		<definition>
+			<control type="image">
+				<top>-10</top>
+				<width>396</width>
+				<height>380</height>
+				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<top>-14</top>
+				<left>-4</left>
+				<width>404</width>
+				<height>388</height>
+				<texture colordiffuse="button_focus">colors/white.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
+				<animation effect="fade" start="0" end="100" time="0" tween="sine">UnFocus</animation>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>10</top>
+				<width>356</width>
+				<height>300</height>
+				<texture border="2" background="true">$VAR[InfoWallThumbVar]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<left>20</left>
+				<top>318</top>
+				<width>358</width>
+				<textoffsetx>20</textoffsetx>
+				<height>20</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+		</definition>
 	</include>
 	<include name="InfoWallMusicLayout">
 		<param name="fallback_image">DefaultFolder.png</param>
-		<param name="label">$INFO[ListItem.Year,[COLOR button_focus], - [/COLOR]]$INFO[ListItem.Label]</param>
+		<param name="label">$INFO[ListItem.Year,[B], - [/B]]$INFO[ListItem.Label]</param>
+		<param name="focused">false</param>
 		<definition>
 			<control type="image">
 				<top>0</top>
@@ -39,6 +55,18 @@
 				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<top>-4</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>394</height>
+				<texture colordiffuse="button_focus">colors/white.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
+				<animation effect="fade" start="0" end="100" time="0" tween="sine">UnFocus</animation>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -51,7 +79,7 @@
 			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>288</top>
+				<top>289</top>
 				<width>262</width>
 				<height>80</height>
 				<font>font12</font>
@@ -63,6 +91,7 @@
 	</include>
 	<include name="InfoWallMovieLayout">
 		<param name="fallback_image">DefaultVideo.png</param>
+		<param name="focused">false</param>
 		<definition>
 			<control type="group">
 				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
@@ -74,6 +103,17 @@
 					<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="20">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>-10</top>
+					<width>290</width>
+					<height>400</height>
+					<texture colordiffuse="button_focus">colors/white.png</texture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
+					<animation effect="fade" start="0" end="100" time="0" tween="sine">UnFocus</animation>
 				</control>
 				<control type="image">
 					<left>26</left>
@@ -95,6 +135,18 @@
 					<label>$INFO[ListItem.Label]</label>
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
+			</control>
+			<control type="image">
+				<left>11</left>
+				<top>-14</top>
+				<width>298</width>
+				<height>408</height>
+				<texture colordiffuse="button_focus">colors/white.png</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused] + !String.IsEmpty(ListItem.Art(poster))</visible>
+				<animation effect="fade" start="0" end="100" time="200" tween="sine">Focus</animation>
+				<animation effect="fade" start="0" end="100" time="0" tween="sine">UnFocus</animation>
 			</control>
 			<control type="image">
 				<left>15</left>
@@ -154,7 +206,7 @@
 					</control>
 					<control type="group">
 						<left>215</left>
-						<top>110</top>
+						<top>108</top>
 						<include>UserRatingCircle</include>
 					</control>
 				</itemlayout>
@@ -165,18 +217,12 @@
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="240,300">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="240,300">UnFocus</animation>
 						<top>120</top>
-						<include>InfoWallMovieLayout</include>
-						<control type="image">
-							<left>32</left>
-							<top>8</top>
-							<width>256</width>
-							<height>366</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
-						</control>
+						<include content="InfoWallMovieLayout">
+							<param name="focused" value="true" />
+						</include>
 						<control type="group">
 							<left>135</left>
-							<top>-10</top>
+							<top>-12</top>
 							<include>UserRatingCircle</include>
 						</control>
 					</control>
@@ -188,7 +234,7 @@
 						<include>InfoWallMusicLayout</include>
 						<control type="group">
 							<left>133</left>
-							<top>-12</top>
+							<top>-4</top>
 							<include>UserRatingCircle</include>
 						</control>
 					</control>
@@ -200,18 +246,12 @@
 						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="250,350">UnFocus</animation>
 						<top>150</top>
 						<left>90</left>
-						<include>InfoWallMusicLayout</include>
-						<control type="image">
-							<left>20</left>
-							<top>20</top>
-							<width>276</width>
-							<height>347</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
-						</control>
+						<include content="InfoWallMusicLayout">
+							<param name="focused" value="true" />
+						</include>
 						<control type="group">
 							<left>133</left>
-							<top>-12</top>
+							<top>-4</top>
 							<include>UserRatingCircle</include>
 						</control>
 					</control>
@@ -230,15 +270,9 @@
 						<top>150</top>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,330">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="220,330">UnFocus</animation>
-						<include>InfoWallPictureLayout</include>
-						<control type="image">
-							<left>16</left>
-							<top>6</top>
-							<width>364</width>
-							<height>348</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
-						</control>
+						<include content="InfoWallPictureLayout">
+							<param name="focused" value="true" />
+						</include>
 					</control>
 				</focusedlayout>
 			</control>
