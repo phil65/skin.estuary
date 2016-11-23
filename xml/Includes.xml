@@ -268,7 +268,6 @@
 				<height>40</height>
 				<aligny>center</aligny>
 				<label>$PARAM[label]:</label>
-				<font>font13</font>
 				<textcolor>button_focus</textcolor>
 			</control>
 			<control type="label">
@@ -277,7 +276,6 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$INFO[$PARAM[value]]</label>
-				<font>font13</font>
 			</control>
 		</control>
 	</include>
@@ -340,7 +338,6 @@
 				<width>180</width>
 				<height>32</height>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<label>$PARAM[label]</label>
 			</control>
 		</control>
@@ -417,8 +414,8 @@
 				<param name="visible" value="!String.IsEmpty(ListItem.AudioCodec)" />
 			</include>
 			<!-- 			<include content="MediaFlag">
-																<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-															</include> -->
+																			<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+																		</include> -->
 			<include content="MediaFlag">
 				<param name="texture" value="$VAR[ResolutionFlagVar]" />
 				<param name="visible" value="!String.IsEmpty(ListItem.VideoResolution)" />
@@ -477,7 +474,6 @@
 						<height>75</height>
 						<width>$PARAM[width]</width>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -490,7 +486,6 @@
 						<width>$PARAM[width]</width>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Label2]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -503,7 +498,6 @@
 						<height>75</height>
 						<width>$PARAM[width]</width>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -515,7 +509,6 @@
 						<width>$PARAM[width]</width>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Label2]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
@@ -653,7 +646,6 @@
 				</control>
 				<control type="label" id="$PARAM[id]">
 					<label>$PARAM[sub_label]</label>
-					<font>font13</font>
 					<left>85</left>
 					<shadowcolor>text_shadow</shadowcolor>
 					<align>center</align>
@@ -880,7 +872,7 @@
 						<visible>!String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
 					</control>
 					<control type="label">
-						<label> ($LOCALIZE[31052])</label>
+						<label>($LOCALIZE[31052])</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>Container.Filtered</visible>
 					</control>
@@ -897,7 +889,6 @@
 				<control type="label" id="18900">
 					<top>50</top>
 					<label>$PARAM[sublabel]</label>
-					<font>font13</font>
 					<left>35</left>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
@@ -928,8 +919,8 @@
 							<width>660</width>
 							<itemgap>5</itemgap>
 							<usecontrolcoords>true</usecontrolcoords>
-<!-- 							<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
- -->
+							<!-- 							<animation effect="slide" start="0,0" end="0,15" time="0" condition="String.IsEmpty(Control.GetLabel(7700))">conditional</animation>
+							 -->
 							<control type="image">
 								<top>8</top>
 								<width>28</width>
@@ -969,7 +960,6 @@
 				<control type="label">
 					<top>77</top>
 					<label>$INFO[System.AlarmPos,$LOCALIZE[13005]: ]</label>
-					<font>font13</font>
 					<right>22</right>
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>

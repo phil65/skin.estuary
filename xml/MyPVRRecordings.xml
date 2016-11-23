@@ -195,7 +195,6 @@
 									<aligny>center</aligny>
 									<label>$INFO[ListItem.Date,[COLOR grey],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 									<shadowcolor>text_shadow</shadowcolor>
-									<font>font13</font>
 								</control>
 							</focusedlayout>
 							<itemlayout height="100" width="780">
@@ -206,7 +205,6 @@
 									<aligny>center</aligny>
 									<label>$INFO[ListItem.Date,[COLOR grey],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 									<shadowcolor>text_shadow</shadowcolor>
-									<font>font13</font>
 								</control>
 							</itemlayout>
 							<content sortby="date" sortorder="descending">$INFO[ListItem.FilenameAndPath]</content>

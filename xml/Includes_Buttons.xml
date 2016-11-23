@@ -40,7 +40,6 @@
 			<top>0</top>
 			<height>$PARAM[height]</height>
 			<aligny>center</aligny>
-			<font>font13</font>
 			<textcolor>white</textcolor>
 			<invalidcolor>invalid</invalidcolor>
 			<selectedcolor>selected</selectedcolor>
@@ -56,7 +55,6 @@
 			<top>0</top>
 			<height>$PARAM[height]</height>
 			<aligny>center</aligny>
-			<font>font13</font>
 			<textcolor>white</textcolor>
 			<invalidcolor>invalid</invalidcolor>
 			<selectedcolor>selected</selectedcolor>
@@ -134,7 +132,6 @@
 				<height>110</height>
 				<align>left</align>
 				<aligny>top</aligny>
-				<font>font13</font>
 				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 				<texturenofocus></texturenofocus>
 				<textoffsetx>40</textoffsetx>
