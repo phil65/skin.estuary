@@ -1246,6 +1246,7 @@
 			<font>font30_title</font>
 			<onclick>Weather.LocationNext</onclick>
 			<label>$INFO[Window(weather).Property(Map.$PARAM[item_id].Heading)]</label>
+			<visible>Weather.IsFetched + !String.IsEmpty(Window(weather).Property(Map.$PARAM[item_id].Area)) + !String.IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
 		</control>
 	</include>
 	<include name="WidgetListCommon">
