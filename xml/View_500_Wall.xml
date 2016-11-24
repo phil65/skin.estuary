@@ -27,11 +27,6 @@
 						<top>120</top>
 						<include>InfoWallMovieLayout</include>
 					</control>
-					<control type="group">
-						<left>135</left>
-						<top>108</top>
-						<include>UserRatingCircle</include>
-					</control>
 				</itemlayout>
 				<focusedlayout height="445" width="300" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="group">
@@ -42,11 +37,6 @@
 						<include content="InfoWallMovieLayout">
 							<param name="focused" value="true" />
 						</include>
-						<control type="group">
-							<left>135</left>
-							<top>-12</top>
-							<include>UserRatingCircle</include>
-						</control>
 					</control>
 				</focusedlayout>
 				<itemlayout height="400" width="300" condition="Container.Content(episodes)">
