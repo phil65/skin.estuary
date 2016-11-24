@@ -768,12 +768,12 @@
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group">
-			<width>$PARAM[DialogBackgroundWidth]</width>
+			<width>$PARAM[width]</width>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
 				<right>0</right>
-				<height>$PARAM[DialogBackgroundHeight]</height>
+				<height>$PARAM[height]</height>
 				<texture colordiffuse="dialog_tint">colors/white.png</texture>
 			</control>
 			<control type="image">
@@ -783,13 +783,13 @@
 				<height>70</height>
 				<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
 			</control>
-			<control type="label" id="$PARAM[DialogHeaderId]">
+			<control type="label" id="$PARAM[header_id]">
 				<left>40</left>
 				<top>0</top>
 				<right>100</right>
 				<height>70</height>
 				<font>font32_title</font>
-				<label>$PARAM[DialogHeaderLabel]</label>
+				<label>$PARAM[header_label]</label>
 				<aligny>center</aligny>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -798,7 +798,7 @@
 				<left>0</left>
 				<top>0</top>
 				<right>0</right>
-				<height>$PARAM[DialogBackgroundHeight]</height>
+				<height>$PARAM[height]</height>
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
 				<onclick>noop</onclick>

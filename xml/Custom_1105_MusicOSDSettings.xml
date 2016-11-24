@@ -8,10 +8,10 @@
 			<centerleft>50%</centerleft>
 			<width>600</width>
 			<include content="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="600" />
-				<param name="DialogBackgroundHeight" value="550" />
-				<param name="DialogHeaderLabel" value="$LOCALIZE[5]" />
-				<param name="DialogHeaderId" value="" />
+				<param name="width" value="600" />
+				<param name="height" value="550" />
+				<param name="header_label" value="$LOCALIZE[5]" />
+				<param name="header_id" value="" />
 			</include>
 			<control type="list" id="5000">
 				<left>2</left>

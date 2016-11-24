@@ -9,10 +9,10 @@
 		<centerleft>50%</centerleft>
 		<width>1820</width>
 		<include content="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="1820" />
-			<param name="DialogBackgroundHeight" value="800" />
-			<param name="DialogHeaderLabel" value="" />
-			<param name="DialogHeaderId" value="20" />
+			<param name="width" value="1820" />
+			<param name="height" value="800" />
+			<param name="header_label" value="" />
+			<param name="header_id" value="20" />
 		</include>
 		<control type="grouplist" id="9">
 			<description>button area</description>
