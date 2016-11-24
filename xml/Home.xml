@@ -591,19 +591,12 @@
 							<left>68</left>
 							<right>70</right>
 							<top>102</top>
-							<height>470</height>
+							<height>300</height>
 							<visible>!String.IsEmpty(Weather.plugin)</visible>
 							<control type="image">
-								<height>380</height>
+								<bottom>90</bottom>
 								<width>100%</width>
 								<texture border="22">dialogs/dialog-bg.png</texture>
-							</control>
-							<control type="image">
-								<top>30</top>
-								<left>30</left>
-								<width>150</width>
-								<height>150</height>
-								<texture>$INFO[Weather.conditions]</texture>
 							</control>
 							<control type="label">
 								<left>300</left>
@@ -612,7 +605,7 @@
 								<height>24</height>
 								<right>60</right>
 								<align>right</align>
-								<font>font52_title</font>
+								<font>font30_title</font>
 								<label>$INFO[Weather.Location]</label>
 							</control>
 							<control type="label">
@@ -626,12 +619,12 @@
 								<label>$INFO[Weather.Conditions,, ∙ ]$INFO[Weather.Temperature]</label>
 							</control>
 							<control type="grouplist">
-								<top>218</top>
+								<top>50</top>
 								<left>50</left>
 								<right>20</right>
 								<orientation>horizontal</orientation>
 								<align>left</align>
-								<itemgap>-50</itemgap>
+								<itemgap>-110</itemgap>
 								<include content="WeatherIcon">
 									<param name="label" value="Window(weather).Property(Current.Wind)" />
 									<param name="texture" value="icons/weather/wind.png" />
