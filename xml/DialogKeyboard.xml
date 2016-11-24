@@ -579,9 +579,9 @@
 						<texture colordiffuse="dialog_tint">colors/white.png</texture>
 					</control>
 					<control type="label">
-						<left>30</left>
+						<textoffsetx>30</textoffsetx>
 						<top>0</top>
-						<width>480</width>
+						<width>500</width>
 						<height>50</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font12</font>
@@ -606,9 +606,9 @@
 							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="label">
-							<left>30</left>
+							<textoffsetx>30</textoffsetx>
 							<top>0</top>
-							<width>480</width>
+							<width>500</width>
 							<height>50</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>font12</font>
