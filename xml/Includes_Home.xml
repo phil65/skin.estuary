@@ -917,6 +917,7 @@
 		</definition>
 	</include>
 	<include name="WeatherWidget">
+		<param name="width">266</param>
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
@@ -932,7 +933,7 @@
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
 				<visible>$PARAM[visible]</visible>
-				<itemlayout width="263" height="400">
+				<itemlayout width="$PARAM[width]" height="400">
 					<control type="group">
 						<left>70</left>
 						<control type="image">
@@ -976,7 +977,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="263" height="400">
+				<focusedlayout width="$PARAM[width]" height="400">
 					<control type="group">
 						<left>70</left>
 						<depth>DepthContentPopout</depth>

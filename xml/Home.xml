@@ -588,48 +588,49 @@
 						<include>WidgetGroupListCommon</include>
 						<control type="group" id="16678">
 							<description>Weather info</description>
-							<height>560</height>
+							<left>68</left>
+							<right>70</right>
+							<top>102</top>
+							<height>470</height>
 							<visible>!String.IsEmpty(Weather.plugin)</visible>
 							<control type="image">
-								<top>102</top>
-								<left>68</left>
-								<right>50</right>
 								<height>380</height>
+								<width>100%</width>
 								<texture border="22">dialogs/dialog-bg.png</texture>
 							</control>
 							<control type="image">
-								<top>120</top>
-								<left>118</left>
+								<top>30</top>
+								<left>30</left>
 								<width>150</width>
 								<height>150</height>
 								<texture>$INFO[Weather.conditions]</texture>
 							</control>
 							<control type="label">
-								<left>578</left>
-								<top>210</top>
+								<left>300</left>
+								<top>60</top>
 								<aligny>center</aligny>
 								<height>24</height>
-								<right>100</right>
-								<align>right</align>
-								<font>font14</font>
-								<label>$INFO[Weather.Conditions,, ∙ ]$INFO[Weather.Temperature]</label>
-							</control>
-							<control type="label">
-								<left>578</left>
-								<top>150</top>
-								<aligny>center</aligny>
-								<height>24</height>
-								<right>100</right>
+								<right>60</right>
 								<align>right</align>
 								<font>font52_title</font>
 								<label>$INFO[Weather.Location]</label>
 							</control>
+							<control type="label">
+								<left>300</left>
+								<top>120</top>
+								<aligny>center</aligny>
+								<height>24</height>
+								<right>60</right>
+								<align>right</align>
+								<font>font14</font>
+								<label>$INFO[Weather.Conditions,, ∙ ]$INFO[Weather.Temperature]</label>
+							</control>
 							<control type="grouplist">
-								<top>315</top>
-								<left>128</left>
+								<top>218</top>
+								<left>50</left>
 								<right>20</right>
 								<orientation>horizontal</orientation>
-								<align>justify</align>
+								<align>left</align>
 								<itemgap>-50</itemgap>
 								<include content="WeatherIcon">
 									<param name="label" value="Window(weather).Property(Current.Wind)" />
