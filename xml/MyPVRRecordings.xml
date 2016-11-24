@@ -108,14 +108,14 @@
 					<param name="flipx" value="true" />
 				</include>
 				<control type="scrollbar" id="73">
-					<left>-30</left>
+					<left>-40</left>
 					<top>0</top>
 					<width>12</width>
 					<height>100%</height>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<orientation>vertical</orientation>
-					<animation effect="zoom" start="100,100" end="50,100" center="-50,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
+					<animation effect="zoom" start="100,100" end="50,100" center="-40,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
 				</control>
 				<control type="group">
 					<visible>!ListItem.IsFolder</visible>
