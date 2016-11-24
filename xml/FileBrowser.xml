@@ -7,7 +7,7 @@
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
 			<width>1300</width>
-			<height>880</height>
+			<height>850</height>
 			<include content="DialogBackgroundCommons">
 				<param name="width" value="1300" />
 				<param name="height" value="850" />
@@ -189,25 +189,24 @@
 			<control type="label" id="412">
 				<description>Path label</description>
 				<left>25</left>
-				<top>810</top>
+				<bottom>10</bottom>
 				<width>595</width>
 				<height>30</height>
 				<haspath>true</haspath>
 				<font>font12</font>
-				<aligny>center</aligny>
+				<aligny>bottom</aligny>
 				<textcolor>grey</textcolor>
 			</control>
 			<control type="label">
 				<left>0</left>
-				<top>810</top>
+				<bottom>10</bottom>
 				<width>1270</width>
 				<height>30</height>
 				<align>right</align>
-				<aligny>center</aligny>
+				<aligny>bottom</aligny>
 				<textcolor>grey</textcolor>
 				<font>font12</font>
 				<label>$VAR[FileBrowserSelectLabel]</label>
-				<wrapmultiline>true</wrapmultiline>
 			</control>
 		</control>
 		<include content="UpDownArrows">
