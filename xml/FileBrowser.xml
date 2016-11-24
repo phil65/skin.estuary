@@ -208,7 +208,6 @@
 				<font>font12</font>
 				<label>$VAR[FileBrowserSelectLabel]</label>
 				<wrapmultiline>true</wrapmultiline>
-				<visible>!Control.IsVisible(451)</visible>
 			</control>
 		</control>
 		<include content="UpDownArrows">
