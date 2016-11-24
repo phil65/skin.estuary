@@ -55,14 +55,14 @@
 				<texturenofocus></texturenofocus>
 			</control>
 			<control type="gamecontroller" id="31">
-				<left>420</left>
+				<left>400</left>
 				<top>210</top>
 				<width>547</width>
 				<height>343</height>
 			</control>
 			<control type="group">
-				<left>1040</left>
-				<width>370</width>
+				<left>1000</left>
+				<width>410</width>
 				<top>90</top>
 				<height>602</height>
 				<control type="label">
@@ -103,27 +103,29 @@
 					<onright>9001</onright>
 					<orientation>vertical</orientation>
 				</control>
-			</control>
-			<control type="button" id="7">
-				<description>Default feature button</description>
-				<height>60</height>
-				<width>330</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font27</font>
-				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-				<texturenofocus></texturenofocus>
-			</control>
-			<control type="label" id="8">
-				<description>Feature group title</description>
-				<width>330</width>
-				<align>center</align>
-				<top>0</top>
-				<height>40</height>
-				<aligny>center</aligny>
-				<font>font20_title</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<control type="button" id="7">
+					<description>Default feature button</description>
+					<height>60</height>
+					<left>20</left>
+					<right>20</right>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font27</font>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus></texturenofocus>
+				</control>
+				<control type="label" id="8">
+					<description>Feature group title</description>
+					<left>20</left>
+					<right>20</right>
+					<align>center</align>
+					<top>0</top>
+					<height>40</height>
+					<aligny>center</aligny>
+					<font>font20_title</font>
+					<textcolor>grey</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
 			</control>
 			<control type="image" id="9">
 				<description>Feature separator image</description>
