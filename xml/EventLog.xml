@@ -136,6 +136,7 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<usecontrolcoords>true</usecontrolcoords>
+					<width>487</width>
 					<control type="togglebutton" id="4">
 						<width>487</width>
 						<height>110</height>
@@ -163,7 +164,6 @@
 						<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>35</textoffsety>
-						<textwidth>300</textwidth>
 					</control>
 					<include content="PlaylistWindowButton">
 						<param name="control_id" value="20" />
