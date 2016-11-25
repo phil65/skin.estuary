@@ -955,48 +955,48 @@
 						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 						<label>$INFO[System.Time]</label>
 					</control>
-					<control type="grouplist">
-						<right>4</right>
-						<top>70</top>
-						<width>800</width>
-						<height>100</height>
-						<align>right</align>
-						<itemgap>5</itemgap>
-						<orientation>horizontal</orientation>
-						<usecontrolcoords>true</usecontrolcoords>
-						<control type="label">
-							<height>50</height>
-							<width>auto</width>
-							<aligny>center</aligny>
-							<textoffsetx>-8</textoffsetx>
-							<label>$INFO[System.AlarmPos]</label>
-							<visible>System.HasAlarm(shutdowntimer)</visible>
-						</control>
-						<control type="image">
-							<top>16</top>
-							<width>50</width>
-							<height>22</height>
-							<fadetime>300</fadetime>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
-							<texture>icons/power.png</texture>
-							<visible>System.HasAlarm(shutdowntimer)</visible>
-						</control>
-						<control type="label">
-							<height>50</height>
-							<width>auto</width>
-							<aligny>center</aligny>
-							<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
-							<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
-						</control>
-						<control type="image">
-							<top>1</top>
-							<width>50</width>
-							<height>50</height>
-							<fadetime>300</fadetime>
-							<aspectratio aligny="center" align="left">keep</aspectratio>
-							<texture>$INFO[Weather.FanartCode,weather/small/,.png]</texture>
-							<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
-						</control>
+				</control>
+				<control type="grouplist">
+					<right>4</right>
+					<top>70</top>
+					<width>800</width>
+					<height>100</height>
+					<align>right</align>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<usecontrolcoords>true</usecontrolcoords>
+					<control type="label">
+						<height>50</height>
+						<width>auto</width>
+						<aligny>center</aligny>
+						<textoffsetx>-8</textoffsetx>
+						<label>$INFO[System.AlarmPos]</label>
+						<visible>System.HasAlarm(shutdowntimer)</visible>
+					</control>
+					<control type="image">
+						<top>16</top>
+						<width>50</width>
+						<height>22</height>
+						<fadetime>300</fadetime>
+						<aspectratio aligny="center" align="left">keep</aspectratio>
+						<texture>icons/power.png</texture>
+						<visible>System.HasAlarm(shutdowntimer)</visible>
+					</control>
+					<control type="label">
+						<height>50</height>
+						<width>auto</width>
+						<aligny>center</aligny>
+						<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+						<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
+					</control>
+					<control type="image">
+						<top>1</top>
+						<width>50</width>
+						<height>50</height>
+						<fadetime>300</fadetime>
+						<aspectratio aligny="center" align="left">keep</aspectratio>
+						<texture>$INFO[Weather.FanartCode,weather/small/,.png]</texture>
+						<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
 					</control>
 				</control>
 				<control type="label" id="23000">
