@@ -177,16 +177,16 @@
 							<param name="icon_height" value="90"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31104]" />
-							<param name="button_label" value="$LOCALIZE[31110]" />
-							<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
-							<param name="button_id" value="6400"/>
-							<param name="visible" value="!Library.HasContent(tvshows)"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVShowButton)"/>
-						</include>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31104]" />
+						<param name="button_label" value="$LOCALIZE[31110]" />
+						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
+						<param name="button_id" value="6400"/>
+						<param name="visible" value="!Library.HasContent(tvshows)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVShowButton)"/>
+					</include>
 				</control>
 				<control type="group" id="7000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),music)</visible>
@@ -254,16 +254,16 @@
 							<param name="sortby" value="playcount"/>
 							<param name="sortorder" value="descending"/>
 						</include>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31104]" />
-							<param name="button_label" value="$LOCALIZE[31110]" />
-							<param name="button_onclick" value="ActivateWindow(music,files)"/>
-							<param name="button_id" value="7600"/>
-							<param name="visible" value="!Library.HasContent(music)"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicButton)"/>
-						</include>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31104]" />
+						<param name="button_label" value="$LOCALIZE[31110]" />
+						<param name="button_onclick" value="ActivateWindow(music,files)"/>
+						<param name="button_id" value="7600"/>
+						<param name="visible" value="!Library.HasContent(music)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicButton)"/>
+					</include>
 				</control>
 				<control type="group" id="8000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),addons)</visible>
@@ -338,16 +338,16 @@
 							<param name="main_label" value=""/>
 							<param name="sub_label" value=""/>
 						</include>
-						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
-							<param name="text_label" value="$LOCALIZE[31119]" />
-							<param name="button_label" value="$LOCALIZE[31118]" />
-							<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
-							<param name="button_id" value="8600"/>
-							<param name="visible" value="!Integer.IsGreater(Container(8100).NumItems,0) + !Integer.IsGreater(Container(8200).NumItems,0) + !Integer.IsGreater(Container(8300).NumItems,0) + !Integer.IsGreater(Container(8400).NumItems,0) + !Integer.IsGreater(Container(8500).NumItems,0)"/>
-							<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoProgramsButton)"/>
-						</include>
 					</control>
+					<include content="ImageWidget">
+						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+						<param name="text_label" value="$LOCALIZE[31119]" />
+						<param name="button_label" value="$LOCALIZE[31118]" />
+						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
+						<param name="button_id" value="8600"/>
+						<param name="visible" value="!Integer.IsGreater(Container(8100).NumItems,0) + !Integer.IsGreater(Container(8200).NumItems,0) + !Integer.IsGreater(Container(8300).NumItems,0) + !Integer.IsGreater(Container(8400).NumItems,0) + !Integer.IsGreater(Container(8500).NumItems,0)"/>
+						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoProgramsButton)"/>
+					</include>
 				</control>
 				<control type="group" id="11000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),video)</visible>
@@ -890,7 +890,7 @@
 							<property name="menu_id">$NUMBER[12000]</property>
 							<onclick>ActivateWindow(TVChannels)</onclick>
 							<thumb>icons/sidemenu/livetv.png</thumb>
-							<property name="id">livetv</property>
+							<property name="id">tv</property>
 							<visible>!Skin.HasSetting(HomeMenuNoTVButton)</visible>
 						</item>
 						<item>
