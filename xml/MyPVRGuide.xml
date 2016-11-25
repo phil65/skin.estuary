@@ -208,6 +208,7 @@
 			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRGuideVar]" />
+				<param name="sublabel" value="" />
 			</include>
 			<include content="BottomBar">
 				<param name="info_visible" value="true" />
