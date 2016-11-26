@@ -111,6 +111,11 @@
 					<align>center</align>
 				</control>
 			</control>
+			<control type="group">
+				<left>145</left>
+				<top>6</top>
+				<include>UserRatingCircle</include>
+			</control>
 		</definition>
 	</include>
 	<include name="InfoWallEpisodeLayout">
