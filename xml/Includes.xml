@@ -1342,10 +1342,4 @@
 			</include>
 		</control>
 	</include>
-	<variable name="EpisodeNumber">
-		<value condition="!Integer.IsGreater(ListItem.Season,9) + !Integer.IsGreater(ListItem.Episode,9)">$INFO[ListItem.Season,S0]$INFO[ListItem.Episode,E0]</value>
-		<value condition="!Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Season,S0]$INFO[ListItem.Episode,E]</value>
-		<value condition="!Integer.IsGreater(ListItem.Episode,9)">$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E0]</value>
-		<value>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E]</value>
-	</variable>
 </includes>

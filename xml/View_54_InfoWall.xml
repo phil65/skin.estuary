@@ -114,15 +114,16 @@
 		</definition>
 	</include>
 	<include name="InfoWallEpisodeLayout">
-		<param name="main_label">$INFO[ListItem.TVShowTitle]</param>
-		<param name="second_label">[B]$VAR[EpisodeNumber][/B]</param>
-		<param name="third_label">$INFO[ListItem.Title]</param>
+		<param name="main_label">$INFO[ListItem.Title]</param>
+		<param name="sub_label">$INFO[ListItem.Label]</param>
+		<param name="thumb_label">$INFO[ListItem.Season, ]$INFO[ListItem.Episode,x]</param>
+		<param name="fallback_image">DefaultTVShows.png</param>
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
 				<top>0</top>
 				<width>316</width>
-				<height>318</height>
+				<height>288</height>
 				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -131,7 +132,7 @@
 				<top>-4</top>
 				<left>-4</left>
 				<width>324</width>
-				<height>326</height>
+				<height>296</height>
 				<texture colordiffuse="button_focus">colors/grey.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -143,17 +144,17 @@
 				<top>0</top>
 				<width>316</width>
 				<height>218</height>
-				<texture border="2" fallback="DefaultTVShows.png" background="true">$VAR[InfoWallThumbVar]</texture>
+				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>scale</aspectratio>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>118</top>
-				<width>80</width>
-				<height>80</height>
-				<texture>overlays/overlay-bg.png</texture>
-				<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<top>148</top>
+				<width>276</width>
+				<height>50</height>
+				<texture>overlays/overlayfade.png</texture>
+				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -164,37 +165,51 @@
 			</control>
 			<control type="label">
 				<left>29</left>
-				<top>200</top>
+				<top>166</top>
 				<width>260</width>
+				<label>$PARAM[thumb_label]</label>
+				<font>font10</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<scroll>$PARAM[focused]</scroll>
+				<align>right</align>
+			</control>
+			<control type="textbox">
+				<left>28</left>
+				<top>192</top>
+				<width>262</width>
+				<height>80</height>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
 				<label>$PARAM[main_label]</label>
-				<font>font10</font>
-				<shadowcolor>text_shadow</shadowcolor>
-				<scroll>$PARAM[focused]</scroll>
-				<align>center</align>
+				<visible>Window.IsActive(videos)</visible>
 			</control>
-			<control type="label">
-				<left>29</left>
-				<top>232</top>
-				<width>260</width>
-				<label>$PARAM[second_label]</label>
-				<font>font10</font>
-				<shadowcolor>text_shadow</shadowcolor>
-				<scroll>$PARAM[focused]</scroll>
-				<align>center</align>
-			</control>
-			<control type="label">
-				<left>29</left>
-				<top>260</top>
-				<width>260</width>
-				<label>$PARAM[third_label]</label>
-				<font>font10</font>
-				<shadowcolor>text_shadow</shadowcolor>
-				<scroll>$PARAM[focused]</scroll>
-				<align>center</align>
+			<control type="group">
+				<visible>!Window.IsActive(videos)</visible>
+				<control type="label">
+					<left>29</left>
+					<top>200</top>
+					<width>260</width>
+					<label>$PARAM[sub_label]</label>
+					<font>font12</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<left>29</left>
+					<top>230</top>
+					<width>260</width>
+					<label>$PARAM[main_label]</label>
+					<font>font10</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
 			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>278</top>
+				<top>248</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -373,20 +388,20 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout height="380" width="300" condition="Container.Content(episodes)">
+				<itemlayout height="300" width="300" condition="Container.Content(episodes)">
 					<control type="group">
-						<left>110</left>
-						<top>190</top>
+						<left>90</left>
+						<top>110</top>
 						<include>InfoWallEpisodeLayout</include>
 					</control>
 				</itemlayout>
-				<focusedlayout height="380" width="300" condition="Container.Content(episodes)">
+				<focusedlayout height="300" width="300" condition="Container.Content(episodes)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="270,380">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="270,380">UnFocus</animation>
-						<left>110</left>
-						<top>190</top>
+						<left>90</left>
+						<top>110</top>
 						<include content="InfoWallEpisodeLayout">
 							<param name="focused" value="true" />
 						</include>

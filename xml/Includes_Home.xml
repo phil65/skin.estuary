@@ -177,6 +177,9 @@
 		</definition>
 	</include>
 	<include name="WidgetListEpisodes">
+		<param name="main_label">$INFO[ListItem.Title]</param>
+		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
+		<param name="thumb_label">$INFO[ListItem.Season, ]$INFO[ListItem.Episode,x]</param>
 		<param name="sortby"></param>
 		<param name="visible">True</param>
 		<param name="sortorder">ascending</param>
@@ -199,7 +202,11 @@
 				<itemlayout width="310" height="500">
 					<control type="group">
 						<left>70</left>
-						<include>InfoWallEpisodeLayout</include>
+						<include content="InfoWallEpisodeLayout">
+							<param name="thumb_label" value="$PARAM[thumb_label]" />
+							<param name="main_label" value="$PARAM[main_label]" />
+							<param name="sub_label" value="$PARAM[sub_label]" />
+						</include>
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="500">
@@ -213,6 +220,9 @@
 							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="240,120" />
 						</animation>
 						<include content="InfoWallEpisodeLayout">
+							<param name="thumb_label" value="$PARAM[thumb_label]" />
+							<param name="main_label" value="$PARAM[main_label]" />
+							<param name="sub_label" value="$PARAM[sub_label]" />
 							<param name="focused" value="true" />
 						</include>
 					</control>
