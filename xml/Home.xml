@@ -141,7 +141,7 @@
 							<param name="content_path" value="special://skin/playlists/recent_unwatched_episodes.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[20387]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="second_label" value="[B]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/B] $INFO[ListItem.Title]" />
+							<param name="second_label" value="$INFO[ListItem.Title]" />
 							<param name="list_id" value="6200"/>
 						</include>
 						<include content="WidgetListMovies">

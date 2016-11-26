@@ -191,19 +191,19 @@
 				<left>0</left>
 				<top>120</top>
 				<right>0</right>
-				<height>450</height>
+				<height>435</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="330" height="400">
+				<itemlayout width="310" height="400">
 					<control type="group">
-						<left>70</left>
+						<left>75</left>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>344</width>
-							<height>340</height>
+							<width>314</width>
+							<height>325</height>
 							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -211,15 +211,35 @@
 						<control type="image">
 							<left>20</left>
 							<top>20</top>
-							<width>304</width>
-							<height>228</height>
+							<width>274</width>
+							<height>213</height>
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultTVShows.png" background="true">$PARAM[item_image]</texture>
 						</control>
+						<control type="group">
+							<visible>!IsEmpty(ListItem.Season)</visible>
+							<control type="image">
+								<left>20</left>
+								<top>153</top>
+								<width>80</width>
+								<height>80</height>
+								<texture>overlays/overlay-bg.png</texture>
+							</control>
+							<control type="label">
+								<left>25</left>
+								<top>202</top>
+								<height>60</height>
+								<width>258</width>
+								<label>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
+								<font>font10</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>left</align>
+							</control>
+						</control>
 						<control type="label">
 							<left>30</left>
-							<top>250</top>
-							<width>288</width>
+							<top>235</top>
+							<width>258</width>
 							<label>$PARAM[first_label]</label>
 							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
@@ -227,8 +247,8 @@
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>282</top>
-							<width>288</width>
+							<top>267</top>
+							<width>258</width>
 							<label>$PARAM[second_label]</label>
 							<font>font10</font>
 							<shadowcolor>text_shadow</shadowcolor>
@@ -236,9 +256,9 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="330" height="400">
+				<focusedlayout width="310" height="400">
 					<control type="group">
-						<left>70</left>
+						<left>75</left>
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="233,120" />
@@ -249,8 +269,8 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>344</width>
-							<height>340</height>
+							<width>314</width>
+							<height>325</height>
 							<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -260,16 +280,16 @@
 							<control type="image">
 								<left>-4</left>
 								<top>-4</top>
-								<width>352</width>
-								<height>348</height>
+								<width>322</width>
+								<height>333</height>
 								<texture border="21" colordiffuse="button_focus">colors/grey.png</texture>
 								<bordertexture border="20">overlays/shadow.png</bordertexture>
 								<bordersize>20</bordersize>
 							</control>
 							<control type="progress">
 								<left>20</left>
-								<top>302</top>
-								<width>306</width>
+								<top>287</top>
+								<width>276</width>
 								<height>1</height>
 								<texturebg></texturebg>
 								<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
@@ -280,15 +300,35 @@
 						<control type="image">
 							<left>20</left>
 							<top>20</top>
-							<width>304</width>
-							<height>228</height>
+							<width>274</width>
+							<height>213</height>
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultTVShows.png" background="true">$PARAM[item_image]</texture>
 						</control>
+						<control type="group">
+							<visible>!IsEmpty(ListItem.Season)</visible>
+							<control type="image">
+								<left>20</left>
+								<top>153</top>
+								<width>80</width>
+								<height>80</height>
+								<texture>overlays/overlay-bg.png</texture>
+							</control>
+							<control type="label">
+								<left>25</left>
+								<top>202</top>
+								<height>60</height>
+								<width>258</width>
+								<label>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
+								<font>font10</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>left</align>
+							</control>
+						</control>
 						<control type="label">
 							<left>30</left>
-							<top>250</top>
-							<width>288</width>
+							<top>235</top>
+							<width>258</width>
 							<label>$PARAM[first_label]</label>
 							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
@@ -296,8 +336,8 @@
 						</control>
 						<control type="label">
 							<left>30</left>
-							<top>282</top>
-							<width>288</width>
+							<top>267</top>
+							<width>258</width>
 							<label>$PARAM[second_label]</label>
 							<font>font10</font>
 							<shadowcolor>text_shadow</shadowcolor>
