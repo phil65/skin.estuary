@@ -350,7 +350,7 @@
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
 						<param name="button_id" value="11300"/>
-						<param name="visible" value="!Control.IsVisible(11100) + !Control.IsVisible(11200) + !Control.IsVisible(11900)"/>
+						<param name="visible" value="!Integer.IsGreater(Container(11001).NumItems,0)"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoVideosButton)"/>
 					</include>
 				</control>
