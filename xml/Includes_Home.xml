@@ -193,7 +193,7 @@
 				<left>0</left>
 				<top>120</top>
 				<right>0</right>
-				<height>420</height>
+				<height>410</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
@@ -206,6 +206,7 @@
 							<param name="thumb_label" value="$PARAM[thumb_label]" />
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
+							<param name="focused" value="false" />
 						</include>
 					</control>
 				</itemlayout>
@@ -260,6 +261,7 @@
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="single_label" value="$PARAM[single_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
+							<param name="focused" value="false" />
 						</include>
 					</control>
 				</itemlayout>
@@ -274,10 +276,10 @@
 							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="240,120" />
 						</animation>
 						<include content="InfoWallMusicLayout">
-							<param name="focused" value="true" />
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="single_label" value="$PARAM[single_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
+							<param name="focused" value="true" />
 						</include>
 					</control>
 				</focusedlayout>

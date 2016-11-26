@@ -661,8 +661,9 @@
 							<param name="content_path" value="special://skin/playlists/inprogress_musicvideos.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[575]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="main_label" value="$INFO[ListItem.Title]" />
+							<param name="main_label" value="$INFO[ListItem.Label]" />
 							<param name="sub_label" value="$INFO[ListItem.Artist]" />
+							<param name="fallback_image" value="DefaultMusicSongs.png" />
 							<param name="list_id" value="16100"/>
 						</include>
 						<include content="WidgetListSquare">
@@ -676,24 +677,27 @@
 							<param name="content_path" value="videodb://recentlyaddedmusicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[20390]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="main_label" value="$INFO[ListItem.Title]" />
+							<param name="main_label" value="$INFO[ListItem.Label]" />
 							<param name="sub_label" value="$INFO[ListItem.Artist]" />
+							<param name="fallback_image" value="DefaultMusicSongs.png" />
 							<param name="list_id" value="16300"/>
 						</include>
 						<include content="WidgetListEpisodes">
 							<param name="content_path" value="special://skin/playlists/unwatched_musicvideos.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31151]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="main_label" value="$INFO[ListItem.Title]" />
+							<param name="main_label" value="$INFO[ListItem.Label]" />
 							<param name="sub_label" value="$INFO[ListItem.Artist]" />
+							<param name="fallback_image" value="DefaultMusicSongs.png" />
 							<param name="list_id" value="16400"/>
 						</include>
 						<include content="WidgetListEpisodes">
 							<param name="content_path" value="special://skin/playlists/random_musicvideos.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31152]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="main_label" value="$INFO[ListItem.Title]" />
+							<param name="main_label" value="$INFO[ListItem.Label]" />
 							<param name="sub_label" value="$INFO[ListItem.Artist]" />
+							<param name="fallback_image" value="DefaultMusicSongs.png" />
 							<param name="list_id" value="16500"/>
 						</include>
 						<include content="WidgetListCategories">

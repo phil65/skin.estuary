@@ -154,7 +154,7 @@
 				<width>276</width>
 				<height>50</height>
 				<texture>overlays/overlayfade.png</texture>
-				<visible>!ListItem.IsParentFolder</visible>
+				<visible>!ListItem.IsParentFolder + String.IsEqual(ListItem.DBtype,episode)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -168,7 +168,7 @@
 				<top>166</top>
 				<width>260</width>
 				<label>$PARAM[thumb_label]</label>
-				<font>font10</font>
+				<font>font12</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<scroll>$PARAM[focused]</scroll>
 				<align>right</align>
@@ -220,7 +220,7 @@
 		</definition>
 	</include>
 	<include name="InfoWallMovieLayout">
-		<param name="fallback_image">DefaultVideo.png</param>
+		<param name="fallback_image">DefaultMovies.png</param>
 		<param name="focused">false</param>
 		<definition>
 			<control type="group">
@@ -251,11 +251,11 @@
 					<height>290</height>
 					<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
-						<bordersize>20</bordersize>
-					</control>
+					<bordersize>20</bordersize>
+				</control>
 				<control type="textbox">
 					<left>40</left>
-					<top>270</top>
+					<top>250</top>
 					<width>242</width>
 					<height>90</height>
 					<font>font27</font>
@@ -398,8 +398,8 @@
 				<focusedlayout height="300" width="300" condition="Container.Content(episodes)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="270,380">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="270,380">UnFocus</animation>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="270,250">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="270,250">UnFocus</animation>
 						<left>90</left>
 						<top>110</top>
 						<include content="InfoWallEpisodeLayout">
