@@ -33,7 +33,7 @@
 						<depth>DepthContentPopout</depth>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="160,300">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="160,300">UnFocus</animation>
-						<top>150</top>
+						<top>120</top>
 						<include content="InfoWallMovieLayout">
 							<param name="focused" value="true" />
 						</include>
