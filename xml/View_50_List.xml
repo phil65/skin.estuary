@@ -176,6 +176,11 @@
 					<fadetime>300</fadetime>
 					<texture background="true">$VAR[IconWallThumbVar]</texture>
 				</control>
+				<control type="group">
+					<left>273</left>
+					<top>590</top>
+					<include>UserRatingCircle</include>
+				</control>
 				<control type="textbox" id="15500">
 					<left>30</left>
 					<top>640</top>
