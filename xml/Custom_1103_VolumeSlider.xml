@@ -21,39 +21,19 @@
 			<width>840</width>
 			<control type="image">
 				<left>-20</left>
-				<top>10</top>
+				<top>0</top>
 				<width>525</width>
-				<height>140</height>
+				<height>152</height>
 				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
-			<control type="label" id="10">
-				<description>Dialog header</description>
-				<left>40</left>
-				<top>10</top>
-				<width>550</width>
-				<height>20</height>
-				<aligny>center</aligny>
-				<font>font14</font>
-				<textcolor>button_focus</textcolor>
-			</control>
-			<control type="label" id="12">
-				<description>Slider Value</description>
-				<left>0</left>
-				<top>10</top>
-				<width>760</width>
-				<height>20</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font14</font>
-			</control>
 			<control type="progress">
 				<left>40</left>
-				<top>70</top>
+				<top>20</top>
 				<width>400</width>
 				<height>112</height>
-				<texturebg></texturebg>
+				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="button_focus">colors/white.png</midtexture>
 				<info>Player.Volume</info>
 			</control>
@@ -63,6 +43,9 @@
 				<top>55</top>
 				<width>400</width>
 				<height>40</height>
+				<texturesliderbar></texturesliderbar>
+				<textureslidernib></textureslidernib>
+				<textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
 				<info>Player.Volume</info>
 				<action>Volume</action>
 			</control>
