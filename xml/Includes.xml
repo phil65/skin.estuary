@@ -1288,43 +1288,6 @@
 			</control>
 		</definition>
 	</include>
-	<include name="VolumeCircle">
-		<control type="progress" id="29999">
-			<include>HiddenObject</include>
-			<info>Player.Volume</info>
-		</control>
-		<control type="image">
-			<left>12</left>
-			<top>5</top>
-			<width>88</width>
-			<height>88</height>
-			<texture>osd/buffer-bg.png</texture>
-			<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(slideshow)</visible>
-		</control>
-		<control type="image">
-			<left>22</left>
-			<top>15</top>
-			<width>68</width>
-			<height>68</height>
-			<texture colordiffuse="1AFFFFFF">dialogs/extendedprogress/loading-placeholder.png</texture>
-			<animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="Player.Muted">Conditional</animation>
-		</control>
-		<control type="image">
-			<left>-4</left>
-			<top>-11</top>
-			<width>120</width>
-			<height>120</height>
-			<texture>$INFO[Control.GetLabel(29999),dialogs/volume/progress/p,.png]</texture>
-			<animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="Player.Muted">Conditional</animation>
-		</control>
-		<control type="image">
-			<left>36</left>
-			<top>29</top>
-			<width>40</width>
-			<height>40</height>
-			<texture colordiffuse="white">$VAR[VolumeIconVar]</texture>
-		</control>
-	</include>
 	<include name="TouchButtons">
 		<control type="grouplist" id="700">
 			<orientation>horizontal</orientation>
@@ -1353,12 +1316,12 @@
 					<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
 					<texturenofocus></texturenofocus>
 				</control>
-				<control type="group">
-					<left>2</left>
-					<top>10</top>
-					<animation effect="zoom" start="100" end="86" time="0" condition="true" center="60,60">Conditional</animation>
-					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-					<include>VolumeCircle</include>
+				<control type="image">
+					<left>34</left>
+					<top>34</top>
+					<width>52</width>
+					<height>52</height>
+					<texture colordiffuse="grey">$VAR[VolumeIconVar]</texture>
 				</control>
 			</control>
 			<include content="IconButton">
