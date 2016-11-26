@@ -567,7 +567,6 @@
 						<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus($PARAM[group_id]30)">conditional</animation>
 						<onleft>$PARAM[group_id]50</onleft>
 						<onright>noop</onright>
-						<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
 					</control>
 				</control>
 				<control type="group">
