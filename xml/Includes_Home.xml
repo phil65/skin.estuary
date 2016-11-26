@@ -201,6 +201,7 @@
 				<itemlayout width="310" height="500">
 					<control type="group">
 						<left>70</left>
+						<top>5</top>
 						<include content="InfoWallEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -212,6 +213,7 @@
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
+						<top>5</top>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="240,120" />
 						</animation>
