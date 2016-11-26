@@ -873,6 +873,7 @@
 						<visible>!String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)</visible>
 					</control>
 					<control type="label">
+						<left>10</left>
 						<label>($LOCALIZE[31052])</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>Container.Filtered</visible>
@@ -1292,7 +1293,7 @@
 		<control type="grouplist" id="700">
 			<orientation>horizontal</orientation>
 			<visible>Skin.HasSetting(touchmode)</visible>
-			<visible>!Window.IsActive(home)</visible>
+			<visible>!Window.IsActive(home) + !Window.IsActive(filemanager)</visible>
 			<animation effect="fade" start="0" end="100" time="400" condition="Window.Previous(home)">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(home)">WindowClose</animation>
 			<itemgap>0</itemgap>
