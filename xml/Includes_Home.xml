@@ -61,7 +61,7 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 	</include>
-	<include name="WidgetListMovies">
+	<include name="WidgetListPoster">
 		<param name="left_icon">lists/rating.png</param>
 		<param name="right_icon">lists/duration.png</param>
 		<param name="first_label">$INFO[ListItem.Rating]</param>
