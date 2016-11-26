@@ -1148,40 +1148,7 @@
 						<texturenofocus></texturenofocus>
 					</control>
 				</control>
-				<control type="grouplist" id="700">
-					<orientation>horizontal</orientation>
-					<visible>Skin.HasSetting(touchmode)</visible>
-					<visible>!Window.IsActive(home)</visible>
-					<animation effect="fade" start="0" end="100" time="400" condition="Window.Previous(home)">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(home)">WindowClose</animation>
-					<itemgap>0</itemgap>
-					<left>-8</left>
-					<width>480</width>
-					<height>110</height>
-					<bottom>0</bottom>
-					<onup>noop</onup>
-					<ondown>9000</ondown>
-					<onright>2000</onright>
-					<align>justify</align>
-					<include content="IconButton">
-						<param name="control_id" value="" />
-						<param name="onclick" value="SetFocus(9000)" />
-						<param name="icon" value="icons/settings.png" />
-						<param name="label" value="$LOCALIZE[10004]" />
-					</include>
-					<include content="IconButton">
-						<param name="control_id" value="" />
-						<param name="onclick" value="ActivateWindow(favourites)" />
-						<param name="icon" value="icons/favourites.png" />
-						<param name="label" value="$LOCALIZE[10134]" />
-					</include>
-					<include content="IconButton">
-						<param name="control_id" value="" />
-						<param name="onclick" value="ActivateWindow(shutdownmenu)" />
-						<param name="icon" value="icons/power.png" />
-						<param name="label" value="$LOCALIZE[33060]" />
-					</include>
-				</control>
+				<include>TouchButtons</include>
 			</control>
 		</definition>
 	</include>
@@ -1320,5 +1287,100 @@
 				<height>$PARAM[height]</height>
 			</control>
 		</definition>
+	</include>
+	<include name="VolumeCircle">
+		<control type="progress" id="29999">
+			<include>HiddenObject</include>
+			<info>Player.Volume</info>
+		</control>
+		<control type="image">
+			<left>12</left>
+			<top>5</top>
+			<width>88</width>
+			<height>88</height>
+			<texture>osd/buffer-bg.png</texture>
+			<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(slideshow)</visible>
+		</control>
+		<control type="image">
+			<left>22</left>
+			<top>15</top>
+			<width>68</width>
+			<height>68</height>
+			<texture colordiffuse="1AFFFFFF">dialogs/extendedprogress/loading-placeholder.png</texture>
+			<animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="Player.Muted">Conditional</animation>
+		</control>
+		<control type="image">
+			<left>-4</left>
+			<top>-11</top>
+			<width>120</width>
+			<height>120</height>
+			<texture>$INFO[Control.GetLabel(29999),dialogs/volume/progress/p,.png]</texture>
+			<animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="Player.Muted">Conditional</animation>
+		</control>
+		<control type="image">
+			<left>36</left>
+			<top>29</top>
+			<width>40</width>
+			<height>40</height>
+			<texture colordiffuse="white">$VAR[VolumeIconVar]</texture>
+		</control>
+	</include>
+	<include name="TouchButtons">
+		<control type="grouplist" id="700">
+			<orientation>horizontal</orientation>
+			<visible>Skin.HasSetting(touchmode)</visible>
+			<visible>!Window.IsActive(home)</visible>
+			<animation effect="fade" start="0" end="100" time="400" condition="Window.Previous(home)">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(home)">WindowClose</animation>
+			<itemgap>0</itemgap>
+			<left>-8</left>
+			<width>480</width>
+			<height>110</height>
+			<bottom>0</bottom>
+			<onup>noop</onup>
+			<ondown>9000</ondown>
+			<onright>2000</onright>
+			<align>justify</align>
+			<usecontrolcoords>true</usecontrolcoords>
+			<control type="group">
+				<width>120</width>
+				<control type="button">
+					<top>0</top>
+					<width>120</width>
+					<height>120</height>
+					<label></label>
+					<onclick>ActivateWindow(1103)</onclick>
+					<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
+					<texturenofocus></texturenofocus>
+				</control>
+				<control type="group">
+					<left>2</left>
+					<top>10</top>
+					<animation effect="zoom" start="100" end="86" time="0" condition="true" center="60,60">Conditional</animation>
+					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+					<include>VolumeCircle</include>
+				</control>
+			</control>
+			<include content="IconButton">
+				<param name="control_id" value="" />
+				<param name="onclick" value="ActivateWindow(favourites)" />
+				<param name="icon" value="icons/favourites.png" />
+				<param name="label" value="$LOCALIZE[10134]" />
+			</include>
+			<include content="IconButton">
+				<param name="control_id" value="" />
+				<param name="onclick" value="SetFocus(9000)" />
+				<param name="icon" value="icons/settings.png" />
+				<param name="label" value="$LOCALIZE[10004]" />
+				<param name="visible" value="Window.IsMedia" />
+			</include>
+			<include content="IconButton">
+				<param name="control_id" value="" />
+				<param name="onclick" value="ActivateWindow(shutdownmenu)" />
+				<param name="icon" value="icons/power.png" />
+				<param name="label" value="$LOCALIZE[33060]" />
+				<param name="visible" value="!Window.IsMedia" />
+			</include>
+		</control>
 	</include>
 </includes>
