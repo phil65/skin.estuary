@@ -322,17 +322,17 @@
 					<texture>overlays/overlayfade.png</texture>
 				</control>
 				<control type="label">
-					<left>-4</left>
-					<top>17</top>
-					<width>240</width>
+					<left>0</left>
+					<top>20</top>
+					<width>244</width>
 					<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</label>
-					<font>font10</font>
+					<font>font20_title</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>text_shadow</shadowcolor>
 					<align>right</align>
 				</control>
 				<control type="image">
-					<left>250</left>
+					<left>254</left>
 					<top>23</top>
 					<width>24</width>
 					<height>24</height>
