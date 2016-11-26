@@ -44,6 +44,7 @@
 						<top>110</top>
 						<include content="InfoWallEpisodeLayout">
 							<param name="label" value="$INFO[ListItem.Label]" />
+							<param name="thumb_label" value="$INFO[ListItem.Label2]" />
 						</include>
 					</control>
 				</itemlayout>
@@ -55,6 +56,7 @@
 						<top>110</top>
 						<include content="InfoWallEpisodeLayout">
 							<param name="focused" value="true" />
+							<param name="thumb_label" value="$INFO[ListItem.Label2]" />
 						</include>
 					</control>
 				</focusedlayout>
