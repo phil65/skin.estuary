@@ -370,9 +370,9 @@
 			<usecontrolcoords>true</usecontrolcoords>
 			<control type="group">
 				<top>10</top>
-				<width>160</width>
+				<width>200</width>
 				<include content="InfoFlag">
-					<param name="visible" value="String.IsEqual(ListItem.DBtype,tvshow) + !String.IsEmpty(ListItem.Premiered) + String.IsEmpty(ListItem.Property(TotalEpisodes))" />
+					<param name="visible" value="String.IsEqual(ListItem.DBtype,tvshow) + !String.IsEmpty(ListItem.Premiered)" />
 					<param name="icon" value="lists/year.png" />
 					<param name="label" value="$INFO[ListItem.Premiered]" />
 				</include>
