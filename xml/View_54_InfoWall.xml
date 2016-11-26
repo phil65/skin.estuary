@@ -95,7 +95,7 @@
 					<top>300</top>
 					<width>260</width>
 					<label>$PARAM[sub_label]</label>
-					<font>font12</font>
+					<font>font10</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<scroll>$PARAM[focused]</scroll>
 					<align>center</align>
@@ -229,6 +229,16 @@
 				<left>145</left>
 				<top>-8</top>
 				<include>UserRatingCircle</include>
+			</control>
+			<control type="progress">
+				<left>35</left>
+				<top>350</top>
+				<width>250</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 			</control>
 		</definition>
 	</include>
