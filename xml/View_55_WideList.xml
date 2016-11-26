@@ -64,7 +64,7 @@
 							<right>40</right>
 							<align>right</align>
 							<aligny>center</aligny>
-							<label>$VAR[ActorLabel2]</label>
+							<label>$VAR[ListLabel2Var]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</control>
@@ -105,7 +105,7 @@
 							<right>40</right>
 							<align>right</align>
 							<aligny>center</aligny>
-							<label>$VAR[ActorLabel2]</label>
+							<label>$VAR[ListLabel2Var]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="image">
