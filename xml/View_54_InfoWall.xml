@@ -401,7 +401,10 @@
 					<control type="group">
 						<left>90</left>
 						<top>110</top>
-						<include>InfoWallEpisodeLayout</include>
+						<include content="InfoWallEpisodeLayout">
+							<param name="focused" value="false" />
+							<param name="thumb_label" value="$INFO[ListItem.Label2]" />
+						</include>
 					</control>
 				</itemlayout>
 				<focusedlayout height="300" width="300" condition="Container.Content(episodes)">
@@ -413,6 +416,7 @@
 						<top>110</top>
 						<include content="InfoWallEpisodeLayout">
 							<param name="focused" value="true" />
+							<param name="thumb_label" value="$INFO[ListItem.Label2]" />
 						</include>
 					</control>
 				</focusedlayout>
