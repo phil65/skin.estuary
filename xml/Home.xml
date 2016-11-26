@@ -134,10 +134,6 @@
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[626]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="left_icon" value="lists/played-total.png" />
-							<param name="right_icon" value="lists/rating.png" />
-							<param name="first_label" value="$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]" />
-							<param name="second_label" value="$INFO[ListItem.Rating]" />
 							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6100"/>
 						</include>
@@ -152,10 +148,6 @@
 							<param name="content_path" value="special://skin/playlists/unwatched_tvshows.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31122]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="left_icon" value="lists/totaltv.png" />
-							<param name="right_icon" value="lists/rating.png" />
-							<param name="first_label" value="$INFO[ListItem.Property(TotalEpisodes)]" />
-							<param name="second_label" value="$INFO[ListItem.Rating]" />
 							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6300"/>
 						</include>
@@ -208,7 +200,6 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7100"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
-							<param name="main_label" value="$INFO[ListItem.Year,[B],[/B] - ]$INFO[ListItem.Artist]"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="musicdb://recentlyaddedalbums/"/>
@@ -216,7 +207,6 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7200"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
-							<param name="main_label" value="$INFO[ListItem.Year,[B],[/B] - ]$INFO[ListItem.Artist]"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/random_albums.xsp"/>
@@ -224,7 +214,6 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7300"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
-							<param name="main_label" value="$INFO[ListItem.Year,[B],[/B] - ]$INFO[ListItem.Artist]"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/random_artists.xsp"/>
@@ -232,9 +221,6 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7400"/>
 							<param name="fallback_icon" value="DefaultMusicArtists.png"/>
-							<param name="single_label" value="$INFO[ListItem.Label]"/>
-							<param name="main_label" value=""/>
-							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/unplayed_albums.xsp"/>
@@ -242,7 +228,6 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7500"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
-							<param name="main_label" value="$INFO[ListItem.Year,[B],[/B] - ]$INFO[ListItem.Artist]"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
@@ -250,7 +235,6 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7600"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
-							<param name="main_label" value="$INFO[ListItem.Year,[B],[/B] - ]$INFO[ListItem.Artist]"/>
 							<param name="sortby" value="playcount"/>
 							<param name="sortorder" value="descending"/>
 						</include>
@@ -287,9 +271,6 @@
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8100"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
-							<param name="single_label" value="$INFO[ListItem.Label]"/>
-							<param name="main_label" value=""/>
-							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/audio/"/>
@@ -299,9 +280,6 @@
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8200"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
-							<param name="single_label" value="$INFO[ListItem.Label]"/>
-							<param name="main_label" value=""/>
-							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/executable/"/>
@@ -311,9 +289,6 @@
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8300"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
-							<param name="single_label" value="$INFO[ListItem.Label]"/>
-							<param name="main_label" value=""/>
-							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare" condition="System.Platform.Android">
 							<param name="content_path" value="androidapp://sources/apps/"/>
@@ -323,9 +298,6 @@
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8400"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
-							<param name="single_label" value="$INFO[ListItem.Label]"/>
-							<param name="main_label" value=""/>
-							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/image/"/>
@@ -334,9 +306,6 @@
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8500"/>
-							<param name="single_label" value="$INFO[ListItem.Label]"/>
-							<param name="main_label" value=""/>
-							<param name="sub_label" value=""/>
 						</include>
 					</control>
 					<include content="ImageWidget">
@@ -702,9 +671,6 @@
 							<param name="widget_header" value="$LOCALIZE[31013]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="16200"/>
-							<param name="single_label" value="$INFO[ListItem.Label]"/>
-							<param name="main_label" value=""/>
-							<param name="sub_label" value=""/>
 							<param name="widget_limit" value="10"/>
 						</include>
 						<include content="WidgetListEpisodes">

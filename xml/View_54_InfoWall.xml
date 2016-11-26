@@ -44,7 +44,9 @@
 	</include>
 	<include name="InfoWallMusicLayout">
 		<param name="fallback_image">DefaultFolder.png</param>
-		<param name="label">$INFO[ListItem.Year,[B], - [/B]]$INFO[ListItem.Label]</param>
+		<param name="main_label">$INFO[ListItem.Artist]</param>
+		<param name="sub_label">$INFO[ListItem.Year,[B],[/B]]</param>
+		<param name="single_label">$INFO[ListItem.Label]</param>
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
@@ -83,7 +85,31 @@
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$PARAM[label]</label>
+				<label>$PARAM[single_label]</label>
+				<visible>!String.IsEqual(ListItem.DBType,album)</visible>
+			</control>
+			<control type="group">
+				<visible>String.IsEqual(ListItem.DBType,album)</visible>
+				<control type="label">
+					<left>29</left>
+					<top>300</top>
+					<width>260</width>
+					<label>$PARAM[sub_label]</label>
+					<font>font12</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<left>29</left>
+					<top>328</top>
+					<width>260</width>
+					<label>$PARAM[main_label]</label>
+					<font>font12</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
 			</control>
 		</definition>
 	</include>
@@ -169,6 +195,35 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
+			<control type="group">
+				<visible>String.IsEqual(ListItem.DBtype,tvshow)</visible>
+				<top>320</top>
+				<control type="image">
+					<left>35</left>
+					<top>0</top>
+					<width>250</width>
+					<height>50</height>
+					<texture>overlays/overlayfade.png</texture>
+				</control>
+				<control type="label">
+					<left>-4</left>
+					<top>17</top>
+					<width>240</width>
+
+					<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</label>
+					<font>font10</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>right</align>
+				</control>
+				<control type="image">
+					<left>250</left>
+					<top>23</top>
+					<width>24</width>
+					<height>24</height>
+					<texture>lists/played-total.png</texture>
+				</control>
 			</control>
 			<control type="group">
 				<left>145</left>
