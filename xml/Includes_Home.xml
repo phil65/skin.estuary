@@ -227,11 +227,11 @@
 							</control>
 							<control type="label">
 								<left>25</left>
-								<top>202</top>
+								<top>204</top>
 								<height>60</height>
 								<width>258</width>
 								<label>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
-								<font>font10</font>
+								<font>font20_title</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>left</align>
 							</control>
@@ -316,11 +316,11 @@
 							</control>
 							<control type="label">
 								<left>25</left>
-								<top>202</top>
+								<top>204</top>
 								<height>60</height>
 								<width>258</width>
 								<label>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
-								<font>font10</font>
+								<font>font20_title</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>left</align>
 							</control>
