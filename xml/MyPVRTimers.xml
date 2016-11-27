@@ -52,7 +52,7 @@
 									<height>30</height>
 									<font>font12</font>
 									<aligny>top</aligny>
-									<label>$INFO[ListItem.Timertype]</label>
+									<label>$VAR[TimersSubLabel]</label>
 								</control>
 								<control type="label">
 									<right>20</right>
@@ -115,7 +115,7 @@
 									<height>100</height>
 									<font>font12</font>
 									<aligny>top</aligny>
-									<label>$INFO[ListItem.Timertype]</label>
+									<label>$VAR[TimersSubLabel]</label>
 								</control>
 								<control type="label">
 									<right>20</right>
