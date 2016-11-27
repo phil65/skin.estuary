@@ -91,7 +91,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5500"/>
 							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
-							<param name="icon_border" value="0"/>
+							<param name="icon_height" value="70"/>
 							<param name="visible" value="Library.HasContent(movies)"/>
 						</include>
 						<include content="WidgetListPoster">
@@ -155,7 +155,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6400"/>
 							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
-							<param name="icon_border" value="0"/>
+							<param name="icon_height" value="70"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
 						<include content="WidgetListCategories">
@@ -164,7 +164,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6500"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]"/>
-							<param name="icon_border" value="6"/>
+							<param name="icon_height" value="70"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
 					</control>
@@ -696,7 +696,7 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="16600"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]"/>
-							<param name="icon_border" value="6"/>
+							<param name="icon_height" value="70"/>
 							<param name="visible" value="Library.HasContent(musicvideos)"/>
 						</include>
 					</control>

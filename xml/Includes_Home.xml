@@ -287,7 +287,7 @@
 	<include name="WidgetListCategories">
 		<param name="item_limit">20</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
-		<param name="icon_border">-20</param>
+		<param name="icon_height">120</param>
 		<param name="pvr_submenu">false</param>
 		<param name="pvr_type">TV</param>
 		<param name="visible">true</param>
@@ -321,10 +321,9 @@
 							<centertop>74</centertop>
 							<left>62</left>
 							<width>200</width>
-							<height>80</height>
+							<height>$PARAM[icon_height]</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<bordersize>$PARAM[icon_border]</bordersize>
 						</control>
 						<control type="textbox">
 							<left>42</left>
@@ -367,10 +366,9 @@
 							<centertop>74</centertop>
 							<left>62</left>
 							<width>200</width>
-							<height>80</height>
+							<height>$PARAM[icon_height]</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<bordersize>$PARAM[icon_border]</bordersize>
 						</control>
 						<control type="textbox">
 							<left>42</left>
