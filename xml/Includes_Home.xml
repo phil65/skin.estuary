@@ -62,7 +62,6 @@
 		</control>
 	</include>
 	<include name="WidgetListPoster">
-		<param name="fallback_image">DefaultMovies.png</param>
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
@@ -82,7 +81,6 @@
 						<left>70</left>
 						<top>10</top>
 						<include content="InfoWallMovieLayout">
-							<param name="fallback_image" value="$VAR[fallback_image]" />
 							<param name="focused" value="false" />
 						</include>
 					</control>
@@ -99,7 +97,6 @@
 							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,130" />
 						</animation>
 						<include content="InfoWallMovieLayout">
-							<param name="fallback_image" value="$VAR[fallback_image]" />
 							<param name="focused" value="true" />
 						</include>
 					</control>

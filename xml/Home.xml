@@ -98,7 +98,6 @@
 							<param name="content_path" value="videodb://movies/sets/"/>
 							<param name="widget_header" value="$LOCALIZE[31075]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="fallback_image" value="DefaultSets.png" />
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
 						</include>
@@ -133,7 +132,6 @@
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[626]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6100"/>
 						</include>
 						<include content="WidgetListEpisodes">
@@ -146,7 +144,6 @@
 							<param name="content_path" value="special://skin/playlists/unwatched_tvshows.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31122]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6300"/>
 						</include>
 						<include content="WidgetListCategories">
