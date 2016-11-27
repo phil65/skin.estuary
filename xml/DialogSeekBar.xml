@@ -110,6 +110,7 @@
 				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
 				<textureslidernib colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
+				<visible>!VideoPlayer.Content(livetv)</visible>
 			</control>
 		</control>
 		<control type="group"> <!-- VideoPlayer.Content(LiveTV) -->
@@ -118,45 +119,62 @@
 			<bottom>0</bottom>
 			<height>380</height>
 			<control type="image">
+				<left>0</left>
+				<width>100%</width>
+				<height>240</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+			</control>
+			<control type="image">
 				<left>30</left>
-				<top>50</top>
+				<top>20</top>
 				<width>200</width>
 				<height>200</height>
 				<aspectratio aligny="center">keep</aspectratio>
 				<texture>$INFO[Player.Art(thumb)]</texture>
 			</control>
-<!-- 			<control type="label">
-				<left>40</left>
-				<top>310</top>
-				<right>500</right>
+			<control type="label">
+				<left>20</left>
+				<width>220</width>
+				<top>-80</top>
 				<height>25</height>
-				<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.EpisodeName, (,)]</label>
+				<label>$INFO[VideoPlayer.ChannelNumber]</label>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<font>WeatherTemp</font>
 				<aligny>center</aligny>
-				<font>font45</font>
-			</control> -->
+			</control>
 			<control type="label">
 				<right>20</right>
 				<width>800</width>
-				<top>220</top>
+				<top>190</top>
 				<height>25</height>
-				<label>$INFO[VideoPlayer.NextTitle,, - ][COLOR button_focus]$INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime: ][/COLOR]</label>
+				<label>$INFO[VideoPlayer.NextTitle,[COLOR grey]$LOCALIZE[19031]: [/COLOR], - ][COLOR button_focus]$INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime: ][/COLOR]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<visible>VideoPlayer.HasEpg</visible>
 			</control>
 			<control type="label">
 				<left>260</left>
-				<width>800</width>
-				<top>220</top>
+				<right>50</right>
+				<top>20</top>
 				<height>25</height>
-				<label>$INFO[VideoPlayer.ChannelName]</label>
+				<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.EpisodeName, (,)]</label>
 				<align>left</align>
-				<font>font32_title</font>
+				<font>font36_title</font>
 				<aligny>center</aligny>
 			</control>
+			<control type="textbox">
+				<left>260</left>
+				<top>55</top>
+				<right>50</right>
+				<height>120</height>
+				<label fallback="416">$INFO[VideoPlayer.Plot]</label>
+				<align>justify</align>
+				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
+			</control>
 			<control type="grouplist">
-				<left>50</left>
-				<top>300</top>
+				<left>260</left>
+				<top>175</top>
 				<width>600</width>
 				<height>100</height>
 				<align>left</align>
