@@ -62,10 +62,6 @@
 		</control>
 	</include>
 	<include name="WidgetListPoster">
-		<param name="left_icon">lists/rating.png</param>
-		<param name="right_icon">lists/duration.png</param>
-		<param name="first_label">$INFO[ListItem.Rating]</param>
-		<param name="second_label">$INFO[ListItem.Duration,, $LOCALIZE[31132]]</param>
 		<param name="fallback_image">DefaultMovies.png</param>
 		<definition>
 			<include content="CategoryLabel">
@@ -86,6 +82,7 @@
 						<left>70</left>
 						<top>10</top>
 						<include content="InfoWallMovieLayout">
+							<param name="fallback_image" value="$VAR[fallback_image]" />
 							<param name="focused" value="false" />
 						</include>
 					</control>
@@ -96,12 +93,13 @@
 						<left>70</left>
 						<top>10</top>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="200,130" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,130" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="200,130" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,130" />
 						</animation>
 						<include content="InfoWallMovieLayout">
+							<param name="fallback_image" value="$VAR[fallback_image]" />
 							<param name="focused" value="true" />
 						</include>
 					</control>
@@ -215,10 +213,10 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="240,120" />
+							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="230,120" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="240,120" />
+							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="230,120" />
 						</animation>
 						<include content="InfoWallEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -289,7 +287,7 @@
 	<include name="WidgetListCategories">
 		<param name="item_limit">20</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
-		<param name="icon_height">130</param>
+		<param name="icon_border">-20</param>
 		<param name="pvr_submenu">false</param>
 		<param name="pvr_type">TV</param>
 		<param name="visible">true</param>
@@ -303,7 +301,7 @@
 				<left>0</left>
 				<top>120</top>
 				<right>0</right>
-				<height>300</height>
+				<height>290</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
@@ -314,26 +312,27 @@
 						<left>70</left>
 						<control type="image">
 							<width>316</width>
-							<height>210</height>
+							<height>200</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<centertop>83</centertop>
+							<centertop>74</centertop>
 							<left>62</left>
 							<width>200</width>
-							<height>$PARAM[icon_height]</height>
+							<height>80</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
+							<bordersize>$PARAM[icon_border]</bordersize>
 						</control>
-						<control type="label">
+						<control type="textbox">
 							<left>42</left>
-							<top>125</top>
+							<top>106</top>
 							<width>240</width>
 							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font12</font>
+							<font>font12_narrow</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -352,37 +351,37 @@
 						</animation>
 						<control type="image">
 							<width>316</width>
-							<height>210</height>
+							<height>200</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
 							<width>316</width>
-							<height>210</height>
+							<height>200</height>
 							<texture colordiffuse="button_focus">colors/grey.png</texture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
-							<centertop>83</centertop>
+							<centertop>74</centertop>
 							<left>62</left>
 							<width>200</width>
-							<height>$PARAM[icon_height]</height>
+							<height>80</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
+							<bordersize>$PARAM[icon_border]</bordersize>
 						</control>
-						<control type="label">
+						<control type="textbox">
 							<left>42</left>
-							<top>125</top>
+							<top>106</top>
 							<width>240</width>
 							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font12</font>
+							<font>font12_narrow</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
-							<scroll>true</scroll>
 						</control>
 					</control>
 				</focusedlayout>
