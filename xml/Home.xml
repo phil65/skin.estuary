@@ -739,7 +739,7 @@
 					<onfocus>ClearProperty(listposition,home)</onfocus>
 					<onright>SetFocus($INFO[Container(9000).ListItem.Property(menu_id)])</onright>
 					<onup>700</onup>
-					<ondown>noop</ondown>
+					<ondown>700</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<focusedlayout height="95">
 						<control type="group">
@@ -907,8 +907,12 @@
 					<width>480</width>
 					<height>110</height>
 					<top>100</top>
-					<onup>noop</onup>
-					<ondown>9000</ondown>
+					<onup>SetFocus(9000)</onup>
+					<onup>PageDown</onup>
+					<onup>PageDown</onup>
+					<ondown>SetFocus(9000)</ondown>
+					<ondown>PageUp</ondown>
+					<ondown>PageUp</ondown>
 					<onright>2000</onright>
 					<align>justify</align>
 					<include content="IconButton">
