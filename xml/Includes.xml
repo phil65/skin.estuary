@@ -994,6 +994,16 @@
 						<texture>$INFO[Weather.FanartCode,weather/small/,.png]</texture>
 						<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)]</visible>
 					</control>
+					<control type="image">
+						<top>8</top>
+						<left>-20</left>
+						<width>60</width>
+						<height>40</height>
+						<fadetime>300</fadetime>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
+						<texture>dialogs/volume/mute.png</texture>
+						<visible>Player.Muted</visible>
+					</control>
 				</control>
 				<control type="label" id="23000">
 					<top>0</top>
