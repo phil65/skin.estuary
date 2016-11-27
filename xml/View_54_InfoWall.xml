@@ -154,10 +154,10 @@
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<left>216</left>
-				<top>128</top>
-				<width>80</width>
-				<height>80</height>
+				<left>136</left>
+				<top>138</top>
+				<width>160</width>
+				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
 				<visible>String.IsEqual(ListItem.DBtype,episode)</visible>
 			</control>
@@ -222,14 +222,13 @@
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 			</control>
 			<control type="group">
-				<left>145</left>
-				<top>6</top>
+				<left>134</left>
+				<top>8</top>
 				<include>UserRatingCircle</include>
 			</control>
 		</definition>
 	</include>
 	<include name="InfoWallMovieLayout">
-		<param name="fallback_image">DefaultMovies.png</param>
 		<param name="focused">false</param>
 		<definition>
 			<control type="group">
@@ -258,13 +257,13 @@
 					<top>0</top>
 					<width>270</width>
 					<height>290</height>
-					<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
 				<control type="textbox">
 					<left>40</left>
-					<top>250</top>
+					<top>240</top>
 					<width>242</width>
 					<height>90</height>
 					<font>font27</font>
@@ -290,7 +289,7 @@
 				<top>-10</top>
 				<width>290</width>
 				<height>400</height>
-				<texture border="2" fallback="$PARAM[fallback_image]" background="true">$INFO[ListItem.Art(poster)]</texture>
+				<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 				<aspectratio>scale</aspectratio>
 				<bordertexture border="20">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -303,13 +302,6 @@
 				<height>80</height>
 				<texture>overlays/overlay-bg.png</texture>
 				<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
-			</control>
-			<control type="image">
-				<left>35</left>
-				<top>338</top>
-				<width>32</width>
-				<height>32</height>
-				<texture>$VAR[WallWatchedIconVar]</texture>
 			</control>
 			<control type="group">
 				<visible>String.IsEqual(ListItem.DBtype,tvshow)</visible>
@@ -339,8 +331,15 @@
 					<texture>lists/played-total.png</texture>
 				</control>
 			</control>
+			<control type="image">
+				<left>35</left>
+				<top>338</top>
+				<width>32</width>
+				<height>32</height>
+				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
 			<control type="group">
-				<left>145</left>
+				<left>135</left>
 				<top>-8</top>
 				<include>UserRatingCircle</include>
 			</control>

@@ -91,15 +91,13 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5500"/>
 							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
-							<param name="icon_height" value="90"/>
+							<param name="icon_height" value="70"/>
 							<param name="visible" value="Library.HasContent(movies)"/>
 						</include>
 						<include content="WidgetListPoster">
 							<param name="content_path" value="videodb://movies/sets/"/>
 							<param name="widget_header" value="$LOCALIZE[31075]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="right_icon" value="" />
-							<param name="fallback_image" value="DefaultSets.png" />
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
 						</include>
@@ -134,7 +132,6 @@
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[626]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6100"/>
 						</include>
 						<include content="WidgetListEpisodes">
@@ -147,7 +144,6 @@
 							<param name="content_path" value="special://skin/playlists/unwatched_tvshows.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31122]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="fallback_image" value="DefaultTVShows.png" />
 							<param name="list_id" value="6300"/>
 						</include>
 						<include content="WidgetListCategories">
@@ -156,7 +152,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6400"/>
 							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
-							<param name="icon_height" value="90"/>
+							<param name="icon_height" value="70"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
 						<include content="WidgetListCategories">
@@ -165,7 +161,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6500"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]"/>
-							<param name="icon_height" value="90"/>
+							<param name="icon_height" value="70"/>
 							<param name="visible" value="Library.HasContent(tvshows)"/>
 						</include>
 					</control>
@@ -697,7 +693,7 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="16600"/>
 							<param name="icon" value="$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]"/>
-							<param name="icon_height" value="90"/>
+							<param name="icon_height" value="70"/>
 							<param name="visible" value="Library.HasContent(musicvideos)"/>
 						</include>
 					</control>
