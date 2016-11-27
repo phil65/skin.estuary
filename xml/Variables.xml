@@ -401,4 +401,8 @@
 	<variable name="AddonNewsVar">
 		<value condition="!String.IsEmpty(ListItem.AddonNews)">$LOCALIZE[31136]</value>
 	</variable>
+	<variable name="TimersSubLabel">
+		<value condition="[Window.IsActive(tvtimerrules) | Window.IsActive(radiotimerrules)] + !ListItem.HasTimerSchedule">$INFO[ListItem.Timertype]</value>
+		<value>$INFO[ListItem.EpisodeName]</value>
+	</variable>
 </includes>
