@@ -21,7 +21,7 @@
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<visible>Control.Isvisible(54)</visible>
-				<include>Visible_Right</include>
+				<include>Visible_Left</include>
 				<visible>Container.Content(images)</visible>
 				<include content="ContentPanel">
 					<param name="width" value="656" />
