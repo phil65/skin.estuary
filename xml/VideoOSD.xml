@@ -13,7 +13,7 @@
 			<width>100%</width>
 			<bottom>280</bottom>
 			<texturefocus></texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturenofocus />
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group">
@@ -67,7 +67,7 @@
 							<radiowidth>74</radiowidth>
 							<radioheight>74</radioheight>
 							<font></font>
-							<texturenofocus></texturenofocus>
+							<texturenofocus />
 							<radioposx>1</radioposx>
 							<radioposy>0</radioposy>
 							<selected>Player.Paused</selected>
@@ -106,7 +106,7 @@
 							<radiowidth>74</radiowidth>
 							<radioheight>74</radioheight>
 							<font></font>
-							<texturenofocus></texturenofocus>
+							<texturenofocus />
 							<radioposx>1</radioposx>
 							<radioposy>0</radioposy>
 							<selected>!Player.Recording</selected>

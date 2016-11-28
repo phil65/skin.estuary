@@ -18,7 +18,6 @@
 				<width>900</width>
 				<height>90</height>
 				<label>$PARAM[label]</label>
-				<textcolor>white</textcolor>
 				<shadowcolor>text_shadow</shadowcolor>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>

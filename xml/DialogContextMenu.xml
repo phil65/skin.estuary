@@ -23,7 +23,7 @@
 			<width>5760</width>
 			<height>3240</height>
 			<texturefocus></texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturenofocus />
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="image" id="999">
@@ -50,7 +50,7 @@
 			<height>65</height>
 			<align>center</align>
 			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturenofocus />
 		</control>
 		<include content="UpDownArrows">
 			<param name="container_id" value="996" />

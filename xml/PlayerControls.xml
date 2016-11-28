@@ -94,7 +94,7 @@
 					<radiowidth>74</radiowidth>
 					<radioheight>74</radioheight>
 					<font></font>
-					<texturenofocus></texturenofocus>
+					<texturenofocus />
 					<radioposx>1</radioposx>
 					<radioposy>0</radioposy>
 					<selected>Player.Paused</selected>
@@ -126,7 +126,7 @@
 						<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
 						<font></font>
 						<texturefocus></texturefocus>
-						<texturenofocus></texturenofocus>
+						<texturenofocus />
 						<onleft>605</onleft>
 						<onright>607</onright>
 						<onup>1000</onup>
@@ -155,7 +155,7 @@
 					<radiowidth>74</radiowidth>
 					<radioheight>74</radioheight>
 					<font></font>
-					<texturenofocus></texturenofocus>
+					<texturenofocus />
 					<radioposx>0</radioposx>
 					<radioposy>0</radioposy>
 					<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>

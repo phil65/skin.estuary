@@ -50,7 +50,6 @@
 							<aligny>center</aligny>
 							<font>font12</font>
 							<label>$VAR[PlaylistLabel2Var]</label>
-							<textcolor>white</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
@@ -98,7 +97,7 @@
 							<align>left</align>
 							<aligny>top</aligny>
 							<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-							<texturenofocus></texturenofocus>
+							<texturenofocus />
 							<radioposx>300</radioposx>
 							<textoffsetx>40</textoffsetx>
 							<textoffsety>35</textoffsety>

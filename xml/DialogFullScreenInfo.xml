@@ -10,7 +10,7 @@
 			<width>100%</width>
 			<bottom>280</bottom>
 			<texturefocus></texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturenofocus />
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group">
