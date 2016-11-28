@@ -50,7 +50,7 @@
 							<right>20</right>
 							<height>60</height>
 							<aligny>top</aligny>
-							<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
+							<label>[COLOR grey]$INFO[ListItem.Property(Event.Description)][/COLOR]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
@@ -96,7 +96,7 @@
 							<right>20</right>
 							<height>60</height>
 							<aligny>top</aligny>
-							<label>[I]$INFO[ListItem.Property(Event.Description)][/I]</label>
+							<label>[COLOR grey]$INFO[ListItem.Property(Event.Description)][/COLOR]</label>
 						</control>
 						<control type="label">
 							<left>0</left>
