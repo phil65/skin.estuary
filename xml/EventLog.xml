@@ -68,7 +68,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>eventloglist_width</width>
+							<right>0</right>
 							<height>141</height>
 							<texture colordiffuse="button_focus">lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>

@@ -25,61 +25,55 @@
 					<pagecontrol>60</pagecontrol>
 					<viewtype label="List">list</viewtype>
 					<preloaditems>1</preloaditems>
-					<focusedlayout height="80" width="924">
-						<control type="group">
-							<width>playlistlist_width</width>
-							<control type="image">
-								<left>0</left>
-								<right>0</right>
-								<height>80</height>
-								<texture colordiffuse="button_focus">lists/focus.png</texture>
-								<visible>Control.HasFocus(50)</visible>
-							</control>
-							<control type="label">
-								<left>30</left>
-								<height>80</height>
-								<right>30</right>
-								<aligny>center</aligny>
-								<font>font12</font>
-								<label>$INFO[ListItem.Label]</label>
-								<shadowcolor>text_shadow</shadowcolor>
-							</control>
-							<control type="label">
-								<left>30</left>
-								<height>80</height>
-								<right>30</right>
-								<align>right</align>
-								<aligny>center</aligny>
-								<font>font12</font>
-								<label>$VAR[PlaylistLabel2Var]</label>
-								<textcolor>white</textcolor>
-								<shadowcolor>text_shadow</shadowcolor>
-							</control>
+					<focusedlayout height="80" width="playlistlist_width">
+						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<height>80</height>
+							<texture colordiffuse="button_focus">lists/focus.png</texture>
+							<visible>Control.HasFocus(50)</visible>
+						</control>
+						<control type="label">
+							<left>30</left>
+							<height>80</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$INFO[ListItem.Label]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+						<control type="label">
+							<left>30</left>
+							<height>80</height>
+							<right>30</right>
+							<align>right</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$VAR[PlaylistLabel2Var]</label>
+							<textcolor>white</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="80" width="924">
-						<control type="group">
-							<width>playlistlist_width</width>
-							<control type="label">
-								<left>30</left>
-								<height>80</height>
-								<right>30</right>
-								<aligny>center</aligny>
-								<font>font12</font>
-								<label>$INFO[ListItem.TVShowtitle,,: ]$INFO[ListItem.Label]</label>
-								<shadowcolor>text_shadow</shadowcolor>
-							</control>
-							<control type="label">
-								<left>30</left>
-								<height>80</height>
-								<right>30</right>
-								<align>right</align>
-								<aligny>center</aligny>
-								<font>font12</font>
-								<label>$VAR[PlaylistLabel2Var]</label>
-								<textcolor>grey</textcolor>
-								<shadowcolor>text_shadow</shadowcolor>
-							</control>
+					<itemlayout height="80" width="playlistlist_width">
+						<control type="label">
+							<left>30</left>
+							<height>80</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$INFO[ListItem.TVShowtitle,,: ]$INFO[ListItem.Label]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+						<control type="label">
+							<left>30</left>
+							<height>80</height>
+							<right>30</right>
+							<align>right</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<label>$VAR[PlaylistLabel2Var]</label>
+							<textcolor>grey</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</itemlayout>
 				</control>
