@@ -136,7 +136,7 @@
 					<width>12</width>
 					<bottom>80</bottom>
 					<onleft>50</onleft>
-					<texturesliderbackground></texturesliderbackground>
+					<texturesliderbackground />
 					<onright>700</onright>
 					<animation effect="zoom" end="50,100" time="300" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 					<orientation>vertical</orientation>
