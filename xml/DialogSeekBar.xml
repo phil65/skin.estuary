@@ -114,7 +114,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)</visible>
+			<visible>Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)</visible>
 			<animation effect="fade" time="400">VisibleChange</animation>
 			<bottom>0</bottom>
 			<height>380</height>
