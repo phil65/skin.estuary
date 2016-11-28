@@ -62,7 +62,7 @@
 				<font>font37</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturefocus></texturefocus>
+				<texturefocus />
 				<texturenofocus />
 			</control>
 			<control type="group" id="78500">
@@ -465,7 +465,7 @@
 						<height>120</height>
 						<onup>164</onup>
 						<ondown>104</ondown>
-						<texturefocus></texturefocus>
+						<texturefocus />
 						<texturenofocus />
 						<textureradioonfocus colordiffuse="button_focus">icons/keyboard/spacebar.png</textureradioonfocus>
 						<textureradioonnofocus colordiffuse="FFFFFFFF">icons/keyboard/spacebar.png</textureradioonnofocus>

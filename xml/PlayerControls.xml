@@ -125,7 +125,7 @@
 						<height>74</height>
 						<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
 						<font></font>
-						<texturefocus></texturefocus>
+						<texturefocus />
 						<texturenofocus />
 						<onleft>605</onleft>
 						<onright>607</onright>
@@ -149,7 +149,7 @@
 					<textureradiooffnofocus>osd/fullscreen/buttons/random-off.png</textureradiooffnofocus>
 					<textureradioondisabled colordiffuse="disabled">osd/fullscreen/buttons/random-on.png</textureradioondisabled>
 					<textureradiooffdisabled colordiffuse="disabled">osd/fullscreen/buttons/random-off.png</textureradiooffdisabled>
-					<texturefocus></texturefocus>
+					<texturefocus />
 					<width>125</width>
 					<height>123</height>
 					<radiowidth>74</radiowidth>

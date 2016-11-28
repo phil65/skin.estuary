@@ -76,7 +76,7 @@
 		<top>-3000</top>
 		<width>1</width>
 		<height>1</height>
-		<texturefocus></texturefocus>
+		<texturefocus />
 		<texturenofocus />
 		<label></label>
 		<font></font>
@@ -724,7 +724,7 @@
 				<top>$PARAM[posy]</top>
 				<width>28</width>
 				<height>28</height>
-				<texturefocus></texturefocus>
+				<texturefocus />
 				<texturenofocus />
 				<onclick>Control.Move($PARAM[list_id],-1)</onclick>
 				<visible allowhiddenfocus="true">Container($PARAM[list_id]).HasPrevious + [Control.HasFocus($PARAM[list_id]) | Control.HasFocus($PARAM[list_id]500)]</visible>
@@ -734,7 +734,7 @@
 				<top>$PARAM[posy]</top>
 				<width>28</width>
 				<height>28</height>
-				<texturefocus></texturefocus>
+				<texturefocus />
 				<texturenofocus />
 				<onclick>Control.Move($PARAM[list_id],1)</onclick>
 				<visible allowhiddenfocus="true">Container($PARAM[list_id]).HasNext + [Control.HasFocus($PARAM[list_id]) | Control.HasFocus($PARAM[list_id]501)]</visible>
@@ -758,7 +758,7 @@
 			<top>-2000</top>
 			<width>6000</width>
 			<height>6000</height>
-			<texturefocus></texturefocus>
+			<texturefocus />
 			<texturenofocus />
 			<onclick>Action(close)</onclick>
 		</control>
@@ -794,7 +794,7 @@
 				<top>0</top>
 				<right>0</right>
 				<height>$PARAM[height]</height>
-				<texturefocus></texturefocus>
+				<texturefocus />
 				<texturenofocus />
 				<onclick>noop</onclick>
 			</control>
@@ -805,7 +805,7 @@
 				<height>48</height>
 				<radiowidth>48</radiowidth>
 				<radioheight>48</radioheight>
-				<texturefocus></texturefocus>
+				<texturefocus />
 				<texturenofocus />
 				<label></label>
 				<textureradioofffocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioofffocus>
@@ -880,7 +880,7 @@
 					<height>100</height>
 					<label></label>
 					<onclick>Action(Back)</onclick>
-					<texturefocus></texturefocus>
+					<texturefocus />
 					<texturenofocus />
 				</control>
 				<control type="label" id="18900">
@@ -1149,7 +1149,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 						<label>$LOCALIZE[33063]</label>
 						<onclick>SetFocus(9000)</onclick>
-						<texturefocus></texturefocus>
+						<texturefocus />
 						<texturenofocus />
 					</control>
 				</control>
