@@ -12,9 +12,9 @@
 				<include>OpenClose_Left</include>
 				<control type="fixedlist" id="50">
 					<left>0</left>
-					<top>0</top>
+					<top>list_y_offset</top>
 					<right>778</right>
-					<height>100%</height>
+					<bottom>list_y_offset</bottom>
 					<onleft>9000</onleft>
 					<onright>73</onright>
 					<onup>50</onup>
