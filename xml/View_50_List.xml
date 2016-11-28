@@ -58,7 +58,7 @@
 			<width>list_width</width>
 			<height>100%</height>
 			<movement>5</movement>
-			<focusposition>7</focusposition>
+			<focusposition>6</focusposition>
 			<scrolltime tween="cubic" easing="out">500</scrolltime>
 			<orientation>vertical</orientation>
 			<pagecontrol>$PARAM[list_id]600</pagecontrol>
@@ -68,12 +68,12 @@
 			<ondown>$PARAM[list_id]</ondown>
 			<viewtype label="$PARAM[viewtype_label]">list</viewtype>
 			<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Window.IsActive(MyPlaylist.xml)</visible>
-			<focusedlayout height="70" width="list_width">
+			<focusedlayout height="80" width="list_width">
 				<control type="image">
 					<left>0</left>
 					<right>0</right>
 					<top>0</top>
-					<height>69</height>
+					<height>80</height>
 					<texture colordiffuse="button_focus">lists/focus.png</texture>
 					<visible>Control.HasFocus($PARAM[list_id])</visible>
 				</control>
@@ -81,7 +81,7 @@
 					<left>70</left>
 					<right>70</right>
 					<top>0</top>
-					<height>70</height>
+					<height>80</height>
 					<aligny>center</aligny>
 					<scroll>true</scroll>
 					<font>font27</font>
@@ -91,7 +91,7 @@
 				<control type="label">
 					<left>100</left>
 					<top>0</top>
-					<height>70</height>
+					<height>80</height>
 					<right>20</right>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -119,12 +119,12 @@
 					<visible>!Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 			</focusedlayout>
-			<itemlayout height="70" width="list_width">
+			<itemlayout height="80" width="list_width">
 				<control type="label">
 					<left>70</left>
 					<right>70</right>
 					<top>0</top>
-					<height>70</height>
+					<height>80</height>
 					<aligny>center</aligny>
 					<font>font27</font>
 					<label>$INFO[ListItem.Label]</label>
@@ -134,7 +134,7 @@
 					<left>20</left>
 					<right>20</right>
 					<top>0</top>
-					<height>70</height>
+					<height>80</height>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
