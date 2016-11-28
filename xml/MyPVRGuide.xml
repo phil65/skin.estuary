@@ -55,7 +55,7 @@
 								<width>75</width>
 								<height>60</height>
 								<font>font32_title</font>
-								<label>$INFO[ListItem.ChannelNumber]</label>
+								<label>$INFO[ListItem.ChannelNumberLabel]</label>
 								<align>center</align>
 								<aligny>center</aligny>
 							</control>
@@ -77,7 +77,7 @@
 								<width>75</width>
 								<height>60</height>
 								<font>font32_title</font>
-								<label>$INFO[ListItem.ChannelNumber]</label>
+								<label>$INFO[ListItem.ChannelNumberLabel]</label>
 								<textcolor>button_focus</textcolor>
 								<align>center</align>
 								<aligny>center</aligny>
