@@ -285,24 +285,26 @@
 				<visible>$PARAM[focused] + !String.IsEmpty(ListItem.Art(poster))</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
-			<control type="image">
-				<left>15</left>
-				<top>-10</top>
-				<width>290</width>
-				<height>400</height>
-				<texture background="true">$INFO[ListItem.Art(poster)]</texture>
-				<aspectratio>scale</aspectratio>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
+			<control type="group">
 				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
-			</control>
-			<control type="image">
-				<left>35</left>
-				<top>290</top>
-				<width>80</width>
-				<height>80</height>
-				<texture>overlays/overlay-bg.png</texture>
-				<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<control type="image">
+					<left>15</left>
+					<top>-10</top>
+					<width>290</width>
+					<height>400</height>
+					<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+					<aspectratio>scale</aspectratio>
+					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>35</left>
+					<top>290</top>
+					<width>80</width>
+					<height>80</height>
+					<texture>overlays/overlay-bg.png</texture>
+					<visible>Listitem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				</control>
 			</control>
 			<control type="group">
 				<visible>String.IsEqual(ListItem.DBtype,tvshow)</visible>
