@@ -424,11 +424,6 @@
 						<top>150</top>
 						<left>40</left>
 						<include>InfoWallMusicLayout</include>
-						<control type="group">
-							<left>133</left>
-							<top>-4</top>
-							<include>UserRatingCircle</include>
-						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
@@ -441,11 +436,6 @@
 						<include content="InfoWallMusicLayout">
 							<param name="focused" value="true" />
 						</include>
-						<control type="group">
-							<left>133</left>
-							<top>-4</top>
-							<include>UserRatingCircle</include>
-						</control>
 					</control>
 				</focusedlayout>
 				<itemlayout height="400" width="378" condition="Container.Content(images)">
