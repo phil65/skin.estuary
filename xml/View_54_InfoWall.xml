@@ -113,7 +113,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>145</left>
+				<left>133</left>
 				<top>2</top>
 				<include>UserRatingCircle</include>
 			</control>
@@ -314,7 +314,8 @@
 					<top>0</top>
 					<width>250</width>
 					<height>50</height>
-					<texture>overlays/overlayfade.png</texture>
+					<texture colordiffuse="CCFFFFFF">overlays/overlayfade.png</texture>
+					<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 				</control>
 				<control type="label">
 					<left>0</left>
@@ -400,7 +401,7 @@
 				</focusedlayout>
 				<itemlayout height="300" width="300" condition="Container.Content(episodes)">
 					<control type="group">
-						<left>40</left>
+						<left>64</left>
 						<top>110</top>
 						<include content="InfoWallEpisodeLayout">
 							<param name="focused" value="false" />
@@ -411,9 +412,9 @@
 				<focusedlayout height="300" width="300" condition="Container.Content(episodes)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="200,250">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="200,250">UnFocus</animation>
-						<left>40</left>
+						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,250">Focus</animation>
+						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="220,250">UnFocus</animation>
+						<left>64</left>
 						<top>110</top>
 						<include content="InfoWallEpisodeLayout">
 							<param name="focused" value="true" />

@@ -359,14 +359,14 @@
 						<include>WidgetGroupListCommon</include>
 						<control type="grouplist" id="12855">
 							<height>390</height>
-							<left>25</left>
+							<left>0</left>
+							<right>0</right>
 							<top>36</top>
 							<orientation>horizontal</orientation>
 							<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
-							<align>right</align>
-							<width>1280</width>
+							<align>center</align>
 							<control type="group">
-								<width>620</width>
+								<width>680</width>
 								<visible>PVR.IsRecordingTV</visible>
 								<include content="PVRWidget">
 									<param name="icon" value="$INFO[PVR.TVNowRecordingChannelIcon]" />
@@ -376,8 +376,8 @@
 								</include>
 							</control>
 							<control type="group">
+								<width>680</width>
 								<visible>PVR.HasNonRecordingTVTimer</visible>
-								<width>620</width>
 								<include content="PVRWidget">
 									<param name="icon" value="$INFO[PVR.TVNextRecordingChannelIcon]" />
 									<param name="header" value="$LOCALIZE[19157]" />
