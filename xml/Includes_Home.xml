@@ -293,6 +293,9 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
 				<top>110</top>
@@ -879,5 +882,27 @@
 		<onback>PageUp</onback>
 		<onback>PageUp</onback>
 		<preloaditems>2</preloaditems>
+	</include>
+	<include name="BusyListSpinner">
+		<control type="group" id="$PARAM[list_id]599">
+			<height>160</height>
+			<left>90</left>
+			<visible>Container($PARAM[list_id]).IsUpdating + !Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
+			<control type="image">
+				<top>170</top>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="center">keep</aspectratio>
+				<texture colordiffuse="black">dialogs/extendedprogress/loading-back.png</texture>
+			</control>
+			<control type="image">
+				<top>170</top>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="center">keep</aspectratio>
+				<texture>dialogs/extendedprogress/loading.png</texture>
+				<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+			</control>
+		</control>
 	</include>
 </includes>
