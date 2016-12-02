@@ -225,7 +225,6 @@
 								<param name="width" value="540" />
 								<param name="sortby" value="year" />
 								<param name="sortorder" value="descending" />
-								<param name="font" value="font13" />
 								<param name="path" value="$INFO[ListItem.FolderPath]" />
 								<param name="item_label" value="$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
 							</include>
@@ -238,7 +237,6 @@
 								<param name="width" value="540" />
 								<param name="sortby" value="track" />
 								<param name="sortorder" value="ascending" />
-								<param name="font" value="font13" />
 								<param name="path" value="$INFO[ListItem.FolderPath]" />
 								<param name="item_label" value="$INFO[ListItem.Duration,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]" />
 							</include>
