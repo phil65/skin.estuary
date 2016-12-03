@@ -177,33 +177,37 @@
 					<top>140</top>
 					<width>530</width>
 					<height>330</height>
-					<aspectratio aligny="center">keep</aspectratio>
+					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
-					<texture background="true">$VAR[IconWallThumbVar]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<visible>Stringcompare(ListItem.DbType,episode)</visible>
 				</control>
 				<control type="group">
 					<left>273</left>
-					<top>120</top>
+					<top>590</top>
 					<include>UserRatingCircle</include>
+					<animation effect="slide" end="0,-140" time="0" condition="Stringcompare(ListItem.DbType,episode)">conditional</animation>
 				</control>
-				<control type="textbox" id="15500">
-					<left>30</left>
-					<top>640</top>
-					<width>525</width>
-					<bottom>117</bottom>
-					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-					<label>$VAR[ListBoxInfoVar]</label>
-					<visible>[!Container.Content() | !String.isempty(ListItem.Plot)] + !Stringcompare(ListItem.DbType,episode)</visible>
-				</control>
-				<control type="textbox" id="15501">
-					<left>30</left>
-					<top>485</top>
-					<width>525</width>
-					<bottom>96</bottom>
-					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-					<label>$VAR[ListBoxInfoVar]</label>
-					<visible>[!Container.Content() | !String.isempty(ListItem.Plot)] + Stringcompare(ListItem.DbType,episode)</visible>
+				<control type="group">
+					<visible>!Container.Content() | !String.isempty(ListItem.Plot)</visible>
+					<control type="textbox" id="15500">
+						<left>30</left>
+						<top>640</top>
+						<width>525</width>
+						<bottom>117</bottom>
+						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<label>$VAR[ListBoxInfoVar]</label>
+						<visible>!Stringcompare(ListItem.DbType,episode)</visible>
+					</control>
+					<control type="textbox" id="15501">
+						<left>30</left>
+						<top>485</top>
+						<width>525</width>
+						<bottom>96</bottom>
+						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<label>$VAR[ListBoxInfoVar]</label>
+						<visible>Stringcompare(ListItem.DbType,episode)</visible>
+					</control>
 				</control>
 				<control type="group">
 					<left>20</left>
