@@ -205,7 +205,7 @@
 						<width>525</width>
 						<bottom>96</bottom>
 						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-						<label>$VAR[ListBoxInfoVar]</label>
+						<label>$INFO[ListItem.Plot]</label>
 						<visible>Stringcompare(ListItem.DbType,episode)</visible>
 					</control>
 				</control>
