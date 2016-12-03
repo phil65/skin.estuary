@@ -222,8 +222,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>String.IsEmpty(Control.GetLabel(15500)) + !ListItem.IsCollection + !String.IsEqual(ListItem.DbType,episode)</visible>
-					<visible>String.IsEmpty(Control.GetLabel(15501)) + !ListItem.IsCollection + String.IsEqual(ListItem.DbType,episode)</visible>
+					<visible>!ListItem.IsCollection + [[String.IsEmpty(Control.GetLabel(15500)) + Control.IsVisible(15500)] | [String.IsEmpty(Control.GetLabel(15501)) + Control.IsVisible(15501)]]</visible>
 					<control type="textbox">
 						<left>30</left>
 						<top>460</top>
