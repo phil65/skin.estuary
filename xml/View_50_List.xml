@@ -170,7 +170,7 @@
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
 					<texture background="true">$VAR[IconWallThumbVar]</texture>
-					<visible>!Stringcompare(ListItem.DbType,episode)</visible>
+					<visible>!String.IsEqual(ListItem.DbType,episode)</visible>
 				</control>
 				<control type="image">
 					<left>30</left>
@@ -180,13 +180,13 @@
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<visible>Stringcompare(ListItem.DbType,episode)</visible>
+					<visible>String.IsEqual(ListItem.DbType,episode)</visible>
 				</control>
 				<control type="group">
 					<left>273</left>
 					<top>590</top>
 					<include>UserRatingCircle</include>
-					<animation effect="slide" end="0,-140" time="0" condition="Stringcompare(ListItem.DbType,episode)">conditional</animation>
+					<animation effect="slide" end="0,-140" time="0" condition="String.IsEqual(ListItem.DbType,episode)">conditional</animation>
 				</control>
 				<control type="group">
 					<visible>!Container.Content() | !String.isempty(ListItem.Plot)</visible>
@@ -197,7 +197,7 @@
 						<bottom>117</bottom>
 						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[ListBoxInfoVar]</label>
-						<visible>!Stringcompare(ListItem.DbType,episode)</visible>
+						<visible>!String.IsEqual(ListItem.DbType,episode)</visible>
 					</control>
 					<control type="textbox" id="15501">
 						<left>30</left>
@@ -206,7 +206,7 @@
 						<bottom>96</bottom>
 						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$INFO[ListItem.Plot]</label>
-						<visible>Stringcompare(ListItem.DbType,episode)</visible>
+						<visible>String.IsEqual(ListItem.DbType,episode)</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -222,8 +222,8 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>String.IsEmpty(Control.GetLabel(15500)) + !ListItem.IsCollection + !Stringcompare(ListItem.DbType,episode)</visible>
-					<visible>String.IsEmpty(Control.GetLabel(15501)) + !ListItem.IsCollection + Stringcompare(ListItem.DbType,episode)</visible>
+					<visible>String.IsEmpty(Control.GetLabel(15500)) + !ListItem.IsCollection + !String.IsEqual(ListItem.DbType,episode)</visible>
+					<visible>String.IsEmpty(Control.GetLabel(15501)) + !ListItem.IsCollection + String.IsEqual(ListItem.DbType,episode)</visible>
 					<control type="textbox">
 						<left>30</left>
 						<top>460</top>
