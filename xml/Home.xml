@@ -639,13 +639,12 @@
 							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 						</include>
 					</control>
-					<include content="ImageWidget">
+					<include content="ImageWidget" condition="String.IsEmpty(Weather.plugin)">
 						<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31120]" />
 						<param name="button_label" value="$LOCALIZE[31121]" />
 						<param name="button_onclick" value="ActivateWindow(servicesettings,weather)"/>
 						<param name="button_id" value="15300"/>
-						<param name="visible" value="String.IsEmpty(Weather.plugin)"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoWeatherButton)"/>
 					</include>
 				</control>
