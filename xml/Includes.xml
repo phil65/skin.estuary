@@ -118,12 +118,14 @@
 		<param name="font">font13</param>
 		<param name="sortby"></param>
 		<param name="sortorder">ascending</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="panel" id="$PARAM[list_id]">
 				<top>0</top>
 				<width>$PARAM[width]</width>
 				<bottom>$PARAM[bottom]</bottom>
 				<orientation>vertical</orientation>
+				<visible>$PARAM[visible]</visible>
 				<focusedlayout height="$PARAM[item_height]" width="$PARAM[width]">
 					<control type="label">
 						<left>10</left>
