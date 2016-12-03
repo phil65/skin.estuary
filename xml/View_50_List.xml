@@ -190,8 +190,8 @@
 				</control>
 				<control type="group">
 					<visible>!Container.Content() | !String.isempty(ListItem.Plot)</visible>
+					<left>30</left>
 					<control type="textbox" id="15500">
-						<left>30</left>
 						<top>640</top>
 						<width>525</width>
 						<bottom>117</bottom>
@@ -200,7 +200,6 @@
 						<visible>!String.IsEqual(ListItem.DbType,episode)</visible>
 					</control>
 					<control type="textbox" id="15501">
-						<left>30</left>
 						<top>485</top>
 						<width>525</width>
 						<bottom>96</bottom>
