@@ -222,7 +222,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>!ListItem.IsCollection + [[String.IsEmpty(Control.GetLabel(15500)) + Control.IsVisible(15500)] | [String.IsEmpty(Control.GetLabel(15501)) + Control.IsVisible(15501)]]</visible>
+					<visible>!ListItem.IsCollection + String.IsEmpty(Control.GetLabel(15500)) + Control.IsVisible(15500)</visible>
 					<control type="textbox">
 						<left>30</left>
 						<top>460</top>
