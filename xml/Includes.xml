@@ -521,7 +521,7 @@
 				<include content="Visible_Right_Delayed">
 					<param name="id" value="$PARAM[id]"/>
 				</include>
-				<visible>StringCompare(Container(9000).ListItem.Property(id),$PARAM[id])</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(id),$PARAM[id])</visible>
 				<control type="group">
 					<visible>Integer.IsGreater(Container($PARAM[group_id]50).NumItems,0) | Container($PARAM[group_id]50).IsUpdating</visible>
 					<control type="panel" id="$PARAM[group_id]50">
