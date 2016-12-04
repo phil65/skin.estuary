@@ -171,22 +171,13 @@
 				<control type="group">
 					<bottom>0</bottom>
 					<height>300</height>
-					<control type="image" id="82">
-						<width>450</width>
-						<height>240</height>
-						<aspectratio align="center" aligny="top">keep</aspectratio>
-						<fadetime>400</fadetime>
-						<texture>$INFO[ListItem.PlotOutline]</texture>
-						<visible>String.StartsWith(ListItem.PlotOutline,http://) | String.StartsWith(ListItem.PlotOutline,https://)</visible>
-					</control>
 					<control type="image">
 						<left>10</left>
 						<width>240</width>
 						<height>200</height>
 						<aspectratio align="right">keep</aspectratio>
 						<fadetime>400</fadetime>
-						<texture>$INFO[Container(10).ListItem.Icon]</texture>
-						<visible>!Control.IsVisible(82)</visible>
+						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
 						<top>-9</top>
