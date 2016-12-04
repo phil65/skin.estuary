@@ -329,6 +329,20 @@
 					<align>center</align>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
+					<control type="radiobutton" id="155">
+						<include content="VideoInfoButtonsCommon">
+							<param name="icon" value="icons/infodialogs/play.png" />
+						</include>
+						<label>$LOCALIZE[208]</label>
+						<onup>130</onup>
+						<onleft>12</onleft>
+						<onright>120</onright>
+						<onclick condition="System.HasAddon(script.playalbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
+						<onclick condition="System.HasAddon(script.playalbum) + String.IsEqual(ListItem.DBType,song)">RunScript(script.playalbum,songid=$INFO[ListItem.DBID])</onclick>
+						<onclick condition="System.HasAddon(script.playalbum)">Action(close)</onclick>
+						<onclick condition="!System.HasAddon(script.playalbum)">InstallAddon(script.playalbum)</onclick>
+						<visible>[String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song)] + !String.IsEmpty(ListItem.Dbid)</visible>
+					</control>
 					<control type="group" id="420">
 						<width>262</width>
 						<visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song)</visible>
