@@ -896,25 +896,28 @@
 		<preloaditems>2</preloaditems>
 	</include>
 	<include name="BusyListSpinner">
-		<control type="group" id="$PARAM[list_id]599">
-			<height>160</height>
-			<left>180</left>
-			<visible>Container($PARAM[list_id]).IsUpdating + !Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
-			<control type="image">
-				<top>160</top>
-				<width>100</width>
-				<height>100</height>
-				<aspectratio aligny="center">keep</aspectratio>
-				<texture colordiffuse="black">dialogs/extendedprogress/loading-back.png</texture>
+		<param name="posy">160</param>
+		<definition>
+			<control type="group" id="$PARAM[list_id]599">
+				<height>160</height>
+				<left>180</left>
+				<visible>Container($PARAM[list_id]).IsUpdating + !Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
+				<control type="image">
+					<top>$PARAM[posy]</top>
+					<width>100</width>
+					<height>100</height>
+					<aspectratio aligny="center">keep</aspectratio>
+					<texture colordiffuse="black">dialogs/extendedprogress/loading-back.png</texture>
+				</control>
+				<control type="image">
+					<top>$PARAM[posy]</top>
+					<width>100</width>
+					<height>100</height>
+					<aspectratio aligny="center">keep</aspectratio>
+					<texture>dialogs/extendedprogress/loading.png</texture>
+					<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+				</control>
 			</control>
-			<control type="image">
-				<top>160</top>
-				<width>100</width>
-				<height>100</height>
-				<aspectratio aligny="center">keep</aspectratio>
-				<texture>dialogs/extendedprogress/loading.png</texture>
-				<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
-			</control>
-		</control>
+		</definition>
 	</include>
 </includes>
