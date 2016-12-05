@@ -66,6 +66,9 @@
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
 				<top>115</top>
@@ -182,6 +185,9 @@
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
 				<top>105</top>
@@ -235,6 +241,9 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
@@ -438,6 +447,9 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
