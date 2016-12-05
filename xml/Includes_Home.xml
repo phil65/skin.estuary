@@ -68,6 +68,7 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="250"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
@@ -187,6 +188,7 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="200"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
@@ -245,6 +247,7 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="220"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
@@ -451,6 +454,7 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="200"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
