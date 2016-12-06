@@ -285,6 +285,7 @@
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8700"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
+							<param name="visible" value="System.GetBool(gamesgeneral.enable)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/executable/"/>
