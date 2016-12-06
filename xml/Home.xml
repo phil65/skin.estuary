@@ -376,7 +376,7 @@
 							<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
 							<align>center</align>
 							<control type="group">
-								<width>680</width>
+								<width>674</width>
 								<visible>PVR.IsRecordingTV</visible>
 								<include content="PVRWidget">
 									<param name="icon" value="$INFO[PVR.TVNowRecordingChannelIcon]" />
@@ -386,7 +386,7 @@
 								</include>
 							</control>
 							<control type="group">
-								<width>680</width>
+								<width>674</width>
 								<visible>PVR.HasNonRecordingTVTimer</visible>
 								<include content="PVRWidget">
 									<param name="icon" value="$INFO[PVR.TVNextRecordingChannelIcon]" />
@@ -570,7 +570,7 @@
 							<control type="image">
 								<bottom>90</bottom>
 								<width>100%</width>
-								<texture border="22">dialogs/dialog-bg.png</texture>
+								<texture border="21">dialogs/dialog-bg.png</texture>
 							</control>
 							<control type="label">
 								<left>300</left>
