@@ -27,10 +27,10 @@
 	<include name="PVRWidget">
 		<control type="image">
 			<top>80</top>
-			<left>15</left>
+			<left>16</left>
 			<width>670</width>
 			<height>225</height>
-			<texture border="22">dialogs/dialog-bg.png</texture>
+			<texture border="21">dialogs/dialog-bg.png</texture>
 		</control>
 		<control type="image">
 			<left>55</left>
@@ -325,7 +325,7 @@
 							<width>316</width>
 							<height>200</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -354,16 +354,16 @@
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="240,70" />
+							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="228,70" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="240,70" />
+							<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="228,70" />
 						</animation>
 						<control type="image">
 							<width>316</width>
 							<height>200</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -472,7 +472,7 @@
 							<width>319</width>
 							<height>340</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -528,7 +528,7 @@
 							<width>319</width>
 							<height>340</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -609,7 +609,7 @@
 							<width>254</width>
 							<height>350</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -660,7 +660,7 @@
 							<width>254</width>
 							<height>350</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="20">overlays/shadow.png</bordertexture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -838,8 +838,8 @@
 				<top>100</top>
 				<width>1820</width>
 				<height>920</height>
-				<texture border="21">dialogs/dialog-bg-nobo.png</texture>
-				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image" id="700$PARAM[item_id]2">
@@ -876,9 +876,9 @@
 			<aligny>center</aligny>
 			<textoffsetx>40</textoffsetx>
 			<textoffsety>0</textoffsety>
-			<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
+			<texturenofocus border="21">buttons/button-nofo.png</texturenofocus>
 			<animation effect="slide" end="0,-90" time="0" condition="true">Conditional</animation>
-			<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+			<texturefocus border="21" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
 			<font>font30_title</font>
 			<onclick>Weather.LocationNext</onclick>
 			<label>$INFO[Window(weather).Property(Map.$PARAM[item_id].Heading)]</label>
