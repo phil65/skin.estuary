@@ -20,7 +20,7 @@
 					<height>607</height>
 					<aspectratio>scale</aspectratio>
 					<texture>dialogs/dialog-bg-nobo.png</texture>
-					<bordertexture border="20">overlays/shadow.png</bordertexture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
@@ -162,7 +162,7 @@
 							<top>-10</top>
 							<width>595</width>
 							<height>100</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<texture border="21">buttons/button-nofo.png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
@@ -179,7 +179,7 @@
 							<top>-10</top>
 							<width>595</width>
 							<height>100</height>
-							<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<texture border="21" colordiffuse="button_focus">buttons/button-fo.png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
@@ -196,7 +196,7 @@
 							<top>-10</top>
 							<width>595</width>
 							<height>100</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<texture border="21">buttons/button-nofo.png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
@@ -219,7 +219,7 @@
 								<top>-10</top>
 								<width>595</width>
 								<height>100</height>
-								<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+								<texture border="21" colordiffuse="button_focus">buttons/button-fo.png</texture>
 							</control>
 							<control type="label">
 								<left>40</left>
@@ -242,7 +242,7 @@
 							<top>-10</top>
 							<width>250</width>
 							<height>312</height>
-							<texture border="40">buttons/button-nofo.png</texture>
+							<texture border="21">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
 							<left>30</left>
@@ -278,7 +278,7 @@
 								<top>-10</top>
 								<width>250</width>
 								<height>312</height>
-								<texture border="40">buttons/button-nofo.png</texture>
+								<texture border="21">buttons/button-nofo.png</texture>
 							</control>
 							<control type="image">
 								<left>30</left>
