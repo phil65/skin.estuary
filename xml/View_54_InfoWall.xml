@@ -160,6 +160,7 @@
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
+				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
 				<left>31</left>

@@ -115,7 +115,7 @@
 				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Left</include>
 				<include content="ContentPanel">
-					<param name="width" value="547" />
+					<param name="width" value="550" />
 				</include>
 				<control type="grouplist" id="9000">
 					<orientation>vertical</orientation>
@@ -127,9 +127,9 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<usecontrolcoords>true</usecontrolcoords>
-					<width>487</width>
+					<width>490</width>
 					<control type="togglebutton" id="4">
-						<width>487</width>
+						<width>100%</width>
 						<height>110</height>
 						<aligny>top</aligny>
 						<textoffsetx>40</textoffsetx>
@@ -147,7 +147,7 @@
 						<param name="label" value="" />
 					</include>
 					<control type="radiobutton" id="22">
-						<width>487</width>
+						<width>100%</width>
 						<height>110</height>
 						<aligny>top</aligny>
 						<texturenofocus />
