@@ -308,6 +308,7 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
@@ -902,11 +903,13 @@
 	</include>
 	<include name="BusyListSpinner">
 		<param name="posy">160</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="group" id="$PARAM[list_id]599">
 				<height>160</height>
 				<left>180</left>
 				<visible>Container($PARAM[list_id]).IsUpdating + !Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
+				<visible>$PARAM[visible]</visible>
 				<control type="image">
 					<top>$PARAM[posy]</top>
 					<width>100</width>
