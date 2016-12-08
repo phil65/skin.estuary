@@ -387,4 +387,8 @@
 		<value condition="[Window.IsActive(tvtimerrules) | Window.IsActive(radiotimerrules)] + !ListItem.HasTimerSchedule">$INFO[ListItem.Timertype]</value>
 		<value>$INFO[ListItem.EpisodeName]</value>
 	</variable>
+	<variable name="BackgroundOverlayTypeVar">
+		<value condition="String.IsEqual(Skin.String(background_overlay),7)">$LOCALIZE[231]</value>
+		<value>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</value>
+	</variable>
 </includes>
