@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- 	<menucontrol>9000</menucontrol>
-											 -->
+												 -->
 	<defaultcontrol>9000</defaultcontrol>
 	<!-- 	<onload condition="ControlGroup(700).HasFocus">SetFocus(9000,0)</onload>
-												 -->
+													 -->
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<control type="button" id="20000">
@@ -101,7 +101,6 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
-						<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -160,7 +159,6 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(tvshows)">
-						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -227,7 +225,6 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(music)">
-						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(music,files)"/>
@@ -294,8 +291,7 @@
 							<param name="list_id" value="8500"/>
 						</include>
 					</control>
-					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+					<include content="ImageWidget">"/>
 						<param name="text_label" value="$LOCALIZE[31119]" />
 						<param name="button_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
@@ -332,7 +328,6 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31105]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
@@ -403,7 +398,6 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
-						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
@@ -473,7 +467,6 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
-						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
@@ -523,8 +516,7 @@
 						</focusedlayout>
 						<content>favourites://</content>
 					</control>
-					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+					<include content="ImageWidget">"/>
 						<param name="text_label" value="$LOCALIZE[31025]" />
 						<param name="button_label" value="$LOCALIZE[31116]" />
 						<param name="button_onclick" value=""/>
@@ -621,7 +613,6 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="String.IsEmpty(Weather.plugin)">
-						<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31120]" />
 						<param name="button_label" value="$LOCALIZE[31121]" />
 						<param name="button_onclick" value="ActivateWindow(servicesettings,weather)"/>
@@ -689,7 +680,6 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(musicvideos)">
-						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>

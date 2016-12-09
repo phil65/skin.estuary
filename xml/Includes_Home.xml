@@ -116,15 +116,6 @@
 		<definition>
 			<control type="group" id="$PARAM[button_id]889">
 				<visible>$PARAM[visible]</visible>
-				<control type="multiimage">
-					<top>0</top>
-					<left>0</left>
-					<right>0</right>
-					<height>100%</height>
-					<aspectratio>scale</aspectratio>
-					<imagepath colordiffuse="33FFFFFF">$PARAM[image_path]</imagepath>
-					<visible>String.IsEmpty(Skin.String(HomeFanart.path))</visible>
-				</control>
 				<control type="grouplist" id="$PARAM[button_id]577">
 					<orientation>vertical</orientation>
 					<top>0</top>
