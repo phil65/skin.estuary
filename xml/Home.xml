@@ -291,7 +291,7 @@
 							<param name="list_id" value="8500"/>
 						</include>
 					</control>
-					<include content="ImageWidget">"/>
+					<include content="ImageWidget">
 						<param name="text_label" value="$LOCALIZE[31119]" />
 						<param name="button_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
@@ -516,7 +516,7 @@
 						</focusedlayout>
 						<content>favourites://</content>
 					</control>
-					<include content="ImageWidget">"/>
+					<include content="ImageWidget">
 						<param name="text_label" value="$LOCALIZE[31025]" />
 						<param name="button_label" value="$LOCALIZE[31116]" />
 						<param name="button_onclick" value=""/>
