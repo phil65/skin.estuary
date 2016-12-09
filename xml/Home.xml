@@ -175,49 +175,48 @@
 					</include>
 					<control type="grouplist" id="7001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories">
+						<include content="WidgetListCategories" condition="Library.HasContent(music)">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7900"/>
-							<param name="visible" value="Library.HasContent(music)"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include content="WidgetListSquare" condition="Library.HasContent(music)">
 							<param name="content_path" value="musicdb://recentlyplayedalbums"/>
 							<param name="widget_header" value="$LOCALIZE[517]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7100"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include content="WidgetListSquare" condition="Library.HasContent(music)">
 							<param name="content_path" value="musicdb://recentlyaddedalbums/"/>
 							<param name="widget_header" value="$LOCALIZE[359]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7200"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include content="WidgetListSquare" condition="Library.HasContent(music)">
 							<param name="content_path" value="special://skin/playlists/random_albums.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31012]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7300"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include content="WidgetListSquare" condition="Library.HasContent(music)">
 							<param name="content_path" value="special://skin/playlists/random_artists.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31013]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7400"/>
 							<param name="fallback_icon" value="DefaultMusicArtists.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include content="WidgetListSquare" condition="Library.HasContent(music)">
 							<param name="content_path" value="special://skin/playlists/unplayed_albums.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31014]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7500"/>
 							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include content="WidgetListSquare" condition="Library.HasContent(music)">
 							<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31011]"/>
 							<param name="widget_target" value="music"/>
@@ -227,13 +226,12 @@
 							<param name="sortorder" value="descending"/>
 						</include>
 					</control>
-					<include content="ImageWidget">
+					<include content="ImageWidget" condition="!Library.HasContent(music)">
 						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(music,files)"/>
 						<param name="button_id" value="7600"/>
-						<param name="visible" value="!Library.HasContent(music)"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicButton)"/>
 					</include>
 				</control>
@@ -706,7 +704,7 @@
 					</include>
 					<control type="grouplist" id="4001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories">
+						<include content="WidgetListCategories" condition="!Skin.HasSetting(HomeMenuNoPicturesButton)">
 							<param name="content_path" value="sources://pictures/"/>
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="pictures"/>
