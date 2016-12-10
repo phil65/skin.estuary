@@ -274,19 +274,19 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 			</control>
-			<control type="image">
-				<left>11</left>
-				<top>-14</top>
-				<width>298</width>
-				<height>408</height>
-				<texture colordiffuse="button_focus">colors/grey.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-				<visible>$PARAM[focused] + !String.IsEmpty(ListItem.Art(poster))</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-			</control>
 			<control type="group">
 				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
+				<control type="image">
+					<left>11</left>
+					<top>-14</top>
+					<width>298</width>
+					<height>408</height>
+					<texture colordiffuse="button_focus">colors/grey.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				</control>
 				<control type="image">
 					<left>15</left>
 					<top>-10</top>
