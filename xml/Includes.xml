@@ -1140,7 +1140,7 @@
 						<texturenofocus colordiffuse="FFCCCCCC">icons/menu.png</texturenofocus>
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<onclick>SetFocus(9000)</onclick>
-						<visible>Window.IsActive(MyPVRGuide.xml) + Control.IsVisible(10)</visible>
+						<visible>Window.IsActive(MyPVRGuide.xml)</visible>
 					</control>
 					<control type="button">
 						<bottom>16</bottom>
