@@ -83,8 +83,7 @@
 						<left>0</left>
 						<height>120</height>
 						<onleft>6056</onleft>
-						<onright condition="!Window.IsActive(MyPVRGuide.xml)">50</onright>
-						<onright condition="Window.IsActive(MyPVRGuide.xml)">11</onright>
+						<onright>50</onright>
 						<onup>14100</onup>
 						<ondown>6054</ondown>
 						<width>1000</width>
