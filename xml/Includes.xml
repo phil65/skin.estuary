@@ -384,7 +384,7 @@
 				<top>10</top>
 				<width>200</width>
 				<include content="InfoFlag">
-					<param name="visible" value="String.IsEqual(ListItem.DBtype,tvshow) + !String.IsEmpty(ListItem.Premiered)" />
+					<param name="visible" value="[String.IsEqual(ListItem.DBtype,tvshow) | String.IsEqual(ListItem.DBtype,episode)] + !String.IsEmpty(ListItem.Premiered)" />
 					<param name="icon" value="lists/year.png" />
 					<param name="label" value="$INFO[ListItem.Premiered]" />
 				</include>
