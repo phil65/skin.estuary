@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<!-- 	<menucontrol>9000</menucontrol>
-												 -->
 	<defaultcontrol>9000</defaultcontrol>
-	<!-- 	<onload condition="ControlGroup(700).HasFocus">SetFocus(9000,0)</onload>
-													 -->
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<control type="button" id="20000">
