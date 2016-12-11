@@ -45,7 +45,7 @@
 	</include>
 	<include name="InfoWallMusicLayout">
 		<param name="fallback_image">DefaultFolder.png</param>
-		<param name="main_label">$INFO[ListItem.Artist,[COLOR grey],[/COLOR]]</param>
+		<param name="main_label">$INFO[ListItem.Artist]</param>
 		<param name="sub_label">$INFO[ListItem.Title]</param>
 		<param name="single_label">$INFO[ListItem.Label]</param>
 		<param name="focused">false</param>
