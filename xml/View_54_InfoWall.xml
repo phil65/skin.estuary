@@ -253,25 +253,26 @@
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				</control>
-				<control type="image">
-					<left>26</left>
-					<top>0</top>
-					<width>270</width>
-					<height>290</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-					<bordersize>20</bordersize>
-				</control>
 				<control type="textbox">
 					<left>40</left>
-					<top>240</top>
+					<top>250</top>
 					<width>242</width>
-					<height>90</height>
+					<height>120</height>
 					<font>font27</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
 					<visible>!ListItem.IsParentFolder</visible>
+				</control>
+				<control type="image">
+					<left>26</left>
+					<top>0</top>
+					<width>270</width>
+					<height>270</height>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio>scale</aspectratio>
+					<bordersize>20</bordersize>
 				</control>
 			</control>
 			<control type="group">
