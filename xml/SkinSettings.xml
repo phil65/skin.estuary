@@ -51,8 +51,9 @@
 				<control type="radiobutton" id="704">
 					<label>$LOCALIZE[31093]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(show_weatherinfo)</onclick>
-					<selected>Skin.HasSetting(show_weatherinfo)</selected>
+					<onclick condition="!String.IsEmpty(Weather.Plugin)">Skin.ToggleSetting(show_weatherinfo)</onclick>
+					<onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</onclick>
+					<selected>Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</selected>
 				</control>
 				<control type="radiobutton" id="705">
 					<label>$LOCALIZE[31160]</label>
