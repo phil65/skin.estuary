@@ -1043,6 +1043,8 @@
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
 			<texture colordiffuse="secondary_background" fallback="special://skin/extras/backgrounds/pattern1.png">$INFO[Skin.String(background_overlay),special://skin/extras/backgrounds/pattern,.png]</texture>
+			<visible>String.IsEmpty(Control.GetLabel(37777))</visible>
+			<animation effect="fade" time="600">VisibleChange</animation>
 		</control>
 	</include>
 	<include name="DefaultBackground">
