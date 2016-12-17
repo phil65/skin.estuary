@@ -326,14 +326,14 @@
 						</control>
 						<control type="image">
 							<centertop>74</centertop>
-							<left>62</left>
+							<left>58</left>
 							<width>200</width>
 							<height>$PARAM[icon_height]</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<left>42</left>
+							<left>38</left>
 							<top>106</top>
 							<width>240</width>
 							<height>70</height>
@@ -371,14 +371,14 @@
 						</control>
 						<control type="image">
 							<centertop>74</centertop>
-							<left>62</left>
+							<left>58</left>
 							<width>200</width>
 							<height>$PARAM[icon_height]</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<left>42</left>
+							<left>38</left>
 							<top>106</top>
 							<width>240</width>
 							<height>70</height>
