@@ -397,7 +397,7 @@
 					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Duration,, $LOCALIZE[31132]]</label>
+					<label>$INFO[ListItem.Duration]</label>
 					<font>font_flag</font>
 				</control>
 				<include content="MediaFlag">
