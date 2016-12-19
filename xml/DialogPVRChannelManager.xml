@@ -61,9 +61,18 @@
 							<texture>$INFO[ListItem.Property(icon)]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<right>0</right>
+							<top>10</top>
+							<width>50</width>
+							<height>50</height>
+							<texture>OverlayLocked.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>ListItem.Property(ParentalLocked)</visible>
+						</control>
 						<control type="label">
 							<left>85</left>
-							<right>20</right>
+							<right>40</right>
 							<bottom>0</bottom>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Property(Number),[B],[/B] - ]$INFO[ListItem.Property(Name)]</label>
@@ -93,10 +102,19 @@
 							<texture>$INFO[ListItem.Property(icon)]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<right>0</right>
+							<top>10</top>
+							<width>50</width>
+							<height>50</height>
+							<texture>OverlayLocked.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>ListItem.Property(ParentalLocked)</visible>
+						</control>
 						<control type="label">
 							<left>45</left>
 							<top>-15</top>
-							<right>20</right>
+							<right>40</right>
 							<height>70</height>
 							<textoffsetx>40</textoffsetx>
 							<aligny>center</aligny>
@@ -105,7 +123,7 @@
 						<control type="label">
 							<left>85</left>
 							<top>35</top>
-							<right>20</right>
+							<right>40</right>
 							<height>30</height>
 							<font>font12</font>
 							<aligny>center</aligny>
