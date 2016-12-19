@@ -90,7 +90,7 @@
 					<control type="label">
 						<left>75</left>
 						<top>0</top>
-						<width>560</width>
+						<right>20</right>
 						<height>70</height>
 						<aligny>center</aligny>
 						<selectedcolor>green</selectedcolor>
@@ -101,7 +101,7 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>940</width>
+						<right>0</right>
 						<height>71</height>
 						<visible>!Control.HasFocus(450)</visible>
 						<texture border="40">lists/separator.png</texture>
@@ -125,7 +125,7 @@
 					<control type="label">
 						<left>75</left>
 						<top>0</top>
-						<width>560</width>
+						<right>20</right>
 						<height>70</height>
 						<aligny>center</aligny>
 						<selectedcolor>green</selectedcolor>
@@ -163,7 +163,7 @@
 					<control type="label">
 						<left>75</left>
 						<top>0</top>
-						<width>800</width>
+						<right>20</right>
 						<height>70</height>
 						<aligny>center</aligny>
 						<selectedcolor>green</selectedcolor>
@@ -174,7 +174,7 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>940</width>
+						<right>0</right>
 						<height>71</height>
 						<visible>!Control.HasFocus(451)</visible>
 						<texture border="40">lists/separator.png</texture>
@@ -198,7 +198,7 @@
 					<control type="label">
 						<left>75</left>
 						<top>0</top>
-						<width>800</width>
+						<right>20</right>
 						<height>70</height>
 						<aligny>center</aligny>
 						<selectedcolor>green</selectedcolor>
