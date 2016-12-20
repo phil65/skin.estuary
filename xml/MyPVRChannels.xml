@@ -312,7 +312,6 @@
 						<top>82</top>
 						<width>560</width>
 						<height>262</height>
-						<visible>!String.IsEqual(ListItem.StartTime,ListItem.EndTime)</visible>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="label">
@@ -320,7 +319,6 @@
 						<width>520</width>
 						<height>262</height>
 						<align>right</align>
-						<visible>!String.IsEqual(ListItem.StartTime,ListItem.EndTime)</visible>
 						<label>$INFO[ListItem.EndTime]</label>
 					</control>
 					<control type="label">
