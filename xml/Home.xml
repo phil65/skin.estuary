@@ -798,14 +798,6 @@
 					</itemlayout>
 					<content>
 						<item>
-							<label>$LOCALIZE[427]</label>
-							<onclick>PlayDVD</onclick>
-							<property name="menu_id">$NUMBER[21000]</property>
-							<thumb>icons/sidemenu/disc.png</thumb>
-							<property name="id">disc</property>
-							<visible>System.HasMediaDVD</visible>
-						</item>
-						<item>
 							<label>$LOCALIZE[342]</label>
 							<onclick condition="Library.HasContent(movies)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 							<onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
@@ -830,6 +822,14 @@
 							<thumb>icons/sidemenu/music.png</thumb>
 							<property name="id">music</property>
 							<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[427]</label>
+							<onclick>PlayDVD</onclick>
+							<property name="menu_id">$NUMBER[21000]</property>
+							<thumb>icons/sidemenu/disc.png</thumb>
+							<property name="id">disc</property>
+							<visible>System.HasMediaDVD</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[20389]</label>
