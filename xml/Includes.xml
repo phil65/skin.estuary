@@ -482,7 +482,7 @@
 				<ondown>$PARAM[list_id]</ondown>
 				<pagecontrol>$PARAM[scrollbar_id]</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<focusedlayout height="list_item_height" width="$PARAM[width]">
+				<focusedlayout height="list_item_height">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -521,7 +521,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</focusedlayout>
-				<itemlayout height="list_item_height" width="$PARAM[width]">
+				<itemlayout height="list_item_height">
 					<control type="image">
 						<left>15</left>
 						<top>0</top>

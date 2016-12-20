@@ -20,7 +20,7 @@
 				<onup>55</onup>
 				<ondown>55</ondown>
 				<viewtype label="$LOCALIZE[31107]">list</viewtype>
-				<focusedlayout height="list_item_height" width="widelist_width" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content()">
+				<focusedlayout height="list_item_height" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content()">
 					<control type="image">
 						<left>0</left>
 						<right>0</right>
@@ -67,7 +67,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</focusedlayout>
-				<itemlayout height="list_item_height" width="widelist_width" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content()">
+				<itemlayout height="list_item_height" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content()">
 					<control type="label">
 						<left>18</left>
 						<top>0</top>
@@ -168,7 +168,7 @@
 		</control>
 	</include>
 	<include name="SongsListLayout">
-		<focusedlayout height="80" width="widelist_width" condition="Container.Content(songs)">
+		<focusedlayout height="80" condition="Container.Content(songs)">
 			<control type="image">
 				<left>0</left>
 				<right>0</right>
@@ -195,7 +195,7 @@
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
 		</focusedlayout>
-		<itemlayout height="80" width="widelist_width" condition="Container.Content(songs)">
+		<itemlayout height="80" condition="Container.Content(songs)">
 			<control type="label">
 				<left>35</left>
 				<height>80</height>
@@ -217,7 +217,7 @@
 		</itemlayout>
 	</include>
 	<include name="AddonsListLayout">
-		<focusedlayout height="80" width="widelist_width" condition="Container.Content(addons)">
+		<focusedlayout height="80" condition="Container.Content(addons)">
 			<control type="image">
 				<left>0</left>
 				<right>0</right>
@@ -250,7 +250,7 @@
 				<label>$VAR[AddonsLabel2Var]</label>
 			</control>
 		</focusedlayout>
-		<itemlayout height="80" width="widelist_width" condition="Container.Content(addons)">
+		<itemlayout height="80" condition="Container.Content(addons)">
 			<control type="image">
 				<left>20</left>
 				<top>25</top>
