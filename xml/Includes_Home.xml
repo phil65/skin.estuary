@@ -112,6 +112,7 @@
 		<param name="visible">true</param>
 		<param name="visible_1">true</param>
 		<param name="visible_2">true</param>
+		<param name="button2_label">$LOCALIZE[31116]</param>
 		<param name="button2_onclick">true</param>
 		<definition>
 			<control type="group" id="$PARAM[button_id]889">
@@ -151,7 +152,7 @@
 						<control type="button" id="$PARAM[button_id]568">
 							<width>auto</width>
 							<height>110</height>
-							<label>$LOCALIZE[31116]</label>
+							<label>$PARAM[button2_label]</label>
 							<textoffsetx>40</textoffsetx>
 							<onclick>$PARAM[button2_onclick]</onclick>
 							<onclick>SetFocus(9000)</onclick>
