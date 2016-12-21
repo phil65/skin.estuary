@@ -16,8 +16,6 @@
 	<include file="View_501_Banner.xml" />
 	<include file="View_502_FanArt.xml" />
 	<include file="Variables.xml" />
-	<include file="Constants_1920.xml" condition="!String.IsEqual(Skin.AspectRatio,21:9)"/>
-	<include file="Constants_2560.xml" condition="String.IsEqual(Skin.AspectRatio,21:9)"/>
 	<constant name="DepthDialog">0.50</constant>
 	<constant name="DepthDialog+">0.52</constant>
 	<constant name="DepthDialog-">0.48</constant>
@@ -441,11 +439,14 @@
 		</control>
 	</include>
 	<include name="FileManagerPanel">
+		<param name="width"></param>
+		<param name="right"></param>
 		<definition>
 			<control type="fixedlist" id="$PARAM[list_id]">
 				<left>0</left>
 				<top>list_y_offset</top>
 				<bottom>list_y_offset</bottom>
+				<right>$PARAM[right]</right>
 				<width>$PARAM[width]</width>
 				<focusposition>4</focusposition>
 				<movement>3</movement>
