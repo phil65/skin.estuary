@@ -50,7 +50,7 @@
 					</include>
 					<control type="grouplist" id="5001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories" condition="Library.HasContent(movies)">
+						<include content="WidgetListCategories" condition="Library.HasContent(movies) + !Skin.HasSetting(home_no_categories_widget)">
 							<param name="content_path" value="library://video/movies/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
@@ -111,7 +111,7 @@
 					</include>
 					<control type="grouplist" id="6001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories" condition="Library.HasContent(tvshows)">
+						<include content="WidgetListCategories" condition="Library.HasContent(tvshows) + !Skin.HasSetting(home_no_categories_widget)">
 							<param name="content_path" value="library://video/tvshows/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
@@ -169,7 +169,7 @@
 					</include>
 					<control type="grouplist" id="7001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories" condition="Library.HasContent(music)">
+						<include content="WidgetListCategories" condition="Library.HasContent(music) + !Skin.HasSetting(home_no_categories_widget)">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
@@ -235,7 +235,7 @@
 					</include>
 					<control type="grouplist" id="8001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories">
+						<include content="WidgetListCategories" condition="!Skin.HasSetting(home_no_categories_widget)" >
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
@@ -633,7 +633,7 @@
 					</include>
 					<control type="grouplist" id="16001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories" condition="Library.HasContent(musicvideos)">
+						<include content="WidgetListCategories" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(home_no_categories_widget)">
 							<param name="content_path" value="library://music/musicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
@@ -837,7 +837,8 @@
 					<content>
 						<item>
 							<label>$LOCALIZE[342]</label>
-							<onclick condition="Library.HasContent(movies)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+							<onclick condition="Library.HasContent(movies) + Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/,return)</onclick>
+							<onclick condition="Library.HasContent(movies) + !Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 							<onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
 							<property name="menu_id">$NUMBER[5000]</property>
 							<thumb>icons/sidemenu/movies.png</thumb>
@@ -846,7 +847,8 @@
 						</item>
 						<item>
 							<label>$LOCALIZE[20343]</label>
-							<onclick condition="Library.HasContent(tvshows)">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
+							<onclick condition="Library.HasContent(tvshows) + Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://tvshows/,return)</onclick>
+							<onclick condition="Library.HasContent(tvshows) + !Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 							<onclick condition="!Library.HasContent(tvshows)">ActivateWindow(Videos,sources://video/,return)</onclick>
 							<property name="menu_id">$NUMBER[6000]</property>
 							<thumb>icons/sidemenu/tv.png</thumb>
