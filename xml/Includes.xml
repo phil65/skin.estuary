@@ -763,11 +763,12 @@
 		</control>
 		<control type="group">
 			<width>$PARAM[width]</width>
+			<height>$PARAM[height]</height>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
 				<right>0</right>
-				<height>$PARAM[height]</height>
+				<bottom>0</bottom>
 				<texture colordiffuse="dialog_tint">colors/white.png</texture>
 			</control>
 			<control type="image">
@@ -792,7 +793,7 @@
 				<left>0</left>
 				<top>0</top>
 				<right>0</right>
-				<height>$PARAM[height]</height>
+				<bottom>0</bottom>
 				<texturefocus />
 				<texturenofocus />
 				<onclick>noop</onclick>
