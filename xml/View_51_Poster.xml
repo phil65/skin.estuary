@@ -55,22 +55,22 @@
 					</itemlayout>
 					<focusedlayout width="490">
 						<control type="group">
-						<control type="group">
-							<left>-220</left>
-							<top>18</top>
-							<visible>Container.OnScrollPrevious</visible>
-							<visible>Control.IsVisible(20000)</visible>
-							<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
-							<include>InfoWallMovieLayout</include>
-						</control>
-						<control type="group">
-							<left>0</left>
-							<top>18</top>
-							<visible>Container.OnScrollNext</visible>
-							<visible>Control.IsVisible(20000)</visible>
-							<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
-							<include>InfoWallMovieLayout</include>
-						</control>
+							<control type="group">
+								<left>-220</left>
+								<top>18</top>
+								<visible>Container.OnScrollPrevious</visible>
+								<visible>Control.IsVisible(20000)</visible>
+								<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
+								<include>InfoWallMovieLayout</include>
+							</control>
+							<control type="group">
+								<left>0</left>
+								<top>18</top>
+								<visible>Container.OnScrollNext</visible>
+								<visible>Control.IsVisible(20000)</visible>
+								<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
+								<include>InfoWallMovieLayout</include>
+							</control>
 						</control>
 					</focusedlayout>
 				</control>
