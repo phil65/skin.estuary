@@ -920,4 +920,14 @@
 			</control>
 		</definition>
 	</include>
+	<include name="WidgetScrollbar">
+		<control type="scrollbar" id="$PARAM[scrollbar_id]">
+			<right>0</right>
+			<top>120</top>
+			<bottom>80</bottom>
+			<width>16</width>
+			<orientation>vertical</orientation>
+			<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
+		</control>
+	</include>
 </includes>
