@@ -35,7 +35,8 @@
 				<width>100%</width>
 				<top>120</top>
 				<height>900</height>
-				<ondown>9001</ondown>
+				<onup>noop</onup>
+				<ondown>Control.SetFocus(9001,$INFO[Container(9000).Position],absolute)</ondown>
 				<itemlayout height="260" width="400">
 					<control type="image">
 						<left>-5</left>
@@ -135,9 +136,8 @@
 				<right>0</right>
 				<top>470</top>
 				<bottom>0</bottom>
-				<onup>9000</onup>
+				<onup>Control.SetFocus(9000,$INFO[Container(9001).Position],absolute)</onup>
 				<ondown>noop</ondown>
-				<onfocus>Control.SetFocus(9001,2)</onfocus>
 				<itemlayout height="260" width="400">
 					<control type="image">
 						<left>-5</left>
