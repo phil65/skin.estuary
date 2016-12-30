@@ -37,7 +37,7 @@
 				<control type="group">
 					<left>600</left>
 					<top>82</top>
-					<include condition="Skin.HasSetting(rating_circle) | Skin.HasSetting(userrating_circle)">RatingCircle</include>
+					<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 				</control>
 				<control type="textbox">
 					<left>50</left>
