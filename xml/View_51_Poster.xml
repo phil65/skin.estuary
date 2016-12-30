@@ -64,7 +64,7 @@
 								<include>InfoWallMovieLayout</include>
 							</control>
 							<control type="group">
-								<left>0</left>
+								<left>-40</left>
 								<top>18</top>
 								<visible>Container.OnScrollNext</visible>
 								<visible>Control.IsVisible(20000)</visible>
