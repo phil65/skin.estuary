@@ -923,11 +923,16 @@
 	<include name="WidgetScrollbar">
 		<control type="scrollbar" id="$PARAM[scrollbar_id]">
 			<right>0</right>
-			<top>120</top>
+			<top>80</top>
+			<width>13</width>
 			<bottom>80</bottom>
-			<width>16</width>
+			<onleft>50</onleft>
+			<onright>50</onright>
 			<orientation>vertical</orientation>
-			<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
+			<texturesliderbackground />
+			<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus($PARAM[scrollbar_id])">conditional</animation>
 		</control>
 	</include>
 </includes>

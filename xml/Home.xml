@@ -104,7 +104,7 @@
 						<param name="button_id" value="5500"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMovieButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="5010"/>
 					</include>
 				</control>
@@ -166,7 +166,7 @@
 						<param name="button_id" value="6400"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVShowButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="6010"/>
 					</include>
 				</control>
@@ -236,7 +236,7 @@
 						<param name="button_id" value="7600"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="7010"/>
 					</include>
 				</control>
@@ -318,7 +318,7 @@
 						<param name="visible" value="!Integer.IsGreater(Container(8001).NumItems,0)"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoProgramsButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="8010"/>
 					</include>
 				</control>
@@ -358,7 +358,7 @@
 						<param name="visible" value="!Integer.IsGreater(Container(11001).NumItems,0)"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoVideosButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="11010"/>
 					</include>
 				</control>
@@ -431,7 +431,7 @@
 						<param name="button_id" value="12400"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="12010"/>
 					</include>
 				</control>
@@ -504,7 +504,7 @@
 						<param name="button_id" value="13400"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoRadioButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="13010"/>
 					</include>
 				</control>
@@ -560,7 +560,7 @@
 						<param name="visible_1" value="false"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoFavButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="14010"/>
 					</include>
 				</control>
@@ -658,7 +658,7 @@
 						<param name="button_id" value="15300"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoWeatherButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="15010"/>
 					</include>
 				</control>
@@ -729,7 +729,7 @@
 						<param name="button_id" value="16800"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicVideoButton)"/>
 					</include>
-					<include content="WidgetScrollbar">
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="16010"/>
 					</include>
 				</control>
