@@ -867,7 +867,8 @@
 					<usecontrolcoords>true</usecontrolcoords>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-					<animation effect="slide" end="0,10" time="200" reversible="true" condition="String.IsEmpty(Control.GetLabel(18900))">Conditional</animation>
+					<animation effect="slide" end="0,16" time="200" reversible="true" condition="String.IsEmpty(Control.GetLabel(18900))">Conditional</animation>
+					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(701)">Conditional</animation>
 					<control type="label">
 						<label>$PARAM[breadcrumbs_label]</label>
 						<include>BreadcrumbsLabel</include>
@@ -918,6 +919,7 @@
 					<width>900</width>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(701)">Conditional</animation>
 				</control>
 				<control type="grouplist">
 					<top>0</top>
@@ -1047,6 +1049,7 @@
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
 			</control>
+			<include>TouchBackButton</include>
 		</definition>
 	</include>
 	<include name="BreadcrumbsLabel">
@@ -1375,6 +1378,29 @@
 				<param name="label" value="$LOCALIZE[33060]" />
 				<param name="visible" value="!Window.IsMedia" />
 			</include>
+		</control>
+	</include>
+	<include name="TouchBackButton">
+		<control type="radiobutton" id="701">
+			<left>-10</left>
+			<top>-10</top>
+			<width>120</width>
+			<height>120</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<onclick>Action(Back)</onclick>
+			<visible>Skin.HasSetting(touchmode) + !Window.IsActive(home)</visible>
+			<animation effect="fade" start="0" end="100" time="400" condition="Window.Previous(home)">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(home)">WindowClose</animation>
+			<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
+			<texturenofocus />
+			<radioposx>30</radioposx>
+			<radiowidth>60</radiowidth>
+			<radioheight>60</radioheight>
+			<textureradioonfocus>icons/Back.png</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="grey">icons/Back.png</textureradioonnofocus>
+			<textureradioofffocus>icons/Back.png</textureradioofffocus>
+			<textureradiooffnofocus colordiffuse="grey">icons/Back.png</textureradiooffnofocus>
 		</control>
 	</include>
 	<include name="SettingsPanel">
