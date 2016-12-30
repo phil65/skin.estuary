@@ -44,7 +44,7 @@
 					<control type="group">
 						<left>310</left>
 						<top>936</top>
-						<include content="UserRatingCircle">
+						<include content="RatingCircle">
 							<param name="animation" value="True" />
 						</include>
 					</control>
@@ -185,7 +185,7 @@
 				<control type="group">
 					<left>273</left>
 					<top>590</top>
-					<include>UserRatingCircle</include>
+					<include condition="Skin.HasSetting(rating_circle) | Skin.HasSetting(userrating_circle)">RatingCircle</include>
 					<animation effect="slide" end="0,-140" time="0" condition="String.IsEqual(ListItem.DbType,episode)">conditional</animation>
 				</control>
 				<control type="group">

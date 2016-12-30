@@ -81,32 +81,40 @@
 		<label></label>
 		<font></font>
 	</include>
-	<include name="UserRatingCircle">
+	<include name="RatingCircle">
 		<param name="animation">False</param>
 		<definition>
 			<control type="group">
-				<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 				<animation effect="fade" time="0" condition="$PARAM[animation]">VisibleChange</animation>
-				<control type="image">
-					<left>3</left>
-					<top>-3</top>
-					<width>44</width>
-					<height>44</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">overlays/badge.png</texture>
-				</control>
-				<control type="label">
-					<left>3</left>
-					<top>-3</top>
-					<align>center</align>
-					<aligny>center</aligny>
-					<width>44</width>
-					<height>44</height>
-					<font>font20_title</font>
-					<label>$INFO[ListItem.UserRating]</label>
-				</control>
+				<include content="UserRatingContent" condition="Skin.HasSetting(circle_userrating)">
+					<param name="infolabel" value="ListItem.UserRating" />
+				</include>
+				<include content="UserRatingContent" condition="Skin.HasSetting(circle_rating)">
+					<param name="infolabel" value="ListItem.Rating" />
+				</include>
 			</control>
 		</definition>
+	</include>
+	<include name="UserRatingContent">
+		<visible>!String.IsEmpty($PARAM[infolabel])</visible>
+		<control type="image">
+			<left>3</left>
+			<top>-3</top>
+			<width>44</width>
+			<height>44</height>
+			<aspectratio>keep</aspectratio>
+			<texture colordiffuse="button_focus">overlays/badge.png</texture>
+		</control>
+		<control type="label">
+			<left>3</left>
+			<top>-3</top>
+			<align>center</align>
+			<aligny>center</aligny>
+			<width>44</width>
+			<height>44</height>
+			<font>font20_title</font>
+			<label>$INFO[$PARAM[infolabel]]</label>
+		</control>
 	</include>
 	<include name="InfoList">
 		<param name="item_label">$INFO[ListItem.Year,[COLOR button_focus],[/COLOR]  -  ]$INFO[ListItem.Label]</param>
@@ -413,9 +421,9 @@
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.AudioCodec,flags/audiocodec/,.png]" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioCodec)" />
 				</include>
-			<!-- 			<include content="MediaFlag">
-																						<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
-																					</include> -->
+				<!-- 			<include content="MediaFlag">
+																														<param name="texture" value="$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]" />
+																													</include> -->
 				<include content="MediaFlag">
 					<param name="texture" value="$PARAM[resolution_var]" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoResolution)" />

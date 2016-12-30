@@ -115,7 +115,7 @@
 			<control type="group">
 				<left>133</left>
 				<top>2</top>
-				<include>UserRatingCircle</include>
+				<include condition="Skin.HasSetting(rating_circle) | Skin.HasSetting(userrating_circle)">RatingCircle</include>
 			</control>
 		</definition>
 	</include>
@@ -225,7 +225,7 @@
 			<control type="group">
 				<left>134</left>
 				<top>8</top>
-				<include>UserRatingCircle</include>
+				<include condition="Skin.HasSetting(rating_circle) | Skin.HasSetting(userrating_circle)">RatingCircle</include>
 			</control>
 		</definition>
 	</include>
@@ -345,7 +345,7 @@
 			<control type="group">
 				<left>135</left>
 				<top>-8</top>
-				<include>UserRatingCircle</include>
+				<include condition="Skin.HasSetting(rating_circle) | Skin.HasSetting(userrating_circle)">RatingCircle</include>
 			</control>
 			<control type="progress">
 				<left>35</left>
