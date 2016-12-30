@@ -19,6 +19,7 @@
 				<onright>531</onright>
 				<onup>55</onup>
 				<ondown>55</ondown>
+				<visible>!Container.Content()</visible>
 				<viewtype label="$LOCALIZE[31107]">list</viewtype>
 				<focusedlayout height="list_item_height" width="widelist_width" condition="!Container.Content(songs) + !Container.Content(addons)">
 					<control type="image">
