@@ -271,5 +271,6 @@
 				<param name="sub_label" value="$INFO[ListItem.AddonVersion,[COLOR grey],[/COLOR]]$INFO[ListItem.AddonCreator, $LOCALIZE[31071] ]" />
 			</include>
 		</control>
+		<include>TouchBackButton</include>
 	</controls>
 </window>
