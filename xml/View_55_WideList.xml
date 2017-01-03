@@ -129,6 +129,7 @@
 						<top>10</top>
 						<width>60</width>
 						<bottom>10</bottom>
+						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
@@ -148,6 +149,7 @@
 						<top>10</top>
 						<width>60</width>
 						<bottom>10</bottom>
+						<aspectratio>keep</aspectratio>
 						<texture colordiffuse="grey">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
