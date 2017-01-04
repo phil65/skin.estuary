@@ -17,6 +17,7 @@
 			<bottom>0</bottom>
 			<height>230</height>
 			<visible>!Window.IsVisible(playerprocessinfo)</visible>
+			<animation effect="slide" end="0,-80" time="150" condition="PVR.IsTimeShift">conditional</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="image">
 				<depth>DepthOSD+</depth>
