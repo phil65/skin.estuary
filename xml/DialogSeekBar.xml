@@ -103,9 +103,9 @@
 				<label>$VAR[SeekLabel]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="group">
+			<control type="group" id="6000">
 				<top>-5</top>
-				<visible>PVR.IsTimeShift</visible>
+				<visible>PVR.IsTimeShift + !Player.ChannelPreviewActive</visible>
 				<animation effect="fade" time="300">VisibleChange</animation>
 				<control type="label">
 					<top>0</top>
@@ -179,7 +179,7 @@
 		<control type="group">
 			<visible>Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)</visible>
 			<animation effect="fade" time="400">VisibleChange</animation>
-			<animation effect="slide" end="0,-80" time="150" condition="PVR.IsTimeShift">conditional</animation>
+			<animation effect="slide" end="0,-80" time="150" condition="Control.IsVisible(6000)">conditional</animation>
 			<bottom>0</bottom>
 			<height>380</height>
 			<control type="image">
