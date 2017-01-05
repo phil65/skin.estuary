@@ -155,6 +155,7 @@
 				<info>Player.ProgressCache</info>
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 				<midtexture>colors/white50.png</midtexture>
+				<visible>!Player.ChannelPreviewActive</visible>
 			</control>
 			<control type="progress">
 				<left>0</left>
