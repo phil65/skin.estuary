@@ -34,40 +34,55 @@
 	<constant name="list_y_offset">0</constant>
 	<constant name="list_item_height">80</constant>
 	<expression name="infodialog_active">Window.IsActive(musicinformation) | Window.IsActive(songinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)</expression>
-	<expression name="sidebar_focused">ControlGroup(9000).HasFocus | Control.HasFocus(6130)</expression>
+	<expression name="sidebar_focused">ControlGroup(9000).HasFocus | Control.HasFocus(6130) | Control.HasFocus(6131)</expression>
 	<include name="CommonScrollbars">
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="System.HasActiveModalDialog">Conditional</animation>
 			<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-			<control type="scrollbar" id="531">
+			<control type="group">
 				<right>0</right>
 				<top>80</top>
-				<width>13</width>
+				<width>60</width>
 				<bottom>80</bottom>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<orientation>vertical</orientation>
-				<texturesliderbackground />
-				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
-				<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54)</visible>
+				<control type="scrollbar" id="531">
+					<right>0</right>
+					<top>0</top>
+					<bottom>0</bottom>
+					<width>13</width>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<orientation>vertical</orientation>
+					<texturesliderbackground />
+					<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+					<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54)</visible>
+					<hitrect x="-20" y="0" w="80" h="3000" />
+				</control>
 			</control>
-			<control type="scrollbar" id="5199">
+			<control type="group">
 				<left>0</left>
+				<right>0</right>
 				<bottom>0</bottom>
 				<width>100%</width>
-				<height>12</height>
-				<texturesliderbackground />
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<orientation>horizontal</orientation>
-				<visible>Control.IsVisible(51) | Control.IsVisible(53)</visible>
-				<animation effect="slide" end="0,6" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
-				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-				<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+				<height>60</height>
+				<control type="scrollbar" id="5199">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>100%</width>
+					<height>12</height>
+					<texturesliderbackground />
+					<onup>50</onup>
+					<ondown>50</ondown>
+					<orientation>horizontal</orientation>
+					<visible>Control.IsVisible(51) | Control.IsVisible(53)</visible>
+					<animation effect="slide" end="0,6" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
+					<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+					<hitrect x="0" y="20" w="3000" h="40" />
+				</control>
 			</control>
 		</control>
 	</include>
@@ -647,11 +662,11 @@
 		<param name="posy">20</param>
 		<definition>
 			<control type="grouplist">
-				<left>3%</left>
+				<left>100</left>
+				<right>100</right>
 				<top>$PARAM[posy]</top>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<width>94%</width>
 				<height>150</height>
 				<itemgap>0</itemgap>
 				<orientation>vertical</orientation>
@@ -825,7 +840,7 @@
 				<onclick>noop</onclick>
 			</control>
 			<control type="radiobutton">
-				<right>32</right>
+				<right>10</right>
 				<top>11</top>
 				<width>48</width>
 				<height>48</height>
@@ -839,6 +854,17 @@
 				<textureradioonfocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioonfocus>
 				<textureradioonnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradioonnofocus>
 				<onclick>Action(close)</onclick>
+				<visible>!Skin.HasSetting(touchmode)</visible>
+			</control>
+			<control type="button">
+				<right>10</right>
+				<top>11</top>
+				<width>48</width>
+				<height>48</height>
+				<texturefocus>dialogs/close.png</texturefocus>
+				<texturenofocus>dialogs/close.png</texturenofocus>
+				<onclick>Action(close)</onclick>
+				<visible>Skin.HasSetting(touchmode)</visible>
 			</control>
 		</control>
 	</include>
@@ -929,7 +955,7 @@
 					<orientation>horizontal</orientation>
 					<width>900</width>
 					<itemgap>10</itemgap>
-					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
+					<visible>!Window.IsVisible(extendedprogressdialog) + !Window.IsActive(fullscreenvideo)</visible>
 					<animation effect="fade" time="150">VisibleChange</animation>
 					<control type="group">
 						<width>600</width>
@@ -1049,7 +1075,7 @@
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				</control>
 			</control>
-			<include>TouchBackButton</include>
+			<include condition="Skin.HasSetting(touchmode) + !Window.IsActive(home)">TouchBackButton</include>
 		</definition>
 	</include>
 	<include name="BreadcrumbsLabel">
@@ -1339,6 +1365,20 @@
 			<onright>2000</onright>
 			<align>justify</align>
 			<usecontrolcoords>true</usecontrolcoords>
+			<include content="IconButton">
+				<param name="control_id" value="" />
+				<param name="onclick" value="SetFocus(9000)" />
+				<param name="icon" value="icons/settings.png" />
+				<param name="label" value="$LOCALIZE[10004]" />
+				<param name="visible" value="Window.IsMedia" />
+			</include>
+			<include content="IconButton">
+				<param name="control_id" value="" />
+				<param name="onclick" value="ActivateWindow(shutdownmenu)" />
+				<param name="icon" value="icons/power.png" />
+				<param name="label" value="$LOCALIZE[33060]" />
+				<param name="visible" value="!Window.IsMedia" />
+			</include>
 			<control type="group">
 				<width>120</width>
 				<control type="button">
@@ -1364,20 +1404,6 @@
 				<param name="icon" value="icons/favourites.png" />
 				<param name="label" value="$LOCALIZE[10134]" />
 			</include>
-			<include content="IconButton">
-				<param name="control_id" value="" />
-				<param name="onclick" value="SetFocus(9000)" />
-				<param name="icon" value="icons/settings.png" />
-				<param name="label" value="$LOCALIZE[10004]" />
-				<param name="visible" value="Window.IsMedia" />
-			</include>
-			<include content="IconButton">
-				<param name="control_id" value="" />
-				<param name="onclick" value="ActivateWindow(shutdownmenu)" />
-				<param name="icon" value="icons/power.png" />
-				<param name="label" value="$LOCALIZE[33060]" />
-				<param name="visible" value="!Window.IsMedia" />
-			</include>
 		</control>
 	</include>
 	<include name="TouchBackButton">
@@ -1389,7 +1415,6 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<onclick>Action(Back)</onclick>
-			<visible>Skin.HasSetting(touchmode) + !Window.IsActive(home)</visible>
 			<animation effect="fade" start="0" end="100" time="400" condition="Window.Previous(home)">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(home)">WindowClose</animation>
 			<texturefocus colordiffuse="button_focus">buttons/roundbutton-fo.png</texturefocus>
