@@ -60,8 +60,8 @@
 						<align>right</align>
 						<orientation>horizontal</orientation>
 						<itemgap>-10</itemgap>
-						<onup>Close</onup>
-						<ondown>Close</ondown>
+						<onup>Dialog.Close(fullscreeninfo)</onup>
+						<ondown>Dialog.Close(fullscreeninfo)</ondown>
 						<usecontrolcoords>true</usecontrolcoords>
 						<control type="button" id="5553">
 							<width>auto</width>
@@ -73,7 +73,6 @@
 							<width>auto</width>
 							<height>100</height>
 							<textoffsetx>80</textoffsetx>
-							<onclick>Close</onclick>
 							<label>$LOCALIZE[206]</label>
 							<visible>!String.IsEmpty(VideoPlayer.CastAndRole)</visible>
 						</control>
