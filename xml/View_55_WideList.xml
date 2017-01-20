@@ -116,7 +116,7 @@
 					</control>
 				</itemlayout>
 
-				<focusedlayout height="list_item_height" width="widelist_width" condition="Container.Content(playlists) | Container.Content()">
+				<focusedlayout height="list_item_height" condition="Container.Content(playlists) | Container.Content()">
 					<control type="image">
 						<left>0</left>
 						<right>0</right>
@@ -143,7 +143,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 				</focusedlayout>
-				<itemlayout height="list_item_height" width="widelist_width" condition="Container.Content(playlists) | Container.Content()">
+				<itemlayout height="list_item_height" condition="Container.Content(playlists) | Container.Content()">
 					<control type="image">
 						<left>20</left>
 						<top>10</top>
