@@ -936,7 +936,7 @@
 				<onright>50</onright>
 				<orientation>vertical</orientation>
 				<texturesliderbackground />
-				<hitrect x="0" y="0" w="60" h="3000" />
+				<hitrect x="0" y="0" w="60" h="100%" />
 				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus($PARAM[scrollbar_id])">conditional</animation>

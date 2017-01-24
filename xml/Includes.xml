@@ -56,7 +56,7 @@
 					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 					<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
 					<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54)</visible>
-					<hitrect x="-20" y="0" w="80" h="3000" />
+					<hitrect x="-20" y="0" w="80" bottom="0r" />
 				</control>
 			</control>
 			<control type="group">
@@ -79,7 +79,7 @@
 					<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 					<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
-					<hitrect x="0" y="20" w="3000" h="40" />
+					<hitrect x="0" y="20" w="100%" h="40" />
 				</control>
 			</control>
 		</control>

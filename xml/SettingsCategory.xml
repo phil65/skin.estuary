@@ -153,7 +153,7 @@
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
-				<hitrect x="0" y="0" w="60" h="3000" />
+				<hitrect x="0" y="0" w="60" h="100%" />
 			</control>
 		</control>
 		<include content="TopBar">
