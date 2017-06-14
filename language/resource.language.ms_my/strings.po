@@ -1,7 +1,7 @@
 # Kodi Media Center language file
 # Addon Name: Estuary
 # Addon id: skin.estuary
-# Addon Provider: phil65, Piers
+# Addon Provider: phil65, Ichabod Fletchman
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
@@ -48,10 +48,6 @@ msgctxt "#31007"
 msgid "Unwatched movies"
 msgstr "Cereka belum ditonton"
 
-msgctxt "#31008"
-msgid "No disclaimer"
-msgstr "Tiada penolak tuntutan"
-
 msgctxt "#31009"
 msgid "Download icons"
 msgstr "Muat turun ikon"
@@ -89,8 +85,8 @@ msgid "Rated"
 msgstr "Ditarafkan"
 
 msgctxt "#31018"
-msgid "Most played channels"
-msgstr "Saluran paling banyak dimainkan"
+msgid "Recently played channels"
+msgstr "Saluran dimainkan baru-baru ini"
 
 msgctxt "#31019"
 msgid "Forecast"
@@ -112,21 +108,13 @@ msgctxt "#31023"
 msgid "Viewtype"
 msgstr "Jenis paparan"
 
-msgctxt "#31024"
-msgid "Next tracks"
-msgstr "Trek baharu"
-
 msgctxt "#31025"
 msgid "No favourites found. You can add any item from media views to this list by using the context menu."
 msgstr "Tiada kegemaran ditemui. Anda boleh tambah apa-apa item dari paparan media ke senarai ini menggunakan menu konteks."
 
 msgctxt "#31026"
-msgid "Go to albums"
-msgstr "Pergi ke album"
-
-msgctxt "#31027"
-msgid "Go to songs"
-msgstr "Pergi ke lagu"
+msgid "Timeshift"
+msgstr "Anjak Masa"
 
 msgctxt "#31028"
 msgid "Show fanart"
@@ -137,8 +125,8 @@ msgid "Last logged in"
 msgstr "Daftar masuk terakhir"
 
 msgctxt "#31030"
-msgid "Memory used"
-msgstr "Ingatan digunakan"
+msgid "System memory usage"
+msgstr "Penggunaan ingatan sistem"
 
 msgctxt "#31031"
 msgid "Version info"
@@ -164,10 +152,6 @@ msgctxt "#31036"
 msgid "items"
 msgstr "item"
 
-msgctxt "#31037"
-msgid "Tracklist"
-msgstr "Senarai trek"
-
 msgctxt "#31038"
 msgid "Rewind"
 msgstr "Undur"
@@ -175,10 +159,6 @@ msgstr "Undur"
 msgctxt "#31039"
 msgid "Fast forward"
 msgstr "Maju pantas"
-
-msgctxt "#31040"
-msgid "Cancel update"
-msgstr "Batal kemaskini"
 
 msgctxt "#31041"
 msgid "Camera manufacturer"
@@ -204,17 +184,9 @@ msgctxt "#31046"
 msgid "Delete group"
 msgstr "Padam kumpulan"
 
-msgctxt "#31047"
-msgid "Read more..."
-msgstr "Baca lagi..."
-
 msgctxt "#31048"
 msgid "Available"
 msgstr "Tersedia"
-
-msgctxt "#31049"
-msgid "Press [B]Up[/B] to rewind or fast-forward"
-msgstr "Tekan [B]Ke Atas[/B] untuk mandir atau maju-pantas"
 
 msgctxt "#31050"
 msgid "Press [B]OK[/B] to stop"
@@ -236,10 +208,6 @@ msgctxt "#31054"
 msgid "Press [B]Left[/B] to rewind, or [B]Right[/B] to fast-forward"
 msgstr "Tekan [B]Kiri[/B] untuk mandir, atau [B]Kanan[/B] untuk maju-pantas"
 
-msgctxt "#31055"
-msgid "Subtitle download"
-msgstr "Muat turun sarikata"
-
 msgctxt "#31056"
 msgid "Go to playlist"
 msgstr "Pergi ke senarai main"
@@ -252,29 +220,17 @@ msgctxt "#31058"
 msgid "Automatic Login on startup"
 msgstr "Daftar masuk automatik ketika permulaan"
 
-msgctxt "#31059"
-msgid "Updates available"
-msgstr "Kemaskini tersedia"
-
-msgctxt "#31060"
-msgid "minutes"
-msgstr "minit"
-
 msgctxt "#31061"
 msgid "Main menu items"
 msgstr "Item menu utama"
 
 msgctxt "#31062"
-msgid "Shortcuts to the \"Files\" sections of each media type. Go there to add additional sources for your databases."
-msgstr "Pintasan pada seksyen \"Fail\" bagi setiap jenis media. Pergi di sana untuk tambah sumber tamabahan untuk pangkalan data anda."
+msgid "Choose weather fanart pack"
+msgstr "Pilih pek cuaca seni peminat"
 
 msgctxt "#31063"
 msgid "Sections"
 msgstr "Seksyen"
-
-msgctxt "#31064"
-msgid "unwatched"
-msgstr "belum ditonton"
 
 msgctxt "#31065"
 msgid "Video playlist"
@@ -296,10 +252,6 @@ msgctxt "#31069"
 msgid "Last Updated"
 msgstr "Kemaskini Terakhir"
 
-msgctxt "#31070"
-msgid "Add media sources"
-msgstr "Tambah sumber media"
-
 msgctxt "#31071"
 msgid "by"
 msgstr "oleh"
@@ -308,29 +260,9 @@ msgctxt "#31072"
 msgid "Power Options"
 msgstr "Opsyen Kuasa"
 
-msgctxt "#31073"
-msgid "Titles"
-msgstr "Tajuk"
-
-msgctxt "#31074"
-msgid "Library root"
-msgstr "Root pustaka"
-
 msgctxt "#31075"
 msgid "Movie sets"
 msgstr "Set cereka"
-
-msgctxt "#31076"
-msgid "Play optical disc"
-msgstr "Main cakera optik"
-
-msgctxt "#31077"
-msgid "Previous location"
-msgstr "Lokasi terdahulu"
-
-msgctxt "#31078"
-msgid "Next location"
-msgstr "Lokasi berikutnya"
 
 msgctxt "#31079"
 msgid "Cast not available"
@@ -339,10 +271,6 @@ msgstr "Barisan pelakon tidak tersedia"
 msgctxt "#31080"
 msgid "Ends at"
 msgstr "Tamat pada"
-
-msgctxt "#31081"
-msgid "Album info"
-msgstr "Maklumat album"
 
 msgctxt "#31082"
 msgid "Lyrics add-on"
@@ -356,22 +284,6 @@ msgctxt "#31084"
 msgid "Visualisation settings"
 msgstr "Tetapan pengvisualan"
 
-msgctxt "#31085"
-msgid "Channel Group"
-msgstr "Kumpulan Saluran"
-
-msgctxt "#31086"
-msgid "Metadata"
-msgstr "Data meta"
-
-msgctxt "#31087"
-msgid "Provider settings"
-msgstr "Tetapan penyedia"
-
-msgctxt "#31088"
-msgid "Content scanning options"
-msgstr "Pilihan pengimbasan kandungan"
-
 msgctxt "#31089"
 msgid "Available groups"
 msgstr "Kumpulan tersedia"
@@ -380,10 +292,6 @@ msgctxt "#31090"
 msgid "Search trailer"
 msgstr "Gelintar treler"
 
-msgctxt "#31091"
-msgid "Download subtitles"
-msgstr "Muat turun sari kata"
-
 msgctxt "#31092"
 msgid "Video menu"
 msgstr "Menu video"
@@ -391,10 +299,6 @@ msgstr "Menu video"
 msgctxt "#31093"
 msgid "Show weather info in top bar"
 msgstr "Tunjuk maklumat cuaca pada palang atas"
-
-msgctxt "#31094"
-msgid "Show media flags for movies / episodes / music videos"
-msgstr "Tunjuk bendera media untuk cereka / episod / video muzik"
 
 msgctxt "#31095"
 msgid "Use slide animations"
@@ -413,8 +317,8 @@ msgid "Select your Kodi user profile[CR]to login and continue"
 msgstr "Pilih Profil pengguna Kodi anda[CR]untuk daftar masuk dan teruskan"
 
 msgctxt "#31099"
-msgid "Icon Wall"
-msgstr "Dinding Ikon"
+msgid "IconWall"
+msgstr "DindingIkon"
 
 msgctxt "#31100"
 msgid "Shift"
@@ -447,14 +351,6 @@ msgstr "Teleteks"
 msgctxt "#31107"
 msgid "WideList"
 msgstr "SenaraiLebar"
-
-msgctxt "#31108"
-msgid "Use custom global background"
-msgstr "Guna latar belakang sejagat suai"
-
-msgctxt "#31109"
-msgid "Choose image path"
-msgstr "Pilih laluan imej"
 
 msgctxt "#31110"
 msgid "Enter files section"
@@ -541,17 +437,105 @@ msgid "Main menu-related settings: Configure the home screen to your likings."
 msgstr "Tetapan berkaitan-menu utama: Konfigur skrin rumah mengikut citarasa anda."
 
 msgctxt "#31131"
-msgid "Choose home fanart pack"
-msgstr "Pilih pek seni peminat rumah"
-
-msgctxt "#31132"
-msgid "min"
-msgstr "min"
-
-msgctxt "#31133"
-msgid "Hide"
-msgstr "Sembunyi"
+msgid "Choose skin fanart pack"
+msgstr "Pilih pek kulit seni peminat"
 
 msgctxt "#31134"
 msgid "Remaining"
 msgstr "Berbaki"
+
+msgctxt "#31136"
+msgid "Click here to see latest changes..."
+msgstr "Klik di sini untuk melihat perubahan terkini..."
+
+msgctxt "#31137"
+msgid "PVR info"
+msgstr "Maklumat PVR"
+
+msgctxt "#31138"
+msgid "Player process info"
+msgstr "Maklumat proses pemain"
+
+msgctxt "#31139"
+msgid "Video decoder"
+msgstr "Penyahkod video"
+
+msgctxt "#31140"
+msgid "Pixel format"
+msgstr "Format piksel"
+
+msgctxt "#31141"
+msgid "Changes for version"
+msgstr "Perubahan bagi versi"
+
+msgctxt "#31142"
+msgid "Play speed"
+msgstr "Kelajuan main"
+
+msgctxt "#31143"
+msgid "You did not set up PVR yet. In order to use PVR, choose a PVR client addon and configure it. Please visit http://kodi.wiki/view/PVR to learn more."
+msgstr "Anda belum lagi menetapkan PVR. Supaya dapat gunakan PVR, pilih satu tambahan klien PVR dan konfigur ia. Sila lawati http://kodi.wiki/view/PVR untuk ketahui lebih lanjut."
+
+msgctxt "#31144"
+msgid "Enter add-on browser"
+msgstr "Masukkan pelayar tambahan"
+
+msgctxt "#31145"
+msgid "Search add-ons"
+msgstr "Gelintar tambahan"
+
+msgctxt "#31148"
+msgid "Categories"
+msgstr "Kategori"
+
+msgctxt "#31149"
+msgid "Select genre fanart pack"
+msgstr "Pilih pek seni peminat genre"
+
+msgctxt "#31150"
+msgid "Repository"
+msgstr "Repositori"
+
+msgctxt "#31151"
+msgid "Unwatched music videos"
+msgstr "Video muzik belum ditonton"
+
+msgctxt "#31152"
+msgid "Random music videos"
+msgstr "Video muzik rawak"
+
+msgctxt "#31153"
+msgid "You do not have any add-ons of this type installed. Enter the add-on browser to download add-ons created by our community."
+msgstr "Anda belum lagi mempunyai apa-apa tambahan jenis ini yang terpasang. Pergi ke pelayar tambahan untuk memuat turun tambahan yang dihasilkan oleh komuniti kami."
+
+msgctxt "#31154"
+msgid "Press OK to switch between locations"
+msgstr "Tekan OK untuk tukar diantara lokasi"
+
+msgctxt "#31155"
+msgid "No bookmarks created yet."
+msgstr "Tiada tanda buku dicipta lagi"
+
+msgctxt "#31156"
+msgid "Choose background pattern"
+msgstr "Pilih pola latar belakang"
+
+msgctxt "#31157"
+msgid "Edit categories"
+msgstr "Sunting kategori"
+
+msgctxt "#31158"
+msgid "Touch mode"
+msgstr "Mod sentuh"
+
+msgctxt "#31159"
+msgid "Artwork"
+msgstr "Kerja seni"
+
+msgctxt "#31160"
+msgid "Show media flags"
+msgstr "Tunjuk bendera media"
+
+msgctxt "#31161"
+msgid "Numeric pad"
+msgstr "Pad numerik"

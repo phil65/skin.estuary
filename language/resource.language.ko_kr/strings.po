@@ -1,7 +1,7 @@
 # Kodi Media Center language file
 # Addon Name: Estuary
 # Addon id: skin.estuary
-# Addon Provider: phil65, Piers
+# Addon Provider: phil65, Ichabod Fletchman
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
@@ -48,10 +48,6 @@ msgctxt "#31007"
 msgid "Unwatched movies"
 msgstr "시청하지 않은 영화"
 
-msgctxt "#31008"
-msgid "No disclaimer"
-msgstr "No disclaimer"
-
 msgctxt "#31009"
 msgid "Download icons"
 msgstr "다운로드 아이콘"
@@ -89,8 +85,8 @@ msgid "Rated"
 msgstr "등급"
 
 msgctxt "#31018"
-msgid "Most played channels"
-msgstr "많이 시청한 채널"
+msgid "Recently played channels"
+msgstr "최근 시청한 채널"
 
 msgctxt "#31019"
 msgid "Forecast"
@@ -112,21 +108,13 @@ msgctxt "#31023"
 msgid "Viewtype"
 msgstr "보기 형식"
 
-msgctxt "#31024"
-msgid "Next tracks"
-msgstr "다음 트랙"
-
 msgctxt "#31025"
 msgid "No favourites found. You can add any item from media views to this list by using the context menu."
 msgstr "즐겨찾기가 없습니다. 미디어 보기에서 컨텐스트 메뉴를 사용하여 항목을 추가할 수 있습니다."
 
 msgctxt "#31026"
-msgid "Go to albums"
-msgstr "앨범으로 가기"
-
-msgctxt "#31027"
-msgid "Go to songs"
-msgstr "노래로 가기"
+msgid "Timeshift"
+msgstr "타임시프트"
 
 msgctxt "#31028"
 msgid "Show fanart"
@@ -137,8 +125,8 @@ msgid "Last logged in"
 msgstr "마지막 로그인"
 
 msgctxt "#31030"
-msgid "Memory used"
-msgstr "사용 메모리"
+msgid "System memory usage"
+msgstr "시스템 메모리 사용량"
 
 msgctxt "#31031"
 msgid "Version info"
@@ -164,10 +152,6 @@ msgctxt "#31036"
 msgid "items"
 msgstr "항목"
 
-msgctxt "#31037"
-msgid "Tracklist"
-msgstr "트랙 리스트"
-
 msgctxt "#31038"
 msgid "Rewind"
 msgstr "되감기"
@@ -175,10 +159,6 @@ msgstr "되감기"
 msgctxt "#31039"
 msgid "Fast forward"
 msgstr "빨리감기"
-
-msgctxt "#31040"
-msgid "Cancel update"
-msgstr "업데이트 취소"
 
 msgctxt "#31041"
 msgid "Camera manufacturer"
@@ -204,17 +184,9 @@ msgctxt "#31046"
 msgid "Delete group"
 msgstr "그룹 삭제"
 
-msgctxt "#31047"
-msgid "Read more..."
-msgstr "더 보기..."
-
 msgctxt "#31048"
 msgid "Available"
 msgstr "사용 가능"
-
-msgctxt "#31049"
-msgid "Press [B]Up[/B] to rewind or fast-forward"
-msgstr "[B]Up[/B] : 되감기 또는 빨리 감기"
 
 msgctxt "#31050"
 msgid "Press [B]OK[/B] to stop"
@@ -236,10 +208,6 @@ msgctxt "#31054"
 msgid "Press [B]Left[/B] to rewind, or [B]Right[/B] to fast-forward"
 msgstr "[B]Left[/B]: 되감기, [B]Right[/B]: 빨리 감기"
 
-msgctxt "#31055"
-msgid "Subtitle download"
-msgstr "자막 다운로드"
-
 msgctxt "#31056"
 msgid "Go to playlist"
 msgstr "재생목록 가기"
@@ -252,29 +220,17 @@ msgctxt "#31058"
 msgid "Automatic Login on startup"
 msgstr "시작할 때 자동 로그인"
 
-msgctxt "#31059"
-msgid "Updates available"
-msgstr "업데이트 사용가능"
-
-msgctxt "#31060"
-msgid "minutes"
-msgstr "분"
-
 msgctxt "#31061"
 msgid "Main menu items"
 msgstr "메인 메뉴 항목"
 
 msgctxt "#31062"
-msgid "Shortcuts to the \"Files\" sections of each media type. Go there to add additional sources for your databases."
-msgstr "각 미디어 형식의 \"파일\" 섹션으로 바로 이동합니다. 데이터베이스에 소스를 추가하려면 이동하세요."
+msgid "Choose weather fanart pack"
+msgstr "날씨 팬아트 팩 선택"
 
 msgctxt "#31063"
 msgid "Sections"
 msgstr "섹션"
-
-msgctxt "#31064"
-msgid "unwatched"
-msgstr "미시청"
 
 msgctxt "#31065"
 msgid "Video playlist"
@@ -296,10 +252,6 @@ msgctxt "#31069"
 msgid "Last Updated"
 msgstr "마지막 업데이트"
 
-msgctxt "#31070"
-msgid "Add media sources"
-msgstr "미디어 소스 추가"
-
 msgctxt "#31071"
 msgid "by"
 msgstr "-"
@@ -308,29 +260,9 @@ msgctxt "#31072"
 msgid "Power Options"
 msgstr "전원 옵션"
 
-msgctxt "#31073"
-msgid "Titles"
-msgstr "제목"
-
-msgctxt "#31074"
-msgid "Library root"
-msgstr "라이러브리 루트"
-
 msgctxt "#31075"
 msgid "Movie sets"
 msgstr "시리즈 영화"
-
-msgctxt "#31076"
-msgid "Play optical disc"
-msgstr "광학 디스크 재생"
-
-msgctxt "#31077"
-msgid "Previous location"
-msgstr "이전 위치"
-
-msgctxt "#31078"
-msgid "Next location"
-msgstr "다음 위치"
 
 msgctxt "#31079"
 msgid "Cast not available"
@@ -339,10 +271,6 @@ msgstr "배역 정보 사용할 수 없음"
 msgctxt "#31080"
 msgid "Ends at"
 msgstr "종료:"
-
-msgctxt "#31081"
-msgid "Album info"
-msgstr "앨범 정보"
 
 msgctxt "#31082"
 msgid "Lyrics add-on"
@@ -356,22 +284,6 @@ msgctxt "#31084"
 msgid "Visualisation settings"
 msgstr "시각화 설정"
 
-msgctxt "#31085"
-msgid "Channel Group"
-msgstr "채널 그룹"
-
-msgctxt "#31086"
-msgid "Metadata"
-msgstr "메타데이터"
-
-msgctxt "#31087"
-msgid "Provider settings"
-msgstr "제공자 설정"
-
-msgctxt "#31088"
-msgid "Content scanning options"
-msgstr "콘텐츠 탐색 옵션"
-
 msgctxt "#31089"
 msgid "Available groups"
 msgstr "사용 가능한 그룹"
@@ -380,10 +292,6 @@ msgctxt "#31090"
 msgid "Search trailer"
 msgstr "예고편 찾기"
 
-msgctxt "#31091"
-msgid "Download subtitles"
-msgstr "자막 다운로드"
-
 msgctxt "#31092"
 msgid "Video menu"
 msgstr "비디오 메뉴"
@@ -391,10 +299,6 @@ msgstr "비디오 메뉴"
 msgctxt "#31093"
 msgid "Show weather info in top bar"
 msgstr "상단 막대에 날씨 정보 표시"
-
-msgctxt "#31094"
-msgid "Show media flags for movies / episodes / music videos"
-msgstr "영화 / 에피소드 / 뮤직 비디오에 미디어 플래그 표시"
 
 msgctxt "#31095"
 msgid "Use slide animations"
@@ -413,12 +317,12 @@ msgid "Select your Kodi user profile[CR]to login and continue"
 msgstr "로그인할 Kodi 사용자 프로파일을[CR]선택하고 계속하세요"
 
 msgctxt "#31099"
-msgid "Icon Wall"
-msgstr "Icon Wall"
+msgid "IconWall"
+msgstr "IconWall"
 
 msgctxt "#31100"
 msgid "Shift"
-msgstr "시프트"
+msgstr "Shift"
 
 msgctxt "#31101"
 msgid "InfoWall"
@@ -448,14 +352,6 @@ msgctxt "#31107"
 msgid "WideList"
 msgstr "WideList"
 
-msgctxt "#31108"
-msgid "Use custom global background"
-msgstr "사용자 전역 배경화면 사용"
-
-msgctxt "#31109"
-msgid "Choose image path"
-msgstr "이미지 경로 선택"
-
 msgctxt "#31110"
 msgid "Enter files section"
 msgstr "파일 섹션 가기"
@@ -482,7 +378,7 @@ msgstr "TheMovieDB 찾기"
 
 msgctxt "#31116"
 msgid "Remove this main menu item"
-msgstr "이 매인 메뉴 항목 삭제"
+msgstr "이 메인 메뉴 항목 삭제"
 
 msgctxt "#31117"
 msgid "Edit nodes"
@@ -541,17 +437,105 @@ msgid "Main menu-related settings: Configure the home screen to your likings."
 msgstr "메인 메뉴 관련 설정: 원하는 대로 홈 화면을 설정합니다."
 
 msgctxt "#31131"
-msgid "Choose home fanart pack"
-msgstr "홈 화면 팬아트 팩을 선택하세요"
-
-msgctxt "#31132"
-msgid "min"
-msgstr "분"
-
-msgctxt "#31133"
-msgid "Hide"
-msgstr "숨김"
+msgid "Choose skin fanart pack"
+msgstr "스킨 팬아트 팩 선택"
 
 msgctxt "#31134"
 msgid "Remaining"
 msgstr "남음"
+
+msgctxt "#31136"
+msgid "Click here to see latest changes..."
+msgstr "변경 사항을 보려면 클릭하세요..."
+
+msgctxt "#31137"
+msgid "PVR info"
+msgstr "PVR 정보"
+
+msgctxt "#31138"
+msgid "Player process info"
+msgstr "플레이어 프로세스 정보"
+
+msgctxt "#31139"
+msgid "Video decoder"
+msgstr "비디오 디코더"
+
+msgctxt "#31140"
+msgid "Pixel format"
+msgstr "픽셀 형식"
+
+msgctxt "#31141"
+msgid "Changes for version"
+msgstr "버전 변경 사항"
+
+msgctxt "#31142"
+msgid "Play speed"
+msgstr "재생 속도"
+
+msgctxt "#31143"
+msgid "You did not set up PVR yet. In order to use PVR, choose a PVR client addon and configure it. Please visit http://kodi.wiki/view/PVR to learn more."
+msgstr "아직 PVR을 설정하지 않았습니다. PVR을 사용하려면 PVR 클라이언트 애드온을 선택하고 구성하세요. 자세한 정보: http://kodi.wiki/view/PVR "
+
+msgctxt "#31144"
+msgid "Enter add-on browser"
+msgstr "애드온 탐색기 들어가기"
+
+msgctxt "#31145"
+msgid "Search add-ons"
+msgstr "애드온 검색"
+
+msgctxt "#31148"
+msgid "Categories"
+msgstr "카테고리"
+
+msgctxt "#31149"
+msgid "Select genre fanart pack"
+msgstr "장르 팬아트 팩 선택"
+
+msgctxt "#31150"
+msgid "Repository"
+msgstr "저장소"
+
+msgctxt "#31151"
+msgid "Unwatched music videos"
+msgstr "시청하지 않은 뮤직 비디오"
+
+msgctxt "#31152"
+msgid "Random music videos"
+msgstr "무작위 뮤직 비디오"
+
+msgctxt "#31153"
+msgid "You do not have any add-ons of this type installed. Enter the add-on browser to download add-ons created by our community."
+msgstr "이 형식의 애드온이 설치되지 않았습니다. 애드온을 다운로드하려면 애드온 탐색기를 사용하세요."
+
+msgctxt "#31154"
+msgid "Press OK to switch between locations"
+msgstr "위치를 변경하려면 OK를 누르세요"
+
+msgctxt "#31155"
+msgid "No bookmarks created yet."
+msgstr "생성된 북마크가 없습니다"
+
+msgctxt "#31156"
+msgid "Choose background pattern"
+msgstr "배경 패던 선택"
+
+msgctxt "#31157"
+msgid "Edit categories"
+msgstr "카테고리 편집"
+
+msgctxt "#31158"
+msgid "Touch mode"
+msgstr "터치 모드"
+
+msgctxt "#31159"
+msgid "Artwork"
+msgstr "아트워크"
+
+msgctxt "#31160"
+msgid "Show media flags"
+msgstr "미디어 플래그 표시"
+
+msgctxt "#31161"
+msgid "Numeric pad"
+msgstr "숫자 패드"
