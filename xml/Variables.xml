@@ -316,10 +316,19 @@
 		<value condition="Integer.IsGreater(ListItem.Playcount,0)">$INFO[ListItem.Overlay]</value>
 	</variable>
 	<!-- Breadcrumbs -->
+	<variable name="BreadcrumbsMusicPlaylistEditorVar">
+		<value>$LOCALIZE[10503] / $INFO[Container.FolderName]</value>
+	</variable>
+	<variable name="BreadcrumbsPicsVar">
+		<value>$LOCALIZE[1213] / $INFO[Container.FolderName]</value>
+	</variable>
+	<variable name="BreadcrumbsMusicVar">
+		<value>$LOCALIZE[2] / $INFO[Container.FolderName]</value>
+	</variable>
 	<variable name="BreadcrumbsVideoVar">
 		<value condition="Container.Content(movies) | String.StartsWith(container.folderpath,library://video/movies/) | String.StartsWith(container.folderpath,videodb://movies)">$LOCALIZE[20342]</value>
-		<value condition="Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)">$LOCALIZE[20389]</value>
-		<value condition="Container.Content(tvshows) | String.StartsWith(container.folderpath,library://video/tvshows/) | String.StartsWith(container.folderpath,videodb://tvshows)">$LOCALIZE[20343]</value>
+		<value condition="Container.Content(musicvideos) | String.StartsWith(container.folderpath,library://video/musicvideos/) | String.StartsWith(container.folderpath,videodb://musicvideos)">$LOCALIZE[20389] / $INFO[Container.FolderName]</value>
+		<value condition="Container.Content(tvshows) | String.StartsWith(container.folderpath,library://video/tvshows/) | String.StartsWith(container.folderpath,videodb://tvshows)">$LOCALIZE[20343] / $INFO[Container.FolderName]</value>
 		<value condition="Container.Content(seasons)">$LOCALIZE[20343]</value>
 		<value condition="Container.Content(episodes)">$LOCALIZE[20343]</value>
 		<value>$LOCALIZE[3]</value>
