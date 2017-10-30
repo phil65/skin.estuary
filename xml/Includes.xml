@@ -5,6 +5,7 @@
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_MediaMenu.xml" />
 	<include file="Includes_Buttons.xml" />
+	<include file="Includes_DialogSelect.xml" />
 	<include file="Includes_PVR.xml" />
 	<include file="View_50_List.xml" />
 	<include file="View_51_Poster.xml" />
@@ -910,7 +911,7 @@
 						<label>$INFO[Container.FolderName, / ]</label>
 						<include>BreadcrumbsLabel</include>
 						<visible>![Container.Content() + Window.IsActive(videos)]</visible>
-						<visible>![Window.IsActive(MyMusicPlaylistEditor.xml) | Window.IsActive(MyPics.xml) | Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml)]</visible>
+						<visible>![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml)]</visible>
 					</control>
 					<control type="label">
 						<label>$INFO[Container.PluginCategory, / ]</label>
@@ -1085,7 +1086,7 @@
 		<shadowcolor>text_shadow</shadowcolor>
 		<top>7</top>
 		<height>100</height>
-		<width min="1" max="900">auto</width>
+		<width>auto</width>
 	</include>
 	<include name="ColoredBackgroundImages">
 		<control type="image">
@@ -1119,7 +1120,7 @@
 				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 				<control type="group">
 					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="!Control.IsVisible(31111)">Conditional</animation>
-					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(FullscreenGame) | Window.Previous(startup)">WindowOpen</animation>
 					<include>ColoredBackgroundImages</include>
 				</control>
 				<control type="group" id="31111">

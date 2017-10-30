@@ -525,8 +525,7 @@
 				<height>460</height>
 				<centerleft>86%</centerleft>
 				<itemgap>dialogbuttons_itemgap</itemgap>
-				<onup condition="!Integer.IsGreater(Container(9010).NumItems,0)">95200</onup>
-				<onup condition="Integer.IsGreater(Container(9010).NumItems,0)">9010</onup>
+				<onup>95200</onup>
 				<ondown>95200</ondown>
 				<onleft>78500</onleft>
 				<onright>140</onright>
@@ -544,6 +543,7 @@
 				</include>
 				<include content="DefaultDialogButton">
 					<param name="id" value="309" />
+					<param name="label" value="Layout" />
 					<param name="width" value="350" />
 				</include>
 				<include content="DefaultDialogButton">
@@ -614,8 +614,8 @@
 				<content>$VAR[AutoCompletionContentVar]</content>
 			</control>
 			<control type="label" id="313">
-				<centerleft>50%</centerleft>
-				<top>290</top>
+				<left>60</left>
+				<top>690</top>
 				<width>1480</width>
 				<height>90</height>
 				<font>font37</font>
@@ -625,22 +625,22 @@
 			<control type="group">
 				<visible>Control.IsVisible(313)</visible>
 				<control type="image">
-					<centerleft>50%</centerleft>
-					<top>290</top>
+					<left>20</left>
+					<top>690</top>
 					<width>1560</width>
 					<height>90</height>
 					<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				</control>
 				<control type="image">
-					<centerleft>50%</centerleft>
-					<top>370</top>
+					<left>20</left>
+					<top>770</top>
 					<width>1560</width>
 					<height>90</height>
 					<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				</control>
 				<control type="label" id="314">
-					<centerleft>50%</centerleft>
-					<top>370</top>
+					<left>60</left>
+					<top>770</top>
 					<width>1480</width>
 					<height>90</height>
 					<font>font37</font>
