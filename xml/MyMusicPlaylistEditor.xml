@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">6</defaultcontrol>
-	<menucontrol>9000</menucontrol>
 	<views>50</views>
+	<menucontrol>9000</menucontrol>
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
@@ -90,7 +90,7 @@
 			</control>
 		</control>
 		<include content="TopBar">
-			<param name="breadcrumbs_label" value="$VAR[BreadcrumbsMusicPlaylistEditorVar]" />
+			<param name="breadcrumbs_label" value="$LOCALIZE[10503][COLOR=button_focus][/COLOR]" />
 		</include>
 		<include>BottomBar</include>
 		<include content="BottomBarTwoListInfo">

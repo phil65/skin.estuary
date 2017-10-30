@@ -39,12 +39,12 @@
 			</control>
 			<control type="slider">
 				<left>40</left>
-				<top>20</top>
+				<top>55</top>
 				<width>400</width>
-				<height>112</height>
-				<texturesliderbar colordiffuse="00FFFFFF">colors/white.png</texturesliderbar>
-				<textureslidernib colordiffuse="00FFFFFF">colors/white.png</textureslidernib>
-				<textureslidernibfocus colordiffuse="00FFFFFF">colors/white.png</textureslidernibfocus>
+				<height>40</height>
+				<texturesliderbar></texturesliderbar>
+				<textureslidernib></textureslidernib>
+				<textureslidernibfocus colordiffuse="button_focus">colors/white.png</textureslidernibfocus>
 				<info>Player.Volume</info>
 				<action>Volume</action>
 			</control>

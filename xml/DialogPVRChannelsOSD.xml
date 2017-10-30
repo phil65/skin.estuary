@@ -23,7 +23,7 @@
 					<movement>4</movement>
 					<focusposition>5</focusposition>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<focusedlayout height="90" width="875">
+					<focusedlayout height="90" width="1000">
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
@@ -32,45 +32,45 @@
 							<visible>Control.hasFocus(11)</visible>
 						</control>
 						<control type="image">
-							<right>20</right>
+							<left>770</left>
 							<top>10</top>
-							<width>80</width>
-							<height>70</height>
+							<width>90</width>
+							<bottom>10</bottom>
 							<aspectratio align="right">keep</aspectratio>
 							<texture>$INFO[listitem.icon]</texture>
 						</control>
 						<control type="progress">
 							<left>105</left>
-							<top>58</top>
+							<top>55</top>
 							<width>50</width>
 							<height>12</height>
 							<midtexture border="3">progress/texturebg_white.png</midtexture>
-							<visible>ListItem.HasEpg</visible>
+							<visible>ListItem.HasEpg + !ListItem.IsRecording</visible>
 							<info>ListItem.Progress</info>
 						</control>
 						<control type="image">
-							<right>110</right>
-							<top>25</top>
+							<right>15</right>
+							<top>9</top>
 							<width>40</width>
 							<height>40</height>
 							<texture>$VAR[PVRStatusImageVar]</texture>
 						</control>
 						<control type="label">
 							<left>105</left>
-							<top>8</top>
+							<top>5</top>
 							<height>90</height>
-							<right>120</right>
+							<width>600</width>
 							<aligny>top</aligny>
-							<font>font14</font>
-							<animation effect="slide" start="0,0" end="0,14" time="0" condition="String.IsEmpty(ListItem.Title)">Conditional</animation>
+							<animation effect="slide" start="0,0" end="0,18" time="0" condition="String.IsEmpty(ListItem.Title)">Conditional</animation>
 							<label>$INFO[ListItem.Label]</label>
+							<font>font14</font>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
 							<left>165</left>
-							<top>46</top>
+							<top>45</top>
 							<height>90</height>
-							<right>120</right>
+							<width>580</width>
 							<aligny>top</aligny>
 							<font>font12</font>
 							<label>$INFO[ListItem.Title]</label>
@@ -78,7 +78,6 @@
 						</control>
 						<control type="label">
 							<left>12</left>
-							<top>0</top>
 							<height>90</height>
 							<width>75</width>
 							<align>center</align>
@@ -88,47 +87,47 @@
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="90" width="875">
+					<itemlayout height="90">
 						<control type="image">
-							<right>20</right>
+							<left>770</left>
 							<top>10</top>
-							<width>80</width>
-							<height>70</height>
+							<width>90</width>
+							<bottom>10</bottom>
 							<aspectratio align="right">keep</aspectratio>
 							<texture>$INFO[listitem.icon]</texture>
 						</control>
 						<control type="progress">
 							<left>105</left>
-							<top>58</top>
+							<top>55</top>
 							<width>50</width>
 							<height>12</height>
 							<colordiffuse>88FFFFFF</colordiffuse>
-							<visible>ListItem.HasEpg</visible>
+							<visible>ListItem.HasEpg + !ListItem.IsRecording</visible>
 							<info>ListItem.Progress</info>
 						</control>
 						<control type="image">
-							<right>110</right>
-							<top>25</top>
+							<right>15</right>
+							<top>9</top>
 							<width>40</width>
 							<height>40</height>
 							<texture>$VAR[PVRStatusImageVar]</texture>
 						</control>
 						<control type="label">
 							<left>105</left>
-							<top>8</top>
+							<top>5</top>
 							<height>90</height>
-							<right>120</right>
+							<width>640</width>
 							<aligny>top</aligny>
-							<font>font14</font>
 							<label>$INFO[ListItem.Label]</label>
-							<animation effect="slide" start="0,0" end="0,14" time="0" condition="String.IsEmpty(ListItem.Title)">Conditional</animation>
+							<font>font14</font>
+							<animation effect="slide" start="0,0" end="0,18" time="0" condition="String.IsEmpty(ListItem.Title)">Conditional</animation>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
 							<left>165</left>
-							<top>46</top>
+							<top>45</top>
 							<height>90</height>
-							<right>120</right>
+							<width>580</width>
 							<aligny>top</aligny>
 							<font>font12</font>
 							<label>$INFO[ListItem.Title]</label>
@@ -137,7 +136,6 @@
 						</control>
 						<control type="label">
 							<left>12</left>
-							<top>0</top>
 							<height>90</height>
 							<width>75</width>
 							<align>center</align>
@@ -150,7 +148,7 @@
 					</itemlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>869</left>
+					<left>868</left>
 					<width>12</width>
 					<height>100%</height>
 					<onleft>11</onleft>

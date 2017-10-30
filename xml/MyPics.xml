@@ -197,7 +197,7 @@
 				<include>ListThumbInfoPanel</include>
 			</control>
 			<include content="TopBar">
-				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPicsVar]" />
+				<param name="breadcrumbs_label" value="$LOCALIZE[1213]" />
 			</include>
 			<include content="BottomBar">
 				<param name="info_visible" value="true" />

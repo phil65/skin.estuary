@@ -13,7 +13,7 @@
 				<control type="fixedlist" id="50">
 					<left>0</left>
 					<top>list_y_offset</top>
-					<right>860</right>
+					<right>778</right>
 					<bottom>list_y_offset</bottom>
 					<onleft>9000</onleft>
 					<onright>73</onright>
@@ -118,7 +118,7 @@
 						<width>560</width>
 						<height>262</height>
 						<wrapmultiline>true</wrapmultiline>
-						<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ][CR]$INFO[ListItem.Date,$LOCALIZE[552]: ]</label>
+						<label>$INFO[ListItem.Date,[COLOR grey]$LOCALIZE[552]:[/COLOR] ,[CR]]$INFO[ListItem.Duration,[COLOR grey]$LOCALIZE[180]:[/COLOR] ,[CR]]$VAR[ExpirationDateTimeLabel]</label>
 					</control>
 					<control type="label">
 						<left>170</left>
