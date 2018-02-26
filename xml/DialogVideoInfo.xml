@@ -387,7 +387,7 @@
 						<param name="icon_on" value="icons/filemanager.png" />
 						<param name="icon_off" value="icons/infodialogs/play.png" />
 						<param name="selected" value="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)" />
-						<param name="label" value="$VAR[VideoInfoPlayButtonLabelVar]" />
+						<param name="label" value="$LOCALIZE[208]" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="11" />

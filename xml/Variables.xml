@@ -200,6 +200,7 @@
 	<variable name="SeekTimeLabelVar">
 		<value condition="!String.IsEmpty(Player.SeekNumeric)">[B]$INFO[Player.SeekNumeric(hh:mm:ss)][/B]</value>
 		<value condition="Player.Seeking">$INFO[Player.SeekTime]$INFO[Player.Duration, / ]</value>
+		<value condition="VideoPlayer.HasEpg">$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</value>
 		<value>$INFO[Player.Time]$INFO[Player.Duration, / ]</value>
 	</variable>
 	<variable name="VideoOSDHelpTextVar">
@@ -213,7 +214,7 @@
 		<value condition="Control.HasFocus(70041)">$LOCALIZE[19069]</value>
 		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>
 		<value condition="Control.HasFocus(255)">$LOCALIZE[36501]</value>
-		<value condition="Control.HasFocus(606)+ Player.Recording">$LOCALIZE[19059]</value>
+		<value condition="Control.HasFocus(606)+ PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>
 		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
 		<value condition="ControlGroup(6000).HasFocus + Player.SeekEnabled">$LOCALIZE[31054]</value>
 	</variable>
@@ -249,17 +250,18 @@
 		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
 		<value>$INFO[ListItem.Label]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
 	</variable>
-	<variable name="VideoInfoPlayButtonLabelVar">
-		<value condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)">$LOCALIZE[1024]</value>
-		<value>$LOCALIZE[208]</value>
-	</variable>
 	<variable name="VideoInfoSubLabelVar">
 		<value condition="String.IsEqual(ListItem.DBType,episode)">$INFO[ListItem.Season]$INFO[ListItem.Episode,[COLOR grey]x[/COLOR],: ]$INFO[ListItem.TVShowTitle]</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">$INFO[ListItem.Tagline,[I],[/I]]</value>
 		<value>$INFO[ListItem.Genre]</value>
 	</variable>
+	<variable name="VideoInfoBottomLabelVar">
+		<value condition="Control.HasFocus(8)">$INFO[ListItem.LastPlayed,$LOCALIZE[568]: ]</value>
+		<value condition="Control.HasFocus(6)">$INFO[ListItem.FileNameAndPath]</value>
+	</variable>
 	<variable name="NowPlayingBreadcrumbsVar">
 		<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.Title]</value>
+		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[VideoPlayer.Season,[COLOR button_focus]S,[/COLOR]]$INFO[VideoPlayer.Episode,[COLOR button_focus]E,: [/COLOR]]$INFO[VideoPlayer.Title]</value>
 		<value condition="Window.IsActive(fullscreenvideo)">$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, ([COLOR button_focus],[/COLOR])]</value>
 		<value condition="MusicPartyMode.Enabled">$LOCALIZE[589]</value>
 		<value>$LOCALIZE[31000]...</value>
@@ -268,8 +270,12 @@
 		<value condition="Window.IsActive(visualisation) + Integer.IsGreater(Playlist.Length,1)">$LOCALIZE[554] $INFO[Playlist.Position] / $INFO[Playlist.Length]</value>
 		<value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</value>
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season,[COLOR button_focus]S,[/COLOR]]$INFO[VideoPlayer.Episode,[COLOR button_focus]E,: [/COLOR]]$INFO[VideoPlayer.TVShowTitle]</value>
-		<value condition="VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording | PVR.IsPlayingEpgTag">$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName] $INFO[VideoPlayer.EpisodeName, - ]</value>
+		<value condition="VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording | PVR.IsPlayingEpgTag">$INFO[VideoPlayer.ChannelNumberLabel,([COLOR button_focus],[/COLOR]) ]$INFO[VideoPlayer.ChannelName] $INFO[VideoPlayer.EpisodeName, - ]</value>
 		<value>$INFO[VideoPlayer.Genre]</value>
+	</variable>
+	<variable name="PlayerClearLogoVar">
+		<value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
 	</variable>
 	<variable name="AddonsFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)"></value>
@@ -402,6 +408,10 @@
 		<value condition="ListItem.HasTimerSchedule">icons/pvr/PVR-HasTimerSchedule.png</value>
 		<value condition="ListItem.HasTimer">icons/pvr/PVR-HasTimer.png</value>
 	</variable>
+	<variable name="SeasonEpisodeLabel">
+		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E]</value>
+		<value>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ]</value>
+	</variable>
 	<variable name="ExpirationDateTimeLabel">
 		<value condition="!String.IsEmpty(ListItem.ExpirationDate)">[COLOR grey]$LOCALIZE[19299]:[/COLOR] $INFO[ListItem.ExpirationDate] $INFO[ListItem.ExpirationTime][CR]</value>
 	</variable>
@@ -419,5 +429,9 @@
 	<variable name="BackgroundOverlayTypeVar">
 		<value condition="String.IsEqual(Skin.String(background_overlay),0)">$LOCALIZE[231]</value>
 		<value>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</value>
+	</variable>
+	<variable name="MasterModeLabel">
+		<value condition="!System.IsMaster">$LOCALIZE[20045]</value>
+		<value>$LOCALIZE[20046]</value>
 	</variable>
 </includes>
